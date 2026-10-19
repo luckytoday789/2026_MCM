@@ -330,7 +330,16 @@ def chief_schedule():
         return None
     return hashlib.sha256(json.dumps(plan,sort_keys=True).encode()).hexdigest()
 
+def chief_budget_gate():
+    # Configuration is deliberately host-local; other roles keep their own limits.
+    if not (RUNTIME/'chief-quota-config.json').exists() and not (RUNTIME/'chief-budget-drain.json').exists():
+        return 'disabled'
+    from quota_guard import gate
+    return gate(RUNTIME)
+
 def chief_tick(force=False):
+    if chief_budget_gate() not in {'allow','disabled'}:
+        return False
     path=RUNTIME/'chief-seen.json'
     fingerprint=chief_fingerprint()
     old=json.loads(path.read_text(encoding='utf-8')) if path.exists() else {}
@@ -412,6 +421,20 @@ def watch(role,backend,once=False):
                 if stopped(c):
                     publish_status(role,'stopped')
                     return
+                if role=='chief':
+                    budget=chief_budget_gate()
+                    if budget=='drain':
+                        publish_status(role,'stopped',reason='local_weekly_allowance_threshold',
+                                       note='Current bounded turn ended. Local budget stop is sticky; global state unchanged.')
+                        return
+                    if budget=='wait':
+                        if time.monotonic()-last_heartbeat>240:
+                            publish_status(role,'waiting_quota',reason='Awaiting a verified local allowance reading.')
+                            last_heartbeat=time.monotonic()
+                        if once:
+                            return
+                        time.sleep(60)
+                        continue
                 clean_main()
                 if role=='chief':
                     changed=chief_tick()

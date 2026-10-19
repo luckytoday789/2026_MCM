@@ -9,6 +9,7 @@ import sys
 import time
 
 import coop
+import quota_guard
 
 ROOT, RUNTIME = coop.ROOT, coop.RUNTIME
 
@@ -74,13 +75,17 @@ def related_processes(rows):
     return workers, agents
 
 
-def restart_decision(config, stop_exists, lock_live, child_live, workers, agents, current):
+def restart_decision(config, stop_exists, lock_live, child_live, workers, agents, current, quota_state='disabled'):
     if stop_exists or config['state'] != 'running' or current >= dt.datetime.fromisoformat(config['deadline']):
         return 'stopping'
+    if quota_state=='drain':
+        return 'budget_draining'
     if lock_live or workers:
         return 'worker_running'
     if child_live or agents:
         return 'waiting_for_existing_child'
+    if quota_state=='wait':
+        return 'waiting_for_quota'
     return 'start_worker'
 
 
@@ -108,6 +113,8 @@ def snapshot(decision, workers, agents, config, keep_awake):
              'cached_remote_status':statuses, 'remote_status_is_not_quota_evidence':True,
              'local_status':read_json(RUNTIME/'chief-status.json'),
              'last_error':read_json(RUNTIME/'chief-error.json'),
+             'quota':read_json(RUNTIME/'chief-quota-status.json'),
+             'budget_drain':read_json(RUNTIME/'chief-budget-drain.json'),
              'workplan':read_json(ROOT/'ops/chief-workplan.json'),
              'latest_log':str(latest) if latest else None,
              'latest_log_bytes':latest.stat().st_size if latest else None}
@@ -140,6 +147,8 @@ def main():
         while True:
             try:
                 config = read_json(ROOT/'ops/control.json')
+                quota_guard.refresh(RUNTIME)
+                quota_state=quota_guard.gate(RUNTIME)
                 rows = process_inventory()
                 workers, agents = related_processes(rows)
                 lock_path = RUNTIME/'chief.lock'
@@ -149,7 +158,7 @@ def main():
                 if child and child.poll() is None and child.pid not in workers:
                     workers.append(child.pid)
                 decision = restart_decision(config, (RUNTIME/'STOP').exists(), lock_live,
-                                            child_live, workers, agents, coop.now())
+                                            child_live, workers, agents, coop.now(),quota_state)
                 if child and child.poll() is not None:
                     append_event({'event':'worker_exited', 'pid':child.pid, 'exit_code':child.returncode})
                     output.close()
@@ -157,10 +166,23 @@ def main():
                     child = None
                     failures += 1
                     next_start = time.monotonic()+min(3600,60*2**min(failures-1,6))
-                if decision == 'stopping':
+                if decision in {'stopping','budget_draining'}:
                     snapshot(decision, workers, agents, config, keep_awake)
+                    if decision=='budget_draining' and agents:
+                        quota_guard.notify_current_turn(RUNTIME)
                     # The runner observes the same STOP/control itself. Do not kill its work here.
                     if not workers and not agents and not child_live:
+                        if decision=='budget_draining':
+                            dirty=coop.git('status','--porcelain')
+                            ahead=coop.git('rev-list','--count','origin/main..HEAD')
+                            quota_guard.save(RUNTIME/'chief-budget-stop.json',{
+                                'stopped_at':coop.now().isoformat(),'worker_pids':workers,'agent_pids':agents,
+                                'reason':'local_weekly_allowance_threshold',
+                                'quota':read_json(RUNTIME/'chief-quota-status.json'),
+                                'git_status':dirty,'unpushed_commits':ahead,
+                                'workplan':read_json(ROOT/'ops/chief-workplan.json'),
+                                'note':'All local chief processes ended; no global pause or result deletion. Inspect any unfinished work before an explicit resume.'})
+                            append_event({'event':'budget_stop_confirmed','dirty_worktree':bool(dirty),'unpushed_commits':ahead})
                         break
                 elif decision == 'start_worker' and time.monotonic() >= next_start:
                     if lock_path.exists():

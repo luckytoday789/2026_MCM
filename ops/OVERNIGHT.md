@@ -36,6 +36,12 @@ Local STOP, global pause/completion and the 23:30 Beijing deadline are respected
 Never remove a human STOP automatically. For a planned restart, humans or an
 active authorized coordinator first verify old processes have ended.
 
+Local allowance protection, when explicitly enabled by the user, takes priority
+over timed wakeups and automatic restart. See `ops/LOCAL_BUDGET.md`. Its configuration
+and actual account readings stay in ignored local runtime files. Other machines
+are unaffected; the chief's global project control remains running on a local
+budget stop. The supervisor must not clear a budget drain after a quota reset.
+
 ## Keep useful work moving
 
 `ops/chief-workplan.json` is a coordinator-owned one-shot timer and action list.

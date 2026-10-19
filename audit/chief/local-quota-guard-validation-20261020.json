@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-10-19T17:17:51.034976+00:00",
+  "scope": "Local chief weekly allowance gate; no changes to global control or other role budgets.",
+  "test_results": [
+    {
+      "suite": "test_coop.py",
+      "passed": 7,
+      "environment": "isolated copy of modified runtime"
+    },
+    {
+      "suite": "test_overnight.py",
+      "passed": 6,
+      "environment": "isolated copy of modified runtime"
+    },
+    {
+      "suite": "test_quota_guard.py",
+      "passed": 9,
+      "exit_code": 0,
+      "environment": "deployed main checkout"
+    }
+  ],
+  "initial_test_setup_issue": "Isolated overnight suite initially lacked its probe_sol_availability import. Copied the unchanged dependency and reran that suite successfully; no production test expectation was weakened.",
+  "actual_read_only_interface_smoke": "Codex initialize plus account/rateLimits/read succeeded; live account readings are retained only in ignored local runtime files.",
+  "verified_behaviors": [
+    "Select weekly Codex bucket, not tokens or the short window",
+    "Drain at or below remaining threshold",
+    "Current bounded turn finishes before stopped status; no second turn",
+    "Supervisor cannot restart a drained worker",
+    "Stop persists across reset until explicit user resume",
+    "Unavailable or stale quota holds new work",
+    "Machines without local opt-in remain unchanged"
+  ],
+  "limits": [
+    "Periodic quota updates and finishing current work can overshoot the exact percentage.",
+    "Model task failures or upload failures remain preserved and recorded; not misreported as completed."
+  ]
+}
