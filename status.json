@@ -1,8 +1,10 @@
 {
   "role": "sol",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
-  "state": "ready",
+  "state": "running",
   "python": "3.12.14",
-  "updated_at": "2026-10-19T17:05:35.838353+00:00",
-  "lease_until": "2026-10-19T17:15:35.838353+00:00"
+  "updated_at": "2026-10-19T17:07:50.370190+00:00",
+  "lease_until": "2026-10-19T17:17:50.370190+00:00",
+  "task_id": "SOL-008",
+  "branch": "work/sol/SOL-008-a1"
 }
