@@ -8,6 +8,15 @@
     {
       "id": "HY3-001",
       "state": "ready"
+    },
+    {
+      "id": "SOL-002",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "5c14076dc38e93b21bd133ab45f0914ca076aa2b7601271c3cd6285832e6d556",
+      "branch": "work/sol/SOL-002-a1",
+      "note": "Dependency-gated on chief acceptance of SOL-001; review chief plan/oracle at pinned base."
     }
   ]
 }

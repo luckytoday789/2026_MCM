@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "SOL-002",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "297fc5d846bfc218795238e567875e49b18e7053",
+  "depends_on": [
+    "SOL-001"
+  ],
+  "split": "development",
+  "max_seconds": 1200,
+  "scope": "Independent review of chief baseline design and toy oracle; no production implementation or scenario performance.",
+  "parameters": {
+    "plan_id": "development-baselines-v1",
+    "hash_basis": "Canonical Git blob bytes",
+    "source_sha256": {
+      "specs/DEVELOPMENT_BASELINES.md": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f",
+      "specs/development_baselines_v1.json": "725f6eed64bbf49d7cad19d5f1cc233c7e0d80aa82c39c6aabd3b8864b2007bd",
+      "audit/chief/accounting_oracle.json": "85caa997e09b1cf2a02118f4f101137919ad7b38ce662caed7a594c569ed1377",
+      "audit/chief/accounting_reference.py": "c7a62e8f8453280e867758aed968b5041dea4f6d3ac6fca07e6e856bc5e85b07"
+    }
+  },
+  "allowed_paths": [
+    "audit/SOL-002"
+  ],
+  "deliverables": [
+    "audit/SOL-002/review.md",
+    "audit/SOL-002/findings.json",
+    "audit/SOL-002/verify.py",
+    "audit/SOL-002/verification.json"
+  ],
+  "commands": [],
+  "validation_commands": [
+    [
+      "{python}",
+      "audit/SOL-002/verify.py",
+      "--check"
+    ]
+  ],
+  "acceptance_checks": [
+    "Receipt identity/digest/base/role/branch and changed-path boundary match the task.",
+    "Required outputs and canonical source hashes match parameters.",
+    "Independent scalar or rational arithmetic recomputes all chief numeric expectations without importing/executing the chief oracle or production accounting/metrics.",
+    "Review covers fees, timing, keep, horizons, inflation, drawdown, volatility, quantiles, trade denominators, paired signs and severe-case selection.",
+    "Independently verify 10800/1800/15/1200 output counts and identify any parameter or schema gap.",
+    "findings.json records passed/failed, blockers, proposed corrections and evidence; no material unresolved finding is accepted.",
+    "No final outcomes, tuning or production edits."
+  ],
+  "instructions": "Review specs/DEVELOPMENT_BASELINES.md and specs/development_baselines_v1.json, authored by chief, against PROBLEM_LOCK.md and ACCOUNTING.md. Review audit/chief/accounting_oracle.json and the derivation in accounting_reference.py, then independently recompute every numeric expectation using your own Fraction/Decimal/scalar arithmetic in audit/SOL-002/verify.py. Do not import or execute the chief oracle or production accounting/metrics for expected values.\n\nCheck all three policies (bills keep, annual equal weights, initial equal weights then keep), information timing, pro-rata fee funding, target and keep semantics, net annual real returns, H=1 undefined volatility, ddof=1, initial/post-fee drawdowns, linear quantiles, separate scenarios, the five profile horizons, both trade-share denominators, severe-case maximum and tie-break, paired-difference signs, output counts and plan/config consistency. Identify any missing mathematical parameter, necessary output column, unsupported recommendation or ambiguous rule. Provide exact proposed corrections; do not edit chief files.\n\nThe pinned base intentionally contains the chief design/oracle, not the eventual accepted SOL-001 implementation. The dependency reserves a review slot after chief accepts SOL-001; review entirely from this pinned base and toy arithmetic. Do not fetch/import later production code.\n\nDeliver review.md with verdict, evidence and limitations; findings.json with schema_version, reviewed_base_commit, source Git-blob hashes, status passed/failed, blockers and corrections; verify.py; and verification.json recording check names, expected/observed numbers and largest residual. The initial verifier run may create verification.json; --check must independently recompute, compare the chief oracle at absolute tolerance 1e-9, check plan invariants and verify the saved evidence without silently regenerating it. A material defect must produce failed findings and nonzero validation exit after diagnosis is saved; preserve all negative findings. Separate minor suggestions from blockers.\n\nOnly edit audit/SOL-002; the runner manages handoff. No package installs, scenario performance, policy invention or final-data access. This is an independent review of chief work, not approval of your own prior code or a pilot-driver task."
+}
