@@ -1,0 +1,1221 @@
+{
+  "reviewed_shas": {
+    "base": "c651c67c30db1131c25641ac94631238cba0dd8d",
+    "chief_parent": "a287f214aece303d6dcd08f05a462cabf61258f2",
+    "hy3_result": "2a0263c5822988c0385d32fe084b794f8d644bc5",
+    "hy3_base": "f5e67b1f53568b94379ea631659d53d90db14f7b",
+    "sol_core": "b25c6b5589d07e767f463f54f053f08bb0085157"
+  },
+  "task_sha256": "758b29442ab6f6c7ba984a8d7a38a063d35ce80995df52f4266654133b89a4dd",
+  "hy3_contract_sha256": "df3ff0943a0e9e660af066ee277c3abd801f8893f2d64a4f8a2dcdb3f2d9085e",
+  "hy3_contract_blob_sha256": "684931cb2f9b52f22482dac512af38745ed95d5d051b7e99ae08f524a0eb63c5",
+  "hy3_receipt_blob_sha256": "81b23066bbc0ffc35883ef2b0fe627e3b191d38fa797a8baa5788d975f5324d0",
+  "hy3_output_blob_sha256": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf",
+  "chief_hy3_review_blob_sha256": "dfebc6c4d764ba0a16d2d7d0cc0b001faf79a36bce86fc7457dde5b143c8cc96",
+  "sources": {
+    "problem/2026_MCM_SafeInvest.pdf": {
+      "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+      "bytes": 137578
+    },
+    "data/raw/SafeInvest_Synthetic_Data.csv": {
+      "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+      "bytes": 274914
+    },
+    "data/development/scenarios_001_120.csv": {
+      "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+      "bytes": 182255
+    },
+    "data/final_holdout/scenarios_121_180.csv": {
+      "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+      "bytes": 92732
+    }
+  },
+  "pinned_inputs": {
+    "AGENTS.md": {
+      "git_blob_sha256": "92ab36877ad51c32b6393d7955e84d20ff34b59b82ed2905c0f0dd0a29dac078",
+      "working_file_sha256": "06620a8311d8c295e378762cdca180d7b3935d361bc8e8297ddeb3944eafdc8c"
+    },
+    "ops/PROTOCOL.md": {
+      "git_blob_sha256": "1d26831e0679dfc7a285f6408d274b0382566928428f9963bb1c04122b0eaa32",
+      "working_file_sha256": "effddbfc6a38a89ef563e0a8fb8034637b0b6ad7ab5354987205277dc3a8423c"
+    },
+    "specs/PROBLEM_LOCK.md": {
+      "git_blob_sha256": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "working_file_sha256": "c3cce877e00a62f49c8a032e9bde5e39562bd1b29dde3dee23263935f9aea675"
+    },
+    "specs/ACCOUNTING.md": {
+      "git_blob_sha256": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "working_file_sha256": "d5a59960f8bc9474986015f4f832ffcbbdb5fc3e85bad0b3b9453861ae63a7fc"
+    },
+    "data/manifest.json": {
+      "git_blob_sha256": "2535c087075957919d5f1990ad234ca436f7b3506ba592ac8a6457feb42fe90d",
+      "working_file_sha256": "2535c087075957919d5f1990ad234ca436f7b3506ba592ac8a6457feb42fe90d"
+    },
+    "ops/tasks/HY3-001.json": {
+      "git_blob_sha256": "684931cb2f9b52f22482dac512af38745ed95d5d051b7e99ae08f524a0eb63c5",
+      "working_file_sha256": "684931cb2f9b52f22482dac512af38745ed95d5d051b7e99ae08f524a0eb63c5"
+    },
+    "scripts/coop.py": {
+      "git_blob_sha256": "8a4607eae6300be7435f7706017928fe50575a6cfbbab1cc5ed25e7ba19b42af",
+      "working_file_sha256": "8a4607eae6300be7435f7706017928fe50575a6cfbbab1cc5ed25e7ba19b42af"
+    },
+    "tests/test_coop.py": {
+      "git_blob_sha256": "fb09e09482064833a1d3e36708f754fc4ed4be3bab84d1d593ddfc2749f46be9",
+      "working_file_sha256": "fb09e09482064833a1d3e36708f754fc4ed4be3bab84d1d593ddfc2749f46be9"
+    },
+    "scripts/check_worker_env.py": {
+      "git_blob_sha256": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+      "working_file_sha256": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8"
+    },
+    "tests/test_accounting.py": {
+      "git_blob_sha256": "d57c58dafd942ea430baf7dd75c3387c037099ff441bb31d30f6173bf6a6eae7",
+      "working_file_sha256": "d57c58dafd942ea430baf7dd75c3387c037099ff441bb31d30f6173bf6a6eae7"
+    },
+    "src/safeinvest/__init__.py": {
+      "git_blob_sha256": "2911ccd65cbb3f0dc81e113a2a1f2e7486ef1487c9dda9b73fb6b80770ab8012",
+      "working_file_sha256": "2911ccd65cbb3f0dc81e113a2a1f2e7486ef1487c9dda9b73fb6b80770ab8012"
+    },
+    "src/safeinvest/accounting.py": {
+      "git_blob_sha256": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "working_file_sha256": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5"
+    },
+    "src/safeinvest/backtest.py": {
+      "git_blob_sha256": "f82c63a3fe78889d243bbbb344d20cbe9edb54981c7ca07b1f5006b9f79b28cd",
+      "working_file_sha256": "f82c63a3fe78889d243bbbb344d20cbe9edb54981c7ca07b1f5006b9f79b28cd"
+    },
+    "src/safeinvest/metrics.py": {
+      "git_blob_sha256": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "working_file_sha256": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e"
+    },
+    "audit/chief/HY3-001-review.json": {
+      "git_blob_sha256": "dfebc6c4d764ba0a16d2d7d0cc0b001faf79a36bce86fc7457dde5b143c8cc96",
+      "working_file_sha256": "dfebc6c4d764ba0a16d2d7d0cc0b001faf79a36bce86fc7457dde5b143c8cc96"
+    },
+    "audit/chief/SOL-001-review.json": {
+      "git_blob_sha256": "e52f060ad11cf7fbaa9bd983b0d98e477659dd1cd3a55f6eb80a1d06945fa065",
+      "working_file_sha256": "e52f060ad11cf7fbaa9bd983b0d98e477659dd1cd3a55f6eb80a1d06945fa065"
+    },
+    "audit/chief/runtime_receipt_verification.json": {
+      "git_blob_sha256": "eee59492101146563f233421eb8ab1d795365b46c5a68817a6900924030d9143",
+      "working_file_sha256": "eee59492101146563f233421eb8ab1d795365b46c5a68817a6900924030d9143"
+    }
+  },
+  "hy3_changed_paths": [
+    "handoff/HY3-001/check-0.txt",
+    "handoff/HY3-001/check-1.txt",
+    "handoff/HY3-001/result.json",
+    "results/development/HY3-001/input-check.json"
+  ],
+  "hy3_artifacts": {
+    "handoff/HY3-001/check-0.txt": {
+      "git_blob_sha256": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "receipt_sha256": "135ff1bfa7706821562b53709dbdfd84db9e4d8391665e1a0dc6ceb505471f1f",
+      "reconstructed_crlf_sha256": "135ff1bfa7706821562b53709dbdfd84db9e4d8391665e1a0dc6ceb505471f1f",
+      "receipt_match": "exact_crlf_checkout",
+      "git_blob_bytes": 311,
+      "trailing_lf_count": 1
+    },
+    "handoff/HY3-001/check-1.txt": {
+      "git_blob_sha256": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "receipt_sha256": "135ff1bfa7706821562b53709dbdfd84db9e4d8391665e1a0dc6ceb505471f1f",
+      "reconstructed_crlf_sha256": "135ff1bfa7706821562b53709dbdfd84db9e4d8391665e1a0dc6ceb505471f1f",
+      "receipt_match": "exact_crlf_checkout",
+      "git_blob_bytes": 311,
+      "trailing_lf_count": 1
+    },
+    "results/development/HY3-001/input-check.json": {
+      "git_blob_sha256": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf",
+      "receipt_sha256": "094b0adf22b5ed42cf49fa8236a4f77b7b14948c74caad65db15663f8abb62ad",
+      "reconstructed_crlf_sha256": "094b0adf22b5ed42cf49fa8236a4f77b7b14948c74caad65db15663f8abb62ad",
+      "receipt_match": "exact_crlf_checkout",
+      "git_blob_bytes": 310,
+      "trailing_lf_count": 0
+    }
+  },
+  "metadata": {
+    "status": "passed",
+    "rows": 5400,
+    "scenarios": 180,
+    "periods_per_scenario": 30,
+    "development_rows": 3600,
+    "final_rows": 1800,
+    "checks": [
+      "source hashes",
+      "schema",
+      "unique complete keys",
+      "finite valid gross returns",
+      "exact split"
+    ],
+    "final_outcomes_computed": false
+  },
+  "datasets": {
+    "data/raw/SafeInvest_Synthetic_Data.csv": {
+      "rows": 5400,
+      "scenarios": 180,
+      "periods_per_scenario": 30,
+      "unique_keys": 5400,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "unexpected_keys": 0,
+      "finite_positive_gross_cells": 21600,
+      "invalid_gross_cells": 0,
+      "schema": [
+        "scenario_id",
+        "period",
+        "equity_return",
+        "bond_return",
+        "bill_proxy_return",
+        "inflation"
+      ]
+    },
+    "data/development/scenarios_001_120.csv": {
+      "rows": 3600,
+      "scenarios": 120,
+      "periods_per_scenario": 30,
+      "unique_keys": 3600,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "unexpected_keys": 0,
+      "finite_positive_gross_cells": 14400,
+      "invalid_gross_cells": 0,
+      "schema": [
+        "scenario_id",
+        "period",
+        "equity_return",
+        "bond_return",
+        "bill_proxy_return",
+        "inflation"
+      ],
+      "row_content_mismatches": 0
+    },
+    "data/final_holdout/scenarios_121_180.csv": {
+      "rows": 1800,
+      "scenarios": 60,
+      "periods_per_scenario": 30,
+      "unique_keys": 1800,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "unexpected_keys": 0,
+      "finite_positive_gross_cells": 7200,
+      "invalid_gross_cells": 0,
+      "schema": [
+        "scenario_id",
+        "period",
+        "equity_return",
+        "bond_return",
+        "bill_proxy_return",
+        "inflation"
+      ],
+      "row_content_mismatches": 0
+    }
+  },
+  "chief_patch_sha256": "9c609e1a5a62e1c475d654b827f59de799569687e2dfb33ce6994b87a53313ab",
+  "mandatory_sol_outputs": {
+    "src/safeinvest/__init__.py": "2911ccd65cbb3f0dc81e113a2a1f2e7486ef1487c9dda9b73fb6b80770ab8012",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+    "src/safeinvest/backtest.py": "f82c63a3fe78889d243bbbb344d20cbe9edb54981c7ca07b1f5006b9f79b28cd",
+    "tests/test_accounting.py": "d57c58dafd942ea430baf7dd75c3387c037099ff441bb31d30f6173bf6a6eae7",
+    "audit/SOL-001/review.md": "8234f7aee544ce38b67ff8d518fd9473d99e291ab69826319befe919af35ccc3"
+  },
+  "hy3_acceptance": {
+    "accepted": false,
+    "worker_python": "3.13.14",
+    "required_python": "3.12",
+    "rerun_required": true
+  },
+  "historical_log": {
+    "status": "unverified_excluded",
+    "commit": "b25c6b5589d07e767f463f54f053f08bb0085157",
+    "git_blob_sha256": "93cbd8b50cc9352509ff22c8d2c2672c270bef994cbc72688690ce41a9b08b0d",
+    "receipt_sha256": "19679c5a3602cfd1e187b97de1b2511aa813aca093e28ee68b76e96c0d1ad380",
+    "reused": false
+  },
+  "residuals": {
+    "source_hash_mismatches": 0,
+    "key_errors": 0,
+    "invalid_gross_cells": 0,
+    "split_row_mismatches": 0
+  },
+  "final_outcomes_computed": false,
+  "schema_version": 1,
+  "status": "passed",
+  "validation_exit_code": 0,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "created_utc": "2026-10-19T12:58:12.509860+00:00",
+  "suites": {
+    "accounting": {
+      "tests": 28,
+      "exit_code": 0,
+      "log": {
+        "path": "audit/SOL-003/accounting-tests.txt",
+        "sha256": "cd9177c5f773edde25ca40caac0836febaa4a9d9e47be9bc9d66661ebb992758",
+        "bytes": 3805,
+        "encoding": "UTF-8",
+        "newlines": "LF"
+      }
+    },
+    "protocol": {
+      "tests": 4,
+      "exit_code": 0,
+      "log": {
+        "path": "audit/SOL-003/protocol-tests.txt",
+        "sha256": "47322ff830dfb617bf8e0b34540e2a182a2c09fc9e4205174d6deb13d5057840",
+        "bytes": 988,
+        "encoding": "UTF-8",
+        "newlines": "LF"
+      },
+      "fixture_root": "audit/SOL-003/fixtures"
+    }
+  },
+  "environment_checks": {
+    "real_312": {
+      "exit_code": 0,
+      "report": {
+        "status": "passed",
+        "python": "3.12.14",
+        "required_python": "3.12",
+        "reason": null
+      },
+      "log": {
+        "path": "audit/SOL-003/env-312.txt",
+        "sha256": "a620d17433955533f42fcc4f2a757bbe1932bbc193707a6f0022fa350064e7df",
+        "bytes": 95,
+        "encoding": "UTF-8",
+        "newlines": "LF"
+      }
+    },
+    "simulated_313": {
+      "exit_code": 1,
+      "expected_rejection": true,
+      "report": {
+        "status": "failed",
+        "python": "3.13.14",
+        "required_python": "3.12",
+        "reason": "Restart this worker under local Python 3.12; preserve worktrees and avoid duplicate watchers."
+      },
+      "log": {
+        "path": "audit/SOL-003/env-313-simulated.txt",
+        "sha256": "9fa8698828d4bf03b176ce13fbfa56e87c58095564b8f1011b389744d915b99f",
+        "bytes": 186,
+        "encoding": "UTF-8",
+        "newlines": "LF"
+      }
+    }
+  },
+  "supplemental": {
+    "status": "passed",
+    "canonical_blob_cases": [
+      {
+        "name": "mixed.txt",
+        "working_sha256": "c44cb51f9dc41c070bed8b488485f874e5467bb44fdf6383ff97b20b1ae6bd56",
+        "git_blob_sha256": "874eff197c1956c17922df421f5d467f4538de1065989cc51a6a266dbdcbd164",
+        "exact_bytes_match": true,
+        "trailing_lf_count": 2
+      },
+      {
+        "name": "no-newline.txt",
+        "working_sha256": "0c62f876ef1dea830de9f32c2f4b46dd6d74d50d15896e09ef5a2fcd4ac7e1d7",
+        "git_blob_sha256": "0c62f876ef1dea830de9f32c2f4b46dd6d74d50d15896e09ef5a2fcd4ac7e1d7",
+        "exact_bytes_match": true,
+        "trailing_lf_count": 0
+      },
+      {
+        "name": "trailing.txt",
+        "working_sha256": "b3a938fa959955a09a00c6fd6c9bb440d9f1e662ff0f0f19c87aa4d8f0564ef9",
+        "git_blob_sha256": "e1fab8e3a85da76b442cce547fcdbc42f8f05f876486db2a0c48a3b2f20bf62d",
+        "exact_bytes_match": true,
+        "trailing_lf_count": 2
+      },
+      {
+        "name": "utf8.txt",
+        "working_sha256": "90e20139eb4edf3731bc989d36042cd42d4df976191625dcef5377c96e0a7e13",
+        "git_blob_sha256": "0661f94a964a1897103d24ae407a60b0e9eaee2f46f42f779184fe2f953ef28b",
+        "exact_bytes_match": true,
+        "trailing_lf_count": 1
+      }
+    ],
+    "scope_checks": "child allowed; sibling, forbidden file, .env and .runtime rejected",
+    "chief_fixture_payload_hex": "66697273740d0a7365636f6e640a",
+    "chief_fixture_has_actual_crlf": true,
+    "chief_fixture_verified": "Generated fixture contains actual CRLF/LF; independent cases additionally cover multiple and absent trailing newlines.",
+    "project_runtime_modified": false
+  },
+  "commands_executed": [
+    {
+      "argv": [
+        "git",
+        "ls-files",
+        "-z"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "500b16e749c9726054daad9a2e3a0d7236fa945a0e30da96fea5952876e76d7c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "origin/main:ops/control.json"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "97c6263e31dab636a37c1190b1d6e313941a71258220ebe54b5855ed2f0249bf",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "ba16cc1d6d35cdfd4c6ab06ebf27b29c72f371ad99b368215f9ee4edfe1eaa3c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "c651c67c30db1131c25641ac94631238cba0dd8d^"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "cac6a360f126dfe5e606c136336a804f4480486647d943f48f48c7a64456972d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "713f440e25ddf90ac843ac9c25a2770472d32df0e8449a7300c59c79374d3573",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:ops/tasks/HY3-001.json"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "684931cb2f9b52f22482dac512af38745ed95d5d051b7e99ae08f524a0eb63c5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "2a0263c5822988c0385d32fe084b794f8d644bc5:handoff/HY3-001/result.json"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "81b23066bbc0ffc35883ef2b0fe627e3b191d38fa797a8baa5788d975f5324d0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "2a0263c5822988c0385d32fe084b794f8d644bc5:results/development/HY3-001/input-check.json"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:audit/chief/HY3-001-review.json"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "dfebc6c4d764ba0a16d2d7d0cc0b001faf79a36bce86fc7457dde5b143c8cc96",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "2a0263c5822988c0385d32fe084b794f8d644bc5^"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "67e203b892ffed66643bf6ff1f7abcc60e3e44a1f36dd1874182dcc8719d3c76",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--name-only",
+        "f5e67b1f53568b94379ea631659d53d90db14f7b",
+        "2a0263c5822988c0385d32fe084b794f8d644bc5"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "74f7fcbc8da63d8f093f291c7aa6bf6da7d7dc7412e582139283346622eaec06",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:data/manifest.json"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "2535c087075957919d5f1990ad234ca436f7b3506ba592ac8a6457feb42fe90d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "f5e67b1f53568b94379ea631659d53d90db14f7b:data/manifest.json"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "2535c087075957919d5f1990ad234ca436f7b3506ba592ac8a6457feb42fe90d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:problem/2026_MCM_SafeInvest.pdf"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "f5e67b1f53568b94379ea631659d53d90db14f7b:problem/2026_MCM_SafeInvest.pdf"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:data/raw/SafeInvest_Synthetic_Data.csv"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "f5e67b1f53568b94379ea631659d53d90db14f7b:data/raw/SafeInvest_Synthetic_Data.csv"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:data/development/scenarios_001_120.csv"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "f5e67b1f53568b94379ea631659d53d90db14f7b:data/development/scenarios_001_120.csv"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:data/final_holdout/scenarios_121_180.csv"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "f5e67b1f53568b94379ea631659d53d90db14f7b:data/final_holdout/scenarios_121_180.csv"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "2a0263c5822988c0385d32fe084b794f8d644bc5:handoff/HY3-001/check-0.txt"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "2a0263c5822988c0385d32fe084b794f8d644bc5:handoff/HY3-001/check-1.txt"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "2a0263c5822988c0385d32fe084b794f8d644bc5:results/development/HY3-001/input-check.json"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:ops/queue.json"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "4d682f178052210d4aa380cdfa7c47611646e5bd7c066769ceb250ae06d27bd2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "b25c6b5589d07e767f463f54f053f08bb0085157:handoff/SOL-001/result.json"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "ebe4c17f9f13eed3b959f09bffcf54199c23068a7ae8255a28fc943c8763f4cf",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:audit/chief/SOL-001-review.json"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "e52f060ad11cf7fbaa9bd983b0d98e477659dd1cd3a55f6eb80a1d06945fa065",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "b25c6b5589d07e767f463f54f053f08bb0085157:audit/SOL-001/validation.txt"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "93cbd8b50cc9352509ff22c8d2c2672c270bef994cbc72688690ce41a9b08b0d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:src/safeinvest/__init__.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "2911ccd65cbb3f0dc81e113a2a1f2e7486ef1487c9dda9b73fb6b80770ab8012",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "b25c6b5589d07e767f463f54f053f08bb0085157:src/safeinvest/__init__.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "2911ccd65cbb3f0dc81e113a2a1f2e7486ef1487c9dda9b73fb6b80770ab8012",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:src/safeinvest/accounting.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "b25c6b5589d07e767f463f54f053f08bb0085157:src/safeinvest/accounting.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:src/safeinvest/metrics.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "b25c6b5589d07e767f463f54f053f08bb0085157:src/safeinvest/metrics.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:src/safeinvest/backtest.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "f82c63a3fe78889d243bbbb344d20cbe9edb54981c7ca07b1f5006b9f79b28cd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "b25c6b5589d07e767f463f54f053f08bb0085157:src/safeinvest/backtest.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "f82c63a3fe78889d243bbbb344d20cbe9edb54981c7ca07b1f5006b9f79b28cd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:tests/test_accounting.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "d57c58dafd942ea430baf7dd75c3387c037099ff441bb31d30f6173bf6a6eae7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "b25c6b5589d07e767f463f54f053f08bb0085157:tests/test_accounting.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "d57c58dafd942ea430baf7dd75c3387c037099ff441bb31d30f6173bf6a6eae7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:audit/SOL-001/review.md"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "8234f7aee544ce38b67ff8d518fd9473d99e291ab69826319befe919af35ccc3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "b25c6b5589d07e767f463f54f053f08bb0085157:audit/SOL-001/review.md"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "8234f7aee544ce38b67ff8d518fd9473d99e291ab69826319befe919af35ccc3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:AGENTS.md"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "92ab36877ad51c32b6393d7955e84d20ff34b59b82ed2905c0f0dd0a29dac078",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:ops/PROTOCOL.md"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "1d26831e0679dfc7a285f6408d274b0382566928428f9963bb1c04122b0eaa32",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:specs/PROBLEM_LOCK.md"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:specs/ACCOUNTING.md"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:data/manifest.json"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "2535c087075957919d5f1990ad234ca436f7b3506ba592ac8a6457feb42fe90d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:ops/tasks/HY3-001.json"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "684931cb2f9b52f22482dac512af38745ed95d5d051b7e99ae08f524a0eb63c5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:scripts/coop.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "8a4607eae6300be7435f7706017928fe50575a6cfbbab1cc5ed25e7ba19b42af",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:tests/test_coop.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "fb09e09482064833a1d3e36708f754fc4ed4be3bab84d1d593ddfc2749f46be9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:scripts/check_worker_env.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:tests/test_accounting.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "d57c58dafd942ea430baf7dd75c3387c037099ff441bb31d30f6173bf6a6eae7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:src/safeinvest/__init__.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "2911ccd65cbb3f0dc81e113a2a1f2e7486ef1487c9dda9b73fb6b80770ab8012",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:src/safeinvest/accounting.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:src/safeinvest/backtest.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "f82c63a3fe78889d243bbbb344d20cbe9edb54981c7ca07b1f5006b9f79b28cd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:src/safeinvest/metrics.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:audit/chief/HY3-001-review.json"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "dfebc6c4d764ba0a16d2d7d0cc0b001faf79a36bce86fc7457dde5b143c8cc96",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:audit/chief/SOL-001-review.json"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "e52f060ad11cf7fbaa9bd983b0d98e477659dd1cd3a55f6eb80a1d06945fa065",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "c651c67c30db1131c25641ac94631238cba0dd8d:audit/chief/runtime_receipt_verification.json"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "eee59492101146563f233421eb8ab1d795365b46c5a68817a6900924030d9143",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "a287f214aece303d6dcd08f05a462cabf61258f2",
+        "c651c67c30db1131c25641ac94631238cba0dd8d",
+        "--",
+        "scripts/coop.py",
+        "tests/test_coop.py",
+        "scripts/check_worker_env.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "9c609e1a5a62e1c475d654b827f59de799569687e2dfb33ce6994b87a53313ab",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_accounting.py",
+        "-v"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "ebb641a1d1d6f7f0074bc17f3297e5123dd394ddac70f389e9809ce5f9adaba0"
+    },
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "audit/SOL-003/verify.py",
+        "--protocol-suite"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "d911669e74e85e3ecc02cc1d047609c9d8096fa694a3764d4ff0e05d90d57e6e",
+      "stderr_sha256": "21d5cdf2ad80e66f4dece93f20f71e8d878f72f6e005d853c073a7ff359e4268"
+    },
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "scripts/check_worker_env.py"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "7aacc4c0de42db8cc4a4349dfa270483b2896fdb528ee033cbcc66876c2bea5d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-c",
+        "import runpy,sys; from unittest.mock import patch; sys.argv=['scripts/check_worker_env.py']; a=patch.object(sys,'version_info',(3,13,14,'final',0)); b=patch.object(sys,'version','3.13.14 (SIMULATED ONLY)'); a.start(); b.start(); runpy.run_path('scripts/check_worker_env.py',run_name='__main__')"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout_sha256": "25739d252e4c3096f2d4f1bb6324a7a0021fcc44f8009c64824ff3267125177d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "init",
+        "-b",
+        "main"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1\\audit\\SOL-003\\blob-fixture-83hhjvk1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "6f32a9a31e2a028cd0c705b92a31f6c2787da333dc07cedcc9dd90fc60824f48",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "core.autocrlf",
+        "true"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1\\audit\\SOL-003\\blob-fixture-83hhjvk1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "add",
+        "--",
+        ".gitattributes",
+        "mixed.txt",
+        "no-newline.txt",
+        "trailing.txt",
+        "utf8.txt"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1\\audit\\SOL-003\\blob-fixture-83hhjvk1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "74038c76e657a8733c5fde685ea50cea968eb144c9870cd30eeb52dfabd91e9c"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        ":mixed.txt"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1\\audit\\SOL-003\\blob-fixture-83hhjvk1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "874eff197c1956c17922df421f5d467f4538de1065989cc51a6a266dbdcbd164",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        ":no-newline.txt"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1\\audit\\SOL-003\\blob-fixture-83hhjvk1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "0c62f876ef1dea830de9f32c2f4b46dd6d74d50d15896e09ef5a2fcd4ac7e1d7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        ":trailing.txt"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1\\audit\\SOL-003\\blob-fixture-83hhjvk1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "e1fab8e3a85da76b442cce547fcdbc42f8f05f876486db2a0c48a3b2f20bf62d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        ":utf8.txt"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1\\audit\\SOL-003\\blob-fixture-83hhjvk1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "0661f94a964a1897103d24ae407a60b0e9eaee2f46f42f779184fe2f953ef28b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "ls-files",
+        "-z"
+      ],
+      "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-003-a1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout_sha256": "500b16e749c9726054daad9a2e3a0d7236fa945a0e30da96fea5952876e76d7c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "source_files_unchanged": true,
+  "project_runtime_read_only": true,
+  "output_hashes": {
+    "audit/SOL-003/review.md": "956fba926fe148990ec39e0d75845946a46db5aee6b5dbe926dad9feaf6030e4",
+    "audit/SOL-003/findings.json": "4f3b8d2022ade7aab6ce97c60fefa0dcf92bfc613daeb46d3dfcf694b9f995d1",
+    "audit/SOL-003/verify.py": "efcc6a743208b4270fa6d9099dd9ad8d5b79ea7e851e6a9fa8e3362ff9cf9b7e",
+    "audit/SOL-003/accounting-tests.txt": "cd9177c5f773edde25ca40caac0836febaa4a9d9e47be9bc9d66661ebb992758",
+    "audit/SOL-003/protocol-tests.txt": "47322ff830dfb617bf8e0b34540e2a182a2c09fc9e4205174d6deb13d5057840",
+    "audit/SOL-003/env-312.txt": "a620d17433955533f42fcc4f2a757bbe1932bbc193707a6f0022fa350064e7df",
+    "audit/SOL-003/env-313-simulated.txt": "9fa8698828d4bf03b176ce13fbfa56e87c58095564b8f1011b389744d915b99f",
+    "audit/SOL-003/investigation.json": "af87507c997997f99d4288a11588747e4f9ff8321f80dd71ea1207483c5683db"
+  }
+}

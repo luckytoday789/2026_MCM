@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "mode": "check",
+  "verification_sha256": "6bf48840d167e396d4d122a11e8a2d036aba31257df6b0fa1e96a461acacd271",
+  "metadata_recomputed": true,
+  "saved_evidence_replaced": false,
+  "accounting_tests_evidenced": 28,
+  "protocol_tests_evidenced": 4,
+  "final_outcomes_computed": false
+}

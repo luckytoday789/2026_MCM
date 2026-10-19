@@ -1,0 +1,33 @@
+test_all_equity_and_keep_bills_examples (test_accounting.AccountingTests.test_all_equity_and_keep_bills_examples) ... ok
+test_exact_compounded_inflation_and_deflation (test_accounting.AccountingTests.test_exact_compounded_inflation_and_deflation) ... ok
+test_exact_total_loss_formula_without_inventing_recovery (test_accounting.AccountingTests.test_exact_total_loss_formula_without_inventing_recovery) ... ok
+test_exact_twenty_unit_bill_to_equity_example (test_accounting.AccountingTests.test_exact_twenty_unit_bill_to_equity_example) ... ok
+test_fee_precedes_return (test_accounting.AccountingTests.test_fee_precedes_return) ... ok
+test_initial_equal_weight_exact_fractions (test_accounting.AccountingTests.test_initial_equal_weight_exact_fractions) ... ok
+test_invalid_inputs_rejected (test_accounting.AccountingTests.test_invalid_inputs_rejected) ... ok
+test_keep_preserves_dollars_and_inputs_exactly (test_accounting.AccountingTests.test_keep_preserves_dollars_and_inputs_exactly) ... ok
+test_rebalance_matching_weights_is_no_trade (test_accounting.AccountingTests.test_rebalance_matching_weights_is_no_trade) ... ok
+test_wealth_conservation_and_full_investment_seeded (test_accounting.AccountingTests.test_wealth_conservation_and_full_investment_seeded) ... ok
+test_zero_fees_zero_returns (test_accounting.AccountingTests.test_zero_fees_zero_returns) ... ok
+test_complete_thirty_period_ledger_invariants (test_accounting.BaselineTests.test_complete_thirty_period_ledger_invariants) ... ok
+test_explicit_horizon_csv_strings_and_future_outcomes_not_read (test_accounting.BaselineTests.test_explicit_horizon_csv_strings_and_future_outcomes_not_read) ... ok
+test_final_split_and_development_id_guards (test_accounting.BaselineTests.test_final_split_and_development_id_guards) ... ok
+test_inflation_only_loss (test_accounting.BaselineTests.test_inflation_only_loss) ... ok
+test_reject_mixed_scenarios_even_beyond_horizon_and_invalid_metadata (test_accounting.BaselineTests.test_reject_mixed_scenarios_even_beyond_horizon_and_invalid_metadata) ... ok
+test_terminal_total_loss_is_measured_but_not_restarted (test_accounting.BaselineTests.test_terminal_total_loss_is_measured_but_not_restarted) ... ok
+test_two_period_hand_computable_default_fee_ledger (test_accounting.BaselineTests.test_two_period_hand_computable_default_fee_ledger) ... ok
+test_zero_fees_returns_and_inflation (test_accounting.BaselineTests.test_zero_fees_returns_and_inflation) ... ok
+test_zero_market_returns_keep_initial_fee_loss_and_trade_shares (test_accounting.BaselineTests.test_zero_market_returns_keep_initial_fee_loss_and_trade_shares) ... ok
+test_cagr_sample_volatility_and_initial_peak (test_accounting.MetricsTests.test_cagr_sample_volatility_and_initial_peak) ... ok
+test_linear_interpolated_quantiles (test_accounting.MetricsTests.test_linear_interpolated_quantiles) ... ok
+test_post_fee_loss_before_year_end_recovery_is_included (test_accounting.MetricsTests.test_post_fee_loss_before_year_end_recovery_is_included) ... ok
+test_zero_terminal_wealth_and_invalid_metrics (test_accounting.MetricsTests.test_zero_terminal_wealth_and_invalid_metrics) ... ok
+test_callback_gets_immutable_prefix_only (test_accounting.PrefixBoundaryTests.test_callback_gets_immutable_prefix_only) ... ok
+test_decision_exists_before_current_outcomes_are_accessed (test_accounting.PrefixBoundaryTests.test_decision_exists_before_current_outcomes_are_accessed) ... ok
+test_future_perturbation_preserves_earlier_contexts_and_ledgers (test_accounting.PrefixBoundaryTests.test_future_perturbation_preserves_earlier_contexts_and_ledgers) ... ok
+test_invalid_decisions_rejected (test_accounting.PrefixBoundaryTests.test_invalid_decisions_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.018s
+
+OK
