@@ -1,0 +1,71 @@
+{
+  "audit_tool_issues": [
+    "history/infrastructure.json",
+    "history/diagnosis-001.json",
+    "history/diagnosis-002.json",
+    "history/diagnosis-003.json"
+  ],
+  "check_count": 3720,
+  "closure": "K2 midpoint defect closed by independent exact grid and scalar fixtures",
+  "code_verdict": "approve",
+  "evidence_integrity_verdict": "passed",
+  "failures": [],
+  "grid_count": 2048,
+  "grid_failed_count": 0,
+  "historical_boundaries": "never executed or overridden",
+  "imported_code": {
+    "src/safeinvest/accounting.py": {
+      "filename": "git:79a9a63d939c14d4af242d86ceeaa42c044803c4:src/safeinvest/accounting.py",
+      "git_blob": "6ff55fed7cc0ab40f6e609dad7657efc92cd09e7",
+      "sha256": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5"
+    },
+    "src/safeinvest/backtest.py": {
+      "filename": "git:79a9a63d939c14d4af242d86ceeaa42c044803c4:src/safeinvest/backtest.py",
+      "git_blob": "87f5f107f5f76d5da155fc134c1b036b7c431987",
+      "sha256": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6"
+    },
+    "src/safeinvest/metrics.py": {
+      "filename": "git:79a9a63d939c14d4af242d86ceeaa42c044803c4:src/safeinvest/metrics.py",
+      "git_blob": "383aa3fbeed74bce4d4ec1bce7bb091097fc5e05",
+      "sha256": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e"
+    },
+    "src/safeinvest/policy_pilot.py": {
+      "filename": "git:79a9a63d939c14d4af242d86ceeaa42c044803c4:src/safeinvest/policy_pilot.py",
+      "git_blob": "beff7388a03564bc799ee32b15277aaca2045ae4",
+      "sha256": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057"
+    }
+  },
+  "limitations": [
+    "Synthetic CPU kernel review only; no competition CSV, development or final outcomes.",
+    "No production loader/writer/calibration/selector or final-run approval.",
+    "Correct rounding proof reviewed for exact near-underflow route; ordinary log path is tolerance checked.",
+    "Decimal nonconstant oracle requires independent 160/240-digit agreement; not exhaustive proof for arbitrary binary64 inputs.",
+    "Chief provisional tests are provenance only; chief must accept exact delivered commit.",
+    "Historical SOL-013 and SOL-017 negative code verdicts remain immutable."
+  ],
+  "source_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+  "source_sha256": {
+    "audit/SOL-013/findings.json": "b2c82f41ed0abd7c62cf350ed5b554c967085d5cbbee70a3e62d4f6feb64c6bd",
+    "audit/SOL-013/verify.py": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+    "audit/SOL-017/findings.json": "242737618ac0074128502849121a0e01afb31ef71dd3bb1cd7ab8d2a4e4e2472",
+    "audit/SOL-017/verify.py": "5c4341b9c9347ee9b75719823f0af6e30daf33b51a73f644f62f78febcd8188f",
+    "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+    "audit/chief/SOL-017-review.json": "ec9dcc7fd084954827cfdf82bf1826e17ddd8c9b3fbece15058760fedef3d4b9",
+    "audit/chief/policy-k1-validation.json": "4f84abd57d5e08bbca544c70972db08b9056c87bcab9af65373e1cb6897dd00f",
+    "audit/chief/policy-k2-validation.json": "4b97a1499c8cff293f7d971c04233d5ed6c520be6caff31dcb47ebb976ac9d59",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+    "specs/POLICY_NUMERIC_K1.md": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+    "specs/POLICY_NUMERIC_K2.md": "88d5f58a59f090c25331392e4cd5682daf5d050c27b24afe6629d8e4a5eb9997",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+    "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+    "tests/test_policy_pilot.py": "f5ace90172ad5f926613be8d278094f1839eee15286173a8f71827ae032d38d9"
+  },
+  "task_commit": "cc080c884d63e6dcf4100c50758042e4120db120",
+  "task_id": "SOL-021",
+  "unchanged_scope": "AST identical outside helper/imports/CE routing; ordinary log moment and CE postconditions unchanged"
+}

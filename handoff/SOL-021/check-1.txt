@@ -1,0 +1,1 @@
+{"read_only": true, "code_verdict": "approve", "checks": 3720, "integrity": "passed"}

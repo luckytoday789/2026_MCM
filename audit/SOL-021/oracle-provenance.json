@@ -1,0 +1,79 @@
+[
+  {
+    "name": "decimal_ce",
+    "commit": "90f5c8d3fe9b76861f9e302ce23d2e5cd6f2e839",
+    "path": "audit/SOL-017/verify.py",
+    "blob_sha256": "5c4341b9c9347ee9b75719823f0af6e30daf33b51a73f644f62f78febcd8188f",
+    "segment_sha256": "879192bc0d6ad87edef0f78e8d095fba3660c4c4b07ef23ec6d57e8494b573ef"
+  },
+  {
+    "name": "TARGETS",
+    "commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+    "path": "audit/SOL-013/verify.py",
+    "blob_sha256": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+    "segment_sha256": "f7604942b6541fb1789d5b1d7ba4abbf83c82f5f9e2d4556d6936193fe18f709"
+  },
+  {
+    "name": "MODES",
+    "commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+    "path": "audit/SOL-013/verify.py",
+    "blob_sha256": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+    "segment_sha256": "1de063f2401a1294c78d20ad379943e2d2722972d74bf16f8d04129eb51ec3ef"
+  },
+  {
+    "name": "rat",
+    "commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+    "path": "audit/SOL-013/verify.py",
+    "blob_sha256": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+    "segment_sha256": "631a4e1f31d26cdf1b0dc8db9dbdbba63284d7b16c265365b6ddc61b35fc6c8d"
+  },
+  {
+    "name": "unit",
+    "commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+    "path": "audit/SOL-013/verify.py",
+    "blob_sha256": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+    "segment_sha256": "59637d2a92234014b2cdc375836d8a828852507c19c31396f83e772a769976e4"
+  },
+  {
+    "name": "ce",
+    "commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+    "path": "audit/SOL-013/verify.py",
+    "blob_sha256": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+    "segment_sha256": "24d81157a4c9afa729748c9c9400d7563e472d188b7769bfa20cae42536ed2ea"
+  },
+  {
+    "name": "score",
+    "commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+    "path": "audit/SOL-013/verify.py",
+    "blob_sha256": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+    "segment_sha256": "d5ae27ec288724ce09df9c55bb0e6e1062f2213bfb0002b2182a426dc9f6189c"
+  },
+  {
+    "name": "choose",
+    "commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+    "path": "audit/SOL-013/verify.py",
+    "blob_sha256": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+    "segment_sha256": "c826939293ce1b827cee3b4aa7f247da1f2d0b708dbf05712f8cfdf452635f04"
+  },
+  {
+    "name": "rows",
+    "commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+    "path": "audit/SOL-013/verify.py",
+    "blob_sha256": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+    "segment_sha256": "2ed9b43628252fd34507cae320798e15673080e4bb3c0edd8928977ed86d786f"
+  },
+  {
+    "name": "toy_run",
+    "commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+    "path": "audit/SOL-013/verify.py",
+    "blob_sha256": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+    "segment_sha256": "638566cc7e7a9351d10f06dba682382c7e11314bb1dc1386a4d13aa71eb8c0a6"
+  },
+  {
+    "name": "oracle_path",
+    "commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+    "path": "audit/SOL-013/verify.py",
+    "blob_sha256": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+    "segment_sha256": "cfe2e7bc0b94e07a6c8193f78dacdd52adfbe5f756f4794fc98f315c1cf92c60"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "shell_tool_failures": 2,
+  "reason": "exec_command helper_unknown_error: setup refresh had errors; no shell command started",
+  "fallback": "Node child_process.execFile, no shell interpolation",
+  "probes": [
+    {
+      "command": "git show HEAD:ops/tasks/SOL-021.json",
+      "exit": 128,
+      "reason": "task published after pinned base; resolved at local origin/main cc080c884d63e6dcf4100c50758042e4120db120"
+    },
+    {
+      "command": "python -B -c import numpy",
+      "exit": 1,
+      "reason": "numpy unavailable; reviewed modules and independent audit require standard library only; no install or production run"
+    }
+  ],
+  "audit_tool_mistakes": [
+    "Initial combined source read exceeded output limit; reread named functions in bounded chunks.",
+    "Initial task path probe used base HEAD before locating task at dispatch commit."
+  ],
+  "effects": "No numerical result affected; no old evidence modified."
+}

@@ -1,0 +1,12 @@
+{
+  "kind": "audit_tool_mistake",
+  "trial": "trial-001.json",
+  "false_failure": "finite positive extrema max",
+  "reason": "Asserted exact lower bound for constant maximum-finite support on ordinary log route. Actual relative error is within declared 3e-12; exact-rounding contract applies to near-underflow route.",
+  "correction": "Keep finite-positive assertion; allow declared relative tolerance only at ordinary extrema. No production change, parameter tuning or numerical observation removal.",
+  "other_tool_errors": "Two malformed JavaScript tool-call constructions failed before executing; no file write or numerical run occurred.",
+  "preserved": [
+    "trial-001.json",
+    "trial-001-verify.py"
+  ]
+}
