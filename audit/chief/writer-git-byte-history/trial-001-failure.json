@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T22:39:55.470285+00:00",
+  "error": "AssertionError: ('false', 'repaired/.gitattributes')",
+  "source_sha256": "7b5928db85e1f553e73abf08b20680b9f3c06393f4d6e74ad40ac6b1ecd1cbe9",
+  "scratch": ".runtime/writer-git-byte-probe-5edbac553e964f99810681a9775b3e38",
+  "cause": "Probe assumed autocrlf=false implied LF for unqualified text. Windows native eol expands the scoped attributes file itself; a txt-only rule does not cover that control file.",
+  "correction": "Pin core.eol explicitly, cover both lf/crlf and autocrlf settings, and scope all new audit text to LF. This is probe design, not an accepted writer change."
+}

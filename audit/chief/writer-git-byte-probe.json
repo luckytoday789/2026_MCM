@@ -1,0 +1,701 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T22:39:59.768636+00:00",
+  "source_attributes_commit": "ade71e13e02f4c5655b7ad873297ea5fd8201040",
+  "source_attributes_sha256": "b22b3b1646e5e261727ff5be25eb7e35eedc278f393807801fc272862a06d908",
+  "scratch_path": "D:\\30576\\Documents\\2026_MCM\\.runtime\\writer-git-byte-probe-e0f57b93cefd4caea78fc91dfdfea118",
+  "trials": [
+    {
+      "autocrlf": "false",
+      "core_eol": "lf",
+      "status": "passed",
+      "files": {
+        "legacy/failure.json": {
+          "original_sha256": "f9dfd6232247afe07754d38dc491f92ce78240c33a62143014099974f3189111",
+          "git_blob_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "checkout_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "original_bytes": 28,
+          "git_blob_bytes": 25,
+          "checkout_bytes": 25
+        },
+        "legacy/partial.txt": {
+          "original_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "git_blob_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "checkout_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "original_bytes": 25,
+          "git_blob_bytes": 25,
+          "checkout_bytes": 25
+        },
+        "repaired/failure.json": {
+          "original_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "git_blob_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "checkout_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "original_bytes": 25,
+          "git_blob_bytes": 25,
+          "checkout_bytes": 25
+        },
+        "repaired/partial.txt": {
+          "original_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "git_blob_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "checkout_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "original_bytes": 25,
+          "git_blob_bytes": 25,
+          "checkout_bytes": 25
+        },
+        "repaired/.gitattributes": {
+          "original_sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+          "git_blob_sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+          "checkout_sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+          "original_bytes": 14,
+          "git_blob_bytes": 14,
+          "checkout_bytes": 14
+        }
+      },
+      "attributes": "legacy/failure.json: text: set\nlegacy/failure.json: eol: lf\nlegacy/partial.txt: text: auto\nrepaired/failure.json: text: set\nrepaired/failure.json: eol: lf\nrepaired/partial.txt: text: set\nrepaired/partial.txt: eol: lf\nrepaired/.gitattributes: text: set\nrepaired/.gitattributes: eol: lf\n",
+      "commands": [
+        {
+          "argv": [
+            "git",
+            "init",
+            "-q"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "config",
+            "core.autocrlf",
+            "false"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "config",
+            "core.eol",
+            "lf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "config",
+            "core.safecrlf",
+            "false"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "add",
+            "--",
+            ".gitattributes",
+            "legacy",
+            "repaired"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "checkout-index",
+            "--all",
+            "--prefix=D:/30576/Documents/2026_MCM/.runtime/writer-git-byte-probe-e0f57b93cefd4caea78fc91dfdfea118/checkout-false-lf/"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":legacy/failure.json"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":legacy/partial.txt"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":repaired/failure.json"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":repaired/partial.txt"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":repaired/.gitattributes"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "check-attr",
+            "--all",
+            "--",
+            "legacy/failure.json",
+            "legacy/partial.txt",
+            "repaired/failure.json",
+            "repaired/partial.txt",
+            "repaired/.gitattributes"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "autocrlf": "false",
+      "core_eol": "crlf",
+      "status": "passed",
+      "files": {
+        "legacy/failure.json": {
+          "original_sha256": "f9dfd6232247afe07754d38dc491f92ce78240c33a62143014099974f3189111",
+          "git_blob_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "checkout_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "original_bytes": 28,
+          "git_blob_bytes": 25,
+          "checkout_bytes": 25
+        },
+        "legacy/partial.txt": {
+          "original_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "git_blob_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "checkout_sha256": "353a235a9cbe479d3d4c9b6ab716d577080c226538783da72ff26168da372b3d",
+          "original_bytes": 25,
+          "git_blob_bytes": 25,
+          "checkout_bytes": 26
+        },
+        "repaired/failure.json": {
+          "original_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "git_blob_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "checkout_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "original_bytes": 25,
+          "git_blob_bytes": 25,
+          "checkout_bytes": 25
+        },
+        "repaired/partial.txt": {
+          "original_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "git_blob_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "checkout_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "original_bytes": 25,
+          "git_blob_bytes": 25,
+          "checkout_bytes": 25
+        },
+        "repaired/.gitattributes": {
+          "original_sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+          "git_blob_sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+          "checkout_sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+          "original_bytes": 14,
+          "git_blob_bytes": 14,
+          "checkout_bytes": 14
+        }
+      },
+      "attributes": "legacy/failure.json: text: set\nlegacy/failure.json: eol: lf\nlegacy/partial.txt: text: auto\nrepaired/failure.json: text: set\nrepaired/failure.json: eol: lf\nrepaired/partial.txt: text: set\nrepaired/partial.txt: eol: lf\nrepaired/.gitattributes: text: set\nrepaired/.gitattributes: eol: lf\n",
+      "commands": [
+        {
+          "argv": [
+            "git",
+            "init",
+            "-q"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "config",
+            "core.autocrlf",
+            "false"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "config",
+            "core.eol",
+            "crlf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "config",
+            "core.safecrlf",
+            "false"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "add",
+            "--",
+            ".gitattributes",
+            "legacy",
+            "repaired"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "checkout-index",
+            "--all",
+            "--prefix=D:/30576/Documents/2026_MCM/.runtime/writer-git-byte-probe-e0f57b93cefd4caea78fc91dfdfea118/checkout-false-crlf/"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":legacy/failure.json"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":legacy/partial.txt"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":repaired/failure.json"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":repaired/partial.txt"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":repaired/.gitattributes"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "check-attr",
+            "--all",
+            "--",
+            "legacy/failure.json",
+            "legacy/partial.txt",
+            "repaired/failure.json",
+            "repaired/partial.txt",
+            "repaired/.gitattributes"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "autocrlf": "true",
+      "core_eol": "lf",
+      "status": "passed",
+      "files": {
+        "legacy/failure.json": {
+          "original_sha256": "f9dfd6232247afe07754d38dc491f92ce78240c33a62143014099974f3189111",
+          "git_blob_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "checkout_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "original_bytes": 28,
+          "git_blob_bytes": 25,
+          "checkout_bytes": 25
+        },
+        "legacy/partial.txt": {
+          "original_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "git_blob_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "checkout_sha256": "353a235a9cbe479d3d4c9b6ab716d577080c226538783da72ff26168da372b3d",
+          "original_bytes": 25,
+          "git_blob_bytes": 25,
+          "checkout_bytes": 26
+        },
+        "repaired/failure.json": {
+          "original_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "git_blob_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "checkout_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "original_bytes": 25,
+          "git_blob_bytes": 25,
+          "checkout_bytes": 25
+        },
+        "repaired/partial.txt": {
+          "original_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "git_blob_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "checkout_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "original_bytes": 25,
+          "git_blob_bytes": 25,
+          "checkout_bytes": 25
+        },
+        "repaired/.gitattributes": {
+          "original_sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+          "git_blob_sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+          "checkout_sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+          "original_bytes": 14,
+          "git_blob_bytes": 14,
+          "checkout_bytes": 14
+        }
+      },
+      "attributes": "legacy/failure.json: text: set\nlegacy/failure.json: eol: lf\nlegacy/partial.txt: text: auto\nrepaired/failure.json: text: set\nrepaired/failure.json: eol: lf\nrepaired/partial.txt: text: set\nrepaired/partial.txt: eol: lf\nrepaired/.gitattributes: text: set\nrepaired/.gitattributes: eol: lf\n",
+      "commands": [
+        {
+          "argv": [
+            "git",
+            "init",
+            "-q"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "config",
+            "core.autocrlf",
+            "true"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "config",
+            "core.eol",
+            "lf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "config",
+            "core.safecrlf",
+            "false"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "add",
+            "--",
+            ".gitattributes",
+            "legacy",
+            "repaired"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "checkout-index",
+            "--all",
+            "--prefix=D:/30576/Documents/2026_MCM/.runtime/writer-git-byte-probe-e0f57b93cefd4caea78fc91dfdfea118/checkout-true-lf/"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":legacy/failure.json"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":legacy/partial.txt"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":repaired/failure.json"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":repaired/partial.txt"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":repaired/.gitattributes"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "check-attr",
+            "--all",
+            "--",
+            "legacy/failure.json",
+            "legacy/partial.txt",
+            "repaired/failure.json",
+            "repaired/partial.txt",
+            "repaired/.gitattributes"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "autocrlf": "true",
+      "core_eol": "crlf",
+      "status": "passed",
+      "files": {
+        "legacy/failure.json": {
+          "original_sha256": "f9dfd6232247afe07754d38dc491f92ce78240c33a62143014099974f3189111",
+          "git_blob_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "checkout_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "original_bytes": 28,
+          "git_blob_bytes": 25,
+          "checkout_bytes": 25
+        },
+        "legacy/partial.txt": {
+          "original_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "git_blob_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "checkout_sha256": "353a235a9cbe479d3d4c9b6ab716d577080c226538783da72ff26168da372b3d",
+          "original_bytes": 25,
+          "git_blob_bytes": 25,
+          "checkout_bytes": 26
+        },
+        "repaired/failure.json": {
+          "original_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "git_blob_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "checkout_sha256": "c709949deb369b8416c50ce201899cde7f92a8486684d909d190730cc422264a",
+          "original_bytes": 25,
+          "git_blob_bytes": 25,
+          "checkout_bytes": 25
+        },
+        "repaired/partial.txt": {
+          "original_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "git_blob_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "checkout_sha256": "59b929c6f1432632955e79674f489294fca37ff337f056678df7c11c9a78aac8",
+          "original_bytes": 25,
+          "git_blob_bytes": 25,
+          "checkout_bytes": 25
+        },
+        "repaired/.gitattributes": {
+          "original_sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+          "git_blob_sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+          "checkout_sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+          "original_bytes": 14,
+          "git_blob_bytes": 14,
+          "checkout_bytes": 14
+        }
+      },
+      "attributes": "legacy/failure.json: text: set\nlegacy/failure.json: eol: lf\nlegacy/partial.txt: text: auto\nrepaired/failure.json: text: set\nrepaired/failure.json: eol: lf\nrepaired/partial.txt: text: set\nrepaired/partial.txt: eol: lf\nrepaired/.gitattributes: text: set\nrepaired/.gitattributes: eol: lf\n",
+      "commands": [
+        {
+          "argv": [
+            "git",
+            "init",
+            "-q"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "config",
+            "core.autocrlf",
+            "true"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "config",
+            "core.eol",
+            "crlf"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "config",
+            "core.safecrlf",
+            "false"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "add",
+            "--",
+            ".gitattributes",
+            "legacy",
+            "repaired"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "checkout-index",
+            "--all",
+            "--prefix=D:/30576/Documents/2026_MCM/.runtime/writer-git-byte-probe-e0f57b93cefd4caea78fc91dfdfea118/checkout-true-crlf/"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":legacy/failure.json"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":legacy/partial.txt"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":repaired/failure.json"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":repaired/partial.txt"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "show",
+            ":repaired/.gitattributes"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "argv": [
+            "git",
+            "check-attr",
+            "--all",
+            "--",
+            "legacy/failure.json",
+            "legacy/partial.txt",
+            "repaired/failure.json",
+            "repaired/partial.txt",
+            "repaired/.gitattributes"
+          ],
+          "returncode": 0,
+          "stderr": ""
+        }
+      ]
+    }
+  ],
+  "status": "passed",
+  "purpose": "Independently reproduce W-LF-1 and test the specified deterministic-LF plus scoped-attribute correction on tiny nonnumeric text.",
+  "actual_writer_repaired": false,
+  "writer_acceptance": false,
+  "production_authorized": false,
+  "limitations": [
+    "Does not replace SOL-031 real source/fixture Git checkout validation or exact receipt review."
+  ]
+}
