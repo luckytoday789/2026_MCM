@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T01:43:54.794368+08:00",
-  "reason": "Accepted negative SOL-009 evidence, corrected v2 specification and kernel pass chief synthetic checks. Push prerequisites first, then publish independent correction/kernel review and gated calibration successor.",
+  "next_wake_at": "2026-10-20T01:45:36.630275+08:00",
+  "reason": "SOL-013 ready for corrected design/kernel review; SOL-014 waiting on that acceptance. Chief can prepare precise production output/checker and selection implementation contracts while review runs.",
   "next_actions": [
-    "After prerequisite source commit is on origin/main, publish SOL-013 for v2 design closure plus corrected kernel independent synthetic review; preserve SOL-011 unchanged and cancelled.",
-    "Publish SOL-014 calibration-review successor with corrected source hashes, waiting for accepted unchanged SOL-013; preserve original SOL-012.",
-    "Prepare precise production driver and selection/suitability handoff while remote review runs; no actual policy outcomes or final access until required code reviews pass.",
-    "Reuse accepted HY3-003 results. Personalized rescreen, development policy comparisons, sensitivity, freeze, final evaluation and manuscript remain unfinished.",
-    "Respect local quota drain and original upload restriction; do not restart supervisor or expose private team identities."
+    "Inspect exact SOL-013 receipt when delivered; independently replay numerical evidence and require BOTH corrected design and kernel approve before production work.",
+    "Release existing SOL-014 promptly after unchanged SOL-013 acceptance; source changes require a new immutable task.",
+    "Prepare granular production driver/output-verifier and selection/suitability contracts against v2 and accepted baseline APIs; no competition policy run yet.",
+    "After code acceptance issue fixed CPU commands to HY3 with real pushed origin/main base; then request independent Sol review of exact HY3 evidence.",
+    "Retain personalized own-horizon rescreen, sensitivity, final freeze/evaluation and report work as unfinished. Respect local quota and private team upload restriction."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T01:38:54.794368+08:00",
+  "last_completed_at": "2026-10-20T01:40:36.630275+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

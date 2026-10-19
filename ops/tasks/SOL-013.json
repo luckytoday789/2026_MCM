@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": "SOL-013",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "7c804ffb960be6b9fadfc840e246ff060668a96d",
+  "depends_on": [
+    "SOL-001",
+    "SOL-004",
+    "SOL-009",
+    "SOL-010"
+  ],
+  "split": "synthetic",
+  "max_seconds": 1500,
+  "scope": "Close SOL-009 D1/D2 against corrected v2 design and independently audit the chief policy kernel using synthetic-only evidence.",
+  "parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "competition_outcomes_allowed": false,
+    "final_outcomes_allowed": false,
+    "source_sha256": {
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "specs/POLICY_CORRECTION_V2.md": "b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383",
+      "src/safeinvest/policy_pilot.py": "1f439cff5627279219867497b891549f3702434966b3194c11f8e18894ffba90",
+      "tests/test_policy_pilot.py": "0a8d605c38e75aef00a7185978a8925989b413aa1eb44c0bd534085125bdb11f",
+      "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "audit/SOL-009/findings.json": "1b425c6b0ab0399c2c94614768ab362975e676cfd474e964aa3a1ee4d60c6e83",
+      "audit/chief/SOL-009-review.json": "6f1a480162704fa67a2f70358cc9413584c44d6a455d662e7369f7c7ea4a8964"
+    },
+    "release_requires": "Ready now: accepted negative SOL-009 evidence and successful SOL-010 are recorded; this task itself must approve corrected design AND kernel before production integration.",
+    "primary_fee_rate": 0.0025,
+    "sensitivity_fee_rate": 0.005,
+    "gamma": 4,
+    "fee_buffer_multiplier": 2,
+    "supersedes_task": "SOL-011",
+    "prior_negative_design_review": "3f79e07b87ec92a4a74049da6166093ba4e88e6f"
+  },
+  "allowed_paths": [
+    "audit/SOL-013"
+  ],
+  "deliverables": [
+    "audit/SOL-013/review.md",
+    "audit/SOL-013/findings.json",
+    "audit/SOL-013/verify.py",
+    "audit/SOL-013/verification.json"
+  ],
+  "commands": [],
+  "validation_commands": [
+    [
+      "{python}",
+      "-B",
+      "audit/SOL-013/verify.py",
+      "--check"
+    ]
+  ],
+  "acceptance_checks": [
+    "Validate immutable task/base, exact source/blob hashes, allowed paths, actual independent Python 3.12 execution; no competition outcomes.",
+    "Close SOL-009 D1 using eligible-first, maximum-anchored ties, final strict hurdle and priority; independently check near-tie/ineligible-active/nontransitive-chain examples. Close D2 with paired median/folds versus marginal tails, BOTH adaptive controls and context-fails eligibility.",
+    "Independently recompute gamma=4 CE, exact inflation, 15:n mixture n=0..5, buffered versus actual fee and rational initial holdings without production expected-value helpers.",
+    "Challenge all five modes, zero/primary/doubled fees, strict boundaries, active-state update on any executed target request even when T<=1e-10, positive tiny fees, first deployment/null, persistent year-1 deferred flag and reason semantics.",
+    "Probe year-6 adaptive restriction, exact prefix/no-current-outcome timing, future perturbations, state reuse/mutation, observer/engine fee agreement, post-fee inflation drawdown, latch and exact holdings while pending.",
+    "Read-only --check must bind source and saved artifacts, reproduce independent numerical evidence at proper tolerances and reject corruption; preserve failed trials. Source checks must use pinned Git objects, not require current main checkout to stay unchanged.",
+    "Return separate corrected_design_verdict and code_verdict (approve/changes_required); a supported negative result is valid review evidence. No production implementation, new parameter search, final access, installs, watchers or task dispatch."
+  ],
+  "instructions": "Read AGENTS.md and the locked problem/accounting contracts. SOL-009 is accepted as negative independent design evidence, NOT design approval. SOL-011 was never executed and is cancelled because its unchanged-design release condition failed. This is its corrected immutable successor plus narrow D1/D2 closure, not a repeat of accepted review work. Review exactly the sources in parameters.source_sha256 at this base, with current v2 taking precedence over historical prototype prose. No current main merge or silent redesign.\n\nFirst independently close the two concrete SOL-009 blockers and inspect the L1-L8 resolutions in POLICY_CORRECTION_V2.md. Use synthetic comparisons to distinguish median paired gain from difference of medians, and differences of marginal p10/p90 from quantiles of paired differences. Verify explicit fixed comparators [balanced_context, balanced_cost], adaptive eligibility even if context fails provided BOTH direct gates pass, inclusive numeric thresholds versus strictly positive folds, and separation of primary choice from doubled-fee robustness. No production selection module exists yet; this portion is design closure only. Confirm own-horizon personalized risk AND purchasing-power rescreen with referral/no fallback, full eligibility sets and unchanged normative numeric parameters.\n\nThen build an independent scalar/rational oracle in audit/SOL-013/verify.py and audit the actual corrected policy kernel. The chief's 17 tests are provisional, not independent evidence. Check inverse-cube utility, exact real factors, 15:n mixture, all targets, strict S>keep+1e-12, ties to eligible maximum and active/defensive/central/growth priority. In prior=(1.10,1.02,1), all-bills-to-thirds, k=.0025 derive rational initial fee, buffered score and actual wealth independently. Probe finite extreme inputs and invalid final observations; distinguish invalid failed runs from completed suspended paths.\n\nChallenge sequential state reuse, wrong scenario/history, no current observations, prefix horizon equality and future perturbations. Adaptive alternatives first appear at year 6. Independently reconstruct CPI, holdings and post-fee/year-end peaks. Include fee-induced loss then same-year recovery, pure-inflation loss, latch persistence, and zero-fee exact component-dollar keep while pending. The reporting epsilon now ONLY controls is_trade; an accepted target-change request updates active state and executed_target_change even below 1e-10, with its exact fee still charged. Find/probe the tiny-transfer corner directly; an explicitly labelled injected decision fixture is acceptable for isolated transition mechanics, but must not be mistaken for evidence the real score gate produced it. Verify first_deployment_year/null and persistent year-1 initial_allocation_deferred separately. A first deployment after year 1 has reason initial_allocation; later requests use rebalance/target_change. No existing accepted baseline semantics change.\n\nWrite review.md, findings.json and verification.json with precise reviewed source, expected and observed numerical facts, separate corrected_design_verdict/code_verdict, blockers/limitations and exact fixes. Initial evidence creation refuses overwrite; preserve every meaningful failure with diagnosis. Portable --check recomputes facts and verifies source/artifact hashes read-only, compares numerical tolerances and exits nonzero on deliberately corrupted scratch evidence. Use pinned Git blobs and verify code bytes imported match pinned source (document LF normalization if needed); never demand that HEAD stay a worker commit. A negative verdict itself is not evidence failure. Can use accepted SOL-009 mathematical evidence as context, but actual kernel checks must be independent of production expected-value helpers.\n\nThis kernel still has no production loader, output writer, profile selector or final API. Do not implement those or demand this narrow module certify them. Scope is audit/SOL-013 only plus ignored scratch. Do not read original/development/final CSV outcomes, rerun HY3-003, install anything, edit source/tasks/runtime/private member files, start or restart watchers, publish tasks or run actual strategy outcomes. CPU-only within 25 minutes; keep model output concise. The runner handles receipt and branch push; chief alone accepts.\n"
+}
