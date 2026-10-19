@@ -740,13 +740,15 @@
     },
     {
       "id": "SOL-027",
-      "state": "waiting",
+      "state": "ready",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "f086a587d0a0ec0aa1477d28df58f036482dac1dbc7e0add8f298553daf90f00",
       "branch": "work/sol/SOL-027-a1",
-      "note": "Independent personalized source review, held after exact SOL-026 usage-limit failure. Release only after real Sol availability evidence; writer recovery SOL-029 has priority. Mathematical dependencies already accepted.",
-      "resource_hold": "sol_model_quota_after_SOL-026"
+      "note": "Released existing immutable independent personalized review after exact completed SOL-029 receipt, 25 source pins and accepted prerequisites verified. Writer acceptance remains separate.",
+      "released_at": "2026-10-19T22:31:45.059110+00:00",
+      "release_evidence": "audit/chief/SOL-029-structural.json",
+      "released_after_commit": "a24128200c849567cb6f7dba2d6f0e85a79f3713"
     },
     {
       "id": "SOL-028",
