@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-028",
+  "checked_at": "2026-10-19T22:08:52.019656+00:00",
+  "reviewed_commit": "7ac6afe1169740666f0f65d5f2d9674fd2d4c964",
+  "base_commit": "df038cb116c4818c14454231500f992af3f26d0f",
+  "task_sha256": "d41ed4659e2d295d5b7ac09a7936d975833bbecd1282e54592791ceeea9aaf48",
+  "status": "accepted_availability_probe",
+  "canonical_artifact_hashes_verified": {
+    "audit/SOL-028/availability.json": "4ae6aced21deab9dc54e9675170fb0f65031bf64bfc7ff4a1816224cedae917b",
+    "handoff/SOL-028/check-0.txt": "a620d17433955533f42fcc4f2a757bbe1932bbc193707a6f0022fa350064e7df",
+    "handoff/SOL-028/check-1.txt": "67ef69dba6e730ace87bf480a334a3c7f9d70f30e49328ceb7a5008a1ea1909a",
+    "handoff/SOL-028/check-2.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "accepted_paths": [
+    "audit/SOL-028/availability.json",
+    "handoff/SOL-028/check-0.txt",
+    "handoff/SOL-028/check-1.txt",
+    "handoff/SOL-028/check-2.txt",
+    "handoff/SOL-028/result.json"
+  ],
+  "excluded_paths": [],
+  "source_pins_verified": {
+    "scripts/probe_sol_availability.py": "03999b341b1c63063000e90a259813fd31ef62352457a8312b6c88c3a9771252",
+    "scripts/check_worker_env.py": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8"
+  },
+  "commands_exact": true,
+  "command_exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "python": "3.12.14",
+  "availability": {
+    "schema_version": 1,
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "xhigh",
+    "not_before": "2026-10-20T06:05:00+08:00",
+    "started_at": "2026-10-19T22:05:00.005284+00:00",
+    "finished_at": "2026-10-19T22:05:12.144022+00:00",
+    "model_calls": 1,
+    "exit_code": 0,
+    "usable": true,
+    "expected_response": "SAFEINVEST_SOL_AVAILABLE",
+    "response": "SAFEINVEST_SOL_AVAILABLE",
+    "error": null,
+    "quota_error_detected": false,
+    "model_log_sha256": "5c73a4a1642afdd45578f8dfa21d61de0630f30e882b23086ca8e1ea304641e0",
+    "note": "A real response proves availability only at probe time, not remaining review budget."
+  },
+  "scope": "One actual assigned-machine model response at recorded time only; no numerical or future-budget certification. No additional model call executed by chief.",
+  "release_task": "SOL-029",
+  "release_task_sha256": "951ca85be546855ef2b606e94d7ea0eb2acb39f03ab34e70c707bccbac6015ac",
+  "release_source_pins_verified": 46,
+  "prior_failure_preserved": "SOL-026",
+  "held_tasks": [
+    "SOL-027",
+    "SOL-030"
+  ],
+  "final_data_open": false
+}

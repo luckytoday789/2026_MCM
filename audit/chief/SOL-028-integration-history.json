@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-19T22:09:44.342896+00:00",
+  "failure": "UnicodeDecodeError: gbk codec cannot decode byte 0xae at position 5576 while reading ops/chief-workplan.json without explicit encoding",
+  "effect": "Exact probe validation and copied artifacts/review/queue update completed locally; workplan update, commit and push did not run. No numerical result changed.",
+  "repair": "Read existing UTF-8 workplan with explicit encoding, validate preserved edits and complete checkpoint/commit/push. Do not recreate outputs or repeat remote model call."
+}

@@ -750,24 +750,36 @@
     },
     {
       "id": "SOL-028",
-      "state": "ready",
+      "state": "accepted",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "d41ed4659e2d295d5b7ac09a7936d975833bbecd1282e54592791ceeea9aaf48",
       "branch": "work/sol/SOL-028-a1",
-      "note": "Released after 05:55 Beijing with exact immutable base/digest/two script pins verified. Single assigned-machine model probe cannot start before 06:05. This release does not establish model availability or release other holds.",
+      "note": "Exact canonical receipt, two source pins, five allowed paths, Python 3.12 and three successful commands verified. One real response began 06:05:00 Beijing; current access only, no future quota guarantee.",
       "released_at": "2026-10-19T22:01:16.554011+00:00",
-      "release_evidence": "audit/chief/SOL-028-release.json"
+      "release_evidence": "audit/chief/SOL-028-release.json",
+      "reviewed_commit": "7ac6afe1169740666f0f65d5f2d9674fd2d4c964",
+      "accepted_paths": [
+        "audit/SOL-028/availability.json",
+        "handoff/SOL-028/check-0.txt",
+        "handoff/SOL-028/check-1.txt",
+        "handoff/SOL-028/check-2.txt",
+        "handoff/SOL-028/result.json"
+      ],
+      "excluded_paths": [],
+      "acceptance_evidence": "audit/chief/SOL-028-review.json"
     },
     {
       "id": "SOL-029",
-      "state": "waiting",
+      "state": "ready",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "951ca85be546855ef2b606e94d7ea0eb2acb39f03ab34e70c707bccbac6015ac",
       "branch": "work/sol/SOL-029-a1",
-      "note": "Narrow writer recovery held for successful real SOL-028 availability receipt. Release before SOL-027. Failed SOL-026 never satisfies positive writer approval.",
-      "resource_hold": "sol_model_quota_after_SOL-026"
+      "note": "Released first after exact successful SOL-028 receipt; immutable task and 46 pins verified. Recover failed writer identity/evidence only. SOL-026 remains cancelled; independent chief acceptance required.",
+      "release_evidence": "audit/chief/SOL-028-review.json",
+      "released_after_commit": "7ac6afe1169740666f0f65d5f2d9674fd2d4c964",
+      "released_at": "2026-10-19T22:08:52.019656+00:00"
     },
     {
       "id": "SOL-030",
