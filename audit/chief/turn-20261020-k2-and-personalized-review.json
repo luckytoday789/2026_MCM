@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T18:22:24.604103+00:00",
+  "validated_main_commit": "dd4759fe22a2b7d11da2dddb886c43681aa6c43f",
+  "accepted_results": [
+    {
+      "task_id": "SOL-017",
+      "reviewed_commit": "90f5c8d3fe9b76861f9e302ce23d2e5cd6f2e839",
+      "integrated_exact_blob_paths": 16,
+      "verdict": "changes_required"
+    },
+    {
+      "task_id": "SOL-020",
+      "reviewed_commit": "2fbd4598606b41a786bd931046adb0ecc8b42d78",
+      "integrated_exact_blob_paths": 10,
+      "verdict": "approve"
+    }
+  ],
+  "new_tasks": [
+    {
+      "task_id": "SOL-021",
+      "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+      "state": "ready",
+      "max_seconds": 900,
+      "pinned_sources": 19
+    },
+    {
+      "task_id": "SOL-022",
+      "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+      "state": "waiting",
+      "max_seconds": 1200,
+      "pinned_sources": 14
+    },
+    {
+      "task_id": "SOL-023",
+      "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+      "state": "waiting",
+      "max_seconds": 1500,
+      "pinned_sources": 18
+    },
+    {
+      "task_id": "SOL-024",
+      "base_commit": "6c1997c0ac20430af0b7e11d9fb0b29ab8506a11",
+      "state": "ready",
+      "max_seconds": 900,
+      "pinned_sources": 17
+    }
+  ],
+  "published_existing_attempts_unchanged": true,
+  "final_data_open": false,
+  "freeze_exists": false,
+  "runtime_helpers_changed": false,
+  "quota_remaining_percent": 70.0,
+  "budget_drain": false,
+  "private_identity_files_uploaded": false,
+  "latest_receipt_refs": [
+    "2fbd4598606b41a786bd931046adb0ecc8b42d78 origin/work/sol/SOL-020-a1",
+    "90f5c8d3fe9b76861f9e302ce23d2e5cd6f2e839 origin/work/sol/SOL-017-a1",
+    "1908813ef2627ca6e15591278ec15ccf2f9e9cff origin/work/sol/SOL-013-a1",
+    "3f79e07b87ec92a4a74049da6166093ba4e88e6f origin/work/sol/SOL-009-a1"
+  ],
+  "outcome_zh": "已验收并保留 SOL-017 K2 负面证据，修复后本机夹具通过并派发 SOL-021 独立复核；已验收 SOL-020 个性化设计。已准备最终评估规范并派发 SOL-024 设计审查，最终数据保持关闭。无需人工操作。"
+}
