@@ -22,6 +22,10 @@ No policy selection or customer recommendation follows from these references.
 The authoritative current states are in `ops/queue.json`; use the exact worker
 SHAs and acceptance records above for citations.
 
+- [component-index.md](component-index.md) links ten accepted source modules to
+  exact reviewed commits, task/receipt digests and chief acceptance hashes.
+  Reproduce source identity with `python -B report/build_component_index.py --check`;
+  this index does not certify outcome claims or final readiness.
 - [methods-draft.md](methods-draft.md) contains reusable English text for the
   locked accounting, annual metrics and scenario protocol. It contains no
   competition performance result or new policy parameter.

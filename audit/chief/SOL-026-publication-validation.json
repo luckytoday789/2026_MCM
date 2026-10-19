@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T20:02:37.561708+00:00",
+  "task_id": "SOL-026",
+  "base_commit": "8d00ca8eafc00fd636273be4125216e981289804",
+  "publication_commit": "7c0942496db426063f2591dacda3f2f6a7dd4a67",
+  "source_pins_verified": 35,
+  "queue_task_digests_verified": [
+    "SOL-001",
+    "SOL-002",
+    "SOL-003",
+    "HY3-002",
+    "SOL-004",
+    "SOL-005",
+    "HY3-003",
+    "SOL-006",
+    "SOL-007",
+    "SOL-008",
+    "SOL-009",
+    "SOL-010",
+    "SOL-011",
+    "SOL-012",
+    "SOL-013",
+    "SOL-014",
+    "SOL-015",
+    "SOL-016",
+    "SOL-017",
+    "SOL-018",
+    "SOL-019",
+    "SOL-020",
+    "SOL-021",
+    "SOL-022",
+    "SOL-023",
+    "SOL-024",
+    "SOL-025",
+    "SOL-026"
+  ],
+  "legacy_queue_exceptions": [
+    {
+      "task_id": "HY3-001",
+      "computed_digest": "df3ff0943a0e9e660af066ee277c3abd801f8893f2d64a4f8a2dcdb3f2d9085e",
+      "note": "Historical queue entry lacks a digest; preserved unchanged. Not counted as a queue-digest comparison."
+    }
+  ],
+  "earlier_validation_failure": {
+    "error": "KeyError: task_sha256 for historical HY3-001 queue row",
+    "effect": "Stopped broad queue scan before its work-plan update. New SOL-026 generator had already validated real pushed base, dependencies, source pins and task schema; task publication proceeded. No immutable task was changed.",
+    "resolution": "Rechecked every queue digest that exists and all new task pins/publication. Preserve missing historical metadata explicitly rather than inventing it."
+  },
+  "final_data_open": false,
+  "production_execution_authorized": false
+}

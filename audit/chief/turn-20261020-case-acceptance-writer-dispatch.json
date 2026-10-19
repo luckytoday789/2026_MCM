@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T04:03:28.080790+08:00",
+  "outcome": "Accepted SOL-025; dispatched SOL-026 from pushed acceptance; prepared report source index",
+  "accepted_reviewed_commit": "803b7a085284405ee5ee4d4f0d5720ebaa2e67f7",
+  "acceptance_main_commit": "8d00ca8eafc00fd636273be4125216e981289804",
+  "acceptance": {
+    "artifact_paths": 30,
+    "task_source_pins": 26,
+    "clean_environment_replayed_tests": 90,
+    "worker_numeric_comparisons": 13976,
+    "chief_fresh_numeric_comparisons": 1920,
+    "previous_identical_source_comparisons": 3310,
+    "chief_corruptions_rejected": 3
+  },
+  "publication_commit": "7c0942496db426063f2591dacda3f2f6a7dd4a67",
+  "writer_task": "SOL-026",
+  "writer_source_pins": 35,
+  "source_index_components": 10,
+  "source_index_read_only_check": "passed",
+  "preserved_failure_records": [
+    "audit/chief/SOL-023-failure-review.json",
+    "audit/chief/SOL-025-integration-check.json",
+    "audit/chief/SOL-026-publication-validation.json",
+    "audit/chief/component-index-validation.json"
+  ],
+  "observed_sol_status": {
+    "role": "sol",
+    "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
+    "state": "running",
+    "python": "3.12.14",
+    "updated_at": "2026-10-19T20:00:10.120960+00:00",
+    "lease_until": "2026-10-19T20:10:10.120960+00:00",
+    "task_id": "SOL-026",
+    "branch": "work/sol/SOL-026-a1"
+  },
+  "observed_hy3_status": {
+    "role": "hy3",
+    "machine_id": "937a9358dc114be8b3718ff13e3da4f9",
+    "state": "idle",
+    "python": "3.12.10",
+    "updated_at": "2026-10-19T20:01:03.302618+00:00",
+    "lease_until": "2026-10-19T20:11:03.302618+00:00"
+  },
+  "quota": {
+    "limit_id": "codex",
+    "window_minutes": 10080,
+    "used_percent": 39.0,
+    "remaining_percent": 61.0,
+    "resets_at": 1792913381,
+    "source": "Codex account/rateLimits/read",
+    "checked_at": "2026-10-19T20:03:04.279038+00:00",
+    "state": "verified",
+    "stop_remaining_percent": 50
+  },
+  "local_budget_draining": false,
+  "final_data_open": false,
+  "new_policy_production_runs": 0,
+  "baseline_reruns": 0,
+  "needs_human": false,
+  "next_wake_at": "2026-10-20T04:33:28.080790+08:00"
+}

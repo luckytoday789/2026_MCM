@@ -8,8 +8,9 @@ SOL-017 closed that defect but found extreme midpoint rounding error K2. The
 K2 correction passed SOL-021 and independent chief replay. SOL-022 accepted
 calibration mathematics and SOL-016 accepted the pure analysis component on
 synthetic inputs. The case-engine delivery SOL-023 failed its standalone test
-entry; its numerical checks do not waive that failure. Repair SOL-025, writer
-acceptance and production evidence remain separate gates. No customer
+entry; its numerical checks do not waive that failure. SOL-025 separately passed
+the portable repair and independent case acceptance. Writer acceptance and
+production evidence remain separate gates. No customer
 recommendation or performance advantage is claimed.
 
 ## An explicit estimate of benefit before trading

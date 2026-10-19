@@ -214,6 +214,14 @@
       "reviewed_commit": "803b7a085284405ee5ee4d4f0d5720ebaa2e67f7",
       "source_path": "src/safeinvest/policy_cases.py",
       "scope": "Pure case tables on explicit generated fixtures; no writer/input authentication or outcomes approval."
+    },
+    "ACCEPTED_COMPONENT_INDEX": {
+      "state": "accepted_implementation",
+      "path": "report/component-index.md",
+      "provenance": "report/component-index.json",
+      "generator": "report/build_component_index.py",
+      "acceptance_snapshot_commit": "8d00ca8eafc00fd636273be4125216e981289804",
+      "scope": "Exact current-source identity for ten accepted modules only; no production outcomes or final readiness claim."
     }
   },
   "requirements": [

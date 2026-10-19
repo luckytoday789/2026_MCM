@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T20:01:56.699280+00:00",
+  "failed_trials": [
+    {
+      "stage": "initial index creation",
+      "failure": "Source identity guard rejected stale SOL-001 attribution for package initialization before any index was written.",
+      "original_generator": "audit/chief/component-index-history/trial-001.py"
+    },
+    {
+      "stage": "diagnostic enumeration",
+      "failure": "Stopped when baselines.py was requested from SOL-001; that module was introduced by SOL-004.",
+      "effect": "No source or accepted evidence changed."
+    }
+  ],
+  "correction": "Use accepted SOL-004 for __init__, backtest and baselines; retain SOL-001 for unchanged accounting and metrics. Every actual current canonical source byte must equal the precise reviewed commit.",
+  "checks": [
+    {
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "report/build_component_index.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"components\": 10, \"snapshot\": \"8d00ca8eafc00fd636273be4125216e981289804\", \"read_only\": false, \"competition_outcomes_read\": false}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "report/build_component_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"components\": 10, \"snapshot\": \"8d00ca8eafc00fd636273be4125216e981289804\", \"read_only\": true, \"competition_outcomes_read\": false}\n",
+      "stderr": ""
+    }
+  ],
+  "source_modules": 10,
+  "competition_outcomes_read": false,
+  "final_data_open": false
+}

@@ -1,19 +1,20 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T04:02:41.588940+08:00",
-  "reason": "SOL-025 exact repair accepted after fresh independent checks. Push acceptance source before publishing the prepared bounded writer task SOL-026.",
+  "next_wake_at": "2026-10-20T04:33:28.080790+08:00",
+  "reason": "SOL-025 exact case repair accepted and pushed; SOL-026 writer-only implementation/design challenge is running under the observed remote lease. Ten-module source index and report provenance prepared. Only writer result is immediately actionable; one-shot 30-minute fallback, earlier receipt/error wake allowed.",
   "next_actions": [
-    "Commit/push accepted SOL-025 integration first; then publish SOL-026 writer-only implementation and independent design challenge using the real pushed base. The local prepared generator is .runtime/dispatch_sol026.py and refuses an unpushed base.",
-    "After positive writer acceptance and pushed source C, create and push fixed development execution config E, then publish HY3 kind=commands tasks with exact params/output/budgets. Primary computes five policies and imports HY3-003; doubled computes eight. Never rerun HY3-003. Measure runtime/size; independent exact-commit Sol reviews precede result acceptance.",
-    "After accepted 16-case outputs, assemble/review analysis and selection; implement/review own-horizon/tolerance adapter with explicit no-run/null conventions. Then accepted all-development refit/final implementation and recorded freeze gates, without final tuning.",
-    "Report workbench now includes source-derived policy-catalogue.md/provenance with --check; no strategy outcomes or customer recommendations were added. Continue final English report only with accepted outcomes, independent manuscript review, render QA and <=50MB supplement. Identities stay local; humans submit.",
-    "Before additional work recheck local quota/drain/control/STOP/deadline. Latest verified remaining allowance is 63%, no drain. Preserve supervisor/remote ownership. Only immediate remote result is awaited: fresh one-shot 30-minute fallback, earlier receipt/error wake permitted. No current human-help request."
+    "Before substantive work inspect fresh local quota/drain/control/STOP/deadline. Latest verified allowance 61.0% remaining; no drain at this checkpoint. Preserve supervisor and remote ownership. Do not start another coordinator loop or substitute remote roles.",
+    "Fetch exact SOL-026 work receipt and status. Immutable task base is 8d00ca8eafc00fd636273be4125216e981289804; publication 7c0942496db426063f2591dacda3f2f6a7dd4a67, canonical task digest 814ed948fca4fae761aed362526e9e5d2396fbc978472a2355401bebec548ecd, 35 source pins. Validate all permitted paths/artifact hashes, fresh evidence, clean-environment prescribed commands, actual runtime and failed trials. Do not recreate accepted/submitted tasks.",
+    "Independently review SOL-026 code and challenge C/E/P task/base/publication binding, exact source closure, typed CSV/null/boolean/signed-zero persistence, authenticated HY3-003 imports without rerun, four-fold provenance, seven corruption categories and read-only evidence preservation. Compare chief writer_reference.py and exact inherited numeric fields; production guards tested before input reads. Integration only after positive evidence; failed result remains preserved with a corrected immutable task.",
+    "After positive writer acceptance, push exact reviewed source C first. Then create/push fixed development execution JSON E with real source/config/input hashes and positive dependency reviews, then separately publish HY3 kind=commands tasks based on E. Primary computes five policy cases and imports accepted HY3-003 three references; doubled computes eight. Measure runtime/actual file sizes. Do not rerun HY3-003 or alter immutable design flags. Independently review exact HY3 commits through Sol before acceptance.",
+    "After both fee groups and 16 cases pass independent review, assemble/review accepted pure analysis and selection; implement/review own-horizon/tolerance follow-up with explicit null/no-run/denominator conventions. Then implement/review all-development refit and final support, create and independently review recorded freeze. Final outcomes remain unopened; no final tuning.",
+    "Report workbench now includes component-index.md/json and --check for ten accepted modules, source-derived policy catalogue and accepted baseline tables. SOL-025 source is accepted at 803b7a085284405ee5ee4d4f0d5720ebaa2e67f7; SOL-023 remains failed. Continue English report only from accepted outcomes, independent manuscript review and render QA; supplement <=50 MB. Private identities stay local; humans submit. No current human-help request."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T03:57:41.588940+08:00",
+  "last_completed_at": "2026-10-20T04:03:28.080790+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }
