@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "plan_id": "development-baselines-v1.1",
+  "status": "specified_pending_driver_review",
+  "purpose": "First cheap descriptive experiment; no policy selection or final evaluation",
+  "input_path": "data/development/scenarios_001_120.csv",
+  "input_sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+  "split": "development",
+  "scenario_ids": {
+    "first": 1,
+    "last": 120
+  },
+  "horizons": [
+    5,
+    6,
+    15,
+    25,
+    30
+  ],
+  "comparison_horizon": 30,
+  "profile_horizons": {
+    "A": 5,
+    "B": 15,
+    "C": 30,
+    "D": 25,
+    "E": 6
+  },
+  "initial_holdings": [
+    0,
+    0,
+    100
+  ],
+  "asset_order": [
+    "equity",
+    "bond",
+    "bill_proxy"
+  ],
+  "fee_rate": 0.0025,
+  "trade_amount_epsilon": 1e-10,
+  "policies": [
+    {
+      "id": "bills_keep",
+      "first_action": "keep",
+      "later_action": "keep",
+      "target": null,
+      "label": "Bills purchasing-power reference"
+    },
+    {
+      "id": "equal_weight_annual",
+      "first_action": "rebalance",
+      "later_action": "rebalance",
+      "target": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "label": "Required annual equal-weight baseline"
+    },
+    {
+      "id": "equal_weight_buy_hold",
+      "first_action": "rebalance",
+      "later_action": "keep",
+      "target": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "label": "Initial equal weight with subsequent holdings drift"
+    }
+  ],
+  "fit_parameters": [],
+  "random_seed": null,
+  "metric_contract": "specs/ACCOUNTING.md",
+  "quantiles": {
+    "method": "linear",
+    "growth": [
+      0.1,
+      0.5
+    ],
+    "loss": [
+      0.5,
+      0.9
+    ]
+  },
+  "severe_case": {
+    "criterion": "maximum_real_drawdown_within_policy_and_horizon",
+    "tie_break": "smallest_scenario_id"
+  },
+  "execution": {
+    "cpu_only": true,
+    "max_seconds": 300,
+    "requires_accepted_core": "SOL-001",
+    "requires_input_verification": "HY3-002",
+    "requires_review_of_this_plan": "SOL-002",
+    "final_data_allowed": false,
+    "requires_driver_implementation": "SOL-004",
+    "requires_chief_driver_acceptance": true
+  },
+  "expected_counts": {
+    "annual_ledger_rows": 10800,
+    "scenario_metric_rows": 1800,
+    "policy_horizon_summary_rows": 15,
+    "paired_difference_rows": 1200
+  },
+  "output_files": [
+    "run_manifest.json",
+    "annual_ledgers.csv",
+    "scenario_metrics.csv",
+    "summary.csv",
+    "paired_differences.csv",
+    "checks.json"
+  ],
+  "supersedes_for_execution": "development-baselines-v1",
+  "driver_contract": "specs/DEVELOPMENT_BASELINE_DRIVER.md",
+  "drawdown_locations": {
+    "scan_order": [
+      "initial",
+      "post_fee",
+      "end"
+    ],
+    "peak_update": "strict_increase",
+    "drawdown_update": "strict_increase",
+    "zero_loss_locations": {
+      "year": 0,
+      "kind": "initial"
+    }
+  },
+  "h1_undefined_metrics": [
+    "annual_real_volatility_pct",
+    "trade_share_ex_initial_pct"
+  ],
+  "output_encoding": "UTF-8 LF; round-trip float precision"
+}
