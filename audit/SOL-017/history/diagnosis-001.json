@@ -1,0 +1,15 @@
+{
+  "trial": "001",
+  "classification": "overstrict audit comparison; no production defect demonstrated",
+  "failed_checks": 42,
+  "reason": "Exact equality was required for ALL subnormal factors, including the largest subnormal. The task allows zero absolute tolerance with explicit relative tolerance. Its log/exp round-trip relative error is below the existing 3e-12 criterion. Preserve initial negative evidence; revise only that inappropriate all-subnormal equality condition. Minimum subnormal and small integer multiples remain exact; no production source changes.",
+  "representative": {
+    "absolute_tolerance": 0.0,
+    "expected": 2.225073858507201e-308,
+    "name": "constant w=0 scale=0x0.fffffffffffffp-1022 n=0",
+    "observed": 2.2250738585070097e-308,
+    "passed": false,
+    "relative_tolerance": 0.0
+  },
+  "relative_error": 8.593126210598712e-14
+}

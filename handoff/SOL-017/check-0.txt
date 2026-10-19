@@ -1,0 +1,227 @@
+pec(s);s.loader.exec_module(v)
+p,o,_,_=v.boundaries();u=math.ulp(0.);bad=[];count=0
+for w in ((.25,.25,.5),(0.,.5,.5),(.5,.5,0.),(.2,.3,.5)):
+ fw=tuple(map(F,w));fw=tuple(x/sum(fw) for x in fw)
+ for ns in itertools.product(range(1,9),repeat=3):
+  row=tuple(k*u for k in ns);expected=float(sum(a*F(b) for a,b in zip(fw,row)))
+  observed=p.EmpiricalPrior((row,)).certainty_equivalent(w);count+=1
+  if observed"'!=expected:bad.append(dict(weights=w,support_units=ns,expected_hex=expected.hex(),observed_hex=observed.hex(),expected=expected,observed=observed))
+x=dict(check_count=count,failures=bad,failed_count=len(bad))
+with Path('"'.runtime/sol017/subnormal-grid.json').open('x',encoding='utf-8') as f:json.dump(x,f,indent=2)
+print('check_count',count,'failed_count',len(bad));print(json.dumps(bad[:5]))
+'@ | python -B -" in E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-017-a1
+ succeeded in 2294ms:
+check_count 2048 failed_count 475
+[{"weights": [0.25, 0.25, 0.5], "support_units": [1, 1, 4], "expected_hex": "0x0.0000000000002p-1022", "observed_hex": "0x0.0000000000003p-1022", "expected": 1e-323, "observed": 1.5e-323}, {"weights": [0.25, 0.25, 0.5], "support_units": [1, 1, 8], "expected_hex": "0x0.0000000000004p-1022", "observed_hex": "0x0.0000000000005p-1022", "expected": 2e-323, "observed": 2.5e-323}, {"weights": [0.25, 0.25, 0.5], "support_units": [1, 3, 3], "expected_hex": "0x0.0000000000002p-1022", "observed_hex": "0x0.0000000000003p-1022", "expected": 1e-323, "observed": 1.5e-323}, {"weights": [0.25, 0.25, 0.5], "support_units": [1, 3, 5], "expected_hex": "0x0.0000000000004p-1022", "observed_hex": "0x0.0000000000003p-1022", "expected": 2e-323, "observed": 1.5e-323}, {"weights": [0.25, 0.25, 0.5], "support_units": [1, 3, 7], "expected_hex": "0x0.0000000000004p-1022", "observed_hex": "0x0.0000000000005p-1022", "expected": 2e-323, "observed": 2.5e-323}]
+
+codex
+The heterogeneous subnormal probe found a real remaining failure. With `u` equal to the minimum subnormal, weights `(.25, .25, .5)` and support `(u, u, 4u)` give exact gross `2.5u`, which rounds to `2u`; the new kernel returns `3u`. I’ll preserve this evidence and return `changes_required`. The constant-support underflow case is fixed, but it does not establish closure for this boundary.
+apply patch
+patch: completed
+E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-017-a1\audit\SOL-017\verify.py
+apply patch
+patch: completed
+E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-017-a1\audit\SOL-017\integrity_self_test.py
+exec
+"C:\\Users\\刘奥华\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe" -Command "@'
+from pathlib import Path
+import json
+out=Path('audit/SOL-017')
+src=Path('.runtime/sol017/subnormal-grid.json')
+with (out/'history/subnormal-grid-trial-002.json').open('xb') as f:f.write(src.read_bytes())
+record={'event':'Initial sandbox execution infrastructure failure','executed':False,'errors':['helper_unknown_error: setup refresh had errors','orchestrator_helper_report_read_failed: setup helper exited with status Some(1); setup_error.json parse failure'],'resolution':'Authorized read-only and audit-scoped commands succeeded through require_escalated; no automatic approval rejection occurred. No install or environment mutation.'}
+with (out/'history/infrastructure.json').open('x',encoding='utf-8') as f:json.dump(record,f,indent=2);f.write('\\n')
+'@ | python -B -
+python -B audit/SOL-017/integrity_self_test.py" in E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-017-a1
+ succeeded in 20800ms:
+{"all_passed": true, "test_count": 9}
+
+exec
+"C:\\Users\\刘奥华\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe" -Command "python -B audit/SOL-017/verify.py --create
+python -B audit/SOL-017/verify.py --check
+@'
+import json,hashlib,subprocess
+from pathlib import Path
+out=Path('audit/SOL-017')
+x=json.loads((out/'verification.json').read_text());f=x['facts'];checks=f['checks']
+print(json.dumps({'code_verdict':f['code_verdict'],'check_count':f['check_count'],'failed_count':len(f['blockers']),'grid_failed_count':f['numerical_facts']['subnormal_grid_failed_count'],'K2_rows':[c for c in checks if c['name'].startswith('K2 exact midpoint')],'other_failed_count':sum(not c['passed'] and not c['name'].startswith('K2 ') for c in checks),'minimum_subnormal_all_passed':all(c['passed'] for c in checks if 'scale=0x0.0000000000001p-1022' in c['name'])},indent=2))
+'@ | python -B -
+git status --short --untracked-files=all
+Get-Date -Format o" in E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-017-a1
+ succeeded in 5404ms:
+{"evidence_integrity_verdict": "passed", "code_verdict": "changes_required", "check_count": 3581, "read_only": false}
+{"evidence_integrity_verdict": "passed", "code_verdict": "changes_required", "check_count": 3581, "read_only": true}
+{
+  "code_verdict": "changes_required",
+  "check_count": 3581,
+  "failed_count": 487,
+  "grid_failed_count": 475,
+  "K2_rows": [
+    {
+      "absolute_tolerance": 0.0,
+      "expected": 1e-323,
+      "name": "K2 exact midpoint n=0",
+      "observed": 1.5e-323,
+      "passed": false,
+      "relative_tolerance": 0.0
+    },
+    {
+      "absolute_tolerance": 0.0,
+      "expected": 1e-323,
+      "name": "K2 exact midpoint n=1",
+      "observed": 1.5e-323,
+      "passed": false,
+      "relative_tolerance": 0.0
+    },
+    {
+      "absolute_tolerance": 0.0,
+      "expected": 1e-323,
+      "name": "K2 exact midpoint n=2",
+      "observed": 1.5e-323,
+      "passed": false,
+      "relative_tolerance": 0.0
+    },
+    {
+      "absolute_tolerance": 0.0,
+      "expected": 1e-323,
+      "name": "K2 exact midpoint n=3",
+      "observed": 1.5e-323,
+      "passed": false,
+      "relative_tolerance": 0.0
+    },
+    {
+      "absolute_tolerance": 0.0,
+      "expected": 1e-323,
+      "name": "K2 exact midpoint n=4",
+      "observed": 1.5e-323,
+      "passed": false,
+      "relative_tolerance": 0.0
+    },
+    {
+      "absolute_tolerance": 0.0,
+      "expected": 1e-323,
+      "name": "K2 exact midpoint n=5",
+      "observed": 1.5e-323,
+      "passed": false,
+      "relative_tolerance": 0.0
+    },
+    {
+      "absolute_tolerance": 0.0,
+      "expected": 2e-323,
+      "name": "K2 exact midpoint downward n=0",
+      "observed": 1.5e-323,
+      "passed": false,
+      "relative_tolerance": 0.0
+    },
+    {
+      "absolute_tolerance": 0.0,
+      "expected": 2e-323,
+      "name": "K2 exact midpoint downward n=1",
+      "observed": 1.5e-323,
+      "passed": false,
+      "relative_tolerance": 0.0
+    },
+    {
+      "absolute_tolerance": 0.0,
+      "expected": 2e-323,
+      "name": "K2 exact midpoint downward n=2",
+      "observed": 1.5e-323,
+      "passed": false,
+      "relative_tolerance": 0.0
+    },
+    {
+      "absolute_tolerance": 0.0,
+      "expected": 2e-323,
+      "name": "K2 exact midpoint downward n=3",
+      "observed": 1.5e-323,
+      "passed": false,
+      "relative_tolerance": 0.0
+    },
+    {
+      "absolute_tolerance": 0.0,
+      "expected": 2e-323,
+      "name": "K2 exact midpoint downward n=4",
+      "observed": 1.5e-323,
+      "passed": false,
+      "relative_tolerance": 0.0
+    },
+    {
+      "absolute_tolerance": 0.0,
+      "expected": 2e-323,
+      "name": "K2 exact midpoint downward n=5",
+      "observed": 1.5e-323,
+      "passed": false,
+      "relative_tolerance": 0.0
+    }
+  ],
+  "other_failed_count": 0,
+  "minimum_subnormal_all_passed": true
+}
+?? audit/SOL-017/findings.json
+?? audit/SOL-017/history/diagnosis-001.json
+?? audit/SOL-017/history/infrastructure.json
+?? audit/SOL-017/history/subnormal-grid-trial-002.json
+?? audit/SOL-017/history/trial-001-findings.json
+?? audit/SOL-017/history/trial-001-review.md
+?? audit/SOL-017/history/trial-001-verification.json
+?? audit/SOL-017/history/trial-001-verify.py
+?? audit/SOL-017/integrity-self-tests.json
+?? audit/SOL-017/integrity_self_test.py
+?? audit/SOL-017/review.md
+?? audit/SOL-017/verification.json
+?? audit/SOL-017/verify.py
+2026-10-20T02:07:03.7642472+08:00
+
+codex
+The final review records `code_verdict: changes_required`: 3,094 of 3,581 comparisons passed; all 487 failures concern the new subnormal rounding blocker. The ordinary accounting, fee/buffer, decision, tiny-transfer, and invalid-observation checks passed. Read-only replay and all nine integrity self-tests passed, including rejection of zeroed subnormal and tiny-fee evidence. Historical SOL-013 files remain unchanged.
+exec
+"C:\\Users\\刘奥华\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe" -Command "@'
+from pathlib import Path
+import hashlib,json,subprocess,sys
+out=Path('audit/SOL-017')
+def hashes():return {p.as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(out.rglob('*')) if p.is_file()}
+before=hashes()
+check=subprocess.run([sys.executable,'-B','audit/SOL-017/verify.py','--check'],text=True,capture_output=True)
+mid=hashes()
+exclusive=subprocess.run([sys.executable,'-B','audit/SOL-017/verify.py','--create'],text=True,capture_output=True)
+after=hashes()
+control=json.loads(subprocess.check_output(['git','show','origin/main:ops/control.json']))
+status=subprocess.check_output(['git','status','--porcelain','--untracked-files=all'],text=True)
+record={'python':sys.version,'check_exit':check.returncode,'check_stdout':check.stdout,'check_stderr':check.stderr,'check_read_only':before==mid,'recreate_exit':exclusive.returncode,'recreate_refused_existing':exclusive.returncode"'!=0 and '"'FileExistsError' in exclusive.stderr,'recreate_artifacts_unchanged':mid==after,'head':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),'origin_control_state':control['state'],'stop_present':any(p.exists() for p in (Path('.runtime/STOP'),Path('E:/2026_MCM/sol-coop/.runtime/STOP'))),'all_changed_paths_in_scope':all(line[3:].startswith('audit/SOL-017/') for line in status.splitlines()),'artifact_sha256':after}
+with Path('.runtime/sol017/final-check.json').open('x',encoding='utf-8') as f:json.dump(record,f,indent=2);f.write('\\n')
+print(json.dumps({k:v for k,v in record.items() if k"'!='"'artifact_sha256'},indent=2))
+assert record['check_exit']==0 and record['check_read_only'] and record['recreate_refused_existing'] and record['recreate_artifacts_unchanged'] and record['all_changed_paths_in_scope']
+'@ | python -B -" in E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-017-a1
+ succeeded in 5440ms:
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "check_exit": 0,
+  "check_stdout": "{\"evidence_integrity_verdict\": \"passed\", \"code_verdict\": \"changes_required\", \"check_count\": 3581, \"read_only\": true}\n",
+  "check_stderr": "",
+  "check_read_only": true,
+  "recreate_exit": 1,
+  "recreate_refused_existing": true,
+  "recreate_artifacts_unchanged": true,
+  "head": "315b7072e98f4d6aafd8573507074fc023477918",
+  "origin_control_state": "running",
+  "stop_present": false,
+  "all_changed_paths_in_scope": true
+}
+
+codex
+Completed SOL-017. **`code_verdict: changes_required`**.
+
+K1’s constant-support underflow is fixed. New blocker K2: for minimum subnormal `u`, weights `(.25,.25,.5)` and support `(u,u,4u)`, the rounded oracle gives `2u`; the kernel returns `3u` for every `n=0..5`.
+
+Saved all deliverables in `audit/SOL-017`, including preserved trials. Of 3,581 comparisons, 487 expose K2; ordinary behavior checks passed. Read-only replay and nine integrity checks passed.
+
+No commits, pushes, branch changes, source edits, or competition-data reads.
+tokens used
+106,752
+Completed SOL-017. **`code_verdict: changes_required`**.
+
+K1’s constant-support underflow is fixed. New blocker K2: for minimum subnormal `u`, weights `(.25,.25,.5)` and support `(u,u,4u)`, the rounded oracle gives `2u`; the kernel returns `3u` for every `n=0..5`.
+
+Saved all deliverables in `audit/SOL-017`, including preserved trials. Of 3,581 comparisons, 487 expose K2; ordinary behavior checks passed. Read-only replay and nine integrity checks passed.
+
+No commits, pushes, branch changes, source edits, or competition-data reads.

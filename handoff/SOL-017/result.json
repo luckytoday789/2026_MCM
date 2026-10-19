@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-017",
+  "attempt": 1,
+  "role": "sol",
+  "task_sha256": "323fb71bf92c8786dd9659e8021fdecc7f3b17fbac17208e8a7c77c49cea6019",
+  "base_commit": "315b7072e98f4d6aafd8573507074fc023477918",
+  "status": "completed",
+  "failure": null,
+  "artifact_hash_basis": "canonical_git_blob",
+  "started_from_pinned_source": true,
+  "checks": [
+    {
+      "argv": [
+        "C:\\Users\\刘奥华\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.EXE",
+        "exec",
+        "--approve-for-me",
+        "--model",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"xhigh\"",
+        "--cd",
+        "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-017-a1",
+        "--output-last-message",
+        "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-017-a1\\.runtime\\agent-last.txt",
+        "You are role=sol in the authorized SafeInvest team. Read AGENTS.md and .runtime/task.json. Complete only that task in this worktree. Do not commit, push, change branches, edit the task, or start another watcher; the parent runner handles delivery. Respect allowed_paths and base version. Write real deliverables and perform checks. Report blockers rather than inventing parameters. The task is authorized; continue through routine fixes.\nRead AGENTS.md, locked accounting and specs/POLICY_NUMERIC_K1.md. SOL-013 is accepted independent negative kernel evidence with approved corrected design. The chief has changed only EmpiricalPrior.certainty_equivalent.log_power to evaluate logsumexp(log(weight)+log(gross)) over positive weights, and added a subnormal regression. Review the exact new pinned source, not original-source replay. Historical SOL-013 must remain unchanged.\n\nIndependently check the math and numerical behavior from minimum subnormal to maximum finite factors, zero/very small positive weights, identical and heterogeneous support, prior and n=0..5 recent rows. Expected values must use an independent Fraction/Decimal oracle with sufficient precision, and exact comparison or zero absolute tolerance for tiny values: a large absolute tolerance cannot certify a positive subnormal. No clipping or imputation. Check ordinary rational initial T=200/3, fee=1/6, post-fee 599/18, buffered 3887/3750 and true terminal wealth 7787/75 under the stated fixture. Confirm fee/buffer separation, ordinary inverse-cube mixture and strict decision/tie thresholds, actual tiny-transfer active-state transition and final invalid observations remain as previously reviewed.\n\nReuse your accepted SOL-013 independently authored scalar oracle where it saves time; explicitly load the new code bytes and identify which unchanged oracle fixtures were reused. Do not silently override its old task/hash constraints or rewrite historical saved findings. A new adapter may load the exact old verifier blob in memory and replace only its source-loading boundary for new synthetic collection, recording that adaptation and new source hashes; alternatively write a concise separate oracle. Do not redo broad unrelated accounting or scheduler suites. This is a bounded 15-minute K1 closure, not a new design or parameter review. If another true blocker appears, preserve it and return changes_required.\n\nWrite findings.json/review.md with exact code_verdict, independent numeric facts, unchanged normative parameters and limitations. Write verification.json using exclusive creation and verify.py --check that recomputes read-only at appropriate tolerances, verifies pinned imports and artifacts, permits HEAD to advance, and rejects corrupted scratch evidence without repair. Preserve failed trials. Chief tests are provisional and not independent acceptance.\n\nOnly audit/SOL-017 plus ignored scratch may be written. No source/tests/spec/task/queue/private-team edits, actual CSV reads, installs, supervisor/worker operations, publishing or production/final runs. CPU only. No production loader/writer/calibration certification. The runner delivers the receipt; chief accepts exact evidence."
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-017-a1-agent.log"
+    },
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "audit/SOL-017/verify.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-017-a1-check-0.log"
+    }
+  ],
+  "artifacts_sha256": {
+    "audit/SOL-017/findings.json": "242737618ac0074128502849121a0e01afb31ef71dd3bb1cd7ab8d2a4e4e2472",
+    "audit/SOL-017/history/diagnosis-001.json": "1bc38805a6487b721f7aa050a460ed0679d4d2db368787d3b5cf76080b1e65e0",
+    "audit/SOL-017/history/infrastructure.json": "d5cbd6b7cfba68adbf7393b9a731114013edcbfa2e58fc7687f0bc1f704f7e14",
+    "audit/SOL-017/history/subnormal-grid-trial-002.json": "912fed282f642ed202a3f2e2ef2bb5f8c34b43d39e5dcf23e30cae8ca2eeff21",
+    "audit/SOL-017/history/trial-001-findings.json": "fb2794a41979160477cb17f4b9d52729484d6b17c8ef4a7a92c55b2112e4d30b",
+    "audit/SOL-017/history/trial-001-review.md": "4b676c4b1a9348668b1ad4bece46ecbe9fffe1c473b597088469f12705c3f1f2",
+    "audit/SOL-017/history/trial-001-verification.json": "363d48c0538149506ffb70d9e268656630ce0245813ccbebd0c4d96b5d4ffedd",
+    "audit/SOL-017/history/trial-001-verify.py": "2a7aed2b75daaf4b72d497d298f83d90d62d9b49afb9bfe0cdccaab07cbc4cd9",
+    "audit/SOL-017/integrity-self-tests.json": "fe2a37b19520a7c41fac36545780a011352c05771398da853b43253fd2c60a8a",
+    "audit/SOL-017/integrity_self_test.py": "b19cbf84e8391dedbaf83cf72e0873408fb0a4d95d10eb51abe409a17405c721",
+    "audit/SOL-017/review.md": "5516ca3acc12fedd4fc00b9b1d7ee828fc124ca451e8f170ce91709d610ff952",
+    "audit/SOL-017/verification.json": "5bc1c438136b3f5fbe0ed596c42bf3334344fdedf2ec83ab3837668e5e29617c",
+    "audit/SOL-017/verify.py": "5c4341b9c9347ee9b75719823f0af6e30daf33b51a73f644f62f78febcd8188f",
+    "handoff/SOL-017/check-0.txt": "eef72e0bf494457944ffff7a0882164354f1439beafee7a5191eeb7aaf6f5269",
+    "handoff/SOL-017/check-1.txt": "0674b532f3687edcb47dadd7fbaf2475837f5793dc116c489dd0f6bedfc04074"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "finished_at": "2026-10-19T18:07:57.523407+00:00",
+  "note": "Completed means worker self-check only; coordinator acceptance is separate.",
+  "input_manifest": {
+    "source": "User-supplied 2026 MCM Senior Group Problem A SafeInvest attachments",
+    "license": "CC BY-NC-SA 4.0",
+    "transformation": "Originals unchanged; derived CSV files are row subsets only.",
+    "files": [
+      {
+        "path": "problem/2026_MCM_SafeInvest.pdf",
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+        "bytes": 137578
+      },
+      {
+        "path": "data/raw/SafeInvest_Synthetic_Data.csv",
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+        "bytes": 274914
+      },
+      {
+        "path": "data/development/scenarios_001_120.csv",
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+        "bytes": 182255
+      },
+      {
+        "path": "data/final_holdout/scenarios_121_180.csv",
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+        "bytes": 92732
+      }
+    ]
+  },
+  "task_parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "competition_outcomes_allowed": false,
+    "final_outcomes_allowed": false,
+    "source_sha256": {
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "specs/POLICY_NUMERIC_K1.md": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+      "src/safeinvest/policy_pilot.py": "9026abd22818fb420ce75dcf100b461c1833eab8be03526366dd3faadaa77bba",
+      "tests/test_policy_pilot.py": "09cbe72579f46be55f8f2ecf8187127260ff414fd88834ed52bb6225212bdc95",
+      "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+      "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "audit/SOL-013/verify.py": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+      "audit/SOL-013/findings.json": "b2c82f41ed0abd7c62cf350ed5b554c967085d5cbbee70a3e62d4f6feb64c6bd",
+      "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+      "audit/chief/policy-k1-validation.json": "4f84abd57d5e08bbca544c70972db08b9056c87bcab9af65373e1cb6897dd00f"
+    },
+    "prior_review_commit": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+    "required_verdict": "code_verdict approve before any kernel-dependent production work",
+    "gamma": 4,
+    "primary_fee_rate": 0.0025,
+    "sensitivity_fee_rate": 0.005
+  }
+}
