@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T03:43:18.358122+08:00",
-  "reason": "SOL-023 exact failed receipt diagnosed and preserved; prerequisite repair specification and quarantined drafts prepared. Publish immutable SOL-025 after this prerequisite commit is pushed.",
+  "next_wake_at": "2026-10-20T03:46:22.110467+08:00",
+  "reason": "SOL-025 published ready after prerequisite a065805 was pushed. Current chief work: prepare bounded writer task design and report methods while awaiting exact repair receipt.",
   "next_actions": [
-    "Publish SOL-025 narrow synthetic case-engine entrypoint repair from this real pushed prerequisite commit. Retain original failed receipt and all artifacts on work/sol/SOL-023-a1.",
-    "Review exact SOL-025 result and run independent references before case acceptance; only then publish writer task on accepted pushed code.",
-    "Prepare writer implementation task and report method wording while remote repair runs; do not publish writer before case acceptance.",
-    "After accepted writer code, commit fixed development execution config separately and dispatch reviewed HY3 commands. Never rerun HY3-003; final remains closed.",
-    "Check local quota/drain/control/STOP/deadline before further work; identities stay local; preserve supervisor and remote ownership."
+    "Fetch exact SOL-025 receipt/status; verify source pins, clean-environment parent commands, portable saved evidence and chief rational references. Do not accept from completed label.",
+    "Finish writer-task preparation without publishing until positive case acceptance. Writer must pin accepted sources and four writer specifications, implement only development group bundles, and be reviewed before HY3 execution.",
+    "After accepted writer code commit C is pushed, create fixed development config commit E separately, then publish bounded HY3 kind=commands task pinned to E. Primary imports original HY3-003 references; doubled group computes eight cases.",
+    "Request Sol independent review of each exact HY3 result before 16-case analysis and development selection. Personalized implementation/review and final freeze remain later gates.",
+    "Read quota/drain/control/STOP/deadline before additional work; preserve all original failures and local identities, final split closed."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T03:40:18.358122+08:00",
+  "last_completed_at": "2026-10-20T03:41:22.110467+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

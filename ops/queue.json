@@ -679,6 +679,15 @@
       "acceptance_evidence": "audit/chief/SOL-024-review.json",
       "design_verdict": "approve",
       "implementation_verdict": "not_reviewed"
+    },
+    {
+      "id": "SOL-025",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "1fc31a691142f171b96d9790c5aa32ad298531fb66250641eb5a727acc0174e1",
+      "branch": "work/sol/SOL-025-a1",
+      "note": "Narrow immutable successor of failed SOL-023. Pushed base includes exact quarantined source/test and chief independent failure diagnosis. Fix import bootstrap; produce fresh synthetic evidence and run exact commands without PYTHONPATH. No production or final authorization."
     }
   ]
 }
