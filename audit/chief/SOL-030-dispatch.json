@@ -1,0 +1,13 @@
+{
+  "task_id": "SOL-030",
+  "task_sha256": "c164559e5fc86d5de16d7bf54679518a8941927a079f75364d174586263ac191",
+  "base_commit": "04be213a76855b1b1815405a735f2a49be678935",
+  "base_verified_on_origin_main": "04be213a76855b1b1815405a735f2a49be678935",
+  "checked_at": "2026-10-19T20:39:30.782782+00:00",
+  "source_pin_count": 31,
+  "state": "waiting",
+  "resource_hold": "sol_model_quota_after_SOL-026",
+  "max_seconds": 900,
+  "final_data_open": false,
+  "new_baseline_experiment": false
+}

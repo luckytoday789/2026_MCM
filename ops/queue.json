@@ -767,6 +767,20 @@
       "branch": "work/sol/SOL-029-a1",
       "note": "Narrow writer recovery held for successful real SOL-028 availability receipt. Release before SOL-027. Failed SOL-026 never satisfies positive writer approval.",
       "resource_hold": "sol_model_quota_after_SOL-026"
+    },
+    {
+      "id": "SOL-030",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "c164559e5fc86d5de16d7bf54679518a8941927a079f75364d174586263ac191",
+      "branch": "work/sol/SOL-030-a1",
+      "note": "Independent chief figure and qualified report-text review on already pushed source; held behind real quota probe, writer recovery SOL-029 and personalized review SOL-027. No baseline rerun or final data.",
+      "resource_hold": "sol_model_quota_after_SOL-026",
+      "dispatch_priority_after": [
+        "SOL-029",
+        "SOL-027"
+      ]
     }
   ]
 }
