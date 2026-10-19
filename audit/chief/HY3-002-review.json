@@ -1,0 +1,68 @@
+{
+  "task_id": "HY3-002",
+  "decision": "accepted",
+  "reviewed_commit": "9fdd20e09f8c080b7d3381d3d545524084cb3955",
+  "task_sha256": "d3f1e845573fc1e7c170fd4b126130a6a344348138d588828517fd334d4c39d8",
+  "base_commit": "c651c67c30db1131c25641ac94631238cba0dd8d",
+  "artifact_hash_basis": "canonical_git_blob",
+  "artifact_hashes": {
+    "handoff/HY3-002/check-0.txt": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+    "handoff/HY3-002/check-1.txt": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+    "handoff/HY3-002/check-2.txt": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+    "handoff/HY3-002/check-3.txt": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+    "results/development/HY3-002/environment.json": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+    "results/development/HY3-002/input-check.json": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf"
+  },
+  "accepted_paths": [
+    "handoff/HY3-002/check-0.txt",
+    "handoff/HY3-002/check-1.txt",
+    "handoff/HY3-002/check-2.txt",
+    "handoff/HY3-002/check-3.txt",
+    "handoff/HY3-002/result.json",
+    "results/development/HY3-002/environment.json",
+    "results/development/HY3-002/input-check.json"
+  ],
+  "excluded_paths": [],
+  "identity_scope_source_and_commands": "passed",
+  "worker_environment": {
+    "status": "passed",
+    "python": "3.12.10",
+    "required_python": "3.12",
+    "reason": null
+  },
+  "source_hashes": {
+    "problem/2026_MCM_SafeInvest.pdf": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+    "data/raw/SafeInvest_Synthetic_Data.csv": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+    "data/development/scenarios_001_120.csv": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+    "data/final_holdout/scenarios_121_180.csv": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+  },
+  "chief_python": "3.12.0",
+  "chief_metadata_rerun": {
+    "status": "passed",
+    "rows": 5400,
+    "scenarios": 180,
+    "periods_per_scenario": 30,
+    "development_rows": 3600,
+    "final_rows": 1800,
+    "checks": [
+      "source hashes",
+      "schema",
+      "unique complete keys",
+      "finite valid gross returns",
+      "exact split"
+    ],
+    "final_outcomes_computed": false
+  },
+  "independent_evidence": {
+    "accepted_task": "SOL-003",
+    "reviewed_commit": "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+    "path": "audit/SOL-003/verification.json",
+    "same_source_bytes": true,
+    "same_exact_metadata": true,
+    "same_reviewed_checker_and_environment_preflight": true,
+    "scope": "Carry forward independent numerical evidence for identical source and deterministic output; this does not accept any strategy outcome."
+  },
+  "predecessor_remains_cancelled": "HY3-001",
+  "final_outcomes_computed": false,
+  "follow_up": "Separate targeted Sol review of this exact receipt and chief carry-forward decision; no duplicate numerical experiment."
+}

@@ -90,12 +90,24 @@
     },
     {
       "id": "HY3-002",
-      "state": "ready",
+      "state": "accepted",
       "owner": "hy3",
       "attempt": 1,
       "task_sha256": "d3f1e845573fc1e7c170fd4b126130a6a344348138d588828517fd334d4c39d8",
       "branch": "work/hy3/HY3-002-a1",
-      "note": "Released after accepted SOL-003 and live Python 3.12.10 registration; immutable task unchanged."
+      "note": "Exact canonical hashes, Python 3.12.10, commands and metadata verified; chief rerun and accepted independent SOL-003 evidence agree on identical source bytes. HY3-001 stays cancelled.",
+      "reviewed_commit": "9fdd20e09f8c080b7d3381d3d545524084cb3955",
+      "accepted_paths": [
+        "handoff/HY3-002/check-0.txt",
+        "handoff/HY3-002/check-1.txt",
+        "handoff/HY3-002/check-2.txt",
+        "handoff/HY3-002/check-3.txt",
+        "handoff/HY3-002/result.json",
+        "results/development/HY3-002/environment.json",
+        "results/development/HY3-002/input-check.json"
+      ],
+      "excluded_paths": [],
+      "acceptance_evidence": "audit/chief/HY3-002-review.json"
     },
     {
       "id": "SOL-004",

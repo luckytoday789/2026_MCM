@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "task_id": "HY3-002",
+  "attempt": 1,
+  "role": "hy3",
+  "task_sha256": "d3f1e845573fc1e7c170fd4b126130a6a344348138d588828517fd334d4c39d8",
+  "base_commit": "c651c67c30db1131c25641ac94631238cba0dd8d",
+  "status": "completed",
+  "failure": null,
+  "artifact_hash_basis": "canonical_git_blob",
+  "started_from_pinned_source": true,
+  "checks": [
+    {
+      "argv": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+        "scripts/check_worker_env.py",
+        "--output",
+        "results/development/HY3-002/environment.json"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\HY3-002-a1-run-0.log"
+    },
+    {
+      "argv": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+        "scripts/check_inputs.py",
+        "--output",
+        "results/development/HY3-002/input-check.json"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\HY3-002-a1-run-1.log"
+    },
+    {
+      "argv": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+        "scripts/check_worker_env.py"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\HY3-002-a1-check-0.log"
+    },
+    {
+      "argv": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+        "scripts/check_inputs.py"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\HY3-002-a1-check-1.log"
+    }
+  ],
+  "artifacts_sha256": {
+    "handoff/HY3-002/check-0.txt": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+    "handoff/HY3-002/check-1.txt": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+    "handoff/HY3-002/check-2.txt": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+    "handoff/HY3-002/check-3.txt": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+    "results/development/HY3-002/environment.json": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+    "results/development/HY3-002/input-check.json": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf"
+  },
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "finished_at": "2026-10-19T13:54:29.491969+00:00",
+  "note": "Completed means worker self-check only; coordinator acceptance is separate.",
+  "input_manifest": {
+    "source": "User-supplied 2026 MCM Senior Group Problem A SafeInvest attachments",
+    "license": "CC BY-NC-SA 4.0",
+    "transformation": "Originals unchanged; derived CSV files are row subsets only.",
+    "files": [
+      {
+        "path": "problem/2026_MCM_SafeInvest.pdf",
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+        "bytes": 137578
+      },
+      {
+        "path": "data/raw/SafeInvest_Synthetic_Data.csv",
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+        "bytes": 274914
+      },
+      {
+        "path": "data/development/scenarios_001_120.csv",
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+        "bytes": 182255
+      },
+      {
+        "path": "data/final_holdout/scenarios_121_180.csv",
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+        "bytes": 92732
+      }
+    ]
+  },
+  "task_parameters": {
+    "required_python": "3.12",
+    "predecessor_task": "HY3-001",
+    "predecessor_commit": "2a0263c5822988c0385d32fe084b794f8d644bc5"
+  }
+}
