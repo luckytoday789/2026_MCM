@@ -1,0 +1,10 @@
+{
+  "status": "failed",
+  "stage": "PDF font-size check",
+  "cause": "Reportlab default subscript/superscript reduces 11.5pt text to 9.5pt",
+  "source_sha256": "59a153da49317653047cbeb44330b1ac20e5eece0a3b3c89e471ade34bddf3df",
+  "pdf_sha256": "5a7c90ede578cd04982040a52d18e2b65708afa03c91306223173d67e1ad2f89",
+  "correction": "explicit 11pt for all superscripts and subscripts",
+  "original_checkout_source_sha256": "3a2cbfd4da480b3a1a880f08a471d3100fb7c1662b3c1cbdc10051417d6965de",
+  "source_hash_basis": "canonical Git text with LF; original checkout-byte hash also retained"
+}

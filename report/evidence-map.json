@@ -237,6 +237,17 @@
       "state": "report_transform_pending_review",
       "path": "report/limitations-and-disclosure-draft.md",
       "scope": "Qualifies locked model assumptions and records actual roles; no recommendations or final results."
+    },
+    "METHODS_BASELINE_LAYOUT_PROOF": {
+      "state": "report_transform_pending_review",
+      "path": "report/layout-proof/methods-baselines.pdf",
+      "generator": "report/build_layout_proof.py",
+      "provenance": "report/layout-proof/layout-provenance.json",
+      "chief_validation": "audit/chief/layout-proof-validation.json",
+      "source_result_commit": "7652410d73425371110784ef5fa97c03470a074e",
+      "independent_source_review_commit": "818af5d65bd8a271962d848dd552bd39ca561f68",
+      "manuscript_independently_reviewed": false,
+      "scope": "Four-page incomplete methods/reference layout; accepted source outcomes only; future assembled-report review, outside SOL-030 scope"
     }
   },
   "requirements": [

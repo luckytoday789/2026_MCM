@@ -1,0 +1,3 @@
+# Optional PDF authoring only. Numerical jobs continue to use ../requirements.txt.
+reportlab==4.4.9
+# pypdf is already pinned in the project requirements.

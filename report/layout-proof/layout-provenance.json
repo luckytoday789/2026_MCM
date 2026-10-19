@@ -1,0 +1,342 @@
+{
+  "schema_version": 1,
+  "kind": "incomplete_layout_proof",
+  "independently_accepted": false,
+  "source_result_commit": "7652410d73425371110784ef5fa97c03470a074e",
+  "source_review_commit": "818af5d65bd8a271962d848dd552bd39ca561f68",
+  "source_main_commit": "4c6eca4a66dc31b40b9ae3c80e3defbea975fa91",
+  "source_sha256": {
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "report/methods-draft.md": "93dd45bceb6ebf1ce4560d27fc2a7b3c8432abf304673e99a76496f942ec31ac",
+    "report/baseline-development.md": "3415f500fab066eb08ebd289966173cb32710d0b181f7733f8028050bcd5827d",
+    "report/baseline-development-provenance.json": "0bae68910774eb63ad656a85c040da9d1fbc70983f319927c012941c76b9792c",
+    "report/build_baseline_note.py": "7a44f28832fdd56ed09c8f424f4334b671cb457bd0545b23bc3e27ecc885be5a",
+    "report/build_layout_proof.py": "7273a9ecba7ad49702fff6e1b55eff8a3b46633fce807261130b10287dd3d718",
+    "report/requirements-layout.txt": "1435e6418f7dea99fcf09184e7906319ce7c3c8798a728444f7a533b7c3e5ac1"
+  },
+  "source_hash_basis": "UTF-8 source with LF newlines",
+  "reportlab_version": "4.4.9",
+  "python_version": "3.12.0",
+  "pdf_sha256": "94a45a4424639d483b36e2a31c4bfd373da5ff20ce1c25af3c467b134ef79c63",
+  "pdf_bytes": 11808,
+  "simulation_rerun": false,
+  "final_input_access": false,
+  "private_identity_access": false,
+  "checks": {
+    "pages": 4,
+    "paper": "A4 portrait",
+    "minimum_text_size_pt": 11.0,
+    "table_rows_checked": 30,
+    "source_rows": 15,
+    "numeric_and_event_cells_checked": 180,
+    "all_pages_labeled_incomplete": true,
+    "visual_inspection": "separate rendered-page review required"
+  },
+  "display_rows": {
+    "performance": [
+      [
+        "5",
+        "Bills held",
+        "1.51",
+        "-1.19",
+        "3.67",
+        "10.76",
+        "0.00",
+        "0.00"
+      ],
+      [
+        "5",
+        "Annual thirds",
+        "3.68",
+        "-1.87",
+        "7.31",
+        "19.32",
+        "100.00",
+        "100.00"
+      ],
+      [
+        "5",
+        "Initial thirds",
+        "3.56",
+        "-1.76",
+        "7.69",
+        "20.36",
+        "20.00",
+        "0.00"
+      ],
+      [
+        "6",
+        "Bills held",
+        "1.34",
+        "-0.80",
+        "4.66",
+        "11.32",
+        "0.00",
+        "0.00"
+      ],
+      [
+        "6",
+        "Annual thirds",
+        "3.52",
+        "-2.24",
+        "8.90",
+        "21.96",
+        "100.00",
+        "100.00"
+      ],
+      [
+        "6",
+        "Initial thirds",
+        "3.30",
+        "-2.44",
+        "9.63",
+        "23.86",
+        "16.67",
+        "0.00"
+      ],
+      [
+        "15",
+        "Bills held",
+        "1.07",
+        "-0.36",
+        "9.26",
+        "18.03",
+        "0.00",
+        "0.00"
+      ],
+      [
+        "15",
+        "Annual thirds",
+        "3.61",
+        "0.15",
+        "15.20",
+        "27.67",
+        "100.00",
+        "100.00"
+      ],
+      [
+        "15",
+        "Initial thirds",
+        "3.91",
+        "-0.04",
+        "18.37",
+        "30.34",
+        "6.67",
+        "0.00"
+      ],
+      [
+        "25",
+        "Bills held",
+        "1.14",
+        "0.30",
+        "11.91",
+        "22.16",
+        "0.00",
+        "0.00"
+      ],
+      [
+        "25",
+        "Annual thirds",
+        "3.85",
+        "1.16",
+        "19.02",
+        "33.93",
+        "100.00",
+        "100.00"
+      ],
+      [
+        "25",
+        "Initial thirds",
+        "4.37",
+        "0.79",
+        "24.94",
+        "38.36",
+        "4.00",
+        "0.00"
+      ],
+      [
+        "30",
+        "Bills held",
+        "1.34",
+        "0.17",
+        "12.29",
+        "22.16",
+        "0.00",
+        "0.00"
+      ],
+      [
+        "30",
+        "Annual thirds",
+        "3.58",
+        "1.28",
+        "20.10",
+        "34.84",
+        "100.00",
+        "100.00"
+      ],
+      [
+        "30",
+        "Initial thirds",
+        "4.21",
+        "1.02",
+        "28.75",
+        "44.01",
+        "3.33",
+        "0.00"
+      ]
+    ],
+    "severe": [
+      [
+        "5",
+        "Bills held",
+        "3.74",
+        "0.00",
+        "46",
+        "25.18",
+        "0 initial",
+        "5 end"
+      ],
+      [
+        "5",
+        "Annual thirds",
+        "7.28",
+        "0.21",
+        "20",
+        "30.44",
+        "2 end",
+        "5 end"
+      ],
+      [
+        "5",
+        "Initial thirds",
+        "7.49",
+        "0.17",
+        "109",
+        "29.23",
+        "2 end",
+        "4 end"
+      ],
+      [
+        "6",
+        "Bills held",
+        "3.76",
+        "0.00",
+        "46",
+        "25.18",
+        "0 initial",
+        "5 end"
+      ],
+      [
+        "6",
+        "Annual thirds",
+        "7.55",
+        "0.22",
+        "20",
+        "30.46",
+        "2 end",
+        "6 post_fee"
+      ],
+      [
+        "6",
+        "Initial thirds",
+        "7.54",
+        "0.17",
+        "109",
+        "29.23",
+        "2 end",
+        "4 end"
+      ],
+      [
+        "15",
+        "Bills held",
+        "4.06",
+        "0.00",
+        "36",
+        "28.67",
+        "1 end",
+        "14 end"
+      ],
+      [
+        "15",
+        "Annual thirds",
+        "7.87",
+        "0.38",
+        "5",
+        "50.88",
+        "1 end",
+        "8 post_fee"
+      ],
+      [
+        "15",
+        "Initial thirds",
+        "9.11",
+        "0.17",
+        "5",
+        "45.58",
+        "1 end",
+        "8 end"
+      ],
+      [
+        "25",
+        "Bills held",
+        "4.07",
+        "0.00",
+        "19",
+        "29.03",
+        "13 end",
+        "18 end"
+      ],
+      [
+        "25",
+        "Annual thirds",
+        "7.85",
+        "0.68",
+        "5",
+        "50.88",
+        "1 end",
+        "8 post_fee"
+      ],
+      [
+        "25",
+        "Initial thirds",
+        "9.79",
+        "0.17",
+        "29",
+        "66.93",
+        "17 end",
+        "23 end"
+      ],
+      [
+        "30",
+        "Bills held",
+        "4.06",
+        "0.00",
+        "42",
+        "29.86",
+        "20 end",
+        "27 end"
+      ],
+      [
+        "30",
+        "Annual thirds",
+        "8.03",
+        "0.95",
+        "5",
+        "50.88",
+        "1 end",
+        "8 post_fee"
+      ],
+      [
+        "30",
+        "Initial thirds",
+        "10.39",
+        "0.17",
+        "29",
+        "66.93",
+        "17 end",
+        "23 end"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-10-19T20:52:02.736840+00:00",
+  "scope": "Chief-created incomplete layout proof only; no independent manuscript acceptance",
+  "artifact": "report/layout-proof/methods-baselines.pdf",
+  "pdf_sha256": "94a45a4424639d483b36e2a31c4bfd373da5ff20ce1c25af3c467b134ef79c63",
+  "authoring_python": "3.12.0",
+  "reportlab_version": "4.4.9",
+  "verification_python": "3.12.0",
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-B",
+        "report/build_layout_proof.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "report/build_baseline_note.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "pdftoppm",
+        "-r",
+        "105",
+        "-png",
+        "report/layout-proof/methods-baselines.pdf",
+        "<ignored preview prefix>"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "mechanical_checks": {
+    "pages": 4,
+    "paper": "A4 portrait",
+    "minimum_text_size_pt": 11.0,
+    "table_rows_checked": 30,
+    "source_rows": 15,
+    "numeric_and_event_cells_checked": 180,
+    "all_pages_labeled_incomplete": true,
+    "visual_inspection": "separate rendered-page review required"
+  },
+  "render_review": {
+    "pages_inspected": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "resolution_dpi": 105,
+    "verdict": "pass",
+    "findings": "All four final page images viewed. No clipping, overlap, missing glyphs, table spill or broken page numbering observed. Tables and formula indices are legible.",
+    "poppler_messages": "Poppler reported missing display defaults for Symbol and ArialUnicode. Final artifact uses Times/Helvetica standard PDF fonts; rendered pages showed no missing glyphs. This is a layout proof, not final font embedding certification."
+  },
+  "failed_trials_preserved": [
+    "audit/chief/layout-proof-history/trial-001.json",
+    "audit/chief/layout-proof-history/trial-002.json"
+  ],
+  "scope_limits": [
+    "No policy result accepted or generated",
+    "No final/raw competition outcomes read",
+    "No private member details read or included",
+    "Independent assembled manuscript review still required",
+    "Four proof pages do not certify the finished report fits ten pages"
+  ],
+  "artifact_marker": {
+    "provider": "bundled OpenAI PDF plugin",
+    "version": "26.1015.12040",
+    "operation": "create",
+    "output_count": 1,
+    "exit_code": 0
+  },
+  "no_new_skill_installed": true,
+  "optional_authoring_dependency": "reportlab4.4.9 reused from installed runtime; numerical project environment unchanged",
+  "pdf_font_resources": [
+    "/Helvetica",
+    "/Times-Bold",
+    "/Times-Italic",
+    "/Times-Roman"
+  ],
+  "pypdf_version": "6.21.1",
+  "optional_font_listing": {
+    "command": "pdffonts",
+    "status": "unavailable on PATH; actual font resources inspected with pypdf",
+    "declared_resources": [
+      "/Helvetica",
+      "/Times-Bold",
+      "/Times-Italic",
+      "/Times-Roman"
+    ]
+  }
+}

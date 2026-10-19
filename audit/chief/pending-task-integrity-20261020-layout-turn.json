@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "purpose": "Pending dispatch integrity only; no result acceptance or release",
+  "tasks": [
+    {
+      "id": "SOL-027",
+      "state": "waiting",
+      "base_commit": "5a015a490c89b39271624e1f1790a3454498a6c9",
+      "task_sha256": "f086a587d0a0ec0aa1477d28df58f036482dac1dbc7e0add8f298553daf90f00",
+      "source_pins_checked": 25,
+      "dependencies": {
+        "SOL-013": "accepted",
+        "SOL-020": "accepted",
+        "SOL-021": "accepted",
+        "SOL-022": "accepted",
+        "SOL-025": "accepted"
+      },
+      "immutable_task_unchanged": true
+    },
+    {
+      "id": "SOL-028",
+      "state": "waiting",
+      "base_commit": "df038cb116c4818c14454231500f992af3f26d0f",
+      "task_sha256": "d41ed4659e2d295d5b7ac09a7936d975833bbecd1282e54592791ceeea9aaf48",
+      "source_pins_checked": 2,
+      "dependencies": {},
+      "immutable_task_unchanged": true
+    },
+    {
+      "id": "SOL-029",
+      "state": "waiting",
+      "base_commit": "df038cb116c4818c14454231500f992af3f26d0f",
+      "task_sha256": "951ca85be546855ef2b606e94d7ea0eb2acb39f03ab34e70c707bccbac6015ac",
+      "source_pins_checked": 46,
+      "dependencies": {
+        "SOL-001": "accepted",
+        "SOL-004": "accepted",
+        "HY3-003": "accepted",
+        "SOL-013": "accepted",
+        "SOL-016": "accepted",
+        "SOL-021": "accepted",
+        "SOL-022": "accepted",
+        "SOL-025": "accepted"
+      },
+      "immutable_task_unchanged": true
+    },
+    {
+      "id": "SOL-030",
+      "state": "waiting",
+      "base_commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "task_sha256": "c164559e5fc86d5de16d7bf54679518a8941927a079f75364d174586263ac191",
+      "source_pins_checked": 31,
+      "dependencies": {
+        "HY3-003": "accepted",
+        "SOL-008": "accepted",
+        "SOL-013": "accepted",
+        "SOL-020": "accepted"
+      },
+      "immutable_task_unchanged": true
+    }
+  ],
+  "queue_changed": false,
+  "new_work_receipts": false
+}

@@ -157,3 +157,29 @@ to `anticipate218/math-modeling-skill` commit
 `e70b85b8a41aeb748789f66860c6bd4d123871cd` (MIT), informed structure and evidence
 discipline. No template/code was copied and no new skill was installed. The
 SafeInvest problem and repository protocol override generic competition rules.
+
+## Incomplete PDF layout proof
+
+[Four-page methods and baseline proof](layout-proof/methods-baselines.pdf) places
+locked accounting and all 15 accepted reference/horizon records on A4 pages.
+Every page is visibly marked incomplete. Two table views contain 30 displayed
+rows; source/display verification checked 180 numeric/event cells, and all text,
+including formula indices, is at least 11 pt. Chief viewed all four rendered pages.
+The exact PDF, sources and checks are recorded in layout-proof/layout-provenance.json
+and ../audit/chief/layout-proof-validation.json. Two failed authoring checks are
+preserved under ../audit/chief/layout-proof-history/.
+
+Check the saved proof with `python -B report/build_layout_proof.py --check` using
+the project Python 3.12 requirements. Authoring additionally uses reportlab 4.4.9
+from requirements-layout.txt. A clean rebuild can use
+`python -B report/build_layout_proof.py --output-dir .runtime/layout-rebuild`;
+existing outputs are never overwritten. Render its pages with Poppler and inspect
+all pages after changes. Authoring dependencies and host paths are not numerical
+worker dependencies. This turn reused the installed runtime; it installed nothing.
+The bundled OpenAI PDF skill version and MIT attribution are in ops/skills-lock.json.
+
+This is a reusable layout proof, not a finished report or independently approved
+manuscript. It contains no new policy outcomes, profile assignments, final results
+or private identities. Its four pages are not a final ten-page compliance claim.
+The proof's text transformation belongs in the future assembled-report review;
+SOL-030 remains immutable and reviews only its existing pinned figure/text scope.

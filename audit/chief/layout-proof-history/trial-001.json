@@ -1,0 +1,10 @@
+{
+  "status": "failed",
+  "stage": "source interface before PDF creation",
+  "cause": "build_baseline_note.build returns filename-to-bytes dict, not (text, metadata)",
+  "source_sha256": "ff51742a083f5f223d68cb8110608fb10cb36757c00769ba2e8ac52671eda589",
+  "simulation_rerun": false,
+  "data_modified": false,
+  "original_checkout_source_sha256": "7629b484dcc4524a8d7b7c2048d5c68bf889139cc586ddd49469ba8408d988cd",
+  "source_hash_basis": "canonical Git text with LF; original checkout-byte hash also retained"
+}

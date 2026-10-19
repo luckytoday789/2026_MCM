@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "completed_at": "2026-10-19T20:52:02.736840+00:00",
+  "source_main_commit": "4c6eca4a66dc31b40b9ae3c80e3defbea975fa91",
+  "work_receipts": "No new work/* commits; status updates only",
+  "remote_reports": {
+    "sol": {
+      "commit": "c22e9838ec5a81ad728034b027052e7301fda302",
+      "state": "idle",
+      "updated_at": "2026-10-19T20:48:17.359941+00:00",
+      "lease_until": "2026-10-19T20:58:17.359941+00:00",
+      "python": "3.12.14"
+    },
+    "hy3": {
+      "commit": "0d84a10f69cc7a0952bab12f7862544198fe9016",
+      "state": "idle",
+      "updated_at": "2026-10-19T20:49:54.599708+00:00",
+      "lease_until": "2026-10-19T20:59:54.599708+00:00",
+      "python": "3.12.10"
+    }
+  },
+  "changes": [
+    "Incomplete A4 methods and accepted-baseline layout proof",
+    "Read-only proof verifier, source manifest and visual QA",
+    "Pinned installed PDF skill provenance; no install",
+    "Pending immutable task source integrity audit",
+    "Workplan and report evidence pointers"
+  ],
+  "proof_validation": "audit/chief/layout-proof-validation.json",
+  "pending_task_validation": "audit/chief/pending-task-integrity-20261020-layout-turn.json",
+  "queue_changed": false,
+  "final_data_open": false,
+  "human_action_required": false,
+  "next_wake_at": "2026-10-20T05:22:02.736840+08:00",
+  "next_release": "SOL-028 no earlier than05:55 Beijing; actual single model call no earlier than06:05",
+  "quota_note": "Local snapshot56% weekly remaining and no drain at check; supervisor remains owner of stop markers"
+}
