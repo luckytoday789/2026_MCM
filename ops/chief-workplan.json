@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T00:35:00+08:00",
-  "reason": "Resume useful chief work under independent supervision while Sol quota recovers.",
+  "next_wake_at": "2026-10-20T00:56:42+08:00",
+  "reason": "Provisional policy kernel synthetic tests passed; independent design and code review gates remain closed.",
   "next_actions": [
-    "Read ops/OVERNIGHT.md; inspect exact newest receipts and current process/health evidence.",
-    "Do not rerun submitted HY3-003. Review SOL-010 availability receipt when present; release SOL-008/009 only if the real reply succeeds.",
-    "While waiting, implement the specified cost-aware policy provisionally, using synthetic tests and accepted accounting; preserve the independent design gate.",
-    "Advance the English report and evidence mapping without unsupported numerical claims.",
-    "Update this one-shot timer before every bounded turn ends; use a 30-minute fallback if only remote work remains."
+    "Inspect exact SOL-010 probe receipt when present; release existing SOL-008/009 only after verified successful model reply.",
+    "Publish the targeted independent kernel review only after this prerequisite source commit is pushed; hold for design approval and probe success.",
+    "Await independent SOL-009 design feedback before production calibration/driver work; retain prototype and all synthetic evidence.",
+    "Prepare a deterministic calibration/output handoff with no competition outcome execution while remote reviews are pending.",
+    "Keep HY3-003 submitted, never rerun it; final_data_open remains false; update this one-shot plan before ending."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
