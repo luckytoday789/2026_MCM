@@ -1,0 +1,51 @@
+{
+  "blockers": [],
+  "final_data_open": false,
+  "final_outcomes_computed": false,
+  "limitations": [
+    "Reuses only SOL-003 independent source/split metadata proof at the explicit accepted commit.",
+    "No CSV numeric analysis, strategy run, numerical experiment or prior 32-test suite was rerun.",
+    "Python 3.12.10 is supported by receipt, both retained preflight logs and environment JSON; these are retained evidence, not remote process attestation.",
+    "Chief metadata-rerun equality is verified against its saved report; its separate process was not rerun or independently attested here.",
+    "Git commits have no intrinsic branch: immutable queue branch/commit binding is checked; no current checkout branch is used.",
+    "Cancelled HY3-001 receipts remain in their original Git objects; no old Python 3.13 execution is accepted.",
+    "This review certifies neither investment performance, SOL-004 future driver nor any future HY3 result; it does not open the final gate.",
+    "Final input bytes are hashed only; no strategy is applied to final inputs."
+  ],
+  "passed_checks": 155,
+  "reused_proof": {
+    "commit": "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+    "path": "audit/SOL-003/verification.json",
+    "scope": "Independent deterministic source/split metadata only"
+  },
+  "reviewed_commits": {
+    "cancelled_hy3001": "2a0263c5822988c0385d32fe084b794f8d644bc5",
+    "chief_base": "da96ea77bcc476f2970a982f037c2679a68522b7",
+    "hy3_result": "9fdd20e09f8c080b7d3381d3d545524084cb3955",
+    "independent_sol003": "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+    "release_registration": "5de076351c7580f32ac46f8eae1afc2a12939116",
+    "source_base": "c651c67c30db1131c25641ac94631238cba0dd8d",
+    "task_dispatch": "fa7856618626b2534524d18ac25fbca6fcc4cdcb"
+  },
+  "schema_version": 1,
+  "source_hashes": {
+    "data/development/scenarios_001_120.csv": {
+      "bytes": 182255,
+      "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+    },
+    "data/final_holdout/scenarios_121_180.csv": {
+      "bytes": 92732,
+      "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+    },
+    "data/raw/SafeInvest_Synthetic_Data.csv": {
+      "bytes": 274914,
+      "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+    },
+    "problem/2026_MCM_SafeInvest.pdf": {
+      "bytes": 137578,
+      "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+    }
+  },
+  "status": "passed",
+  "task_id": "SOL-005"
+}

@@ -1,0 +1,150 @@
+{
+  "attempts": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "audit/SOL-005/verify.py"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-005-a1\\audit\\SOL-005\\verify.py\", line 281, in <module>\r\n    raise SystemExit(main())\r\n                     ^^^^^^\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-005-a1\\audit\\SOL-005\\verify.py\", line 261, in main\r\n    expected = {'verification.json': json.dumps(verification, indent=2, sort_keys=True) + '\\n',\r\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Users\\���»�\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\__init__.py\", line 238, in dumps\r\n    **kw).encode(obj)\r\n          ^^^^^^^^^^^\r\n  File \"C:\\Users\\���»�\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\encoder.py\", line 202, in encode\r\n    chunks = list(chunks)\r\n             ^^^^^^^^^^^^\r\n  File \"C:\\Users\\���»�\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\encoder.py\", line 432, in _iterencode\r\n    yield from _iterencode_dict(o, _current_indent_level)\r\n  File \"C:\\Users\\���»�\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\encoder.py\", line 406, in _iterencode_dict\r\n    yield from chunks\r\n  File \"C:\\Users\\���»�\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\encoder.py\", line 326, in _iterencode_list\r\n    yield from chunks\r\n  File \"C:\\Users\\���»�\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\encoder.py\", line 406, in _iterencode_dict\r\n    yield from chunks\r\n  File \"C:\\Users\\���»�\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\encoder.py\", line 439, in _iterencode\r\n    o = _default(o)\r\n        ^^^^^^^^^^^\r\n  File \"C:\\Users\\���»�\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\encoder.py\", line 180, in default\r\n    raise TypeError(f'Object of type {o.__class__.__name__} '\r\nTypeError: Object of type bytes is not JSON serializable\r\n",
+      "effect": "Initializer failed before creating evidence because byte comparisons were not JSON serializable. Source checks were read-only; no evidence was overwritten.",
+      "fix": "Serialize byte facts as SHA256 and byte count while still comparing actual binary bytes."
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "audit/SOL-005/verify.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"passed\", \"mode\": \"initialize\", \"checks\": 155, \"blockers\": 0, \"mismatched_files\": [], \"writes\": \"absent evidence only\", \"python\": \"3.12.14\", \"numerical_experiments_rerun\": false, \"prior_suite_rerun\": false}\r\n",
+      "stderr": "",
+      "effect": "Corrected initializer produced all three evidence files; 155 checks passed."
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "audit/SOL-005/verify.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"passed\", \"mode\": \"check\", \"checks\": 155, \"blockers\": 0, \"mismatched_files\": [], \"writes\": 0, \"python\": \"3.12.14\", \"numerical_experiments_rerun\": false, \"prior_suite_rerun\": false}\r\n",
+      "stderr": "",
+      "evidence_before": {
+        "verify.py": {
+          "sha256": "cf70081e6937bad5f01680f4345b00f632d6cfc35b40b9b931cdbafbda1c7730",
+          "mtimeMs": 1792420054807.3254
+        },
+        "review.md": {
+          "sha256": "3be557915b0c7bbe3d18a243fd4b18f22b1c0f1fb4c1aeec64384f6874fe82e6",
+          "mtimeMs": 1792420061082.3716
+        },
+        "findings.json": {
+          "sha256": "6a236a95cf40500be25f3b49c3dc38e48445a01582effeb934e42e2bc98f2a63",
+          "mtimeMs": 1792420061069.977
+        },
+        "verification.json": {
+          "sha256": "22b8b58efffa03483f4c546451f696d9a300ea7a4e131979878f09d31fe5351f",
+          "mtimeMs": 1792420061060.5193
+        }
+      },
+      "evidence_after": {
+        "verify.py": {
+          "sha256": "cf70081e6937bad5f01680f4345b00f632d6cfc35b40b9b931cdbafbda1c7730",
+          "mtimeMs": 1792420054807.3254
+        },
+        "review.md": {
+          "sha256": "3be557915b0c7bbe3d18a243fd4b18f22b1c0f1fb4c1aeec64384f6874fe82e6",
+          "mtimeMs": 1792420061082.3716
+        },
+        "findings.json": {
+          "sha256": "6a236a95cf40500be25f3b49c3dc38e48445a01582effeb934e42e2bc98f2a63",
+          "mtimeMs": 1792420061069.977
+        },
+        "verification.json": {
+          "sha256": "22b8b58efffa03483f4c546451f696d9a300ea7a4e131979878f09d31fe5351f",
+          "mtimeMs": 1792420061060.5193
+        }
+      },
+      "byte_and_mtime_unchanged": true
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "audit/SOL-005/verify.py",
+        "--check"
+      ],
+      "case": "Intentional saved status mismatch; negative check, not a source/receipt failure.",
+      "fixture": "audit/SOL-005/history/intentional-mismatched-verification.json",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "{\"status\": \"failed\", \"mode\": \"check\", \"checks\": 155, \"blockers\": 0, \"mismatched_files\": [\"verification.json\"], \"writes\": 0, \"python\": \"3.12.14\", \"numerical_experiments_rerun\": false, \"prior_suite_rerun\": false}\r\n",
+      "stderr": "Saved evidence missing or different: verification.json; preserved without rewriting.\r\n",
+      "byte_and_mtime_unchanged": true,
+      "valid_evidence_restored_sha256": "22b8b58efffa03483f4c546451f696d9a300ea7a4e131979878f09d31fe5351f"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "audit/SOL-005/verify.py"
+      ],
+      "case": "Existing evidence initializer idempotence.",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"passed\", \"mode\": \"initialize\", \"checks\": 155, \"blockers\": 0, \"mismatched_files\": [], \"writes\": \"absent evidence only\", \"python\": \"3.12.14\", \"numerical_experiments_rerun\": false, \"prior_suite_rerun\": false}\r\n",
+      "stderr": "",
+      "byte_and_mtime_unchanged": true
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "audit/SOL-005/verify.py",
+        "--check"
+      ],
+      "case": "Final prescribed validation after restoring intentional fixture.",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"passed\", \"mode\": \"check\", \"checks\": 155, \"blockers\": 0, \"mismatched_files\": [], \"writes\": 0, \"python\": \"3.12.14\", \"numerical_experiments_rerun\": false, \"prior_suite_rerun\": false}\r\n",
+      "stderr": "",
+      "byte_and_mtime_unchanged": true
+    }
+  ],
+  "operational_observations": {
+    "worker_branch": "refs/remotes/origin/work/hy3/HY3-002-a1",
+    "worker_branch_observed_commit": "9fdd20e09f8c080b7d3381d3d545524084cb3955",
+    "branch_binding_limit": "This read-only local tracking-ref observation corroborates the pinned queue; replay provenance uses explicit commits, never checkout branch or HEAD.",
+    "current_control": {
+      "schema_version": 1,
+      "state": "running",
+      "coordinator": "chief",
+      "models": {
+        "chief": "gpt-6-astra",
+        "sol": "gpt-6.1-sol",
+        "hy3": "hy3"
+      },
+      "reasoning_effort": "xhigh",
+      "deadline": "2026-10-20T23:30:00+08:00",
+      "submission_deadline": "2026-10-20T23:59:00+08:00",
+      "poll_seconds": 60,
+      "max_task_seconds": 1800,
+      "max_consecutive_failures": 2,
+      "final_data_open": false,
+      "note": "Default automation stops 29 minutes before submission to leave time for human submission; coordinator may revise before launch if needed."
+    },
+    "stop_file_present": false
+  },
+  "final_status": {
+    "status": "passed",
+    "blockers": [],
+    "prior_suite_rerun": false,
+    "numerical_experiments_rerun": false,
+    "changed_paths_scope": "?? audit/SOL-005/",
+    "commits_created": false,
+    "pushes": false,
+    "branches_changed": false
+  }
+}
