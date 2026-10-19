@@ -1,0 +1,8 @@
+{
+  "status": "failed_test_harness",
+  "test": "test_import_help_no_data_access_and_cli_surface",
+  "diagnosis": "Embedded subprocess audit-hook source had an unterminated backslash string.",
+  "effect": "11 tests passed; one subprocess failed before import. No data access or production run.",
+  "fix": "Use chr(92) to avoid nested string escaping.",
+  "preserved_source": "trial-002-test-source.py"
+}

@@ -1,0 +1,810 @@
+{
+  "schema_version": 1,
+  "tables": {
+    "annual_ledgers": {
+      "columns": [
+        {
+          "name": "split",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "mode",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "scenario_id",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "period",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "engine_action",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "target_equity",
+          "type": "float",
+          "nullable": true
+        },
+        {
+          "name": "target_bond",
+          "type": "float",
+          "nullable": true
+        },
+        {
+          "name": "target_bill_proxy",
+          "type": "float",
+          "nullable": true
+        },
+        {
+          "name": "holdings_before_equity",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "holdings_before_bond",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "holdings_before_bill_proxy",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "holdings_after_fee_equity",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "holdings_after_fee_bond",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "holdings_after_fee_bill_proxy",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "holdings_end_equity",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "holdings_end_bond",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "holdings_end_bill_proxy",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "return_equity",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "return_bond",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "return_bill_proxy",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "wealth_before",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "cpi_before",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "real_wealth_before",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "intended_transfer",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "fee",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "wealth_after_fee",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "real_wealth_after_fee",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "inflation",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "wealth_end",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "cpi_end",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "real_wealth_end",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "annual_net_real_return",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "monetary_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "return_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "cpi_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "growth_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "volatility_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "loss_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "trade_share_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "fee_rate",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "fold_id",
+          "type": "int",
+          "nullable": false
+        }
+      ],
+      "keys": [
+        "scenario_id",
+        "period"
+      ]
+    },
+    "scenario_metrics": {
+      "columns": [
+        {
+          "name": "split",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "mode",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "scenario_id",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "horizon",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "net_real_cagr_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "annual_real_volatility_pct",
+          "type": "float",
+          "nullable": true
+        },
+        {
+          "name": "max_real_drawdown_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "terminal_real_wealth",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "nominal_fee_sum",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "trade_count",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "review_count",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "later_trade_count",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "later_review_count",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "trade_share_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "trade_share_ex_initial_pct",
+          "type": "float",
+          "nullable": true
+        },
+        {
+          "name": "drawdown_peak_year",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "drawdown_peak_kind",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "drawdown_trough_year",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "drawdown_trough_kind",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "monetary_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "return_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "cpi_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "growth_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "volatility_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "loss_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "trade_share_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "fee_rate",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "fold_id",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "human_review_count",
+          "type": "int",
+          "nullable": true
+        },
+        {
+          "name": "human_review_share_pct",
+          "type": "float",
+          "nullable": true
+        },
+        {
+          "name": "first_latch_year",
+          "type": "int",
+          "nullable": true
+        },
+        {
+          "name": "target_change_count",
+          "type": "int",
+          "nullable": true
+        },
+        {
+          "name": "first_deployment_year",
+          "type": "int",
+          "nullable": true
+        },
+        {
+          "name": "initial_allocation_deferred",
+          "type": "bool",
+          "nullable": true
+        }
+      ],
+      "keys": [
+        "scenario_id",
+        "horizon"
+      ]
+    },
+    "summary": {
+      "columns": [
+        {
+          "name": "split",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "mode",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "horizon",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "scenario_count",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "median_growth_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "p10_growth_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "median_loss_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "p90_loss_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "median_volatility_pct",
+          "type": "float",
+          "nullable": true
+        },
+        {
+          "name": "median_terminal_real_wealth",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "median_nominal_fee_sum",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "pooled_trade_count",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "pooled_review_count",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "pooled_later_trade_count",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "pooled_later_review_count",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "pooled_trade_share_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "pooled_trade_share_ex_initial_pct",
+          "type": "float",
+          "nullable": true
+        },
+        {
+          "name": "severe_scenario_id",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "severe_net_real_cagr_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "severe_max_real_drawdown_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "severe_terminal_real_wealth",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "severe_drawdown_peak_year",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "severe_drawdown_peak_kind",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "severe_drawdown_trough_year",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "severe_drawdown_trough_kind",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "severe_trade_share_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "severe_trade_share_ex_initial_pct",
+          "type": "float",
+          "nullable": true
+        },
+        {
+          "name": "monetary_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "return_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "cpi_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "growth_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "volatility_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "loss_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "trade_share_units",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "fee_rate",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "pooled_human_review_count",
+          "type": "int",
+          "nullable": true
+        },
+        {
+          "name": "pooled_human_review_share_pct",
+          "type": "float",
+          "nullable": true
+        },
+        {
+          "name": "pooled_target_change_count",
+          "type": "int",
+          "nullable": true
+        }
+      ],
+      "keys": [
+        "horizon"
+      ]
+    },
+    "decisions": {
+      "columns": [
+        {
+          "name": "split",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "mode",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "fee_rate",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "scenario_id",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "fold_id",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "period",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "action",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "active_before",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "active_after",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "proposed_target",
+          "type": "str",
+          "nullable": true
+        },
+        {
+          "name": "selected_target",
+          "type": "str",
+          "nullable": true
+        },
+        {
+          "name": "ce_keep",
+          "type": "float",
+          "nullable": true
+        },
+        {
+          "name": "prior_mass",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "recent_count",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "observed_max_drawdown_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "human_review_latched",
+          "type": "bool",
+          "nullable": false
+        },
+        {
+          "name": "initial_allocation_deferred",
+          "type": "bool",
+          "nullable": false
+        },
+        {
+          "name": "intended_transfer",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "actual_fee",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "is_trade",
+          "type": "bool",
+          "nullable": false
+        },
+        {
+          "name": "executed_target_change",
+          "type": "bool",
+          "nullable": false
+        },
+        {
+          "name": "reason",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "first_deployment_year",
+          "type": "int",
+          "nullable": true
+        }
+      ],
+      "keys": [
+        "scenario_id",
+        "period"
+      ]
+    },
+    "target_scores": {
+      "columns": [
+        {
+          "name": "split",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "mode",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "fee_rate",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "scenario_id",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "fold_id",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "period",
+          "type": "int",
+          "nullable": false
+        },
+        {
+          "name": "target_name",
+          "type": "str",
+          "nullable": false
+        },
+        {
+          "name": "target_equity",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "target_bond",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "target_bill_proxy",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "ce_target",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "tau",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "fee_fraction",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "pre_cost_benefit",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "modeled_fee_impact",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "conservative_score",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "true_net_ce",
+          "type": "float",
+          "nullable": false
+        }
+      ],
+      "keys": [
+        "scenario_id",
+        "period",
+        "target_name"
+      ]
+    }
+  }
+}

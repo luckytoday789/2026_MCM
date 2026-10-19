@@ -1,0 +1,6 @@
+{
+  "code": 0,
+  "stdout": "{\"authenticated_reference_ledger_rows\": 10800, \"corruption_rejections\": 7, \"facts\": {\"doubled\": 8064, \"primary\": 8064}, \"independent_outcome_acceptance\": false, \"production_execution\": false, \"read_only\": true, \"status\": \"passed\", \"synthetic_check_seconds\": 5.342999999993481}\r\n",
+  "stderr": "",
+  "seconds": 18.671533799999974
+}

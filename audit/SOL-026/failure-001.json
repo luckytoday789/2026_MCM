@@ -1,0 +1,12 @@
+{
+  "stage": "first focused validation",
+  "failure": "Review latch fixture did not force a 25% real drawdown when deployment deferred; bills loss was only 20% nominal.",
+  "effect": "One assertion failed; ten tests passed. No production evidence generated.",
+  "fix": "Synthetic bill loss changed from -0.2 to -0.4 so every portfolio crosses the existing 25% review threshold. No policy change.",
+  "preserved": "trial-001-tests.json and trial-001-test-source.py",
+  "tool_failures": [
+    "exec helper setup refresh failed twice before execution",
+    "Node inspection referenced undefined toolsDummy after successful outputs",
+    "Node environment lookup referenced unavailable process global before test launch"
+  ]
+}

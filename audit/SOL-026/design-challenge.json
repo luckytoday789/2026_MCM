@@ -1,0 +1,27 @@
+{
+  "status": "preimplementation_review",
+  "findings": [
+    {
+      "topic": "provenance",
+      "finding": "No contract contradiction: C ancestor E ancestor P; demanding task presence at E rejects minimal legitimate C<E<P publication. Test separate publication."
+    },
+    {
+      "topic": "calibration",
+      "finding": "Synthetic arithmetic manifest cannot certify production origin. Keep immutable object and create separate attestation."
+    },
+    {
+      "topic": "typing",
+      "finding": "Empty nullable boolean and false collapse under truthiness. Explicit per-column codecs required; -0.0 hex must survive."
+    },
+    {
+      "topic": "imports",
+      "finding": "Unknown growth labels rejected; expected inherited label maps without numeric conversion. Primary execution callback must never simulate baselines."
+    },
+    {
+      "topic": "acceptance",
+      "finding": "Historical SOL-013 accepted negative code review must not be treated as positive computational approval. Require positive verdicts for SOL-021/022/025/026; preserve SOL-023 cancellation."
+    }
+  ],
+  "contradictions": [],
+  "production_execution": false
+}

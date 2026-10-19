@@ -1,0 +1,111 @@
+{
+  "corruptions": [
+    {
+      "category": "missing_file",
+      "original_unchanged": true,
+      "overlay_sha256": {
+        "cases/bills_keep/summary.csv": null
+      },
+      "recipe": {
+        "remove": "cases/bills_keep/summary.csv"
+      },
+      "rejection": "cases/bills_keep/summary.csv"
+    },
+    {
+      "category": "altered_numeric",
+      "original_unchanged": true,
+      "overlay_sha256": {
+        "cases/equal_weight_annual/annual_ledgers.csv": "ea4c3da1e58514c3833d7ba933ceced774a758e9f9b1575eb954e6fc66af2732",
+        "run_manifest.json": "c1cc8b2373c9a9bd063eb2d6106851e11d462c1e1edea53cba8f58232ea676f9"
+      },
+      "recipe": {
+        "column": "fee",
+        "original_hex": "0x1.5555555555556p-2",
+        "recompute_manifest_file_hash": true,
+        "replacement": 0.0,
+        "row": 0,
+        "table": "cases/equal_weight_annual/annual_ledgers.csv"
+      },
+      "rejection": "exact fee multiplication"
+    },
+    {
+      "category": "false_source",
+      "original_unchanged": true,
+      "overlay_sha256": {
+        "run_manifest.json": "11c28f29aab42ec16066f6d4905f42f6c9140650ce12dcb6a63badb5dd95cc2b"
+      },
+      "recipe": {
+        "path": [
+          "provenance",
+          "kind"
+        ],
+        "value": "false"
+      },
+      "rejection": "false source/provenance"
+    },
+    {
+      "category": "wrong_config",
+      "original_unchanged": true,
+      "overlay_sha256": {
+        "run_manifest.json": "8cd99ed39371927bbd7bc6c8d6c6be57357d7907996d5ea2f8e1f4f5dbe5df7a"
+      },
+      "recipe": {
+        "path": [
+          "configuration",
+          "group"
+        ],
+        "value": "primary"
+      },
+      "rejection": "wrong configuration"
+    },
+    {
+      "category": "duplicate_key",
+      "original_unchanged": true,
+      "overlay_sha256": {
+        "cases/equal_weight_annual/annual_ledgers.csv": "2b4467424e4b26e8c20204c340da717b86e7a4f60d6b160d1177912c3ee203d9",
+        "run_manifest.json": "6b7caa5737bab3a4a28d936d8ee0d9dd74d17e242a9bb8112ed3daa5020c5510"
+      },
+      "recipe": {
+        "append_copy_of_row": 0,
+        "recompute_manifest_file_hash": true,
+        "table": "cases/equal_weight_annual/annual_ledgers.csv"
+      },
+      "rejection": "duplicate row key"
+    },
+    {
+      "category": "bogus_count",
+      "original_unchanged": true,
+      "overlay_sha256": {
+        "run_manifest.json": "bbf1f7e429a371b8e0bd9e698a85eb35fdb44ddfafd60409203382b9cb85dc44"
+      },
+      "recipe": {
+        "add": 1,
+        "path": [
+          "artifacts",
+          "cases/equal_weight_annual/annual_ledgers.csv",
+          "rows"
+        ]
+      },
+      "rejection": "bogus row count"
+    },
+    {
+      "category": "incomplete_status",
+      "original_unchanged": true,
+      "overlay_sha256": {
+        "run_manifest.json": "c44b2557d1ccef0bd9494daafbebf446e2483569e8110b51cf71181c97876cdf"
+      },
+      "recipe": {
+        "path": [
+          "status"
+        ],
+        "value": "failed"
+      },
+      "rejection": "incomplete status"
+    }
+  ],
+  "method": "reconstructable read-only byte overlays; no copied bundle",
+  "output_bytes_unchanged": true,
+  "schema_version": 1,
+  "source_bytes_unchanged": true,
+  "status": "passed"
+}
