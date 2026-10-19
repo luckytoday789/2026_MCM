@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "operation": "exec_command local process setup",
+  "outcome": "failed_before_process_creation",
+  "attempts": 2,
+  "diagnosis": "helper_unknown_error: setup refresh had errors",
+  "fallback": "Existing Node filesystem and child_process APIs; no runner/helper modification"
+}

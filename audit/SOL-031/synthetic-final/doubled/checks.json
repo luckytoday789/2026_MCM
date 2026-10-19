@@ -1,0 +1,13 @@
+{
+  "absolute_tolerance": 0.0,
+  "counts": {
+    "annual_ledgers": 192,
+    "decisions": 120,
+    "scenario_metrics": 96,
+    "summary": 24,
+    "target_scores": 40
+  },
+  "independent_scalar_facts": 8064,
+  "prefix_replay": true,
+  "status": "passed"
+}

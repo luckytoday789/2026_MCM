@@ -1,0 +1,186 @@
+nce bound to this exact task/base/publication/final delivered bytes. Do not import/run old audit code as current evidence or change old hashes. Preserve negative trials. Use deterministic fresh fixtures and complete strict byte inventories; do not skip/omit archived failure fixtures to conceal this defect. Do not weaken success/data/source checks or tolerate arbitrary numeric/byte changes. Avoid copied historical bundle duplication.
+
+Demonstrate an actual Git clean/index/checkout roundtrip under core.autocrlf=true and false using pinned root and scoped attributes, followed by both prescribed commands on exported views with later HEAD and no live runtime task. Raw file copy alone is insufficient. Isolated ignored scratch repositories/indexes may use git init/add/write-tree/checkout-index/config and object alternates. No commits/model calls are needed. Never alter the assigned/main Git index/refs/config; do not fetch, merge, commit, push, checkout branches or restart any worker. Record exact commands, return codes, attribute decisions and canonical/checkout hash/size inventories. Preserve all scratch outcomes.
+
+Retain all original eight-mode/two-fee generated fixtures, primary five-policy callback guard, exact HY3-003 Git-output import without simulation, twelve binding corruptions, seven artifact corruptions including rehashed numeric cells, tiny-fee rejection, typed signed zero/adjacent floats/nulls/booleans, before-data source/task rejection, refusal of existing outputs and partial/timeout/oversize preservation. No competition source CSV reads or production configs/results. Original HY3-003 blobs may be used solely as import fixtures. Keep final and production gates closed.
+
+Run both prescribed commands in fresh Python3.12 subprocesses with all case-insensitive PYTHONPATH removed. Save actual argv/exit codes/timings/module paths and unchanged source/audit/reference inventories, plus a separate git-roundtrip-checks.json. --check must never create or repair evidence. Create fresh core evidence only after final code/docs, with outer logs after checks to avoid self-hash cycles. The independent chief review follows exact delivery; do not claim approval. Work CPU-first within20 minutes including checks; if blocked, preserve partial work and report the actual failure. Only assigned paths and ignored scratch are writable; parent owns receipt and delivery.
+warning: Codex is ignoring 1 unrecognized configuration setting. Check for typos or deprecated settings.
+  user (C:\Users\刘奥华\.codex\config.toml): `computer_use.windows.always_allowed_app_ids` is ignored.
+warning: Codex is ignoring 1 unrecognized configuration setting. Check for typos or deprecated settings.
+  user (C:\Users\刘奥华\.codex\config.toml): `computer_use.windows.always_allowed_app_ids` is ignored.
+codex
+I’ll read the task, contracts, and control state, then make the narrow W-LF-1 correction and run the prescribed Git roundtrip checks within the assigned paths.
+exec
+"C:\\Users\\刘奥华\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe" -Command 'Get-Content AGENTS.md; Get-Content .runtime/task.json; Get-Content ops/control.json; Get-Content ops/PROTOCOL.md; Get-Content specs/PROBLEM_LOCK.md; Get-Content specs/ACCOUNTING.md' in E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-031-a1
+ exited -1 in 0ms:
+Failed to create unified exec process: helper_unknown_error: setup refresh had errors
+2026-10-19T22:45:38.558505Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: helper_unknown_error: setup refresh had errors\")" }
+exec
+"C:\\Users\\刘奥华\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe" -NoProfile -Command 'Get-Content AGENTS.md' in E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-031-a1
+ exited -1 in 0ms:
+Failed to create unified exec process: helper_unknown_error: setup refresh had errors
+2026-10-19T22:45:44.973339Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: helper_unknown_error: setup refresh had errors\")" }
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (failed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+The worktree is clean at the pinned base, and Python 3.12.14 is available. The shell launcher failed during setup; the Node execution tool can run local processes, so I’m using it to continue.
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+All pinned source blobs match the task. I located the failure JSON write in `_stage_output`. I’ll switch it to the existing UTF-8 LF byte serializer, add scoped audit attributes, and retain the failed fixtures in the strict inventory.
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+The first clean Python run passed all 17 tests, including the two new byte and Git tests. SOL-026 and SOL-029 are rejected as replacement or extra approvals. Next I’ll finalize the new audit documents and record the full exported-view checks.
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Fresh primary and doubled synthetic bundles are written, and the audit is checking their saved bytes and corruption cases. The CLI matches the pinned draft byte-for-byte, and the control state still has the final-data gate closed.
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Fresh evidence creation passed: all seven artifact corruptions and twelve binding corruptions were rejected, and 10,800 HY3-003 ledger rows authenticated without simulation. The Git transport checks are now running with the failed staging files included in the strict inventories.
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Both Git modes preserved the audit bytes, and the exported verifier passed. The exported unit-test run failed before executing tests because a generated scratch path exceeded Windows’ path limit. I’ll preserve the full trial, shorten the harness paths, then create fresh evidence against the final code.
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+The first transport trial is archived with its source snapshot; its generated fixtures remain in place without duplication. The fresh run binds every archived file by hash and size and includes those files in the new Git inventories. The only follow-up code change shortened test and transport scratch paths.
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+The fresh `core.autocrlf=true` export passed all 17 tests and the verifier, with every audit byte unchanged, including the archived failure trial. The `false` export is finishing the same checks.
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Both prescribed commands now pass in both Git exports, and all source, audit, and reference bytes are unchanged. My added whole-repository ref check failed because the existing watcher updated remote-tracking refs during the run; the assigned index, HEAD, config, and root attributes stayed unchanged. I’ll preserve this trial, scope the mutation check to the assigned and local main refs, and record all observed ref changes separately.
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+The final run includes both preserved trials and all nine deliberate failure JSON files. Original-view checks have passed, and the current Git export preserves every audit byte. I’m waiting for the remaining exported commands and metadata comparison.
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+The final recorder passed. Both prescribed commands passed in the original view and both real Git exports; protected bytes and assigned/main local metadata stayed unchanged. I’m running one last read-only verifier check with the completed outer logs present, then checking the delivery paths.
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Completed SOL-031 within assigned paths.
+
+- Fixed LF failure JSON serialization and SOL-031 approval guards.
+- All 17 tests and the verifier pass locally and through actual Git exports under both autocrlf modes.
+- All nine failure fixtures retain exact bytes. Both earlier harness failures remain preserved.
+- Final read-only verification passed; protected bytes stayed unchanged.
+
+Evidence: [clean checks](E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-031-a1/audit/SOL-031/clean-environment-checks.json), [Git roundtrips](E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-031-a1/audit/SOL-031/git-roundtrip-checks.json).
+
+No commits, pushes, or branch changes made. Production/final gates remain closed. Chief acceptance is pending.
+tokens used
+187,974
+Completed SOL-031 within assigned paths.
+
+- Fixed LF failure JSON serialization and SOL-031 approval guards.
+- All 17 tests and the verifier pass locally and through actual Git exports under both autocrlf modes.
+- All nine failure fixtures retain exact bytes. Both earlier harness failures remain preserved.
+- Final read-only verification passed; protected bytes stayed unchanged.
+
+Evidence: [clean checks](E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-031-a1/audit/SOL-031/clean-environment-checks.json), [Git roundtrips](E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-031-a1/audit/SOL-031/git-roundtrip-checks.json).
+
+No commits, pushes, or branch changes made. Production/final gates remain closed. Chief acceptance is pending.

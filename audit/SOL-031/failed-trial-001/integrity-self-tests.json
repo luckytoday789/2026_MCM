@@ -1,0 +1,173 @@
+{
+  "binding_corruptions": [
+    {
+      "category": "task_id",
+      "rejection": "audit identity mismatch: task_id",
+      "repair": false
+    },
+    {
+      "category": "base_commit",
+      "rejection": "audit identity mismatch: base_commit",
+      "repair": false
+    },
+    {
+      "category": "publication_commit",
+      "rejection": "audit identity mismatch: publication_commit",
+      "repair": false
+    },
+    {
+      "category": "task_digest",
+      "rejection": "audit identity mismatch: task_digest",
+      "repair": false
+    },
+    {
+      "category": "task_blob_sha256",
+      "rejection": "audit identity mismatch: task_blob_sha256",
+      "repair": false
+    },
+    {
+      "category": "source_pins",
+      "rejection": "audit identity mismatch: source_pins",
+      "repair": false
+    },
+    {
+      "category": "delivered_sha256",
+      "rejection": "audit identity mismatch: delivered_sha256",
+      "repair": false
+    },
+    {
+      "category": "consumed_checkout_sha256",
+      "rejection": "false consumed checkout hash",
+      "repair": false
+    },
+    {
+      "category": "imported_consumed_sha256",
+      "rejection": "false imported consumed hash",
+      "repair": false
+    },
+    {
+      "category": "imported_canonical_lf_sha256",
+      "rejection": "imported module identity",
+      "repair": false
+    },
+    {
+      "category": "imported_path",
+      "rejection": "imported module identity",
+      "repair": false
+    },
+    {
+      "category": "actual_final_source_bytes",
+      "rejection": "audit identity mismatch: delivered_sha256",
+      "repair": false
+    }
+  ],
+  "corruptions": [
+    {
+      "category": "missing_file",
+      "original_unchanged": true,
+      "overlay_sha256": {
+        "cases/bills_keep/summary.csv": null
+      },
+      "recipe": {
+        "remove": "cases/bills_keep/summary.csv"
+      },
+      "rejection": "cases/bills_keep/summary.csv"
+    },
+    {
+      "category": "altered_numeric",
+      "original_unchanged": true,
+      "overlay_sha256": {
+        "cases/equal_weight_annual/annual_ledgers.csv": "ea4c3da1e58514c3833d7ba933ceced774a758e9f9b1575eb954e6fc66af2732",
+        "run_manifest.json": "a6ccd25cb1c603d57515ac0017d5f472ba6a99c78d0a5eb91c847b69d4789428"
+      },
+      "recipe": {
+        "column": "fee",
+        "original_hex": "0x1.5555555555556p-2",
+        "recompute_manifest_file_hash": true,
+        "replacement": 0.0,
+        "row": 0,
+        "table": "cases/equal_weight_annual/annual_ledgers.csv"
+      },
+      "rejection": "exact fee multiplication"
+    },
+    {
+      "category": "false_source",
+      "original_unchanged": true,
+      "overlay_sha256": {
+        "run_manifest.json": "57803e15c162d56d3c1b93082492efc852ab2d50922261ec03ccf82eeafcf589"
+      },
+      "recipe": {
+        "path": [
+          "provenance",
+          "kind"
+        ],
+        "value": "false"
+      },
+      "rejection": "false source/provenance"
+    },
+    {
+      "category": "wrong_config",
+      "original_unchanged": true,
+      "overlay_sha256": {
+        "run_manifest.json": "307c0b39097d0bd2499dbd1d2c2b18b8845e12ea544baaec0e77bc70c2d621df"
+      },
+      "recipe": {
+        "path": [
+          "configuration",
+          "group"
+        ],
+        "value": "primary"
+      },
+      "rejection": "wrong configuration"
+    },
+    {
+      "category": "duplicate_key",
+      "original_unchanged": true,
+      "overlay_sha256": {
+        "cases/equal_weight_annual/annual_ledgers.csv": "2b4467424e4b26e8c20204c340da717b86e7a4f60d6b160d1177912c3ee203d9",
+        "run_manifest.json": "9c04f8bc5c93244a9f1df6f455a1961dd78bf58c8c54ba2a5d4c730b951fb5f3"
+      },
+      "recipe": {
+        "append_copy_of_row": 0,
+        "recompute_manifest_file_hash": true,
+        "table": "cases/equal_weight_annual/annual_ledgers.csv"
+      },
+      "rejection": "duplicate row key"
+    },
+    {
+      "category": "bogus_count",
+      "original_unchanged": true,
+      "overlay_sha256": {
+        "run_manifest.json": "12c21fad0adf81a701fcb6d6d803d085a2bed77feeeb916773530ae327cfec56"
+      },
+      "recipe": {
+        "add": 1,
+        "path": [
+          "artifacts",
+          "cases/equal_weight_annual/annual_ledgers.csv",
+          "rows"
+        ]
+      },
+      "rejection": "bogus row count"
+    },
+    {
+      "category": "incomplete_status",
+      "original_unchanged": true,
+      "overlay_sha256": {
+        "run_manifest.json": "92e867b3dc38bde6c4e6d2e2663863c5bc594ba4c6913d1e083118a363d71da1"
+      },
+      "recipe": {
+        "path": [
+          "status"
+        ],
+        "value": "failed"
+      },
+      "rejection": "incomplete status"
+    }
+  ],
+  "method": "reconstructable read-only byte overlays; no copied bundle",
+  "output_bytes_unchanged": true,
+  "schema_version": 1,
+  "source_bytes_unchanged": true,
+  "status": "passed"
+}

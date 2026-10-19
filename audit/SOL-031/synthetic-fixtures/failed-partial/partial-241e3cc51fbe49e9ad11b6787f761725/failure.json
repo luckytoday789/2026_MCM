@@ -1,0 +1,8 @@
+{
+  "diagnosis": "deliberate SOL-031 synthetic failure",
+  "elapsed_seconds": 0.0,
+  "exception": "RuntimeError",
+  "partial_path": "partial-241e3cc51fbe49e9ad11b6787f761725",
+  "status": "failed",
+  "traceback": "Traceback (most recent call last):\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-031-a1\\src\\safeinvest\\policy_writer.py\", line 659, in _stage_output\n    result=operation(stage,started)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-031-a1\\audit\\SOL-031\\verify.py\", line 197, in fail\n    raise RuntimeError('deliberate SOL-031 synthetic failure')\nRuntimeError: deliberate SOL-031 synthetic failure\n"
+}
