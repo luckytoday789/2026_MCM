@@ -1,0 +1,15 @@
+test_B_exact_generic_prefix_all_fixed_classes_and_fees (test_policy_personalized.PersonalizedTests.test_B_exact_generic_prefix_all_fixed_classes_and_fees) ... ok
+test_current_year_cannot_change_its_own_decision (test_policy_personalized.PersonalizedTests.test_current_year_cannot_change_its_own_decision) ... ok
+test_exact_equality_latch_and_pending_holdings (test_policy_personalized.PersonalizedTests.test_exact_equality_latch_and_pending_holdings) ... ok
+test_fee_before_returns_and_fresh_state (test_policy_personalized.PersonalizedTests.test_fee_before_returns_and_fresh_state) ... ok
+test_final_year_crossing_no_fictional_review_or_suffix_leak (test_policy_personalized.PersonalizedTests.test_final_year_crossing_no_fictional_review_or_suffix_leak) ... ok
+test_inclusive_screens_strict_count_and_failure_combinations (test_policy_personalized.PersonalizedTests.test_inclusive_screens_strict_count_and_failure_combinations) ... ok
+test_invalid_inputs_fail_not_referral (test_policy_personalized.PersonalizedTests.test_invalid_inputs_fail_not_referral) ... ok
+test_post_fee_crossing_survives_recovery_until_next_review (test_policy_personalized.PersonalizedTests.test_post_fee_crossing_survives_recovery_until_next_review) ... ok
+test_profiles_fees_counts_and_rational_inflation (test_policy_personalized.PersonalizedTests.test_profiles_fees_counts_and_rational_inflation) ... ok
+test_referral_does_not_touch_rows_or_priors_and_null_semantics (test_policy_personalized.PersonalizedTests.test_referral_does_not_touch_rows_or_priors_and_null_semantics) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.581s
+
+OK

@@ -1,0 +1,77 @@
+{
+  "started_utc": "2026-10-19T22:32:50.422Z",
+  "base": "5a015a490c89b39271624e1f1790a3454498a6c9",
+  "publication": "df038cb116c4818c14454231500f992af3f26d0f",
+  "task_checkout_sha256": "172dae68ae173f77698d56633b98e2783f615eb758b5034e6c0f3f97cfd62f2a",
+  "source_checkout_sha256": {
+    "specs/PROBLEM_LOCK.md": "c3cce877e00a62f49c8a032e9bde5e39562bd1b29dde3dee23263935f9aea675",
+    "specs/ACCOUNTING.md": "d5a59960f8bc9474986015f4f832ffcbbdb5fc3e85bad0b3b9453861ae63a7fc",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "specs/PERSONALIZED_REVIEW.md": "7e1f2fbbc5cdf79127de0d5760fe087114b2bc2eab97fc7e0a563615b47910ee",
+    "specs/PERSONALIZED_OUTPUT_NOTES.md": "ad81094594b4e4df763e9baf2870d22e33e043aad771313014af8b63ea7b5f4d",
+    "specs/personalized_review_v1.json": "2edc9410b291f8f1f7235344e685d004c2f3cfd80844539df96759e9b305b4ad",
+    "specs/PERSONALIZED_COMPONENT.md": "031d82d3de27d484bdda3864af2ea6031d4ddfd95c9195f9fe62f7b0ad29ed48",
+    "src/safeinvest/__init__.py": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+    "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+    "src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+    "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+    "src/safeinvest/policy_calibration.py": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+    "src/safeinvest/policy_cases.py": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7",
+    "src/safeinvest/policy_personalized.py": "09e840c2e7f94183472e144c98509f855081105ae937a13cabb31a3bf47062e9",
+    "tests/test_policy_personalized.py": "1a1adc6d540e3e033ecce7a48ba0a8d379c18d563b0ec7bb7444f3ee03696b5a",
+    "audit/chief/personalized-component/validation-002.json": "d972375132ed604993db42cb164a30ea5095e4c488c5a3a410cede7ccdc14623",
+    "audit/SOL-020/findings.json": "2e597db33daf1da6dfdea61925565fb7d2735e97db7d985784faed967a27f3c0",
+    "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+    "audit/chief/SOL-020-review.json": "276895e8e12b9c212fe433f0fa1c07408c601502ffd5d9ce965a684fdc72551b",
+    "audit/chief/SOL-021-review.json": "105f8610edeebc1b17272b7450d3cdba29fa14d963407afd1665fc7caf640670",
+    "audit/chief/SOL-022-review.json": "9875dab72b4354566fe6067de94fabbb917c0b9c2344914a3f38c084f1042546",
+    "audit/chief/SOL-025-review.json": "7523121f5290d6ba938ccff6749d5d28b86c0053c2c072850092dee941efdb1c"
+  },
+  "source_canonical_sha256": {
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "specs/PERSONALIZED_REVIEW.md": "0365fdf989ae7abfeda0bc3f48f8c86245a40dd9e48b3c6ae8d2d26c0b7c4987",
+    "specs/PERSONALIZED_OUTPUT_NOTES.md": "f328a5832251faab1b8810b598fc66408e5a323afc755a0011cfdb0b04e255a7",
+    "specs/personalized_review_v1.json": "2edc9410b291f8f1f7235344e685d004c2f3cfd80844539df96759e9b305b4ad",
+    "specs/PERSONALIZED_COMPONENT.md": "d9b3737ec37a8cf6421fe56a703d045a680bdef5906b4a9910643a996c181fec",
+    "src/safeinvest/__init__.py": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+    "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+    "src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+    "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+    "src/safeinvest/policy_calibration.py": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+    "src/safeinvest/policy_cases.py": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7",
+    "src/safeinvest/policy_personalized.py": "09e840c2e7f94183472e144c98509f855081105ae937a13cabb31a3bf47062e9",
+    "tests/test_policy_personalized.py": "1a1adc6d540e3e033ecce7a48ba0a8d379c18d563b0ec7bb7444f3ee03696b5a",
+    "audit/chief/personalized-component/validation-002.json": "d972375132ed604993db42cb164a30ea5095e4c488c5a3a410cede7ccdc14623",
+    "audit/SOL-020/findings.json": "2e597db33daf1da6dfdea61925565fb7d2735e97db7d985784faed967a27f3c0",
+    "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+    "audit/chief/SOL-020-review.json": "276895e8e12b9c212fe433f0fa1c07408c601502ffd5d9ce965a684fdc72551b",
+    "audit/chief/SOL-021-review.json": "105f8610edeebc1b17272b7450d3cdba29fa14d963407afd1665fc7caf640670",
+    "audit/chief/SOL-022-review.json": "9875dab72b4354566fe6067de94fabbb917c0b9c2344914a3f38c084f1042546",
+    "audit/chief/SOL-025-review.json": "7523121f5290d6ba938ccff6749d5d28b86c0053c2c072850092dee941efdb1c"
+  },
+  "failed_trials": [
+    {
+      "kind": "tool",
+      "error": "exec_command helper_unknown_error: setup refresh had errors",
+      "diagnosis": "Used available node child_process fallback."
+    },
+    {
+      "kind": "audit_environment_probe",
+      "error": "process is not defined",
+      "diagnosis": "Node runtime omits process; used isolated Python bootstrap to remove PYTHONPATH case-insensitively."
+    },
+    {
+      "kind": "pin_probe",
+      "result": "raw checkout pins differ on five Markdown CRLF files",
+      "diagnosis": "Canonical Git blobs all match; raw bytes separately preserved, no source edits."
+    }
+  ]
+}

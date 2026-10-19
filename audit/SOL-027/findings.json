@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-027",
+  "code_verdict": "approve",
+  "scope": "Chief pure one-case personalized adapter and integration with the exact pinned accepted generic sources; synthetic evidence only.",
+  "reviewed_sources": {
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "specs/PERSONALIZED_REVIEW.md": "0365fdf989ae7abfeda0bc3f48f8c86245a40dd9e48b3c6ae8d2d26c0b7c4987",
+    "specs/PERSONALIZED_OUTPUT_NOTES.md": "f328a5832251faab1b8810b598fc66408e5a323afc755a0011cfdb0b04e255a7",
+    "specs/personalized_review_v1.json": "2edc9410b291f8f1f7235344e685d004c2f3cfd80844539df96759e9b305b4ad",
+    "specs/PERSONALIZED_COMPONENT.md": "d9b3737ec37a8cf6421fe56a703d045a680bdef5906b4a9910643a996c181fec",
+    "src/safeinvest/__init__.py": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+    "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+    "src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+    "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+    "src/safeinvest/policy_calibration.py": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+    "src/safeinvest/policy_cases.py": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7",
+    "src/safeinvest/policy_personalized.py": "09e840c2e7f94183472e144c98509f855081105ae937a13cabb31a3bf47062e9",
+    "tests/test_policy_personalized.py": "1a1adc6d540e3e033ecce7a48ba0a8d379c18d563b0ec7bb7444f3ee03696b5a",
+    "audit/chief/personalized-component/validation-002.json": "d972375132ed604993db42cb164a30ea5095e4c488c5a3a410cede7ccdc14623",
+    "audit/SOL-020/findings.json": "2e597db33daf1da6dfdea61925565fb7d2735e97db7d985784faed967a27f3c0",
+    "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+    "audit/chief/SOL-020-review.json": "276895e8e12b9c212fe433f0fa1c07408c601502ffd5d9ce965a684fdc72551b",
+    "audit/chief/SOL-021-review.json": "105f8610edeebc1b17272b7450d3cdba29fa14d963407afd1665fc7caf640670",
+    "audit/chief/SOL-022-review.json": "9875dab72b4354566fe6067de94fabbb917c0b9c2344914a3f38c084f1042546",
+    "audit/chief/SOL-025-review.json": "7523121f5290d6ba938ccff6749d5d28b86c0053c2c072850092dee941efdb1c"
+  },
+  "base_commit": "5a015a490c89b39271624e1f1790a3454498a6c9",
+  "publication_commit": "df038cb116c4818c14454231500f992af3f26d0f",
+  "required_fixes": [],
+  "blockers": [],
+  "independent_evidence": {
+    "checks": 97118,
+    "case_count": 35,
+    "invalid_input_cases": 40,
+    "maximum_absolute_arithmetic_residual": 1.1368683772161603e-13,
+    "tolerance": {
+      "abs": 1e-9,
+      "rel": 1e-10,
+      "boundaries_counts_nulls_keys_hashes": "exact; no tolerance"
+    },
+    "eligible_combinations": {
+      "A": [
+        "conservative"
+      ],
+      "B": [
+        "conservative",
+        "balanced"
+      ],
+      "C": [
+        "conservative",
+        "balanced",
+        "growth"
+      ],
+      "D": [
+        "conservative",
+        "balanced"
+      ],
+      "E": [
+        "conservative"
+      ]
+    },
+    "fees": [
+      0.0025,
+      0.005
+    ],
+    "B15_exact_comparisons": "All inherited fields in ledgers, decisions, target scores, scenario metrics and summary; both eligible classes and fees, from generic H30 execution.",
+    "independent_arithmetic": "Fraction holdings/fees/CPI/running peaks; direct inverse-cube scalar certainty equivalents, sample volatility, rational-index quantiles and independent severe-case selection.",
+    "generated_120x30": {
+      "counts": {
+        "annual_ledgers": 600,
+        "decisions": 600,
+        "scenario_metrics": 120,
+        "summary": 1,
+        "target_scores": 600
+      },
+      "origin": "generated zero-return synthetic rows; development label tests shape only",
+      "record_sha256": "2f5e386b04259fe2aa22f2458ecbab39adc758b472a54e40830fb231708b72a6",
+      "training_rows_per_fold": [
+        2700,
+        2700,
+        2700,
+        2700
+      ]
+    },
+    "post_fee_crossing": [
+      {
+        "fee": 0.0025,
+        "loss_pct": 10.014016781250001,
+        "latch_year": 3,
+        "trough_year": 2,
+        "trough_kind": "post_fee"
+      },
+      {
+        "fee": 0.005,
+        "loss_pct": 10.029066374999996,
+        "latch_year": 3,
+        "trough_year": 2,
+        "trough_kind": "post_fee"
+      }
+    ],
+    "screens": [
+      {
+        "case": "equality",
+        "expected": {
+          "exceedance_count": 0,
+          "exceedance_fraction": 0,
+          "purchasing_power_pass": true,
+          "reasons": [],
+          "risk_pass": true
+        }
+      },
+      {
+        "case": "risk_only",
+        "expected": {
+          "exceedance_count": 120,
+          "exceedance_fraction": 1,
+          "purchasing_power_pass": true,
+          "reasons": [
+            "p90_loss_exceeds_tolerance"
+          ],
+          "risk_pass": false
+        }
+      },
+      {
+        "case": "power_only",
+        "expected": {
+          "exceedance_count": 0,
+          "exceedance_fraction": 0,
+          "purchasing_power_pass": false,
+          "reasons": [
+            "p10_growth_negative"
+          ],
+          "risk_pass": true
+        }
+      },
+      {
+        "case": "both",
+        "expected": {
+          "exceedance_count": 120,
+          "exceedance_fraction": 1,
+          "purchasing_power_pass": false,
+          "reasons": [
+            "p90_loss_exceeds_tolerance",
+            "p10_growth_negative"
+          ],
+          "risk_pass": false
+        }
+      },
+      {
+        "case": "above_loss",
+        "expected": {
+          "exceedance_count": 120,
+          "exceedance_fraction": 1,
+          "purchasing_power_pass": true,
+          "reasons": [
+            "p90_loss_exceeds_tolerance"
+          ],
+          "risk_pass": false
+        }
+      },
+      {
+        "case": "below_loss",
+        "expected": {
+          "exceedance_count": 0,
+          "exceedance_fraction": 0,
+          "purchasing_power_pass": true,
+          "reasons": [],
+          "risk_pass": true
+        }
+      },
+      {
+        "case": "negative_growth",
+        "expected": {
+          "exceedance_count": 0,
+          "exceedance_fraction": 0,
+          "purchasing_power_pass": false,
+          "reasons": [
+            "p10_growth_negative"
+          ],
+          "risk_pass": true
+        }
+      },
+      {
+        "case": "positive_growth",
+        "expected": {
+          "exceedance_count": 0,
+          "exceedance_fraction": 0,
+          "purchasing_power_pass": true,
+          "reasons": [],
+          "risk_pass": true
+        }
+      }
+    ],
+    "p90_passing_with_strict_exceedance": {
+      "exceedance_count": 1,
+      "exceedance_fraction": 0.008333333333333333,
+      "purchasing_power_pass": true,
+      "reasons": [],
+      "risk_pass": true
+    }
+  },
+  "focused_regression": {
+    "returncode": 0,
+    "tests": 10,
+    "python": "3.12.14",
+    "log": "focused-test.json"
+  },
+  "scope_assessment": {
+    "source_verified": false,
+    "source_verified_locations": [
+      "rescreen.source_verified",
+      "case.metadata.source_verified"
+    ],
+    "unauthenticated_proposed_class": true,
+    "unauthenticated_rows": true,
+    "per_row_provenance": "Table rows carry profile and review threshold; the enclosing CaseTables metadata carries source_verified=false. No source authenticity is inferred from rows.",
+    "future_bridge_must_authenticate": [
+      "accepted generic assignment and matching candidate-screen bytes",
+      "accepted generic result receipt and source closure",
+      "all four fold priors with full other-fold training membership and source hashes",
+      "development input bytes, policy configuration and exact commands"
+    ],
+    "synthetic_status": "An eligible status with split=synthetic is only a fixture result, never an observed recommendation.",
+    "absent_layers": [
+      "ten-row root",
+      "source_case_path",
+      "saved bundle",
+      "analysis assembly",
+      "authenticated assignment",
+      "production CLI"
+    ],
+    "primary_and_doubled": "Independent fee-specific cases; no primary replacement and no same-rule robustness inference."
+  },
+  "remaining_gates": [
+    "Coordinator exact-commit review and acceptance of this audit.",
+    "Accepted 16 generic fee/mode cases and authenticated analysis assembly with independent result review, as required by the pinned component contract.",
+    "Separately reviewed personalized production bridge/writer, authenticated source/assignment/calibration closure and immutable execution configuration.",
+    "Authorized actual development execution and independent review of its results.",
+    "Recorded strategy/parameter/metric freeze and separate final gate; final data remain closed."
+  ],
+  "prohibited_activity": {
+    "competition_csv_reads": false,
+    "saved_competition_outcome_computations": false,
+    "packages_installed": false,
+    "production_cli": false,
+    "final_outcomes": false,
+    "source_edits": false,
+    "commit": false,
+    "push": false,
+    "branch_change": false,
+    "watcher_started": false
+  },
+  "failed_trials": "initial-state.json preserves tool/environment probes and CRLF pin diagnosis; oracle-trial-001/002/003 retain all successful prior scopes. No numerical failure or implementation repair occurred.",
+  "production_result": false,
+  "final_authorization": false
+}
