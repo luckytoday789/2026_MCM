@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T22:56:23.421578+00:00",
+  "source_main": "481d66a041a5de2e81a174faf3920ffe8ceb289e",
+  "scope": "Specification consistency preparation only; not independent review, implementation or execution authorization",
+  "canonical_LF_sha256": {
+    "specs/PERSONALIZED_PRODUCTION_BRIDGE.md": "c19d5ee2e8ff1d7c32551ba5ca606ab8e9e727e2801bc7e4cfadabbfedb22c3c",
+    "specs/PERSONALIZED_REVIEW.md": "0365fdf989ae7abfeda0bc3f48f8c86245a40dd9e48b3c6ae8d2d26c0b7c4987",
+    "specs/PERSONALIZED_OUTPUT_NOTES.md": "f328a5832251faab1b8810b598fc66408e5a323afc755a0011cfdb0b04e255a7",
+    "specs/PERSONALIZED_COMPONENT.md": "d9b3737ec37a8cf6421fe56a703d045a680bdef5906b4a9910643a996c181fec",
+    "specs/POLICY_ANALYSIS_ASSEMBLY.md": "808930f6c4c84d3a542bf14387dc506c6fb77b0a5be636840db30169ddcf6250",
+    "specs/personalized_review_v1.json": "2edc9410b291f8f1f7235344e685d004c2f3cfd80844539df96759e9b305b4ad",
+    "src/safeinvest/policy_analysis.py": "e94a5ef79a2f58f231a46bd2af01020dd09847d27bdbe74f1795ba032dd8d345",
+    "src/safeinvest/policy_personalized.py": "09e840c2e7f94183472e144c98509f855081105ae937a13cabb31a3bf47062e9",
+    "audit/chief/SOL-027-review.json": "a0b4522b552bf0bd5268c59bae9de6ec50241e1218b916aefd2389f030915340"
+  },
+  "accepted_component_review": "3d5e965e45f18cf79023dde69189ce987c17e56b",
+  "actual_analysis_field_names_checked": [
+    "profile",
+    "selected_class",
+    "selected_mode",
+    "candidate_class",
+    "candidate_outcomes",
+    "source_metric_keys",
+    "qualifying_classes",
+    "indifference_classes",
+    "failed_candidate_reasons",
+    "personalized_overlay_pending"
+  ],
+  "structural_counts": {
+    "profiles": 5,
+    "fees": 2,
+    "root_rows": 10,
+    "candidate_screens": 30,
+    "all_assigned_ledgers": 19440,
+    "all_assigned_metrics": 1200,
+    "illustrative_subset_ledgers": 5400,
+    "all_referred_simulations": 0
+  },
+  "production_execution_authorized": false,
+  "competition_outcomes_read": false,
+  "final_data_open": false,
+  "remaining_gates": [
+    "Accepted actual writer and analysis assembly API before publishing implementation task",
+    "Accepted generic producers and assembly results before production configuration",
+    "Independent code and actual execution result reviews",
+    "Separate recorded freeze and final gate"
+  ]
+}

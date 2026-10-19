@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "reviewed_commit": "3d5e965e45f18cf79023dde69189ce987c17e56b",
+  "integration_commit": "481d66a041a5de2e81a174faf3920ffe8ceb289e",
+  "scope": "Local pre-existing mixed line endings; no source semantic or worker evidence edits",
+  "runs": [
+    {
+      "label": "before_local_line_ending_repair",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"D:\\30576\\Documents\\2026_MCM\\audit\\SOL-027\\verify.py\", line 122, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\audit\\SOL-027\\verify.py\", line 121, in main\n    print(json.dumps(check(args.evidence),sort_keys=True))\n                     ^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\audit\\SOL-027\\verify.py\", line 90, in check\n    exact(saved['identity'],identity(),'$.identity')\n                            ^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\audit\\SOL-027\\verify.py\", line 48, in identity\n    need(current==blob or current==blob.replace(b'\\n',b'\\r\\n'),'checkout source differs: '+name)\n  File \"D:\\30576\\Documents\\2026_MCM\\audit\\SOL-027\\verify.py\", line 14, in need\n    if not ok:raise AssertionError(message)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: checkout source differs: specs/PERSONALIZED_REVIEW.md\n",
+      "seconds": 1.8440000000409782
+    },
+    {
+      "label": "after_local_line_ending_repair_later_main_no_runtime_task",
+      "exit_code": 0,
+      "stdout": "{\"base_commit\": \"5a015a490c89b39271624e1f1790a3454498a6c9\", \"check_status\": \"passed\", \"checks\": 97118, \"code_verdict\": \"approve\", \"final_authorization\": false, \"production_result\": false, \"read_only\": true}\n",
+      "stderr": "",
+      "seconds": 14.10899999999674
+    }
+  ],
+  "local_checkout_repairs": [
+    {
+      "path": "specs/PERSONALIZED_REVIEW.md",
+      "before_sha256": "2b344c2c171359a80aa1e0d75ca13ca8c39afe6330b29a41e095d220173c523a",
+      "after_sha256": "0365fdf989ae7abfeda0bc3f48f8c86245a40dd9e48b3c6ae8d2d26c0b7c4987",
+      "before_bytes": 7724,
+      "after_bytes": 7723,
+      "CRLF_count": 1,
+      "LF_count": 119,
+      "original_bytes_preserved_in_ignored_recovery": true,
+      "canonical_Git_identity_unchanged": true
+    }
+  ],
+  "checked_at": "2026-10-19T22:52:57.753499+00:00",
+  "conclusion": "Exact delivered review and later-main replay pass. Original root checkout mixed endings caused the preserved failure. Canonical Git blobs are unchanged; no worker verifier change or relaxed equality.",
+  "competition_outcomes_read": false,
+  "final_data_open": false
+}
