@@ -4,8 +4,8 @@ This is reusable working text for the corrected v2 design, not a final paper or
 an empirical result. SOL-009 supported the utility derivation but required
 clarification of action selection and comparison statistics. SOL-013 approved
 the corrected design but found a subnormal arithmetic defect in the kernel.
-The narrow correction awaits SOL-017; calibration and production evidence have
-further gates. No customer recommendation or performance advantage is claimed.
+SOL-017 closed that defect but found extreme midpoint rounding error K2. The
+K2 correction awaits SOL-021; calibration and production evidence have further gates. No customer recommendation or performance advantage is claimed.
 
 ## An explicit estimate of benefit before trading
 

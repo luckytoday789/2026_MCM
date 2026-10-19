@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T18:18:33.428583+00:00",
+  "scope": "proposal/document and dispatch structural checks, not independent design acceptance",
+  "source_sha256": {
+    "specs/FINAL_EVALUATION.md": "39cf3c73328c79afc83905ba4aa31d9aeae14564a42fb7d167756886292f9035",
+    "specs/final_evaluation_contract_v1.json": "b9b254b17af6a4e61ab9ed6708cefbff3466b56c9dc2b9555008e7907cd34c96",
+    "report/evidence-map.json": "c300d1367b5f724a24119bbdb16c99bf8db0d7434e7961e73284a4e82afa7be6",
+    "report/README.md": "0601890f4e15c5ff7942366e969abd38e1d6a52c62cdecc6fd349a45a3cbcabb",
+    "report/policy-methods-draft.md": "207f4799373080aa5f168ab924aaba4f97cae8249b7387c07edb27f97306085a"
+  },
+  "checks": [
+    "all modes fees horizons profiles equal accepted v2 design",
+    "16 generic final cases and 60-scenario row-count arithmetic",
+    "input hashes match locked manifest metadata; no input outcomes opened",
+    "final gate remains closed; no freeze file exists",
+    "SOL-021/022/023 immutable task hashes and pushed bases valid",
+    "all SOL-016 pinned input files unchanged"
+  ],
+  "final_outcomes_read": false,
+  "final_data_open": false,
+  "independent_design_review_pending": true
+}

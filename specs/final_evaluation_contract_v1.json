@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "contract_id": "final-evaluation-v1",
+  "status": "chief_proposal_pending_independent_review",
+  "contract": "specs/FINAL_EVALUATION.md",
+  "execution_authorized": false,
+  "final_data_open": false,
+  "source_design": "specs/development_policy_pilot_v2.json",
+  "input_sha256": {
+    "data/development/scenarios_001_120.csv": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+    "data/final_holdout/scenarios_121_180.csv": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+  },
+  "development_ids": [
+    1,
+    120
+  ],
+  "final_ids": [
+    121,
+    180
+  ],
+  "years_per_scenario": 30,
+  "refit": {
+    "training_scenarios": 120,
+    "training_rows": 3600,
+    "weighting": "equal annual rows; one prior shared across all cases and fees",
+    "final_rows_allowed": false
+  },
+  "modes": [
+    "bills_keep",
+    "equal_weight_annual",
+    "equal_weight_buy_hold",
+    "conservative_cost",
+    "balanced_cost",
+    "growth_cost",
+    "balanced_context",
+    "balanced_adaptive"
+  ],
+  "fee_rates": [
+    0.0025,
+    0.005
+  ],
+  "horizons": [
+    5,
+    6,
+    15,
+    25,
+    30
+  ],
+  "comparison_horizon": 30,
+  "profiles": {
+    "A": {
+      "horizon": 5,
+      "loss_tolerance_pct": 10,
+      "liquidity": "high"
+    },
+    "B": {
+      "horizon": 15,
+      "loss_tolerance_pct": 25,
+      "liquidity": "medium"
+    },
+    "C": {
+      "horizon": 30,
+      "loss_tolerance_pct": 40,
+      "liquidity": "low"
+    },
+    "D": {
+      "horizon": 25,
+      "loss_tolerance_pct": 15,
+      "liquidity": "medium"
+    },
+    "E": {
+      "horizon": 6,
+      "loss_tolerance_pct": 35,
+      "liquidity": "high"
+    }
+  },
+  "primary_choice": "frozen from accepted development selection only",
+  "profile_choices": "freeze all ten development profile/fee decisions after personalized rescreen; no final reselection",
+  "generic_counts": {
+    "cases": 16,
+    "scenarios_per_case": 60,
+    "scenario_paths": 960,
+    "annual_ledger_rows": 28800,
+    "scenario_horizon_metrics": 4800,
+    "comparison_summaries": 100,
+    "paired_rows": 6000
+  },
+  "personalized_counts": {
+    "root_summary_rows": 10,
+    "max_executed_cases": 10,
+    "metrics_per_executed_case": 60,
+    "ledger_rows_per_executed_case": "60 * own_horizon",
+    "upstream_referral_scenario_count": 0
+  },
+  "final_fold_promotion": "not_applicable; never reselect primary",
+  "personalized_final_screen": {
+    "risk": "p90_loss <= own_tolerance",
+    "purchasing_power": "p10_growth >= 0",
+    "exceedance": "count(loss > tolerance)/60",
+    "on_pass": "frozen_rule_supported_on_final_sample",
+    "on_fail": "final_validation_failed_human_review",
+    "on_upstream_referral": "no simulation; retain reason and null class"
+  },
+  "severe_rule": {
+    "scenario": "greatest exact float drawdown; smallest ID on exact tie",
+    "path": "initial then each post_fee/end; strict updates preserve earliest maximizing locations",
+    "zero_loss_location": "0,initial",
+    "comparison_epsilon_used": false
+  },
+  "freeze_runner_digest": "sha256(utf8(git_blob_text.strip()))",
+  "freeze_required_bindings": [
+    "accepted_source_commit_and_imported_hashes",
+    "effective_policy_and_numerical_parameters",
+    "metrics_units_quantiles_reporting",
+    "severe_rule",
+    "fixed_case_contrast_inventory",
+    "frozen_primary_choice_with_accepted_development_evidence",
+    "ten_profile_fee_choices_referrals_with_accepted_rescreens",
+    "all_development_refit_artifact_hashes",
+    "input_paths_hashes",
+    "commands_output_paths_shard_membership_counts_runtime",
+    "independent_acceptance_commits",
+    "failure_and_disclosure_rule"
+  ],
+  "max_task_seconds": 1800,
+  "max_artifact_bytes": 10485760,
+  "freeze_created_by_this_contract": false,
+  "final_outcomes_read": false,
+  "correction_rule": "preserve original freeze/gate/exposure/results; independently review minimal software fix; new immutable correction task; no policy tuning",
+  "submission": "human_only; private names remain in local delivery copy"
+}

@@ -13,7 +13,9 @@ The accounting engine, fixed baseline driver and first development baseline
 result are accepted. HY3-003 at `7652410d73425371110784ef5fa97c03470a074e`
 passed independent SOL-008 review at `818af5d65bd8a271962d848dd552bd39ca561f68`
 and the chief's pinned, read-only replay. Its descriptive tables can be used.
-The cost-aware policy and suitability design remain proposals pending SOL-009.
+The corrected v2 cost-aware and suitability design was approved by SOL-013.
+The corrected numerical kernel awaits SOL-021 after preserved K1/K2 negative
+reviews; personalized handoff design awaits SOL-020.
 No policy selection or customer recommendation follows from these references.
 The authoritative current states are in `ops/queue.json`; use the exact worker
 SHAs and acceptance records above for citations.
@@ -77,11 +79,11 @@ authorized by this plan.
 
 ## Next dependencies and completion checks
 
-- SOL-010's real scripted probe established availability at the probe time;
-  SOL-008 is now accepted and SOL-009 was released. Review the exact SOL-009
-  result, then release existing SOL-011 only if its unchanged-design prerequisite
-  passes. Release SOL-012 after the existing design/kernel gates pass. Preserve
-  quota failures and do not recreate submitted work or rerun HY3-003.
+- SOL-013 approved the corrected design; SOL-017 closed K1 but found K2. Review
+  corrected kernel SOL-021 before releasing unchanged pure analysis SOL-016 and
+  calibration SOL-022, then case engine SOL-023. The personalized handoff review
+  is SOL-020. Preserve old negative verdicts, quota failures and cancelled tasks;
+  do not rerun accepted HY3-003 or treat synthetic checks as policy outcomes.
 - After review, resolve concrete findings and publish granular implementation
   work against already-pushed prerequisite commits. HY3 runs reviewed code with
   fixed parameters. Review its outputs independently before using the numbers.
@@ -89,6 +91,9 @@ authorized by this plan.
   only. Any future final-evaluation support needs an explicit implementation,
   tests and independent review **before** freezing the final code. A plan is not
   permission to relabel development output as final.
+- The proposed final contract in specs/FINAL_EVALUATION.md binds development-only
+  choices, all-development refit, one fixed final inventory and correction
+  disclosure. It requires independent review and creates no freeze or access.
 - Freeze code, parameters, metrics, selection and severe-case rules, plus input
   hashes, before opening final outcomes. Keep failed evaluations and disclose
   any bug correction; never erase the gate history or tune on final outcomes.

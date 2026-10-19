@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "27c6c26effb14dd9148476d129248640df715947",
+  "snapshot_main_commit": "4a10e3b645d80ee531f5a1b7246cf3537b40041a",
   "authoritative_state": [
     "ops/control.json",
     "ops/queue.json"
@@ -82,11 +82,11 @@
     },
     "POLICY_KERNEL_PROTOTYPE": {
       "state": "prototype_pending_review",
-      "source_commit": "315b7072e98f4d6aafd8573507074fc023477918",
+      "source_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
       "path": "src/safeinvest/policy_pilot.py",
-      "scope_note": "specs/POLICY_NUMERIC_K1.md",
-      "independent_review_task": "SOL-017",
-      "chief_synthetic_test_count": 18,
+      "scope_note": "specs/POLICY_NUMERIC_K2.md",
+      "independent_review_task": "SOL-021",
+      "chief_synthetic_test_count": 19,
       "production_execution_authorized": false,
       "competition_outcomes_computed": false
     },
@@ -95,7 +95,7 @@
       "source_commit": "7c804ffb960be6b9fadfc840e246ff060668a96d",
       "path": "src/safeinvest/policy_calibration.py",
       "scope_note": "specs/POLICY_CALIBRATION_PROTOTYPE.md",
-      "independent_review_task": "SOL-018",
+      "independent_review_task": "SOL-022",
       "chief_synthetic_test_count": 10,
       "production_execution_authorized": false,
       "competition_outcomes_computed": false
@@ -139,6 +139,28 @@
       "competition_outcomes_computed": false,
       "source_commit": "a2205fb7edd2527253664efad601f0da290f3661",
       "independent_review_task": "SOL-020"
+    },
+    "POLICY_KERNEL_K2_REJECTION": {
+      "state": "accepted_negative_review",
+      "path": "audit/SOL-017/findings.json",
+      "reviewed_commit": "90f5c8d3fe9b76861f9e302ce23d2e5cd6f2e839",
+      "acceptance_evidence": "audit/chief/SOL-017-review.json",
+      "blockers": [
+        "K2"
+      ],
+      "corrected_design_verdict": "approve",
+      "code_verdict": "changes_required",
+      "k1_status": "closed by SOL-017; K2 source correction pending SOL-021"
+    },
+    "FINAL_EVALUATION_CONTRACT": {
+      "state": "design_pending_review",
+      "paths": [
+        "specs/FINAL_EVALUATION.md",
+        "specs/final_evaluation_contract_v1.json"
+      ],
+      "execution_authorized": false,
+      "freeze_created": false,
+      "competition_outcomes_computed": false
     }
   },
   "requirements": [
@@ -148,11 +170,12 @@
       "sources": [
         "PROBLEM_LOCK",
         "PROTOCOL",
-        "INPUT_MANIFEST"
+        "INPUT_MANIFEST",
+        "FINAL_EVALUATION_CONTRACT"
       ],
       "state": "locked_definition",
       "draft_location": "methods-draft.md: Independent annual scenarios and purchasing power",
-      "remaining": "Bind final run to the recorded freeze; do not describe final evaluation as completed"
+      "remaining": "Independently review final contract/code, accept development and refit evidence, then create a real freeze. Final outcomes remain unopened."
     },
     {
       "id": "R02",
@@ -187,7 +210,7 @@
         "POLICY_CALIBRATION_PROTOTYPE"
       ],
       "state": "accepted_design",
-      "remaining": "SOL-013 design approved; K1 kernel correction requires SOL-017, calibration SOL-018, case engine SOL-019 and pure analysis SOL-016. Production writer and actual development result review remain mandatory. No new-policy outcomes yet."
+      "remaining": "V2 design approved by SOL-013; K2 correction pending SOL-021, then calibration SOL-022, case engine SOL-023 and pure analysis SOL-016. Writer, actual development results and independent review remain required."
     },
     {
       "id": "R05",
@@ -226,7 +249,7 @@
         "POLICY_CALIBRATION_PROTOTYPE"
       ],
       "state": "accepted_design",
-      "remaining": "SOL-013 design approved; K1 kernel correction requires SOL-017, calibration SOL-018, case engine SOL-019 and pure analysis SOL-016. Production writer and actual development result review remain mandatory. No new-policy outcomes yet."
+      "remaining": "V2 design approved by SOL-013; K2 correction pending SOL-021, then calibration SOL-022, case engine SOL-023 and pure analysis SOL-016. Writer, actual development results and independent review remain required."
     },
     {
       "id": "R07",
@@ -311,7 +334,7 @@
         "POLICY_PROPOSAL"
       ],
       "state": "accepted_design",
-      "remaining": "SOL-013 independently checked latch timing/holdings; K1 source correction pending SOL-017. Personalized threshold evidence and final operational text remain. Keeping holdings retains market and inflation exposure."
+      "remaining": "Generic latch/holdings design accepted. K1 closed; K2 code correction pending SOL-021. Personalized handoff SOL-020 and actual personalized/final evidence still required."
     },
     {
       "id": "R14",
