@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-10-19T18:30:20.755427+00:00",
+  "exit_code": 1,
+  "source_sha256": "f73b03df21cc59132b12541640ecc772be01fbf76e00e73437a3d288a9b546bf",
+  "assertion": "('tiny_weight', 0, '0x1.000000000005cp-50')",
+  "diagnosis": "Audit fixture error: min-positive weight times max-finite support produces an ordinary CE around 2^-50, outside the exact near-underflow route. An exact rounding-cell assertion was inappropriate there; no production defect or strategy-parameter change inferred.",
+  "correction": "Keep a tiny weight but use minimum-normal support on that asset so the fixture actually exercises near underflow.",
+  "competition_outcomes_read": false
+}

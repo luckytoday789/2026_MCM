@@ -1,0 +1,78 @@
+# Personalized output implementation notes after SOL-020
+
+These notes carry the nonblocking clarifications accepted in SOL-020 at
+2fbd4598606b41a786bd931046adb0ecc8b42d78 into the future implementation handoff.
+They add no policy, threshold, candidate, outcome or execution authorization.
+PERSONALIZED_REVIEW.md and personalized_review_v1.json remain unchanged.
+The current generic case/analysis tasks and their APIs remain unchanged.
+A later adapter task must pin these notes alongside the actual accepted source
+and independently accepted generic assignment evidence.
+
+## No-run, executed and failed computations are different states
+
+The root summary has ten unique (profile_id, fee_rate) rows. Apply the following
+conventions to PERSONALIZED_REVIEW's existing fields. Do not convert an invalid
+or incomplete computation into a successful no-run referral.
+
+| Field group | Upstream referral, no simulation | Completed personalized case |
+| --- | --- | --- |
+| proposed_class / mode | null | Exact upstream fixed class / corresponding _cost mode |
+| recommended_class | null | Proposed class only if every required screen passes; otherwise null |
+| status | upstream_referral | eligible_after_personalized_development_rescreen or human_review_after_rescreen |
+| simulation_status | not_run_upstream_referral | completed |
+| scenario_count / denominator | 0 / 0 | 120 / 120 |
+| Personalized growth/loss/fee/trade/review statistics | null | Observed finite values; inherently absent event years remain null |
+| Personalized risk/purchasing-power pass flags | null | Actual inclusive comparisons, with every failure recorded |
+| Personalized exceedance_count / fraction | null / null | Strict count(loss > tolerance) / count divided by 120 |
+| Personalized source_case_path | null | Exact completed case directory bound by manifest hashes |
+| Upstream reasons and identity | Preserve original reasons, assignment key and hash | Preserve original assignment key, candidate-screen key and hashes |
+
+Zero is the number of simulated scenarios for an upstream referral, not an
+observed zero-loss outcome. Never divide its zero denominator, copy a generic
+120-scenario metric into a personalized field, or treat null screens as passes.
+Profile facts (own H, tolerance, liquidity and fee) remain present even when the
+personalized calculation is inapplicable. Keep any upstream screen fields under
+their upstream identity instead of relabeling them as personalized outcomes.
+
+A completed case whose screens fail still has all 120 outcomes, the proposed
+class, its exact sources and the failed screen reasons. No alternative class,
+bills proxy, adjusted tolerance or replacement run may hide that negative result.
+An execution failure instead has a failed bundle/diagnosis and cannot be included
+as a completed ten-row summary. Preserve its partial artifacts and original log.
+
+## Conditional counts and provenance
+
+Let J be the profile/fee pairs with non-null accepted upstream assignments.
+Each executed pair has 120 * H ledger rows, the same number of decision rows,
+120 metric rows and one case-summary row. Across J the respective counts are
+120 * sum(H_j), 120 * sum(H_j), 120 * len(J), and len(J). The ten-row root summary
+also retains all pairs outside J. Target-score rows equal the number of reviews
+before suspension for these fixed modes, at most 120 * sum(H_j).
+
+All assigned: 19,440 ledger rows, 19,440 decisions, 1,200 scenario metrics and ten
+case summaries. None assigned: no simulated case files and ten no-run root rows.
+The illustrative subset A-primary, B-doubled and D-primary has 5,400 ledger rows,
+5,400 decisions and 360 scenario metrics. These are schema arithmetic, not actual
+assignment evidence. Never use this example to select a real policy.
+
+source_version_at_drafting remains historical. The eventual immutable task/run
+configuration must bind the exact accepted generic receipt commit, assignment
+and candidate-screen blobs, four fold priors, development input bytes, policy
+configuration, imported code and executed commands. A caller-supplied label or
+historical drafting SHA does not establish production provenance.
+
+## Keep the two cost questions separate in the report
+
+The generic Balanced H30 comparison tests the already chosen primary mode at
+k=.005 against its original named controls. It does not select a new primary
+mode. If no added complexity was selected, say that explicitly; fixed Balanced
+still needs its own suitability and absolute performance evidence.
+
+The ten personalized rows follow each fee's own accepted provisional class.
+Different classes across fees describe a counterfactual suitability change.
+That comparison cannot establish the cost robustness of one fixed strategy or
+replace the primary-fee recommendation. Both result families must remain visible,
+with their own horizon, threshold, split, denominator and source identity.
+
+No final-evaluation row is generated by this development note. Its 60-scenario
+counts and freeze gates belong to the separately reviewed final contract.

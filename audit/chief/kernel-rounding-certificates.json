@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "source_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+  "source_sha256": {
+    "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+    "src/safeinvest/__init__.py": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef"
+  },
+  "oracle": "Exact rational inverse-cube moment; independent nearest-even rounding-cell containment, no root search or production rounding helper",
+  "check_count": 42,
+  "incorrect_neighbor_rejections": 84,
+  "checks": [
+    {
+      "case": "tie_down",
+      "recent_count": 0,
+      "observed_hex": "0x0.0000000000002p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "tie_down",
+      "recent_count": 1,
+      "observed_hex": "0x0.0000000000002p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "tie_down",
+      "recent_count": 2,
+      "observed_hex": "0x0.0000000000002p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "tie_down",
+      "recent_count": 3,
+      "observed_hex": "0x0.0000000000002p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "tie_down",
+      "recent_count": 4,
+      "observed_hex": "0x0.0000000000002p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "tie_down",
+      "recent_count": 5,
+      "observed_hex": "0x0.0000000000002p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "tie_up",
+      "recent_count": 0,
+      "observed_hex": "0x0.0000000000004p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "tie_up",
+      "recent_count": 1,
+      "observed_hex": "0x0.0000000000004p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "tie_up",
+      "recent_count": 2,
+      "observed_hex": "0x0.0000000000004p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "tie_up",
+      "recent_count": 3,
+      "observed_hex": "0x0.0000000000004p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "tie_up",
+      "recent_count": 4,
+      "observed_hex": "0x0.0000000000004p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "tie_up",
+      "recent_count": 5,
+      "observed_hex": "0x0.0000000000004p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "heterogeneous",
+      "recent_count": 0,
+      "observed_hex": "0x0.0000000000004p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "heterogeneous",
+      "recent_count": 1,
+      "observed_hex": "0x0.0000000000004p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "heterogeneous",
+      "recent_count": 2,
+      "observed_hex": "0x0.0000000000004p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "heterogeneous",
+      "recent_count": 3,
+      "observed_hex": "0x0.0000000000004p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "heterogeneous",
+      "recent_count": 4,
+      "observed_hex": "0x0.0000000000004p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "heterogeneous",
+      "recent_count": 5,
+      "observed_hex": "0x0.0000000000004p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "zero_weight",
+      "recent_count": 0,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "zero_weight",
+      "recent_count": 1,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "zero_weight",
+      "recent_count": 2,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "zero_weight",
+      "recent_count": 3,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "zero_weight",
+      "recent_count": 4,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "zero_weight",
+      "recent_count": 5,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "tiny_weight",
+      "recent_count": 0,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "tiny_weight",
+      "recent_count": 1,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "tiny_weight",
+      "recent_count": 2,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "tiny_weight",
+      "recent_count": 3,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "tiny_weight",
+      "recent_count": 4,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "tiny_weight",
+      "recent_count": 5,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "normal_edge",
+      "recent_count": 0,
+      "observed_hex": "0x1.6000000000000p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "normal_edge",
+      "recent_count": 1,
+      "observed_hex": "0x1.6000000000000p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "normal_edge",
+      "recent_count": 2,
+      "observed_hex": "0x1.6000000000000p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "normal_edge",
+      "recent_count": 3,
+      "observed_hex": "0x1.6000000000000p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "normal_edge",
+      "recent_count": 4,
+      "observed_hex": "0x1.6000000000000p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "normal_edge",
+      "recent_count": 5,
+      "observed_hex": "0x1.6000000000000p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "roundoff_weights",
+      "recent_count": 0,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "roundoff_weights",
+      "recent_count": 1,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "roundoff_weights",
+      "recent_count": 2,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "roundoff_weights",
+      "recent_count": 3,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "roundoff_weights",
+      "recent_count": 4,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    },
+    {
+      "case": "roundoff_weights",
+      "recent_count": 5,
+      "observed_hex": "0x0.0000000000003p-1022",
+      "exact_rounding_cell_pass": true,
+      "both_adjacent_values_rejected": true
+    }
+  ],
+  "ordinary_rational_fixture": {
+    "expected": {
+      "transfer": "200/3",
+      "fee": "1/6",
+      "each_post_fee": "599/18",
+      "buffered_score": "3887/3750",
+      "true_net_ce": "7787/7500",
+      "wealth_end": "7787/75"
+    },
+    "observed": {
+      "transfer": 66.66666666666667,
+      "fee": 0.16666666666666669,
+      "each_post_fee": 33.27777777777777,
+      "buffered_score": 1.036533333333333,
+      "true_net_ce": 1.0382666666666664,
+      "wealth_end": 103.82666666666665
+    }
+  },
+  "scope": "Chief acceptance preparation; synthetic only. Remote SOL-021 remains an independent gate.",
+  "competition_outcomes_read": false,
+  "final_data_open": false
+}

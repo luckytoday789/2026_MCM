@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T02:52:24.604103+08:00",
-  "reason": "SOL-017 K2 negative evidence preserved and correction pushed for SOL-021; SOL-020 personalized design accepted; final protocol prepared and SOL-024 queued. Useful independent chief specifications are prepared; await exact remote receipts.",
+  "next_wake_at": "2026-10-20T03:02:05.746634+08:00",
+  "reason": "Independent chief K2 rounding-cell certificate prepared: 42 exact checks, 84 incorrect-neighbor rejections, ordinary rational fixture; one audit-fixture mistake preserved. SOL-020 output notes ready. Await exact SOL-021/SOL-024 receipts; immutable gates unchanged.",
   "next_actions": [
-    "Fetch exact SOL-021 receipt. Check task/base/source/path/hash integrity, replay read-only, reject corruption and independently verify extreme/ordinary fixtures. Positive code approval promptly releases existing unchanged SOL-016 and SOL-022; preserve negative SOL-013/SOL-017 history.",
+    "Fetch exact SOL-021 receipt; validate immutable task/base/source/path hashes and replay read-only with corruption rejection. Reuse audit/chief/kernel_rounding_certificate.py (42 exact independent cells and ordinary fixture), inspect actual findings. Positive acceptance promptly releases unchanged SOL-016/SOL-022; preserve SOL-013/SOL-017 negatives.",
     "After positive accepted SOL-022 calibration review release existing SOL-023. Inspect and independently test exact SOL-016/SOL-023 code before integrating only assigned paths.",
     "Review exact SOL-024 final-protocol design evidence. Correct any negative findings with new immutable source/task; no freeze or holdout access from design approval.",
     "After case/analysis acceptance publish production writer task using specs/POLICY_RESULT_WRITER.md on combined already-pushed source. Then fixed HY3 development groups, exact accepted HY3-003 imports and independent Sol numerical result review.",
-    "Personalized design is accepted SOL-020. Future narrow adapter/task must pin actual accepted generic assignments and sources, encode denominator=0/null outcomes for not-run referrals, preserve both risk/power screens and separate generic same-primary sensitivity. Do not change in-flight generic APIs.",
+    "Personalized design accepted SOL-020; specs/PERSONALIZED_OUTPUT_NOTES.md spells out its accepted no-run denominator=0/null outcomes and separate generic same-primary cost test. Later adapter task must pin notes plus actual accepted generic assignments/code; no change to in-flight generic APIs.",
     "After independently accepted development selection/personalization, implement/review final-capable guards and all-development refit; complete reviewed freeze, one final inventory, report rendering and code package. Keep final_data_open=false until actual gates pass; private identities local; humans submit.",
     "Check local quota/status/drain/control/STOP/deadline before more work. Do not restart supervisor or duplicate remote roles. Incoming receipts trigger before the 30-minute fallback."
   ],
@@ -16,6 +16,6 @@
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T02:22:24.604103+08:00",
+  "last_completed_at": "2026-10-20T02:32:05.746634+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

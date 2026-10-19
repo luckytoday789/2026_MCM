@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T18:32:05.746634+00:00",
+  "scope": "Chief synthetic acceptance preparation and accepted personalized-output clarifications; no new policy or outcome",
+  "validated_tasks": [
+    {
+      "id": "SOL-016",
+      "state": "waiting",
+      "base_commit": "dd60066010f6904565fb51e99be8088285102e57",
+      "source_count": 12
+    },
+    {
+      "id": "SOL-021",
+      "state": "ready",
+      "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+      "source_count": 19
+    },
+    {
+      "id": "SOL-022",
+      "state": "waiting",
+      "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+      "source_count": 14
+    },
+    {
+      "id": "SOL-023",
+      "state": "waiting",
+      "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+      "source_count": 18
+    },
+    {
+      "id": "SOL-024",
+      "state": "ready",
+      "base_commit": "6c1997c0ac20430af0b7e11d9fb0b29ab8506a11",
+      "source_count": 17
+    }
+  ],
+  "immutable_tasks_unchanged": true,
+  "kernel_rounding_cells": 42,
+  "incorrect_neighbor_rejections": 84,
+  "ordinary_rational_values_checked": 6,
+  "saved_evidence_unchanged": true,
+  "failed_chief_fixture_preserved": "audit/chief/kernel-rounding-history/trial-001-failure.json",
+  "personalized_design_review_commit": "2fbd4598606b41a786bd931046adb0ecc8b42d78",
+  "personalized_count_checks": {
+    "all_ledgers": 19440,
+    "all_metrics": 1200,
+    "partial_ledgers": 5400,
+    "partial_metrics": 360,
+    "none_ledgers": 0,
+    "root_rows": 10
+  },
+  "new_policy_rules": false,
+  "final_data_open": false,
+  "competition_outcomes_read": false,
+  "source_sha256": {
+    "specs/PERSONALIZED_OUTPUT_NOTES.md": "f328a5832251faab1b8810b598fc66408e5a323afc755a0011cfdb0b04e255a7",
+    "audit/chief/kernel_rounding_certificate.py": "afae9b68fbe35686ddc7990a5d826118d1f1ad8d2b5c1bb31c2405ea89893428",
+    "audit/chief/kernel-rounding-certificates.json": "55f054f73f82a558435b117b3f86d2a21c58ab2eb4a18b25ab4a07192044e6bf"
+  }
+}

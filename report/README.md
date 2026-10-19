@@ -23,6 +23,10 @@ SHAs and acceptance records above for citations.
 - [methods-draft.md](methods-draft.md) contains reusable English text for the
   locked accounting, annual metrics and scenario protocol. It contains no
   competition performance result or new policy parameter.
+- [Personalized output notes](../specs/PERSONALIZED_OUTPUT_NOTES.md) carry the
+  accepted SOL-020 no-run/null/denominator conventions and separate the generic
+  same-policy cost test from fee-specific profile assignments. They authorize
+  no computation and contain no actual assignment evidence.
 - [evidence-map.json](evidence-map.json) maps every required answer to its source,
   evidence status and missing validation. It is a writing map, not an acceptance
   receipt, freeze file or implementation task.
