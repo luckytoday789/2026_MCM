@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "scope": "Synthetic chief design arithmetic only; no policy implementation acceptance or strategy outcome",
+  "contract_sha256": "94e436a979f2c232b729c352d209c83c76ba014a14613852ad447446cb6948e0",
+  "config_sha256": "39ab8f78f6e4c487d00c1055e6d474c51a2d940e3cad951768a6c75874cc835a",
+  "script_sha256": "c3b4b907cfb9b179faae717a09067ee45862b13bf9e56d06e28a841ab43fff3b",
+  "checks": [
+    {
+      "name": "deterministic_CE",
+      "actual": 1.04,
+      "expected": 1.04,
+      "absolute_residual": 0.0
+    },
+    {
+      "name": "initial_fee_nominal",
+      "actual": 0.16666666666666666,
+      "expected": 0.16666666666666666,
+      "absolute_residual": 0.0
+    },
+    {
+      "name": "true_end_wealth",
+      "actual": 103.82666666666667,
+      "expected": 103.82666666666667,
+      "absolute_residual": 0.0
+    },
+    {
+      "name": "decision_score",
+      "actual": 1.0365333333333333,
+      "expected": 1.0365333333333333,
+      "absolute_residual": 0.0
+    },
+    {
+      "name": "positive_trade_gate",
+      "passed": true
+    },
+    {
+      "name": "equal_returns_keep",
+      "passed": true
+    },
+    {
+      "name": "zero_fee_equal_score_keep",
+      "passed": true
+    },
+    {
+      "name": "exact_deflation",
+      "actual": 1.0784313725490196,
+      "expected": 1.0784313725490196,
+      "absolute_residual": 0.0
+    },
+    {
+      "name": "mixture_mass",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_residual": 0.0
+    },
+    {
+      "name": "prior_mass_at_five",
+      "actual": 0.75,
+      "expected": 0.75,
+      "absolute_residual": 0.0
+    },
+    {
+      "name": "CE_positive_homogeneity",
+      "actual": 0.978847042689985,
+      "expected": 0.978847042689985,
+      "absolute_residual": 0.0
+    },
+    {
+      "name": "actual_fee_CE_loss",
+      "actual": 0.0009798268695595524,
+      "expected": 0.0009798268695595446,
+      "absolute_residual": 7.806255641895632e-18
+    },
+    {
+      "name": "four_fold_train_excludes_evaluation_fold",
+      "passed": true,
+      "scenario_count": 120,
+      "training_count": 90
+    },
+    {
+      "name": "all_five_targets_simplex_exact",
+      "passed": true
+    }
+  ],
+  "check_count": 14,
+  "final_data_accessed": false,
+  "competition_outcomes_computed": false
+}
