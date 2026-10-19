@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-003",
+  "attempt": 1,
+  "reviewed_shas": {
+    "base": "c651c67c30db1131c25641ac94631238cba0dd8d",
+    "chief_parent": "a287f214aece303d6dcd08f05a462cabf61258f2",
+    "hy3_result": "2a0263c5822988c0385d32fe084b794f8d644bc5",
+    "hy3_base": "f5e67b1f53568b94379ea631659d53d90db14f7b",
+    "sol_core": "b25c6b5589d07e767f463f54f053f08bb0085157"
+  },
+  "pass": true,
+  "status": "passed_independent_audit_hy3_remains_rejected",
+  "validation_exit_code": 0,
+  "blockers": [],
+  "suggested_fixes": [],
+  "source_changes_required": false,
+  "findings": [
+    {
+      "id": "HY3-PYTHON",
+      "severity": "promotion_blocker_for_HY3_001",
+      "status": "chief_rejection_verified",
+      "worker_python": "3.13.14",
+      "required_python": "3.12",
+      "effect": "Original result is preserved and unaccepted. Numerical metadata agrees; that does not waive the interpreter contract.",
+      "required_action": "Correct the remote environment and run the separately authorized immutable successor under Python 3.12; never relabel or overwrite HY3-001."
+    },
+    {
+      "id": "HY3-LEGACY-HASHES",
+      "severity": "informational",
+      "status": "verified_with_explicit_legacy_byte_basis",
+      "detail": "All three HY3 artifact hashes match exact LF-to-CRLF reconstruction of pinned Git blobs. Canonical blob hashes differ and are recorded separately. Receipt identity, immutable task digest, actual parent, paths, manifest, commands and metadata match."
+    },
+    {
+      "id": "CHIEF-RECEIPTS",
+      "severity": "informational",
+      "status": "passed",
+      "detail": "Chief stages scoped outputs before hashing binary git show :path stdout. Exact mixed CRLF/LF and trailing/absent newline bytes verify. Network retry delivers the unchanged committed fixture without recomputation and published-task deduplication holds."
+    },
+    {
+      "id": "CHIEF-FINGERPRINT",
+      "severity": "informational",
+      "status": "passed",
+      "detail": "Persistent Python version changes affect readiness fingerprint. updated_at, lease_until and ordinary ready/idle heartbeats do not; error-state transitions remain meaningful. Status publication includes the running interpreter on each update."
+    },
+    {
+      "id": "ENV-PREFLIGHT",
+      "severity": "informational",
+      "status": "passed",
+      "detail": "Real Python 3.12.14 CLI succeeds (exit 0). Mocked Python 3.13.14 CLI rejects (exit 1). This script enforces the environment when invoked; it does not by itself replace existing watcher processes."
+    },
+    {
+      "id": "SOL-001-LOG",
+      "severity": "informational",
+      "status": "historical_log_still_unverified_excluded",
+      "detail": "Pinned historical optional log still fails receipt comparison, including uniform CRLF reconstruction. It is not reused, changed or certified. Mandatory accepted outputs match; fresh 28-test evidence replaces the excluded log."
+    },
+    {
+      "id": "AUDIT-PROBE-CORRECTION",
+      "severity": "informational",
+      "status": "resolved",
+      "detail": "An audit-only probe initially expected literal backslashes in the generated mixed-EOL fixture. AST byte inspection proved actual CRLF/LF. The audit assertion was corrected, retested, and the failed probe with exit 1 is retained in investigation.json. No production flaw was found."
+    }
+  ],
+  "checks": {
+    "independent_source_manifest": true,
+    "complete_unique_keys": true,
+    "finite_positive_gross_domains": true,
+    "exact_ordered_split": true,
+    "metadata_counts": {
+      "raw_rows": 5400,
+      "development_rows": 3600,
+      "final_rows": 1800,
+      "scenarios": 180,
+      "periods_per_scenario": 30
+    },
+    "accounting_tests": 28,
+    "protocol_tests": 4,
+    "preflight_312_exit_code": 0,
+    "simulated_313_exit_code": 1,
+    "simulated_313_expected_rejection": true
+  },
+  "boundaries": {
+    "final_outcomes_computed": false,
+    "worker_code_executed": false,
+    "project_source_modified": false,
+    "project_runtime_modified": false,
+    "project_branch_changed": false,
+    "project_committed": false,
+    "project_pushed": false,
+    "watcher_started": false,
+    "writable_paths": [
+      "audit/SOL-003"
+    ]
+  },
+  "limitations": [
+    "This audit does not accept HY3-001 or execute the successor task.",
+    "The chief record reports 132 toy numerical checks; they were not rerun or presented as new Sol checks here.",
+    "Already-running remote watchers need an idle restart to load amended functions; this audit does not alter remote processes."
+  ]
+}

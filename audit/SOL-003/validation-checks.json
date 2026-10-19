@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "base_commit": "c651c67c30db1131c25641ac94631238cba0dd8d",
+  "verification_sha256_before": "6bf48840d167e396d4d122a11e8a2d036aba31257df6b0fa1e96a461acacd271",
+  "verification_sha256_after": "6bf48840d167e396d4d122a11e8a2d036aba31257df6b0fa1e96a461acacd271",
+  "saved_evidence_unchanged": true,
+  "positive": {
+    "argv": [
+      "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+      "-B",
+      "audit/SOL-003/verify.py",
+      "--check"
+    ],
+    "exit_code": 0,
+    "stdout": "{\r\n  \"status\": \"passed\",\r\n  \"mode\": \"check\",\r\n  \"verification_sha256\": \"6bf48840d167e396d4d122a11e8a2d036aba31257df6b0fa1e96a461acacd271\",\r\n  \"metadata_recomputed\": true,\r\n  \"saved_evidence_replaced\": false,\r\n  \"accounting_tests_evidenced\": 28,\r\n  \"protocol_tests_evidenced\": 4,\r\n  \"final_outcomes_computed\": false\r\n}\r\n",
+    "stderr": "",
+    "expected_exit_code": 0
+  },
+  "tampered_saved_accounting_digest": {
+    "argv": [
+      "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+      "-B",
+      "-c",
+      "import json,runpy,sys\nfrom pathlib import Path\nfrom unittest.mock import patch\np=Path('audit/SOL-003/verification.json').resolve()\noriginal=Path.read_bytes\nsaved=json.loads(original(p))\nsaved['suites']['accounting']['log']['sha256']='0'*64\ncorrupted=json.dumps(saved).encode('utf-8')\ndef read_bytes(self):\n return corrupted if self.resolve()==p else original(self)\nsys.argv=['audit/SOL-003/verify.py','--check']\nwith patch.object(Path,'read_bytes',read_bytes):\n runpy.run_path('audit/SOL-003/verify.py',run_name='__main__')\n"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "SOL-003 validation failed: Suite evidence: accounting\r\n",
+    "expected_exit_code": 1,
+    "simulation": "Read-only in-memory Path.read_bytes mock; no file tampered or restored."
+  },
+  "status": "passed"
+}

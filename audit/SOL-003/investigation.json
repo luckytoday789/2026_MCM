@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "reviewed_base": "c651c67c30db1131c25641ac94631238cba0dd8d",
+  "project_test_failures": [],
+  "resolved_investigations": [
+    {
+      "argv": [
+        "py",
+        "-0p"
+      ],
+      "exit_code": "ENOENT",
+      "validation_exit_code": null,
+      "stdout": "",
+      "stderr": "Error: spawn py ENOENT",
+      "resolution": "Python launcher unavailable; located and used existing project Python 3.12.14."
+    },
+    {
+      "argv": [
+        "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+        "-B",
+        "-c",
+        "import runpy,json; m=runpy.run_path('audit/SOL-003/verify.py'); d=m['metadata'](); print(json.dumps({'residuals':d['residuals'],'acceptance':d['hy3_acceptance'],'sources':d['sources']})); print(json.dumps(m['supplemental']()))"
+      ],
+      "exit_code": 1,
+      "validation_exit_code": 1,
+      "stdout": "{\"residuals\": {\"source_hash_mismatches\": 0, \"key_errors\": 0, \"invalid_gross_cells\": 0, \"split_row_mismatches\": 0}, \"acceptance\": {\"accepted\": false, \"worker_python\": \"3.13.14\", \"required_python\": \"3.12\", \"rerun_required\": true}, \"sources\": {\"problem/2026_MCM_SafeInvest.pdf\": {\"sha256\": \"2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd\", \"bytes\": 137578}, \"data/raw/SafeInvest_Synthetic_Data.csv\": {\"sha256\": \"def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0\", \"bytes\": 274914}, \"data/development/scenarios_001_120.csv\": {\"sha256\": \"9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7\", \"bytes\": 182255}, \"data/final_holdout/scenarios_121_180.csv\": {\"sha256\": \"3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29\", \"bytes\": 92732}}}\r\n",
+      "stderr": "Traceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\n  File \"audit/SOL-003/verify.py\", line 304, in supplemental\r\n    require(payload == b\"first\\\\r\\\\nsecond\\\\n\", \"Chief fixture observation changed\")\r\n  File \"audit/SOL-003/verify.py\", line 42, in require\r\n    raise AssertionError(message)\r\nAssertionError: Chief fixture observation changed\r\n",
+      "resolution": "Audit-only assertion initially expected literal backslashes. AST inspection proved the fixture emits actual CRLF/LF (hex 66697273740d0a7365636f6e640a); corrected this audit assertion; supplemental probes now pass."
+    }
+  ],
+  "tooling_note": "Unified exec failed to create its helper twice before any command ran; used the available Node REPL with explicit subprocess argv. No escalation, remote replacement, branch change, or watcher was used.",
+  "manual_test_runs": [
+    {
+      "argv": [
+        "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+        "-B",
+        "audit/SOL-003/verify.py",
+        "--protocol-suite"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"role\": \"hy3\", \"root\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-003-a1\\\\audit\\\\SOL-003\\\\fixtures\\\\.runtime\\\\protocol-tests\\\\tmpeogeqqcv\\\\worker\", \"remote\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-003-a1\\\\audit\\\\SOL-003\\\\fixtures\\\\.runtime\\\\protocol-tests\\\\tmpeogeqqcv\\\\remote.git\", \"python\": \"3.12.14\", \"state\": \"running\", \"write_access\": \"verified\"}\r\n",
+      "stderr": "test_end_to_end_local_git_delivery_and_deduplication (sol003_protocol_suite.ProtocolTests.test_end_to_end_local_git_delivery_and_deduplication) ... ok\r\ntest_path_boundary (sol003_protocol_suite.ProtocolTests.test_path_boundary) ... ok\r\ntest_python_registration_changes_wake_chief_but_heartbeats_do_not (sol003_protocol_suite.ProtocolTests.test_python_registration_changes_wake_chief_but_heartbeats_do_not) ... ok\r\ntest_task_path_escape_rejected (sol003_protocol_suite.ProtocolTests.test_task_path_escape_rejected) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 4 tests in 14.416s\r\n\r\nOK\r\n"
+    },
+    {
+      "argv": [
+        "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_accounting.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_all_equity_and_keep_bills_examples (test_accounting.AccountingTests.test_all_equity_and_keep_bills_examples) ... ok\r\ntest_exact_compounded_inflation_and_deflation (test_accounting.AccountingTests.test_exact_compounded_inflation_and_deflation) ... ok\r\ntest_exact_total_loss_formula_without_inventing_recovery (test_accounting.AccountingTests.test_exact_total_loss_formula_without_inventing_recovery) ... ok\r\ntest_exact_twenty_unit_bill_to_equity_example (test_accounting.AccountingTests.test_exact_twenty_unit_bill_to_equity_example) ... ok\r\ntest_fee_precedes_return (test_accounting.AccountingTests.test_fee_precedes_return) ... ok\r\ntest_initial_equal_weight_exact_fractions (test_accounting.AccountingTests.test_initial_equal_weight_exact_fractions) ... ok\r\ntest_invalid_inputs_rejected (test_accounting.AccountingTests.test_invalid_inputs_rejected) ... ok\r\ntest_keep_preserves_dollars_and_inputs_exactly (test_accounting.AccountingTests.test_keep_preserves_dollars_and_inputs_exactly) ... ok\r\ntest_rebalance_matching_weights_is_no_trade (test_accounting.AccountingTests.test_rebalance_matching_weights_is_no_trade) ... ok\r\ntest_wealth_conservation_and_full_investment_seeded (test_accounting.AccountingTests.test_wealth_conservation_and_full_investment_seeded) ... ok\r\ntest_zero_fees_zero_returns (test_accounting.AccountingTests.test_zero_fees_zero_returns) ... ok\r\ntest_complete_thirty_period_ledger_invariants (test_accounting.BaselineTests.test_complete_thirty_period_ledger_invariants) ... ok\r\ntest_explicit_horizon_csv_strings_and_future_outcomes_not_read (test_accounting.BaselineTests.test_explicit_horizon_csv_strings_and_future_outcomes_not_read) ... ok\r\ntest_final_split_and_development_id_guards (test_accounting.BaselineTests.test_final_split_and_development_id_guards) ... ok\r\ntest_inflation_only_loss (test_accounting.BaselineTests.test_inflation_only_loss) ... ok\r\ntest_reject_mixed_scenarios_even_beyond_horizon_and_invalid_metadata (test_accounting.BaselineTests.test_reject_mixed_scenarios_even_beyond_horizon_and_invalid_metadata) ... ok\r\ntest_terminal_total_loss_is_measured_but_not_restarted (test_accounting.BaselineTests.test_terminal_total_loss_is_measured_but_not_restarted) ... ok\r\ntest_two_period_hand_computable_default_fee_ledger (test_accounting.BaselineTests.test_two_period_hand_computable_default_fee_ledger) ... ok\r\ntest_zero_fees_returns_and_inflation (test_accounting.BaselineTests.test_zero_fees_returns_and_inflation) ... ok\r\ntest_zero_market_returns_keep_initial_fee_loss_and_trade_shares (test_accounting.BaselineTests.test_zero_market_returns_keep_initial_fee_loss_and_trade_shares) ... ok\r\ntest_cagr_sample_volatility_and_initial_peak (test_accounting.MetricsTests.test_cagr_sample_volatility_and_initial_peak) ... ok\r\ntest_linear_interpolated_quantiles (test_accounting.MetricsTests.test_linear_interpolated_quantiles) ... ok\r\ntest_post_fee_loss_before_year_end_recovery_is_included (test_accounting.MetricsTests.test_post_fee_loss_before_year_end_recovery_is_included) ... ok\r\ntest_zero_terminal_wealth_and_invalid_metrics (test_accounting.MetricsTests.test_zero_terminal_wealth_and_invalid_metrics) ... ok\r\ntest_callback_gets_immutable_prefix_only (test_accounting.PrefixBoundaryTests.test_callback_gets_immutable_prefix_only) ... ok\r\ntest_decision_exists_before_current_outcomes_are_accessed (test_accounting.PrefixBoundaryTests.test_decision_exists_before_current_outcomes_are_accessed) ... ok\r\ntest_future_perturbation_preserves_earlier_contexts_and_ledgers (test_accounting.PrefixBoundaryTests.test_future_perturbation_preserves_earlier_contexts_and_ledgers) ... ok\r\ntest_invalid_decisions_rejected (test_accounting.PrefixBoundaryTests.test_invalid_decisions_rejected) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 28 tests in 0.020s\r\n\r\nOK\r\n"
+    }
+  ],
+  "material_unresolved_failures": false
+}

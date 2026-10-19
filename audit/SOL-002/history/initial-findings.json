@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-002",
+  "reviewed_base_commit": "297fc5d846bfc218795238e567875e49b18e7053",
+  "hash_basis": "Canonical Git blob bytes",
+  "source_git_blobs": {
+    "specs/DEVELOPMENT_BASELINES.md": {
+      "sha256": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f",
+      "git_blob_sha1": "907dab39bd1e36bd5a1534803c0c2637ba43d1c2"
+    },
+    "specs/development_baselines_v1.json": {
+      "sha256": "725f6eed64bbf49d7cad19d5f1cc233c7e0d80aa82c39c6aabd3b8864b2007bd",
+      "git_blob_sha1": "9c6264b2fce06c406f5970476a8244b4e4aca204"
+    },
+    "audit/chief/accounting_oracle.json": {
+      "sha256": "85caa997e09b1cf2a02118f4f101137919ad7b38ce662caed7a594c569ed1377",
+      "git_blob_sha1": "e4b5d496a4bd508d37b553f4c519ab76d29eba90"
+    },
+    "audit/chief/accounting_reference.py": {
+      "sha256": "c7a62e8f8453280e867758aed968b5041dea4f6d3ac6fca07e6e856bc5e85b07",
+      "git_blob_sha1": "bda0fd21ae9938a6ecdd87c2970f13f4707eaa84"
+    },
+    "specs/PROBLEM_LOCK.md": {
+      "sha256": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "git_blob_sha1": "1ba83723824afde3b29a5b3c8b0ac5d433a68c4b"
+    },
+    "specs/ACCOUNTING.md": {
+      "sha256": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "git_blob_sha1": "0627337a522651189b7a985e94b6af9a1f7a4a4d"
+    },
+    "AGENTS.md": {
+      "sha256": "92ab36877ad51c32b6393d7955e84d20ff34b59b82ed2905c0f0dd0a29dac078",
+      "git_blob_sha1": "cd75f8480cd2d246af1dd450eebf04b267a732e0"
+    },
+    "ops/PROTOCOL.md": {
+      "sha256": "1d26831e0679dfc7a285f6408d274b0382566928428f9963bb1c04122b0eaa32",
+      "git_blob_sha1": "a1e9241775527317aa8fd0c9035a3ccd937a6193"
+    }
+  },
+  "status": "passed",
+  "verdict": "Chief design and all toy numeric expectations pass this review; no material mathematical defect found.",
+  "blockers": [],
+  "corrections": [
+    {
+      "id": "S1",
+      "severity": "minor",
+      "blocking": false,
+      "location": "specs/DEVELOPMENT_BASELINES.md: severe-case peak/trough output",
+      "finding": "The required drawdown value and severe scenario are well-defined, but repeated peaks/troughs and zero loss do not determine unique reported locations.",
+      "evidence": "Toy [100,120,120,90,90] has four maximizing pairs and 25% loss. [100,110,120] has zero loss and three coincident peak/trough choices.",
+      "proposed_correction": "Before accepting the future driver, specify: scan initial (year 0), then each year's post_fee and end observations; update peak only on a strict increase and selected drawdown only on a strict increase; initialize both selected locations to (0,initial). This selects earliest peak/trough, including the zero-loss case. The scenario tie-break remains exact loss then smallest scenario ID.",
+      "reason_not_blocking": "Every maximizing pair reports the same numeric loss. The plan explicitly requires a separate driver review before dispatch; fix this reporting convention there."
+    },
+    {
+      "id": "S2",
+      "severity": "minor",
+      "blocking": false,
+      "location": "specs/DEVELOPMENT_BASELINES.md: annual_ledgers.csv / paired_differences.csv",
+      "finding": "Net annual real returns are derivable but not explicitly named as ledger columns; paired CSV split and baseline identity are implicit in the manifest/prose.",
+      "proposed_correction": "Make the future CSV schema explicit: annual_net_real_return=real_end_t/real_end_(t-1)-1 with real_end_0=100; name this a decimal return, optionally add annual_net_real_return_pct=100*annual_net_real_return. Include split, alternative_policy, reference_policy=equal_weight_annual and horizon in paired_differences.csv, plus units for each difference. Add profile-to-horizon mapping to the run manifest. These columns make detached evidence self-describing.",
+      "reason_not_blocking": "All quantities and identities are already recoverable exactly from specified holdings, CPI, keys and manifest. No new mathematical parameter is needed."
+    },
+    {
+      "id": "S3",
+      "severity": "minor",
+      "blocking": false,
+      "location": "specs/ACCOUNTING.md: trade share excluding initial / H=1",
+      "finding": "H=1 fluctuation is explicitly undefined in the oracle; H=1 trade share excluding initial would also have a zero denominator.",
+      "proposed_correction": "For any later H=1 consumer, return null for volatility and trade_share_excluding_initial_pct, retain later_trade_count=0 and later_review_count=0, and reject attempts to coerce either undefined statistic to zero. The present pilot remains restricted to H in {5,6,15,25,30} and finite defined metrics.",
+      "reason_not_blocking": "The present plan explicitly excludes H=1 metrics; all actual denominators are positive."
+    }
+  ],
+  "unsupported_recommendations": [],
+  "missing_mathematical_parameters": [],
+  "evidence": {
+    "verification_file": "audit/SOL-002/verification.json",
+    "checks": 354,
+    "largest_absolute_residual": "9.26652142338416848220769789397240377632534495279593319E-15",
+    "absolute_tolerance": "1E-9"
+  },
+  "limitations": [
+    "Pinned design and toy arithmetic only; not a production implementation review.",
+    "No scenario CSV, raw data, final data, performance or later production code read.",
+    "Input hash declaration checked against pinned configuration/task only; actual dataset hash remains HY3's separate responsibility.",
+    "Toy prefix, separation and timing checks validate this independent mathematical interpretation only."
+  ]
+}

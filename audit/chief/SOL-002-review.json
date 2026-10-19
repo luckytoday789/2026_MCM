@@ -1,0 +1,110 @@
+{
+  "task_id": "SOL-002",
+  "reviewed_commit": "54d90abd3d35f6578bab964cd54dcce42e578f53",
+  "base_commit": "297fc5d846bfc218795238e567875e49b18e7053",
+  "task_sha256": "5c14076dc38e93b21bd133ab45f0914ca076aa2b7601271c3cd6285832e6d556",
+  "structural_checks": "passed",
+  "artifact_hashes": {
+    "audit/SOL-002/diagnosis-0d20c0167c76d87b.json": {
+      "receipt_sha256": "a563d74a4340ffaebd78c61403aca590fbc3ddfb905850a15a6d37360edaae6d",
+      "canonical_sha256": "8b9d4e2ac44300390264960298b21de835a1d8dbe2b565c8ad06a00809eaad51",
+      "reconstructed_crlf_sha256": "a563d74a4340ffaebd78c61403aca590fbc3ddfb905850a15a6d37360edaae6d",
+      "match": "reconstructed_CRLF_checkout"
+    },
+    "audit/SOL-002/execution_log.json": {
+      "receipt_sha256": "99399398a9c7f9ce7b572c180ed4274a75e6fa63758fb84730f45e77f1125938",
+      "canonical_sha256": "99399398a9c7f9ce7b572c180ed4274a75e6fa63758fb84730f45e77f1125938",
+      "reconstructed_crlf_sha256": "881668703856528b49eaf220a699026b0586cb5726b38d96a1923162aa9c938a",
+      "match": "canonical_git_blob"
+    },
+    "audit/SOL-002/findings.json": {
+      "receipt_sha256": "677521f6aa95a1bc5fe0636d017a987fc7bc3350687420f8c91e7815413e4a17",
+      "canonical_sha256": "3ab95e5da3572c7c4d0592b5ee07ba41044edc187b1f0fdbc5199dd33e0c741a",
+      "reconstructed_crlf_sha256": "677521f6aa95a1bc5fe0636d017a987fc7bc3350687420f8c91e7815413e4a17",
+      "match": "reconstructed_CRLF_checkout"
+    },
+    "audit/SOL-002/history/initial-findings.json": {
+      "receipt_sha256": "c81c4e5d6eeebe9586139a7514034a01938605a4ba1523e4dcb3fff7771bb5d7",
+      "canonical_sha256": "631ba4f71305ad1d4bc28951db6489d449731bd4801fbda57ca394c2422de3f9",
+      "reconstructed_crlf_sha256": "c81c4e5d6eeebe9586139a7514034a01938605a4ba1523e4dcb3fff7771bb5d7",
+      "match": "reconstructed_CRLF_checkout"
+    },
+    "audit/SOL-002/history/initial-verification.json": {
+      "receipt_sha256": "a8176fdf63f65105287c079f3068d0fc644d05a223f35dd9adcea1d6538c1a03",
+      "canonical_sha256": "4f4ed3096ac09adc7a98c54cb32a8a0a45f13a06e95fd1731dca82e7297ae418",
+      "reconstructed_crlf_sha256": "a8176fdf63f65105287c079f3068d0fc644d05a223f35dd9adcea1d6538c1a03",
+      "match": "reconstructed_CRLF_checkout"
+    },
+    "audit/SOL-002/history/intentional-corrupt-verification.json": {
+      "receipt_sha256": "88ae68343d00817f3f4b7e8367d43517831f3f62ca277b6eba1fd01b152bb69e",
+      "canonical_sha256": "88ae68343d00817f3f4b7e8367d43517831f3f62ca277b6eba1fd01b152bb69e",
+      "reconstructed_crlf_sha256": "cddc440f785efe399b13e778249275e3fd149a9b3b71e17bf612b20be9802f18",
+      "match": "canonical_git_blob"
+    },
+    "audit/SOL-002/review.md": {
+      "receipt_sha256": "8435f01ecd2531980a5db54c081abe91b00454ec22af91ebcccfadb624b56bb4",
+      "canonical_sha256": "8435f01ecd2531980a5db54c081abe91b00454ec22af91ebcccfadb624b56bb4",
+      "reconstructed_crlf_sha256": "99cb70a5e2f540a1fb7f7080fb3e834fdd4a8de6249151ff38df20dab6e1c14a",
+      "match": "canonical_git_blob"
+    },
+    "audit/SOL-002/verification.json": {
+      "receipt_sha256": "071959f27b90553bf3c1c64e9017d89dfa738342c7951c969f0e22a67945aff0",
+      "canonical_sha256": "40962a2306972d5ae346c57e6b7e5de5ca236070531754a04988107c53e37b3e",
+      "reconstructed_crlf_sha256": "071959f27b90553bf3c1c64e9017d89dfa738342c7951c969f0e22a67945aff0",
+      "match": "reconstructed_CRLF_checkout"
+    },
+    "audit/SOL-002/verify.py": {
+      "receipt_sha256": "2c1b680b308ef33868b5ef74ac7f8b5c526c9950c295dd40cc5518d9cad60d9a",
+      "canonical_sha256": "2c1b680b308ef33868b5ef74ac7f8b5c526c9950c295dd40cc5518d9cad60d9a",
+      "reconstructed_crlf_sha256": "3ace4601a763185cc6b040c4c2f89d2cdfd48cb95f7449ae2558cb3c550f7779",
+      "match": "canonical_git_blob"
+    },
+    "handoff/SOL-002/check-0.txt": {
+      "receipt_sha256": "effd6849efe32138b9361bf7f0fb9699c96cc990bf04adfba50d4f5d1d57284b",
+      "canonical_sha256": "6432efb797c41289ed2ca06b368dd1f221520bde87e1f152ef3e8a3c8b7b93a0",
+      "reconstructed_crlf_sha256": "effd6849efe32138b9361bf7f0fb9699c96cc990bf04adfba50d4f5d1d57284b",
+      "match": "reconstructed_CRLF_checkout"
+    },
+    "handoff/SOL-002/check-1.txt": {
+      "receipt_sha256": "7e8d0e3c6c256d1529507a972aac1bbed1560916af1d56ca9744b8e8da154804",
+      "canonical_sha256": "178f0067761331aee770167d2e05a4e33d0619c43232bd0b92770cb38272ee15",
+      "reconstructed_crlf_sha256": "7e8d0e3c6c256d1529507a972aac1bbed1560916af1d56ca9744b8e8da154804",
+      "match": "reconstructed_CRLF_checkout"
+    }
+  },
+  "excluded_paths": [],
+  "accepted_paths": [
+    "audit/SOL-002/diagnosis-0d20c0167c76d87b.json",
+    "audit/SOL-002/execution_log.json",
+    "audit/SOL-002/findings.json",
+    "audit/SOL-002/history/initial-findings.json",
+    "audit/SOL-002/history/initial-verification.json",
+    "audit/SOL-002/history/intentional-corrupt-verification.json",
+    "audit/SOL-002/review.md",
+    "audit/SOL-002/verification.json",
+    "audit/SOL-002/verify.py",
+    "handoff/SOL-002/check-0.txt",
+    "handoff/SOL-002/check-1.txt",
+    "handoff/SOL-002/result.json"
+  ],
+  "final_outcomes_computed": false,
+  "chief_replay": {
+    "exit_code": 0,
+    "python": "3.12.0",
+    "mode": "Exact pinned-base detached worktree; branch-name probe adapted after independent remote-ref validation",
+    "saved_worker_evidence_unchanged": true,
+    "checkout_bytes": "Reconstructed against recorded digests, including CRLF where necessary",
+    "scope": "Toy recomputation for SOL-002; source/split metadata and saved evidence for SOL-003; no final outcomes",
+    "check_count": 393,
+    "largest_absolute_residual": "9.26652142338416848220769789397240377632534495279593319E-15"
+  },
+  "decision": "accepted",
+  "tests": {
+    "command": "python -B -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "tests": 32,
+    "evidence": "audit/chief/review-acceptance-tests.txt",
+    "evidence_sha256": "188005991f7e028fe5e1b0c5a0da58a9d138f2a5cadb72963ecd7f2ab520d598"
+  },
+  "follow_up": "Resolve S1-S3 in new baseline driver contract before driver acceptance."
+}

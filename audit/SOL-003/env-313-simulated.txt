@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "python": "3.13.14",
+  "required_python": "3.12",
+  "reason": "Restart this worker under local Python 3.12; preserve worktrees and avoid duplicate watchers."
+}

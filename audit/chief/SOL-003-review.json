@@ -1,0 +1,115 @@
+{
+  "task_id": "SOL-003",
+  "reviewed_commit": "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+  "base_commit": "c651c67c30db1131c25641ac94631238cba0dd8d",
+  "task_sha256": "758b29442ab6f6c7ba984a8d7a38a063d35ce80995df52f4266654133b89a4dd",
+  "structural_checks": "passed",
+  "artifact_hashes": {
+    "audit/SOL-003/accounting-tests.txt": {
+      "receipt_sha256": "cd9177c5f773edde25ca40caac0836febaa4a9d9e47be9bc9d66661ebb992758",
+      "canonical_sha256": "cd9177c5f773edde25ca40caac0836febaa4a9d9e47be9bc9d66661ebb992758",
+      "reconstructed_crlf_sha256": "ebb641a1d1d6f7f0074bc17f3297e5123dd394ddac70f389e9809ce5f9adaba0",
+      "match": "canonical_git_blob"
+    },
+    "audit/SOL-003/env-312.txt": {
+      "receipt_sha256": "a620d17433955533f42fcc4f2a757bbe1932bbc193707a6f0022fa350064e7df",
+      "canonical_sha256": "a620d17433955533f42fcc4f2a757bbe1932bbc193707a6f0022fa350064e7df",
+      "reconstructed_crlf_sha256": "7aacc4c0de42db8cc4a4349dfa270483b2896fdb528ee033cbcc66876c2bea5d",
+      "match": "canonical_git_blob"
+    },
+    "audit/SOL-003/env-313-simulated.txt": {
+      "receipt_sha256": "9fa8698828d4bf03b176ce13fbfa56e87c58095564b8f1011b389744d915b99f",
+      "canonical_sha256": "9fa8698828d4bf03b176ce13fbfa56e87c58095564b8f1011b389744d915b99f",
+      "reconstructed_crlf_sha256": "25739d252e4c3096f2d4f1bb6324a7a0021fcc44f8009c64824ff3267125177d",
+      "match": "canonical_git_blob"
+    },
+    "audit/SOL-003/findings.json": {
+      "receipt_sha256": "4f3b8d2022ade7aab6ce97c60fefa0dcf92bfc613daeb46d3dfcf694b9f995d1",
+      "canonical_sha256": "4f3b8d2022ade7aab6ce97c60fefa0dcf92bfc613daeb46d3dfcf694b9f995d1",
+      "reconstructed_crlf_sha256": "d0ff0fd92a542214a6f159d3bbc7d490d1b8b7e07a2a385c7affa12b4a720302",
+      "match": "canonical_git_blob"
+    },
+    "audit/SOL-003/investigation.json": {
+      "receipt_sha256": "af87507c997997f99d4288a11588747e4f9ff8321f80dd71ea1207483c5683db",
+      "canonical_sha256": "af87507c997997f99d4288a11588747e4f9ff8321f80dd71ea1207483c5683db",
+      "reconstructed_crlf_sha256": "84aa495690c14ec0f1b2f87243d015d6443e97f06f9d3a6ad1c8c18359d6fca1",
+      "match": "canonical_git_blob"
+    },
+    "audit/SOL-003/protocol-tests.txt": {
+      "receipt_sha256": "47322ff830dfb617bf8e0b34540e2a182a2c09fc9e4205174d6deb13d5057840",
+      "canonical_sha256": "47322ff830dfb617bf8e0b34540e2a182a2c09fc9e4205174d6deb13d5057840",
+      "reconstructed_crlf_sha256": "3167ddb18a4a8faca840c6f1595ac798d5642e47943ae69e481f31f095c26371",
+      "match": "canonical_git_blob"
+    },
+    "audit/SOL-003/review.md": {
+      "receipt_sha256": "956fba926fe148990ec39e0d75845946a46db5aee6b5dbe926dad9feaf6030e4",
+      "canonical_sha256": "956fba926fe148990ec39e0d75845946a46db5aee6b5dbe926dad9feaf6030e4",
+      "reconstructed_crlf_sha256": "2a27d43f6afcc12954152ef42569e2c50b1dd9419f6139af3133cc8c04996732",
+      "match": "canonical_git_blob"
+    },
+    "audit/SOL-003/validation-checks.json": {
+      "receipt_sha256": "54852c6123a2a9463db7b38981db572c03dcf692867f25f8f3d2b72a4e778c04",
+      "canonical_sha256": "54852c6123a2a9463db7b38981db572c03dcf692867f25f8f3d2b72a4e778c04",
+      "reconstructed_crlf_sha256": "d8189f22951219680d3657e99779f89e3acf55c50dbe3a49d75bc93d6e979e3c",
+      "match": "canonical_git_blob"
+    },
+    "audit/SOL-003/verification.json": {
+      "receipt_sha256": "6bf48840d167e396d4d122a11e8a2d036aba31257df6b0fa1e96a461acacd271",
+      "canonical_sha256": "6bf48840d167e396d4d122a11e8a2d036aba31257df6b0fa1e96a461acacd271",
+      "reconstructed_crlf_sha256": "3ad2e3488f906476347f358353ff39055aba6a35e020243bc6f5ea52930ba93b",
+      "match": "canonical_git_blob"
+    },
+    "audit/SOL-003/verify.py": {
+      "receipt_sha256": "efcc6a743208b4270fa6d9099dd9ad8d5b79ea7e851e6a9fa8e3362ff9cf9b7e",
+      "canonical_sha256": "efcc6a743208b4270fa6d9099dd9ad8d5b79ea7e851e6a9fa8e3362ff9cf9b7e",
+      "reconstructed_crlf_sha256": "2af288b0bcf452afb6601446f240983db54da05cda7f487611f98244aa6dc059",
+      "match": "canonical_git_blob"
+    },
+    "handoff/SOL-003/check-0.txt": {
+      "receipt_sha256": "2ff533548bdd518ef4bb3a892ddd0a049c3689a253a7bab191e5cf14481348a9",
+      "canonical_sha256": "4f4a422e726b9f04f7d6b2aeac38da060e5a1fcd6b8eae676bd6e3f421042c8d",
+      "reconstructed_crlf_sha256": "2ff533548bdd518ef4bb3a892ddd0a049c3689a253a7bab191e5cf14481348a9",
+      "match": "reconstructed_CRLF_checkout"
+    },
+    "handoff/SOL-003/check-1.txt": {
+      "receipt_sha256": "f5e3675e8c839c9ff1bd0ddbc5c45c88089c75c0a6fade67fbbcd872ac01cbc4",
+      "canonical_sha256": "1e7815153b0380064f7c640e9beaab8082f4c846ab5edb1d43632da9093cb5e8",
+      "reconstructed_crlf_sha256": "f5e3675e8c839c9ff1bd0ddbc5c45c88089c75c0a6fade67fbbcd872ac01cbc4",
+      "match": "reconstructed_CRLF_checkout"
+    }
+  },
+  "excluded_paths": [],
+  "accepted_paths": [
+    "audit/SOL-003/accounting-tests.txt",
+    "audit/SOL-003/env-312.txt",
+    "audit/SOL-003/env-313-simulated.txt",
+    "audit/SOL-003/findings.json",
+    "audit/SOL-003/investigation.json",
+    "audit/SOL-003/protocol-tests.txt",
+    "audit/SOL-003/review.md",
+    "audit/SOL-003/validation-checks.json",
+    "audit/SOL-003/verification.json",
+    "audit/SOL-003/verify.py",
+    "handoff/SOL-003/check-0.txt",
+    "handoff/SOL-003/check-1.txt",
+    "handoff/SOL-003/result.json"
+  ],
+  "final_outcomes_computed": false,
+  "chief_replay": {
+    "exit_code": 0,
+    "python": "3.12.0",
+    "mode": "Exact pinned-base detached worktree; branch-name probe adapted after independent remote-ref validation",
+    "saved_worker_evidence_unchanged": true,
+    "checkout_bytes": "Reconstructed against recorded digests, including CRLF where necessary",
+    "scope": "Toy recomputation for SOL-002; source/split metadata and saved evidence for SOL-003; no final outcomes"
+  },
+  "decision": "accepted",
+  "tests": {
+    "command": "python -B -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "tests": 32,
+    "evidence": "audit/chief/review-acceptance-tests.txt",
+    "evidence_sha256": "188005991f7e028fe5e1b0c5a0da58a9d138f2a5cadb72963ecd7f2ab520d598"
+  },
+  "follow_up": "Release immutable HY3-002 after current Python 3.12 registration; HY3-001 stays cancelled."
+}

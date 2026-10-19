@@ -1,0 +1,16 @@
+{
+  "task_id": "HY3-002",
+  "released_at": "2026-10-19T13:53:25.176880+00:00",
+  "prerequisite_review_commit": "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+  "registration_commit": "5de076351c7580f32ac46f8eae1afc2a12939116",
+  "registration": {
+    "role": "hy3",
+    "machine_id": "937a9358dc114be8b3718ff13e3da4f9",
+    "state": "idle",
+    "python": "3.12.10",
+    "updated_at": "2026-10-19T13:49:33.791136+00:00",
+    "lease_until": "2026-10-19T13:59:33.791136+00:00"
+  },
+  "task_unchanged": true,
+  "resolved_help": "Prior Python environment issue resolved; no current human action."
+}

@@ -37,30 +37,65 @@
     },
     {
       "id": "SOL-002",
-      "state": "ready",
+      "state": "accepted",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "5c14076dc38e93b21bd133ab45f0914ca076aa2b7601271c3cd6285832e6d556",
       "branch": "work/sol/SOL-002-a1",
-      "note": "Dependency-gated on chief acceptance of SOL-001; review chief plan/oracle at pinned base."
+      "note": "Resolve S1-S3 in new baseline driver contract before driver acceptance.",
+      "reviewed_commit": "54d90abd3d35f6578bab964cd54dcce42e578f53",
+      "accepted_paths": [
+        "audit/SOL-002/diagnosis-0d20c0167c76d87b.json",
+        "audit/SOL-002/execution_log.json",
+        "audit/SOL-002/findings.json",
+        "audit/SOL-002/history/initial-findings.json",
+        "audit/SOL-002/history/initial-verification.json",
+        "audit/SOL-002/history/intentional-corrupt-verification.json",
+        "audit/SOL-002/review.md",
+        "audit/SOL-002/verification.json",
+        "audit/SOL-002/verify.py",
+        "handoff/SOL-002/check-0.txt",
+        "handoff/SOL-002/check-1.txt",
+        "handoff/SOL-002/result.json"
+      ],
+      "excluded_paths": [],
+      "acceptance_evidence": "audit/chief/SOL-002-review.json"
     },
     {
       "id": "SOL-003",
-      "state": "ready",
+      "state": "accepted",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "758b29442ab6f6c7ba984a8d7a38a063d35ce80995df52f4266654133b89a4dd",
       "branch": "work/sol/SOL-003-a1",
-      "note": "Independent review of HY3 and chief runtime fixes."
+      "note": "Release immutable HY3-002 after current Python 3.12 registration; HY3-001 stays cancelled.",
+      "reviewed_commit": "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+      "accepted_paths": [
+        "audit/SOL-003/accounting-tests.txt",
+        "audit/SOL-003/env-312.txt",
+        "audit/SOL-003/env-313-simulated.txt",
+        "audit/SOL-003/findings.json",
+        "audit/SOL-003/investigation.json",
+        "audit/SOL-003/protocol-tests.txt",
+        "audit/SOL-003/review.md",
+        "audit/SOL-003/validation-checks.json",
+        "audit/SOL-003/verification.json",
+        "audit/SOL-003/verify.py",
+        "handoff/SOL-003/check-0.txt",
+        "handoff/SOL-003/check-1.txt",
+        "handoff/SOL-003/result.json"
+      ],
+      "excluded_paths": [],
+      "acceptance_evidence": "audit/chief/SOL-003-review.json"
     },
     {
       "id": "HY3-002",
-      "state": "waiting",
+      "state": "ready",
       "owner": "hy3",
       "attempt": 1,
       "task_sha256": "d3f1e845573fc1e7c170fd4b126130a6a344348138d588828517fd334d4c39d8",
       "branch": "work/hy3/HY3-002-a1",
-      "note": "Release only after 3.12 registration and SOL-003 acceptance; requires remote local setup."
+      "note": "Released after accepted SOL-003 and live Python 3.12.10 registration; immutable task unchanged."
     }
   ]
 }
