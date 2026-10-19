@@ -47,6 +47,23 @@ SHAs and acceptance records above for citations.
   with `python -B report/build_baseline_note.py --check`; this does not simulate
   any experiment or access final outcomes.
 
+## Baseline figures and disclosure preparation
+
+[baseline-figure-captions.md](baseline-figure-captions.md) documents two source-bound
+figures at 180 mm width: three H30 reference summaries and the annual baseline's
+severe scenario with all three references on that same path. SVG/PDF/300-dpi PNG,
+full event data and export provenance are in figures/. Reproduce source/data and
+published-output integrity with `python -B report/build_baseline_figures.py --check`.
+Chief separately checked twelve statistics, 183 plotted observations, severe-case
+selection, embedded PDF fonts and the 11 pt minimum. Independent figure/wording
+review is still pending; these checks do not accept policy outcomes.
+
+[limitations-and-disclosure-draft.md](limitations-and-disclosure-draft.md) contains
+English text on annual observation limits, liquidity, fee conventions, model and
+validation assumptions, pending-review holdings and actual AI contributions. It
+must be reconciled with accepted final evidence and independently reviewed before
+submission. New cost-aware outcomes and personalized assignments remain absent.
+
 ## Proposed page budget
 
 | Content | Pages | Material needed before final writing |

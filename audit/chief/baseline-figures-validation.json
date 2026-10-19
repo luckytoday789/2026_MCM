@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "source_commit": "7652410d73425371110784ef5fa97c03470a074e",
+  "source_pins": {
+    "summary.csv": "965c3ac513f63de31830603ab968f5c6e99c6ceb763515b99753282d8c3a4994",
+    "scenario_metrics.csv": "afabf571d8c7d224bd83f836033fe4c4907a05fc15a2e8614c8ae09d803f100c",
+    "annual_ledgers.csv": "b2e93442391d2a7cec4bdfe79b397c14c311cc229e2e6c3d82d2dd04199d470a"
+  },
+  "summary_statistics_checked": 12,
+  "summary_checks": [
+    {
+      "policy": "bills_keep",
+      "computed": {
+        "median_growth_pct": 1.338957470938773,
+        "p10_growth_pct": 0.16912477316338714,
+        "median_loss_pct": 12.290483431562262,
+        "p90_loss_pct": 22.156986768014654
+      },
+      "severe_scenario_id": 42
+    },
+    {
+      "policy": "equal_weight_annual",
+      "computed": {
+        "median_growth_pct": 3.5763283977810367,
+        "p10_growth_pct": 1.2772207264879132,
+        "median_loss_pct": 20.10457292348452,
+        "p90_loss_pct": 34.84165971351367
+      },
+      "severe_scenario_id": 5
+    },
+    {
+      "policy": "equal_weight_buy_hold",
+      "computed": {
+        "median_growth_pct": 4.205361412195274,
+        "p10_growth_pct": 1.0216497068826103,
+        "median_loss_pct": 28.748861122333487,
+        "p90_loss_pct": 44.008541189779905
+      },
+      "severe_scenario_id": 29
+    }
+  ],
+  "all_plotted_observations_checked": 183,
+  "rational_severe_loss_pct": 50.87762271755737,
+  "pdf_fonts": [
+    {
+      "file": "baseline-h30-summary.pdf",
+      "min_font_points": 11.0,
+      "embedded_truetype": true
+    },
+    {
+      "file": "baseline-h30-severe-path.pdf",
+      "min_font_points": 11.0,
+      "embedded_truetype": true
+    }
+  ],
+  "data_color_contrast_against_white": {
+    "#333333": 12.63465434445799,
+    "#0072B2": 5.185446345779855,
+    "#A94400": 5.976347130077723
+  },
+  "scope": "Chief checks; independent Sol figure/wording review still required. Contrast checks do not certify accessibility.",
+  "simulation_rerun": false,
+  "final_outcomes_read": false
+}

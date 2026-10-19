@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "88b4c7d921c5b3c615d4a481ac41c585a4ee11fd",
+  "snapshot_main_commit": "c3836c06a440474f9b73a8d590ac8d62d747ff6a",
   "authoritative_state": [
     "ops/control.json",
     "ops/queue.json"
@@ -17,7 +17,8 @@
     "accepted_development_evidence": "Exact reviewed development artifacts accepted; not final or policy-selection evidence",
     "accepted_negative_review": "Independent evidence accepted; reviewed design/code requires stated corrections and is not approved",
     "accepted_design": "Independent design approval only; neither code nor future outcomes are certified.",
-    "failed_implementation_attempt": "Exact failed receipt preserved; code not accepted even when narrower numerical checks pass."
+    "failed_implementation_attempt": "Exact failed receipt preserved; code not accepted even when narrower numerical checks pass.",
+    "report_transform_pending_review": "Chief-prepared transformation of accepted data; source outcomes accepted, independent figure/wording review still pending."
   },
   "source_registry": {
     "PROBLEM_LOCK": {
@@ -222,6 +223,20 @@
       "generator": "report/build_component_index.py",
       "acceptance_snapshot_commit": "8d00ca8eafc00fd636273be4125216e981289804",
       "scope": "Exact current-source identity for ten accepted modules only; no production outcomes or final readiness claim."
+    },
+    "BASELINE_FIGURES": {
+      "state": "report_transform_pending_review",
+      "path": "report/baseline-figure-captions.md",
+      "generator": "report/build_baseline_figures.py",
+      "provenance": "report/figures/baseline-figures-provenance.json",
+      "source_commit": "7652410d73425371110784ef5fa97c03470a074e",
+      "chief_validation": "audit/chief/baseline-figures-validation.json",
+      "scope": "Three H30 summary rows, 183 event values on annual baseline severe scenario5; no rerun, no new policy or final result."
+    },
+    "LIMITATIONS_DISCLOSURE_DRAFT": {
+      "state": "report_transform_pending_review",
+      "path": "report/limitations-and-disclosure-draft.md",
+      "scope": "Qualifies locked model assumptions and records actual roles; no recommendations or final results."
     }
   },
   "requirements": [
@@ -325,7 +340,8 @@
         "BASELINE_PLAN",
         "BASELINE_ADDENDUM",
         "HY3_BASELINE_RESULT",
-        "BASELINE_DESCRIPTIVE_TABLES"
+        "BASELINE_DESCRIPTIVE_TABLES",
+        "BASELINE_FIGURES"
       ],
       "state": "accepted_development_evidence",
       "table_keys": [
@@ -359,7 +375,8 @@
       "sources": [
         "BASELINE_PLAN",
         "BASELINE_ADDENDUM",
-        "HY3_BASELINE_RESULT"
+        "HY3_BASELINE_RESULT",
+        "BASELINE_FIGURES"
       ],
       "state": "accepted_development_evidence",
       "remaining": "Three baseline severe cases at all five development horizons accepted. Cost-aware and final cases remain unavailable; retain their exact path/location provenance."
@@ -398,7 +415,8 @@
       "answer": "Limitations, review/suspension trigger and exact holdings/actions while review is pending",
       "sources": [
         "PROBLEM_LOCK",
-        "POLICY_PROPOSAL"
+        "POLICY_PROPOSAL",
+        "LIMITATIONS_DISCLOSURE_DRAFT"
       ],
       "state": "accepted_design",
       "remaining": "Generic latch/holdings design and corrected kernel accepted (SOL-013/SOL-021), personalized design accepted SOL-020. Personalized adapter, actual development and final evidence remain required."
@@ -408,7 +426,8 @@
       "answer": "A4 English report at most 10 pages, font at least 11 pt, three names and AI-use disclosure",
       "sources": [
         "PROBLEM_LOCK",
-        "PROTOCOL"
+        "PROTOCOL",
+        "LIMITATIONS_DISCLOSURE_DRAFT"
       ],
       "state": "not_available",
       "remaining": "Assemble and independently review report, insert names only into local delivery copy, render all pages and verify actual layout"

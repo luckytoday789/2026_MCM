@@ -5,3 +5,4 @@
 *.csv text eol=lf
 data/raw/*.csv -text
 *.pdf binary
+*.svg text eol=lf whitespace=-blank-at-eol

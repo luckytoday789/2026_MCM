@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "kind": "development_baseline_report_figures",
+  "source_commit": "7652410d73425371110784ef5fa97c03470a074e",
+  "independent_review_commit": "818af5d65bd8a271962d848dd552bd39ca561f68",
+  "source_hashes": {
+    "results/development/HY3-003/summary.csv": "965c3ac513f63de31830603ab968f5c6e99c6ceb763515b99753282d8c3a4994",
+    "results/development/HY3-003/annual_ledgers.csv": "b2e93442391d2a7cec4bdfe79b397c14c311cc229e2e6c3d82d2dd04199d470a"
+  },
+  "generator_sha256": "8db255568defdf6600c13c3064ad14842cabd03e824bbdf343c8de21cbb4a11a",
+  "python": "3.12.0",
+  "matplotlib": "3.11.2",
+  "split": "development",
+  "scenario_count": 120,
+  "horizon": 30,
+  "fee_rate": 0.0025,
+  "summary_rows": [
+    {
+      "split": "development",
+      "policy": "bills_keep",
+      "horizon": "30",
+      "scenario_count": "120",
+      "median_growth_pct": "1.338957470938773",
+      "p10_growth_pct": "0.16912477316338714",
+      "median_loss_pct": "12.290483431562262",
+      "p90_loss_pct": "22.156986768014654",
+      "median_volatility_pct": "4.06483754542586",
+      "median_terminal_real_wealth": "149.03676728055933",
+      "median_nominal_fee_sum": "0.0",
+      "pooled_trade_count": "0",
+      "pooled_review_count": "3600",
+      "pooled_later_trade_count": "0",
+      "pooled_later_review_count": "3480",
+      "pooled_trade_share_pct": "0.0",
+      "pooled_trade_share_ex_initial_pct": "0.0",
+      "severe_scenario_id": "42",
+      "severe_net_real_cagr_pct": "-0.25949409202739027",
+      "severe_max_real_drawdown_pct": "29.86223293110337",
+      "severe_terminal_real_wealth": "92.50112231014148",
+      "severe_drawdown_peak_year": "20",
+      "severe_drawdown_peak_kind": "end",
+      "severe_drawdown_trough_year": "27",
+      "severe_drawdown_trough_kind": "end",
+      "severe_trade_share_pct": "0.0",
+      "severe_trade_share_ex_initial_pct": "0.0",
+      "monetary_units": "nominal units; real wealth in CPI_0 purchasing power",
+      "return_units": "annual simple decimal",
+      "cpi_units": "price index; CPI_0=1",
+      "growth_units": "percentage points per year",
+      "volatility_units": "percentage points; annual sample ddof=1",
+      "loss_units": "percent of running real peak",
+      "trade_share_units": "percent of annual reviews"
+    },
+    {
+      "split": "development",
+      "policy": "equal_weight_annual",
+      "horizon": "30",
+      "scenario_count": "120",
+      "median_growth_pct": "3.5763283977810367",
+      "p10_growth_pct": "1.2772207264879132",
+      "median_loss_pct": "20.10457292348452",
+      "p90_loss_pct": "34.841659713513685",
+      "median_volatility_pct": "8.028726536538777",
+      "median_terminal_real_wealth": "286.95631529795077",
+      "median_nominal_fee_sum": "0.9461754964384963",
+      "pooled_trade_count": "3600",
+      "pooled_review_count": "3600",
+      "pooled_later_trade_count": "3480",
+      "pooled_later_review_count": "3480",
+      "pooled_trade_share_pct": "100.0",
+      "pooled_trade_share_ex_initial_pct": "100.0",
+      "severe_scenario_id": "5",
+      "severe_net_real_cagr_pct": "2.671367538345981",
+      "severe_max_real_drawdown_pct": "50.87762271755738",
+      "severe_terminal_real_wealth": "220.53646059668952",
+      "severe_drawdown_peak_year": "1",
+      "severe_drawdown_peak_kind": "end",
+      "severe_drawdown_trough_year": "8",
+      "severe_drawdown_trough_kind": "post_fee",
+      "severe_trade_share_pct": "100.0",
+      "severe_trade_share_ex_initial_pct": "100.0",
+      "monetary_units": "nominal units; real wealth in CPI_0 purchasing power",
+      "return_units": "annual simple decimal",
+      "cpi_units": "price index; CPI_0=1",
+      "growth_units": "percentage points per year",
+      "volatility_units": "percentage points; annual sample ddof=1",
+      "loss_units": "percent of running real peak",
+      "trade_share_units": "percent of annual reviews"
+    },
+    {
+      "split": "development",
+      "policy": "equal_weight_buy_hold",
+      "horizon": "30",
+      "scenario_count": "120",
+      "median_growth_pct": "4.205361412195274",
+      "p10_growth_pct": "1.0216497068826103",
+      "median_loss_pct": "28.748861122333487",
+      "p90_loss_pct": "44.00854118977991",
+      "median_volatility_pct": "10.388937306332744",
+      "median_terminal_real_wealth": "344.13721497651994",
+      "median_nominal_fee_sum": "0.16666666666666669",
+      "pooled_trade_count": "120",
+      "pooled_review_count": "3600",
+      "pooled_later_trade_count": "0",
+      "pooled_later_review_count": "3480",
+      "pooled_trade_share_pct": "3.3333333333333335",
+      "pooled_trade_share_ex_initial_pct": "0.0",
+      "severe_scenario_id": "29",
+      "severe_net_real_cagr_pct": "2.4245219782382588",
+      "severe_max_real_drawdown_pct": "66.92782838761542",
+      "severe_terminal_real_wealth": "205.17213254252007",
+      "severe_drawdown_peak_year": "17",
+      "severe_drawdown_peak_kind": "end",
+      "severe_drawdown_trough_year": "23",
+      "severe_drawdown_trough_kind": "end",
+      "severe_trade_share_pct": "3.3333333333333335",
+      "severe_trade_share_ex_initial_pct": "0.0",
+      "monetary_units": "nominal units; real wealth in CPI_0 purchasing power",
+      "return_units": "annual simple decimal",
+      "cpi_units": "price index; CPI_0=1",
+      "growth_units": "percentage points per year",
+      "volatility_units": "percentage points; annual sample ddof=1",
+      "loss_units": "percent of running real peak",
+      "trade_share_units": "percent of annual reviews"
+    }
+  ],
+  "path_selection": "Annual equal-weight baseline's existing greatest-loss scenario; other references use that same scenario",
+  "path_point_count": 183,
+  "peak": {
+    "policy": "equal_weight_annual",
+    "scenario_id": 5,
+    "event_index": 2,
+    "year": 1,
+    "stage": "end",
+    "elapsed_years": 1,
+    "real_wealth": 109.63239431398468
+  },
+  "trough": {
+    "policy": "equal_weight_annual",
+    "scenario_id": 5,
+    "event_index": 15,
+    "year": 8,
+    "stage": "post_fee",
+    "elapsed_years": 7,
+    "real_wealth": 53.85403835869073
+  },
+  "loss_pct": 50.87762271755738,
+  "time_axis": "initial=0; year-t post_fee at t-1, year-t end at t; vertical jumps retain fees",
+  "transforms": [
+    "Filter the three accepted H30 summary rows",
+    "Copy every initial/post-fee/end point on selected scenario",
+    "Join successive observations with unsmoothed straight segments; no intra-year observations implied"
+  ],
+  "quantiles": "Descriptive linear scenario quantiles, not confidence intervals",
+  "minimum_font_points_at_180mm": 11,
+  "checks": {
+    "exact_pins_and_queue_acceptance": true,
+    "complete_source_key_coverage": true,
+    "selected_path_loss_and_locations_reconstructed": true,
+    "text_inside_canvas": true,
+    "opaque_png_at_300dpi": true,
+    "pdf_width_180mm": true
+  },
+  "outputs": {
+    "baseline-h30-summary.png": {
+      "sha256": "68cd930c058ab37508b908d4e54eb96ccbdbe025a537fbd7317919d04f3e6839",
+      "bytes": 104728,
+      "pixels": [
+        2125,
+        1488
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "mode": "RGBA"
+    },
+    "baseline-h30-summary.svg": {
+      "sha256": "5232e6f8ce872682871effda4c128f9ddb4778a4f400e7bf84d82de18ec6d746",
+      "bytes": 19596
+    },
+    "baseline-h30-summary.pdf": {
+      "sha256": "506f8e7c5a522b19fd8780bb34774f4a01a5468758ee4b13f1eb0f149f085d41",
+      "bytes": 21095,
+      "millimeters": [
+        179.99999999998556,
+        125.99999999999694
+      ]
+    },
+    "baseline-h30-severe-path.png": {
+      "sha256": "a559fd676f1f332dec4abb0c5be0fd5c2c0dbb535c7070983c358629585dc5cc",
+      "bytes": 189999,
+      "pixels": [
+        2125,
+        1322
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "mode": "RGBA"
+    },
+    "baseline-h30-severe-path.svg": {
+      "sha256": "9844b50431b67574f06b3196aa09ba1a9e8dae28f8e58ca9ff01d5de039724eb",
+      "bytes": 17493
+    },
+    "baseline-h30-severe-path.pdf": {
+      "sha256": "3d758ee41c85fc7043b2e38ab5030e478439b150a65d93029e09904a61283afe",
+      "bytes": 22121,
+      "millimeters": [
+        179.99999999998556,
+        111.99999999998946
+      ]
+    },
+    "baseline-h30-severe-points.csv": {
+      "sha256": "50f3bb6ef1052d04b01889d732a88b4d381747009127e1701244764952b438ab",
+      "bytes": 9675
+    }
+  },
+  "simulation_rerun": false,
+  "final_outcomes_read": false,
+  "scope": "Chief-prepared figure transforms; final manuscript review and layout check still required"
+}

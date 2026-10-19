@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T20:36:53.096147+00:00",
+  "main_before_changes": "c3836c06a440474f9b73a8d590ac8d62d747ff6a",
+  "waiting_tasks_unchanged": [
+    {
+      "task_id": "SOL-027",
+      "state": "waiting",
+      "base_commit": "5a015a490c89b39271624e1f1790a3454498a6c9",
+      "task_sha256": "f086a587d0a0ec0aa1477d28df58f036482dac1dbc7e0add8f298553daf90f00",
+      "source_pin_count": 25
+    },
+    {
+      "task_id": "SOL-028",
+      "state": "waiting",
+      "base_commit": "df038cb116c4818c14454231500f992af3f26d0f",
+      "task_sha256": "d41ed4659e2d295d5b7ac09a7936d975833bbecd1282e54592791ceeea9aaf48",
+      "source_pin_count": 2
+    },
+    {
+      "task_id": "SOL-029",
+      "state": "waiting",
+      "base_commit": "df038cb116c4818c14454231500f992af3f26d0f",
+      "task_sha256": "951ca85be546855ef2b606e94d7ea0eb2acb39f03ab34e70c707bccbac6015ac",
+      "source_pin_count": 46
+    }
+  ],
+  "new_work_receipts_since_last_turn": false,
+  "source_result_commit": "7652410d73425371110784ef5fa97c03470a074e",
+  "figure_numerical_validation": "audit/chief/baseline-figures-validation.json",
+  "visual_inspection": {
+    "summary": "passed",
+    "severe_path": "passed after moving annotation; prior layout archived"
+  },
+  "skills_used": [
+    {
+      "name": "math-modeling-skill",
+      "pinned_source_commit": "e70b85b8a41aeb748789f66860c6bd4d123871cd",
+      "license": "MIT",
+      "new_install": false,
+      "local_skill_sha256": "da9754f684071cfab5f48d893b27286ac80e4ddbc90e24c374e0917357a631cb"
+    },
+    {
+      "name": "scientific-visualization",
+      "pinned_source_commit": "593377bb048752abb0152deab9fbb1083a6087df",
+      "license": "MIT",
+      "new_install": false,
+      "local_skill_sha256": "8cbde7cdc10d959cf72cfd08335cc8ce996247eee6ebdb900eb64a4cb0ff34a3"
+    }
+  ],
+  "final_data_open": false,
+  "final_outcomes_read": false,
+  "human_help_required": false,
+  "simulation_rerun": false
+}

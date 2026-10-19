@@ -1,0 +1,1 @@
+{"trial":2,"status":"numerical_and_export_checks_passed_visual_correction_required","finding":"Severe-path annotation overlaps the path around years 10-16. Move annotation below the curves; keep full source values, scales and source selection unchanged.","preserved":"trial-002.py and trial-002-exports/", "simulation_rerun":false}
