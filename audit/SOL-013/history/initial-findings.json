@@ -1,0 +1,167 @@
+{
+  "base_commit": "7c804ffb960be6b9fadfc840e246ff060668a96d",
+  "blockers": [
+    "finite extreme constant 5e-324"
+  ],
+  "code_verdict": "changes_required",
+  "corrected_design_verdict": "approve",
+  "design_closure": {
+    "D1": "Eligible-first filtering, maximum-anchored epsilon ties, active/defensive/central/growth priority and final strict hurdle close both concrete ambiguities.",
+    "D2": "Paired median and fold medians; marginal Q10/Q90 differences; fixed adaptive controls [balanced_context, balanced_cost], both required even if context promotion fails; primary and sensitivity separate.",
+    "L1": "Gamma, targets and buffer remain normative; pooled marginal/myopic CE and exchangeability/dependence caveats explicit.",
+    "L2": "Own horizons and intersected horizon/liquidity eligibility A/E=C; B/D=C,B; C=C,B,G explicit.",
+    "L3": "Inclusive risk, p10 growth and indifference screens; all exclusions, denominator, severe loss and reasons required; no guarantee.",
+    "L4": "Own-tolerance suspension rerun AND risk/purchasing-power rescreen at own horizon, failed class referred without reselection/fallback.",
+    "L5": "Fold-exclusion/immutable calibration requirements retained; kernel timing independently tested, calibration implementation outside scope.",
+    "L6": "All sixteen mode/fee cases, direct comparisons and failed trials retained; doubled fee cannot retune primary.",
+    "L7": "Tiny requests execute with exact positive fee and active-state change independent of reporting epsilon; first deployment/year-1 deferred flag separated.",
+    "L8": "Sequential observer matches independent rational CPI, holdings, fees and post-fee/year-end peaks; production adapters remain separate."
+  },
+  "exact_fixes": [
+    "See failed expected/observed checks in verification.json; coordinator must fix source in a separate task."
+  ],
+  "invalid_failed_run_diagnoses": {
+    "empty prior": "ValueError: prior requires at least one observation",
+    "engine fee mismatch": "ValueError: incoming holdings disagree with prior decision/fee",
+    "infinite prior": "ValueError: real gross factors must be finite",
+    "invalid final bill_proxy_return": "ValueError: bill_proxy_return must be finite",
+    "invalid final bond_return": "ValueError: bond_return must be finite",
+    "invalid final equity_return": "ValueError: policy requires strictly positive asset and CPI factors",
+    "invalid final inflation": "ValueError: CPI must be positive and inflation greater than -1",
+    "invalid final overflow real factor": "ValueError: real gross factors must be finite",
+    "invalid suspended final bill_proxy_return": "ValueError: bill_proxy_return must be finite",
+    "invalid suspended final bond_return": "ValueError: bond_return must be finite",
+    "invalid suspended final equity_return": "ValueError: policy requires strictly positive asset and CPI factors",
+    "invalid suspended final inflation": "ValueError: CPI must be positive and inflation greater than -1",
+    "mutated prefix": "ValueError: scenario or completed history changed; use fresh state",
+    "nan prior": "ValueError: real gross factors must be finite",
+    "negative gross": "ValueError: all real gross factors must be positive",
+    "nonfinite score inputs": "ValueError: fee_rate must be finite",
+    "skip review": "ValueError: policy state must advance exactly one annual review",
+    "state reuse": "ValueError: policy state must advance exactly one annual review",
+    "too much history": "ValueError: at most five completed annual observations",
+    "wrong holdings": "ValueError: incoming holdings disagree with prior decision/fee",
+    "wrong period": "ValueError: history must be the current scenario's ordered prefix",
+    "wrong scenario": "ValueError: scenario or completed history changed; use fresh state",
+    "zero gross": "ValueError: all real gross factors must be positive"
+  },
+  "limitations": [
+    "No production loader, writer, selector, calibration provenance or final API is certified.",
+    "No competition outcomes read; no HY3-003 rerun or actual strategy outcomes.",
+    "Injected score fixtures test tie/threshold mechanics only; tiny target-change fixture uses the REAL score gate.",
+    "Normative assumptions and personalized own-horizon follow-up remain to be evaluated; design closure is not performance approval."
+  ],
+  "negative_verdict_is_evidence_failure": false,
+  "numerical_highlights": {
+    "D2_statistics": {
+      "difference_of_medians": 1.0,
+      "marginal_p10_difference": 0.2,
+      "marginal_p90_difference": -0.6,
+      "median_paired": -1.0,
+      "paired_p10": -1.0,
+      "paired_p90": 1.4
+    },
+    "actual_initial": {
+      "actual_ce": 1.0382666666666667,
+      "buffered": 1.0365333333333333,
+      "each_post_fee": 33.27777777777777,
+      "fee": 0.16666666666666669,
+      "transfer": 66.66666666666667,
+      "wealth_end": 103.82666666666665
+    },
+    "initial": {
+      "actual_ce": 1.0382666666666667,
+      "buffered": 1.0365333333333333,
+      "each_post_fee": 33.27777777777778,
+      "fee": 0.16666666666666666,
+      "transfer": 66.66666666666667,
+      "wealth_end": 103.82666666666667
+    },
+    "real_tiny_target_change": {
+      "action": "target_change",
+      "active_after": "growth_tilt",
+      "active_before": "balanced",
+      "actual_fee": 2.91271096747931e-15,
+      "ce_keep": 1.0757117357274035,
+      "executed_target_change": true,
+      "first_deployment_year": 1,
+      "human_review_latched": false,
+      "initial_allocation_deferred": false,
+      "intended_transfer": 1.165084386991724e-12,
+      "is_trade": false,
+      "observed_max_drawdown_pct": 0.16666666666668162,
+      "period": 6,
+      "prior_mass": 0.75,
+      "proposed_target": "growth_tilt",
+      "reason": "target_change",
+      "recent_count": 5,
+      "scenario_id": 9001,
+      "scores": [
+        {
+          "ce_keep": 1.0757117357274035,
+          "ce_target": 1.0757117357274035,
+          "conservative_score": 1.0757117357274035,
+          "fee_fraction": 2.0816681711721684e-19,
+          "modeled_fee_impact": 2.239274881620103e-19,
+          "name": "balanced",
+          "pre_cost_benefit": 0.0,
+          "target": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "tau": 8.326672684688674e-17,
+          "true_net_ce": 1.0757117357274035
+        },
+        {
+          "ce_keep": 1.0757117357274035,
+          "ce_target": 1.047159316248213,
+          "conservative_score": 1.0460248936556107,
+          "fee_fraction": 0.0005416666666666668,
+          "modeled_fee_impact": 0.0005672112963011155,
+          "name": "defensive",
+          "pre_cost_benefit": -0.028552419479190627,
+          "target": [
+            0.2,
+            0.25,
+            0.55
+          ],
+          "tau": 0.2166666666666667,
+          "true_net_ce": 1.0465921049519118
+        },
+        {
+          "ce_keep": 1.0757117357274035,
+          "ce_target": 1.0982564356594917,
+          "conservative_score": 1.0976157860720237,
+          "fee_fraction": 0.00029166666666666675,
+          "modeled_fee_impact": 0.0003203247937340185,
+          "name": "growth_tilt",
+          "pre_cost_benefit": 0.022544699932088186,
+          "target": [
+            0.45,
+            0.3,
+            0.25
+          ],
+          "tau": 0.1166666666666667,
+          "true_net_ce": 1.0979361108657577
+        }
+      ],
+      "selected_target": "growth_tilt"
+    }
+  },
+  "schema_version": 1,
+  "source_sha256": {
+    "audit/SOL-009/findings.json": "1b425c6b0ab0399c2c94614768ab362975e676cfd474e964aa3a1ee4d60c6e83",
+    "audit/chief/SOL-009-review.json": "6f1a480162704fa67a2f70358cc9413584c44d6a455d662e7369f7c7ea4a8964",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+    "specs/POLICY_CORRECTION_V2.md": "b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "src/safeinvest/policy_pilot.py": "1f439cff5627279219867497b891549f3702434966b3194c11f8e18894ffba90",
+    "tests/test_policy_pilot.py": "0a8d605c38e75aef00a7185978a8925989b413aa1eb44c0bd534085125bdb11f"
+  },
+  "task_id": "SOL-013"
+}

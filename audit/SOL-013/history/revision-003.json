@@ -1,0 +1,15 @@
+{
+  "reason": "Final report must state exact code defect and requested fix; strengthen D2 with scenario arrays that simultaneously hit all inclusive thresholds, all direct controls and context-fails adaptive eligibility. Strengthen read-only replay to relative tolerances without an absolute floor so a tiny fee corrupted to zero is rejected. Preserve initial completed evidence before regenerating final files with exclusive creation.",
+  "initial_check_count": 3007,
+  "initial_code_findings": [
+    "finite extreme constant 5e-324"
+  ],
+  "source_unchanged": true,
+  "archive": [
+    "initial-review.md",
+    "initial-findings.json",
+    "initial-verification.json",
+    "initial-integrity-self-tests.json",
+    "completed-trial-002-verify.py"
+  ]
+}
