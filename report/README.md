@@ -9,13 +9,14 @@ Do not apply another competition's page limit, anonymity rule or summary templat
 
 ## Current writing boundary
 
-The accounting engine and fixed baseline driver are accepted. The first actual
-development baseline result, HY3-003 at
-`7652410d73425371110784ef5fa97c03470a074e`, remains unaccepted pending SOL-008.
+The accounting engine, fixed baseline driver and first development baseline
+result are accepted. HY3-003 at `7652410d73425371110784ef5fa97c03470a074e`
+passed independent SOL-008 review at `818af5d65bd8a271962d848dd552bd39ca561f68`
+and the chief's pinned, read-only replay. Its descriptive tables can be used.
 The cost-aware policy and suitability design remain proposals pending SOL-009.
-Neither a baseline winner nor a customer recommendation can yet be written.
-The authoritative current states are in `ops/queue.json`; this workbench describes
-the starting state at `0a5cef40fd680c207d6903128249d1acfa5d9472`.
+No policy selection or customer recommendation follows from these references.
+The authoritative current states are in `ops/queue.json`; use the exact worker
+SHAs and acceptance records above for citations.
 
 - [methods-draft.md](methods-draft.md) contains reusable English text for the
   locked accounting, annual metrics and scenario protocol. It contains no
@@ -23,6 +24,11 @@ the starting state at `0a5cef40fd680c207d6903128249d1acfa5d9472`.
 - [evidence-map.json](evidence-map.json) maps every required answer to its source,
   evidence status and missing validation. It is a writing map, not an acceptance
   receipt, freeze file or implementation task.
+- [baseline-development.md](baseline-development.md) contains all 15 accepted
+  reference/horizon rows and their severe cases. The companion provenance JSON
+  binds full-precision source rows and display rounding. Reproduce or check it
+  with `python -B report/build_baseline_note.py --check`; this does not simulate
+  any experiment or access final outcomes.
 
 ## Proposed page budget
 
@@ -71,9 +77,11 @@ authorized by this plan.
 
 ## Next dependencies and completion checks
 
-- Existing SOL-008 and SOL-009 are the recovery reviews. Release them only after
-  Sol model availability is confirmed; idle heartbeat alone is insufficient.
-  Do not recreate them or rerun HY3-003.
+- SOL-010's real scripted probe established availability at the probe time;
+  SOL-008 is now accepted and SOL-009 was released. Review the exact SOL-009
+  result, then release existing SOL-011 only if its unchanged-design prerequisite
+  passes. Release SOL-012 after the existing design/kernel gates pass. Preserve
+  quota failures and do not recreate submitted work or rerun HY3-003.
 - After review, resolve concrete findings and publish granular implementation
   work against already-pushed prerequisite commits. HY3 runs reviewed code with
   fixed parameters. Review its outputs independently before using the numbers.

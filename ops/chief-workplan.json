@@ -1,19 +1,20 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T01:31:02+08:00",
-  "reason": "SOL-008 and exact HY3-003 accepted after pinned read-only replay; chief prepares descriptive tables while SOL-009 design review runs.",
+  "next_wake_at": "2026-10-20T01:59:25+08:00",
+  "reason": "SOL-008/HY3-003 accepted and descriptive baseline tables saved. Await exact SOL-009 design findings before releasing existing kernel review or starting dependent implementation; incoming receipts wake earlier than fallback.",
   "next_actions": [
-    "Do not rerun accepted HY3-003. Compile accepted baseline tables and claim provenance from exact 7652410d73425371110784ef5fa97c03470a074e artifacts.",
-    "Fetch exact SOL-009 receipt; inspect task/source hashes and substantive design findings. Release existing SOL-011 promptly only if design is accepted unchanged; otherwise publish corrected immutable work against pushed prerequisites.",
-    "After unchanged SOL-009/SOL-011 acceptance, release existing SOL-012. Keep calibration and kernel independent gates intact.",
-    "Prepare granular production driver and selection work from specs/POLICY_DRIVER_HANDOFF.md after design reconciliation. HY3 receives only reviewed fixed commands.",
-    "Keep final data closed and team identities local. Observe local quota drain; update fresh one-shot workplan at bounded-turn end."
+    "Fetch exact SOL-009 receipt and verify task/source/artifact hashes, allowed paths, actual independent evidence and mathematical findings. Preserve all historical quota failures.",
+    "If SOL-009 approves unchanged design, immediately release existing SOL-011 without changing task contents; otherwise preserve the pending attempt and publish corrected immutable work only after prerequisite changes are pushed.",
+    "After unchanged SOL-009/SOL-011 acceptance, immediately release existing SOL-012. If relevant sources change, issue a new immutable attempt instead of editing the old one.",
+    "Prepare granular production driver, comparison and suitability implementation using specs/POLICY_DRIVER_HANDOFF.md and reviewed APIs. Push real prerequisites first, then publish tasks with existing origin/main base SHAs. HY3 gets fixed commands only after code acceptance.",
+    "Reuse accepted HY3-003 exact results and report/baseline-development.md; no baseline experiment rerun. Candidate policy outcomes, personalized suspension, sensitivity, final freeze, final evaluation and final manuscript remain unfinished.",
+    "Keep final data closed and member identities local. Respect local quota markers; no supervisor restart. Refresh one-shot plan after every bounded turn."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T01:26:02+08:00",
+  "last_completed_at": "2026-10-20T01:29:25+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

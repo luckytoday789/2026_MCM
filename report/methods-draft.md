@@ -1,8 +1,9 @@
 # Accounting and evaluation methods — working text
 
 **Editorial status:** reusable methods draft only. The mathematical conventions
-below are locked; this is not a completed competition report. Performance tables,
-policy selection, suitability outcomes and final evaluation are pending. References
+below are locked; this is not a completed competition report. Accepted descriptive
+baseline tables are in baseline-development.md. Policy selection, suitability
+outcomes and final evaluation are pending. References
 in parentheses are internal evidence pointers to be converted into report citations.
 
 ## Independent annual scenarios and purchasing power
@@ -141,7 +142,9 @@ horizon. Growth differences are percentage points per year; positive drawdown
 differences indicate worse losses. Nominal fee totals are descriptive currency
 sums, not inflation-adjusted welfare losses. No statistical significance or
 out-of-sample investment recommendation follows from these descriptive baselines.
-Actual competition performance remains subject to independent numerical review.
+The three development references passed independent SOL-008 numerical review
+and chief replay; their descriptive tables are in baseline-development.md. New
+policy results and final outcomes require separate independent acceptance.
 
 Any future result paragraph must name its split, horizon, scenario count and fee
 rate, and identify accepted run evidence. The accepted baseline implementation's

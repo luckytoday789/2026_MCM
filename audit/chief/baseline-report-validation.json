@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T01:29:25+08:00",
+  "source_commit": "7652410d73425371110784ef5fa97c03470a074e",
+  "independent_review_commit": "818af5d65bd8a271962d848dd552bd39ca561f68",
+  "integration_commit": "192b17e6e95a786051b22d8ab093d59b4fe98b43",
+  "exact_promoted_blobs_checked": 57,
+  "summary_rows": 15,
+  "generator": "report/build_baseline_note.py",
+  "read_only_check_command": [
+    "python",
+    "-B",
+    "report/build_baseline_note.py",
+    "--check"
+  ],
+  "read_only_check_exit_code": 0,
+  "simulation_rerun": false,
+  "final_outcomes_read": false,
+  "skills_used": [
+    {
+      "name": "backtest-validation",
+      "source_commit": "825040f3cc7eb4179a8ee86e0158d9828f427f7b",
+      "scope": "Existing pinned skill; provenance, trial preservation and evidence-claim discipline. Original annual synthetic problem overrides generic historical/daily/Sharpe gauntlet."
+    }
+  ],
+  "remaining_gate": "Independent SOL-009 design review; no production policy or final authorization."
+}

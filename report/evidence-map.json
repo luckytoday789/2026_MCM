@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "8e2761988bb0f2fc0f155ce4ea9f88be53788f57",
+  "snapshot_main_commit": "192b17e6e95a786051b22d8ab093d59b4fe98b43",
   "authoritative_state": [
     "ops/control.json",
     "ops/queue.json"
@@ -95,6 +95,14 @@
       "chief_synthetic_test_count": 10,
       "production_execution_authorized": false,
       "competition_outcomes_computed": false
+    },
+    "BASELINE_DESCRIPTIVE_TABLES": {
+      "state": "accepted_development_evidence",
+      "path": "report/baseline-development.md",
+      "provenance": "report/baseline-development-provenance.json",
+      "generator": "report/build_baseline_note.py",
+      "source_commit": "7652410d73425371110784ef5fa97c03470a074e",
+      "scope": "All 15 predeclared reference/horizon rows and severe locations; no simulation rerun or policy selection."
     }
   },
   "requirements": [
@@ -189,7 +197,8 @@
       "sources": [
         "BASELINE_PLAN",
         "BASELINE_ADDENDUM",
-        "HY3_BASELINE_RESULT"
+        "HY3_BASELINE_RESULT",
+        "BASELINE_DESCRIPTIVE_TABLES"
       ],
       "state": "accepted_development_evidence",
       "table_keys": [
@@ -197,7 +206,8 @@
         "horizon",
         "split"
       ],
-      "remaining": "Prepare descriptive baseline tables; future final evaluation remains a separate frozen run."
+      "remaining": "Fold into the eventual independently reviewed manuscript alongside accepted candidate results; final evaluation remains separate.",
+      "draft_location": "baseline-development.md"
     },
     {
       "id": "R08",
