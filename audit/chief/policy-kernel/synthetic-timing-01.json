@@ -1,0 +1,122 @@
+{
+  "scope": "Generated synthetic timing only; no strategy-performance or runtime guarantee",
+  "python": "3.12.0",
+  "source_commit": "6152ef118457ea1d4225f873539b5a27d303dcf3",
+  "source_sha256": {
+    "src/safeinvest/policy_pilot.py": "d2f529f69abbc1690ed4fedca42cda8b9c5570729b58c5c9dd37e142d14971f6",
+    "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e"
+  },
+  "generator_sha256_lf": "650bd34dddc9ab701eb31d77b23cffe58d7832efbe2a8fd2225cbb37b04e290b",
+  "synthetic_prior_rows": 2700,
+  "synthetic_scenario_years": 30,
+  "timings": [
+    {
+      "mode": "conservative_cost",
+      "fee_rate": 0.0025,
+      "elapsed_seconds": 0.10480130003998056,
+      "cpu_seconds": 0.078125,
+      "reviews": 30,
+      "score_rows": 30,
+      "diagnostic_jsonl_bytes": 22594,
+      "diagnostic_sha256": "8b78351a1556a411aeee26b33aa45155197ccde20426ac995a97db9fef06869d"
+    },
+    {
+      "mode": "conservative_cost",
+      "fee_rate": 0.005,
+      "elapsed_seconds": 0.09603169996989891,
+      "cpu_seconds": 0.09375,
+      "reviews": 30,
+      "score_rows": 30,
+      "diagnostic_jsonl_bytes": 22594,
+      "diagnostic_sha256": "0aec5a7d7f53dfd778fde7ee5346ebc9aecdfeb08015867ad1eccb8adae8f222"
+    },
+    {
+      "mode": "balanced_cost",
+      "fee_rate": 0.0025,
+      "elapsed_seconds": 0.09508949995506555,
+      "cpu_seconds": 0.109375,
+      "reviews": 30,
+      "score_rows": 30,
+      "diagnostic_jsonl_bytes": 21830,
+      "diagnostic_sha256": "383b22db771705ad64640f8753c4a6d22bf6ec06796118f18259d359f730c9cc"
+    },
+    {
+      "mode": "balanced_cost",
+      "fee_rate": 0.005,
+      "elapsed_seconds": 0.09442400000989437,
+      "cpu_seconds": 0.09375,
+      "reviews": 30,
+      "score_rows": 30,
+      "diagnostic_jsonl_bytes": 23916,
+      "diagnostic_sha256": "0e6fdf615f23f32046da3cf2bd9d0f3ce8e163d2bd11488e0be0208db04b0c87"
+    },
+    {
+      "mode": "growth_cost",
+      "fee_rate": 0.0025,
+      "elapsed_seconds": 0.09301210002740845,
+      "cpu_seconds": 0.09375,
+      "reviews": 30,
+      "score_rows": 30,
+      "diagnostic_jsonl_bytes": 20198,
+      "diagnostic_sha256": "7dfd6116d8acb2f0f4f1c2e1e3d8f0bc298eddc57313aa22c0a4554611cbc40f"
+    },
+    {
+      "mode": "growth_cost",
+      "fee_rate": 0.005,
+      "elapsed_seconds": 0.0944391000084579,
+      "cpu_seconds": 0.09375,
+      "reviews": 30,
+      "score_rows": 30,
+      "diagnostic_jsonl_bytes": 20196,
+      "diagnostic_sha256": "ca41b83724985074330433736260337dc5717ffc0eaba7295cb857406185f89e"
+    },
+    {
+      "mode": "balanced_context",
+      "fee_rate": 0.0025,
+      "elapsed_seconds": 0.09491470002103597,
+      "cpu_seconds": 0.09375,
+      "reviews": 30,
+      "score_rows": 30,
+      "diagnostic_jsonl_bytes": 21773,
+      "diagnostic_sha256": "98e5db83960a922c56150f9c52ecce989bab1402d7fc041a740010ddbc90d0d6"
+    },
+    {
+      "mode": "balanced_context",
+      "fee_rate": 0.005,
+      "elapsed_seconds": 0.09136510000098497,
+      "cpu_seconds": 0.09375,
+      "reviews": 30,
+      "score_rows": 30,
+      "diagnostic_jsonl_bytes": 23967,
+      "diagnostic_sha256": "8502937ff5491f2f6eeb2eb64fe87cb88880c576b2f7dc2c62afc3bb7ebf4b26"
+    },
+    {
+      "mode": "balanced_adaptive",
+      "fee_rate": 0.0025,
+      "elapsed_seconds": 0.25571350002428517,
+      "cpu_seconds": 0.25,
+      "reviews": 30,
+      "score_rows": 80,
+      "diagnostic_jsonl_bytes": 38434,
+      "diagnostic_sha256": "f653d364623fabdc8b1d90781b96166e3ce56692d17df5ed864cb3e72ceeeeab"
+    },
+    {
+      "mode": "balanced_adaptive",
+      "fee_rate": 0.005,
+      "elapsed_seconds": 0.24602640001103282,
+      "cpu_seconds": 0.25,
+      "reviews": 30,
+      "score_rows": 80,
+      "diagnostic_jsonl_bytes": 38731,
+      "diagnostic_sha256": "97a23124e8e99fb54ce73f0835bc8a2319823bffacb7014002dbba091629b138"
+    }
+  ],
+  "total_elapsed_seconds": 1.2658174000680447,
+  "projected_120_paths_seconds": 151.89808800816536,
+  "projection_caveat": "Linear extrapolation of only decision kernel for 5 modes x 2 fees, 120 paths each; excludes IO, calibration, reports, checks, machine variation and baseline references.",
+  "maximum_projected_jsonl_bytes_per_mode_fee": 4647720,
+  "final_data_accessed": false,
+  "competition_outcomes_computed": false
+}

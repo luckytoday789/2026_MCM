@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "0a5cef40fd680c207d6903128249d1acfa5d9472",
+  "snapshot_main_commit": "d18efcdbc14a778a4efc0a2445e2e6e1bcc892ea",
   "authoritative_state": ["ops/control.json", "ops/queue.json"],
   "final_data_open_at_snapshot": false,
   "evidence_states": {
@@ -9,7 +9,8 @@
     "accepted_implementation": "Reviewed computational behavior; does not accept future run results",
     "submitted_pending_review": "Exact worker result exists but cannot support manuscript outcome claims yet",
     "design_pending_review": "Chief proposal exists; independent design review is incomplete",
-    "not_available": "Required result or final artifact does not exist yet"
+    "not_available": "Required result or final artifact does not exist yet",
+    "prototype_pending_review": "Chief-authored source and synthetic checks exist; independent code approval and production results are absent"
   },
   "source_registry": {
     "PROBLEM_LOCK": {"path": "specs/PROBLEM_LOCK.md", "state": "locked_definition"},
@@ -47,6 +48,16 @@
       "source_commit": "a996298fd22b11dc54deb43cb596f143da05bf93",
       "independent_review_task": "SOL-009",
       "production_execution_authorized": false
+    },
+    "POLICY_KERNEL_PROTOTYPE": {
+      "state": "prototype_pending_review",
+      "source_commit": "6152ef118457ea1d4225f873539b5a27d303dcf3",
+      "path": "src/safeinvest/policy_pilot.py",
+      "scope_note": "specs/POLICY_KERNEL_PROTOTYPE.md",
+      "independent_review_task": "SOL-011",
+      "chief_synthetic_test_count": 15,
+      "production_execution_authorized": false,
+      "competition_outcomes_computed": false
     }
   },
   "requirements": [
@@ -77,9 +88,9 @@
     {
       "id": "R04",
       "answer": "Define Conservative, Balanced and Growth allocations and operating rules",
-      "sources": ["PROBLEM_LOCK", "POLICY_PROPOSAL"],
+      "sources": ["PROBLEM_LOCK", "POLICY_PROPOSAL", "POLICY_KERNEL_PROTOTYPE"],
       "state": "design_pending_review",
-      "remaining": "Accept SOL-009 design review, resolve findings, implement and independently verify the selected rules"
+      "remaining": "Accept SOL-009 design and resolve findings; independently review provisional kernel via SOL-011, implement and review calibration/driver, then obtain accepted actual development evidence. Existing synthetic tests are not strategy results."
     },
     {
       "id": "R05",
@@ -93,9 +104,9 @@
     {
       "id": "R06",
       "answer": "Balanced keep, rebalance, target change or human review; estimated benefit must justify cost",
-      "sources": ["PROBLEM_LOCK", "POLICY_PROPOSAL"],
+      "sources": ["PROBLEM_LOCK", "POLICY_PROPOSAL", "POLICY_KERNEL_PROTOTYPE"],
       "state": "design_pending_review",
-      "remaining": "SOL-009 mathematical and timing review, accepted implementation, actual decision diagnostics and no-lookahead evidence"
+      "remaining": "Accept SOL-009 design and resolve findings; independently review provisional kernel via SOL-011, implement and review calibration/driver, then obtain accepted actual development evidence. Existing synthetic tests are not strategy results."
     },
     {
       "id": "R07",

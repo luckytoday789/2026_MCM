@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "status": "proposed_interface_pending_SOL-009_and_SOL-011_not_executed",
+  "policy_config_sha256_lf": "39ab8f78f6e4c487d00c1055e6d474c51a2d940e3cad951768a6c75874cc835a",
+  "split": "development",
+  "horizons": [
+    5,
+    6,
+    15,
+    25,
+    30
+  ],
+  "scenarios": 120,
+  "years": 30,
+  "calibrations": {
+    "count": 4,
+    "training_scenarios_per_fold": 90,
+    "evaluation_scenarios_per_fold": 30,
+    "annual_training_rows_per_fold": 2700,
+    "assignment": "(scenario_id - 1) % 4",
+    "fit_only_other_folds": true
+  },
+  "cases": [
+    {
+      "mode": "bills_keep",
+      "fee_rate": 0.0025,
+      "execution": "import_exact_accepted_HY3-003",
+      "annual_ledger_rows": 3600,
+      "scenario_metric_rows": 600,
+      "summary_rows": 5,
+      "decision_rows": 0,
+      "target_score_rows_max": 0
+    },
+    {
+      "mode": "equal_weight_annual",
+      "fee_rate": 0.0025,
+      "execution": "import_exact_accepted_HY3-003",
+      "annual_ledger_rows": 3600,
+      "scenario_metric_rows": 600,
+      "summary_rows": 5,
+      "decision_rows": 0,
+      "target_score_rows_max": 0
+    },
+    {
+      "mode": "equal_weight_buy_hold",
+      "fee_rate": 0.0025,
+      "execution": "import_exact_accepted_HY3-003",
+      "annual_ledger_rows": 3600,
+      "scenario_metric_rows": 600,
+      "summary_rows": 5,
+      "decision_rows": 0,
+      "target_score_rows_max": 0
+    },
+    {
+      "mode": "conservative_cost",
+      "fee_rate": 0.0025,
+      "execution": "new_computation_after_review",
+      "annual_ledger_rows": 3600,
+      "scenario_metric_rows": 600,
+      "summary_rows": 5,
+      "decision_rows": 3600,
+      "target_score_rows_max": 3600
+    },
+    {
+      "mode": "balanced_cost",
+      "fee_rate": 0.0025,
+      "execution": "new_computation_after_review",
+      "annual_ledger_rows": 3600,
+      "scenario_metric_rows": 600,
+      "summary_rows": 5,
+      "decision_rows": 3600,
+      "target_score_rows_max": 3600
+    },
+    {
+      "mode": "growth_cost",
+      "fee_rate": 0.0025,
+      "execution": "new_computation_after_review",
+      "annual_ledger_rows": 3600,
+      "scenario_metric_rows": 600,
+      "summary_rows": 5,
+      "decision_rows": 3600,
+      "target_score_rows_max": 3600
+    },
+    {
+      "mode": "balanced_context",
+      "fee_rate": 0.0025,
+      "execution": "new_computation_after_review",
+      "annual_ledger_rows": 3600,
+      "scenario_metric_rows": 600,
+      "summary_rows": 5,
+      "decision_rows": 3600,
+      "target_score_rows_max": 3600
+    },
+    {
+      "mode": "balanced_adaptive",
+      "fee_rate": 0.0025,
+      "execution": "new_computation_after_review",
+      "annual_ledger_rows": 3600,
+      "scenario_metric_rows": 600,
+      "summary_rows": 5,
+      "decision_rows": 3600,
+      "target_score_rows_max": 9600
+    },
+    {
+      "mode": "bills_keep",
+      "fee_rate": 0.005,
+      "execution": "new_computation_after_review",
+      "annual_ledger_rows": 3600,
+      "scenario_metric_rows": 600,
+      "summary_rows": 5,
+      "decision_rows": 0,
+      "target_score_rows_max": 0
+    },
+    {
+      "mode": "equal_weight_annual",
+      "fee_rate": 0.005,
+      "execution": "new_computation_after_review",
+      "annual_ledger_rows": 3600,
+      "scenario_metric_rows": 600,
+      "summary_rows": 5,
+      "decision_rows": 0,
+      "target_score_rows_max": 0
+    },
+    {
+      "mode": "equal_weight_buy_hold",
+      "fee_rate": 0.005,
+      "execution": "new_computation_after_review",
+      "annual_ledger_rows": 3600,
+      "scenario_metric_rows": 600,
+      "summary_rows": 5,
+      "decision_rows": 0,
+      "target_score_rows_max": 0
+    },
+    {
+      "mode": "conservative_cost",
+      "fee_rate": 0.005,
+      "execution": "new_computation_after_review",
+      "annual_ledger_rows": 3600,
+      "scenario_metric_rows": 600,
+      "summary_rows": 5,
+      "decision_rows": 3600,
+      "target_score_rows_max": 3600
+    },
+    {
+      "mode": "balanced_cost",
+      "fee_rate": 0.005,
+      "execution": "new_computation_after_review",
+      "annual_ledger_rows": 3600,
+      "scenario_metric_rows": 600,
+      "summary_rows": 5,
+      "decision_rows": 3600,
+      "target_score_rows_max": 3600
+    },
+    {
+      "mode": "growth_cost",
+      "fee_rate": 0.005,
+      "execution": "new_computation_after_review",
+      "annual_ledger_rows": 3600,
+      "scenario_metric_rows": 600,
+      "summary_rows": 5,
+      "decision_rows": 3600,
+      "target_score_rows_max": 3600
+    },
+    {
+      "mode": "balanced_context",
+      "fee_rate": 0.005,
+      "execution": "new_computation_after_review",
+      "annual_ledger_rows": 3600,
+      "scenario_metric_rows": 600,
+      "summary_rows": 5,
+      "decision_rows": 3600,
+      "target_score_rows_max": 3600
+    },
+    {
+      "mode": "balanced_adaptive",
+      "fee_rate": 0.005,
+      "execution": "new_computation_after_review",
+      "annual_ledger_rows": 3600,
+      "scenario_metric_rows": 600,
+      "summary_rows": 5,
+      "decision_rows": 3600,
+      "target_score_rows_max": 9600
+    }
+  ],
+  "analytic_case_count": 16,
+  "new_case_count": 13,
+  "reference_import_count": 3,
+  "paired_contrasts_per_fee": [
+    {
+      "candidate": "bills_keep",
+      "reference": "equal_weight_annual"
+    },
+    {
+      "candidate": "equal_weight_buy_hold",
+      "reference": "equal_weight_annual"
+    },
+    {
+      "candidate": "conservative_cost",
+      "reference": "equal_weight_annual"
+    },
+    {
+      "candidate": "balanced_cost",
+      "reference": "equal_weight_annual"
+    },
+    {
+      "candidate": "growth_cost",
+      "reference": "equal_weight_annual"
+    },
+    {
+      "candidate": "balanced_context",
+      "reference": "equal_weight_annual"
+    },
+    {
+      "candidate": "balanced_adaptive",
+      "reference": "equal_weight_annual"
+    },
+    {
+      "candidate": "balanced_context",
+      "reference": "balanced_cost"
+    },
+    {
+      "candidate": "balanced_adaptive",
+      "reference": "balanced_context"
+    },
+    {
+      "candidate": "balanced_adaptive",
+      "reference": "balanced_cost"
+    }
+  ],
+  "paired_rows_per_contrast_fee": 600,
+  "paired_rows_all_contrasts_fees": 12000,
+  "profile_candidate_rows": 30,
+  "profile_recommendation_rows": 10,
+  "personalized_overlay_evidence_required": true,
+  "max_artifact_bytes": 10485760,
+  "production_execution_authorized": false,
+  "final_data_open": false,
+  "counts_are_structural_not_experiment_results": true
+}

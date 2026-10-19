@@ -1,0 +1,14 @@
+{
+  "status": "structural_plan_checks_passed",
+  "scope": "Derived proposed output counts only; no production execution or policy approval",
+  "cases": 16,
+  "new_computations_after_review": 13,
+  "reference_imports_after_review": 3,
+  "comparisons_per_fee": 10,
+  "paired_rows": 12000,
+  "decision_rows": 36000,
+  "profile_candidate_rows": 30,
+  "layout_sha256": "99828e8db1238a222cb3f12a2ddad5b900768e702056c300ac4acfaa98f12611",
+  "final_data_accessed": false,
+  "competition_outcomes_computed": false
+}
