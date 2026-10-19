@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "author_role": "chief",
+  "purpose": "Independent toy oracle; no scenario outcomes or production imports",
+  "fee_rate": {
+    "rational": "1/400",
+    "value": 0.0025
+  },
+  "twenty_unit_transfer": {
+    "pre_holdings": [
+      0,
+      0,
+      100
+    ],
+    "target": [
+      "1/5",
+      "0",
+      "4/5"
+    ],
+    "transfer": {
+      "rational": "20",
+      "value": 20.0
+    },
+    "fee": {
+      "rational": "1/20",
+      "value": 0.05
+    },
+    "post_fee_holdings": [
+      {
+        "rational": "1999/100",
+        "value": 19.99
+      },
+      {
+        "rational": "0",
+        "value": 0.0
+      },
+      {
+        "rational": "1999/25",
+        "value": 79.96
+      }
+    ]
+  },
+  "all_equity_initial": {
+    "transfer": {
+      "rational": "100",
+      "value": 100.0
+    },
+    "fee": {
+      "rational": "1/4",
+      "value": 0.25
+    },
+    "post_fee_wealth": {
+      "rational": "399/4",
+      "value": 99.75
+    }
+  },
+  "keep_bills_inflation_only": {
+    "inflation": {
+      "rational": "1/10",
+      "value": 0.1
+    },
+    "fee": {
+      "rational": "0",
+      "value": 0.0
+    },
+    "real_terminal": {
+      "rational": "1000/11",
+      "value": 90.9090909090909
+    },
+    "growth_pct_pa": {
+      "rational": "-100/11",
+      "value": -9.090909090909092
+    },
+    "max_real_drawdown_pct": {
+      "rational": "100/11",
+      "value": 9.090909090909092
+    },
+    "volatility_pct_pa": null,
+    "volatility_note": "Undefined at H=1; do not substitute zero."
+  },
+  "initial_fee_then_recovery": {
+    "returns": [
+      "1/10",
+      "1/10",
+      "1/10"
+    ],
+    "inflation": "0",
+    "real_post_fee": {
+      "rational": "599/6",
+      "value": 99.83333333333333
+    },
+    "real_terminal": {
+      "rational": "6589/60",
+      "value": 109.81666666666666
+    },
+    "max_real_drawdown_pct": {
+      "rational": "1/6",
+      "value": 0.16666666666666666
+    }
+  },
+  "equal_weight_two_year": {
+    "returns": [
+      [
+        "1/10",
+        "0",
+        "-1/20"
+      ],
+      [
+        "-1/5",
+        "1/10",
+        "0"
+      ]
+    ],
+    "inflation": [
+      "1/50",
+      "0"
+    ],
+    "initial_holdings": [
+      0,
+      0,
+      100
+    ],
+    "transfer": [
+      {
+        "rational": "200/3",
+        "value": 66.66666666666667
+      },
+      {
+        "rational": "599/216",
+        "value": 2.7731481481481484
+      }
+    ],
+    "fees": [
+      {
+        "rational": "1/6",
+        "value": 0.16666666666666666
+      },
+      {
+        "rational": "599/86400",
+        "value": 0.0069328703703703705
+      }
+    ],
+    "post_fee_each_holding": [
+      {
+        "rational": "599/18",
+        "value": 33.27777777777778
+      },
+      {
+        "rational": "8768761/259200",
+        "value": 33.83009645061728
+      }
+    ],
+    "end_holdings": [
+      [
+        {
+          "rational": "6589/180",
+          "value": 36.605555555555554
+        },
+        {
+          "rational": "599/18",
+          "value": 33.27777777777778
+        },
+        {
+          "rational": "11381/360",
+          "value": 31.613888888888887
+        }
+      ],
+      [
+        {
+          "rational": "8768761/324000",
+          "value": 27.064077160493827
+        },
+        {
+          "rational": "96456371/2592000",
+          "value": 37.21310609567901
+        },
+        {
+          "rational": "8768761/259200",
+          "value": 33.83009645061728
+        }
+      ]
+    ],
+    "real_path_initial_trade_end_trade_end": [
+      {
+        "rational": "100",
+        "value": 100.0
+      },
+      {
+        "rational": "599/6",
+        "value": 99.83333333333333
+      },
+      {
+        "rational": "182695/1836",
+        "value": 99.50708061002179
+      },
+      {
+        "rational": "8768761/88128",
+        "value": 99.50028367828612
+      },
+      {
+        "rational": "254294069/2643840",
+        "value": 96.18360755567659
+      }
+    ],
+    "annual_net_real_returns": [
+      {
+        "rational": "-181/36720",
+        "value": -0.004929193899782135
+      },
+      {
+        "rational": "-14669/439200",
+        "value": -0.03339936247723133
+      }
+    ],
+    "terminal_real_wealth": {
+      "rational": "254294069/2643840",
+      "value": 96.18360755567659
+    },
+    "growth_pct_pa": -1.9267582081245793,
+    "volatility_pct_pa_ddof1": 2.013144926263849,
+    "max_real_drawdown_pct": {
+      "rational": "10089931/2643840",
+      "value": 3.8163924443234083
+    },
+    "trade_share_including_initial_pct": 100,
+    "trade_share_excluding_initial_pct": 100
+  },
+  "quantile_linear_fixture": {
+    "values": [
+      0,
+      10,
+      20,
+      30
+    ],
+    "p10": 3,
+    "median": 15,
+    "p90": 27
+  },
+  "comparison_tolerance": {
+    "absolute_toy": 1e-09,
+    "relative_ledger": 1e-10
+  }
+}

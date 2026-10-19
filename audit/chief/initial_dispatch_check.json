@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T12:23:10.709372+00:00",
+  "source_main": "4a4157c1618eb690520c1f890dbb763d6d9745be",
+  "checkpoint": "Initial worker registration and development prerequisites",
+  "status": "prerequisites_checked_workers_pending",
+  "tasks": {
+    "SOL-001": {
+      "attempt": 1,
+      "task_sha256": "bdd4edd3de9c391fcf25c01f6ecd8c38c05752673aac21091926cb889c4823f0",
+      "base_commit": "f5e67b1f53568b94379ea631659d53d90db14f7b",
+      "task_schema": "passed",
+      "base_on_origin_main": true,
+      "acceptance": "pending_remote_result"
+    },
+    "HY3-001": {
+      "attempt": 1,
+      "task_sha256": "df3ff0943a0e9e660af066ee277c3abd801f8893f2d64a4f8a2dcdb3f2d9085e",
+      "base_commit": "f5e67b1f53568b94379ea631659d53d90db14f7b",
+      "task_schema": "passed",
+      "base_on_origin_main": true,
+      "acceptance": "pending_remote_result"
+    }
+  },
+  "worker_work_branches": [],
+  "worker_status": {
+    "sol": {
+      "role": "sol",
+      "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
+      "state": "running",
+      "updated_at": "2026-10-19T12:21:37.754522+00:00",
+      "lease_until": "2026-10-19T12:31:37.754522+00:00",
+      "task_id": "SOL-001"
+    },
+    "hy3": null
+  },
+  "checks_executed": [
+    "Clean runner root at entry; no uncommitted user work",
+    "Running control, future deadline and no local STOP",
+    "Task schema, canonical task hashes and pinned base ancestry on origin/main",
+    "Independent rational accounting oracle and exact saved-snapshot recomputation",
+    "Pilot output-count algebra and input hash against original manifest"
+  ],
+  "not_yet_checked": [
+    "Sol production implementation",
+    "HY3 input receipt",
+    "Development performance",
+    "Final outcomes"
+  ],
+  "input_artifact_sha256": {
+    "audit/chief/accounting_reference.py": "b785784137cb442b22f5e59cbd51f64aad97b03518cc7362b69a5f775312ddf6",
+    "audit/chief/accounting_oracle.json": "40028fb4c003d8a782c625ba07b15c1c143348c205dd4e5153ce9c9a9a753331",
+    "specs/DEVELOPMENT_BASELINES.md": "fd83de5a118e37263fb9defc159dc6ea585756449b6c5b34bba269eebd2d4f07",
+    "specs/development_baselines_v1.json": "e73307cb54df77fdf0a2578d4746a532a36ffc62a2c5416c4c99a92abdc526fe"
+  },
+  "existing_skill": {
+    "name": "quality-assurance-auditor",
+    "source_version": "b13a23e2ccae39a1f13ceb5dbd41fa74ed61eac0",
+    "local_skill_sha256": "4aebde172c20b0a9bb8e9256f8082581f520a6944ef9c328356687a8be6eb18d",
+    "scope": "Evidence provenance and honest acceptance checks under project protocol",
+    "project_override": "Repository audit paths and staged protocol take precedence over generic paper_output workflow."
+  },
+  "next_actions": [
+    "Review exact SOL-001 receipt/source against independent fixtures when submitted.",
+    "Review exact HY3-001 metadata result and request targeted Sol audit after it exists.",
+    "Publish separate Sol review of chief-authored pilot design against pushed prerequisite commit.",
+    "Publish reviewed driver before issuing a fixed-parameter HY3 pilot task."
+  ],
+  "final_data_open": false,
+  "human_help_required": false
+}
