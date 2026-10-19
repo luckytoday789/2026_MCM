@@ -1,0 +1,10 @@
+{
+  "output_counts": {
+    "annual_ledgers.csv": 10800,
+    "paired_differences.csv": 1200,
+    "scenario_metrics.csv": 1800,
+    "summary.csv": 15
+  },
+  "read_only": true,
+  "status": "passed"
+}
