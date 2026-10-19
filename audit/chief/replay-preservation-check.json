@@ -1,0 +1,10 @@
+{
+  "command": "python -B audit/chief/replay_sol_reviews.py",
+  "exit_code": 0,
+  "python": "3.12.0",
+  "accepted_reviews_unchanged": true,
+  "review_sha256": {
+    "audit\\chief\\SOL-002-review.json": "b09ab0dfa054449ea9e7ba4fbc8217710ef254235a793c1df2393116b1fa1302",
+    "audit\\chief\\SOL-003-review.json": "91b0471b3609c97aa99e7cb13d66783659310d4c096a22420a00491b238bdbac"
+  }
+}

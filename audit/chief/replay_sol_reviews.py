@@ -123,7 +123,15 @@ def main():
             'scope': 'Toy recomputation for SOL-002; source/split metadata and saved evidence for SOL-003; no final outcomes'}
         if tid == 'SOL-002':
             info['chief_replay'].update(check_count=evidence['check_count'], largest_absolute_residual=evidence['largest_absolute_residual'])
-        (ROOT / f'audit/chief/{tid}-review.json').write_text(json.dumps(info, indent=2) + '\n', encoding='utf-8', newline='\n')
+        review_path = ROOT / f'audit/chief/{tid}-review.json'
+        if review_path.exists():
+            # A replay validates, but must not replace an accepted review or its
+            # subsequently added acceptance decision, tests and follow-up notes.
+            saved_review = json.loads(review_path.read_text(encoding='utf-8'))
+            for key, value in info.items():
+                assert saved_review.get(key) == value, 'Saved chief review differs: ' + key
+        else:
+            review_path.write_text(json.dumps(info, indent=2) + '\n', encoding='utf-8', newline='\n')
         print(tid + ': replay passed; worker artifacts unchanged')
 
 if __name__ == '__main__':
