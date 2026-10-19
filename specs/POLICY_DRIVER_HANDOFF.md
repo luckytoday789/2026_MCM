@@ -1,9 +1,10 @@
 # Policy driver implementation handoff — provisional, no execution authorization
 
-This is chief preparation while SOL-009 design review and SOL-011 kernel review
-are pending. It is not a task, acceptance, change to the pilot design, or final
+This is chief preparation after the accepted negative SOL-009 design review.
+The corrected v2 design and kernel require independent review. It is not a task, acceptance, change to the pilot design, or final
 freeze. Reconcile it with the actual independent findings before publishing an
-implementation task. The authoritative design/config remain unchanged.
+implementation task. The current design/config are DEVELOPMENT_POLICY_PILOT_V2.md and
+development_policy_pilot_v2.json; v1 and previous tasks are historical evidence.
 
 ## Boundaries and proposed implementation split
 
@@ -45,7 +46,7 @@ No command in this document authorizes running the prototype on competition data
 ## Reuse the submitted baseline experiment after acceptance
 
 HY3-003 already exists at 7652410d73425371110784ef5fa97c03470a074e and must not
-be rerun to fill a new directory. Wait for accepted SOL-008 and chief promotion.
+be rerun to fill a new directory. SOL-008 and chief promotion have passed; reuse that accepted evidence.
 At k=.0025, import its three reference policies by exact commit/file/hash/key;
 verify scenario IDs, horizons, units, fee and severe-case convention. A manifest
 can reference this accepted bundle without duplicating or overwriting it.
@@ -60,7 +61,7 @@ reference imports. Do not label an import as a new experiment or new acceptance.
 
 ## Output layout and exact keys
 
-`specs/policy_driver_layout_v1.json` records structural counts derived from the
+`specs/policy_driver_layout_v2.json` records structural counts derived from the
 proposal, not produced experimental evidence. One new directory per fee/mode
 keeps each artifact under the runner's 10 MB cap. Include these common keys:
 `split`, `mode`, `fee_rate`, `scenario_id`, and `fold_id`; add `period` to annual
@@ -71,7 +72,7 @@ All floating values are full precision; only report display rounds numbers.
   fee, post-fee state, returns, CPI and real wealth fields. Each case has 3600
   annual rows. Store the original scenario and year; never concatenate paths.
 - Five new modes also have 3600 decision rows per case: action, active before/
-  after, proposal/selection, CE_keep, prior mass, recent count, observed prior
+  after, proposal/selection, CE_keep, reason, first_deployment_year, prior mass, recent count, observed prior
   maximum loss, latch, initial-deferred flag, transfer, actual fee, is_trade and
   executed_target_change. Keep empty score fields genuinely missing during human
   review; do not encode them as zero estimated benefit.
@@ -103,7 +104,9 @@ All floating values are full precision; only report display rounds numbers.
   profile and fee, then mark personalized suspension evidence pending.
 - Selection output records both marginal tail checks and paired median/fold
   checks with exact threshold values and signed differences. The adaptive gate
-  must pass versus contextual AND the simplest eligible mode. Fee sensitivity
+  must pass versus BOTH balanced_context AND balanced_cost even if context
+  fails promotion; use paired median/fold gains and differences of marginal tails
+  exactly as defined in v2. Fee sensitivity
   never retunes the primary candidate or changes the predeclared comparison set.
 
 A top-level manifest binds input/config/source hashes, base and reviewed kernel

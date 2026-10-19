@@ -1,0 +1,1093 @@
+{
+  "artifact_lf_sha256": {
+    "findings.json": "1b425c6b0ab0399c2c94614768ab362975e676cfd474e964aa3a1ee4d60c6e83",
+    "implementation-handoff.json": "5a28ffec191b4113d0ee8da706af4e32c9b7e723bfa8fe3d4d295f47b10d1136",
+    "review.md": "e50f938ad97eb2ae8c844f815a49cb2987935793cbeb95c3c63b514de9bc63a0",
+    "verify.py": "8d72f9e0de7245ca7f7d93599a873ea26dd55f2ecf5d4af2fc38c3c72af151ec"
+  },
+  "base_commit": "2561688380d9e2527eb6066100adde70b7d0ea1c",
+  "check_count": 97,
+  "checks": [
+    {
+      "expected": [
+        3,
+        12
+      ],
+      "name": "required_python_minor",
+      "observed": [
+        3,
+        12
+      ],
+      "passed": true
+    },
+    {
+      "expected": "94e436a979f2c232b729c352d209c83c76ba014a14613852ad447446cb6948e0",
+      "name": "pinned_source:specs/DEVELOPMENT_POLICY_PILOT.md",
+      "observed": "94e436a979f2c232b729c352d209c83c76ba014a14613852ad447446cb6948e0",
+      "passed": true
+    },
+    {
+      "expected": true,
+      "name": "base_source_unchanged:specs/DEVELOPMENT_POLICY_PILOT.md",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "expected": true,
+      "name": "checkout_source:specs/DEVELOPMENT_POLICY_PILOT.md",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "expected": "39ab8f78f6e4c487d00c1055e6d474c51a2d940e3cad951768a6c75874cc835a",
+      "name": "pinned_source:specs/development_policy_pilot_v1.json",
+      "observed": "39ab8f78f6e4c487d00c1055e6d474c51a2d940e3cad951768a6c75874cc835a",
+      "passed": true
+    },
+    {
+      "expected": true,
+      "name": "base_source_unchanged:specs/development_policy_pilot_v1.json",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "expected": true,
+      "name": "checkout_source:specs/development_policy_pilot_v1.json",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "expected": "c3b4b907cfb9b179faae717a09067ee45862b13bf9e56d06e28a841ab43fff3b",
+      "name": "pinned_source:audit/chief/policy_design_fixtures.py",
+      "observed": "c3b4b907cfb9b179faae717a09067ee45862b13bf9e56d06e28a841ab43fff3b",
+      "passed": true
+    },
+    {
+      "expected": true,
+      "name": "base_source_unchanged:audit/chief/policy_design_fixtures.py",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "expected": true,
+      "name": "checkout_source:audit/chief/policy_design_fixtures.py",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "expected": "55108ba36593f3f342cff4be6be01fac7c77af6f74baabf787c04b9db684f10c",
+      "name": "pinned_source:audit/chief/policy-design-fixtures.json",
+      "observed": "55108ba36593f3f342cff4be6be01fac7c77af6f74baabf787c04b9db684f10c",
+      "passed": true
+    },
+    {
+      "expected": true,
+      "name": "base_source_unchanged:audit/chief/policy-design-fixtures.json",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "expected": true,
+      "name": "checkout_source:audit/chief/policy-design-fixtures.json",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "expected": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "name": "pinned_source:specs/ACCOUNTING.md",
+      "observed": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "passed": true
+    },
+    {
+      "expected": true,
+      "name": "base_source_unchanged:specs/ACCOUNTING.md",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "expected": true,
+      "name": "checkout_source:specs/ACCOUNTING.md",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "expected": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "name": "pinned_source:specs/PROBLEM_LOCK.md",
+      "observed": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "passed": true
+    },
+    {
+      "expected": true,
+      "name": "base_source_unchanged:specs/PROBLEM_LOCK.md",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "expected": true,
+      "name": "checkout_source:specs/PROBLEM_LOCK.md",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "arithmetic": "exact rational 26/25",
+      "expected": 1.04,
+      "name": "deterministic_CE",
+      "observed": 1.04,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 1.04,
+      "name": "chief_expected:deterministic_CE",
+      "observed": 1.04,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 1.04,
+      "name": "chief_observed:deterministic_CE",
+      "observed": 1.04,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "arithmetic": "exact rational 1/6",
+      "expected": 0.16666666666666666,
+      "name": "initial_fee_nominal",
+      "observed": 0.16666666666666666,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 0.16666666666666666,
+      "name": "chief_expected:initial_fee_nominal",
+      "observed": 0.16666666666666666,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 0.16666666666666666,
+      "name": "chief_observed:initial_fee_nominal",
+      "observed": 0.16666666666666666,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "arithmetic": "exact rational 7787/75",
+      "expected": 103.82666666666667,
+      "name": "true_end_wealth",
+      "observed": 103.82666666666667,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 103.82666666666667,
+      "name": "chief_expected:true_end_wealth",
+      "observed": 103.82666666666667,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 103.82666666666667,
+      "name": "chief_observed:true_end_wealth",
+      "observed": 103.82666666666667,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "arithmetic": "exact rational 3887/3750",
+      "expected": 1.0365333333333333,
+      "name": "decision_score",
+      "observed": 1.0365333333333333,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 1.0365333333333333,
+      "name": "chief_expected:decision_score",
+      "observed": 1.0365333333333333,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 1.0365333333333333,
+      "name": "chief_observed:decision_score",
+      "observed": 1.0365333333333333,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "arithmetic": "exact rational 55/51",
+      "expected": 1.0784313725490196,
+      "name": "exact_deflation",
+      "observed": 1.0784313725490196,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 1.0784313725490196,
+      "name": "chief_expected:exact_deflation",
+      "observed": 1.0784313725490196,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 1.0784313725490196,
+      "name": "chief_observed:exact_deflation",
+      "observed": 1.0784313725490196,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "arithmetic": "100*(|1/3|+|1/3|+|-2/3|)/2",
+      "expected": 66.66666666666667,
+      "name": "initial_transfer",
+      "observed": 66.66666666666667,
+      "passed": true
+    },
+    {
+      "expected": [
+        33.27777777777778,
+        33.27777777777778,
+        33.27777777777778
+      ],
+      "name": "initial_post_fee_holdings",
+      "observed": [
+        33.27777777777778,
+        33.27777777777778,
+        33.27777777777778
+      ],
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 100,
+      "name": "initial_fee_budget",
+      "observed": 100,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "arithmetic": "actual fee 1/6; buffered decision impact uses 2*f*A, never actual fee 1/3",
+      "expected": 0.16666666666666666,
+      "name": "fee_multiplier_is_hurdle_only",
+      "observed": 0.16666666666666666,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 1.0382666666666667,
+      "name": "true_net_CE",
+      "observed": 1.0382666666666667,
+      "passed": true
+    },
+    {
+      "expected": true,
+      "name": "buffer_gate_positive",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "arithmetic": "net_gain=(score-CE_keep)+f*CE_target > epsilon+f*CE_target",
+      "expected": 0.0017333333333333333,
+      "name": "sufficient_buffer_identity",
+      "observed": 0.0017333333333333333,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "arithmetic": "(7787/75)/(51/50)=15574/153; no subtraction approximation",
+      "expected": 101.79084967320262,
+      "name": "initial_real_end_with_inflation",
+      "observed": 101.79084967320262,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 1.0506,
+      "name": "CPI_compounds_exactly",
+      "observed": 1.0506,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 1.02,
+      "name": "CE_constant_factor",
+      "observed": 1.02,
+      "passed": true
+    },
+    {
+      "expected": false,
+      "name": "equal_return_gate_rejects",
+      "observed": false,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "arithmetic": "rejected target keeps original component dollars, no accounting trade",
+      "expected": 0,
+      "name": "equal_return_keep_fee",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "expected": false,
+      "name": "zero_fee_equal_score_keep",
+      "observed": false,
+      "passed": true
+    },
+    {
+      "arithmetic": "E[g]=1 but gamma=4 CE <1",
+      "expected": true,
+      "name": "CE_lower_tail_risk_penalty",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 0.6223699000246826,
+      "name": "CE_risk_penalty_value",
+      "observed": 0.6223699000246826,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "arithmetic": "(sum_j p_j*g_j^-3)^(-1/3), independent 70-digit Decimal oracle",
+      "expected": 0.9798268695595446,
+      "name": "mixture_CE",
+      "observed": 0.9798268695595446,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 1,
+      "name": "mixture_mass",
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 1,
+      "name": "chief_expected:mixture_mass",
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 1,
+      "name": "chief_observed:mixture_mass",
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 0.75,
+      "name": "prior_mass_at_five",
+      "observed": 0.75,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 0.75,
+      "name": "chief_expected:prior_mass_at_five",
+      "observed": 0.75,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 0.75,
+      "name": "chief_observed:prior_mass_at_five",
+      "observed": 0.75,
+      "passed": true
+    },
+    {
+      "absolute_residual": 1.1102230246251565e-16,
+      "expected": 0.978847042689985,
+      "name": "CE_positive_homogeneity",
+      "observed": 0.9788470426899849,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 0.978847042689985,
+      "name": "chief_expected:CE_positive_homogeneity",
+      "observed": 0.978847042689985,
+      "passed": true
+    },
+    {
+      "absolute_residual": 1.1102230246251565e-16,
+      "expected": 0.9788470426899849,
+      "name": "chief_observed:CE_positive_homogeneity",
+      "observed": 0.978847042689985,
+      "passed": true
+    },
+    {
+      "absolute_residual": 1.2882855810441128e-16,
+      "expected": 0.0009798268695595446,
+      "name": "actual_fee_CE_loss",
+      "observed": 0.0009798268695596635,
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 0.0009798268695595446,
+      "name": "chief_expected:actual_fee_CE_loss",
+      "observed": 0.0009798268695595446,
+      "passed": true
+    },
+    {
+      "absolute_residual": 1.1102230246251565e-16,
+      "expected": 0.0009798268695596635,
+      "name": "chief_observed:actual_fee_CE_loss",
+      "observed": 0.0009798268695595524,
+      "passed": true
+    },
+    {
+      "arithmetic": "total prior=15/(15+n); recent total=n/(15+n); each of 2700 training rows=15/((15+n)*2700)",
+      "expected": [
+        1,
+        0,
+        0.00037037037037037035
+      ],
+      "name": "mixture_weights_n0",
+      "observed": [
+        1,
+        0,
+        0.00037037037037037035
+      ],
+      "passed": true
+    },
+    {
+      "arithmetic": "total prior=15/(15+n); recent total=n/(15+n); each of 2700 training rows=15/((15+n)*2700)",
+      "expected": [
+        0.9375,
+        0.0625,
+        0.00034722222222222224
+      ],
+      "name": "mixture_weights_n1",
+      "observed": [
+        0.9375,
+        0.0625,
+        0.00034722222222222224
+      ],
+      "passed": true
+    },
+    {
+      "arithmetic": "total prior=15/(15+n); recent total=n/(15+n); each of 2700 training rows=15/((15+n)*2700)",
+      "expected": [
+        0.75,
+        0.25,
+        0.0002777777777777778
+      ],
+      "name": "mixture_weights_n5",
+      "observed": [
+        0.75,
+        0.25,
+        0.0002777777777777778
+      ],
+      "passed": true
+    },
+    {
+      "expected": true,
+      "name": "reject_invalid_gross:0.0",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "expected": true,
+      "name": "reject_invalid_gross:-1.0",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "expected": true,
+      "name": "reject_invalid_gross:inf",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "expected": true,
+      "name": "reject_invalid_gross:nan",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "expected": [
+        false,
+        true
+      ],
+      "name": "strict_epsilon_boundary",
+      "observed": [
+        false,
+        true
+      ],
+      "passed": true
+    },
+    {
+      "arithmetic": "active is within epsilon of best but does not clear keep hurdle; D1 requests gate filter before tie priority",
+      "expected": {
+        "eligible_first": "target_change",
+        "priority_first": "keep",
+        "scores_in_epsilon_units": [
+          0,
+          0.75,
+          1.5
+        ]
+      },
+      "name": "epsilon_tie_gate_ambiguity",
+      "observed": {
+        "eligible_first": "target_change",
+        "priority_first": "keep",
+        "scores_in_epsilon_units": [
+          0,
+          0.75,
+          1.5
+        ]
+      },
+      "passed": true
+    },
+    {
+      "expected": [
+        true,
+        true,
+        false
+      ],
+      "name": "epsilon_ties_not_transitive",
+      "observed": [
+        true,
+        true,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "arithmetic": "proposed explicit priority for eligible ties anchored to maximum",
+      "expected": "active",
+      "name": "target_tie_active_priority",
+      "observed": "active",
+      "passed": true
+    },
+    {
+      "expected": [
+        [
+          1,
+          0,
+          false
+        ],
+        [
+          2,
+          1,
+          false
+        ],
+        [
+          3,
+          2,
+          false
+        ],
+        [
+          4,
+          3,
+          false
+        ],
+        [
+          5,
+          4,
+          false
+        ],
+        [
+          6,
+          5,
+          true
+        ],
+        [
+          7,
+          5,
+          true
+        ]
+      ],
+      "name": "minimum_update_years",
+      "observed": [
+        [
+          1,
+          0,
+          false
+        ],
+        [
+          2,
+          1,
+          false
+        ],
+        [
+          3,
+          2,
+          false
+        ],
+        [
+          4,
+          3,
+          false
+        ],
+        [
+          5,
+          4,
+          false
+        ],
+        [
+          6,
+          5,
+          true
+        ],
+        [
+          7,
+          5,
+          true
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "expected": [
+        30,
+        90,
+        2700,
+        false
+      ],
+      "name": "fold_counts_0",
+      "observed": [
+        30,
+        90,
+        2700,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "arithmetic": "synthetic id markers only; not competition outcomes",
+      "expected": 61,
+      "name": "synthetic_eval_fold_perturbation_0",
+      "observed": 61,
+      "passed": true
+    },
+    {
+      "expected": [
+        30,
+        90,
+        2700,
+        false
+      ],
+      "name": "fold_counts_1",
+      "observed": [
+        30,
+        90,
+        2700,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "arithmetic": "synthetic id markers only; not competition outcomes",
+      "expected": 60.666666666666664,
+      "name": "synthetic_eval_fold_perturbation_1",
+      "observed": 60.666666666666664,
+      "passed": true
+    },
+    {
+      "expected": [
+        30,
+        90,
+        2700,
+        false
+      ],
+      "name": "fold_counts_2",
+      "observed": [
+        30,
+        90,
+        2700,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "arithmetic": "synthetic id markers only; not competition outcomes",
+      "expected": 60.333333333333336,
+      "name": "synthetic_eval_fold_perturbation_2",
+      "observed": 60.333333333333336,
+      "passed": true
+    },
+    {
+      "expected": [
+        30,
+        90,
+        2700,
+        false
+      ],
+      "name": "fold_counts_3",
+      "observed": [
+        30,
+        90,
+        2700,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "arithmetic": "synthetic id markers only; not competition outcomes",
+      "expected": 60,
+      "name": "synthetic_eval_fold_perturbation_3",
+      "observed": 60,
+      "passed": true
+    },
+    {
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "name": "synthetic_prefix_future_boundary",
+      "observed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "passed": true
+    },
+    {
+      "expected": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "name": "five_target_simplexes",
+      "observed": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "passed": true
+    },
+    {
+      "expected": [
+        5,
+        15,
+        30,
+        25,
+        6
+      ],
+      "name": "profile_horizons",
+      "observed": [
+        5,
+        15,
+        30,
+        25,
+        6
+      ],
+      "passed": true
+    },
+    {
+      "arithmetic": "risk and purchasing-power outcomes still unknown; these sets are not recommendations",
+      "expected": {
+        "A": [
+          "conservative"
+        ],
+        "B": [
+          "conservative",
+          "balanced"
+        ],
+        "C": [
+          "conservative",
+          "balanced",
+          "growth"
+        ],
+        "D": [
+          "conservative",
+          "balanced"
+        ],
+        "E": [
+          "conservative"
+        ]
+      },
+      "name": "profile_horizon_liquidity_eligibility",
+      "observed": {
+        "A": [
+          "conservative"
+        ],
+        "B": [
+          "conservative",
+          "balanced"
+        ],
+        "C": [
+          "conservative",
+          "balanced",
+          "growth"
+        ],
+        "D": [
+          "conservative",
+          "balanced"
+        ],
+        "E": [
+          "conservative"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "expected": [
+        {
+          "latched": false,
+          "observed_max_loss_pct": 0,
+          "year": 1
+        },
+        {
+          "latched": true,
+          "observed_max_loss_pct": 25,
+          "year": 2
+        },
+        {
+          "latched": true,
+          "observed_max_loss_pct": 25,
+          "year": 3
+        }
+      ],
+      "name": "review_t_minus_1_and_latch",
+      "observed": [
+        {
+          "latched": false,
+          "observed_max_loss_pct": 0,
+          "year": 1
+        },
+        {
+          "latched": true,
+          "observed_max_loss_pct": 25,
+          "year": 2
+        },
+        {
+          "latched": true,
+          "observed_max_loss_pct": 25,
+          "year": 3
+        }
+      ],
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "arithmetic": "initial100 -> earlier post-fee74 -> year-end110; next review still sees 26% max drawdown",
+      "expected": 26,
+      "name": "post_fee_loss_survives_recovery",
+      "observed": 26,
+      "passed": true
+    },
+    {
+      "expected": [
+        10,
+        20,
+        70
+      ],
+      "name": "pending_component_dollars_at_review",
+      "observed": [
+        10,
+        20,
+        70
+      ],
+      "passed": true
+    },
+    {
+      "arithmetic": "keep/no fee before returns; next review holds these current dollars, not original weights",
+      "expected": [
+        11,
+        18,
+        71.4
+      ],
+      "name": "pending_end_holdings",
+      "observed": [
+        11,
+        18,
+        71.4
+      ],
+      "passed": true
+    },
+    {
+      "absolute_residual": 0,
+      "expected": 0,
+      "name": "pending_fee",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "arithmetic": "normative transition table, not production execution evidence",
+      "expected": {
+        "executed_defensive": "defensive",
+        "human_review": "central",
+        "keep": "central",
+        "rebalance": "central",
+        "rejected_proposal": "central"
+      },
+      "name": "active_target_transition_examples",
+      "observed": {
+        "executed_defensive": "defensive",
+        "human_review": "central",
+        "keep": "central",
+        "rebalance": "central",
+        "rejected_proposal": "central"
+      },
+      "passed": true
+    },
+    {
+      "arithmetic": "linear index107.1 lies between 0 and50; p90=5 passes10 despite 12 losses at50",
+      "expected": {
+        "exceedance_fraction_at_10pct": 0.1,
+        "p90_loss_pct": 5
+      },
+      "name": "p90_tolerance_not_guarantee",
+      "observed": {
+        "exceedance_fraction_at_10pct": 0.1,
+        "p90_loss_pct": 5.000000000000426
+      },
+      "passed": true
+    },
+    {
+      "expected": {
+        "difference_medians": 1,
+        "difference_p10": -0.6,
+        "median_paired": -1,
+        "p10_paired": -72.2
+      },
+      "name": "paired_vs_marginal_statistics",
+      "observed": {
+        "difference_medians": 1,
+        "difference_p10": -0.5999999999999999,
+        "median_paired": -1,
+        "p10_paired": -72.2
+      },
+      "passed": true
+    },
+    {
+      "arithmetic": "0.10 percentage POINT/year, not 10% or 0.001 percentage points",
+      "expected": true,
+      "name": "indifference_inclusive",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "expected": "changes_required",
+      "name": "design_verdict_is_separate",
+      "observed": "changes_required",
+      "passed": true
+    },
+    {
+      "expected": [
+        "D1",
+        "D2"
+      ],
+      "name": "blocker_ids",
+      "observed": [
+        "D1",
+        "D2"
+      ],
+      "passed": true
+    }
+  ],
+  "competition_data_read": false,
+  "design_verdict": "changes_required",
+  "evidence_integrity_verdict": "passed",
+  "float_tolerance": {
+    "absolute": 1e-12,
+    "recorded_residuals": "informational; no cross-platform last-bit equality required",
+    "relative": 1e-12
+  },
+  "fold_facts": [
+    {
+      "disjoint": true,
+      "evaluation_count": 30,
+      "evaluation_ids_sha256": "2316e74b710418902cf9864bea00e329ad5aedda62cec5b65f48514d9cf6139b",
+      "fold": 0,
+      "training_count": 90,
+      "training_ids_sha256": "6fdae588794f9d87886b39068c957bfecfa2a24f5eecd7cb19a9bc33e92d9956",
+      "training_rows": 2700
+    },
+    {
+      "disjoint": true,
+      "evaluation_count": 30,
+      "evaluation_ids_sha256": "d9efc44bdb85815562e9750dafd5d879f28d9747ffd0410e34b5d9f5698c03f1",
+      "fold": 1,
+      "training_count": 90,
+      "training_ids_sha256": "21e768e8e8f6c461abd749c08045e85d81b5d42fdc58f5e9db3ffad5b400ca58",
+      "training_rows": 2700
+    },
+    {
+      "disjoint": true,
+      "evaluation_count": 30,
+      "evaluation_ids_sha256": "337566ae354509466ec361badfd6e6e9062435b02ec58844226d4e2746ca2e53",
+      "fold": 2,
+      "training_count": 90,
+      "training_ids_sha256": "c1dd6ce2d4320238fb6df6efc8901ffa76aba6eace8d2f969dac8b6ac7e64f30",
+      "training_rows": 2700
+    },
+    {
+      "disjoint": true,
+      "evaluation_count": 30,
+      "evaluation_ids_sha256": "fb51f7026339932d4c1e01b70040f9d93dcd68141abb4d501c2b89b5d5dbdda4",
+      "fold": 3,
+      "training_count": 90,
+      "training_ids_sha256": "6b0f000af77c4d8d6617b273acc34d886d579023eb3aa5211cddaab959adb5e5",
+      "training_rows": 2700
+    }
+  ],
+  "new_strategy_outcomes_computed": false,
+  "production_policy_acceptance": false,
+  "reviewed_commit": "a996298fd22b11dc54deb43cb596f143da05bf93",
+  "schema_version": 1,
+  "scope": "Independent source and synthetic arithmetic only; no chief code executed, no competition data read, no production policy tested",
+  "source_hashes": {
+    "audit/chief/policy-design-fixtures.json": {
+      "base_blob_sha256": "55108ba36593f3f342cff4be6be01fac7c77af6f74baabf787c04b9db684f10c",
+      "checkout_lf_sha256": "55108ba36593f3f342cff4be6be01fac7c77af6f74baabf787c04b9db684f10c",
+      "expected_sha256": "55108ba36593f3f342cff4be6be01fac7c77af6f74baabf787c04b9db684f10c",
+      "reviewed_blob_sha256": "55108ba36593f3f342cff4be6be01fac7c77af6f74baabf787c04b9db684f10c"
+    },
+    "audit/chief/policy_design_fixtures.py": {
+      "base_blob_sha256": "c3b4b907cfb9b179faae717a09067ee45862b13bf9e56d06e28a841ab43fff3b",
+      "checkout_lf_sha256": "c3b4b907cfb9b179faae717a09067ee45862b13bf9e56d06e28a841ab43fff3b",
+      "expected_sha256": "c3b4b907cfb9b179faae717a09067ee45862b13bf9e56d06e28a841ab43fff3b",
+      "reviewed_blob_sha256": "c3b4b907cfb9b179faae717a09067ee45862b13bf9e56d06e28a841ab43fff3b"
+    },
+    "specs/ACCOUNTING.md": {
+      "base_blob_sha256": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "checkout_lf_sha256": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "expected_sha256": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "reviewed_blob_sha256": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e"
+    },
+    "specs/DEVELOPMENT_POLICY_PILOT.md": {
+      "base_blob_sha256": "94e436a979f2c232b729c352d209c83c76ba014a14613852ad447446cb6948e0",
+      "checkout_lf_sha256": "94e436a979f2c232b729c352d209c83c76ba014a14613852ad447446cb6948e0",
+      "expected_sha256": "94e436a979f2c232b729c352d209c83c76ba014a14613852ad447446cb6948e0",
+      "reviewed_blob_sha256": "94e436a979f2c232b729c352d209c83c76ba014a14613852ad447446cb6948e0"
+    },
+    "specs/PROBLEM_LOCK.md": {
+      "base_blob_sha256": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "checkout_lf_sha256": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "expected_sha256": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "reviewed_blob_sha256": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46"
+    },
+    "specs/development_policy_pilot_v1.json": {
+      "base_blob_sha256": "39ab8f78f6e4c487d00c1055e6d474c51a2d940e3cad951768a6c75874cc835a",
+      "checkout_lf_sha256": "39ab8f78f6e4c487d00c1055e6d474c51a2d940e3cad951768a6c75874cc835a",
+      "expected_sha256": "39ab8f78f6e4c487d00c1055e6d474c51a2d940e3cad951768a6c75874cc835a",
+      "reviewed_blob_sha256": "39ab8f78f6e4c487d00c1055e6d474c51a2d940e3cad951768a6c75874cc835a"
+    }
+  },
+  "task_id": "SOL-009"
+}

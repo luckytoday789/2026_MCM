@@ -98,6 +98,8 @@ class PolicyKernelTests(unittest.TestCase):
         _, reviews = run(data, mode="balanced_context", prior=prior)
         self.assertEqual([r.action for r in reviews], ["keep", "rebalance"])
         self.assertTrue(all(r.initial_allocation_deferred for r in reviews))
+        self.assertEqual([r.first_deployment_year for r in reviews], [None, 2])
+        self.assertEqual([r.reason for r in reviews], ["benefit_gate_failed", "initial_allocation"])
         self.assertEqual(reviews[1].recent_count, 1)
         self.assertEqual(reviews[1].prior_mass, 15/16)
         _, fixed = run(data, mode="balanced_cost", prior=prior)
@@ -193,8 +195,28 @@ class PolicyKernelTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             EmpiricalPrior(((1,1,1),)).certainty_equivalent((.2,.3,.5), ((1,1,1),)*6)
 
+    def test_global_tie_anchor_rejects_nontransitive_chain(self):
+        base = score_target("active", TARGETS["balanced"], (0,0,1),
+                            EmpiricalPrior(((1.1,1.02,1),)), (), .0025)
+        scores = tuple(replace(base, name=name, conservative_score=1.02+x*EPSILON)
+                       for name,x in (("active",0),("defensive",.75),("growth_tilt",1.5)))
+        self.assertEqual(choose_target(scores,1).name,"defensive")
+
+    def test_tiny_executed_request_preserves_fee_despite_reporting_threshold(self):
+        data=rows(2)
+        data[0].update(equity_return=-1+1e-13,bond_return=-1+1e-12,bill_proxy_return=-1+1e-13)
+        result,reviews=run(data,prior=EmpiricalPrior(((1.3,1.02,1),)),review_drawdown_pct=100)
+        entry=result.ledger[1]
+        self.assertEqual(reviews[1].action,"rebalance")
+        self.assertFalse(reviews[1].is_trade)
+        self.assertGreater(entry.intended_transfer,0)
+        self.assertLess(entry.intended_transfer,1e-10)
+        self.assertGreater(entry.fee,0)
+        self.assertNotEqual(entry.holdings_after_fee,entry.holdings_before)
+        self.assertEqual(reviews[1].first_deployment_year,1)
+
     def test_parameters_match_published_proposal(self):
-        config = json.loads((ROOT / "specs/development_policy_pilot_v1.json").read_bytes())
+        config = json.loads((ROOT / "specs/development_policy_pilot_v2.json").read_bytes())
         mapping = {"defensive":"balanced_defensive", "growth_tilt":"balanced_growth_tilt"}
         for name, target in TARGETS.items():
             expected = tuple(float(F(str(x))) for x in config["targets"][mapping.get(name,name)])

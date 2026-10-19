@@ -1,0 +1,15 @@
+test_canonical_payload_matches_independent_explicit_fixture (test_policy_calibration.CalibrationTests.test_canonical_payload_matches_independent_explicit_fixture) ... ok
+test_exact_inflation_and_equal_annual_weights (test_policy_calibration.CalibrationTests.test_exact_inflation_and_equal_annual_weights) ... ok
+test_four_fold_exclusion_and_complete_keys (test_policy_calibration.CalibrationTests.test_four_fold_exclusion_and_complete_keys) ... ok
+test_generated_full_shape_has_expected_training_counts (test_policy_calibration.CalibrationTests.test_generated_full_shape_has_expected_training_counts) ... ok
+test_heldout_perturbation_never_changes_own_fit (test_policy_calibration.CalibrationTests.test_heldout_perturbation_never_changes_own_fit) ... ok
+test_immutable_bundle_and_manifest_copy (test_policy_calibration.CalibrationTests.test_immutable_bundle_and_manifest_copy) ... ok
+test_input_bytes_separate_from_selected_semantic_rows (test_policy_calibration.CalibrationTests.test_input_bytes_separate_from_selected_semantic_rows) ... ok
+test_invalid_or_incomplete_grid_is_rejected (test_policy_calibration.CalibrationTests.test_invalid_or_incomplete_grid_is_rejected) ... ok
+test_nominal_rows_and_gross_digests_are_distinct (test_policy_calibration.CalibrationTests.test_nominal_rows_and_gross_digests_are_distinct) ... ok
+test_schema_and_shape_are_explicit (test_policy_calibration.CalibrationTests.test_schema_and_shape_are_explicit) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.087s
+
+OK

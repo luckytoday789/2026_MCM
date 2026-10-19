@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "status": "proposal_only_requires_chief_resolution_and_new_immutable_task",
+  "task_id": "SOL-009",
+  "reviewed_commit": "a996298fd22b11dc54deb43cb596f143da05bf93",
+  "design_blockers": [
+    "D1",
+    "D2"
+  ],
+  "production_changes_made": false,
+  "file_api_split": [
+    {
+      "file": "src/safeinvest/pilot_calibration.py",
+      "api": [
+        "build_fold_calibrations(validated_development_rows, config) -> immutable fold priors, sorted ID sets, hashes",
+        "real_gross_vectors(rows) -> positive finite annual (1+r)/(1+inflation)"
+      ],
+      "purpose": "Pure calibration, four excluded-fold priors; no outcomes outside supplied development rows. Precompute target inverse-cube prior moments; preserve row order."
+    },
+    {
+      "file": "src/safeinvest/pilot_benefit.py",
+      "api": [
+        "ce_gross(gross_support, probabilities, weights) -> positive finite gross CE",
+        "score_candidates(holdings, distribution, menu, fee_rate, epsilon) -> complete candidate diagnostics"
+      ],
+      "purpose": "Pure numerical CE, stable inverse-cube/log-sum calculation, actual fee versus buffer; deterministic tie rule after D1 resolution. No file I/O or policy state."
+    },
+    {
+      "file": "src/safeinvest/pilot_policy.py",
+      "api": [
+        "make_policy(mode, calibration, config, fee_rate) -> fresh DecisionContext callback + diagnostics sidecar"
+      ],
+      "purpose": "Per-scenario active target, prefix update and review latch. Use existing Decision keep/rebalance mapping. Incremental observer derives completed CPI/real end wealth using previous recorded accepted accounting request and newly completed history observation, includes previous post-fee drawdown. Never capture full evaluation rows. No accepted engine API change should be needed."
+    },
+    {
+      "file": "src/safeinvest/pilot_experiments.py",
+      "api": [
+        "produce_pilot(validated_input, calibrations, config, output_root, provenance)",
+        "check_pilot(saved_root, pinned_inputs_and_sources) -> read-only recomputation"
+      ],
+      "purpose": "Independent new contract and partitioned output; reuse public simulate_policy/accounting/metric primitives and unchanged baseline callbacks. Existing experiments.py has fixed config hash/mode/count guards: do not repurpose it by weakening them."
+    },
+    {
+      "file": "scripts/run_development_policy_pilot.py",
+      "api": [
+        "--config PATH --output PATH --source-commit SHA",
+        "--check with identical source/config/input identity",
+        "--synthetic-input PATH only for explicit synthetic split"
+      ],
+      "purpose": "Thin deterministic CLI, exact development input guard, no final loader, exclusive output creation and failed-attempt preservation."
+    }
+  ],
+  "tests": [
+    {
+      "file": "tests/test_pilot_benefit.py",
+      "cases": [
+        "Independent rational deterministic CE/initial transfer, 20-unit transfer and full-equity transfer accounting",
+        "70-digit Decimal multi-support CE oracle and positive homogeneity",
+        "Actual fee charged once, buffered gate implies actual modeled net advantage, exact inflation",
+        "Equal-return/no-fee ties, epsilon boundary, eligible tie anchor, nontransitive tie chain, invalid/nonfinite factors"
+      ]
+    },
+    {
+      "file": "tests/test_pilot_policy.py",
+      "cases": [
+        "t=1 deferred deployment keeps bills; retry with still-active initial target",
+        "Adaptive alternatives unavailable through t=5; t=6 uses exactly five completed years",
+        "15:n prior/prefix mixture including n=0,1,5 and rolling last-five window",
+        "Executed change updates active target, rejected proposal never does; exact dollar keep and tiny-trade reporting semantics",
+        "Current/future perturbations leave earlier decisions unchanged; fresh scenario state and reverse evaluation order agree",
+        "25% crossing at end/post-fee in year t triggers at review t+1; peak recovery cannot unlatch; pending returns change holdings but reviews do not",
+        "All five horizon prefixes equal fresh truncated simulations, including review-latch paths"
+      ]
+    },
+    {
+      "file": "tests/test_pilot_experiments.py",
+      "cases": [
+        "Entire fold exclusion; perturb all held-out fold outcomes without changing its prior; 90 scenarios/2700 rows per prior",
+        "Same contextual distribution for context/adaptive at identical prefix, independent of their holdings",
+        "All profiles own H, explicit horizon/reserve vetoes, inclusive p90/p10/indifference bounds and full failed screens",
+        "Paired median versus marginal quantiles fixture; both direct adaptive comparisons; equality thresholds pass, fold positivity strict",
+        "Both fees with exactly same calibration; selected primary unchanged by robustness failure; preserve negatives",
+        "Output counts/unique keys/units/hash manifests, wrong input/split/source rejected; corruption check exits nonzero without writes; no artifact overwritten"
+      ]
+    }
+  ],
+  "partition": {
+    "root": "results/development/<new-immutable-task>/<attempt>/",
+    "mode_directories": "fee_0p0025/<mode>/ and fee_0p005/<mode>/; all eight declared modes",
+    "files_per_mode": {
+      "annual_ledgers.csv": {
+        "rows": 3600,
+        "keys": [
+          "scenario_id",
+          "year"
+        ]
+      },
+      "decisions.csv": {
+        "rows": 3600,
+        "keys": [
+          "scenario_id",
+          "year"
+        ],
+        "note": "Uniform schema; baseline score/calibration fields blank with reason not_applicable. Candidate-detail rows may instead use a separate bounded file with declared count."
+      },
+      "scenario_metrics.csv": {
+        "rows": 600,
+        "keys": [
+          "scenario_id",
+          "horizon"
+        ]
+      },
+      "summary.csv": {
+        "rows": 5,
+        "keys": [
+          "horizon"
+        ]
+      },
+      "severe_paths.csv": {
+        "rows": 81,
+        "keys": [
+          "horizon",
+          "year"
+        ],
+        "note": "5+6+15+25+30; selected severe scenario per horizon with exact metric ties resolved by smallest scenario ID as existing implementation."
+      },
+      "manifest.json": {
+        "rows": null,
+        "note": "Exact row/column counts, hashes, units, checks, source/environment/command/runtime provenance."
+      }
+    },
+    "comparisons": "Per fee, ten separate <alternative>__<reference>.csv files, 600 rows each: seven alternatives versus equal_weight_annual, plus context-cost, adaptive-context, adaptive-cost. Reference annual need not self-compare.",
+    "shared_files": [
+      "calibrations.json (four priors, train/eval IDs and hashes; no duplication by mode/fee)",
+      "profile_screen.csv (30 rows: five profiles x three fixed classes x two fees, including failed eligibility)",
+      "selection.json (three incremental contrasts x two fees x [overall plus four fold summaries] = 30 descriptive records, plus explicit verdicts)",
+      "run_manifest.json (file hashes, exact source/config/input IDs, folds, columns, row counts, fee units, measured runtime and command environment)",
+      "checks.json (synthetic and output integrity only; selection failure separate from integrity)"
+    ],
+    "expected_totals": {
+      "fee_mode_directories": 16,
+      "annual_ledger_rows": 57600,
+      "decision_rows": 57600,
+      "scenario_horizon_metric_rows": 9600,
+      "summary_rows": 80,
+      "severe_path_rows": 1296,
+      "paired_contrast_files": 20,
+      "paired_difference_rows": 12000,
+      "profile_screen_rows": 30,
+      "fold_calibration_objects": 4
+    },
+    "artifact_bytes_ceiling": 10000000,
+    "artifact_size_policy": "Check serialized byte lengths before completion; fail/preserve diagnosis or use predeclared scenario shards with per-shard counts and manifest. Never silently drop rows or overwrite artifacts. Avoid copying 2700-row supports into each decision."
+  },
+  "required_columns": {
+    "decisions": [
+      "split",
+      "fee_rate",
+      "mode",
+      "scenario_id",
+      "fold_id",
+      "year",
+      "engine_action",
+      "policy_action",
+      "reason",
+      "active_target_before",
+      "proposed_target",
+      "active_target_after",
+      "allowed_menu_ids",
+      "calibration_id",
+      "completed_history_n",
+      "CE_keep",
+      "CE_target",
+      "tau",
+      "actual_fee_fraction",
+      "pre_cost_benefit",
+      "modeled_fee_impact",
+      "conservative_score",
+      "true_net_CE",
+      "prior_max_real_drawdown_pct",
+      "review_latched",
+      "first_human_review_year",
+      "initial_allocation_deferred",
+      "first_deployment_year",
+      "target_change_executed"
+    ],
+    "candidate_scores": "To reconstruct ties preserve one record for every allowed target and keep, not only the winner. Separate candidate_scores.csv per mode: fixed/context modes 3600 target rows, adaptive 120*(5+25*3)=9600 target rows; baselines zero. Candidate row count across fees=48000; keep score stored in decisions. All carry scenario/year/menu key.",
+    "metrics": "Existing metric_row fields, fold, mode, fee, H, explicit percent/pp/nominal/real units; add first latch, latched review count/share, target-change count, initial deferred and first deployment year, all restricted to each H prefix.",
+    "paired": [
+      "split",
+      "fee_rate",
+      "alternative",
+      "reference",
+      "scenario_id",
+      "fold_id",
+      "horizon",
+      "net_real_cagr_pp_difference",
+      "max_real_drawdown_pp_difference",
+      "terminal_real_wealth_difference",
+      "trade_share_pp_difference",
+      "review_share_pp_difference"
+    ],
+    "profiles": [
+      "profile",
+      "horizon",
+      "tolerance_pct",
+      "liquidity",
+      "class",
+      "horizon_pass",
+      "reserve_pass",
+      "p90_loss_pct",
+      "risk_pass",
+      "exceedance_count",
+      "scenario_count",
+      "exceedance_fraction",
+      "median_loss_pct",
+      "severe_loss_pct",
+      "p10_growth_pct",
+      "p10_pass",
+      "median_growth_pct",
+      "growth_gap_from_max_pp",
+      "selected",
+      "reason",
+      "requires_personalized_followup"
+    ],
+    "calibrations": [
+      "fold_id",
+      "train_ids",
+      "eval_ids",
+      "training_rows",
+      "asset_order",
+      "real_gross_support_or_bound_file",
+      "row_order",
+      "probability_rule",
+      "support_sha256",
+      "training_input_hash",
+      "config_hash"
+    ],
+    "manifest": [
+      "exact_code_commit",
+      "reviewed_design_commit",
+      "config_blob_sha256",
+      "input_sha256",
+      "file_hash_basis",
+      "source_paths_and_hashes",
+      "sorted_train_eval_ids",
+      "split",
+      "seed_or_no_randomness",
+      "Python_and_package_versions",
+      "commands",
+      "measured_elapsed_seconds",
+      "failed_attempts",
+      "declared_trials_16",
+      "no_final_access",
+      "counts_columns_units",
+      "selection_thresholds"
+    ]
+  },
+  "runtime": {
+    "all_numbers_below": "Complexity/storage estimates only; no production timing measured and no strategy data read.",
+    "naive_support_work_estimate": "About 226.8 million point-portfolio score evaluations for five CE modes x two fees x 120 scenarios x 30 years x 2700 training points, counting target and keep alternatives; not a runtime measurement.",
+    "cached_work_estimate": "Precache five target inverse-cube moments across four folds (54000 training target-dot evaluations); remaining keep scoring approximately 97.2 million training-point dots plus small prefix work. Reuse only if folds/distributions are identical; fee affects wealth/state but not prior support.",
+    "memory_estimate": "Four raw prior arrays of shape2700x3 float64 occupy259200 bytes excluding container overhead; retaining diagnostics/all Python objects and serialized text dominates. Stream by mode/scenario as needed.",
+    "attempt_limit_seconds": 1800,
+    "risks": [
+      "Pure Python inner support loops or rebuilding all prior support per review can dominate; vectorize using existing NumPy only if installed project environment supports it. Measure bounded synthetic smoke first.",
+      "Do not recompute full history ledger at every callback; incremental observer avoids unnecessary quadratic replay.",
+      "Check driver recomputations, all-16-mode wall time and largest artifact against budget before issuing immutable HY3 task. Split deterministic mode/fee jobs if measured runtime requires it; no parameter changes.",
+      "Raw distribution support repeated in each candidate record would exceed artifact cap.",
+      "First design implementation should be scoped into small tasks if engineering plus checks would exceed 30 minutes; no claim this proposal has measured timing."
+    ]
+  },
+  "deterministic_hy3_commands": {
+    "status": "Templates for a future authorized immutable task; not executed or dispatched by SOL-009.",
+    "commands": [
+      [
+        "{python}",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_pilot_benefit.py",
+        "tests/test_pilot_policy.py",
+        "tests/test_pilot_experiments.py"
+      ],
+      [
+        "{python}",
+        "-B",
+        "scripts/run_development_policy_pilot.py",
+        "--config",
+        "specs/<chief-resolved-config>.json",
+        "--source-commit",
+        "<exact-accepted-implementation-sha>",
+        "--output",
+        "results/development/<task>/<attempt>"
+      ],
+      [
+        "{python}",
+        "-B",
+        "scripts/run_development_policy_pilot.py",
+        "--check",
+        "--config",
+        "specs/<chief-resolved-config>.json",
+        "--source-commit",
+        "<same-sha>",
+        "--output",
+        "results/development/<task>/<attempt>"
+      ]
+    ],
+    "constraints": "Python3.12; no random sampling; literal approved config/code/input hashes; development only; no package installation; preserve every failed attempt. Chief supplies final concrete commands, no placeholder execution."
+  },
+  "personalized_followup": {
+    "status": "Separate future job after provisional assignment and before freeze; do not silently include as extra pilot variants.",
+    "required": "Use assigned class, own horizon and own tolerance threshold; rerun all screens. If fails, request human review per current prose; any reselection needs predeclared chief rule.",
+    "count": "Outcome-dependent, at most five profile jobs per authorized fee; if both fees separately authorized, at most ten profile-fee partitions and 19440 annual ledger rows at own horizons. This is a bound, not an observed count."
+  }
+}

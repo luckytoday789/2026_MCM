@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "plan_id": "development-policy-pilot-v2",
+  "status": "corrected_chief_design_pending_independent_review",
+  "split": "development",
+  "input_path": "data/development/scenarios_001_120.csv",
+  "input_sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+  "asset_order": [
+    "equity",
+    "bond",
+    "bill_proxy"
+  ],
+  "scenario_ids": [
+    1,
+    120
+  ],
+  "folds": {
+    "count": 4,
+    "assignment": "(scenario_id - 1) % 4",
+    "training": "all other folds",
+    "training_rows": 2700
+  },
+  "horizons": [
+    5,
+    6,
+    15,
+    25,
+    30
+  ],
+  "comparison_horizon": 30,
+  "fee_rates": [
+    0.0025,
+    0.005
+  ],
+  "primary_fee_rate": 0.0025,
+  "targets": {
+    "conservative": [
+      0.15,
+      0.2,
+      0.65
+    ],
+    "balanced": [
+      "1/3",
+      "1/3",
+      "1/3"
+    ],
+    "growth": [
+      0.6,
+      0.3,
+      0.1
+    ],
+    "balanced_defensive": [
+      0.2,
+      0.25,
+      0.55
+    ],
+    "balanced_growth_tilt": [
+      0.45,
+      0.3,
+      0.25
+    ]
+  },
+  "modes": [
+    "bills_keep",
+    "equal_weight_annual",
+    "equal_weight_buy_hold",
+    "conservative_cost",
+    "balanced_cost",
+    "growth_cost",
+    "balanced_context",
+    "balanced_adaptive"
+  ],
+  "gamma": 4,
+  "fee_buffer_multiplier": 2,
+  "decision_epsilon": 1e-12,
+  "trade_amount_epsilon": 1e-10,
+  "prior_equivalent_years": 15,
+  "history_window": 5,
+  "adaptive_min_completed_years": 5,
+  "review_drawdown_pct": 25,
+  "review_latched": true,
+  "pending_holdings": "keep component dollars",
+  "initial_allocation": "same benefit gate; otherwise retain bills and retry",
+  "selection": {
+    "default": "balanced_cost",
+    "median_paired_growth_gain_min_pp": 0.1,
+    "p10_growth_decline_max_pp": 0.1,
+    "p90_loss_increase_max_pp": 1.0,
+    "positive_median_gain_folds_min": 3,
+    "growth_gain_statistic": "median_of_scenario_paired_CAGR_differences",
+    "tail_growth_statistic": "marginal_p10_candidate_minus_marginal_p10_reference",
+    "tail_loss_statistic": "marginal_p90_candidate_minus_marginal_p90_reference",
+    "fold_gain_statistic": "median_of_scenario_paired_CAGR_differences_strictly_positive",
+    "context_comparators": [
+      "balanced_cost"
+    ],
+    "adaptive_comparators": [
+      "balanced_context",
+      "balanced_cost"
+    ],
+    "adaptive_eligible_when_context_fails": true,
+    "promotion_priority": [
+      "balanced_adaptive",
+      "balanced_context",
+      "balanced_cost"
+    ],
+    "primary_selection_fee": 0.0025,
+    "doubled_fee_role": "robustness_only_no_primary_retuning"
+  },
+  "suitability": {
+    "horizon_caps": {
+      "max_6": "conservative",
+      "7_to_19": "balanced",
+      "20_plus": "growth"
+    },
+    "minimum_target_bill": {
+      "high": 0.6,
+      "medium": 0.25,
+      "low": 0.1
+    },
+    "risk_quantile": 0.9,
+    "require_nonnegative_p10_growth": true,
+    "choice": "highest median real CAGR among qualifying classes; within 0.10 pp/year prefer least growth-oriented",
+    "personalized_review_overlay_required_before_freeze": true,
+    "growth_indifference_pp": 0.1,
+    "eligible_classes_before_outcome_screens": {
+      "A": [
+        "conservative"
+      ],
+      "B": [
+        "conservative",
+        "balanced"
+      ],
+      "C": [
+        "conservative",
+        "balanced",
+        "growth"
+      ],
+      "D": [
+        "conservative",
+        "balanced"
+      ],
+      "E": [
+        "conservative"
+      ]
+    },
+    "personalized_failure": "refer_to_human_no_reselection; rescreen_risk_and_purchasing_power_at_own_horizon"
+  },
+  "profiles": {
+    "A": {
+      "horizon": 5,
+      "loss_tolerance_pct": 10,
+      "liquidity": "high"
+    },
+    "B": {
+      "horizon": 15,
+      "loss_tolerance_pct": 25,
+      "liquidity": "medium"
+    },
+    "C": {
+      "horizon": 30,
+      "loss_tolerance_pct": 40,
+      "liquidity": "low"
+    },
+    "D": {
+      "horizon": 25,
+      "loss_tolerance_pct": 15,
+      "liquidity": "medium"
+    },
+    "E": {
+      "horizon": 6,
+      "loss_tolerance_pct": 35,
+      "liquidity": "high"
+    }
+  },
+  "final_outcomes_allowed": false,
+  "production_execution_authorized": false,
+  "cpu_only": true,
+  "contract": "specs/DEVELOPMENT_POLICY_PILOT_V2.md",
+  "supersedes": "development-policy-pilot-v1; SOL-009 design changes_required D1/D2",
+  "decision_order": [
+    "human_review_latch",
+    "score_allowed_targets",
+    "filter_score_strictly_above_keep_plus_epsilon",
+    "anchor_ties_to_maximum_eligible_score",
+    "priority_active_defensive_central_growth_tilt",
+    "recheck_selected_strict_hurdle",
+    "execute_exact_accounting"
+  ],
+  "trade_amount_epsilon_scope": "reporting_only; executed requests update active target even below this amount",
+  "diagnostics": {
+    "initial_allocation_deferred": "persistent_year1_nondeployment_flag",
+    "first_deployment_year": "first_accepted_request_with_positive_transfer_or_null",
+    "human_review_share": "100 * human_review_action_years / review_years",
+    "first_latch_year": "first_human_review_period_or_null",
+    "reason_codes": [
+      "benefit_gate_failed",
+      "human_review_latched",
+      "initial_allocation",
+      "rebalance",
+      "target_change"
+    ]
+  }
+}

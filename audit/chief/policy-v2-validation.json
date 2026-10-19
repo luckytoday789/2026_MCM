@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T17:38:54.794368+00:00",
+  "scope": "chief synthetic corrections only, pending independent review",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_policy_pilot.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "audit/chief/policy-v2-test_policy_pilot.txt",
+      "log_sha256_lf": "5bb728836f36e5abe825b08d53a9d49740f547a527b39bf0af6a6941b3b507f2"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_policy_calibration.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "audit/chief/policy-v2-test_policy_calibration.txt",
+      "log_sha256_lf": "686bf54a43c18e420852d10d0949c734d3c73b639f63f4c710bce44e0c643e2c"
+    }
+  ],
+  "structural_counts_checked": true,
+  "preserved_paths": [
+    "specs/DEVELOPMENT_POLICY_PILOT.md",
+    "specs/development_policy_pilot_v1.json",
+    "ops/tasks/SOL-009.json",
+    "ops/tasks/SOL-011.json",
+    "ops/tasks/SOL-012.json",
+    "src/safeinvest/policy_calibration.py"
+  ],
+  "source_sha256_lf": {
+    "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "specs/POLICY_CORRECTION_V2.md": "b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383",
+    "specs/POLICY_DRIVER_HANDOFF.md": "18bffbb0c9da4d487b3ba3fc384159ebb069768593bdeced140d1971b3fe3001",
+    "specs/policy_driver_layout_v2.json": "f431e661c260f7f6e40330661e77724dc3ddcafeafed1a3f0b6c31781a4e8329",
+    "src/safeinvest/policy_pilot.py": "1f439cff5627279219867497b891549f3702434966b3194c11f8e18894ffba90",
+    "tests/test_policy_pilot.py": "0a8d605c38e75aef00a7185978a8925989b413aa1eb44c0bd534085125bdb11f"
+  },
+  "competition_outcomes_read": false,
+  "final_data_open": false,
+  "new_policy_accepted": false
+}

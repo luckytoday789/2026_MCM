@@ -159,6 +159,8 @@ class PolicyReview:
     actual_fee: float
     is_trade: bool
     executed_target_change: bool
+    reason: str
+    first_deployment_year: int | None
 
 
 class CostAwarePolicy:
@@ -187,6 +189,7 @@ class CostAwarePolicy:
         self._max_loss = 0.0
         self._latched = False
         self._initial_deferred = False
+        self._first_deployment_year = None
 
     def _observe(self, real_wealth):
         self._peak = max(self._peak, real_wealth)
@@ -244,11 +247,13 @@ class CostAwarePolicy:
                 action = "rebalance" if chosen.name == self.active else "target_change"
                 decision = Decision("rebalance", chosen.target)
                 trade = rebalance(holdings, chosen.target, self.fee_rate)
-                if trade.intended_transfer > TRANSFER_EPSILON:
-                    self.active = chosen.name
+                # The transfer epsilon counts trades; it never cancels execution.
+                self.active = chosen.name
+                if self._first_deployment_year is None and trade.intended_transfer > 0:
+                    self._first_deployment_year = context.period
         is_trade = trade.intended_transfer > TRANSFER_EPSILON
         if context.period == 1:
-            self._initial_deferred = not is_trade
+            self._initial_deferred = self._first_deployment_year is None
         self._after = trade.holdings_after_fee
         self._observe(deflate(trade.wealth_after_fee, self._cpi))
         self.reviews.append(PolicyReview(
@@ -257,7 +262,11 @@ class CostAwarePolicy:
             PRIOR_STRENGTH / (PRIOR_STRENGTH + len(recent)), len(recent),
             observed_loss, self._latched, self._initial_deferred,
             trade.intended_transfer, trade.fee, is_trade,
-            action == "target_change" and is_trade,
+            action == "target_change",
+            ("human_review_latched" if self._latched else
+             "benefit_gate_failed" if chosen is None else
+             "initial_allocation" if self._first_deployment_year == context.period else action),
+            self._first_deployment_year,
         ))
         return decision
 

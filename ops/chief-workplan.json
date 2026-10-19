@@ -1,20 +1,19 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T01:59:25+08:00",
-  "reason": "SOL-008/HY3-003 accepted and descriptive baseline tables saved. Await exact SOL-009 design findings before releasing existing kernel review or starting dependent implementation; incoming receipts wake earlier than fallback.",
+  "next_wake_at": "2026-10-20T01:43:54.794368+08:00",
+  "reason": "Accepted negative SOL-009 evidence, corrected v2 specification and kernel pass chief synthetic checks. Push prerequisites first, then publish independent correction/kernel review and gated calibration successor.",
   "next_actions": [
-    "Fetch exact SOL-009 receipt and verify task/source/artifact hashes, allowed paths, actual independent evidence and mathematical findings. Preserve all historical quota failures.",
-    "If SOL-009 approves unchanged design, immediately release existing SOL-011 without changing task contents; otherwise preserve the pending attempt and publish corrected immutable work only after prerequisite changes are pushed.",
-    "After unchanged SOL-009/SOL-011 acceptance, immediately release existing SOL-012. If relevant sources change, issue a new immutable attempt instead of editing the old one.",
-    "Prepare granular production driver, comparison and suitability implementation using specs/POLICY_DRIVER_HANDOFF.md and reviewed APIs. Push real prerequisites first, then publish tasks with existing origin/main base SHAs. HY3 gets fixed commands only after code acceptance.",
-    "Reuse accepted HY3-003 exact results and report/baseline-development.md; no baseline experiment rerun. Candidate policy outcomes, personalized suspension, sensitivity, final freeze, final evaluation and final manuscript remain unfinished.",
-    "Keep final data closed and member identities local. Respect local quota markers; no supervisor restart. Refresh one-shot plan after every bounded turn."
+    "After prerequisite source commit is on origin/main, publish SOL-013 for v2 design closure plus corrected kernel independent synthetic review; preserve SOL-011 unchanged and cancelled.",
+    "Publish SOL-014 calibration-review successor with corrected source hashes, waiting for accepted unchanged SOL-013; preserve original SOL-012.",
+    "Prepare precise production driver and selection/suitability handoff while remote review runs; no actual policy outcomes or final access until required code reviews pass.",
+    "Reuse accepted HY3-003 results. Personalized rescreen, development policy comparisons, sensitivity, freeze, final evaluation and manuscript remain unfinished.",
+    "Respect local quota drain and original upload restriction; do not restart supervisor or expose private team identities."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T01:29:25+08:00",
+  "last_completed_at": "2026-10-20T01:38:54.794368+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }
