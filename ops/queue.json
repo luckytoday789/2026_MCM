@@ -183,7 +183,17 @@
       "attempt": 1,
       "task_sha256": "5870dab708b3ead4a2f94384ef70528e9ea57ce6b39a8c5408a402c033a9a05b",
       "branch": "work/hy3/HY3-003-a1",
-      "note": "All real prerequisites accepted. First fixed development-only baseline run; chief must publish a separate exact-output Sol audit after receipt, before investment evidence promotion."
+      "note": "Submitted exact receipt and canonical structural checks passed. Numerical promotion pending independent SOL-006; do not rerun or recreate this task.",
+      "submitted_commit": "7652410d73425371110784ef5fa97c03470a074e"
+    },
+    {
+      "id": "SOL-006",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "561143f6312aebe4090cb2e9f548eddb4b19b73722130d362de5eeb068007b39",
+      "branch": "work/sol/SOL-006-a1",
+      "note": "Independent exact HY3-003 numerical review plus separate small scheduler review. All accepted prerequisites met; HY3-003 is the review target, not an acceptance dependency."
     }
   ]
 }
