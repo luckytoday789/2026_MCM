@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T05:55:00+08:00",
-  "reason": "All published work branches match already recorded reviewed commits; four waiting immutable tasks and104 pinned sources verified. No new receipts, remote dirty work or pending uploads. Only existing resource gates remain: wake once at05:55 Beijing to release SOL-028, whose single model call remains prohibited before06:05. Do not start another unchanged idle check before that gate.",
+  "next_wake_at": "2026-10-19T22:31:16.554011+00:00",
+  "reason": "SOL-028 released after its real time gate, with unchanged immutable task and exact source hashes. Await the one real remote availability receipt; no full-review hold is lifted yet.",
   "next_actions": [
     "Inspect fresh local quota/drain/control/STOP/deadline before work. Last verified56% remaining, no drain. Preserve supervisor, private-team upload restriction and remote ownership; no replacement coordinator or remote roles.",
-    "At or after05:55 Beijing release existing immutable SOL-028 by queue-only waiting->ready update, commit/push. Do not recreate or edit it. Base df038cb116c4818c14454231500f992af3f26d0f; digest d41ed4659e2d295d5b7ac09a7936d975833bbecd1282e54592791ceeea9aaf48. Commands task1200s includes passive wait to06:05 plus <=300s single assigned-model probe. No full review as quota probe; exact reply/returncode/timestamps/hashes are required.",
+    "SOL-028 is ready and released; do not recreate it or make another probe. Verify exact receipt, three exits, canonical artifacts and actual >=06:05 call timestamp. Only a successful real response can release SOL-029 first.",
     "After release, set one-shot30-minute result fallback (incoming receipt earlier). An exact successful SOL-028 receipt, not human reply or idle lease, releases SOL-029 first. Keep SOL-027 held until writer recovery is actually submitted without another quota failure. If probe fails preserve it; at most one further single probe this night, >=1hour later and never before a new reset hint; use a new immutable task. Then seek human help only if genuinely resource-blocked; no purchases/model switches.",
     "SOL-026 at e8733bbc9f1234e04a5e382046d3c89fc12cae7d remains failed/cancelled. Chief verified111 paths/35 pins;13 focused tests pass but required verifier fails on missing verification.json. clean-environment-checks/integrity-self-tests also absent. Saved creation evidence hashes an older policy_writer.py. Failed branch/hand-off and exact quarantine drafts are preserved; do not promote them or fabricate old evidence.",
     "SOL-029 writer recovery: immutable base df038cb116c4818c14454231500f992af3f26d0f; digest951ca85be546855ef2b606e94d7ea0eb2acb39f03ab34e70c707bccbac6015ac;46 source pins. Require positive writer identity SOL-029 instead of failed SOL-026, fresh bound evidence, both portable commands and unchanged original guards. Independently review exact source/numerics/C-E-P/imports/typed persistence/corruption checks before acceptance. Scope remains writer-only; no production configuration yet.",
@@ -20,16 +20,16 @@
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-19T21:27:24.988773+00:00",
+  "last_completed_at": "2026-10-19T22:01:16.554011+00:00",
   "quota_probe_verified_commit": null,
   "quota_probe_release_not_before": "2026-10-20T05:55:00+08:00",
-  "quota_probe_current_status": "unverified_after_SOL-026_usage_failure",
+  "quota_probe_current_status": "released_awaiting_real_SOL-028_receipt",
   "last_successful_quota_probe_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466",
   "quota_probe_task": "SOL-028",
   "quota_probe_remaining_additional_attempts_after_SOL028": 1,
-  "last_outcome_zh": "已核对全部工作分支与已记录审查提交，四个等待任务及104个来源摘要一致；没有新回执或远端待恢复工作。保持原有门禁，将下次单次唤醒对齐05:55探针放行时间，06:05前不调用Sol模型。无需人工操作。",
+  "last_outcome_zh": "已核验精确任务与脚本摘要并放行 SOL-028；06:05 前不调用模型。SOL-029/027/030 继续等待真实成功回执，最终数据仍关闭。",
   "baseline_figure_source_commit": "04be213a76855b1b1815405a735f2a49be678935",
   "baseline_figure_review_task": "SOL-030",
   "layout_proof_path": "report/layout-proof/methods-baselines.pdf",
-  "last_gate_reconciliation": "audit/chief/quota-wait-20261020T0528.json"
+  "last_gate_reconciliation": "audit/chief/SOL-028-release.json"
 }
