@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "status": "implemented_pending_chief_and_remote_review",
+  "task_id": "SOL-026",
+  "base_commit": "8d00ca8eafc00fd636273be4125216e981289804",
+  "publication_commit": "7c0942496db426063f2591dacda3f2f6a7dd4a67",
+  "contract_contradictions": [],
+  "design_challenge": "design-challenge.json",
+  "scope": "writer, fixed CLI, focused tests and new audit only",
+  "production_config_created": false,
+  "competition_input_csv_read": false,
+  "competition_policy_run": false,
+  "analysis_assembled": false,
+  "final_data_open": false,
+  "production_timing_seconds": null,
+  "production_artifact_bytes": null,
+  "remaining_gates": [
+    "chief exact-source acceptance of SOL-026",
+    "chief-issued fixed execution configuration and C/E/P task binding",
+    "HY3 fixed development case production",
+    "independent review of exact HY3 result commit",
+    "separate analysis/selection/personalized scope",
+    "recorded freeze and final authorization"
+  ],
+  "known_limitations": [
+    "Implementation self-validation is not independent acceptance of outcomes.",
+    "Production runtime and size remain unmeasured.",
+    "Task parameters mirror every execution config field plus config_path/config_sha256; chief must use that documented binding.",
+    "Symlink escape is exercised through a resolution boundary probe because Windows privilege availability cannot be assumed."
+  ],
+  "preserved_negative_evidence": [
+    "trial-001-tests.json",
+    "trial-001-test-source.py",
+    "failure-001.json",
+    "trial-002-test-source.py",
+    "failure-002.json"
+  ]
+}

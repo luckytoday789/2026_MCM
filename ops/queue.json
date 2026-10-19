@@ -727,12 +727,26 @@
     },
     {
       "id": "SOL-026",
-      "state": "ready",
+      "state": "cancelled",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "814ed948fca4fae761aed362526e9e5d2396fbc978472a2355401bebec548ecd",
       "branch": "work/sol/SOL-026-a1",
-      "note": "Writer-only implementation and independent challenge of chief C/E/P binding, typed persistence and exact reference import. Accepted case/base source already pushed. Generated fixtures only; no HY3 execution authorization."
+      "note": "Usage limit interrupted final evidence/checks. 111 paths/35 source pins verified; exact-source chief replay passes 13 focused tests but verifier fails on missing verification.json. Failed receipt and drafts preserved, no code acceptance. Successor must correct failed SOL-026 approval identity and create fresh bound evidence after real quota probe.",
+      "reviewed_commit": "e8733bbc9f1234e04a5e382046d3c89fc12cae7d",
+      "code_verdict": "incomplete_and_revalidation_required",
+      "failure_evidence": "audit/chief/SOL-026-failure-review.json",
+      "successor_task": "SOL-029"
+    },
+    {
+      "id": "SOL-027",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "f086a587d0a0ec0aa1477d28df58f036482dac1dbc7e0add8f298553daf90f00",
+      "branch": "work/sol/SOL-027-a1",
+      "note": "Independent personalized source review, held after exact SOL-026 usage-limit failure. Release only after real Sol availability evidence; writer recovery SOL-029 has priority. Mathematical dependencies already accepted.",
+      "resource_hold": "sol_model_quota_after_SOL-026"
     }
   ]
 }
