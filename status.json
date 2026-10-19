@@ -2,7 +2,7 @@
   "role": "chief",
   "machine_id": "8ea2b5131bed400a8f2954cd69935807",
   "state": "running",
-  "updated_at": "2026-10-19T12:29:42.051467+00:00",
-  "lease_until": "2026-10-19T12:39:42.051467+00:00",
+  "updated_at": "2026-10-19T12:33:46.879385+00:00",
+  "lease_until": "2026-10-19T12:43:46.880394+00:00",
   "task_id": "integrate-and-dispatch"
 }
