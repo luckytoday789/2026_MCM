@@ -1,0 +1,333 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-025",
+  "attempt": 1,
+  "owner": "sol",
+  "status": "completed_pending_chief_review",
+  "base_commit": "a065805163f01eeffd73ca0ea5ac420454493a94",
+  "published_task_commit": "88b4c7d921c5b3c615d4a481ac41c585a4ee11fd",
+  "published_task_blob_oid": "52e299dc6164b704c6f08f5f36837b59429e4503",
+  "published_task_sha256": "f6e5280497409b1d01702c1632783f344bb5cdc8ceda7afe644b1a87ea18f5f1",
+  "local_task_raw_sha256": "9da47ee07306246b0f90f3892e3ab8a546c8857488fc450cac049530a7d65b36",
+  "original_failure": {
+    "task": "SOL-023",
+    "commit": "ea2569d4624dc86d68861446610ba08548de121f",
+    "status": "cancelled_not_accepted",
+    "command": [
+      "{python}",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_policy_cases.py",
+      "-v"
+    ],
+    "cause": "ModuleNotFoundError: No module named 'safeinvest'; missing test src bootstrap; worker PYTHONPATH did not reach parent runner.",
+    "historical_review": "audit/chief/SOL-023-failure-review.json",
+    "old_attempt_rerun": false,
+    "old_artifacts_modified": false
+  },
+  "repair": {
+    "implementation_bytes_unchanged": true,
+    "implementation_sha256": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7",
+    "test_sha256": "54fd55aa9d4b7e31df3dd44aac9b01317c77f2040cdcd1a960d9bb8516115114",
+    "test_change": "Only portable pathlib/sys repo src bootstrap before safeinvest imports; inherited assertions unchanged.",
+    "accepted_core_modified": false
+  },
+  "validation": {
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "exact_command_returncodes": [
+      0,
+      0
+    ],
+    "pythonpath_present": [
+      false,
+      false
+    ],
+    "exact_command_seconds": [
+      8.702999999979511,
+      19.64100000000326
+    ],
+    "clean_environment_record": "audit/SOL-025/clean-environment-checks.json",
+    "fresh_discovery_import_paths": {
+      "safeinvest.accounting": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\src\\safeinvest\\accounting.py",
+      "safeinvest.metrics": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\src\\safeinvest\\metrics.py",
+      "safeinvest.backtest": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\src\\safeinvest\\backtest.py",
+      "safeinvest": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\src\\safeinvest\\__init__.py",
+      "safeinvest.baselines": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\src\\safeinvest\\baselines.py",
+      "safeinvest.policy_pilot": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\src\\safeinvest\\policy_pilot.py",
+      "safeinvest.policy_calibration": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\src\\safeinvest\\policy_calibration.py",
+      "safeinvest.experiments": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\src\\safeinvest\\experiments.py",
+      "safeinvest.policy_cases": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\src\\safeinvest\\policy_cases.py"
+    },
+    "regression": {
+      "tests_run": 90,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "test_ids": [
+        "test_accounting.AccountingTests.test_all_equity_and_keep_bills_examples",
+        "test_accounting.AccountingTests.test_exact_compounded_inflation_and_deflation",
+        "test_accounting.AccountingTests.test_exact_total_loss_formula_without_inventing_recovery",
+        "test_accounting.AccountingTests.test_exact_twenty_unit_bill_to_equity_example",
+        "test_accounting.AccountingTests.test_fee_precedes_return",
+        "test_accounting.AccountingTests.test_initial_equal_weight_exact_fractions",
+        "test_accounting.AccountingTests.test_invalid_inputs_rejected",
+        "test_accounting.AccountingTests.test_keep_preserves_dollars_and_inputs_exactly",
+        "test_accounting.AccountingTests.test_rebalance_matching_weights_is_no_trade",
+        "test_accounting.AccountingTests.test_wealth_conservation_and_full_investment_seeded",
+        "test_accounting.AccountingTests.test_zero_fees_zero_returns",
+        "test_accounting.BaselineTests.test_complete_thirty_period_ledger_invariants",
+        "test_accounting.BaselineTests.test_explicit_horizon_csv_strings_and_future_outcomes_not_read",
+        "test_accounting.BaselineTests.test_final_split_and_development_id_guards",
+        "test_accounting.BaselineTests.test_inflation_only_loss",
+        "test_accounting.BaselineTests.test_reject_mixed_scenarios_even_beyond_horizon_and_invalid_metadata",
+        "test_accounting.BaselineTests.test_terminal_total_loss_is_measured_but_not_restarted",
+        "test_accounting.BaselineTests.test_two_period_hand_computable_default_fee_ledger",
+        "test_accounting.BaselineTests.test_zero_fees_returns_and_inflation",
+        "test_accounting.BaselineTests.test_zero_market_returns_keep_initial_fee_loss_and_trade_shares",
+        "test_accounting.MetricsTests.test_cagr_sample_volatility_and_initial_peak",
+        "test_accounting.MetricsTests.test_linear_interpolated_quantiles",
+        "test_accounting.MetricsTests.test_post_fee_loss_before_year_end_recovery_is_included",
+        "test_accounting.MetricsTests.test_zero_terminal_wealth_and_invalid_metrics",
+        "test_accounting.PrefixBoundaryTests.test_callback_gets_immutable_prefix_only",
+        "test_accounting.PrefixBoundaryTests.test_decision_exists_before_current_outcomes_are_accessed",
+        "test_accounting.PrefixBoundaryTests.test_future_perturbation_preserves_earlier_contexts_and_ledgers",
+        "test_accounting.PrefixBoundaryTests.test_invalid_decisions_rejected",
+        "test_policy_pilot.PolicyKernelTests.test_adaptive_first_eligible_review_and_active_target",
+        "test_policy_pilot.PolicyKernelTests.test_deferred_initial_allocation_can_retry_using_completed_history",
+        "test_policy_pilot.PolicyKernelTests.test_equal_returns_keep_at_both_fee_rates_and_zero",
+        "test_policy_pilot.PolicyKernelTests.test_exact_inflation_conversion",
+        "test_policy_pilot.PolicyKernelTests.test_failing_proposals_never_change_active_target",
+        "test_policy_pilot.PolicyKernelTests.test_future_perturbation_does_not_change_current_decision",
+        "test_policy_pilot.PolicyKernelTests.test_global_tie_anchor_rejects_nontransitive_chain",
+        "test_policy_pilot.PolicyKernelTests.test_invalid_gross_including_final_observation_is_rejected",
+        "test_policy_pilot.PolicyKernelTests.test_inverse_cube_mixture_and_homogeneity",
+        "test_policy_pilot.PolicyKernelTests.test_k2_exact_subnormal_midpoint_grid_and_recent_mixture",
+        "test_policy_pilot.PolicyKernelTests.test_parameters_match_published_proposal",
+        "test_policy_pilot.PolicyKernelTests.test_post_fee_loss_survives_same_year_recovery",
+        "test_policy_pilot.PolicyKernelTests.test_prefix_and_fresh_state_for_all_declared_modes",
+        "test_policy_pilot.PolicyKernelTests.test_rational_initial_fee_and_ce",
+        "test_policy_pilot.PolicyKernelTests.test_real_loss_review_lags_and_latches",
+        "test_policy_pilot.PolicyKernelTests.test_state_reuse_and_mismatched_accounting_are_rejected",
+        "test_policy_pilot.PolicyKernelTests.test_strict_keep_gate_and_tie_priority",
+        "test_policy_pilot.PolicyKernelTests.test_subnormal_gross_is_not_lost_before_log_moment",
+        "test_policy_pilot.PolicyKernelTests.test_tiny_executed_request_preserves_fee_despite_reporting_threshold",
+        "test_policy_calibration.CalibrationTests.test_canonical_payload_matches_independent_explicit_fixture",
+        "test_policy_calibration.CalibrationTests.test_exact_inflation_and_equal_annual_weights",
+        "test_policy_calibration.CalibrationTests.test_four_fold_exclusion_and_complete_keys",
+        "test_policy_calibration.CalibrationTests.test_generated_full_shape_has_expected_training_counts",
+        "test_policy_calibration.CalibrationTests.test_heldout_perturbation_never_changes_own_fit",
+        "test_policy_calibration.CalibrationTests.test_immutable_bundle_and_manifest_copy",
+        "test_policy_calibration.CalibrationTests.test_input_bytes_separate_from_selected_semantic_rows",
+        "test_policy_calibration.CalibrationTests.test_invalid_or_incomplete_grid_is_rejected",
+        "test_policy_calibration.CalibrationTests.test_nominal_rows_and_gross_digests_are_distinct",
+        "test_policy_calibration.CalibrationTests.test_schema_and_shape_are_explicit",
+        "test_policy_analysis.AnalysisTests.test_adaptive_fails_only_context_control",
+        "test_policy_analysis.AnalysisTests.test_adaptive_fails_only_cost_control",
+        "test_policy_analysis.AnalysisTests.test_adaptive_passes_both_when_context_fails",
+        "test_policy_analysis.AnalysisTests.test_all_five_own_horizons_and_fixed_modes",
+        "test_policy_analysis.AnalysisTests.test_complete_counts_contrasts_units_and_source_differences",
+        "test_policy_analysis.AnalysisTests.test_config_is_pinned_and_records_have_no_aliases_or_io",
+        "test_policy_analysis.AnalysisTests.test_four_fold_medians_and_strict_zero_exclusion",
+        "test_policy_analysis.AnalysisTests.test_gain_and_tail_loss_exact_boundaries_and_neighbors",
+        "test_policy_analysis.AnalysisTests.test_inclusive_point_ten_indifference_and_each_side",
+        "test_policy_analysis.AnalysisTests.test_liquidity_horizon_and_willingness_vetoes_all_retained",
+        "test_policy_analysis.AnalysisTests.test_marginal_loss_not_quantile_of_pairs",
+        "test_policy_analysis.AnalysisTests.test_missing_extra_duplicate_and_mismatched_grids",
+        "test_policy_analysis.AnalysisTests.test_nonfinite_bool_null_numeric_and_unit_rejections",
+        "test_policy_analysis.AnalysisTests.test_only_h30_primary_and_sensitivity_cannot_reselect",
+        "test_policy_analysis.AnalysisTests.test_opposite_paired_and_marginal_growth_conclusions",
+        "test_policy_analysis.AnalysisTests.test_p10_failure_and_all_referral_keep_all_negative_evidence",
+        "test_policy_analysis.AnalysisTests.test_p90_equality_passes_despite_real_exceedance_and_exact_severe_id",
+        "test_policy_analysis.AnalysisTests.test_strict_split_rejection_and_generated_development_shape",
+        "test_policy_analysis.AnalysisTests.test_tail_growth_exact_boundary_and_neighbors",
+        "test_policy_cases.CaseTests.test_aliases_mutation_fresh_state_and_no_io",
+        "test_policy_cases.CaseTests.test_all_modes_fees_schema_keys_counts_and_links",
+        "test_policy_cases.CaseTests.test_calibration_membership_and_actual_prior_shape_rejections",
+        "test_policy_cases.CaseTests.test_context_history_mass_and_independent_scalar_ce",
+        "test_policy_cases.CaseTests.test_deferred_persistence_and_prefix_deployment",
+        "test_policy_cases.CaseTests.test_exact_locations_and_no_epsilon_severe_tie",
+        "test_policy_cases.CaseTests.test_once_at_max_horizon_and_distinct_callbacks",
+        "test_policy_cases.CaseTests.test_prefix_direct_runs_and_future_perturbations",
+        "test_policy_cases.CaseTests.test_rational_baselines_and_severe_locations",
+        "test_policy_cases.CaseTests.test_rational_initial_fee_and_growth",
+        "test_policy_cases.CaseTests.test_real_tiny_executed_target_change",
+        "test_policy_cases.CaseTests.test_refusal_before_computation_and_true_split_guard",
+        "test_policy_cases.CaseTests.test_review_lag_nulls_and_prefix_no_future_latch",
+        "test_policy_cases.CaseTests.test_schema_keys_factors_horizons_and_splits_rejected"
+      ],
+      "focused_tests": 14,
+      "generated_mode_fee_cases": 24
+    },
+    "regression_tests_by_module": {
+      "test_accounting": 28,
+      "test_policy_pilot": 19,
+      "test_policy_calibration": 10,
+      "test_policy_analysis": 19,
+      "test_policy_cases": 14
+    },
+    "final_replay_returncode": 0,
+    "final_replay_bytes_unchanged": true,
+    "final_replay_files_checked": 23
+  },
+  "numeric": {
+    "new_chief_cases": 16,
+    "new_comparison_count": 13976,
+    "reference_groups": 5,
+    "forced_scalar_facts": {
+      "fee_sum": 0.059995000000000014,
+      "terminal_real_wealth": 100.74000480000004,
+      "max_real_drawdown_pct": 16.04999599999998
+    },
+    "tiny_fee_facts": {
+      "intended_transfer": 1.165084386991724e-12,
+      "fee": 2.91271096747931e-15,
+      "wealth_before": 9.986437602786204e-12
+    },
+    "tiny_executed_target_change": true,
+    "tiny_is_trade": false,
+    "binary64_rational_zero_transfer_roundoff": [
+      {
+        "mode": "equal_weight_annual",
+        "fee_rate": 0.0025,
+        "period": 2,
+        "wealth_before": 112.31249999999997,
+        "intended_transfer": 9.351894258990964e-15,
+        "fee": 2.337973564747741e-17
+      },
+      {
+        "mode": "equal_weight_annual",
+        "fee_rate": 0.0025,
+        "period": 4,
+        "wealth_before": 142.14550781249994,
+        "intended_transfer": 1.1835991171535438e-14,
+        "fee": 2.9589977928838595e-17
+      }
+    ],
+    "roundoff_treatment": "Rational zero-transfer ideals are explicitly distinguished from positive binary64 rounding transfers bounded by 8 ulps of wealth; actual fees retain zero absolute floor. CE pre-cost-benefit and zero-volatility arithmetic have explicit named bounded roundoff allowances. Saved evidence floats use relative 1e-12 and abs 0.",
+    "new_policy_or_production_benefit_claim": false
+  },
+  "integrity": {
+    "probes": [
+      {
+        "label": "number",
+        "returncode": 1,
+        "scratch_unchanged": true,
+        "original_unchanged": true
+      },
+      {
+        "label": "source_hash",
+        "returncode": 1,
+        "scratch_unchanged": true,
+        "original_unchanged": true
+      },
+      {
+        "label": "tiny_fee_zero",
+        "returncode": 1,
+        "scratch_unchanged": true,
+        "original_unchanged": true
+      },
+      {
+        "label": "missing_key",
+        "returncode": 1,
+        "scratch_unchanged": true,
+        "original_unchanged": true
+      },
+      {
+        "label": "nonfinite",
+        "returncode": 1,
+        "scratch_unchanged": true,
+        "original_unchanged": true
+      },
+      {
+        "label": "wrong_type",
+        "returncode": 1,
+        "scratch_unchanged": true,
+        "original_unchanged": true
+      },
+      {
+        "label": "extra_key",
+        "returncode": 1,
+        "scratch_unchanged": true,
+        "original_unchanged": true
+      }
+    ],
+    "exclusive_create_returncode": 1,
+    "original_bytes_unchanged": true,
+    "evidence": "audit/SOL-025/integrity-self-tests.json",
+    "recursive_own_evidence_hash": false
+  },
+  "preserved_new_failures": [
+    {
+      "trial": "verification-create-001.json",
+      "cause": "Harness accessed nonexistent PerformanceMetrics.terminal_real_wealth",
+      "source": "failed-verifier-001.py"
+    },
+    {
+      "trial": "verification-create-002.json",
+      "cause": "Harness accessed nonexistent PerformanceMetrics.final_real_wealth",
+      "source_reconstruction": "failed-verifier-002-reconstruction.json"
+    },
+    {
+      "trial": "verification-create-003.json",
+      "cause": "Harness initially demanded rational zero transfer equal binary64 rebalancing roundoff without tolerance; observed transfer 9.351894258990964e-15, explicitly recorded and bounded rather than rounded away.",
+      "source_reconstruction": "failed-verifier-003-reconstruction.json"
+    },
+    {
+      "trial": "infrastructure.json",
+      "cause": "Shell helper startup unavailable; Node fs/execFile used. Initial Node environment attempt failed before any files were written."
+    },
+    {
+      "trial": "infrastructure-extra.json",
+      "cause": "Optional tasklist inventory denied; not a blocker."
+    }
+  ],
+  "additional_implementation_defects_reproduced": [],
+  "remaining_gates": [
+    "Coordinator exact-byte review and task acceptance.",
+    "Future authorized result writer with actual input/source/config/calibration provenance and saved-bundle integrity.",
+    "Primary .0025 development baseline imports must come from accepted HY3-003; builder refuses reruns.",
+    "Separate authorization for production or personalized policy execution.",
+    "Recorded freeze and authorized final gate before any final outcome evaluation; no tuning after final."
+  ],
+  "competition_outcomes_read": false,
+  "final_outcomes_read": false,
+  "committed": false,
+  "pushed": false,
+  "branches_changed": false,
+  "watchers_started": false,
+  "package_installs": false,
+  "source_hash_basis": "Canonical LF Git blobs; implementation also checked as exact raw quarantine bytes. Imported paths recorded relative in verification and absolute in clean discovery probe.",
+  "artifact_sha256_raw": {
+    "audit/SOL-025/clean-environment-checks.json": "9324165b32dfc8c035fc083337e7df23c9d34610a9f54aa42b53608cc6785247",
+    "audit/SOL-025/execution-driver.json": "df3d199622b9224684845da92543151e3b378e30bc9ce06d397a15ae8f97209f",
+    "audit/SOL-025/failed-verifier-001.py": "fd6e5620d1119413733025a3e7e80cc4482e0af5da89b698c0f0fd0423eb5eab",
+    "audit/SOL-025/failed-verifier-002-reconstruction.json": "7971fbdb3ef5b4a9226099e418414befa9c683c5613672026bb236caa48c13d7",
+    "audit/SOL-025/failed-verifier-003-reconstruction.json": "87cebe6eb041bb88bb38a3a6935852cd4c34134b1d03b0665566c0b2623f45cb",
+    "audit/SOL-025/focused-test-first.json": "12b3e6dad31bc6339a04bd161bdc2a879d082b26bb2d4ad4ed6360fd96bc5fc2",
+    "audit/SOL-025/implementation.md": "2aa27ffdb70200bad0911a8ff47734609642b01c76716f39955c899f379acfa5",
+    "audit/SOL-025/infrastructure-extra.json": "ac91b367c654ec8369c0935cf822798794f599de692b5413e43ce4ce747e7993",
+    "audit/SOL-025/infrastructure.json": "47fe07fbf3dab64a854d5384a05e734aef196748e8e0505ba483c82b95255862",
+    "audit/SOL-025/integrity-execution.json": "f994171251ac4ec0b08b7bab9e546367a998c175c2d21d72a0ee241a664dd712",
+    "audit/SOL-025/integrity-self-tests.json": "82f64d92544f5b18b1c91f2ca92aa4aaaf0d25e131d22fc95c64e53af48a9763",
+    "audit/SOL-025/integrity_probes.py": "1d59de3603093feb4e71d816508c9260d01b1376481b730e98dfa39ac32ed44c",
+    "audit/SOL-025/task-binding.json": "439bd97e38ca448bc957e03eb3bb406092deccc8dbe2988f7937142a2bb5a605",
+    "audit/SOL-025/verification-create-001.json": "51c6bf6fc6494dc3beca5cc9f947b3cbae6b12cd0d31f36aa4b9ba692c05de9e",
+    "audit/SOL-025/verification-create-002.json": "9235a00e9aa6640e6e5c883b25630b27e5c1df76dec2c91f68fd304b45b52f52",
+    "audit/SOL-025/verification-create-003.json": "6b0035934b3a88c89244469f3f2ee992fccbd18492925a570134fff59e2c7463",
+    "audit/SOL-025/verification-create-004.json": "934f51a3670e4942b8430e73945d91b8e157e90d7a5c3ff574e197da78f4d548",
+    "audit/SOL-025/verification-create-005.json": "8a8fa882267471872dea9ce4c43a9a744dd54bf7831cd49e2ad1c93e0e8e1893",
+    "audit/SOL-025/verification-read-only-check.json": "081224a054dc4d946e5b69602761cfa2f50a74c067c030ed0f2454be1c76c457",
+    "audit/SOL-025/verification-trial-004-source.json": "e98bc106d2d5666cb2af1c1c00f5d78f453455911a3bef9880d19e98796f3c34",
+    "audit/SOL-025/verification-trial-004.json": "0fc8bd771c3e60d4b7db3ecab4fd9274c2eaf74f74b2f3634063cd3e1d29da12",
+    "audit/SOL-025/verification.json": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+    "audit/SOL-025/verify.py": "4dbbfc234c45efa75e9993a4ac84b1381f86c0aadd9f1d8f073e72b762b4b023",
+    "src/safeinvest/policy_cases.py": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7",
+    "tests/test_policy_cases.py": "54fd55aa9d4b7e31df3dd44aac9b01317c77f2040cdcd1a960d9bb8516115114"
+  },
+  "artifact_manifest_exclusion": "This findings file excludes its own hash. verification.json likewise does not contain its own hash."
+}

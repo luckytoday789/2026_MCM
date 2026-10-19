@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-025",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "selftest_source_sha256": "1d59de3603093feb4e71d816508c9260d01b1376481b730e98dfa39ac32ed44c",
+  "original_sha256": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+  "probes": [
+    {
+      "label": "number",
+      "mutation": {
+        "path": [
+          "numeric",
+          "forced_scalar_facts",
+          "terminal_real_wealth"
+        ],
+        "operation": "replace",
+        "old": 100.74000480000004,
+        "new": 101.74000480000004
+      },
+      "scratch_before_sha256": "f42b3f643fd1a3e6848a2dd83e283526ad95fd6f8c18878d4be57b95bbd95ab5",
+      "scratch_after_sha256": "f42b3f643fd1a3e6848a2dd83e283526ad95fd6f8c18878d4be57b95bbd95ab5",
+      "original_before_sha256": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+      "original_after_sha256": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+      "scratch_unchanged": true,
+      "original_unchanged": true,
+      "command": {
+        "argv": [
+          "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+          "-B",
+          "audit/SOL-025/verify.py",
+          "--check",
+          "--evidence",
+          "E:\\2026_MCM\\sol-coop\\.runtime\\tmp\\sol025-number-htmn4qyv\\corrupt.json"
+        ],
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 379, in <module>\n    main()\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 364, in main\n    strict(saved, expected)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 77, in strict\n    require(math.isclose(actual, expected, rel_tol=1e-12, abs_tol=0),\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 34, in require\n    raise AssertionError(message)\nAssertionError: number mismatch at $.numeric.forced_scalar_facts.terminal_real_wealth: (101.74000480000004, 100.74000480000004)\n",
+        "seconds": 19.21899999998277,
+        "pythonpath_present": false
+      },
+      "reconstruction": "Deep copy verification.json; apply mutation; json.dumps(indent=2, allow_nan=True) plus LF; nonfinite replaces value with float(inf)."
+    },
+    {
+      "label": "source_hash",
+      "mutation": {
+        "path": [
+          "identity",
+          "source_sha256_lf",
+          "src/safeinvest/accounting.py"
+        ],
+        "operation": "replace",
+        "old": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+        "new": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "scratch_before_sha256": "b58422d9eae67b47bed01a0902fafc850223b1c8c1af916a460d2263b6ee6c25",
+      "scratch_after_sha256": "b58422d9eae67b47bed01a0902fafc850223b1c8c1af916a460d2263b6ee6c25",
+      "original_before_sha256": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+      "original_after_sha256": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+      "scratch_unchanged": true,
+      "original_unchanged": true,
+      "command": {
+        "argv": [
+          "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+          "-B",
+          "audit/SOL-025/verify.py",
+          "--check",
+          "--evidence",
+          "E:\\2026_MCM\\sol-coop\\.runtime\\tmp\\sol025-source_hash-m9ohib70\\corrupt.json"
+        ],
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 379, in <module>\n    main()\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 364, in main\n    strict(saved, expected)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 80, in strict\n    require(actual == expected, 'value mismatch at ' + path)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 34, in require\n    raise AssertionError(message)\nAssertionError: value mismatch at $.identity.source_sha256_lf.src/safeinvest/accounting.py\n",
+        "seconds": 19.21899999998277,
+        "pythonpath_present": false
+      },
+      "reconstruction": "Deep copy verification.json; apply mutation; json.dumps(indent=2, allow_nan=True) plus LF; nonfinite replaces value with float(inf)."
+    },
+    {
+      "label": "tiny_fee_zero",
+      "mutation": {
+        "path": [
+          "numeric",
+          "tiny_fee_facts",
+          "fee"
+        ],
+        "operation": "replace",
+        "old": 2.91271096747931e-15,
+        "new": 0.0
+      },
+      "scratch_before_sha256": "d6bbdcb242d9a4931caabdf4bfbf923527499c2cd4901242293bef4a55608a8a",
+      "scratch_after_sha256": "d6bbdcb242d9a4931caabdf4bfbf923527499c2cd4901242293bef4a55608a8a",
+      "original_before_sha256": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+      "original_after_sha256": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+      "scratch_unchanged": true,
+      "original_unchanged": true,
+      "command": {
+        "argv": [
+          "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+          "-B",
+          "audit/SOL-025/verify.py",
+          "--check",
+          "--evidence",
+          "E:\\2026_MCM\\sol-coop\\.runtime\\tmp\\sol025-tiny_fee_zero-yslh40xf\\corrupt.json"
+        ],
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 379, in <module>\n    main()\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 364, in main\n    strict(saved, expected)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 77, in strict\n    require(math.isclose(actual, expected, rel_tol=1e-12, abs_tol=0),\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 34, in require\n    raise AssertionError(message)\nAssertionError: number mismatch at $.numeric.tiny_fee_facts.fee: (0.0, 2.91271096747931e-15)\n",
+        "seconds": 19.56299999996554,
+        "pythonpath_present": false
+      },
+      "reconstruction": "Deep copy verification.json; apply mutation; json.dumps(indent=2, allow_nan=True) plus LF; nonfinite replaces value with float(inf)."
+    },
+    {
+      "label": "missing_key",
+      "mutation": {
+        "path": [
+          "numeric",
+          "forced_scalar_facts",
+          "fee_sum"
+        ],
+        "operation": "delete",
+        "old": 0.059995000000000014,
+        "new": null
+      },
+      "scratch_before_sha256": "12f16457a3f62a5d2b174527af1141ceff6420bd9f9ded3f7e1a2e1885b81190",
+      "scratch_after_sha256": "12f16457a3f62a5d2b174527af1141ceff6420bd9f9ded3f7e1a2e1885b81190",
+      "original_before_sha256": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+      "original_after_sha256": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+      "scratch_unchanged": true,
+      "original_unchanged": true,
+      "command": {
+        "argv": [
+          "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+          "-B",
+          "audit/SOL-025/verify.py",
+          "--check",
+          "--evidence",
+          "E:\\2026_MCM\\sol-coop\\.runtime\\tmp\\sol025-missing_key-5lvn4ju9\\corrupt.json"
+        ],
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 379, in <module>\n    main()\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 364, in main\n    strict(saved, expected)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 68, in strict\n    require(set(actual) == set(expected), 'keys mismatch at ' + path)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 34, in require\n    raise AssertionError(message)\nAssertionError: keys mismatch at $.numeric.forced_scalar_facts\n",
+        "seconds": 19.71899999998277,
+        "pythonpath_present": false
+      },
+      "reconstruction": "Deep copy verification.json; apply mutation; json.dumps(indent=2, allow_nan=True) plus LF; nonfinite replaces value with float(inf)."
+    },
+    {
+      "label": "nonfinite",
+      "mutation": {
+        "path": [
+          "numeric",
+          "forced_scalar_facts",
+          "fee_sum"
+        ],
+        "operation": "nonfinite",
+        "old": 0.059995000000000014,
+        "new": "Infinity"
+      },
+      "scratch_before_sha256": "daeb131508eb399218fa5fad7beafcf0d76043eae40c389f782c2d0c625d6010",
+      "scratch_after_sha256": "daeb131508eb399218fa5fad7beafcf0d76043eae40c389f782c2d0c625d6010",
+      "original_before_sha256": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+      "original_after_sha256": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+      "scratch_unchanged": true,
+      "original_unchanged": true,
+      "command": {
+        "argv": [
+          "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+          "-B",
+          "audit/SOL-025/verify.py",
+          "--check",
+          "--evidence",
+          "E:\\2026_MCM\\sol-coop\\.runtime\\tmp\\sol025-nonfinite-5548g6hc\\corrupt.json"
+        ],
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 379, in <module>\n    main()\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 361, in main\n    saved = load_bytes(before) if args.check else None\n            ^^^^^^^^^^^^^^^^^^\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 62, in load_bytes\n    return json.loads(data, parse_constant=reject_constant, object_pairs_hook=unique_object)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\\u5218\u5965\u534e\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\__init__.py\", line 359, in loads\n    return cls(**kw).decode(s)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\\u5218\u5965\u534e\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\decoder.py\", line 338, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\\u5218\u5965\u534e\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\decoder.py\", line 354, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 50, in reject_constant\n    raise ValueError('nonfinite JSON number: ' + value)\nValueError: nonfinite JSON number: Infinity\n",
+        "seconds": 0.3130000000237487,
+        "pythonpath_present": false
+      },
+      "reconstruction": "Deep copy verification.json; apply mutation; json.dumps(indent=2, allow_nan=True) plus LF; nonfinite replaces value with float(inf)."
+    },
+    {
+      "label": "wrong_type",
+      "mutation": {
+        "path": [
+          "regression",
+          "tests_run"
+        ],
+        "operation": "replace",
+        "old": 90,
+        "new": true
+      },
+      "scratch_before_sha256": "9dba9e2c0c12014b21f0c983f75db18256cdfa19e67ce0ae13f6ea7c00f9dce2",
+      "scratch_after_sha256": "9dba9e2c0c12014b21f0c983f75db18256cdfa19e67ce0ae13f6ea7c00f9dce2",
+      "original_before_sha256": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+      "original_after_sha256": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+      "scratch_unchanged": true,
+      "original_unchanged": true,
+      "command": {
+        "argv": [
+          "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+          "-B",
+          "audit/SOL-025/verify.py",
+          "--check",
+          "--evidence",
+          "E:\\2026_MCM\\sol-coop\\.runtime\\tmp\\sol025-wrong_type-a_a2r74w\\corrupt.json"
+        ],
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 379, in <module>\n    main()\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 364, in main\n    strict(saved, expected)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 66, in strict\n    require(type(actual) is type(expected), 'type mismatch at ' + path)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 34, in require\n    raise AssertionError(message)\nAssertionError: type mismatch at $.regression.tests_run\n",
+        "seconds": 18.875,
+        "pythonpath_present": false
+      },
+      "reconstruction": "Deep copy verification.json; apply mutation; json.dumps(indent=2, allow_nan=True) plus LF; nonfinite replaces value with float(inf)."
+    },
+    {
+      "label": "extra_key",
+      "mutation": {
+        "path": [
+          "unexpected"
+        ],
+        "operation": "replace",
+        "old": null,
+        "new": 1
+      },
+      "scratch_before_sha256": "d13cfb3e056ce9c1a5e508732f8674026f9560a4f81fe8518e25e9072325ab6f",
+      "scratch_after_sha256": "d13cfb3e056ce9c1a5e508732f8674026f9560a4f81fe8518e25e9072325ab6f",
+      "original_before_sha256": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+      "original_after_sha256": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+      "scratch_unchanged": true,
+      "original_unchanged": true,
+      "command": {
+        "argv": [
+          "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+          "-B",
+          "audit/SOL-025/verify.py",
+          "--check",
+          "--evidence",
+          "E:\\2026_MCM\\sol-coop\\.runtime\\tmp\\sol025-extra_key-qrd4r13w\\corrupt.json"
+        ],
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 379, in <module>\n    main()\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 364, in main\n    strict(saved, expected)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 68, in strict\n    require(set(actual) == set(expected), 'keys mismatch at ' + path)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 34, in require\n    raise AssertionError(message)\nAssertionError: keys mismatch at $\n",
+        "seconds": 19.030999999959022,
+        "pythonpath_present": false
+      },
+      "reconstruction": "Deep copy verification.json; apply mutation; json.dumps(indent=2, allow_nan=True) plus LF; nonfinite replaces value with float(inf)."
+    }
+  ],
+  "exclusive_create_rejection": {
+    "argv": [
+      "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+      "-B",
+      "audit/SOL-025/verify.py",
+      "--create"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 379, in <module>\n    main()\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 354, in main\n    require(not args.evidence.exists(), 'exclusive create: evidence already exists')\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 34, in require\n    raise AssertionError(message)\nAssertionError: exclusive create: evidence already exists\n",
+    "seconds": 0.26600000000325963,
+    "pythonpath_present": false
+  },
+  "original_bytes_unchanged": true,
+  "scratch_policy": "Temporary scratch deleted only after before/after equality; exact scratch reconstructable from preserved original and minimal mutation."
+}

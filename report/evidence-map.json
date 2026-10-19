@@ -195,7 +195,7 @@
       "reviewed_commit": "ea2569d4624dc86d68861446610ba08548de121f",
       "path": "audit/chief/SOL-023-failure-review.json",
       "successor_task": "SOL-025",
-      "successor_state": "published_ready_or_running_not_accepted",
+      "successor_state": "accepted_separately_SOL-025_original_failure_preserved",
       "competition_outcomes_computed": false,
       "scope": "Standalone test import failure reproduced. Exact failed branch and all trial evidence preserved; numeric replay alone does not satisfy prescribed acceptance."
     },
@@ -206,6 +206,14 @@
       "generator": "report/build_policy_catalogue.py",
       "source_commit": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
       "scope": "Source-derived five target rows, five pre-outcome eligibility rows and four promotion gates; report wording still awaits final manuscript review. No policy outcomes or assignments."
+    },
+    "POLICY_CASE_ACCEPTANCE": {
+      "state": "accepted_implementation",
+      "path": "audit/chief/SOL-025-review.json",
+      "task_id": "SOL-025",
+      "reviewed_commit": "803b7a085284405ee5ee4d4f0d5720ebaa2e67f7",
+      "source_path": "src/safeinvest/policy_cases.py",
+      "scope": "Pure case tables on explicit generated fixtures; no writer/input authentication or outcomes approval."
     }
   },
   "requirements": [
@@ -253,10 +261,11 @@
         "POLICY_PROPOSAL",
         "POLICY_KERNEL_PROTOTYPE",
         "POLICY_CALIBRATION_PROTOTYPE",
-        "POLICY_DESIGN_CATALOGUE"
+        "POLICY_DESIGN_CATALOGUE",
+        "POLICY_CASE_ACCEPTANCE"
       ],
       "state": "accepted_design",
-      "remaining": "V2 design, corrected kernel, calibration and pure analysis accepted (SOL-013/SOL-021/SOL-022/SOL-016). SOL-023 failed standalone test discovery; SOL-025 narrow repair is running. Writer, fixed development results and independent outcome acceptance remain required."
+      "remaining": "V2 design, corrected kernel, calibration, pure analysis and case builder accepted (SOL-013/SOL-021/SOL-022/SOL-016/SOL-025). Failed SOL-023 retained. Writer, fixed development results and independent numerical review remain required."
     },
     {
       "id": "R05",
@@ -295,10 +304,11 @@
         "POLICY_PROPOSAL",
         "POLICY_KERNEL_PROTOTYPE",
         "POLICY_CALIBRATION_PROTOTYPE",
-        "POLICY_CASE_FAILED_ATTEMPT"
+        "POLICY_CASE_FAILED_ATTEMPT",
+        "POLICY_CASE_ACCEPTANCE"
       ],
       "state": "accepted_design",
-      "remaining": "V2 design, corrected kernel, calibration and pure analysis accepted (SOL-013/SOL-021/SOL-022/SOL-016). SOL-023 failed prescribed standalone test entry; SOL-025 repair awaits exact receipt and acceptance. Writer, fixed development runs and independent numerical acceptance remain required."
+      "remaining": "V2 design, corrected kernel, calibration, pure analysis and case builder accepted (SOL-013/SOL-021/SOL-022/SOL-016/SOL-025). Failed SOL-023 retained. Writer, fixed development results and independent numerical review remain required."
     },
     {
       "id": "R07",

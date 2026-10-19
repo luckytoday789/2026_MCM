@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T19:58:37.429616+00:00",
+  "status": "integration_preflight_corrected",
+  "failed_check": "Raw checkout SHA256 compared with canonical Git receipt for audit/SOL-025/implementation.md",
+  "effect": "Preflight stopped before staging/commit/push. No worker source or evidence modified.",
+  "diagnosis": "Markdown checkout uses CRLF through Git attributes; receipt explicitly hashes canonical Git bytes. Validate staged Git blobs against exact receipt instead.",
+  "integrated_main_read_only_verifier": {
+    "exit_code": 0,
+    "tests": 90,
+    "comparisons": 13976,
+    "evidence_sha256": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04"
+  }
+}

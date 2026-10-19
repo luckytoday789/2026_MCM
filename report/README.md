@@ -93,9 +93,10 @@ authorized by this plan.
 - SOL-013 approved the corrected design and SOL-021 closed K2 after independent
   chief checks. Pure analysis SOL-016 and calibration SOL-022 are accepted.
   SOL-023 failed its prescribed standalone test command and remains unaccepted;
-  its exact code and negative evidence are preserved. SOL-025 repairs only the
-  portable test entry and produces fresh synthetic verification. Case acceptance,
-  writer implementation and actual policy outcomes remain pending. Personalized
+  its exact code and negative evidence are preserved. SOL-025 was separately
+  accepted at 803b7a085284405ee5ee4d4f0d5720ebaa2e67f7 after clean-environment
+  replay, independent numerical checks and corruption rejection. Writer
+  implementation and actual policy outcomes remain pending. Personalized
   design is approved by SOL-020, with implementation/outcomes still unreviewed.
   Preserve old negative verdicts, quota failures and cancelled tasks;
   do not rerun accepted HY3-003 or treat synthetic checks as policy outcomes.

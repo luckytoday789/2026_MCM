@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-025",
+  "pythonpath_removal": "Fresh driver copies os.environ and explicitly removes every case-insensitive PYTHONPATH key before subprocess.run; no parent environment/config is edited.",
+  "validation_commands": [
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_policy_cases.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_aliases_mutation_fresh_state_and_no_io (test_policy_cases.CaseTests.test_aliases_mutation_fresh_state_and_no_io) ... ok\ntest_all_modes_fees_schema_keys_counts_and_links (test_policy_cases.CaseTests.test_all_modes_fees_schema_keys_counts_and_links) ... ok\ntest_calibration_membership_and_actual_prior_shape_rejections (test_policy_cases.CaseTests.test_calibration_membership_and_actual_prior_shape_rejections) ... ok\ntest_context_history_mass_and_independent_scalar_ce (test_policy_cases.CaseTests.test_context_history_mass_and_independent_scalar_ce) ... ok\ntest_deferred_persistence_and_prefix_deployment (test_policy_cases.CaseTests.test_deferred_persistence_and_prefix_deployment) ... ok\ntest_exact_locations_and_no_epsilon_severe_tie (test_policy_cases.CaseTests.test_exact_locations_and_no_epsilon_severe_tie) ... ok\ntest_once_at_max_horizon_and_distinct_callbacks (test_policy_cases.CaseTests.test_once_at_max_horizon_and_distinct_callbacks) ... ok\ntest_prefix_direct_runs_and_future_perturbations (test_policy_cases.CaseTests.test_prefix_direct_runs_and_future_perturbations) ... ok\ntest_rational_baselines_and_severe_locations (test_policy_cases.CaseTests.test_rational_baselines_and_severe_locations) ... ok\ntest_rational_initial_fee_and_growth (test_policy_cases.CaseTests.test_rational_initial_fee_and_growth) ... ok\ntest_real_tiny_executed_target_change (test_policy_cases.CaseTests.test_real_tiny_executed_target_change) ... ok\ntest_refusal_before_computation_and_true_split_guard (test_policy_cases.CaseTests.test_refusal_before_computation_and_true_split_guard) ... ok\ntest_review_lag_nulls_and_prefix_no_future_latch (test_policy_cases.CaseTests.test_review_lag_nulls_and_prefix_no_future_latch) ... ok\ntest_schema_keys_factors_horizons_and_splits_rejected (test_policy_cases.CaseTests.test_schema_keys_factors_horizons_and_splits_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 8.193s\n\nOK\n",
+      "seconds": 8.702999999979511,
+      "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "executable": "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+      "pythonpath_present": false,
+      "removed_keys": []
+    },
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "audit/SOL-025/verify.py",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "{\"task_id\": \"SOL-025\", \"read_only\": true, \"regression_tests\": 90, \"focused_tests\": 14, \"independent_comparisons\": 13976, \"imported_sources\": {\"safeinvest\": {\"path\": \"src/safeinvest/__init__.py\", \"sha256\": \"b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef\"}, \"safeinvest.accounting\": {\"path\": \"src/safeinvest/accounting.py\", \"sha256\": \"0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5\"}, \"safeinvest.backtest\": {\"path\": \"src/safeinvest/backtest.py\", \"sha256\": \"bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6\"}, \"safeinvest.baselines\": {\"path\": \"src/safeinvest/baselines.py\", \"sha256\": \"a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce\"}, \"safeinvest.experiments\": {\"path\": \"src/safeinvest/experiments.py\", \"sha256\": \"8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca\"}, \"safeinvest.metrics\": {\"path\": \"src/safeinvest/metrics.py\", \"sha256\": \"efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e\"}, \"safeinvest.policy_analysis\": {\"path\": \"src/safeinvest/policy_analysis.py\", \"sha256\": \"e94a5ef79a2f58f231a46bd2af01020dd09847d27bdbe74f1795ba032dd8d345\"}, \"safeinvest.policy_calibration\": {\"path\": \"src/safeinvest/policy_calibration.py\", \"sha256\": \"d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a\"}, \"safeinvest.policy_cases\": {\"path\": \"src/safeinvest/policy_cases.py\", \"sha256\": \"84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7\"}, \"safeinvest.policy_pilot\": {\"path\": \"src/safeinvest/policy_pilot.py\", \"sha256\": \"5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057\"}}, \"evidence_sha256\": \"0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04\"}\n",
+      "stderr": "",
+      "seconds": 19.64100000000326,
+      "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "executable": "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+      "pythonpath_present": false,
+      "removed_keys": []
+    }
+  ],
+  "discovery_import_probe": {
+    "argv": [
+      "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-c",
+      "import json,pathlib,sys,unittest; suite=unittest.defaultTestLoader.discover('tests',pattern='test_policy_cases.py'); root=pathlib.Path.cwd().resolve(); modules={n:str(pathlib.Path(m.__file__).resolve()) for n,m in sys.modules.items() if n=='safeinvest' or n.startswith('safeinvest.')}; assert suite.countTestCases()==14; assert modules; assert all(pathlib.Path(p).is_relative_to(root/'src'/'safeinvest') for p in modules.values()); print(json.dumps(dict(tests_discovered=suite.countTestCases(),modules=modules,python_version=sys.version)))"
+    ],
+    "returncode": 0,
+    "stdout": "{\"tests_discovered\": 14, \"modules\": {\"safeinvest.accounting\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-025-a1\\\\src\\\\safeinvest\\\\accounting.py\", \"safeinvest.metrics\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-025-a1\\\\src\\\\safeinvest\\\\metrics.py\", \"safeinvest.backtest\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-025-a1\\\\src\\\\safeinvest\\\\backtest.py\", \"safeinvest\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-025-a1\\\\src\\\\safeinvest\\\\__init__.py\", \"safeinvest.baselines\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-025-a1\\\\src\\\\safeinvest\\\\baselines.py\", \"safeinvest.policy_pilot\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-025-a1\\\\src\\\\safeinvest\\\\policy_pilot.py\", \"safeinvest.policy_calibration\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-025-a1\\\\src\\\\safeinvest\\\\policy_calibration.py\", \"safeinvest.experiments\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-025-a1\\\\src\\\\safeinvest\\\\experiments.py\", \"safeinvest.policy_cases\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-025-a1\\\\src\\\\safeinvest\\\\policy_cases.py\"}, \"python_version\": \"3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]\"}\n",
+    "stderr": "",
+    "seconds": 0.5,
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+    "pythonpath_present": false,
+    "removed_keys": []
+  }
+}

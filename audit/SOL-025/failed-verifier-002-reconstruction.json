@@ -1,0 +1,9 @@
+{
+  "source": "failed-verifier-001.py",
+  "replace_all": [
+    "result.metrics.terminal_real_wealth",
+    "result.metrics.final_real_wealth"
+  ],
+  "result_sha256": "a669e6e5a43c667e4f79a068fd1a8b8dba6bb8dfe70d15b3bc223edab9a6dbd5",
+  "failure": "PerformanceMetrics has no terminal wealth field; terminal value belongs to final ledger entry."
+}

@@ -1,0 +1,9 @@
+{
+  "source": "failed-verifier-001.py",
+  "replace_all": [
+    "result.metrics.terminal_real_wealth",
+    "result.ledger[-1].real_wealth_end"
+  ],
+  "result_sha256": "792c514a51e6ab71a33692a213096100d6607a8df38cb84c54db4595ee909408",
+  "failure": "Rational zero-transfer ideal differs from binary64 equal-weight rounding; requires explicit bounded transfer-roundoff accounting, while actual fee equality and saved-evidence checks keep zero absolute floor."
+}

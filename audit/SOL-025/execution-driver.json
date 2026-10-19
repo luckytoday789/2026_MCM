@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "language": "Python 3.12",
+  "driver_source": "import os,sys,subprocess,time,json; e=dict(os.environ); removed=[k for k in e if k.upper()==\"PYTHONPATH\"]; [e.pop(k) for k in removed]; a=[sys.executable]+sys.argv[1:]; t=time.monotonic(); p=subprocess.run(a,env=e,capture_output=True,text=True); print(json.dumps(dict(argv=a,returncode=p.returncode,stdout=p.stdout,stderr=p.stderr,seconds=time.monotonic()-t,python_version=sys.version,executable=sys.executable,pythonpath_present=any(k.upper()==\"PYTHONPATH\" for k in e),removed_keys=removed)))",
+  "driver_sha256_utf8": "d86fe2e065452a7e1ea6970336b86e335438fcce8f4581212256eab8733c40f6",
+  "invocation": [
+    "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+    "-B",
+    "-c",
+    "<driver_source>",
+    "<exact validation command arguments after {python}>"
+  ],
+  "effect": "Copies environment and removes every case-insensitive PYTHONPATH key before fresh subprocess execution; does not mutate parent environment or repository configuration."
+}

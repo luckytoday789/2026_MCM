@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+    "-B",
+    "audit/SOL-025/integrity_probes.py"
+  ],
+  "returncode": 0,
+  "stdout": "{\"probes\": 7, \"rejected\": 7, \"original_bytes_unchanged\": true}\n",
+  "stderr": "",
+  "seconds": 58.73399999999674,
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+  "pythonpath_present": false,
+  "removed_keys": []
+}

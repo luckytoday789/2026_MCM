@@ -1,12 +1,10 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T04:18:12.590523+08:00",
-  "reason": "SOL-023 failed parent import validation; exact failure preserved and independently diagnosed. SOL-025 is running on its remote lease, no receipt yet. Writer successor gate/task-publication binding and source-derived report tables are prepared; immediate next integration requires the exact remote repair result.",
+  "next_wake_at": "2026-10-20T04:02:41.588940+08:00",
+  "reason": "SOL-025 exact repair accepted after fresh independent checks. Push acceptance source before publishing the prepared bounded writer task SOL-026.",
   "next_actions": [
-    "Fetch SOL-025 exact receipt/status. Validate immutable task/base/26 pins, allowed paths, canonical artifact hashes, source unchanged from quarantined 84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7 unless an explicitly diagnosed fix exists, fresh evidence and actual parent commands. Inspect the test bootstrap and independent verifier. Recompute read-only and check clean-environment execution before acceptance; SOL-023 remains failed.",
-    "If SOL-025 passes, integrate only reviewed exact paths, record reviewed commit and push acceptance first. Independently compare chief case_reference.py or reuse exact-source 3310 comparisons with explicit identity evidence; new task receipt/evidence still need review. Do not recreate SOL-023 or an already submitted SOL-025.",
-    "Then publish a bounded writer-only Sol implementation/review task with the real accepted pushed base. Pin POLICY_RESULT_WRITER.md, POLICY_WRITER_COMPATIBILITY.md, POLICY_WRITER_ACCEPTANCE_REFERENCES.md, POLICY_WRITER_EXECUTION_CONFIG.md and new POLICY_WRITER_TASK_BINDING.md, accepted case/kernel/calibration/analysis sources and chief writer references. Have Sol challenge the task P versus source C/config E binding and CSV type conventions. Allowed writer module/CLI/test/audit only; no production or analysis assembly.",
+    "Commit/push accepted SOL-025 integration first; then publish SOL-026 writer-only implementation and independent design challenge using the real pushed base. The local prepared generator is .runtime/dispatch_sol026.py and refuses an unpushed base.",
     "After positive writer acceptance and pushed source C, create and push fixed development execution config E, then publish HY3 kind=commands tasks with exact params/output/budgets. Primary computes five policies and imports HY3-003; doubled computes eight. Never rerun HY3-003. Measure runtime/size; independent exact-commit Sol reviews precede result acceptance.",
     "After accepted 16-case outputs, assemble/review analysis and selection; implement/review own-horizon/tolerance adapter with explicit no-run/null conventions. Then accepted all-development refit/final implementation and recorded freeze gates, without final tuning.",
     "Report workbench now includes source-derived policy-catalogue.md/provenance with --check; no strategy outcomes or customer recommendations were added. Continue final English report only with accepted outcomes, independent manuscript review, render QA and <=50MB supplement. Identities stay local; humans submit.",
@@ -16,6 +14,6 @@
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T03:48:12.590523+08:00",
+  "last_completed_at": "2026-10-20T03:57:41.588940+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

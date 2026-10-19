@@ -1,0 +1,396 @@
+{
+  "task_id": "SOL-025",
+  "reviewed_commit": "803b7a085284405ee5ee4d4f0d5720ebaa2e67f7",
+  "base_commit": "a065805163f01eeffd73ca0ea5ac420454493a94",
+  "task_sha256": "1fc31a691142f171b96d9790c5aa32ad298531fb66250641eb5a727acc0174e1",
+  "branch": "work/sol/SOL-025-a1",
+  "structural_checks": "passed",
+  "source_hashes_checked": {
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "specs/policy_driver_layout_v2.json": "f431e661c260f7f6e40330661e77724dc3ddcafeafed1a3f0b6c31781a4e8329",
+    "specs/POLICY_CASE_ENGINE.md": "c984e230eecb720613b864a910d95921af1aa805f79fa68c7044f905410dec62",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+    "src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+    "src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+    "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+    "src/safeinvest/policy_calibration.py": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+    "specs/POLICY_CORRECTION_V2.md": "b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383",
+    "specs/POLICY_NUMERIC_K1.md": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+    "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+    "specs/POLICY_NUMERIC_K2.md": "88d5f58a59f090c25331392e4cd5682daf5d050c27b24afe6629d8e4a5eb9997",
+    "audit/chief/SOL-017-review.json": "ec9dcc7fd084954827cfdf82bf1826e17ddd8c9b3fbece15058760fedef3d4b9",
+    "specs/POLICY_CASE_REPAIR.md": "1b728ca6c59fcec296157ef9e3df23cdaedca8c651aa56548e6e80eef58b9ae3",
+    "audit/chief/quarantine/SOL-023/src/safeinvest/policy_cases.py": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7",
+    "audit/chief/quarantine/SOL-023/tests/test_policy_cases.py": "cb22bc11db37ae5444c2c8a3a3103efb8571d1667d7e02612dd5dce54c9e3088",
+    "audit/chief/SOL-023-failure-review.json": "950c4eb26d1b7f4a7ede72c7ddf02fa4e78f04dde7eb12c27863c122d21a3a71",
+    "audit/chief/case_reference.py": "0418f2c00fb8f3a57ef4ceeee0ce4435fb113228bb14de68cd3d7afb3f18c405",
+    "audit/chief/case-reference.json": "8e207be8c4fa5e4fa274cf0d858c7ffef4b8cefa56ed64ab06ff72c6f80f1813",
+    "audit/chief/SOL-021-review.json": "105f8610edeebc1b17272b7450d3cdba29fa14d963407afd1665fc7caf640670",
+    "audit/chief/SOL-022-review.json": "9875dab72b4354566fe6067de94fabbb917c0b9c2344914a3f38c084f1042546"
+  },
+  "artifacts_sha256": {
+    "audit/SOL-025/clean-environment-checks.json": "9324165b32dfc8c035fc083337e7df23c9d34610a9f54aa42b53608cc6785247",
+    "audit/SOL-025/execution-driver.json": "df3d199622b9224684845da92543151e3b378e30bc9ce06d397a15ae8f97209f",
+    "audit/SOL-025/failed-verifier-001.py": "fd6e5620d1119413733025a3e7e80cc4482e0af5da89b698c0f0fd0423eb5eab",
+    "audit/SOL-025/failed-verifier-002-reconstruction.json": "7971fbdb3ef5b4a9226099e418414befa9c683c5613672026bb236caa48c13d7",
+    "audit/SOL-025/failed-verifier-003-reconstruction.json": "87cebe6eb041bb88bb38a3a6935852cd4c34134b1d03b0665566c0b2623f45cb",
+    "audit/SOL-025/findings.json": "497b3a9abbbce2eca94884f66d7868f38ff1dde2774548562b316872b4f44d6e",
+    "audit/SOL-025/focused-test-first.json": "12b3e6dad31bc6339a04bd161bdc2a879d082b26bb2d4ad4ed6360fd96bc5fc2",
+    "audit/SOL-025/implementation.md": "2aa27ffdb70200bad0911a8ff47734609642b01c76716f39955c899f379acfa5",
+    "audit/SOL-025/infrastructure-extra.json": "ac91b367c654ec8369c0935cf822798794f599de692b5413e43ce4ce747e7993",
+    "audit/SOL-025/infrastructure.json": "47fe07fbf3dab64a854d5384a05e734aef196748e8e0505ba483c82b95255862",
+    "audit/SOL-025/integrity-execution.json": "f994171251ac4ec0b08b7bab9e546367a998c175c2d21d72a0ee241a664dd712",
+    "audit/SOL-025/integrity-self-tests.json": "82f64d92544f5b18b1c91f2ca92aa4aaaf0d25e131d22fc95c64e53af48a9763",
+    "audit/SOL-025/integrity_probes.py": "1d59de3603093feb4e71d816508c9260d01b1376481b730e98dfa39ac32ed44c",
+    "audit/SOL-025/task-binding.json": "439bd97e38ca448bc957e03eb3bb406092deccc8dbe2988f7937142a2bb5a605",
+    "audit/SOL-025/verification-create-001.json": "51c6bf6fc6494dc3beca5cc9f947b3cbae6b12cd0d31f36aa4b9ba692c05de9e",
+    "audit/SOL-025/verification-create-002.json": "9235a00e9aa6640e6e5c883b25630b27e5c1df76dec2c91f68fd304b45b52f52",
+    "audit/SOL-025/verification-create-003.json": "6b0035934b3a88c89244469f3f2ee992fccbd18492925a570134fff59e2c7463",
+    "audit/SOL-025/verification-create-004.json": "934f51a3670e4942b8430e73945d91b8e157e90d7a5c3ff574e197da78f4d548",
+    "audit/SOL-025/verification-create-005.json": "8a8fa882267471872dea9ce4c43a9a744dd54bf7831cd49e2ad1c93e0e8e1893",
+    "audit/SOL-025/verification-read-only-check.json": "081224a054dc4d946e5b69602761cfa2f50a74c067c030ed0f2454be1c76c457",
+    "audit/SOL-025/verification-trial-004-source.json": "e98bc106d2d5666cb2af1c1c00f5d78f453455911a3bef9880d19e98796f3c34",
+    "audit/SOL-025/verification-trial-004.json": "0fc8bd771c3e60d4b7db3ecab4fd9274c2eaf74f74b2f3634063cd3e1d29da12",
+    "audit/SOL-025/verification.json": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+    "audit/SOL-025/verify.py": "4dbbfc234c45efa75e9993a4ac84b1381f86c0aadd9f1d8f073e72b762b4b023",
+    "handoff/SOL-025/check-0.txt": "5756b4bd401f2feef36fac10c0cbe41306e691f0cce31c4f77b9563e8900db25",
+    "handoff/SOL-025/check-1.txt": "507723be85d5f76e58cf07bf15f0fb4ccac6e917c338c0d379828e1dabfbc87d",
+    "handoff/SOL-025/check-2.txt": "2b2ddd9c2a128567aebc22e16b55350886fc09f7c2bcb371ddd4328e74d98d04",
+    "src/safeinvest/policy_cases.py": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7",
+    "tests/test_policy_cases.py": "54fd55aa9d4b7e31df3dd44aac9b01317c77f2040cdcd1a960d9bb8516115114"
+  },
+  "accepted_paths": [
+    "audit/SOL-025/clean-environment-checks.json",
+    "audit/SOL-025/execution-driver.json",
+    "audit/SOL-025/failed-verifier-001.py",
+    "audit/SOL-025/failed-verifier-002-reconstruction.json",
+    "audit/SOL-025/failed-verifier-003-reconstruction.json",
+    "audit/SOL-025/findings.json",
+    "audit/SOL-025/focused-test-first.json",
+    "audit/SOL-025/implementation.md",
+    "audit/SOL-025/infrastructure-extra.json",
+    "audit/SOL-025/infrastructure.json",
+    "audit/SOL-025/integrity-execution.json",
+    "audit/SOL-025/integrity-self-tests.json",
+    "audit/SOL-025/integrity_probes.py",
+    "audit/SOL-025/task-binding.json",
+    "audit/SOL-025/verification-create-001.json",
+    "audit/SOL-025/verification-create-002.json",
+    "audit/SOL-025/verification-create-003.json",
+    "audit/SOL-025/verification-create-004.json",
+    "audit/SOL-025/verification-create-005.json",
+    "audit/SOL-025/verification-read-only-check.json",
+    "audit/SOL-025/verification-trial-004-source.json",
+    "audit/SOL-025/verification-trial-004.json",
+    "audit/SOL-025/verification.json",
+    "audit/SOL-025/verify.py",
+    "handoff/SOL-025/check-0.txt",
+    "handoff/SOL-025/check-1.txt",
+    "handoff/SOL-025/check-2.txt",
+    "handoff/SOL-025/result.json",
+    "src/safeinvest/policy_cases.py",
+    "tests/test_policy_cases.py"
+  ],
+  "excluded_paths": [],
+  "receipt_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "prescribed_command_count": 2,
+  "schema_version": 1,
+  "checked_at": "2026-10-19T19:56:33.293735+00:00",
+  "decision": "accept_portable_case_engine_repair",
+  "code_verdict": "approve",
+  "implementation_sha256": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7",
+  "exact_clean_environment_commands": [
+    {
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_policy_cases.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 3.5939999999827705,
+      "stdout": "",
+      "stderr": "test_aliases_mutation_fresh_state_and_no_io (test_policy_cases.CaseTests.test_aliases_mutation_fresh_state_and_no_io) ... ok\ntest_all_modes_fees_schema_keys_counts_and_links (test_policy_cases.CaseTests.test_all_modes_fees_schema_keys_counts_and_links) ... ok\ntest_calibration_membership_and_actual_prior_shape_rejections (test_policy_cases.CaseTests.test_calibration_membership_and_actual_prior_shape_rejections) ... ok\ntest_context_history_mass_and_independent_scalar_ce (test_policy_cases.CaseTests.test_context_history_mass_and_independent_scalar_ce) ... ok\ntest_deferred_persistence_and_prefix_deployment (test_policy_cases.CaseTests.test_deferred_persistence_and_prefix_deployment) ... ok\ntest_exact_locations_and_no_epsilon_severe_tie (test_policy_cases.CaseTests.test_exact_locations_and_no_epsilon_severe_tie) ... ok\ntest_once_at_max_horizon_and_distinct_callbacks (test_policy_cases.CaseTests.test_once_at_max_horizon_and_distinct_callbacks) ... ok\ntest_prefix_direct_runs_and_future_perturbations (test_policy_cases.CaseTests.test_prefix_direct_runs_and_future_perturbations) ... ok\ntest_rational_baselines_and_severe_locations (test_policy_cases.CaseTests.test_rational_baselines_and_severe_locations) ... ok\ntest_rational_initial_fee_and_growth (test_policy_cases.CaseTests.test_rational_initial_fee_and_growth) ... ok\ntest_real_tiny_executed_target_change (test_policy_cases.CaseTests.test_real_tiny_executed_target_change) ... ok\ntest_refusal_before_computation_and_true_split_guard (test_policy_cases.CaseTests.test_refusal_before_computation_and_true_split_guard) ... ok\ntest_review_lag_nulls_and_prefix_no_future_latch (test_policy_cases.CaseTests.test_review_lag_nulls_and_prefix_no_future_latch) ... ok\ntest_schema_keys_factors_horizons_and_splits_rejected (test_policy_cases.CaseTests.test_schema_keys_factors_horizons_and_splits_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 3.293s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "audit/SOL-025/verify.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 11.078000000037719,
+      "stdout": "{\"task_id\": \"SOL-025\", \"read_only\": true, \"regression_tests\": 90, \"focused_tests\": 14, \"independent_comparisons\": 13976, \"imported_sources\": {\"safeinvest\": {\"path\": \"src/safeinvest/__init__.py\", \"sha256\": \"b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef\"}, \"safeinvest.accounting\": {\"path\": \"src/safeinvest/accounting.py\", \"sha256\": \"0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5\"}, \"safeinvest.backtest\": {\"path\": \"src/safeinvest/backtest.py\", \"sha256\": \"bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6\"}, \"safeinvest.baselines\": {\"path\": \"src/safeinvest/baselines.py\", \"sha256\": \"a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce\"}, \"safeinvest.experiments\": {\"path\": \"src/safeinvest/experiments.py\", \"sha256\": \"8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca\"}, \"safeinvest.metrics\": {\"path\": \"src/safeinvest/metrics.py\", \"sha256\": \"efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e\"}, \"safeinvest.policy_analysis\": {\"path\": \"src/safeinvest/policy_analysis.py\", \"sha256\": \"e94a5ef79a2f58f231a46bd2af01020dd09847d27bdbe74f1795ba032dd8d345\"}, \"safeinvest.policy_calibration\": {\"path\": \"src/safeinvest/policy_calibration.py\", \"sha256\": \"d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a\"}, \"safeinvest.policy_cases\": {\"path\": \"src/safeinvest/policy_cases.py\", \"sha256\": \"84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7\"}, \"safeinvest.policy_pilot\": {\"path\": \"src/safeinvest/policy_pilot.py\", \"sha256\": \"5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057\"}}, \"evidence_sha256\": \"0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04\"}\n",
+      "stderr": ""
+    }
+  ],
+  "PYTHONPATH_absent": true,
+  "worker_replayed_tests": 90,
+  "worker_replayed_comparisons": 13976,
+  "chief_corruption_rejections": [
+    {
+      "case": "wrong-number",
+      "mutated_path": [
+        "numeric",
+        "forced_scalar_facts",
+        "fee_sum"
+      ],
+      "original": 0.059995000000000014,
+      "changed": 1.0,
+      "exit_code": 1,
+      "scratch_sha256": "aacccd3e28ec2bcd3499686372e6fa78104b708630759f684ecbedb0302c3432",
+      "original_and_scratch_unchanged": true,
+      "stderr": "Traceback (most recent call last):\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 379, in <module>\n    main()\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 364, in main\n    strict(saved, expected)\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 77, in strict\n    require(math.isclose(actual, expected, rel_tol=1e-12, abs_tol=0),\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 34, in require\n    raise AssertionError(message)\nAssertionError: number mismatch at $.numeric.forced_scalar_facts.fee_sum: (1.0, 0.059995000000000014)\n"
+    },
+    {
+      "case": "wrong-source",
+      "mutated_path": [
+        "identity",
+        "source_sha256_lf",
+        "src/safeinvest/accounting.py"
+      ],
+      "original": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "changed": "0000000000000000000000000000000000000000000000000000000000000000",
+      "exit_code": 1,
+      "scratch_sha256": "6666e82c7ee7c62604a38f1964e28e13d0a5d890aed8b0c3477392d10c73da57",
+      "original_and_scratch_unchanged": true,
+      "stderr": "Traceback (most recent call last):\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 379, in <module>\n    main()\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 364, in main\n    strict(saved, expected)\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 80, in strict\n    require(actual == expected, 'value mismatch at ' + path)\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 34, in require\n    raise AssertionError(message)\nAssertionError: value mismatch at $.identity.source_sha256_lf.src/safeinvest/accounting.py\n"
+    },
+    {
+      "case": "tiny-fee-zero",
+      "mutated_path": [
+        "numeric",
+        "tiny_fee_facts",
+        "fee"
+      ],
+      "original": 2.91271096747931e-15,
+      "changed": 0.0,
+      "exit_code": 1,
+      "scratch_sha256": "c85f73738fbc17b7e476efc04b6ef3723fc50f2dbfdbc7066d3c1ba59f590955",
+      "original_and_scratch_unchanged": true,
+      "stderr": "Traceback (most recent call last):\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 379, in <module>\n    main()\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 364, in main\n    strict(saved, expected)\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 70, in strict\n    strict(actual[key], expected[key], path + '.' + key)\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 77, in strict\n    require(math.isclose(actual, expected, rel_tol=1e-12, abs_tol=0),\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-025\\audit\\SOL-025\\verify.py\", line 34, in require\n    raise AssertionError(message)\nAssertionError: number mismatch at $.numeric.tiny_fee_facts.fee: (0.0, 2.91271096747931e-15)\n"
+    }
+  ],
+  "chief_independent_numeric_comparisons": 1920,
+  "chief_synthetic_cases": [
+    {
+      "mode": "conservative_cost",
+      "fee_rate": 0.0025,
+      "counts": {
+        "annual_ledgers": 24,
+        "scenario_metrics": 16,
+        "summary": 4,
+        "decisions": 24,
+        "target_scores": 12
+      },
+      "first_fee": "0"
+    },
+    {
+      "mode": "conservative_cost",
+      "fee_rate": 0.005,
+      "counts": {
+        "annual_ledgers": 24,
+        "scenario_metrics": 16,
+        "summary": 4,
+        "decisions": 24,
+        "target_scores": 12
+      },
+      "first_fee": "0"
+    },
+    {
+      "mode": "balanced_cost",
+      "fee_rate": 0.0025,
+      "counts": {
+        "annual_ledgers": 24,
+        "scenario_metrics": 16,
+        "summary": 4,
+        "decisions": 24,
+        "target_scores": 12
+      },
+      "first_fee": "0"
+    },
+    {
+      "mode": "balanced_cost",
+      "fee_rate": 0.005,
+      "counts": {
+        "annual_ledgers": 24,
+        "scenario_metrics": 16,
+        "summary": 4,
+        "decisions": 24,
+        "target_scores": 12
+      },
+      "first_fee": "0"
+    },
+    {
+      "mode": "growth_cost",
+      "fee_rate": 0.0025,
+      "counts": {
+        "annual_ledgers": 24,
+        "scenario_metrics": 16,
+        "summary": 4,
+        "decisions": 24,
+        "target_scores": 12
+      },
+      "first_fee": "0"
+    },
+    {
+      "mode": "growth_cost",
+      "fee_rate": 0.005,
+      "counts": {
+        "annual_ledgers": 24,
+        "scenario_metrics": 16,
+        "summary": 4,
+        "decisions": 24,
+        "target_scores": 12
+      },
+      "first_fee": "0"
+    },
+    {
+      "mode": "balanced_context",
+      "fee_rate": 0.0025,
+      "counts": {
+        "annual_ledgers": 24,
+        "scenario_metrics": 16,
+        "summary": 4,
+        "decisions": 24,
+        "target_scores": 12
+      },
+      "first_fee": "0"
+    },
+    {
+      "mode": "balanced_context",
+      "fee_rate": 0.005,
+      "counts": {
+        "annual_ledgers": 24,
+        "scenario_metrics": 16,
+        "summary": 4,
+        "decisions": 24,
+        "target_scores": 12
+      },
+      "first_fee": "0"
+    },
+    {
+      "mode": "balanced_adaptive",
+      "fee_rate": 0.0025,
+      "counts": {
+        "annual_ledgers": 24,
+        "scenario_metrics": 16,
+        "summary": 4,
+        "decisions": 24,
+        "target_scores": 12
+      },
+      "first_fee": "0"
+    },
+    {
+      "mode": "balanced_adaptive",
+      "fee_rate": 0.005,
+      "counts": {
+        "annual_ledgers": 24,
+        "scenario_metrics": 16,
+        "summary": 4,
+        "decisions": 24,
+        "target_scores": 12
+      },
+      "first_fee": "0"
+    },
+    {
+      "mode": "bills_keep",
+      "fee_rate": 0.0025,
+      "counts": {
+        "annual_ledgers": 24,
+        "scenario_metrics": 16,
+        "summary": 4,
+        "decisions": 0,
+        "target_scores": 0
+      },
+      "first_fee": "0"
+    },
+    {
+      "mode": "bills_keep",
+      "fee_rate": 0.005,
+      "counts": {
+        "annual_ledgers": 24,
+        "scenario_metrics": 16,
+        "summary": 4,
+        "decisions": 0,
+        "target_scores": 0
+      },
+      "first_fee": "0"
+    },
+    {
+      "mode": "equal_weight_annual",
+      "fee_rate": 0.0025,
+      "counts": {
+        "annual_ledgers": 24,
+        "scenario_metrics": 16,
+        "summary": 4,
+        "decisions": 0,
+        "target_scores": 0
+      },
+      "first_fee": "1/6"
+    },
+    {
+      "mode": "equal_weight_annual",
+      "fee_rate": 0.005,
+      "counts": {
+        "annual_ledgers": 24,
+        "scenario_metrics": 16,
+        "summary": 4,
+        "decisions": 0,
+        "target_scores": 0
+      },
+      "first_fee": "1/3"
+    },
+    {
+      "mode": "equal_weight_buy_hold",
+      "fee_rate": 0.0025,
+      "counts": {
+        "annual_ledgers": 24,
+        "scenario_metrics": 16,
+        "summary": 4,
+        "decisions": 0,
+        "target_scores": 0
+      },
+      "first_fee": "1/6"
+    },
+    {
+      "mode": "equal_weight_buy_hold",
+      "fee_rate": 0.005,
+      "counts": {
+        "annual_ledgers": 24,
+        "scenario_metrics": 16,
+        "summary": 4,
+        "decisions": 0,
+        "target_scores": 0
+      },
+      "first_fee": "1/3"
+    }
+  ],
+  "audit_and_source_bytes_unchanged": true,
+  "inherited_independent_evidence": {
+    "path": "audit/chief/SOL-023-failure-review.json",
+    "reviewed_commit": "ea2569d4624dc86d68861446610ba08548de121f",
+    "comparisons": 3310,
+    "case_source_identity_verified": true,
+    "scope": "Previously executed 3310 independent comparisons apply to identical case implementation bytes. Predecessor task remains failed; new receipt and commands separately validated."
+  },
+  "competition_outcomes_read": false,
+  "final_data_open": false,
+  "production_execution_authorized": false,
+  "limitations": [
+    "Writer source/configuration/input authentication and production outcome review remain separate.",
+    "No strategy benefit, customer assignment or final access is accepted."
+  ]
+}
