@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T23:06:45.150895+00:00",
+  "source_main_commit": "12fe14f72bb53a9237f2f1ca34fe2c422da89347",
+  "outcome": "writer_acceptance_preparation_checkpointed_at_local_budget_drain",
+  "task_preflight": {
+    "SOL-031": {
+      "task_sha256": "8c89a09bee28bf64ee78ee372e5481ad1efeca1ce75eddee1743838e3a6a9dc2",
+      "base_commit": "ade71e13e02f4c5655b7ad873297ea5fd8201040",
+      "state": "ready",
+      "source_pins_verified": 50,
+      "dependencies_accepted": true
+    },
+    "SOL-030": {
+      "task_sha256": "c164559e5fc86d5de16d7bf54679518a8941927a079f75364d174586263ac191",
+      "base_commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "state": "waiting",
+      "source_pins_verified": 31,
+      "dependencies_accepted": true
+    }
+  },
+  "observed_remote_status": {
+    "sol": {
+      "role": "sol",
+      "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
+      "state": "running",
+      "python": "3.12.14",
+      "updated_at": "2026-10-19T23:01:46.721101+00:00",
+      "lease_until": "2026-10-19T23:11:46.721101+00:00",
+      "task_id": "SOL-031"
+    },
+    "hy3": {
+      "role": "hy3",
+      "machine_id": "937a9358dc114be8b3718ff13e3da4f9",
+      "state": "idle",
+      "python": "3.12.10",
+      "updated_at": "2026-10-19T23:02:52.895918+00:00",
+      "lease_until": "2026-10-19T23:12:52.895918+00:00"
+    }
+  },
+  "SOL031_result_branch_present": false,
+  "prepared_helper": "audit/chief/review_sol031.py",
+  "helper_validation": {
+    "python": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+    "syntax": "passed",
+    "help_command": "passed",
+    "exact_delivery_replay": "not_run_no_receipt",
+    "independent_numerical_replay": "not_run_no_receipt",
+    "approval": "not_granted"
+  },
+  "local_budget": {
+    "remaining_percent": 50.0,
+    "checked_at": "2026-10-19T23:06:38.447894+00:00",
+    "drain_requested_at": "2026-10-19T23:05:34.430724+00:00",
+    "action": "checkpoint_current_work_then_exit"
+  },
+  "preservation": {
+    "published_tasks_unchanged": true,
+    "queue_unchanged": true,
+    "global_control_unchanged": true,
+    "remote_workers_restarted": false,
+    "local_STOP_written": false,
+    "competition_inputs_read": false,
+    "final_data_open": false
+  },
+  "next_steps": [
+    "After new explicit local resume authorization, inspect the latched budget and fresh quota first; ordinary wakeups cannot clear the drain.",
+    "Fetch SOL-031 exact receipt. Run review_sol031.py EXACT_SHA --output audit/chief/SOL-031-replay.json only after reading candidate source changes. The helper is preparation, not automatic acceptance. It creates preserved real detached worktrees and a new exclusive evidence file.",
+    "Review the original implementation/CLI/test diff, exact git-roundtrip-checks.json and clean-environment-checks.json, strict corruption evidence and source guards. Helper arithmetic and two-checkout replays must actually pass. Preserve failures and create a new output filename for any later trial.",
+    "Release existing SOL-030 promptly after successful SOL-031 submission with no fresh quota failure; do not recreate either task.",
+    "Only after positive writer acceptance publish source C, fixed execution config E and later immutable HY3 commands tasks. Independent result/analysis/personalized/final gates remain."
+  ]
+}

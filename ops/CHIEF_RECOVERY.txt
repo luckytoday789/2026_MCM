@@ -71,3 +71,32 @@ Sol independently review the small scheduler change alongside a suitable next
 review; do not make that review a prerequisite for unrelated development work.
 Report truthfully that 22:37–23:36 was idle due to the scheduling defect, not an
 hour of numerical calculation. Final data remain closed.
+
+
+Latest local budget checkpoint — 2026-10-19T23:06:45.150895+00:00
+
+Supervisor observed50% weekly remaining at2026-10-19T23:05:34.430724+00:00
+and latched .runtime/chief-budget-drain.json. This child checkpoints and exits;
+parent handles the local stop. Do not clear markers, restart supervisor/workers,
+write STOP while active, or pause/complete the global project. A new explicit
+user resume authorization is required; the fresh workplan timer cannot override
+the latched drain. Private team information remains local under the earlier
+upload restriction above.
+
+Main at turn start:12fe14f72bb53a9237f2f1ca34fe2c422da89347; clean/synced.
+No SOL-031 result branch at final fetch; latest observed Sol lease is23:01:46 UTC
+to23:11:46 running SOL-031. SOL-030 remains existing waiting task. Both immutable
+task hashes/source pins/dependencies pass preflight; no task/queue mutation.
+
+Prepared audit/chief/review_sol031.py (syntax and --help only checked).
+No exact SOL-031 tests or independent arithmetic were executed because there is
+no delivery yet. On authorized resumption, inspect exact candidate code, use
+the helper with exact SHA and a fresh audit/chief output, inspect saved worker
+Git-roundtrip evidence and corruption guards, then decide manually. Preserve
+failed trials. Release existing SOL-030 after successful SOL-031 submission
+without a new quota failure. Only after positive writer acceptance publish
+C/E/task commits in order and dispatch fixed HY3 computation. Final stays shut.
+
+Full checkpoint:audit/chief/turn-20261020-budget-drain-writer-preparation.json.
+No current human-help request. Research remains unfinished; scheduled chief
+work is locally inhibited pending explicit resume authorization.
