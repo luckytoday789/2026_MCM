@@ -1,20 +1,19 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T03:58:13.610916+08:00",
-  "reason": "SOL-023 remains running with no published work branch/receipt at the last fetch; 18 immutable source pins and accepted dependencies revalidated. Prepared fixed writer configuration contract with separate accepted-code/configuration/task commits and independently checked group counts. Only the actual remote case-engine result remains on the immediate path; no policy execution or final access authorized.",
+  "next_wake_at": "2026-10-20T03:43:18.358122+08:00",
+  "reason": "SOL-023 exact failed receipt diagnosed and preserved; prerequisite repair specification and quarantined drafts prepared. Publish immutable SOL-025 after this prerequisite commit is pushed.",
   "next_actions": [
-    "Fetch SOL-023 exact receipt and status; validate immutable task/base/18 source pins, allowed paths, canonical artifact hashes, required outputs and actual commands. Inspect exact case code and replay saved checks read-only; independently compare audit/chief/case_reference.py before acceptance. No acceptance from status or self-report.",
-    "After SOL-023 acceptance is pushed, publish a bounded writer-only implementation task with that real pushed base. Pin POLICY_RESULT_WRITER.md, POLICY_WRITER_COMPATIBILITY.md, POLICY_WRITER_ACCEPTANCE_REFERENCES.md and new POLICY_WRITER_EXECUTION_CONFIG.md; pin accepted kernel/calibration/case sources and writer_reference.py/json. Have Sol examine the new config note for contradictions. No production or analysis assembly in this implementation task.",
-    "After positive writer acceptance, publish accepted code commit C, then fixed development execution config at later commit E, then immutable HY3 kind=commands task based on pushed E. Preserve C/config/task hash separation. Primary group computes five cases and imports exact HY3-003 three cases; doubled group computes eight. Keep max_seconds <=1500 per job and measure actual runtime/size. Never rerun HY3-003.",
-    "Give Sol targeted independent numerical review of each exact HY3 result commit before accepted 16-case analysis assembly/selection. Then implement/review personalized own-tolerance own-horizon adapter and explicit no-run null conventions; only then final refit, code review and recorded freeze gates.",
-    "Assemble and independently review the English <=10-page report and <=50MB supplement after accepted outcomes. Team identities remain local under CHIEF_RECOVERY restriction; humans submit.",
-    "Check local quota/drain/control/STOP/deadline before additional work; preserve supervisor and remote ownership. Current quota verified at 64% remaining with no drain. This is a one-shot 30-minute fallback while awaiting the actual receipt; earlier result/error events may wake sooner. No actual human-help request."
+    "Publish SOL-025 narrow synthetic case-engine entrypoint repair from this real pushed prerequisite commit. Retain original failed receipt and all artifacts on work/sol/SOL-023-a1.",
+    "Review exact SOL-025 result and run independent references before case acceptance; only then publish writer task on accepted pushed code.",
+    "Prepare writer implementation task and report method wording while remote repair runs; do not publish writer before case acceptance.",
+    "After accepted writer code, commit fixed development execution config separately and dispatch reviewed HY3 commands. Never rerun HY3-003; final remains closed.",
+    "Check local quota/drain/control/STOP/deadline before further work; identities stay local; preserve supervisor and remote ownership."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T03:28:13.610916+08:00",
+  "last_completed_at": "2026-10-20T03:40:18.358122+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

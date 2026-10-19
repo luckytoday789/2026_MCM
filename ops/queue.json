@@ -620,14 +620,18 @@
     },
     {
       "id": "SOL-023",
-      "state": "ready",
+      "state": "cancelled",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "3298bc4f6bd44345967419c640b395d0196efe9f81160c71128901f9f1f0938a",
       "branch": "work/sol/SOL-023-a1",
-      "note": "Existing immutable synthetic-only task released after positive accepted SOL-021 and SOL-022, accepted v2 design and exact source/dependency/hash revalidation. No production outcomes or final authorization.",
+      "note": "Exact failed receipt and all 33 artifact paths/18 source pins verified. Parent discovery import failure reproduced; corrected-environment replay and 3310 independent comparisons passed, but code is not accepted. Complete failed branch preserved; only original handoff and explicitly quarantined source/test drafts copied. SOL-025 will repair portable test entry and publish fresh bound evidence.",
       "release_evidence": "audit/chief/SOL-022-review.json",
-      "released_after_commit": "21ad493707d71240f83d7f01ed6d133e1380e8fb"
+      "released_after_commit": "21ad493707d71240f83d7f01ed6d133e1380e8fb",
+      "reviewed_commit": "ea2569d4624dc86d68861446610ba08548de121f",
+      "code_verdict": "repair_and_revalidate_required",
+      "failure_evidence": "audit/chief/SOL-023-failure-review.json",
+      "successor_task": "SOL-025"
     },
     {
       "id": "SOL-024",
