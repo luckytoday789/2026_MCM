@@ -1,0 +1,23 @@
+{
+  "task_id": "HY3-003",
+  "base_commit": "ec9653f1a4739bf1f0db36092c64771d014df25e",
+  "verified_origin_main_before_task_creation": "ec9653f1a4739bf1f0db36092c64771d014df25e",
+  "task_sha256": "5870dab708b3ead4a2f94384ef70528e9ea57ce6b39a8c5408a402c033a9a05b",
+  "dependencies_accepted": [
+    "SOL-001",
+    "SOL-002",
+    "SOL-003",
+    "HY3-002",
+    "SOL-004"
+  ],
+  "driver_review_commit": "69ed125b7fde276fe503e1ec5416fbf2e5ec9a7b",
+  "control_state": "running",
+  "final_data_open": false,
+  "max_seconds": 300,
+  "kind": "commands",
+  "allowed_paths": [
+    "results/development/HY3-003"
+  ],
+  "utc_checked": "2026-10-19T14:34:47.100499+00:00",
+  "next_gate": "Review exact HY3 receipt and dispatch independent Sol numerical audit; no final outcome or policy recommendation yet"
+}

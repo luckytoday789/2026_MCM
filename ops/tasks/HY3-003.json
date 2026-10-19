@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "HY3-003",
+  "attempt": 1,
+  "owner": "hy3",
+  "kind": "commands",
+  "base_commit": "ec9653f1a4739bf1f0db36092c64771d014df25e",
+  "depends_on": [
+    "SOL-001",
+    "SOL-002",
+    "SOL-003",
+    "HY3-002",
+    "SOL-004"
+  ],
+  "split": "development",
+  "max_seconds": 300,
+  "scope": "First descriptive development-only baseline run, three fixed policies and five customer horizons; no tuning or final outcomes.",
+  "parameters": {
+    "plan_id": "development-baselines-v1.1",
+    "config_path": "specs/development_baselines_v1_1.json",
+    "required_python": "3.12",
+    "cpu_only": true,
+    "source_sha256": {
+      "scripts/check_worker_env.py": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+      "scripts/run_development_baselines.py": "08c33acd66a63bd8fbf3e4c08f765ca8a4443665e5c439882370e2a8ea1a4709",
+      "src/safeinvest/__init__.py": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+      "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+      "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+      "src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+      "specs/development_baselines_v1_1.json": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224",
+      "specs/DEVELOPMENT_BASELINE_DRIVER.md": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "audit/chief/SOL-004-review.json": "405587fceaa4c244169c6c7fa9c2858e2793f05f35844b4998b21fb19060ee42"
+    },
+    "input_sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+    "scenario_ids": [
+      1,
+      120
+    ],
+    "horizons": [
+      5,
+      6,
+      15,
+      25,
+      30
+    ],
+    "comparison_horizon": 30,
+    "fee_rate": 0.0025,
+    "policies": [
+      "bills_keep",
+      "equal_weight_annual",
+      "equal_weight_buy_hold"
+    ],
+    "final_outcomes_allowed": false,
+    "independently_reviewed_driver_commit": "69ed125b7fde276fe503e1ec5416fbf2e5ec9a7b",
+    "expected_counts": {
+      "annual_ledgers.csv": 10800,
+      "scenario_metrics.csv": 1800,
+      "summary.csv": 15,
+      "paired_differences.csv": 1200
+    }
+  },
+  "allowed_paths": [
+    "results/development/HY3-003"
+  ],
+  "deliverables": [
+    "results/development/HY3-003/run_manifest.json",
+    "results/development/HY3-003/annual_ledgers.csv",
+    "results/development/HY3-003/scenario_metrics.csv",
+    "results/development/HY3-003/summary.csv",
+    "results/development/HY3-003/paired_differences.csv",
+    "results/development/HY3-003/checks.json"
+  ],
+  "commands": [
+    [
+      "{python}",
+      "-B",
+      "scripts/check_worker_env.py"
+    ],
+    [
+      "{python}",
+      "-B",
+      "scripts/run_development_baselines.py",
+      "--config",
+      "specs/development_baselines_v1_1.json",
+      "--output",
+      "results/development/HY3-003"
+    ]
+  ],
+  "validation_commands": [
+    [
+      "{python}",
+      "-B",
+      "scripts/check_worker_env.py"
+    ],
+    [
+      "{python}",
+      "-B",
+      "scripts/run_development_baselines.py",
+      "--config",
+      "specs/development_baselines_v1_1.json",
+      "--output",
+      "results/development/HY3-003",
+      "--check"
+    ]
+  ],
+  "acceptance_checks": [
+    "Exact task/hash/role/attempt/branch, existing pushed base parent, canonical artifact hashes, allowed paths and all six files verify.",
+    "Receipt, environment command logs and run manifest report Python 3.12; every prescribed command exits zero.",
+    "Run manifest binds this exact source commit and canonical/consumed source hashes, effective v1.1 config, original development input hash, all five output hashes and actual timing.",
+    "Only development scenarios 1..120 are evaluated, policies/horizons/fee are exactly fixed; final gate remains closed, no raw/final input is opened.",
+    "Actual output counts 10800/1800/15/1200, complete sorted keys, finite metrics, explicit units and correct severe/pair/trade definitions.",
+    "Saved read-only check reproduces every row and numeric check, with zero failures and ledger abs=1e-9/rel=1e-10 thresholds; no overwritten evidence.",
+    "Chief checks exact output commit and selected numerical ledgers; a separate Sol task independently audits representative HY3 rows before promotion as investment evidence.",
+    "Negative findings and any runtime failure are retained; no winner, suitability recommendation, policy tuning or final freeze is inferred from execution success."
+  ],
+  "instructions": "Run only the four explicit commands using Python 3.12 at the pinned, already pushed source. SOL-004 driver is accepted with independent chief checks at audit/chief/SOL-004-review.json, and HY3-002 source/runtime verification is accepted. The production loader reads only the configured development CSV. Do not run check_inputs.py, open raw/final inputs, change code/config/parameters, fit new policies, or run extra experiments. The new output directory must be absent or empty; do not delete or overwrite failed outputs. On failure preserve diagnosis and let the parent runner publish a failed receipt; no retry or source repair in this immutable attempt. Keep all six output files and parent runner command logs. The three policies and profile horizons are descriptive baselines, with the task-2 comparison explicitly H=30. Do not declare an investment winner. A completed receipt is not acceptance: chief will verify the exact commit and dispatch Sol to independently audit numerical evidence. No final-data access, gate change, freeze or submission. The parent runner handles commit/push; do not start another worker or watcher."
+}

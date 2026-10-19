@@ -161,6 +161,15 @@
       "task_sha256": "39009df675c120d5fa46f19f1f6d540e885b1d63af48bb1582041a3ad6b42acd",
       "branch": "work/sol/SOL-005-a1",
       "note": "Short independent check of corrected HY3 exact receipt and chief carry-forward decision; preserve prior rejection, do not repeat numerical experiments."
+    },
+    {
+      "id": "HY3-003",
+      "state": "ready",
+      "owner": "hy3",
+      "attempt": 1,
+      "task_sha256": "5870dab708b3ead4a2f94384ef70528e9ea57ce6b39a8c5408a402c033a9a05b",
+      "branch": "work/hy3/HY3-003-a1",
+      "note": "All real prerequisites accepted. First fixed development-only baseline run; chief must publish a separate exact-output Sol audit after receipt, before investment evidence promotion."
     }
   ]
 }
