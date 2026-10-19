@@ -25,6 +25,11 @@ SHAs and acceptance records above for citations.
 - [methods-draft.md](methods-draft.md) contains reusable English text for the
   locked accounting, annual metrics and scenario protocol. It contains no
   competition performance result or new policy parameter.
+- [policy-catalogue.md](policy-catalogue.md) derives target weights, profile
+  horizon/liquidity eligibility and promotion thresholds from the exact approved
+  design. Its provenance keeps the original negative kernel review separate.
+  Reproduce with `python -B report/build_policy_catalogue.py --check`; no outcome
+  inputs are read and no customer assignment is inferred.
 - [Personalized output notes](../specs/PERSONALIZED_OUTPUT_NOTES.md) carry the
   accepted SOL-020 no-run/null/denominator conventions and separate the generic
   same-policy cost test from fee-specific profile assignments. They authorize
@@ -86,9 +91,13 @@ authorized by this plan.
 ## Next dependencies and completion checks
 
 - SOL-013 approved the corrected design and SOL-021 closed K2 after independent
-  chief checks. Unchanged pure analysis SOL-016 and calibration SOL-022 are
-  released; case engine SOL-023 still requires accepted calibration. The personalized handoff design
-  is approved by SOL-020, with implementation/outcomes still unreviewed. Preserve old negative verdicts, quota failures and cancelled tasks;
+  chief checks. Pure analysis SOL-016 and calibration SOL-022 are accepted.
+  SOL-023 failed its prescribed standalone test command and remains unaccepted;
+  its exact code and negative evidence are preserved. SOL-025 repairs only the
+  portable test entry and produces fresh synthetic verification. Case acceptance,
+  writer implementation and actual policy outcomes remain pending. Personalized
+  design is approved by SOL-020, with implementation/outcomes still unreviewed.
+  Preserve old negative verdicts, quota failures and cancelled tasks;
   do not rerun accepted HY3-003 or treat synthetic checks as policy outcomes.
 - After review, resolve concrete findings and publish granular implementation
   work against already-pushed prerequisite commits. HY3 runs reviewed code with

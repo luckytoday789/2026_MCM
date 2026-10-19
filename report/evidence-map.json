@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "812fadfee82a10cda89233df75a50d4afc0512a3",
+  "snapshot_main_commit": "88b4c7d921c5b3c615d4a481ac41c585a4ee11fd",
   "authoritative_state": [
     "ops/control.json",
     "ops/queue.json"
@@ -16,7 +16,8 @@
     "prototype_pending_review": "Chief-authored source and synthetic checks exist; independent code approval and production results are absent",
     "accepted_development_evidence": "Exact reviewed development artifacts accepted; not final or policy-selection evidence",
     "accepted_negative_review": "Independent evidence accepted; reviewed design/code requires stated corrections and is not approved",
-    "accepted_design": "Independent design approval only; neither code nor future outcomes are certified."
+    "accepted_design": "Independent design approval only; neither code nor future outcomes are certified.",
+    "failed_implementation_attempt": "Exact failed receipt preserved; code not accepted even when narrower numerical checks pass."
   },
   "source_registry": {
     "PROBLEM_LOCK": {
@@ -187,6 +188,24 @@
       "reviewed_commit": "ceec2b6d1107a4137ee3d24d689ba7ba614703c2",
       "scope": "Pure analysis on generated metric grids; no performance or customer-assignment evidence.",
       "writer_compatibility_note": "specs/POLICY_WRITER_COMPATIBILITY.md"
+    },
+    "POLICY_CASE_FAILED_ATTEMPT": {
+      "state": "failed_implementation_attempt",
+      "task_id": "SOL-023",
+      "reviewed_commit": "ea2569d4624dc86d68861446610ba08548de121f",
+      "path": "audit/chief/SOL-023-failure-review.json",
+      "successor_task": "SOL-025",
+      "successor_state": "published_ready_or_running_not_accepted",
+      "competition_outcomes_computed": false,
+      "scope": "Standalone test import failure reproduced. Exact failed branch and all trial evidence preserved; numeric replay alone does not satisfy prescribed acceptance."
+    },
+    "POLICY_DESIGN_CATALOGUE": {
+      "state": "accepted_design",
+      "path": "report/policy-catalogue.md",
+      "provenance": "report/policy-catalogue-provenance.json",
+      "generator": "report/build_policy_catalogue.py",
+      "source_commit": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+      "scope": "Source-derived five target rows, five pre-outcome eligibility rows and four promotion gates; report wording still awaits final manuscript review. No policy outcomes or assignments."
     }
   },
   "requirements": [
@@ -233,10 +252,11 @@
         "PROBLEM_LOCK",
         "POLICY_PROPOSAL",
         "POLICY_KERNEL_PROTOTYPE",
-        "POLICY_CALIBRATION_PROTOTYPE"
+        "POLICY_CALIBRATION_PROTOTYPE",
+        "POLICY_DESIGN_CATALOGUE"
       ],
       "state": "accepted_design",
-      "remaining": "V2 design, corrected kernel and pure analysis accepted (SOL-013/SOL-021/SOL-016). SOL-022 calibration review is pending; SOL-023 case engine waits for it. Writer, exact development runs and independent numerical acceptance remain required."
+      "remaining": "V2 design, corrected kernel, calibration and pure analysis accepted (SOL-013/SOL-021/SOL-022/SOL-016). SOL-023 failed standalone test discovery; SOL-025 narrow repair is running. Writer, fixed development results and independent outcome acceptance remain required."
     },
     {
       "id": "R05",
@@ -245,7 +265,8 @@
         "PROBLEM_LOCK",
         "POLICY_PROPOSAL",
         "PERSONALIZED_HANDOFF",
-        "POLICY_ANALYSIS_ACCEPTANCE"
+        "POLICY_ANALYSIS_ACCEPTANCE",
+        "POLICY_DESIGN_CATALOGUE"
       ],
       "state": "not_available",
       "table_keys": [
@@ -273,10 +294,11 @@
         "PROBLEM_LOCK",
         "POLICY_PROPOSAL",
         "POLICY_KERNEL_PROTOTYPE",
-        "POLICY_CALIBRATION_PROTOTYPE"
+        "POLICY_CALIBRATION_PROTOTYPE",
+        "POLICY_CASE_FAILED_ATTEMPT"
       ],
       "state": "accepted_design",
-      "remaining": "V2 design, corrected kernel, calibration and pure analysis accepted (SOL-013/SOL-021/SOL-022/SOL-016). Existing SOL-023 case engine released. Writer, exact development runs and independent numerical acceptance remain required."
+      "remaining": "V2 design, corrected kernel, calibration and pure analysis accepted (SOL-013/SOL-021/SOL-022/SOL-016). SOL-023 failed prescribed standalone test entry; SOL-025 repair awaits exact receipt and acceptance. Writer, fixed development runs and independent numerical acceptance remain required."
     },
     {
       "id": "R07",

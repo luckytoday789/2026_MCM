@@ -5,8 +5,12 @@ an empirical result. SOL-009 supported the utility derivation but required
 clarification of action selection and comparison statistics. SOL-013 approved
 the corrected design but found a subnormal arithmetic defect in the kernel.
 SOL-017 closed that defect but found extreme midpoint rounding error K2. The
-K2 correction passed SOL-021 and independent chief replay; calibration and
-production evidence have further gates. No customer recommendation or performance advantage is claimed.
+K2 correction passed SOL-021 and independent chief replay. SOL-022 accepted
+calibration mathematics and SOL-016 accepted the pure analysis component on
+synthetic inputs. The case-engine delivery SOL-023 failed its standalone test
+entry; its numerical checks do not waive that failure. Repair SOL-025, writer
+acceptance and production evidence remain separate gates. No customer
+recommendation or performance advantage is claimed.
 
 ## An explicit estimate of benefit before trading
 

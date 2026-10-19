@@ -3,7 +3,8 @@
 This additive interface note resolves execution provenance for the future writer.
 It changes no policy, immutable task, accepted source or historical design flag.
 It does not authorize computation. Pin it in the writer implementation task only
-after SOL-023 is accepted. POLICY_RESULT_WRITER.md and the compatibility/reference
+after the case-engine successor SOL-025 is accepted; the failed SOL-023 does
+not satisfy this gate. POLICY_RESULT_WRITER.md and the compatibility/reference
 notes remain authoritative. Sol must report contradictions before implementation.
 
 ## Separate code, configuration and task commits
@@ -47,7 +48,8 @@ The future configuration has exactly these top-level fields:
 - source_commit: C as defined above.
 - source_sha256: exact path-to-canonical-Git-blob-SHA256 mapping for that closure.
 - acceptance: task-ID-to-exact-reviewed-commit mapping for accepted dependencies,
-  including SOL-021, SOL-022, SOL-023 and the eventual writer task. Resolve each
+  including SOL-021, SOL-022, the positively accepted case-engine successor
+  SOL-025, and the eventual writer task. Resolve each
   against the pinned base queue and its referenced chief acceptance evidence;
   cancelled attempts and accepted negative code verdicts do not pass.
 - input: exactly path, sha256, scenario_ids, periods; fixed respectively to

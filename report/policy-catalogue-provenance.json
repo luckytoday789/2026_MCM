@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "scope": "Accepted design values only; no empirical performance or assignment",
+  "source_commit": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+  "source_path": "specs/development_policy_pilot_v2.json",
+  "source_sha256": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+  "design_review": "SOL-013",
+  "accepted_design_only": true,
+  "original_review_code_verdict": "changes_required",
+  "generator_sha256_lf": "09a71b016d74d17dad0f96dede671fb37f051ef4eb7d710e31c59f9d799e7a50",
+  "target_rows": [
+    {
+      "key": "conservative",
+      "exact_weights": [
+        "3/20",
+        "1/5",
+        "13/20"
+      ],
+      "display_percent": [
+        "15",
+        "20",
+        "65"
+      ],
+      "role": "Fixed menu"
+    },
+    {
+      "key": "balanced",
+      "exact_weights": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "display_percent": [
+        "33 1/3",
+        "33 1/3",
+        "33 1/3"
+      ],
+      "role": "Fixed menu"
+    },
+    {
+      "key": "growth",
+      "exact_weights": [
+        "3/5",
+        "3/10",
+        "1/10"
+      ],
+      "display_percent": [
+        "60",
+        "30",
+        "10"
+      ],
+      "role": "Fixed menu"
+    },
+    {
+      "key": "balanced_defensive",
+      "exact_weights": [
+        "1/5",
+        "1/4",
+        "11/20"
+      ],
+      "display_percent": [
+        "20",
+        "25",
+        "55"
+      ],
+      "role": "Adaptive Balanced alternative from year six"
+    },
+    {
+      "key": "balanced_growth_tilt",
+      "exact_weights": [
+        "9/20",
+        "3/10",
+        "1/4"
+      ],
+      "display_percent": [
+        "45",
+        "30",
+        "25"
+      ],
+      "role": "Adaptive Balanced alternative from year six"
+    }
+  ],
+  "profile_rows": [
+    {
+      "profile_id": "A",
+      "horizon": 5,
+      "loss_tolerance_pct": 10,
+      "liquidity": "high",
+      "required_target_bill": 0.6,
+      "eligible_before_outcomes": [
+        "conservative"
+      ]
+    },
+    {
+      "profile_id": "B",
+      "horizon": 15,
+      "loss_tolerance_pct": 25,
+      "liquidity": "medium",
+      "required_target_bill": 0.25,
+      "eligible_before_outcomes": [
+        "conservative",
+        "balanced"
+      ]
+    },
+    {
+      "profile_id": "C",
+      "horizon": 30,
+      "loss_tolerance_pct": 40,
+      "liquidity": "low",
+      "required_target_bill": 0.1,
+      "eligible_before_outcomes": [
+        "conservative",
+        "balanced",
+        "growth"
+      ]
+    },
+    {
+      "profile_id": "D",
+      "horizon": 25,
+      "loss_tolerance_pct": 15,
+      "liquidity": "medium",
+      "required_target_bill": 0.25,
+      "eligible_before_outcomes": [
+        "conservative",
+        "balanced"
+      ]
+    },
+    {
+      "profile_id": "E",
+      "horizon": 6,
+      "loss_tolerance_pct": 35,
+      "liquidity": "high",
+      "required_target_bill": 0.6,
+      "eligible_before_outcomes": [
+        "conservative"
+      ]
+    }
+  ],
+  "promotion_rules": {
+    "default": "balanced_cost",
+    "median_paired_growth_gain_min_pp": 0.1,
+    "p10_growth_decline_max_pp": 0.1,
+    "p90_loss_increase_max_pp": 1.0,
+    "positive_median_gain_folds_min": 3,
+    "growth_gain_statistic": "median_of_scenario_paired_CAGR_differences",
+    "tail_growth_statistic": "marginal_p10_candidate_minus_marginal_p10_reference",
+    "tail_loss_statistic": "marginal_p90_candidate_minus_marginal_p90_reference",
+    "fold_gain_statistic": "median_of_scenario_paired_CAGR_differences_strictly_positive",
+    "context_comparators": [
+      "balanced_cost"
+    ],
+    "adaptive_comparators": [
+      "balanced_context",
+      "balanced_cost"
+    ],
+    "adaptive_eligible_when_context_fails": true,
+    "promotion_priority": [
+      "balanced_adaptive",
+      "balanced_context",
+      "balanced_cost"
+    ],
+    "primary_selection_fee": 0.0025,
+    "doubled_fee_role": "robustness_only_no_primary_retuning"
+  },
+  "markdown_sha256_lf": "874c2dd03858f5cfcf43925de3c9860b5587de9bad84622f36c32ee6a8e60f76",
+  "competition_outcomes_read": false,
+  "final_data_open": false
+}

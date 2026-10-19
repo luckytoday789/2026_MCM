@@ -4,8 +4,9 @@ These chief references were prepared after accepted SOL-022 and before a writer
 implementation exists. They are expected import/compatibility values, not writer
 acceptance, a production implementation, or a new experimental result. The
 contracts in POLICY_RESULT_WRITER.md and POLICY_WRITER_COMPATIBILITY.md remain
-authoritative. Do not publish the writer task until SOL-023 is independently
-accepted and its code is on a pushed main commit.
+authoritative. Do not publish the writer task until the case-engine repair successor SOL-025
+is independently accepted and its code is on a pushed main commit. SOL-023
+remains a preserved failed attempt and cannot satisfy this gate.
 
 Pin audit/chief/writer_reference.py and audit/chief/writer-reference.json in the
 future writer task. The script uses only standard-library code and exact accepted

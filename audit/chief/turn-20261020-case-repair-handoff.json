@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T03:48:12.590523+08:00",
+  "failed_receipt": "ea2569d4624dc86d68861446610ba08548de121f",
+  "result": "SOL-023 not accepted; portable test import repair SOL-025 published",
+  "failure_review": "audit/chief/SOL-023-failure-review.json",
+  "structural_artifacts_verified": 33,
+  "source_pins_verified": 18,
+  "independent_synthetic_comparisons": 3310,
+  "independent_synthetic_cases": 16,
+  "parent_command_reproduced_failure": true,
+  "old_saved_verifier_replayed": {
+    "focused_tests": 14,
+    "scalar_rational_checks": 1172,
+    "synthetic_cases": 24
+  },
+  "prerequisite_commit": "a065805163f01eeffd73ca0ea5ac420454493a94",
+  "task_publication_commit": "88b4c7d921c5b3c615d4a481ac41c585a4ee11fd",
+  "successor_task": "SOL-025",
+  "successor_source_pins_revalidated": 26,
+  "successor_status_observed": {
+    "role": "sol",
+    "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
+    "state": "running",
+    "python": "3.12.14",
+    "updated_at": "2026-10-19T19:46:36.530472+00:00",
+    "lease_until": "2026-10-19T19:56:36.530472+00:00",
+    "task_id": "SOL-025"
+  },
+  "writer_handoff": "specs/POLICY_WRITER_TASK_BINDING.md",
+  "writer_review_pending": true,
+  "writer_changes": [
+    "Require positively accepted case successor; retain failed SOL-023",
+    "Bind separate source C, config/base E and published task snapshot P",
+    "Run standalone commands without PYTHONPATH; typed CSV preserves nulls, booleans, signed zero and adjacent floats"
+  ],
+  "report_design_tables": {
+    "target_rows": 5,
+    "profile_rows": 5,
+    "eligibility_checks": 5,
+    "promotion_gates": 4,
+    "source_commit": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+    "read_only_check": "passed"
+  },
+  "quota_remaining_percent": 63.0,
+  "quota_checked_at": "2026-10-19T19:47:21.162526+00:00",
+  "final_data_open": false,
+  "production_policy_runs": 0,
+  "baseline_reruns": 0,
+  "new_human_help_request": false,
+  "preserved_failure_branch": "work/sol/SOL-023-a1",
+  "preserved_local_checkout": ".runtime/review-SOL-023"
+}
