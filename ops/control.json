@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "state": "running",
+  "coordinator": "chief",
+  "models": {"chief": "gpt-6-astra", "sol": "gpt-6.1-sol", "hy3": "hy3"},
+  "reasoning_effort": "xhigh",
+  "deadline": "2026-10-20T23:30:00+08:00",
+  "submission_deadline": "2026-10-20T23:59:00+08:00",
+  "poll_seconds": 60,
+  "max_task_seconds": 1800,
+  "max_consecutive_failures": 2,
+  "final_data_open": false,
+  "note": "Default automation stops 29 minutes before submission to leave time for human submission; coordinator may revise before launch if needed."
+}

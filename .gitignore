@@ -1,0 +1,14 @@
+.venv/
+.runtime/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+*.log
+*.vhdx
+*.zip
+*.whl
+node_modules/
+.DS_Store
+Thumbs.db

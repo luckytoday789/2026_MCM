@@ -1,0 +1,27 @@
+{
+  "source": "User-supplied 2026 MCM Senior Group Problem A SafeInvest attachments",
+  "license": "CC BY-NC-SA 4.0",
+  "transformation": "Originals unchanged; derived CSV files are row subsets only.",
+  "files": [
+    {
+      "path": "problem/2026_MCM_SafeInvest.pdf",
+      "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+      "bytes": 137578
+    },
+    {
+      "path": "data/raw/SafeInvest_Synthetic_Data.csv",
+      "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+      "bytes": 274914
+    },
+    {
+      "path": "data/development/scenarios_001_120.csv",
+      "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+      "bytes": 182255
+    },
+    {
+      "path": "data/final_holdout/scenarios_121_180.csv",
+      "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+      "bytes": 92732
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "note": "Existing coordinator skills are available; remote workers should install only skills needed for their task, at a pinned commit. Task specifications remain portable without skills.",
+  "additional_installs": [],
+  "coordinator_installed": [
+    {
+      "name": "authoritative-data-harvester",
+      "repo": "yushui2022/MathModel-Skill",
+      "commit": "b13a23e2ccae39a1f13ceb5dbd41fa74ed61eac0",
+      "source_path": "skills/authoritative-data-harvester"
+    },
+    {
+      "name": "context-memory-keeper",
+      "repo": "yushui2022/MathModel-Skill",
+      "commit": "b13a23e2ccae39a1f13ceb5dbd41fa74ed61eac0",
+      "source_path": "skills/context-memory-keeper"
+    },
+    {
+      "name": "data-cleaning-and-visualization",
+      "repo": "yushui2022/MathModel-Skill",
+      "commit": "b13a23e2ccae39a1f13ceb5dbd41fa74ed61eac0",
+      "source_path": "skills/data-cleaning-and-visualization"
+    },
+    {
+      "name": "model-code-and-result-generator",
+      "repo": "yushui2022/MathModel-Skill",
+      "commit": "b13a23e2ccae39a1f13ceb5dbd41fa74ed61eac0",
+      "source_path": "skills/model-code-and-result-generator"
+    },
+    {
+      "name": "modeling-paper-rubric-and-model-selector",
+      "repo": "yushui2022/MathModel-Skill",
+      "commit": "b13a23e2ccae39a1f13ceb5dbd41fa74ed61eac0",
+      "source_path": "skills/modeling-paper-rubric-and-model-selector"
+    },
+    {
+      "name": "paper-formal-writer",
+      "repo": "yushui2022/MathModel-Skill",
+      "commit": "b13a23e2ccae39a1f13ceb5dbd41fa74ed61eac0",
+      "source_path": "skills/paper-formal-writer"
+    },
+    {
+      "name": "paper-micro-unit-generator",
+      "repo": "yushui2022/MathModel-Skill",
+      "commit": "b13a23e2ccae39a1f13ceb5dbd41fa74ed61eac0",
+      "source_path": "skills/paper-micro-unit-generator"
+    },
+    {
+      "name": "paper-workflow-orchestrator",
+      "repo": "yushui2022/MathModel-Skill",
+      "commit": "b13a23e2ccae39a1f13ceb5dbd41fa74ed61eac0",
+      "source_path": "skills/paper-workflow-orchestrator"
+    },
+    {
+      "name": "problem-doc-model-selector",
+      "repo": "yushui2022/MathModel-Skill",
+      "commit": "b13a23e2ccae39a1f13ceb5dbd41fa74ed61eac0",
+      "source_path": "skills/problem-doc-model-selector"
+    },
+    {
+      "name": "quality-assurance-auditor",
+      "repo": "yushui2022/MathModel-Skill",
+      "commit": "b13a23e2ccae39a1f13ceb5dbd41fa74ed61eac0",
+      "source_path": "skills/quality-assurance-auditor"
+    },
+    {
+      "name": "math-model",
+      "repo": "capwitf/My-MathModeling-skills",
+      "commit": "da53b41cab7e25be906f5899488229387e7921c0",
+      "source_path": "math-model"
+    },
+    {
+      "name": "math-modeling-skill",
+      "repo": "anticipate218/math-modeling-skill",
+      "commit": "e70b85b8a41aeb748789f66860c6bd4d123871cd",
+      "source_path": "."
+    },
+    {
+      "name": "statistical-analysis",
+      "repo": "K-Dense-AI/scientific-agent-skills",
+      "commit": "593377bb048752abb0152deab9fbb1083a6087df",
+      "source_path": "skills/statistical-analysis"
+    },
+    {
+      "name": "pymoo",
+      "repo": "K-Dense-AI/scientific-agent-skills",
+      "commit": "593377bb048752abb0152deab9fbb1083a6087df",
+      "source_path": "skills/pymoo"
+    },
+    {
+      "name": "scientific-visualization",
+      "repo": "K-Dense-AI/scientific-agent-skills",
+      "commit": "593377bb048752abb0152deab9fbb1083a6087df",
+      "source_path": "skills/scientific-visualization"
+    },
+    {
+      "name": "backtesting-frameworks",
+      "repo": "wshobson/agents",
+      "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+      "source_path": "plugins/quantitative-trading/skills/backtesting-frameworks"
+    },
+    {
+      "name": "risk-metrics-calculation",
+      "repo": "wshobson/agents",
+      "commit": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+      "source_path": "plugins/quantitative-trading/skills/risk-metrics-calculation"
+    },
+    {
+      "name": "asset-allocation",
+      "repo": "HKUDS/Vibe-Trading",
+      "commit": "097b29feab9793e3c302e1a7a4f3c0dac6344904",
+      "source_path": "agent/src/skills/asset-allocation"
+    },
+    {
+      "name": "nvidia-portfolio-optimization",
+      "repo": "NVIDIA-AI-Blueprints/portfolio-optimization",
+      "commit": "093a8bd741caf6ef11d505cb4e16ab9c8f91304a",
+      "source_path": "skills/portfolio-optimization"
+    },
+    {
+      "name": "portfolio-construction-with-transaction-cost-awareness",
+      "repo": "HimanshuJ16/Algo-Trading-Skills",
+      "commit": "925e831b1fbd0bdb7e72200536b97d7e9d191c38",
+      "source_path": "skills/portfolio-construction-with-transaction-cost-awareness"
+    },
+    {
+      "name": "portfolio-optimization",
+      "repo": "artheras/skills",
+      "commit": "825040f3cc7eb4179a8ee86e0158d9828f427f7b",
+      "source_path": "skills/portfolio-optimization"
+    },
+    {
+      "name": "backtest-validation",
+      "repo": "artheras/skills",
+      "commit": "825040f3cc7eb4179a8ee86e0158d9828f427f7b",
+      "source_path": "skills/backtest-validation"
+    },
+    {
+      "name": "risk-assessment",
+      "repo": "artheras/skills",
+      "commit": "825040f3cc7eb4179a8ee86e0158d9828f427f7b",
+      "source_path": "skills/risk-assessment"
+    }
+  ]
+}
