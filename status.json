@@ -5,14 +5,14 @@
     48984
   ],
   "child_pids": [
-    34544,
-    22892,
-    45544,
-    46740,
-    43440,
-    34708
+    46600,
+    14084,
+    24840,
+    33168,
+    2628,
+    18200
   ],
-  "current_task": "SOL-020",
+  "current_task": "SOL-021",
   "alerts": [],
   "tasks": [
     {
@@ -247,13 +247,32 @@
       "key": "SOL-020-a1",
       "task_id": "SOL-020",
       "base": "a2205fb7edd2527253664efad601f0da290f3661",
-      "head": "a2205fb7edd2527253664efad601f0da290f3661",
+      "head": "2fbd4598606b41a786bd931046adb0ecc8b42d78",
+      "receipt_status": "completed",
+      "receipt_matches_task": true,
+      "queue_state": "accepted",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-19T18:17:36.804399+00:00",
+      "check_exit_codes": [
+        0,
+        0
+      ],
+      "pending_upload": false
+    },
+    {
+      "key": "SOL-021-a1",
+      "task_id": "SOL-021",
+      "base": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+      "head": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
       "receipt_status": null,
       "receipt_matches_task": false,
       "queue_state": "ready",
       "dirty": true,
       "changed_paths": [
-        "?? audit/SOL-020/"
+        "?? audit/SOL-021/"
       ],
       "remote_matches": false,
       "completed_record": false,
@@ -266,8 +285,8 @@
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
     "state": "running",
     "python": "3.12.0",
-    "updated_at": "2026-10-19T18:14:12.406969+00:00",
-    "lease_until": "2026-10-19T18:24:12.406969+00:00",
+    "updated_at": "2026-10-19T18:18:17.424792+00:00",
+    "lease_until": "2026-10-19T18:28:17.424792+00:00",
     "task_id": "integrate-and-dispatch"
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
@@ -276,7 +295,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-19T18:17:01.335413+00:00",
+  "updated_at": "2026-10-19T18:22:24.041142+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
