@@ -1,18 +1,20 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T02:18:15.428569+08:00",
-  "reason": "SOL-017 negative K2 evidence accepted; exact-rounding correction validated provisionally. Publish immutable independent review and corrected dependent tasks from this pushed prerequisite source.",
+  "next_wake_at": "2026-10-20T02:20:02.671589+08:00",
+  "reason": "K2 source pushed; SOL-021 ready, SOL-022/SOL-023 waiting. SOL-020 design review running. Chief can prepare the final-evaluation evidence contract while remote reviews proceed.",
   "next_actions": [
-    "Push corrected K2 source prerequisite, then publish new immutable independent kernel review and successors to cancelled SOL-018/SOL-019. Retain SOL-016 unchanged behind positive kernel review.",
-    "Inspect SOL-020 personalized design review when exact receipt arrives.",
-    "After positive kernel/calibration gates release existing eligible tasks promptly; keep production and final outcomes closed.",
-    "Check local quota/control/deadline, preserve supervisor and private identities."
+    "Accept exact SOL-020 personalized handoff review if its evidence passes; preserve negative findings and issue corrected immutable work if needed.",
+    "Independently validate SOL-021 exact receipt and ordinary/extreme fixtures; positive approval releases unchanged SOL-016 and SOL-022 promptly.",
+    "After positive SOL-022 release SOL-023. Integrate only independently checked code; then publish writer task on combined pushed source, fixed HY3 development run and independent Sol result review.",
+    "Prepare explicit final-evaluation/freeze evidence contract without opening holdout or changing approved selection rules.",
+    "Complete personalized implementation/rescreen, development selection, freeze, one final evaluation, report rendering and code supplement. Private identities stay local; never submit automatically.",
+    "Check local quota/control/STOP/deadline; preserve supervisor and remote single-writer ownership."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T02:13:15.428569+08:00",
+  "last_completed_at": "2026-10-20T02:15:02.671589+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

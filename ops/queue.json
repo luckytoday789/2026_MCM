@@ -416,7 +416,7 @@
       "attempt": 1,
       "task_sha256": "43da6619805b1e82b47fd9ddf592c9c65316e7ec6c8a0e193810b6f80afd05f6",
       "branch": "work/sol/SOL-016-a1",
-      "waiting_for": "Corrected v2 design approved; wait for positive independent K2-corrected kernel acceptance. All thirteen pinned inputs remain unchanged and this pure analysis component imports no kernel.",
+      "waiting_for": "Positive accepted SOL-021 kernel review; all thirteen pinned sources unchanged. This component imports no kernel.",
       "note": "Pure component implementation on generated inputs only. No production run, final data, or writer authorization."
     },
     {
@@ -449,7 +449,8 @@
       "excluded_paths": [],
       "acceptance_evidence": "audit/chief/SOL-017-review.json",
       "corrected_design_verdict": "approve",
-      "code_verdict": "changes_required"
+      "code_verdict": "changes_required",
+      "successor_task": "SOL-021"
     },
     {
       "id": "SOL-018",
@@ -458,7 +459,8 @@
       "attempt": 1,
       "task_sha256": "ca8643f671b9469c461c0185248eee1be97355b89ecb97f4a014d7ba63303295",
       "branch": "work/sol/SOL-018-a1",
-      "note": "Unexecuted immutable waiting task preserved. K2 correction changes pinned kernel bytes; new successor will use a newly pushed base. No remote failure claimed."
+      "note": "Unexecuted immutable waiting task preserved. K2 correction changes pinned kernel bytes; new successor will use a newly pushed base. No remote failure claimed.",
+      "successor_task": "SOL-022"
     },
     {
       "id": "SOL-019",
@@ -467,7 +469,8 @@
       "attempt": 1,
       "task_sha256": "898c124ce2621bea0d266bdf022cd1c9c433b8c3f1a655e516d8b4e569249858",
       "branch": "work/sol/SOL-019-a1",
-      "note": "Unexecuted immutable waiting task preserved. K2 correction changes pinned kernel bytes; new successor will use a newly pushed base. No remote failure claimed."
+      "note": "Unexecuted immutable waiting task preserved. K2 correction changes pinned kernel bytes; new successor will use a newly pushed base. No remote failure claimed.",
+      "successor_task": "SOL-023"
     },
     {
       "id": "SOL-020",
@@ -477,6 +480,35 @@
       "task_sha256": "3420b1953c2811857a798980815e78d638e4ca8142ba094ea0c19ac75ad12a61",
       "branch": "work/sol/SOL-020-a1",
       "note": "Targeted personalized handoff design review only, independent of pending code work; no production or outcomes."
+    },
+    {
+      "id": "SOL-021",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "53389f310d3271c476c9be65f6b75ab228ff1ca3e2dfbd4a8466348bf8678669",
+      "branch": "work/sol/SOL-021-a1",
+      "note": "Synthetic-only bounded work. No production outcomes or final authorization."
+    },
+    {
+      "id": "SOL-022",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "9f1841cdfae0638427bdccfcd96e1cf231bed04ce6ac32afd2d72ae550674ab7",
+      "branch": "work/sol/SOL-022-a1",
+      "note": "Synthetic-only bounded work. No production outcomes or final authorization.",
+      "waiting_for": "Positive accepted SOL-021 corrected-kernel review with unchanged source hashes; historical SOL-013/SOL-017 code verdicts remain negative."
+    },
+    {
+      "id": "SOL-023",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "3298bc4f6bd44345967419c640b395d0196efe9f81160c71128901f9f1f0938a",
+      "branch": "work/sol/SOL-023-a1",
+      "note": "Synthetic-only bounded work. No production outcomes or final authorization.",
+      "waiting_for": "Positive accepted corrected-kernel SOL-021 and calibration SOL-022 reviews, unchanged pinned source and approved v2 design."
     }
   ]
 }

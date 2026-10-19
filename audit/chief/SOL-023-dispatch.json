@@ -1,0 +1,16 @@
+{
+  "task_id": "SOL-023",
+  "task_sha256": "3298bc4f6bd44345967419c640b395d0196efe9f81160c71128901f9f1f0938a",
+  "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+  "base_already_pushed": true,
+  "source_hashes_verified": true,
+  "depends_on": [
+    "SOL-001",
+    "SOL-004",
+    "SOL-013",
+    "SOL-021",
+    "SOL-022"
+  ],
+  "state": "waiting",
+  "final_data_open": false
+}

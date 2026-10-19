@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "SOL-021",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+  "depends_on": [
+    "SOL-001",
+    "SOL-004",
+    "SOL-013",
+    "SOL-017"
+  ],
+  "split": "synthetic",
+  "max_seconds": 900,
+  "scope": "Independent closure of SOL-017 K2 on exact near-underflow CE rounding; synthetic, bounded, no redesign or outcomes.",
+  "parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "competition_outcomes_allowed": false,
+    "final_outcomes_allowed": false,
+    "source_sha256": {
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "specs/POLICY_NUMERIC_K1.md": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+      "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+      "tests/test_policy_pilot.py": "f5ace90172ad5f926613be8d278094f1839eee15286173a8f71827ae032d38d9",
+      "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+      "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "audit/SOL-013/verify.py": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+      "audit/SOL-013/findings.json": "b2c82f41ed0abd7c62cf350ed5b554c967085d5cbbee70a3e62d4f6feb64c6bd",
+      "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+      "audit/chief/policy-k1-validation.json": "4f84abd57d5e08bbca544c70972db08b9056c87bcab9af65373e1cb6897dd00f",
+      "specs/POLICY_NUMERIC_K2.md": "88d5f58a59f090c25331392e4cd5682daf5d050c27b24afe6629d8e4a5eb9997",
+      "audit/chief/SOL-017-review.json": "ec9dcc7fd084954827cfdf82bf1826e17ddd8c9b3fbece15058760fedef3d4b9",
+      "audit/SOL-017/verify.py": "5c4341b9c9347ee9b75719823f0af6e30daf33b51a73f644f62f78febcd8188f",
+      "audit/SOL-017/findings.json": "242737618ac0074128502849121a0e01afb31ef71dd3bb1cd7ab8d2a4e4e2472",
+      "audit/chief/policy-k2-validation.json": "4b97a1499c8cff293f7d971c04233d5ed6c520be6caff31dcb47ebb976ac9d59"
+    },
+    "prior_review_commit": "90f5c8d3fe9b76861f9e302ce23d2e5cd6f2e839",
+    "required_verdict": "code_verdict approve before any kernel-dependent production work",
+    "gamma": 4,
+    "primary_fee_rate": 0.0025,
+    "sensitivity_fee_rate": 0.005,
+    "supersedes_task": "SOL-017"
+  },
+  "allowed_paths": [
+    "audit/SOL-021"
+  ],
+  "deliverables": [
+    "audit/SOL-021/review.md",
+    "audit/SOL-021/findings.json",
+    "audit/SOL-021/verify.py",
+    "audit/SOL-021/verification.json"
+  ],
+  "commands": [],
+  "validation_commands": [
+    [
+      "{python}",
+      "-B",
+      "audit/SOL-021/verify.py",
+      "--check"
+    ]
+  ],
+  "acceptance_checks": [
+    "Exact immutable task, source/import hashes, allowed paths and Python 3.12. No competition outcomes.",
+    "Independently close K2 using rational/high-precision expected values: exact upward/downward midpoint ties, all 2048 rational grid cases and n=0..5 heterogeneous prior/recent mixtures. Do not derive expected values from the new production rounding helper.",
+    "Check the binary64 bisection proof, ties-to-even parity, normalized validated weights, zero/tiny weights, min-positive through max-finite support and both sides of the numerical-route boundary. Tiny values require exact or zero-absolute-tolerance comparisons.",
+    "Retain ordinary inverse-cube/fee-buffer rational fixtures, strict keep/tie decisions and actual tiny-positive-transfer state semantics. No broad scheduler/accounting rerun, policy tuning or support restriction.",
+    "Read-only saved verification binds newly imported code and independent oracle provenance, rejects numerical/source/artifact corruption and preserves all failed trials. Separate code approval from integrity."
+  ],
+  "instructions": "Read AGENTS.md, locked accounting and specs/POLICY_NUMERIC_K2.md. SOL-013 approved v2 design; SOL-017 closed K1 but found K2. Both historical negative code verdicts remain immutable. Chief now uses an exact rational inverse-cube moment and monotone binary64 bisection near underflow, retaining the ordinary log-domain route. Independently assess the actual new source; chief tests are provisional, not acceptance.\n\nCheck the exact midpoint (u,u,4u) at weights (1/4,1/4,1/2), u=2^-1074, with CE=5u/2 rounded ties-to-even to 2u, plus the opposite midpoint direction and all n=0..5. Reuse the unchanged SOL-017 decimal_ce function or other named independent scalar helpers in a separate module with explicit source provenance. Do not invoke or override historical task/hash/source boundaries or rewrite old evidence. Load new production code by the pinned Git blobs. The new exact helper must not supply expected answers. Reuse the 2048-case grid and ordinary fixtures without inventing another broad numerical search.\n\nReview exact rational moment, binary64-order bisection, finite extrema bound, exact midpoint comparison and even-significand tie rule. Challenge both sides of log(minimum normal)+1, heterogeneous prior/recent support, duplicate support, zero/tiny weights, minimum positive through maximum finite values and invalid support. Rational normalization applies to the floats returned by existing validate_target; check unit-sum discrepancies within its established tolerance explicitly. Distinguish this numeric route from strategy thresholds and confirm no clipping/input bound/parameter tuning. Use exact comparisons for tiny subnormal fixtures; larger values may use declared relative tolerance with zero absolute tolerance.\n\nVerify ordinary rational initial T=200/3, fee=1/6, post-fee 599/18, buffered score=3887/3750, true net CE=7787/7500 and terminal wealth=7787/75. Retain normal 15:n mixtures, strict hurdle/ties and actual tiny-transfer active-state behavior using unchanged independent oracle helpers. No need to redo unrelated scheduler, accounting or calibration suites. Code outside the new helper/imports and CE routing should be unchanged from SOL-017.\n\nWrite concise review.md/findings.json with separate code_verdict approve/changes_required, exact sources, limitations and failures. Write verification.json using exclusive creation and verify.py --check that recomputes read-only, verifies pinned imports and artifacts, allows HEAD to advance and rejects corrupted scratch evidence without repair. Preserve failures and disclose any audit-tool mistake. A valid negative finding is a completed review, not code approval.\n\nOnly audit/SOL-021 plus ignored scratch writes; no source/tests/spec/task/queue/private-team edits, real CSV reads, installs, workers/supervisor operations, publication or production/final runs. CPU only, 15-minute bound. No production loader/writer/calibration approval. Runner delivers the receipt; chief accepts the exact commit."
+}
