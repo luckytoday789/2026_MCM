@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T03:09:16.094575+08:00",
+  "accepted_task": "SOL-016",
+  "reviewed_commit": "ceec2b6d1107a4137ee3d24d689ba7ba614703c2",
+  "integration_commit": "dcf9624669f28d43fe7d5ef948793af32b32acc1",
+  "acceptance_evidence": "audit/chief/SOL-016-review.json",
+  "integrated_test": {
+    "command": [
+      "python",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_policy_analysis.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "tests_run": 19,
+    "observed_seconds": 0.587
+  },
+  "immutable_tasks_revalidated": [
+    {
+      "task_id": "SOL-016",
+      "task_sha256": "43da6619805b1e82b47fd9ddf592c9c65316e7ec6c8a0e193810b6f80afd05f6",
+      "base_commit": "dd60066010f6904565fb51e99be8088285102e57",
+      "source_pins": 12,
+      "state": "accepted"
+    },
+    {
+      "task_id": "SOL-022",
+      "task_sha256": "9f1841cdfae0638427bdccfcd96e1cf231bed04ce6ac32afd2d72ae550674ab7",
+      "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+      "source_pins": 14,
+      "state": "ready"
+    },
+    {
+      "task_id": "SOL-023",
+      "task_sha256": "3298bc4f6bd44345967419c640b395d0196efe9f81160c71128901f9f1f0938a",
+      "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+      "source_pins": 18,
+      "state": "waiting"
+    }
+  ],
+  "writer_note": {
+    "path": "specs/POLICY_WRITER_COMPATIBILITY.md",
+    "sha256_lf": "814c339353a719b88f1bf21af731439cc24e095131d9a8d28efaede48a5695ed",
+    "status": "future_writer_handoff_no_implementation_or_execution_approval",
+    "historical_units": {
+      "COMMON_UNITS": {
+        "monetary_units": "nominal units; real wealth in CPI_0 purchasing power",
+        "return_units": "annual simple decimal",
+        "cpi_units": "price index; CPI_0=1",
+        "growth_units": "percentage points per year",
+        "volatility_units": "percentage points; annual sample ddof=1",
+        "loss_units": "percent of running real peak",
+        "trade_share_units": "percent of annual reviews"
+      },
+      "PAIRED_UNITS": {
+        "growth_difference_units": "percentage points per year",
+        "loss_difference_units": "percentage points; positive is worse",
+        "terminal_real_wealth_difference_units": "CPI_0 purchasing-power units",
+        "nominal_fee_difference_units": "nominal units",
+        "trade_share_difference_units": "percentage points"
+      }
+    }
+  },
+  "report_sources_exist": true,
+  "report_outcome_gates_preserved": true,
+  "remote_status_snapshots": {
+    "sol": {
+      "role": "sol",
+      "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
+      "state": "running",
+      "python": "3.12.14",
+      "updated_at": "2026-10-19T19:07:21.733565+00:00",
+      "lease_until": "2026-10-19T19:17:21.733565+00:00",
+      "task_id": "SOL-022"
+    },
+    "hy3": {
+      "role": "hy3",
+      "machine_id": "937a9358dc114be8b3718ff13e3da4f9",
+      "state": "idle",
+      "python": "3.12.10",
+      "updated_at": "2026-10-19T19:07:37.629003+00:00",
+      "lease_until": "2026-10-19T19:17:37.629003+00:00"
+    }
+  },
+  "quota_remaining_percent": 66.0,
+  "actual_human_help_request": false,
+  "competition_outcomes_read": false,
+  "final_data_open": false
+}

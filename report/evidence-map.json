@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "e018e2a70f9d1191d86e897df5f943228956139f",
+  "snapshot_main_commit": "dcf9624669f28d43fe7d5ef948793af32b32acc1",
   "authoritative_state": [
     "ops/control.json",
     "ops/queue.json"
@@ -175,6 +175,14 @@
       "chief_acceptance_evidence": "audit/chief/SOL-024-review.json",
       "implementation_verdict": "not_reviewed",
       "implementation_notes": "specs/FINAL_OUTPUT_NOTES.md"
+    },
+    "POLICY_ANALYSIS_ACCEPTANCE": {
+      "path": "audit/chief/SOL-016-review.json",
+      "state": "accepted_implementation",
+      "task_id": "SOL-016",
+      "reviewed_commit": "ceec2b6d1107a4137ee3d24d689ba7ba614703c2",
+      "scope": "Pure analysis on generated metric grids; no performance or customer-assignment evidence.",
+      "writer_compatibility_note": "specs/POLICY_WRITER_COMPATIBILITY.md"
     }
   },
   "requirements": [
@@ -224,7 +232,7 @@
         "POLICY_CALIBRATION_PROTOTYPE"
       ],
       "state": "accepted_design",
-      "remaining": "V2 design and corrected kernel accepted (SOL-013 and SOL-021). Pure analysis SOL-016 and calibration SOL-022 released; case engine SOL-023 waits for calibration approval. Writer, actual development results and independent numerical review remain required."
+      "remaining": "V2 design, corrected kernel and pure analysis accepted (SOL-013/SOL-021/SOL-016). SOL-022 calibration review is pending; SOL-023 case engine waits for it. Writer, exact development runs and independent numerical acceptance remain required."
     },
     {
       "id": "R05",
@@ -232,7 +240,8 @@
       "sources": [
         "PROBLEM_LOCK",
         "POLICY_PROPOSAL",
-        "PERSONALIZED_HANDOFF"
+        "PERSONALIZED_HANDOFF",
+        "POLICY_ANALYSIS_ACCEPTANCE"
       ],
       "state": "not_available",
       "table_keys": [
@@ -251,7 +260,7 @@
         "assignment or referral",
         "reason"
       ],
-      "remaining": "Accept generic profile analysis, independently review the personalized follow-up adapter and exact HY3 outputs, rescreen both risk and purchasing power at own H without fallback; before freeze."
+      "remaining": "Pure generic screening implementation accepted, without outcome evidence. Accept generic runs, implement/review personalized adapter, then independently rescreen exact HY3 outputs at own H/tolerance for both risk and purchasing power with no fallback."
     },
     {
       "id": "R06",
@@ -263,7 +272,7 @@
         "POLICY_CALIBRATION_PROTOTYPE"
       ],
       "state": "accepted_design",
-      "remaining": "V2 design and corrected kernel accepted (SOL-013 and SOL-021). Pure analysis SOL-016 and calibration SOL-022 released; case engine SOL-023 waits for calibration approval. Writer, actual development results and independent numerical review remain required."
+      "remaining": "V2 design, corrected kernel and pure analysis accepted (SOL-013/SOL-021/SOL-016). SOL-022 calibration review is pending; SOL-023 case engine waits for it. Writer, exact development runs and independent numerical acceptance remain required."
     },
     {
       "id": "R07",
