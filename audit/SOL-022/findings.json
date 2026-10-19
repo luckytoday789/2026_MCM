@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-022",
+  "attempt": 1,
+  "role": "sol",
+  "source_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+  "task_snapshot_sha256_lf": "f724ad93de4463b4f3f70970332e3d37137111ebf40d70aa2803c892611bbaa8",
+  "code_verdict": "approve",
+  "evidence_integrity": "Independently recomputed; replay outcomes in integrity-self-tests.json",
+  "scope": "Pure generated-CSV four-fold calibration seam and EmpiricalPrior weighting interface only",
+  "source_sha256": {
+    "calibration": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+    "dependent_kernel": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057"
+  },
+  "blockers": [
+    {
+      "id": "RELEASE-1",
+      "kind": "unverified_dependency_gate",
+      "code_defect": false,
+      "description": "The pinned base queue has no SOL-021 entry or positive accepted SOL-021 evidence. Historical SOL-013 design approval and SOL-017 negative kernel review do not satisfy the gate.",
+      "required_before_production": "Chief must bind positive accepted SOL-021 to unchanged kernel SHA256 5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057. No newer main consulted."
+    }
+  ],
+  "code_findings": [],
+  "executed": {
+    "python": "3.12.14",
+    "check_count": 87166,
+    "failed_comparisons": 0,
+    "training_row_occurrences": 10824,
+    "factor_checks_exact_hex": 32472,
+    "fold_perturbations": 8,
+    "invalid_csv_or_shape_cases": 121,
+    "invalid_fold_id_cases": 5,
+    "prior_recent_interface_cases": 24,
+    "competition_csv_read": false,
+    "strategy_outcomes_run": false,
+    "prior_broad_suites_run": false
+  },
+  "numerical_facts": {
+    "small_fixture": {
+      "shape": [
+        4,
+        2
+      ],
+      "input_sha256": "817eec732be4d0c32b5354053ed65d184117e3d500c58d86e740a9f1c6fa347b",
+      "input_bytes": 255,
+      "training_rows_per_fold": 6,
+      "annual_weight": "1/6"
+    },
+    "generated_fixture": {
+      "shape": [
+        120,
+        30
+      ],
+      "input_sha256": "165b7cf21b7afa9a4c6a4171f9a42883977d986679df0b3f22817453f3b802ca",
+      "input_bytes": 121753,
+      "training_scenarios_per_fold": 90,
+      "evaluation_scenarios_per_fold": 30,
+      "training_rows_per_fold": 2700,
+      "annual_weight": "1/2700"
+    },
+    "oracle": "Independent Fraction transform and staged binary64 rounding; scalar inverse-cube moment and rational root rounding; custom canonical ASCII serializer",
+    "relative_tolerances": {
+      "mathematical_real": 4e-16,
+      "CE": 3e-13
+    },
+    "exact_comparisons": [
+      "Git blobs",
+      "input SHA256 and lengths",
+      "fold IDs and complete ordered keys",
+      "both canonical digests",
+      "binary64 factor hex",
+      "saved evidence keys/counts/types"
+    ],
+    "all_heldout_perturbations": "Own complete fit unchanged; original-byte input hash and other three training/gross hashes and priors changed, independently recomputed."
+  },
+  "provenance_facts": {
+    "LF_CRLF": "Different original SHA256/length; identical parsed training row and derived gross digests.",
+    "lexical_float": "1e-1/0.1 and longer equivalent decimal representations change original bytes but preserve semantic digests.",
+    "signed_zero": "-0.0/+0.0 have distinct nominal float.hex source digests where selected, identical real gross digests.",
+    "nominal_inflation_transform": "All nominal returns and inflation 0 versus all 1: distinct nominal rows, identical real gross factors of 1 and gross hashes.",
+    "returned_JSON": "Direct and JSON-roundtrip nested mutation cannot change the bundle, priors, or fresh manifests.",
+    "chief_log": {
+      "current_kernel_sha256": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+      "evidence_path": "audit/chief/policy-calibration/20261019T170940Z-evidence.json",
+      "git_lf_bytes": 1547,
+      "git_lf_sha256": "005da3856c5818cb420d7fe2cda00e5b3d17e4dabbdf0cbe7da6252aefc14a62",
+      "historical_kernel_sha256": "d2f529f69abbc1690ed4fedca42cda8b9c5570729b58c5c9dd37e142d14971f6",
+      "historical_python": "3.12.0",
+      "raw_windows_crlf_bytes": 1562,
+      "raw_windows_crlf_sha256": "56e867e50ee6fdd5a8eae9a879f6b4cf37fb509f3582225ff409b50c6d3f38c1",
+      "reported_log_sha256": "56e867e50ee6fdd5a8eae9a879f6b4cf37fb509f3582225ff409b50c6d3f38c1",
+      "role": "Historical chief evidence, not new independent acceptance; no log rewritten."
+    }
+  },
+  "production_integration_caveats": [
+    "Caller-supplied bytes cannot prove origin or split. Synthetic is a scope declaration, never data authentication or production authorization.",
+    "Future production loader must separately bind the approved development path, exact consumed bytes/hash, fixed 120-by-30 shape and code/config/artifact provenance. This seam opens no paths.",
+    "Bind each evaluation scenario to its own excluded-fold prior; preserve immutable calibration across fees, fresh per-scenario state and same-scenario completed-prefix information.",
+    "Final access, recorded freeze and all-development refit require separately reviewed APIs and authorization; this review adds none.",
+    "Annual marginal pooling assumes exchangeability; overlapping folds are not independent significance tests. No strategy benefit established."
+  ],
+  "trial_history": {
+    "failed_oracle_trials": [],
+    "successful_trials": [
+      "Initial oracle: 87148 checks; manifest truth checks added, no source change.",
+      "Final oracle: 87166 checks, zero failures."
+    ],
+    "infrastructure": "Unified shell helper failed twice before process creation; Node filesystem/subprocess fallback used. A nonexistent data.py Git probe accessed no data. A report-writer JavaScript parse failed before writes; corrected quoting. None was a numerical oracle failure."
+  },
+  "acceptance": "Independent review evidence only; chief alone accepts/integrates. No commit, push, branch change or source edit."
+}

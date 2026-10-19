@@ -1,0 +1,153 @@
+{
+  "all_passed": true,
+  "created_at_utc": "2026-10-19T19:07:51.920895+00:00",
+  "original_audit_bytes_and_mtimes_unchanged": true,
+  "original_snapshot": {
+    "findings.json": {
+      "mtime_ns": 1792436782123153200,
+      "sha256_raw": "70a624f1bfe00cf5a559b48876e8760bfd9534ee4f003dc6d8191d40b0577109"
+    },
+    "initial-execution.json": {
+      "mtime_ns": 1792436810672828800,
+      "sha256_raw": "07580b350ab06801584b178647a2fb43c517284a140278d81d0dee5a873ca83b"
+    },
+    "integrity_self_test.py": {
+      "mtime_ns": 1792436848082160100,
+      "sha256_raw": "0945af572c305855736fa1463e162f6a5a428e364151dc88693f68690825db08"
+    },
+    "review.md": {
+      "mtime_ns": 1792436803176937400,
+      "sha256_raw": "8c3ca25e0bf18b9d6396330373b76247ee7c5e8e1818978b50a78663e2a18ff7"
+    },
+    "task-lock.json": {
+      "mtime_ns": 1792436468374249000,
+      "sha256_raw": "f724ad93de4463b4f3f70970332e3d37137111ebf40d70aa2803c892611bbaa8"
+    },
+    "verification.json": {
+      "mtime_ns": 1792436810590338800,
+      "sha256_raw": "4cbcf50fa371f5f0e039007bcd1b6ee4a140e6e56a2494ad24150af7c4b509b1"
+    },
+    "verify.py": {
+      "mtime_ns": 1792436674867137200,
+      "sha256_raw": "55c06f2f91a7d4ac3939948a31f624c8db49846767e1b6de60be72ca8befd8b6"
+    }
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "schema_version": 1,
+  "scope": "Original primary evidence preserved; all intentional corruption confined to ignored scratch.",
+  "scratch_is_git_ignored": true,
+  "scratch_relative_path": ".runtime\\SOL-022-integrity-20261019T190728270706Z",
+  "tests": [
+    {
+      "all_scratch_bytes_and_mtimes_unchanged": true,
+      "case": "valid_read_only_replay",
+      "command_portable": [
+        "python",
+        "-B",
+        "audit/SOL-022/verify.py",
+        "--check",
+        "--evidence",
+        ".runtime\\SOL-022-integrity-20261019T190728270706Z\\valid\\verification.json",
+        "--artifact-dir",
+        ".runtime\\SOL-022-integrity-20261019T190728270706Z\\valid"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "stderr": "",
+      "stderr_sha256_raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"check_count\": 87166, \"code_verdict\": \"approve\", \"evidence_integrity_verdict\": \"passed\", \"failed_comparisons\": 0, \"read_only\": true, \"release_gate\": \"not_verifiable_at_pinned_base\"}\r\n",
+      "stdout_sha256_raw": "006eb83457c6f2c8f80049c2fbb4e1897432a73a8486b0ac2cf3702e680f32fd",
+      "subprocess_hash_basis": "exact captured UTF-8 bytes, including Windows CRLF if emitted"
+    },
+    {
+      "all_scratch_bytes_and_mtimes_unchanged": true,
+      "case": "initializer_refuses_existing",
+      "command_portable": [
+        "python",
+        "-B",
+        "audit/SOL-022/verify.py",
+        "--evidence",
+        ".runtime\\SOL-022-integrity-20261019T190728270706Z\\valid\\verification.json",
+        "--artifact-dir",
+        ".runtime\\SOL-022-integrity-20261019T190728270706Z\\valid"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "stderr": "Traceback (most recent call last):\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-022-a1\\audit\\SOL-022\\verify.py\", line 585, in <module>\r\n    main()\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-022-a1\\audit\\SOL-022\\verify.py\", line 570, in main\r\n    raise FileExistsError('Refuse overwrite: '+str(args.evidence))\r\nFileExistsError: Refuse overwrite: E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-022-a1\\.runtime\\SOL-022-integrity-20261019T190728270706Z\\valid\\verification.json\r\n",
+      "stderr_sha256_raw": "8cc173872b6dfc115a16b5ff282dfc8562cd22c698367102132946fe3750b61f",
+      "stdout": "",
+      "stdout_sha256_raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "subprocess_hash_basis": "exact captured UTF-8 bytes, including Windows CRLF if emitted"
+    },
+    {
+      "all_scratch_bytes_and_mtimes_unchanged": true,
+      "case": "corrupt_input_hash",
+      "command_portable": [
+        "python",
+        "-B",
+        "audit/SOL-022/verify.py",
+        "--check",
+        "--evidence",
+        ".runtime\\SOL-022-integrity-20261019T190728270706Z\\corrupt_input_hash\\verification.json",
+        "--artifact-dir",
+        ".runtime\\SOL-022-integrity-20261019T190728270706Z\\corrupt_input_hash"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "stderr": "Traceback (most recent call last):\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-022-a1\\audit\\SOL-022\\verify.py\", line 585, in <module>\r\n    main()\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-022-a1\\audit\\SOL-022\\verify.py\", line 567, in main\r\n    facts=check_saved(args.evidence,args.artifact_dir)\r\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-022-a1\\audit\\SOL-022\\verify.py\", line 552, in check_saved\r\n    raise RuntimeError('Saved numerical/source evidence mismatch; read-only evidence preserved')\r\nRuntimeError: Saved numerical/source evidence mismatch; read-only evidence preserved\r\n",
+      "stderr_sha256_raw": "caf6d1aedc036aa47741106469b84536d98e2a72d309366d0e61c215011caaf4",
+      "stdout": "",
+      "stdout_sha256_raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "subprocess_hash_basis": "exact captured UTF-8 bytes, including Windows CRLF if emitted"
+    },
+    {
+      "all_scratch_bytes_and_mtimes_unchanged": true,
+      "case": "corrupt_training_key",
+      "command_portable": [
+        "python",
+        "-B",
+        "audit/SOL-022/verify.py",
+        "--check",
+        "--evidence",
+        ".runtime\\SOL-022-integrity-20261019T190728270706Z\\corrupt_training_key\\verification.json",
+        "--artifact-dir",
+        ".runtime\\SOL-022-integrity-20261019T190728270706Z\\corrupt_training_key"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "stderr": "Traceback (most recent call last):\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-022-a1\\audit\\SOL-022\\verify.py\", line 585, in <module>\r\n    main()\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-022-a1\\audit\\SOL-022\\verify.py\", line 567, in main\r\n    facts=check_saved(args.evidence,args.artifact_dir)\r\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-022-a1\\audit\\SOL-022\\verify.py\", line 552, in check_saved\r\n    raise RuntimeError('Saved numerical/source evidence mismatch; read-only evidence preserved')\r\nRuntimeError: Saved numerical/source evidence mismatch; read-only evidence preserved\r\n",
+      "stderr_sha256_raw": "caf6d1aedc036aa47741106469b84536d98e2a72d309366d0e61c215011caaf4",
+      "stdout": "",
+      "stdout_sha256_raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "subprocess_hash_basis": "exact captured UTF-8 bytes, including Windows CRLF if emitted"
+    },
+    {
+      "all_scratch_bytes_and_mtimes_unchanged": true,
+      "case": "corrupt_findings_artifact_hash",
+      "command_portable": [
+        "python",
+        "-B",
+        "audit/SOL-022/verify.py",
+        "--check",
+        "--evidence",
+        ".runtime\\SOL-022-integrity-20261019T190728270706Z\\corrupt_findings\\verification.json",
+        "--artifact-dir",
+        ".runtime\\SOL-022-integrity-20261019T190728270706Z\\corrupt_findings"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "stderr": "Traceback (most recent call last):\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-022-a1\\audit\\SOL-022\\verify.py\", line 585, in <module>\r\n    main()\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-022-a1\\audit\\SOL-022\\verify.py\", line 567, in main\r\n    facts=check_saved(args.evidence,args.artifact_dir)\r\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-022-a1\\audit\\SOL-022\\verify.py\", line 549, in check_saved\r\n    raise RuntimeError('Saved artifact hash mismatch; read-only evidence preserved')\r\nRuntimeError: Saved artifact hash mismatch; read-only evidence preserved\r\n",
+      "stderr_sha256_raw": "ffd4accea3ebd3dce1e07345d755da2b0a1271f4165b1b16d3f2f368570b0208",
+      "stdout": "",
+      "stdout_sha256_raw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "subprocess_hash_basis": "exact captured UTF-8 bytes, including Windows CRLF if emitted"
+    },
+    {
+      "all_scratch_bytes_and_mtimes_unchanged": true,
+      "case": "supported_negative_verdict_checker_unit",
+      "code_verdict": "changes_required",
+      "passed": true,
+      "scope": "Simulated checker result only, not executed source verdict or source acceptance"
+    }
+  ]
+}

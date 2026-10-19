@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python",
+    "-B",
+    "audit/SOL-022/verify.py"
+  ],
+  "python": "Python 3.12.14",
+  "status": 0,
+  "stdout": "{\"check_count\": 87166, \"code_verdict\": \"approve\", \"evidence_integrity_verdict\": \"passed\", \"failed_comparisons\": 0, \"read_only\": false, \"release_gate\": \"not_verifiable_at_pinned_base\"}\r\n",
+  "stderr": "",
+  "stdout_hash_basis": "raw subprocess UTF-8 bytes including CRLF",
+  "stdout_sha256": "ac8b46b6a7101b759f7f678d7c6e37cb9052386fcfab499b8d1d5cf05e3436cb"
+}
