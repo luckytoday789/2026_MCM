@@ -1,0 +1,15 @@
+{
+  "failures": [
+    {
+      "tool": "exec_command",
+      "attempts": 2,
+      "error": "Failed to create unified exec process: helper_unknown_error: setup refresh had errors"
+    },
+    {
+      "tool": "node_repl",
+      "error": "process is not defined",
+      "effect": "No files had been created before the error."
+    }
+  ],
+  "fallback": "Node fs and execFile with Python child environment copy that removes PYTHONPATH"
+}

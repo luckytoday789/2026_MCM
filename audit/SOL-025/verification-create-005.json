@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+    "-B",
+    "audit/SOL-025/verify.py",
+    "--create"
+  ],
+  "returncode": 0,
+  "stdout": "{\"task_id\": \"SOL-025\", \"read_only\": false, \"regression_tests\": 90, \"focused_tests\": 14, \"independent_comparisons\": 13976, \"imported_sources\": {\"safeinvest\": {\"path\": \"src/safeinvest/__init__.py\", \"sha256\": \"b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef\"}, \"safeinvest.accounting\": {\"path\": \"src/safeinvest/accounting.py\", \"sha256\": \"0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5\"}, \"safeinvest.backtest\": {\"path\": \"src/safeinvest/backtest.py\", \"sha256\": \"bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6\"}, \"safeinvest.baselines\": {\"path\": \"src/safeinvest/baselines.py\", \"sha256\": \"a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce\"}, \"safeinvest.experiments\": {\"path\": \"src/safeinvest/experiments.py\", \"sha256\": \"8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca\"}, \"safeinvest.metrics\": {\"path\": \"src/safeinvest/metrics.py\", \"sha256\": \"efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e\"}, \"safeinvest.policy_analysis\": {\"path\": \"src/safeinvest/policy_analysis.py\", \"sha256\": \"e94a5ef79a2f58f231a46bd2af01020dd09847d27bdbe74f1795ba032dd8d345\"}, \"safeinvest.policy_calibration\": {\"path\": \"src/safeinvest/policy_calibration.py\", \"sha256\": \"d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a\"}, \"safeinvest.policy_cases\": {\"path\": \"src/safeinvest/policy_cases.py\", \"sha256\": \"84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7\"}, \"safeinvest.policy_pilot\": {\"path\": \"src/safeinvest/policy_pilot.py\", \"sha256\": \"5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057\"}}, \"evidence_sha256\": \"0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04\"}\n",
+  "stderr": "",
+  "seconds": 18.03100000001723,
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+  "pythonpath_present": false,
+  "removed_keys": []
+}

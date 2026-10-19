@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-025",
+  "attempt": 1,
+  "role": "sol",
+  "task_sha256": "1fc31a691142f171b96d9790c5aa32ad298531fb66250641eb5a727acc0174e1",
+  "base_commit": "a065805163f01eeffd73ca0ea5ac420454493a94",
+  "status": "completed",
+  "failure": null,
+  "artifact_hash_basis": "canonical_git_blob",
+  "started_from_pinned_source": true,
+  "checks": [
+    {
+      "argv": [
+        "C:\\Users\\刘奥华\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.EXE",
+        "exec",
+        "--approve-for-me",
+        "--model",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"xhigh\"",
+        "--cd",
+        "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1",
+        "--output-last-message",
+        "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\.runtime\\agent-last.txt",
+        "You are role=sol in the authorized SafeInvest team. Read AGENTS.md and .runtime/task.json. Complete only that task in this worktree. Do not commit, push, change branches, edit the task, or start another watcher; the parent runner handles delivery. Respect allowed_paths and base version. Write real deliverables and perform checks. Report blockers rather than inventing parameters. The task is authorized; continue through routine fixes.\nRead AGENTS.md, this immutable task, locked problem/accounting, specs/POLICY_CASE_ENGINE.md and specs/POLICY_CASE_REPAIR.md. SOL-021 and SOL-022 positive code review and SOL-013 corrected design are already accepted at this base. SOL-023 is cancelled for a reproduced prescribed-command import failure, not accepted. Do not rerun or overwrite that attempt. No fetch/merge, commit/push, watcher, package install, production/final input read, environment/config/helper edit or additional task is authorized here. Parent handles delivery.\n\nCopy the two pinned audit/chief/quarantine/SOL-023 drafts into the assigned src/test paths, preserving implementation bytes. Add portable repo src path bootstrap in the test module BEFORE safeinvest imports, following the existing test_accounting.py pattern. Do not rely on PYTHONPATH or an installed package. If a further defect is found, preserve exact failing evidence and report it explicitly; do not silently weaken an assertion or change policy design. The old complete failed audit remains at the pinned failed commit and original branch; no need to duplicate its large JSON corruption files. The original code passed chief 3310 independent comparisons and 14 tests with an explicit source import path, but this did not accept it.\n\nMake a fresh compact task-specific audit/SOL-025 verifier and exclusively created verification. Reuse useful review ideas and generated tests but do not label the old task-bound evidence as new. Bind the actual immutable new task and published task Git object, current explicit base sources, imported source locations and delivered code/test/verifier hashes; support later replay after main integration without a worker-HEAD requirement. Never include a file's own saved evidence hash recursively. Record actual facts, not predeclared pass values. Compare all meaningful existing tests; additionally independently check the chief case-reference fixtures and scalar fee, deflation, review-lag, baseline null diagnostics and prefix counts. Check corruption of a number and a source hash, preserving original/scratch bytes; no overwrite/repair in --check and no nonfinite or missing keys accepted. Keep artifact sizes compact by representing corruptions minimally or using temporary scratch plus hashed detailed evidence, rather than cloning entire large evidence documents into git. Preserve actual failures in this new audit directory.\n\nRun BOTH exact validation_commands with the existing Python 3.12 in fresh subprocesses whose environment explicitly removes PYTHONPATH. Save full command/return code/output and actual interpreter version in clean-environment-checks.json; include imported package paths in the verification. Then run the new verifier read-only again with evidence byte checks. No new benchmark/timing production claims. Findings/implementation must explain the original failed parent command and narrow repair, exact source identity, test counts, actual numeric checks, and remaining writer/provenance/final gates. Do not change unrelated core or old historical files. Within 20 minutes, report any genuine blocker instead of creating fake completion.\n"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-025-a1-agent.log"
+    },
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_policy_cases.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-025-a1-check-0.log"
+    },
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "audit/SOL-025/verify.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-025-a1-check-1.log"
+    }
+  ],
+  "artifacts_sha256": {
+    "audit/SOL-025/clean-environment-checks.json": "9324165b32dfc8c035fc083337e7df23c9d34610a9f54aa42b53608cc6785247",
+    "audit/SOL-025/execution-driver.json": "df3d199622b9224684845da92543151e3b378e30bc9ce06d397a15ae8f97209f",
+    "audit/SOL-025/failed-verifier-001.py": "fd6e5620d1119413733025a3e7e80cc4482e0af5da89b698c0f0fd0423eb5eab",
+    "audit/SOL-025/failed-verifier-002-reconstruction.json": "7971fbdb3ef5b4a9226099e418414befa9c683c5613672026bb236caa48c13d7",
+    "audit/SOL-025/failed-verifier-003-reconstruction.json": "87cebe6eb041bb88bb38a3a6935852cd4c34134b1d03b0665566c0b2623f45cb",
+    "audit/SOL-025/findings.json": "497b3a9abbbce2eca94884f66d7868f38ff1dde2774548562b316872b4f44d6e",
+    "audit/SOL-025/focused-test-first.json": "12b3e6dad31bc6339a04bd161bdc2a879d082b26bb2d4ad4ed6360fd96bc5fc2",
+    "audit/SOL-025/implementation.md": "2aa27ffdb70200bad0911a8ff47734609642b01c76716f39955c899f379acfa5",
+    "audit/SOL-025/infrastructure-extra.json": "ac91b367c654ec8369c0935cf822798794f599de692b5413e43ce4ce747e7993",
+    "audit/SOL-025/infrastructure.json": "47fe07fbf3dab64a854d5384a05e734aef196748e8e0505ba483c82b95255862",
+    "audit/SOL-025/integrity-execution.json": "f994171251ac4ec0b08b7bab9e546367a998c175c2d21d72a0ee241a664dd712",
+    "audit/SOL-025/integrity-self-tests.json": "82f64d92544f5b18b1c91f2ca92aa4aaaf0d25e131d22fc95c64e53af48a9763",
+    "audit/SOL-025/integrity_probes.py": "1d59de3603093feb4e71d816508c9260d01b1376481b730e98dfa39ac32ed44c",
+    "audit/SOL-025/task-binding.json": "439bd97e38ca448bc957e03eb3bb406092deccc8dbe2988f7937142a2bb5a605",
+    "audit/SOL-025/verification-create-001.json": "51c6bf6fc6494dc3beca5cc9f947b3cbae6b12cd0d31f36aa4b9ba692c05de9e",
+    "audit/SOL-025/verification-create-002.json": "9235a00e9aa6640e6e5c883b25630b27e5c1df76dec2c91f68fd304b45b52f52",
+    "audit/SOL-025/verification-create-003.json": "6b0035934b3a88c89244469f3f2ee992fccbd18492925a570134fff59e2c7463",
+    "audit/SOL-025/verification-create-004.json": "934f51a3670e4942b8430e73945d91b8e157e90d7a5c3ff574e197da78f4d548",
+    "audit/SOL-025/verification-create-005.json": "8a8fa882267471872dea9ce4c43a9a744dd54bf7831cd49e2ad1c93e0e8e1893",
+    "audit/SOL-025/verification-read-only-check.json": "081224a054dc4d946e5b69602761cfa2f50a74c067c030ed0f2454be1c76c457",
+    "audit/SOL-025/verification-trial-004-source.json": "e98bc106d2d5666cb2af1c1c00f5d78f453455911a3bef9880d19e98796f3c34",
+    "audit/SOL-025/verification-trial-004.json": "0fc8bd771c3e60d4b7db3ecab4fd9274c2eaf74f74b2f3634063cd3e1d29da12",
+    "audit/SOL-025/verification.json": "0ccffebb2b711d12efb47ba79de702b7b81aaacdbf77d4011bec69cd63d8fb04",
+    "audit/SOL-025/verify.py": "4dbbfc234c45efa75e9993a4ac84b1381f86c0aadd9f1d8f073e72b762b4b023",
+    "handoff/SOL-025/check-0.txt": "5756b4bd401f2feef36fac10c0cbe41306e691f0cce31c4f77b9563e8900db25",
+    "handoff/SOL-025/check-1.txt": "507723be85d5f76e58cf07bf15f0fb4ccac6e917c338c0d379828e1dabfbc87d",
+    "handoff/SOL-025/check-2.txt": "2b2ddd9c2a128567aebc22e16b55350886fc09f7c2bcb371ddd4328e74d98d04",
+    "src/safeinvest/policy_cases.py": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7",
+    "tests/test_policy_cases.py": "54fd55aa9d4b7e31df3dd44aac9b01317c77f2040cdcd1a960d9bb8516115114"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "finished_at": "2026-10-19T19:54:35.440970+00:00",
+  "note": "Completed means worker self-check only; coordinator acceptance is separate.",
+  "input_manifest": {
+    "source": "User-supplied 2026 MCM Senior Group Problem A SafeInvest attachments",
+    "license": "CC BY-NC-SA 4.0",
+    "transformation": "Originals unchanged; derived CSV files are row subsets only.",
+    "files": [
+      {
+        "path": "problem/2026_MCM_SafeInvest.pdf",
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+        "bytes": 137578
+      },
+      {
+        "path": "data/raw/SafeInvest_Synthetic_Data.csv",
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+        "bytes": 274914
+      },
+      {
+        "path": "data/development/scenarios_001_120.csv",
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+        "bytes": 182255
+      },
+      {
+        "path": "data/final_holdout/scenarios_121_180.csv",
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+        "bytes": 92732
+      }
+    ]
+  },
+  "task_parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "competition_outcomes_allowed": false,
+    "final_outcomes_allowed": false,
+    "source_sha256": {
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "specs/policy_driver_layout_v2.json": "f431e661c260f7f6e40330661e77724dc3ddcafeafed1a3f0b6c31781a4e8329",
+      "specs/POLICY_CASE_ENGINE.md": "c984e230eecb720613b864a910d95921af1aa805f79fa68c7044f905410dec62",
+      "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+      "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+      "src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+      "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+      "src/safeinvest/policy_calibration.py": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+      "specs/POLICY_CORRECTION_V2.md": "b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383",
+      "specs/POLICY_NUMERIC_K1.md": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+      "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+      "specs/POLICY_NUMERIC_K2.md": "88d5f58a59f090c25331392e4cd5682daf5d050c27b24afe6629d8e4a5eb9997",
+      "audit/chief/SOL-017-review.json": "ec9dcc7fd084954827cfdf82bf1826e17ddd8c9b3fbece15058760fedef3d4b9",
+      "specs/POLICY_CASE_REPAIR.md": "1b728ca6c59fcec296157ef9e3df23cdaedca8c651aa56548e6e80eef58b9ae3",
+      "audit/chief/quarantine/SOL-023/src/safeinvest/policy_cases.py": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7",
+      "audit/chief/quarantine/SOL-023/tests/test_policy_cases.py": "cb22bc11db37ae5444c2c8a3a3103efb8571d1667d7e02612dd5dce54c9e3088",
+      "audit/chief/SOL-023-failure-review.json": "950c4eb26d1b7f4a7ede72c7ddf02fa4e78f04dde7eb12c27863c122d21a3a71",
+      "audit/chief/case_reference.py": "0418f2c00fb8f3a57ef4ceeee0ce4435fb113228bb14de68cd3d7afb3f18c405",
+      "audit/chief/case-reference.json": "8e207be8c4fa5e4fa274cf0d858c7ffef4b8cefa56ed64ab06ff72c6f80f1813",
+      "audit/chief/SOL-021-review.json": "105f8610edeebc1b17272b7450d3cdba29fa14d963407afd1665fc7caf640670",
+      "audit/chief/SOL-022-review.json": "9875dab72b4354566fe6067de94fabbb917c0b9c2344914a3f38c084f1042546"
+    },
+    "contract": "specs/POLICY_CASE_ENGINE.md",
+    "repair_contract": "specs/POLICY_CASE_REPAIR.md",
+    "supersedes_task": "SOL-023",
+    "failed_commit": "ea2569d4624dc86d68861446610ba08548de121f",
+    "preserved_draft_sha256": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7"
+  }
+}

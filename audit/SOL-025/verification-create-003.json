@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+    "-B",
+    "audit/SOL-025/verify.py",
+    "--create"
+  ],
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 368, in <module>\n    main()\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 351, in main\n    expected = calculate()\n               ^^^^^^^^^^^\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 317, in calculate\n    numeric = numeric_checks()\n              ^^^^^^^^^^^^^^^^\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 246, in numeric_checks\n    ledger_check(row, oracle_ledger[row['period']-1])\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 180, in ledger_check\n    c.eq(actual[key], F(expected), key)\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 151, in eq\n    require(math.isclose(actual, float(expected), rel_tol=1e-10, abs_tol=roundoff),\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 34, in require\n    raise AssertionError(message)\nAssertionError: independent mismatch intended_transfer: (9.351894258990964e-15, Fraction(0, 1))\n",
+  "seconds": 18.17199999996228,
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+  "pythonpath_present": false,
+  "removed_keys": []
+}

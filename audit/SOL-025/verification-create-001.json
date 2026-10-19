@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+    "-B",
+    "audit/SOL-025/verify.py",
+    "--create"
+  ],
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 368, in <module>\n    main()\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 351, in main\n    expected = calculate()\n               ^^^^^^^^^^^\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 317, in calculate\n    numeric = numeric_checks()\n              ^^^^^^^^^^^^^^^^\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-025-a1\\audit\\SOL-025\\verify.py\", line 218, in numeric_checks\n    c.eq(result.metrics.terminal_real_wealth, F('100.7400048'), 'forced_terminal')\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'PerformanceMetrics' object has no attribute 'terminal_real_wealth'\n",
+  "seconds": 18.04700000002049,
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+  "pythonpath_present": false,
+  "removed_keys": []
+}

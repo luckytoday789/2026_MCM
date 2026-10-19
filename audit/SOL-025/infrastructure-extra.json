@@ -1,0 +1,14 @@
+{
+  "tool": "tasklist.exe",
+  "argv": [
+    "/FI",
+    "IMAGENAME eq python.exe",
+    "/FO",
+    "CSV",
+    "/NH"
+  ],
+  "returncode": 1,
+  "stderr_decoded_utf8": "����: �ܾ�����\r\r\n",
+  "stderr_note": "Default UTF-8 decoding produced replacement characters; raw bytes were not captured.",
+  "effect": "Optional process inventory denied; no task work depended on it and integrity evidence was already written."
+}

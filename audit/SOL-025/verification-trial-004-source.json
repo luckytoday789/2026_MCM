@@ -1,0 +1,9 @@
+{
+  "source": "verify.py",
+  "replace_all": [
+    "generated_mode_fee_cases=len(sys.modules['test_policy_cases'].CaseTests.cases)",
+    "generated_mode_fee_cases=8*3"
+  ],
+  "result_sha256": "2580c74fc7782b0deec093c468a10dc12b5fed9563302b4802c02bd69048964e",
+  "reason": "Derive generated case count from executed CaseTests.cases instead of enumerated mode/fee dimensions."
+}
