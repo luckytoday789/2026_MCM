@@ -1,8 +1,9 @@
 {
   "role": "hy3",
   "machine_id": "937a9358dc114be8b3718ff13e3da4f9",
-  "state": "stopped",
+  "state": "ready",
   "python": "3.12.10",
-  "updated_at": "2026-10-19T14:44:40.786933+00:00",
-  "lease_until": "2026-10-19T14:54:40.786933+00:00"
+  "updated_at": "2026-10-19T15:04:55.956058+00:00",
+  "lease_until": "2026-10-19T15:14:55.956058+00:00",
+  "codex_available": false
 }
