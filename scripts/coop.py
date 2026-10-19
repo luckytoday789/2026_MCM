@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 RUNTIME = ROOT / '.runtime'
 REMOTE = 'origin'
 ROLES = {'chief', 'sol', 'hy3'}
+CHIEF_CHECKPOINT_VERSION = 2
 NAME = re.compile(r'^[A-Za-z0-9][A-Za-z0-9_-]{0,70}$')
 
 def now():
@@ -305,11 +306,12 @@ def chief_tick():
     path=RUNTIME/'chief-seen.json'
     fingerprint=chief_fingerprint()
     old=json.loads(path.read_text(encoding='utf-8')) if path.exists() else {}
-    if old.get('fingerprint')==fingerprint:
+    if (old.get('schema_version')==CHIEF_CHECKPOINT_VERSION
+            and old.get('fingerprint')==fingerprint):
         return False
     # On first launch, don't duplicate the active coordinator's bootstrap turn.
     if not old:
-        dump(path,{'fingerprint':fingerprint})
+        dump(path,{'schema_version':CHIEF_CHECKPOINT_VERSION,'fingerprint':fingerprint})
         return False
     binary=shutil.which('codex')
     if not binary:
@@ -325,7 +327,11 @@ def chief_tick():
     if git('status','--porcelain'):
         raise RuntimeError('Coordinator left uncommitted work; inspect before retry.')
     fetch()
-    dump(path,{'fingerprint':chief_fingerprint()})
+    # A turn can receive a worker result after its last inspection. Acknowledge
+    # only the state that triggered that turn, so such a result wakes the next
+    # turn. Saving the post-turn snapshot silently lost these notifications.
+    # Versioning also revisits one legacy checkpoint that may have lost a result.
+    dump(path,{'schema_version':CHIEF_CHECKPOINT_VERSION,'fingerprint':fingerprint})
     return True
 
 def doctor(role):

@@ -48,3 +48,26 @@ Next bounded chief turn:
 This is a historical checkpoint, not an override of a newer queue or receipt.
 The local recovery archive under .runtime/recovery preserves the prior logs and
 stop marker before orderly restart. Do not remove that archive or worktrees.
+
+Latest checkpoint — 2026-10-19 23:36 Asia/Shanghai
+
+SOL-002 through SOL-005 and HY3-002 have since been accepted. Main before this
+repair was 07b112dee30190d2c4f8d6c1aadacc2ab978092e. HY3-003 delivered its completed
+receipt at 7652410d73425371110784ef5fa97c03470a074e at 22:36:02, during the previous
+chief turn. The watcher saved its post-turn remote fingerprint at 22:37 and
+therefore silently acknowledged this result without a follow-up turn. At 23:36
+all three workers were idle with live heartbeats; HY3-003 was still unaccepted.
+
+The current fix saves the pre-turn fingerprint only, so arrivals during a turn
+remain visible to its successor. Checkpoint schema 2 forces one recovery turn
+for a legacy checkpoint, without erasing logs, task results or receipts. A failed
+chief turn must not advance its checkpoint. A chief-owned queue update may cause
+one extra continuation; an unchanged state becomes idle again.
+
+Immediate action after restart: inspect HY3-003 at the exact commit above and
+dispatch the independent Sol numerical review. Do not repeat the HY3 baseline
+experiment. Progress chief policy/suitability work while that review runs. Have
+Sol independently review the small scheduler change alongside a suitable next
+review; do not make that review a prerequisite for unrelated development work.
+Report truthfully that 22:37–23:36 was idle due to the scheduling defect, not an
+hour of numerical calculation. Final data remain closed.

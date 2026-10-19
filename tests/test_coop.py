@@ -116,5 +116,70 @@ class ProtocolTests(unittest.TestCase):
                 coop.git=original_git
                 coop.ROOT,coop.RUNTIME=old_root,old_runtime
 
+    def test_result_arriving_during_chief_turn_wakes_the_next_turn(self):
+        test_root=coop.ROOT/'.runtime/protocol-tests'
+        test_root.mkdir(parents=True,exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=test_root) as temp:
+            runtime=Path(temp)
+            checkpoint=runtime/'chief-seen.json'
+            coop.dump(checkpoint,{'schema_version':2,'fingerprint':'older'})
+            current=['before-turn']
+            def execute(*args,**kwargs):
+                current[0]='worker-result-arrived'
+                return {'exit_code':0}
+            with (patch.object(coop,'RUNTIME',runtime),
+                  patch.object(coop,'chief_fingerprint',side_effect=lambda:current[0]),
+                  patch.object(coop.shutil,'which',return_value='codex'),
+                  patch.object(coop,'publish_status'),
+                  patch.object(coop,'execute_process',side_effect=execute) as run,
+                  patch.object(coop,'git',return_value=''),
+                  patch.object(coop,'fetch')):
+                self.assertTrue(coop.chief_tick())
+                self.assertEqual(json.loads(checkpoint.read_text())['fingerprint'],'before-turn')
+                self.assertTrue(coop.chief_tick())
+                self.assertEqual(json.loads(checkpoint.read_text())['fingerprint'],'worker-result-arrived')
+                self.assertFalse(coop.chief_tick())
+                self.assertEqual(run.call_count,2)
+
+    def test_legacy_checkpoint_gets_one_recovery_turn_without_repeat(self):
+        test_root=coop.ROOT/'.runtime/protocol-tests'
+        test_root.mkdir(parents=True,exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=test_root) as temp:
+            runtime=Path(temp)
+            checkpoint=runtime/'chief-seen.json'
+            coop.dump(checkpoint,{'fingerprint':'already-swallowed-result'})
+            with (patch.object(coop,'RUNTIME',runtime),
+                  patch.object(coop,'chief_fingerprint',return_value='already-swallowed-result'),
+                  patch.object(coop.shutil,'which',return_value='codex'),
+                  patch.object(coop,'publish_status'),
+                  patch.object(coop,'execute_process',return_value={'exit_code':0}) as run,
+                  patch.object(coop,'git',return_value=''),
+                  patch.object(coop,'fetch')):
+                self.assertTrue(coop.chief_tick())
+                self.assertEqual(json.loads(checkpoint.read_text())['schema_version'],2)
+                self.assertFalse(coop.chief_tick())
+                self.assertEqual(run.call_count,1)
+
+    def test_failed_chief_turn_does_not_acknowledge_pending_result(self):
+        test_root=coop.ROOT/'.runtime/protocol-tests'
+        test_root.mkdir(parents=True,exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=test_root) as temp:
+            runtime=Path(temp)
+            checkpoint=runtime/'chief-seen.json'
+            coop.dump(checkpoint,{'schema_version':2,'fingerprint':'previous'})
+            original=checkpoint.read_bytes()
+            with (patch.object(coop,'RUNTIME',runtime),
+                  patch.object(coop,'chief_fingerprint',return_value='pending-result'),
+                  patch.object(coop.shutil,'which',return_value='codex'),
+                  patch.object(coop,'publish_status'),
+                  patch.object(coop,'execute_process',side_effect=[{'exit_code':1},{'exit_code':0}]),
+                  patch.object(coop,'git',return_value=''),
+                  patch.object(coop,'fetch')):
+                with self.assertRaisesRegex(RuntimeError,'Coordinator turn failed'):
+                    coop.chief_tick()
+                self.assertEqual(checkpoint.read_bytes(),original)
+                self.assertTrue(coop.chief_tick())
+                self.assertEqual(json.loads(checkpoint.read_text())['fingerprint'],'pending-result')
+
 if __name__=='__main__':
     unittest.main()
