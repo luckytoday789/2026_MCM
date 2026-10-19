@@ -4,7 +4,11 @@
     2484,
     48984
   ],
-  "child_pids": [],
+  "child_pids": [
+    46120,
+    48872,
+    13848
+  ],
   "current_task": null,
   "alerts": [],
   "tasks": [
@@ -394,10 +398,11 @@
   "chief_status": {
     "role": "chief",
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
-    "state": "ready",
+    "state": "running",
     "python": "3.12.0",
-    "updated_at": "2026-10-19T20:40:44.395869+00:00",
-    "lease_until": "2026-10-19T20:50:44.395869+00:00"
+    "updated_at": "2026-10-19T20:45:57.897590+00:00",
+    "lease_until": "2026-10-19T20:55:57.897590+00:00",
+    "task_id": "integrate-and-dispatch"
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
   "schema_version": 1,
@@ -405,7 +410,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-19T20:42:00.373527+00:00",
+  "updated_at": "2026-10-19T20:47:22.236230+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
