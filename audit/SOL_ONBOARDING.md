@@ -25,7 +25,7 @@ This is an onboarding record only. No project task has been claimed, executed, o
 |---|---|
 | Git | 2.54.0.windows.1 |
 | GitHub read access | `git ls-remote` and clone succeeded with authorized network access |
-| GitHub write access | To be verified by pushing this branch and checking its remote ref; do not infer success from this text |
+| GitHub write access | Verified: push of `status/sol` exited 0, and a separate `git ls-remote` returned `fc97462218c94c05e98c2383fb331f678da1178e`, matching the first local onboarding commit |
 | Python | Bundled Python 3.12.14 runs; PATH `python.exe` is an unusable WindowsApps alias |
 | Codex | CLI 0.162.1 runs; `codex login status` reports logged in using ChatGPT |
 | CLI sandbox caveat | Codex reported access-denied warnings for its existing profile temporary PATH-alias directory; login status still exited 0 |
