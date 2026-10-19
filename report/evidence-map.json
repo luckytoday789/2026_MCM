@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "4a10e3b645d80ee531f5a1b7246cf3537b40041a",
+  "snapshot_main_commit": "6c1997c0ac20430af0b7e11d9fb0b29ab8506a11",
   "authoritative_state": [
     "ops/control.json",
     "ops/queue.json"
@@ -163,7 +163,9 @@
       ],
       "execution_authorized": false,
       "freeze_created": false,
-      "competition_outcomes_computed": false
+      "competition_outcomes_computed": false,
+      "source_commit": "6c1997c0ac20430af0b7e11d9fb0b29ab8506a11",
+      "independent_review_task": "SOL-024"
     }
   },
   "requirements": [

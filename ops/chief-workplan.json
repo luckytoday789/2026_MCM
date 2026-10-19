@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T02:24:51.749525+08:00",
-  "reason": "SOL-020 personalized design accepted with scalar/corruption replay. Publish final-protocol design review on this pushed evidence base; SOL-021 K2 review pending.",
+  "next_wake_at": "2026-10-20T02:51:35.939969+08:00",
+  "reason": "SOL-017 K2 negative evidence preserved and correction pushed for SOL-021; SOL-020 personalized design accepted; final protocol prepared and SOL-024 queued. Useful independent chief specifications are prepared; await exact remote receipts.",
   "next_actions": [
-    "Publish a synthetic-only independent review of FINAL_EVALUATION.md and companion after this prerequisite commit is pushed; no holdout access or final freeze.",
-    "Personalized design accepted at exact SOL-020 commit. Future adapter must explicitly encode not-run denominator zero/null metrics and separate same-policy generic robustness; wait for accepted generic code/outputs before implementation task.",
-    "Independently validate SOL-021 exact receipt and ordinary/extreme fixtures; positive approval releases unchanged SOL-016 and SOL-022 promptly.",
-    "After positive SOL-022 release SOL-023. Integrate only independently checked code; then publish writer task on combined pushed source, fixed HY3 development run and independent Sol result review.",
-    "Prepare explicit final-evaluation/freeze evidence contract without opening holdout or changing approved selection rules.",
-    "Complete personalized implementation/rescreen, development selection, freeze, one final evaluation, report rendering and code supplement. Private identities stay local; never submit automatically.",
-    "Check local quota/control/STOP/deadline; preserve supervisor and remote single-writer ownership."
+    "Fetch exact SOL-021 receipt. Check task/base/source/path/hash integrity, replay read-only, reject corruption and independently verify extreme/ordinary fixtures. Positive code approval promptly releases existing unchanged SOL-016 and SOL-022; preserve negative SOL-013/SOL-017 history.",
+    "After positive accepted SOL-022 calibration review release existing SOL-023. Inspect and independently test exact SOL-016/SOL-023 code before integrating only assigned paths.",
+    "Review exact SOL-024 final-protocol design evidence. Correct any negative findings with new immutable source/task; no freeze or holdout access from design approval.",
+    "After case/analysis acceptance publish production writer task using specs/POLICY_RESULT_WRITER.md on combined already-pushed source. Then fixed HY3 development groups, exact accepted HY3-003 imports and independent Sol numerical result review.",
+    "Personalized design is accepted SOL-020. Future narrow adapter/task must pin actual accepted generic assignments and sources, encode denominator=0/null outcomes for not-run referrals, preserve both risk/power screens and separate generic same-primary sensitivity. Do not change in-flight generic APIs.",
+    "After independently accepted development selection/personalization, implement/review final-capable guards and all-development refit; complete reviewed freeze, one final inventory, report rendering and code package. Keep final_data_open=false until actual gates pass; private identities local; humans submit.",
+    "Check local quota/status/drain/control/STOP/deadline before more work. Do not restart supervisor or duplicate remote roles. Incoming receipts trigger before the 30-minute fallback."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T02:19:51.749525+08:00",
+  "last_completed_at": "2026-10-20T02:21:35.939969+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "SOL-024",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "6c1997c0ac20430af0b7e11d9fb0b29ab8506a11",
+  "depends_on": [
+    "SOL-013",
+    "SOL-020"
+  ],
+  "split": "synthetic",
+  "max_seconds": 900,
+  "scope": "Targeted independent review of proposed final/freeze protocol; no policy execution or holdout access.",
+  "parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "competition_outcomes_allowed": false,
+    "final_outcomes_allowed": false,
+    "source_sha256": {
+      "specs/FINAL_EVALUATION.md": "39cf3c73328c79afc83905ba4aa31d9aeae14564a42fb7d167756886292f9035",
+      "specs/final_evaluation_contract_v1.json": "b9b254b17af6a4e61ab9ed6708cefbff3466b56c9dc2b9555008e7907cd34c96",
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "specs/PERSONALIZED_REVIEW.md": "0365fdf989ae7abfeda0bc3f48f8c86245a40dd9e48b3c6ae8d2d26c0b7c4987",
+      "specs/personalized_review_v1.json": "2edc9410b291f8f1f7235344e685d004c2f3cfd80844539df96759e9b305b4ad",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/DEVELOPMENT_BASELINE_DRIVER.md": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0",
+      "specs/POLICY_ANALYSIS.md": "a2220482c861799280815b4e65d73e79e53666816ac9e7e72a38d5f48a6e53b8",
+      "specs/POLICY_RESULT_WRITER.md": "ce0c43fad34ebdc44fc6f6bda395c562781e500cdc4b855ee7e0cbf937bec0b4",
+      "ops/PROTOCOL.md": "1aae9a4819a82aa8c17e93edd5c1a8d9e7bbb05fe18bcbb7d9d08800e53c2525",
+      "scripts/coop.py": "c23bcae4b2ee761f8c44bfee9dc5c891291cd74dc7b143ea5e3b5fe3938153f1",
+      "data/manifest.json": "2535c087075957919d5f1990ad234ca436f7b3506ba592ac8a6457feb42fe90d",
+      "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+      "audit/chief/SOL-020-review.json": "276895e8e12b9c212fe433f0fa1c07408c601502ffd5d9ce965a684fdc72551b",
+      "audit/SOL-020/findings.json": "2e597db33daf1da6dfdea61925565fb7d2735e97db7d985784faed967a27f3c0"
+    },
+    "prior_personalized_review_commit": "2fbd4598606b41a786bd931046adb0ecc8b42d78",
+    "source_contract": "specs/FINAL_EVALUATION.md",
+    "release_requires": "Accepted v2 design SOL-013 and personalized design SOL-020 only; independent of pending code approval."
+  },
+  "allowed_paths": [
+    "audit/SOL-024"
+  ],
+  "deliverables": [
+    "audit/SOL-024/review.md",
+    "audit/SOL-024/findings.json",
+    "audit/SOL-024/verify.py",
+    "audit/SOL-024/verification.json"
+  ],
+  "commands": [],
+  "validation_commands": [
+    [
+      "{python}",
+      "-B",
+      "audit/SOL-024/verify.py",
+      "--check"
+    ]
+  ],
+  "acceptance_checks": [
+    "Exact immutable task/base/source hashes, permitted paths and actual Python 3.12 reference checks. No competition input bytes or policy code execution.",
+    "Challenge frozen development-only selection, all-120 refit provenance, final path isolation and prefix-only updates; final diagnostics cannot reapply OOF promotion or select a replacement rule.",
+    "Check fixed generic inventory/count arithmetic and conditional personalized counts/null/referral semantics at denominator 60; both risk and power final screens, no re-ranking or counterfactual substitution.",
+    "Independently test severe exact ties and earliest locations with small scalar sequences, freeze blob-strip digest versus JSON reserialization, mandatory source/commands/count binding and clear publication order.",
+    "Challenge one-evaluation/disjoint-shard and software-failure correction language for silent gate reset or parameter tuning. Review hash handling against actual read-only runner source. No runtime mutation or actual final freeze.",
+    "Read-only saved verification binds source/artifacts and rejects corrupted scratch evidence; preserve failed trials and distinguish design approval from implementation, performance and final authorization."
+  ],
+  "instructions": "Read AGENTS.md, locked specs and the proposed FINAL_EVALUATION.md plus companion JSON. Independently review this small final-stage contract against the approved v2 and accepted personalized design. Source evidence is pinned; production implementation, selected results, refit artifacts and ops/freeze.json intentionally do not yet exist. Do not invent them or certify absent code. This task is independent of pending K2 kernel review because it executes no policy helper.\n\nCheck that primary generic mode and all profile/fee decisions are frozen using accepted development only. All eight generic modes at both fees are fixed diagnostics, never a second final selection. One prior is refitted from all 120 development scenarios/3600 annual rows before access, reused immutably, while contextual updates see only the same final path's t-1 prefix. Verify the change from OOF priors to all-development refit is explicit and requires new accepted final-capable code; original development guards remain enforced.\n\nUse generated scalar/key fixtures and metadata only: 16 generic cases *60 paths *30 years, five prefix horizons, ten contrasts/two fees/five H, conditional ten profile/fee summary rows, executed versus upstream referrals, exact null/denominator conventions. All-eligible personalized counts should follow 60 *2*sum(5,15,30,25,6), not generic H30. A final personalized failure may lead only to human review, never a new class/threshold search; different-fee classes remain separate and final outcomes cannot retune primary. Final fold-promotion support must be inapplicable, not invented or used to reselect.\n\nVerify severe-scenario exact tie/smallest ID and strict earliest peak/trough with no epsilon; retain post-fee observations and own-policy versus same-path baseline distinction. Inspect scripts/coop.py read-only to confirm freeze SHA256 is UTF-8 Git text stripped at the outside, not a sorted JSON digest. Construct standalone fake freeze texts to check whitespace/hash distinctions, with no actual gate files or runner invocation. Examine required freeze content, source versus task-base pins, prerequisite push then later task publication, disjoint predeclared shards and <=30-minute attempts. Identify any circular dependency, missing validity boundary or scientifically misleading rule.\n\nChallenge failure handling: preserve original freeze, attempted read/exposure, receipts and partial outcomes; independently review a minimal bug correction under a new immutable record without pretending holdout is untouched. No silent reset, success-only retry, parameter optimization or arbitrary final reinterpretation. Flag precise corrections if necessary. Preserve historical negative kernel verdicts and separate integrity from design_verdict approve/changes_required.\n\nWrite concise review/findings with sources, blockers or scope-limited approval, reference facts and implementation requirements. Save verification with exclusive creation; verify.py --check must recompute read-only at pinned sources with meaningful exact/relative checks, allow HEAD to advance, reject corrupted scratch copies and preserve all original evidence. Retain meaningful failed trials. No broad review of prior accepted designs or scheduler tests.\n\nOnly audit/SOL-024 plus ignored scratch writes. No real CSV reads, policy/analysis/helper execution, source/spec/task/queue/control edits, actual freeze creation, final authorization, credentials/private identities, installs, worker operations or publication. Python 3.12 CPU only, 15 minutes. Runner publishes the branch; chief reviews the exact commit."
+}
