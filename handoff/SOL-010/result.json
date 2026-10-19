@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-010",
+  "attempt": 1,
+  "role": "sol",
+  "task_sha256": "2b3378dd7e285fded4a9fc8653d6f415c96d949c5528cb72d7a8db3b634b9a0f",
+  "base_commit": "c9ad8fb429295dc2302d7adb5a106f19a71404d8",
+  "status": "completed",
+  "failure": null,
+  "artifact_hash_basis": "canonical_git_blob",
+  "started_from_pinned_source": true,
+  "checks": [
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "scripts/check_worker_env.py"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-010-a1-run-0.log"
+    },
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "scripts/probe_sol_availability.py",
+        "--not-before",
+        "2026-10-20T01:05:00+08:00",
+        "--output",
+        "audit/SOL-010/availability.json"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-010-a1-run-1.log"
+    },
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-c",
+        "import json; p=json.load(open('audit/SOL-010/availability.json',encoding='utf-8')); assert p['usable'] and p['exit_code']==0 and p['response'].strip()=='SAFEINVEST_SOL_AVAILABLE'; assert p['model_calls']==1 and p['model']=='gpt-6.1-sol'"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-010-a1-check-0.log"
+    }
+  ],
+  "artifacts_sha256": {
+    "audit/SOL-010/availability.json": "d1acc03f85298f4f0fc7dedf1cfa87f5f5c61716b3ac044332f71ed99f7085bb",
+    "handoff/SOL-010/check-0.txt": "a620d17433955533f42fcc4f2a757bbe1932bbc193707a6f0022fa350064e7df",
+    "handoff/SOL-010/check-1.txt": "143e14966b9a9b6e4837ee21600f1350d671a1a2e6a75e14a79e7972a3984508",
+    "handoff/SOL-010/check-2.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "finished_at": "2026-10-19T17:05:22.897435+00:00",
+  "note": "Completed means worker self-check only; coordinator acceptance is separate.",
+  "input_manifest": {
+    "source": "User-supplied 2026 MCM Senior Group Problem A SafeInvest attachments",
+    "license": "CC BY-NC-SA 4.0",
+    "transformation": "Originals unchanged; derived CSV files are row subsets only.",
+    "files": [
+      {
+        "path": "problem/2026_MCM_SafeInvest.pdf",
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+        "bytes": 137578
+      },
+      {
+        "path": "data/raw/SafeInvest_Synthetic_Data.csv",
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+        "bytes": 274914
+      },
+      {
+        "path": "data/development/scenarios_001_120.csv",
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+        "bytes": 182255
+      },
+      {
+        "path": "data/final_holdout/scenarios_121_180.csv",
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+        "bytes": 92732
+      }
+    ]
+  },
+  "task_parameters": {
+    "not_before": "2026-10-20T01:05:00+08:00",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "xhigh",
+    "max_model_calls": 1,
+    "max_model_seconds": 300,
+    "source_sha256": {
+      "scripts/probe_sol_availability.py": "03999b341b1c63063000e90a259813fd31ef62352457a8312b6c88c3a9771252"
+    },
+    "passive_wait_note": "Timeout includes sleep until the reset hint plus a bounded five-minute probe; waiting consumes no model calls."
+  }
+}
