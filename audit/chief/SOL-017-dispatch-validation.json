@@ -1,0 +1,19 @@
+{
+  "task_definitions_valid": 22,
+  "legacy_entries_without_queue_digest": [
+    "HY3-001"
+  ],
+  "historical_runtime_over_1800": [
+    {
+      "id": "SOL-010",
+      "max_seconds": 2400
+    }
+  ],
+  "new_tasks_verified": [
+    "SOL-017",
+    "SOL-018",
+    "SOL-019"
+  ],
+  "new_tasks_runtime_at_most_1800": true,
+  "bases_already_on_origin_main": true
+}

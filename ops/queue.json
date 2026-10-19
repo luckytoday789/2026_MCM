@@ -418,6 +418,35 @@
       "branch": "work/sol/SOL-016-a1",
       "waiting_for": "Corrected v2 design approved by SOL-013; wait for positive corrected-kernel SOL-017 acceptance. All thirteen pinned source files remain unchanged; no kernel source is imported by this pure analysis task.",
       "note": "Pure component implementation on generated inputs only. No production run, final data, or writer authorization."
+    },
+    {
+      "id": "SOL-017",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "323fb71bf92c8786dd9659e8021fdecc7f3b17fbac17208e8a7c77c49cea6019",
+      "branch": "work/sol/SOL-017-a1",
+      "note": "Synthetic-only narrow work; no strategy outcomes, final access or production run authorization."
+    },
+    {
+      "id": "SOL-018",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "ca8643f671b9469c461c0185248eee1be97355b89ecb97f4a014d7ba63303295",
+      "branch": "work/sol/SOL-018-a1",
+      "note": "Synthetic-only narrow work; no strategy outcomes, final access or production run authorization.",
+      "waiting_for": "Positive accepted corrected-kernel SOL-017 review and unchanged pinned sources. SOL-013 approved the corrected design but preserved a negative old-kernel verdict."
+    },
+    {
+      "id": "SOL-019",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "898c124ce2621bea0d266bdf022cd1c9c433b8c3f1a655e516d8b4e569249858",
+      "branch": "work/sol/SOL-019-a1",
+      "note": "Synthetic-only narrow work; no strategy outcomes, final access or production run authorization.",
+      "waiting_for": "Positive accepted corrected-kernel SOL-017 and calibration SOL-018 reviews with unchanged pinned sources. SOL-013 design is approved; its historical negative kernel verdict remains preserved."
     }
   ]
 }

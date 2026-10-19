@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "failure": "KeyError: task_sha256",
+  "cause": "Chief validation assumed historical queue entries all carry task_sha256. Older accepted bootstrap entries lack that field; no new task, code or runtime execution failure.",
+  "fix": "Validate structural definitions for all tasks; compare stored digests where present and require them for all three new tasks. No historical task mutation."
+}

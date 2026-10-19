@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "SOL-017",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "315b7072e98f4d6aafd8573507074fc023477918",
+  "depends_on": [
+    "SOL-001",
+    "SOL-004",
+    "SOL-013"
+  ],
+  "split": "synthetic",
+  "max_seconds": 900,
+  "scope": "Independent closure of SOL-013 K1 against corrected log-domain portfolio gross; reuse accepted design and ordinary scalar audit evidence without redesign.",
+  "parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "competition_outcomes_allowed": false,
+    "final_outcomes_allowed": false,
+    "source_sha256": {
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "specs/POLICY_NUMERIC_K1.md": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+      "src/safeinvest/policy_pilot.py": "9026abd22818fb420ce75dcf100b461c1833eab8be03526366dd3faadaa77bba",
+      "tests/test_policy_pilot.py": "09cbe72579f46be55f8f2ecf8187127260ff414fd88834ed52bb6225212bdc95",
+      "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+      "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "audit/SOL-013/verify.py": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+      "audit/SOL-013/findings.json": "b2c82f41ed0abd7c62cf350ed5b554c967085d5cbbee70a3e62d4f6feb64c6bd",
+      "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+      "audit/chief/policy-k1-validation.json": "4f84abd57d5e08bbca544c70972db08b9056c87bcab9af65373e1cb6897dd00f"
+    },
+    "prior_review_commit": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+    "required_verdict": "code_verdict approve before any kernel-dependent production work",
+    "gamma": 4,
+    "primary_fee_rate": 0.0025,
+    "sensitivity_fee_rate": 0.005
+  },
+  "allowed_paths": [
+    "audit/SOL-017"
+  ],
+  "deliverables": [
+    "audit/SOL-017/review.md",
+    "audit/SOL-017/findings.json",
+    "audit/SOL-017/verify.py",
+    "audit/SOL-017/verification.json"
+  ],
+  "commands": [],
+  "validation_commands": [
+    [
+      "{python}",
+      "-B",
+      "audit/SOL-017/verify.py",
+      "--check"
+    ]
+  ],
+  "acceptance_checks": [
+    "Exact task/base/blob hashes, allowed paths and Python 3.12 execution; no competition outcomes.",
+    "Independently close K1 with exact positive minimum subnormal CE, zero-weight assets, all n=0..5, heterogeneous rational products, minimum normal and maximum finite support; reject invalid/nonfinite support unchanged.",
+    "Use scalar/rational or high-precision independent expected values, never production CE helpers for expectations. Cover ordinary inverse-cube prior mixtures, fee/buffer and initial rational holdings; preserve strict hurdle/tie and tiny positive-fee target-change semantics.",
+    "Review only the actual mathematical source diff and its consequences; unchanged design remains approved by accepted SOL-013. Record code_verdict approve/changes_required separately from replay integrity.",
+    "Portable read-only evidence check binds new imported code bytes, original review provenance and saved artifacts; rejects numerical/source/artifact corruption without overwrites. Preserve all meaningful failures."
+  ],
+  "instructions": "Read AGENTS.md, locked accounting and specs/POLICY_NUMERIC_K1.md. SOL-013 is accepted independent negative kernel evidence with approved corrected design. The chief has changed only EmpiricalPrior.certainty_equivalent.log_power to evaluate logsumexp(log(weight)+log(gross)) over positive weights, and added a subnormal regression. Review the exact new pinned source, not original-source replay. Historical SOL-013 must remain unchanged.\n\nIndependently check the math and numerical behavior from minimum subnormal to maximum finite factors, zero/very small positive weights, identical and heterogeneous support, prior and n=0..5 recent rows. Expected values must use an independent Fraction/Decimal oracle with sufficient precision, and exact comparison or zero absolute tolerance for tiny values: a large absolute tolerance cannot certify a positive subnormal. No clipping or imputation. Check ordinary rational initial T=200/3, fee=1/6, post-fee 599/18, buffered 3887/3750 and true terminal wealth 7787/75 under the stated fixture. Confirm fee/buffer separation, ordinary inverse-cube mixture and strict decision/tie thresholds, actual tiny-transfer active-state transition and final invalid observations remain as previously reviewed.\n\nReuse your accepted SOL-013 independently authored scalar oracle where it saves time; explicitly load the new code bytes and identify which unchanged oracle fixtures were reused. Do not silently override its old task/hash constraints or rewrite historical saved findings. A new adapter may load the exact old verifier blob in memory and replace only its source-loading boundary for new synthetic collection, recording that adaptation and new source hashes; alternatively write a concise separate oracle. Do not redo broad unrelated accounting or scheduler suites. This is a bounded 15-minute K1 closure, not a new design or parameter review. If another true blocker appears, preserve it and return changes_required.\n\nWrite findings.json/review.md with exact code_verdict, independent numeric facts, unchanged normative parameters and limitations. Write verification.json using exclusive creation and verify.py --check that recomputes read-only at appropriate tolerances, verifies pinned imports and artifacts, permits HEAD to advance, and rejects corrupted scratch evidence without repair. Preserve failed trials. Chief tests are provisional and not independent acceptance.\n\nOnly audit/SOL-017 plus ignored scratch may be written. No source/tests/spec/task/queue/private-team edits, actual CSV reads, installs, supervisor/worker operations, publishing or production/final runs. CPU only. No production loader/writer/calibration certification. The runner delivers the receipt; chief accepts exact evidence."
+}

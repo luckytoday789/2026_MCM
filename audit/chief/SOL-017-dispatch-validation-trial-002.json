@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "failure": "AssertionError: historical task max_seconds <= 1800",
+  "cause": "Chief check incorrectly applied current new-attempt runtime bound to preserved historical definitions.",
+  "historical_tasks": [
+    {
+      "id": "SOL-010",
+      "max_seconds": 2400
+    }
+  ],
+  "fix": "Require <=1800 for new tasks; retain historical task bytes unchanged. No worker execution or model failure."
+}

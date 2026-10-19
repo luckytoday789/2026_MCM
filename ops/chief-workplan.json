@@ -1,18 +1,19 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T01:59:31.998357+08:00",
-  "reason": "SOL-013 design approved; negative kernel K1 reproduced and narrow log-domain correction tested. Push prerequisites before publishing corrected review/calibration/case tasks.",
+  "next_wake_at": "2026-10-20T02:02:49.204557+08:00",
+  "reason": "SOL-017 K1 closure ready; corrected SOL-018 calibration and SOL-019 case tasks waiting. Chief can prepare personalized own-horizon execution contract while remote review proceeds.",
   "next_actions": [
-    "Publish SOL-017 narrow independent K1 closure against the pushed corrected kernel. Publish SOL-018 calibration successor and SOL-019 case successor with explicit gates; preserve cancelled SOL-014/SOL-015.",
-    "After positive SOL-017 acceptance release existing unchanged SOL-016 and SOL-018 promptly. After positive SOL-018 acceptance release SOL-019.",
-    "Review exact component receipts; then production writer, fixed HY3 development jobs, independent result audit, personalized rescreen, freeze and final report remain. Final gate closed; identities local.",
-    "Check local quota/control/STOP/deadline before substantive work; no supervisor or remote role restarts."
+    "Inspect exact SOL-017 receipt and independently replay it. Positive code approval unlocks existing unchanged SOL-016 and corrected SOL-018; do not release based on completed label alone.",
+    "Positive SOL-018 calibration acceptance unlocks SOL-019. Review component source, scalar fixtures and receipts before integration, then publish writer task against combined pushed source.",
+    "Prepare a concise own-horizon personalized overlay/rescreen contract tied to provisional profile choice and no fallback. Do not run outcomes or alter normative parameters before independent component gates.",
+    "After accepted production writer issue fixed HY3 development commands, import HY3-003 references, independently review outputs, then personalized rescreen, freeze/final and report.",
+    "Preserve final_data_open=false, prior failed trials, identities local and quota/STOP/deadline gates."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T01:56:31.998357+08:00",
+  "last_completed_at": "2026-10-20T01:57:49.204557+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }
