@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "HY3-002",
+  "attempt": 1,
+  "owner": "hy3",
+  "kind": "commands",
+  "base_commit": "c651c67c30db1131c25641ac94631238cba0dd8d",
+  "depends_on": [
+    "SOL-003"
+  ],
+  "split": "development",
+  "max_seconds": 300,
+  "scope": "Corrected source/split verification in required Python 3.12; no scenario performance.",
+  "parameters": {
+    "required_python": "3.12",
+    "predecessor_task": "HY3-001",
+    "predecessor_commit": "2a0263c5822988c0385d32fe084b794f8d644bc5"
+  },
+  "allowed_paths": [
+    "results/development/HY3-002"
+  ],
+  "deliverables": [
+    "results/development/HY3-002/environment.json",
+    "results/development/HY3-002/input-check.json"
+  ],
+  "commands": [
+    [
+      "{python}",
+      "scripts/check_worker_env.py",
+      "--output",
+      "results/development/HY3-002/environment.json"
+    ],
+    [
+      "{python}",
+      "scripts/check_inputs.py",
+      "--output",
+      "results/development/HY3-002/input-check.json"
+    ]
+  ],
+  "validation_commands": [
+    [
+      "{python}",
+      "scripts/check_worker_env.py"
+    ],
+    [
+      "{python}",
+      "scripts/check_inputs.py"
+    ]
+  ],
+  "acceptance_checks": [
+    "Receipt task/base/hash/allowed paths match.",
+    "Receipt and environment report both show Python 3.12; environment status passed.",
+    "All commands exit zero; source and exact split metadata agree with manifest and independent Sol review.",
+    "Original failed-environment attempt remains preserved; final_outcomes_computed is false."
+  ],
+  "instructions": "Corrected immutable successor of HY3-001, whose Python 3.13.14 environment violated the project requirement. Remain waiting until chief confirms a Python 3.12 worker registration and accepts SOL-003. Run only the fixed reviewed commands. The first command must fail before data checks under the wrong interpreter; do not bypass it, change source/specifications, or relabel the old result. Source-file validation may inspect all scenarios as metadata but must compute no final or development strategy performance. Preserve old worktrees and receipts. Review ops/NEEDS_HUMAN.md for the required local environment correction."
+}

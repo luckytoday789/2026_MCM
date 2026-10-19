@@ -43,6 +43,24 @@
       "task_sha256": "5c14076dc38e93b21bd133ab45f0914ca076aa2b7601271c3cd6285832e6d556",
       "branch": "work/sol/SOL-002-a1",
       "note": "Dependency-gated on chief acceptance of SOL-001; review chief plan/oracle at pinned base."
+    },
+    {
+      "id": "SOL-003",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "758b29442ab6f6c7ba984a8d7a38a063d35ce80995df52f4266654133b89a4dd",
+      "branch": "work/sol/SOL-003-a1",
+      "note": "Independent review of HY3 and chief runtime fixes."
+    },
+    {
+      "id": "HY3-002",
+      "state": "waiting",
+      "owner": "hy3",
+      "attempt": 1,
+      "task_sha256": "d3f1e845573fc1e7c170fd4b126130a6a344348138d588828517fd334d4c39d8",
+      "branch": "work/hy3/HY3-002-a1",
+      "note": "Release only after 3.12 registration and SOL-003 acceptance; requires remote local setup."
     }
   ]
 }

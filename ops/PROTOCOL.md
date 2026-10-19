@@ -51,6 +51,14 @@ The runner uses a separate worktree at the pinned base. It does not merge arbitr
 4. Result promotion: chief inspects the exact result commit and actual reports, resolves any required review, integrates only accepted changes, and records the reviewed SHA in the queue. A worker's word “completed” is not enough.
 5. Research checks: record every candidate, use only development outcomes to tune, freeze policy/metrics/parameters/selection rules, then final evaluation once with no further tuning. Final bug corrections remain disclosed and do not erase contamination history.
 
+Receipt format note (2026-10-19): new receipts declare
+artifact_hash_basis=canonical_git_blob and hash staged Git bytes after line-ending
+normalization. Validate against exact published blobs. Older receipts hash local
+checkout bytes: document CRLF reconstruction and quarantine any unverifiable
+artifact. Never rewrite a historical receipt. Workers load runner changes after
+an orderly idle restart; machine status now retains the Python version.
+
+
 `ops/freeze.json` must bind code SHA, parameters, metrics, severe-case rule and input hashes. A final task supplies SHA256 of its canonical UTF-8 contents (strip outer whitespace, matching the runner's `git show` read), and `ops/control.json.final_data_open` must be true. This is a procedural study gate, not protection against collaborators deliberately opening a tracked file.
 
 ## Start the two remote machines

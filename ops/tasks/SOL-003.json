@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "SOL-003",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "c651c67c30db1131c25641ac94631238cba0dd8d",
+  "depends_on": [
+    "SOL-001"
+  ],
+  "split": "development",
+  "max_seconds": 1200,
+  "scope": "Independent audit of HY3 metadata evidence, chief receipt/runtime correction and replacement of excluded optional test-log evidence.",
+  "parameters": {
+    "hy3_result_commit": "2a0263c5822988c0385d32fe084b794f8d644bc5",
+    "sol_core_commit": "b25c6b5589d07e767f463f54f053f08bb0085157",
+    "required_python": "3.12",
+    "final_outcomes_allowed": false
+  },
+  "allowed_paths": [
+    "audit/SOL-003"
+  ],
+  "deliverables": [
+    "audit/SOL-003/review.md",
+    "audit/SOL-003/findings.json",
+    "audit/SOL-003/verify.py",
+    "audit/SOL-003/verification.json",
+    "audit/SOL-003/accounting-tests.txt"
+  ],
+  "commands": [],
+  "validation_commands": [
+    [
+      "{python}",
+      "audit/SOL-003/verify.py",
+      "--check"
+    ]
+  ],
+  "acceptance_checks": [
+    "Exact task/base/receipt identity, scope and output hashes verify.",
+    "Independently recomputed source/split metadata agrees with exact HY3 receipt; final performance is never computed.",
+    "Explicitly verify original HY3 Python 3.13.14 is not accepted and Python 3.12 rerun is required.",
+    "Assess chief canonical-Git-blob receipt hashing and Python-version wakeup fixes; run test_coop.py and retain actual outcomes.",
+    "Regenerate 28 accounting checks into a fresh UTF-8 LF log and record its canonical SHA256; do not reuse or alter the unmatched historical log.",
+    "Review has no unresolved material flaw; negative findings and exact reproduction are preserved."
+  ],
+  "instructions": "Independently audit HY3-001 at exact commit 2a0263c5822988c0385d32fe084b794f8d644bc5. Read its handoff/HY3-001/result.json and results/development/HY3-001/input-check.json using git show of that exact SHA (the work branch was pushed and is available from the normal origin fetch). Do not switch branches or execute code from the worker result. Compare task identity/hash/base/source manifest and output hashes with the immutable HY3-001 contract at this pinned base. Independently recompute source hashes, schema, complete unique scenario-period keys, finite gross-return domains and exact development/final row split from source files. Reading final input structure for metadata checks is authorized; computing final wealth, losses, growth or strategy outcomes is forbidden.\n\nReview audit/chief/HY3-001-review.json. Original HY3 run used Python 3.13.14, so it is preserved but not accepted; verify the finding and the necessity of rerunning on 3.12. Your audit may pass if it verifies this correct rejection and the numerical metadata, without accepting or changing HY3-001.\n\nReview chief changes in scripts/coop.py and tests/test_coop.py against their parent version: receipts now hash staged canonical Git blobs, and persistent interpreter versions affect the chief fingerprint while ordinary heartbeats do not. Check Windows mixed line endings, exact blob contents including trailing newlines, unchanged-task retry and scope boundaries. Run the four protocol tests. Assess scripts/check_worker_env.py, including successful 3.12 and simulated failing 3.13 cases. Keep runtime/source files read-only; report concrete fixes in your review if needed.\n\nThe optional historical audit/SOL-001/validation.txt on commit b25c6b5589d07e767f463f54f053f08bb0085157 failed chief's receipt-hash validation and was excluded. All mandatory code/review outputs matched, and chief independently ran 28 tests and 132 toy numeric checks. Do not rewrite the historical receipt or assert that excluded log verified. Generate new accounting-tests.txt from running the accepted test_accounting.py suite (28 tests) at this pinned base, normalize your new log explicitly to UTF-8 LF, and record its SHA256 in verification.json as replacement test evidence.\n\nWrite review.md, findings.json (reviewed SHAs, pass/fail, blockers, suggested fixes), verify.py and verification.json (commands actually executed, source/input/output hashes, counts/residuals, no final outcomes). The initial verifier may create verification.json; --check must recompute metadata and verify saved evidence without silently replacing it. Use standard-library Python 3.12, no new dependencies. Only audit/SOL-003 is writable; parent runner handles handoff. Preserve material failed checks with nonzero validation status."
+}
