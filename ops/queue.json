@@ -794,10 +794,23 @@
       "attempt": 1,
       "task_sha256": "c164559e5fc86d5de16d7bf54679518a8941927a079f75364d174586263ac191",
       "branch": "work/sol/SOL-030-a1",
-      "note": "Independent chief figure and qualified report-text review on already pushed source; held behind real quota probe, writer recovery SOL-029 and personalized review SOL-027. No baseline rerun or final data.",
-      "resource_hold": "sol_model_quota_after_SOL-026",
+      "note": "Existing independent report review remains waiting behind SOL-027 and the narrow writer correction SOL-031. Actual SOL-029 model access succeeded; no new quota probe needed. Release promptly after these priority tasks submit without a fresh quota failure.",
       "dispatch_priority_after": [
-        "SOL-029",
+        "SOL-027",
+        "SOL-031"
+      ]
+    },
+    {
+      "id": "SOL-031",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "8c89a09bee28bf64ee78ee372e5481ad1efeca1ce75eddee1743838e3a6a9dc2",
+      "branch": "work/sol/SOL-031-a1",
+      "released_at": "2026-10-19T22:37:59.183417+00:00",
+      "note": "Narrow correction of verified W-LF-1 after successful actual model receipt; no new quota failure. Existing running SOL-027 finishes first. Prerequisite source/spec commit pushed before this task. No writer/production acceptance.",
+      "release_evidence": "audit/chief/SOL-031-dispatch.json",
+      "dispatch_priority_after": [
         "SOL-027"
       ]
     }
