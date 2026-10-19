@@ -1,0 +1,24 @@
+test_adaptive_fails_only_context_control (test_policy_analysis.AnalysisTests.test_adaptive_fails_only_context_control) ... ok
+test_adaptive_fails_only_cost_control (test_policy_analysis.AnalysisTests.test_adaptive_fails_only_cost_control) ... ok
+test_adaptive_passes_both_when_context_fails (test_policy_analysis.AnalysisTests.test_adaptive_passes_both_when_context_fails) ... ok
+test_all_five_own_horizons_and_fixed_modes (test_policy_analysis.AnalysisTests.test_all_five_own_horizons_and_fixed_modes) ... ok
+test_complete_counts_contrasts_units_and_source_differences (test_policy_analysis.AnalysisTests.test_complete_counts_contrasts_units_and_source_differences) ... ok
+test_config_is_pinned_and_records_have_no_aliases_or_io (test_policy_analysis.AnalysisTests.test_config_is_pinned_and_records_have_no_aliases_or_io) ... ok
+test_four_fold_medians_and_strict_zero_exclusion (test_policy_analysis.AnalysisTests.test_four_fold_medians_and_strict_zero_exclusion) ... ok
+test_gain_and_tail_loss_exact_boundaries_and_neighbors (test_policy_analysis.AnalysisTests.test_gain_and_tail_loss_exact_boundaries_and_neighbors) ... ok
+test_inclusive_point_ten_indifference_and_each_side (test_policy_analysis.AnalysisTests.test_inclusive_point_ten_indifference_and_each_side) ... ok
+test_liquidity_horizon_and_willingness_vetoes_all_retained (test_policy_analysis.AnalysisTests.test_liquidity_horizon_and_willingness_vetoes_all_retained) ... ok
+test_marginal_loss_not_quantile_of_pairs (test_policy_analysis.AnalysisTests.test_marginal_loss_not_quantile_of_pairs) ... ok
+test_missing_extra_duplicate_and_mismatched_grids (test_policy_analysis.AnalysisTests.test_missing_extra_duplicate_and_mismatched_grids) ... ok
+test_nonfinite_bool_null_numeric_and_unit_rejections (test_policy_analysis.AnalysisTests.test_nonfinite_bool_null_numeric_and_unit_rejections) ... ok
+test_only_h30_primary_and_sensitivity_cannot_reselect (test_policy_analysis.AnalysisTests.test_only_h30_primary_and_sensitivity_cannot_reselect) ... ok
+test_opposite_paired_and_marginal_growth_conclusions (test_policy_analysis.AnalysisTests.test_opposite_paired_and_marginal_growth_conclusions) ... ok
+test_p10_failure_and_all_referral_keep_all_negative_evidence (test_policy_analysis.AnalysisTests.test_p10_failure_and_all_referral_keep_all_negative_evidence) ... ok
+test_p90_equality_passes_despite_real_exceedance_and_exact_severe_id (test_policy_analysis.AnalysisTests.test_p90_equality_passes_despite_real_exceedance_and_exact_severe_id) ... ok
+test_strict_split_rejection_and_generated_development_shape (test_policy_analysis.AnalysisTests.test_strict_split_rejection_and_generated_development_shape) ... ok
+test_tail_growth_exact_boundary_and_neighbors (test_policy_analysis.AnalysisTests.test_tail_growth_exact_boundary_and_neighbors) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 1.353s
+
+OK

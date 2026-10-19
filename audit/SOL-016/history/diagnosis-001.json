@@ -1,0 +1,64 @@
+{
+  "cause": "audit expected ideal-rational threshold decisions, but contract uses stored finite float statistics with no tolerance",
+  "policy_implementation_changed": false,
+  "boundary_observations": [
+    {
+      "candidate": "equal_weight_buy_hold",
+      "reference": "equal_weight_annual",
+      "fee_rate": 0.0025,
+      "horizon": 15,
+      "candidate_losses": [
+        3.4375,
+        3.9375,
+        4.4375,
+        4.9375,
+        5.4375,
+        5.9375,
+        6.4375,
+        6.9375
+      ],
+      "reference_losses": [
+        2.4375,
+        2.9375,
+        3.4375,
+        3.9375,
+        4.4375,
+        4.9375,
+        5.4375,
+        5.9375
+      ],
+      "rational_difference": "1",
+      "stored_binary64_difference": 1.0000000000000009,
+      "binary64_gate_pass": false
+    },
+    {
+      "candidate": "equal_weight_buy_hold",
+      "reference": "equal_weight_annual",
+      "fee_rate": 0.005,
+      "horizon": 15,
+      "candidate_losses": [
+        3.4375,
+        3.9375,
+        4.4375,
+        4.9375,
+        5.4375,
+        5.9375,
+        6.4375,
+        6.9375
+      ],
+      "reference_losses": [
+        2.4375,
+        2.9375,
+        3.4375,
+        3.9375,
+        4.4375,
+        4.9375,
+        5.4375,
+        5.9375
+      ],
+      "rational_difference": "1",
+      "stored_binary64_difference": 1.0000000000000009,
+      "binary64_gate_pass": false
+    }
+  ]
+}

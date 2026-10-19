@@ -1,0 +1,5 @@
+{
+  "stdout": "{\"status\": \"created_exclusively\", \"checks\": {\"scalar_rational_comparisons\": 11995, \"max_absolute_residual\": 1.7763568394002505e-15, \"numeric_absolute_tolerance\": 1e-11, \"numeric_relative_tolerance\": 1e-12, \"policy_threshold_tolerance\": 0, \"unittest_tests_run\": 19, \"unittest_failures\": 0, \"unittest_errors\": 0}}\r\n",
+  "stderr": "",
+  "wall_seconds": 3.985
+}

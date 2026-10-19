@@ -1,0 +1,5 @@
+{
+  "failure": "exec_command process helper initialization failed",
+  "effect": "No command executed; used Node fs and child_process for permitted local work",
+  "source_probe_failure": "git show origin/main:ops/tasks/SOL-016-a1.json not present; corrected filename SOL-016.json read successfully"
+}

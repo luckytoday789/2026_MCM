@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-016",
+  "attempt": 1,
+  "role": "sol",
+  "task_sha256": "43da6619805b1e82b47fd9ddf592c9c65316e7ec6c8a0e193810b6f80afd05f6",
+  "base_commit": "dd60066010f6904565fb51e99be8088285102e57",
+  "status": "completed",
+  "failure": null,
+  "artifact_hash_basis": "canonical_git_blob",
+  "started_from_pinned_source": true,
+  "checks": [
+    {
+      "argv": [
+        "C:\\Users\\刘奥华\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.EXE",
+        "exec",
+        "--approve-for-me",
+        "--model",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"xhigh\"",
+        "--cd",
+        "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1",
+        "--output-last-message",
+        "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\.runtime\\agent-last.txt",
+        "You are role=sol in the authorized SafeInvest team. Read AGENTS.md and .runtime/task.json. Complete only that task in this worktree. Do not commit, push, change branches, edit the task, or start another watcher; the parent runner handles delivery. Respect allowed_paths and base version. Write real deliverables and perform checks. Report blockers rather than inventing parameters. The task is authorized; continue through routine fixes.\nRead AGENTS.md, locked problem/accounting and the exact component contract at parameters.contract. This is an immutable waiting implementation task, not authorization before release. Chief releases only after the queue prerequisites and independent corrected-design/code gates pass with unchanged pinned source. Do not fetch/merge a newer main into the attempt. Report any contract contradiction rather than silently changing policy parameters or schema.\n\nImplement only the assigned new source and test files plus audit directory. No edits to existing core, package exports, policy kernel/calibration, configuration, queue, scripts, runtime helpers or private team files. Inputs for all executions must be explicitly generated synthetic values; no original/raw/development/final CSV reads. Source files, immutable specifications and accepted audit metadata may be read. No baseline experiment rerun, package install, watchers, task publication, production CLI or final support. Keep the runtime CPU-only and within 25 minutes.\n\nRead the contract carefully and preserve negative results. Use ordinary Python plus project dependencies; no heavy libraries. Keep the public API pure: no file access, result writes, hidden global state or source-authenticity claims based only on caller labels. Test aliases/mutation where relevant. The future writer will prove exact original-input/source provenance separately. Do not pretend synthetic test outputs are development performance. Record strict split and input-schema rejection behavior.\n\nWrite implementation.md and findings.json with exact upstream source, delivered files/API, schema/count facts, remaining limitations and each failed trial/diagnosis. In audit/SOL-016/verify.py implement repeatable generated fixtures and scalar/rational checks against delivered code, save verification.json using exclusive creation, and support --check that recomputes and compares saved facts read-only with appropriate numeric tolerances and exact keys/hashes. Bind explicit upstream Git objects and delivered file hashes, allowing documented LF normalization; do not require current HEAD to stay a worker branch. Demonstrate corrupted scratch evidence rejection and original byte preservation. Keep all failed trial evidence. The runner handles its handoff and push; chief independently reviews exact code and fixtures before acceptance. Worker completed is not acceptance.\n\nImplement build_analysis_tables and AnalysisTables exactly as POLICY_ANALYSIS.md using generated complete metric grids. Keep paired growth medians and fold medians distinct from differences of marginal p10/p90. Every adaptive gate must compare BOTH fixed named controls, even when context fails; H30/.0025 alone selects the primary mode, and doubled costs cannot substitute a new primary. Report all ten contrasts at both fees/five H and all source metric differences. Preserve exact units, all signed gates, every fold and all negative evidence. No new thresholds, rounding-based decisions, significance claims or performance forecasts.\n\nCheck scenario matching, missing/extra/duplicate keys, fixed folds, complete case grids, wrong-fee/horizon and nonfinite rejection. Include independent numeric fixtures for opposite paired/marginal conclusions, exact threshold equality and either side, zero-fold exclusion, adaptive failing only one control, adaptive passing both when context fails, sensitivity failure without primary reselection, all five own-horizon screens, liquidity/willingness vetoes, p90 passing with tolerance exceedances, p10 failure, inclusive .10 indifference and all-referral. Complete 30 candidate/ten recommendation rows retain failures and provenance keys. Every assignment stays provisional/personalized_overlay_pending. Only fixed class modes map to profiles here; no unregistered adaptive substitution. No future production case module is needed: use the published input schema and synthetic records.\n"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-016-a1-agent.log"
+    },
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_policy_analysis.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-016-a1-check-0.log"
+    },
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "audit/SOL-016/verify.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-016-a1-check-1.log"
+    }
+  ],
+  "artifacts_sha256": {
+    "audit/SOL-016/findings.json": "4aabcdfe39c29e7b65608f51a07dcfa9537497e8259c67aa6e34632beaa08718",
+    "audit/SOL-016/history/corruption-python/duplicate-key.json": "9c6891df418fb73e102179fb02550f1c758c6508a40eed9b9859a66f32bcab54",
+    "audit/SOL-016/history/corruption-python/extra-key.json": "4e4d1d63f10f53bcae62ab11f2a74316d7c66b8ea167c7a7adbf1a9c26303f9d",
+    "audit/SOL-016/history/corruption-python/missing-key.json": "d5a9b8616739b1de1e9b6829d569a5924e14955663b94c8dc6106d14bf1587ab",
+    "audit/SOL-016/history/corruption-python/nonfinite.json": "ed7958f86f4df581693dcdbf3f8568643db1087b682199ec06163c38603365db",
+    "audit/SOL-016/history/corruption-python/threshold-neighbor.json": "d06fd4e14408ac42edfa4a4e41df3212d8408e0eaf4511fd710834dbd0e5ed51",
+    "audit/SOL-016/history/corruption-python/wrong-hash.json": "23fdf5a74c1bd764b9d03b782dc63320e918d2d069d3f28b6e00137ce66eba36",
+    "audit/SOL-016/history/corruption-python/wrong-number.json": "99d43fc4f54357e985ddb8d4445a2f61ca650b478a8b590af067dccfc7dc51b6",
+    "audit/SOL-016/history/corruption/duplicate-key.json": "ff51455857fbe188e1373ddc57469dd0e1e8c186c20deae969d7a4e442f2b5e0",
+    "audit/SOL-016/history/corruption/extra-key.json": "3d19d147e30354c4df03e085e2870301c54cb1c479647e7628eb114c5119f32b",
+    "audit/SOL-016/history/corruption/missing-key.json": "f24b779f9fa62fa43299e0bfd72599c3841f7a1c4001e2343f7dc72152cb1642",
+    "audit/SOL-016/history/corruption/threshold-neighbor.json": "b0285a216423bb667f9fc9866787311592e716193b991549f960fd8d008a01de",
+    "audit/SOL-016/history/corruption/wrong-delivered-hash.json": "e50e49c142338fcb95130d4bf530e1034e087db1b6a75fc72052b2d9c262b0e6",
+    "audit/SOL-016/history/corruption/wrong-number.json": "5c2e9847a6f62920d60a36a5c2130dedfb15c2a83a53bd99a5b2668876bab060",
+    "audit/SOL-016/history/diagnose-001.py": "5a903509e551759981311b93e8613de6c264b4d2896f8cfe2d041c59efb674c7",
+    "audit/SOL-016/history/diagnosis-001.json": "0970984bc4515ae13c91dd38b8ed417e958bad92e02a227a03e18d39769c5cfe",
+    "audit/SOL-016/history/failed-initialize-001-verify.py": "1554f507ffde404b091eee87285a2291b5a3c9bbac3ca96ead0db1630256ea66",
+    "audit/SOL-016/history/findings-before-integrity-fix.json": "6c9520db0f937e6dc53848d05c6dc015c604bd851003959c6cd3c9af4ca353fd",
+    "audit/SOL-016/history/implementation-before-integrity-fix.md": "59751e165b6d6602eaf24b73632da7c3caf64a911e3532d747c1e42f54956f80",
+    "audit/SOL-016/history/infrastructure-001.json": "954164fc7a4790d3287200ea02861f55b4d389d26fba5a5a0fd35e15377275d6",
+    "audit/SOL-016/history/integrity-diagnosis-001.json": "e982f26abb81398c7fa5a1a44096b75c0526667fb60949d17a4b6d8ff76a2395",
+    "audit/SOL-016/history/integrity-execution-002.json": "81ac3299dde5c973fbff3183ccc80375f1eb223c143a5310b0f70db421e52638",
+    "audit/SOL-016/history/integrity-trial-001.json": "7be0f425cfad9ebe55f339758e2d29f52736eea79e6f5528a2f3f59d7783db7b",
+    "audit/SOL-016/history/trial-001-tests.json": "bcaa05fd329bca297548736432a8f334ec6b7892e16ff0ce274d11dda3190493",
+    "audit/SOL-016/history/verification-initial-002.json": "2f991051edb333f5f59cc0e9ff9053795376d957f35b7cce8784fe28a4ca7347",
+    "audit/SOL-016/history/verification-initialize-001.json": "f26489085f0158282f1136814357b647784f6c8652e49144a7b18a64b7fb5f06",
+    "audit/SOL-016/history/verification-initialize-002.json": "73343fc30b3b1a12394aa67fa043386e116db12d61b69bede58b94e64761f93c",
+    "audit/SOL-016/history/verification-initialize-003.json": "af1c3ebb65cb1299d3e39ffd036ae8aa843a63171ce9d60ffde48d10e44dee86",
+    "audit/SOL-016/history/verify-before-integrity-fix.py": "38cd762efcb08dc4d4c6a4169b2abd78b63fb5ee7a9f1f8edf438c871c8003f7",
+    "audit/SOL-016/implementation.md": "5773ee670bb3323f345470e058fd78afb249baac4879327d38245210a495dcd1",
+    "audit/SOL-016/integrity-self-tests.json": "43e7d46b2362f01d15238917167275a4cf3be872675967de66a17a415bed8a08",
+    "audit/SOL-016/probe_integrity.py": "f7603b9aa94b29c43c815b0d2b62c4779500d9b1d2ade7343f6c8fadeb046ecb",
+    "audit/SOL-016/task-binding.json": "2c9d24b367d3d17f740572e5d437fcc87e9437777e0b13ec35045fe9464c4e83",
+    "audit/SOL-016/validation.json": "5321ed614e08f2cefb40b90cb6214a6278dfa5d85c39b9e92fb2052e854f27cc",
+    "audit/SOL-016/verification.json": "0afcd09007e86e916749f2ec8e7a139b34bb375a4dc1f50be140d64cbb7d29ad",
+    "audit/SOL-016/verify.py": "88b41e1f21e8311d0a9f756cd6b2c2e92f164dff8a434bde1f32aa6e3e6c7b5e",
+    "handoff/SOL-016/check-0.txt": "31ad668f797ec8c04f882451a7326b9681e904ae18b78728b63bb081155971c7",
+    "handoff/SOL-016/check-1.txt": "8e44bb16d07eed0ef25782c131675ea9d1894bbf538996440b5139d23a22514b",
+    "handoff/SOL-016/check-2.txt": "889d4a9ee962cd4dfff5761080bd4ca1d11451ac45e0770a92fc639dfffdc343",
+    "src/safeinvest/policy_analysis.py": "e94a5ef79a2f58f231a46bd2af01020dd09847d27bdbe74f1795ba032dd8d345",
+    "tests/test_policy_analysis.py": "c30b013064dc30dacd79cf397cb10f0007c5688b82e4e758c07b0de4509b03c8"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "finished_at": "2026-10-19T18:57:49.860192+00:00",
+  "note": "Completed means worker self-check only; coordinator acceptance is separate.",
+  "input_manifest": {
+    "source": "User-supplied 2026 MCM Senior Group Problem A SafeInvest attachments",
+    "license": "CC BY-NC-SA 4.0",
+    "transformation": "Originals unchanged; derived CSV files are row subsets only.",
+    "files": [
+      {
+        "path": "problem/2026_MCM_SafeInvest.pdf",
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+        "bytes": 137578
+      },
+      {
+        "path": "data/raw/SafeInvest_Synthetic_Data.csv",
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+        "bytes": 274914
+      },
+      {
+        "path": "data/development/scenarios_001_120.csv",
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+        "bytes": 182255
+      },
+      {
+        "path": "data/final_holdout/scenarios_121_180.csv",
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+        "bytes": 92732
+      }
+    ]
+  },
+  "task_parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "competition_outcomes_allowed": false,
+    "final_outcomes_allowed": false,
+    "source_sha256": {
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "specs/policy_driver_layout_v2.json": "f431e661c260f7f6e40330661e77724dc3ddcafeafed1a3f0b6c31781a4e8329",
+      "specs/POLICY_CASE_ENGINE.md": "c984e230eecb720613b864a910d95921af1aa805f79fa68c7044f905410dec62",
+      "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+      "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+      "src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+      "specs/POLICY_ANALYSIS.md": "a2220482c861799280815b4e65d73e79e53666816ac9e7e72a38d5f48a6e53b8"
+    },
+    "contract": "specs/POLICY_ANALYSIS.md",
+    "release_requires": "Chief accepts prerequisite design/code with no relevant pinned-source change; otherwise preserve this task and publish a corrected successor."
+  }
+}
