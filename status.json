@@ -4,15 +4,8 @@
     2484,
     48984
   ],
-  "child_pids": [
-    47896,
-    46684,
-    436,
-    13356,
-    48824,
-    29632
-  ],
-  "current_task": "SOL-025",
+  "child_pids": [],
+  "current_task": null,
   "alerts": [],
   "tasks": [
     {
@@ -362,18 +355,20 @@
       "key": "SOL-025-a1",
       "task_id": "SOL-025",
       "base": "a065805163f01eeffd73ca0ea5ac420454493a94",
-      "head": "a065805163f01eeffd73ca0ea5ac420454493a94",
-      "receipt_status": null,
-      "receipt_matches_task": false,
-      "queue_state": "ready",
-      "dirty": true,
-      "changed_paths": [
-        "?? audit/SOL-025/",
-        "?? src/safeinvest/policy_cases.py",
-        "?? tests/test_policy_cases.py"
+      "head": "803b7a085284405ee5ee4d4f0d5720ebaa2e67f7",
+      "receipt_status": "completed",
+      "receipt_matches_task": true,
+      "queue_state": "accepted",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-19T19:54:35.440970+00:00",
+      "check_exit_codes": [
+        0,
+        0,
+        0
       ],
-      "remote_matches": false,
-      "completed_record": false,
       "pending_upload": false
     }
   ],
@@ -383,8 +378,8 @@
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
     "state": "running",
     "python": "3.12.0",
-    "updated_at": "2026-10-19T19:49:42.759263+00:00",
-    "lease_until": "2026-10-19T19:59:42.759263+00:00",
+    "updated_at": "2026-10-19T19:57:53.341227+00:00",
+    "lease_until": "2026-10-19T20:07:53.341227+00:00",
     "task_id": "integrate-and-dispatch"
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
@@ -393,7 +388,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-19T19:53:55.233047+00:00",
+  "updated_at": "2026-10-19T19:59:17.032896+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
