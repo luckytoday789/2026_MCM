@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T21:27:24.988773+00:00",
+  "source_main": "b0f1dc2b935d9e17a8980bb8ade2b0acf26dacd9",
+  "scope": "Operational gate and exact receipt identity reconciliation only; no new code/results acceptance or numerical replay.",
+  "work_branches": [
+    {
+      "task_id": "HY3-001",
+      "branch_commit": "2a0263c5822988c0385d32fe084b794f8d644bc5",
+      "receipt_status": "completed",
+      "queue_state": "cancelled",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "HY3-002",
+      "branch_commit": "9fdd20e09f8c080b7d3381d3d545524084cb3955",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "HY3-003",
+      "branch_commit": "7652410d73425371110784ef5fa97c03470a074e",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-001",
+      "branch_commit": "b25c6b5589d07e767f463f54f053f08bb0085157",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-002",
+      "branch_commit": "54d90abd3d35f6578bab964cd54dcce42e578f53",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-003",
+      "branch_commit": "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-004",
+      "branch_commit": "69ed125b7fde276fe503e1ec5416fbf2e5ec9a7b",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-005",
+      "branch_commit": "d3f031ca797402baacf969147956578fcee92af1",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-006",
+      "branch_commit": "f193742daab0f55c166b9b084bd288151c1e764d",
+      "receipt_status": "failed",
+      "queue_state": "cancelled",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-007",
+      "branch_commit": "cf5e70860e7aac615775fe96b0c1696a9fc5226b",
+      "receipt_status": "failed",
+      "queue_state": "cancelled",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-008",
+      "branch_commit": "818af5d65bd8a271962d848dd552bd39ca561f68",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-009",
+      "branch_commit": "3f79e07b87ec92a4a74049da6166093ba4e88e6f",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-010",
+      "branch_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-013",
+      "branch_commit": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-016",
+      "branch_commit": "ceec2b6d1107a4137ee3d24d689ba7ba614703c2",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-017",
+      "branch_commit": "90f5c8d3fe9b76861f9e302ce23d2e5cd6f2e839",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-020",
+      "branch_commit": "2fbd4598606b41a786bd931046adb0ecc8b42d78",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-021",
+      "branch_commit": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-022",
+      "branch_commit": "21ad493707d71240f83d7f01ed6d133e1380e8fb",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-023",
+      "branch_commit": "ea2569d4624dc86d68861446610ba08548de121f",
+      "receipt_status": "failed",
+      "queue_state": "cancelled",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-024",
+      "branch_commit": "b1de55ec16f7b67884415637f562fcdf446034c7",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-025",
+      "branch_commit": "803b7a085284405ee5ee4d4f0d5720ebaa2e67f7",
+      "receipt_status": "completed",
+      "queue_state": "accepted",
+      "matches_recorded_review": true
+    },
+    {
+      "task_id": "SOL-026",
+      "branch_commit": "e8733bbc9f1234e04a5e382046d3c89fc12cae7d",
+      "receipt_status": "failed",
+      "queue_state": "cancelled",
+      "matches_recorded_review": true
+    }
+  ],
+  "pending_tasks": [
+    {
+      "task_id": "SOL-027",
+      "state": "waiting",
+      "base_commit": "5a015a490c89b39271624e1f1790a3454498a6c9",
+      "task_sha256": "f086a587d0a0ec0aa1477d28df58f036482dac1dbc7e0add8f298553daf90f00",
+      "source_pin_count": 25,
+      "max_seconds": 1200,
+      "owner": "sol",
+      "kind": "agent"
+    },
+    {
+      "task_id": "SOL-028",
+      "state": "waiting",
+      "base_commit": "df038cb116c4818c14454231500f992af3f26d0f",
+      "task_sha256": "d41ed4659e2d295d5b7ac09a7936d975833bbecd1282e54592791ceeea9aaf48",
+      "source_pin_count": 2,
+      "max_seconds": 1200,
+      "owner": "sol",
+      "kind": "commands"
+    },
+    {
+      "task_id": "SOL-029",
+      "state": "waiting",
+      "base_commit": "df038cb116c4818c14454231500f992af3f26d0f",
+      "task_sha256": "951ca85be546855ef2b606e94d7ea0eb2acb39f03ab34e70c707bccbac6015ac",
+      "source_pin_count": 46,
+      "max_seconds": 1500,
+      "owner": "sol",
+      "kind": "agent"
+    },
+    {
+      "task_id": "SOL-030",
+      "state": "waiting",
+      "base_commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "task_sha256": "c164559e5fc86d5de16d7bf54679518a8941927a079f75364d174586263ac191",
+      "source_pin_count": 31,
+      "max_seconds": 900,
+      "owner": "sol",
+      "kind": "agent"
+    }
+  ],
+  "source_pin_count": 104,
+  "statuses": {
+    "sol": {
+      "commit": "bb88ffb0540532b56b9d880661d6c7397ecbdd35",
+      "state": "idle",
+      "python": "3.12.14",
+      "updated_at": "2026-10-19T21:21:59.116168+00:00",
+      "lease_until": "2026-10-19T21:31:59.116168+00:00",
+      "lease_live_at_check": true
+    },
+    "hy3": {
+      "commit": "efd9c31a982f1c9cd4251593350375b2bea1e367",
+      "state": "idle",
+      "python": "3.12.10",
+      "updated_at": "2026-10-19T21:25:12.232510+00:00",
+      "lease_until": "2026-10-19T21:35:12.232510+00:00",
+      "lease_live_at_check": true
+    }
+  },
+  "sol_watch": {
+    "commit": "1aebc679c31e53b9ea8d9e610ed28eccf2de2414",
+    "updated_at": "2026-10-19T21:24:34.118294+00:00",
+    "alerts": [],
+    "pending_uploads": 0,
+    "dirty_task_worktrees": 0
+  },
+  "quota": {
+    "limit_id": "codex",
+    "window_minutes": 10080,
+    "used_percent": 44.0,
+    "remaining_percent": 56.0,
+    "resets_at": 1792913381,
+    "source": "Codex account/rateLimits/read",
+    "checked_at": "2026-10-19T21:26:58.663384+00:00",
+    "state": "verified",
+    "stop_remaining_percent": 50
+  },
+  "drain_present": false,
+  "final_data_open": false,
+  "probe_release_not_before": "2026-10-20T05:55:00+08:00",
+  "probe_model_not_before": "2026-10-20T06:05:00+08:00",
+  "decision": "No unseen receipt or recoverable remote dirty work. Keep all four immutable tasks held; next bounded turn at the existing SOL-028 release gate. Do not infer Sol model availability from operational leases.",
+  "human_action_required": false
+}

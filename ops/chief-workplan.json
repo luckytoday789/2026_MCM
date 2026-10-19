@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T05:22:02.736840+08:00",
-  "reason": "Bounded report layout preparation complete: four A4 proof pages, minimum11pt including formula indices,30 displayed rows and180 cells checked; all pages visually inspected. Pending SOL-027/028/029/030 immutable tasks and104 source pins revalidated without changes. No new work receipts. Only remote resource/review gates remain for research;30-minute one-shot fallback, retain SOL-028 release not before05:55 and model call not before06:05 Beijing.",
+  "next_wake_at": "2026-10-20T05:55:00+08:00",
+  "reason": "All published work branches match already recorded reviewed commits; four waiting immutable tasks and104 pinned sources verified. No new receipts, remote dirty work or pending uploads. Only existing resource gates remain: wake once at05:55 Beijing to release SOL-028, whose single model call remains prohibited before06:05. Do not start another unchanged idle check before that gate.",
   "next_actions": [
     "Inspect fresh local quota/drain/control/STOP/deadline before work. Last verified56% remaining, no drain. Preserve supervisor, private-team upload restriction and remote ownership; no replacement coordinator or remote roles.",
     "At or after05:55 Beijing release existing immutable SOL-028 by queue-only waiting->ready update, commit/push. Do not recreate or edit it. Base df038cb116c4818c14454231500f992af3f26d0f; digest d41ed4659e2d295d5b7ac09a7936d975833bbecd1282e54592791ceeea9aaf48. Commands task1200s includes passive wait to06:05 plus <=300s single assigned-model probe. No full review as quota probe; exact reply/returncode/timestamps/hashes are required.",
@@ -20,15 +20,16 @@
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-19T20:52:02.736840+00:00",
+  "last_completed_at": "2026-10-19T21:27:24.988773+00:00",
   "quota_probe_verified_commit": null,
   "quota_probe_release_not_before": "2026-10-20T05:55:00+08:00",
   "quota_probe_current_status": "unverified_after_SOL-026_usage_failure",
   "last_successful_quota_probe_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466",
   "quota_probe_task": "SOL-028",
   "quota_probe_remaining_additional_attempts_after_SOL028": 1,
-  "last_outcome_zh": "已完成并逐页检查4页A4方法/基线排版校样，最低字号11pt，30个展示行及180个数值/事件单元核对通过；两次失败留档。四个等待任务及104个来源摘要未变。Sol额度探针仍按既定时间等待；最终样本关闭，暂无人工操作需求。",
+  "last_outcome_zh": "已核对全部工作分支与已记录审查提交，四个等待任务及104个来源摘要一致；没有新回执或远端待恢复工作。保持原有门禁，将下次单次唤醒对齐05:55探针放行时间，06:05前不调用Sol模型。无需人工操作。",
   "baseline_figure_source_commit": "04be213a76855b1b1815405a735f2a49be678935",
   "baseline_figure_review_task": "SOL-030",
-  "layout_proof_path": "report/layout-proof/methods-baselines.pdf"
+  "layout_proof_path": "report/layout-proof/methods-baselines.pdf",
+  "last_gate_reconciliation": "audit/chief/quota-wait-20261020T0528.json"
 }
