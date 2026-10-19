@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "id": "SOL-006",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "10b3ff29f72b01d6a1a1bd2ca174f8cd6c7840d4",
+  "depends_on": [
+    "SOL-004",
+    "HY3-002",
+    "SOL-005"
+  ],
+  "split": "development",
+  "max_seconds": 1200,
+  "scope": "Independent numerical audit of the exact first HY3 development baseline delivery; separate focused review of the chief wakeup repair. No new policies or experiment reruns.",
+  "parameters": {
+    "hy3_result_commit": "7652410d73425371110784ef5fa97c03470a074e",
+    "hy3_source_commit": "ec9653f1a4739bf1f0db36092c64771d014df25e",
+    "hy3_task_sha256": "5870dab708b3ead4a2f94384ef70528e9ea57ce6b39a8c5408a402c033a9a05b",
+    "required_python": "3.12",
+    "cpu_only": true,
+    "final_outcomes_allowed": false,
+    "source_sha256": {
+      "ops/tasks/HY3-003.json": "10de4e7587f7b411e6a3143ea89f477f9e45251d3a5d7e7495214ff1d4d1e44d",
+      "scripts/coop.py": "ddb53a531d0434830ec7d6947d7d3599dcf61b4ab4aebe469b8b4fa59b544c79",
+      "tests/test_coop.py": "6a3693fda8608d9f54877f75576936debade44dbd1ad4b621e3ca9e8e27aa5a1",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/DEVELOPMENT_BASELINES.md": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f",
+      "specs/DEVELOPMENT_BASELINE_DRIVER.md": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0",
+      "specs/development_baselines_v1_1.json": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224"
+    },
+    "reviewed_result_sha256": {
+      "handoff/HY3-003/check-0.txt": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "handoff/HY3-003/check-1.txt": "3ecdd8166229ff1ac43a994001a6cd8b31b4ab2ba89f5fdfc23ef8d4556bf400",
+      "handoff/HY3-003/check-2.txt": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "handoff/HY3-003/check-3.txt": "a5cb7a9cc0b3e78b648c08fef5a768e5879d245edaca49f141a39fb9e7646a27",
+      "results/development/HY3-003/annual_ledgers.csv": "b2e93442391d2a7cec4bdfe79b397c14c311cc229e2e6c3d82d2dd04199d470a",
+      "results/development/HY3-003/checks.json": "943e3145d686867bf8b34b309b2ecfbd6ae5bfb15705a1077c5203c5289a0061",
+      "results/development/HY3-003/paired_differences.csv": "0d9e0f8b91bd6746100b1ba3851d980928023631e1bc38917f51e8e85e321fbd",
+      "results/development/HY3-003/run_manifest.json": "9ae3558e6453902976a0c69ef07d3d6d1471d3e8afe176530457dbae67956436",
+      "results/development/HY3-003/scenario_metrics.csv": "afabf571d8c7d224bd83f836033fe4c4907a05fc15a2e8614c8ae09d803f100c",
+      "results/development/HY3-003/summary.csv": "965c3ac513f63de31830603ab968f5c6e99c6ceb763515b99753282d8c3a4994"
+    },
+    "scheduler_commit": "10b3ff29f72b01d6a1a1bd2ca174f8cd6c7840d4",
+    "scheduler_parent": "07b112dee30190d2c4f8d6c1aadacc2ab978092e",
+    "representative_scenarios": [
+      1,
+      5,
+      29,
+      46,
+      60,
+      120
+    ],
+    "horizons": [
+      5,
+      6,
+      15,
+      25,
+      30
+    ],
+    "fee_rate": 0.0025
+  },
+  "allowed_paths": [
+    "audit/SOL-006"
+  ],
+  "deliverables": [
+    "audit/SOL-006/review.md",
+    "audit/SOL-006/findings.json",
+    "audit/SOL-006/verify.py",
+    "audit/SOL-006/verification.json",
+    "audit/SOL-006/scheduler-review.json"
+  ],
+  "commands": [],
+  "validation_commands": [
+    [
+      "{python}",
+      "-B",
+      "audit/SOL-006/verify.py",
+      "--check"
+    ],
+    [
+      "{python}",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_coop.py",
+      "-v"
+    ]
+  ],
+  "acceptance_checks": [
+    "Verify exact task hash, receipt/source/parent, paths, canonical blobs, all six results and four retained command logs; manifests and logs must agree with Python 3.12.10, prescribed source/config/input, counts and timings.",
+    "Independently recompute scalar forward holdings from original development input for IDs 1,5,29,46,60,120 and every summary severe ID; all three policies and five horizons. Include fee-before-return, keep dollars, CPI compounding, initial and post-fee drawdown, volatility ddof=1 and both trade shares.",
+    "Recompute all 1800 metrics from saved ledgers; independently recompute all 15 linear-quantile summaries, exact severe IDs/locations, pooled shares and all 1200 paired differences. Use abs 1e-9 and rel 1e-10; exact ties and trade epsilon remain exact.",
+    "Verify prefix/timing boundaries and no-lookahead by guarded synthetic observations or existing targeted tests; do not concatenate scenarios or touch raw/final outcomes.",
+    "Saved --check is read-only and tied to explicit commits; deliberately corrupted scratch evidence must fail without repairing the published result.",
+    "Separately challenge scheduler pre-turn checkpoint, arrival-during-turn, legacy migration, failure and idle behavior; run protocol tests and record concrete findings without editing runtime helpers.",
+    "State numerical and scheduler verdicts separately. No strategy validation, future guarantee, suitability recommendation, parameter tuning, final gate opening or receipt promotion by worker."
+  ],
+  "instructions": "Read AGENTS.md and the immutable task plus locked contracts. This is the required independent review of HY3-003 at exactly 7652410d73425371110784ef5fa97c03470a074e, NOT a request to regenerate the baseline experiment. The result is not yet accepted and is absent from main. Read binary git show of the exact commit, fetching its existing work/hy3/HY3-003-a1 branch only if necessary. The pinned main source already contains all accepted production code. Do not merge or mutate another branch. Verify every source/artifact hash and execution log before interpreting results. The HY3 run uses ec9653f1a4739bf1f0db36092c64771d014df25e and original development hash 9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7. Distinguish canonical Git bytes from allowed CRLF source checkouts. The manifest records a normalized python command, while the runner receipt records the executable and -B; verify their semantic agreement.\n\nWrite independent standard-library scalar arithmetic rather than importing production accounting/metrics/experiments for the expected answers. Check all required row counts, unique complete sorted keys and units. Derive selected forward paths from only the development CSV. Recompute all metrics from saved validated ledgers and all summaries/pairs; add all severe IDs to the representative set. Check exact tie location selection on saved float observations separately from numerically tolerant scalar forward paths. Check initial fee, inflation-only purchasing-power loss and post-fee trough behavior explicitly. Record worst residuals, checks actually run and expected/observed facts. A production saved --check may be used once as secondary evidence, never as the independent oracle, and must not alter source or saved results. Avoid rerunning the 59-test historical suite or HY3 production command; focused synthetic timing checks suffice.\n\nPerform a small separate review of chief commit 10b3ff29f72b01d6a1a1bd2ca174f8cd6c7840d4 relative to its parent, scoped to scripts/coop.py and tests/test_coop.py. Confirm results arriving during a turn remain pending, legacy checkpoints recover once, failed/dirty turns do not acknowledge pending work, and unchanged snapshots idle. Execute the existing test_coop suite. Add focused probes under audit/SOL-006 only if a missing case materially affects the verdict. Do not run a live watcher, publish status, alter locks/checkpoints, or edit scripts/coop.py. Report this independent scheduler verdict separately, so an unrelated finding does not invalidate good numerical evidence.\n\nProduce review.md, findings.json with separate numerical/scheduler verdicts and blockers, verification.json binding exact commits/hashes and deterministic evidence, scheduler-review.json, and portable verify.py. Initializer writes evidence only if absent; --check recomputes and compares read-only and exits nonzero on mismatch. Keep scratch only inside ignored .runtime or this assigned audit directory. Preserve every failed trial/negative probe distinctly. No main/queue/task/config/source modification, no installs, no private team data, no final outcomes, no policy fitting. Include limits: three predeclared static references, original synthetic annual returns, development-only descriptive evidence, no significance or investability conclusion. Runner handles handoff and commit/push."
+}
