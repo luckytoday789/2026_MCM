@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T18:37:03.686399+00:00",
+  "validated_main_commit": "2768d862a143b6fa29b3705cdbd8f4114bf570dd",
+  "accepted_task": "SOL-021",
+  "reviewed_commit": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+  "promoted_exact_blob_count": 28,
+  "replay_checks": 3720,
+  "rational_grid": 2048,
+  "chief_rounding_cells": 42,
+  "chief_wrong_neighbor_rejections": 84,
+  "released_existing_tasks": [
+    "SOL-016",
+    "SOL-022"
+  ],
+  "waiting_task": "SOL-023",
+  "new_receipts_pending": [],
+  "immutable_tasks_unchanged": true,
+  "final_data_open": false,
+  "competition_outcomes_read": false,
+  "runtime_helpers_changed": false,
+  "quota_remaining_percent": 69.0,
+  "budget_drain": false,
+  "private_identity_files_uploaded": false,
+  "outcome_zh": "已验收 SOL-021 精确提交并关闭 K2；3720 项回放、2048 格点及本机独立精确夹具通过。已释放原有 SOL-016/SOL-022；SOL-023 等待校准审查。个性化空值/分母说明和全部失败历史已保存。最终数据仍关闭，无需人工操作。"
+}

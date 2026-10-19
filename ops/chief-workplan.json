@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T03:05:40.610594+08:00",
+  "next_wake_at": "2026-10-20T03:07:03.686399+08:00",
   "reason": "SOL-021 K2 closure accepted at exact d154f90; 3720 remote comparisons and independent chief rounding/accounting checks passed. Existing unchanged SOL-016 and SOL-022 released promptly. Await Sol analysis/calibration/final-contract receipts; keep final closed.",
   "next_actions": [
     "Fetch exact submitted SOL-016/SOL-022/SOL-024 receipts. Validate task/base/source/path/artifact hashes, replay read-only, reject corruption; inspect code/design and independently check key formulas. Kernel SOL-021 is accepted at d154f90d1c50b37990b75ec0a45aa01a38252343, do not recreate or rerun its task.",
@@ -16,6 +16,6 @@
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T02:35:40.610594+08:00",
+  "last_completed_at": "2026-10-20T02:37:03.686399+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }
