@@ -91,6 +91,15 @@ For unattended Windows use, launch the command with a hidden background process 
 
 There is no automatic wakeup of this exact original chat from a background process. During an active chat, the coordinator reports needs here; background work records needs in status/error files and GitHub, and the remote clients can surface them using their own notification mechanisms. Avoid claiming an unattended process can send a chat message unless that integration has actually been configured.
 
+Overnight extension (2026-10-20): see `ops/OVERNIGHT.md`. On the chief Windows
+host a separate supervised process checks liveness, preserves orphaned turns,
+restarts exited workers with bounded backoff and respects STOP/deadline. Explicit
+one-shot `ops/chief-workplan.json` timers also wake useful chief work when no
+remote result changes. Each chief turn updates that plan. Operational health
+checks make no model calls; substantive review and numerical acceptance still
+require their actual evidence. An in-task heartbeat network error is recorded
+locally while child monitoring continues; it must not launch an overlapping task.
+
 ## Research stages
 
 1. Bootstrap, environment registration and data validation.

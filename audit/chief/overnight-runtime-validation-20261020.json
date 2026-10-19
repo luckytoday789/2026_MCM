@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-10-19T16:40:52.963059+00:00",
+  "python": "3.12.0",
+  "tests": [
+    {
+      "command": "python -X utf8 -m unittest discover -s tests -p test_coop.py -v",
+      "passed": 7,
+      "exit_code": 0
+    },
+    {
+      "command": "python -X utf8 -m unittest discover -s tests -p test_overnight.py -v",
+      "passed": 6,
+      "exit_code": 0
+    }
+  ],
+  "pip_check": "No broken requirements found.",
+  "verified_behaviors": [
+    "Real Git delivery resumes upload without rerunning computation",
+    "Results arriving during a chief turn remain pending",
+    "Scheduled wake executes once and future wake waits",
+    "STOP/pause/deadline and existing worker/orphan child prevent restart",
+    "Real Windows process is live before exit and absent afterward",
+    "Failed in-task network heartbeat does not abandon live child",
+    "Availability probe requires zero return code and exact model response"
+  ],
+  "actual_process_inspection_before_restart": {
+    "workers": [],
+    "agents": [],
+    "self_liveness": true,
+    "local_STOP": true
+  },
+  "limitations": [
+    "These checks do not certify mathematical results.",
+    "Live supervisor startup and GitHub status must be separately verified.",
+    "Sol quota restoration is not assumed."
+  ]
+}

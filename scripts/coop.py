@@ -174,6 +174,11 @@ def execute_process(command, cwd, log, deadline, role, task_id):
     with log.open('w',encoding='utf-8') as out:
         p = subprocess.Popen(command,cwd=cwd,stdout=out,stderr=subprocess.STDOUT,
                              stdin=subprocess.DEVNULL,env=env,shell=False)
+        # Persist the child PID so a supervisor cannot overlap an orphaned turn.
+        child_path = RUNTIME / f'{role}-active-child.json'
+        dump(child_path, {'pid':p.pid, 'parent_pid':os.getpid(), 'task_id':task_id,
+                         'started_at':now().isoformat(),
+                         'deadline':(now()+dt.timedelta(seconds=max(0,deadline-time.monotonic()))).isoformat()})
         last_heartbeat = time.monotonic()
         while p.poll() is None:
             if time.monotonic() >= deadline or (RUNTIME/'STOP').exists():
@@ -187,9 +192,17 @@ def execute_process(command, cwd, log, deadline, role, task_id):
                     p.kill()
                 raise RuntimeError('Task timeout or local stop requested; partial work preserved.')
             if time.monotonic()-last_heartbeat >= 240:
-                publish_status(role,'running',task_id=task_id)
+                try:
+                    publish_status(role,'running',task_id=task_id)
+                except Exception as error:
+                    # Losing network during a heartbeat must not abandon a live
+                    # child and let the watcher launch an overlapping retry.
+                    dump(RUNTIME/f'{role}-heartbeat-error.json',
+                         {'at':now().isoformat(),'error':str(error),'child_pid':p.pid,
+                          'note':'Task monitoring continues; retry heartbeat after 240 seconds.'})
                 last_heartbeat = time.monotonic()
             time.sleep(2)
+        child_path.unlink(missing_ok=True)
     return {'argv':command,'exit_code':p.returncode,'log':str(log.relative_to(ROOT))}
 
 def deliver(task,work,branch,report):
@@ -302,15 +315,32 @@ def chief_fingerprint():
                           status.get('python') if status else None))
     return hashlib.sha256(json.dumps([queue,branches,readiness],sort_keys=True).encode()).hexdigest()
 
-def chief_tick():
+def chief_schedule():
+    """Explicit, one-shot timed wakeups; idle heartbeat changes remain free."""
+    path = ROOT / 'ops/chief-workplan.json'
+    if not path.exists():
+        return None
+    plan = json.loads(path.read_text(encoding='utf-8'))
+    if plan.get('state') != 'active' or not plan.get('next_wake_at'):
+        return None
+    wake = dt.datetime.fromisoformat(plan['next_wake_at'])
+    if wake.tzinfo is None:
+        raise ValueError('Chief wake time must include a timezone.')
+    if now() < wake:
+        return None
+    return hashlib.sha256(json.dumps(plan,sort_keys=True).encode()).hexdigest()
+
+def chief_tick(force=False):
     path=RUNTIME/'chief-seen.json'
     fingerprint=chief_fingerprint()
     old=json.loads(path.read_text(encoding='utf-8')) if path.exists() else {}
+    scheduled_key=chief_schedule()
+    scheduled_due=bool(scheduled_key and scheduled_key != old.get('scheduled_key'))
     if (old.get('schema_version')==CHIEF_CHECKPOINT_VERSION
-            and old.get('fingerprint')==fingerprint):
+            and old.get('fingerprint')==fingerprint and not scheduled_due and not force):
         return False
     # On first launch, don't duplicate the active coordinator's bootstrap turn.
-    if not old:
+    if not old and not scheduled_due and not force:
         dump(path,{'schema_version':CHIEF_CHECKPOINT_VERSION,'fingerprint':fingerprint})
         return False
     binary=shutil.which('codex')
@@ -331,10 +361,11 @@ def chief_tick():
     # only the state that triggered that turn, so such a result wakes the next
     # turn. Saving the post-turn snapshot silently lost these notifications.
     # Versioning also revisits one legacy checkpoint that may have lost a result.
-    dump(path,{'schema_version':CHIEF_CHECKPOINT_VERSION,'fingerprint':fingerprint})
+    dump(path,{'schema_version':CHIEF_CHECKPOINT_VERSION,'fingerprint':fingerprint,
+               'scheduled_key':scheduled_key or old.get('scheduled_key')})
     return True
 
-def doctor(role):
+def doctor(role, recover=False):
     assert role in ROLES
     fetch()
     c=control()
@@ -342,6 +373,18 @@ def doctor(role):
         git('config','user.name',f'SafeInvest {role} Agent')
     if not git('config','user.email'):
         git('config','user.email',f'safeinvest-{role}@localhost')
+    if recover and role=='chief' and not stopped(c):
+        if git('branch','--show-current') != 'main':
+            raise RuntimeError('Recovery requires the dedicated main checkout; preserve other branches.')
+        dirty=git('status','--porcelain')
+        ahead=int(git('rev-list','--count',f'{REMOTE}/main..HEAD'))
+        if dirty or ahead:
+            saved=RUNTIME/'recovery'/f'chief-{int(time.time())}'
+            saved.mkdir(parents=True,exist_ok=False)
+            (saved/'tracked.patch').write_text(git('diff','--binary','HEAD'),encoding='utf-8')
+            dump(saved/'state.json',{'status':dirty,'unpushed_commits':ahead,
+                                    'head':git('rev-parse','HEAD'),'at':now().isoformat()})
+            chief_tick(force=True)
     clean_main()
     publish_status(role,'ready',python=sys.version.split()[0],codex_available=bool(shutil.which('codex')))
     print(json.dumps({'role':role,'root':str(ROOT),'remote':git('remote','get-url',REMOTE),
@@ -359,7 +402,9 @@ def watch(role,backend,once=False):
     failures=0
     last_heartbeat=0
     try:
-        doctor(role)
+        if (RUNTIME/'STOP').exists():
+            return
+        doctor(role,recover=(role=='chief'))
         while True:
             try:
                 fetch()
