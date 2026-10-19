@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "python": "3.12.0",
+  "unittest_command": "python -m unittest discover -s tests -p test_coop.py -v",
+  "unittest_methods_passed": 4,
+  "verified": [
+    "Mixed CRLF/LF outputs match receipt hashes against exact pushed Git blobs",
+    "Network delivery retry and deduplication",
+    "Allowed paths and path escape rejection",
+    "Interpreter version changes trigger fingerprint changes; unchanged heartbeat does not",
+    "Environment preflight accepts Python 3.12 and rejects mocked 3.13"
+  ],
+  "runtime_restart_note": "Already-running watcher processes retain old loaded functions until restarted when idle."
+}

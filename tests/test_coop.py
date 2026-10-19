@@ -1,9 +1,11 @@
+import hashlib
 import importlib.util
 import json
 from pathlib import Path
 import subprocess
 import tempfile
 import unittest
+from unittest.mock import patch
 
 spec=importlib.util.spec_from_file_location('coop',Path(__file__).resolve().parents[1]/'scripts/coop.py')
 coop=importlib.util.module_from_spec(spec)
@@ -29,6 +31,18 @@ class ProtocolTests(unittest.TestCase):
                 'commands':[['{python}','fixture.py']],
                 'validation_commands':[['{python}','fixture.py','--check']],
                 'max_seconds':30,'split':'development'}
+
+    def test_python_registration_changes_wake_chief_but_heartbeats_do_not(self):
+        state={"machine_id":"same-machine","state":"ready","python":"3.13.14",
+               "updated_at":"first","lease_until":"first"}
+        def remote(path,branch="main"):
+            return {"tasks":[]} if branch=="main" else dict(state)
+        with patch.object(coop,"remote_json",side_effect=remote), patch.object(coop,"git",return_value=""):
+            before=coop.chief_fingerprint()
+            state.update(updated_at="later",lease_until="later",state="idle")
+            self.assertEqual(coop.chief_fingerprint(),before)
+            state["python"]="3.12.14"
+            self.assertNotEqual(coop.chief_fingerprint(),before)
 
     def test_end_to_end_local_git_delivery_and_deduplication(self):
         # A real bare Git remote verifies branch publication without network/model calls.
@@ -59,6 +73,8 @@ class ProtocolTests(unittest.TestCase):
                     "from pathlib import Path\nimport sys\np=Path('results/development/value.json')\n"
                     "if '--check' in sys.argv:\n assert p.read_text()=='{\"value\": 1}'\n"
                     "else:\n p.parent.mkdir(parents=True,exist_ok=True)\n p.write_text('{\"value\": 1}')\n",encoding='utf-8')
+                (root/'.gitattributes').write_text('*.txt text eol=lf\n',encoding='utf-8')
+                (root/'fixture.py').write_text((root/'fixture.py').read_text()+"\nif '--check' not in sys.argv:\n (p.parent/'mixed.txt').write_bytes(b'first\\r\\nsecond\\n')\n",encoding='utf-8')
                 coop.dump(root/'ops/control.json',{'state':'running','deadline':'2099-01-01T00:00:00+00:00'})
                 coop.dump(root/'ops/queue.json',{'tasks':[]})
                 coop.git('add','.')
@@ -88,6 +104,10 @@ class ProtocolTests(unittest.TestCase):
                 coop.fetch()
                 received=coop.remote_json('handoff/HY3-TEST/result.json','work/hy3/HY3-TEST-a1')
                 self.assertEqual(received['task_sha256'],coop.task_digest(task))
+                self.assertEqual(received['artifact_hash_basis'],'canonical_git_blob')
+                for name,digest in received['artifacts_sha256'].items():
+                    raw=subprocess.check_output(['git','show',f"origin/work/hy3/HY3-TEST-a1:{name}"],cwd=root)
+                    self.assertEqual(hashlib.sha256(raw).hexdigest(),digest,name)
                 self.assertIsNone(coop.select_task('hy3'))
                 status=coop.remote_json('status.json','status/hy3')
                 self.assertEqual(status['state'],'submitted')

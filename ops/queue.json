@@ -3,11 +3,37 @@
   "tasks": [
     {
       "id": "SOL-001",
-      "state": "ready"
+      "state": "accepted",
+      "attempt": 1,
+      "owner": "sol",
+      "reviewed_commit": "b25c6b5589d07e767f463f54f053f08bb0085157",
+      "task_sha256": "bdd4edd3de9c391fcf25c01f6ecd8c38c05752673aac21091926cb889c4823f0",
+      "accepted_paths": [
+        "audit/SOL-001/expected_numbers.json",
+        "audit/SOL-001/review.md",
+        "handoff/SOL-001/check-0.txt",
+        "handoff/SOL-001/check-1.txt",
+        "src/safeinvest/__init__.py",
+        "src/safeinvest/accounting.py",
+        "src/safeinvest/backtest.py",
+        "src/safeinvest/metrics.py",
+        "tests/test_accounting.py",
+        "handoff/SOL-001/result.json"
+      ],
+      "excluded_paths": [
+        "audit/SOL-001/validation.txt"
+      ],
+      "acceptance_evidence": "audit/chief/SOL-001-review.json",
+      "note": "All mandatory deliverables verified; 28 tests and 132 chief numeric checks passed. Optional unmatched historical log excluded and preserved on worker branch."
     },
     {
       "id": "HY3-001",
-      "state": "ready"
+      "state": "cancelled",
+      "attempt": 1,
+      "owner": "hy3",
+      "reviewed_commit": "2a0263c5822988c0385d32fe084b794f8d644bc5",
+      "acceptance_evidence": "audit/chief/HY3-001-review.json",
+      "note": "Result preserved, not accepted: worker used Python 3.13.14 instead of required 3.12; successor HY3-002 to rerun after environment correction."
     },
     {
       "id": "SOL-002",

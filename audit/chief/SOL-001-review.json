@@ -1,0 +1,877 @@
+{
+  "status": "passed_required_deliverables_optional_log_excluded",
+  "reviewed_commit": "b25c6b5589d07e767f463f54f053f08bb0085157",
+  "task_sha256": "bdd4edd3de9c391fcf25c01f6ecd8c38c05752673aac21091926cb889c4823f0",
+  "base_commit": "f5e67b1f53568b94379ea631659d53d90db14f7b",
+  "hash_checks": {
+    "audit/SOL-001/expected_numbers.json": {
+      "status": "exact_reconstructed_crlf_checkout",
+      "git_blob_sha256": "bac61d78f06ac09876b08186d8c926bf56e1906b24472b519a09ae6444e0c9b7",
+      "receipt_sha256": "ce1173a4a6625258d9d055f199c21493b02ce10e1a12b02cde377ad9e629b807"
+    },
+    "audit/SOL-001/review.md": {
+      "status": "exact_git_blob",
+      "git_blob_sha256": "8234f7aee544ce38b67ff8d518fd9473d99e291ab69826319befe919af35ccc3",
+      "receipt_sha256": "8234f7aee544ce38b67ff8d518fd9473d99e291ab69826319befe919af35ccc3"
+    },
+    "audit/SOL-001/validation.txt": {
+      "status": "unverified_excluded",
+      "git_blob_sha256": "93cbd8b50cc9352509ff22c8d2c2672c270bef994cbc72688690ce41a9b08b0d",
+      "receipt_sha256": "19679c5a3602cfd1e187b97de1b2511aa813aca093e28ee68b76e96c0d1ad380"
+    },
+    "handoff/SOL-001/check-0.txt": {
+      "status": "exact_reconstructed_crlf_checkout",
+      "git_blob_sha256": "05bc5df6b1ac5d4a0361dce4129a1dc0c31d948deb83883bee09f8f36a56a021",
+      "receipt_sha256": "8f97d888779df910fce27e635a579868e1ed5b134d0c755dd3a3a8d73ac6b7ac"
+    },
+    "handoff/SOL-001/check-1.txt": {
+      "status": "exact_reconstructed_crlf_checkout",
+      "git_blob_sha256": "f432fdf74d726ff1fdba7c7fafce91c5da85d454155b36b7ea40e1a7a6364bf8",
+      "receipt_sha256": "bba94bfe60b46d81e209116a8cf1cbb768182ab6e8fc1dcd7b0ad07754f95f2d"
+    },
+    "src/safeinvest/__init__.py": {
+      "status": "exact_git_blob",
+      "git_blob_sha256": "2911ccd65cbb3f0dc81e113a2a1f2e7486ef1487c9dda9b73fb6b80770ab8012",
+      "receipt_sha256": "2911ccd65cbb3f0dc81e113a2a1f2e7486ef1487c9dda9b73fb6b80770ab8012"
+    },
+    "src/safeinvest/accounting.py": {
+      "status": "exact_git_blob",
+      "git_blob_sha256": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "receipt_sha256": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5"
+    },
+    "src/safeinvest/backtest.py": {
+      "status": "exact_git_blob",
+      "git_blob_sha256": "f82c63a3fe78889d243bbbb344d20cbe9edb54981c7ca07b1f5006b9f79b28cd",
+      "receipt_sha256": "f82c63a3fe78889d243bbbb344d20cbe9edb54981c7ca07b1f5006b9f79b28cd"
+    },
+    "src/safeinvest/metrics.py": {
+      "status": "exact_git_blob",
+      "git_blob_sha256": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "receipt_sha256": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e"
+    },
+    "tests/test_accounting.py": {
+      "status": "exact_git_blob",
+      "git_blob_sha256": "d57c58dafd942ea430baf7dd75c3387c037099ff441bb31d30f6173bf6a6eae7",
+      "receipt_sha256": "d57c58dafd942ea430baf7dd75c3387c037099ff441bb31d30f6173bf6a6eae7"
+    }
+  },
+  "excluded_paths": [
+    "audit/SOL-001/validation.txt"
+  ],
+  "initial_check_failure": "Strict all-artifact hash validation failed on optional validation.txt; uniform and test-block CRLF reconstruction did not match. File remains unverified on worker branch.",
+  "mandatory_deliverables_verified": [
+    "src/safeinvest/__init__.py",
+    "src/safeinvest/accounting.py",
+    "src/safeinvest/metrics.py",
+    "src/safeinvest/backtest.py",
+    "tests/test_accounting.py",
+    "audit/SOL-001/review.md"
+  ],
+  "suite": {
+    "tests": 28,
+    "exit_code": 0,
+    "python": "3.12.0"
+  },
+  "independent_numeric_checks": [
+    {
+      "check": "20-unit fee",
+      "expected": 0.05,
+      "actual": 0.05,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "20-unit holding 0",
+      "expected": 19.99,
+      "actual": 19.990000000000002,
+      "absolute_error": 3.552713678800501e-15
+    },
+    {
+      "check": "20-unit holding 1",
+      "expected": 0.0,
+      "actual": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "20-unit holding 2",
+      "expected": 79.96,
+      "actual": 79.96000000000001,
+      "absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "check": "all equity fee",
+      "expected": 0.25,
+      "actual": 0.25,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "year 1 transfer",
+      "expected": 66.66666666666667,
+      "actual": 66.66666666666667,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "year 1 fee",
+      "expected": 0.16666666666666666,
+      "actual": 0.16666666666666669,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "check": "year 1 real post-fee",
+      "expected": 99.83333333333333,
+      "actual": 99.83333333333331,
+      "absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "check": "year 1 real end",
+      "expected": 99.50708061002179,
+      "actual": 99.50708061002177,
+      "absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "check": "year 1 holding 0",
+      "expected": 36.605555555555554,
+      "actual": 36.605555555555554,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "year 1 holding 1",
+      "expected": 33.27777777777778,
+      "actual": 33.27777777777777,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "check": "year 1 holding 2",
+      "expected": 31.613888888888887,
+      "actual": 31.61388888888888,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "check": "year 2 transfer",
+      "expected": 2.7731481481481484,
+      "actual": 2.7731481481481537,
+      "absolute_error": 5.329070518200751e-15
+    },
+    {
+      "check": "year 2 fee",
+      "expected": 0.0069328703703703705,
+      "actual": 0.006932870370370384,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "check": "year 2 real post-fee",
+      "expected": 99.50028367828612,
+      "actual": 99.50028367828611,
+      "absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "check": "year 2 real end",
+      "expected": 96.18360755567659,
+      "actual": 96.18360755567657,
+      "absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "check": "year 2 holding 0",
+      "expected": 27.064077160493827,
+      "actual": 27.064077160493824,
+      "absolute_error": 3.552713678800501e-15
+    },
+    {
+      "check": "year 2 holding 1",
+      "expected": 37.21310609567901,
+      "actual": 37.21310609567901,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "year 2 holding 2",
+      "expected": 33.83009645061728,
+      "actual": 33.830096450617276,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "check": "CAGR",
+      "expected": -1.9267582081245793,
+      "actual": -1.9267582081245904,
+      "absolute_error": 1.1102230246251565e-14
+    },
+    {
+      "check": "sample volatility",
+      "expected": 2.013144926263849,
+      "actual": 2.0131449262638426,
+      "absolute_error": 6.661338147750939e-15
+    },
+    {
+      "check": "maximum real drawdown",
+      "expected": 3.8163924443234083,
+      "actual": 3.8163924443234243,
+      "absolute_error": 1.5987211554602254e-14
+    },
+    {
+      "check": "trade including initial",
+      "expected": 100.0,
+      "actual": 100.0,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "trade excluding initial",
+      "expected": 100.0,
+      "actual": 100.0,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "fee-time drawdown despite recovery",
+      "expected": 0.16666666666666666,
+      "actual": 0.16666666666668162,
+      "absolute_error": 1.4960255256823984e-14
+    },
+    {
+      "check": "recovery terminal",
+      "expected": 109.81666666666666,
+      "actual": 109.81666666666666,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "inflation only real wealth",
+      "expected": 90.9090909090909,
+      "actual": 90.9090909090909,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "inflation only growth",
+      "expected": -9.090909090909092,
+      "actual": -9.090909090909093,
+      "absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "check": "inflation only loss",
+      "expected": 9.090909090909092,
+      "actual": 9.090909090909093,
+      "absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "check": "linear quantile 0.1",
+      "expected": 3.0,
+      "actual": 3.0000000000000004,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "check": "linear quantile 0.5",
+      "expected": 15.0,
+      "actual": 15.0,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "linear quantile 0.9",
+      "expected": 27.0,
+      "actual": 27.000000000000004,
+      "absolute_error": 3.552713678800501e-15
+    },
+    {
+      "check": "purchase-side transfer 1",
+      "expected": 23.75,
+      "actual": 23.75,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side budget 1",
+      "expected": 106.940625,
+      "actual": 106.940625,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 2",
+      "expected": 22.5,
+      "actual": 22.5,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side budget 2",
+      "expected": 109.94375,
+      "actual": 109.94374999999998,
+      "absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "check": "purchase-side transfer 3",
+      "expected": 21.25,
+      "actual": 21.250000000000004,
+      "absolute_error": 3.552713678800501e-15
+    },
+    {
+      "check": "purchase-side budget 3",
+      "expected": 112.946875,
+      "actual": 112.94687499999999,
+      "absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "check": "purchase-side transfer 4",
+      "expected": 20.0,
+      "actual": 20.0,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side budget 4",
+      "expected": 115.95,
+      "actual": 115.95,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 5",
+      "expected": 18.75,
+      "actual": 18.750000000000004,
+      "absolute_error": 3.552713678800501e-15
+    },
+    {
+      "check": "purchase-side budget 5",
+      "expected": 118.953125,
+      "actual": 118.95312499999999,
+      "absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "check": "purchase-side transfer 6",
+      "expected": 17.5,
+      "actual": 17.500000000000007,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "check": "purchase-side budget 6",
+      "expected": 121.95625,
+      "actual": 121.95625,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 7",
+      "expected": 16.25,
+      "actual": 16.25,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side budget 7",
+      "expected": 124.959375,
+      "actual": 124.959375,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 8",
+      "expected": 15.0,
+      "actual": 14.999999999999996,
+      "absolute_error": 3.552713678800501e-15
+    },
+    {
+      "check": "purchase-side budget 8",
+      "expected": 127.9625,
+      "actual": 127.9625,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 9",
+      "expected": 13.75,
+      "actual": 13.750000000000002,
+      "absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "check": "purchase-side budget 9",
+      "expected": 130.965625,
+      "actual": 130.965625,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 10",
+      "expected": 12.9,
+      "actual": 12.9,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side budget 10",
+      "expected": 133.96775,
+      "actual": 133.96775,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 11",
+      "expected": 12.32,
+      "actual": 12.32,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side budget 11",
+      "expected": 136.9692,
+      "actual": 136.9692,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 12",
+      "expected": 11.8,
+      "actual": 11.8,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side budget 12",
+      "expected": 139.9705,
+      "actual": 139.9705,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 13",
+      "expected": 11.34,
+      "actual": 11.34,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side budget 13",
+      "expected": 142.97165,
+      "actual": 142.97165,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 14",
+      "expected": 10.94,
+      "actual": 10.940000000000001,
+      "absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "check": "purchase-side budget 14",
+      "expected": 145.97265,
+      "actual": 145.97265,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 15",
+      "expected": 10.6,
+      "actual": 10.600000000000003,
+      "absolute_error": 3.552713678800501e-15
+    },
+    {
+      "check": "purchase-side budget 15",
+      "expected": 148.9735,
+      "actual": 148.9735,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 16",
+      "expected": 10.32,
+      "actual": 10.320000000000006,
+      "absolute_error": 5.329070518200751e-15
+    },
+    {
+      "check": "purchase-side budget 16",
+      "expected": 151.9742,
+      "actual": 151.9742,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 17",
+      "expected": 10.1,
+      "actual": 10.100000000000003,
+      "absolute_error": 3.552713678800501e-15
+    },
+    {
+      "check": "purchase-side budget 17",
+      "expected": 154.97475,
+      "actual": 154.97475,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 18",
+      "expected": 9.94,
+      "actual": 9.940000000000008,
+      "absolute_error": 8.881784197001252e-15
+    },
+    {
+      "check": "purchase-side budget 18",
+      "expected": 157.97515,
+      "actual": 157.97514999999999,
+      "absolute_error": 2.842170943040401e-14
+    },
+    {
+      "check": "purchase-side transfer 19",
+      "expected": 9.84,
+      "actual": 9.839999999999991,
+      "absolute_error": 8.881784197001252e-15
+    },
+    {
+      "check": "purchase-side budget 19",
+      "expected": 160.9754,
+      "actual": 160.97540000000004,
+      "absolute_error": 2.842170943040401e-14
+    },
+    {
+      "check": "purchase-side transfer 20",
+      "expected": 9.8,
+      "actual": 9.799999999999995,
+      "absolute_error": 5.329070518200751e-15
+    },
+    {
+      "check": "purchase-side budget 20",
+      "expected": 163.9755,
+      "actual": 163.9755,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 21",
+      "expected": 11.07,
+      "actual": 11.06999999999999,
+      "absolute_error": 1.0658141036401503e-14
+    },
+    {
+      "check": "purchase-side budget 21",
+      "expected": 166.972325,
+      "actual": 166.972325,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 22",
+      "expected": 12.4,
+      "actual": 12.399999999999999,
+      "absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "check": "purchase-side budget 22",
+      "expected": 169.969,
+      "actual": 169.969,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 23",
+      "expected": 13.79,
+      "actual": 13.790000000000001,
+      "absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "check": "purchase-side budget 23",
+      "expected": 172.965525,
+      "actual": 172.965525,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 24",
+      "expected": 15.24,
+      "actual": 15.24,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side budget 24",
+      "expected": 175.9619,
+      "actual": 175.9619,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 25",
+      "expected": 16.75,
+      "actual": 16.749999999999996,
+      "absolute_error": 3.552713678800501e-15
+    },
+    {
+      "check": "purchase-side budget 25",
+      "expected": 178.958125,
+      "actual": 178.958125,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 26",
+      "expected": 18.32,
+      "actual": 18.320000000000007,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "check": "purchase-side budget 26",
+      "expected": 181.9542,
+      "actual": 181.9542,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 27",
+      "expected": 19.95,
+      "actual": 19.950000000000006,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "check": "purchase-side budget 27",
+      "expected": 184.950125,
+      "actual": 184.950125,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 28",
+      "expected": 21.64,
+      "actual": 21.640000000000008,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "check": "purchase-side budget 28",
+      "expected": 187.9459,
+      "actual": 187.9459,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 29",
+      "expected": 23.39,
+      "actual": 23.389999999999993,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "check": "purchase-side budget 29",
+      "expected": 190.941525,
+      "actual": 190.941525,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 30",
+      "expected": 25.2,
+      "actual": 25.199999999999992,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "check": "purchase-side budget 30",
+      "expected": 193.937,
+      "actual": 193.937,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 31",
+      "expected": 27.07,
+      "actual": 27.069999999999997,
+      "absolute_error": 3.552713678800501e-15
+    },
+    {
+      "check": "purchase-side budget 31",
+      "expected": 196.932325,
+      "actual": 196.932325,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 32",
+      "expected": 29.0,
+      "actual": 29.000000000000004,
+      "absolute_error": 3.552713678800501e-15
+    },
+    {
+      "check": "purchase-side budget 32",
+      "expected": 199.9275,
+      "actual": 199.9275,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 33",
+      "expected": 30.99,
+      "actual": 30.990000000000002,
+      "absolute_error": 3.552713678800501e-15
+    },
+    {
+      "check": "purchase-side budget 33",
+      "expected": 202.922525,
+      "actual": 202.922525,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 34",
+      "expected": 33.04,
+      "actual": 33.04000000000001,
+      "absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "check": "purchase-side budget 34",
+      "expected": 205.9174,
+      "actual": 205.9174,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 35",
+      "expected": 35.15,
+      "actual": 35.14999999999999,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "check": "purchase-side budget 35",
+      "expected": 208.912125,
+      "actual": 208.912125,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 36",
+      "expected": 37.32,
+      "actual": 37.31999999999999,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "check": "purchase-side budget 36",
+      "expected": 211.9067,
+      "actual": 211.9067,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 37",
+      "expected": 39.55,
+      "actual": 39.55,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side budget 37",
+      "expected": 214.901125,
+      "actual": 214.901125,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 38",
+      "expected": 41.84,
+      "actual": 41.84,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side budget 38",
+      "expected": 217.8954,
+      "actual": 217.8954,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 39",
+      "expected": 44.19,
+      "actual": 44.190000000000005,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "check": "purchase-side budget 39",
+      "expected": 220.889525,
+      "actual": 220.889525,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 40",
+      "expected": 46.6,
+      "actual": 46.60000000000001,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "check": "purchase-side budget 40",
+      "expected": 223.8835,
+      "actual": 223.8835,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 41",
+      "expected": 49.07,
+      "actual": 49.06999999999999,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "check": "purchase-side budget 41",
+      "expected": 226.877325,
+      "actual": 226.877325,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 42",
+      "expected": 51.6,
+      "actual": 51.59999999999999,
+      "absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "check": "purchase-side budget 42",
+      "expected": 229.871,
+      "actual": 229.871,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 43",
+      "expected": 54.19,
+      "actual": 54.19,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side budget 43",
+      "expected": 232.864525,
+      "actual": 232.864525,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 44",
+      "expected": 56.84,
+      "actual": 56.839999999999996,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "check": "purchase-side budget 44",
+      "expected": 235.8579,
+      "actual": 235.8579,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 45",
+      "expected": 59.55,
+      "actual": 59.55,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side budget 45",
+      "expected": 238.851125,
+      "actual": 238.851125,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 46",
+      "expected": 62.32,
+      "actual": 62.32000000000001,
+      "absolute_error": 7.105427357601002e-15
+    },
+    {
+      "check": "purchase-side budget 46",
+      "expected": 241.8442,
+      "actual": 241.8442,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 47",
+      "expected": 65.15,
+      "actual": 65.14999999999999,
+      "absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "check": "purchase-side budget 47",
+      "expected": 244.837125,
+      "actual": 244.837125,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 48",
+      "expected": 68.04,
+      "actual": 68.03999999999999,
+      "absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "check": "purchase-side budget 48",
+      "expected": 247.8299,
+      "actual": 247.8299,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 49",
+      "expected": 70.99,
+      "actual": 70.99,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side budget 49",
+      "expected": 250.822525,
+      "actual": 250.822525,
+      "absolute_error": 0.0
+    },
+    {
+      "check": "purchase-side transfer 50",
+      "expected": 74.0,
+      "actual": 74.00000000000001,
+      "absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "check": "purchase-side budget 50",
+      "expected": 253.815,
+      "actual": 253.815,
+      "absolute_error": 0.0
+    }
+  ],
+  "max_absolute_error": 2.842170943040401e-14,
+  "no_competition_outcomes_computed": true,
+  "limitations": [
+    "No blocking objection to pre-fee/pro-rata convention; disclose intended turnover versus actual post-fee purchases.",
+    "H=1 volatility and ex-initial trade share undefined.",
+    "Final evaluation and adaptive policy not implemented.",
+    "Optional historical log excluded; separate Sol provenance audit required."
+  ]
+}

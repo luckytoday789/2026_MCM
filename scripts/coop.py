@@ -79,7 +79,7 @@ def publish_status(role, state, **extra):
         lease = dt.datetime.fromisoformat(previous.get('lease_until','2000-01-01T00:00:00+00:00'))
         if lease > now() and previous.get('state') not in {'stopped','error'}:
             raise RuntimeError(f'Another machine holds the active {role} lease; do not start a duplicate worker.')
-    value = {'role':role,'machine_id':machine,'state':state,'updated_at':now().isoformat(),
+    value = {'role':role,'machine_id':machine,'state':state,'python':sys.version.split()[0],'updated_at':now().isoformat(),
              'lease_until':(now()+dt.timedelta(minutes=10)).isoformat(),**extra}
     body = json.dumps(value, ensure_ascii=False, indent=2)+'\n'
     blob = git('hash-object','-w','--stdin',stdin=body)
@@ -267,11 +267,17 @@ def run_task(task, backend):
         if log.exists():
             (handoff/f'check-{i}.txt').write_text(log.read_text(encoding='utf-8',errors='replace')[-12000:],encoding='utf-8')
     files=scope_check(task,work)
-    artifacts={name:hashlib.sha256((work/name).read_bytes()).hexdigest()
+    # Hash the staged Git representation, after text/EOL normalization, so
+    # receipts verify against the exact published blobs on every machine.
+    git('add','--',*files,cwd=work)
+    artifacts={name:hashlib.sha256(subprocess.run(
+                   ['git','show',f':{name}'],cwd=work,capture_output=True,check=True
+               ).stdout).hexdigest()
                for name in files if (work/name).is_file()}
     report={'schema_version':1,'task_id':task['id'],'attempt':task['attempt'],'role':role,
             'task_sha256':task_digest(task),'base_commit':task['base_commit'],
             'status':'failed' if failure else 'completed','failure':failure,
+            'artifact_hash_basis':'canonical_git_blob',
             'started_from_pinned_source':True,'checks':checks,'artifacts_sha256':artifacts,
             'python':sys.version,'finished_at':now().isoformat(),
             'note':'Completed means worker self-check only; coordinator acceptance is separate.'}
@@ -291,7 +297,8 @@ def chief_fingerprint():
     for role in ['sol','hy3']:
         status=remote_json('status.json',f'status/{role}')
         readiness.append((role,status.get('machine_id') if status else None,
-                          status.get('state')=='error' if status else False))
+                          status.get('state')=='error' if status else False,
+                          status.get('python') if status else None))
     return hashlib.sha256(json.dumps([queue,branches,readiness],sort_keys=True).encode()).hexdigest()
 
 def chief_tick():

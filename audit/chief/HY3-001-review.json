@@ -1,0 +1,41 @@
+{
+  "reviewed_commit": "2a0263c5822988c0385d32fe084b794f8d644bc5",
+  "task_sha256": "df3ff0943a0e9e660af066ee277c3abd801f8893f2d64a4f8a2dcdb3f2d9085e",
+  "status": "not_accepted_python_version",
+  "worker_python": "3.13.14",
+  "required_python": "3.12",
+  "receipt_structure": "passed",
+  "hash_checks": {
+    "handoff/HY3-001/check-0.txt": {
+      "git_blob_sha256": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "receipt_match": "exact_crlf_checkout"
+    },
+    "handoff/HY3-001/check-1.txt": {
+      "git_blob_sha256": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "receipt_match": "exact_crlf_checkout"
+    },
+    "results/development/HY3-001/input-check.json": {
+      "git_blob_sha256": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf",
+      "receipt_match": "exact_crlf_checkout"
+    }
+  },
+  "chief_metadata_rerun_python": "3.12.0",
+  "chief_metadata_rerun": {
+    "status": "passed",
+    "rows": 5400,
+    "scenarios": 180,
+    "periods_per_scenario": 30,
+    "development_rows": 3600,
+    "final_rows": 1800,
+    "checks": [
+      "source hashes",
+      "schema",
+      "unique complete keys",
+      "finite valid gross returns",
+      "exact split"
+    ],
+    "final_outcomes_computed": false
+  },
+  "failure_effect": "No final performance computed; structure/hash assertions agree. Remote environment registration remains noncompliant.",
+  "next_action": "Preserve a1; publish new HY3-002 with explicit Python 3.12 preflight, waiting for local worker environment correction."
+}
