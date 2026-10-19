@@ -4,8 +4,15 @@
     2484,
     48984
   ],
-  "child_pids": [],
-  "current_task": null,
+  "child_pids": [
+    13992,
+    18252,
+    43464,
+    17968,
+    48312,
+    33844
+  ],
+  "current_task": "SOL-029",
   "alerts": [],
   "tasks": [
     {
@@ -396,7 +403,7 @@
       "head": "7ac6afe1169740666f0f65d5f2d9674fd2d4c964",
       "receipt_status": "completed",
       "receipt_matches_task": true,
-      "queue_state": "ready",
+      "queue_state": "accepted",
       "dirty": false,
       "changed_paths": [],
       "remote_matches": true,
@@ -408,6 +415,20 @@
         0
       ],
       "pending_upload": false
+    },
+    {
+      "key": "SOL-029-a1",
+      "task_id": "SOL-029",
+      "base": "df038cb116c4818c14454231500f992af3f26d0f",
+      "head": "df038cb116c4818c14454231500f992af3f26d0f",
+      "receipt_status": null,
+      "receipt_matches_task": false,
+      "queue_state": "ready",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": false,
+      "completed_record": false,
+      "pending_upload": false
     }
   ],
   "deadline": "2026-10-20T23:30:00+08:00",
@@ -416,8 +437,8 @@
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
     "state": "running",
     "python": "3.12.0",
-    "updated_at": "2026-10-19T22:03:46.411466+00:00",
-    "lease_until": "2026-10-19T22:13:46.411466+00:00",
+    "updated_at": "2026-10-19T22:11:56.296882+00:00",
+    "lease_until": "2026-10-19T22:21:56.296882+00:00",
     "task_id": "integrate-and-dispatch"
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
@@ -426,7 +447,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-19T22:07:09.073048+00:00",
+  "updated_at": "2026-10-19T22:12:33.482460+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
