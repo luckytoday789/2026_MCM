@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "task_id": "HY3-001",
+  "attempt": 1,
+  "role": "hy3",
+  "task_sha256": "df3ff0943a0e9e660af066ee277c3abd801f8893f2d64a4f8a2dcdb3f2d9085e",
+  "base_commit": "f5e67b1f53568b94379ea631659d53d90db14f7b",
+  "status": "completed",
+  "failure": null,
+  "started_from_pinned_source": true,
+  "checks": [
+    {
+      "argv": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\default\\Scripts\\python.exe",
+        "scripts/check_inputs.py",
+        "--output",
+        "results/development/HY3-001/input-check.json"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\HY3-001-a1-run-0.log"
+    },
+    {
+      "argv": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\default\\Scripts\\python.exe",
+        "scripts/check_inputs.py"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\HY3-001-a1-check-0.log"
+    }
+  ],
+  "artifacts_sha256": {
+    "handoff/HY3-001/check-0.txt": "135ff1bfa7706821562b53709dbdfd84db9e4d8391665e1a0dc6ceb505471f1f",
+    "handoff/HY3-001/check-1.txt": "135ff1bfa7706821562b53709dbdfd84db9e4d8391665e1a0dc6ceb505471f1f",
+    "results/development/HY3-001/input-check.json": "094b0adf22b5ed42cf49fa8236a4f77b7b14948c74caad65db15663f8abb62ad"
+  },
+  "python": "3.13.14 (main, Jun 11 2026, 04:04:46) [MSC v.1944 64 bit (AMD64)]",
+  "finished_at": "2026-10-19T12:27:23.260270+00:00",
+  "note": "Completed means worker self-check only; coordinator acceptance is separate.",
+  "input_manifest": {
+    "source": "User-supplied 2026 MCM Senior Group Problem A SafeInvest attachments",
+    "license": "CC BY-NC-SA 4.0",
+    "transformation": "Originals unchanged; derived CSV files are row subsets only.",
+    "files": [
+      {
+        "path": "problem/2026_MCM_SafeInvest.pdf",
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+        "bytes": 137578
+      },
+      {
+        "path": "data/raw/SafeInvest_Synthetic_Data.csv",
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+        "bytes": 274914
+      },
+      {
+        "path": "data/development/scenarios_001_120.csv",
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+        "bytes": 182255
+      },
+      {
+        "path": "data/final_holdout/scenarios_121_180.csv",
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+        "bytes": 92732
+      }
+    ]
+  },
+  "task_parameters": {}
+}
