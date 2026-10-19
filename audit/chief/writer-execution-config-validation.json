@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T19:27:24.151257+00:00",
+  "scope": "Chief writer configuration specification and static count/provenance validation only",
+  "python": "3.12.0",
+  "head": "d6290c5834b242719306ee8473d685c6ac6c0d63",
+  "source_sha256_lf": {
+    "specs/POLICY_RESULT_WRITER.md": "ce0c43fad34ebdc44fc6f6bda395c562781e500cdc4b855ee7e0cbf937bec0b4",
+    "specs/POLICY_WRITER_COMPATIBILITY.md": "814c339353a719b88f1bf21af731439cc24e095131d9a8d28efaede48a5695ed",
+    "specs/POLICY_WRITER_ACCEPTANCE_REFERENCES.md": "fc39a9644cdc2d3c4c0fe38657f5eacc5e390bd2e3fa29ff7c9459a2e1676aec",
+    "specs/policy_driver_layout_v2.json": "f431e661c260f7f6e40330661e77724dc3ddcafeafed1a3f0b6c31781a4e8329",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "specs/POLICY_WRITER_EXECUTION_CONFIG.md": "57eb75f085c04f6e80c69bdf4b1234d005e5b17498bc2a420f18753834c0e81c"
+  },
+  "groups": {
+    "primary": {
+      "fee_rate": 0.0025,
+      "counts": {
+        "cases": 8,
+        "new_cases": 5,
+        "imported_cases": 3,
+        "annual_ledgers": 28800,
+        "scenario_metrics": 4800,
+        "summary": 40,
+        "decisions": 18000,
+        "target_scores_max": 24000
+      },
+      "new_modes": [
+        "conservative_cost",
+        "balanced_cost",
+        "growth_cost",
+        "balanced_context",
+        "balanced_adaptive"
+      ],
+      "imported_modes": [
+        "bills_keep",
+        "equal_weight_annual",
+        "equal_weight_buy_hold"
+      ]
+    },
+    "doubled": {
+      "fee_rate": 0.005,
+      "counts": {
+        "cases": 8,
+        "new_cases": 8,
+        "imported_cases": 0,
+        "annual_ledgers": 28800,
+        "scenario_metrics": 4800,
+        "summary": 40,
+        "decisions": 18000,
+        "target_scores_max": 24000
+      },
+      "new_modes": [
+        "bills_keep",
+        "equal_weight_annual",
+        "equal_weight_buy_hold",
+        "conservative_cost",
+        "balanced_cost",
+        "growth_cost",
+        "balanced_context",
+        "balanced_adaptive"
+      ],
+      "imported_modes": []
+    }
+  },
+  "independent_arithmetic": {
+    "ledger_rows_per_group": "8*120*30",
+    "metric_rows_per_group": "8*120*5",
+    "decision_rows_per_group": "5*120*30",
+    "score_cap_per_group": "4*120*30+120*(5+25*3)"
+  },
+  "configuration_publication_order": [
+    "accepted_code_commit_C",
+    "later_execution_configuration_commit_E_pins_C",
+    "later_immutable_task_pins_E_and_configuration_blob"
+  ],
+  "pending_case_task": {
+    "task_id": "SOL-023",
+    "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+    "task_sha256": "3298bc4f6bd44345967419c640b395d0196efe9f81160c71128901f9f1f0938a",
+    "source_pins_unchanged": 18,
+    "dependencies_accepted": true,
+    "branch_present": false,
+    "accepted": false
+  },
+  "remote_status": [
+    {
+      "role": "sol",
+      "commit": "3bab657b62e0beac9ebfcbc1e02daa4b2eb6899f",
+      "state": "running",
+      "task_id": "SOL-023",
+      "updated_at": "2026-10-19T19:25:58.740548+00:00",
+      "lease_until": "2026-10-19T19:35:58.740548+00:00",
+      "lease_valid_at_check": true
+    },
+    {
+      "role": "hy3",
+      "commit": "f04b4e0059961dbff5b00759243d122d90926b61",
+      "state": "idle",
+      "task_id": null,
+      "updated_at": "2026-10-19T19:25:23.612394+00:00",
+      "lease_until": "2026-10-19T19:35:23.612394+00:00",
+      "lease_valid_at_check": true
+    }
+  ],
+  "production_code_changed": false,
+  "production_execution_authorized": false,
+  "competition_input_read": false,
+  "baseline_experiment_rerun": false,
+  "final_data_open": false,
+  "limitations": [
+    "Writer does not exist and no writer implementation acceptance is claimed.",
+    "Counts are schema arithmetic, not measured outputs or runtime.",
+    "New note must be pinned and examined by Sol in the eventual writer implementation task.",
+    "No case-engine acceptance until exact SOL-023 receipt and independent numerical checks pass."
+  ]
+}
