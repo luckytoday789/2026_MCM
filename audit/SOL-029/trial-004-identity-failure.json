@@ -1,0 +1,13 @@
+{
+  "cmd": "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+  "args": [
+    "-B",
+    "-c",
+    "import sys,json;sys.path.insert(0,'src');from safeinvest import policy_writer as w;open('audit/SOL-029/schema.json','x',encoding='utf8').write(json.dumps({k:{'columns':v,'keys':w.KEYS[k]} for k,v in w.SCHEMAS.items()},indent=2)+'\\n');sys.path.insert(0,'audit/SOL-029');import verify;print(json.dumps(verify.identity(),sort_keys=True))"
+  ],
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"audit/SOL-029/verify.py\", line 63, in identity\n    w.require(review.get('task_id')==name and review['reviewed_commit']==commit,'dependency chief identity')\nValueError: dependency chief identity\n",
+  "elapsed_ms": 5824,
+  "log_note": "Traceback path shortened in this diagnostic; original terminal observation preserved by session."
+}

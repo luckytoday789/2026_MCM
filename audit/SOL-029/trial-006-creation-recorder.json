@@ -1,0 +1,11 @@
+{
+  "cmd": "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+  "args": [
+    "-B",
+    "audit/SOL-029/record_checks.py"
+  ],
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-029-a1\\audit\\SOL-029\\record_checks.py\", line 105, in <module>\r\n    if __name__=='__main__':main()\r\n                            ^^^^^^\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-029-a1\\audit\\SOL-029\\record_checks.py\", line 100, in main\r\n    w.require(passed,'prescribed or portable checks failed; original trial preserved')\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-029-a1\\src\\safeinvest\\policy_writer.py\", line 53, in require\r\n    raise ValueError(message)\r\nValueError: prescribed or portable checks failed; original trial preserved\r\n",
+  "elapsed_ms": 84991
+}

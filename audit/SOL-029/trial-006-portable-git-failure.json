@@ -1,0 +1,11 @@
+{
+  "cmd": "git",
+  "args": [
+    "show",
+    "10fd3892b4352f856155b85ef3548b31fa5320b5:ops/tasks/SOL-029.json"
+  ],
+  "returncode": 128,
+  "stdout": "",
+  "stderr": "error: object directory E:/2026_MCM/sol-coop/.git/objects? does not exist; check .git/objects/info/alternates\nfatal: path 'ops/tasks/SOL-029.json' does not exist in '10fd3892b4352f856155b85ef3548b31fa5320b5'\n",
+  "elapsed_ms": 103
+}

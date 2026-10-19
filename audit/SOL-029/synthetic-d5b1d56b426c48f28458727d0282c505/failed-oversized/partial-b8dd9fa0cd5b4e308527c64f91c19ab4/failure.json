@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "exception": "ValueError",
+  "diagnosis": "artifact exceeds actual byte limit",
+  "elapsed_seconds": 0.0,
+  "traceback": "Traceback (most recent call last):\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-029-a1\\src\\safeinvest\\policy_writer.py\", line 658, in _stage_output\n    result=operation(stage,started)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-029-a1\\audit\\SOL-029\\verify.py\", line 195, in <lambda>\n    attempts=[('partial',fail,{}),('oversized',lambda stage,start:w._write(stage/'oversized.bin',b'12345',4),{})]\n                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-029-a1\\src\\safeinvest\\policy_writer.py\", line 641, in _write\n    require(len(data)<=max_bytes,'artifact exceeds actual byte limit')\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-029-a1\\src\\safeinvest\\policy_writer.py\", line 53, in require\n    raise ValueError(message)\nValueError: artifact exceeds actual byte limit\n",
+  "partial_path": "partial-b8dd9fa0cd5b4e308527c64f91c19ab4"
+}

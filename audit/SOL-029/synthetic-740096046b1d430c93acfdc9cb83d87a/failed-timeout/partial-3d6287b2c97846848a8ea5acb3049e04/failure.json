@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "exception": "ValueError",
+  "diagnosis": "immutable runtime budget exceeded",
+  "elapsed_seconds": 2.0,
+  "traceback": "Traceback (most recent call last):\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-029-a1\\src\\safeinvest\\policy_writer.py\", line 659, in _stage_output\n    require(time.monotonic()-started<=max_seconds,'immutable runtime budget exceeded')\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-029-a1\\src\\safeinvest\\policy_writer.py\", line 53, in require\n    raise ValueError(message)\nValueError: immutable runtime budget exceeded\n",
+  "partial_path": "partial-3d6287b2c97846848a8ea5acb3049e04"
+}

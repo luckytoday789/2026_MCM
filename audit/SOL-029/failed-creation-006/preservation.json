@@ -1,0 +1,12 @@
+{
+  "task_id": "SOL-029",
+  "trial": "006",
+  "status": "failed_portable_git_alternates_CRLF",
+  "preserved_files": "Original evidence bytes moved without rewriting; original generated fixture root remains in place",
+  "fixture_root": "audit/SOL-029/synthetic-d5b1d56b426c48f28458727d0282c505",
+  "old_clean_sha256": {
+    "integrity-self-tests.json": "9dd02f37ef123b46dcd979b9fd83ef8eea674b5eec1c0e2f5efe3a6882be7235",
+    "verification.json": "51ae11665f15b982fd74a41a6c39736972009b605981c14218b32b2a39391a70"
+  },
+  "production_run": false
+}

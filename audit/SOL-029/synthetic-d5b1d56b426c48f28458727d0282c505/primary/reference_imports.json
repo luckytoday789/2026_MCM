@@ -1,0 +1,8 @@
+{
+  "modes": [
+    "bills_keep",
+    "equal_weight_annual",
+    "equal_weight_buy_hold"
+  ],
+  "status": "synthetic_fixture_imports"
+}

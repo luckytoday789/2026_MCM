@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-029",
+  "scope": "narrow failed-draft recovery; synthetic evidence only",
+  "predecessor": {
+    "task_id": "SOL-026",
+    "reviewed_commit": "e8733bbc9f1234e04a5e382046d3c89fc12cae7d",
+    "status": "cancelled_failed_not_accepted",
+    "review_path": "audit/chief/SOL-026-failure-review.json",
+    "historical_evidence_recreated": false
+  },
+  "changes": [
+    "Require positive SOL-029 writer approval and pin recovery contract",
+    "Validate complete recorded consumed/imported module proof before input",
+    "New immutable successor evidence and read-only verifier"
+  ],
+  "executed_focused_trials": [
+    {
+      "path": "audit/SOL-029/trial-001-focused-tests.json",
+      "result": "failed fixture pin mismatch; source preserved"
+    },
+    {
+      "path": "audit/SOL-029/trial-002-focused-tests.json",
+      "result": "15 tests passed"
+    },
+    {
+      "path": "audit/SOL-029/trial-003-focused-tests.json",
+      "result": "15 tests passed including cancelled extra SOL-026 rejection"
+    },
+    {
+      "path": "audit/SOL-029/trial-004-identity-failure.json",
+      "result": "legacy SOL-001 review lacks task_id; exact task-digest binding added only to successor audit"
+    },
+    {
+      "path": "audit/SOL-029/trial-005-identity-probe.json",
+      "result": "all 46 pins and final module identities verified; prior to final documentation changes"
+    }
+  ],
+  "final_evidence": {
+    "exclusive_creation": "audit/SOL-029/verification.json",
+    "integrity": "audit/SOL-029/integrity-self-tests.json",
+    "actual_clean_commands_and_portable_replay": "audit/SOL-029/clean-environment-checks.json",
+    "interpretation": "Only recorded successful command results count as executed; this document is not a substitute for logs"
+  },
+  "pending": [
+    "Chief exact-commit review and positive SOL-029 acceptance",
+    "Accepted C, separately published fixed E configuration and P HY3 commands task",
+    "Actual production fixed-group runtime and artifact measurements",
+    "HY3 generation and independent result acceptance",
+    "Analysis, policy selection, freeze and final gate"
+  ],
+  "competition_input_read": false,
+  "production_configuration_written": false,
+  "production_run": false,
+  "final_data_open": false,
+  "independent_outcome_acceptance": false
+}
