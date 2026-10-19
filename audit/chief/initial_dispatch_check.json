@@ -48,10 +48,10 @@
     "Final outcomes"
   ],
   "input_artifact_sha256": {
-    "audit/chief/accounting_reference.py": "b785784137cb442b22f5e59cbd51f64aad97b03518cc7362b69a5f775312ddf6",
-    "audit/chief/accounting_oracle.json": "40028fb4c003d8a782c625ba07b15c1c143348c205dd4e5153ce9c9a9a753331",
-    "specs/DEVELOPMENT_BASELINES.md": "fd83de5a118e37263fb9defc159dc6ea585756449b6c5b34bba269eebd2d4f07",
-    "specs/development_baselines_v1.json": "e73307cb54df77fdf0a2578d4746a532a36ffc62a2c5416c4c99a92abdc526fe"
+    "audit/chief/accounting_reference.py": "c7a62e8f8453280e867758aed968b5041dea4f6d3ac6fca07e6e856bc5e85b07",
+    "audit/chief/accounting_oracle.json": "85caa997e09b1cf2a02118f4f101137919ad7b38ce662caed7a594c569ed1377",
+    "specs/DEVELOPMENT_BASELINES.md": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f",
+    "specs/development_baselines_v1.json": "725f6eed64bbf49d7cad19d5f1cc233c7e0d80aa82c39c6aabd3b8864b2007bd"
   },
   "existing_skill": {
     "name": "quality-assurance-auditor",
@@ -67,5 +67,6 @@
     "Publish reviewed driver before issuing a fixed-parameter HY3 pilot task."
   ],
   "final_data_open": false,
-  "human_help_required": false
+  "human_help_required": false,
+  "artifact_hash_basis": "Canonical Git blob bytes in prerequisite commit 208c719516f1fbf8df4ffd2f443bc2bdcb35d5a6; not platform-dependent working-tree line endings."
 }
