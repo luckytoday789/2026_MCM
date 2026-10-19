@@ -1,8 +1,11 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "d18efcdbc14a778a4efc0a2445e2e6e1bcc892ea",
-  "authoritative_state": ["ops/control.json", "ops/queue.json"],
+  "snapshot_main_commit": "2ccb104a57d010e3ce9f9a6b6045e964cf653a99",
+  "authoritative_state": [
+    "ops/control.json",
+    "ops/queue.json"
+  ],
   "final_data_open_at_snapshot": false,
   "evidence_states": {
     "locked_definition": "Authoritative problem or accounting convention; does not assert investment performance",
@@ -13,12 +16,30 @@
     "prototype_pending_review": "Chief-authored source and synthetic checks exist; independent code approval and production results are absent"
   },
   "source_registry": {
-    "PROBLEM_LOCK": {"path": "specs/PROBLEM_LOCK.md", "state": "locked_definition"},
-    "ACCOUNTING": {"path": "specs/ACCOUNTING.md", "state": "locked_definition"},
-    "PROTOCOL": {"path": "ops/PROTOCOL.md", "state": "locked_definition"},
-    "INPUT_MANIFEST": {"path": "data/manifest.json", "state": "locked_definition"},
-    "BASELINE_PLAN": {"path": "specs/DEVELOPMENT_BASELINES.md", "state": "locked_definition"},
-    "BASELINE_ADDENDUM": {"path": "specs/DEVELOPMENT_BASELINE_DRIVER.md", "state": "locked_definition"},
+    "PROBLEM_LOCK": {
+      "path": "specs/PROBLEM_LOCK.md",
+      "state": "locked_definition"
+    },
+    "ACCOUNTING": {
+      "path": "specs/ACCOUNTING.md",
+      "state": "locked_definition"
+    },
+    "PROTOCOL": {
+      "path": "ops/PROTOCOL.md",
+      "state": "locked_definition"
+    },
+    "INPUT_MANIFEST": {
+      "path": "data/manifest.json",
+      "state": "locked_definition"
+    },
+    "BASELINE_PLAN": {
+      "path": "specs/DEVELOPMENT_BASELINES.md",
+      "state": "locked_definition"
+    },
+    "BASELINE_ADDENDUM": {
+      "path": "specs/DEVELOPMENT_BASELINE_DRIVER.md",
+      "state": "locked_definition"
+    },
     "CORE_ACCEPTANCE": {
       "path": "audit/chief/SOL-001-review.json",
       "state": "accepted_implementation",
@@ -44,7 +65,10 @@
     },
     "POLICY_PROPOSAL": {
       "state": "design_pending_review",
-      "paths": ["specs/DEVELOPMENT_POLICY_PILOT.md", "specs/development_policy_pilot_v1.json"],
+      "paths": [
+        "specs/DEVELOPMENT_POLICY_PILOT.md",
+        "specs/development_policy_pilot_v1.json"
+      ],
       "source_commit": "a996298fd22b11dc54deb43cb596f143da05bf93",
       "independent_review_task": "SOL-009",
       "production_execution_authorized": false
@@ -58,13 +82,27 @@
       "chief_synthetic_test_count": 15,
       "production_execution_authorized": false,
       "competition_outcomes_computed": false
+    },
+    "POLICY_CALIBRATION_PROTOTYPE": {
+      "state": "prototype_pending_review",
+      "source_commit": "2ccb104a57d010e3ce9f9a6b6045e964cf653a99",
+      "path": "src/safeinvest/policy_calibration.py",
+      "scope_note": "specs/POLICY_CALIBRATION_PROTOTYPE.md",
+      "independent_review_task": "SOL-012",
+      "chief_synthetic_test_count": 10,
+      "production_execution_authorized": false,
+      "competition_outcomes_computed": false
     }
   },
   "requirements": [
     {
       "id": "R01",
       "answer": "Independent synthetic annual inputs, scenario split and t-1 information boundary",
-      "sources": ["PROBLEM_LOCK", "PROTOCOL", "INPUT_MANIFEST"],
+      "sources": [
+        "PROBLEM_LOCK",
+        "PROTOCOL",
+        "INPUT_MANIFEST"
+      ],
       "state": "locked_definition",
       "draft_location": "methods-draft.md: Independent annual scenarios and purchasing power",
       "remaining": "Bind final run to the recorded freeze; do not describe final evaluation as completed"
@@ -72,7 +110,11 @@
     {
       "id": "R02",
       "answer": "Initial bills, fully invested long-only holdings, one-way fees before returns and exact inflation",
-      "sources": ["ACCOUNTING", "CORE_ACCEPTANCE", "DRIVER_ACCEPTANCE"],
+      "sources": [
+        "ACCOUNTING",
+        "CORE_ACCEPTANCE",
+        "DRIVER_ACCEPTANCE"
+      ],
       "state": "locked_definition",
       "draft_location": "methods-draft.md: One-way transfers and fee funding",
       "remaining": "Verify every new policy/run against the same identities; acceptance is not inherited by new code"
@@ -80,7 +122,10 @@
     {
       "id": "R03",
       "answer": "Distinguish ordinary annual fluctuation from maximum real loss",
-      "sources": ["ACCOUNTING", "BASELINE_ADDENDUM"],
+      "sources": [
+        "ACCOUNTING",
+        "BASELINE_ADDENDUM"
+      ],
       "state": "locked_definition",
       "draft_location": "methods-draft.md: Growth, ordinary fluctuation and large loss",
       "remaining": "Fill outcome tables only from accepted scenario metrics with correct units"
@@ -88,88 +133,154 @@
     {
       "id": "R04",
       "answer": "Define Conservative, Balanced and Growth allocations and operating rules",
-      "sources": ["PROBLEM_LOCK", "POLICY_PROPOSAL", "POLICY_KERNEL_PROTOTYPE"],
+      "sources": [
+        "PROBLEM_LOCK",
+        "POLICY_PROPOSAL",
+        "POLICY_KERNEL_PROTOTYPE",
+        "POLICY_CALIBRATION_PROTOTYPE"
+      ],
       "state": "design_pending_review",
-      "remaining": "Accept SOL-009 design and resolve findings; independently review provisional kernel via SOL-011, implement and review calibration/driver, then obtain accepted actual development evidence. Existing synthetic tests are not strategy results."
+      "remaining": "Accept SOL-009 design and reconcile findings; independently review provisional kernel via SOL-011 and synthetic calibration via SOL-012. Implement/review the production driver and selection, then obtain accepted development evidence. Synthetic fixtures are not strategy results."
     },
     {
       "id": "R05",
       "answer": "Explain suitability for all five profiles using own horizons, temporary loss tolerance and liquidity",
-      "sources": ["PROBLEM_LOCK", "POLICY_PROPOSAL"],
+      "sources": [
+        "PROBLEM_LOCK",
+        "POLICY_PROPOSAL"
+      ],
       "state": "not_available",
-      "table_keys": ["profile_id", "horizon", "candidate", "split", "fee_rate", "review_threshold"],
-      "required_content": ["all candidate screens", "p90 loss", "empirical tolerance exceedance", "p10 growth", "assignment or referral", "reason"],
+      "table_keys": [
+        "profile_id",
+        "horizon",
+        "candidate",
+        "split",
+        "fee_rate",
+        "review_threshold"
+      ],
+      "required_content": [
+        "all candidate screens",
+        "p90 loss",
+        "empirical tolerance exceedance",
+        "p10 growth",
+        "assignment or referral",
+        "reason"
+      ],
       "remaining": "Accepted profile results and personalized suspension follow-up before freeze; no guarantee or silent constraint relaxation"
     },
     {
       "id": "R06",
       "answer": "Balanced keep, rebalance, target change or human review; estimated benefit must justify cost",
-      "sources": ["PROBLEM_LOCK", "POLICY_PROPOSAL", "POLICY_KERNEL_PROTOTYPE"],
+      "sources": [
+        "PROBLEM_LOCK",
+        "POLICY_PROPOSAL",
+        "POLICY_KERNEL_PROTOTYPE",
+        "POLICY_CALIBRATION_PROTOTYPE"
+      ],
       "state": "design_pending_review",
-      "remaining": "Accept SOL-009 design and resolve findings; independently review provisional kernel via SOL-011, implement and review calibration/driver, then obtain accepted actual development evidence. Existing synthetic tests are not strategy results."
+      "remaining": "Accept SOL-009 design and reconcile findings; independently review provisional kernel via SOL-011 and synthetic calibration via SOL-012. Implement/review the production driver and selection, then obtain accepted development evidence. Synthetic fixtures are not strategy results."
     },
     {
       "id": "R07",
       "answer": "Required annual one-third baseline and simple reference performance",
-      "sources": ["BASELINE_PLAN", "BASELINE_ADDENDUM", "HY3_BASELINE_RESULT"],
+      "sources": [
+        "BASELINE_PLAN",
+        "BASELINE_ADDENDUM",
+        "HY3_BASELINE_RESULT"
+      ],
       "state": "submitted_pending_review",
-      "table_keys": ["policy_id", "horizon", "split"],
+      "table_keys": [
+        "policy_id",
+        "horizon",
+        "split"
+      ],
       "remaining": "Accept independent SOL-008 numerical review and exact HY3-003 artifacts; do not rerun the existing experiment"
     },
     {
       "id": "R08",
       "answer": "Median growth, median loss, p10 growth, p90 loss and both trade shares for the Balanced comparison",
-      "sources": ["ACCOUNTING", "BASELINE_ADDENDUM", "POLICY_PROPOSAL"],
+      "sources": [
+        "ACCOUNTING",
+        "BASELINE_ADDENDUM",
+        "POLICY_PROPOSAL"
+      ],
       "state": "not_available",
-      "table_keys": ["policy_id", "horizon", "split", "fee_rate"],
+      "table_keys": [
+        "policy_id",
+        "horizon",
+        "split",
+        "fee_rate"
+      ],
       "remaining": "Accepted cost-aware policy results paired with accepted references; separate development and final tables"
     },
     {
       "id": "R09",
       "answer": "Severe-loss case with scenario and peak/trough locations",
-      "sources": ["BASELINE_PLAN", "BASELINE_ADDENDUM", "HY3_BASELINE_RESULT"],
+      "sources": [
+        "BASELINE_PLAN",
+        "BASELINE_ADDENDUM",
+        "HY3_BASELINE_RESULT"
+      ],
       "state": "submitted_pending_review",
       "remaining": "Accepted case for each reported policy/horizon and frozen final selection rule; show selected-policy path without mislabeling the reference's own severe case"
     },
     {
       "id": "R10",
       "answer": "Determine honestly whether automatic target updates add value",
-      "sources": ["PROBLEM_LOCK", "POLICY_PROPOSAL"],
+      "sources": [
+        "PROBLEM_LOCK",
+        "POLICY_PROPOSAL"
+      ],
       "state": "not_available",
       "remaining": "Reviewed selection rule plus accepted same-context and simpler-policy comparisons, fold evidence, trade/review differences and negative trials"
     },
     {
       "id": "R11",
       "answer": "Customer explanation in at most 50 English words",
-      "sources": ["PROBLEM_LOCK"],
+      "sources": [
+        "PROBLEM_LOCK"
+      ],
       "state": "not_available",
       "remaining": "Write after the selected action and rationale are supported; mechanically count words and review meaning"
     },
     {
       "id": "R12",
       "answer": "Sensitivity to an important assumption or transaction-cost rate and impact on recommendation",
-      "sources": ["PROBLEM_LOCK", "POLICY_PROPOSAL"],
+      "sources": [
+        "PROBLEM_LOCK",
+        "POLICY_PROPOSAL"
+      ],
       "state": "not_available",
       "remaining": "Reviewed fixed doubled-fee experiment and accepted outputs; no retuning the primary policy using sensitivity or final outcomes"
     },
     {
       "id": "R13",
       "answer": "Limitations, review/suspension trigger and exact holdings/actions while review is pending",
-      "sources": ["PROBLEM_LOCK", "POLICY_PROPOSAL"],
+      "sources": [
+        "PROBLEM_LOCK",
+        "POLICY_PROPOSAL"
+      ],
       "state": "design_pending_review",
       "remaining": "Accepted trigger timing/latch tests, profile-specific threshold evidence and final operational text; clarify that keeping holdings does not remove market or inflation exposure"
     },
     {
       "id": "R14",
       "answer": "A4 English report at most 10 pages, font at least 11 pt, three names and AI-use disclosure",
-      "sources": ["PROBLEM_LOCK", "PROTOCOL"],
+      "sources": [
+        "PROBLEM_LOCK",
+        "PROTOCOL"
+      ],
       "state": "not_available",
       "remaining": "Assemble and independently review report, insert names only into local delivery copy, render all pages and verify actual layout"
     },
     {
       "id": "R15",
       "answer": "Reproducible code supplement at most 50 MB and human submission",
-      "sources": ["PROBLEM_LOCK", "PROTOCOL", "INPUT_MANIFEST"],
+      "sources": [
+        "PROBLEM_LOCK",
+        "PROTOCOL",
+        "INPUT_MANIFEST"
+      ],
       "state": "not_available",
       "remaining": "Finalize accepted code/run inventory, retain licenses/attribution, verify ZIP size and reproducibility, then provide local files for human submission"
     }

@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T01:15:42+08:00",
-  "reason": "Sol has started SOL-008. Synthetic-only fold calibration and ten executed provenance/leakage tests are saved; publish its gated independent review against this pushed source next.",
+  "next_wake_at": "2026-10-20T01:43:02+08:00",
+  "reason": "Real Sol availability verified and existing reviews released; chief synthetic calibration is saved and independent SOL-012 is published behind unchanged design/kernel gates. Await exact independent results before production implementation.",
   "next_actions": [
-    "Inspect exact SOL-008 and SOL-009 receipts as they arrive; preserve all failed attempts. HY3-003 is submitted and must not be rerun.",
-    "Accept or challenge the independent numerical audit before promoting exact HY3-003.",
-    "Reconcile SOL-009 findings; release existing SOL-011 promptly only if the design is accepted without material changes, otherwise publish a corrected immutable attempt against pushed sources.",
-    "Publish a narrow gated independent review of the provisional calibration source after this source commit is pushed; no actual-data policy outcomes.",
-    "Prepare granular driver and selection tasks after design review; reviewed prerequisites must already exist on origin/main before task publication.",
-    "Keep final gate closed and private member details local. Refresh the one-shot timer at end of turn."
+    "Fetch exact SOL-008 and SOL-009 receipts when available. Verify task/source/artifact hashes, allowed paths, substantive findings and independent read-only evidence; preserve quota failures.",
+    "Accept or challenge SOL-008 before promoting exact HY3-003 commit 7652410d73425371110784ef5fa97c03470a074e. Do not rerun that submitted baseline experiment.",
+    "Reconcile SOL-009 design findings. If accepted without material changes, immediately release existing SOL-011; otherwise preserve it and publish a corrected immutable attempt against newly pushed sources.",
+    "After unchanged SOL-009/SOL-011 acceptance, immediately release existing SOL-012 for independent calibration review. If relevant source changes, issue a corrected immutable successor, never mutate the published attempt.",
+    "Use specs/POLICY_DRIVER_HANDOFF.md and reviewed APIs to publish granular production driver/selection work after design review. Push prerequisite code/specs first; HY3 gets fixed commands only after code review.",
+    "No actual policy outcomes or final access yet. Keep original baseline, failed trials, strict final freeze and local-only member details. Refresh this one-shot timer; incoming receipts can wake before the 30-minute fallback."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T01:10:42+08:00",
+  "last_completed_at": "2026-10-20T01:13:02+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

@@ -260,6 +260,16 @@
       "branch": "work/sol/SOL-011-a1",
       "waiting_for": "Accepted SOL-009 with unchanged design and exact successful SOL-010; then release this existing review promptly.",
       "note": "Chief kernel is provisional; no actual-data strategy run or independent acceptance. New task must replace this attempt if design changes."
+    },
+    {
+      "id": "SOL-012",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "905e1ab4959a8667b29a789027c3c05c8e16fef6117b0051dee17b3c80747b88",
+      "branch": "work/sol/SOL-012-a1",
+      "waiting_for": "Accepted unchanged SOL-009 design and SOL-011 kernel. Release promptly when prerequisites pass; source changes require a new immutable attempt.",
+      "note": "Synthetic calibration only; ten chief tests are provisional evidence, not independent acceptance or HY3 authorization."
     }
   ]
 }

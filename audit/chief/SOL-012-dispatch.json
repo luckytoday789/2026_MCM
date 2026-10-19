@@ -1,0 +1,46 @@
+{
+  "task_id": "SOL-012",
+  "task_sha256": "905e1ab4959a8667b29a789027c3c05c8e16fef6117b0051dee17b3c80747b88",
+  "base_commit": "2ccb104a57d010e3ce9f9a6b6045e964cf653a99",
+  "prerequisite_already_pushed": true,
+  "source_sha256": {
+    "src/safeinvest/policy_calibration.py": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+    "tests/test_policy_calibration.py": "1ffd23c01e82a12d57568557cf33402bf93aec15b3e9cb4808e0da83fd5a38f2",
+    "specs/POLICY_CALIBRATION_PROTOTYPE.md": "a9272fbc14c5947acaf7f0c8d557ca5671643bf0e8fea5d13d82a66772295990",
+    "src/safeinvest/policy_pilot.py": "d2f529f69abbc1690ed4fedca42cda8b9c5570729b58c5c9dd37e142d14971f6",
+    "specs/POLICY_DRIVER_HANDOFF.md": "ba9ce7ec0f3a65f85190153e1b3e1d6327ddf7a213aa95fcced533775e352679",
+    "specs/DEVELOPMENT_POLICY_PILOT.md": "94e436a979f2c232b729c352d209c83c76ba014a14613852ad447446cb6948e0",
+    "specs/development_policy_pilot_v1.json": "39ab8f78f6e4c487d00c1055e6d474c51a2d940e3cad951768a6c75874cc835a",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46"
+  },
+  "queue_task_hash_and_base_checks": [
+    "SOL-001",
+    "HY3-001",
+    "SOL-002",
+    "SOL-003",
+    "HY3-002",
+    "SOL-004",
+    "SOL-005",
+    "HY3-003",
+    "SOL-006",
+    "SOL-007",
+    "SOL-008",
+    "SOL-009",
+    "SOL-010",
+    "SOL-011",
+    "SOL-012"
+  ],
+  "state": "waiting",
+  "final_data_open": false,
+  "review_is_independent": true,
+  "runtime_seconds": 1200,
+  "chief_test_log_provenance": {
+    "path": "audit/chief/policy-calibration/20261019T170940Z-tests.txt",
+    "source_commit": "2ccb104a57d010e3ce9f9a6b6045e964cf653a99",
+    "canonical_git_blob_sha256": "005da3856c5818cb420d7fe2cda00e5b3d17e4dabbdf0cbe7da6252aefc14a62",
+    "raw_subprocess_crlf_sha256": "56e867e50ee6fdd5a8eae9a879f6b4cf37fb509f3582225ff409b50c6d3f38c1",
+    "raw_reconstruction_verified": true,
+    "note": "Existing timestamped evidence preserved; its log digest refers to raw Windows subprocess bytes."
+  }
+}
