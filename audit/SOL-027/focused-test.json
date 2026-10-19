@@ -1,0 +1,19 @@
+{
+  "command": [
+    "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_policy_personalized.py",
+    "-v"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "test_B_exact_generic_prefix_all_fixed_classes_and_fees (test_policy_personalized.PersonalizedTests.test_B_exact_generic_prefix_all_fixed_classes_and_fees) ... ok\ntest_current_year_cannot_change_its_own_decision (test_policy_personalized.PersonalizedTests.test_current_year_cannot_change_its_own_decision) ... ok\ntest_exact_equality_latch_and_pending_holdings (test_policy_personalized.PersonalizedTests.test_exact_equality_latch_and_pending_holdings) ... ok\ntest_fee_before_returns_and_fresh_state (test_policy_personalized.PersonalizedTests.test_fee_before_returns_and_fresh_state) ... ok\ntest_final_year_crossing_no_fictional_review_or_suffix_leak (test_policy_personalized.PersonalizedTests.test_final_year_crossing_no_fictional_review_or_suffix_leak) ... ok\ntest_inclusive_screens_strict_count_and_failure_combinations (test_policy_personalized.PersonalizedTests.test_inclusive_screens_strict_count_and_failure_combinations) ... ok\ntest_invalid_inputs_fail_not_referral (test_policy_personalized.PersonalizedTests.test_invalid_inputs_fail_not_referral) ... ok\ntest_post_fee_crossing_survives_recovery_until_next_review (test_policy_personalized.PersonalizedTests.test_post_fee_crossing_survives_recovery_until_next_review) ... ok\ntest_profiles_fees_counts_and_rational_inflation (test_policy_personalized.PersonalizedTests.test_profiles_fees_counts_and_rational_inflation) ... ok\ntest_referral_does_not_touch_rows_or_priors_and_null_semantics (test_policy_personalized.PersonalizedTests.test_referral_does_not_touch_rows_or_priors_and_null_semantics) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.599s\n\nOK\n",
+  "runtime_seconds": 1.0719974999665283,
+  "pythonpath_removed": true
+}

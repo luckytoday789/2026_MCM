@@ -1,0 +1,295 @@
+{
+  "task_id": "SOL-027",
+  "reviewed_commit": "3d5e965e45f18cf79023dde69189ce987c17e56b",
+  "base_commit": "5a015a490c89b39271624e1f1790a3454498a6c9",
+  "task_sha256": "f086a587d0a0ec0aa1477d28df58f036482dac1dbc7e0add8f298553daf90f00",
+  "branch": "work/sol/SOL-027-a1",
+  "structural_checks": "passed",
+  "source_hashes_checked": {
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "specs/PERSONALIZED_REVIEW.md": "0365fdf989ae7abfeda0bc3f48f8c86245a40dd9e48b3c6ae8d2d26c0b7c4987",
+    "specs/PERSONALIZED_OUTPUT_NOTES.md": "f328a5832251faab1b8810b598fc66408e5a323afc755a0011cfdb0b04e255a7",
+    "specs/personalized_review_v1.json": "2edc9410b291f8f1f7235344e685d004c2f3cfd80844539df96759e9b305b4ad",
+    "specs/PERSONALIZED_COMPONENT.md": "d9b3737ec37a8cf6421fe56a703d045a680bdef5906b4a9910643a996c181fec",
+    "src/safeinvest/__init__.py": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+    "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+    "src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+    "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+    "src/safeinvest/policy_calibration.py": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+    "src/safeinvest/policy_cases.py": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7",
+    "src/safeinvest/policy_personalized.py": "09e840c2e7f94183472e144c98509f855081105ae937a13cabb31a3bf47062e9",
+    "tests/test_policy_personalized.py": "1a1adc6d540e3e033ecce7a48ba0a8d379c18d563b0ec7bb7444f3ee03696b5a",
+    "audit/chief/personalized-component/validation-002.json": "d972375132ed604993db42cb164a30ea5095e4c488c5a3a410cede7ccdc14623",
+    "audit/SOL-020/findings.json": "2e597db33daf1da6dfdea61925565fb7d2735e97db7d985784faed967a27f3c0",
+    "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+    "audit/chief/SOL-020-review.json": "276895e8e12b9c212fe433f0fa1c07408c601502ffd5d9ce965a684fdc72551b",
+    "audit/chief/SOL-021-review.json": "105f8610edeebc1b17272b7450d3cdba29fa14d963407afd1665fc7caf640670",
+    "audit/chief/SOL-022-review.json": "9875dab72b4354566fe6067de94fabbb917c0b9c2344914a3f38c084f1042546",
+    "audit/chief/SOL-025-review.json": "7523121f5290d6ba938ccff6749d5d28b86c0053c2c072850092dee941efdb1c"
+  },
+  "artifacts_sha256": {
+    "audit/SOL-027/findings.json": "a2303143708bc0746fbf3d8ab6641f059fd70e9ce5d4daf5a91909d46fd3a81a",
+    "audit/SOL-027/focused-test.json": "9c4ee50f46c281ad92a2f3be949aef35c23c4a744faa1abc210030ed3eb90a7e",
+    "audit/SOL-027/identity-trial-001.json": "ef435ac31272f383a5fa157b1e9005a57e85ffc311e6a23cc7ec1d2fd8d3de4c",
+    "audit/SOL-027/initial-state.json": "53b5bae47e5fe619216b29d3c59ef1c435211e4726ae6fb97981bfb8056fdd5b",
+    "audit/SOL-027/integrity-self-tests.json": "5fadfc89c43e4784cb7fc814fb901b44184fa2e2f03e6410211c2f1f43e3601a",
+    "audit/SOL-027/oracle-trial-001.json": "b385e6d08c514ce54898ea7481fc2ae92ab3219067a1fbb224970c84d6fef619",
+    "audit/SOL-027/oracle-trial-002.json": "3631d6204faa912e6c88ad77338e1a77f005571dd730b22581e908a90c6b815e",
+    "audit/SOL-027/oracle-trial-003.json": "183f20fde0e171046c0fad860661897e026217b20f69c23b15edf6e8f6219b72",
+    "audit/SOL-027/oracle.py": "f370315bb20b2d0f96fa0abd6afb73f0dead0d904527017f881d97e6b8530a38",
+    "audit/SOL-027/review.md": "084154b62b5ca367c8c71f62047114c2419018971e08c1d42d3aa43616212ec6",
+    "audit/SOL-027/tooling-diagnoses.json": "cda79c7ad6089faf2a9c7068f9566a75ba86ed77323e297c3391c51d3d4482a8",
+    "audit/SOL-027/verification.json": "4b1d45dcb08f512c8007d65daa6cf7e08ccbebce5d9bafb6d9628fb5ef9364c1",
+    "audit/SOL-027/verify.py": "54d6aa9f1749231c0ae853af317f71971f8e6f1fc634094e477b178803abef9b",
+    "handoff/SOL-027/check-0.txt": "4abb2db9436c71d08c5f16e5e5207a32678e368b83f9d3df744c95d5b632bc30",
+    "handoff/SOL-027/check-1.txt": "7ad2240aa8542db0fd79fe987e8147be05287562f3e64910bb20bf4805079496",
+    "handoff/SOL-027/check-2.txt": "d3e63b146b558bb9c08d8e2ad87e133c10c8136dc8d825ed88c615d080a73226"
+  },
+  "accepted_paths": [
+    "audit/SOL-027/findings.json",
+    "audit/SOL-027/focused-test.json",
+    "audit/SOL-027/identity-trial-001.json",
+    "audit/SOL-027/initial-state.json",
+    "audit/SOL-027/integrity-self-tests.json",
+    "audit/SOL-027/oracle-trial-001.json",
+    "audit/SOL-027/oracle-trial-002.json",
+    "audit/SOL-027/oracle-trial-003.json",
+    "audit/SOL-027/oracle.py",
+    "audit/SOL-027/review.md",
+    "audit/SOL-027/tooling-diagnoses.json",
+    "audit/SOL-027/verification.json",
+    "audit/SOL-027/verify.py",
+    "handoff/SOL-027/check-0.txt",
+    "handoff/SOL-027/check-1.txt",
+    "handoff/SOL-027/check-2.txt",
+    "handoff/SOL-027/result.json"
+  ],
+  "excluded_paths": [],
+  "receipt_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "prescribed_command_count": 2,
+  "schema_version": 1,
+  "checked_at": "2026-10-19T22:49:51.872430+00:00",
+  "decision": "accept_pure_personalized_component_review",
+  "code_verdict": "approve",
+  "worker_replay_comparisons": 97118,
+  "worker_replay_cases": 35,
+  "worker_replay_invalid_input_cases": 40,
+  "worker_replay_checks": [
+    {
+      "argv": [
+        "{python}",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_policy_personalized.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 0.46899999998277053,
+      "stdout": "",
+      "stderr": "test_B_exact_generic_prefix_all_fixed_classes_and_fees (test_policy_personalized.PersonalizedTests.test_B_exact_generic_prefix_all_fixed_classes_and_fees) ... ok\ntest_current_year_cannot_change_its_own_decision (test_policy_personalized.PersonalizedTests.test_current_year_cannot_change_its_own_decision) ... ok\ntest_exact_equality_latch_and_pending_holdings (test_policy_personalized.PersonalizedTests.test_exact_equality_latch_and_pending_holdings) ... ok\ntest_fee_before_returns_and_fresh_state (test_policy_personalized.PersonalizedTests.test_fee_before_returns_and_fresh_state) ... ok\ntest_final_year_crossing_no_fictional_review_or_suffix_leak (test_policy_personalized.PersonalizedTests.test_final_year_crossing_no_fictional_review_or_suffix_leak) ... ok\ntest_inclusive_screens_strict_count_and_failure_combinations (test_policy_personalized.PersonalizedTests.test_inclusive_screens_strict_count_and_failure_combinations) ... ok\ntest_invalid_inputs_fail_not_referral (test_policy_personalized.PersonalizedTests.test_invalid_inputs_fail_not_referral) ... ok\ntest_post_fee_crossing_survives_recovery_until_next_review (test_policy_personalized.PersonalizedTests.test_post_fee_crossing_survives_recovery_until_next_review) ... ok\ntest_profiles_fees_counts_and_rational_inflation (test_policy_personalized.PersonalizedTests.test_profiles_fees_counts_and_rational_inflation) ... ok\ntest_referral_does_not_touch_rows_or_priors_and_null_semantics (test_policy_personalized.PersonalizedTests.test_referral_does_not_touch_rows_or_priors_and_null_semantics) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.250s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "{python}",
+        "-B",
+        "audit/SOL-027/verify.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 13.063000000023749,
+      "stdout": "{\"base_commit\": \"5a015a490c89b39271624e1f1790a3454498a6c9\", \"check_status\": \"passed\", \"checks\": 97118, \"code_verdict\": \"approve\", \"final_authorization\": false, \"production_result\": false, \"read_only\": true}\n",
+      "stderr": ""
+    }
+  ],
+  "chief_corruption_rejections": [
+    {
+      "case": "wrong-number",
+      "path": [
+        "numeric",
+        "cases",
+        0,
+        "first_metric",
+        "terminal_real_wealth"
+      ],
+      "original": 96.63816695196145,
+      "mutated": 999.0,
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 122, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 121, in main\n    print(json.dumps(check(args.evidence),sort_keys=True))\n                     ^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 112, in check\n    exact(saved['numeric'],trial_numeric,'$.original_execution_numeric')\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 79, in exact\n    for k in expected:exact(actual[k],expected[k],where+'.'+k)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 82, in exact\n    for i,(a,b) in enumerate(zip(actual,expected)):exact(a,b,where+'['+str(i)+']')\n                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 79, in exact\n    for k in expected:exact(actual[k],expected[k],where+'.'+k)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 79, in exact\n    for k in expected:exact(actual[k],expected[k],where+'.'+k)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 83, in exact\n    elif isinstance(expected,float):need(actual.hex()==expected.hex(),'numerical evidence mismatch at '+where)\n                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 14, in need\n    if not ok:raise AssertionError(message)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: numerical evidence mismatch at $.original_execution_numeric.cases[0].first_metric.terminal_real_wealth\n",
+      "scratch_unchanged": true
+    },
+    {
+      "case": "wrong-source",
+      "path": [
+        "identity",
+        "source_pins",
+        "src/safeinvest/policy_personalized.py",
+        "canonical_sha256"
+      ],
+      "original": "09e840c2e7f94183472e144c98509f855081105ae937a13cabb31a3bf47062e9",
+      "mutated": "0000000000000000000000000000000000000000000000000000000000000000",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 122, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 121, in main\n    print(json.dumps(check(args.evidence),sort_keys=True))\n                     ^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 90, in check\n    exact(saved['identity'],identity(),'$.identity')\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 79, in exact\n    for k in expected:exact(actual[k],expected[k],where+'.'+k)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 79, in exact\n    for k in expected:exact(actual[k],expected[k],where+'.'+k)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 79, in exact\n    for k in expected:exact(actual[k],expected[k],where+'.'+k)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 84, in exact\n    else:need(actual==expected,'value mismatch at '+where)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 14, in need\n    if not ok:raise AssertionError(message)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: value mismatch at $.identity.source_pins.src/safeinvest/policy_personalized.py.canonical_sha256\n",
+      "scratch_unchanged": true
+    },
+    {
+      "case": "wrong-count",
+      "path": [
+        "numeric",
+        "generated_120x30",
+        "counts",
+        "annual_ledgers"
+      ],
+      "original": 600,
+      "mutated": 601,
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 122, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 121, in main\n    print(json.dumps(check(args.evidence),sort_keys=True))\n                     ^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 112, in check\n    exact(saved['numeric'],trial_numeric,'$.original_execution_numeric')\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 79, in exact\n    for k in expected:exact(actual[k],expected[k],where+'.'+k)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 79, in exact\n    for k in expected:exact(actual[k],expected[k],where+'.'+k)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 79, in exact\n    for k in expected:exact(actual[k],expected[k],where+'.'+k)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 84, in exact\n    else:need(actual==expected,'value mismatch at '+where)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-027\\audit\\SOL-027\\verify.py\", line 14, in need\n    if not ok:raise AssertionError(message)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: value mismatch at $.original_execution_numeric.generated_120x30.counts.annual_ledgers\n",
+      "scratch_unchanged": true
+    },
+    {
+      "case": "missing-evidence",
+      "exit_code": 1,
+      "remains_absent": true
+    }
+  ],
+  "chief_independent_checks": {
+    "comparisons": 4134,
+    "facts": [
+      {
+        "profile": "A",
+        "horizon": 5,
+        "fee": 0.0025,
+        "expected_terminal_rational": "1419857/32000",
+        "first_latch_year": 2,
+        "row_count": 40
+      },
+      {
+        "profile": "A",
+        "horizon": 5,
+        "fee": 0.005,
+        "expected_terminal_rational": "1419857/32000",
+        "first_latch_year": 2,
+        "row_count": 40
+      },
+      {
+        "profile": "B",
+        "horizon": 15,
+        "fee": 0.0025,
+        "expected_terminal_rational": "2862423051509815793/327680000000000000",
+        "first_latch_year": 3,
+        "row_count": 120
+      },
+      {
+        "profile": "B",
+        "horizon": 15,
+        "fee": 0.005,
+        "expected_terminal_rational": "2862423051509815793/327680000000000000",
+        "first_latch_year": 3,
+        "row_count": 120
+      },
+      {
+        "profile": "C",
+        "horizon": 30,
+        "fee": 0.0025,
+        "expected_terminal_rational": "8193465725814765556554001028792218849/10737418240000000000000000000000000000",
+        "first_latch_year": 5,
+        "row_count": 240
+      },
+      {
+        "profile": "C",
+        "horizon": 30,
+        "fee": 0.005,
+        "expected_terminal_rational": "8193465725814765556554001028792218849/10737418240000000000000000000000000000",
+        "first_latch_year": 5,
+        "row_count": 240
+      },
+      {
+        "profile": "D",
+        "horizon": 25,
+        "fee": 0.0025,
+        "expected_terminal_rational": "5770627412348402378939569991057/3355443200000000000000000000000",
+        "first_latch_year": 2,
+        "row_count": 200
+      },
+      {
+        "profile": "D",
+        "horizon": 25,
+        "fee": 0.005,
+        "expected_terminal_rational": "5770627412348402378939569991057/3355443200000000000000000000000",
+        "first_latch_year": 2,
+        "row_count": 200
+      },
+      {
+        "profile": "E",
+        "horizon": 6,
+        "fee": 0.0025,
+        "expected_terminal_rational": "24137569/640000",
+        "first_latch_year": 4,
+        "row_count": 48
+      },
+      {
+        "profile": "E",
+        "horizon": 6,
+        "fee": 0.005,
+        "expected_terminal_rational": "24137569/640000",
+        "first_latch_year": 4,
+        "row_count": 48
+      }
+    ],
+    "p90_not_guarantee": {
+      "risk_pass": true,
+      "purchasing_power_pass": true,
+      "exceedance_count": 1,
+      "exceedance_fraction": 0.008333333333333333,
+      "reasons": []
+    },
+    "adjacent_float_checks": "passed",
+    "competition_inputs_read": false
+  },
+  "source_and_audit_bytes_unchanged": true,
+  "PYTHONPATH_absent": true,
+  "competition_outcomes_read": false,
+  "final_data_open": false,
+  "production_execution_authorized": false,
+  "limitations": [
+    "Accepted 16 generic fee/mode cases and authenticated analysis assembly with independent result review, as required by the pinned component contract.",
+    "Separately reviewed personalized production bridge/writer, authenticated source/assignment/calibration closure and immutable execution configuration.",
+    "Authorized actual development execution and independent review of its results.",
+    "Recorded strategy/parameter/metric freeze and separate final gate; final data remain closed."
+  ],
+  "provenance_boundary": {
+    "source_verified": false,
+    "source_verified_locations": [
+      "rescreen.source_verified",
+      "case.metadata.source_verified"
+    ],
+    "unauthenticated_proposed_class": true,
+    "unauthenticated_rows": true,
+    "per_row_provenance": "Table rows carry profile and review threshold; the enclosing CaseTables metadata carries source_verified=false. No source authenticity is inferred from rows.",
+    "future_bridge_must_authenticate": [
+      "accepted generic assignment and matching candidate-screen bytes",
+      "accepted generic result receipt and source closure",
+      "all four fold priors with full other-fold training membership and source hashes",
+      "development input bytes, policy configuration and exact commands"
+    ],
+    "synthetic_status": "An eligible status with split=synthetic is only a fixture result, never an observed recommendation.",
+    "absent_layers": [
+      "ten-row root",
+      "source_case_path",
+      "saved bundle",
+      "analysis assembly",
+      "authenticated assignment",
+      "production CLI"
+    ],
+    "primary_and_doubled": "Independent fee-specific cases; no primary replacement and no same-rule robustness inference."
+  }
+}

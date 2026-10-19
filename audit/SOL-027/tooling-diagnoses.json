@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "trials": [
+    {
+      "command": [
+        "rg",
+        "-n",
+        "task_sha256|def task_hash|publication",
+        "scripts/coop_worker.py",
+        "scripts",
+        "ops/PROTOCOL.md"
+      ],
+      "returncode": 2,
+      "stderr": "rg: scripts/coop_worker.py: 系统找不到指定的文件。 (os error 2)",
+      "diagnosis": "Nonexistent optional candidate path in read-only search; matching scripts/coop.py found. Follow-up rg of def task_digest succeeded; no missing project helper was assumed."
+    },
+    {
+      "probe": "JavaScript sorted-top-level-only JSON task digest",
+      "value": "c20a33e1592980778c404df43a8b2682e88cb8b48e4448b69e119ddd4424ca55",
+      "diagnosis": "Not the protocol digest because nested keys were not recursively sorted. Verification uses Python json.dumps(sort_keys=True,separators) and checks the published queue value; this probe is not task identity evidence."
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"base_commit": "5a015a490c89b39271624e1f1790a3454498a6c9", "check_status": "passed", "checks": 97118, "code_verdict": "approve", "final_authorization": false, "production_result": false, "read_only": true}
