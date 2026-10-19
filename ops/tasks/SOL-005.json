@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "SOL-005",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "da96ea77bcc476f2970a982f037c2679a68522b7",
+  "depends_on": [
+    "SOL-003",
+    "HY3-002"
+  ],
+  "split": "development",
+  "max_seconds": 600,
+  "scope": "Targeted independent audit of the exact corrected HY3 receipt and chief evidence carry-forward; no new numerical experiment.",
+  "parameters": {
+    "hy3_result_commit": "9fdd20e09f8c080b7d3381d3d545524084cb3955",
+    "prior_independent_review_commit": "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+    "required_python": "3.12",
+    "source_sha256": {
+      "audit/chief/HY3-002-review.json": "40a2a389af4e9a5bed1d913e083b6a80f9834ee8a5b51d44829a255c87c55a36",
+      "audit/chief/HY3-002-release.json": "9e9f0ea4d29948987e52007b64f83e9d1dac51265f796b62f1ead3ad817cf06d",
+      "ops/tasks/HY3-002.json": "930c6197af645b85775666e04310e40ad9ec1e12ab37bdff83ac74a4a9a68514",
+      "audit/SOL-003/verification.json": "6bf48840d167e396d4d122a11e8a2d036aba31257df6b0fa1e96a461acacd271",
+      "scripts/check_inputs.py": "442142bf97e642f650bb5235bb0e6daa19df6ac718212b8f572689b579e4350f",
+      "scripts/check_worker_env.py": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8"
+    },
+    "final_outcomes_allowed": false
+  },
+  "allowed_paths": [
+    "audit/SOL-005"
+  ],
+  "deliverables": [
+    "audit/SOL-005/review.md",
+    "audit/SOL-005/findings.json",
+    "audit/SOL-005/verify.py",
+    "audit/SOL-005/verification.json"
+  ],
+  "commands": [],
+  "validation_commands": [
+    [
+      "{python}",
+      "-B",
+      "audit/SOL-005/verify.py",
+      "--check"
+    ]
+  ],
+  "acceptance_checks": [
+    "Verify exact receipt identity/task hash/actual parent/base/source, path scope and canonical Git blob hashes.",
+    "Verify four prescribed commands and retained logs, receipt/environment agree on Python 3.12.10 and environment preflight status passed.",
+    "Independently establish same source bytes, checker and deterministic metadata as accepted SOL-003 evidence; challenge chief carry-forward reasoning without accepting prior Python 3.13 attempt.",
+    "No unsupported upgrade from metadata verification to strategy performance or final gate opening.",
+    "Saved evidence reproduces read-only with no unresolved material finding; failure remains nonzero and preserved."
+  ],
+  "instructions": "Read AGENTS.md, the locked problem/accounting contracts, your immutable task, and current control. Review HY3-002 exactly at 9fdd20e09f8c080b7d3381d3d545524084cb3955 and chief acceptance/release evidence at the pinned base. Treat the completed/accepted labels as claims to verify. This is a narrowly scoped new receipt/provenance review; do not recreate accepted SOL-003 or rerun its numerical experiment and 32-test suite.\n\nUse binary git show of exact commits to validate task digest, owner/attempt/branch, actual parent/base, allowed paths, deliverables, artifact_hash_basis=canonical_git_blob, all six output hashes, successful prescribed commands and agreement of the four retained logs with the two output JSON files. Check both reported Python values equal 3.12.10 and environment status is passed. Do not infer runtime solely from a successful exit label.\n\nIndependently compare source file hashes, exact checker/environment-preflight code and input-check JSON with the already accepted SOL-003 independent evidence at bb74c0f25cb18c3e02fef6d51416422514a8f503. Verify chief's recorded equality and scope of carry-forward: identical deterministic metadata with a corrected interpreter, not new investment evidence. Hash source bytes only; no scenario performance or repeated CSV numeric analysis is required. Reading metadata/hashes of final inputs is authorized; applying a strategy to any final data is forbidden. Confirm HY3-001 remains cancelled, original receipts are preserved, and the final-data gate remains closed.\n\nChallenge any unsupported acceptance claim, source mismatch, missing log, runtime inconsistency, hash or scope issue. A genuine blocker should yield failed findings and nonzero validation, with a concrete fix; do not edit main/task/queue/source or erase earlier artifacts. On success record exactly which proof was reused and its limits. This review does not certify SOL-004's future driver or any future HY3 result.\n\nWrite review.md, findings.json (reviewed commits, status, blockers, source hashes), and verification.json with actual checks/expected-observed facts. Implement standard-library verify.py: initializer creates evidence only when absent; --check independently recomputes and compares without rewriting files. Bind provenance to explicit commits and canonical bytes, not the current checkout branch or pre-delivery HEAD, so chief can reproduce it after delivery. Do not rerun all prior tests, install packages, access private runtime files, or start a watcher. Only audit/SOL-005 is writable; runner handles handoff and Git delivery. Preserve failed checks and report limitations explicitly."
+}

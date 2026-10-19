@@ -117,6 +117,15 @@
       "task_sha256": "211161b9a8b10bfdb50e895c65493ac4b239cbf011e0f700789072f329d68c25",
       "branch": "work/sol/SOL-004-a1",
       "note": "Implement reviewed baseline design and independently review chief v1.1 clarifications. Synthetic tests only; future HY3 run requires chief exact-commit acceptance and HY3-002."
+    },
+    {
+      "id": "SOL-005",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "39009df675c120d5fa46f19f1f6d540e885b1d63af48bb1582041a3ad6b42acd",
+      "branch": "work/sol/SOL-005-a1",
+      "note": "Short independent check of corrected HY3 exact receipt and chief carry-forward decision; preserve prior rejection, do not repeat numerical experiments."
     }
   ]
 }
