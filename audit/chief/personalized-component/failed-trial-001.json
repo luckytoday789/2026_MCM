@@ -1,0 +1,19 @@
+{
+  "command": [
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_policy_personalized.py",
+    "-v"
+  ],
+  "exit_code": 1,
+  "seconds": 0.46899999998277053,
+  "stdout": "",
+  "stderr": "test_B_exact_generic_prefix_all_fixed_classes_and_fees (test_policy_personalized.PersonalizedTests.test_B_exact_generic_prefix_all_fixed_classes_and_fees) ... ok\ntest_exact_equality_latch_and_pending_holdings (test_policy_personalized.PersonalizedTests.test_exact_equality_latch_and_pending_holdings) ... ok\ntest_fee_before_returns_and_fresh_state (test_policy_personalized.PersonalizedTests.test_fee_before_returns_and_fresh_state) ... ok\ntest_final_year_crossing_no_fictional_review_or_suffix_leak (test_policy_personalized.PersonalizedTests.test_final_year_crossing_no_fictional_review_or_suffix_leak) ... ERROR\ntest_inclusive_screens_strict_count_and_failure_combinations (test_policy_personalized.PersonalizedTests.test_inclusive_screens_strict_count_and_failure_combinations) ... ok\ntest_invalid_inputs_fail_not_referral (test_policy_personalized.PersonalizedTests.test_invalid_inputs_fail_not_referral) ... ok\ntest_profiles_fees_counts_and_rational_inflation (test_policy_personalized.PersonalizedTests.test_profiles_fees_counts_and_rational_inflation) ... ok\ntest_referral_does_not_touch_rows_or_priors_and_null_semantics (test_policy_personalized.PersonalizedTests.test_referral_does_not_touch_rows_or_priors_and_null_semantics) ... ok\n\n======================================================================\nERROR: test_final_year_crossing_no_fictional_review_or_suffix_leak (test_policy_personalized.PersonalizedTests.test_final_year_crossing_no_fictional_review_or_suffix_leak)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"D:\\30576\\Documents\\2026_MCM\\tests\\test_policy_personalized.py\", line 106, in test_final_year_crossing_no_fictional_review_or_suffix_leak\n    self.assertEqual(out, run_case(changed, cal))\n                          ^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\tests\\test_policy_personalized.py\", line 32, in run_case\n    return build(rows, calibrations=cal, profile_id=profile, proposed_class=cls,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\src\\safeinvest\\policy_personalized.py\", line 102, in build_personalized_case_tables\n    selected, scenarios, periods = _rows(rows, split)\n                                   ^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\src\\safeinvest\\policy_cases.py\", line 39, in _rows\n    raise ValueError(\"exact ordered six-field schema required\")\nValueError: exact ordered six-field schema required\n\n----------------------------------------------------------------------\nRan 8 tests in 0.220s\n\nFAILED (errors=1)\n",
+  "diagnosis": "Test inserted an extra equity field instead of updating equity_return. Strict schema correctly refused it; no production source failure or competition data involved.",
+  "source_sha256": "a8ae062866ea72b45b0eaa7b5627083702cc5e880c129c3d9938bc7749a664d6"
+}
