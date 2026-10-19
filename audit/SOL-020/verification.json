@@ -1,0 +1,254 @@
+{
+  "artifact_hash_basis": "UTF-8 bytes with CRLF normalized to LF; no other normalization",
+  "artifacts_sha256": {
+    "execution_history.json": "52a490ffa19c6c1262f4d1026420d3a12723fc059e30a23bee209fc2a21e2bef",
+    "findings.json": "2e597db33daf1da6dfdea61925565fb7d2735e97db7d985784faed967a27f3c0",
+    "integrity-self-tests.json": "9dd58ab0375405e10684f1c7cddcf41ac023bd47cdc3162d4a81f18a04c4caeb",
+    "review.md": "74c818cc7659d6d6ab5b4ada12c7a1fe13b369839b0994258035bb394a22e4f4",
+    "task-lock.json": "e2c0985b6c862afb568ed383a06d3aa4440bb86ef260c2356b7743f8bad044c7",
+    "verify.py": "d80bf05ab896de4ba0c36eda2f744a7f42ec4e52d4644b5baa6c96d1a990e60e"
+  },
+  "design_verdict": "approve",
+  "evidence_integrity_verdict": "verified",
+  "provenance": {
+    "base_commit": "a2205fb7edd2527253664efad601f0da290f3661",
+    "historical_kernel_verdict": "changes_required",
+    "prior_design_verdict": "approve",
+    "source_sha256": {
+      "audit/SOL-013/findings.json": "b2c82f41ed0abd7c62cf350ed5b554c967085d5cbbee70a3e62d4f6feb64c6bd",
+      "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "specs/PERSONALIZED_REVIEW.md": "0365fdf989ae7abfeda0bc3f48f8c86245a40dd9e48b3c6ae8d2d26c0b7c4987",
+      "specs/POLICY_ANALYSIS.md": "a2220482c861799280815b4e65d73e79e53666816ac9e7e72a38d5f48a6e53b8",
+      "specs/POLICY_CASE_ENGINE.md": "c984e230eecb720613b864a910d95921af1aa805f79fa68c7044f905410dec62",
+      "specs/POLICY_RESULT_WRITER.md": "ce0c43fad34ebdc44fc6f6bda395c562781e500cdc4b855ee7e0cbf937bec0b4",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "specs/personalized_review_v1.json": "2edc9410b291f8f1f7235344e685d004c2f3cfd80844539df96759e9b305b4ad"
+    },
+    "task_commit": "84144ff2eca205e8575e8d206cd03bb9751835b4",
+    "task_git_sha256": "e2c0985b6c862afb568ed383a06d3aa4440bb86ef260c2356b7743f8bad044c7"
+  },
+  "python_major_minor": "3.12",
+  "reference_facts": {
+    "B_prefix": {
+      "H": 15,
+      "exact_event_prefix": true,
+      "full_first_latch": 16,
+      "loss": "25",
+      "prefix_first_latch": null,
+      "required_production_identity": "all H15 ledger/decision/score/metric fields under identical mode/fee/fold prior, no later diagnostics",
+      "sample_variance_pp_squared": "125/3",
+      "scalar_cagr_pct": -1.899606168258583,
+      "threshold": 25
+    },
+    "assignment_errors": {
+      "adaptive": "unknown/adaptive class",
+      "hash": "upstream hash mismatch",
+      "mismatch": "assignment/screen mismatch"
+    },
+    "conditional_counts": {
+      "all": {
+        "all_referral_metrics_and_paths_null": true,
+        "annual_ledgers": 19440,
+        "case_summaries": 10,
+        "decisions": 19440,
+        "every_summary_has_upstream_hashes": true,
+        "executed_cases": 10,
+        "referral_rows": 0,
+        "scenario_metrics": 1200,
+        "scores_with_one_suspended_review_each": 18240,
+        "summary_rows": 10,
+        "target_score_upper_bound": 19440
+      },
+      "none": {
+        "all_referral_metrics_and_paths_null": true,
+        "annual_ledgers": 0,
+        "case_summaries": 0,
+        "decisions": 0,
+        "every_summary_has_upstream_hashes": true,
+        "executed_cases": 0,
+        "referral_rows": 10,
+        "scenario_metrics": 0,
+        "scores_with_one_suspended_review_each": 0,
+        "summary_rows": 10,
+        "target_score_upper_bound": 0
+      },
+      "partial": {
+        "all_referral_metrics_and_paths_null": true,
+        "annual_ledgers": 5400,
+        "case_summaries": 3,
+        "decisions": 5400,
+        "every_summary_has_upstream_hashes": true,
+        "executed_cases": 3,
+        "referral_rows": 7,
+        "scenario_metrics": 360,
+        "scores_with_one_suspended_review_each": 5040,
+        "summary_rows": 10,
+        "target_score_upper_bound": 5400
+      }
+    },
+    "fee_separation": {
+      "counterfactual": {
+        "class": "balanced",
+        "fee": "1/200"
+      },
+      "generic_balanced_test_required": "H30,25 percent; retain primary-selected mode at .005 against its original controls; primary balanced_cost means no added complexity selected",
+      "primary": {
+        "class": "conservative",
+        "fee": "1/400"
+      },
+      "same_policy_robustness_certified": false
+    },
+    "final_year_crossing": {
+      "H": 2,
+      "first_latch": null,
+      "loss": "25",
+      "reviews": [
+        {
+          "latched": false,
+          "observed_loss": "0",
+          "period": 1
+        },
+        {
+          "latched": false,
+          "observed_loss": "0",
+          "period": 2
+        }
+      ]
+    },
+    "fresh_profile_state": {
+      "A_latches": true,
+      "C_latches": false
+    },
+    "generic_balanced_robustness": {
+      "H": 30,
+      "doubled_adaptive_both_controls_pass": true,
+      "doubled_same_primary_supported": false,
+      "fixed_cost_primary_interpretation": "no added complexity selected; no automatic suitability pass",
+      "primary_context_gates_pass": true,
+      "primary_mode": "balanced_context",
+      "primary_remains": "balanced_context",
+      "threshold_pct": 25
+    },
+    "p90_with_exceedances": {
+      "exceedance_count": 10,
+      "failures": [],
+      "p10": "0",
+      "p90": "10",
+      "power": true,
+      "recommended_class": "conservative",
+      "risk": true
+    },
+    "pending_holdings": {
+      "end": [
+        "10",
+        "36",
+        "50"
+      ],
+      "fee": "0",
+      "post": [
+        "20",
+        "30",
+        "50"
+      ],
+      "pre": [
+        "20",
+        "30",
+        "50"
+      ],
+      "real_end": "384/5",
+      "transfer": "0"
+    },
+    "post_fee_crossing_recovery": {
+      "fee": "1/4",
+      "first_latch": 2,
+      "post_fee": "399/4",
+      "reviews": [
+        {
+          "latched": false,
+          "observed_loss": "0",
+          "period": 1
+        },
+        {
+          "latched": true,
+          "observed_loss": "1/4",
+          "period": 2
+        }
+      ]
+    },
+    "pure_inflation": {
+      "first_latch": 2,
+      "loss": "25"
+    },
+    "screens": {
+      "both": {
+        "exceedance_count": 120,
+        "failures": [
+          "risk",
+          "purchasing_power"
+        ],
+        "p10": "-1",
+        "p90": "11",
+        "power": false,
+        "recommended_class": null,
+        "risk": false
+      },
+      "boundary": {
+        "exceedance_count": 0,
+        "failures": [],
+        "p10": "0",
+        "p90": "10",
+        "power": true,
+        "recommended_class": "conservative",
+        "risk": true
+      },
+      "power_only": {
+        "exceedance_count": 0,
+        "failures": [
+          "purchasing_power"
+        ],
+        "p10": "-1",
+        "p90": "10",
+        "power": false,
+        "recommended_class": null,
+        "risk": true
+      },
+      "risk_only": {
+        "exceedance_count": 120,
+        "failures": [
+          "risk"
+        ],
+        "p10": "0",
+        "p90": "11",
+        "power": true,
+        "recommended_class": null,
+        "risk": false
+      }
+    },
+    "year_end_equality": {
+      "first_latch": 2,
+      "loss": "25",
+      "reviews": [
+        {
+          "latched": false,
+          "observed_loss": "0",
+          "period": 1
+        },
+        {
+          "latched": true,
+          "observed_loss": "25",
+          "period": 2
+        },
+        {
+          "latched": true,
+          "observed_loss": "25",
+          "period": 3
+        }
+      ]
+    }
+  },
+  "schema_version": 1,
+  "task_id": "SOL-020"
+}

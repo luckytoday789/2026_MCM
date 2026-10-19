@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-020",
+  "attempt": 1,
+  "owner": "sol",
+  "reviewed_base_commit": "a2205fb7edd2527253664efad601f0da290f3661",
+  "task_git_commit": "84144ff2eca205e8575e8d206cd03bb9751835b4",
+  "task_git_sha256": "e2c0985b6c862afb568ed383a06d3aa4440bb86ef260c2356b7743f8bad044c7",
+  "source_sha256": {
+    "specs/PERSONALIZED_REVIEW.md": "0365fdf989ae7abfeda0bc3f48f8c86245a40dd9e48b3c6ae8d2d26c0b7c4987",
+    "specs/personalized_review_v1.json": "2edc9410b291f8f1f7235344e685d004c2f3cfd80844539df96759e9b305b4ad",
+    "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "specs/POLICY_ANALYSIS.md": "a2220482c861799280815b4e65d73e79e53666816ac9e7e72a38d5f48a6e53b8",
+    "specs/POLICY_CASE_ENGINE.md": "c984e230eecb720613b864a910d95921af1aa805f79fa68c7044f905410dec62",
+    "specs/POLICY_RESULT_WRITER.md": "ce0c43fad34ebdc44fc6f6bda395c562781e500cdc4b855ee7e0cbf937bec0b4",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "audit/SOL-013/findings.json": "b2c82f41ed0abd7c62cf350ed5b554c967085d5cbbee70a3e62d4f6feb64c6bd",
+    "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462"
+  },
+  "design_verdict": "approve",
+  "implementation_verdict": "not_reviewed",
+  "historical_kernel_verdict": "changes_required",
+  "blockers": [],
+  "precise_fixes": [],
+  "review_scope": "Targeted review of PERSONALIZED_REVIEW.md and personalized_review_v1.json against accepted v2 design; independent scalar/rational references, not production behavior or investment outcomes.",
+  "independent_facts": [
+    {
+      "id": "M1",
+      "finding": "Ten unique profile/fee upstream rows map to at most ten fixed-class cases. Null upstream assignments remain upstream_referral with no simulation, no synthetic bills fallback and original reasons. Invalid assignment/screen/hash is a failed input, never a referral."
+    },
+    {
+      "id": "M2",
+      "finding": "Each non-null assignment keeps its fee/mode/fold prior and all other v2 parameters; only generic threshold becomes own tolerance; evaluation stops at own H with 120 fresh scenarios. Full other-fold training rows remain fixed, not an evaluated-path refit."
+    },
+    {
+      "id": "M3",
+      "finding": "Both p90-loss <= tolerance and p10-real-CAGR >= 0 are rerun unrounded and inclusively. Risk-only, power-only and both failures null recommended_class, retain proposed_class and refer without another class search. Strict loss>tolerance count is distinct."
+    },
+    {
+      "id": "M4",
+      "finding": "Running maximum drawdown observes initial, post-fee and year-end real wealth through t-1. Equality triggers next-review latch, a last-year crossing does not invent H+1, pending keeps exact component dollars and zero fee while earning returns."
+    },
+    {
+      "id": "F1",
+      "finding": "Primary .0025 and .005 class assignments are independent upstream counterfactual records. Different classes are reportable but cannot overwrite primary or certify robustness of one strategy."
+    },
+    {
+      "id": "F2",
+      "finding": "POLICY_ANALYSIS generic Balanced H30/25% same-primary-mode robustness check remains independent: at .005 retain primary-selected mode against its original controls. Adaptive needs context AND cost; context needs cost. Primary balanced_cost means no added complexity selected, not automatic absolute suitability."
+    },
+    {
+      "id": "C1",
+      "finding": "All/no/partial assignments retain ten root summary rows. Executed ledger and decision counts each =120*sum(assigned H); metrics=120*assigned_count; per-case summary=1; fixed-mode score count=non-human-review decision count, maximum ledger count. All assigned maxima 19440/19440/1200; no assignments 0/0/0. Partial A-primary/B-doubled/D-primary gives 5400/5400/360."
+    },
+    {
+      "id": "B1",
+      "finding": "B is H15,25%,medium. Identical fixed mode/fee/fold prior and fresh state require exact generic H15 ledger/decision/score prefix and derived metrics, with no later deployment/latch leakage. Scalar prefix identity is checked here; absent policy code is not certified."
+    }
+  ],
+  "chief_clarifications": [
+    {
+      "blocking": false,
+      "item": "source_version_at_drafting is historical provenance, not an executable source pin. Future immutable configuration must bind exact accepted generic analysis/assignment files and code/calibration hashes, as required by the prose; none is fabricated here."
+    },
+    {
+      "blocking": false,
+      "item": "PERSONALIZED_REVIEW inherits the independent generic Balanced same-primary-mode sensitivity test from POLICY_ANALYSIS/v2. A future report must retain that result separately; ten personalized assignments do not replace it."
+    },
+    {
+      "blocking": false,
+      "item": "The row-count fixture uses personalized denominator=0 for not-run referrals and null personalized outcome statistics/flags, with original upstream reasons/hash retained. A future schema should spell out this count convention; it must never divide by zero or import a generic 120-observation statistic as a personalized outcome."
+    }
+  ],
+  "reference_assumptions": [
+    "Scalar wealth events and holdings are deliberately constructed, not generated by a policy. The early fee fixture uses an all-equity accounting transfer solely to show post-fee threshold timing; it is not a newly permitted target.",
+    "Shape fixtures assign illustrative eligible Conservative classes and force one final suspended review per scenario only to count score rows. Their zero numeric placeholders demonstrate presence/null semantics, not successful investment outcomes.",
+    "Primary/counterfactual illustrative different-class records are logically possible for an eligible profile (e.g. B), not an observed recommendation.",
+    "Exact Fraction arithmetic governs boundaries and accounting; derived floating CAGR/sample-standard-deviation checks use abs 1e-9 and rel 1e-10. Saved derived floating CAGR permits only that tolerance; counts, booleans, rational values, policy thresholds, identities and artifact hashes compare exactly."
+  ],
+  "scope_limits": [
+    "No competition CSV opened, actual policy/helper executed, original design rereviewed, implementation or K1 fix certified, packages installed, final outcomes accessed, or trading authorized.",
+    "Prior SOL-013 corrected design approve and historical kernel changes_required remain distinct; K1 is reviewed elsewhere.",
+    "Synthetic reference evidence cannot establish performance, benefit, personalized loss cap or freeze/final authorization. Future source, implementation, production evidence and independent chief/HY3 acceptance remain separate."
+  ],
+  "evidence_files": [
+    "review.md",
+    "verify.py",
+    "verification.json",
+    "task-lock.json",
+    "execution_history.json",
+    "integrity-self-tests.json"
+  ],
+  "verification_executed": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "reference_groups": 13,
+    "scratch_trials": 16,
+    "corrupt_or_missing_evidence_rejections": 11,
+    "exclusive_create_existing_rejection": true,
+    "numeric_tolerance_roundtrip_accepted": true,
+    "all_checks_read_only": true,
+    "HEAD_independence": "Pinned Git reads succeeded with all mutable HEAD queries forbidden; no refs modified."
+  }
+}

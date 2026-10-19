@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-020",
+  "cpu_only": true,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "transport": "node child_process after exec_command infrastructure failure",
+  "trials": [
+    {
+      "stage": "initial contract reads",
+      "status": "infrastructure_failure",
+      "error": "exec_command CreateProcess helper_unknown_error: setup refresh had errors",
+      "attempts": 2,
+      "effect": "No command ran; switched to available node filesystem and child_process tools."
+    },
+    {
+      "stage": "interpreter inventory",
+      "status": "probe_failure",
+      "error": "spawnSync py ENOENT",
+      "effect": "Windows launcher absent. where.exe python found local .venv Python 3.12.14, verified by actual invocation."
+    },
+    {
+      "stage": "task provenance",
+      "status": "probe_failure",
+      "error": "git show base:ops/tasks/SOL-020.json path absent",
+      "effect": "Task was published after base. Located exact task on existing origin/main; local immutable task semantically identical. No refs changed."
+    },
+    {
+      "stage": "task path follow-up",
+      "status": "probe_failure",
+      "error": "git show base:undefined after empty task-path list",
+      "effect": "Read-only failed probe; corrected to publication commit 84144ff2eca205e8575e8d206cd03bb9751835b4."
+    },
+    {
+      "stage": "initial scratch generation",
+      "status": "executed_successfully",
+      "exit_code": 0,
+      "stdout": "{\"evidence_integrity_verdict\": \"verified\", \"design_verdict\": \"approve\", \"implementation_verdict\": \"not_reviewed\", \"historical_kernel_verdict\": \"changes_required\", \"read_only\": false, \"reference_groups\": 13}\r\n",
+      "effect": "13 reference groups under Python 3.12.14; original scratch retained. Verifier then tightened for numerical comparison and executed-verifier identity before final evidence."
+    },
+    {
+      "stage": "scratch integrity suite",
+      "status": "all_expected_results_observed",
+      "trial_count": 16,
+      "negative_results_preserved": true,
+      "evidence": "integrity-self-tests.json"
+    }
+  ],
+  "no_outcomes_read": true,
+  "no_production_helpers_executed": true,
+  "no_commit_push_branch_changes": true,
+  "started_at_utc": "2026-10-19T18:09:33Z",
+  "pre_final_check_at_utc": "2026-10-19T18:17:07.687Z"
+}

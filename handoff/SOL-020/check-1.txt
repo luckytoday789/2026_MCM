@@ -1,0 +1,1 @@
+{"evidence_integrity_verdict": "verified", "design_verdict": "approve", "implementation_verdict": "not_reviewed", "historical_kernel_verdict": "changes_required", "read_only": true, "reference_groups": 13}

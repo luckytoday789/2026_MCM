@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-020",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "scope": "Scratch evidence only; every check is read-only and every failed/modified copy is retained in ignored scratch.",
+  "trials": [
+    {
+      "args": [
+        "python",
+        "-B",
+        "audit/SOL-020/verify.py",
+        "--initialize",
+        "--evidence-dir",
+        "<ignored-scratch>/baseline"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"evidence_integrity_verdict\": \"verified\", \"design_verdict\": \"approve\", \"implementation_verdict\": \"not_reviewed\", \"historical_kernel_verdict\": \"changes_required\", \"read_only\": false, \"reference_groups\": 13}\r\n",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "args": [
+        "python",
+        "-B",
+        "audit/SOL-020/verify.py",
+        "--check",
+        "--evidence-dir",
+        "<ignored-scratch>/baseline"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"evidence_integrity_verdict\": \"verified\", \"design_verdict\": \"approve\", \"implementation_verdict\": \"not_reviewed\", \"historical_kernel_verdict\": \"changes_required\", \"read_only\": true, \"reference_groups\": 13}\r\n",
+      "stderr": "",
+      "error": null,
+      "expected_exit": 0,
+      "unchanged": true
+    },
+    {
+      "args": [
+        "python",
+        "-B",
+        "audit/SOL-020/verify.py",
+        "--initialize",
+        "--evidence-dir",
+        "<ignored-scratch>/baseline"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "FileExistsError: [Errno 17] File exists: 'E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-020-a1\\\\.runtime\\\\SOL-020-scratch-1792433662639\\\\baseline\\\\verification.json'\r\n",
+      "error": null,
+      "expected_exit": 1,
+      "unchanged": true
+    },
+    {
+      "args": [
+        "python",
+        "-B",
+        "audit/SOL-020/verify.py",
+        "--check",
+        "--evidence-dir",
+        "<ignored-scratch>/wrong-count"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation\r\n",
+      "error": null,
+      "expected_exit": 1,
+      "unchanged": true
+    },
+    {
+      "args": [
+        "python",
+        "-B",
+        "audit/SOL-020/verify.py",
+        "--check",
+        "--evidence-dir",
+        "<ignored-scratch>/wrong-latch"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation\r\n",
+      "error": null,
+      "expected_exit": 1,
+      "unchanged": true
+    },
+    {
+      "args": [
+        "python",
+        "-B",
+        "audit/SOL-020/verify.py",
+        "--check",
+        "--evidence-dir",
+        "<ignored-scratch>/wrong-threshold"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation\r\n",
+      "error": null,
+      "expected_exit": 1,
+      "unchanged": true
+    },
+    {
+      "args": [
+        "python",
+        "-B",
+        "audit/SOL-020/verify.py",
+        "--check",
+        "--evidence-dir",
+        "<ignored-scratch>/wrong-source"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation\r\n",
+      "error": null,
+      "expected_exit": 1,
+      "unchanged": true
+    },
+    {
+      "args": [
+        "python",
+        "-B",
+        "audit/SOL-020/verify.py",
+        "--check",
+        "--evidence-dir",
+        "<ignored-scratch>/wrong-null"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation\r\n",
+      "error": null,
+      "expected_exit": 1,
+      "unchanged": true
+    },
+    {
+      "args": [
+        "python",
+        "-B",
+        "audit/SOL-020/verify.py",
+        "--check",
+        "--evidence-dir",
+        "<ignored-scratch>/wrong-screen"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation\r\n",
+      "error": null,
+      "expected_exit": 1,
+      "unchanged": true
+    },
+    {
+      "args": [
+        "python",
+        "-B",
+        "audit/SOL-020/verify.py",
+        "--check",
+        "--evidence-dir",
+        "<ignored-scratch>/wrong-float"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation\r\n",
+      "error": null,
+      "expected_exit": 1,
+      "unchanged": true
+    },
+    {
+      "args": [
+        "python",
+        "-B",
+        "audit/SOL-020/verify.py",
+        "--check",
+        "--evidence-dir",
+        "<ignored-scratch>/wrong-status"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation\r\n",
+      "error": null,
+      "expected_exit": 1,
+      "unchanged": true
+    },
+    {
+      "args": [
+        "python",
+        "-B",
+        "audit/SOL-020/verify.py",
+        "--check",
+        "--evidence-dir",
+        "<ignored-scratch>/numeric-roundtrip-tolerance"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"evidence_integrity_verdict\": \"verified\", \"design_verdict\": \"approve\", \"implementation_verdict\": \"not_reviewed\", \"historical_kernel_verdict\": \"changes_required\", \"read_only\": true, \"reference_groups\": 13}\r\n",
+      "stderr": "",
+      "error": null,
+      "expected_exit": 0,
+      "unchanged": true
+    },
+    {
+      "args": [
+        "python",
+        "-B",
+        "audit/SOL-020/verify.py",
+        "--check",
+        "--evidence-dir",
+        "<ignored-scratch>/missing-findings"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-020-a1\\\\.runtime\\\\SOL-020-scratch-1792433662639\\\\missing-findings\\\\findings.json'\r\n",
+      "error": null,
+      "expected_exit": 1,
+      "unchanged": true
+    },
+    {
+      "args": [
+        "python",
+        "-B",
+        "audit/SOL-020/verify.py",
+        "--check",
+        "--evidence-dir",
+        "<ignored-scratch>/changed-review"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation\r\n",
+      "error": null,
+      "expected_exit": 1,
+      "unchanged": true
+    },
+    {
+      "args": [
+        "python",
+        "-B",
+        "audit/SOL-020/verify.py",
+        "--check",
+        "--evidence-dir",
+        "<ignored-scratch>/changed-task"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: immutable task mismatch\r\n",
+      "error": null,
+      "expected_exit": 1,
+      "unchanged": true
+    },
+    {
+      "name": "HEAD_independence_without_ref_mutation",
+      "expected_exit": 0,
+      "exit_code": 0,
+      "stdout": "{\"evidence_integrity_verdict\": \"verified\", \"design_verdict\": \"approve\", \"implementation_verdict\": \"not_reviewed\", \"historical_kernel_verdict\": \"changes_required\", \"read_only\": true, \"reference_groups\": 13}\r\nPinned-source verification succeeded without any mutable HEAD query; refs untouched.\r\n",
+      "stderr": "",
+      "unchanged": true,
+      "method": "Interpose only the audit verifier subprocess call; reject any HEAD query while forwarding literal pinned Git reads. No repository refs changed."
+    }
+  ],
+  "all_expected_exits": true,
+  "all_checks_left_scratch_unchanged": true,
+  "production_or_outcome_code_executed": false,
+  "execution_initialization_is_exclusive_create": true
+}
