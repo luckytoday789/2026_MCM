@@ -1,0 +1,116 @@
+{
+  "task_id": "SOL-013",
+  "reviewed_commit": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+  "base_commit": "7c804ffb960be6b9fadfc840e246ff060668a96d",
+  "task_sha256": "fd1cd04500fb04b91041e835678dee787ff16c00cb21578e368fda313cb9d4e7",
+  "branch": "work/sol/SOL-013-a1",
+  "structural_checks": "passed",
+  "source_hashes_checked": {
+    "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "specs/POLICY_CORRECTION_V2.md": "b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383",
+    "src/safeinvest/policy_pilot.py": "1f439cff5627279219867497b891549f3702434966b3194c11f8e18894ffba90",
+    "tests/test_policy_pilot.py": "0a8d605c38e75aef00a7185978a8925989b413aa1eb44c0bd534085125bdb11f",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "audit/SOL-009/findings.json": "1b425c6b0ab0399c2c94614768ab362975e676cfd474e964aa3a1ee4d60c6e83",
+    "audit/chief/SOL-009-review.json": "6f1a480162704fa67a2f70358cc9413584c44d6a455d662e7369f7c7ea4a8964"
+  },
+  "artifacts_sha256": {
+    "audit/SOL-013/findings.json": "b2c82f41ed0abd7c62cf350ed5b554c967085d5cbbee70a3e62d4f6feb64c6bd",
+    "audit/SOL-013/history/completed-trial-002-verify.py": "4651c91a1ba49dc1565929a226ebceda74158b3eacdded77cf0b613020019763",
+    "audit/SOL-013/history/diagnosis-002.json": "3a41a0794979b35092cfbe63e3357f52d30b17b32b5903bf07a4b56a5e5b5f64",
+    "audit/SOL-013/history/failed-trial-001-verify.py": "f418e0c2857a404bb42396dc5a6e73820ab8b90ccdedee2a94408a8a8770cffb",
+    "audit/SOL-013/history/failure-001.json": "b2950a652f90b0681a3179483f0003a1fa0c755a31b05568b27100600b10d594",
+    "audit/SOL-013/history/initial-findings.json": "a6f12da9203fb4b14983279ad52aae0434d6865dafd51a8712331867d774bd07",
+    "audit/SOL-013/history/initial-integrity-self-tests.json": "dd41a1e9c45b5cba1c79eda74516f35688658a7aa93db1c12199c38d193f9a25",
+    "audit/SOL-013/history/initial-review.md": "ffc16cfd7859911ef3d50d45fb071c1bf6edcd21aeda33040129fc0c987ffea9",
+    "audit/SOL-013/history/initial-verification.json": "288b23b3c1eaffa6765d474a76442bed33121506a5ef6b8e38544a69e78fa850",
+    "audit/SOL-013/history/integrity-self-tests.json": "b885b66d06a764400f7afd9adf5c67402fd76b1227b7e60f46fced6fd811b127",
+    "audit/SOL-013/history/revision-003.json": "aa71695de9dfaf443c6dee531e82a7ed96b54b67e043a85e7e8332d8de505e9d",
+    "audit/SOL-013/review.md": "8410d52b2ca1d4e870cdabfac1663c469ff82cb6ed1ce3a0e61d39bcd5f51ebc",
+    "audit/SOL-013/verification.json": "a7d2fe14491d8110e04198c49396089eb5e8e696e997393123be24fa3a8e1944",
+    "audit/SOL-013/verify.py": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+    "handoff/SOL-013/check-0.txt": "bab2dcd4a942a32d500e9572e19bf1e82f45753e7f4f70cadf17cb986e532e78",
+    "handoff/SOL-013/check-1.txt": "c7a360edc817956cb27a7d6aea8e5ef92d468f0cf17f56762c16b586fa7e0f50"
+  },
+  "accepted_paths": [
+    "audit/SOL-013/findings.json",
+    "audit/SOL-013/history/completed-trial-002-verify.py",
+    "audit/SOL-013/history/diagnosis-002.json",
+    "audit/SOL-013/history/failed-trial-001-verify.py",
+    "audit/SOL-013/history/failure-001.json",
+    "audit/SOL-013/history/initial-findings.json",
+    "audit/SOL-013/history/initial-integrity-self-tests.json",
+    "audit/SOL-013/history/initial-review.md",
+    "audit/SOL-013/history/initial-verification.json",
+    "audit/SOL-013/history/integrity-self-tests.json",
+    "audit/SOL-013/history/revision-003.json",
+    "audit/SOL-013/review.md",
+    "audit/SOL-013/verification.json",
+    "audit/SOL-013/verify.py",
+    "handoff/SOL-013/check-0.txt",
+    "handoff/SOL-013/check-1.txt",
+    "handoff/SOL-013/result.json"
+  ],
+  "excluded_paths": [],
+  "receipt_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "prescribed_command_count": 1,
+  "schema_version": 1,
+  "checked_at": "2026-10-19T17:55:11.460825+00:00",
+  "decision": "accept_review_evidence_only",
+  "corrected_design_verdict": "approve",
+  "code_verdict": "changes_required",
+  "replay_checks": [
+    {
+      "evidence": "verification.json",
+      "expected_exit": 0,
+      "exit_code": 0,
+      "stdout": "{\"evidence_integrity_verdict\": \"passed\", \"corrected_design_verdict\": \"approve\", \"code_verdict\": \"changes_required\", \"check_count\": 3023, \"read_only\": true}",
+      "stderr": ""
+    },
+    {
+      "evidence": "review-SOL-013-tiny-fee-corrupted.json",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "RuntimeError: Saved numerical/source evidence mismatch; read-only evidence preserved"
+    }
+  ],
+  "audit_files_unchanged": true,
+  "independent_check_count": 3023,
+  "expected_negative_checks": [
+    "finite extreme constant 5e-324"
+  ],
+  "chief_k1_confirmation": {
+    "constant_gross_hex": "0x0.0000000000001p-1022",
+    "exact_gross_hex": "0x0.0000000000001p-1022",
+    "rounded_products": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "observed_error": "portfolio gross factor must be positive"
+  },
+  "chief_rational_fixture": {
+    "expected": {
+      "fee": "1/6",
+      "transfer": "200/3",
+      "each_post_fee": "599/18",
+      "wealth_end": "7787/75",
+      "buffered_score": "3887/3750"
+    },
+    "observed": {
+      "fee": 0.16666666666666669,
+      "transfer": 66.66666666666667,
+      "each_post_fee": 33.27777777777777,
+      "wealth_end": 103.82666666666665,
+      "buffered_score": 1.0365333333333333
+    }
+  },
+  "final_data_open": false,
+  "production_policy_accepted": false,
+  "note": "K1 is a genuine finite positive extreme rejection. Design approved; kernel approval withheld. All negative and failed trial evidence retained. No competition outcomes read."
+}

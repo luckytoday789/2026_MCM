@@ -64,6 +64,24 @@ class PolicyKernelTests(unittest.TestCase):
             stable = EmpiricalPrior(((scale, scale, scale),))
             self.assertTrue(math.isclose(stable.certainty_equivalent((.2,.3,.5)), scale, rel_tol=1e-12))
 
+    def test_subnormal_gross_is_not_lost_before_log_moment(self):
+        smallest = float.fromhex("0x0.0000000000001p-1022")
+        for weights in ((.2, .3, .5), (0., 0., 1.), (1/3, 1/3, 1/3)):
+            for factor in (smallest, 2*smallest, 16*smallest):
+                prior = EmpiricalPrior(((factor, factor, factor),))
+                for n in range(6):
+                    recent = ((factor, factor, factor),)*n
+                    # A constant support has this CE for every mixture mass.
+                    self.assertEqual(prior.certainty_equivalent(weights, recent), factor)
+        # With a single observation CE equals its exact weighted gross.
+        weights = (.25, .25, .5)
+        row = (smallest, 3*smallest, 6*smallest)
+        expected = float(sum(F(w)*F(g) for w,g in zip(weights,row)))
+        self.assertEqual(EmpiricalPrior((row,)).certainty_equivalent(weights), expected)
+        # A zero-weight enormous asset cannot mask tiny held support.
+        self.assertEqual(EmpiricalPrior(((sys.float_info.max,smallest,smallest),))
+                         .certainty_equivalent((0.,.5,.5)), smallest)
+
     def test_exact_inflation_conversion(self):
         gross = real_gross((.1, .02, 0), .02)
         for actual, expected in zip(gross, (F(55,51), F(1), F(50,51))):

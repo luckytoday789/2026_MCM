@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-013",
+  "attempt": 1,
+  "role": "sol",
+  "task_sha256": "fd1cd04500fb04b91041e835678dee787ff16c00cb21578e368fda313cb9d4e7",
+  "base_commit": "7c804ffb960be6b9fadfc840e246ff060668a96d",
+  "status": "completed",
+  "failure": null,
+  "artifact_hash_basis": "canonical_git_blob",
+  "started_from_pinned_source": true,
+  "checks": [
+    {
+      "argv": [
+        "C:\\Users\\刘奥华\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.EXE",
+        "exec",
+        "--approve-for-me",
+        "--model",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"xhigh\"",
+        "--cd",
+        "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-013-a1",
+        "--output-last-message",
+        "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-013-a1\\.runtime\\agent-last.txt",
+        "You are role=sol in the authorized SafeInvest team. Read AGENTS.md and .runtime/task.json. Complete only that task in this worktree. Do not commit, push, change branches, edit the task, or start another watcher; the parent runner handles delivery. Respect allowed_paths and base version. Write real deliverables and perform checks. Report blockers rather than inventing parameters. The task is authorized; continue through routine fixes.\nRead AGENTS.md and the locked problem/accounting contracts. SOL-009 is accepted as negative independent design evidence, NOT design approval. SOL-011 was never executed and is cancelled because its unchanged-design release condition failed. This is its corrected immutable successor plus narrow D1/D2 closure, not a repeat of accepted review work. Review exactly the sources in parameters.source_sha256 at this base, with current v2 taking precedence over historical prototype prose. No current main merge or silent redesign.\n\nFirst independently close the two concrete SOL-009 blockers and inspect the L1-L8 resolutions in POLICY_CORRECTION_V2.md. Use synthetic comparisons to distinguish median paired gain from difference of medians, and differences of marginal p10/p90 from quantiles of paired differences. Verify explicit fixed comparators [balanced_context, balanced_cost], adaptive eligibility even if context fails provided BOTH direct gates pass, inclusive numeric thresholds versus strictly positive folds, and separation of primary choice from doubled-fee robustness. No production selection module exists yet; this portion is design closure only. Confirm own-horizon personalized risk AND purchasing-power rescreen with referral/no fallback, full eligibility sets and unchanged normative numeric parameters.\n\nThen build an independent scalar/rational oracle in audit/SOL-013/verify.py and audit the actual corrected policy kernel. The chief's 17 tests are provisional, not independent evidence. Check inverse-cube utility, exact real factors, 15:n mixture, all targets, strict S>keep+1e-12, ties to eligible maximum and active/defensive/central/growth priority. In prior=(1.10,1.02,1), all-bills-to-thirds, k=.0025 derive rational initial fee, buffered score and actual wealth independently. Probe finite extreme inputs and invalid final observations; distinguish invalid failed runs from completed suspended paths.\n\nChallenge sequential state reuse, wrong scenario/history, no current observations, prefix horizon equality and future perturbations. Adaptive alternatives first appear at year 6. Independently reconstruct CPI, holdings and post-fee/year-end peaks. Include fee-induced loss then same-year recovery, pure-inflation loss, latch persistence, and zero-fee exact component-dollar keep while pending. The reporting epsilon now ONLY controls is_trade; an accepted target-change request updates active state and executed_target_change even below 1e-10, with its exact fee still charged. Find/probe the tiny-transfer corner directly; an explicitly labelled injected decision fixture is acceptable for isolated transition mechanics, but must not be mistaken for evidence the real score gate produced it. Verify first_deployment_year/null and persistent year-1 initial_allocation_deferred separately. A first deployment after year 1 has reason initial_allocation; later requests use rebalance/target_change. No existing accepted baseline semantics change.\n\nWrite review.md, findings.json and verification.json with precise reviewed source, expected and observed numerical facts, separate corrected_design_verdict/code_verdict, blockers/limitations and exact fixes. Initial evidence creation refuses overwrite; preserve every meaningful failure with diagnosis. Portable --check recomputes facts and verifies source/artifact hashes read-only, compares numerical tolerances and exits nonzero on deliberately corrupted scratch evidence. Use pinned Git blobs and verify code bytes imported match pinned source (document LF normalization if needed); never demand that HEAD stay a worker commit. A negative verdict itself is not evidence failure. Can use accepted SOL-009 mathematical evidence as context, but actual kernel checks must be independent of production expected-value helpers.\n\nThis kernel still has no production loader, output writer, profile selector or final API. Do not implement those or demand this narrow module certify them. Scope is audit/SOL-013 only plus ignored scratch. Do not read original/development/final CSV outcomes, rerun HY3-003, install anything, edit source/tasks/runtime/private member files, start or restart watchers, publish tasks or run actual strategy outcomes. CPU-only within 25 minutes; keep model output concise. The runner handles receipt and branch push; chief alone accepts.\n"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-013-a1-agent.log"
+    },
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "audit/SOL-013/verify.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-013-a1-check-0.log"
+    }
+  ],
+  "artifacts_sha256": {
+    "audit/SOL-013/findings.json": "b2c82f41ed0abd7c62cf350ed5b554c967085d5cbbee70a3e62d4f6feb64c6bd",
+    "audit/SOL-013/history/completed-trial-002-verify.py": "4651c91a1ba49dc1565929a226ebceda74158b3eacdded77cf0b613020019763",
+    "audit/SOL-013/history/diagnosis-002.json": "3a41a0794979b35092cfbe63e3357f52d30b17b32b5903bf07a4b56a5e5b5f64",
+    "audit/SOL-013/history/failed-trial-001-verify.py": "f418e0c2857a404bb42396dc5a6e73820ab8b90ccdedee2a94408a8a8770cffb",
+    "audit/SOL-013/history/failure-001.json": "b2950a652f90b0681a3179483f0003a1fa0c755a31b05568b27100600b10d594",
+    "audit/SOL-013/history/initial-findings.json": "a6f12da9203fb4b14983279ad52aae0434d6865dafd51a8712331867d774bd07",
+    "audit/SOL-013/history/initial-integrity-self-tests.json": "dd41a1e9c45b5cba1c79eda74516f35688658a7aa93db1c12199c38d193f9a25",
+    "audit/SOL-013/history/initial-review.md": "ffc16cfd7859911ef3d50d45fb071c1bf6edcd21aeda33040129fc0c987ffea9",
+    "audit/SOL-013/history/initial-verification.json": "288b23b3c1eaffa6765d474a76442bed33121506a5ef6b8e38544a69e78fa850",
+    "audit/SOL-013/history/integrity-self-tests.json": "b885b66d06a764400f7afd9adf5c67402fd76b1227b7e60f46fced6fd811b127",
+    "audit/SOL-013/history/revision-003.json": "aa71695de9dfaf443c6dee531e82a7ed96b54b67e043a85e7e8332d8de505e9d",
+    "audit/SOL-013/review.md": "8410d52b2ca1d4e870cdabfac1663c469ff82cb6ed1ce3a0e61d39bcd5f51ebc",
+    "audit/SOL-013/verification.json": "a7d2fe14491d8110e04198c49396089eb5e8e696e997393123be24fa3a8e1944",
+    "audit/SOL-013/verify.py": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+    "handoff/SOL-013/check-0.txt": "bab2dcd4a942a32d500e9572e19bf1e82f45753e7f4f70cadf17cb986e532e78",
+    "handoff/SOL-013/check-1.txt": "c7a360edc817956cb27a7d6aea8e5ef92d468f0cf17f56762c16b586fa7e0f50"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "finished_at": "2026-10-19T17:52:42.594884+00:00",
+  "note": "Completed means worker self-check only; coordinator acceptance is separate.",
+  "input_manifest": {
+    "source": "User-supplied 2026 MCM Senior Group Problem A SafeInvest attachments",
+    "license": "CC BY-NC-SA 4.0",
+    "transformation": "Originals unchanged; derived CSV files are row subsets only.",
+    "files": [
+      {
+        "path": "problem/2026_MCM_SafeInvest.pdf",
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+        "bytes": 137578
+      },
+      {
+        "path": "data/raw/SafeInvest_Synthetic_Data.csv",
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+        "bytes": 274914
+      },
+      {
+        "path": "data/development/scenarios_001_120.csv",
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+        "bytes": 182255
+      },
+      {
+        "path": "data/final_holdout/scenarios_121_180.csv",
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+        "bytes": 92732
+      }
+    ]
+  },
+  "task_parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "competition_outcomes_allowed": false,
+    "final_outcomes_allowed": false,
+    "source_sha256": {
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "specs/POLICY_CORRECTION_V2.md": "b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383",
+      "src/safeinvest/policy_pilot.py": "1f439cff5627279219867497b891549f3702434966b3194c11f8e18894ffba90",
+      "tests/test_policy_pilot.py": "0a8d605c38e75aef00a7185978a8925989b413aa1eb44c0bd534085125bdb11f",
+      "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "audit/SOL-009/findings.json": "1b425c6b0ab0399c2c94614768ab362975e676cfd474e964aa3a1ee4d60c6e83",
+      "audit/chief/SOL-009-review.json": "6f1a480162704fa67a2f70358cc9413584c44d6a455d662e7369f7c7ea4a8964"
+    },
+    "release_requires": "Ready now: accepted negative SOL-009 evidence and successful SOL-010 are recorded; this task itself must approve corrected design AND kernel before production integration.",
+    "primary_fee_rate": 0.0025,
+    "sensitivity_fee_rate": 0.005,
+    "gamma": 4,
+    "fee_buffer_multiplier": 2,
+    "supersedes_task": "SOL-011",
+    "prior_negative_design_review": "3f79e07b87ec92a4a74049da6166093ba4e88e6f"
+  }
+}

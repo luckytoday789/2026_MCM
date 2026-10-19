@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T17:55:51.867229+00:00",
+  "python": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+  "review_request": "SOL-013 K1",
+  "source_sha256": {
+    "src/safeinvest/policy_pilot.py": "9026abd22818fb420ce75dcf100b461c1833eab8be03526366dd3faadaa77bba",
+    "tests/test_policy_pilot.py": "09cbe72579f46be55f8f2ecf8187127260ff414fd88834ed52bb6225212bdc95"
+  },
+  "runs": [
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_policy_pilot.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.2970000000204891,
+      "log_path": "audit/chief/policy-k1-test_policy_pilot.txt",
+      "raw_log_sha256": "f90876c0ccaccfb4d48f606f267654de7fb0422ccf750bffb8b0a657a3849310"
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_policy_calibration.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.25,
+      "log_path": "audit/chief/policy-k1-test_policy_calibration.txt",
+      "raw_log_sha256": "c530d581d8b052b15d0b35242e222c5cd44aab426b3a5e7fb0588c93498ddf5a"
+    }
+  ],
+  "independent_review_pending": true,
+  "competition_data_read": false,
+  "final_data_open": false
+}

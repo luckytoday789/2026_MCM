@@ -1,0 +1,23 @@
+test_adaptive_first_eligible_review_and_active_target (test_policy_pilot.PolicyKernelTests.test_adaptive_first_eligible_review_and_active_target) ... ok
+test_deferred_initial_allocation_can_retry_using_completed_history (test_policy_pilot.PolicyKernelTests.test_deferred_initial_allocation_can_retry_using_completed_history) ... ok
+test_equal_returns_keep_at_both_fee_rates_and_zero (test_policy_pilot.PolicyKernelTests.test_equal_returns_keep_at_both_fee_rates_and_zero) ... ok
+test_exact_inflation_conversion (test_policy_pilot.PolicyKernelTests.test_exact_inflation_conversion) ... ok
+test_failing_proposals_never_change_active_target (test_policy_pilot.PolicyKernelTests.test_failing_proposals_never_change_active_target) ... ok
+test_future_perturbation_does_not_change_current_decision (test_policy_pilot.PolicyKernelTests.test_future_perturbation_does_not_change_current_decision) ... ok
+test_global_tie_anchor_rejects_nontransitive_chain (test_policy_pilot.PolicyKernelTests.test_global_tie_anchor_rejects_nontransitive_chain) ... ok
+test_invalid_gross_including_final_observation_is_rejected (test_policy_pilot.PolicyKernelTests.test_invalid_gross_including_final_observation_is_rejected) ... ok
+test_inverse_cube_mixture_and_homogeneity (test_policy_pilot.PolicyKernelTests.test_inverse_cube_mixture_and_homogeneity) ... ok
+test_parameters_match_published_proposal (test_policy_pilot.PolicyKernelTests.test_parameters_match_published_proposal) ... ok
+test_post_fee_loss_survives_same_year_recovery (test_policy_pilot.PolicyKernelTests.test_post_fee_loss_survives_same_year_recovery) ... ok
+test_prefix_and_fresh_state_for_all_declared_modes (test_policy_pilot.PolicyKernelTests.test_prefix_and_fresh_state_for_all_declared_modes) ... ok
+test_rational_initial_fee_and_ce (test_policy_pilot.PolicyKernelTests.test_rational_initial_fee_and_ce) ... ok
+test_real_loss_review_lags_and_latches (test_policy_pilot.PolicyKernelTests.test_real_loss_review_lags_and_latches) ... ok
+test_state_reuse_and_mismatched_accounting_are_rejected (test_policy_pilot.PolicyKernelTests.test_state_reuse_and_mismatched_accounting_are_rejected) ... ok
+test_strict_keep_gate_and_tie_priority (test_policy_pilot.PolicyKernelTests.test_strict_keep_gate_and_tie_priority) ... ok
+test_subnormal_gross_is_not_lost_before_log_moment (test_policy_pilot.PolicyKernelTests.test_subnormal_gross_is_not_lost_before_log_moment) ... ok
+test_tiny_executed_request_preserves_fee_despite_reporting_threshold (test_policy_pilot.PolicyKernelTests.test_tiny_executed_request_preserves_fee_despite_reporting_threshold) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.070s
+
+OK

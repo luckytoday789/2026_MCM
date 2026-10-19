@@ -1,0 +1,81 @@
+[
+  {
+    "expected_exit": 0,
+    "mutation": null,
+    "name": "clean",
+    "observed_exit": 0,
+    "read_only": true,
+    "stderr": "",
+    "stdout": "{\"evidence_integrity_verdict\": \"passed\", \"corrected_design_verdict\": \"approve\", \"code_verdict\": \"changes_required\", \"check_count\": 3023, \"read_only\": true}\n"
+  },
+  {
+    "expected_exit": 1,
+    "mutation": {
+      "after": 0.1766666666666667,
+      "before": 0.16666666666666669,
+      "path": "facts.checks[rational initial actual versus buffer].observed.fee"
+    },
+    "name": "corrupt numerical fact",
+    "observed_exit": 1,
+    "read_only": true,
+    "stderr": "RuntimeError: Saved numerical/source evidence mismatch; read-only evidence preserved\n",
+    "stdout": ""
+  },
+  {
+    "expected_exit": 1,
+    "mutation": {
+      "after": "0000000000000000000000000000000000000000000000000000000000000000",
+      "before": "1b425c6b0ab0399c2c94614768ab362975e676cfd474e964aa3a1ee4d60c6e83",
+      "path": "facts.source_sha256.audit/SOL-009/findings.json"
+    },
+    "name": "corrupt source hash",
+    "observed_exit": 1,
+    "read_only": true,
+    "stderr": "RuntimeError: Saved numerical/source evidence mismatch; read-only evidence preserved\n",
+    "stdout": ""
+  },
+  {
+    "expected_exit": 0,
+    "mutation": {
+      "after": 0.16666666666666768,
+      "before": 0.16666666666666669,
+      "path": "facts.checks[rational initial actual versus buffer].observed.fee"
+    },
+    "name": "rounding within tolerance",
+    "observed_exit": 0,
+    "read_only": true,
+    "stderr": "",
+    "stdout": "{\"evidence_integrity_verdict\": \"passed\", \"corrected_design_verdict\": \"approve\", \"code_verdict\": \"changes_required\", \"check_count\": 3023, \"read_only\": true}\n"
+  },
+  {
+    "expected_exit": 1,
+    "mutation": {
+      "after": 0.0,
+      "before": 2.91271096747931e-15,
+      "path": "facts.checks[REAL tiny independent transfer/fee].observed.fee"
+    },
+    "name": "corrupt tiny fee to zero",
+    "observed_exit": 1,
+    "read_only": true,
+    "stderr": "RuntimeError: Saved numerical/source evidence mismatch; read-only evidence preserved\n",
+    "stdout": ""
+  },
+  {
+    "expected_exit": 1,
+    "mutation": null,
+    "name": "exclusive evidence creation refuses overwrite",
+    "observed_exit": 1,
+    "read_only": true,
+    "stderr": "RuntimeError: Refusing overwrite: review.md\n",
+    "stdout": ""
+  },
+  {
+    "expected_exit": 1,
+    "mutation": "append CORRUPTED to scratch review.md",
+    "name": "corrupt artifact",
+    "observed_exit": 1,
+    "read_only": true,
+    "stderr": "RuntimeError: Saved artifact hash mismatch; read-only evidence preserved\n",
+    "stdout": ""
+  }
+]

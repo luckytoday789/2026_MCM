@@ -1,0 +1,21 @@
+{
+  "kind": "initial_audit_execution",
+  "command": [
+    "python",
+    "-B",
+    "audit/SOL-013/verify.py",
+    "--create"
+  ],
+  "exit_code": 1,
+  "stderr": "ValueError: portfolio gross factor must be positive",
+  "script_sha256": "f418e0c2857a404bb42396dc5a6e73820ab8b90ccdedee2a94408a8a8770cffb",
+  "diagnosis": "Finite positive gross factors at minimum subnormal (5e-324), weights (.2,.3,.5), underflow all three products to zero. Harness prematurely aborted before saving this potential kernel defect. Next revision captures exceptional outputs as code checks so the audit continues.",
+  "infrastructure_failures": [
+    {
+      "tool": "exec_command",
+      "attempts": 2,
+      "error": "helper_unknown_error: setup refresh had errors",
+      "fallback": "Node child_process and filesystem, no installs"
+    }
+  ]
+}

@@ -1,21 +1,18 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T02:18:08.203150+08:00",
-  "reason": "SOL-013 remote review running; exact gated SOL-014 calibration, SOL-015 case engine and SOL-016 analysis tasks published. Their concrete production writer handoff and methods are prepared; now await actual independent prerequisite verdicts.",
+  "next_wake_at": "2026-10-20T01:59:31.998357+08:00",
+  "reason": "SOL-013 design approved; negative kernel K1 reproduced and narrow log-domain correction tested. Push prerequisites before publishing corrected review/calibration/case tasks.",
   "next_actions": [
-    "Fetch SOL-013 exact receipt, validate hashes/source/paths and independently replay synthetic evidence. Require corrected_design_verdict AND code_verdict approve before releasing dependents.",
-    "On unchanged SOL-013 approval immediately release existing SOL-014 and SOL-016. On unchanged SOL-014 approval also release SOL-015; never require tasks to run in publication order when dependencies are met.",
-    "Preserve any negative findings; if relevant source changes, cancel stale waiting tasks and issue corrected immutable successors only after source commits are pushed. Do not mutate published attempts.",
-    "Independently review exact SOL-015/SOL-016 implementation commits and numerical fixtures. Once accepted, publish production loader/writer task using specs/POLICY_RESULT_WRITER.md against the newly pushed combined source.",
-    "Only after full code acceptance issue HY3 fixed development commands; import accepted primary HY3-003 baselines without rerunning. Submit targeted independent Sol audit of exact HY3 results.",
-    "Own-horizon personalized rescreen, sensitivity conclusions, freeze, final evaluation and final English report/package remain unfinished. Keep final_data_open=false; private member information stays local.",
-    "Check quota markers/control/STOP/deadline before substantive work; no supervisor restart or duplicated remote role. Incoming receipts should wake sooner than this 30-minute fallback."
+    "Publish SOL-017 narrow independent K1 closure against the pushed corrected kernel. Publish SOL-018 calibration successor and SOL-019 case successor with explicit gates; preserve cancelled SOL-014/SOL-015.",
+    "After positive SOL-017 acceptance release existing unchanged SOL-016 and SOL-018 promptly. After positive SOL-018 acceptance release SOL-019.",
+    "Review exact component receipts; then production writer, fixed HY3 development jobs, independent result audit, personalized rescreen, freeze and final report remain. Final gate closed; identities local.",
+    "Check local quota/control/STOP/deadline before substantive work; no supervisor or remote role restarts."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T01:48:08.203150+08:00",
+  "last_completed_at": "2026-10-20T01:56:31.998357+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

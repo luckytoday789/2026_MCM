@@ -78,11 +78,12 @@ class EmpiricalPrior:
             raise ValueError("at most five completed annual observations")
 
         def log_power(row):
-            gross = finite_number(math.fsum(x * g for x, g in zip(w, row)),
-                                  "portfolio real gross factor")
-            if gross <= 0:
-                raise ValueError("portfolio gross factor must be positive")
-            return (1 - GAMMA) * math.log(gross)
+            # Form log(sum(w_i*g_i)) before any tiny weighted product can
+            # round to zero. Positive support and normalized weights ensure
+            # at least one term; zero-weight assets contribute nothing.
+            log_gross = logsumexp(math.log(x) + math.log(g)
+                                  for x, g in zip(w, row) if x > 0)
+            return (1 - GAMMA) * log_gross
 
         prior_log_moment = logsumexp(log_power(row) for row in self.gross) - math.log(len(self.gross))
         if recent:

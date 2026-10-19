@@ -1,0 +1,5 @@
+{
+  "kind": "oracle_fixture_correction",
+  "diagnosis": "Initial preflight used exact binary Fraction(float(.1)) against normative rational 1/10 and incorrectly excluded Growth for profile C. Normative config values now use decimal spelling; outcome arithmetic retains exact binary float inputs. Initial permutation accidentally had identical paired and marginal medians and two mistaken expected quantiles. Replaced with independent three-point permutation A=[0,2,10], B=[1,0,11]: paired median -1 versus difference of medians +1; marginal p10 +.2 versus paired p10 -1; marginal p90 -.6 versus paired p90 +1.4.",
+  "policy_source_unchanged": true
+}
