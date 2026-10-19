@@ -592,24 +592,42 @@
     },
     {
       "id": "SOL-022",
-      "state": "ready",
+      "state": "accepted",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "9f1841cdfae0638427bdccfcd96e1cf231bed04ce6ac32afd2d72ae550674ab7",
       "branch": "work/sol/SOL-022-a1",
-      "note": "Existing immutable task released after accepted positive SOL-021 kernel review and exact pinned-source/dependency validation. Synthetic only; production and final execution remain unauthorized.",
+      "note": "Exact canonical task/source/artifact pins verified; 87166 independent comparisons replayed read-only, two corruptions rejected. Chief independently verifies four fold complements, rational factors/digests and eight CE cases. RELEASE-1 closed against exact accepted SOL-021 unchanged kernel. Synthetic calibration only; production/final gates remain separate.",
       "release_evidence": "audit/chief/SOL-021-review.json",
-      "released_after_commit": "d154f90d1c50b37990b75ec0a45aa01a38252343"
+      "released_after_commit": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+      "reviewed_commit": "21ad493707d71240f83d7f01ed6d133e1380e8fb",
+      "accepted_paths": [
+        "audit/SOL-022/findings.json",
+        "audit/SOL-022/initial-execution.json",
+        "audit/SOL-022/integrity-self-tests.json",
+        "audit/SOL-022/integrity_self_test.py",
+        "audit/SOL-022/review.md",
+        "audit/SOL-022/task-lock.json",
+        "audit/SOL-022/verification.json",
+        "audit/SOL-022/verify.py",
+        "handoff/SOL-022/check-0.txt",
+        "handoff/SOL-022/check-1.txt",
+        "handoff/SOL-022/result.json"
+      ],
+      "excluded_paths": [],
+      "acceptance_evidence": "audit/chief/SOL-022-review.json",
+      "code_verdict": "approve"
     },
     {
       "id": "SOL-023",
-      "state": "waiting",
+      "state": "ready",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "3298bc4f6bd44345967419c640b395d0196efe9f81160c71128901f9f1f0938a",
       "branch": "work/sol/SOL-023-a1",
-      "note": "Synthetic-only bounded work. No production outcomes or final authorization.",
-      "waiting_for": "Positive accepted corrected-kernel SOL-021 and calibration SOL-022 reviews, unchanged pinned source and approved v2 design."
+      "note": "Existing immutable synthetic-only task released after positive accepted SOL-021 and SOL-022, accepted v2 design and exact source/dependency/hash revalidation. No production outcomes or final authorization.",
+      "release_evidence": "audit/chief/SOL-022-review.json",
+      "released_after_commit": "21ad493707d71240f83d7f01ed6d133e1380e8fb"
     },
     {
       "id": "SOL-024",

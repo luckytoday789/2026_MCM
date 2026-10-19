@@ -1,0 +1,433 @@
+{
+  "task_id": "SOL-022",
+  "reviewed_commit": "21ad493707d71240f83d7f01ed6d133e1380e8fb",
+  "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+  "task_sha256": "9f1841cdfae0638427bdccfcd96e1cf231bed04ce6ac32afd2d72ae550674ab7",
+  "branch": "work/sol/SOL-022-a1",
+  "structural_checks": "passed",
+  "source_hashes_checked": {
+    "src/safeinvest/policy_calibration.py": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+    "tests/test_policy_calibration.py": "1ffd23c01e82a12d57568557cf33402bf93aec15b3e9cb4808e0da83fd5a38f2",
+    "specs/POLICY_CALIBRATION_PROTOTYPE.md": "a9272fbc14c5947acaf7f0c8d557ca5671643bf0e8fea5d13d82a66772295990",
+    "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+    "specs/POLICY_CORRECTION_V2.md": "b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383",
+    "specs/POLICY_DRIVER_HANDOFF.md": "18bffbb0c9da4d487b3ba3fc384159ebb069768593bdeced140d1971b3fe3001",
+    "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/POLICY_NUMERIC_K1.md": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+    "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+    "specs/POLICY_NUMERIC_K2.md": "88d5f58a59f090c25331392e4cd5682daf5d050c27b24afe6629d8e4a5eb9997",
+    "audit/chief/SOL-017-review.json": "ec9dcc7fd084954827cfdf82bf1826e17ddd8c9b3fbece15058760fedef3d4b9"
+  },
+  "artifacts_sha256": {
+    "audit/SOL-022/findings.json": "70a624f1bfe00cf5a559b48876e8760bfd9534ee4f003dc6d8191d40b0577109",
+    "audit/SOL-022/initial-execution.json": "07580b350ab06801584b178647a2fb43c517284a140278d81d0dee5a873ca83b",
+    "audit/SOL-022/integrity-self-tests.json": "84c5d37a58ed311ac1d45ad5381d4e6eab8318f459a5c6a48bfceba2e787b77b",
+    "audit/SOL-022/integrity_self_test.py": "0945af572c305855736fa1463e162f6a5a428e364151dc88693f68690825db08",
+    "audit/SOL-022/review.md": "8c3ca25e0bf18b9d6396330373b76247ee7c5e8e1818978b50a78663e2a18ff7",
+    "audit/SOL-022/task-lock.json": "f724ad93de4463b4f3f70970332e3d37137111ebf40d70aa2803c892611bbaa8",
+    "audit/SOL-022/verification.json": "4cbcf50fa371f5f0e039007bcd1b6ee4a140e6e56a2494ad24150af7c4b509b1",
+    "audit/SOL-022/verify.py": "55c06f2f91a7d4ac3939948a31f624c8db49846767e1b6de60be72ca8befd8b6",
+    "handoff/SOL-022/check-0.txt": "8a382555a2ff7c76283aea18ae37f440e06a9104af9a112bd59ae514cf283554",
+    "handoff/SOL-022/check-1.txt": "cd8124488b02277aa215264b46e95022b17ccbfb369b2e3af04928fbe07a534b"
+  },
+  "accepted_paths": [
+    "audit/SOL-022/findings.json",
+    "audit/SOL-022/initial-execution.json",
+    "audit/SOL-022/integrity-self-tests.json",
+    "audit/SOL-022/integrity_self_test.py",
+    "audit/SOL-022/review.md",
+    "audit/SOL-022/task-lock.json",
+    "audit/SOL-022/verification.json",
+    "audit/SOL-022/verify.py",
+    "handoff/SOL-022/check-0.txt",
+    "handoff/SOL-022/check-1.txt",
+    "handoff/SOL-022/result.json"
+  ],
+  "excluded_paths": [],
+  "receipt_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "prescribed_command_count": 1,
+  "schema_version": 1,
+  "checked_at": "2026-10-19T19:16:04.816299+00:00",
+  "decision": "accept_calibration_seam_review",
+  "code_verdict": "approve",
+  "worker_replay_comparisons": 87166,
+  "worker_replay_checks": [
+    {
+      "case": "verification.json",
+      "expected_exit": 0,
+      "exit_code": 0,
+      "stdout": "{\"check_count\": 87166, \"code_verdict\": \"approve\", \"evidence_integrity_verdict\": \"passed\", \"failed_comparisons\": 0, \"read_only\": true, \"release_gate\": \"not_verifiable_at_pinned_base\"}",
+      "stderr": ""
+    },
+    {
+      "case": "wrong-number.json",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-022\\audit\\SOL-022\\verify.py\", line 585, in <module>\n    main()\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-022\\audit\\SOL-022\\verify.py\", line 567, in main\n    facts=check_saved(args.evidence,args.artifact_dir)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-022\\audit\\SOL-022\\verify.py\", line 552, in check_saved\n    raise RuntimeError('Saved numerical/source evidence mismatch; read-only evidence preserved')\nRuntimeError: Saved numerical/source evidence mismatch; read-only evidence preserved"
+    },
+    {
+      "case": "wrong-source.json",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-022\\audit\\SOL-022\\verify.py\", line 585, in <module>\n    main()\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-022\\audit\\SOL-022\\verify.py\", line 567, in main\n    facts=check_saved(args.evidence,args.artifact_dir)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-022\\audit\\SOL-022\\verify.py\", line 552, in check_saved\n    raise RuntimeError('Saved numerical/source evidence mismatch; read-only evidence preserved')\nRuntimeError: Saved numerical/source evidence mismatch; read-only evidence preserved"
+    }
+  ],
+  "audit_files_unchanged": true,
+  "chief_independent_checks": {
+    "fixture": "generated 8 scenarios x 2 years; exact dyadic nominal inputs",
+    "folds": [
+      {
+        "fold": 0,
+        "evaluation_ids": [
+          1,
+          5
+        ],
+        "training_keys": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "annual_weight": "1/12",
+        "first_rational_real_gross": [
+          "2/3",
+          "8/9",
+          "8/9"
+        ],
+        "training_sha256": "e093a4af685782dfc8e48bc6609368e190aa03fc84a2f9c1ba18bdd535aba1a6",
+        "gross_sha256": "b0a401f1c924a65271b023957e74f134997c6fb25b494d0459c34973b65e5be3",
+        "CE": [
+          {
+            "recent_count": 0,
+            "inverse_cube_moment": "159566053086008538296465367068005890572279489664085049246595384105511292694283349054451396387167614193504246753512719668007379273376827849621333080478770975966461196342774036319456138863692401325014472511152165516465311406274258244945669637113424738086516466792755825269217328281664007203256073488321513934976472515218630290913682142600754487078251/180237435675632836872761928153316395185253790836914292445127131635523181114721099189841447335201635879309707838992308888741028217307621214482959977210756590134607079157093491513837038314992936646366713202608485945856444541292418695901889929622114334896568419113017645202724327442812834741937037559560919090209085989697430215629907541260183372554500",
+            "expected": 1.0414413864320404,
+            "observed": 1.0414413864320404
+          },
+          {
+            "recent_count": 2,
+            "inverse_cube_moment": "187519892418035176477218079381459641528794413875445733964306384860921668841628288482571329389326149582947091005663803488207851243348457481694412023071029422156930322773937814164157341287023978896880775950851132263474959416801064620554326737120077447007915910809451720353714289091398255912801546291615908281011485922208078378936712984051947430131051/204269093765717215122463518573758581209954296281836198104477415853592938596683912415153640313228520663217668884191283407239831979615304043080687974172190802152554689711372623715681976756991994865882274962956284071970637146798074522022141920238396246216110874994753331229754237768521212707528642567502374968903630788323754244380561880094874488895100",
+            "expected": 1.028928284102745,
+            "observed": 1.028928284102745
+          }
+        ],
+        "heldout_perturbation_unchanged": true,
+        "other_fold_hashes_changed": true,
+        "invalid_heldout_rejected": true
+      },
+      {
+        "fold": 1,
+        "evaluation_ids": [
+          2,
+          6
+        ],
+        "training_keys": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "annual_weight": "1/12",
+        "first_rational_real_gross": [
+          "5/8",
+          "1",
+          "1"
+        ],
+        "training_sha256": "00e8f44b9b297c47b0a7721e3ac3c10cf938c533695439b02a9af47b56adf639",
+        "gross_sha256": "0898fc2189155e99a53637fb38537fa666d08db076c07f411e9d9ce55bd11333",
+        "CE": [
+          {
+            "recent_count": 0,
+            "inverse_cube_moment": "92150254478747659112143692926475888669872665093266733252644202602597961340508771507792292357400004752204235808939586952184257940109063936597999862071280557747995159025155060918222978375559075181126098148477070131772796122202186261992552681833870107815458606763623654084189419369656135219659932369910223/98094677796725893141049698264996173906216841619188713612829753658265043131960744942042438357392058846530651072199089105007956698375828383721717051021393847455897250011005260381409430732908421888427278013172636294407162966416045386910138263503544115420215723483089646832246357615775667331077064958834100",
+            "expected": 1.0210561732326213,
+            "observed": 1.0210561732326213
+          },
+          {
+            "recent_count": 2,
+            "inverse_cube_moment": "751549413018278132313768491952414596667361550281833328472623579028753206991586975656244609015333089180943875722298479218174631016267870386159089995271219130828898174467631760314779799792604594566936588430039381277558727653370472525124357495946286901924900937155276787919227946067955354142620621347433641/778217777187358752252327606235636312989320276845563794661782712355569342180221909873536677635310333515809831839446106899729789807114905177525621938103057856483451516753975065692514817147740146981523072237836247935630159533567293402820430223794783315667044739632511198202487770418486960826544715340083860",
+            "expected": 1.0116909595001122,
+            "observed": 1.0116909595001122
+          }
+        ],
+        "heldout_perturbation_unchanged": true,
+        "other_fold_hashes_changed": true,
+        "invalid_heldout_rejected": true
+      },
+      {
+        "fold": 2,
+        "evaluation_ids": [
+          3,
+          7
+        ],
+        "training_keys": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "annual_weight": "1/12",
+        "first_rational_real_gross": [
+          "5/8",
+          "1",
+          "1"
+        ],
+        "training_sha256": "24e7b93d4aa73650d4012ee07783143cc9014c710ef1965a5d95a18168c4a11e",
+        "gross_sha256": "1f74db48d4b20cbbc00b88f08e519effe0f5acd8987b44abb91db589ecb21817",
+        "CE": [
+          {
+            "recent_count": 0,
+            "inverse_cube_moment": "1701942675773437089709502205359874103379008471367868297916316484040949551531654164041892466694440214846297482540240537751430866240781178506343934292127974526635697165080552548552306879381394268686998725991085422745207287924129703002641047727193446436588380144379133464310126069112292510015753777154663486160958998633755502631533924687627771389845186326783/1608796737449577821983771790130158879259301274236411214127845152825343217801606459487203995007710451346323611747960191308432778894157520476999430473845906030529234311559916131809575991465583812166134892189704542554355531855551815800320123832750080521777966471719819293031834370221680111908244191468548871372450832602851425956908641629880128540920851008500",
+            "expected": 0.9814136246869488,
+            "observed": 0.9814136246869489
+          },
+          {
+            "recent_count": 2,
+            "inverse_cube_moment": "278779748618350625554517563477100375071839877060763560205596581634212715805739823671353180809075840492222496438837399133044765047062092327171848923203766019352044715703894398812987557240241629279463112776038544515897036473297449437047248747987724468960312394114308527354415424827682232681945622181752407106077212963303018661511327123873702532141287076169/260471852729931647368801146973454294737220206304942768001651119981246044786926760107452075382200739741785727616336411926127211820958836648657050648146480023990447459966843564197740874808713569588802792068809306889752800395660770177194686715778584465430718381135589790300392231369224399070858583380622198222206325278556897535880446740075830335196709210900",
+            "expected": 0.9776120041962728,
+            "observed": 0.9776120041962729
+          }
+        ],
+        "heldout_perturbation_unchanged": true,
+        "other_fold_hashes_changed": true,
+        "invalid_heldout_rejected": true
+      },
+      {
+        "fold": 3,
+        "evaluation_ids": [
+          4,
+          8
+        ],
+        "training_keys": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ]
+        ],
+        "annual_weight": "1/12",
+        "first_rational_real_gross": [
+          "5/8",
+          "1",
+          "1"
+        ],
+        "training_sha256": "1e421cda055811f81930dd20fd526edf75d450df829313126da171a8b97f9750",
+        "gross_sha256": "1f7c547585eadfac9b3a4c43c1b7c94b2295d480c1223aaa046eb3e9366e56d6",
+        "CE": [
+          {
+            "recent_count": 0,
+            "inverse_cube_moment": "70411334250436121374858905033201003338261755245654372614264430462231052875433839862613813509227639132305763064809668777618815896717393872924018917078998221527300103704347592826982415779642290413591388818822111740423893716791221139506652566601886673429614179124811541840588412858008363680031284853263387880926270131235448858022705512837546180453545803626195073247816923209083234502335078534316032/71789137461069129903879553133291396440779573284793861778995857603201925755803546072308793697573926774824079529574223370479735723820501369264818827206855498906577978507213921661629466317962250881096842396973987858290205763250727865332722144159170031189633624197852958080793434208931394754055735987226032788046369010459262375982671491469954832113929085438216976176955901070320937017067187263447125",
+            "expected": 1.0064805510489105,
+            "observed": 1.0064805510489108
+          },
+          {
+            "recent_count": 2,
+            "inverse_cube_moment": "2804429102160729656691331702358591839063424224153344833361639995664508110190392301225549262941792854875579095116250695957013633906585188520524339329754332582430229297369721933020923109623906745611424124138340456315034033618188575340208061983185489543136011746073605396953435680447040869458029444562111979858829745643454818098849953172832713827409368240925643229279983483990614274704115791822808090112/2798086923280112239394231273381294336994163678815658460500306077342613085823551720035807953927033571141371574981798731392057736781632310935771235524667096457948939693353806510513778839626511739392041707790910071959052928591149886285545333561081752081661715299093475892204109261996607543251628258514915892762196366857198424688742729298228978848727486534279816031395249112870661657614485322134171419325",
+            "expected": 0.9992456021549381,
+            "observed": 0.9992456021549382
+          }
+        ],
+        "heldout_perturbation_unchanged": true,
+        "other_fold_hashes_changed": true,
+        "invalid_heldout_rejected": true
+      }
+    ],
+    "LF_CRLF_separation": true,
+    "fresh_manifest_mutation_safe": true,
+    "nominal_derived_distinction": true
+  },
+  "dependency_gate_resolution": {
+    "finding": "RELEASE-1",
+    "resolved": true,
+    "accepted_kernel_commit": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+    "accepted_kernel_evidence": "audit/chief/SOL-021-review.json",
+    "matching_kernel_sha256": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+    "note": "Pinned task source predates later acceptance; coordinator verifies current accepted evidence without changing historical worker findings."
+  },
+  "competition_outcomes_read": false,
+  "final_data_open": false,
+  "production_execution_authorized": false,
+  "limitations": [
+    "Production loader must bind fixed development path, exact consumed bytes and shape.",
+    "Synthetic calibration labels are not production provenance. Correct excluded-fold binding, fresh scenario state and prefix-only decisions remain writer/driver obligations.",
+    "No strategy benefit or final-data authorization follows from synthetic calibration review."
+  ]
+}

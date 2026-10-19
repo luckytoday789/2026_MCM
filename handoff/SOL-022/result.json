@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-022",
+  "attempt": 1,
+  "role": "sol",
+  "task_sha256": "9f1841cdfae0638427bdccfcd96e1cf231bed04ce6ac32afd2d72ae550674ab7",
+  "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+  "status": "completed",
+  "failure": null,
+  "artifact_hash_basis": "canonical_git_blob",
+  "started_from_pinned_source": true,
+  "checks": [
+    {
+      "argv": [
+        "C:\\Users\\刘奥华\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.EXE",
+        "exec",
+        "--approve-for-me",
+        "--model",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"xhigh\"",
+        "--cd",
+        "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-022-a1",
+        "--output-last-message",
+        "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-022-a1\\.runtime\\agent-last.txt",
+        "You are role=sol in the authorized SafeInvest team. Read AGENTS.md and .runtime/task.json. Complete only that task in this worktree. Do not commit, push, change branches, edit the task, or start another watcher; the parent runner handles delivery. Respect allowed_paths and base version. Write real deliverables and perform checks. Report blockers rather than inventing parameters. The task is authorized; continue through routine fixes.\nRead AGENTS.md, the locked problem/accounting and this immutable task. This is the successor to never-executed cancelled SOL-018 after K2. The calibration source itself is unchanged. Read specs/POLICY_NUMERIC_K2.md; current v2 contracts supersede historical v1 notes. Chief releases only after positive accepted SOL-021 and unchanged pinned source. SOL-013 design is approved; its and SOL-017 negative kernel verdicts are historical, not approval. Review only this pinned calibration seam and dependent interface; do not use newer main or alter the implementation. A supported negative finding is valid review evidence.\n\nThe seam builds four equally weighted annual real-gross priors from supplied generated CSV bytes and labels its manifest synthetic. It is not a production loader or a security boundary that can determine where caller-provided bytes came from. It opens no paths and has no final or all-development refit API. Judge this declared scope; identify future production integration hazards without implementing them. Do not open raw/development/final competition CSVs. Avoid replaying the baseline experiment or prior broad suites.\n\nWrite an independent standard-library scalar/rational oracle and independent canonical serialization in audit/SOL-022/verify.py. Check exact fold membership/complements, sorted complete training keys, equal weights and real gross factors on small explicit fixtures and one generated 120-scenario x 30-year shape. Perturb all four held-out folds separately. Verify original input SHA256/length, raw versus derived digest semantics, identical parsed rows under CRLF/LF and floating representation details. Probe invalid factors in a held-out fold, invalid headers/rows/grid, immutable nested state and fresh manifest copies. Explicitly test that mutating returned JSON cannot alter a bundle. Verify training-row numbers and source distinctions, not just row counts or PASS strings.\n\nThe ten chief synthetic tests and timestamped evidence at the pinned source are available to challenge, not independent acceptance. Their log_sha256 hashes the raw Windows subprocess CRLF bytes; exact LF Git log reconstructs those bytes by replacing LF with CRLF. Keep this distinction if citing the log; all parameters.source_sha256 values are canonical Git bytes. An execution log's raw-byte hash is not permission to rewrite historical evidence. Reuse verified existing checks where appropriate and run new independent checks that substantiate your verdict. Preserve any failed oracle trial with diagnosis.\n\nProduce findings.json and review.md with exact source, separate code verdict approve/changes_required, blockers, numerical/provenance facts and concise production-integration caveats. Produce verification.json and portable verify.py, using explicit source commits rather than requiring HEAD to remain at a worker commit. Initial evidence creation must refuse overwrite; --check recomputes read-only and compares at appropriate tolerances, with exact hashes/keys. Demonstrate corruption rejection on an ignored scratch copy and leave accepted or submitted evidence unchanged. A negative code verdict must not itself make evidence replay fail.\n\nScope is only audit/SOL-022 plus ignored scratch. Do not edit source, tests, specifications, tasks, queue, runtime helpers or private member files; install anything; start watchers; dispatch tasks; or run strategy outcomes. No changes to normative policy parameters, additional searches or extra cost assumptions. Keep output concise and complete within 20 minutes. The runner owns receipt and branch publication; chief alone accepts and integrates."
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-022-a1-agent.log"
+    },
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "audit/SOL-022/verify.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-022-a1-check-0.log"
+    }
+  ],
+  "artifacts_sha256": {
+    "audit/SOL-022/findings.json": "70a624f1bfe00cf5a559b48876e8760bfd9534ee4f003dc6d8191d40b0577109",
+    "audit/SOL-022/initial-execution.json": "07580b350ab06801584b178647a2fb43c517284a140278d81d0dee5a873ca83b",
+    "audit/SOL-022/integrity-self-tests.json": "84c5d37a58ed311ac1d45ad5381d4e6eab8318f459a5c6a48bfceba2e787b77b",
+    "audit/SOL-022/integrity_self_test.py": "0945af572c305855736fa1463e162f6a5a428e364151dc88693f68690825db08",
+    "audit/SOL-022/review.md": "8c3ca25e0bf18b9d6396330373b76247ee7c5e8e1818978b50a78663e2a18ff7",
+    "audit/SOL-022/task-lock.json": "f724ad93de4463b4f3f70970332e3d37137111ebf40d70aa2803c892611bbaa8",
+    "audit/SOL-022/verification.json": "4cbcf50fa371f5f0e039007bcd1b6ee4a140e6e56a2494ad24150af7c4b509b1",
+    "audit/SOL-022/verify.py": "55c06f2f91a7d4ac3939948a31f624c8db49846767e1b6de60be72ca8befd8b6",
+    "handoff/SOL-022/check-0.txt": "8a382555a2ff7c76283aea18ae37f440e06a9104af9a112bd59ae514cf283554",
+    "handoff/SOL-022/check-1.txt": "cd8124488b02277aa215264b46e95022b17ccbfb369b2e3af04928fbe07a534b"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "finished_at": "2026-10-19T19:09:03.843408+00:00",
+  "note": "Completed means worker self-check only; coordinator acceptance is separate.",
+  "input_manifest": {
+    "source": "User-supplied 2026 MCM Senior Group Problem A SafeInvest attachments",
+    "license": "CC BY-NC-SA 4.0",
+    "transformation": "Originals unchanged; derived CSV files are row subsets only.",
+    "files": [
+      {
+        "path": "problem/2026_MCM_SafeInvest.pdf",
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+        "bytes": 137578
+      },
+      {
+        "path": "data/raw/SafeInvest_Synthetic_Data.csv",
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+        "bytes": 274914
+      },
+      {
+        "path": "data/development/scenarios_001_120.csv",
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+        "bytes": 182255
+      },
+      {
+        "path": "data/final_holdout/scenarios_121_180.csv",
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+        "bytes": 92732
+      }
+    ]
+  },
+  "task_parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "competition_outcomes_allowed": false,
+    "final_outcomes_allowed": false,
+    "source_sha256": {
+      "src/safeinvest/policy_calibration.py": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+      "tests/test_policy_calibration.py": "1ffd23c01e82a12d57568557cf33402bf93aec15b3e9cb4808e0da83fd5a38f2",
+      "specs/POLICY_CALIBRATION_PROTOTYPE.md": "a9272fbc14c5947acaf7f0c8d557ca5671643bf0e8fea5d13d82a66772295990",
+      "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+      "specs/POLICY_CORRECTION_V2.md": "b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383",
+      "specs/POLICY_DRIVER_HANDOFF.md": "18bffbb0c9da4d487b3ba3fc384159ebb069768593bdeced140d1971b3fe3001",
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/POLICY_NUMERIC_K1.md": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+      "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+      "specs/POLICY_NUMERIC_K2.md": "88d5f58a59f090c25331392e4cd5682daf5d050c27b24afe6629d8e4a5eb9997",
+      "audit/chief/SOL-017-review.json": "ec9dcc7fd084954827cfdf82bf1826e17ddd8c9b3fbece15058760fedef3d4b9"
+    },
+    "fold_count": 4,
+    "fold_assignment": "(scenario_id - 1) % 4",
+    "release_requires": "Positive accepted SOL-021 corrected-kernel review with unchanged source hashes; historical SOL-013/SOL-017 code verdicts remain negative.",
+    "supersedes_task": "SOL-018"
+  }
+}

@@ -1,0 +1,1 @@
+{"check_count": 87166, "code_verdict": "approve", "evidence_integrity_verdict": "passed", "failed_comparisons": 0, "read_only": true, "release_gate": "not_verifiable_at_pinned_base"}

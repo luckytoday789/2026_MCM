@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "SOL-022",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+  "depends_on": [
+    "SOL-009",
+    "SOL-010",
+    "SOL-013",
+    "SOL-017",
+    "SOL-021"
+  ],
+  "split": "synthetic",
+  "max_seconds": 1200,
+  "scope": "Independent synthetic-only review of chief four-fold calibration, exclusion and canonical input/row provenance; no production driver or policy outcomes.",
+  "parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "competition_outcomes_allowed": false,
+    "final_outcomes_allowed": false,
+    "source_sha256": {
+      "src/safeinvest/policy_calibration.py": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+      "tests/test_policy_calibration.py": "1ffd23c01e82a12d57568557cf33402bf93aec15b3e9cb4808e0da83fd5a38f2",
+      "specs/POLICY_CALIBRATION_PROTOTYPE.md": "a9272fbc14c5947acaf7f0c8d557ca5671643bf0e8fea5d13d82a66772295990",
+      "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+      "specs/POLICY_CORRECTION_V2.md": "b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383",
+      "specs/POLICY_DRIVER_HANDOFF.md": "18bffbb0c9da4d487b3ba3fc384159ebb069768593bdeced140d1971b3fe3001",
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/POLICY_NUMERIC_K1.md": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+      "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+      "specs/POLICY_NUMERIC_K2.md": "88d5f58a59f090c25331392e4cd5682daf5d050c27b24afe6629d8e4a5eb9997",
+      "audit/chief/SOL-017-review.json": "ec9dcc7fd084954827cfdf82bf1826e17ddd8c9b3fbece15058760fedef3d4b9"
+    },
+    "fold_count": 4,
+    "fold_assignment": "(scenario_id - 1) % 4",
+    "release_requires": "Positive accepted SOL-021 corrected-kernel review with unchanged source hashes; historical SOL-013/SOL-017 code verdicts remain negative.",
+    "supersedes_task": "SOL-018"
+  },
+  "allowed_paths": [
+    "audit/SOL-022"
+  ],
+  "deliverables": [
+    "audit/SOL-022/review.md",
+    "audit/SOL-022/findings.json",
+    "audit/SOL-022/verify.py",
+    "audit/SOL-022/verification.json"
+  ],
+  "commands": [],
+  "validation_commands": [
+    [
+      "{python}",
+      "-B",
+      "audit/SOL-022/verify.py",
+      "--check"
+    ]
+  ],
+  "acceptance_checks": [
+    "Exact immutable task, full pinned main base, source/blob hashes and allowed paths; actual executed Python 3.12 evidence.",
+    "Independent generated fixtures verify four disjoint evaluation folds, complete training complement/keys, equal annual weighting and (1+r)/(1+inflation). Do not use production conversion, fold or digest helpers for expected answers.",
+    "Perturb each evaluation fold in turn and prove its prior, selected-row digests, IDs and keys remain unchanged; global input bytes and other legitimately affected folds change. Include a 120-by-30 generated shape, never competition CSVs.",
+    "Independently construct canonical JSON/float.hex payloads and check both training and gross digests; distinguish CRLF/LF input bytes from semantic rows and nominal/inflation transformations with identical real gross vectors.",
+    "Reject malformed schema, duplicate/missing/reordered keys, invalid shape, nonfinite and nonpositive factors, including an invalid evaluation row. Challenge mutation, false provenance or split claims and synthetic-only limitations.",
+    "Portable verify.py --check is strictly read-only, checks pinned Git blobs and saved evidence, and rejects a deliberately corrupted scratch evidence copy without repairing it. Preserve meaningful failed trials.",
+    "Separate evidence integrity from approve/changes_required verdict. No actual-data fitting/outcomes, kernel/source/task edits, HY3 commands, broad driver implementation or final authorization."
+  ],
+  "instructions": "Read AGENTS.md, the locked problem/accounting and this immutable task. This is the successor to never-executed cancelled SOL-018 after K2. The calibration source itself is unchanged. Read specs/POLICY_NUMERIC_K2.md; current v2 contracts supersede historical v1 notes. Chief releases only after positive accepted SOL-021 and unchanged pinned source. SOL-013 design is approved; its and SOL-017 negative kernel verdicts are historical, not approval. Review only this pinned calibration seam and dependent interface; do not use newer main or alter the implementation. A supported negative finding is valid review evidence.\n\nThe seam builds four equally weighted annual real-gross priors from supplied generated CSV bytes and labels its manifest synthetic. It is not a production loader or a security boundary that can determine where caller-provided bytes came from. It opens no paths and has no final or all-development refit API. Judge this declared scope; identify future production integration hazards without implementing them. Do not open raw/development/final competition CSVs. Avoid replaying the baseline experiment or prior broad suites.\n\nWrite an independent standard-library scalar/rational oracle and independent canonical serialization in audit/SOL-022/verify.py. Check exact fold membership/complements, sorted complete training keys, equal weights and real gross factors on small explicit fixtures and one generated 120-scenario x 30-year shape. Perturb all four held-out folds separately. Verify original input SHA256/length, raw versus derived digest semantics, identical parsed rows under CRLF/LF and floating representation details. Probe invalid factors in a held-out fold, invalid headers/rows/grid, immutable nested state and fresh manifest copies. Explicitly test that mutating returned JSON cannot alter a bundle. Verify training-row numbers and source distinctions, not just row counts or PASS strings.\n\nThe ten chief synthetic tests and timestamped evidence at the pinned source are available to challenge, not independent acceptance. Their log_sha256 hashes the raw Windows subprocess CRLF bytes; exact LF Git log reconstructs those bytes by replacing LF with CRLF. Keep this distinction if citing the log; all parameters.source_sha256 values are canonical Git bytes. An execution log's raw-byte hash is not permission to rewrite historical evidence. Reuse verified existing checks where appropriate and run new independent checks that substantiate your verdict. Preserve any failed oracle trial with diagnosis.\n\nProduce findings.json and review.md with exact source, separate code verdict approve/changes_required, blockers, numerical/provenance facts and concise production-integration caveats. Produce verification.json and portable verify.py, using explicit source commits rather than requiring HEAD to remain at a worker commit. Initial evidence creation must refuse overwrite; --check recomputes read-only and compares at appropriate tolerances, with exact hashes/keys. Demonstrate corruption rejection on an ignored scratch copy and leave accepted or submitted evidence unchanged. A negative code verdict must not itself make evidence replay fail.\n\nScope is only audit/SOL-022 plus ignored scratch. Do not edit source, tests, specifications, tasks, queue, runtime helpers or private member files; install anything; start watchers; dispatch tasks; or run strategy outcomes. No changes to normative policy parameters, additional searches or extra cost assumptions. Keep output concise and complete within 20 minutes. The runner owns receipt and branch publication; chief alone accepts and integrates."
+}

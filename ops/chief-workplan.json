@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T03:39:16.094575+08:00",
-  "reason": "SOL-016 accepted and pushed at exact reviewed ceec2b6d1107a4137ee3d24d689ba7ba614703c2; 11995 checks/19 tests, nine chief fixture groups and three corruption rejections. Writer unit/provenance handoff and report evidence map updated. SOL-022 still running on current reported lease; SOL-023 waits on it. Only remote prerequisites are actionable; final gate closed.",
+  "next_wake_at": "2026-10-20T03:21:41.550551+08:00",
+  "reason": "Accepted exact SOL-022 calibration receipt with chief independent checks; existing SOL-023 released unchanged. Chief continues writer acceptance preparation while remote case-engine work proceeds. Final gate remains closed.",
   "next_actions": [
-    "Fetch exact SOL-022 receipt and status; validate task/base/source/path/artifact pins and independently verify fold arithmetic and raw/semantic hashes before acceptance. Promptly release existing unchanged SOL-023 after positive calibration acceptance and source/dependency revalidation.",
+    "Fetch exact SOL-023 receipt/status; validate task/base/source/path/artifact pins, inspect implementation and replay prepared audit/chief/case_reference.py fixtures before acceptance. SOL-022 accepted at 21ad493707d71240f83d7f01ed6d133e1380e8fb; do not recreate accepted work.",
     "SOL-016 accepted at ceec2b6d1107a4137ee3d24d689ba7ba614703c2 with audit/chief/SOL-016-review.json. Do not recreate it. Pin specs/POLICY_WRITER_COMPATIBILITY.md in future writer/assembly task; preserve exact numbers across legacy growth-unit label mapping and separate production provenance from the synthetic calibration manifest.",
     "Independently inspect exact SOL-023 implementation and compare prepared audit/chief/case_reference.py fixtures. Publish bounded writer implementation only after SOL-016 and SOL-023 acceptance exist on already-pushed main; use specs/POLICY_RESULT_WRITER.md and all source/output contracts.",
     "After accepted writer, dispatch fixed HY3 development jobs for five new primary-fee and eight doubled-fee cases; import HY3-003 exactly without rerun. Send Sol targeted independent review of exact HY3 evidence before selection.",
@@ -16,6 +16,6 @@
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T03:09:16.094575+08:00",
+  "last_completed_at": "2026-10-20T03:16:41.550551+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }
