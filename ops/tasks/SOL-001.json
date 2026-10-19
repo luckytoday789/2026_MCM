@@ -1,0 +1,39 @@
+{
+  "attempt": 1,
+  "base_commit": "f5e67b1f53568b94379ea631659d53d90db14f7b",
+  "depends_on": [],
+  "parameters": {},
+  "split": "development",
+  "id": "SOL-001",
+  "owner": "sol",
+  "kind": "agent",
+  "max_seconds": 1800,
+  "allowed_paths": [
+    "src/safeinvest",
+    "tests/test_accounting.py",
+    "audit/SOL-001"
+  ],
+  "deliverables": [
+    "src/safeinvest/__init__.py",
+    "src/safeinvest/accounting.py",
+    "src/safeinvest/metrics.py",
+    "src/safeinvest/backtest.py",
+    "tests/test_accounting.py",
+    "audit/SOL-001/review.md"
+  ],
+  "commands": [],
+  "validation_commands": [
+    [
+      "{python}",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_accounting.py",
+      "-v"
+    ]
+  ],
+  "instructions": "Implement the accounting, metrics and equal-weight baseline in specs/ACCOUNTING.md exactly, with plain documented Python APIs. Independently review the disclosed pre-fee transfer / pro-rata fee-funding convention and report any objection in audit/SOL-001/review.md; do not silently change the specification. Implement rebalance(holdings,target,fee_rate), keep behavior, annual returns application and inflation deflation; metrics for net real CAGR, annual real volatility and maximum real drawdown including initial and post-fee observations. Add a baseline simulator that accepts already selected rows for ONE scenario and explicit horizon, returns a complete per-period ledger plus metrics, and never combines scenarios. The baseline is one-third per asset at every review including period 1. Do not read final-holdout outcomes or conduct strategy optimization. Test the exact bill-to-equity 20-unit example, initial equal weight, no trade, zero fees/returns, inflation-only loss, wealth conservation, nonnegative full investment and a hand-computable two-period case. Show how a decision callback would be restricted to a history prefix without implementing a full policy yet. Avoid adding unrequested dependencies. Put all tests in tests/test_accounting.py and explain APIs, independent expected numbers, unresolved conventions and limitations in your review. Use only synthetic toy fixtures or development rows. This is implementation ready for coordinator review, not a final modeling conclusion."
+}

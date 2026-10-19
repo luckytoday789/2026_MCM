@@ -1,1 +1,13 @@
-{"schema_version":1,"tasks":[]}
+{
+  "schema_version": 1,
+  "tasks": [
+    {
+      "id": "SOL-001",
+      "state": "ready"
+    },
+    {
+      "id": "HY3-001",
+      "state": "ready"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "date": "2026-10-19",
+  "checks": [
+    "Source and exact split integrity",
+    "Git end-to-end task publication against local bare remote",
+    "Network-interruption delivery recovery without recomputation",
+    "Completed-task deduplication",
+    "Allowed-path boundary",
+    "Parent-directory escape rejection"
+  ],
+  "unittest_methods_passed": 3,
+  "remote_workers_online_verified": false
+}

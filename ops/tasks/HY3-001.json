@@ -1,0 +1,32 @@
+{
+  "attempt": 1,
+  "base_commit": "f5e67b1f53568b94379ea631659d53d90db14f7b",
+  "depends_on": [],
+  "parameters": {},
+  "split": "development",
+  "id": "HY3-001",
+  "owner": "hy3",
+  "kind": "commands",
+  "max_seconds": 300,
+  "allowed_paths": [
+    "results/development/HY3-001"
+  ],
+  "deliverables": [
+    "results/development/HY3-001/input-check.json"
+  ],
+  "commands": [
+    [
+      "{python}",
+      "scripts/check_inputs.py",
+      "--output",
+      "results/development/HY3-001/input-check.json"
+    ]
+  ],
+  "validation_commands": [
+    [
+      "{python}",
+      "scripts/check_inputs.py"
+    ]
+  ],
+  "instructions": "Validate source hashes, complete schema and exact scenario split. Report metadata only; compute no final-scenario performance. This verifies the remote computer can execute and publish a reproducible task."
+}
