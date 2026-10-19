@@ -1,0 +1,20 @@
+{
+  "after_tree_sha256": "9a311637d173da341eb6d74cc233050d5d72d4709047aa7e12d31620b81dc0f7",
+  "before_tree_sha256": "9a311637d173da341eb6d74cc233050d5d72d4709047aa7e12d31620b81dc0f7",
+  "changed_paths": [],
+  "command": [
+    "{python}",
+    "-B",
+    "audit/SOL-008/verify.py",
+    "--check",
+    "--evidence-dir",
+    "audit/SOL-008/history/cli-corruptions/corrupt-verification"
+  ],
+  "exit_code": 1,
+  "expected_exit": "nonzero",
+  "files_checked": 71,
+  "files_unchanged": true,
+  "name": "corrupt-verification",
+  "stderr": "AssertionError: saved verification.json mismatch: observed_sha256=d7413dbf9ae14f2d7c24b1a5e7d86f5c1278304c3bc63dc57b9b0f9691b6ac9c expected_sha256=ba9743c6c0b91761247708ff19b279b9b90b5ef6601422c33bd6b421f8ad9767",
+  "stdout": ""
+}

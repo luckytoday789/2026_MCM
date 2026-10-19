@@ -1,0 +1,20 @@
+{
+  "after_tree_sha256": "aa1388bf5467de8918ce8a601082fafbcd08110623a373d863d53e39cf757547",
+  "before_tree_sha256": "aa1388bf5467de8918ce8a601082fafbcd08110623a373d863d53e39cf757547",
+  "changed_paths": [],
+  "command": [
+    "{python}",
+    "-B",
+    "audit/SOL-008/verify.py",
+    "--check",
+    "--evidence-dir",
+    "audit/SOL-008/history/cli-corruptions/corrupt-findings"
+  ],
+  "exit_code": 1,
+  "expected_exit": "nonzero",
+  "files_checked": 79,
+  "files_unchanged": true,
+  "name": "corrupt-findings",
+  "stderr": "AssertionError: saved findings.json mismatch: observed_sha256=1a6d1f77ab86c58446cde98f4514d3df60b966857d88e121ee9cb159bd4057b4 expected_sha256=407c4f3dd9027ea25bd97d3c43d3a267091a90610c2a4a6457a1319350d01804",
+  "stdout": ""
+}

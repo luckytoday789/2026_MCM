@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "task": "SOL-008",
+  "failures": [
+    {
+      "id": "trial-001",
+      "class": "inherited audit-tool defect",
+      "observed": "Task digest 9f2dcabd... disagreed with pinned 976e5281...; initializer exited 1 before writing evidence.",
+      "cause": "SOL-006 draft used default JSON separators; actual coop.task_digest uses compact separators.",
+      "fix": "Use sorted compact JSON for both current task and HY3 task semantic digests.",
+      "evidence": "history/trial-001.json",
+      "scope": "audit/SOL-008 only"
+    },
+    {
+      "id": "trial-002",
+      "class": "inherited audit-tool defect",
+      "observed": "Saved numeric max_real_drawdown_pct was compared as a string against float; initializer exited 1.",
+      "cause": "Broad drawdown_ substring matched metric magnitudes as well as location fields.",
+      "fix": "Classify only drawdown_ and severe_drawdown_ prefixes as exact location fields; compare loss magnitudes numerically.",
+      "evidence": "history/trial-002.json",
+      "failed_source": "history/trial-002-verify.py",
+      "scope": "audit/SOL-008 only"
+    },
+    {
+      "id": "tool-start",
+      "class": "local execution infrastructure",
+      "observed": "exec_command process setup failed before shell execution: helper_unknown_error: setup refresh had errors.",
+      "resolution": "Used the available Node REPL child_process API for the same local Git and Python commands; no install or model replacement."
+    },
+    {
+      "id": "tool-parser",
+      "class": "orchestration syntax",
+      "observed": "One Node call failed JavaScript parsing before execution while quoting review prose.",
+      "resolution": "Wrote review text through a serialized string; no source/result mutation occurred in failed call."
+    }
+  ],
+  "preserved_successes": [
+    "history/trial-003.json",
+    "history/initial-complete-recomputation",
+    "history/trial-004.json",
+    "history/probe-initialization",
+    "initializer.json"
+  ],
+  "negative_controls": "Seven independent in-memory corruptions plus four CLI saved-evidence corruptions/missing file and initializer refusal are separately logged; historical parent scheduler failures are separately recorded.",
+  "historical_attempt": "SOL-006 quota failure is preserved in original commit f193742daab0f55c166b9b084bd288151c1e764d; no claim it completed."
+}

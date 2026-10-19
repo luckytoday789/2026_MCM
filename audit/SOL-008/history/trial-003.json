@@ -1,0 +1,6 @@
+{
+  "trial": "distinguish numeric drawdown magnitudes from exact location fields",
+  "code": 0,
+  "stdout": "{\"numerical\": \"pass\", \"rows\": {\"annual_ledgers.csv\": 10800, \"paired_differences.csv\": 1200, \"scenario_metrics.csv\": 1800, \"summary.csv\": 15}, \"scheduler\": \"pass\", \"status\": \"initialized\"}\r\n",
+  "stderr": ""
+}

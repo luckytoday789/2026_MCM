@@ -1,0 +1,11 @@
+{
+  "command": [
+    "{python}",
+    "-B",
+    "audit/SOL-008/verify.py"
+  ],
+  "python": "3.12.14",
+  "code": 0,
+  "stdout": "{\"numerical\": \"pass\", \"rows\": {\"annual_ledgers.csv\": 10800, \"paired_differences.csv\": 1200, \"scenario_metrics.csv\": 1800, \"summary.csv\": 15}, \"scheduler\": \"pass\", \"status\": \"initialized\"}\r\n",
+  "stderr": ""
+}

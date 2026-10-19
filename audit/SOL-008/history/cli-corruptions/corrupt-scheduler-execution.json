@@ -1,0 +1,20 @@
+{
+  "after_tree_sha256": "04166051c946170cafe38f78a52f5ff05dd4663acc6bcf77f515ffb72afc77bb",
+  "before_tree_sha256": "04166051c946170cafe38f78a52f5ff05dd4663acc6bcf77f515ffb72afc77bb",
+  "changed_paths": [],
+  "command": [
+    "{python}",
+    "-B",
+    "audit/SOL-008/verify.py",
+    "--check",
+    "--evidence-dir",
+    "audit/SOL-008/history/cli-corruptions/corrupt-scheduler"
+  ],
+  "exit_code": 1,
+  "expected_exit": "nonzero",
+  "files_checked": 75,
+  "files_unchanged": true,
+  "name": "corrupt-scheduler",
+  "stderr": "AssertionError: saved scheduler-review.json mismatch: observed_sha256=3c3b559c49c15b038c2f931fd0bab27fcca61340f4b943b59da76358afa18d92 expected_sha256=7f798765bb22489afb3901e6982c933a46f06c8aa9405da41f062f41269dac3c",
+  "stdout": ""
+}

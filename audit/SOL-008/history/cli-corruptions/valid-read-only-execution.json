@@ -1,0 +1,18 @@
+{
+  "after_tree_sha256": "e6614860943f5dafce2b82d3d482a7598083a54e36a39e6fc3004419ad6dd06b",
+  "before_tree_sha256": "e6614860943f5dafce2b82d3d482a7598083a54e36a39e6fc3004419ad6dd06b",
+  "changed_paths": [],
+  "command": [
+    "{python}",
+    "-B",
+    "audit/SOL-008/verify.py",
+    "--check"
+  ],
+  "exit_code": 0,
+  "expected_exit": "zero",
+  "files_checked": 67,
+  "files_unchanged": true,
+  "name": "valid-read-only",
+  "stderr": "",
+  "stdout": "{\"numeric_comparisons\": 247691, \"numerical\": \"pass\", \"read_only\": true, \"rows\": {\"annual_ledgers.csv\": 10800, \"paired_differences.csv\": 1200, \"scenario_metrics.csv\": 1800, \"summary.csv\": 15}, \"scheduler\": \"pass\", \"status\": \"passed\"}"
+}

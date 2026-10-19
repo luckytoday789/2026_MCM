@@ -1,0 +1,446 @@
+{
+  "bindings_sha256": {
+    "07b112dee30190d2c4f8d6c1aadacc2ab978092e:scripts/coop.py": "8a4607eae6300be7435f7706017928fe50575a6cfbbab1cc5ed25e7ba19b42af",
+    "10b3ff29f72b01d6a1a1bd2ca174f8cd6c7840d4:scripts/coop.py": "ddb53a531d0434830ec7d6947d7d3599dcf61b4ab4aebe469b8b4fa59b544c79",
+    "10b3ff29f72b01d6a1a1bd2ca174f8cd6c7840d4:tests/test_coop.py": "6a3693fda8608d9f54877f75576936debade44dbd1ad4b621e3ca9e8e27aa5a1",
+    "2561688380d9e2527eb6066100adde70b7d0ea1c:audit/chief/accounting_oracle.json": "85caa997e09b1cf2a02118f4f101137919ad7b38ce662caed7a594c569ed1377",
+    "2561688380d9e2527eb6066100adde70b7d0ea1c:ops/tasks/HY3-003.json": "10de4e7587f7b411e6a3143ea89f477f9e45251d3a5d7e7495214ff1d4d1e44d",
+    "2561688380d9e2527eb6066100adde70b7d0ea1c:scripts/coop.py": "ddb53a531d0434830ec7d6947d7d3599dcf61b4ab4aebe469b8b4fa59b544c79",
+    "2561688380d9e2527eb6066100adde70b7d0ea1c:scripts/run_development_baselines.py": "08c33acd66a63bd8fbf3e4c08f765ca8a4443665e5c439882370e2a8ea1a4709",
+    "2561688380d9e2527eb6066100adde70b7d0ea1c:specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "2561688380d9e2527eb6066100adde70b7d0ea1c:specs/DEVELOPMENT_BASELINES.md": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f",
+    "2561688380d9e2527eb6066100adde70b7d0ea1c:specs/DEVELOPMENT_BASELINE_DRIVER.md": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0",
+    "2561688380d9e2527eb6066100adde70b7d0ea1c:specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "2561688380d9e2527eb6066100adde70b7d0ea1c:specs/development_baselines_v1_1.json": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224",
+    "2561688380d9e2527eb6066100adde70b7d0ea1c:src/safeinvest/__init__.py": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+    "2561688380d9e2527eb6066100adde70b7d0ea1c:src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "2561688380d9e2527eb6066100adde70b7d0ea1c:src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "2561688380d9e2527eb6066100adde70b7d0ea1c:src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+    "2561688380d9e2527eb6066100adde70b7d0ea1c:src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+    "2561688380d9e2527eb6066100adde70b7d0ea1c:src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+    "2561688380d9e2527eb6066100adde70b7d0ea1c:tests/test_coop.py": "6a3693fda8608d9f54877f75576936debade44dbd1ad4b621e3ca9e8e27aa5a1",
+    "7652410d73425371110784ef5fa97c03470a074e:handoff/HY3-003/check-0.txt": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+    "7652410d73425371110784ef5fa97c03470a074e:handoff/HY3-003/check-1.txt": "3ecdd8166229ff1ac43a994001a6cd8b31b4ab2ba89f5fdfc23ef8d4556bf400",
+    "7652410d73425371110784ef5fa97c03470a074e:handoff/HY3-003/check-2.txt": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+    "7652410d73425371110784ef5fa97c03470a074e:handoff/HY3-003/check-3.txt": "a5cb7a9cc0b3e78b648c08fef5a768e5879d245edaca49f141a39fb9e7646a27",
+    "7652410d73425371110784ef5fa97c03470a074e:handoff/HY3-003/result.json": "99a5a5ca49d46b48ee4f929632eae0551a0028c833526835829713334d8909f0",
+    "7652410d73425371110784ef5fa97c03470a074e:results/development/HY3-003/annual_ledgers.csv": "b2e93442391d2a7cec4bdfe79b397c14c311cc229e2e6c3d82d2dd04199d470a",
+    "7652410d73425371110784ef5fa97c03470a074e:results/development/HY3-003/checks.json": "943e3145d686867bf8b34b309b2ecfbd6ae5bfb15705a1077c5203c5289a0061",
+    "7652410d73425371110784ef5fa97c03470a074e:results/development/HY3-003/paired_differences.csv": "0d9e0f8b91bd6746100b1ba3851d980928023631e1bc38917f51e8e85e321fbd",
+    "7652410d73425371110784ef5fa97c03470a074e:results/development/HY3-003/run_manifest.json": "9ae3558e6453902976a0c69ef07d3d6d1471d3e8afe176530457dbae67956436",
+    "7652410d73425371110784ef5fa97c03470a074e:results/development/HY3-003/scenario_metrics.csv": "afabf571d8c7d224bd83f836033fe4c4907a05fc15a2e8614c8ae09d803f100c",
+    "7652410d73425371110784ef5fa97c03470a074e:results/development/HY3-003/summary.csv": "965c3ac513f63de31830603ab968f5c6e99c6ceb763515b99753282d8c3a4994",
+    "ec561aca89076a700561bd17f63f3f4a4b87d09e:ops/tasks/SOL-008.json": "e9b7f0646b3bd5fd211a2e9c3056cc12b538513a07bb3dea581162f1d5da2b5b",
+    "ec9653f1a4739bf1f0db36092c64771d014df25e:audit/chief/SOL-004-review.json": "405587fceaa4c244169c6c7fa9c2858e2793f05f35844b4998b21fb19060ee42",
+    "ec9653f1a4739bf1f0db36092c64771d014df25e:audit/chief/accounting_oracle.json": "85caa997e09b1cf2a02118f4f101137919ad7b38ce662caed7a594c569ed1377",
+    "ec9653f1a4739bf1f0db36092c64771d014df25e:data/development/scenarios_001_120.csv": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+    "ec9653f1a4739bf1f0db36092c64771d014df25e:scripts/check_worker_env.py": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+    "ec9653f1a4739bf1f0db36092c64771d014df25e:scripts/run_development_baselines.py": "08c33acd66a63bd8fbf3e4c08f765ca8a4443665e5c439882370e2a8ea1a4709",
+    "ec9653f1a4739bf1f0db36092c64771d014df25e:specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "ec9653f1a4739bf1f0db36092c64771d014df25e:specs/DEVELOPMENT_BASELINES.md": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f",
+    "ec9653f1a4739bf1f0db36092c64771d014df25e:specs/DEVELOPMENT_BASELINE_DRIVER.md": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0",
+    "ec9653f1a4739bf1f0db36092c64771d014df25e:specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "ec9653f1a4739bf1f0db36092c64771d014df25e:specs/development_baselines_v1_1.json": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224",
+    "ec9653f1a4739bf1f0db36092c64771d014df25e:src/safeinvest/__init__.py": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+    "ec9653f1a4739bf1f0db36092c64771d014df25e:src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "ec9653f1a4739bf1f0db36092c64771d014df25e:src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "ec9653f1a4739bf1f0db36092c64771d014df25e:src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+    "ec9653f1a4739bf1f0db36092c64771d014df25e:src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+    "ec9653f1a4739bf1f0db36092c64771d014df25e:src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+    "f193742daab0f55c166b9b084bd288151c1e764d:audit/SOL-006/scheduler-suite.txt": "66eee650fba15fc4771cb286cca458819372ec91a0888faf24d8317137507195",
+    "f193742daab0f55c166b9b084bd288151c1e764d:audit/SOL-006/task-lock.json": "218de4abc9b816299bae12d58b6f7d167dc3c40122ec0efb741492325f8fd3ac",
+    "f193742daab0f55c166b9b084bd288151c1e764d:audit/SOL-006/verify.py": "a356d294866b3029ac5a97010335635dcbb059968e23dd1a18cfc60ce6de5f6b"
+  },
+  "blockers": [],
+  "commits": {
+    "HY3_result": "7652410d73425371110784ef5fa97c03470a074e",
+    "HY3_source": "ec9653f1a4739bf1f0db36092c64771d014df25e",
+    "audit_base": "2561688380d9e2527eb6066100adde70b7d0ea1c",
+    "scheduler_commit": "10b3ff29f72b01d6a1a1bd2ca174f8cd6c7840d4",
+    "scheduler_parent": "07b112dee30190d2c4f8d6c1aadacc2ab978092e"
+  },
+  "numerical": {
+    "all_ledger_paths": 360,
+    "all_metrics": 1800,
+    "all_pairs": 1200,
+    "all_summaries": 15,
+    "exact_location_basis": "strict comparisons on saved validated float observations; scalar forward locations intentionally not treated as exact ties",
+    "forward_prefixes": 165,
+    "representative_scenarios": [
+      1,
+      5,
+      19,
+      20,
+      29,
+      36,
+      42,
+      46,
+      60,
+      109,
+      120
+    ],
+    "row_counts": {
+      "annual_ledgers.csv": 10800,
+      "paired_differences.csv": 1200,
+      "scenario_metrics.csv": 1800,
+      "summary.csv": 15
+    },
+    "severe_cases": [
+      {
+        "horizon": 5,
+        "peak": [
+          0,
+          "initial"
+        ],
+        "policy": "bills_keep",
+        "scenario_id": 46,
+        "trough": [
+          5,
+          "end"
+        ]
+      },
+      {
+        "horizon": 6,
+        "peak": [
+          0,
+          "initial"
+        ],
+        "policy": "bills_keep",
+        "scenario_id": 46,
+        "trough": [
+          5,
+          "end"
+        ]
+      },
+      {
+        "horizon": 15,
+        "peak": [
+          1,
+          "end"
+        ],
+        "policy": "bills_keep",
+        "scenario_id": 36,
+        "trough": [
+          14,
+          "end"
+        ]
+      },
+      {
+        "horizon": 25,
+        "peak": [
+          13,
+          "end"
+        ],
+        "policy": "bills_keep",
+        "scenario_id": 19,
+        "trough": [
+          18,
+          "end"
+        ]
+      },
+      {
+        "horizon": 30,
+        "peak": [
+          20,
+          "end"
+        ],
+        "policy": "bills_keep",
+        "scenario_id": 42,
+        "trough": [
+          27,
+          "end"
+        ]
+      },
+      {
+        "horizon": 5,
+        "peak": [
+          2,
+          "end"
+        ],
+        "policy": "equal_weight_annual",
+        "scenario_id": 20,
+        "trough": [
+          5,
+          "end"
+        ]
+      },
+      {
+        "horizon": 6,
+        "peak": [
+          2,
+          "end"
+        ],
+        "policy": "equal_weight_annual",
+        "scenario_id": 20,
+        "trough": [
+          6,
+          "post_fee"
+        ]
+      },
+      {
+        "horizon": 15,
+        "peak": [
+          1,
+          "end"
+        ],
+        "policy": "equal_weight_annual",
+        "scenario_id": 5,
+        "trough": [
+          8,
+          "post_fee"
+        ]
+      },
+      {
+        "horizon": 25,
+        "peak": [
+          1,
+          "end"
+        ],
+        "policy": "equal_weight_annual",
+        "scenario_id": 5,
+        "trough": [
+          8,
+          "post_fee"
+        ]
+      },
+      {
+        "horizon": 30,
+        "peak": [
+          1,
+          "end"
+        ],
+        "policy": "equal_weight_annual",
+        "scenario_id": 5,
+        "trough": [
+          8,
+          "post_fee"
+        ]
+      },
+      {
+        "horizon": 5,
+        "peak": [
+          2,
+          "end"
+        ],
+        "policy": "equal_weight_buy_hold",
+        "scenario_id": 109,
+        "trough": [
+          4,
+          "end"
+        ]
+      },
+      {
+        "horizon": 6,
+        "peak": [
+          2,
+          "end"
+        ],
+        "policy": "equal_weight_buy_hold",
+        "scenario_id": 109,
+        "trough": [
+          4,
+          "end"
+        ]
+      },
+      {
+        "horizon": 15,
+        "peak": [
+          1,
+          "end"
+        ],
+        "policy": "equal_weight_buy_hold",
+        "scenario_id": 5,
+        "trough": [
+          8,
+          "end"
+        ]
+      },
+      {
+        "horizon": 25,
+        "peak": [
+          17,
+          "end"
+        ],
+        "policy": "equal_weight_buy_hold",
+        "scenario_id": 29,
+        "trough": [
+          23,
+          "end"
+        ]
+      },
+      {
+        "horizon": 30,
+        "peak": [
+          17,
+          "end"
+        ],
+        "policy": "equal_weight_buy_hold",
+        "scenario_id": 29,
+        "trough": [
+          23,
+          "end"
+        ]
+      }
+    ]
+  },
+  "numerical_verdict": "pass",
+  "oracle": "independent standard-library scalar arithmetic; production imported only for synthetic timing/fixture observations",
+  "provenance": {
+    "HY3_task_sha256": "5870dab708b3ead4a2f94384ef70528e9ea57ce6b39a8c5408a402c033a9a05b",
+    "execution": {
+      "HY3_python": "3.12.10",
+      "command_semantics": "same script/args; executable normalized to python; -B only suppresses bytecode",
+      "cpu_seconds": 1.109375,
+      "elapsed_seconds": 1.1812486999842804,
+      "reported_check_comparisons": 232957,
+      "retained_commands": 4,
+      "utc_duration_seconds": 1.181475
+    },
+    "historical_draft_commit": "f193742daab0f55c166b9b084bd288151c1e764d",
+    "historical_draft_sha256": {
+      "audit/SOL-006/scheduler-suite.txt": "66eee650fba15fc4771cb286cca458819372ec91a0888faf24d8317137507195",
+      "audit/SOL-006/task-lock.json": "218de4abc9b816299bae12d58b6f7d167dc3c40122ec0efb741492325f8fd3ac",
+      "audit/SOL-006/verify.py": "a356d294866b3029ac5a97010335635dcbb059968e23dd1a18cfc60ce6de5f6b"
+    },
+    "receipt_sha256": "99a5a5ca49d46b48ee4f929632eae0551a0028c833526835829713334d8909f0",
+    "source_forms": {
+      "audit/chief/accounting_oracle.json": "canonical LF",
+      "scripts/run_development_baselines.py": "canonical LF",
+      "specs/ACCOUNTING.md": "CRLF checkout",
+      "specs/DEVELOPMENT_BASELINES.md": "CRLF checkout",
+      "specs/DEVELOPMENT_BASELINE_DRIVER.md": "CRLF checkout",
+      "specs/PROBLEM_LOCK.md": "CRLF checkout",
+      "specs/development_baselines_v1_1.json": "canonical LF",
+      "src/safeinvest/__init__.py": "canonical LF",
+      "src/safeinvest/accounting.py": "canonical LF",
+      "src/safeinvest/backtest.py": "canonical LF",
+      "src/safeinvest/baselines.py": "canonical LF",
+      "src/safeinvest/experiments.py": "canonical LF",
+      "src/safeinvest/metrics.py": "canonical LF"
+    },
+    "task_sha256": "976e528142a46d73217ce05dd968d5348e951668773811ce638cf4ef3bab6e68",
+    "task_source_commit": "ec561aca89076a700561bd17f63f3f4a4b87d09e"
+  },
+  "residuals": {
+    "all_metrics": {
+      "count": 12600,
+      "max_absolute_residual": 3.552713678800501e-15,
+      "max_scaled_residual": 2.79258947404364e-16,
+      "worst_absolute_location": "equal_weight_annual/109/5/annual_real_volatility_pct",
+      "worst_scaled_location": "equal_weight_annual/77/30/annual_real_volatility_pct"
+    },
+    "all_pairs": {
+      "count": 7200,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "worst_absolute_location": "",
+      "worst_scaled_location": ""
+    },
+    "all_summaries": {
+      "count": 210,
+      "max_absolute_residual": 7.105427357601002e-15,
+      "max_scaled_residual": 2.3572347440851276e-16,
+      "worst_absolute_location": "equal_weight_buy_hold/25/p90_loss_pct",
+      "worst_scaled_location": "equal_weight_buy_hold/6/median_volatility_pct"
+    },
+    "forward_metrics": {
+      "count": 1155,
+      "max_absolute_residual": 8.526512829121202e-13,
+      "max_scaled_residual": 3.348666358644644e-13,
+      "worst_absolute_location": "equal_weight_annual/46/30/terminal_real_wealth",
+      "worst_scaled_location": "equal_weight_buy_hold/19/15/net_real_cagr_pct"
+    },
+    "forward_paths": {
+      "count": 64152,
+      "max_absolute_residual": 1.9326762412674725e-12,
+      "max_scaled_residual": 7.837180729663359e-13,
+      "worst_absolute_location": "equal_weight_annual/46/30/30/wealth_end",
+      "worst_scaled_location": "equal_weight_annual/60/25/23/annual_net_real_return"
+    },
+    "ledger": {
+      "count": 162360,
+      "max_absolute_residual": 2.2737367544323206e-13,
+      "max_scaled_residual": 2.2200893862136553e-16,
+      "worst_absolute_location": "budget",
+      "worst_scaled_location": "target holding"
+    },
+    "synthetic_arithmetic": {
+      "count": 10,
+      "max_absolute_residual": 1.4960255256823984e-14,
+      "max_scaled_residual": 8.976153154093585e-14,
+      "worst_absolute_location": "post-fee trough persists despite return recovery",
+      "worst_scaled_location": "post-fee trough persists despite return recovery"
+    }
+  },
+  "scheduler_review_sha256": "a27bd4bcbe18aca3cc1c1d2bd37c7e99ec68d2e977c2bf4785dc54630a177db0",
+  "scheduler_verdict": "pass",
+  "schema_version": 1,
+  "synthetic": {
+    "exact_ties": "zero sentinel and earliest repeated maximum passed",
+    "facts": [
+      {
+        "expected": 66.66666666666667,
+        "name": "initial equal-weight transfer",
+        "observed": 66.66666666666667
+      },
+      {
+        "expected": 0.16666666666666666,
+        "name": "initial equal-weight fee",
+        "observed": 0.16666666666666669
+      },
+      {
+        "expected": 99.83333333333333,
+        "name": "initial post-fee wealth",
+        "observed": 99.83333333333331
+      },
+      {
+        "expected": 33.27777777777778,
+        "name": "initial equal holding",
+        "observed": 33.27777777777777
+      },
+      {
+        "expected": 33.27777777777778,
+        "name": "initial equal holding",
+        "observed": 33.27777777777777
+      },
+      {
+        "expected": 33.27777777777778,
+        "name": "initial equal holding",
+        "observed": 33.27777777777777
+      },
+      {
+        "expected": 82.64462809917354,
+        "name": "inflation-only terminal purchasing power",
+        "observed": 82.64462809917354
+      },
+      {
+        "expected": -0.09090909090909094,
+        "name": "inflation-only annual real return",
+        "observed": -0.09090909090909094
+      },
+      {
+        "expected": 17.355371900826455,
+        "name": "inflation-only maximum loss",
+        "observed": 17.355371900826455
+      },
+      {
+        "expected": 0.16666666666666666,
+        "name": "post-fee trough persists despite return recovery",
+        "observed": 0.16666666666668162
+      }
+    ],
+    "guarded_decisions": 105,
+    "guarded_short_horizons": 3,
+    "perturbation_year": 10,
+    "policies": 3,
+    "prefixes": 15
+  },
+  "task": "SOL-008",
+  "tolerances": {
+    "absolute": 1e-09,
+    "relative": 1e-10,
+    "selection_ties": "exact",
+    "trade_epsilon": 1e-10
+  },
+  "verify_py_sha256": "9d047ee31cd7341b0c4729f51fbe1a40ac8adccffbcba295a1539c561c9bbc9a"
+}

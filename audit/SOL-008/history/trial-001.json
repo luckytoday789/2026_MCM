@@ -1,0 +1,6 @@
+{
+  "trial": "adapt draft bindings before serialization fix",
+  "code": 1,
+  "stdout": "",
+  "stderr": "AssertionError: SOL task digest: observed='9f2dcabd76639084bdfc564c84448a9231d3717552705ef99788de8f741442a0', expected='976e528142a46d73217ce05dd968d5348e951668773811ce638cf4ef3bab6e68'\r\n"
+}

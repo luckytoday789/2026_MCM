@@ -1,0 +1,6 @@
+{
+  "trial": "correct runner task serialization",
+  "code": 1,
+  "stdout": "",
+  "stderr": "AssertionError: all_metrics/bills_keep/1/5/max_real_drawdown_pct: observed='3.051027745789159', expected=3.051027745789159\r\n"
+}
