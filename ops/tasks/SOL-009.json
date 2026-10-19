@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "SOL-009",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "2561688380d9e2527eb6066100adde70b7d0ea1c",
+  "depends_on": [
+    "SOL-001",
+    "SOL-002",
+    "SOL-004"
+  ],
+  "split": "development",
+  "max_seconds": 900,
+  "scope": "Resume independent chief policy/suitability design review after the prior attempt was blocked before useful work by account quota.",
+  "parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "final_outcomes_allowed": false,
+    "competition_outcomes_allowed": false,
+    "source_sha256": {
+      "specs/DEVELOPMENT_POLICY_PILOT.md": "94e436a979f2c232b729c352d209c83c76ba014a14613852ad447446cb6948e0",
+      "specs/development_policy_pilot_v1.json": "39ab8f78f6e4c487d00c1055e6d474c51a2d940e3cad951768a6c75874cc835a",
+      "audit/chief/policy_design_fixtures.py": "c3b4b907cfb9b179faae717a09067ee45862b13bf9e56d06e28a841ab43fff3b",
+      "audit/chief/policy-design-fixtures.json": "55108ba36593f3f342cff4be6be01fac7c77af6f74baabf787c04b9db684f10c",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46"
+    },
+    "plan_id": "development-policy-pilot-v1",
+    "primary_fee_rate": 0.0025,
+    "sensitivity_fee_rate": 0.005,
+    "supersedes_task": "SOL-007",
+    "failed_attempt_commit": "cf5e70860e7aac615775fe96b0c1696a9fc5226b",
+    "failure_reason": "Codex account usage limit before useful review",
+    "release_requires": "Coordinator confirms Sol quota is usable; heartbeat alone is insufficient"
+  },
+  "allowed_paths": [
+    "audit/SOL-009"
+  ],
+  "deliverables": [
+    "audit/SOL-009/review.md",
+    "audit/SOL-009/findings.json",
+    "audit/SOL-009/verify.py",
+    "audit/SOL-009/verification.json",
+    "audit/SOL-009/implementation-handoff.json"
+  ],
+  "commands": [],
+  "validation_commands": [
+    [
+      "{python}",
+      "-B",
+      "audit/SOL-009/verify.py",
+      "--check"
+    ]
+  ],
+  "acceptance_checks": [
+    "Verify exact pinned chief specification/config/fixture source hashes and agreement with authoritative problem/accounting; this is design review, not implementation acceptance.",
+    "Independently derive CE risk-aversion sign and positive homogeneity; prove the buffered gate implies positive actual net modeled benefit, including initial transfer and exact inflation. Check rational/constant-return, nontrading, tie, fee, and distribution-mixture examples with code.",
+    "Challenge t-1 boundary, four-fold scenario exclusion, 15:n mixture, minimum update history, scenario state isolation, target-change semantics and human-review lag/latching/holdings.",
+    "Challenge screening/selection rules, normative reserve and horizon assumptions, personalized threshold follow-up, disclosed number of trials and fair attribution of forecasting versus target change. No guarantee or unsupported statistical-significance claim.",
+    "Identify missing or inconsistent implementation details, output/provenance requirements, runtime/artifact-size concerns and any material design flaw; provide exact minimal fixes and a granular CPU-first implementation handoff.",
+    "Saved evidence is reproducible read-only and pinned to explicit source. State mathematical design verdict separately from evidence integrity; a well-supported rejection is a valid review result.",
+    "No production code/source/task/queue edits, actual-data strategy run, package install, final access, hidden tuning or autonomous dispatch."
+  ],
+  "instructions": "This immutable successor preserves SOL-007 at cf5e70860e7aac615775fe96b0c1696a9fc5226b, which never produced design evidence because of account quota. No accepted/submitted review is being recreated. Policy specification bytes are unchanged from their original pushed design commit; validate them at the new task base. Output only audit/SOL-009. Keep model I/O concise and do not repeatedly print source/metadata.\n\nRead AGENTS.md and the authoritative problem/accounting specs, then review exactly specs/DEVELOPMENT_POLICY_PILOT.md and specs/development_policy_pilot_v1.json at a996298fd22b11dc54deb43cb596f143da05bf93. This chief-authored design is deliberately pending independent review. Do not treat its mathematical assertions or proposed assumptions as already accepted. No new policy has been executed and no future final decision is frozen. Existing HY3-003 recovery review SOL-008 is independent work: do not repeat it or make this source-only design audit depend on baseline numerical acceptance.\n\nIndependently derive the CRRA CE formula at gamma=4, its fee homogeneity and the sufficient buffered trade condition. With synthetic small inputs, check initial all-bills transfer, exact inflation, equal-return no-trade, ties/epsilon and the fee multiplier being a decision hurdle rather than an actual extra fee. Compare against the chief's rational fixture values using abs/rel tolerance 1e-12; do not require cross-platform last-bit agreement in recorded floating residuals. Record expected and observed arithmetic, not merely a PASS label. Inspect target menus and active-target updates, no-trade initial allocations, mixture weights, training/evaluation independence, review threshold at t-1, latch, and holdings while pending. Challenge any ambiguity that would make two faithful implementations behave differently.\n\nAssess whether the one-year empirical utility approach is transparent and appropriate as a deliberately limited competition model; state what it cannot claim. Critique the suitability horizon caps, reserve assumptions, p90 tolerance gate, p10 purchasing-power screen, median-growth choice with 0.10 pp indifference, and necessary individualized review-threshold follow-up. Confirm all five profiles use their own horizons and a long horizon cannot override unwillingness/liquidity. Treat the 25% generic suspension threshold and gamma=4 as normative assumptions to disclose, not empirical findings. Review the paired/fold selection criteria and doubled-cost sensitivity for potential selection bias, hindsight or mismatched forecasts; automatic target changes must beat the same-context fixed-target control, not merely a weak reference. Preserve negative findings. You may recommend simplifying a requirement or correcting a flaw with explicit reasons; do not silently change parameters.\n\nDeliver review.md and findings.json containing exact reviewed source, separate design verdict (approve / changes_required), blockers versus nonblocking limitations, and concrete requested edits by section/key. Implement verify.py and verification.json with independently executed synthetic facts and hash checks; --check recomputes and compares read-only, preserves failed trials and exits nonzero if its saved evidence is inconsistent. A faithfully documented negative design verdict is a successfully completed review, so evidence verification should not fail merely because design findings require chief changes. Provide implementation-handoff.json listing a small proposed file/API split, tests, output columns/manifests, expected output counts/directory partition and estimated runtime risks. Keep implementation attempts <=30 minutes, deterministic HY3 commands and <=10MB per artifact in view. Do not invent actual timing without measurements; complexity estimates must be labelled estimates.\n\nDo not implement the production policy/driver, read raw/development/final numerical data, run new strategy outcomes, rerun previous broad suites, install skills/packages, alter private runtime/team files, publish tasks, start watchers, or modify anything outside audit/SOL-009 (ignored scratch allowed). Existing production APIs may be read to assess feasibility. The runner handles handoff and branch push. Chief will resolve findings and publish an immutable implementation task separately."
+}

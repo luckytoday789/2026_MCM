@@ -183,7 +183,7 @@
       "attempt": 1,
       "task_sha256": "5870dab708b3ead4a2f94384ef70528e9ea57ce6b39a8c5408a402c033a9a05b",
       "branch": "work/hy3/HY3-003-a1",
-      "note": "Submitted exact receipt and canonical structural checks passed. Numerical promotion pending independent SOL-006; do not rerun or recreate this task.",
+      "note": "Exact submitted receipt and chief preliminary checks passed. Numerical promotion pending SOL-008 recovery review; original SOL-006 stopped on quota. Do not rerun HY3 experiment.",
       "submitted_commit": "7652410d73425371110784ef5fa97c03470a074e"
     },
     {
@@ -195,7 +195,8 @@
       "branch": "work/sol/SOL-006-a1",
       "note": "Quota-exhausted incomplete attempt preserved; not accepted. Successor held until Sol availability is confirmed.",
       "reviewed_commit": "f193742daab0f55c166b9b084bd288151c1e764d",
-      "acceptance_evidence": "audit/chief/SOL-006-failure-review.json"
+      "acceptance_evidence": "audit/chief/SOL-006-failure-review.json",
+      "successor_task": "SOL-008"
     },
     {
       "id": "SOL-007",
@@ -206,7 +207,28 @@
       "branch": "work/sol/SOL-007-a1",
       "note": "Quota-exhausted incomplete attempt preserved; not accepted. Successor held until Sol availability is confirmed.",
       "reviewed_commit": "cf5e70860e7aac615775fe96b0c1696a9fc5226b",
-      "acceptance_evidence": "audit/chief/SOL-007-failure-review.json"
+      "acceptance_evidence": "audit/chief/SOL-007-failure-review.json",
+      "successor_task": "SOL-009"
+    },
+    {
+      "id": "SOL-008",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "976e528142a46d73217ce05dd968d5348e951668773811ce638cf4ef3bab6e68",
+      "branch": "work/sol/SOL-008-a1",
+      "waiting_for": "Sol quota availability confirmed by human or successful authenticated model response on that machine",
+      "note": "All code prerequisites accepted. Resource hold only; chief may release promptly when availability is confirmed. No automatic retry before then."
+    },
+    {
+      "id": "SOL-009",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "5a0d7be2638605a1e0aec4b83549d5cc35bfada5bfed962d9f0c09b041a87a36",
+      "branch": "work/sol/SOL-009-a1",
+      "waiting_for": "Sol quota availability confirmed by human or successful authenticated model response on that machine",
+      "note": "All code prerequisites accepted. Resource hold only; chief may release promptly when availability is confirmed. No automatic retry before then."
     }
   ]
 }
