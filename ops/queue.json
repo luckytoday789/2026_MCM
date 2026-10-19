@@ -229,6 +229,15 @@
       "branch": "work/sol/SOL-009-a1",
       "waiting_for": "Sol quota availability confirmed by human or successful authenticated model response on that machine",
       "note": "All code prerequisites accepted. Resource hold only; chief may release promptly when availability is confirmed. No automatic retry before then."
+    },
+    {
+      "id": "SOL-010",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "2b3378dd7e285fded4a9fc8653d6f415c96d949c5528cb72d7a8db3b634b9a0f",
+      "branch": "work/sol/SOL-010-a1",
+      "note": "One real response after Beijing 01:05; passive wait first. Do not release SOL-008/009 from heartbeats alone."
     }
   ]
 }

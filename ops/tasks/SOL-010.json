@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "SOL-010",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "commands",
+  "base_commit": "c9ad8fb429295dc2302d7adb5a106f19a71404d8",
+  "depends_on": [],
+  "split": "none",
+  "max_seconds": 2400,
+  "scope": "One timed subscription availability probe on the existing Sol machine; no mathematical work or final data.",
+  "parameters": {
+    "not_before": "2026-10-20T01:05:00+08:00",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "xhigh",
+    "max_model_calls": 1,
+    "max_model_seconds": 300,
+    "source_sha256": {
+      "scripts/probe_sol_availability.py": "03999b341b1c63063000e90a259813fd31ef62352457a8312b6c88c3a9771252"
+    },
+    "passive_wait_note": "Timeout includes sleep until the reset hint plus a bounded five-minute probe; waiting consumes no model calls."
+  },
+  "allowed_paths": [
+    "audit/SOL-010"
+  ],
+  "deliverables": [
+    "audit/SOL-010/availability.json"
+  ],
+  "commands": [
+    [
+      "{python}",
+      "-B",
+      "scripts/check_worker_env.py"
+    ],
+    [
+      "{python}",
+      "-B",
+      "scripts/probe_sol_availability.py",
+      "--not-before",
+      "2026-10-20T01:05:00+08:00",
+      "--output",
+      "audit/SOL-010/availability.json"
+    ]
+  ],
+  "validation_commands": [
+    [
+      "{python}",
+      "-c",
+      "import json; p=json.load(open('audit/SOL-010/availability.json',encoding='utf-8')); assert p['usable'] and p['exit_code']==0 and p['response'].strip()=='SAFEINVEST_SOL_AVAILABLE'; assert p['model_calls']==1 and p['model']=='gpt-6.1-sol'"
+    ]
+  ],
+  "acceptance_checks": [
+    "Exact immutable task, pinned base, canonical source/artifact hashes and real successful command exits.",
+    "Report timestamps are no earlier than 2026-10-20T01:05:00+08:00 and response is exactly SAFEINVEST_SOL_AVAILABLE with model exit code zero.",
+    "No account/model changes, purchases, model retry loop or mathematical recomputation; one actual model response on the assigned machine.",
+    "A successful probe proves access only at its time, not sufficient budget for subsequent reviews. Chief alone may release SOL-008/009 after validating the exact receipt."
+  ],
+  "instructions": "Run only the prescribed commands with the existing Python 3.12 environment and existing Codex login. This commands task is deliberately not an agent task: the script waits without model calls until the specified reset hint, then makes exactly one read-only no-tools response request to the assigned Sol model. Do not rerun failed reviews, change models/accounts, buy credits, remove worktrees, alter any published task or open final data. The longer wall timeout allows passive waiting; model time is capped at five minutes. Preserve failed report/logs and let the runner publish failure. No automatic retry inside this attempt. Parent runner handles commit/push. A success is current access evidence only; the coordinator verifies it before releasing existing immutable review holds."
+}
