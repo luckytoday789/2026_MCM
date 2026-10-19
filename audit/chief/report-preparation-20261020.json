@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "report_preparation_review",
+  "observed_at_utc": "2026-10-19T16:09:53.241314+00:00",
+  "snapshot_main_commit": "0a5cef40fd680c207d6903128249d1acfa5d9472",
+  "python": "3.12.0",
+  "result": "documentation_ready_for_integration_only",
+  "waiting_task_checks": [
+    {
+      "id": "SOL-008",
+      "task_sha256": "976e528142a46d73217ce05dd968d5348e951668773811ce638cf4ef3bab6e68",
+      "base_commit": "2561688380d9e2527eb6066100adde70b7d0ea1c",
+      "source_files_checked": 8,
+      "code_dependencies_accepted": true,
+      "result_branch_exists": false,
+      "state": "waiting_for_confirmed_model_availability"
+    },
+    {
+      "id": "SOL-009",
+      "task_sha256": "5a0d7be2638605a1e0aec4b83549d5cc35bfada5bfed962d9f0c09b041a87a36",
+      "base_commit": "2561688380d9e2527eb6066100adde70b7d0ea1c",
+      "source_files_checked": 6,
+      "code_dependencies_accepted": true,
+      "result_branch_exists": false,
+      "state": "waiting_for_confirmed_model_availability"
+    }
+  ],
+  "report_checks": {
+    "unique_problem_requirements": 15,
+    "source_registry_entries": 10,
+    "source_links_and_queue_bindings": "verified",
+    "planned_pages": 10.0,
+    "rendered_pages": null,
+    "render_status": "not_rendered_markdown_workbench",
+    "formula_review": "Matched fee funding, inflation timing, CAGR, sample annual volatility, post-fee-inclusive drawdown, quantile and trade-share definitions to locked contracts; no new formula or policy parameter"
+  },
+  "files_sha256": {
+    "report/README.md": "f7b63ef53c44245d3e4f966f0c378d26c59205080f717af4a7b868c3ec46fd92",
+    "report/methods-draft.md": "54fcd6f8c789687410fe5bd0297dca30cd2c31d88352804b164ed9fe55b69ef1",
+    "report/evidence-map.json": "d7bc385bfd2cc17806797fc10c6f0de55842c17938a0c0acde9ba0c45958e86c"
+  },
+  "file_hash_basis": "UTF-8 LF bytes",
+  "status_snapshot": {
+    "sol": {
+      "commit": "6415972c1471297004b1cc99c735dc3e9d901736",
+      "state": "idle",
+      "updated_at": "2026-10-19T16:01:35.530561+00:00",
+      "lease_until": "2026-10-19T16:11:35.530561+00:00",
+      "python": "3.12.14",
+      "model_availability_confirmed": false
+    },
+    "hy3": {
+      "commit": "0f8e6b43e0c0bb011a5fb4e1207b9eb7b3781f6f",
+      "state": "idle",
+      "updated_at": "2026-10-19T16:03:55.687648+00:00",
+      "lease_until": "2026-10-19T16:13:55.687648+00:00",
+      "python": "3.12.10",
+      "model_availability_confirmed": null
+    }
+  },
+  "new_worker_result_commit": false,
+  "queue_changed": false,
+  "final_data_open": false,
+  "final_outcomes_read": false,
+  "competition_experiment_executed": false,
+  "production_or_runtime_code_changed": false,
+  "tests_rerun": false,
+  "test_rationale": "Documentation and task-source metadata checks only; no implementation changed and no new numerical evidence claimed",
+  "independent_review_pending": [
+    "SOL-008",
+    "SOL-009"
+  ],
+  "skills": {
+    "applied": "math-modeling-skill",
+    "pinned_commit": "e70b85b8a41aeb748789f66860c6bd4d123871cd",
+    "license": "MIT",
+    "new_install": false
+  },
+  "human_action": "Existing ops/NEEDS_HUMAN.md request: confirm a successful Codex response on Sol before releasing waiting reviews"
+}
