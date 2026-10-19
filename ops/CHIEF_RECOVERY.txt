@@ -1,0 +1,50 @@
+Chief recovery checkpoint — 2026-10-19, Asia/Shanghai
+
+The user explicitly requested resuming this machine's chief role after its local
+stop. Preserve all task receipts, worktrees and environments. Start one chief
+watcher only after confirming that the previous watcher and its task processes
+are absent. Local STOP/locks are machine state, not a global pause request.
+
+Observed at approximately 21:39; fetch fresh state before making decisions:
+- Previous chief PID 23652 is absent. No local project Python/Codex task process
+  was found. The main checkout and the preserved SOL-001 review worktree are clean.
+- Local main and origin/main were both 74f67bf251cdf9014a26a30ce49a418884945003,
+  with no pending commit to upload. The previous chief status was stopped.
+- SOL-001 is already accepted. Do not dispatch or calculate that task again.
+- SOL-002 was delivered at 54d90abd3d35f6578bab964cd54dcce42e578f53.
+- SOL-003 was delivered at bb74c0f25cb18c3e02fef6d51416422514a8f503.
+  Both receipts say completed, but chief acceptance is still pending. Inspect
+  exact commits and their findings rather than treating that label as acceptance.
+- HY3 is now registered on Python 3.12.10; Sol on Python 3.12.14. Their latest
+  leases were live. The old HY3 environment-help message must be re-evaluated.
+- HY3-002 is published but waiting for SOL-003 acceptance and 3.12 registration.
+  Release the existing task when its actual prerequisites pass; do not mutate it.
+- Local Python is 3.12.0. Source hashes, schema, key completeness and exact splits
+  passed recovery checks. No final outcomes were computed.
+- Final-data access remains closed. Global control and queue were not changed
+  by the recovery preparation.
+
+Next bounded chief turn:
+1. Review the existing SOL-002/SOL-003 deliveries; account explicitly for their
+   legacy checkout-byte receipts and preserve any unverifiable optional logs.
+   Promote only verified required outputs and record exact accepted commits.
+2. If prerequisites pass, release HY3-002 promptly and clear resolved help items.
+3. Proceed with the development baseline driver and concrete development jobs,
+   incorporating Sol's plan clarifications. While a remote job runs, continue
+   useful chief specifications, suitability reasoning and report scaffolding.
+   Avoid serializing unrelated work or repeating already valid checks.
+4. User requested faster unattended progress. The proposed keep-awake support,
+   transient-network recovery and chief continuation/wakeup improvements are
+   NOT implemented yet. Address these with relevant focused checks when useful;
+   do not claim they are already active. Preserve independent review and final
+   freeze gates, and preserve remote single-writer ownership.
+5. Team information is saved privately on the chief machine in the ignored
+   .runtime/team-private.json. It is not a shared repository artifact. An approval
+   review rejected uploading the member/ID file to GitHub without explicit
+   authorization for that destination. Keep it local, do not upload those details
+   or include them in pushed artifacts without that authorization. Continue
+   modeling and local report preparation without making this a task dependency.
+
+This is a historical checkpoint, not an override of a newer queue or receipt.
+The local recovery archive under .runtime/recovery preserves the prior logs and
+stop marker before orderly restart. Do not remove that archive or worktrees.
