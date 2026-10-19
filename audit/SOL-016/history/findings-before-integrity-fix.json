@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-016",
+  "attempt": 1,
+  "status": "implementation_delivered_pending_chief_review",
+  "base_commit": "dd60066010f6904565fb51e99be8088285102e57",
+  "release_metadata_commit": "e018e2a70f9d1191d86e897df5f943228956139f",
+  "release": "SOL-016 ready after accepted SOL-021 review; no fetch, merge, branch change, commit or push",
+  "upstream": {
+    "specs/PROBLEM_LOCK.md": {
+      "sha256_lf": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "git_blob_sha1": "1ba83723824afde3b29a5b3c8b0ac5d433a68c4b"
+    },
+    "specs/ACCOUNTING.md": {
+      "sha256_lf": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "git_blob_sha1": "0627337a522651189b7a985e94b6af9a1f7a4a4d"
+    },
+    "specs/DEVELOPMENT_POLICY_PILOT_V2.md": {
+      "sha256_lf": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "git_blob_sha1": "d1f02265d988444c20a7d61595306c86b9fa33c4"
+    },
+    "specs/development_policy_pilot_v2.json": {
+      "sha256_lf": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "git_blob_sha1": "6e4fa5331624b7583584ccbcbb09a8a858dc2557"
+    },
+    "specs/policy_driver_layout_v2.json": {
+      "sha256_lf": "f431e661c260f7f6e40330661e77724dc3ddcafeafed1a3f0b6c31781a4e8329",
+      "git_blob_sha1": "dc8c5b8e98526c9bc8a8340abc4bb5b9ed5a8d09"
+    },
+    "specs/POLICY_CASE_ENGINE.md": {
+      "sha256_lf": "c984e230eecb720613b864a910d95921af1aa805f79fa68c7044f905410dec62",
+      "git_blob_sha1": "bafe77b5b0d31319ad8f43aad6059fd57232f8dd"
+    },
+    "src/safeinvest/accounting.py": {
+      "sha256_lf": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "git_blob_sha1": "6ff55fed7cc0ab40f6e609dad7657efc92cd09e7"
+    },
+    "src/safeinvest/backtest.py": {
+      "sha256_lf": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+      "git_blob_sha1": "87f5f107f5f76d5da155fc134c1b036b7c431987"
+    },
+    "src/safeinvest/metrics.py": {
+      "sha256_lf": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "git_blob_sha1": "383aa3fbeed74bce4d4ec1bce7bb091097fc5e05"
+    },
+    "src/safeinvest/baselines.py": {
+      "sha256_lf": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+      "git_blob_sha1": "5b1c5ffa310923da2866492145871977edffb2a5"
+    },
+    "src/safeinvest/experiments.py": {
+      "sha256_lf": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+      "git_blob_sha1": "f9d28e72ce2cbf6ae0bb08b80f8ffab486b192da"
+    },
+    "specs/POLICY_ANALYSIS.md": {
+      "sha256_lf": "a2220482c861799280815b4e65d73e79e53666816ac9e7e72a38d5f48a6e53b8",
+      "git_blob_sha1": "0100c2f07fd8754687f2ec641ae59bfc4f1d9ede"
+    },
+    "src/safeinvest/__init__.py": {
+      "sha256_lf": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+      "git_blob_sha1": "177f42cd6d15de17cadda7bd49382921a27e565d"
+    }
+  },
+  "delivered_api": {
+    "module": "src/safeinvest/policy_analysis.py",
+    "function": "build_analysis_tables(metrics, *, config, split) -> AnalysisTables",
+    "fields": [
+      "paired_differences",
+      "comparison_gates",
+      "selection",
+      "profile_screen",
+      "profile_recommendations"
+    ],
+    "filesystem_access": false,
+    "source_authentication": false
+  },
+  "delivered_files": [
+    "src/safeinvest/policy_analysis.py",
+    "tests/test_policy_analysis.py",
+    "audit/SOL-016/implementation.md",
+    "audit/SOL-016/findings.json",
+    "audit/SOL-016/verify.py",
+    "audit/SOL-016/verification.json"
+  ],
+  "schemas": {
+    "paired_differences": {
+      "count": 400,
+      "fields": [
+        "candidate_mode",
+        "count_difference_units",
+        "fee_rate",
+        "fold_id",
+        "growth_difference_units",
+        "horizon",
+        "human_review_count_difference",
+        "human_review_share_difference_units",
+        "human_review_share_pct_difference",
+        "loss_difference_units",
+        "max_real_drawdown_pct_difference",
+        "net_real_cagr_pct_difference",
+        "nominal_fee_difference_units",
+        "nominal_fee_sum_difference",
+        "reference_mode",
+        "scenario_id",
+        "split",
+        "target_change_count_difference",
+        "terminal_real_wealth_difference",
+        "terminal_real_wealth_difference_units",
+        "trade_share_difference_units",
+        "trade_share_ex_initial_pct_difference",
+        "trade_share_pct_difference"
+      ]
+    },
+    "comparison_gates": {
+      "count": 100,
+      "fields": [
+        "candidate_mode",
+        "count_difference_units",
+        "fee_rate",
+        "flags",
+        "folds",
+        "growth_difference_units",
+        "horizon",
+        "human_review_share_difference_units",
+        "loss_difference_units",
+        "marginal_p10_growth_difference_pp",
+        "marginal_p90_loss_difference_pp",
+        "median_paired_differences",
+        "median_paired_growth_gain_pp",
+        "nominal_fee_difference_units",
+        "passed",
+        "positive_fold_count",
+        "reasons",
+        "reference_mode",
+        "scenario_count",
+        "scenario_ids",
+        "split",
+        "terminal_real_wealth_difference_units",
+        "trade_share_difference_units"
+      ]
+    },
+    "selection": {
+      "fields": [
+        "adaptive",
+        "comparison_horizon",
+        "context",
+        "doubled_fee_support",
+        "primary_fee_rate",
+        "primary_support",
+        "reasons",
+        "role",
+        "selected_mode",
+        "sensitivity_may_reselect",
+        "split"
+      ]
+    },
+    "profile_screen": {
+      "count": 30,
+      "fields": [
+        "candidate_class",
+        "exceedance_count",
+        "exceedance_denominator",
+        "exceedance_fraction",
+        "exceedance_units",
+        "fee_rate",
+        "flags",
+        "growth_units",
+        "horizon",
+        "liquidity",
+        "loss_tolerance_pct",
+        "loss_units",
+        "median_growth_pct",
+        "median_loss_pct",
+        "minimum_target_bill_reserve",
+        "mode",
+        "p10_growth_pct",
+        "p90_loss_pct",
+        "personalized_overlay_pending",
+        "profile",
+        "qualified",
+        "reasons",
+        "scenario_count",
+        "severe_loss_pct",
+        "severe_scenario_id",
+        "source_metric_keys",
+        "split",
+        "status",
+        "target_bill_reserve"
+      ]
+    },
+    "profile_recommendations": {
+      "count": 10,
+      "fields": [
+        "action",
+        "candidate_outcomes",
+        "failed_candidate_reasons",
+        "fee_rate",
+        "horizon",
+        "indifference_classes",
+        "indifference_pp_per_year",
+        "liquidity",
+        "loss_tolerance_pct",
+        "maximum_qualifying_median_growth_pct",
+        "pending_holdings_existing",
+        "pending_holdings_initial",
+        "personalized_follow_up",
+        "personalized_overlay_pending",
+        "profile",
+        "qualifying_classes",
+        "reasons",
+        "selected_class",
+        "selected_mode",
+        "split",
+        "status"
+      ]
+    }
+  },
+  "shape": {
+    "input_metric_field_count": 34,
+    "scenario_metric_rows": "80*N",
+    "paired_rows": "100*N",
+    "comparison_gate_rows": 100,
+    "profile_candidate_rows": 30,
+    "profile_recommendation_rows": 10,
+    "generated_audit_N": 8,
+    "production_shape_test": "120 explicitly generated scenario IDs with development label: 9600 input and 12000 paired rows; never competition data"
+  },
+  "behavior": {
+    "paired_metrics": "six accepted METRIC_VALUES plus applicable human-review count/share and target-change differences",
+    "gate_units": "growth differences pp/year; loss/share differences pp; money in original nominal/real units",
+    "threshold_tolerance": 0,
+    "controls": [
+      "balanced_context minus balanced_cost",
+      "balanced_adaptive minus balanced_context",
+      "balanced_adaptive minus balanced_cost"
+    ],
+    "primary": "H=30 k=.0025 only; adaptive can pass when context fails but must pass both controls",
+    "sensitivity": "k=.005 checks the same selected mode; no reselection",
+    "customers": "only conservative_cost, balanced_cost, growth_cost; all own horizons, two fees, all failure reasons",
+    "overlay": "all provisional with personalized_overlay_pending=true; own tolerance and own H rerun/rescreen risk AND purchasing power; failure refers without reselection"
+  },
+  "validation": {
+    "python": "3.12.14",
+    "focused_tests": 19,
+    "initial_test_seconds": 1.337,
+    "actual_test_log": "history/trial-001-tests.json",
+    "verification": "Fraction scalar checks of all pairs/gates/screens, independent binary64 threshold oracle, independent ten recommendations and focused suite; exact policy decisions versus tolerance-based statistic cross-checks.",
+    "corruption_demonstration": "Recorded separately in integrity-self-tests.json after exclusive creation; scratch evidence retained; original bytes hashed before/after",
+    "verification_failure_count": 1
+  },
+  "rejections": [
+    "missing/extra schema keys",
+    "duplicate/unmatched or incomplete mode-fee-horizon-scenario grid",
+    "noncontiguous or non-multiple-of-four scenario sets",
+    "wrong fixed folds",
+    "fees other than .0025/.005",
+    "unregistered horizons/modes",
+    "unknown/final/mismatched splits",
+    "nonfinite metrics",
+    "boolean/string/null numeric substitutes",
+    "nonsensical loss/wealth/fees/counts",
+    "reference diagnostics other than null; null required policy diagnostics",
+    "changed fixed v2 configuration"
+  ],
+  "failed_trials": [
+    {
+      "id": "infrastructure-001",
+      "evidence": "history/infrastructure-001.json",
+      "diagnosis": "exec_command initialization unavailable; no command executed. Permitted operations used Node fs/child_process. A read-only metadata filename probe failed; corrected to SOL-016.json."
+    },
+    {
+      "id": "verification-initialize-001",
+      "evidence": "history/verification-initialize-001.json",
+      "preserved_verifier": "history/failed-initialize-001-verify.py",
+      "diagnosis": "history/diagnosis-001.json",
+      "cause": "Rational oracle expected exact ideal loss difference 1 to pass, while accepted binary64 quantiles yielded 1.0000000000000009. Fixed the oracle to verify threshold flags using independent binary64 scalar arithmetic and retain Fraction checks and negative findings. Policy implementation and thresholds unchanged."
+    }
+  ],
+  "implementation_test_failures": [],
+  "negative_fixtures": [
+    "paired/marginal sign reversal in both growth directions",
+    "marginal loss difference 0 versus incorrect paired p90 18",
+    "threshold equality and neighboring floats",
+    "zero fold excluded and two folds fail",
+    "adaptive passes only one fixed control in each direction",
+    "context fails, adaptive passes both",
+    "selected adaptive unsupported at doubled cost without replacement",
+    "all candidate failure reasons and all-referral",
+    "liquidity/willingness vetoes despite longer horizon",
+    "p90 passes at tolerance with actual exceedances",
+    "p10 failure; exact .10 indifference and neighbors"
+  ],
+  "limitations": [
+    "Synthetic metric-level fixtures establish analysis behavior, not path simulation, development performance, statistical significance, forecast, or policy benefit.",
+    "API validates canonical typed metrics/complete grids and split shape; callers cannot authenticate source origin with labels.",
+    "Input retains accepted metric_row legacy COMMON_UNITS strings. Source describes CAGR levels as percent/year; paired outputs use percentage points/year and profile levels percent/year. No core unit schema was edited.",
+    "Personalized overlays, exact original-input provenance, production writer/CLI, final gate and customer deployment remain separate unapproved work.",
+    "Worker completion is not chief acceptance."
+  ]
+}

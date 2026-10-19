@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "original_sha256_before": "2f991051edb333f5f59cc0e9ff9053795376d957f35b7cce8784fe28a4ca7347",
+  "original_sha256_after": "2f991051edb333f5f59cc0e9ff9053795376d957f35b7cce8784fe28a4ca7347",
+  "runs": [
+    {
+      "name": "valid-check",
+      "args": [
+        "-B",
+        "audit/SOL-016/verify.py",
+        "--check"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "wall_seconds": 4.699,
+      "stdout": "{\"status\": \"passed\", \"read_only\": true, \"evidence_unchanged\": true, \"scalar_rational_comparisons\": 11995, \"tests\": 19}\r\n",
+      "stderr": "",
+      "before_sha256": "2f991051edb333f5f59cc0e9ff9053795376d957f35b7cce8784fe28a4ca7347",
+      "after_sha256": "2f991051edb333f5f59cc0e9ff9053795376d957f35b7cce8784fe28a4ca7347",
+      "bytes_unchanged": true
+    },
+    {
+      "name": "exclusive-refusal",
+      "args": [
+        "-B",
+        "audit/SOL-016/verify.py"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "wall_seconds": 0.341,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 495, in <module>\r\n    main()\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 487, in main\r\n    raise FileExistsError(\"verification already exists; use --check\")\r\nFileExistsError: verification already exists; use --check\r\n",
+      "before_sha256": "2f991051edb333f5f59cc0e9ff9053795376d957f35b7cce8784fe28a4ca7347",
+      "after_sha256": "2f991051edb333f5f59cc0e9ff9053795376d957f35b7cce8784fe28a4ca7347",
+      "bytes_unchanged": true
+    },
+    {
+      "name": "wrong-number",
+      "args": [
+        "-B",
+        "audit/SOL-016/verify.py",
+        "--check",
+        "--evidence",
+        "audit/SOL-016/history/corruption/wrong-number.json"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "wall_seconds": 4.753,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 495, in <module>\r\n    main()\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 477, in main\r\n    compare(recompute(), expected)\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 437, in compare\r\n    compare(actual[key], saved[key], path + \".\" + key)\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 437, in compare\r\n    compare(actual[key], saved[key], path + \".\" + key)\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 432, in compare\r\n    raise RuntimeError(\"evidence type mismatch: \" + path)\r\nRuntimeError: evidence type mismatch: root.paired_marginal_reversal.median_paired_growth_gain_pp\r\n",
+      "before_sha256": "5c2e9847a6f62920d60a36a5c2130dedfb15c2a83a53bd99a5b2668876bab060",
+      "after_sha256": "5c2e9847a6f62920d60a36a5c2130dedfb15c2a83a53bd99a5b2668876bab060",
+      "bytes_unchanged": true
+    },
+    {
+      "name": "wrong-delivered-hash",
+      "args": [
+        "-B",
+        "audit/SOL-016/verify.py",
+        "--check",
+        "--evidence",
+        "audit/SOL-016/history/corruption/wrong-delivered-hash.json"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "wall_seconds": 4.597,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 495, in <module>\r\n    main()\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 477, in main\r\n    compare(recompute(), expected)\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 437, in compare\r\n    compare(actual[key], saved[key], path + \".\" + key)\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 437, in compare\r\n    compare(actual[key], saved[key], path + \".\" + key)\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 437, in compare\r\n    compare(actual[key], saved[key], path + \".\" + key)\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 454, in compare\r\n    raise RuntimeError(\"evidence exact mismatch: \" + path)\r\nRuntimeError: evidence exact mismatch: root.binding.delivered_sha256_lf.src/safeinvest/policy_analysis.py\r\n",
+      "before_sha256": "e50e49c142338fcb95130d4bf530e1034e087db1b6a75fc72052b2d9c262b0e6",
+      "after_sha256": "e50e49c142338fcb95130d4bf530e1034e087db1b6a75fc72052b2d9c262b0e6",
+      "bytes_unchanged": true
+    },
+    {
+      "name": "extra-key",
+      "args": [
+        "-B",
+        "audit/SOL-016/verify.py",
+        "--check",
+        "--evidence",
+        "audit/SOL-016/history/corruption/extra-key.json"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "wall_seconds": 4.63,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 495, in <module>\r\n    main()\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 477, in main\r\n    compare(recompute(), expected)\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 435, in compare\r\n    raise RuntimeError(\"evidence keys mismatch: \" + path)\r\nRuntimeError: evidence keys mismatch: root\r\n",
+      "before_sha256": "3d19d147e30354c4df03e085e2870301c54cb1c479647e7628eb114c5119f32b",
+      "after_sha256": "3d19d147e30354c4df03e085e2870301c54cb1c479647e7628eb114c5119f32b",
+      "bytes_unchanged": true
+    },
+    {
+      "name": "missing-key",
+      "args": [
+        "-B",
+        "audit/SOL-016/verify.py",
+        "--check",
+        "--evidence",
+        "audit/SOL-016/history/corruption/missing-key.json"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "wall_seconds": 4.626,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 495, in <module>\r\n    main()\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 477, in main\r\n    compare(recompute(), expected)\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 435, in compare\r\n    raise RuntimeError(\"evidence keys mismatch: \" + path)\r\nRuntimeError: evidence keys mismatch: root\r\n",
+      "before_sha256": "f24b779f9fa62fa43299e0bfd72599c3841f7a1c4001e2343f7dc72152cb1642",
+      "after_sha256": "f24b779f9fa62fa43299e0bfd72599c3841f7a1c4001e2343f7dc72152cb1642",
+      "bytes_unchanged": true
+    },
+    {
+      "name": "threshold-neighbor",
+      "args": [
+        "-B",
+        "audit/SOL-016/verify.py",
+        "--check",
+        "--evidence",
+        "audit/SOL-016/history/corruption/threshold-neighbor.json"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "wall_seconds": 4.671,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 495, in <module>\r\n    main()\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 477, in main\r\n    compare(recompute(), expected)\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 437, in compare\r\n    compare(actual[key], saved[key], path + \".\" + key)\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 437, in compare\r\n    compare(actual[key], saved[key], path + \".\" + key)\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 432, in compare\r\n    raise RuntimeError(\"evidence type mismatch: \" + path)\r\nRuntimeError: evidence type mismatch: root.paired_marginal_reversal.median_paired_growth_gain_pp\r\n",
+      "before_sha256": "b0285a216423bb667f9fc9866787311592e716193b991549f960fd8d008a01de",
+      "after_sha256": "b0285a216423bb667f9fc9866787311592e716193b991549f960fd8d008a01de",
+      "bytes_unchanged": true
+    },
+    {
+      "name": "duplicate-key",
+      "args": [
+        "-B",
+        "audit/SOL-016/verify.py",
+        "--check",
+        "--evidence",
+        "audit/SOL-016/history/corruption/duplicate-key.json"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "wall_seconds": 0.401,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 495, in <module>\r\n    main()\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 476, in main\r\n    expected = read_json(args.evidence)\r\n               ^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 465, in read_json\r\n    return json.loads(path.read_bytes(), object_pairs_hook=unique,\r\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Users\\���»�\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\__init__.py\", line 359, in loads\r\n    return cls(**kw).decode(s)\r\n           ^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Users\\���»�\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\decoder.py\", line 338, in decode\r\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\r\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Users\\���»�\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\json\\decoder.py\", line 354, in raw_decode\r\n    obj, end = self.scan_once(s, idx)\r\n               ^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-016-a1\\audit\\SOL-016\\verify.py\", line 462, in unique\r\n    raise RuntimeError(\"duplicate saved evidence key: \" + key)\r\nRuntimeError: duplicate saved evidence key: status\r\n",
+      "before_sha256": "ff51455857fbe188e1373ddc57469dd0e1e8c186c20deae969d7a4e442f2b5e0",
+      "after_sha256": "ff51455857fbe188e1373ddc57469dd0e1e8c186c20deae969d7a4e442f2b5e0",
+      "bytes_unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "python": "3.12.14",
+  "inputs": "explicitly generated synthetic metric grids only",
+  "runs": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_policy_analysis.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_adaptive_fails_only_context_control (test_policy_analysis.AnalysisTests.test_adaptive_fails_only_context_control) ... ok\r\ntest_adaptive_fails_only_cost_control (test_policy_analysis.AnalysisTests.test_adaptive_fails_only_cost_control) ... ok\r\ntest_adaptive_passes_both_when_context_fails (test_policy_analysis.AnalysisTests.test_adaptive_passes_both_when_context_fails) ... ok\r\ntest_all_five_own_horizons_and_fixed_modes (test_policy_analysis.AnalysisTests.test_all_five_own_horizons_and_fixed_modes) ... ok\r\ntest_complete_counts_contrasts_units_and_source_differences (test_policy_analysis.AnalysisTests.test_complete_counts_contrasts_units_and_source_differences) ... ok\r\ntest_config_is_pinned_and_records_have_no_aliases_or_io (test_policy_analysis.AnalysisTests.test_config_is_pinned_and_records_have_no_aliases_or_io) ... ok\r\ntest_four_fold_medians_and_strict_zero_exclusion (test_policy_analysis.AnalysisTests.test_four_fold_medians_and_strict_zero_exclusion) ... ok\r\ntest_gain_and_tail_loss_exact_boundaries_and_neighbors (test_policy_analysis.AnalysisTests.test_gain_and_tail_loss_exact_boundaries_and_neighbors) ... ok\r\ntest_inclusive_point_ten_indifference_and_each_side (test_policy_analysis.AnalysisTests.test_inclusive_point_ten_indifference_and_each_side) ... ok\r\ntest_liquidity_horizon_and_willingness_vetoes_all_retained (test_policy_analysis.AnalysisTests.test_liquidity_horizon_and_willingness_vetoes_all_retained) ... ok\r\ntest_marginal_loss_not_quantile_of_pairs (test_policy_analysis.AnalysisTests.test_marginal_loss_not_quantile_of_pairs) ... ok\r\ntest_missing_extra_duplicate_and_mismatched_grids (test_policy_analysis.AnalysisTests.test_missing_extra_duplicate_and_mismatched_grids) ... ok\r\ntest_nonfinite_bool_null_numeric_and_unit_rejections (test_policy_analysis.AnalysisTests.test_nonfinite_bool_null_numeric_and_unit_rejections) ... ok\r\ntest_only_h30_primary_and_sensitivity_cannot_reselect (test_policy_analysis.AnalysisTests.test_only_h30_primary_and_sensitivity_cannot_reselect) ... ok\r\ntest_opposite_paired_and_marginal_growth_conclusions (test_policy_analysis.AnalysisTests.test_opposite_paired_and_marginal_growth_conclusions) ... ok\r\ntest_p10_failure_and_all_referral_keep_all_negative_evidence (test_policy_analysis.AnalysisTests.test_p10_failure_and_all_referral_keep_all_negative_evidence) ... ok\r\ntest_p90_equality_passes_despite_real_exceedance_and_exact_severe_id (test_policy_analysis.AnalysisTests.test_p90_equality_passes_despite_real_exceedance_and_exact_severe_id) ... ok\r\ntest_strict_split_rejection_and_generated_development_shape (test_policy_analysis.AnalysisTests.test_strict_split_rejection_and_generated_development_shape) ... ok\r\ntest_tail_growth_exact_boundary_and_neighbors (test_policy_analysis.AnalysisTests.test_tail_growth_exact_boundary_and_neighbors) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 19 tests in 1.473s\r\n\r\nOK\r\n",
+      "wall_seconds": 1.975
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "audit/SOL-016/verify.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"passed\", \"read_only\": true, \"evidence_unchanged\": true, \"scalar_rational_comparisons\": 11995, \"tests\": 19}\r\n",
+      "stderr": "",
+      "wall_seconds": 4.088
+    }
+  ]
+}

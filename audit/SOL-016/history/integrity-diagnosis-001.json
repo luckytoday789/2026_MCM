@@ -1,0 +1,5 @@
+{
+  "issue": "Initial wrong-number and threshold-neighbor scratch files were rewritten through JavaScript JSON, which removes .0 token distinctions. The checker rejected an unrelated float/int type mismatch before the intended numeric corruption.",
+  "effect": "Those two probes do not prove numeric-corruption rejection. Other exact-key/hash/duplicate/exclusive probes hit intended checks. Original verification and all scratch bytes preserved.",
+  "fix": "Generate scratches with Python json.load/dump to preserve number types; require expected failure paths. No policy or original evidence numeric facts changed."
+}
