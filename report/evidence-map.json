@@ -130,7 +130,7 @@
       "code_verdict": "changes_required"
     },
     "PERSONALIZED_HANDOFF": {
-      "state": "design_pending_review",
+      "state": "accepted_design",
       "paths": [
         "specs/PERSONALIZED_REVIEW.md",
         "specs/personalized_review_v1.json"
@@ -138,7 +138,10 @@
       "production_execution_authorized": false,
       "competition_outcomes_computed": false,
       "source_commit": "a2205fb7edd2527253664efad601f0da290f3661",
-      "independent_review_task": "SOL-020"
+      "independent_review_task": "SOL-020",
+      "independent_review_commit": "2fbd4598606b41a786bd931046adb0ecc8b42d78",
+      "chief_acceptance_evidence": "audit/chief/SOL-020-review.json",
+      "implementation_verdict": "not_reviewed"
     },
     "POLICY_KERNEL_K2_REJECTION": {
       "state": "accepted_negative_review",

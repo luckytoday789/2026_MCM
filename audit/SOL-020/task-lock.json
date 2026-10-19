@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "SOL-020",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "a2205fb7edd2527253664efad601f0da290f3661",
+  "depends_on": [
+    "SOL-013"
+  ],
+  "split": "synthetic",
+  "max_seconds": 900,
+  "scope": "Targeted independent design review of personalized own-horizon follow-up, no fallback, and separate fee-specific recommendations; no implementation or actual outcomes.",
+  "parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "competition_outcomes_allowed": false,
+    "final_outcomes_allowed": false,
+    "source_sha256": {
+      "specs/PERSONALIZED_REVIEW.md": "0365fdf989ae7abfeda0bc3f48f8c86245a40dd9e48b3c6ae8d2d26c0b7c4987",
+      "specs/personalized_review_v1.json": "2edc9410b291f8f1f7235344e685d004c2f3cfd80844539df96759e9b305b4ad",
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "specs/POLICY_ANALYSIS.md": "a2220482c861799280815b4e65d73e79e53666816ac9e7e72a38d5f48a6e53b8",
+      "specs/POLICY_CASE_ENGINE.md": "c984e230eecb720613b864a910d95921af1aa805f79fa68c7044f905410dec62",
+      "specs/POLICY_RESULT_WRITER.md": "ce0c43fad34ebdc44fc6f6bda395c562781e500cdc4b855ee7e0cbf937bec0b4",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "audit/SOL-013/findings.json": "b2c82f41ed0abd7c62cf350ed5b554c967085d5cbbee70a3e62d4f6feb64c6bd",
+      "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462"
+    },
+    "prior_design_review_commit": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+    "primary_fee_rate": 0.0025,
+    "sensitivity_fee_rate": 0.005,
+    "release_requires": "Accepted SOL-013 corrected design only. Independent of pending K1/code reviews because this task must not execute or certify policy code."
+  },
+  "allowed_paths": [
+    "audit/SOL-020"
+  ],
+  "deliverables": [
+    "audit/SOL-020/review.md",
+    "audit/SOL-020/findings.json",
+    "audit/SOL-020/verify.py",
+    "audit/SOL-020/verification.json"
+  ],
+  "commands": [],
+  "validation_commands": [
+    [
+      "{python}",
+      "-B",
+      "audit/SOL-020/verify.py",
+      "--check"
+    ]
+  ],
+  "acceptance_checks": [
+    "Exact task/base and source hashes, allowed paths, actual Python 3.12 synthetic execution; no source outcomes.",
+    "New handoff retains approved own H/tolerance, fixed class mapping and priors, strict lag/latch, risk AND purchasing-power rescreen and no fallback; identify contradictions rather than inventing improvements.",
+    "Independent scalar/rational examples cover final-year crossing without later review, equal threshold, zero-fee component-dollar keep with subsequent returns, p90 pass with exceedances, risk-only/power-only failure and referral without reranking.",
+    "Primary versus fee-specific counterfactual class logic is explicit; differing-class comparisons cannot imply same-policy robustness or silently replace primary. Verify conditional row counts and null/referral semantics for all/no/partial assignments.",
+    "Portable read-only source/evidence verification with proper numeric tolerances rejects corrupted scratch copies; preserve all failures. Separate design_verdict from integrity verdict. No code approval, strategy benefit or final authorization."
+  ],
+  "instructions": "Read AGENTS.md, the locked problem/accounting and the exact source contract. SOL-013 approved corrected v2 design; its negative kernel verdict is retained and K1 is reviewed elsewhere. This task only reviews the new PERSONALIZED_REVIEW handoff and its companion JSON against that accepted design. Do not repeat the entire accepted design review or certify absent code.\n\nChallenge the mapping from ten generic profile/fee recommendations to at most ten personalized cases. Referrals must remain null without a simulated fallback; selected fixed classes keep their mode/fee/fold prior, change only the generic threshold to their own tolerance, and evaluate only their own H. No adaptive substitution, outcome-dependent threshold tuning or new class search. An invalid upstream assignment/hash is an error, not a referral. Both risk and purchasing-power screens must be rerun. Explain any extra assumption/ambiguity requiring a chief correction.\n\nSpecifically examine separate primary .0025 and .005 counterfactual assignments. The .005 class can differ as a reported hypothetical but cannot automatically overwrite the primary recommendation, and different-class results cannot certify robustness of the same policy. Check consistency with POLICY_ANALYSIS and v2, including the independent generic Balanced same-primary-mode robustness test. This handoff does not authorize live trading or claim a personalized loss cap.\n\nConstruct a few concise rational/scalar synthetic reference fixtures independently of any production helpers. Show threshold equality at a completed post-fee/year-end value causes next-review latch; final-year crossing gives no fictional H+1 review; pending holdings keep exact dollars, pay no fee and still earn returns; p90 can pass despite strict tolerance exceedances; risk-only and purchasing-power-only failure mean referral with no reselection. Verify no/partial/all assignments produce ten summary rows and the correct conditional ledger, decision and metric counts, nulls and source-key requirements. Profile B's unchanged 25% rule must require exact H15 prefix equivalence. These are reference logic checks, not implementation or investment outcomes.\n\nWrite findings.json/review.md with exact reviewed source and design_verdict approve/changes_required, blockers, precise fixes if necessary, independent facts and scope limits. verification.json is exclusive-create; verify.py --check recomputes read-only, verifies pinned Git source and artifact hashes, permits HEAD to advance and rejects deliberately corrupted scratch evidence without repairing it. Preserve meaningful failures and do not hide a supported negative verdict behind a PASS label. Work within 15 minutes, CPU-only.\n\nOnly audit/SOL-020 plus ignored scratch writes are authorized. No source, tests, specifications, tasks, queue, runtime helpers or private-team edits. No actual CSV outcomes, policy code execution, production driver/adapter implementation, packages, watchers, worker restarts, task dispatch or final access. The runner owns receipt/push; chief reviews exact evidence and controls downstream implementation."
+}

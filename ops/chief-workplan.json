@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T02:23:33.430576+08:00",
-  "reason": "Final-evaluation contract drafted and checked against accepted v2/metadata. Publish targeted independent design review from this pushed source while SOL-020/021 run.",
+  "next_wake_at": "2026-10-20T02:24:51.749525+08:00",
+  "reason": "SOL-020 personalized design accepted with scalar/corruption replay. Publish final-protocol design review on this pushed evidence base; SOL-021 K2 review pending.",
   "next_actions": [
     "Publish a synthetic-only independent review of FINAL_EVALUATION.md and companion after this prerequisite commit is pushed; no holdout access or final freeze.",
-    "Accept exact SOL-020 personalized handoff review if its evidence passes; preserve negative findings and issue corrected immutable work if needed.",
+    "Personalized design accepted at exact SOL-020 commit. Future adapter must explicitly encode not-run denominator zero/null metrics and separate same-policy generic robustness; wait for accepted generic code/outputs before implementation task.",
     "Independently validate SOL-021 exact receipt and ordinary/extreme fixtures; positive approval releases unchanged SOL-016 and SOL-022 promptly.",
     "After positive SOL-022 release SOL-023. Integrate only independently checked code; then publish writer task on combined pushed source, fixed HY3 development run and independent Sol result review.",
     "Prepare explicit final-evaluation/freeze evidence contract without opening holdout or changing approved selection rules.",
@@ -16,6 +16,6 @@
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T02:18:33.430576+08:00",
+  "last_completed_at": "2026-10-20T02:19:51.749525+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

@@ -1,0 +1,93 @@
+{
+  "task_id": "SOL-020",
+  "reviewed_commit": "2fbd4598606b41a786bd931046adb0ecc8b42d78",
+  "base_commit": "a2205fb7edd2527253664efad601f0da290f3661",
+  "task_sha256": "3420b1953c2811857a798980815e78d638e4ca8142ba094ea0c19ac75ad12a61",
+  "branch": "work/sol/SOL-020-a1",
+  "structural_checks": "passed",
+  "source_hashes_checked": {
+    "specs/PERSONALIZED_REVIEW.md": "0365fdf989ae7abfeda0bc3f48f8c86245a40dd9e48b3c6ae8d2d26c0b7c4987",
+    "specs/personalized_review_v1.json": "2edc9410b291f8f1f7235344e685d004c2f3cfd80844539df96759e9b305b4ad",
+    "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "specs/POLICY_ANALYSIS.md": "a2220482c861799280815b4e65d73e79e53666816ac9e7e72a38d5f48a6e53b8",
+    "specs/POLICY_CASE_ENGINE.md": "c984e230eecb720613b864a910d95921af1aa805f79fa68c7044f905410dec62",
+    "specs/POLICY_RESULT_WRITER.md": "ce0c43fad34ebdc44fc6f6bda395c562781e500cdc4b855ee7e0cbf937bec0b4",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "audit/SOL-013/findings.json": "b2c82f41ed0abd7c62cf350ed5b554c967085d5cbbee70a3e62d4f6feb64c6bd",
+    "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462"
+  },
+  "artifacts_sha256": {
+    "audit/SOL-020/execution_history.json": "52a490ffa19c6c1262f4d1026420d3a12723fc059e30a23bee209fc2a21e2bef",
+    "audit/SOL-020/findings.json": "2e597db33daf1da6dfdea61925565fb7d2735e97db7d985784faed967a27f3c0",
+    "audit/SOL-020/integrity-self-tests.json": "9dd58ab0375405e10684f1c7cddcf41ac023bd47cdc3162d4a81f18a04c4caeb",
+    "audit/SOL-020/review.md": "74c818cc7659d6d6ab5b4ada12c7a1fe13b369839b0994258035bb394a22e4f4",
+    "audit/SOL-020/task-lock.json": "e2c0985b6c862afb568ed383a06d3aa4440bb86ef260c2356b7743f8bad044c7",
+    "audit/SOL-020/verification.json": "3a9fbfa1777a098442eb009d438715a3e4dc2996200537959d450e034d92f740",
+    "audit/SOL-020/verify.py": "d80bf05ab896de4ba0c36eda2f744a7f42ec4e52d4644b5baa6c96d1a990e60e",
+    "handoff/SOL-020/check-0.txt": "ca7d09a99e2627f33d1dddd614a8fd14bf2d312921bfaf9cf768dcc545d07500",
+    "handoff/SOL-020/check-1.txt": "ea3ac27111f0bcd0443ed3806e442ab1c6a5497978adea4d5852e765b44d1ac8"
+  },
+  "accepted_paths": [
+    "audit/SOL-020/execution_history.json",
+    "audit/SOL-020/findings.json",
+    "audit/SOL-020/integrity-self-tests.json",
+    "audit/SOL-020/review.md",
+    "audit/SOL-020/task-lock.json",
+    "audit/SOL-020/verification.json",
+    "audit/SOL-020/verify.py",
+    "handoff/SOL-020/check-0.txt",
+    "handoff/SOL-020/check-1.txt",
+    "handoff/SOL-020/result.json"
+  ],
+  "excluded_paths": [],
+  "receipt_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "prescribed_command_count": 1,
+  "schema_version": 1,
+  "checked_at": "2026-10-19T18:19:51.540952+00:00",
+  "decision": "accept_design_review_evidence",
+  "design_verdict": "approve",
+  "implementation_verdict": "not_reviewed",
+  "replay_checks": [
+    {
+      "evidence": "SOL-020",
+      "expected_exit": 0,
+      "exit_code": 0,
+      "stdout": "{\"evidence_integrity_verdict\": \"verified\", \"design_verdict\": \"approve\", \"implementation_verdict\": \"not_reviewed\", \"historical_kernel_verdict\": \"changes_required\", \"read_only\": true, \"reference_groups\": 13}",
+      "stderr": ""
+    },
+    {
+      "evidence": "review-SOL-020-corrupt-exceedances",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation"
+    }
+  ],
+  "audit_files_unchanged": true,
+  "corrupt_files_unchanged": true,
+  "reference_groups": 13,
+  "chief_independent_fixtures": {
+    "p90": "10",
+    "strict_exceedances": 10,
+    "initial_fee": "1/4",
+    "post_fee": "399/4",
+    "pending_real_end": "384/5",
+    "B_sample_variance": "125/3",
+    "counts": {
+      "all_ledger": 19440,
+      "all_metrics": 1200,
+      "partial_ledger": 5400,
+      "partial_metrics": 360
+    }
+  },
+  "implementation_requirements": [
+    "not-run personalized denominator=0 with null outcomes and screen flags; never compute 0/0",
+    "bind actual accepted assignment/refit/source hashes, never drafting commit as execution pin",
+    "retain generic Balanced same-primary-mode robustness independently from fee-specific profile counterfactuals"
+  ],
+  "final_data_open": false,
+  "competition_outcomes_read": false,
+  "note": "Targeted personalized design approved only. K1/K2 history, implementation, actual development and final gates remain separate."
+}

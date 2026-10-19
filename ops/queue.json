@@ -474,12 +474,29 @@
     },
     {
       "id": "SOL-020",
-      "state": "ready",
+      "state": "accepted",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "3420b1953c2811857a798980815e78d638e4ca8142ba094ea0c19ac75ad12a61",
       "branch": "work/sol/SOL-020-a1",
-      "note": "Targeted personalized handoff design review only, independent of pending code work; no production or outcomes."
+      "note": "Exact receipt/source/path checks and 13 scalar reference groups replayed read-only; chief independently checks fee/deflation/p90/counts and rejects corruption. Design only, no policy code/outcomes approval. Carry denominator and separate robustness clarifications into future implementation.",
+      "reviewed_commit": "2fbd4598606b41a786bd931046adb0ecc8b42d78",
+      "accepted_paths": [
+        "audit/SOL-020/execution_history.json",
+        "audit/SOL-020/findings.json",
+        "audit/SOL-020/integrity-self-tests.json",
+        "audit/SOL-020/review.md",
+        "audit/SOL-020/task-lock.json",
+        "audit/SOL-020/verification.json",
+        "audit/SOL-020/verify.py",
+        "handoff/SOL-020/check-0.txt",
+        "handoff/SOL-020/check-1.txt",
+        "handoff/SOL-020/result.json"
+      ],
+      "excluded_paths": [],
+      "acceptance_evidence": "audit/chief/SOL-020-review.json",
+      "design_verdict": "approve",
+      "implementation_verdict": "not_reviewed"
     },
     {
       "id": "SOL-021",

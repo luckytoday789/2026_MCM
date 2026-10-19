@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-020",
+  "attempt": 1,
+  "role": "sol",
+  "task_sha256": "3420b1953c2811857a798980815e78d638e4ca8142ba094ea0c19ac75ad12a61",
+  "base_commit": "a2205fb7edd2527253664efad601f0da290f3661",
+  "status": "completed",
+  "failure": null,
+  "artifact_hash_basis": "canonical_git_blob",
+  "started_from_pinned_source": true,
+  "checks": [
+    {
+      "argv": [
+        "C:\\Users\\刘奥华\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.EXE",
+        "exec",
+        "--approve-for-me",
+        "--model",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"xhigh\"",
+        "--cd",
+        "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-020-a1",
+        "--output-last-message",
+        "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-020-a1\\.runtime\\agent-last.txt",
+        "You are role=sol in the authorized SafeInvest team. Read AGENTS.md and .runtime/task.json. Complete only that task in this worktree. Do not commit, push, change branches, edit the task, or start another watcher; the parent runner handles delivery. Respect allowed_paths and base version. Write real deliverables and perform checks. Report blockers rather than inventing parameters. The task is authorized; continue through routine fixes.\nRead AGENTS.md, the locked problem/accounting and the exact source contract. SOL-013 approved corrected v2 design; its negative kernel verdict is retained and K1 is reviewed elsewhere. This task only reviews the new PERSONALIZED_REVIEW handoff and its companion JSON against that accepted design. Do not repeat the entire accepted design review or certify absent code.\n\nChallenge the mapping from ten generic profile/fee recommendations to at most ten personalized cases. Referrals must remain null without a simulated fallback; selected fixed classes keep their mode/fee/fold prior, change only the generic threshold to their own tolerance, and evaluate only their own H. No adaptive substitution, outcome-dependent threshold tuning or new class search. An invalid upstream assignment/hash is an error, not a referral. Both risk and purchasing-power screens must be rerun. Explain any extra assumption/ambiguity requiring a chief correction.\n\nSpecifically examine separate primary .0025 and .005 counterfactual assignments. The .005 class can differ as a reported hypothetical but cannot automatically overwrite the primary recommendation, and different-class results cannot certify robustness of the same policy. Check consistency with POLICY_ANALYSIS and v2, including the independent generic Balanced same-primary-mode robustness test. This handoff does not authorize live trading or claim a personalized loss cap.\n\nConstruct a few concise rational/scalar synthetic reference fixtures independently of any production helpers. Show threshold equality at a completed post-fee/year-end value causes next-review latch; final-year crossing gives no fictional H+1 review; pending holdings keep exact dollars, pay no fee and still earn returns; p90 can pass despite strict tolerance exceedances; risk-only and purchasing-power-only failure mean referral with no reselection. Verify no/partial/all assignments produce ten summary rows and the correct conditional ledger, decision and metric counts, nulls and source-key requirements. Profile B's unchanged 25% rule must require exact H15 prefix equivalence. These are reference logic checks, not implementation or investment outcomes.\n\nWrite findings.json/review.md with exact reviewed source and design_verdict approve/changes_required, blockers, precise fixes if necessary, independent facts and scope limits. verification.json is exclusive-create; verify.py --check recomputes read-only, verifies pinned Git source and artifact hashes, permits HEAD to advance and rejects deliberately corrupted scratch evidence without repairing it. Preserve meaningful failures and do not hide a supported negative verdict behind a PASS label. Work within 15 minutes, CPU-only.\n\nOnly audit/SOL-020 plus ignored scratch writes are authorized. No source, tests, specifications, tasks, queue, runtime helpers or private-team edits. No actual CSV outcomes, policy code execution, production driver/adapter implementation, packages, watchers, worker restarts, task dispatch or final access. The runner owns receipt/push; chief reviews exact evidence and controls downstream implementation."
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-020-a1-agent.log"
+    },
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "audit/SOL-020/verify.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-020-a1-check-0.log"
+    }
+  ],
+  "artifacts_sha256": {
+    "audit/SOL-020/execution_history.json": "52a490ffa19c6c1262f4d1026420d3a12723fc059e30a23bee209fc2a21e2bef",
+    "audit/SOL-020/findings.json": "2e597db33daf1da6dfdea61925565fb7d2735e97db7d985784faed967a27f3c0",
+    "audit/SOL-020/integrity-self-tests.json": "9dd58ab0375405e10684f1c7cddcf41ac023bd47cdc3162d4a81f18a04c4caeb",
+    "audit/SOL-020/review.md": "74c818cc7659d6d6ab5b4ada12c7a1fe13b369839b0994258035bb394a22e4f4",
+    "audit/SOL-020/task-lock.json": "e2c0985b6c862afb568ed383a06d3aa4440bb86ef260c2356b7743f8bad044c7",
+    "audit/SOL-020/verification.json": "3a9fbfa1777a098442eb009d438715a3e4dc2996200537959d450e034d92f740",
+    "audit/SOL-020/verify.py": "d80bf05ab896de4ba0c36eda2f744a7f42ec4e52d4644b5baa6c96d1a990e60e",
+    "handoff/SOL-020/check-0.txt": "ca7d09a99e2627f33d1dddd614a8fd14bf2d312921bfaf9cf768dcc545d07500",
+    "handoff/SOL-020/check-1.txt": "ea3ac27111f0bcd0443ed3806e442ab1c6a5497978adea4d5852e765b44d1ac8"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "finished_at": "2026-10-19T18:17:36.804399+00:00",
+  "note": "Completed means worker self-check only; coordinator acceptance is separate.",
+  "input_manifest": {
+    "source": "User-supplied 2026 MCM Senior Group Problem A SafeInvest attachments",
+    "license": "CC BY-NC-SA 4.0",
+    "transformation": "Originals unchanged; derived CSV files are row subsets only.",
+    "files": [
+      {
+        "path": "problem/2026_MCM_SafeInvest.pdf",
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+        "bytes": 137578
+      },
+      {
+        "path": "data/raw/SafeInvest_Synthetic_Data.csv",
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+        "bytes": 274914
+      },
+      {
+        "path": "data/development/scenarios_001_120.csv",
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+        "bytes": 182255
+      },
+      {
+        "path": "data/final_holdout/scenarios_121_180.csv",
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+        "bytes": 92732
+      }
+    ]
+  },
+  "task_parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "competition_outcomes_allowed": false,
+    "final_outcomes_allowed": false,
+    "source_sha256": {
+      "specs/PERSONALIZED_REVIEW.md": "0365fdf989ae7abfeda0bc3f48f8c86245a40dd9e48b3c6ae8d2d26c0b7c4987",
+      "specs/personalized_review_v1.json": "2edc9410b291f8f1f7235344e685d004c2f3cfd80844539df96759e9b305b4ad",
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "specs/POLICY_ANALYSIS.md": "a2220482c861799280815b4e65d73e79e53666816ac9e7e72a38d5f48a6e53b8",
+      "specs/POLICY_CASE_ENGINE.md": "c984e230eecb720613b864a910d95921af1aa805f79fa68c7044f905410dec62",
+      "specs/POLICY_RESULT_WRITER.md": "ce0c43fad34ebdc44fc6f6bda395c562781e500cdc4b855ee7e0cbf937bec0b4",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "audit/SOL-013/findings.json": "b2c82f41ed0abd7c62cf350ed5b554c967085d5cbbee70a3e62d4f6feb64c6bd",
+      "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462"
+    },
+    "prior_design_review_commit": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+    "primary_fee_rate": 0.0025,
+    "sensitivity_fee_rate": 0.005,
+    "release_requires": "Accepted SOL-013 corrected design only. Independent of pending K1/code reviews because this task must not execute or certify policy code."
+  }
+}
