@@ -1,0 +1,33 @@
+{
+  "task_id": "SOL-006",
+  "reviewed_commit": "f193742daab0f55c166b9b084bd288151c1e764d",
+  "base_commit": "10b3ff29f72b01d6a1a1bd2ca174f8cd6c7840d4",
+  "task_sha256": "561143f6312aebe4090cb2e9f548eddb4b19b73722130d362de5eeb068007b39",
+  "status": "not_accepted_resource_failure",
+  "canonical_receipt_structure": "verified",
+  "artifacts_sha256": {
+    "audit/SOL-006/scheduler-suite.txt": "66eee650fba15fc4771cb286cca458819372ec91a0888faf24d8317137507195",
+    "audit/SOL-006/task-lock.json": "218de4abc9b816299bae12d58b6f7d167dc3c40122ec0efb741492325f8fd3ac",
+    "audit/SOL-006/verify.py": "a356d294866b3029ac5a97010335635dcbb059968e23dd1a18cfc60ce6de5f6b",
+    "handoff/SOL-006/check-0.txt": "f88a288a3022848ca3c1f269da2570f126e7d6b78b1ba1a054ea9911e19fa423"
+  },
+  "preserved_paths": [
+    "audit/SOL-006/scheduler-suite.txt",
+    "audit/SOL-006/task-lock.json",
+    "audit/SOL-006/verify.py",
+    "handoff/SOL-006/check-0.txt",
+    "handoff/SOL-006/result.json"
+  ],
+  "missing_deliverables": [
+    "audit/SOL-006/review.md",
+    "audit/SOL-006/findings.json",
+    "audit/SOL-006/verification.json",
+    "audit/SOL-006/scheduler-review.json"
+  ],
+  "cause": "Remote Codex account usage limit; no completed independent review. Shell helper startup errors also occurred in SOL-006, but Node fallback made partial progress.",
+  "remote_retry_message": "Oct 20th, 2026 1:01 AM; provider message does not explicitly encode a timezone. Confirm on the Sol machine.",
+  "numerical_review_complete": false,
+  "final_data_open": false,
+  "correction": "Preserve exact failed attempt. Publish distinct successor in waiting state, carry forward partial files only as unaccepted draft, and release after Sol quota availability is confirmed. Do not repeat HY3 production experiment.",
+  "retained_test_evidence": "scheduler-suite.txt records seven passing tests, but no completed scheduler-review/verification/findings; not independent acceptance."
+}

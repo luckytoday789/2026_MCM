@@ -1,0 +1,27 @@
+{
+  "task_id": "SOL-007",
+  "reviewed_commit": "cf5e70860e7aac615775fe96b0c1696a9fc5226b",
+  "base_commit": "a996298fd22b11dc54deb43cb596f143da05bf93",
+  "task_sha256": "f7fc69b91cafcfd5a79f3d5739bc165404360a0d7dda04fa1dd4f4dda6a89191",
+  "status": "not_accepted_resource_failure",
+  "canonical_receipt_structure": "verified",
+  "artifacts_sha256": {
+    "handoff/SOL-007/check-0.txt": "63832e66b3aed88e1bfc2d27ff0770a376bb9cf3131d61f58c732c0805c6a24d"
+  },
+  "preserved_paths": [
+    "handoff/SOL-007/check-0.txt",
+    "handoff/SOL-007/result.json"
+  ],
+  "missing_deliverables": [
+    "audit/SOL-007/review.md",
+    "audit/SOL-007/findings.json",
+    "audit/SOL-007/verify.py",
+    "audit/SOL-007/verification.json",
+    "audit/SOL-007/implementation-handoff.json"
+  ],
+  "cause": "Remote Codex account usage limit; no completed independent review. Shell helper startup errors also occurred in SOL-006, but Node fallback made partial progress.",
+  "remote_retry_message": "Oct 20th, 2026 1:01 AM; provider message does not explicitly encode a timezone. Confirm on the Sol machine.",
+  "numerical_review_complete": false,
+  "final_data_open": false,
+  "correction": "Preserve exact failed attempt. Publish distinct successor in waiting state, carry forward partial files only as unaccepted draft, and release after Sol quota availability is confirmed. Do not repeat HY3 production experiment."
+}
