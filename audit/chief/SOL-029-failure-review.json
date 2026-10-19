@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-029",
+  "task_sha256": "951ca85be546855ef2b606e94d7ea0eb2acb39f03ab34e70c707bccbac6015ac",
+  "reviewed_commit": "a24128200c849567cb6f7dba2d6f0e85a79f3713",
+  "checked_at": "2026-10-19T22:36:16.961848+00:00",
+  "worker_receipt_status": "completed",
+  "decision": "reject_portability_and_issue_narrow_successor",
+  "code_verdict": "repair_and_revalidate_required",
+  "structural_evidence": "audit/chief/SOL-029-structural.json",
+  "clean_checkout_replay": "audit/chief/SOL-029-replay.json",
+  "diagnosis": "audit/chief/SOL-029-line-ending-diagnosis.json",
+  "independent_persisted_oracle": "audit/chief/SOL-029-persisted-oracle.json",
+  "changed_paths_verified": 226,
+  "source_pins_verified": 46,
+  "focused_tests_passed": 15,
+  "independent_numeric_checks": 12427,
+  "blocking_finding": {
+    "id": "W-LF-1",
+    "cause": "Failure diagnosis uses Windows default text newlines; verification inventories raw local bytes. Git normalizes JSON to LF and checkout may expand unqualified partial.txt. Worker portable probe copies raw bytes and misses real Git normalization.",
+    "mismatched_fixture_paths": [
+      "audit/SOL-029/synthetic-740096046b1d430c93acfdc9cb83d87a/failed-oversized/partial-36f86df261384f8ca11d73fa29fd9809/failure.json",
+      "audit/SOL-029/synthetic-740096046b1d430c93acfdc9cb83d87a/failed-partial/partial-7f649afe11a34db1acc7dc9c60463c91/failure.json",
+      "audit/SOL-029/synthetic-740096046b1d430c93acfdc9cb83d87a/failed-partial/partial-7f649afe11a34db1acc7dc9c60463c91/partial.txt",
+      "audit/SOL-029/synthetic-740096046b1d430c93acfdc9cb83d87a/failed-timeout/partial-3d6287b2c97846848a8ea5acb3049e04/failure.json"
+    ],
+    "effect": "Required --check fails from exact delivered Git commit before complete fixture verification.",
+    "correction": "Deterministic fixture byte serialization/attributes plus real isolated Git clean/checkout roundtrip; fresh bound evidence, no historical hash rewrite."
+  },
+  "diagnostic_reconstruction_only": {
+    "exit_code": 0,
+    "interpretation": "Exact recorded raw-byte reconstruction passes full replay, seven artifact and twelve binding corruptions, and authenticates 10800 reference ledger rows. This diagnoses the defect; it does not accept the canonical checkout."
+  },
+  "quarantined_drafts_sha256": {
+    "audit/chief/quarantine/SOL-029/src/safeinvest/policy_writer.py": "3787a95c3547d695d00e9105ee1367fbca6c946f2047ab85fafcbc65dfbba829",
+    "audit/chief/quarantine/SOL-029/scripts/run_development_policy.py": "b2ea4ac19ece30fd2bb535c2dcee5cdf48d26d0cba934a3b35cb6e08338ee19b",
+    "audit/chief/quarantine/SOL-029/tests/test_policy_writer.py": "04ec6962475dd0db5e96c04adf33ab0787ed97b34e5279419aeb65c372da5b2f",
+    "audit/chief/quarantine/SOL-029/audit/SOL-029/verify.py": "cc8b07343fd3ef30d3217cc2017d88c2586ad7b773d1adf27cd2eef03933bcc2",
+    "audit/chief/quarantine/SOL-029/audit/SOL-029/record_checks.py": "0cf89ba818c05cf78220a496c2db3effcf686611d5eff8269e36e3264d28961a",
+    "audit/chief/quarantine/SOL-029/audit/SOL-029/implementation.md": "ae1bb207b6c0cfd4e6def3ef8aec8e8879682ac650b82ba2730a47f3c4950310",
+    "audit/chief/quarantine/SOL-029/audit/SOL-029/findings.json": "6698b692542c6418f3f1864225f7bea769eabcf92b5b28dc0111cbeaa47a8680",
+    "audit/chief/quarantine/SOL-029/audit/SOL-029/schema.json": "0d0bce67cea07d705ee98608466f3aadf87c64888811d6e2910c9e86eaf0d919"
+  },
+  "source_review_scope": [
+    "Strict production C/E/P/queue/source/module/input guards reviewed; accepted core untouched.",
+    "Typed persistence, baseline import identity, no simulation callback, counts, fee/CPI/metric and prefix-check implementations reviewed.",
+    "Chief source review plus independent synthetic arithmetic is preserved; no production or final result acceptance."
+  ],
+  "production_execution_authorized": false,
+  "final_data_open": false,
+  "successor_task": "SOL-031",
+  "human_help_required": false
+}

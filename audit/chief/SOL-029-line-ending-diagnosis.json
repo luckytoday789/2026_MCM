@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-029",
+  "reviewed_commit": "a24128200c849567cb6f7dba2d6f0e85a79f3713",
+  "checked_at": "2026-10-19T22:34:35.415653+00:00",
+  "mismatches": [
+    {
+      "path": "audit/SOL-029/synthetic-740096046b1d430c93acfdc9cb83d87a/failed-oversized/partial-36f86df261384f8ca11d73fa29fd9809/failure.json",
+      "expected_sha256": "afa044c7154d1042d0d074aa68dc6f34c97175e94de478d6cb18d0323ac1e3e7",
+      "checkout_sha256": "cba33bbf784233d5ecf43b8d62cd4929057df090ddfd729c238c6573eb0ea072",
+      "canonical_git_sha256": "cba33bbf784233d5ecf43b8d62cd4929057df090ddfd729c238c6573eb0ea072",
+      "matching_original_form": "canonical_git_CRLF",
+      "original_bytes": 1203,
+      "checkout_bytes": 1196
+    },
+    {
+      "path": "audit/SOL-029/synthetic-740096046b1d430c93acfdc9cb83d87a/failed-partial/partial-7f649afe11a34db1acc7dc9c60463c91/failure.json",
+      "expected_sha256": "b077a926edae9a7dbd61f63380285cab8207cd76a9d62c539519b696f20e5b97",
+      "checkout_sha256": "3369476d3302011483e485e8fd41a218319e5c48ad58742d56febde969f2589d",
+      "canonical_git_sha256": "3369476d3302011483e485e8fd41a218319e5c48ad58742d56febde969f2589d",
+      "matching_original_form": "canonical_git_CRLF",
+      "original_bytes": 695,
+      "checkout_bytes": 688
+    },
+    {
+      "path": "audit/SOL-029/synthetic-740096046b1d430c93acfdc9cb83d87a/failed-partial/partial-7f649afe11a34db1acc7dc9c60463c91/partial.txt",
+      "expected_sha256": "2e18b874057e888efc0b0f3869844f94588ac669cd8483961f0b516326591f2a",
+      "checkout_sha256": "68cb63eddedaac8c24758ec5459f241c3019a9157a809b5d4c57ab5708d375da",
+      "canonical_git_sha256": "2e18b874057e888efc0b0f3869844f94588ac669cd8483961f0b516326591f2a",
+      "matching_original_form": "canonical_git",
+      "original_bytes": 35,
+      "checkout_bytes": 36
+    },
+    {
+      "path": "audit/SOL-029/synthetic-740096046b1d430c93acfdc9cb83d87a/failed-timeout/partial-3d6287b2c97846848a8ea5acb3049e04/failure.json",
+      "expected_sha256": "eabfc4ba19c899d8eb6ea588dfbe37d750fe307b35be6a533a8e567fcc631486",
+      "checkout_sha256": "4a10fda4b3c607174179a44edf240d7035b6afcff739e4d00f3aa45e10c24156",
+      "canonical_git_sha256": "4a10fda4b3c607174179a44edf240d7035b6afcff739e4d00f3aa45e10c24156",
+      "matching_original_form": "canonical_git_CRLF",
+      "original_bytes": 676,
+      "checkout_bytes": 669
+    }
+  ],
+  "diagnostic_only": true,
+  "modifications": "Only a separate ignored diagnostic worktree reconstructs original recorded raw fixture bytes. Published evidence/source and original review worktree unchanged.",
+  "replay": {
+    "exit_code": 0,
+    "seconds": 18.639999999955762,
+    "stdout": "{\"authenticated_reference_ledger_rows\": 10800, \"binding_corruption_rejections\": 12, \"corruption_rejections\": 7, \"facts\": {\"doubled\": 8064, \"primary\": 8064}, \"imported_module_paths\": {\"safeinvest\": \"D:\\\\30576\\\\Documents\\\\2026_MCM\\\\.runtime\\\\review-SOL-029-reconstructed\\\\src\\\\safeinvest\\\\__init__.py\", \"safeinvest.accounting\": \"D:\\\\30576\\\\Documents\\\\2026_MCM\\\\.runtime\\\\review-SOL-029-reconstructed\\\\src\\\\safeinvest\\\\accounting.py\", \"safeinvest.backtest\": \"D:\\\\30576\\\\Documents\\\\2026_MCM\\\\.runtime\\\\review-SOL-029-reconstructed\\\\src\\\\safeinvest\\\\backtest.py\", \"safeinvest.baselines\": \"D:\\\\30576\\\\Documents\\\\2026_MCM\\\\.runtime\\\\review-SOL-029-reconstructed\\\\src\\\\safeinvest\\\\baselines.py\", \"safeinvest.experiments\": \"D:\\\\30576\\\\Documents\\\\2026_MCM\\\\.runtime\\\\review-SOL-029-reconstructed\\\\src\\\\safeinvest\\\\experiments.py\", \"safeinvest.metrics\": \"D:\\\\30576\\\\Documents\\\\2026_MCM\\\\.runtime\\\\review-SOL-029-reconstructed\\\\src\\\\safeinvest\\\\metrics.py\", \"safeinvest.policy_calibration\": \"D:\\\\30576\\\\Documents\\\\2026_MCM\\\\.runtime\\\\review-SOL-029-reconstructed\\\\src\\\\safeinvest\\\\policy_calibration.py\", \"safeinvest.policy_cases\": \"D:\\\\30576\\\\Documents\\\\2026_MCM\\\\.runtime\\\\review-SOL-029-reconstructed\\\\src\\\\safeinvest\\\\policy_cases.py\", \"safeinvest.policy_pilot\": \"D:\\\\30576\\\\Documents\\\\2026_MCM\\\\.runtime\\\\review-SOL-029-reconstructed\\\\src\\\\safeinvest\\\\policy_pilot.py\", \"safeinvest.policy_writer\": \"D:\\\\30576\\\\Documents\\\\2026_MCM\\\\.runtime\\\\review-SOL-029-reconstructed\\\\src\\\\safeinvest\\\\policy_writer.py\"}, \"independent_outcome_acceptance\": false, \"production_execution\": false, \"read_only\": true, \"status\": \"passed\", \"synthetic_check_seconds\": 13.125}\n",
+    "stderr": ""
+  },
+  "code_acceptance": false,
+  "conclusion": "Fresh Git checkout replay fails; copied raw worktree portable probe did not exercise Git normalization. Require a new immutable correction and fresh canonical-checkout evidence."
+}

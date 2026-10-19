@@ -773,15 +773,19 @@
     },
     {
       "id": "SOL-029",
-      "state": "ready",
+      "state": "cancelled",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "951ca85be546855ef2b606e94d7ea0eb2acb39f03ab34e70c707bccbac6015ac",
       "branch": "work/sol/SOL-029-a1",
-      "note": "Released first after exact successful SOL-028 receipt; immutable task and 46 pins verified. Recover failed writer identity/evidence only. SOL-026 remains cancelled; independent chief acceptance required.",
+      "note": "Worker completed local checks, but exact delivered Git checkout --check fails on four LF/CRLF fixture identities. 226 paths/46 pins verified; 15 tests and 12427 independent arithmetic checks pass. Raw reconstruction diagnoses only; no code acceptance. Original handoff and exact drafts preserved; narrow Git-portability correction follows.",
       "release_evidence": "audit/chief/SOL-028-review.json",
       "released_after_commit": "7ac6afe1169740666f0f65d5f2d9674fd2d4c964",
-      "released_at": "2026-10-19T22:08:52.019656+00:00"
+      "released_at": "2026-10-19T22:08:52.019656+00:00",
+      "reviewed_commit": "a24128200c849567cb6f7dba2d6f0e85a79f3713",
+      "code_verdict": "repair_and_revalidate_required",
+      "failure_evidence": "audit/chief/SOL-029-failure-review.json",
+      "successor_task": "SOL-031"
     },
     {
       "id": "SOL-030",
