@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "rows": 5400,
+  "scenarios": 180,
+  "periods_per_scenario": 30,
+  "development_rows": 3600,
+  "final_rows": 1800,
+  "checks": [
+    "source hashes",
+    "schema",
+    "unique complete keys",
+    "finite valid gross returns",
+    "exact split"
+  ],
+  "final_outcomes_computed": false
+}
