@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T22:12:04.835944+00:00",
+  "source_main": "10fd3892b4352f856155b85ef3548b31fa5320b5",
+  "scope": "Chief handoff structural/source consistency only; not implementation, numerical-result or independent design acceptance.",
+  "handoff_path": "specs/POLICY_ANALYSIS_ASSEMBLY.md",
+  "handoff_sha256": "808930f6c4c84d3a542bf14387dc506c6fb77b0a5be636840db30169ddcf6250",
+  "accepted_analysis_commit": "ceec2b6d1107a4137ee3d24d689ba7ba614703c2",
+  "analysis_source_sha256": "e94a5ef79a2f58f231a46bd2af01020dd09847d27bdbe74f1795ba032dd8d345",
+  "analysis_outputs": [
+    "paired_differences",
+    "comparison_gates",
+    "selection",
+    "profile_screen",
+    "profile_recommendations"
+  ],
+  "expected_counts": {
+    "scenario_metrics": 9600,
+    "paired_differences": 12000,
+    "comparison_gates": 100,
+    "selection_objects": 1,
+    "profile_screen": 30,
+    "profile_recommendations": 10
+  },
+  "counts_method": "Enumerated fixed Cartesian metric keys and counted accepted contrast/profile definitions; no competition data opened.",
+  "sources": {
+    "src/safeinvest/policy_analysis.py": "e94a5ef79a2f58f231a46bd2af01020dd09847d27bdbe74f1795ba032dd8d345",
+    "specs/POLICY_ANALYSIS.md": "a2220482c861799280815b4e65d73e79e53666816ac9e7e72a38d5f48a6e53b8",
+    "specs/POLICY_WRITER_COMPATIBILITY.md": "814c339353a719b88f1bf21af731439cc24e095131d9a8d28efaede48a5695ed",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "specs/policy_driver_layout_v2.json": "f431e661c260f7f6e40330661e77724dc3ddcafeafed1a3f0b6c31781a4e8329"
+  },
+  "writer_boundary": "Quarantined draft source scan shows strict imported-module closure; final SOL-029 source and isolated checker behavior still require actual acceptance. No existing source changed.",
+  "tests_run": [],
+  "production_config_created": false,
+  "competition_outcomes_read": false,
+  "final_data_open": false
+}
