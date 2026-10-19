@@ -238,6 +238,16 @@
       "task_sha256": "2b3378dd7e285fded4a9fc8653d6f415c96d949c5528cb72d7a8db3b634b9a0f",
       "branch": "work/sol/SOL-010-a1",
       "note": "One real response after Beijing 01:05; passive wait first. Do not release SOL-008/009 from heartbeats alone."
+    },
+    {
+      "id": "SOL-011",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "6b51129167b8f5b008ec1a452f29151d9cd7c2fd5d7fdc452c00a32743bc9756",
+      "branch": "work/sol/SOL-011-a1",
+      "waiting_for": "Accepted SOL-009 with unchanged design and exact successful SOL-010; then release this existing review promptly.",
+      "note": "Chief kernel is provisional; no actual-data strategy run or independent acceptance. New task must replace this attempt if design changes."
     }
   ]
 }

@@ -1,0 +1,37 @@
+{
+  "task_id": "SOL-011",
+  "task_sha256": "6b51129167b8f5b008ec1a452f29151d9cd7c2fd5d7fdc452c00a32743bc9756",
+  "base_commit": "6152ef118457ea1d4225f873539b5a27d303dcf3",
+  "prerequisite_already_pushed": true,
+  "source_sha256": {
+    "src/safeinvest/policy_pilot.py": "d2f529f69abbc1690ed4fedca42cda8b9c5570729b58c5c9dd37e142d14971f6",
+    "tests/test_policy_pilot.py": "f9a5c71fde2432c9eb9f5e55a3a6eec6380b19d4e1eaa2b8db245d5c03549ca3",
+    "specs/POLICY_KERNEL_PROTOTYPE.md": "3b472b103ab212a5207e77c48f6d0dde5fc3a89caab397ad161274851ffd6f21",
+    "specs/DEVELOPMENT_POLICY_PILOT.md": "94e436a979f2c232b729c352d209c83c76ba014a14613852ad447446cb6948e0",
+    "specs/development_policy_pilot_v1.json": "39ab8f78f6e4c487d00c1055e6d474c51a2d940e3cad951768a6c75874cc835a",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46"
+  },
+  "queue_task_hash_and_base_checks": [
+    "SOL-001",
+    "HY3-001",
+    "SOL-002",
+    "SOL-003",
+    "HY3-002",
+    "SOL-004",
+    "SOL-005",
+    "HY3-003",
+    "SOL-006",
+    "SOL-007",
+    "SOL-008",
+    "SOL-009",
+    "SOL-010",
+    "SOL-011"
+  ],
+  "state": "waiting",
+  "final_data_open": false,
+  "review_is_independent": true,
+  "runtime_seconds": 1200
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "SOL-011",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "6152ef118457ea1d4225f873539b5a27d303dcf3",
+  "depends_on": [
+    "SOL-001",
+    "SOL-009",
+    "SOL-010"
+  ],
+  "split": "synthetic",
+  "max_seconds": 1200,
+  "scope": "Independent synthetic-only review of the chief-authored provisional policy kernel; no production driver or performance acceptance.",
+  "parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "competition_outcomes_allowed": false,
+    "final_outcomes_allowed": false,
+    "source_sha256": {
+      "src/safeinvest/policy_pilot.py": "d2f529f69abbc1690ed4fedca42cda8b9c5570729b58c5c9dd37e142d14971f6",
+      "tests/test_policy_pilot.py": "f9a5c71fde2432c9eb9f5e55a3a6eec6380b19d4e1eaa2b8db245d5c03549ca3",
+      "specs/POLICY_KERNEL_PROTOTYPE.md": "3b472b103ab212a5207e77c48f6d0dde5fc3a89caab397ad161274851ffd6f21",
+      "specs/DEVELOPMENT_POLICY_PILOT.md": "94e436a979f2c232b729c352d209c83c76ba014a14613852ad447446cb6948e0",
+      "specs/development_policy_pilot_v1.json": "39ab8f78f6e4c487d00c1055e6d474c51a2d940e3cad951768a6c75874cc835a",
+      "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46"
+    },
+    "release_requires": "SOL-010 exact successful response and accepted SOL-009 with no material design changes; otherwise preserve this task and publish a corrected attempt against updated pushed sources.",
+    "primary_fee_rate": 0.0025,
+    "sensitivity_fee_rate": 0.005,
+    "gamma": 4,
+    "fee_buffer_multiplier": 2
+  },
+  "allowed_paths": [
+    "audit/SOL-011"
+  ],
+  "deliverables": [
+    "audit/SOL-011/review.md",
+    "audit/SOL-011/findings.json",
+    "audit/SOL-011/verify.py",
+    "audit/SOL-011/verification.json"
+  ],
+  "commands": [],
+  "validation_commands": [
+    [
+      "{python}",
+      "-B",
+      "audit/SOL-011/verify.py",
+      "--check"
+    ]
+  ],
+  "acceptance_checks": [
+    "Validate exact immutable task/base, source hashes, allowed paths and real executed independent checks on Python 3.12.",
+    "Independently recompute gamma=4 CE, 15:n mixture, buffered-vs-actual fee values and rational initial holdings; do not use production helpers for expected numbers.",
+    "Probe strict keep gate, near-tie priorities, active-target execution semantics and tiny-transfer nontrade corner; report any ambiguity or divergence from proposal.",
+    "Probe first-five-year restriction, exact t-1 prefix, future perturbation, scenario/state isolation, post-fee and inflation drawdown, latch and holdings while pending.",
+    "Check all five modes and zero/primary/doubled fee synthetic cases; preserve rejected fixtures and all meaningful failures without overwriting evidence.",
+    "Read-only --check binds explicit source and saved outputs and rejects corrupted evidence; separate review completion from mathematical/code approval.",
+    "No policy/engine edits, production data, actual performance claims, new strategy search, installs, runtime process changes, final access or autonomous dispatch."
+  ],
+  "instructions": "Read AGENTS.md and the authoritative problem/accounting contracts. Independently review exactly the sources in parameters.source_sha256 at the pinned base. This is a narrow review of chief-authored provisional code; its fifteen chief tests are evidence to challenge, not independent acceptance. SOL-009 is the separate mathematical design review. Chief will release this immutable task only after that review is accepted without a material design change and a successful SOL-010 availability receipt. Do not fetch/merge newer main or silently redesign the policy. If a contradiction remains, report changes_required. The original pilot design/task bytes have not been altered.\n\nImplement an independent scalar or rational oracle in audit/SOL-011/verify.py. Use explicit generated toy inputs only. Verify inverse-cube expected utility, positive homogeneity, exact inflation, 15:n mixture (n=0..5), all normative targets, strict score > keep+1e-12, positive/negative/no-trade gates and original actual one-way fee. In the deterministic fixture prior=(1.10,1.02,1), initial all bills, thirds, k=.0025, derive the expected values independently. Check score tolerance boundaries and priority against a global maximum, including when the preferred near-tied target itself fails the keep gate. Inspect finite extreme inputs and invalid final-year input rejection. Distinguish invalid failed runs from human-review completed runs.\n\nChallenge scenario isolation, exact prefix information and current-year decision timing. Verify adaptive alternatives first appear at year 6; prefix-context updates differ from fixed-prior rules only in the specified information set. Perturb future returns/inflation and evaluated path length and compare earlier decisions/ledger entries. Reconstruct previous holdings and CPI with your own scalar formulas; verify pending-review keeps exact component dollars, zero transfers/fees, still accrues returns, and never restarts. Include an initial post-fee threshold crossing followed by same-year recovery and a pure-inflation loss. Audit initial-deferred flag, proposed/selected targets, human-review diagnostics, active target update only on a transfer over 1e-10, and any nominal action label for a tiny nontrade. Test mutation/state reuse failures rather than trusting the docstring. All simulation outcomes here must be explicitly labelled synthetic.\n\nThe kernel intentionally has no production loader, four-fold calibration, result writer/verifier, profile selection or final support. Do not require this narrow module to claim those missing components, but identify interface hazards for future driver integration. Check fee consistency between wrapper/callback/engine. Review runtime risk using only a small synthetic sample if useful; do not run an entire competition-size search or make unstated speed claims.\n\nWrite review.md and findings.json with exact source, independent code verdict approve/changes_required, blockers vs limitations, numerical comparisons and precise fixes if needed. verification.json must record actual independent facts and tolerances. --check must recompute saved facts read-only, validate source hashes at the pinned commit (allow documented CRLF checkout normalization), compare with numeric tolerances, preserve evidence and fail on corruption. It must not require HEAD to remain an unmerged worker branch. A supported negative verdict is a valid completed review; evidence checking should fail only if evidence is inconsistent, not merely because code changes are requested. Preserve every meaningful failed trial in audit/SOL-011. Keep model output concise.\n\nDo not edit src/, tests/, specs/, tasks, queue, runtime helpers or files outside audit/SOL-011 (ignored scratch is allowed). Do not open competition CSV outcomes or original raw data, inspect private team data, install packages/skills, start/restart watchers, dispatch tasks, or compute final data. The runner handles its receipt and branch push. Chief alone integrates after exact review."
+}
