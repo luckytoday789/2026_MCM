@@ -1,0 +1,67 @@
+{
+  "task_id": "SOL-005",
+  "reviewed_commit": "d3f031ca797402baacf969147956578fcee92af1",
+  "base_commit": "da96ea77bcc476f2970a982f037c2679a68522b7",
+  "task_sha256": "39009df675c120d5fa46f19f1f6d540e885b1d63af48bb1582041a3ad6b42acd",
+  "branch": "work/sol/SOL-005-a1",
+  "structural_checks": "passed",
+  "source_hashes_checked": {
+    "audit/chief/HY3-002-review.json": "40a2a389af4e9a5bed1d913e083b6a80f9834ee8a5b51d44829a255c87c55a36",
+    "audit/chief/HY3-002-release.json": "9e9f0ea4d29948987e52007b64f83e9d1dac51265f796b62f1ead3ad817cf06d",
+    "ops/tasks/HY3-002.json": "930c6197af645b85775666e04310e40ad9ec1e12ab37bdff83ac74a4a9a68514",
+    "audit/SOL-003/verification.json": "6bf48840d167e396d4d122a11e8a2d036aba31257df6b0fa1e96a461acacd271",
+    "scripts/check_inputs.py": "442142bf97e642f650bb5235bb0e6daa19df6ac718212b8f572689b579e4350f",
+    "scripts/check_worker_env.py": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8"
+  },
+  "artifacts_sha256": {
+    "audit/SOL-005/execution.json": "13f6e39685b30413e8c3cf1eda9c41e9e3b3d793da1f927122ed6f7ae20f7111",
+    "audit/SOL-005/findings.json": "6a236a95cf40500be25f3b49c3dc38e48445a01582effeb934e42e2bc98f2a63",
+    "audit/SOL-005/history/intentional-mismatched-verification.json": "e2768e974df0af6fdc61afbc37f8f117a106c1132cf20a55780aad8a0af07865",
+    "audit/SOL-005/review.md": "3be557915b0c7bbe3d18a243fd4b18f22b1c0f1fb4c1aeec64384f6874fe82e6",
+    "audit/SOL-005/verification.json": "22b8b58efffa03483f4c546451f696d9a300ea7a4e131979878f09d31fe5351f",
+    "audit/SOL-005/verify.py": "cf70081e6937bad5f01680f4345b00f632d6cfc35b40b9b931cdbafbda1c7730",
+    "handoff/SOL-005/check-0.txt": "e7404abe33eec8f3d7ff8869d4041a3c9dcca7df832b49233de6584af581c4bd",
+    "handoff/SOL-005/check-1.txt": "9cccec112b1eb7efca105949a8595d59288dc6eb0905ea387d77f301eb7395c4"
+  },
+  "accepted_paths": [
+    "audit/SOL-005/execution.json",
+    "audit/SOL-005/findings.json",
+    "audit/SOL-005/history/intentional-mismatched-verification.json",
+    "audit/SOL-005/review.md",
+    "audit/SOL-005/verification.json",
+    "audit/SOL-005/verify.py",
+    "handoff/SOL-005/check-0.txt",
+    "handoff/SOL-005/check-1.txt",
+    "handoff/SOL-005/result.json"
+  ],
+  "excluded_paths": [],
+  "receipt_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "prescribed_command_count": 1,
+  "status": "accepted",
+  "chief_replay": {
+    "status": "passed",
+    "mode": "check",
+    "checks": 155,
+    "blockers": 0,
+    "mismatched_files": [],
+    "writes": 0,
+    "python": "3.12.0",
+    "numerical_experiments_rerun": false,
+    "prior_suite_rerun": false
+  },
+  "worker_evidence_unchanged": true,
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-B",
+        "audit/SOL-005/verify.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "audit/chief/SOL-005-replay.txt"
+    }
+  ],
+  "scope": "Exact HY3-002 receipt/provenance and chief carry-forward review only; not performance or future experiment certification",
+  "final_outcomes_computed": false
+}

@@ -155,12 +155,26 @@
     },
     {
       "id": "SOL-005",
-      "state": "ready",
+      "state": "accepted",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "39009df675c120d5fa46f19f1f6d540e885b1d63af48bb1582041a3ad6b42acd",
       "branch": "work/sol/SOL-005-a1",
-      "note": "Short independent check of corrected HY3 exact receipt and chief carry-forward decision; preserve prior rejection, do not repeat numerical experiments."
+      "note": "Exact canonical receipt and 155 pinned provenance checks reproduced read-only by chief. Confirms corrected HY3-002 metadata acceptance; no performance or future HY3 result certification.",
+      "reviewed_commit": "d3f031ca797402baacf969147956578fcee92af1",
+      "accepted_paths": [
+        "audit/SOL-005/execution.json",
+        "audit/SOL-005/findings.json",
+        "audit/SOL-005/history/intentional-mismatched-verification.json",
+        "audit/SOL-005/review.md",
+        "audit/SOL-005/verification.json",
+        "audit/SOL-005/verify.py",
+        "handoff/SOL-005/check-0.txt",
+        "handoff/SOL-005/check-1.txt",
+        "handoff/SOL-005/result.json"
+      ],
+      "excluded_paths": [],
+      "acceptance_evidence": "audit/chief/SOL-005-review.json"
     },
     {
       "id": "HY3-003",

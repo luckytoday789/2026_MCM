@@ -1,0 +1,2173 @@
+{
+  "artifact_hash_basis": "canonical_git_blob",
+  "canonical_blob_evidence": {
+    "2a0263c5822988c0385d32fe084b794f8d644bc5:handoff/HY3-001/check-0.txt": {
+      "bytes": 311,
+      "sha256": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d"
+    },
+    "2a0263c5822988c0385d32fe084b794f8d644bc5:handoff/HY3-001/check-1.txt": {
+      "bytes": 311,
+      "sha256": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d"
+    },
+    "2a0263c5822988c0385d32fe084b794f8d644bc5:handoff/HY3-001/result.json": {
+      "bytes": 2477,
+      "sha256": "81b23066bbc0ffc35883ef2b0fe627e3b191d38fa797a8baa5788d975f5324d0"
+    },
+    "2a0263c5822988c0385d32fe084b794f8d644bc5:results/development/HY3-001/input-check.json": {
+      "bytes": 310,
+      "sha256": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf"
+    },
+    "5de076351c7580f32ac46f8eae1afc2a12939116:status.json": {
+      "bytes": 219,
+      "sha256": "c99f1ad6560c14689bc3bed1107f943cb1ee73402cb34efab9ac56b41695c0ec"
+    },
+    "9fdd20e09f8c080b7d3381d3d545524084cb3955:data/development/scenarios_001_120.csv": {
+      "bytes": 182255,
+      "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+    },
+    "9fdd20e09f8c080b7d3381d3d545524084cb3955:data/final_holdout/scenarios_121_180.csv": {
+      "bytes": 92732,
+      "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+    },
+    "9fdd20e09f8c080b7d3381d3d545524084cb3955:data/manifest.json": {
+      "bytes": 913,
+      "sha256": "2535c087075957919d5f1990ad234ca436f7b3506ba592ac8a6457feb42fe90d"
+    },
+    "9fdd20e09f8c080b7d3381d3d545524084cb3955:data/raw/SafeInvest_Synthetic_Data.csv": {
+      "bytes": 274914,
+      "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+    },
+    "9fdd20e09f8c080b7d3381d3d545524084cb3955:handoff/HY3-002/check-0.txt": {
+      "bytes": 95,
+      "sha256": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678"
+    },
+    "9fdd20e09f8c080b7d3381d3d545524084cb3955:handoff/HY3-002/check-1.txt": {
+      "bytes": 311,
+      "sha256": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d"
+    },
+    "9fdd20e09f8c080b7d3381d3d545524084cb3955:handoff/HY3-002/check-2.txt": {
+      "bytes": 95,
+      "sha256": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678"
+    },
+    "9fdd20e09f8c080b7d3381d3d545524084cb3955:handoff/HY3-002/check-3.txt": {
+      "bytes": 311,
+      "sha256": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d"
+    },
+    "9fdd20e09f8c080b7d3381d3d545524084cb3955:handoff/HY3-002/result.json": {
+      "bytes": 3565,
+      "sha256": "b18fc298b70c8a2aaed40305dff32e4aa62e80ccd92a27ab3af7fc76f563dc09"
+    },
+    "9fdd20e09f8c080b7d3381d3d545524084cb3955:ops/control.json": {
+      "bytes": 538,
+      "sha256": "97c6263e31dab636a37c1190b1d6e313941a71258220ebe54b5855ed2f0249bf"
+    },
+    "9fdd20e09f8c080b7d3381d3d545524084cb3955:problem/2026_MCM_SafeInvest.pdf": {
+      "bytes": 137578,
+      "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+    },
+    "9fdd20e09f8c080b7d3381d3d545524084cb3955:results/development/HY3-002/environment.json": {
+      "bytes": 95,
+      "sha256": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678"
+    },
+    "9fdd20e09f8c080b7d3381d3d545524084cb3955:results/development/HY3-002/input-check.json": {
+      "bytes": 310,
+      "sha256": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf"
+    },
+    "9fdd20e09f8c080b7d3381d3d545524084cb3955:scripts/check_inputs.py": {
+      "bytes": 2238,
+      "sha256": "442142bf97e642f650bb5235bb0e6daa19df6ac718212b8f572689b579e4350f"
+    },
+    "9fdd20e09f8c080b7d3381d3d545524084cb3955:scripts/check_worker_env.py": {
+      "bytes": 864,
+      "sha256": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8"
+    },
+    "bb74c0f25cb18c3e02fef6d51416422514a8f503:audit/SOL-003/verification.json": {
+      "bytes": 46898,
+      "sha256": "6bf48840d167e396d4d122a11e8a2d036aba31257df6b0fa1e96a461acacd271"
+    },
+    "bb74c0f25cb18c3e02fef6d51416422514a8f503:data/development/scenarios_001_120.csv": {
+      "bytes": 182255,
+      "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+    },
+    "bb74c0f25cb18c3e02fef6d51416422514a8f503:data/final_holdout/scenarios_121_180.csv": {
+      "bytes": 92732,
+      "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+    },
+    "bb74c0f25cb18c3e02fef6d51416422514a8f503:data/manifest.json": {
+      "bytes": 913,
+      "sha256": "2535c087075957919d5f1990ad234ca436f7b3506ba592ac8a6457feb42fe90d"
+    },
+    "bb74c0f25cb18c3e02fef6d51416422514a8f503:data/raw/SafeInvest_Synthetic_Data.csv": {
+      "bytes": 274914,
+      "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+    },
+    "bb74c0f25cb18c3e02fef6d51416422514a8f503:ops/control.json": {
+      "bytes": 538,
+      "sha256": "97c6263e31dab636a37c1190b1d6e313941a71258220ebe54b5855ed2f0249bf"
+    },
+    "bb74c0f25cb18c3e02fef6d51416422514a8f503:problem/2026_MCM_SafeInvest.pdf": {
+      "bytes": 137578,
+      "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+    },
+    "bb74c0f25cb18c3e02fef6d51416422514a8f503:scripts/check_inputs.py": {
+      "bytes": 2238,
+      "sha256": "442142bf97e642f650bb5235bb0e6daa19df6ac718212b8f572689b579e4350f"
+    },
+    "bb74c0f25cb18c3e02fef6d51416422514a8f503:scripts/check_worker_env.py": {
+      "bytes": 864,
+      "sha256": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8"
+    },
+    "c651c67c30db1131c25641ac94631238cba0dd8d:data/development/scenarios_001_120.csv": {
+      "bytes": 182255,
+      "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+    },
+    "c651c67c30db1131c25641ac94631238cba0dd8d:data/final_holdout/scenarios_121_180.csv": {
+      "bytes": 92732,
+      "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+    },
+    "c651c67c30db1131c25641ac94631238cba0dd8d:data/manifest.json": {
+      "bytes": 913,
+      "sha256": "2535c087075957919d5f1990ad234ca436f7b3506ba592ac8a6457feb42fe90d"
+    },
+    "c651c67c30db1131c25641ac94631238cba0dd8d:data/raw/SafeInvest_Synthetic_Data.csv": {
+      "bytes": 274914,
+      "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+    },
+    "c651c67c30db1131c25641ac94631238cba0dd8d:ops/control.json": {
+      "bytes": 538,
+      "sha256": "97c6263e31dab636a37c1190b1d6e313941a71258220ebe54b5855ed2f0249bf"
+    },
+    "c651c67c30db1131c25641ac94631238cba0dd8d:problem/2026_MCM_SafeInvest.pdf": {
+      "bytes": 137578,
+      "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+    },
+    "c651c67c30db1131c25641ac94631238cba0dd8d:scripts/check_inputs.py": {
+      "bytes": 2238,
+      "sha256": "442142bf97e642f650bb5235bb0e6daa19df6ac718212b8f572689b579e4350f"
+    },
+    "c651c67c30db1131c25641ac94631238cba0dd8d:scripts/check_worker_env.py": {
+      "bytes": 864,
+      "sha256": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:audit/SOL-003/verification.json": {
+      "bytes": 46898,
+      "sha256": "6bf48840d167e396d4d122a11e8a2d036aba31257df6b0fa1e96a461acacd271"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:audit/chief/HY3-001-review.json": {
+      "bytes": 1565,
+      "sha256": "dfebc6c4d764ba0a16d2d7d0cc0b001faf79a36bce86fc7457dde5b143c8cc96"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:audit/chief/HY3-002-release.json": {
+      "bytes": 591,
+      "sha256": "9e9f0ea4d29948987e52007b64f83e9d1dac51265f796b62f1ead3ad817cf06d"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:audit/chief/HY3-002-review.json": {
+      "bytes": 3045,
+      "sha256": "40a2a389af4e9a5bed1d913e083b6a80f9834ee8a5b51d44829a255c87c55a36"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:audit/chief/SOL-003-review.json": {
+      "bytes": 6187,
+      "sha256": "91b0471b3609c97aa99e7cb13d66783659310d4c096a22420a00491b238bdbac"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:data/development/scenarios_001_120.csv": {
+      "bytes": 182255,
+      "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:data/final_holdout/scenarios_121_180.csv": {
+      "bytes": 92732,
+      "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:data/raw/SafeInvest_Synthetic_Data.csv": {
+      "bytes": 274914,
+      "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:handoff/HY3-002/check-0.txt": {
+      "bytes": 95,
+      "sha256": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:handoff/HY3-002/check-1.txt": {
+      "bytes": 311,
+      "sha256": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:handoff/HY3-002/check-2.txt": {
+      "bytes": 95,
+      "sha256": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:handoff/HY3-002/check-3.txt": {
+      "bytes": 311,
+      "sha256": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:handoff/HY3-002/result.json": {
+      "bytes": 3565,
+      "sha256": "b18fc298b70c8a2aaed40305dff32e4aa62e80ccd92a27ab3af7fc76f563dc09"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:ops/control.json": {
+      "bytes": 538,
+      "sha256": "97c6263e31dab636a37c1190b1d6e313941a71258220ebe54b5855ed2f0249bf"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:ops/queue.json": {
+      "bytes": 4935,
+      "sha256": "6f70aa0aad56c9231d819e5faec84067fa27ed0a4f11bb5ce82dc0a814ed4b07"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:ops/tasks/HY3-002.json": {
+      "bytes": 2167,
+      "sha256": "930c6197af645b85775666e04310e40ad9ec1e12ab37bdff83ac74a4a9a68514"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:problem/2026_MCM_SafeInvest.pdf": {
+      "bytes": 137578,
+      "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:results/development/HY3-002/environment.json": {
+      "bytes": 95,
+      "sha256": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:results/development/HY3-002/input-check.json": {
+      "bytes": 310,
+      "sha256": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:scripts/check_inputs.py": {
+      "bytes": 2238,
+      "sha256": "442142bf97e642f650bb5235bb0e6daa19df6ac718212b8f572689b579e4350f"
+    },
+    "da96ea77bcc476f2970a982f037c2679a68522b7:scripts/check_worker_env.py": {
+      "bytes": 864,
+      "sha256": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8"
+    },
+    "fa7856618626b2534524d18ac25fbca6fcc4cdcb:ops/control.json": {
+      "bytes": 538,
+      "sha256": "97c6263e31dab636a37c1190b1d6e313941a71258220ebe54b5855ed2f0249bf"
+    },
+    "fa7856618626b2534524d18ac25fbca6fcc4cdcb:ops/queue.json": {
+      "bytes": 5333,
+      "sha256": "f62a25f9a75bc001813de25219610ce438c66f81ee34c349f82aa970e9708484"
+    },
+    "fa7856618626b2534524d18ac25fbca6fcc4cdcb:ops/tasks/HY3-002.json": {
+      "bytes": 2167,
+      "sha256": "930c6197af645b85775666e04310e40ad9ec1e12ab37bdff83ac74a4a9a68514"
+    },
+    "fa7856618626b2534524d18ac25fbca6fcc4cdcb:ops/tasks/SOL-005.json": {
+      "bytes": 5028,
+      "sha256": "6922798b0b1122d24d942f19430345ebfd30b84fbf0bd10f3057bee32199633f"
+    }
+  },
+  "checks": [
+    {
+      "expected": "39009df675c120d5fa46f19f1f6d540e885b1d63af48bb1582041a3ad6b42acd",
+      "fix": null,
+      "id": "review_task_digest",
+      "observed": "39009df675c120d5fa46f19f1f6d540e885b1d63af48bb1582041a3ad6b42acd",
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "SOL-005",
+        1,
+        "sol",
+        "da96ea77bcc476f2970a982f037c2679a68522b7",
+        [
+          "audit/SOL-005"
+        ]
+      ],
+      "fix": null,
+      "id": "review_task_identity",
+      "observed": [
+        "SOL-005",
+        1,
+        "sol",
+        "da96ea77bcc476f2970a982f037c2679a68522b7",
+        [
+          "audit/SOL-005"
+        ]
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "9fdd20e09f8c080b7d3381d3d545524084cb3955",
+        "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+        false
+      ],
+      "fix": null,
+      "id": "review_task_pinned_results",
+      "observed": [
+        "9fdd20e09f8c080b7d3381d3d545524084cb3955",
+        "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+        false
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": "40a2a389af4e9a5bed1d913e083b6a80f9834ee8a5b51d44829a255c87c55a36",
+      "fix": null,
+      "id": "task_source_pin:audit/chief/HY3-002-review.json",
+      "observed": "40a2a389af4e9a5bed1d913e083b6a80f9834ee8a5b51d44829a255c87c55a36",
+      "status": "passed"
+    },
+    {
+      "expected": "9e9f0ea4d29948987e52007b64f83e9d1dac51265f796b62f1ead3ad817cf06d",
+      "fix": null,
+      "id": "task_source_pin:audit/chief/HY3-002-release.json",
+      "observed": "9e9f0ea4d29948987e52007b64f83e9d1dac51265f796b62f1ead3ad817cf06d",
+      "status": "passed"
+    },
+    {
+      "expected": "930c6197af645b85775666e04310e40ad9ec1e12ab37bdff83ac74a4a9a68514",
+      "fix": null,
+      "id": "task_source_pin:ops/tasks/HY3-002.json",
+      "observed": "930c6197af645b85775666e04310e40ad9ec1e12ab37bdff83ac74a4a9a68514",
+      "status": "passed"
+    },
+    {
+      "expected": "6bf48840d167e396d4d122a11e8a2d036aba31257df6b0fa1e96a461acacd271",
+      "fix": null,
+      "id": "task_source_pin:audit/SOL-003/verification.json",
+      "observed": "6bf48840d167e396d4d122a11e8a2d036aba31257df6b0fa1e96a461acacd271",
+      "status": "passed"
+    },
+    {
+      "expected": "442142bf97e642f650bb5235bb0e6daa19df6ac718212b8f572689b579e4350f",
+      "fix": null,
+      "id": "task_source_pin:scripts/check_inputs.py",
+      "observed": "442142bf97e642f650bb5235bb0e6daa19df6ac718212b8f572689b579e4350f",
+      "status": "passed"
+    },
+    {
+      "expected": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+      "fix": null,
+      "id": "task_source_pin:scripts/check_worker_env.py",
+      "observed": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 2167,
+        "sha256": "930c6197af645b85775666e04310e40ad9ec1e12ab37bdff83ac74a4a9a68514"
+      },
+      "fix": null,
+      "id": "published_hy3_task_unchanged",
+      "observed": {
+        "bytes": 2167,
+        "sha256": "930c6197af645b85775666e04310e40ad9ec1e12ab37bdff83ac74a4a9a68514"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": "d3f1e845573fc1e7c170fd4b126130a6a344348138d588828517fd334d4c39d8",
+      "fix": null,
+      "id": "hy3_task_digest",
+      "observed": "d3f1e845573fc1e7c170fd4b126130a6a344348138d588828517fd334d4c39d8",
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "HY3-002",
+        1,
+        "hy3",
+        "commands",
+        "c651c67c30db1131c25641ac94631238cba0dd8d"
+      ],
+      "fix": null,
+      "id": "hy3_task_identity",
+      "observed": [
+        "HY3-002",
+        1,
+        "hy3",
+        "commands",
+        "c651c67c30db1131c25641ac94631238cba0dd8d"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "HY3-002",
+        1,
+        "hy3",
+        "c651c67c30db1131c25641ac94631238cba0dd8d",
+        {
+          "predecessor_commit": "2a0263c5822988c0385d32fe084b794f8d644bc5",
+          "predecessor_task": "HY3-001",
+          "required_python": "3.12"
+        }
+      ],
+      "fix": null,
+      "id": "hy3_receipt_identity",
+      "observed": [
+        "HY3-002",
+        1,
+        "hy3",
+        "c651c67c30db1131c25641ac94631238cba0dd8d",
+        {
+          "predecessor_commit": "2a0263c5822988c0385d32fe084b794f8d644bc5",
+          "predecessor_task": "HY3-001",
+          "required_python": "3.12"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "c651c67c30db1131c25641ac94631238cba0dd8d"
+      ],
+      "fix": null,
+      "id": "hy3_actual_parent",
+      "observed": [
+        "c651c67c30db1131c25641ac94631238cba0dd8d"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "c651c67c30db1131c25641ac94631238cba0dd8d"
+      ],
+      "fix": null,
+      "id": "sol003_actual_parent",
+      "observed": [
+        "c651c67c30db1131c25641ac94631238cba0dd8d"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "completed",
+        null,
+        true,
+        "canonical_git_blob"
+      ],
+      "fix": null,
+      "id": "hy3_receipt_completion",
+      "observed": [
+        "completed",
+        null,
+        true,
+        "canonical_git_blob"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "hy3",
+        1,
+        "work/hy3/HY3-002-a1",
+        "9fdd20e09f8c080b7d3381d3d545524084cb3955",
+        "d3f1e845573fc1e7c170fd4b126130a6a344348138d588828517fd334d4c39d8",
+        "accepted"
+      ],
+      "fix": null,
+      "id": "hy3_queue_binding:da96ea77bcc476f2970a982f037c2679a68522b7",
+      "observed": [
+        "hy3",
+        1,
+        "work/hy3/HY3-002-a1",
+        "9fdd20e09f8c080b7d3381d3d545524084cb3955",
+        "d3f1e845573fc1e7c170fd4b126130a6a344348138d588828517fd334d4c39d8",
+        "accepted"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+        "accepted"
+      ],
+      "fix": null,
+      "id": "sol003_accepted_binding:da96ea77bcc476f2970a982f037c2679a68522b7",
+      "observed": [
+        "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+        "accepted"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "2a0263c5822988c0385d32fe084b794f8d644bc5",
+        "cancelled"
+      ],
+      "fix": null,
+      "id": "hy3001_cancelled:da96ea77bcc476f2970a982f037c2679a68522b7",
+      "observed": [
+        "2a0263c5822988c0385d32fe084b794f8d644bc5",
+        "cancelled"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "hy3",
+        1,
+        "work/hy3/HY3-002-a1",
+        "9fdd20e09f8c080b7d3381d3d545524084cb3955",
+        "d3f1e845573fc1e7c170fd4b126130a6a344348138d588828517fd334d4c39d8",
+        "accepted"
+      ],
+      "fix": null,
+      "id": "hy3_queue_binding:fa7856618626b2534524d18ac25fbca6fcc4cdcb",
+      "observed": [
+        "hy3",
+        1,
+        "work/hy3/HY3-002-a1",
+        "9fdd20e09f8c080b7d3381d3d545524084cb3955",
+        "d3f1e845573fc1e7c170fd4b126130a6a344348138d588828517fd334d4c39d8",
+        "accepted"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+        "accepted"
+      ],
+      "fix": null,
+      "id": "sol003_accepted_binding:fa7856618626b2534524d18ac25fbca6fcc4cdcb",
+      "observed": [
+        "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+        "accepted"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "2a0263c5822988c0385d32fe084b794f8d644bc5",
+        "cancelled"
+      ],
+      "fix": null,
+      "id": "hy3001_cancelled:fa7856618626b2534524d18ac25fbca6fcc4cdcb",
+      "observed": [
+        "2a0263c5822988c0385d32fe084b794f8d644bc5",
+        "cancelled"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "39009df675c120d5fa46f19f1f6d540e885b1d63af48bb1582041a3ad6b42acd",
+        "sol",
+        1,
+        "work/sol/SOL-005-a1"
+      ],
+      "fix": null,
+      "id": "sol005_queue_binding",
+      "observed": [
+        "39009df675c120d5fa46f19f1f6d540e885b1d63af48bb1582041a3ad6b42acd",
+        "sol",
+        1,
+        "work/sol/SOL-005-a1"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "handoff/HY3-002/check-0.txt",
+        "handoff/HY3-002/check-1.txt",
+        "handoff/HY3-002/check-2.txt",
+        "handoff/HY3-002/check-3.txt",
+        "handoff/HY3-002/result.json",
+        "results/development/HY3-002/environment.json",
+        "results/development/HY3-002/input-check.json"
+      ],
+      "fix": null,
+      "id": "hy3_exact_changed_paths",
+      "observed": [
+        "handoff/HY3-002/check-0.txt",
+        "handoff/HY3-002/check-1.txt",
+        "handoff/HY3-002/check-2.txt",
+        "handoff/HY3-002/check-3.txt",
+        "handoff/HY3-002/result.json",
+        "results/development/HY3-002/environment.json",
+        "results/development/HY3-002/input-check.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "fix": null,
+      "id": "hy3_only_added_files",
+      "observed": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "results/development/HY3-002/environment.json",
+        "results/development/HY3-002/input-check.json"
+      ],
+      "fix": null,
+      "id": "hy3_deliverables",
+      "observed": [
+        "results/development/HY3-002/environment.json",
+        "results/development/HY3-002/input-check.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "results/development/HY3-002"
+      ],
+      "fix": null,
+      "id": "hy3_allowed_paths",
+      "observed": [
+        "results/development/HY3-002"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [],
+      "fix": null,
+      "id": "hy3_scope_with_runner_handoff_exception",
+      "observed": [],
+      "status": "passed"
+    },
+    {
+      "expected": "100644",
+      "fix": null,
+      "id": "regular_blob:handoff/HY3-002/check-0.txt",
+      "observed": "100644",
+      "status": "passed"
+    },
+    {
+      "expected": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "fix": null,
+      "id": "integrated_bytes:handoff/HY3-002/check-0.txt",
+      "observed": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "status": "passed"
+    },
+    {
+      "expected": "100644",
+      "fix": null,
+      "id": "regular_blob:handoff/HY3-002/check-1.txt",
+      "observed": "100644",
+      "status": "passed"
+    },
+    {
+      "expected": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "fix": null,
+      "id": "integrated_bytes:handoff/HY3-002/check-1.txt",
+      "observed": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "status": "passed"
+    },
+    {
+      "expected": "100644",
+      "fix": null,
+      "id": "regular_blob:handoff/HY3-002/check-2.txt",
+      "observed": "100644",
+      "status": "passed"
+    },
+    {
+      "expected": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "fix": null,
+      "id": "integrated_bytes:handoff/HY3-002/check-2.txt",
+      "observed": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "status": "passed"
+    },
+    {
+      "expected": "100644",
+      "fix": null,
+      "id": "regular_blob:handoff/HY3-002/check-3.txt",
+      "observed": "100644",
+      "status": "passed"
+    },
+    {
+      "expected": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "fix": null,
+      "id": "integrated_bytes:handoff/HY3-002/check-3.txt",
+      "observed": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "status": "passed"
+    },
+    {
+      "expected": "100644",
+      "fix": null,
+      "id": "regular_blob:handoff/HY3-002/result.json",
+      "observed": "100644",
+      "status": "passed"
+    },
+    {
+      "expected": "b18fc298b70c8a2aaed40305dff32e4aa62e80ccd92a27ab3af7fc76f563dc09",
+      "fix": null,
+      "id": "integrated_bytes:handoff/HY3-002/result.json",
+      "observed": "b18fc298b70c8a2aaed40305dff32e4aa62e80ccd92a27ab3af7fc76f563dc09",
+      "status": "passed"
+    },
+    {
+      "expected": "100644",
+      "fix": null,
+      "id": "regular_blob:results/development/HY3-002/environment.json",
+      "observed": "100644",
+      "status": "passed"
+    },
+    {
+      "expected": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "fix": null,
+      "id": "integrated_bytes:results/development/HY3-002/environment.json",
+      "observed": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "status": "passed"
+    },
+    {
+      "expected": "100644",
+      "fix": null,
+      "id": "regular_blob:results/development/HY3-002/input-check.json",
+      "observed": "100644",
+      "status": "passed"
+    },
+    {
+      "expected": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf",
+      "fix": null,
+      "id": "integrated_bytes:results/development/HY3-002/input-check.json",
+      "observed": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf",
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "handoff/HY3-002/check-0.txt",
+        "handoff/HY3-002/check-1.txt",
+        "handoff/HY3-002/check-2.txt",
+        "handoff/HY3-002/check-3.txt",
+        "results/development/HY3-002/environment.json",
+        "results/development/HY3-002/input-check.json"
+      ],
+      "fix": null,
+      "id": "six_artifact_keys",
+      "observed": [
+        "handoff/HY3-002/check-0.txt",
+        "handoff/HY3-002/check-1.txt",
+        "handoff/HY3-002/check-2.txt",
+        "handoff/HY3-002/check-3.txt",
+        "results/development/HY3-002/environment.json",
+        "results/development/HY3-002/input-check.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "fix": null,
+      "id": "receipt_hash:handoff/HY3-002/check-0.txt",
+      "observed": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "status": "passed"
+    },
+    {
+      "expected": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "fix": null,
+      "id": "chief_hash:handoff/HY3-002/check-0.txt",
+      "observed": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "status": "passed"
+    },
+    {
+      "expected": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "fix": null,
+      "id": "receipt_hash:handoff/HY3-002/check-1.txt",
+      "observed": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "status": "passed"
+    },
+    {
+      "expected": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "fix": null,
+      "id": "chief_hash:handoff/HY3-002/check-1.txt",
+      "observed": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "status": "passed"
+    },
+    {
+      "expected": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "fix": null,
+      "id": "receipt_hash:handoff/HY3-002/check-2.txt",
+      "observed": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "status": "passed"
+    },
+    {
+      "expected": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "fix": null,
+      "id": "chief_hash:handoff/HY3-002/check-2.txt",
+      "observed": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "status": "passed"
+    },
+    {
+      "expected": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "fix": null,
+      "id": "receipt_hash:handoff/HY3-002/check-3.txt",
+      "observed": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "status": "passed"
+    },
+    {
+      "expected": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "fix": null,
+      "id": "chief_hash:handoff/HY3-002/check-3.txt",
+      "observed": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "status": "passed"
+    },
+    {
+      "expected": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "fix": null,
+      "id": "receipt_hash:results/development/HY3-002/environment.json",
+      "observed": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "status": "passed"
+    },
+    {
+      "expected": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "fix": null,
+      "id": "chief_hash:results/development/HY3-002/environment.json",
+      "observed": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "status": "passed"
+    },
+    {
+      "expected": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf",
+      "fix": null,
+      "id": "receipt_hash:results/development/HY3-002/input-check.json",
+      "observed": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf",
+      "status": "passed"
+    },
+    {
+      "expected": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf",
+      "fix": null,
+      "id": "chief_hash:results/development/HY3-002/input-check.json",
+      "observed": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf",
+      "status": "passed"
+    },
+    {
+      "expected": "3.12.10",
+      "fix": null,
+      "id": "receipt_python_exact",
+      "observed": "3.12.10",
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "python": "3.12.10",
+        "reason": null,
+        "required_python": "3.12",
+        "status": "passed"
+      },
+      "fix": null,
+      "id": "environment_exact",
+      "observed": {
+        "python": "3.12.10",
+        "reason": null,
+        "required_python": "3.12",
+        "status": "passed"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": "3.12",
+      "fix": null,
+      "id": "required_python",
+      "observed": "3.12",
+      "status": "passed"
+    },
+    {
+      "expected": [
+        [
+          "{python}",
+          "scripts/check_worker_env.py",
+          "--output",
+          "results/development/HY3-002/environment.json"
+        ],
+        [
+          "{python}",
+          "scripts/check_inputs.py",
+          "--output",
+          "results/development/HY3-002/input-check.json"
+        ],
+        [
+          "{python}",
+          "scripts/check_worker_env.py"
+        ],
+        [
+          "{python}",
+          "scripts/check_inputs.py"
+        ]
+      ],
+      "fix": null,
+      "id": "prescribed_commands",
+      "observed": [
+        [
+          "{python}",
+          "scripts/check_worker_env.py",
+          "--output",
+          "results/development/HY3-002/environment.json"
+        ],
+        [
+          "{python}",
+          "scripts/check_inputs.py",
+          "--output",
+          "results/development/HY3-002/input-check.json"
+        ],
+        [
+          "{python}",
+          "scripts/check_worker_env.py"
+        ],
+        [
+          "{python}",
+          "scripts/check_inputs.py"
+        ]
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": 4,
+      "fix": null,
+      "id": "command_count",
+      "observed": 4,
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+        "scripts/check_worker_env.py",
+        "--output",
+        "results/development/HY3-002/environment.json"
+      ],
+      "fix": null,
+      "id": "command_argv:0",
+      "observed": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+        "scripts/check_worker_env.py",
+        "--output",
+        "results/development/HY3-002/environment.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": 0,
+      "fix": null,
+      "id": "command_exit:0",
+      "observed": 0,
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "python": "3.12.10",
+        "reason": null,
+        "required_python": "3.12",
+        "status": "passed"
+      },
+      "fix": null,
+      "id": "command_retained_log:0",
+      "observed": {
+        "python": "3.12.10",
+        "reason": null,
+        "required_python": "3.12",
+        "status": "passed"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 95,
+        "sha256": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678"
+      },
+      "fix": null,
+      "id": "command_log_exact_print_bytes:0",
+      "observed": {
+        "bytes": 95,
+        "sha256": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+        "scripts/check_inputs.py",
+        "--output",
+        "results/development/HY3-002/input-check.json"
+      ],
+      "fix": null,
+      "id": "command_argv:1",
+      "observed": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+        "scripts/check_inputs.py",
+        "--output",
+        "results/development/HY3-002/input-check.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": 0,
+      "fix": null,
+      "id": "command_exit:1",
+      "observed": 0,
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "checks": [
+          "source hashes",
+          "schema",
+          "unique complete keys",
+          "finite valid gross returns",
+          "exact split"
+        ],
+        "development_rows": 3600,
+        "final_outcomes_computed": false,
+        "final_rows": 1800,
+        "periods_per_scenario": 30,
+        "rows": 5400,
+        "scenarios": 180,
+        "status": "passed"
+      },
+      "fix": null,
+      "id": "command_retained_log:1",
+      "observed": {
+        "checks": [
+          "source hashes",
+          "schema",
+          "unique complete keys",
+          "finite valid gross returns",
+          "exact split"
+        ],
+        "development_rows": 3600,
+        "final_outcomes_computed": false,
+        "final_rows": 1800,
+        "periods_per_scenario": 30,
+        "rows": 5400,
+        "scenarios": 180,
+        "status": "passed"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 311,
+        "sha256": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d"
+      },
+      "fix": null,
+      "id": "command_log_exact_print_bytes:1",
+      "observed": {
+        "bytes": 311,
+        "sha256": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+        "scripts/check_worker_env.py"
+      ],
+      "fix": null,
+      "id": "command_argv:2",
+      "observed": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+        "scripts/check_worker_env.py"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": 0,
+      "fix": null,
+      "id": "command_exit:2",
+      "observed": 0,
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "python": "3.12.10",
+        "reason": null,
+        "required_python": "3.12",
+        "status": "passed"
+      },
+      "fix": null,
+      "id": "command_retained_log:2",
+      "observed": {
+        "python": "3.12.10",
+        "reason": null,
+        "required_python": "3.12",
+        "status": "passed"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 95,
+        "sha256": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678"
+      },
+      "fix": null,
+      "id": "command_log_exact_print_bytes:2",
+      "observed": {
+        "bytes": 95,
+        "sha256": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+        "scripts/check_inputs.py"
+      ],
+      "fix": null,
+      "id": "command_argv:3",
+      "observed": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+        "scripts/check_inputs.py"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": 0,
+      "fix": null,
+      "id": "command_exit:3",
+      "observed": 0,
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "checks": [
+          "source hashes",
+          "schema",
+          "unique complete keys",
+          "finite valid gross returns",
+          "exact split"
+        ],
+        "development_rows": 3600,
+        "final_outcomes_computed": false,
+        "final_rows": 1800,
+        "periods_per_scenario": 30,
+        "rows": 5400,
+        "scenarios": 180,
+        "status": "passed"
+      },
+      "fix": null,
+      "id": "command_retained_log:3",
+      "observed": {
+        "checks": [
+          "source hashes",
+          "schema",
+          "unique complete keys",
+          "finite valid gross returns",
+          "exact split"
+        ],
+        "development_rows": 3600,
+        "final_outcomes_computed": false,
+        "final_rows": 1800,
+        "periods_per_scenario": 30,
+        "rows": 5400,
+        "scenarios": 180,
+        "status": "passed"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 311,
+        "sha256": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d"
+      },
+      "fix": null,
+      "id": "command_log_exact_print_bytes:3",
+      "observed": {
+        "bytes": 311,
+        "sha256": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "fix": null,
+      "id": "environment_log_pair_bytes",
+      "observed": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "status": "passed"
+    },
+    {
+      "expected": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "fix": null,
+      "id": "metadata_log_pair_bytes",
+      "observed": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "files": [
+          {
+            "bytes": 137578,
+            "path": "problem/2026_MCM_SafeInvest.pdf",
+            "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+          },
+          {
+            "bytes": 274914,
+            "path": "data/raw/SafeInvest_Synthetic_Data.csv",
+            "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+          },
+          {
+            "bytes": 182255,
+            "path": "data/development/scenarios_001_120.csv",
+            "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+          },
+          {
+            "bytes": 92732,
+            "path": "data/final_holdout/scenarios_121_180.csv",
+            "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+          }
+        ],
+        "license": "CC BY-NC-SA 4.0",
+        "source": "User-supplied 2026 MCM Senior Group Problem A SafeInvest attachments",
+        "transformation": "Originals unchanged; derived CSV files are row subsets only."
+      },
+      "fix": null,
+      "id": "receipt_input_manifest",
+      "observed": {
+        "files": [
+          {
+            "bytes": 137578,
+            "path": "problem/2026_MCM_SafeInvest.pdf",
+            "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+          },
+          {
+            "bytes": 274914,
+            "path": "data/raw/SafeInvest_Synthetic_Data.csv",
+            "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+          },
+          {
+            "bytes": 182255,
+            "path": "data/development/scenarios_001_120.csv",
+            "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+          },
+          {
+            "bytes": 92732,
+            "path": "data/final_holdout/scenarios_121_180.csv",
+            "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+          }
+        ],
+        "license": "CC BY-NC-SA 4.0",
+        "source": "User-supplied 2026 MCM Senior Group Problem A SafeInvest attachments",
+        "transformation": "Originals unchanged; derived CSV files are row subsets only."
+      },
+      "status": "passed"
+    },
+    {
+      "expected": "2535c087075957919d5f1990ad234ca436f7b3506ba592ac8a6457feb42fe90d",
+      "fix": null,
+      "id": "manifest_same_as_prior",
+      "observed": "2535c087075957919d5f1990ad234ca436f7b3506ba592ac8a6457feb42fe90d",
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 137578,
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+      },
+      "fix": null,
+      "id": "source_manifest:c651c67c30db1131c25641ac94631238cba0dd8d:problem/2026_MCM_SafeInvest.pdf",
+      "observed": {
+        "bytes": 137578,
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 137578,
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+      },
+      "fix": null,
+      "id": "source_manifest:9fdd20e09f8c080b7d3381d3d545524084cb3955:problem/2026_MCM_SafeInvest.pdf",
+      "observed": {
+        "bytes": 137578,
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 137578,
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+      },
+      "fix": null,
+      "id": "source_manifest:bb74c0f25cb18c3e02fef6d51416422514a8f503:problem/2026_MCM_SafeInvest.pdf",
+      "observed": {
+        "bytes": 137578,
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 137578,
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+      },
+      "fix": null,
+      "id": "source_manifest:da96ea77bcc476f2970a982f037c2679a68522b7:problem/2026_MCM_SafeInvest.pdf",
+      "observed": {
+        "bytes": 137578,
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 137578,
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+      },
+      "fix": null,
+      "id": "prior_independent_source:problem/2026_MCM_SafeInvest.pdf",
+      "observed": {
+        "bytes": 137578,
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+      "fix": null,
+      "id": "chief_source:problem/2026_MCM_SafeInvest.pdf",
+      "observed": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 274914,
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+      },
+      "fix": null,
+      "id": "source_manifest:c651c67c30db1131c25641ac94631238cba0dd8d:data/raw/SafeInvest_Synthetic_Data.csv",
+      "observed": {
+        "bytes": 274914,
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 274914,
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+      },
+      "fix": null,
+      "id": "source_manifest:9fdd20e09f8c080b7d3381d3d545524084cb3955:data/raw/SafeInvest_Synthetic_Data.csv",
+      "observed": {
+        "bytes": 274914,
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 274914,
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+      },
+      "fix": null,
+      "id": "source_manifest:bb74c0f25cb18c3e02fef6d51416422514a8f503:data/raw/SafeInvest_Synthetic_Data.csv",
+      "observed": {
+        "bytes": 274914,
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 274914,
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+      },
+      "fix": null,
+      "id": "source_manifest:da96ea77bcc476f2970a982f037c2679a68522b7:data/raw/SafeInvest_Synthetic_Data.csv",
+      "observed": {
+        "bytes": 274914,
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 274914,
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+      },
+      "fix": null,
+      "id": "prior_independent_source:data/raw/SafeInvest_Synthetic_Data.csv",
+      "observed": {
+        "bytes": 274914,
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+      "fix": null,
+      "id": "chief_source:data/raw/SafeInvest_Synthetic_Data.csv",
+      "observed": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 182255,
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+      },
+      "fix": null,
+      "id": "source_manifest:c651c67c30db1131c25641ac94631238cba0dd8d:data/development/scenarios_001_120.csv",
+      "observed": {
+        "bytes": 182255,
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 182255,
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+      },
+      "fix": null,
+      "id": "source_manifest:9fdd20e09f8c080b7d3381d3d545524084cb3955:data/development/scenarios_001_120.csv",
+      "observed": {
+        "bytes": 182255,
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 182255,
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+      },
+      "fix": null,
+      "id": "source_manifest:bb74c0f25cb18c3e02fef6d51416422514a8f503:data/development/scenarios_001_120.csv",
+      "observed": {
+        "bytes": 182255,
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 182255,
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+      },
+      "fix": null,
+      "id": "source_manifest:da96ea77bcc476f2970a982f037c2679a68522b7:data/development/scenarios_001_120.csv",
+      "observed": {
+        "bytes": 182255,
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 182255,
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+      },
+      "fix": null,
+      "id": "prior_independent_source:data/development/scenarios_001_120.csv",
+      "observed": {
+        "bytes": 182255,
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+      "fix": null,
+      "id": "chief_source:data/development/scenarios_001_120.csv",
+      "observed": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 92732,
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+      },
+      "fix": null,
+      "id": "source_manifest:c651c67c30db1131c25641ac94631238cba0dd8d:data/final_holdout/scenarios_121_180.csv",
+      "observed": {
+        "bytes": 92732,
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 92732,
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+      },
+      "fix": null,
+      "id": "source_manifest:9fdd20e09f8c080b7d3381d3d545524084cb3955:data/final_holdout/scenarios_121_180.csv",
+      "observed": {
+        "bytes": 92732,
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 92732,
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+      },
+      "fix": null,
+      "id": "source_manifest:bb74c0f25cb18c3e02fef6d51416422514a8f503:data/final_holdout/scenarios_121_180.csv",
+      "observed": {
+        "bytes": 92732,
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 92732,
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+      },
+      "fix": null,
+      "id": "source_manifest:da96ea77bcc476f2970a982f037c2679a68522b7:data/final_holdout/scenarios_121_180.csv",
+      "observed": {
+        "bytes": 92732,
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "bytes": 92732,
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+      },
+      "fix": null,
+      "id": "prior_independent_source:data/final_holdout/scenarios_121_180.csv",
+      "observed": {
+        "bytes": 92732,
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+      "fix": null,
+      "id": "chief_source:data/final_holdout/scenarios_121_180.csv",
+      "observed": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+      "status": "passed"
+    },
+    {
+      "expected": "442142bf97e642f650bb5235bb0e6daa19df6ac718212b8f572689b579e4350f",
+      "fix": null,
+      "id": "exact_prior_checker:c651c67c30db1131c25641ac94631238cba0dd8d:scripts/check_inputs.py",
+      "observed": "442142bf97e642f650bb5235bb0e6daa19df6ac718212b8f572689b579e4350f",
+      "status": "passed"
+    },
+    {
+      "expected": "442142bf97e642f650bb5235bb0e6daa19df6ac718212b8f572689b579e4350f",
+      "fix": null,
+      "id": "exact_prior_checker:9fdd20e09f8c080b7d3381d3d545524084cb3955:scripts/check_inputs.py",
+      "observed": "442142bf97e642f650bb5235bb0e6daa19df6ac718212b8f572689b579e4350f",
+      "status": "passed"
+    },
+    {
+      "expected": "442142bf97e642f650bb5235bb0e6daa19df6ac718212b8f572689b579e4350f",
+      "fix": null,
+      "id": "exact_prior_checker:da96ea77bcc476f2970a982f037c2679a68522b7:scripts/check_inputs.py",
+      "observed": "442142bf97e642f650bb5235bb0e6daa19df6ac718212b8f572689b579e4350f",
+      "status": "passed"
+    },
+    {
+      "expected": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+      "fix": null,
+      "id": "exact_prior_checker:c651c67c30db1131c25641ac94631238cba0dd8d:scripts/check_worker_env.py",
+      "observed": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+      "status": "passed"
+    },
+    {
+      "expected": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+      "fix": null,
+      "id": "exact_prior_checker:9fdd20e09f8c080b7d3381d3d545524084cb3955:scripts/check_worker_env.py",
+      "observed": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+      "status": "passed"
+    },
+    {
+      "expected": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+      "fix": null,
+      "id": "exact_prior_checker:da96ea77bcc476f2970a982f037c2679a68522b7:scripts/check_worker_env.py",
+      "observed": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+      "status": "passed"
+    },
+    {
+      "expected": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+      "fix": null,
+      "id": "prior_review_pinned_checker:scripts/check_worker_env.py",
+      "observed": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+      "status": "passed"
+    },
+    {
+      "expected": "6bf48840d167e396d4d122a11e8a2d036aba31257df6b0fa1e96a461acacd271",
+      "fix": null,
+      "id": "prior_verification_preserved",
+      "observed": "6bf48840d167e396d4d122a11e8a2d036aba31257df6b0fa1e96a461acacd271",
+      "status": "passed"
+    },
+    {
+      "expected": "6bf48840d167e396d4d122a11e8a2d036aba31257df6b0fa1e96a461acacd271",
+      "fix": null,
+      "id": "prior_verification_accepted_hash",
+      "observed": "6bf48840d167e396d4d122a11e8a2d036aba31257df6b0fa1e96a461acacd271",
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "accepted",
+        "bb74c0f25cb18c3e02fef6d51416422514a8f503"
+      ],
+      "fix": null,
+      "id": "prior_acceptance",
+      "observed": [
+        "accepted",
+        "bb74c0f25cb18c3e02fef6d51416422514a8f503"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "passed",
+        0,
+        false,
+        {
+          "invalid_gross_cells": 0,
+          "key_errors": 0,
+          "source_hash_mismatches": 0,
+          "split_row_mismatches": 0
+        }
+      ],
+      "fix": null,
+      "id": "prior_independent_success",
+      "observed": [
+        "passed",
+        0,
+        false,
+        {
+          "invalid_gross_cells": 0,
+          "key_errors": 0,
+          "source_hash_mismatches": 0,
+          "split_row_mismatches": 0
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "checks": [
+          "source hashes",
+          "schema",
+          "unique complete keys",
+          "finite valid gross returns",
+          "exact split"
+        ],
+        "development_rows": 3600,
+        "final_outcomes_computed": false,
+        "final_rows": 1800,
+        "periods_per_scenario": 30,
+        "rows": 5400,
+        "scenarios": 180,
+        "status": "passed"
+      },
+      "fix": null,
+      "id": "metadata_same_as_independent_proof",
+      "observed": {
+        "checks": [
+          "source hashes",
+          "schema",
+          "unique complete keys",
+          "finite valid gross returns",
+          "exact split"
+        ],
+        "development_rows": 3600,
+        "final_outcomes_computed": false,
+        "final_rows": 1800,
+        "periods_per_scenario": 30,
+        "rows": 5400,
+        "scenarios": 180,
+        "status": "passed"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf",
+      "fix": null,
+      "id": "metadata_exact_old_blob",
+      "observed": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf",
+      "status": "passed"
+    },
+    {
+      "expected": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf",
+      "fix": null,
+      "id": "metadata_old_output_bytes",
+      "observed": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf",
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "checks": [
+          "source hashes",
+          "schema",
+          "unique complete keys",
+          "finite valid gross returns",
+          "exact split"
+        ],
+        "development_rows": 3600,
+        "final_outcomes_computed": false,
+        "final_rows": 1800,
+        "periods_per_scenario": 30,
+        "rows": 5400,
+        "scenarios": 180,
+        "status": "passed"
+      },
+      "fix": null,
+      "id": "metadata_chief_saved_rerun",
+      "observed": {
+        "checks": [
+          "source hashes",
+          "schema",
+          "unique complete keys",
+          "finite valid gross returns",
+          "exact split"
+        ],
+        "development_rows": 3600,
+        "final_outcomes_computed": false,
+        "final_rows": 1800,
+        "periods_per_scenario": 30,
+        "rows": 5400,
+        "scenarios": 180,
+        "status": "passed"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": false,
+      "fix": null,
+      "id": "metadata_no_final_outcomes",
+      "observed": false,
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "HY3-002",
+        "accepted",
+        "9fdd20e09f8c080b7d3381d3d545524084cb3955",
+        "c651c67c30db1131c25641ac94631238cba0dd8d",
+        "d3f1e845573fc1e7c170fd4b126130a6a344348138d588828517fd334d4c39d8",
+        "canonical_git_blob",
+        "passed"
+      ],
+      "fix": null,
+      "id": "chief_identity_and_scope",
+      "observed": [
+        "HY3-002",
+        "accepted",
+        "9fdd20e09f8c080b7d3381d3d545524084cb3955",
+        "c651c67c30db1131c25641ac94631238cba0dd8d",
+        "d3f1e845573fc1e7c170fd4b126130a6a344348138d588828517fd334d4c39d8",
+        "canonical_git_blob",
+        "passed"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "python": "3.12.10",
+        "reason": null,
+        "required_python": "3.12",
+        "status": "passed"
+      },
+      "fix": null,
+      "id": "chief_environment",
+      "observed": {
+        "python": "3.12.10",
+        "reason": null,
+        "required_python": "3.12",
+        "status": "passed"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "handoff/HY3-002/check-0.txt",
+        "handoff/HY3-002/check-1.txt",
+        "handoff/HY3-002/check-2.txt",
+        "handoff/HY3-002/check-3.txt",
+        "handoff/HY3-002/result.json",
+        "results/development/HY3-002/environment.json",
+        "results/development/HY3-002/input-check.json"
+      ],
+      "fix": null,
+      "id": "chief_accepted_paths",
+      "observed": [
+        "handoff/HY3-002/check-0.txt",
+        "handoff/HY3-002/check-1.txt",
+        "handoff/HY3-002/check-2.txt",
+        "handoff/HY3-002/check-3.txt",
+        "handoff/HY3-002/result.json",
+        "results/development/HY3-002/environment.json",
+        "results/development/HY3-002/input-check.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [],
+      "fix": null,
+      "id": "chief_excluded_paths",
+      "observed": [],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "handoff/HY3-002/check-0.txt",
+        "handoff/HY3-002/check-1.txt",
+        "handoff/HY3-002/check-2.txt",
+        "handoff/HY3-002/check-3.txt",
+        "handoff/HY3-002/result.json",
+        "results/development/HY3-002/environment.json",
+        "results/development/HY3-002/input-check.json"
+      ],
+      "fix": null,
+      "id": "queue_accepted_paths:da96ea77bcc476f2970a982f037c2679a68522b7",
+      "observed": [
+        "handoff/HY3-002/check-0.txt",
+        "handoff/HY3-002/check-1.txt",
+        "handoff/HY3-002/check-2.txt",
+        "handoff/HY3-002/check-3.txt",
+        "handoff/HY3-002/result.json",
+        "results/development/HY3-002/environment.json",
+        "results/development/HY3-002/input-check.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [],
+      "fix": null,
+      "id": "queue_excluded_paths:da96ea77bcc476f2970a982f037c2679a68522b7",
+      "observed": [],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "handoff/HY3-002/check-0.txt",
+        "handoff/HY3-002/check-1.txt",
+        "handoff/HY3-002/check-2.txt",
+        "handoff/HY3-002/check-3.txt",
+        "handoff/HY3-002/result.json",
+        "results/development/HY3-002/environment.json",
+        "results/development/HY3-002/input-check.json"
+      ],
+      "fix": null,
+      "id": "queue_accepted_paths:fa7856618626b2534524d18ac25fbca6fcc4cdcb",
+      "observed": [
+        "handoff/HY3-002/check-0.txt",
+        "handoff/HY3-002/check-1.txt",
+        "handoff/HY3-002/check-2.txt",
+        "handoff/HY3-002/check-3.txt",
+        "handoff/HY3-002/result.json",
+        "results/development/HY3-002/environment.json",
+        "results/development/HY3-002/input-check.json"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [],
+      "fix": null,
+      "id": "queue_excluded_paths:fa7856618626b2534524d18ac25fbca6fcc4cdcb",
+      "observed": [],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "SOL-003",
+        "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+        "audit/SOL-003/verification.json",
+        true,
+        true,
+        true
+      ],
+      "fix": null,
+      "id": "chief_carry_forward_binding",
+      "observed": [
+        "SOL-003",
+        "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+        "audit/SOL-003/verification.json",
+        true,
+        true,
+        true
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": "Carry forward independent numerical evidence for identical source and deterministic output; this does not accept any strategy outcome.",
+      "fix": null,
+      "id": "chief_carry_forward_scope",
+      "observed": "Carry forward independent numerical evidence for identical source and deterministic output; this does not accept any strategy outcome.",
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "HY3-001",
+        false
+      ],
+      "fix": null,
+      "id": "chief_gate_claims",
+      "observed": [
+        "HY3-001",
+        false
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": "81b23066bbc0ffc35883ef2b0fe627e3b191d38fa797a8baa5788d975f5324d0",
+      "fix": null,
+      "id": "old_receipt_preserved",
+      "observed": "81b23066bbc0ffc35883ef2b0fe627e3b191d38fa797a8baa5788d975f5324d0",
+      "status": "passed"
+    },
+    {
+      "expected": "3.13.14",
+      "fix": null,
+      "id": "old_runtime_remains_noncompliant",
+      "observed": "3.13.14",
+      "status": "passed"
+    },
+    {
+      "expected": [
+        false,
+        true,
+        "3.13.14"
+      ],
+      "fix": null,
+      "id": "prior_does_not_accept_old_runtime",
+      "observed": [
+        false,
+        true,
+        "3.13.14"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "fix": null,
+      "id": "old_artifact_preserved:handoff/HY3-001/check-0.txt",
+      "observed": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "status": "passed"
+    },
+    {
+      "expected": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "fix": null,
+      "id": "old_artifact_preserved:handoff/HY3-001/check-1.txt",
+      "observed": "9fccd64d115bfbbfc186d6043436ed8c59b87c884e6cb9a3e8ee259da51ec67d",
+      "status": "passed"
+    },
+    {
+      "expected": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf",
+      "fix": null,
+      "id": "old_artifact_preserved:results/development/HY3-001/input-check.json",
+      "observed": "b6bff43d5ad3ea27a5f103acfcd4ebc425a62788c0f6a70d7bb4d1790deaa3cf",
+      "status": "passed"
+    },
+    {
+      "expected": "dfebc6c4d764ba0a16d2d7d0cc0b001faf79a36bce86fc7457dde5b143c8cc96",
+      "fix": null,
+      "id": "old_chief_rejection_preserved",
+      "observed": "dfebc6c4d764ba0a16d2d7d0cc0b001faf79a36bce86fc7457dde5b143c8cc96",
+      "status": "passed"
+    },
+    {
+      "expected": "not_accepted_python_version",
+      "fix": null,
+      "id": "old_chief_rejection",
+      "observed": "not_accepted_python_version",
+      "status": "passed"
+    },
+    {
+      "expected": {
+        "lease_until": "2026-10-19T13:59:33.791136+00:00",
+        "machine_id": "937a9358dc114be8b3718ff13e3da4f9",
+        "python": "3.12.10",
+        "role": "hy3",
+        "state": "idle",
+        "updated_at": "2026-10-19T13:49:33.791136+00:00"
+      },
+      "fix": null,
+      "id": "release_registration_exact",
+      "observed": {
+        "lease_until": "2026-10-19T13:59:33.791136+00:00",
+        "machine_id": "937a9358dc114be8b3718ff13e3da4f9",
+        "python": "3.12.10",
+        "role": "hy3",
+        "state": "idle",
+        "updated_at": "2026-10-19T13:49:33.791136+00:00"
+      },
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "HY3-002",
+        "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+        true,
+        "5de076351c7580f32ac46f8eae1afc2a12939116"
+      ],
+      "fix": null,
+      "id": "release_prerequisites",
+      "observed": [
+        "HY3-002",
+        "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+        true,
+        "5de076351c7580f32ac46f8eae1afc2a12939116"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "hy3",
+        "idle",
+        "3.12.10"
+      ],
+      "fix": null,
+      "id": "registration_runtime",
+      "observed": [
+        "hy3",
+        "idle",
+        "3.12.10"
+      ],
+      "status": "passed"
+    },
+    {
+      "expected": true,
+      "fix": null,
+      "id": "release_within_registration_lease",
+      "observed": true,
+      "status": "passed"
+    },
+    {
+      "expected": true,
+      "fix": null,
+      "id": "release_before_result_finished",
+      "observed": true,
+      "status": "passed"
+    },
+    {
+      "expected": false,
+      "fix": null,
+      "id": "final_gate_closed:c651c67c30db1131c25641ac94631238cba0dd8d",
+      "observed": false,
+      "status": "passed"
+    },
+    {
+      "expected": "running",
+      "fix": null,
+      "id": "control_running:c651c67c30db1131c25641ac94631238cba0dd8d",
+      "observed": "running",
+      "status": "passed"
+    },
+    {
+      "expected": false,
+      "fix": null,
+      "id": "final_gate_closed:9fdd20e09f8c080b7d3381d3d545524084cb3955",
+      "observed": false,
+      "status": "passed"
+    },
+    {
+      "expected": "running",
+      "fix": null,
+      "id": "control_running:9fdd20e09f8c080b7d3381d3d545524084cb3955",
+      "observed": "running",
+      "status": "passed"
+    },
+    {
+      "expected": false,
+      "fix": null,
+      "id": "final_gate_closed:bb74c0f25cb18c3e02fef6d51416422514a8f503",
+      "observed": false,
+      "status": "passed"
+    },
+    {
+      "expected": "running",
+      "fix": null,
+      "id": "control_running:bb74c0f25cb18c3e02fef6d51416422514a8f503",
+      "observed": "running",
+      "status": "passed"
+    },
+    {
+      "expected": false,
+      "fix": null,
+      "id": "final_gate_closed:da96ea77bcc476f2970a982f037c2679a68522b7",
+      "observed": false,
+      "status": "passed"
+    },
+    {
+      "expected": "running",
+      "fix": null,
+      "id": "control_running:da96ea77bcc476f2970a982f037c2679a68522b7",
+      "observed": "running",
+      "status": "passed"
+    },
+    {
+      "expected": false,
+      "fix": null,
+      "id": "final_gate_closed:fa7856618626b2534524d18ac25fbca6fcc4cdcb",
+      "observed": false,
+      "status": "passed"
+    },
+    {
+      "expected": "running",
+      "fix": null,
+      "id": "control_running:fa7856618626b2534524d18ac25fbca6fcc4cdcb",
+      "observed": "running",
+      "status": "passed"
+    },
+    {
+      "expected": [
+        "c651c67c30db1131c25641ac94631238cba0dd8d",
+        false
+      ],
+      "fix": null,
+      "id": "source_base_and_contract_pins",
+      "observed": [
+        "c651c67c30db1131c25641ac94631238cba0dd8d",
+        false
+      ],
+      "status": "passed"
+    }
+  ],
+  "final_outcomes_computed": false,
+  "limitations": [
+    "Reuses only SOL-003 independent source/split metadata proof at the explicit accepted commit.",
+    "No CSV numeric analysis, strategy run, numerical experiment or prior 32-test suite was rerun.",
+    "Python 3.12.10 is supported by receipt, both retained preflight logs and environment JSON; these are retained evidence, not remote process attestation.",
+    "Chief metadata-rerun equality is verified against its saved report; its separate process was not rerun or independently attested here.",
+    "Git commits have no intrinsic branch: immutable queue branch/commit binding is checked; no current checkout branch is used.",
+    "Cancelled HY3-001 receipts remain in their original Git objects; no old Python 3.13 execution is accepted.",
+    "This review certifies neither investment performance, SOL-004 future driver nor any future HY3 result; it does not open the final gate.",
+    "Final input bytes are hashed only; no strategy is applied to final inputs."
+  ],
+  "reused_proof": {
+    "commit": "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+    "path": "audit/SOL-003/verification.json",
+    "scope": "Independent deterministic source/split metadata only"
+  },
+  "reviewed_commits": {
+    "cancelled_hy3001": "2a0263c5822988c0385d32fe084b794f8d644bc5",
+    "chief_base": "da96ea77bcc476f2970a982f037c2679a68522b7",
+    "hy3_result": "9fdd20e09f8c080b7d3381d3d545524084cb3955",
+    "independent_sol003": "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+    "release_registration": "5de076351c7580f32ac46f8eae1afc2a12939116",
+    "source_base": "c651c67c30db1131c25641ac94631238cba0dd8d",
+    "task_dispatch": "fa7856618626b2534524d18ac25fbca6fcc4cdcb"
+  },
+  "schema_version": 1,
+  "source_hashes": {
+    "data/development/scenarios_001_120.csv": {
+      "bytes": 182255,
+      "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+    },
+    "data/final_holdout/scenarios_121_180.csv": {
+      "bytes": 92732,
+      "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29"
+    },
+    "data/raw/SafeInvest_Synthetic_Data.csv": {
+      "bytes": 274914,
+      "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0"
+    },
+    "problem/2026_MCM_SafeInvest.pdf": {
+      "bytes": 137578,
+      "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd"
+    }
+  },
+  "status": "passed",
+  "task_id": "SOL-005",
+  "task_sha256": "39009df675c120d5fa46f19f1f6d540e885b1d63af48bb1582041a3ad6b42acd",
+  "validation_exit_code": 0,
+  "verifier_text_lf_sha256": "cf70081e6937bad5f01680f4345b00f632d6cfc35b40b9b931cdbafbda1c7730"
+}
