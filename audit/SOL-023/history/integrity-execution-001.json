@@ -1,0 +1,6 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"corruptions_rejected\": 4, \"original_bytes_preserved\": true}\r\n",
+  "stderr": "",
+  "elapsed_seconds": 48.257
+}

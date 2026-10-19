@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-023",
+  "status": "worker_completed_pending_chief_review",
+  "python": "3.12.14",
+  "cpu_only": true,
+  "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+  "branch_observed": "work/sol/SOL-023-a1",
+  "commands": [
+    {
+      "argv": [
+        "{python}",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_policy_cases.py",
+        "-v"
+      ],
+      "environment": {
+        "PYTHONPATH": "src",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "evidence": "history/trial-005-tests.json",
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "{python}",
+        "-B",
+        "audit/SOL-023/verify.py"
+      ],
+      "evidence": "history/verification-create-001.json",
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "{python}",
+        "-B",
+        "audit/SOL-023/verify.py",
+        "--check"
+      ],
+      "evidence": "history/verification-check-001.json",
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "{python}",
+        "-B",
+        "audit/SOL-023/verify.py",
+        "--self-test"
+      ],
+      "evidence": "history/integrity-execution-001.json",
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "{python}",
+        "-B",
+        "audit/SOL-023/verify.py"
+      ],
+      "evidence": "history/exclusive-create-rejection.json",
+      "expected_exit_code": 1,
+      "reason": "Intentional repeat exclusive creation refused; original bytes preserved."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-B",
+        "audit/SOL-023/verify.py",
+        "--check"
+      ],
+      "evidence": "history/verification-check-final.json",
+      "exit_code": 0
+    }
+  ],
+  "actual_results": {
+    "focused_tests": 14,
+    "scalar_rational_checks": 1172,
+    "synthetic_case_count": 24,
+    "corruptions_rejected": 4,
+    "exclusive_creation_refused": true,
+    "original_bytes_preserved": true,
+    "final_check": {
+      "exit_code": 0,
+      "stdout": "{\"status\": \"passed\", \"read_only\": true, \"tests\": 14, \"scalar_rational_checks\": 1172, \"synthetic_cases\": 24}\r\n",
+      "stderr": "",
+      "elapsed_seconds": 12.932,
+      "evidence_bytes_preserved": true
+    }
+  },
+  "artifact_hash_basis": "LF-normalized UTF-8; execution.json excluded from its own map. Core evidence hashes fixed artifacts and precreation failure history. This inventory includes later execution/integrity logs and intentionally corrupt evidence.",
+  "files": [
+    {
+      "path": "audit/SOL-023/findings.json",
+      "bytes": 6207,
+      "sha256_lf": "e08184d84e5f035c0f874c89cf2ee31b805389c23263715540e314373b91bea6"
+    },
+    {
+      "path": "audit/SOL-023/history/exclusive-create-rejection.json",
+      "bytes": 1063,
+      "sha256_lf": "97129ac248ac1159bb1f884a4c6fe2bf5fcf94eba90a439042887d3395bfd012"
+    },
+    {
+      "path": "audit/SOL-023/history/failed-trial-002-test_policy_cases.py",
+      "bytes": 18672,
+      "sha256_lf": "6880fa934c9909848f085bcd99751264b2eb2492efe8978b1a4263794c6e9da6"
+    },
+    {
+      "path": "audit/SOL-023/history/infrastructure-initial.json",
+      "bytes": 379,
+      "sha256_lf": "fef9127613514c0fe2b0de849fb980db7b74d4e687fa8483349d72ac54f69969"
+    },
+    {
+      "path": "audit/SOL-023/history/infrastructure.json",
+      "bytes": 747,
+      "sha256_lf": "b5c01aa2fa126a88224494e6a468f5226d195b3d7145a9696cf07294aef3f943"
+    },
+    {
+      "path": "audit/SOL-023/history/integrity-execution-001.json",
+      "bytes": 151,
+      "sha256_lf": "fbcec1ad1617ba15f8a3a736f15ceedc4d7b6d7d0bda2362c7e2c589c5a2c8b7"
+    },
+    {
+      "path": "audit/SOL-023/history/missing-key.json",
+      "bytes": 1246756,
+      "sha256_lf": "c23e31b77ded8dca40c9933fb711b7ecb39fe66022aa2ce4adb340de61cf6b9f"
+    },
+    {
+      "path": "audit/SOL-023/history/tiny-fee-zero.json",
+      "bytes": 1246906,
+      "sha256_lf": "7baee03dcaa25a64de1de502898e670d96e94fd2ba955f25680ad51906edfc74"
+    },
+    {
+      "path": "audit/SOL-023/history/tool-construction-001.json",
+      "bytes": 326,
+      "sha256_lf": "a118943f8cee588bdc701912c092c9344aba80aaf60072897f168f77569454c9"
+    },
+    {
+      "path": "audit/SOL-023/history/trial-001-tests.json",
+      "bytes": 1308,
+      "sha256_lf": "eaba0f1886db2a5921c9cff14e1bf74c201a5ba367387b78a2b2915a8b2aaf0b"
+    },
+    {
+      "path": "audit/SOL-023/history/trial-002-diagnosis-note.json",
+      "bytes": 600,
+      "sha256_lf": "4f1d7e460ed99bd68f128571862babf3796a8e5a8191d6e8aa40bceedcbf3ee0"
+    },
+    {
+      "path": "audit/SOL-023/history/trial-002-diagnosis.json",
+      "bytes": 20011,
+      "sha256_lf": "034790c9f3aed322b6974516353cd778810cac07cb338821eff9f1fefcc46e5a"
+    },
+    {
+      "path": "audit/SOL-023/history/trial-002-tests.json",
+      "bytes": 2436,
+      "sha256_lf": "fa67d87941aa3e35e89e651dc66f7bf1fbef2bf5da5fdcb8a9b671d5f707b49d"
+    },
+    {
+      "path": "audit/SOL-023/history/trial-003-tests.json",
+      "bytes": 1969,
+      "sha256_lf": "ff70c5599e7f8caa61683ce41b8b4a9c0200860ce84101ef6e60c2fe5e01903a"
+    },
+    {
+      "path": "audit/SOL-023/history/trial-004-tests.json",
+      "bytes": 1969,
+      "sha256_lf": "313361b4e4ce5846acbecd6b9c3254f9ae5475bf835bc99792e9e73c5eaf4e70"
+    },
+    {
+      "path": "audit/SOL-023/history/trial-005-tests.json",
+      "bytes": 2105,
+      "sha256_lf": "e53c7b4270ad8b0054971d80d93f912a5f4e9c53ba764f01451f28b679014c79"
+    },
+    {
+      "path": "audit/SOL-023/history/verification-check-001.json",
+      "bytes": 241,
+      "sha256_lf": "e7e7341daed98385847d3553612704b68a287cb6de5a3a5775941f2f3bb2fe5f"
+    },
+    {
+      "path": "audit/SOL-023/history/verification-check-final.json",
+      "bytes": 241,
+      "sha256_lf": "9aad87f86b6abe8daa274255082693d40a043b5ad6de9539f7a3e16ac3a6c009"
+    },
+    {
+      "path": "audit/SOL-023/history/verification-create-001.json",
+      "bytes": 197,
+      "sha256_lf": "6509f53122e6e876552fa7fcabbde661dd5f1d8cf3f8a464162317afba46c597"
+    },
+    {
+      "path": "audit/SOL-023/history/wrong-number.json",
+      "bytes": 1246910,
+      "sha256_lf": "74c975620d368588d9309f6462840311f2a785e3c5b54aa3e98b2ae72c2ec43d"
+    },
+    {
+      "path": "audit/SOL-023/history/wrong-source.json",
+      "bytes": 1246923,
+      "sha256_lf": "a566c3817ed7c68631af5ba60772e2987a2c7ab055f877042db88d5f2060abd0"
+    },
+    {
+      "path": "audit/SOL-023/implementation.md",
+      "bytes": 7340,
+      "sha256_lf": "9f5554b50b59ee18aab74344a4d7135b437db6a59688addc626e89267bcc3ff3"
+    },
+    {
+      "path": "audit/SOL-023/integrity-self-tests.json",
+      "bytes": 1569,
+      "sha256_lf": "bcfaaaf5b8d05f4c4a906da71a0f3ab074794a4cd2b6d7d9b678fe487dddb597"
+    },
+    {
+      "path": "audit/SOL-023/schemas.json",
+      "bytes": 4457,
+      "sha256_lf": "051dbd35ab08f448f4d5cc0556c64fc3b1df328a45f4b3b2ada371b01fa8c25c"
+    },
+    {
+      "path": "audit/SOL-023/task-binding.json",
+      "bytes": 56235,
+      "sha256_lf": "80ed8d81a6861af621c88ec2d3ec9de3de7e8086bbe835632d78333b37b26716"
+    },
+    {
+      "path": "audit/SOL-023/verification.json",
+      "bytes": 1246924,
+      "sha256_lf": "ec8986f3e0855d317a92b8b78cd77917a4913af6849a5e4221a5afb7a5b3eb3c"
+    },
+    {
+      "path": "audit/SOL-023/verify.py",
+      "bytes": 14380,
+      "sha256_lf": "bd32b0d7f64cee4920417a8d528cbb5bb810de42b59096780253aa050cf73e32"
+    },
+    {
+      "path": "src/safeinvest/policy_cases.py",
+      "bytes": 11955,
+      "sha256_lf": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7"
+    },
+    {
+      "path": "tests/test_policy_cases.py",
+      "bytes": 25048,
+      "sha256_lf": "cb22bc11db37ae5444c2c8a3a3103efb8571d1667d7e02612dd5dce54c9e3088"
+    }
+  ],
+  "only_allowed_paths_changed": true,
+  "competition_csv_reads": false,
+  "production_execution": false,
+  "commit_performed": false,
+  "push_performed": false,
+  "branch_changed": false,
+  "watcher_started": false,
+  "remaining_blockers": []
+}

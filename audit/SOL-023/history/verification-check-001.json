@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"status\": \"passed\", \"read_only\": true, \"tests\": 14, \"scalar_rational_checks\": 1172, \"synthetic_cases\": 24}\r\n",
+  "stderr": "",
+  "elapsed_seconds": 12.621,
+  "evidence_bytes_preserved": true
+}

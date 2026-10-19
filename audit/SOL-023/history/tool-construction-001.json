@@ -1,0 +1,6 @@
+{
+  "trial": "Report generation command construction",
+  "failure": "Unexpected token: identifier while parsing JavaScript template literal",
+  "effect": "No process ran and no files were written by the rejected tool call.",
+  "resolution": "Removed nested markdown backticks from the report string and reran successfully."
+}

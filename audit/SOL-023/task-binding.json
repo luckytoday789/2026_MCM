@@ -1,0 +1,1048 @@
+{
+  "origin_commit": "812fadfee82a10cda89233df75a50d4afc0512a3",
+  "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+  "task_sha256": "3298bc4f6bd44345967419c640b395d0196efe9f81160c71128901f9f1f0938a",
+  "pins": [
+    {
+      "path": "specs/PROBLEM_LOCK.md",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "1ba83723824afde3b29a5b3c8b0ac5d433a68c4b"
+    },
+    {
+      "path": "specs/ACCOUNTING.md",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "0627337a522651189b7a985e94b6af9a1f7a4a4d"
+    },
+    {
+      "path": "specs/DEVELOPMENT_POLICY_PILOT_V2.md",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "d1f02265d988444c20a7d61595306c86b9fa33c4"
+    },
+    {
+      "path": "specs/development_policy_pilot_v2.json",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "6e4fa5331624b7583584ccbcbb09a8a858dc2557"
+    },
+    {
+      "path": "specs/policy_driver_layout_v2.json",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "dc8c5b8e98526c9bc8a8340abc4bb5b9ed5a8d09"
+    },
+    {
+      "path": "specs/POLICY_CASE_ENGINE.md",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "bafe77b5b0d31319ad8f43aad6059fd57232f8dd"
+    },
+    {
+      "path": "src/safeinvest/accounting.py",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "6ff55fed7cc0ab40f6e609dad7657efc92cd09e7"
+    },
+    {
+      "path": "src/safeinvest/backtest.py",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "87f5f107f5f76d5da155fc134c1b036b7c431987"
+    },
+    {
+      "path": "src/safeinvest/metrics.py",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "383aa3fbeed74bce4d4ec1bce7bb091097fc5e05"
+    },
+    {
+      "path": "src/safeinvest/baselines.py",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "5b1c5ffa310923da2866492145871977edffb2a5"
+    },
+    {
+      "path": "src/safeinvest/experiments.py",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "f9d28e72ce2cbf6ae0bb08b80f8ffab486b192da"
+    },
+    {
+      "path": "src/safeinvest/policy_pilot.py",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "beff7388a03564bc799ee32b15277aaca2045ae4"
+    },
+    {
+      "path": "src/safeinvest/policy_calibration.py",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "0bff6bbbad8745f6c0cd52e0088d914c09c571fa"
+    },
+    {
+      "path": "specs/POLICY_CORRECTION_V2.md",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "19e103911a996ba56c5a8d6c0f120e934a5d4b88"
+    },
+    {
+      "path": "specs/POLICY_NUMERIC_K1.md",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "ce6cae986becd46d22d7604de90f916099f79aa5"
+    },
+    {
+      "path": "audit/chief/SOL-013-review.json",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "cfee1d30db6e7440333e911a9c62f4ec97230ef4"
+    },
+    {
+      "path": "specs/POLICY_NUMERIC_K2.md",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "1eef46b5389c3a228f45909e4109294a02473fa7"
+    },
+    {
+      "path": "audit/chief/SOL-017-review.json",
+      "match": true,
+      "checkout_lf_match": true,
+      "blob": "83a8c6fd6aea68e392049c66aeee8b86827508be"
+    }
+  ],
+  "SOL-013": {
+    "commit": "812fadfee82a10cda89233df75a50d4afc0512a3",
+    "path": "audit/chief/SOL-013-review.json",
+    "blob": "cfee1d30db6e7440333e911a9c62f4ec97230ef4",
+    "review": {
+      "task_id": "SOL-013",
+      "reviewed_commit": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+      "base_commit": "7c804ffb960be6b9fadfc840e246ff060668a96d",
+      "task_sha256": "fd1cd04500fb04b91041e835678dee787ff16c00cb21578e368fda313cb9d4e7",
+      "branch": "work/sol/SOL-013-a1",
+      "structural_checks": "passed",
+      "source_hashes_checked": {
+        "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+        "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+        "specs/POLICY_CORRECTION_V2.md": "b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383",
+        "src/safeinvest/policy_pilot.py": "1f439cff5627279219867497b891549f3702434966b3194c11f8e18894ffba90",
+        "tests/test_policy_pilot.py": "0a8d605c38e75aef00a7185978a8925989b413aa1eb44c0bd534085125bdb11f",
+        "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+        "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+        "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+        "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+        "audit/SOL-009/findings.json": "1b425c6b0ab0399c2c94614768ab362975e676cfd474e964aa3a1ee4d60c6e83",
+        "audit/chief/SOL-009-review.json": "6f1a480162704fa67a2f70358cc9413584c44d6a455d662e7369f7c7ea4a8964"
+      },
+      "artifacts_sha256": {
+        "audit/SOL-013/findings.json": "b2c82f41ed0abd7c62cf350ed5b554c967085d5cbbee70a3e62d4f6feb64c6bd",
+        "audit/SOL-013/history/completed-trial-002-verify.py": "4651c91a1ba49dc1565929a226ebceda74158b3eacdded77cf0b613020019763",
+        "audit/SOL-013/history/diagnosis-002.json": "3a41a0794979b35092cfbe63e3357f52d30b17b32b5903bf07a4b56a5e5b5f64",
+        "audit/SOL-013/history/failed-trial-001-verify.py": "f418e0c2857a404bb42396dc5a6e73820ab8b90ccdedee2a94408a8a8770cffb",
+        "audit/SOL-013/history/failure-001.json": "b2950a652f90b0681a3179483f0003a1fa0c755a31b05568b27100600b10d594",
+        "audit/SOL-013/history/initial-findings.json": "a6f12da9203fb4b14983279ad52aae0434d6865dafd51a8712331867d774bd07",
+        "audit/SOL-013/history/initial-integrity-self-tests.json": "dd41a1e9c45b5cba1c79eda74516f35688658a7aa93db1c12199c38d193f9a25",
+        "audit/SOL-013/history/initial-review.md": "ffc16cfd7859911ef3d50d45fb071c1bf6edcd21aeda33040129fc0c987ffea9",
+        "audit/SOL-013/history/initial-verification.json": "288b23b3c1eaffa6765d474a76442bed33121506a5ef6b8e38544a69e78fa850",
+        "audit/SOL-013/history/integrity-self-tests.json": "b885b66d06a764400f7afd9adf5c67402fd76b1227b7e60f46fced6fd811b127",
+        "audit/SOL-013/history/revision-003.json": "aa71695de9dfaf443c6dee531e82a7ed96b54b67e043a85e7e8332d8de505e9d",
+        "audit/SOL-013/review.md": "8410d52b2ca1d4e870cdabfac1663c469ff82cb6ed1ce3a0e61d39bcd5f51ebc",
+        "audit/SOL-013/verification.json": "a7d2fe14491d8110e04198c49396089eb5e8e696e997393123be24fa3a8e1944",
+        "audit/SOL-013/verify.py": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+        "handoff/SOL-013/check-0.txt": "bab2dcd4a942a32d500e9572e19bf1e82f45753e7f4f70cadf17cb986e532e78",
+        "handoff/SOL-013/check-1.txt": "c7a360edc817956cb27a7d6aea8e5ef92d468f0cf17f56762c16b586fa7e0f50"
+      },
+      "accepted_paths": [
+        "audit/SOL-013/findings.json",
+        "audit/SOL-013/history/completed-trial-002-verify.py",
+        "audit/SOL-013/history/diagnosis-002.json",
+        "audit/SOL-013/history/failed-trial-001-verify.py",
+        "audit/SOL-013/history/failure-001.json",
+        "audit/SOL-013/history/initial-findings.json",
+        "audit/SOL-013/history/initial-integrity-self-tests.json",
+        "audit/SOL-013/history/initial-review.md",
+        "audit/SOL-013/history/initial-verification.json",
+        "audit/SOL-013/history/integrity-self-tests.json",
+        "audit/SOL-013/history/revision-003.json",
+        "audit/SOL-013/review.md",
+        "audit/SOL-013/verification.json",
+        "audit/SOL-013/verify.py",
+        "handoff/SOL-013/check-0.txt",
+        "handoff/SOL-013/check-1.txt",
+        "handoff/SOL-013/result.json"
+      ],
+      "excluded_paths": [],
+      "receipt_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "prescribed_command_count": 1,
+      "schema_version": 1,
+      "checked_at": "2026-10-19T17:55:11.460825+00:00",
+      "decision": "accept_review_evidence_only",
+      "corrected_design_verdict": "approve",
+      "code_verdict": "changes_required",
+      "replay_checks": [
+        {
+          "evidence": "verification.json",
+          "expected_exit": 0,
+          "exit_code": 0,
+          "stdout": "{\"evidence_integrity_verdict\": \"passed\", \"corrected_design_verdict\": \"approve\", \"code_verdict\": \"changes_required\", \"check_count\": 3023, \"read_only\": true}",
+          "stderr": ""
+        },
+        {
+          "evidence": "review-SOL-013-tiny-fee-corrupted.json",
+          "expected_exit": 1,
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "RuntimeError: Saved numerical/source evidence mismatch; read-only evidence preserved"
+        }
+      ],
+      "audit_files_unchanged": true,
+      "independent_check_count": 3023,
+      "expected_negative_checks": [
+        "finite extreme constant 5e-324"
+      ],
+      "chief_k1_confirmation": {
+        "constant_gross_hex": "0x0.0000000000001p-1022",
+        "exact_gross_hex": "0x0.0000000000001p-1022",
+        "rounded_products": [
+          0,
+          0,
+          0
+        ],
+        "observed_error": "portfolio gross factor must be positive"
+      },
+      "chief_rational_fixture": {
+        "expected": {
+          "fee": "1/6",
+          "transfer": "200/3",
+          "each_post_fee": "599/18",
+          "wealth_end": "7787/75",
+          "buffered_score": "3887/3750"
+        },
+        "observed": {
+          "fee": 0.16666666666666669,
+          "transfer": 66.66666666666667,
+          "each_post_fee": 33.27777777777777,
+          "wealth_end": 103.82666666666665,
+          "buffered_score": 1.0365333333333333
+        }
+      },
+      "final_data_open": false,
+      "production_policy_accepted": false,
+      "note": "K1 is a genuine finite positive extreme rejection. Design approved; kernel approval withheld. All negative and failed trial evidence retained. No competition outcomes read."
+    }
+  },
+  "SOL-021": {
+    "commit": "812fadfee82a10cda89233df75a50d4afc0512a3",
+    "path": "audit/chief/SOL-021-review.json",
+    "blob": "7a8daa7d7c3517bf56dc7f55c5de28abca6dffb8",
+    "review": {
+      "task_id": "SOL-021",
+      "reviewed_commit": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+      "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+      "task_sha256": "53389f310d3271c476c9be65f6b75ab228ff1ca3e2dfbd4a8466348bf8678669",
+      "branch": "work/sol/SOL-021-a1",
+      "structural_checks": "passed",
+      "source_hashes_checked": {
+        "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+        "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+        "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+        "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+        "specs/POLICY_NUMERIC_K1.md": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+        "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+        "tests/test_policy_pilot.py": "f5ace90172ad5f926613be8d278094f1839eee15286173a8f71827ae032d38d9",
+        "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+        "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+        "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+        "audit/SOL-013/verify.py": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+        "audit/SOL-013/findings.json": "b2c82f41ed0abd7c62cf350ed5b554c967085d5cbbee70a3e62d4f6feb64c6bd",
+        "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+        "audit/chief/policy-k1-validation.json": "4f84abd57d5e08bbca544c70972db08b9056c87bcab9af65373e1cb6897dd00f",
+        "specs/POLICY_NUMERIC_K2.md": "88d5f58a59f090c25331392e4cd5682daf5d050c27b24afe6629d8e4a5eb9997",
+        "audit/chief/SOL-017-review.json": "ec9dcc7fd084954827cfdf82bf1826e17ddd8c9b3fbece15058760fedef3d4b9",
+        "audit/SOL-017/verify.py": "5c4341b9c9347ee9b75719823f0af6e30daf33b51a73f644f62f78febcd8188f",
+        "audit/SOL-017/findings.json": "242737618ac0074128502849121a0e01afb31ef71dd3bb1cd7ab8d2a4e4e2472",
+        "audit/chief/policy-k2-validation.json": "4b97a1499c8cff293f7d971c04233d5ed6c520be6caff31dcb47ebb976ac9d59"
+      },
+      "artifacts_sha256": {
+        "audit/SOL-021/findings.json": "1116e895b137597bf7d2bbc2ce5587ec2da5893cb402e43d703cef3cd05283ae",
+        "audit/SOL-021/history/creation-001-findings.json": "e7303be83424d9fa11d1d7aeeb7f1eee01442d2997351543e1e523b56436701c",
+        "audit/SOL-021/history/creation-001-result.json": "fd9dd13b75b9576dbb38d7af0e066fd5d60d79d0b0201640bad0795c815abf5b",
+        "audit/SOL-021/history/creation-001-review.md": "a334f2b58c32129c876c8c887ceda822b97ded009dd7535da1bb8c968b5bce6c",
+        "audit/SOL-021/history/creation-001-verify.py": "377e0bd41f12a6f7e9b1582a6617351cdd81037bc1afb7cb99e6288e322b0709",
+        "audit/SOL-021/history/creation-002-findings.json": "cca608271083978eb2c72ffef72126373ca7e956afe68476989f3eca241ea5ae",
+        "audit/SOL-021/history/creation-002-integrity-self-tests.json": "f7fabe23e8ed446a66a732da7cce3dc4e751e580a9290d4344dcdccd195bfa55",
+        "audit/SOL-021/history/creation-002-result.json": "18e0f22fed6c11d9ed177cb3f735541144eeaad0c9986f473293d7064ce1e134",
+        "audit/SOL-021/history/creation-002-review.md": "4062c6e8f83fb2a9a5358a033fab278413a13e10841a723eb02a0508cb2c45e5",
+        "audit/SOL-021/history/creation-002-verify.py": "5556fde68cd1f359b9c40e45e3084a8f676b79407250ff7c5f2c1e0e2713cbd3",
+        "audit/SOL-021/history/diagnosis-001.json": "7a446b6aa008e879b14573ce4ffdea1d71642154a33ead2323062465a32220fc",
+        "audit/SOL-021/history/diagnosis-002.json": "ebec9cd7db997a32c50b9da30b0a49a6f5b45559f3c0a9f3f62f915ea20cd44b",
+        "audit/SOL-021/history/diagnosis-003.json": "2614dce713113776a92b64e25107d216798aba581e00248a3fa564614ac13321",
+        "audit/SOL-021/history/infrastructure.json": "69caf25ebf3ae7380a16827b1761eb4aba389dbdbf2c609f5f895e7a7bb260dd",
+        "audit/SOL-021/history/trial-001-verify.py": "61e0708b5c519fe1872afdc574c571acb286b48b1ee165320d948e318667a6f3",
+        "audit/SOL-021/history/trial-001.json": "97696e5fee827660d149fa5bcec595314054d85480ea643780b7a0cfd21879ae",
+        "audit/SOL-021/history/trial-002.json": "2017abb2f76a258d2d6ee5167cf8ba11f8c2da2b4f1a9b25141f60fb59884e76",
+        "audit/SOL-021/history/trial-003.json": "bc3b02987839fe859dddda4e669374a1f22a5221222957d3971b8cbd10cc1c37",
+        "audit/SOL-021/integrity-self-tests.json": "e3fd48ddd411112340b96466caeb42319abd652d4d5667c036cd1c967cb3ad1b",
+        "audit/SOL-021/oracle-provenance.json": "f02f7d2e342334a04d585e87d68ff75e9befa5f7169868d30465085dc56840a7",
+        "audit/SOL-021/oracle.py": "7a47cc2e944d7263166b6e11f9fbd06e6b8be2ac2dafb5913beeda21d2464c19",
+        "audit/SOL-021/review.md": "478bf31e796f49aea92ee7670bddefc719efb4f6e1acb72abeecb1c693ee9cc3",
+        "audit/SOL-021/task-binding.json": "a8634713e798fcbfd48ff562ef104de4a8a7ab094af48994114a51563314ffb6",
+        "audit/SOL-021/verification.json": "eed5c159443fb90b3ec72643640df9b34ea420b262cdb3ad383bdc8dbd82c22e",
+        "audit/SOL-021/verify.py": "2e715441e636aedddb85e50277edfb8bee0ad807742fc8986c066801cc273372",
+        "handoff/SOL-021/check-0.txt": "fc1cfb1d8f1f8fcd1589f8fb2b7e56a115b4757b022d7b06f3d9698d15ef970e",
+        "handoff/SOL-021/check-1.txt": "b72342df4f8efa2cde938dd58355779e0123ba5117cf2011d5c5d70361471e1a"
+      },
+      "accepted_paths": [
+        "audit/SOL-021/findings.json",
+        "audit/SOL-021/history/creation-001-findings.json",
+        "audit/SOL-021/history/creation-001-result.json",
+        "audit/SOL-021/history/creation-001-review.md",
+        "audit/SOL-021/history/creation-001-verify.py",
+        "audit/SOL-021/history/creation-002-findings.json",
+        "audit/SOL-021/history/creation-002-integrity-self-tests.json",
+        "audit/SOL-021/history/creation-002-result.json",
+        "audit/SOL-021/history/creation-002-review.md",
+        "audit/SOL-021/history/creation-002-verify.py",
+        "audit/SOL-021/history/diagnosis-001.json",
+        "audit/SOL-021/history/diagnosis-002.json",
+        "audit/SOL-021/history/diagnosis-003.json",
+        "audit/SOL-021/history/infrastructure.json",
+        "audit/SOL-021/history/trial-001-verify.py",
+        "audit/SOL-021/history/trial-001.json",
+        "audit/SOL-021/history/trial-002.json",
+        "audit/SOL-021/history/trial-003.json",
+        "audit/SOL-021/integrity-self-tests.json",
+        "audit/SOL-021/oracle-provenance.json",
+        "audit/SOL-021/oracle.py",
+        "audit/SOL-021/review.md",
+        "audit/SOL-021/task-binding.json",
+        "audit/SOL-021/verification.json",
+        "audit/SOL-021/verify.py",
+        "handoff/SOL-021/check-0.txt",
+        "handoff/SOL-021/check-1.txt",
+        "handoff/SOL-021/result.json"
+      ],
+      "excluded_paths": [],
+      "receipt_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "prescribed_command_count": 1,
+      "schema_version": 1,
+      "checked_at": "2026-10-19T18:33:59.616762+00:00",
+      "decision": "accept_kernel_review",
+      "code_verdict": "approve",
+      "k2_status": "closed",
+      "replay_checks": [
+        {
+          "evidence": "verification.json",
+          "expected_exit": 0,
+          "exit_code": 0,
+          "stdout": "{\"read_only\": true, \"code_verdict\": \"approve\", \"checks\": 3720, \"integrity\": \"passed\"}",
+          "stderr": "",
+          "seconds": 4.602017200028058
+        },
+        {
+          "evidence": "wrong-midpoint.json",
+          "expected_exit": 1,
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "RuntimeError: Recomputed evidence mismatch",
+          "seconds": 4.532465800002683
+        },
+        {
+          "evidence": "wrong-import.json",
+          "expected_exit": 1,
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "RuntimeError: Recomputed evidence mismatch",
+          "seconds": 4.337389299995266
+        }
+      ],
+      "audit_files_unchanged": true,
+      "independent_check_count": 3720,
+      "rational_grid_count": 2048,
+      "failed_comparison_count": 0,
+      "chief_independent_rounding_cells": 42,
+      "chief_incorrect_neighbor_rejections": 84,
+      "chief_rational_fixture": {
+        "expected": {
+          "transfer": "200/3",
+          "fee": "1/6",
+          "each_post_fee": "599/18",
+          "buffered_score": "3887/3750",
+          "true_net_ce": "7787/7500",
+          "wealth_end": "7787/75"
+        },
+        "observed": {
+          "transfer": 66.66666666666667,
+          "fee": 0.16666666666666669,
+          "each_post_fee": 33.27777777777777,
+          "buffered_score": 1.036533333333333,
+          "true_net_ce": 1.0382666666666664,
+          "wealth_end": 103.82666666666665
+        }
+      },
+      "chief_oracle": "audit/chief/kernel_rounding_certificate.py",
+      "chief_oracle_evidence": "audit/chief/kernel-rounding-certificates.json",
+      "preserved_chief_audit_error": "audit/chief/kernel-rounding-history/trial-001-failure.json",
+      "final_data_open": false,
+      "production_policy_execution_approved": false,
+      "limitations": [
+        "Kernel synthetic review only; calibration, case, analysis, writer and actual results need their own acceptance.",
+        "Ordinary log route checked at declared relative tolerances, not claimed correctly rounded.",
+        "Historical SOL-013/SOL-017 negatives and all worker/chief audit-tool failures preserved."
+      ]
+    }
+  },
+  "SOL-022": {
+    "commit": "812fadfee82a10cda89233df75a50d4afc0512a3",
+    "path": "audit/chief/SOL-022-review.json",
+    "blob": "44461a744867d0fba3f8cea2a2128fc2314f1f16",
+    "review": {
+      "task_id": "SOL-022",
+      "reviewed_commit": "21ad493707d71240f83d7f01ed6d133e1380e8fb",
+      "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+      "task_sha256": "9f1841cdfae0638427bdccfcd96e1cf231bed04ce6ac32afd2d72ae550674ab7",
+      "branch": "work/sol/SOL-022-a1",
+      "structural_checks": "passed",
+      "source_hashes_checked": {
+        "src/safeinvest/policy_calibration.py": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+        "tests/test_policy_calibration.py": "1ffd23c01e82a12d57568557cf33402bf93aec15b3e9cb4808e0da83fd5a38f2",
+        "specs/POLICY_CALIBRATION_PROTOTYPE.md": "a9272fbc14c5947acaf7f0c8d557ca5671643bf0e8fea5d13d82a66772295990",
+        "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+        "specs/POLICY_CORRECTION_V2.md": "b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383",
+        "specs/POLICY_DRIVER_HANDOFF.md": "18bffbb0c9da4d487b3ba3fc384159ebb069768593bdeced140d1971b3fe3001",
+        "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+        "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+        "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+        "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+        "specs/POLICY_NUMERIC_K1.md": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+        "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+        "specs/POLICY_NUMERIC_K2.md": "88d5f58a59f090c25331392e4cd5682daf5d050c27b24afe6629d8e4a5eb9997",
+        "audit/chief/SOL-017-review.json": "ec9dcc7fd084954827cfdf82bf1826e17ddd8c9b3fbece15058760fedef3d4b9"
+      },
+      "artifacts_sha256": {
+        "audit/SOL-022/findings.json": "70a624f1bfe00cf5a559b48876e8760bfd9534ee4f003dc6d8191d40b0577109",
+        "audit/SOL-022/initial-execution.json": "07580b350ab06801584b178647a2fb43c517284a140278d81d0dee5a873ca83b",
+        "audit/SOL-022/integrity-self-tests.json": "84c5d37a58ed311ac1d45ad5381d4e6eab8318f459a5c6a48bfceba2e787b77b",
+        "audit/SOL-022/integrity_self_test.py": "0945af572c305855736fa1463e162f6a5a428e364151dc88693f68690825db08",
+        "audit/SOL-022/review.md": "8c3ca25e0bf18b9d6396330373b76247ee7c5e8e1818978b50a78663e2a18ff7",
+        "audit/SOL-022/task-lock.json": "f724ad93de4463b4f3f70970332e3d37137111ebf40d70aa2803c892611bbaa8",
+        "audit/SOL-022/verification.json": "4cbcf50fa371f5f0e039007bcd1b6ee4a140e6e56a2494ad24150af7c4b509b1",
+        "audit/SOL-022/verify.py": "55c06f2f91a7d4ac3939948a31f624c8db49846767e1b6de60be72ca8befd8b6",
+        "handoff/SOL-022/check-0.txt": "8a382555a2ff7c76283aea18ae37f440e06a9104af9a112bd59ae514cf283554",
+        "handoff/SOL-022/check-1.txt": "cd8124488b02277aa215264b46e95022b17ccbfb369b2e3af04928fbe07a534b"
+      },
+      "accepted_paths": [
+        "audit/SOL-022/findings.json",
+        "audit/SOL-022/initial-execution.json",
+        "audit/SOL-022/integrity-self-tests.json",
+        "audit/SOL-022/integrity_self_test.py",
+        "audit/SOL-022/review.md",
+        "audit/SOL-022/task-lock.json",
+        "audit/SOL-022/verification.json",
+        "audit/SOL-022/verify.py",
+        "handoff/SOL-022/check-0.txt",
+        "handoff/SOL-022/check-1.txt",
+        "handoff/SOL-022/result.json"
+      ],
+      "excluded_paths": [],
+      "receipt_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "prescribed_command_count": 1,
+      "schema_version": 1,
+      "checked_at": "2026-10-19T19:16:04.816299+00:00",
+      "decision": "accept_calibration_seam_review",
+      "code_verdict": "approve",
+      "worker_replay_comparisons": 87166,
+      "worker_replay_checks": [
+        {
+          "case": "verification.json",
+          "expected_exit": 0,
+          "exit_code": 0,
+          "stdout": "{\"check_count\": 87166, \"code_verdict\": \"approve\", \"evidence_integrity_verdict\": \"passed\", \"failed_comparisons\": 0, \"read_only\": true, \"release_gate\": \"not_verifiable_at_pinned_base\"}",
+          "stderr": ""
+        },
+        {
+          "case": "wrong-number.json",
+          "expected_exit": 1,
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-022\\audit\\SOL-022\\verify.py\", line 585, in <module>\n    main()\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-022\\audit\\SOL-022\\verify.py\", line 567, in main\n    facts=check_saved(args.evidence,args.artifact_dir)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-022\\audit\\SOL-022\\verify.py\", line 552, in check_saved\n    raise RuntimeError('Saved numerical/source evidence mismatch; read-only evidence preserved')\nRuntimeError: Saved numerical/source evidence mismatch; read-only evidence preserved"
+        },
+        {
+          "case": "wrong-source.json",
+          "expected_exit": 1,
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-022\\audit\\SOL-022\\verify.py\", line 585, in <module>\n    main()\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-022\\audit\\SOL-022\\verify.py\", line 567, in main\n    facts=check_saved(args.evidence,args.artifact_dir)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\.runtime\\review-SOL-022\\audit\\SOL-022\\verify.py\", line 552, in check_saved\n    raise RuntimeError('Saved numerical/source evidence mismatch; read-only evidence preserved')\nRuntimeError: Saved numerical/source evidence mismatch; read-only evidence preserved"
+        }
+      ],
+      "audit_files_unchanged": true,
+      "chief_independent_checks": {
+        "fixture": "generated 8 scenarios x 2 years; exact dyadic nominal inputs",
+        "folds": [
+          {
+            "fold": 0,
+            "evaluation_ids": [
+              1,
+              5
+            ],
+            "training_keys": [
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                6,
+                2
+              ],
+              [
+                7,
+                1
+              ],
+              [
+                7,
+                2
+              ],
+              [
+                8,
+                1
+              ],
+              [
+                8,
+                2
+              ]
+            ],
+            "annual_weight": "1/12",
+            "first_rational_real_gross": [
+              "2/3",
+              "8/9",
+              "8/9"
+            ],
+            "training_sha256": "e093a4af685782dfc8e48bc6609368e190aa03fc84a2f9c1ba18bdd535aba1a6",
+            "gross_sha256": "b0a401f1c924a65271b023957e74f134997c6fb25b494d0459c34973b65e5be3",
+            "CE": [
+              {
+                "recent_count": 0,
+                "inverse_cube_moment": "159566053086008538296465367068005890572279489664085049246595384105511292694283349054451396387167614193504246753512719668007379273376827849621333080478770975966461196342774036319456138863692401325014472511152165516465311406274258244945669637113424738086516466792755825269217328281664007203256073488321513934976472515218630290913682142600754487078251/180237435675632836872761928153316395185253790836914292445127131635523181114721099189841447335201635879309707838992308888741028217307621214482959977210756590134607079157093491513837038314992936646366713202608485945856444541292418695901889929622114334896568419113017645202724327442812834741937037559560919090209085989697430215629907541260183372554500",
+                "expected": 1.0414413864320404,
+                "observed": 1.0414413864320404
+              },
+              {
+                "recent_count": 2,
+                "inverse_cube_moment": "187519892418035176477218079381459641528794413875445733964306384860921668841628288482571329389326149582947091005663803488207851243348457481694412023071029422156930322773937814164157341287023978896880775950851132263474959416801064620554326737120077447007915910809451720353714289091398255912801546291615908281011485922208078378936712984051947430131051/204269093765717215122463518573758581209954296281836198104477415853592938596683912415153640313228520663217668884191283407239831979615304043080687974172190802152554689711372623715681976756991994865882274962956284071970637146798074522022141920238396246216110874994753331229754237768521212707528642567502374968903630788323754244380561880094874488895100",
+                "expected": 1.028928284102745,
+                "observed": 1.028928284102745
+              }
+            ],
+            "heldout_perturbation_unchanged": true,
+            "other_fold_hashes_changed": true,
+            "invalid_heldout_rejected": true
+          },
+          {
+            "fold": 1,
+            "evaluation_ids": [
+              2,
+              6
+            ],
+            "training_keys": [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                7,
+                1
+              ],
+              [
+                7,
+                2
+              ],
+              [
+                8,
+                1
+              ],
+              [
+                8,
+                2
+              ]
+            ],
+            "annual_weight": "1/12",
+            "first_rational_real_gross": [
+              "5/8",
+              "1",
+              "1"
+            ],
+            "training_sha256": "00e8f44b9b297c47b0a7721e3ac3c10cf938c533695439b02a9af47b56adf639",
+            "gross_sha256": "0898fc2189155e99a53637fb38537fa666d08db076c07f411e9d9ce55bd11333",
+            "CE": [
+              {
+                "recent_count": 0,
+                "inverse_cube_moment": "92150254478747659112143692926475888669872665093266733252644202602597961340508771507792292357400004752204235808939586952184257940109063936597999862071280557747995159025155060918222978375559075181126098148477070131772796122202186261992552681833870107815458606763623654084189419369656135219659932369910223/98094677796725893141049698264996173906216841619188713612829753658265043131960744942042438357392058846530651072199089105007956698375828383721717051021393847455897250011005260381409430732908421888427278013172636294407162966416045386910138263503544115420215723483089646832246357615775667331077064958834100",
+                "expected": 1.0210561732326213,
+                "observed": 1.0210561732326213
+              },
+              {
+                "recent_count": 2,
+                "inverse_cube_moment": "751549413018278132313768491952414596667361550281833328472623579028753206991586975656244609015333089180943875722298479218174631016267870386159089995271219130828898174467631760314779799792604594566936588430039381277558727653370472525124357495946286901924900937155276787919227946067955354142620621347433641/778217777187358752252327606235636312989320276845563794661782712355569342180221909873536677635310333515809831839446106899729789807114905177525621938103057856483451516753975065692514817147740146981523072237836247935630159533567293402820430223794783315667044739632511198202487770418486960826544715340083860",
+                "expected": 1.0116909595001122,
+                "observed": 1.0116909595001122
+              }
+            ],
+            "heldout_perturbation_unchanged": true,
+            "other_fold_hashes_changed": true,
+            "invalid_heldout_rejected": true
+          },
+          {
+            "fold": 2,
+            "evaluation_ids": [
+              3,
+              7
+            ],
+            "training_keys": [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                6,
+                2
+              ],
+              [
+                8,
+                1
+              ],
+              [
+                8,
+                2
+              ]
+            ],
+            "annual_weight": "1/12",
+            "first_rational_real_gross": [
+              "5/8",
+              "1",
+              "1"
+            ],
+            "training_sha256": "24e7b93d4aa73650d4012ee07783143cc9014c710ef1965a5d95a18168c4a11e",
+            "gross_sha256": "1f74db48d4b20cbbc00b88f08e519effe0f5acd8987b44abb91db589ecb21817",
+            "CE": [
+              {
+                "recent_count": 0,
+                "inverse_cube_moment": "1701942675773437089709502205359874103379008471367868297916316484040949551531654164041892466694440214846297482540240537751430866240781178506343934292127974526635697165080552548552306879381394268686998725991085422745207287924129703002641047727193446436588380144379133464310126069112292510015753777154663486160958998633755502631533924687627771389845186326783/1608796737449577821983771790130158879259301274236411214127845152825343217801606459487203995007710451346323611747960191308432778894157520476999430473845906030529234311559916131809575991465583812166134892189704542554355531855551815800320123832750080521777966471719819293031834370221680111908244191468548871372450832602851425956908641629880128540920851008500",
+                "expected": 0.9814136246869488,
+                "observed": 0.9814136246869489
+              },
+              {
+                "recent_count": 2,
+                "inverse_cube_moment": "278779748618350625554517563477100375071839877060763560205596581634212715805739823671353180809075840492222496438837399133044765047062092327171848923203766019352044715703894398812987557240241629279463112776038544515897036473297449437047248747987724468960312394114308527354415424827682232681945622181752407106077212963303018661511327123873702532141287076169/260471852729931647368801146973454294737220206304942768001651119981246044786926760107452075382200739741785727616336411926127211820958836648657050648146480023990447459966843564197740874808713569588802792068809306889752800395660770177194686715778584465430718381135589790300392231369224399070858583380622198222206325278556897535880446740075830335196709210900",
+                "expected": 0.9776120041962728,
+                "observed": 0.9776120041962729
+              }
+            ],
+            "heldout_perturbation_unchanged": true,
+            "other_fold_hashes_changed": true,
+            "invalid_heldout_rejected": true
+          },
+          {
+            "fold": 3,
+            "evaluation_ids": [
+              4,
+              8
+            ],
+            "training_keys": [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                6,
+                2
+              ],
+              [
+                7,
+                1
+              ],
+              [
+                7,
+                2
+              ]
+            ],
+            "annual_weight": "1/12",
+            "first_rational_real_gross": [
+              "5/8",
+              "1",
+              "1"
+            ],
+            "training_sha256": "1e421cda055811f81930dd20fd526edf75d450df829313126da171a8b97f9750",
+            "gross_sha256": "1f7c547585eadfac9b3a4c43c1b7c94b2295d480c1223aaa046eb3e9366e56d6",
+            "CE": [
+              {
+                "recent_count": 0,
+                "inverse_cube_moment": "70411334250436121374858905033201003338261755245654372614264430462231052875433839862613813509227639132305763064809668777618815896717393872924018917078998221527300103704347592826982415779642290413591388818822111740423893716791221139506652566601886673429614179124811541840588412858008363680031284853263387880926270131235448858022705512837546180453545803626195073247816923209083234502335078534316032/71789137461069129903879553133291396440779573284793861778995857603201925755803546072308793697573926774824079529574223370479735723820501369264818827206855498906577978507213921661629466317962250881096842396973987858290205763250727865332722144159170031189633624197852958080793434208931394754055735987226032788046369010459262375982671491469954832113929085438216976176955901070320937017067187263447125",
+                "expected": 1.0064805510489105,
+                "observed": 1.0064805510489108
+              },
+              {
+                "recent_count": 2,
+                "inverse_cube_moment": "2804429102160729656691331702358591839063424224153344833361639995664508110190392301225549262941792854875579095116250695957013633906585188520524339329754332582430229297369721933020923109623906745611424124138340456315034033618188575340208061983185489543136011746073605396953435680447040869458029444562111979858829745643454818098849953172832713827409368240925643229279983483990614274704115791822808090112/2798086923280112239394231273381294336994163678815658460500306077342613085823551720035807953927033571141371574981798731392057736781632310935771235524667096457948939693353806510513778839626511739392041707790910071959052928591149886285545333561081752081661715299093475892204109261996607543251628258514915892762196366857198424688742729298228978848727486534279816031395249112870661657614485322134171419325",
+                "expected": 0.9992456021549381,
+                "observed": 0.9992456021549382
+              }
+            ],
+            "heldout_perturbation_unchanged": true,
+            "other_fold_hashes_changed": true,
+            "invalid_heldout_rejected": true
+          }
+        ],
+        "LF_CRLF_separation": true,
+        "fresh_manifest_mutation_safe": true,
+        "nominal_derived_distinction": true
+      },
+      "dependency_gate_resolution": {
+        "finding": "RELEASE-1",
+        "resolved": true,
+        "accepted_kernel_commit": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+        "accepted_kernel_evidence": "audit/chief/SOL-021-review.json",
+        "matching_kernel_sha256": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+        "note": "Pinned task source predates later acceptance; coordinator verifies current accepted evidence without changing historical worker findings."
+      },
+      "competition_outcomes_read": false,
+      "final_data_open": false,
+      "production_execution_authorized": false,
+      "limitations": [
+        "Production loader must bind fixed development path, exact consumed bytes and shape.",
+        "Synthetic calibration labels are not production provenance. Correct excluded-fold binding, fresh scenario state and prefix-only decisions remain writer/driver obligations.",
+        "No strategy benefit or final-data authorization follows from synthetic calibration review."
+      ]
+    }
+  },
+  "queue": [
+    {
+      "id": "SOL-013",
+      "state": "accepted",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "fd1cd04500fb04b91041e835678dee787ff16c00cb21578e368fda313cb9d4e7",
+      "branch": "work/sol/SOL-013-a1",
+      "note": "Accepted exact negative kernel review evidence: 3023 checks replayed read-only, tiny-fee corruption rejected and K1 independently reproduced. Corrected v2 design approved; kernel not yet approved. Historical negative verdict preserved.",
+      "reviewed_commit": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+      "accepted_paths": [
+        "audit/SOL-013/findings.json",
+        "audit/SOL-013/history/completed-trial-002-verify.py",
+        "audit/SOL-013/history/diagnosis-002.json",
+        "audit/SOL-013/history/failed-trial-001-verify.py",
+        "audit/SOL-013/history/failure-001.json",
+        "audit/SOL-013/history/initial-findings.json",
+        "audit/SOL-013/history/initial-integrity-self-tests.json",
+        "audit/SOL-013/history/initial-review.md",
+        "audit/SOL-013/history/initial-verification.json",
+        "audit/SOL-013/history/integrity-self-tests.json",
+        "audit/SOL-013/history/revision-003.json",
+        "audit/SOL-013/review.md",
+        "audit/SOL-013/verification.json",
+        "audit/SOL-013/verify.py",
+        "handoff/SOL-013/check-0.txt",
+        "handoff/SOL-013/check-1.txt",
+        "handoff/SOL-013/result.json"
+      ],
+      "excluded_paths": [],
+      "acceptance_evidence": "audit/chief/SOL-013-review.json",
+      "corrected_design_verdict": "approve",
+      "code_verdict": "changes_required"
+    },
+    {
+      "id": "SOL-021",
+      "state": "accepted",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "53389f310d3271c476c9be65f6b75ab228ff1ca3e2dfbd4a8466348bf8678669",
+      "branch": "work/sol/SOL-021-a1",
+      "note": "Exact canonical receipt and 3720 checks replayed read-only, all 2048 rational grid cases passed; chief independently certified 42 rounding cells, rejected 84 neighboring wrong values and checked ordinary rational accounting. Numeric/import corruption rejected; K2 closed. Historical negative reviews and all audit-tool failures preserved. Kernel only, no production or final authorization.",
+      "reviewed_commit": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+      "accepted_paths": [
+        "audit/SOL-021/findings.json",
+        "audit/SOL-021/history/creation-001-findings.json",
+        "audit/SOL-021/history/creation-001-result.json",
+        "audit/SOL-021/history/creation-001-review.md",
+        "audit/SOL-021/history/creation-001-verify.py",
+        "audit/SOL-021/history/creation-002-findings.json",
+        "audit/SOL-021/history/creation-002-integrity-self-tests.json",
+        "audit/SOL-021/history/creation-002-result.json",
+        "audit/SOL-021/history/creation-002-review.md",
+        "audit/SOL-021/history/creation-002-verify.py",
+        "audit/SOL-021/history/diagnosis-001.json",
+        "audit/SOL-021/history/diagnosis-002.json",
+        "audit/SOL-021/history/diagnosis-003.json",
+        "audit/SOL-021/history/infrastructure.json",
+        "audit/SOL-021/history/trial-001-verify.py",
+        "audit/SOL-021/history/trial-001.json",
+        "audit/SOL-021/history/trial-002.json",
+        "audit/SOL-021/history/trial-003.json",
+        "audit/SOL-021/integrity-self-tests.json",
+        "audit/SOL-021/oracle-provenance.json",
+        "audit/SOL-021/oracle.py",
+        "audit/SOL-021/review.md",
+        "audit/SOL-021/task-binding.json",
+        "audit/SOL-021/verification.json",
+        "audit/SOL-021/verify.py",
+        "handoff/SOL-021/check-0.txt",
+        "handoff/SOL-021/check-1.txt",
+        "handoff/SOL-021/result.json"
+      ],
+      "excluded_paths": [],
+      "acceptance_evidence": "audit/chief/SOL-021-review.json",
+      "code_verdict": "approve"
+    },
+    {
+      "id": "SOL-022",
+      "state": "accepted",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "9f1841cdfae0638427bdccfcd96e1cf231bed04ce6ac32afd2d72ae550674ab7",
+      "branch": "work/sol/SOL-022-a1",
+      "note": "Exact canonical task/source/artifact pins verified; 87166 independent comparisons replayed read-only, two corruptions rejected. Chief independently verifies four fold complements, rational factors/digests and eight CE cases. RELEASE-1 closed against exact accepted SOL-021 unchanged kernel. Synthetic calibration only; production/final gates remain separate.",
+      "release_evidence": "audit/chief/SOL-021-review.json",
+      "released_after_commit": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+      "reviewed_commit": "21ad493707d71240f83d7f01ed6d133e1380e8fb",
+      "accepted_paths": [
+        "audit/SOL-022/findings.json",
+        "audit/SOL-022/initial-execution.json",
+        "audit/SOL-022/integrity-self-tests.json",
+        "audit/SOL-022/integrity_self_test.py",
+        "audit/SOL-022/review.md",
+        "audit/SOL-022/task-lock.json",
+        "audit/SOL-022/verification.json",
+        "audit/SOL-022/verify.py",
+        "handoff/SOL-022/check-0.txt",
+        "handoff/SOL-022/check-1.txt",
+        "handoff/SOL-022/result.json"
+      ],
+      "excluded_paths": [],
+      "acceptance_evidence": "audit/chief/SOL-022-review.json",
+      "code_verdict": "approve"
+    },
+    {
+      "id": "SOL-023",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "3298bc4f6bd44345967419c640b395d0196efe9f81160c71128901f9f1f0938a",
+      "branch": "work/sol/SOL-023-a1",
+      "note": "Existing immutable synthetic-only task released after positive accepted SOL-021 and SOL-022, accepted v2 design and exact source/dependency/hash revalidation. No production outcomes or final authorization.",
+      "release_evidence": "audit/chief/SOL-022-review.json",
+      "released_after_commit": "21ad493707d71240f83d7f01ed6d133e1380e8fb"
+    }
+  ],
+  "task_object": {
+    "commit": "812fadfee82a10cda89233df75a50d4afc0512a3",
+    "path": "ops/tasks/SOL-023.json",
+    "blob": "5dbf1fa6ea1b741eb793ed46e11253c3a6fdaa29",
+    "sha256_lf": "0d50d741fff358c8f5dfd72f15b03322b8eb5b4d5d640606f035f817faee1f6e",
+    "parsed": {
+      "schema_version": 1,
+      "id": "SOL-023",
+      "attempt": 1,
+      "owner": "sol",
+      "kind": "agent",
+      "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+      "depends_on": [
+        "SOL-001",
+        "SOL-004",
+        "SOL-013",
+        "SOL-021",
+        "SOL-022"
+      ],
+      "split": "synthetic",
+      "max_seconds": 1500,
+      "scope": "Implement a single pure component from specs/POLICY_CASE_ENGINE.md with explicit synthetic numerical evidence; no actual strategy run or production writer.",
+      "parameters": {
+        "required_python": "3.12",
+        "cpu_only": true,
+        "competition_outcomes_allowed": false,
+        "final_outcomes_allowed": false,
+        "source_sha256": {
+          "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+          "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+          "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+          "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+          "specs/policy_driver_layout_v2.json": "f431e661c260f7f6e40330661e77724dc3ddcafeafed1a3f0b6c31781a4e8329",
+          "specs/POLICY_CASE_ENGINE.md": "c984e230eecb720613b864a910d95921af1aa805f79fa68c7044f905410dec62",
+          "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+          "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+          "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+          "src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+          "src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+          "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+          "src/safeinvest/policy_calibration.py": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+          "specs/POLICY_CORRECTION_V2.md": "b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383",
+          "specs/POLICY_NUMERIC_K1.md": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+          "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+          "specs/POLICY_NUMERIC_K2.md": "88d5f58a59f090c25331392e4cd5682daf5d050c27b24afe6629d8e4a5eb9997",
+          "audit/chief/SOL-017-review.json": "ec9dcc7fd084954827cfdf82bf1826e17ddd8c9b3fbece15058760fedef3d4b9"
+        },
+        "contract": "specs/POLICY_CASE_ENGINE.md",
+        "release_requires": "Positive accepted corrected-kernel SOL-021 and calibration SOL-022 reviews, unchanged pinned source and approved v2 design.",
+        "supersedes_task": "SOL-019"
+      },
+      "allowed_paths": [
+        "src/safeinvest/policy_cases.py",
+        "tests/test_policy_cases.py",
+        "audit/SOL-023"
+      ],
+      "deliverables": [
+        "src/safeinvest/policy_cases.py",
+        "tests/test_policy_cases.py",
+        "audit/SOL-023/implementation.md",
+        "audit/SOL-023/findings.json",
+        "audit/SOL-023/verify.py",
+        "audit/SOL-023/verification.json"
+      ],
+      "commands": [],
+      "validation_commands": [
+        [
+          "{python}",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_policy_cases.py",
+          "-v"
+        ],
+        [
+          "{python}",
+          "-B",
+          "audit/SOL-023/verify.py",
+          "--check"
+        ]
+      ],
+      "acceptance_checks": [
+        "Exact immutable task/base, allowed paths, upstream source hashes, Python 3.12 and actual executed synthetic checks; no actual competition outcomes.",
+        "Implement only the stated pure API and complete contract schema; preserve accepted engine/config/baseline code and every historical result.",
+        "Independent scalar/rational expected values in focused tests and audit evidence, not expected values generated by calling the function under test.",
+        "All malformed-key/nonfinite/split/case boundary checks and contract-specific positive/negative numerical fixtures pass; retain every meaningful failed trial.",
+        "Saved verification is portable and pinned to explicit upstream source plus delivered code hashes. --check recomputes synthetic evidence read-only and rejects corruption without overwriting or repairing it.",
+        "Document actual outputs, limitations and measured test runtime without claiming production timing, acceptance, policy benefit or final authorization."
+      ],
+      "instructions": "This is the successor to never-executed cancelled SOL-019 after K2. Its kernel source includes the exact rounding correction in specs/POLICY_NUMERIC_K2.md. Wait for positive accepted SOL-021 and SOL-022; historical accepted negative reviews do not authorize production code. Normative policy/component contracts remain unchanged.\n\nRead AGENTS.md, locked problem/accounting and the exact component contract at parameters.contract. This is an immutable waiting implementation task, not authorization before release. Chief releases only after the queue prerequisites and independent corrected-design/code gates pass with unchanged pinned source. Do not fetch/merge a newer main into the attempt. Report any contract contradiction rather than silently changing policy parameters or schema.\n\nImplement only the assigned new source and test files plus audit directory. No edits to existing core, package exports, policy kernel/calibration, configuration, queue, scripts, runtime helpers or private team files. Inputs for all executions must be explicitly generated synthetic values; no original/raw/development/final CSV reads. Source files, immutable specifications and accepted audit metadata may be read. No baseline experiment rerun, package install, watchers, task publication, production CLI or final support. Keep the runtime CPU-only and within 25 minutes.\n\nRead the contract carefully and preserve negative results. Use ordinary Python plus project dependencies; no heavy libraries. Keep the public API pure: no file access, result writes, hidden global state or source-authenticity claims based only on caller labels. Test aliases/mutation where relevant. The future writer will prove exact original-input/source provenance separately. Do not pretend synthetic test outputs are development performance. Record strict split and input-schema rejection behavior.\n\nWrite implementation.md and findings.json with exact upstream source, delivered files/API, schema/count facts, remaining limitations and each failed trial/diagnosis. In audit/SOL-023/verify.py implement repeatable generated fixtures and scalar/rational checks against delivered code, save verification.json using exclusive creation, and support --check that recomputes and compares saved facts read-only with appropriate numeric tolerances and exact keys/hashes. Bind explicit upstream Git objects and delivered file hashes, allowing documented LF normalization; do not require current HEAD to stay a worker branch. Demonstrate corrupted scratch evidence rejection and original byte preservation. Keep all failed trial evidence. The runner handles its handoff and push; chief independently reviews exact code and fixtures before acceptance. Worker completed is not acceptance.\n\nImplement build_case_tables and CaseTables exactly as POLICY_CASE_ENGINE.md. Calibrations are passed in, never re-fit from evaluation rows. Fresh callback per scenario/fee/mode, real split through the accepted generic engine, prefix metric/diagnostic extraction, separate policy versus engine action. Borrow accepted pure exports only without changing them. The primary development reference calculation is deliberately refused because HY3-003 must be imported later. Use explicitly labelled synthetic data for normal cases and narrow mocks/guard probes to prove refusal before computation; never claim generated outcomes are real development data.\n\nCheck all five cost-aware modes and all baseline callbacks, zero/primary/doubled synthetic fees, n=0..5 history, fee versus buffer, rational initial holdings/growth, first deployment/latch never leaking from beyond H, initial-deferred persistence, tiny executed requests versus trade count, correct nulls during review and baseline inapplicability. Challenge inconsistent fold/calibration membership and matching actual prior shape. Test full 30-year versus direct prefix runs and future perturbations. Export all score alternatives, exact scenario/period keys, common normalized mode/fee/fold columns, both trade shares and exact severe locations. No result writer or source-authenticated production loader belongs in this task.\n"
+    }
+  }
+}

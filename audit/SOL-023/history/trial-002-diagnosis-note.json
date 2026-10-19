@@ -1,0 +1,5 @@
+{
+  "cause": "Independent rational loss amounts agree within tolerance, but exact rational equal-loss plateaus differ from binary64 exact severe-location/tie convention. No accepted source or tolerance changed.",
+  "resolution": "Check rational numeric metrics; independently recompute exact floating peak/trough from delivered ledger values and use dedicated dyadic fixture for known exact locations. Preserve all mismatch details and original tests.",
+  "fixture_revision": "Use a strictly positive real bill drift in the general fixture; plateau behavior retained in dedicated exact-tie tests."
+}

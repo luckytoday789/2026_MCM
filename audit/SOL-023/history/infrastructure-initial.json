@@ -1,0 +1,12 @@
+[
+  {
+    "trial": "initial exec_command",
+    "error": "helper_unknown_error: setup refresh had errors",
+    "effect": "No process ran; used callable Node child_process for local reads and checks."
+  },
+  {
+    "trial": "py launcher discovery",
+    "error": "spawn py ENOENT",
+    "effect": "No quantitative code ran; found existing Python 3.12.14 at machine local venv."
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "original_sha256": "ec8986f3e0855d317a92b8b78cd77917a4913af6849a5e4221a5afb7a5b3eb3c",
+  "original_bytes_preserved": true,
+  "corruptions": [
+    {
+      "case": "wrong-number",
+      "rejected": true,
+      "reason": "numeric mismatch at root.scalar_rational_checks[0].observed",
+      "sha256_before": "74c975620d368588d9309f6462840311f2a785e3c5b54aa3e98b2ae72c2ec43d",
+      "sha256_after": "74c975620d368588d9309f6462840311f2a785e3c5b54aa3e98b2ae72c2ec43d",
+      "bytes_preserved": true
+    },
+    {
+      "case": "wrong-source",
+      "rejected": true,
+      "reason": "exact mismatch at root.bindings.delivered_sha256_lf.src/safeinvest/policy_cases.py",
+      "sha256_before": "a566c3817ed7c68631af5ba60772e2987a2c7ab055f877042db88d5f2060abd0",
+      "sha256_after": "a566c3817ed7c68631af5ba60772e2987a2c7ab055f877042db88d5f2060abd0",
+      "bytes_preserved": true
+    },
+    {
+      "case": "missing-key",
+      "rejected": true,
+      "reason": "key mismatch at root.cases[0]",
+      "sha256_before": "c23e31b77ded8dca40c9933fb711b7ecb39fe66022aa2ce4adb340de61cf6b9f",
+      "sha256_after": "c23e31b77ded8dca40c9933fb711b7ecb39fe66022aa2ce4adb340de61cf6b9f",
+      "bytes_preserved": true
+    },
+    {
+      "case": "tiny-fee-zero",
+      "rejected": true,
+      "reason": "numeric mismatch at root.tiny_executed_change.actual_fee",
+      "sha256_before": "7baee03dcaa25a64de1de502898e670d96e94fd2ba955f25680ad51906edfc74",
+      "sha256_after": "7baee03dcaa25a64de1de502898e670d96e94fd2ba955f25680ad51906edfc74",
+      "bytes_preserved": true
+    }
+  ]
+}
