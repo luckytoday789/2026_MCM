@@ -1,0 +1,207 @@
+{
+  "state": "worker_running",
+  "worker_pids": [
+    2484,
+    48984
+  ],
+  "child_pids": [
+    32788,
+    3612,
+    28548,
+    22736,
+    11456,
+    27484
+  ],
+  "current_task": "SOL-008",
+  "alerts": [],
+  "tasks": [
+    {
+      "key": "SOL-001-a1",
+      "task_id": "SOL-001",
+      "base": "f5e67b1f53568b94379ea631659d53d90db14f7b",
+      "head": "b25c6b5589d07e767f463f54f053f08bb0085157",
+      "receipt_status": "completed",
+      "receipt_matches_task": true,
+      "queue_state": "accepted",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-19T12:24:40.445661+00:00",
+      "check_exit_codes": [
+        0,
+        0
+      ],
+      "pending_upload": false
+    },
+    {
+      "key": "SOL-002-a1",
+      "task_id": "SOL-002",
+      "base": "297fc5d846bfc218795238e567875e49b18e7053",
+      "head": "54d90abd3d35f6578bab964cd54dcce42e578f53",
+      "receipt_status": "completed",
+      "receipt_matches_task": true,
+      "queue_state": "accepted",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-19T12:47:55.893056+00:00",
+      "check_exit_codes": [
+        0,
+        0
+      ],
+      "pending_upload": false
+    },
+    {
+      "key": "SOL-003-a1",
+      "task_id": "SOL-003",
+      "base": "c651c67c30db1131c25641ac94631238cba0dd8d",
+      "head": "bb74c0f25cb18c3e02fef6d51416422514a8f503",
+      "receipt_status": "completed",
+      "receipt_matches_task": true,
+      "queue_state": "accepted",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-19T12:59:50.191228+00:00",
+      "check_exit_codes": [
+        0,
+        0
+      ],
+      "pending_upload": false
+    },
+    {
+      "key": "SOL-004-a1",
+      "task_id": "SOL-004",
+      "base": "ce2692b9b418ee4044da2930fb715d57ed83e500",
+      "head": "69ed125b7fde276fe503e1ec5416fbf2e5ec9a7b",
+      "receipt_status": "completed",
+      "receipt_matches_task": true,
+      "queue_state": "accepted",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-19T14:22:14.420862+00:00",
+      "check_exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "pending_upload": false
+    },
+    {
+      "key": "SOL-005-a1",
+      "task_id": "SOL-005",
+      "base": "da96ea77bcc476f2970a982f037c2679a68522b7",
+      "head": "d3f031ca797402baacf969147956578fcee92af1",
+      "receipt_status": "completed",
+      "receipt_matches_task": true,
+      "queue_state": "accepted",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-19T14:30:36.455623+00:00",
+      "check_exit_codes": [
+        0,
+        0
+      ],
+      "pending_upload": false
+    },
+    {
+      "key": "SOL-006-a1",
+      "task_id": "SOL-006",
+      "base": "10b3ff29f72b01d6a1a1bd2ca174f8cd6c7840d4",
+      "head": "f193742daab0f55c166b9b084bd288151c1e764d",
+      "receipt_status": "failed",
+      "receipt_matches_task": true,
+      "queue_state": "cancelled",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-19T15:52:38.559707+00:00",
+      "check_exit_codes": [
+        1
+      ],
+      "pending_upload": false
+    },
+    {
+      "key": "SOL-007-a1",
+      "task_id": "SOL-007",
+      "base": "a996298fd22b11dc54deb43cb596f143da05bf93",
+      "head": "cf5e70860e7aac615775fe96b0c1696a9fc5226b",
+      "receipt_status": "failed",
+      "receipt_matches_task": true,
+      "queue_state": "cancelled",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-19T15:56:53.300288+00:00",
+      "check_exit_codes": [
+        1
+      ],
+      "pending_upload": false
+    },
+    {
+      "key": "SOL-008-a1",
+      "task_id": "SOL-008",
+      "base": "2561688380d9e2527eb6066100adde70b7d0ea1c",
+      "head": "2561688380d9e2527eb6066100adde70b7d0ea1c",
+      "receipt_status": null,
+      "receipt_matches_task": false,
+      "queue_state": "ready",
+      "dirty": true,
+      "changed_paths": [
+        "?? audit/SOL-008/"
+      ],
+      "remote_matches": false,
+      "completed_record": false,
+      "pending_upload": false
+    },
+    {
+      "key": "SOL-010-a1",
+      "task_id": "SOL-010",
+      "base": "c9ad8fb429295dc2302d7adb5a106f19a71404d8",
+      "head": "dc27ec3316db2c760ed6667cf59fb0fec81f1466",
+      "receipt_status": "completed",
+      "receipt_matches_task": true,
+      "queue_state": "accepted",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-19T17:05:22.897435+00:00",
+      "check_exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "pending_upload": false
+    }
+  ],
+  "deadline": "2026-10-20T23:30:00+08:00",
+  "chief_status": {
+    "role": "chief",
+    "machine_id": "8ea2b5131bed400a8f2954cd69935807",
+    "state": "running",
+    "python": "3.12.0",
+    "updated_at": "2026-10-19T17:10:23.870122+00:00",
+    "lease_until": "2026-10-19T17:20:23.870122+00:00",
+    "task_id": "integrate-and-dispatch"
+  },
+  "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
+  "schema_version": 1,
+  "role": "sol",
+  "component": "independent-nightwatch",
+  "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
+  "monitor_pid": 17188,
+  "updated_at": "2026-10-19T17:11:21.749016+00:00",
+  "check_seconds": 300,
+  "summary_seconds": 1800,
+  "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
+}
