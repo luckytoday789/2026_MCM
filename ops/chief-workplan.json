@@ -1,19 +1,21 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T01:51:30.077981+08:00",
-  "reason": "Detailed case-engine, analysis and saved-result writer contracts prepared while SOL-013 runs. Commit/push prerequisites before publishing gated granular implementation tasks.",
+  "next_wake_at": "2026-10-20T02:18:08.203150+08:00",
+  "reason": "SOL-013 remote review running; exact gated SOL-014 calibration, SOL-015 case engine and SOL-016 analysis tasks published. Their concrete production writer handoff and methods are prepared; now await actual independent prerequisite verdicts.",
   "next_actions": [
-    "Publish gated SOL-015 case-engine and SOL-016 pure-analysis implementation tasks only after their handoff/source base is pushed; pin existing exact commits.",
-    "Review incoming SOL-013; release SOL-014 and eligible implementation tasks promptly only on both corrected design and kernel approval with unchanged pinned sources.",
-    "After case and analysis code acceptance, publish the separate production writer/CLI task from POLICY_RESULT_WRITER.md. HY3 gets fixed development commands only after complete code acceptance.",
-    "Keep accepted HY3-003 primary references imported, no rerun. Customer personalized rescreen, sensitivity, freeze/final evaluation and final report remain unfinished.",
-    "Respect local quota markers and original private-identity upload restriction; do not restart any watcher or supervisor."
+    "Fetch SOL-013 exact receipt, validate hashes/source/paths and independently replay synthetic evidence. Require corrected_design_verdict AND code_verdict approve before releasing dependents.",
+    "On unchanged SOL-013 approval immediately release existing SOL-014 and SOL-016. On unchanged SOL-014 approval also release SOL-015; never require tasks to run in publication order when dependencies are met.",
+    "Preserve any negative findings; if relevant source changes, cancel stale waiting tasks and issue corrected immutable successors only after source commits are pushed. Do not mutate published attempts.",
+    "Independently review exact SOL-015/SOL-016 implementation commits and numerical fixtures. Once accepted, publish production loader/writer task using specs/POLICY_RESULT_WRITER.md against the newly pushed combined source.",
+    "Only after full code acceptance issue HY3 fixed development commands; import accepted primary HY3-003 baselines without rerunning. Submit targeted independent Sol audit of exact HY3 results.",
+    "Own-horizon personalized rescreen, sensitivity conclusions, freeze, final evaluation and final English report/package remain unfinished. Keep final_data_open=false; private member information stays local.",
+    "Check quota markers/control/STOP/deadline before substantive work; no supervisor restart or duplicated remote role. Incoming receipts should wake sooner than this 30-minute fallback."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T01:46:30.077981+08:00",
+  "last_completed_at": "2026-10-20T01:48:08.203150+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

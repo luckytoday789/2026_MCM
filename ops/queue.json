@@ -374,6 +374,26 @@
       "branch": "work/sol/SOL-014-a1",
       "note": "Synthetic independent review only; no strategy performance or final gate authorization.",
       "waiting_for": "Accepted SOL-013 design AND kernel approval with unchanged sources. Release this existing task promptly when prerequisites pass."
+    },
+    {
+      "id": "SOL-015",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "a711d9b6d723168f482de6e69d2fb291785cb1ea4f024885c8f96fb2225a08e8",
+      "branch": "work/sol/SOL-015-a1",
+      "waiting_for": "Accepted prerequisites SOL-001, SOL-004, SOL-013, SOL-014 with unchanged pinned sources; independent design/code approvals must be positive. Release promptly after gates pass.",
+      "note": "Pure component implementation on generated inputs only. No production run, final data, or writer authorization."
+    },
+    {
+      "id": "SOL-016",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "43da6619805b1e82b47fd9ddf592c9c65316e7ec6c8a0e193810b6f80afd05f6",
+      "branch": "work/sol/SOL-016-a1",
+      "waiting_for": "Accepted prerequisites SOL-001, SOL-004, SOL-009, SOL-013 with unchanged pinned sources; independent design/code approvals must be positive. Release promptly after gates pass.",
+      "note": "Pure component implementation on generated inputs only. No production run, final data, or writer authorization."
     }
   ]
 }
