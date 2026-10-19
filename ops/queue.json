@@ -447,6 +447,15 @@
       "branch": "work/sol/SOL-019-a1",
       "note": "Synthetic-only narrow work; no strategy outcomes, final access or production run authorization.",
       "waiting_for": "Positive accepted corrected-kernel SOL-017 and calibration SOL-018 reviews with unchanged pinned sources. SOL-013 design is approved; its historical negative kernel verdict remains preserved."
+    },
+    {
+      "id": "SOL-020",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "3420b1953c2811857a798980815e78d638e4ca8142ba094ea0c19ac75ad12a61",
+      "branch": "work/sol/SOL-020-a1",
+      "note": "Targeted personalized handoff design review only, independent of pending code work; no production or outcomes."
     }
   ]
 }

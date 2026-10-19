@@ -136,7 +136,9 @@
         "specs/personalized_review_v1.json"
       ],
       "production_execution_authorized": false,
-      "competition_outcomes_computed": false
+      "competition_outcomes_computed": false,
+      "source_commit": "a2205fb7edd2527253664efad601f0da290f3661",
+      "independent_review_task": "SOL-020"
     }
   },
   "requirements": [
