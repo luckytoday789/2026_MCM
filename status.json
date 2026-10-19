@@ -1,0 +1,9 @@
+{
+  "role": "chief",
+  "machine_id": "8ea2b5131bed400a8f2954cd69935807",
+  "state": "ready",
+  "updated_at": "2026-10-19T12:10:35.376684+00:00",
+  "lease_until": "2026-10-19T12:20:35.376684+00:00",
+  "python": "3.12.0",
+  "codex_available": true
+}
