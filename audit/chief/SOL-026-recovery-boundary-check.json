@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T20:22:37.092247+00:00",
+  "reviewed_commit": "e8733bbc9f1234e04a5e382046d3c89fc12cae7d",
+  "exit_code": 0,
+  "seconds": 0.26500000001396984,
+  "stdout": "{\"old_id_shape_only_passes\": true, \"new_successor_id_rejected\": \"positive kernel/calibration/case/writer approvals required\", \"stale_creation_source_differences\": [{\"path\": \"src/safeinvest/policy_writer.py\", \"stale\": \"9c0eb8a60599119d0bb6dc41b640378134cfa604c6908935201c632a198243b3\", \"actual\": \"141025edb009d12512ea95ca0a8131724056c4a86d4aafa8f964ce2614314a8b\"}], \"full_production_authorization_tested\": false, \"competition_csv_read\": false}\n",
+  "stderr": "",
+  "code": "from pathlib import Path\nimport sys,json,hashlib\nsys.path.insert(0,'src');sys.path.insert(0,'tests')\nfrom test_policy_writer import internal_config\nfrom safeinvest import policy_writer as w\nc=internal_config();w.validate_config(c)\nc['acceptance']['SOL-029']=c['acceptance'].pop('SOL-026')\ntry:w.validate_config(c)\nexcept ValueError as exc:reason=str(exc)\nelse:raise AssertionError('expected stale writer identity refusal')\nold=json.loads(Path('audit/SOL-026/verification-creation-001.json').read_bytes())\nchanges=[]\nfor p,h in old['identity']['delivered_sha256'].items():\n actual=hashlib.sha256(Path(p).read_bytes().replace(b'\\r\\n',b'\\n')).hexdigest()\n if actual!=h:changes.append(dict(path=p,stale=h,actual=actual))\nassert changes\nprint(json.dumps(dict(old_id_shape_only_passes=True,new_successor_id_rejected=reason,\n stale_creation_source_differences=changes,full_production_authorization_tested=False,competition_csv_read=False)))\n"
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T04:23:52.480017+08:00",
+  "outcome_zh": "新增个性化纯计算组件，10项专门测试和72项相关回归通过，已派独立审核但受资源闸门暂缓。SOL-026因真实额度限制未完成，精确失败证据已核验并隔离；SOL-028定时探测和SOL-029窄范围恢复任务已准备。最终数据仍关闭，无需人工操作。",
+  "personalized_source_commit": "5a015a490c89b39271624e1f1790a3454498a6c9",
+  "failed_writer_commit": "e8733bbc9f1234e04a5e382046d3c89fc12cae7d",
+  "next_resource_release_at": "2026-10-20T05:55:00+08:00",
+  "probe_not_before": "2026-10-20T06:05:00+08:00",
+  "local_remaining_percent": 59,
+  "local_budget_drain": false,
+  "source_acceptance_pending": true,
+  "final_data_open": false,
+  "human_action_required": false,
+  "supervisor_restarted": false,
+  "remote_substitutes_spawned": false
+}

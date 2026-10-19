@@ -747,6 +747,26 @@
       "branch": "work/sol/SOL-027-a1",
       "note": "Independent personalized source review, held after exact SOL-026 usage-limit failure. Release only after real Sol availability evidence; writer recovery SOL-029 has priority. Mathematical dependencies already accepted.",
       "resource_hold": "sol_model_quota_after_SOL-026"
+    },
+    {
+      "id": "SOL-028",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "d41ed4659e2d295d5b7ac09a7936d975833bbecd1282e54592791ceeea9aaf48",
+      "branch": "work/sol/SOL-028-a1",
+      "note": "One commands-only availability probe; chief releases no earlier than 05:55 Beijing; model call not before06:05, after new reset hint.",
+      "resource_hold": "sol_model_quota_after_SOL-026"
+    },
+    {
+      "id": "SOL-029",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "951ca85be546855ef2b606e94d7ea0eb2acb39f03ab34e70c707bccbac6015ac",
+      "branch": "work/sol/SOL-029-a1",
+      "note": "Narrow writer recovery held for successful real SOL-028 availability receipt. Release before SOL-027. Failed SOL-026 never satisfies positive writer approval.",
+      "resource_hold": "sol_model_quota_after_SOL-026"
     }
   ]
 }

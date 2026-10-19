@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T20:21:55.503615+00:00",
+  "task_id": "SOL-028",
+  "base_commit": "df038cb116c4818c14454231500f992af3f26d0f",
+  "base_already_on_origin_main": true,
+  "task_sha256": "d41ed4659e2d295d5b7ac09a7936d975833bbecd1282e54592791ceeea9aaf48",
+  "source_pin_count": 2,
+  "max_seconds": 1200,
+  "initial_state": "waiting",
+  "production_execution_authorized": false,
+  "final_data_open": false
+}

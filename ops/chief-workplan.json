@@ -1,18 +1,27 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T04:25:24.211129+08:00",
-  "reason": "Preserving SOL-026 quota failure and publishing held SOL-027. Current chief turn is preparing pinned SOL-028 availability probe and SOL-029 narrow writer recovery from these pushed prerequisites.",
+  "next_wake_at": "2026-10-20T05:55:00+08:00",
+  "reason": "Resource-reset one-shot, per OVERNIGHT: SOL-026 failed on real Sol usage limit (hint06:02, timezone unspecified), exact drafts/evidence preserved. No immediately releasable model task. Wake once at05:55 to release fixed commands-only SOL-028; it makes one actual call no earlier than06:05. Avoid unchanged idle-model polling. SOL-027 and SOL-029 remain held.",
   "next_actions": [
-    "Check local quota/drain/control first; never restart supervisor or substitute remote roles.",
-    "Finish publication of commands-only SOL-028 probe waiting for release at 05:55 Beijing, no model call before 06:05; one call, <=20 minutes. Actual log reset hint is 06:02 with unspecified timezone; this is a cautious probe, not guaranteed access.",
-    "Publish immutable waiting SOL-029 from current pushed quarantine/recovery prerequisites; repair failed writer approval ID and missing fresh evidence. SOL-026 remains failed. Release SOL-029 then SOL-027 only after exact successful availability receipt.",
-    "Review exact successor before any real development config/run. Final split remains closed. Existing HY3-003 must not be rerun."
+    "Before substantive work inspect fresh chief quota/drain/control/STOP/deadline. Last verified local remaining59%, no drain. Preserve supervisor, private-team upload restriction and remote ownership; do not start a replacement coordinator or remote role.",
+    "At or after05:55 Beijing release existing immutable SOL-028 by queue-only waiting->ready update, commit/push. Do not recreate or edit it. Base df038cb116c4818c14454231500f992af3f26d0f; digest d41ed4659e2d295d5b7ac09a7936d975833bbecd1282e54592791ceeea9aaf48. Commands task1200s includes passive wait to06:05 plus <=300s single assigned-model probe. No full review as quota probe; exact reply/returncode/timestamps/hashes are required.",
+    "After release, set one-shot30-minute result fallback (incoming receipt earlier). An exact successful SOL-028 receipt, not human reply or idle lease, releases SOL-029 first. Keep SOL-027 held until writer recovery is actually submitted without another quota failure. If probe fails preserve it; at most one further single probe this night, >=1hour later and never before a new reset hint; use a new immutable task. Then seek human help only if genuinely resource-blocked; no purchases/model switches.",
+    "SOL-026 at e8733bbc9f1234e04a5e382046d3c89fc12cae7d remains failed/cancelled. Chief verified111 paths/35 pins;13 focused tests pass but required verifier fails on missing verification.json. clean-environment-checks/integrity-self-tests also absent. Saved creation evidence hashes an older policy_writer.py. Failed branch/hand-off and exact quarantine drafts are preserved; do not promote them or fabricate old evidence.",
+    "SOL-029 writer recovery: immutable base df038cb116c4818c14454231500f992af3f26d0f; digest951ca85be546855ef2b606e94d7ea0eb2acb39f03ab34e70c707bccbac6015ac;46 source pins. Require positive writer identity SOL-029 instead of failed SOL-026, fresh bound evidence, both portable commands and unchanged original guards. Independently review exact source/numerics/C-E-P/imports/typed persistence/corruption checks before acceptance. Scope remains writer-only; no production configuration yet.",
+    "SOL-027 targeted independent personalized adapter review: immutable base5a015a490c89b39271624e1f1790a3454498a6c9; digestf086a587d0a0ec0aa1477d28df58f036482dac1dbc7e0add8f298553daf90f00;25 pins. Chief source has10 focused and72 related passing tests with failed fixture preserved, but remains unaccepted. It is a pure explicit-input component with source_verified=false; production upstream assignment authentication and ten-row writer are absent. Check exact review after receipt; do not infer recommendations.",
+    "After accepted writer code push source C, then fixed execution config E, then separate granular HY3 commands tasks on E. Primary computes five modes and imports three exact HY3-003 references without rerunning; doubled computes eight. Measure real runtime/bytes and obtain independent Sol result reviews before accepting outcomes. Then authenticated analysis/selection and own-horizon production bridge, freeze/refit/final support in staged order; never tune final outcomes.",
+    "Report accepted baselines and ten-module accepted component index remain valid; new personalized component is pending review and must not be inserted as accepted. Continue English<=10-page report from accepted evidence, independent manuscript review/render QA and<=50MB supplement. Identities stay local. Humans submit; final split stays closed. No current human-help request."
   ],
-  "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
+  "quota_probe_not_before": "2026-10-20T06:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T04:20:24.211129+08:00",
-  "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
+  "last_completed_at": "2026-10-20T04:23:52.480017+08:00",
+  "quota_probe_verified_commit": null,
+  "quota_probe_release_not_before": "2026-10-20T05:55:00+08:00",
+  "quota_probe_current_status": "unverified_after_SOL-026_usage_failure",
+  "last_successful_quota_probe_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466",
+  "quota_probe_task": "SOL-028",
+  "quota_probe_remaining_additional_attempts_after_SOL028": 1
 }
