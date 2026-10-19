@@ -1,0 +1,423 @@
+{
+  "commit": "10b3ff29f72b01d6a1a1bd2ca174f8cd6c7840d4",
+  "current_probes": {
+    "arrival_during_turn": {
+      "checkpoint": {
+        "fingerprint": "arrived",
+        "schema_version": 2
+      },
+      "checkpoint_after_each_tick": [
+        {
+          "fingerprint": "swallowed",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "arrived",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "arrived",
+          "schema_version": 2
+        }
+      ],
+      "fetch_calls": 2,
+      "returns": [
+        true,
+        true,
+        false
+      ],
+      "status_calls": 2,
+      "turn_count": 2
+    },
+    "bootstrap": {
+      "checkpoint": {
+        "fingerprint": "new",
+        "schema_version": 2
+      },
+      "checkpoint_after_each_tick": [
+        {
+          "fingerprint": "new",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "new",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "new",
+          "schema_version": 2
+        }
+      ],
+      "fetch_calls": 0,
+      "returns": [
+        false,
+        false,
+        false
+      ],
+      "status_calls": 0,
+      "turn_count": 0
+    },
+    "dirty_turn": {
+      "checkpoint": {
+        "fingerprint": "old",
+        "schema_version": 2
+      },
+      "checkpoint_after_each_tick": [
+        {
+          "fingerprint": "old",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "old",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "old",
+          "schema_version": 2
+        }
+      ],
+      "fetch_calls": 0,
+      "returns": [
+        "Coordinator left uncommitted work; inspect before retry.",
+        "Coordinator left uncommitted work; inspect before retry.",
+        "Coordinator left uncommitted work; inspect before retry."
+      ],
+      "status_calls": 3,
+      "turn_count": 3
+    },
+    "failed_then_success": {
+      "checkpoint": {
+        "fingerprint": "pending",
+        "schema_version": 2
+      },
+      "checkpoint_after_each_tick": [
+        {
+          "fingerprint": "old",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "pending",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "pending",
+          "schema_version": 2
+        }
+      ],
+      "fetch_calls": 1,
+      "returns": [
+        "Coordinator turn failed; inspect local log.",
+        true,
+        false
+      ],
+      "status_calls": 2,
+      "turn_count": 2
+    },
+    "failed_turn": {
+      "checkpoint": {
+        "fingerprint": "old",
+        "schema_version": 2
+      },
+      "checkpoint_after_each_tick": [
+        {
+          "fingerprint": "old",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "old",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "old",
+          "schema_version": 2
+        }
+      ],
+      "fetch_calls": 0,
+      "returns": [
+        "Coordinator turn failed; inspect local log.",
+        "Coordinator turn failed; inspect local log.",
+        "Coordinator turn failed; inspect local log."
+      ],
+      "status_calls": 3,
+      "turn_count": 3
+    },
+    "idle": {
+      "checkpoint": {
+        "fingerprint": "same",
+        "schema_version": 2
+      },
+      "checkpoint_after_each_tick": [
+        {
+          "fingerprint": "same",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "same",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "same",
+          "schema_version": 2
+        }
+      ],
+      "fetch_calls": 0,
+      "returns": [
+        false,
+        false,
+        false
+      ],
+      "status_calls": 0,
+      "turn_count": 0
+    },
+    "legacy_once": {
+      "checkpoint": {
+        "fingerprint": "same",
+        "schema_version": 2
+      },
+      "checkpoint_after_each_tick": [
+        {
+          "fingerprint": "same",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "same",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "same",
+          "schema_version": 2
+        }
+      ],
+      "fetch_calls": 1,
+      "returns": [
+        true,
+        false,
+        false
+      ],
+      "status_calls": 1,
+      "turn_count": 1
+    }
+  },
+  "diff_sha256": "a44cfefe13ad2c290027464082a7d86a4f67487cb350cd3a58418364c220ea58",
+  "existing_suite": {
+    "command": [
+      "python",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_coop.py",
+      "-v"
+    ],
+    "exact_source_and_log_verified": true,
+    "exit_code": 0,
+    "historical_commit": "f193742daab0f55c166b9b084bd288151c1e764d",
+    "log_sha256": "66eee650fba15fc4771cb286cca458819372ec91a0888faf24d8317137507195",
+    "names": [
+      "test_end_to_end_local_git_delivery_and_deduplication",
+      "test_failed_chief_turn_does_not_acknowledge_pending_result",
+      "test_legacy_checkpoint_gets_one_recovery_turn_without_repeat",
+      "test_path_boundary",
+      "test_python_registration_changes_wake_chief_but_heartbeats_do_not",
+      "test_result_arriving_during_chief_turn_wakes_the_next_turn",
+      "test_task_path_escape_rejected"
+    ],
+    "python": "3.12.14",
+    "reused_without_rerun": true,
+    "source_commit": "10b3ff29f72b01d6a1a1bd2ca174f8cd6c7840d4",
+    "tests": 7
+  },
+  "limits": "Mocked chief_tick transitions and isolated local Git suite; no live watcher, real status publication, or runtime checkpoint changes.",
+  "parent": "07b112dee30190d2c4f8d6c1aadacc2ab978092e",
+  "parent_negative_controls": {
+    "arrival_during_turn": {
+      "checkpoint": {
+        "fingerprint": "arrived"
+      },
+      "checkpoint_after_each_tick": [
+        {
+          "fingerprint": "arrived"
+        },
+        {
+          "fingerprint": "arrived"
+        },
+        {
+          "fingerprint": "arrived"
+        }
+      ],
+      "fetch_calls": 1,
+      "returns": [
+        true,
+        false,
+        false
+      ],
+      "status_calls": 1,
+      "turn_count": 1
+    },
+    "bootstrap": {
+      "checkpoint": {
+        "fingerprint": "new"
+      },
+      "checkpoint_after_each_tick": [
+        {
+          "fingerprint": "new"
+        },
+        {
+          "fingerprint": "new"
+        },
+        {
+          "fingerprint": "new"
+        }
+      ],
+      "fetch_calls": 0,
+      "returns": [
+        false,
+        false,
+        false
+      ],
+      "status_calls": 0,
+      "turn_count": 0
+    },
+    "dirty_turn": {
+      "checkpoint": {
+        "fingerprint": "old",
+        "schema_version": 2
+      },
+      "checkpoint_after_each_tick": [
+        {
+          "fingerprint": "old",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "old",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "old",
+          "schema_version": 2
+        }
+      ],
+      "fetch_calls": 0,
+      "returns": [
+        "Coordinator left uncommitted work; inspect before retry.",
+        "Coordinator left uncommitted work; inspect before retry.",
+        "Coordinator left uncommitted work; inspect before retry."
+      ],
+      "status_calls": 3,
+      "turn_count": 3
+    },
+    "failed_then_success": {
+      "checkpoint": {
+        "fingerprint": "pending"
+      },
+      "checkpoint_after_each_tick": [
+        {
+          "fingerprint": "old",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "pending"
+        },
+        {
+          "fingerprint": "pending"
+        }
+      ],
+      "fetch_calls": 1,
+      "returns": [
+        "Coordinator turn failed; inspect local log.",
+        true,
+        false
+      ],
+      "status_calls": 2,
+      "turn_count": 2
+    },
+    "failed_turn": {
+      "checkpoint": {
+        "fingerprint": "old",
+        "schema_version": 2
+      },
+      "checkpoint_after_each_tick": [
+        {
+          "fingerprint": "old",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "old",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "old",
+          "schema_version": 2
+        }
+      ],
+      "fetch_calls": 0,
+      "returns": [
+        "Coordinator turn failed; inspect local log.",
+        "Coordinator turn failed; inspect local log.",
+        "Coordinator turn failed; inspect local log."
+      ],
+      "status_calls": 3,
+      "turn_count": 3
+    },
+    "idle": {
+      "checkpoint": {
+        "fingerprint": "same",
+        "schema_version": 2
+      },
+      "checkpoint_after_each_tick": [
+        {
+          "fingerprint": "same",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "same",
+          "schema_version": 2
+        },
+        {
+          "fingerprint": "same",
+          "schema_version": 2
+        }
+      ],
+      "fetch_calls": 0,
+      "returns": [
+        false,
+        false,
+        false
+      ],
+      "status_calls": 0,
+      "turn_count": 0
+    },
+    "legacy_once": {
+      "checkpoint": {
+        "fingerprint": "same"
+      },
+      "checkpoint_after_each_tick": [
+        {
+          "fingerprint": "same"
+        },
+        {
+          "fingerprint": "same"
+        },
+        {
+          "fingerprint": "same"
+        }
+      ],
+      "fetch_calls": 0,
+      "returns": [
+        false,
+        false,
+        false
+      ],
+      "status_calls": 0,
+      "turn_count": 0
+    }
+  },
+  "scoped_paths": [
+    "scripts/coop.py",
+    "tests/test_coop.py"
+  ],
+  "verdict": "pass"
+}

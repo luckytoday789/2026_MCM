@@ -1,0 +1,1 @@
+{"numeric_comparisons": 247691, "numerical": "pass", "read_only": true, "rows": {"annual_ledgers.csv": 10800, "paired_differences.csv": 1200, "scenario_metrics.csv": 1800, "summary.csv": 15}, "scheduler": "pass", "status": "passed"}

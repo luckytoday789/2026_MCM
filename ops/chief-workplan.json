@@ -1,20 +1,19 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T01:43:02+08:00",
-  "reason": "Real Sol availability verified and existing reviews released; chief synthetic calibration is saved and independent SOL-012 is published behind unchanged design/kernel gates. Await exact independent results before production implementation.",
+  "next_wake_at": "2026-10-20T01:31:02+08:00",
+  "reason": "SOL-008 and exact HY3-003 accepted after pinned read-only replay; chief prepares descriptive tables while SOL-009 design review runs.",
   "next_actions": [
-    "Fetch exact SOL-008 and SOL-009 receipts when available. Verify task/source/artifact hashes, allowed paths, substantive findings and independent read-only evidence; preserve quota failures.",
-    "Accept or challenge SOL-008 before promoting exact HY3-003 commit 7652410d73425371110784ef5fa97c03470a074e. Do not rerun that submitted baseline experiment.",
-    "Reconcile SOL-009 design findings. If accepted without material changes, immediately release existing SOL-011; otherwise preserve it and publish a corrected immutable attempt against newly pushed sources.",
-    "After unchanged SOL-009/SOL-011 acceptance, immediately release existing SOL-012 for independent calibration review. If relevant source changes, issue a corrected immutable successor, never mutate the published attempt.",
-    "Use specs/POLICY_DRIVER_HANDOFF.md and reviewed APIs to publish granular production driver/selection work after design review. Push prerequisite code/specs first; HY3 gets fixed commands only after code review.",
-    "No actual policy outcomes or final access yet. Keep original baseline, failed trials, strict final freeze and local-only member details. Refresh this one-shot timer; incoming receipts can wake before the 30-minute fallback."
+    "Do not rerun accepted HY3-003. Compile accepted baseline tables and claim provenance from exact 7652410d73425371110784ef5fa97c03470a074e artifacts.",
+    "Fetch exact SOL-009 receipt; inspect task/source hashes and substantive design findings. Release existing SOL-011 promptly only if design is accepted unchanged; otherwise publish corrected immutable work against pushed prerequisites.",
+    "After unchanged SOL-009/SOL-011 acceptance, release existing SOL-012. Keep calibration and kernel independent gates intact.",
+    "Prepare granular production driver and selection work from specs/POLICY_DRIVER_HANDOFF.md after design reconciliation. HY3 receives only reviewed fixed commands.",
+    "Keep final data closed and team identities local. Observe local quota drain; update fresh one-shot workplan at bounded-turn end."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T01:13:02+08:00",
+  "last_completed_at": "2026-10-20T01:26:02+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

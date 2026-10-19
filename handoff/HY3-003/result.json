@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "task_id": "HY3-003",
+  "attempt": 1,
+  "role": "hy3",
+  "task_sha256": "5870dab708b3ead4a2f94384ef70528e9ea57ce6b39a8c5408a402c033a9a05b",
+  "base_commit": "ec9653f1a4739bf1f0db36092c64771d014df25e",
+  "status": "completed",
+  "failure": null,
+  "artifact_hash_basis": "canonical_git_blob",
+  "started_from_pinned_source": true,
+  "checks": [
+    {
+      "argv": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+        "-B",
+        "scripts/check_worker_env.py"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\HY3-003-a1-run-0.log"
+    },
+    {
+      "argv": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+        "-B",
+        "scripts/run_development_baselines.py",
+        "--config",
+        "specs/development_baselines_v1_1.json",
+        "--output",
+        "results/development/HY3-003"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\HY3-003-a1-run-1.log"
+    },
+    {
+      "argv": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+        "-B",
+        "scripts/check_worker_env.py"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\HY3-003-a1-check-0.log"
+    },
+    {
+      "argv": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+        "-B",
+        "scripts/run_development_baselines.py",
+        "--config",
+        "specs/development_baselines_v1_1.json",
+        "--output",
+        "results/development/HY3-003",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\HY3-003-a1-check-1.log"
+    }
+  ],
+  "artifacts_sha256": {
+    "handoff/HY3-003/check-0.txt": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+    "handoff/HY3-003/check-1.txt": "3ecdd8166229ff1ac43a994001a6cd8b31b4ab2ba89f5fdfc23ef8d4556bf400",
+    "handoff/HY3-003/check-2.txt": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+    "handoff/HY3-003/check-3.txt": "a5cb7a9cc0b3e78b648c08fef5a768e5879d245edaca49f141a39fb9e7646a27",
+    "results/development/HY3-003/annual_ledgers.csv": "b2e93442391d2a7cec4bdfe79b397c14c311cc229e2e6c3d82d2dd04199d470a",
+    "results/development/HY3-003/checks.json": "943e3145d686867bf8b34b309b2ecfbd6ae5bfb15705a1077c5203c5289a0061",
+    "results/development/HY3-003/paired_differences.csv": "0d9e0f8b91bd6746100b1ba3851d980928023631e1bc38917f51e8e85e321fbd",
+    "results/development/HY3-003/run_manifest.json": "9ae3558e6453902976a0c69ef07d3d6d1471d3e8afe176530457dbae67956436",
+    "results/development/HY3-003/scenario_metrics.csv": "afabf571d8c7d224bd83f836033fe4c4907a05fc15a2e8614c8ae09d803f100c",
+    "results/development/HY3-003/summary.csv": "965c3ac513f63de31830603ab968f5c6e99c6ceb763515b99753282d8c3a4994"
+  },
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "finished_at": "2026-10-19T14:36:02.222322+00:00",
+  "note": "Completed means worker self-check only; coordinator acceptance is separate.",
+  "input_manifest": {
+    "source": "User-supplied 2026 MCM Senior Group Problem A SafeInvest attachments",
+    "license": "CC BY-NC-SA 4.0",
+    "transformation": "Originals unchanged; derived CSV files are row subsets only.",
+    "files": [
+      {
+        "path": "problem/2026_MCM_SafeInvest.pdf",
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+        "bytes": 137578
+      },
+      {
+        "path": "data/raw/SafeInvest_Synthetic_Data.csv",
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+        "bytes": 274914
+      },
+      {
+        "path": "data/development/scenarios_001_120.csv",
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+        "bytes": 182255
+      },
+      {
+        "path": "data/final_holdout/scenarios_121_180.csv",
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+        "bytes": 92732
+      }
+    ]
+  },
+  "task_parameters": {
+    "plan_id": "development-baselines-v1.1",
+    "config_path": "specs/development_baselines_v1_1.json",
+    "required_python": "3.12",
+    "cpu_only": true,
+    "source_sha256": {
+      "scripts/check_worker_env.py": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+      "scripts/run_development_baselines.py": "08c33acd66a63bd8fbf3e4c08f765ca8a4443665e5c439882370e2a8ea1a4709",
+      "src/safeinvest/__init__.py": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+      "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+      "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+      "src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+      "specs/development_baselines_v1_1.json": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224",
+      "specs/DEVELOPMENT_BASELINE_DRIVER.md": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "audit/chief/SOL-004-review.json": "405587fceaa4c244169c6c7fa9c2858e2793f05f35844b4998b21fb19060ee42"
+    },
+    "input_sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+    "scenario_ids": [
+      1,
+      120
+    ],
+    "horizons": [
+      5,
+      6,
+      15,
+      25,
+      30
+    ],
+    "comparison_horizon": 30,
+    "fee_rate": 0.0025,
+    "policies": [
+      "bills_keep",
+      "equal_weight_annual",
+      "equal_weight_buy_hold"
+    ],
+    "final_outcomes_allowed": false,
+    "independently_reviewed_driver_commit": "69ed125b7fde276fe503e1ec5416fbf2e5ec9a7b",
+    "expected_counts": {
+      "annual_ledgers.csv": 10800,
+      "scenario_metrics.csv": 1800,
+      "summary.csv": 15,
+      "paired_differences.csv": 1200
+    }
+  }
+}

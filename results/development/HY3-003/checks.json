@@ -1,0 +1,281 @@
+{
+  "checks": {
+    "annual_wrapper_agreement": {
+      "count": 3,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "budget": {
+      "count": 10800,
+      "failures": 0,
+      "max_absolute_residual": 2.2737367544323206e-13,
+      "max_scaled_residual": 2.218235986275349e-16,
+      "status": "passed"
+    },
+    "compounded_cpi": {
+      "count": 10800,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "count_annual_ledgers.csv": {
+      "count": 1,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "count_paired_differences.csv": {
+      "count": 1,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "count_scenario_metrics.csv": {
+      "count": 1,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "count_summary.csv": {
+      "count": 1,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "cpi_continuity": {
+      "count": 10800,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "exact_deflation": {
+      "count": 32400,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "fee": {
+      "count": 3720,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "fee_before_returns": {
+      "count": 32400,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "finite_nonnegative_holdings": {
+      "count": 32400,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "finite_pilot_metrics": {
+      "count": 1800,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "fully_invested": {
+      "count": 32400,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "h1_nulls": {
+      "count": 1,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "holdings_continuity": {
+      "count": 32400,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "intended_transfer": {
+      "count": 3720,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "keep_exact_dollars": {
+      "count": 7080,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "keys_annual_ledgers.csv": {
+      "count": 1,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "keys_paired_differences.csv": {
+      "count": 1,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "keys_scenario_metrics.csv": {
+      "count": 1,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "keys_summary.csv": {
+      "count": 1,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "net_annual_return": {
+      "count": 10800,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "no_lookahead_decisions": {
+      "count": 9,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "no_lookahead_states": {
+      "count": 9,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "pooled_denominators": {
+      "count": 15,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "prefix_rerun": {
+      "count": 45,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "scalar_growth": {
+      "count": 45,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "scalar_loss": {
+      "count": 45,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "scalar_volatility": {
+      "count": 45,
+      "failures": 0,
+      "max_absolute_residual": 1.7763568394002505e-15,
+      "max_scaled_residual": 2.7332544964110273e-16,
+      "status": "passed"
+    },
+    "single_scenario_batch": {
+      "count": 45,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "target_after_fee": {
+      "count": 11160,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "toy_fee_recovery": {
+      "count": 1,
+      "failures": 0,
+      "max_absolute_residual": 1.4960255256823984e-14,
+      "max_scaled_residual": 8.976153154093585e-14,
+      "status": "passed"
+    },
+    "toy_initial_fee": {
+      "count": 1,
+      "failures": 0,
+      "max_absolute_residual": 1.4210854715202004e-14,
+      "max_scaled_residual": 1.4234579013557933e-16,
+      "status": "passed"
+    },
+    "toy_linear_quantiles": {
+      "count": 3,
+      "failures": 0,
+      "max_absolute_residual": 3.552713678800501e-15,
+      "max_scaled_residual": 1.480297366166875e-16,
+      "status": "passed"
+    },
+    "toy_twenty_fee": {
+      "count": 1,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    },
+    "toy_twenty_transfer": {
+      "count": 1,
+      "failures": 0,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "status": "passed"
+    }
+  },
+  "count": 232957,
+  "failures": 0,
+  "output_counts": {
+    "annual_ledgers.csv": 10800,
+    "paired_differences.csv": 1200,
+    "scenario_metrics.csv": 1800,
+    "summary.csv": 15
+  },
+  "plan_id": "development-baselines-v1.1",
+  "split": "development",
+  "status": "passed",
+  "thresholds": {
+    "absolute_ledger": 1e-09,
+    "absolute_toy": 1e-09,
+    "relative_ledger": 1e-10,
+    "selection_ties": "exact float equality; tolerances are not tie thresholds",
+    "trade_amount_epsilon": 1e-10
+  }
+}

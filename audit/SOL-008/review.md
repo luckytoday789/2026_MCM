@@ -1,0 +1,41 @@
+# SOL-008 independent review
+
+Review completed: numerical **pass**; scheduler **pass**, with no unresolved blockers in either scope. This is an independent worker review for chief acceptance. It does not promote HY3-003 or certify completion of SOL-006.
+
+## Exact evidence and reuse
+
+The immutable SOL-008 task has runner semantic SHA256 976e528142a46d73217ce05dd968d5348e951668773811ce638cf4ef3bab6e68. The worktree base is 2561688380d9e2527eb6066100adde70b7d0ea1c. The published task snapshot is read from ec561aca89076a700561bd17f63f3f4a4b87d09e; the base intentionally precedes task publication. The copied task-lock is SOL-008, not its predecessor.
+
+HY3 result 7652410d73425371110784ef5fa97c03470a074e is inspected through binary git show, with parent/source ec9653f1a4739bf1f0db36092c64771d014df25e. All six result files, four retained execution logs, receipt, prescribed source hashes, effective configuration, input metadata and changed-path inventory are checked before arithmetic. All prescribed numerical sources and scheduler sources are byte-identical at the new base to their original pinned versions. Canonical Git bytes are distinguished from permitted CRLF source checkouts; current imported source is checked after CRLF normalization. The development CSV hash is 9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7.
+
+HY3 used Python 3.12.10, standard library, and four successful prescribed commands. Its manifest's normalized python command has the same script and arguments as the receipt's actual executable with -B; -B only suppresses bytecode. Manifest elapsed time is 1.1812486999842804 seconds, CPU time 1.109375 seconds and timestamp duration 1.181475 seconds, agreeing within the disclosed 10 ms wall-clock allowance. Its 232,957 reported comparisons are historical self-check evidence, distinct from this review's comparisons. No production experiment or 59-test historical suite was rerun.
+
+The exact 595-line SOL-006 draft, historical task-lock and seven-test protocol log from f193742daab0f55c166b9b084bd288151c1e764d match all three immutable partial-file hashes. Original canonical copies are retained in history. That commit's parent is the reviewed scheduler commit. Scheduler source and test bytes match both that historical commit and the new base, so its seven-test successful log (Python 3.12.14; 13.476 seconds) is reused without rerunning the suite. The original attempt remains incomplete and unaccepted.
+
+## Numerical checks and results
+
+The oracle uses independent standard-library scalar arithmetic, never production accounting, metrics or experiment arithmetic for expected answers. Production functions are subjects only of focused synthetic timing and fixture observations. Complete sorted unique keys and units are checked for 3,600 development input rows, 10,800 ledger rows (360 paths), 1,800 scenario/horizon metric rows, 15 summaries and 1,200 paired rows.
+
+Every ledger is reconciled for initial bills, exact dollar continuity on keep, nonnegative holdings, intended one-way transfer, fee before returns, post-fee investment, component returns, compounded CPI and exact deflation. All scenario metrics are recomputed from validated saved observations, including sample volatility with ddof=1, both trade shares and the strict transfer >1e-10 rule. All linear-quantile summaries, pooled denominators, paired differences and severe scenario IDs/peak/trough locations are recomputed.
+
+Selected scalar forward paths start only from the original development CSV for IDs 1, 5, 19, 20, 29, 36, 42, 46, 60, 109 and 120. This includes the six specified representatives and every summary's severe ID: 165 policy/scenario/horizon prefixes, all three policies and H=5,6,15,25,30. Each starts afresh with wealth 100 in bills; prefixes agree with a fresh 30-year scalar path. Exact drawdown/severe tie selection uses saved validated float observations, independently of tolerated rounding differences in scalar paths.
+
+Worst absolute residuals are 1.933e-12 for forward ledger fields, 8.527e-13 for forward metrics, 2.274e-13 for saved ledger identities, 3.553e-15 for all saved metrics, 7.106e-15 for summaries and zero for paired differences. All meet abs=1e-9 / rel=1e-10. verification.json records exact residuals, worst locations, observed/expected values and comparison counts. Exact locations/counts and trade thresholds do not use these tolerances.
+
+Synthetic probes observe the 20-unit transfer/0.05 fee, equal-weight initial 1/6 fee, fee-before-return behavior, and inflation-only terminal purchasing power 100/(1.1^2). A positive-return recovery still retains the initial post-fee trough loss of 1/6 percent. Exact zero-loss sentinels, earliest repeated maxima and a nextafter near-tie are checked. Guarded outcomes enforce creation of decisions before current outcomes and histories of exactly t-1 years from the same scenario. Perturbations from year 10 preserve decisions through year 10, earlier states and year-10 pre-trade holdings. Fifteen production synthetic prefixes and three guarded short horizons check horizon boundaries.
+
+Seven deliberate in-memory corruptions challenge the independent verifier: canonical artifact bytes, fee, missing metric row, metric magnitude, severe ID, duplicate pair key and paired units. Each must be rejected. Separate saved-evidence challenges exercise the real --check CLI, comparing files before/after to prove read-only success and rejection. Concrete exit codes and unchanged-file hashes are retained in validation.json and execution logs. No saved HY3 result is repaired or regenerated.
+
+## Separate scheduler review
+
+Reviewed chief commit 10b3ff29f72b01d6a1a1bd2ca174f8cd6c7840d4, parent 07b112dee30190d2c4f8d6c1aadacc2ab978092e, scoped to scripts/coop.py and tests/test_coop.py. The change stores the snapshot that triggered the turn after successful execution, clean Git status and fetch; it versions the checkpoint so legacy state receives one recovery turn.
+
+Independent mocked chief_tick probes inspect each saved checkpoint. An arrival during the turn produces true,true,false: the first checkpoint remains the pre-turn snapshot, the second handles the arrival and the third idles. Legacy state produces true,false,false. Failed and dirty turns retain the old checkpoint, do not fetch afterward and keep pending work. Failure followed by success retries once and then idles. Unchanged version-2 snapshots and initial bootstrap produce no execution or status publication. Parent negative controls reproduce the swallowed arrival and absent legacy recovery. scheduler-review.json records returns, checkpoints, invocation/fetch/status counts and exact diff/source/log hashes. No live watcher, external status publication, actual lock or runtime checkpoint is used.
+
+## Preserved failures and limits
+
+Two actual adapted-verifier failures exposed defects inherited from the unaccepted draft: the task digest used default rather than runner compact JSON separators; a substring test treated numeric drawdown magnitude as an exact string/location. Both are fixed only under audit/SOL-008, with separate failed logs and diagnoses. The first complete recomputation and its code are retained before adding fuller diagnostics and corruption probes. These were audit-tool failures, not mismatches in HY3 numerical evidence. The original quota failure remains preserved and is not recast as successful review.
+
+This evidence concerns three predeclared static references, original synthetic annual simple returns and development-only descriptive comparisons. It provides no significance, investability, suitability or future guarantee conclusion, no parameter fitting and no decision on automatic target updates. Final scenarios 121-180 remain unopened. Result promotion, final-gate decisions and submission remain with the coordinator/human.
+
+Replay with Python 3.12: `python -B audit/SOL-008/verify.py --check`. Required pinned commits must already exist locally; no fetch occurs. Initialization creates verification.json, scheduler-review.json and findings.json exclusively when all are absent. --check recomputes, compares, exits nonzero on mismatch and writes no files. Source, task, historical evidence and this narrative are hash-bound. Verification code hashes use canonical LF bytes for portable CRLF checkouts.

@@ -1,0 +1,447 @@
+{
+  "task_id": "SOL-008",
+  "reviewed_commit": "818af5d65bd8a271962d848dd552bd39ca561f68",
+  "base_commit": "2561688380d9e2527eb6066100adde70b7d0ea1c",
+  "task_sha256": "976e528142a46d73217ce05dd968d5348e951668773811ce638cf4ef3bab6e68",
+  "branch": "work/sol/SOL-008-a1",
+  "structural_checks": "passed",
+  "source_hashes_checked": {
+    "ops/tasks/HY3-003.json": "10de4e7587f7b411e6a3143ea89f477f9e45251d3a5d7e7495214ff1d4d1e44d",
+    "scripts/coop.py": "ddb53a531d0434830ec7d6947d7d3599dcf61b4ab4aebe469b8b4fa59b544c79",
+    "tests/test_coop.py": "6a3693fda8608d9f54877f75576936debade44dbd1ad4b621e3ca9e8e27aa5a1",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/DEVELOPMENT_BASELINES.md": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f",
+    "specs/DEVELOPMENT_BASELINE_DRIVER.md": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0",
+    "specs/development_baselines_v1_1.json": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224"
+  },
+  "artifacts_sha256": {
+    "audit/SOL-008/findings.json": "407c4f3dd9027ea25bd97d3c43d3a267091a90610c2a4a6457a1319350d01804",
+    "audit/SOL-008/history/SOL-006-scheduler-suite.txt": "66eee650fba15fc4771cb286cca458819372ec91a0888faf24d8317137507195",
+    "audit/SOL-008/history/SOL-006-task-lock.json": "218de4abc9b816299bae12d58b6f7d167dc3c40122ec0efb741492325f8fd3ac",
+    "audit/SOL-008/history/SOL-006-verify.py": "a356d294866b3029ac5a97010335635dcbb059968e23dd1a18cfc60ce6de5f6b",
+    "audit/SOL-008/history/cli-corruptions/corrupt-findings-execution.json": "50af915c0bc67e7ac4796bd02699c0094771fcda551b5ebb04d836d948c49fcf",
+    "audit/SOL-008/history/cli-corruptions/corrupt-findings/findings.json": "1a6d1f77ab86c58446cde98f4514d3df60b966857d88e121ee9cb159bd4057b4",
+    "audit/SOL-008/history/cli-corruptions/corrupt-findings/scheduler-review.json": "7f798765bb22489afb3901e6982c933a46f06c8aa9405da41f062f41269dac3c",
+    "audit/SOL-008/history/cli-corruptions/corrupt-findings/verification.json": "ba9743c6c0b91761247708ff19b279b9b90b5ef6601422c33bd6b421f8ad9767",
+    "audit/SOL-008/history/cli-corruptions/corrupt-scheduler-execution.json": "2c9926a1867c03fb879f86eadc9c533ddfe5b8a3d791da0ed331f30d0116cf52",
+    "audit/SOL-008/history/cli-corruptions/corrupt-scheduler/findings.json": "407c4f3dd9027ea25bd97d3c43d3a267091a90610c2a4a6457a1319350d01804",
+    "audit/SOL-008/history/cli-corruptions/corrupt-scheduler/scheduler-review.json": "3c3b559c49c15b038c2f931fd0bab27fcca61340f4b943b59da76358afa18d92",
+    "audit/SOL-008/history/cli-corruptions/corrupt-scheduler/verification.json": "ba9743c6c0b91761247708ff19b279b9b90b5ef6601422c33bd6b421f8ad9767",
+    "audit/SOL-008/history/cli-corruptions/corrupt-verification-execution.json": "a1465630ae492b3c09df5948be62905f0a9124c0e2bd41a00c8d1a34395f1f3e",
+    "audit/SOL-008/history/cli-corruptions/corrupt-verification/findings.json": "407c4f3dd9027ea25bd97d3c43d3a267091a90610c2a4a6457a1319350d01804",
+    "audit/SOL-008/history/cli-corruptions/corrupt-verification/scheduler-review.json": "7f798765bb22489afb3901e6982c933a46f06c8aa9405da41f062f41269dac3c",
+    "audit/SOL-008/history/cli-corruptions/corrupt-verification/verification.json": "d7413dbf9ae14f2d7c24b1a5e7d86f5c1278304c3bc63dc57b9b0f9691b6ac9c",
+    "audit/SOL-008/history/cli-corruptions/initializer-refuses-existing-execution.json": "61b0ca6ab499777ec6d49c8a5309ef99046c18fe316e23bbc0a254e8cc468f34",
+    "audit/SOL-008/history/cli-corruptions/missing-findings-execution.json": "80f6e0d04f27d0c790f2083eb64a66d3552a4ecca569bdfbd40687483da58b48",
+    "audit/SOL-008/history/cli-corruptions/missing-findings/scheduler-review.json": "7f798765bb22489afb3901e6982c933a46f06c8aa9405da41f062f41269dac3c",
+    "audit/SOL-008/history/cli-corruptions/missing-findings/verification.json": "ba9743c6c0b91761247708ff19b279b9b90b5ef6601422c33bd6b421f8ad9767",
+    "audit/SOL-008/history/cli-corruptions/valid-read-only-execution.json": "4e8cbff321a27c54ecc08cea9d75b224bf171218b1e730ec2eabe74c629c3740",
+    "audit/SOL-008/history/diagnoses.json": "10ffd2ff43a049f87696b313069cbbc98d2ba71edec9c80df846bbbbc19cd897",
+    "audit/SOL-008/history/initial-complete-recomputation/scheduler-review.json": "a27bd4bcbe18aca3cc1c1d2bd37c7e99ec68d2e977c2bf4785dc54630a177db0",
+    "audit/SOL-008/history/initial-complete-recomputation/verification.json": "dc866c22b9c39503053739acc2e82387f871b774709ab6ad000d7c2810e4e86e",
+    "audit/SOL-008/history/initial-complete-recomputation/verify.py": "9d047ee31cd7341b0c4729f51fbe1a40ac8adccffbcba295a1539c561c9bbc9a",
+    "audit/SOL-008/history/probe-initialization/findings.json": "407c4f3dd9027ea25bd97d3c43d3a267091a90610c2a4a6457a1319350d01804",
+    "audit/SOL-008/history/probe-initialization/scheduler-review.json": "7f798765bb22489afb3901e6982c933a46f06c8aa9405da41f062f41269dac3c",
+    "audit/SOL-008/history/probe-initialization/verification.json": "82bab7e3d07837ba69ed444bcbc582d3007f4cada45be5ce6c20aa547f46a466",
+    "audit/SOL-008/history/probe-initialization/verify.py": "08d90fc33da956a6051cb8228e2aed5c6ac2687e84b295b1886d0c586478daf8",
+    "audit/SOL-008/history/trial-001.json": "7eb8baeeaa255c4dbb2d40ef25e27e1ddcb28f33dc3e2a84d3b92b1b08df6ad5",
+    "audit/SOL-008/history/trial-002-verify.py": "0788bd88b84abc4891a3e0ee219fccd71adbd780069c5d83cdc15e17948536f6",
+    "audit/SOL-008/history/trial-002.json": "2ef36929bc5530612b62a2596bf6b4496ebdd2f07d1bb9f20b8435b2c2be80cd",
+    "audit/SOL-008/history/trial-003.json": "cb0ad7afcb315d0330f1d6e01475a68564e7fa1dfbaf6c6df933afab0d8be9c5",
+    "audit/SOL-008/history/trial-004.json": "c9d0f8692d2cef00ed30c5a43ef80ae9ed9bf8cea49ed4c7092be0e37027d3d4",
+    "audit/SOL-008/initializer.json": "8d1dff2317b427028178a311def3a24222b85e251664bb64bdd64774ade9d1d0",
+    "audit/SOL-008/review.md": "b8fe50bb704d569d734e5dfadaba9cd6eecdb05b882fbb3585a4c9860dcbc2f4",
+    "audit/SOL-008/scheduler-review.json": "7f798765bb22489afb3901e6982c933a46f06c8aa9405da41f062f41269dac3c",
+    "audit/SOL-008/scheduler-suite.txt": "66eee650fba15fc4771cb286cca458819372ec91a0888faf24d8317137507195",
+    "audit/SOL-008/task-lock.json": "e9b7f0646b3bd5fd211a2e9c3056cc12b538513a07bb3dea581162f1d5da2b5b",
+    "audit/SOL-008/validate_review.py": "1462eb50feb045042538c85b85121b7c84ad3f102f34e7d69c6309484d92729a",
+    "audit/SOL-008/validation.json": "c04b31f1f48499cdd16b974c6a839696e2260507e1340c54bd168d1c907a7c57",
+    "audit/SOL-008/verification.json": "ba9743c6c0b91761247708ff19b279b9b90b5ef6601422c33bd6b421f8ad9767",
+    "audit/SOL-008/verify.py": "c445b9f3c243f3daf2c57cf69e89abc39d1c0e1c64a31206b29e49939036deff",
+    "handoff/SOL-008/check-0.txt": "8b808d4cb260b43c49f9794b4e2deeb02d327ed761b7d853d8c80547fc699375",
+    "handoff/SOL-008/check-1.txt": "276736e3ffb51a454e839d3d99a9a1098591bf518128493e5f80eca0f5c8413a"
+  },
+  "accepted_paths": [
+    "audit/SOL-008/findings.json",
+    "audit/SOL-008/history/SOL-006-scheduler-suite.txt",
+    "audit/SOL-008/history/SOL-006-task-lock.json",
+    "audit/SOL-008/history/SOL-006-verify.py",
+    "audit/SOL-008/history/cli-corruptions/corrupt-findings-execution.json",
+    "audit/SOL-008/history/cli-corruptions/corrupt-findings/findings.json",
+    "audit/SOL-008/history/cli-corruptions/corrupt-findings/scheduler-review.json",
+    "audit/SOL-008/history/cli-corruptions/corrupt-findings/verification.json",
+    "audit/SOL-008/history/cli-corruptions/corrupt-scheduler-execution.json",
+    "audit/SOL-008/history/cli-corruptions/corrupt-scheduler/findings.json",
+    "audit/SOL-008/history/cli-corruptions/corrupt-scheduler/scheduler-review.json",
+    "audit/SOL-008/history/cli-corruptions/corrupt-scheduler/verification.json",
+    "audit/SOL-008/history/cli-corruptions/corrupt-verification-execution.json",
+    "audit/SOL-008/history/cli-corruptions/corrupt-verification/findings.json",
+    "audit/SOL-008/history/cli-corruptions/corrupt-verification/scheduler-review.json",
+    "audit/SOL-008/history/cli-corruptions/corrupt-verification/verification.json",
+    "audit/SOL-008/history/cli-corruptions/initializer-refuses-existing-execution.json",
+    "audit/SOL-008/history/cli-corruptions/missing-findings-execution.json",
+    "audit/SOL-008/history/cli-corruptions/missing-findings/scheduler-review.json",
+    "audit/SOL-008/history/cli-corruptions/missing-findings/verification.json",
+    "audit/SOL-008/history/cli-corruptions/valid-read-only-execution.json",
+    "audit/SOL-008/history/diagnoses.json",
+    "audit/SOL-008/history/initial-complete-recomputation/scheduler-review.json",
+    "audit/SOL-008/history/initial-complete-recomputation/verification.json",
+    "audit/SOL-008/history/initial-complete-recomputation/verify.py",
+    "audit/SOL-008/history/probe-initialization/findings.json",
+    "audit/SOL-008/history/probe-initialization/scheduler-review.json",
+    "audit/SOL-008/history/probe-initialization/verification.json",
+    "audit/SOL-008/history/probe-initialization/verify.py",
+    "audit/SOL-008/history/trial-001.json",
+    "audit/SOL-008/history/trial-002-verify.py",
+    "audit/SOL-008/history/trial-002.json",
+    "audit/SOL-008/history/trial-003.json",
+    "audit/SOL-008/history/trial-004.json",
+    "audit/SOL-008/initializer.json",
+    "audit/SOL-008/review.md",
+    "audit/SOL-008/scheduler-review.json",
+    "audit/SOL-008/scheduler-suite.txt",
+    "audit/SOL-008/task-lock.json",
+    "audit/SOL-008/validate_review.py",
+    "audit/SOL-008/validation.json",
+    "audit/SOL-008/verification.json",
+    "audit/SOL-008/verify.py",
+    "handoff/SOL-008/check-0.txt",
+    "handoff/SOL-008/check-1.txt",
+    "handoff/SOL-008/result.json"
+  ],
+  "excluded_paths": [],
+  "receipt_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "prescribed_command_count": 1,
+  "status": "accepted_independent_review",
+  "final_outcomes_computed": false,
+  "chief_replay": {
+    "python": "3.12.0",
+    "exit_code": 0,
+    "pinned_base_worktree": true,
+    "worker_artifacts_unchanged": true,
+    "result": {
+      "numeric_comparisons": 247691,
+      "numerical": "pass",
+      "read_only": true,
+      "rows": {
+        "annual_ledgers.csv": 10800,
+        "paired_differences.csv": 1200,
+        "scenario_metrics.csv": 1800,
+        "summary.csv": 15
+      },
+      "scheduler": "pass",
+      "status": "passed"
+    },
+    "corrupted_record_exit_code": 1,
+    "corrupted_record_unchanged": true,
+    "replay_log_sha256": "949e7ad4a4d4c82ca29d6037ab093fa06b88a9ec19e201d0053bb6d157918c21",
+    "corruption_log_sha256": "9d9b2d45c0a61642793f49c0bed9e97afec7fb0745727295d7e003cbaa2db57b"
+  },
+  "numerical": {
+    "all_ledger_paths": 360,
+    "all_metrics": 1800,
+    "all_pairs": 1200,
+    "all_summaries": 15,
+    "exact_location_basis": "strict comparisons on saved validated float observations; scalar forward locations intentionally not treated as exact ties",
+    "forward_prefixes": 165,
+    "representative_scenarios": [
+      1,
+      5,
+      19,
+      20,
+      29,
+      36,
+      42,
+      46,
+      60,
+      109,
+      120
+    ],
+    "row_counts": {
+      "annual_ledgers.csv": 10800,
+      "paired_differences.csv": 1200,
+      "scenario_metrics.csv": 1800,
+      "summary.csv": 15
+    },
+    "severe_cases": [
+      {
+        "horizon": 5,
+        "peak": [
+          0,
+          "initial"
+        ],
+        "policy": "bills_keep",
+        "scenario_id": 46,
+        "trough": [
+          5,
+          "end"
+        ]
+      },
+      {
+        "horizon": 6,
+        "peak": [
+          0,
+          "initial"
+        ],
+        "policy": "bills_keep",
+        "scenario_id": 46,
+        "trough": [
+          5,
+          "end"
+        ]
+      },
+      {
+        "horizon": 15,
+        "peak": [
+          1,
+          "end"
+        ],
+        "policy": "bills_keep",
+        "scenario_id": 36,
+        "trough": [
+          14,
+          "end"
+        ]
+      },
+      {
+        "horizon": 25,
+        "peak": [
+          13,
+          "end"
+        ],
+        "policy": "bills_keep",
+        "scenario_id": 19,
+        "trough": [
+          18,
+          "end"
+        ]
+      },
+      {
+        "horizon": 30,
+        "peak": [
+          20,
+          "end"
+        ],
+        "policy": "bills_keep",
+        "scenario_id": 42,
+        "trough": [
+          27,
+          "end"
+        ]
+      },
+      {
+        "horizon": 5,
+        "peak": [
+          2,
+          "end"
+        ],
+        "policy": "equal_weight_annual",
+        "scenario_id": 20,
+        "trough": [
+          5,
+          "end"
+        ]
+      },
+      {
+        "horizon": 6,
+        "peak": [
+          2,
+          "end"
+        ],
+        "policy": "equal_weight_annual",
+        "scenario_id": 20,
+        "trough": [
+          6,
+          "post_fee"
+        ]
+      },
+      {
+        "horizon": 15,
+        "peak": [
+          1,
+          "end"
+        ],
+        "policy": "equal_weight_annual",
+        "scenario_id": 5,
+        "trough": [
+          8,
+          "post_fee"
+        ]
+      },
+      {
+        "horizon": 25,
+        "peak": [
+          1,
+          "end"
+        ],
+        "policy": "equal_weight_annual",
+        "scenario_id": 5,
+        "trough": [
+          8,
+          "post_fee"
+        ]
+      },
+      {
+        "horizon": 30,
+        "peak": [
+          1,
+          "end"
+        ],
+        "policy": "equal_weight_annual",
+        "scenario_id": 5,
+        "trough": [
+          8,
+          "post_fee"
+        ]
+      },
+      {
+        "horizon": 5,
+        "peak": [
+          2,
+          "end"
+        ],
+        "policy": "equal_weight_buy_hold",
+        "scenario_id": 109,
+        "trough": [
+          4,
+          "end"
+        ]
+      },
+      {
+        "horizon": 6,
+        "peak": [
+          2,
+          "end"
+        ],
+        "policy": "equal_weight_buy_hold",
+        "scenario_id": 109,
+        "trough": [
+          4,
+          "end"
+        ]
+      },
+      {
+        "horizon": 15,
+        "peak": [
+          1,
+          "end"
+        ],
+        "policy": "equal_weight_buy_hold",
+        "scenario_id": 5,
+        "trough": [
+          8,
+          "end"
+        ]
+      },
+      {
+        "horizon": 25,
+        "peak": [
+          17,
+          "end"
+        ],
+        "policy": "equal_weight_buy_hold",
+        "scenario_id": 29,
+        "trough": [
+          23,
+          "end"
+        ]
+      },
+      {
+        "horizon": 30,
+        "peak": [
+          17,
+          "end"
+        ],
+        "policy": "equal_weight_buy_hold",
+        "scenario_id": 29,
+        "trough": [
+          23,
+          "end"
+        ]
+      }
+    ]
+  },
+  "residuals": {
+    "all_metrics": {
+      "count": 12600,
+      "max_absolute_residual": 3.552713678800501e-15,
+      "max_scaled_residual": 2.79258947404364e-16,
+      "worst_absolute_expected": 16.735092183331112,
+      "worst_absolute_location": "equal_weight_annual/109/5/annual_real_volatility_pct",
+      "worst_absolute_observed": 16.735092183331115,
+      "worst_scaled_expected": 6.360966607913567,
+      "worst_scaled_location": "equal_weight_annual/77/30/annual_real_volatility_pct",
+      "worst_scaled_observed": 6.360966607913565
+    },
+    "all_pairs": {
+      "count": 7200,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0,
+      "worst_absolute_expected": -0.7964074207985172,
+      "worst_absolute_location": "bills_keep/1/5/net_real_cagr_pct_difference",
+      "worst_absolute_observed": -0.7964074207985172,
+      "worst_scaled_expected": -0.7964074207985172,
+      "worst_scaled_location": "bills_keep/1/5/net_real_cagr_pct_difference",
+      "worst_scaled_observed": -0.7964074207985172
+    },
+    "all_summaries": {
+      "count": 210,
+      "max_absolute_residual": 7.105427357601002e-15,
+      "max_scaled_residual": 2.3572347440851276e-16,
+      "worst_absolute_expected": 38.36249996059248,
+      "worst_absolute_location": "equal_weight_buy_hold/25/p90_loss_pct",
+      "worst_absolute_observed": 38.36249996059247,
+      "worst_scaled_expected": 7.5357655568990705,
+      "worst_scaled_location": "equal_weight_buy_hold/6/median_volatility_pct",
+      "worst_scaled_observed": 7.535765556899072
+    },
+    "forward_metrics": {
+      "count": 1155,
+      "max_absolute_residual": 8.526512829121202e-13,
+      "max_scaled_residual": 3.348666358644644e-13,
+      "worst_absolute_expected": 350.7137172926254,
+      "worst_absolute_location": "equal_weight_annual/46/30/terminal_real_wealth",
+      "worst_absolute_observed": 350.71371729262455,
+      "worst_scaled_expected": -0.033154184553463306,
+      "worst_scaled_location": "equal_weight_buy_hold/19/15/net_real_cagr_pct",
+      "worst_scaled_observed": -0.03315418455347441
+    },
+    "forward_paths": {
+      "count": 64152,
+      "max_absolute_residual": 1.9326762412674725e-12,
+      "max_scaled_residual": 7.837180729663359e-13,
+      "worst_absolute_expected": 780.6003875734498,
+      "worst_absolute_location": "equal_weight_annual/46/30/30/wealth_end",
+      "worst_absolute_observed": 780.6003875734478,
+      "worst_scaled_expected": -0.00028332204217829116,
+      "worst_scaled_location": "equal_weight_annual/60/25/23/annual_net_real_return",
+      "worst_scaled_observed": -0.0002833220421785132
+    },
+    "ledger": {
+      "count": 162360,
+      "max_absolute_residual": 2.2737367544323206e-13,
+      "max_scaled_residual": 2.2200893862136553e-16,
+      "worst_absolute_expected": 1052.706732742001,
+      "worst_absolute_location": "equal_weight_annual/31/30/budget",
+      "worst_absolute_observed": 1052.7067327420007,
+      "worst_scaled_expected": 256.0411270545913,
+      "worst_scaled_location": "equal_weight_annual/27/28/target holding",
+      "worst_scaled_observed": 256.04112705459124
+    },
+    "synthetic_arithmetic": {
+      "count": 14,
+      "max_absolute_residual": 1.4960255256823984e-14,
+      "max_scaled_residual": 8.976153154093585e-14,
+      "worst_absolute_expected": 0.16666666666666666,
+      "worst_absolute_location": "post-fee trough persists despite return recovery",
+      "worst_absolute_observed": 0.16666666666668162,
+      "worst_scaled_expected": 0.16666666666666666,
+      "worst_scaled_location": "post-fee trough persists despite return recovery",
+      "worst_scaled_observed": 0.16666666666668162
+    }
+  },
+  "scheduler_commit": "10b3ff29f72b01d6a1a1bd2ca174f8cd6c7840d4",
+  "preserved_failures": "SOL-006 quota failure and SOL-008 audit-tool defects retained verbatim.",
+  "limits": "Development descriptive evidence only; no policy selection, significance or future guarantee."
+}

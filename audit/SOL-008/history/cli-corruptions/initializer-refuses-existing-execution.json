@@ -1,0 +1,17 @@
+{
+  "after_tree_sha256": "d46ec0aeb8c390c72cf08d81149e8aafb8634ec28ce7cc487c2f476463ad25c9",
+  "before_tree_sha256": "d46ec0aeb8c390c72cf08d81149e8aafb8634ec28ce7cc487c2f476463ad25c9",
+  "changed_paths": [],
+  "command": [
+    "{python}",
+    "-B",
+    "audit/SOL-008/verify.py"
+  ],
+  "exit_code": 1,
+  "expected_exit": "nonzero",
+  "files_checked": 83,
+  "files_unchanged": true,
+  "name": "initializer-refuses-existing",
+  "stderr": "AssertionError: evidence already exists; use --check",
+  "stdout": ""
+}

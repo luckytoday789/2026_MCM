@@ -1,0 +1,68 @@
+{
+  "acceptance": "Worker review only; no result promotion, main modification or final gate change.",
+  "blockers": [],
+  "corruption_rejections": 7,
+  "findings": [
+    {
+      "evidence": "history/trial-001.json",
+      "fact": "Default-separator JSON digest disagreed with the runner compact-separator task_digest.",
+      "id": "DRAFT-001",
+      "severity": "audit-tool defect",
+      "status": "fixed only in audit/SOL-008",
+      "target": "unaccepted SOL-006 verifier"
+    },
+    {
+      "evidence": "history/trial-002.json",
+      "fact": "Substring drawdown_ classified numeric maximum loss as an exact string/location comparison.",
+      "id": "DRAFT-002",
+      "severity": "audit-tool defect",
+      "status": "fixed only in audit/SOL-008",
+      "target": "unaccepted SOL-006 verifier"
+    },
+    {
+      "fact": "Arrival during a successful turn is swallowed by the parent; reviewed commit invokes a second turn.",
+      "id": "SCHED-PARENT-001",
+      "severity": "historical regression control",
+      "status": "corrected by reviewed scheduler commit",
+      "target": "07b112dee30190d2c4f8d6c1aadacc2ab978092e"
+    },
+    {
+      "fact": "Legacy matching checkpoint stays idle in parent; reviewed commit runs one recovery turn.",
+      "id": "SCHED-PARENT-002",
+      "severity": "historical migration control",
+      "status": "corrected by reviewed scheduler commit",
+      "target": "07b112dee30190d2c4f8d6c1aadacc2ab978092e"
+    }
+  ],
+  "limits": [
+    "Three predeclared static references only; no fitted policy.",
+    "Original synthetic annual simple returns, not historical observations.",
+    "Development scenarios 1-120 only; descriptive evidence with no significance, investability, suitability or future guarantee conclusion.",
+    "Scheduler uses isolated mocked transition probes and verified historical local Git suite; no live watcher or external status publication."
+  ],
+  "numerical": {
+    "blockers": [],
+    "meaning": "Independent review supports descriptive development evidence; coordinator acceptance remains separate.",
+    "metrics_checked": 1800,
+    "pairs_checked": 1200,
+    "scalar_forward_prefixes": 165,
+    "summary_rows_checked": 15,
+    "target_commit": "7652410d73425371110784ef5fa97c03470a074e",
+    "verdict": "pass"
+  },
+  "original_attempt": {
+    "commit": "f193742daab0f55c166b9b084bd288151c1e764d",
+    "status": "incomplete, unaccepted; preserved unchanged; quota failure is not a completed review",
+    "task": "SOL-006"
+  },
+  "review_complete": true,
+  "scheduler": {
+    "blockers": [],
+    "meaning": "Pre-turn acknowledgment, one-time legacy recovery, failure/dirty retention, idle and retry behavior verified.",
+    "parent": "07b112dee30190d2c4f8d6c1aadacc2ab978092e",
+    "target_commit": "10b3ff29f72b01d6a1a1bd2ca174f8cd6c7840d4",
+    "verdict": "pass"
+  },
+  "schema_version": 1,
+  "task": "SOL-008"
+}

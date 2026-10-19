@@ -1,0 +1,125 @@
+{
+  "all_expected_outcomes": true,
+  "cases": [
+    {
+      "after_tree_sha256": "e6614860943f5dafce2b82d3d482a7598083a54e36a39e6fc3004419ad6dd06b",
+      "before_tree_sha256": "e6614860943f5dafce2b82d3d482a7598083a54e36a39e6fc3004419ad6dd06b",
+      "changed_paths": [],
+      "command": [
+        "{python}",
+        "-B",
+        "audit/SOL-008/verify.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "expected_exit": "zero",
+      "files_checked": 67,
+      "files_unchanged": true,
+      "name": "valid-read-only",
+      "stderr": "",
+      "stdout": "{\"numeric_comparisons\": 247691, \"numerical\": \"pass\", \"read_only\": true, \"rows\": {\"annual_ledgers.csv\": 10800, \"paired_differences.csv\": 1200, \"scenario_metrics.csv\": 1800, \"summary.csv\": 15}, \"scheduler\": \"pass\", \"status\": \"passed\"}"
+    },
+    {
+      "after_tree_sha256": "9a311637d173da341eb6d74cc233050d5d72d4709047aa7e12d31620b81dc0f7",
+      "before_tree_sha256": "9a311637d173da341eb6d74cc233050d5d72d4709047aa7e12d31620b81dc0f7",
+      "changed_paths": [],
+      "command": [
+        "{python}",
+        "-B",
+        "audit/SOL-008/verify.py",
+        "--check",
+        "--evidence-dir",
+        "audit/SOL-008/history/cli-corruptions/corrupt-verification"
+      ],
+      "exit_code": 1,
+      "expected_exit": "nonzero",
+      "files_checked": 71,
+      "files_unchanged": true,
+      "name": "corrupt-verification",
+      "stderr": "AssertionError: saved verification.json mismatch: observed_sha256=d7413dbf9ae14f2d7c24b1a5e7d86f5c1278304c3bc63dc57b9b0f9691b6ac9c expected_sha256=ba9743c6c0b91761247708ff19b279b9b90b5ef6601422c33bd6b421f8ad9767",
+      "stdout": ""
+    },
+    {
+      "after_tree_sha256": "04166051c946170cafe38f78a52f5ff05dd4663acc6bcf77f515ffb72afc77bb",
+      "before_tree_sha256": "04166051c946170cafe38f78a52f5ff05dd4663acc6bcf77f515ffb72afc77bb",
+      "changed_paths": [],
+      "command": [
+        "{python}",
+        "-B",
+        "audit/SOL-008/verify.py",
+        "--check",
+        "--evidence-dir",
+        "audit/SOL-008/history/cli-corruptions/corrupt-scheduler"
+      ],
+      "exit_code": 1,
+      "expected_exit": "nonzero",
+      "files_checked": 75,
+      "files_unchanged": true,
+      "name": "corrupt-scheduler",
+      "stderr": "AssertionError: saved scheduler-review.json mismatch: observed_sha256=3c3b559c49c15b038c2f931fd0bab27fcca61340f4b943b59da76358afa18d92 expected_sha256=7f798765bb22489afb3901e6982c933a46f06c8aa9405da41f062f41269dac3c",
+      "stdout": ""
+    },
+    {
+      "after_tree_sha256": "aa1388bf5467de8918ce8a601082fafbcd08110623a373d863d53e39cf757547",
+      "before_tree_sha256": "aa1388bf5467de8918ce8a601082fafbcd08110623a373d863d53e39cf757547",
+      "changed_paths": [],
+      "command": [
+        "{python}",
+        "-B",
+        "audit/SOL-008/verify.py",
+        "--check",
+        "--evidence-dir",
+        "audit/SOL-008/history/cli-corruptions/corrupt-findings"
+      ],
+      "exit_code": 1,
+      "expected_exit": "nonzero",
+      "files_checked": 79,
+      "files_unchanged": true,
+      "name": "corrupt-findings",
+      "stderr": "AssertionError: saved findings.json mismatch: observed_sha256=1a6d1f77ab86c58446cde98f4514d3df60b966857d88e121ee9cb159bd4057b4 expected_sha256=407c4f3dd9027ea25bd97d3c43d3a267091a90610c2a4a6457a1319350d01804",
+      "stdout": ""
+    },
+    {
+      "after_tree_sha256": "180ade8d21e597adb4a3d7a8b061f45ed65acfd2d31ac6dd8469c68753448012",
+      "before_tree_sha256": "180ade8d21e597adb4a3d7a8b061f45ed65acfd2d31ac6dd8469c68753448012",
+      "changed_paths": [],
+      "command": [
+        "{python}",
+        "-B",
+        "audit/SOL-008/verify.py",
+        "--check",
+        "--evidence-dir",
+        "audit/SOL-008/history/cli-corruptions/missing-findings"
+      ],
+      "exit_code": 1,
+      "expected_exit": "nonzero",
+      "files_checked": 82,
+      "files_unchanged": true,
+      "name": "missing-findings",
+      "stderr": "FileNotFoundError: [Errno 2] No such file or directory: 'audit\\\\SOL-008\\\\history\\\\cli-corruptions\\\\missing-findings\\\\findings.json'",
+      "stdout": ""
+    },
+    {
+      "after_tree_sha256": "d46ec0aeb8c390c72cf08d81149e8aafb8634ec28ce7cc487c2f476463ad25c9",
+      "before_tree_sha256": "d46ec0aeb8c390c72cf08d81149e8aafb8634ec28ce7cc487c2f476463ad25c9",
+      "changed_paths": [],
+      "command": [
+        "{python}",
+        "-B",
+        "audit/SOL-008/verify.py"
+      ],
+      "exit_code": 1,
+      "expected_exit": "nonzero",
+      "files_checked": 83,
+      "files_unchanged": true,
+      "name": "initializer-refuses-existing",
+      "stderr": "AssertionError: evidence already exists; use --check",
+      "stdout": ""
+    }
+  ],
+  "original_reviewed_results_modified": false,
+  "production_run_or_historical_suite_rerun": false,
+  "python": "3.12.14",
+  "schema_version": 1,
+  "task": "SOL-008"
+}

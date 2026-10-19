@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "2ccb104a57d010e3ce9f9a6b6045e964cf653a99",
+  "snapshot_main_commit": "8e2761988bb0f2fc0f155ce4ea9f88be53788f57",
   "authoritative_state": [
     "ops/control.json",
     "ops/queue.json"
@@ -13,7 +13,8 @@
     "submitted_pending_review": "Exact worker result exists but cannot support manuscript outcome claims yet",
     "design_pending_review": "Chief proposal exists; independent design review is incomplete",
     "not_available": "Required result or final artifact does not exist yet",
-    "prototype_pending_review": "Chief-authored source and synthetic checks exist; independent code approval and production results are absent"
+    "prototype_pending_review": "Chief-authored source and synthetic checks exist; independent code approval and production results are absent",
+    "accepted_development_evidence": "Exact reviewed development artifacts accepted; not final or policy-selection evidence"
   },
   "source_registry": {
     "PROBLEM_LOCK": {
@@ -53,7 +54,7 @@
       "reviewed_commit": "69ed125b7fde276fe503e1ec5416fbf2e5ec9a7b"
     },
     "HY3_BASELINE_RESULT": {
-      "state": "submitted_pending_review",
+      "state": "accepted_development_evidence",
       "task_id": "HY3-003",
       "commit": "7652410d73425371110784ef5fa97c03470a074e",
       "branch": "work/hy3/HY3-003-a1",
@@ -61,7 +62,9 @@
       "result_directory_at_commit": "results/development/HY3-003",
       "chief_preliminary_evidence": "audit/chief/HY3-003-preliminary.json",
       "independent_review_task": "SOL-008",
-      "promoted_to_main": false
+      "promoted_to_main": true,
+      "chief_acceptance_evidence": "audit/chief/HY3-003-review.json",
+      "independent_review_commit": "818af5d65bd8a271962d848dd552bd39ca561f68"
     },
     "POLICY_PROPOSAL": {
       "state": "design_pending_review",
@@ -188,13 +191,13 @@
         "BASELINE_ADDENDUM",
         "HY3_BASELINE_RESULT"
       ],
-      "state": "submitted_pending_review",
+      "state": "accepted_development_evidence",
       "table_keys": [
         "policy_id",
         "horizon",
         "split"
       ],
-      "remaining": "Accept independent SOL-008 numerical review and exact HY3-003 artifacts; do not rerun the existing experiment"
+      "remaining": "Prepare descriptive baseline tables; future final evaluation remains a separate frozen run."
     },
     {
       "id": "R08",
@@ -221,8 +224,8 @@
         "BASELINE_ADDENDUM",
         "HY3_BASELINE_RESULT"
       ],
-      "state": "submitted_pending_review",
-      "remaining": "Accepted case for each reported policy/horizon and frozen final selection rule; show selected-policy path without mislabeling the reference's own severe case"
+      "state": "accepted_development_evidence",
+      "remaining": "Three baseline severe cases at all five development horizons accepted. Cost-aware and final cases remain unavailable; retain their exact path/location provenance."
     },
     {
       "id": "R10",

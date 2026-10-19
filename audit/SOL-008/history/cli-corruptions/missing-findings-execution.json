@@ -1,0 +1,20 @@
+{
+  "after_tree_sha256": "180ade8d21e597adb4a3d7a8b061f45ed65acfd2d31ac6dd8469c68753448012",
+  "before_tree_sha256": "180ade8d21e597adb4a3d7a8b061f45ed65acfd2d31ac6dd8469c68753448012",
+  "changed_paths": [],
+  "command": [
+    "{python}",
+    "-B",
+    "audit/SOL-008/verify.py",
+    "--check",
+    "--evidence-dir",
+    "audit/SOL-008/history/cli-corruptions/missing-findings"
+  ],
+  "exit_code": 1,
+  "expected_exit": "nonzero",
+  "files_checked": 82,
+  "files_unchanged": true,
+  "name": "missing-findings",
+  "stderr": "FileNotFoundError: [Errno 2] No such file or directory: 'audit\\\\SOL-008\\\\history\\\\cli-corruptions\\\\missing-findings\\\\findings.json'",
+  "stdout": ""
+}
