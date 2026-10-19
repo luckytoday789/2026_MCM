@@ -81,14 +81,17 @@
       "chief_acceptance_evidence": "audit/chief/SOL-013-review.json"
     },
     "POLICY_KERNEL_PROTOTYPE": {
-      "state": "prototype_pending_review",
+      "state": "accepted_implementation",
       "source_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
       "path": "src/safeinvest/policy_pilot.py",
       "scope_note": "specs/POLICY_NUMERIC_K2.md",
       "independent_review_task": "SOL-021",
       "chief_synthetic_test_count": 19,
       "production_execution_authorized": false,
-      "competition_outcomes_computed": false
+      "competition_outcomes_computed": false,
+      "independent_review_commit": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+      "chief_acceptance_evidence": "audit/chief/SOL-021-review.json",
+      "code_verdict": "approve"
     },
     "POLICY_CALIBRATION_PROTOTYPE": {
       "state": "prototype_pending_review",
@@ -153,7 +156,9 @@
       ],
       "corrected_design_verdict": "approve",
       "code_verdict": "changes_required",
-      "k1_status": "closed by SOL-017; K2 source correction pending SOL-021"
+      "k1_status": "closed by SOL-017; K2 source correction pending SOL-021",
+      "closure_review_commit": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+      "closure_evidence": "audit/chief/SOL-021-review.json"
     },
     "FINAL_EVALUATION_CONTRACT": {
       "state": "design_pending_review",
@@ -215,7 +220,7 @@
         "POLICY_CALIBRATION_PROTOTYPE"
       ],
       "state": "accepted_design",
-      "remaining": "V2 design approved by SOL-013; K2 correction pending SOL-021, then calibration SOL-022, case engine SOL-023 and pure analysis SOL-016. Writer, actual development results and independent review remain required."
+      "remaining": "V2 design and corrected kernel accepted (SOL-013 and SOL-021). Pure analysis SOL-016 and calibration SOL-022 released; case engine SOL-023 waits for calibration approval. Writer, actual development results and independent numerical review remain required."
     },
     {
       "id": "R05",
@@ -254,7 +259,7 @@
         "POLICY_CALIBRATION_PROTOTYPE"
       ],
       "state": "accepted_design",
-      "remaining": "V2 design approved by SOL-013; K2 correction pending SOL-021, then calibration SOL-022, case engine SOL-023 and pure analysis SOL-016. Writer, actual development results and independent review remain required."
+      "remaining": "V2 design and corrected kernel accepted (SOL-013 and SOL-021). Pure analysis SOL-016 and calibration SOL-022 released; case engine SOL-023 waits for calibration approval. Writer, actual development results and independent numerical review remain required."
     },
     {
       "id": "R07",
@@ -339,7 +344,7 @@
         "POLICY_PROPOSAL"
       ],
       "state": "accepted_design",
-      "remaining": "Generic latch/holdings design accepted. K1 closed; K2 code correction pending SOL-021. Personalized handoff SOL-020 and actual personalized/final evidence still required."
+      "remaining": "Generic latch/holdings design and corrected kernel accepted (SOL-013/SOL-021), personalized design accepted SOL-020. Personalized adapter, actual development and final evidence remain required."
     },
     {
       "id": "R14",

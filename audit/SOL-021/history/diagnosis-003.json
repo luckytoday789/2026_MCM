@@ -1,0 +1,18 @@
+{
+  "kind": "audit_tool_mistake",
+  "failure": "Clean and advanced-HEAD checks rejected their own saved facts due to tuple/list structural mismatch after JSON serialization.",
+  "diagnosis": {
+    "path": "facts.real_tiny_target_change.scores",
+    "saved_type": "list",
+    "recomputed_type": "tuple"
+  },
+  "effect": "No verification.json created. Numeric values unchanged. First integrity report preserved and not claimed as a passing rejection suite because its clean control failed.",
+  "correction": "Normalize recomputed/create facts through JSON roundtrip before exact structural comparison; binary64 float roundtrip retains tiny values exactly. Rerun all controls and corruptions in fresh ignored integrity-003 scratch.",
+  "preserved": [
+    "creation-002-result.json",
+    "creation-002-verify.py",
+    "creation-002-integrity-self-tests.json",
+    "creation-002-findings.json",
+    "creation-002-review.md"
+  ]
+}

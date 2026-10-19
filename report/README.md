@@ -14,8 +14,10 @@ result are accepted. HY3-003 at `7652410d73425371110784ef5fa97c03470a074e`
 passed independent SOL-008 review at `818af5d65bd8a271962d848dd552bd39ca561f68`
 and the chief's pinned, read-only replay. Its descriptive tables can be used.
 The corrected v2 cost-aware and suitability design was approved by SOL-013.
-The corrected numerical kernel awaits SOL-021 after preserved K1/K2 negative
-reviews; personalized handoff design was approved by SOL-020.
+The corrected numerical kernel passed SOL-021 at
+`d154f90d1c50b37990b75ec0a45aa01a38252343` and the chief's independent replay;
+historical K1/K2 negative reviews remain preserved. Personalized handoff design
+was approved by SOL-020.
 No policy selection or customer recommendation follows from these references.
 The authoritative current states are in `ops/queue.json`; use the exact worker
 SHAs and acceptance records above for citations.
@@ -83,9 +85,9 @@ authorized by this plan.
 
 ## Next dependencies and completion checks
 
-- SOL-013 approved the corrected design; SOL-017 closed K1 but found K2. Review
-  corrected kernel SOL-021 before releasing unchanged pure analysis SOL-016 and
-  calibration SOL-022, then case engine SOL-023. The personalized handoff design
+- SOL-013 approved the corrected design and SOL-021 closed K2 after independent
+  chief checks. Unchanged pure analysis SOL-016 and calibration SOL-022 are
+  released; case engine SOL-023 still requires accepted calibration. The personalized handoff design
   is approved by SOL-020, with implementation/outcomes still unreviewed. Preserve old negative verdicts, quota failures and cancelled tasks;
   do not rerun accepted HY3-003 or treat synthetic checks as policy outcomes.
 - After review, resolve concrete findings and publish granular implementation

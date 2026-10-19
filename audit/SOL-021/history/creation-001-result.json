@@ -1,0 +1,5 @@
+{
+  "error": "Command failed: python -B audit/SOL-021/verify.py --create\nfatal: not a git repository: 'E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-021-a1\\.runtime\\SOL-021-scratch\\integrity-001\\advanced-head-view'\nCalledProcessError: Command '['git', 'rev-parse', 'HEAD']' returned non-zero exit status 128.\r\n",
+  "stdout": "",
+  "stderr": "fatal: not a git repository: 'E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-021-a1\\.runtime\\SOL-021-scratch\\integrity-001\\advanced-head-view'\nCalledProcessError: Command '['git', 'rev-parse', 'HEAD']' returned non-zero exit status 128.\r\n"
+}

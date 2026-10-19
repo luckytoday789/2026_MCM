@@ -1,0 +1,78 @@
+{
+  "advanced_head": "cc080c884d63e6dcf4100c50758042e4120db120",
+  "production_git_unchanged": true,
+  "tests": [
+    {
+      "expected_exit": 0,
+      "name": "clean",
+      "observed_exit": 1,
+      "read_only": true,
+      "scratch_evidence": ".runtime/SOL-021-scratch/integrity-002/clean.json",
+      "stderr": "RuntimeError: Recomputed evidence mismatch\n",
+      "stdout": ""
+    },
+    {
+      "expected_exit": 1,
+      "name": "corrupt-exact-midpoint",
+      "observed_exit": 1,
+      "read_only": true,
+      "scratch_evidence": ".runtime/SOL-021-scratch/integrity-002/corrupt-exact-midpoint.json",
+      "stderr": "RuntimeError: Recomputed evidence mismatch\n",
+      "stdout": ""
+    },
+    {
+      "expected_exit": 1,
+      "name": "corrupt-tiny-fee",
+      "observed_exit": 1,
+      "read_only": true,
+      "scratch_evidence": ".runtime/SOL-021-scratch/integrity-002/corrupt-tiny-fee.json",
+      "stderr": "RuntimeError: Recomputed evidence mismatch\n",
+      "stdout": ""
+    },
+    {
+      "expected_exit": 1,
+      "name": "corrupt-pinned-import-hash",
+      "observed_exit": 1,
+      "read_only": true,
+      "scratch_evidence": ".runtime/SOL-021-scratch/integrity-002/corrupt-pinned-import-hash.json",
+      "stderr": "RuntimeError: Recomputed evidence mismatch\n",
+      "stdout": ""
+    },
+    {
+      "expected_exit": 1,
+      "name": "corrupt-source-hash",
+      "observed_exit": 1,
+      "read_only": true,
+      "scratch_evidence": ".runtime/SOL-021-scratch/integrity-002/corrupt-source-hash.json",
+      "stderr": "RuntimeError: Recomputed evidence mismatch\n",
+      "stdout": ""
+    },
+    {
+      "expected_exit": 1,
+      "name": "corrupt-artifact",
+      "observed_exit": 1,
+      "read_only": true,
+      "scratch_evidence": ".runtime/SOL-021-scratch/integrity-002/corrupt-artifact.json",
+      "stderr": "RuntimeError: Artifacts differ from audited implementation directory\n",
+      "stdout": ""
+    },
+    {
+      "expected_exit": 1,
+      "name": "exclusive-create-refuses-overwrite",
+      "observed_exit": 1,
+      "read_only": true,
+      "scratch_evidence": ".runtime/SOL-021-scratch/integrity-002/exclusive-create-refuses-overwrite.json",
+      "stderr": "RuntimeError: Refusing overwrite: findings.json\n",
+      "stdout": ""
+    },
+    {
+      "expected_exit": 0,
+      "name": "advanced-head-same-pinned-inputs",
+      "observed_exit": 1,
+      "read_only": true,
+      "scratch_evidence": ".runtime/SOL-021-scratch/integrity-002/advanced-head-same-pinned-inputs.json",
+      "stderr": "RuntimeError: Recomputed evidence mismatch\n",
+      "stdout": ""
+    }
+  ]
+}

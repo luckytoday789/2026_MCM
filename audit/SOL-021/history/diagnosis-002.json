@@ -1,0 +1,7 @@
+{
+  "kind": "audit_tool_mistake",
+  "failure": "First evidence creation failed in advanced-HEAD test: temporary Git view omitted required refs directory.",
+  "effect": "No verification.json was created. Numeric observations were unaffected. First provisional findings/review/verifier and process result preserved. Previously attempted corruption checks are rerun with full per-test logs; no unrecorded pass is claimed.",
+  "correction": "Add empty refs directory, use a fresh ignored integrity-002 scratch directory, and persist each test result immediately.",
+  "no_repository_mutation": "Actual repository HEAD/branches/refs never changed."
+}

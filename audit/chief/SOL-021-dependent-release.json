@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-10-19T18:35:01.480452+00:00",
+  "accepted_review_commit": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+  "kernel_source_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+  "released": [
+    {
+      "id": "SOL-016",
+      "base_commit": "dd60066010f6904565fb51e99be8088285102e57",
+      "task_sha256": "43da6619805b1e82b47fd9ddf592c9c65316e7ec6c8a0e193810b6f80afd05f6",
+      "source_count": 12,
+      "dependencies": [
+        "SOL-001",
+        "SOL-004",
+        "SOL-009",
+        "SOL-013"
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "SOL-022",
+      "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+      "task_sha256": "9f1841cdfae0638427bdccfcd96e1cf231bed04ce6ac32afd2d72ae550674ab7",
+      "source_count": 14,
+      "dependencies": [
+        "SOL-009",
+        "SOL-010",
+        "SOL-013",
+        "SOL-017",
+        "SOL-021"
+      ],
+      "unchanged": true
+    }
+  ],
+  "final_data_open": false
+}

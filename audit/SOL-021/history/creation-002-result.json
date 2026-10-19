@@ -1,0 +1,5 @@
+{
+  "error": "Command failed: python -B audit/SOL-021/verify.py --create\nRuntimeError: Integrity self-test failure preserved\r\n",
+  "stdout": "",
+  "stderr": "RuntimeError: Integrity self-test failure preserved\r\n"
+}
