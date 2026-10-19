@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-10-19T17:09:40.025677+00:00",
+  "finished_at": "2026-10-19T17:09:40.380236+00:00",
+  "command": [
+    "python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_policy_calibration.py",
+    "-v"
+  ],
+  "python": "3.12.0",
+  "exit_code": 0,
+  "split": "synthetic",
+  "competition_data_read": false,
+  "independent_acceptance": false,
+  "log": "audit/chief/policy-calibration/20261019T170940Z-tests.txt",
+  "log_sha256": "56e867e50ee6fdd5a8eae9a879f6b4cf37fb509f3582225ff409b50c6d3f38c1",
+  "source_sha256_lf": {
+    "src/safeinvest/policy_calibration.py": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+    "tests/test_policy_calibration.py": "1ffd23c01e82a12d57568557cf33402bf93aec15b3e9cb4808e0da83fd5a38f2",
+    "src/safeinvest/policy_pilot.py": "d2f529f69abbc1690ed4fedca42cda8b9c5570729b58c5c9dd37e142d14971f6",
+    "specs/POLICY_DRIVER_HANDOFF.md": "ba9ce7ec0f3a65f85190153e1b3e1d6327ddf7a213aa95fcced533775e352679"
+  }
+}

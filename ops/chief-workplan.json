@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T01:12:14+08:00",
-  "reason": "Verified real Sol quota recovery; released both existing independent reviews. Chief continues bounded provisional calibration preparation while reviews run.",
+  "next_wake_at": "2026-10-20T01:15:42+08:00",
+  "reason": "Sol has started SOL-008. Synthetic-only fold calibration and ten executed provenance/leakage tests are saved; publish its gated independent review against this pushed source next.",
   "next_actions": [
     "Inspect exact SOL-008 and SOL-009 receipts as they arrive; preserve all failed attempts. HY3-003 is submitted and must not be rerun.",
     "Accept or challenge the independent numerical audit before promoting exact HY3-003.",
     "Reconcile SOL-009 findings; release existing SOL-011 promptly only if the design is accepted without material changes, otherwise publish a corrected immutable attempt against pushed sources.",
-    "Continue synthetic-only fold calibration/provenance preparation under the existing handoff; no actual policy outcomes until independent code review.",
+    "Publish a narrow gated independent review of the provisional calibration source after this source commit is pushed; no actual-data policy outcomes.",
     "Prepare granular driver and selection tasks after design review; reviewed prerequisites must already exist on origin/main before task publication.",
     "Keep final gate closed and private member details local. Refresh the one-shot timer at end of turn."
   ],
@@ -15,6 +15,6 @@
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T01:07:14+08:00",
+  "last_completed_at": "2026-10-20T01:10:42+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }
