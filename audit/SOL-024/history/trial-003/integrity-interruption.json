@@ -1,0 +1,8 @@
+{
+  "event": "Tool wrapper timeout during integrity harness",
+  "limit_seconds": 30,
+  "completed_report": false,
+  "observed_partial_scratch_trials": 14,
+  "effect": "No verification verdict inferred from interrupted wrapper. Original evidence and all scratch copies preserved; no production access.",
+  "resolution": "Run the same unchanged harness with a sufficient tool timeout; retain this interruption."
+}

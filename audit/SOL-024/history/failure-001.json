@@ -1,0 +1,13 @@
+{
+  "trial": 1,
+  "command": [
+    "python",
+    "-B",
+    "audit/SOL-024/verify.py"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "ValueError: missing reviewed prose boundary: not a second model-selection opportunity",
+  "effect": "Reference fixtures completed before final static phrase assertion; no verification.json created and no production outcomes accessed.",
+  "diagnosis": "Audit assertion used an inexact quotation. Source says comparisons do not create a second model-selection opportunity. Correct only the literal audit assertion; preserve source."
+}

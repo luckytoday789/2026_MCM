@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-024",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "trials": [
+    {
+      "name": "valid",
+      "expected_exit": 0,
+      "exit_code": 0,
+      "stdout": "{\"evidence_integrity_verdict\": \"verified\", \"design_verdict\": \"approve\", \"implementation_verdict\": \"not_reviewed\", \"historical_kernel_verdict\": \"changes_required\", \"read_only\": true, \"reference_groups\": 14}\n",
+      "stderr": "",
+      "all_scratch_bytes_unchanged": true
+    },
+    {
+      "name": "wrong-generic-count",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation: ('references', 'generic_counts', 'annual_ledger_rows')\n",
+      "all_scratch_bytes_unchanged": true
+    },
+    {
+      "name": "wrong-personalized-H30",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation: ('references', 'personalized', 'all', 'ledger_rows')\n",
+      "all_scratch_bytes_unchanged": true
+    },
+    {
+      "name": "wrong-personalized-denominator",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation: ('references', 'personalized', 'all', 'rows', 0, 'denominator')\n",
+      "all_scratch_bytes_unchanged": true
+    },
+    {
+      "name": "referral-false-screen",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: evidence type mismatch: ('references', 'personalized', 'none', 'rows', 0, 'risk_pass')\n",
+      "all_scratch_bytes_unchanged": true
+    },
+    {
+      "name": "referral-zero-outcome",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: evidence type mismatch: ('references', 'personalized', 'none', 'rows', 0, 'p90_loss')\n",
+      "all_scratch_bytes_unchanged": true
+    },
+    {
+      "name": "wrong-exceedances",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation: ('references', 'screens', 'strict_exceedances')\n",
+      "all_scratch_bytes_unchanged": true
+    },
+    {
+      "name": "severe-epsilon-substitution",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation: ('references', 'severe', 'earliest', 'loss')\n",
+      "all_scratch_bytes_unchanged": true
+    },
+    {
+      "name": "wrong-freeze-basis",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation: ('references', 'freeze_text_hashes', 'base', 'runner')\n",
+      "all_scratch_bytes_unchanged": true
+    },
+    {
+      "name": "wrong-source-pin",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: source pins changed\n",
+      "all_scratch_bytes_unchanged": true
+    },
+    {
+      "name": "wrong-task-base",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: task/base pin corrupt\n",
+      "all_scratch_bytes_unchanged": true
+    },
+    {
+      "name": "missing-findings",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-024-a1\\\\.runtime\\\\SOL-024-integrity-s8qb0rk6\\\\missing-findings\\\\findings.json'\n",
+      "all_scratch_bytes_unchanged": true
+    },
+    {
+      "name": "changed-review",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation: ('artifact_sha256', 'review.md')\n",
+      "all_scratch_bytes_unchanged": true
+    },
+    {
+      "name": "changed-historical-failure",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation: ('artifact_sha256', 'history/failure-001.json')\n",
+      "all_scratch_bytes_unchanged": true
+    },
+    {
+      "name": "changed-expected-hash",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: saved evidence differs from read-only recomputation: ('artifact_sha256', 'verify.py')\n",
+      "all_scratch_bytes_unchanged": true
+    },
+    {
+      "name": "ordinary-float-within-tolerance",
+      "expected_exit": 0,
+      "exit_code": 0,
+      "stdout": "{\"evidence_integrity_verdict\": \"verified\", \"design_verdict\": \"approve\", \"implementation_verdict\": \"not_reviewed\", \"historical_kernel_verdict\": \"changes_required\", \"read_only\": true, \"reference_groups\": 14}\n",
+      "stderr": "",
+      "all_scratch_bytes_unchanged": true
+    },
+    {
+      "name": "ordinary-float-outside-tolerance",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: derived evidence mismatch: ('references', 'ordinary', 'cagr_pct')\n",
+      "all_scratch_bytes_unchanged": true
+    },
+    {
+      "name": "exclusive-create-existing",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "ValueError: creation allowed only in assigned audit directory\n",
+      "all_scratch_bytes_unchanged": true
+    }
+  ],
+  "trial_count": 18,
+  "corrupt_or_missing_rejections": 15,
+  "exclusive_existing_rejected": true,
+  "HEAD_independence": "18 immutable git-show reads only; all mutable refs prohibited",
+  "original_audit_files_unchanged": true,
+  "scratch_copies_retained": true,
+  "scope": "Own metadata/scalar verifier only; no production inputs/helpers/gates or refs modified."
+}

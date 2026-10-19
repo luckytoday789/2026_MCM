@@ -1,0 +1,1023 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-19T18:39:08.511630+00:00",
+  "created_with_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "evidence": {
+    "schema_version": 1,
+    "task_bindings": {
+      "base_commit": "6c1997c0ac20430af0b7e11d9fb0b29ab8506a11",
+      "publication_commit": "cf0fec40a27fb603d8b36bde2d7b77d84f4541a0",
+      "task_blob_sha256": "5323d75883ef842689dde661f9fe8284671fce7d42e2277f02bba1fb5c2c3dd4",
+      "task_digest_sha256": "3150dc39fdb242ea3f4dc8256fc009d2dcd1060861276fabd3265a6639c23a77",
+      "allowed_paths": [
+        "audit/SOL-024"
+      ],
+      "python_major_minor": [
+        3,
+        12
+      ]
+    },
+    "source_sha256": {
+      "specs/FINAL_EVALUATION.md": "39cf3c73328c79afc83905ba4aa31d9aeae14564a42fb7d167756886292f9035",
+      "specs/final_evaluation_contract_v1.json": "b9b254b17af6a4e61ab9ed6708cefbff3466b56c9dc2b9555008e7907cd34c96",
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "specs/PERSONALIZED_REVIEW.md": "0365fdf989ae7abfeda0bc3f48f8c86245a40dd9e48b3c6ae8d2d26c0b7c4987",
+      "specs/personalized_review_v1.json": "2edc9410b291f8f1f7235344e685d004c2f3cfd80844539df96759e9b305b4ad",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/DEVELOPMENT_BASELINE_DRIVER.md": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0",
+      "specs/POLICY_ANALYSIS.md": "a2220482c861799280815b4e65d73e79e53666816ac9e7e72a38d5f48a6e53b8",
+      "specs/POLICY_RESULT_WRITER.md": "ce0c43fad34ebdc44fc6f6bda395c562781e500cdc4b855ee7e0cbf937bec0b4",
+      "ops/PROTOCOL.md": "1aae9a4819a82aa8c17e93edd5c1a8d9e7bbb05fe18bcbb7d9d08800e53c2525",
+      "scripts/coop.py": "c23bcae4b2ee761f8c44bfee9dc5c891291cd74dc7b143ea5e3b5fe3938153f1",
+      "data/manifest.json": "2535c087075957919d5f1990ad234ca436f7b3506ba592ac8a6457feb42fe90d",
+      "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+      "audit/chief/SOL-020-review.json": "276895e8e12b9c212fe433f0fa1c07408c601502ffd5d9ce965a684fdc72551b",
+      "audit/SOL-020/findings.json": "2e597db33daf1da6dfdea61925565fb7d2735e97db7d985784faed967a27f3c0"
+    },
+    "artifact_sha256": {
+      "task-lock.json": "a22795a7ef2e4aafa951db860ec3019f3ae5888142f72bbedf2247f1ceeba39b",
+      "review.md": "d880e96e6c7359a5bd9379cb6c7f9f39e6360db8abcf07cfd2028dd87707e398",
+      "findings.json": "631068471ff7bd465b8d56651072425ebf461b70256dcb665e52de3bc9125d2d",
+      "verify.py": "6f44ff9c6fbfa33dfe9b13b54d8be93e1a7b0bded5cb4fbd08509a948fd4fdec",
+      "execution_history.json": "7c638091438a5fbbeb2470d1d6231c523b3afd4a63b3dddbac04dcfe78d65525",
+      "integrity_checks.py": "cef24f82e089c56f2cb2a3cdc1ce84b813b4b901eecb0d2048cd8bc4813741d4",
+      "history/failed-trial-001-verify.py": "221219e37732a296f5c04a54d4a1daaafaecad218e120ea5c8072764670e7a8b",
+      "history/failure-001.json": "e912fe6f99b03a23b17ce487050ccca67e3a688ad623354016714939c62f9464",
+      "history/trial-002/exclusively-created-original-verification.json": "ab64ffeb0c4da132a79f0634e86dd06295db3f3c3a62d58e88b0e4ba15cb6fa0",
+      "history/trial-002/execution_history.json": "514a052f5086bdb83febaacc857f73674611c6ad21fe63137fcc21f010a6af4f",
+      "history/trial-002/findings.json": "631068471ff7bd465b8d56651072425ebf461b70256dcb665e52de3bc9125d2d",
+      "history/trial-002/review.md": "d880e96e6c7359a5bd9379cb6c7f9f39e6360db8abcf07cfd2028dd87707e398",
+      "history/trial-002/verification.json": "ab64ffeb0c4da132a79f0634e86dd06295db3f3c3a62d58e88b0e4ba15cb6fa0",
+      "history/trial-002/verify.py": "2706032a70002bc98177ccee761edbfe6da12baa053a8a4ae5449c0bdc7027af"
+    },
+    "references": {
+      "generic_counts": {
+        "cases": 16,
+        "scenarios_per_case": 60,
+        "scenario_paths": 960,
+        "annual_ledger_rows": 28800,
+        "scenario_horizon_metrics": 4800,
+        "comparison_summaries": 100,
+        "paired_rows": 6000
+      },
+      "generated_key_sha256": {
+        "ledger": "b317c62271c9940a5fac3d51871e595834395b09b77fd51644a265c951adc98a",
+        "metrics": "c5e4dd7f957cdfb83293f5ef8a03b99f8cb2a2c2b699169e00144c98877f0fb2",
+        "paired": "2ec906e7c78a5a64aa4a30cfe6a37bf2eca4fdc166c43affa61e55881f20fb41"
+      },
+      "contrasts": [
+        [
+          "bills_keep",
+          "equal_weight_annual"
+        ],
+        [
+          "equal_weight_buy_hold",
+          "equal_weight_annual"
+        ],
+        [
+          "conservative_cost",
+          "equal_weight_annual"
+        ],
+        [
+          "balanced_cost",
+          "equal_weight_annual"
+        ],
+        [
+          "growth_cost",
+          "equal_weight_annual"
+        ],
+        [
+          "balanced_context",
+          "equal_weight_annual"
+        ],
+        [
+          "balanced_adaptive",
+          "equal_weight_annual"
+        ],
+        [
+          "balanced_context",
+          "balanced_cost"
+        ],
+        [
+          "balanced_adaptive",
+          "balanced_context"
+        ],
+        [
+          "balanced_adaptive",
+          "balanced_cost"
+        ]
+      ],
+      "generic_prefix_rows": {
+        "5": 4800,
+        "6": 5760,
+        "15": 14400,
+        "25": 24000,
+        "30": 28800
+      },
+      "refit": {
+        "keys": 3600,
+        "key_sha256": "b978753d64cc0b1cf82977bdf8f30e583246d0c951cd62e933e37b890ae4255b",
+        "development_oof_rows_per_prior": [
+          2700,
+          2700,
+          2700,
+          2700
+        ],
+        "context_windows": {
+          "(121, 1)": [],
+          "(121, 2)": [
+            [
+              121,
+              1
+            ]
+          ],
+          "(121, 5)": [
+            [
+              121,
+              1
+            ],
+            [
+              121,
+              2
+            ],
+            [
+              121,
+              3
+            ],
+            [
+              121,
+              4
+            ]
+          ],
+          "(121, 6)": [
+            [
+              121,
+              1
+            ],
+            [
+              121,
+              2
+            ],
+            [
+              121,
+              3
+            ],
+            [
+              121,
+              4
+            ],
+            [
+              121,
+              5
+            ]
+          ],
+          "(121, 30)": [
+            [
+              121,
+              25
+            ],
+            [
+              121,
+              26
+            ],
+            [
+              121,
+              27
+            ],
+            [
+              121,
+              28
+            ],
+            [
+              121,
+              29
+            ]
+          ],
+          "(180, 1)": [],
+          "(180, 2)": [
+            [
+              180,
+              1
+            ]
+          ],
+          "(180, 5)": [
+            [
+              180,
+              1
+            ],
+            [
+              180,
+              2
+            ],
+            [
+              180,
+              3
+            ],
+            [
+              180,
+              4
+            ]
+          ],
+          "(180, 6)": [
+            [
+              180,
+              1
+            ],
+            [
+              180,
+              2
+            ],
+            [
+              180,
+              3
+            ],
+            [
+              180,
+              4
+            ],
+            [
+              180,
+              5
+            ]
+          ],
+          "(180, 30)": [
+            [
+              180,
+              25
+            ],
+            [
+              180,
+              26
+            ],
+            [
+              180,
+              27
+            ],
+            [
+              180,
+              28
+            ],
+            [
+              180,
+              29
+            ]
+          ]
+        },
+        "prior_mass_first": "1",
+        "prior_mass_at_five": "3/4",
+        "each_recent_mass_at_five": "1/20"
+      },
+      "personalized": {
+        "all": {
+          "summary_rows": 10,
+          "executed_cases": 10,
+          "metrics": 600,
+          "ledger_rows": 9720,
+          "rows": [
+            {
+              "profile": "A",
+              "fee": 0.0025,
+              "horizon": 5,
+              "scenario_count": 60,
+              "denominator": 60,
+              "selected_class": "conservative",
+              "mode": "conservative_cost",
+              "source_case": "synthetic/A/0.0025",
+              "risk_pass": true,
+              "power_pass": true,
+              "p90_loss": 0,
+              "p10_growth": 0,
+              "exceedance_count": 0,
+              "exceedance_fraction": 0,
+              "simulation_status": "executed"
+            },
+            {
+              "profile": "A",
+              "fee": 0.005,
+              "horizon": 5,
+              "scenario_count": 60,
+              "denominator": 60,
+              "selected_class": "conservative",
+              "mode": "conservative_cost",
+              "source_case": "synthetic/A/0.005",
+              "risk_pass": true,
+              "power_pass": true,
+              "p90_loss": 0,
+              "p10_growth": 0,
+              "exceedance_count": 0,
+              "exceedance_fraction": 0,
+              "simulation_status": "executed"
+            },
+            {
+              "profile": "B",
+              "fee": 0.0025,
+              "horizon": 15,
+              "scenario_count": 60,
+              "denominator": 60,
+              "selected_class": "conservative",
+              "mode": "conservative_cost",
+              "source_case": "synthetic/B/0.0025",
+              "risk_pass": true,
+              "power_pass": true,
+              "p90_loss": 0,
+              "p10_growth": 0,
+              "exceedance_count": 0,
+              "exceedance_fraction": 0,
+              "simulation_status": "executed"
+            },
+            {
+              "profile": "B",
+              "fee": 0.005,
+              "horizon": 15,
+              "scenario_count": 60,
+              "denominator": 60,
+              "selected_class": "conservative",
+              "mode": "conservative_cost",
+              "source_case": "synthetic/B/0.005",
+              "risk_pass": true,
+              "power_pass": true,
+              "p90_loss": 0,
+              "p10_growth": 0,
+              "exceedance_count": 0,
+              "exceedance_fraction": 0,
+              "simulation_status": "executed"
+            },
+            {
+              "profile": "C",
+              "fee": 0.0025,
+              "horizon": 30,
+              "scenario_count": 60,
+              "denominator": 60,
+              "selected_class": "conservative",
+              "mode": "conservative_cost",
+              "source_case": "synthetic/C/0.0025",
+              "risk_pass": true,
+              "power_pass": true,
+              "p90_loss": 0,
+              "p10_growth": 0,
+              "exceedance_count": 0,
+              "exceedance_fraction": 0,
+              "simulation_status": "executed"
+            },
+            {
+              "profile": "C",
+              "fee": 0.005,
+              "horizon": 30,
+              "scenario_count": 60,
+              "denominator": 60,
+              "selected_class": "conservative",
+              "mode": "conservative_cost",
+              "source_case": "synthetic/C/0.005",
+              "risk_pass": true,
+              "power_pass": true,
+              "p90_loss": 0,
+              "p10_growth": 0,
+              "exceedance_count": 0,
+              "exceedance_fraction": 0,
+              "simulation_status": "executed"
+            },
+            {
+              "profile": "D",
+              "fee": 0.0025,
+              "horizon": 25,
+              "scenario_count": 60,
+              "denominator": 60,
+              "selected_class": "conservative",
+              "mode": "conservative_cost",
+              "source_case": "synthetic/D/0.0025",
+              "risk_pass": true,
+              "power_pass": true,
+              "p90_loss": 0,
+              "p10_growth": 0,
+              "exceedance_count": 0,
+              "exceedance_fraction": 0,
+              "simulation_status": "executed"
+            },
+            {
+              "profile": "D",
+              "fee": 0.005,
+              "horizon": 25,
+              "scenario_count": 60,
+              "denominator": 60,
+              "selected_class": "conservative",
+              "mode": "conservative_cost",
+              "source_case": "synthetic/D/0.005",
+              "risk_pass": true,
+              "power_pass": true,
+              "p90_loss": 0,
+              "p10_growth": 0,
+              "exceedance_count": 0,
+              "exceedance_fraction": 0,
+              "simulation_status": "executed"
+            },
+            {
+              "profile": "E",
+              "fee": 0.0025,
+              "horizon": 6,
+              "scenario_count": 60,
+              "denominator": 60,
+              "selected_class": "conservative",
+              "mode": "conservative_cost",
+              "source_case": "synthetic/E/0.0025",
+              "risk_pass": true,
+              "power_pass": true,
+              "p90_loss": 0,
+              "p10_growth": 0,
+              "exceedance_count": 0,
+              "exceedance_fraction": 0,
+              "simulation_status": "executed"
+            },
+            {
+              "profile": "E",
+              "fee": 0.005,
+              "horizon": 6,
+              "scenario_count": 60,
+              "denominator": 60,
+              "selected_class": "conservative",
+              "mode": "conservative_cost",
+              "source_case": "synthetic/E/0.005",
+              "risk_pass": true,
+              "power_pass": true,
+              "p90_loss": 0,
+              "p10_growth": 0,
+              "exceedance_count": 0,
+              "exceedance_fraction": 0,
+              "simulation_status": "executed"
+            }
+          ]
+        },
+        "none": {
+          "summary_rows": 10,
+          "executed_cases": 0,
+          "metrics": 0,
+          "ledger_rows": 0,
+          "rows": [
+            {
+              "profile": "A",
+              "fee": 0.0025,
+              "horizon": 5,
+              "scenario_count": 0,
+              "denominator": 0,
+              "selected_class": null,
+              "mode": null,
+              "source_case": null,
+              "risk_pass": null,
+              "power_pass": null,
+              "p90_loss": null,
+              "p10_growth": null,
+              "exceedance_count": null,
+              "exceedance_fraction": null,
+              "simulation_status": "not_run_upstream_referral"
+            },
+            {
+              "profile": "A",
+              "fee": 0.005,
+              "horizon": 5,
+              "scenario_count": 0,
+              "denominator": 0,
+              "selected_class": null,
+              "mode": null,
+              "source_case": null,
+              "risk_pass": null,
+              "power_pass": null,
+              "p90_loss": null,
+              "p10_growth": null,
+              "exceedance_count": null,
+              "exceedance_fraction": null,
+              "simulation_status": "not_run_upstream_referral"
+            },
+            {
+              "profile": "B",
+              "fee": 0.0025,
+              "horizon": 15,
+              "scenario_count": 0,
+              "denominator": 0,
+              "selected_class": null,
+              "mode": null,
+              "source_case": null,
+              "risk_pass": null,
+              "power_pass": null,
+              "p90_loss": null,
+              "p10_growth": null,
+              "exceedance_count": null,
+              "exceedance_fraction": null,
+              "simulation_status": "not_run_upstream_referral"
+            },
+            {
+              "profile": "B",
+              "fee": 0.005,
+              "horizon": 15,
+              "scenario_count": 0,
+              "denominator": 0,
+              "selected_class": null,
+              "mode": null,
+              "source_case": null,
+              "risk_pass": null,
+              "power_pass": null,
+              "p90_loss": null,
+              "p10_growth": null,
+              "exceedance_count": null,
+              "exceedance_fraction": null,
+              "simulation_status": "not_run_upstream_referral"
+            },
+            {
+              "profile": "C",
+              "fee": 0.0025,
+              "horizon": 30,
+              "scenario_count": 0,
+              "denominator": 0,
+              "selected_class": null,
+              "mode": null,
+              "source_case": null,
+              "risk_pass": null,
+              "power_pass": null,
+              "p90_loss": null,
+              "p10_growth": null,
+              "exceedance_count": null,
+              "exceedance_fraction": null,
+              "simulation_status": "not_run_upstream_referral"
+            },
+            {
+              "profile": "C",
+              "fee": 0.005,
+              "horizon": 30,
+              "scenario_count": 0,
+              "denominator": 0,
+              "selected_class": null,
+              "mode": null,
+              "source_case": null,
+              "risk_pass": null,
+              "power_pass": null,
+              "p90_loss": null,
+              "p10_growth": null,
+              "exceedance_count": null,
+              "exceedance_fraction": null,
+              "simulation_status": "not_run_upstream_referral"
+            },
+            {
+              "profile": "D",
+              "fee": 0.0025,
+              "horizon": 25,
+              "scenario_count": 0,
+              "denominator": 0,
+              "selected_class": null,
+              "mode": null,
+              "source_case": null,
+              "risk_pass": null,
+              "power_pass": null,
+              "p90_loss": null,
+              "p10_growth": null,
+              "exceedance_count": null,
+              "exceedance_fraction": null,
+              "simulation_status": "not_run_upstream_referral"
+            },
+            {
+              "profile": "D",
+              "fee": 0.005,
+              "horizon": 25,
+              "scenario_count": 0,
+              "denominator": 0,
+              "selected_class": null,
+              "mode": null,
+              "source_case": null,
+              "risk_pass": null,
+              "power_pass": null,
+              "p90_loss": null,
+              "p10_growth": null,
+              "exceedance_count": null,
+              "exceedance_fraction": null,
+              "simulation_status": "not_run_upstream_referral"
+            },
+            {
+              "profile": "E",
+              "fee": 0.0025,
+              "horizon": 6,
+              "scenario_count": 0,
+              "denominator": 0,
+              "selected_class": null,
+              "mode": null,
+              "source_case": null,
+              "risk_pass": null,
+              "power_pass": null,
+              "p90_loss": null,
+              "p10_growth": null,
+              "exceedance_count": null,
+              "exceedance_fraction": null,
+              "simulation_status": "not_run_upstream_referral"
+            },
+            {
+              "profile": "E",
+              "fee": 0.005,
+              "horizon": 6,
+              "scenario_count": 0,
+              "denominator": 0,
+              "selected_class": null,
+              "mode": null,
+              "source_case": null,
+              "risk_pass": null,
+              "power_pass": null,
+              "p90_loss": null,
+              "p10_growth": null,
+              "exceedance_count": null,
+              "exceedance_fraction": null,
+              "simulation_status": "not_run_upstream_referral"
+            }
+          ]
+        },
+        "partial": {
+          "summary_rows": 10,
+          "executed_cases": 3,
+          "metrics": 180,
+          "ledger_rows": 2700,
+          "rows": [
+            {
+              "profile": "A",
+              "fee": 0.0025,
+              "horizon": 5,
+              "scenario_count": 60,
+              "denominator": 60,
+              "selected_class": "conservative",
+              "mode": "conservative_cost",
+              "source_case": "synthetic/A/0.0025",
+              "risk_pass": true,
+              "power_pass": true,
+              "p90_loss": 0,
+              "p10_growth": 0,
+              "exceedance_count": 0,
+              "exceedance_fraction": 0,
+              "simulation_status": "executed"
+            },
+            {
+              "profile": "A",
+              "fee": 0.005,
+              "horizon": 5,
+              "scenario_count": 0,
+              "denominator": 0,
+              "selected_class": null,
+              "mode": null,
+              "source_case": null,
+              "risk_pass": null,
+              "power_pass": null,
+              "p90_loss": null,
+              "p10_growth": null,
+              "exceedance_count": null,
+              "exceedance_fraction": null,
+              "simulation_status": "not_run_upstream_referral"
+            },
+            {
+              "profile": "B",
+              "fee": 0.0025,
+              "horizon": 15,
+              "scenario_count": 0,
+              "denominator": 0,
+              "selected_class": null,
+              "mode": null,
+              "source_case": null,
+              "risk_pass": null,
+              "power_pass": null,
+              "p90_loss": null,
+              "p10_growth": null,
+              "exceedance_count": null,
+              "exceedance_fraction": null,
+              "simulation_status": "not_run_upstream_referral"
+            },
+            {
+              "profile": "B",
+              "fee": 0.005,
+              "horizon": 15,
+              "scenario_count": 60,
+              "denominator": 60,
+              "selected_class": "conservative",
+              "mode": "conservative_cost",
+              "source_case": "synthetic/B/0.005",
+              "risk_pass": true,
+              "power_pass": true,
+              "p90_loss": 0,
+              "p10_growth": 0,
+              "exceedance_count": 0,
+              "exceedance_fraction": 0,
+              "simulation_status": "executed"
+            },
+            {
+              "profile": "C",
+              "fee": 0.0025,
+              "horizon": 30,
+              "scenario_count": 0,
+              "denominator": 0,
+              "selected_class": null,
+              "mode": null,
+              "source_case": null,
+              "risk_pass": null,
+              "power_pass": null,
+              "p90_loss": null,
+              "p10_growth": null,
+              "exceedance_count": null,
+              "exceedance_fraction": null,
+              "simulation_status": "not_run_upstream_referral"
+            },
+            {
+              "profile": "C",
+              "fee": 0.005,
+              "horizon": 30,
+              "scenario_count": 0,
+              "denominator": 0,
+              "selected_class": null,
+              "mode": null,
+              "source_case": null,
+              "risk_pass": null,
+              "power_pass": null,
+              "p90_loss": null,
+              "p10_growth": null,
+              "exceedance_count": null,
+              "exceedance_fraction": null,
+              "simulation_status": "not_run_upstream_referral"
+            },
+            {
+              "profile": "D",
+              "fee": 0.0025,
+              "horizon": 25,
+              "scenario_count": 60,
+              "denominator": 60,
+              "selected_class": "conservative",
+              "mode": "conservative_cost",
+              "source_case": "synthetic/D/0.0025",
+              "risk_pass": true,
+              "power_pass": true,
+              "p90_loss": 0,
+              "p10_growth": 0,
+              "exceedance_count": 0,
+              "exceedance_fraction": 0,
+              "simulation_status": "executed"
+            },
+            {
+              "profile": "D",
+              "fee": 0.005,
+              "horizon": 25,
+              "scenario_count": 0,
+              "denominator": 0,
+              "selected_class": null,
+              "mode": null,
+              "source_case": null,
+              "risk_pass": null,
+              "power_pass": null,
+              "p90_loss": null,
+              "p10_growth": null,
+              "exceedance_count": null,
+              "exceedance_fraction": null,
+              "simulation_status": "not_run_upstream_referral"
+            },
+            {
+              "profile": "E",
+              "fee": 0.0025,
+              "horizon": 6,
+              "scenario_count": 0,
+              "denominator": 0,
+              "selected_class": null,
+              "mode": null,
+              "source_case": null,
+              "risk_pass": null,
+              "power_pass": null,
+              "p90_loss": null,
+              "p10_growth": null,
+              "exceedance_count": null,
+              "exceedance_fraction": null,
+              "simulation_status": "not_run_upstream_referral"
+            },
+            {
+              "profile": "E",
+              "fee": 0.005,
+              "horizon": 6,
+              "scenario_count": 0,
+              "denominator": 0,
+              "selected_class": null,
+              "mode": null,
+              "source_case": null,
+              "risk_pass": null,
+              "power_pass": null,
+              "p90_loss": null,
+              "p10_growth": null,
+              "exceedance_count": null,
+              "exceedance_fraction": null,
+              "simulation_status": "not_run_upstream_referral"
+            }
+          ]
+        },
+        "ledger_equals_decisions": true,
+        "max_target_score_rows": 9720,
+        "not_run_numeric_metrics_flags_source_null": true
+      },
+      "screens": {
+        "cases": [
+          {
+            "p90": "10",
+            "p10": "0",
+            "risk_pass": true,
+            "power_pass": true,
+            "status": "frozen_rule_supported_on_final_sample",
+            "recommended_class": "conservative",
+            "proposed_class": "conservative",
+            "replacement_search": false
+          },
+          {
+            "p90": "11",
+            "p10": "0",
+            "risk_pass": false,
+            "power_pass": true,
+            "status": "final_validation_failed_human_review",
+            "recommended_class": null,
+            "proposed_class": "conservative",
+            "replacement_search": false
+          },
+          {
+            "p90": "10",
+            "p10": "-1",
+            "risk_pass": true,
+            "power_pass": false,
+            "status": "final_validation_failed_human_review",
+            "recommended_class": null,
+            "proposed_class": "conservative",
+            "replacement_search": false
+          },
+          {
+            "p90": "11",
+            "p10": "-1",
+            "risk_pass": false,
+            "power_pass": false,
+            "status": "final_validation_failed_human_review",
+            "recommended_class": null,
+            "proposed_class": "conservative",
+            "replacement_search": false
+          }
+        ],
+        "p90_boundary": "10",
+        "strict_exceedances": 5,
+        "denominator": 60,
+        "fraction": "1/12"
+      },
+      "severe": {
+        "earliest": {
+          "loss": 0.25,
+          "peak": [
+            0,
+            "initial"
+          ],
+          "trough": [
+            2,
+            "end"
+          ]
+        },
+        "post_fee": {
+          "loss": 0.0024999999999999467,
+          "peak": [
+            0,
+            "initial"
+          ],
+          "trough": [
+            1,
+            "post_fee"
+          ]
+        },
+        "zero": {
+          "loss": 0.0,
+          "peak": [
+            0,
+            "initial"
+          ],
+          "trough": [
+            0,
+            "initial"
+          ]
+        },
+        "strict_later": {
+          "loss": 0.2500000000000001,
+          "peak": [
+            0,
+            "initial"
+          ],
+          "trough": [
+            5,
+            "end"
+          ]
+        },
+        "exact_tie_id": 121,
+        "near_tie_id": 122,
+        "own_severe_id": 121,
+        "baseline_same_path_id": 121,
+        "baseline_own_severe_id": 122
+      },
+      "ordinary": {
+        "cagr_pct": 10.000000000000009,
+        "sample_std_pct": 7.637626158259733,
+        "exact_sample_variance": "175/3",
+        "median_paired_difference": "0",
+        "p10_marginal_difference": 0.3,
+        "p10_paired_difference": -6.6
+      },
+      "freeze_text_hashes": {
+        "base": {
+          "runner": "9244ef0d94583ad1cd4233a95599b1c6d9d6d65fa8a4099ae5c2da9d74248430",
+          "blob": "9244ef0d94583ad1cd4233a95599b1c6d9d6d65fa8a4099ae5c2da9d74248430"
+        },
+        "outer": {
+          "runner": "9244ef0d94583ad1cd4233a95599b1c6d9d6d65fa8a4099ae5c2da9d74248430",
+          "blob": "3ab39ed14d0079894f5dd9fb203d0ec07210b1deec08e761f78cd667f0c639b0"
+        },
+        "internal": {
+          "runner": "3eab0042350bd4b6338e34a8270833d1e71ba946e97196159ce683ab9b784653",
+          "blob": "3eab0042350bd4b6338e34a8270833d1e71ba946e97196159ce683ab9b784653"
+        },
+        "reordered": {
+          "runner": "c2985c5ba6f7d2a55e768f92490ca09388e95bc4cccb9fdf11b15f4d42f93e73",
+          "blob": "c2985c5ba6f7d2a55e768f92490ca09388e95bc4cccb9fdf11b15f4d42f93e73"
+        },
+        "semantic": {
+          "runner": "8bd98d06e82c162c0504de0a81f553751487a2485965c4f09cd6661ddfcd20e2",
+          "blob": "8bd98d06e82c162c0504de0a81f553751487a2485965c4f09cd6661ddfcd20e2"
+        },
+        "crlf_internal": {
+          "runner": "9bb8ed2806fb2957f343157ecba5f0e06e1398df43a732f2e54f85d1f868a80f",
+          "blob": "9bb8ed2806fb2957f343157ecba5f0e06e1398df43a732f2e54f85d1f868a80f"
+        },
+        "lf_internal": {
+          "runner": "f4b9a93424725fb3d27b3c61cab9c8c95a4887dd4c246017938c16b9ba8e58e5",
+          "blob": "f4b9a93424725fb3d27b3c61cab9c8c95a4887dd4c246017938c16b9ba8e58e5"
+        },
+        "bom": {
+          "runner": "1317c270e7a85504625f0942477948e7b40a5eea1f591ac3a3e563afedca2e12",
+          "blob": "1317c270e7a85504625f0942477948e7b40a5eea1f591ac3a3e563afedca2e12"
+        }
+      },
+      "freeze_bindings": [
+        "accepted_source_commit_and_imported_hashes",
+        "effective_policy_and_numerical_parameters",
+        "metrics_units_quantiles_reporting",
+        "severe_rule",
+        "fixed_case_contrast_inventory",
+        "frozen_primary_choice_with_accepted_development_evidence",
+        "ten_profile_fee_choices_referrals_with_accepted_rescreens",
+        "all_development_refit_artifact_hashes",
+        "input_paths_hashes",
+        "commands_output_paths_shard_membership_counts_runtime",
+        "independent_acceptance_commits",
+        "failure_and_disclosure_rule"
+      ],
+      "shards": {
+        "sizes": [
+          8,
+          8
+        ],
+        "overlap_rejected": true,
+        "fixed_before_access": true
+      },
+      "publication": {
+        "stages": [
+          "accepted_code_refit_config",
+          "complete_freeze",
+          "external_freeze_review",
+          "gate_and_later_task",
+          "final_execution"
+        ],
+        "edges": [
+          [
+            "accepted_code_refit_config",
+            "complete_freeze"
+          ],
+          [
+            "complete_freeze",
+            "external_freeze_review"
+          ],
+          [
+            "external_freeze_review",
+            "gate_and_later_task"
+          ],
+          [
+            "gate_and_later_task",
+            "final_execution"
+          ]
+        ],
+        "source_task_base_can_differ": true,
+        "freeze_review_is_external_not_self_hashed": true
+      },
+      "correction_requirements": {
+        "parent_runner_digest": "9244ef0d94583ad1cd4233a95599b1c6d9d6d65fa8a4099ae5c2da9d74248430",
+        "original_freeze_preserved": true,
+        "new_source_commit": "3333333333333333333333333333333333333333",
+        "changed_source_hash": "cb41bfbe2dcf8be2fda37e587c89ce1ef46f4997097fc09e50b3485d76556653",
+        "immutable_correction_task": true,
+        "independent_review_required": true,
+        "exposure_preserved": true,
+        "partial_results_preserved": true,
+        "policy_parameters_unchanged": true,
+        "untouched_holdout_claim": false
+      }
+    },
+    "design_verdict": "approve",
+    "implementation_verdict": "not_reviewed",
+    "historical_kernel_verdict": "changes_required",
+    "execution_authorized": false,
+    "competition_outcomes_read": false,
+    "policy_helpers_executed": false
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-024",
+  "attempt": 1,
+  "owner": "sol",
+  "reviewed_base_commit": "6c1997c0ac20430af0b7e11d9fb0b29ab8506a11",
+  "task_publication_commit": "cf0fec40a27fb603d8b36bde2d7b77d84f4541a0",
+  "task_blob_sha256": "5323d75883ef842689dde661f9fe8284671fce7d42e2277f02bba1fb5c2c3dd4",
+  "task_digest_sha256": "3150dc39fdb242ea3f4dc8256fc009d2dcd1060861276fabd3265a6639c23a77",
+  "source_sha256": {
+    "specs/FINAL_EVALUATION.md": "39cf3c73328c79afc83905ba4aa31d9aeae14564a42fb7d167756886292f9035",
+    "specs/final_evaluation_contract_v1.json": "b9b254b17af6a4e61ab9ed6708cefbff3466b56c9dc2b9555008e7907cd34c96",
+    "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "specs/PERSONALIZED_REVIEW.md": "0365fdf989ae7abfeda0bc3f48f8c86245a40dd9e48b3c6ae8d2d26c0b7c4987",
+    "specs/personalized_review_v1.json": "2edc9410b291f8f1f7235344e685d004c2f3cfd80844539df96759e9b305b4ad",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/DEVELOPMENT_BASELINE_DRIVER.md": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0",
+    "specs/POLICY_ANALYSIS.md": "a2220482c861799280815b4e65d73e79e53666816ac9e7e72a38d5f48a6e53b8",
+    "specs/POLICY_RESULT_WRITER.md": "ce0c43fad34ebdc44fc6f6bda395c562781e500cdc4b855ee7e0cbf937bec0b4",
+    "ops/PROTOCOL.md": "1aae9a4819a82aa8c17e93edd5c1a8d9e7bbb05fe18bcbb7d9d08800e53c2525",
+    "scripts/coop.py": "c23bcae4b2ee761f8c44bfee9dc5c891291cd74dc7b143ea5e3b5fe3938153f1",
+    "data/manifest.json": "2535c087075957919d5f1990ad234ca436f7b3506ba592ac8a6457feb42fe90d",
+    "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+    "audit/chief/SOL-020-review.json": "276895e8e12b9c212fe433f0fa1c07408c601502ffd5d9ce965a684fdc72551b",
+    "audit/SOL-020/findings.json": "2e597db33daf1da6dfdea61925565fb7d2735e97db7d985784faed967a27f3c0"
+  },
+  "design_verdict": "approve",
+  "implementation_verdict": "not_reviewed",
+  "historical_kernel_verdict": "changes_required",
+  "execution_authorized": false,
+  "final_authorization": false,
+  "evidence_integrity_verdict": "see read-only verification",
+  "blockers": [],
+  "precise_design_fixes": [],
+  "scope": "Targeted final-stage contract review only, conditional on actual accepted development evidence and new accepted final-capable code. No production sources, results, refit or freeze are certified.",
+  "reference_facts": [
+    {
+      "id": "R1",
+      "source": "specs/FINAL_EVALUATION.md:10",
+      "fact": "Primary generic mode is frozen from accepted v2 H30/.0025 OOF promotion; ten profile/fee choices come from accepted development own-tolerance rescreens. Sixteen final generic cases are diagnostics, not reselection."
+    },
+    {
+      "id": "R2",
+      "source": "specs/FINAL_EVALUATION.md:25",
+      "fact": "Explicit new all-development refit replaces four 90-scenario/2700-row OOF priors for final use only. One 120-scenario/3600-row prior is shared immutably; same-path prefix updates and old development guards remain."
+    },
+    {
+      "id": "R3",
+      "source": "specs/final_evaluation_contract_v1.json:1",
+      "fact": "Generated keys give 16 cases, 960 paths, 28800 annual ledger/decision rows, 4800 horizon metric rows, 100 contrast summaries, 6000 paired rows. Five prefix horizons are 5,6,15,25,30; 7 against annual equal weights plus 3 incremental contrasts per fee/H."
+    },
+    {
+      "id": "R4",
+      "source": "specs/FINAL_EVALUATION.md:91",
+      "fact": "Always ten personalized root rows. For eligible set E, metric rows=60*|E| and each ledger/decision count=60*sum(H for E). All eligible=9720 rows and 600 metrics; none=0; illustrative A-primary/B-doubled/D-primary=2700 and 180. Maximum fixed score rows=ledger rows, fewer after suspension."
+    },
+    {
+      "id": "R5",
+      "source": "audit/chief/SOL-020-review.json:1",
+      "fact": "Upstream referral has no personalized experiment or numerical outcome. Executed failures retain denominator 60 and saved outcomes. Inclusive p90<=tolerance and p10>=0 differ from strict loss>tolerance count; generated 55 at tolerance and 5 above pass p90 with exceedance fraction 5/60."
+    },
+    {
+      "id": "R6",
+      "source": "specs/FINAL_EVALUATION.md:105",
+      "fact": "Greatest exact float drawdown, smallest scenario ID on exact tie; chronological initial/post_fee/end with strictly improving peak and drawdown updates preserves earliest locations. No metric epsilon. Own-policy severe path and baseline on that path differ from baseline own severe path."
+    },
+    {
+      "id": "R7",
+      "source": "scripts/coop.py:31",
+      "fact": "git returns stdout decoded UTF-8 with errors=replace and outer strip; lines 233-237 hash frozen.encode(). Thus valid UTF-8 runner hash is SHA256(stripped Git text), not canonical sorted JSON and not complete blob hash. Internal spaces/order/newlines and BOM matter; outer whitespace differs only in blob hash."
+    },
+    {
+      "id": "R8",
+      "source": "specs/FINAL_EVALUATION.md:41",
+      "fact": "Publication ordering is acyclic when freeze review is an external later attestation. Source commit pins computation; later pushed task base may add ops files. Runner gate checks control flag and digest, not scientific validity, inventory or source/refit provenance."
+    },
+    {
+      "id": "R9",
+      "source": "specs/FINAL_EVALUATION.md:118",
+      "fact": "One inventory may use predeclared disjoint shards, not outcome-dependent retries. Genuine bug correction requires independent minimal patch review and new immutable correction task/config, retaining original freeze and exposure/receipts/partial outcomes. No bad-policy retry or arbitrary reinterpretation."
+    },
+    {
+      "id": "R10",
+      "source": "audit/chief/SOL-013-review.json:1",
+      "fact": "Accepted v2 design approve remains separate from historical kernel changes_required. Accepted SOL-020 is design review only. This review executes no helper and neither supersedes negative kernel evidence nor resolves pending kernel review."
+    }
+  ],
+  "implementation_requirements": [
+    {
+      "id": "I1",
+      "requirement": "Accept new final-capable loader/calibration/case/analysis/writer code on generated inputs before execution; preserve all development/synthetic guards. Bind exact input paths, bytes, schema, 121..180 x 1..30 complete keys, imported computational bytes and frozen parameters. Runner hash equality alone proves none of these."
+    },
+    {
+      "id": "I2",
+      "requirement": "Accept actual development primary and all ten fee-specific own-tolerance rescreens, then prepare and independently check one 120-ID/3600-row prior. Bind sorted IDs, ordered keys, input/nominal/real-gross digests and immutable shared artifact at both fees. No final fitting, pooling or fold assignment; contextual windows remain same-path last min(5,t-1), prior strength 15."
+    },
+    {
+      "id": "I3",
+      "requirement": "Publish exact final output schema: fold IDs/support/gate flags inapplicable (null plus explicit status), never 0 or fabricated folds. Keep all 100 descriptive contrast summaries and frozen primary; do not recompute selection or advertise three-of-four final-fold support."
+    },
+    {
+      "id": "I4",
+      "requirement": "Carry SOL-020 null convention into final schema: not-run upstream referral scenario_count=denominator=0; personalized statistics, exceedance count/fraction, screen flags and case path null, no 0/0. Preserve original reason/status/hash and historical proposed class separately. Executed cases use 60, including failures; incomplete/invalid execution is neither referral nor zero outcome."
+    },
+    {
+      "id": "I5",
+      "requirement": "Final personalized failed risk or purchasing-power screen retains proposed fixed rule and all outcomes, recommended class null, status final_validation_failed_human_review. No alternate-class/threshold search. Own H and threshold stay frozen; fee-specific different classes are counterfactual recommendations, not same-rule robustness. Preserve same-primary-mode generic comparison independently."
+    },
+    {
+      "id": "I6",
+      "requirement": "Freeze acceptance evidence must be external to the exact freeze it audits. Freeze can bind prerequisite acceptance commits; later audit commit binds its two distinguished hashes. No self-commit/self-hash requirement. Push accepted code/refit/config, then complete freeze and independent audit, then gate and immutable task at a later pushed base. Verify computational files against frozen source despite differing task base."
+    },
+    {
+      "id": "I7",
+      "requirement": "Correction record must bind original freeze digests, original task/source/receipt, attempted access and exposure, partial outputs, independently reviewed minimal patch/new source hashes, exact new immutable config/task/commands, affected versus unaffected behavior and outcome changes. Explicitly reconcile changed code against original source pin through this reviewed correction record; never falsely claim corrected bytes match old source or recreate an untouched holdout. Preserve old freeze/gate/history; prohibit policy tuning and success-only retry."
+    },
+    {
+      "id": "I8",
+      "requirement": "Predeclare disjoint case/path shard membership and coverage before first access, fixed commands/output roots/counts and <=1800-second attempts; enforce <=10 MiB actual files and exclusive output creation with failed staging preserved. Audits reconstruct only frozen calculations read-only with logged purpose. Severe selection uses exact float ties/strict earliest event ordering including post-fee, distinct from decision epsilon."
+    }
+  ],
+  "validity_limits": [
+    "The OOF-to-all-development refit changes calibration and may change behavior; final evaluates that predeclared refitted rule, not identical OOF decisions. Development support is not a guarantee of final support.",
+    "No actual selections or profile assignments, refit artifacts, final implementation, freeze, execution receipt or performance result exist for certification in this scope.",
+    "Statistical sample screens are descriptive at n=60, not safety guarantees or significance tests. No final fold-promotion claim is applicable.",
+    "A freeze audit cannot hash its own future commit inside the same immutable freeze; use an external attestation. A corrected source must be explicitly authorized by the correction record, not disguised as the original frozen bytes."
+  ],
+  "verification_contract": {
+    "creation": "exclusive x mode; no overwrite",
+    "check": "read-only pinned Git source recomputation; HEAD-independent",
+    "comparison": "Exact keys/counts/thresholds/nulls/hash strings/rational values; four ordinary derived float fields abs<=1e-9 or rel<=1e-10; severe float choice exact.",
+    "production_data": "metadata only; no CSV reads or helper imports"
+  },
+  "evidence_files": [
+    "review.md",
+    "findings.json",
+    "verify.py",
+    "verification.json",
+    "task-lock.json",
+    "execution_history.json",
+    "integrity-self-tests.json"
+  ]
+}
