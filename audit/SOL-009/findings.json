@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-009",
+  "base_commit": "2561688380d9e2527eb6066100adde70b7d0ea1c",
+  "reviewed_commit": "a996298fd22b11dc54deb43cb596f143da05bf93",
+  "source_sha256": {
+    "specs/DEVELOPMENT_POLICY_PILOT.md": "94e436a979f2c232b729c352d209c83c76ba014a14613852ad447446cb6948e0",
+    "specs/development_policy_pilot_v1.json": "39ab8f78f6e4c487d00c1055e6d474c51a2d940e3cad951768a6c75874cc835a",
+    "audit/chief/policy_design_fixtures.py": "c3b4b907cfb9b179faae717a09067ee45862b13bf9e56d06e28a841ab43fff3b",
+    "audit/chief/policy-design-fixtures.json": "55108ba36593f3f342cff4be6be01fac7c77af6f74baabf787c04b9db684f10c",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46"
+  },
+  "hash_basis": "Exact canonical git blob bytes at reviewed commit; also compare base blobs. Checkout equality permits CRLF to LF only.",
+  "scope": "Source-only independent design audit; synthetic arithmetic, no competition data or strategy outcomes; independent of SOL-008/HY3-003 acceptance.",
+  "design_verdict": "changes_required",
+  "evidence_integrity_verdict": "See verification.json and read-only verify.py --check; design rejection is not evidence failure.",
+  "mathematical_verdict": "approve: gamma=4 CE, positive homogeneity and sufficient buffered gate are correct on their declared positive support.",
+  "blockers": [
+    {
+      "id": "D1",
+      "sections": [
+        "Estimated benefit, actual fee and action selection"
+      ],
+      "keys": [
+        "decision_epsilon",
+        "targets",
+        "initial_allocation"
+      ],
+      "finding": "Tie priority and strict keep hurdle can disagree when a target above the hurdle is within epsilon of an active target below the hurdle. Pairwise epsilon ties also need an anchor because approximate equality is not transitive.",
+      "requested_edit": "Specify deterministic order: latch first; score all allowed targets; filter targets with S > CE_keep + epsilon; if empty keep; let M be maximum eligible target score; among eligible scores with M-S <= epsilon choose active, defensive, central, growth-tilted. Evaluate strict hurdle on the chosen target too. Define ties relative to M, never a sequential pairwise comparator.",
+      "synthetic_evidence": "epsilon_tie_gate_ambiguity in verification.json shows keep=1, active=1+0.75 epsilon, defensive=1+1.5 epsilon: priority-first keeps while eligible-first trades."
+    },
+    {
+      "id": "D2",
+      "sections": [
+        "Comparison, selection and cost sensitivity"
+      ],
+      "keys": [
+        "selection",
+        "selection.adaptive_must_pass_both_context_and_current_simplest"
+      ],
+      "finding": "Paired median gain is explicit, but p10 decline and p90 loss increase do not explicitly distinguish differences of marginal quantiles from quantiles of paired differences. The current-simplest comparator and adaptive eligibility when context fails are not operationally explicit. Adaptive-versus-balanced_cost rows are needed to apply the second control but not expressly listed among additional paired outputs.",
+      "requested_edit": "Declare gain=median_s(CAGR_alt-CAGR_ref); tail growth difference=Q10(CAGR_alt)-Q10(CAGR_ref), required >= -0.10 pp/year; loss difference=Q90(DD_alt)-Q90(DD_ref), required <=1.00 pp; fold count uses strictly positive median_s paired gains within each fold at H=30. Declare explicit adaptive comparator list [balanced_context,balanced_cost], and whether adaptive may qualify when context fails its own promotion gate (recommended yes only if both direct comparisons pass). Require all three incremental paired contrasts, including adaptive-cost, both fees. Declare primary promotion and doubled-fee robustness separately; no retuning.",
+      "synthetic_evidence": "paired_vs_marginal_statistics shows opposite median comparisons and very different paired-tail versus marginal-tail differences."
+    }
+  ],
+  "limitations": [
+    {
+      "id": "L1",
+      "sections": [
+        "Questions, candidates and scope",
+        "Estimated benefit, actual fee and action selection"
+      ],
+      "keys": [
+        "gamma",
+        "fee_buffer_multiplier",
+        "targets"
+      ],
+      "finding": "Gamma=4, buffer=2 and coarse targets are normative model choices, not estimated preferences or demonstrated optima. One-year marginal CE can be transparent for a limited competition pilot; it cannot optimize long-horizon drawdown, guarantee gain, establish causality, identify personal risk aversion, or predict unseen tail events.",
+      "requested_edit": "Retain disclosures; add within-scenario dependence and pooled-regime/exchangeability caveats. CE weights bad one-year gross factors heavily; confirm numerical rejection rather than clipping."
+    },
+    {
+      "id": "L2",
+      "sections": [
+        "Customer suitability: separate horizon, willingness and liquidity checks"
+      ],
+      "keys": [
+        "suitability.horizon_caps",
+        "suitability.minimum_target_bill",
+        "profiles"
+      ],
+      "finding": "All five profiles have their own correct horizon. Horizon and reserve are simultaneous eligibility conditions: A/E Conservative only; B Conservative/Balanced; C all three; D Conservative/Balanced because Growth fails the medium-liquidity reserve despite H=25. These are service assumptions, not calibrated financial laws; bill reserve may drift and is not a cash guarantee.",
+      "requested_edit": "Encode allowed class sets explicitly in handoff/config to avoid interpreting cap strings as an exclusive class. Preserve own horizons, willingness and liquidity vetoes; disclose no withdrawals/intraperiod cash stress."
+    },
+    {
+      "id": "L3",
+      "sections": [
+        "Customer suitability: separate horizon, willingness and liquidity checks"
+      ],
+      "keys": [
+        "suitability.risk_quantile",
+        "suitability.require_nonnegative_p10_growth",
+        "suitability.growth_indifference_pp"
+      ],
+      "finding": "P90 drawdown can pass with losses above tolerance and p10 nonnegative CAGR is a terminal lower-tail screen, not path protection or a 90% future probability guarantee. Median optimization can select weak severe tails, though only three menus and a lower-growth 0.10 pp indifference rule reduce false precision.",
+      "requested_edit": "Keep complete screens including excluded candidates, exceedance fraction with denominator, median/severe loss, p10 growth and reason codes. Use inclusive <= tolerance, >=0 p10 and <=0.10 pp gap. Report sampling uncertainty without claiming significance or treating annual training rows as independent scenarios."
+    },
+    {
+      "id": "L4",
+      "sections": [
+        "Human review and holdings while pending",
+        "Customer suitability: separate horizon, willingness and liquidity checks"
+      ],
+      "keys": [
+        "review_drawdown_pct",
+        "review_latched",
+        "pending_holdings",
+        "suitability.personalized_review_overlay_required_before_freeze"
+      ],
+      "finding": "25% is a generic normative suspension trigger, not each profile tolerance or a loss cap. Prefix maximum drawdown persists even after recovery. Suspension preserves current component dollars at review, then assets still earn returns; it cannot reverse losses or liquidate exposure. Personalized thresholds may change outcomes either way.",
+      "requested_edit": "Mandatory separate own-tolerance rerun and risk/purchasing-power rescreen at own H before freeze. State whether a failed provisional class causes referral or reselection; minimally retain prescribed referral without unregistered fallback searches. Keep generic H=30 comparisons separate; do not assume personalized overlay improves results. Define human-review share as latched action-years/review-years and report first latch separately."
+    },
+    {
+      "id": "L5",
+      "sections": [
+        "Calibration and information boundary",
+        "Comparison, selection and cost sensitivity"
+      ],
+      "keys": [
+        "folds",
+        "prior_equivalent_years",
+        "history_window",
+        "adaptive_min_completed_years"
+      ],
+      "finding": "Four evaluation folds exclude the entire matching fold from all training and fitting. Context modes have identical prior/prefix data and 15:n mixture, but their holdings, review latches and targets can diverge. Equal information schedule does not mean equal state. Prefix updating is an assumed predictive mechanism, not evidence of predictability.",
+      "requested_edit": "Hash sorted training/evaluation IDs and exact ordered training factors; keep calibrations immutable and shared across both fees. Test all fold exclusions and no future/current observations. Explain overlapping fold training and design selection prevent interpreting OOF as an untouched test or independent fold significance."
+    },
+    {
+      "id": "L6",
+      "sections": [
+        "Comparison, selection and cost sensitivity"
+      ],
+      "keys": [
+        "selection",
+        "fee_rates"
+      ],
+      "finding": "Baseline summaries were already viewed and multiple modes/fees/horizons are examined. Predeclared thresholds mitigate further selection but cannot remove researcher choices or hindsight. Context-cost isolates updating; adaptive-context is essential to attribute value to changing targets. Reference-only outperformance is insufficient.",
+      "requested_edit": "Preserve all 16 mode-fee outcomes, failed attempts, fold differences and all primary/robustness decisions; do not promote by choosing the fee or horizon that looks best. At k=.005 regenerate baseline accounting at that fee; reuse audited k=.0025 references only with exact source/config/input identity."
+    },
+    {
+      "id": "L7",
+      "sections": [
+        "Estimated benefit, actual fee and action selection",
+        "Implementation and output handoff after design acceptance"
+      ],
+      "keys": [
+        "trade_amount_epsilon",
+        "initial_allocation",
+        "pending_holdings"
+      ],
+      "finding": "The text allows tiny nominal rebalance requests to be counted as nontrade. Clarify execution versus reporting so epsilon never erases actual fees or silently changes active targets. A single initial-deferred flag cannot explain retries versus postdeployment keeps.",
+      "requested_edit": "Keep exact accounting even for a tiny accepted request; trade-count threshold is reporting only. Define active_target_before/after and target update only on accepted executed request; no update on rejected proposal or review. Define initial_allocation_deferred as year-1 nondeployment and add per-review reason plus first deployment year/null; keep exact dollars when gate fails."
+    },
+    {
+      "id": "L8",
+      "sections": [
+        "Implementation and output handoff after design acceptance"
+      ],
+      "keys": [
+        "calibrations.json",
+        "selection.json",
+        "profile_screen.csv"
+      ],
+      "finding": "Callback API has holdings/history but no ledger/CPI/drawdown context. Capturing full future rows would violate the boundary; the accepted baseline experiment driver is hard-wired to three baseline modes and its own config hash.",
+      "requested_edit": "Use a per-scenario policy state that reconstructs realized prefix wealth and prior fees from the last requested trade and next completed observation, or an explicitly tested completed-ledger observer adapter. Do not pass current outcomes or mutate accepted baseline driver. See implementation-handoff.json for partition/count/runtime estimates; chief must approve production API changes separately."
+    }
+  ],
+  "unresolved_execution_blockers": [],
+  "checks_not_claimed": [
+    "No production policy/driver implementation or acceptance",
+    "No actual strategy outcomes, timing benchmark or numerical baseline acceptance",
+    "No personalized-threshold result or final freeze",
+    "No external packages, skills, data access, watchers, commits or pushes"
+  ]
+}

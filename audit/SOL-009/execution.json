@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-009",
+  "timestamp_utc": "2026-10-19T17:28:34.887Z",
+  "python_version": "Python 3.12.14",
+  "initial_generation": {
+    "command": [
+      "python",
+      "-B",
+      "audit/SOL-009/verify.py"
+    ],
+    "stdout": "{\"evidence_integrity_verdict\": \"passed\", \"design_verdict\": \"changes_required\", \"check_count\": 97, \"read_only\": false}\r\n",
+    "stderr": "",
+    "exit_code": 0,
+    "elapsed_seconds": 1.22064929999999
+  },
+  "checks": [
+    {
+      "name": "read_only_check",
+      "command": [
+        "python",
+        "-B",
+        "audit/SOL-009/verify.py",
+        "--check"
+      ],
+      "expected_exit_code": 0,
+      "stdout": "{\"evidence_integrity_verdict\": \"passed\", \"design_verdict\": \"changes_required\", \"check_count\": 97, \"read_only\": true}\r\n",
+      "stderr": "",
+      "exit_code": 0,
+      "elapsed_seconds": 1.1765741000000272,
+      "all_audit_files_byte_identical": true,
+      "before_sha256": {
+        "audit/SOL-009/findings.json": "1b425c6b0ab0399c2c94614768ab362975e676cfd474e964aa3a1ee4d60c6e83",
+        "audit/SOL-009/history/intentional-corrupt-verification.json": "cbfa4aaeba16c0ba104c5785984b3363c365456381151e151549533b87c036bf",
+        "audit/SOL-009/history/intentional-wrong-arithmetic.json": "b8a86297a976946f153dd44a34d1dcfcd6b25c43223a81ef3acbe3e3917f6d42",
+        "audit/SOL-009/history/rounding-variant-verification.json": "b40d8ba5c9e29f7136793d87a93c418e416410e0c78022efc67c77bc8397ff1d",
+        "audit/SOL-009/implementation-handoff.json": "5a28ffec191b4113d0ee8da706af4e32c9b7e723bfa8fe3d4d295f47b10d1136",
+        "audit/SOL-009/review.md": "e50f938ad97eb2ae8c844f815a49cb2987935793cbeb95c3c63b514de9bc63a0",
+        "audit/SOL-009/verification.json": "6bdca583cf78ee7a28ac0c8eadfaac5c7913900cc9d2f3e9c8c6c3590dfc3f0f",
+        "audit/SOL-009/verify.py": "8d72f9e0de7245ca7f7d93599a873ea26dd55f2ecf5d4af2fc38c3c72af151ec"
+      },
+      "after_sha256": {
+        "audit/SOL-009/findings.json": "1b425c6b0ab0399c2c94614768ab362975e676cfd474e964aa3a1ee4d60c6e83",
+        "audit/SOL-009/history/intentional-corrupt-verification.json": "cbfa4aaeba16c0ba104c5785984b3363c365456381151e151549533b87c036bf",
+        "audit/SOL-009/history/intentional-wrong-arithmetic.json": "b8a86297a976946f153dd44a34d1dcfcd6b25c43223a81ef3acbe3e3917f6d42",
+        "audit/SOL-009/history/rounding-variant-verification.json": "b40d8ba5c9e29f7136793d87a93c418e416410e0c78022efc67c77bc8397ff1d",
+        "audit/SOL-009/implementation-handoff.json": "5a28ffec191b4113d0ee8da706af4e32c9b7e723bfa8fe3d4d295f47b10d1136",
+        "audit/SOL-009/review.md": "e50f938ad97eb2ae8c844f815a49cb2987935793cbeb95c3c63b514de9bc63a0",
+        "audit/SOL-009/verification.json": "6bdca583cf78ee7a28ac0c8eadfaac5c7913900cc9d2f3e9c8c6c3590dfc3f0f",
+        "audit/SOL-009/verify.py": "8d72f9e0de7245ca7f7d93599a873ea26dd55f2ecf5d4af2fc38c3c72af151ec"
+      }
+    },
+    {
+      "name": "reject_corrupt_count",
+      "command": [
+        "python",
+        "-B",
+        "audit/SOL-009/verify.py",
+        "--check",
+        "--evidence",
+        "audit/SOL-009/history/intentional-corrupt-verification.json"
+      ],
+      "expected_exit_code": 1,
+      "stdout": "",
+      "stderr": "Saved evidence mismatch; read-only check, evidence preserved\r\n",
+      "exit_code": 1,
+      "elapsed_seconds": 1.1409185999999754,
+      "all_audit_files_byte_identical": true,
+      "before_sha256": {
+        "audit/SOL-009/findings.json": "1b425c6b0ab0399c2c94614768ab362975e676cfd474e964aa3a1ee4d60c6e83",
+        "audit/SOL-009/history/intentional-corrupt-verification.json": "cbfa4aaeba16c0ba104c5785984b3363c365456381151e151549533b87c036bf",
+        "audit/SOL-009/history/intentional-wrong-arithmetic.json": "b8a86297a976946f153dd44a34d1dcfcd6b25c43223a81ef3acbe3e3917f6d42",
+        "audit/SOL-009/history/rounding-variant-verification.json": "b40d8ba5c9e29f7136793d87a93c418e416410e0c78022efc67c77bc8397ff1d",
+        "audit/SOL-009/implementation-handoff.json": "5a28ffec191b4113d0ee8da706af4e32c9b7e723bfa8fe3d4d295f47b10d1136",
+        "audit/SOL-009/review.md": "e50f938ad97eb2ae8c844f815a49cb2987935793cbeb95c3c63b514de9bc63a0",
+        "audit/SOL-009/verification.json": "6bdca583cf78ee7a28ac0c8eadfaac5c7913900cc9d2f3e9c8c6c3590dfc3f0f",
+        "audit/SOL-009/verify.py": "8d72f9e0de7245ca7f7d93599a873ea26dd55f2ecf5d4af2fc38c3c72af151ec"
+      },
+      "after_sha256": {
+        "audit/SOL-009/findings.json": "1b425c6b0ab0399c2c94614768ab362975e676cfd474e964aa3a1ee4d60c6e83",
+        "audit/SOL-009/history/intentional-corrupt-verification.json": "cbfa4aaeba16c0ba104c5785984b3363c365456381151e151549533b87c036bf",
+        "audit/SOL-009/history/intentional-wrong-arithmetic.json": "b8a86297a976946f153dd44a34d1dcfcd6b25c43223a81ef3acbe3e3917f6d42",
+        "audit/SOL-009/history/rounding-variant-verification.json": "b40d8ba5c9e29f7136793d87a93c418e416410e0c78022efc67c77bc8397ff1d",
+        "audit/SOL-009/implementation-handoff.json": "5a28ffec191b4113d0ee8da706af4e32c9b7e723bfa8fe3d4d295f47b10d1136",
+        "audit/SOL-009/review.md": "e50f938ad97eb2ae8c844f815a49cb2987935793cbeb95c3c63b514de9bc63a0",
+        "audit/SOL-009/verification.json": "6bdca583cf78ee7a28ac0c8eadfaac5c7913900cc9d2f3e9c8c6c3590dfc3f0f",
+        "audit/SOL-009/verify.py": "8d72f9e0de7245ca7f7d93599a873ea26dd55f2ecf5d4af2fc38c3c72af151ec"
+      }
+    },
+    {
+      "name": "accept_rounding_residual",
+      "command": [
+        "python",
+        "-B",
+        "audit/SOL-009/verify.py",
+        "--check",
+        "--evidence",
+        "audit/SOL-009/history/rounding-variant-verification.json"
+      ],
+      "expected_exit_code": 0,
+      "stdout": "{\"evidence_integrity_verdict\": \"passed\", \"design_verdict\": \"changes_required\", \"check_count\": 97, \"read_only\": true}\r\n",
+      "stderr": "",
+      "exit_code": 0,
+      "elapsed_seconds": 1.1641879999999656,
+      "all_audit_files_byte_identical": true,
+      "before_sha256": {
+        "audit/SOL-009/findings.json": "1b425c6b0ab0399c2c94614768ab362975e676cfd474e964aa3a1ee4d60c6e83",
+        "audit/SOL-009/history/intentional-corrupt-verification.json": "cbfa4aaeba16c0ba104c5785984b3363c365456381151e151549533b87c036bf",
+        "audit/SOL-009/history/intentional-wrong-arithmetic.json": "b8a86297a976946f153dd44a34d1dcfcd6b25c43223a81ef3acbe3e3917f6d42",
+        "audit/SOL-009/history/rounding-variant-verification.json": "b40d8ba5c9e29f7136793d87a93c418e416410e0c78022efc67c77bc8397ff1d",
+        "audit/SOL-009/implementation-handoff.json": "5a28ffec191b4113d0ee8da706af4e32c9b7e723bfa8fe3d4d295f47b10d1136",
+        "audit/SOL-009/review.md": "e50f938ad97eb2ae8c844f815a49cb2987935793cbeb95c3c63b514de9bc63a0",
+        "audit/SOL-009/verification.json": "6bdca583cf78ee7a28ac0c8eadfaac5c7913900cc9d2f3e9c8c6c3590dfc3f0f",
+        "audit/SOL-009/verify.py": "8d72f9e0de7245ca7f7d93599a873ea26dd55f2ecf5d4af2fc38c3c72af151ec"
+      },
+      "after_sha256": {
+        "audit/SOL-009/findings.json": "1b425c6b0ab0399c2c94614768ab362975e676cfd474e964aa3a1ee4d60c6e83",
+        "audit/SOL-009/history/intentional-corrupt-verification.json": "cbfa4aaeba16c0ba104c5785984b3363c365456381151e151549533b87c036bf",
+        "audit/SOL-009/history/intentional-wrong-arithmetic.json": "b8a86297a976946f153dd44a34d1dcfcd6b25c43223a81ef3acbe3e3917f6d42",
+        "audit/SOL-009/history/rounding-variant-verification.json": "b40d8ba5c9e29f7136793d87a93c418e416410e0c78022efc67c77bc8397ff1d",
+        "audit/SOL-009/implementation-handoff.json": "5a28ffec191b4113d0ee8da706af4e32c9b7e723bfa8fe3d4d295f47b10d1136",
+        "audit/SOL-009/review.md": "e50f938ad97eb2ae8c844f815a49cb2987935793cbeb95c3c63b514de9bc63a0",
+        "audit/SOL-009/verification.json": "6bdca583cf78ee7a28ac0c8eadfaac5c7913900cc9d2f3e9c8c6c3590dfc3f0f",
+        "audit/SOL-009/verify.py": "8d72f9e0de7245ca7f7d93599a873ea26dd55f2ecf5d4af2fc38c3c72af151ec"
+      }
+    },
+    {
+      "name": "reject_wrong_arithmetic",
+      "command": [
+        "python",
+        "-B",
+        "audit/SOL-009/verify.py",
+        "--check",
+        "--evidence",
+        "audit/SOL-009/history/intentional-wrong-arithmetic.json"
+      ],
+      "expected_exit_code": 1,
+      "stdout": "",
+      "stderr": "Saved evidence mismatch; read-only check, evidence preserved\r\n",
+      "exit_code": 1,
+      "elapsed_seconds": 1.1675568000000203,
+      "all_audit_files_byte_identical": true,
+      "before_sha256": {
+        "audit/SOL-009/findings.json": "1b425c6b0ab0399c2c94614768ab362975e676cfd474e964aa3a1ee4d60c6e83",
+        "audit/SOL-009/history/intentional-corrupt-verification.json": "cbfa4aaeba16c0ba104c5785984b3363c365456381151e151549533b87c036bf",
+        "audit/SOL-009/history/intentional-wrong-arithmetic.json": "b8a86297a976946f153dd44a34d1dcfcd6b25c43223a81ef3acbe3e3917f6d42",
+        "audit/SOL-009/history/rounding-variant-verification.json": "b40d8ba5c9e29f7136793d87a93c418e416410e0c78022efc67c77bc8397ff1d",
+        "audit/SOL-009/implementation-handoff.json": "5a28ffec191b4113d0ee8da706af4e32c9b7e723bfa8fe3d4d295f47b10d1136",
+        "audit/SOL-009/review.md": "e50f938ad97eb2ae8c844f815a49cb2987935793cbeb95c3c63b514de9bc63a0",
+        "audit/SOL-009/verification.json": "6bdca583cf78ee7a28ac0c8eadfaac5c7913900cc9d2f3e9c8c6c3590dfc3f0f",
+        "audit/SOL-009/verify.py": "8d72f9e0de7245ca7f7d93599a873ea26dd55f2ecf5d4af2fc38c3c72af151ec"
+      },
+      "after_sha256": {
+        "audit/SOL-009/findings.json": "1b425c6b0ab0399c2c94614768ab362975e676cfd474e964aa3a1ee4d60c6e83",
+        "audit/SOL-009/history/intentional-corrupt-verification.json": "cbfa4aaeba16c0ba104c5785984b3363c365456381151e151549533b87c036bf",
+        "audit/SOL-009/history/intentional-wrong-arithmetic.json": "b8a86297a976946f153dd44a34d1dcfcd6b25c43223a81ef3acbe3e3917f6d42",
+        "audit/SOL-009/history/rounding-variant-verification.json": "b40d8ba5c9e29f7136793d87a93c418e416410e0c78022efc67c77bc8397ff1d",
+        "audit/SOL-009/implementation-handoff.json": "5a28ffec191b4113d0ee8da706af4e32c9b7e723bfa8fe3d4d295f47b10d1136",
+        "audit/SOL-009/review.md": "e50f938ad97eb2ae8c844f815a49cb2987935793cbeb95c3c63b514de9bc63a0",
+        "audit/SOL-009/verification.json": "6bdca583cf78ee7a28ac0c8eadfaac5c7913900cc9d2f3e9c8c6c3590dfc3f0f",
+        "audit/SOL-009/verify.py": "8d72f9e0de7245ca7f7d93599a873ea26dd55f2ecf5d4af2fc38c3c72af151ec"
+      }
+    }
+  ],
+  "all_expected_exits": true,
+  "all_checks_read_only": true,
+  "git_status": "?? audit/SOL-009/\n",
+  "head": "2561688380d9e2527eb6066100adde70b7d0ea1c",
+  "artifact_sizes": [
+    {
+      "path": "audit/SOL-009/findings.json",
+      "bytes": 12092
+    },
+    {
+      "path": "audit/SOL-009/history/intentional-corrupt-verification.json",
+      "bytes": 27926
+    },
+    {
+      "path": "audit/SOL-009/history/intentional-wrong-arithmetic.json",
+      "bytes": 27927
+    },
+    {
+      "path": "audit/SOL-009/history/rounding-variant-verification.json",
+      "bytes": 27926
+    },
+    {
+      "path": "audit/SOL-009/implementation-handoff.json",
+      "bytes": 14609
+    },
+    {
+      "path": "audit/SOL-009/review.md",
+      "bytes": 13567
+    },
+    {
+      "path": "audit/SOL-009/verification.json",
+      "bytes": 28096
+    },
+    {
+      "path": "audit/SOL-009/verify.py",
+      "bytes": 16368
+    }
+  ],
+  "largest_artifact_bytes": 28096,
+  "initial_process_tool_failure": "exec_command helper setup refresh failed before process creation; used local Node child_process with existing Python 3.12.14.",
+  "production_timing_measured": false,
+  "competition_data_accessed": false
+}
