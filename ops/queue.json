@@ -416,37 +416,58 @@
       "attempt": 1,
       "task_sha256": "43da6619805b1e82b47fd9ddf592c9c65316e7ec6c8a0e193810b6f80afd05f6",
       "branch": "work/sol/SOL-016-a1",
-      "waiting_for": "Corrected v2 design approved by SOL-013; wait for positive corrected-kernel SOL-017 acceptance. All thirteen pinned source files remain unchanged; no kernel source is imported by this pure analysis task.",
+      "waiting_for": "Corrected v2 design approved; wait for positive independent K2-corrected kernel acceptance. All thirteen pinned inputs remain unchanged and this pure analysis component imports no kernel.",
       "note": "Pure component implementation on generated inputs only. No production run, final data, or writer authorization."
     },
     {
       "id": "SOL-017",
-      "state": "ready",
+      "state": "accepted",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "323fb71bf92c8786dd9659e8021fdecc7f3b17fbac17208e8a7c77c49cea6019",
       "branch": "work/sol/SOL-017-a1",
-      "note": "Synthetic-only narrow work; no strategy outcomes, final access or production run authorization."
+      "note": "Accepted exact negative evidence: 3581 read-only comparisons reproduced, 487 failures retained; chief independently confirms K2 midpoint error for n=0..5 and corruption rejection. K1 closed; corrected kernel still awaits a new positive review.",
+      "reviewed_commit": "90f5c8d3fe9b76861f9e302ce23d2e5cd6f2e839",
+      "accepted_paths": [
+        "audit/SOL-017/findings.json",
+        "audit/SOL-017/history/diagnosis-001.json",
+        "audit/SOL-017/history/infrastructure.json",
+        "audit/SOL-017/history/subnormal-grid-trial-002.json",
+        "audit/SOL-017/history/trial-001-findings.json",
+        "audit/SOL-017/history/trial-001-review.md",
+        "audit/SOL-017/history/trial-001-verification.json",
+        "audit/SOL-017/history/trial-001-verify.py",
+        "audit/SOL-017/integrity-self-tests.json",
+        "audit/SOL-017/integrity_self_test.py",
+        "audit/SOL-017/review.md",
+        "audit/SOL-017/verification.json",
+        "audit/SOL-017/verify.py",
+        "handoff/SOL-017/check-0.txt",
+        "handoff/SOL-017/check-1.txt",
+        "handoff/SOL-017/result.json"
+      ],
+      "excluded_paths": [],
+      "acceptance_evidence": "audit/chief/SOL-017-review.json",
+      "corrected_design_verdict": "approve",
+      "code_verdict": "changes_required"
     },
     {
       "id": "SOL-018",
-      "state": "waiting",
+      "state": "cancelled",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "ca8643f671b9469c461c0185248eee1be97355b89ecb97f4a014d7ba63303295",
       "branch": "work/sol/SOL-018-a1",
-      "note": "Synthetic-only narrow work; no strategy outcomes, final access or production run authorization.",
-      "waiting_for": "Positive accepted corrected-kernel SOL-017 review and unchanged pinned sources. SOL-013 approved the corrected design but preserved a negative old-kernel verdict."
+      "note": "Unexecuted immutable waiting task preserved. K2 correction changes pinned kernel bytes; new successor will use a newly pushed base. No remote failure claimed."
     },
     {
       "id": "SOL-019",
-      "state": "waiting",
+      "state": "cancelled",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "898c124ce2621bea0d266bdf022cd1c9c433b8c3f1a655e516d8b4e569249858",
       "branch": "work/sol/SOL-019-a1",
-      "note": "Synthetic-only narrow work; no strategy outcomes, final access or production run authorization.",
-      "waiting_for": "Positive accepted corrected-kernel SOL-017 and calibration SOL-018 reviews with unchanged pinned sources. SOL-013 design is approved; its historical negative kernel verdict remains preserved."
+      "note": "Unexecuted immutable waiting task preserved. K2 correction changes pinned kernel bytes; new successor will use a newly pushed base. No remote failure claimed."
     },
     {
       "id": "SOL-020",

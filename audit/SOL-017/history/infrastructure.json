@@ -1,0 +1,9 @@
+{
+  "event": "Initial sandbox execution infrastructure failure",
+  "executed": false,
+  "errors": [
+    "helper_unknown_error: setup refresh had errors",
+    "orchestrator_helper_report_read_failed: setup helper exited with status Some(1); setup_error.json parse failure"
+  ],
+  "resolution": "Authorized read-only and audit-scoped commands succeeded through require_escalated; no automatic approval rejection occurred. No install or environment mutation."
+}

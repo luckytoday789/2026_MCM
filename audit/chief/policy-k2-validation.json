@@ -1,0 +1,416 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T18:13:15.425479+00:00",
+  "scope": "chief provisional synthetic correction checks; no competition outcomes",
+  "source_sha256": {
+    "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+    "tests/test_policy_pilot.py": "f5ace90172ad5f926613be8d278094f1839eee15286173a8f71827ae032d38d9",
+    "specs/POLICY_NUMERIC_K2.md": "88d5f58a59f090c25331392e4cd5682daf5d050c27b24afe6629d8e4a5eb9997"
+  },
+  "tests": [
+    {
+      "suite": "test_policy_pilot.py",
+      "exit_code": 0,
+      "seconds": 1.3049817999708466,
+      "log": "audit/chief/policy-k2-test_policy_pilot.txt",
+      "raw_log_sha256": "0a9108b3832f626a8dcb67f20afa9b1295fd0e511c7f9e6a1ef29f9781ac4ea9"
+    },
+    {
+      "suite": "test_policy_calibration.py",
+      "exit_code": 0,
+      "seconds": 0.2364852000027895,
+      "log": "audit/chief/policy-k2-test_policy_calibration.txt",
+      "raw_log_sha256": "5aab0d0017076a63ef55b779a5e78ccbdfa8bd3d6a42133f77dcecf9b61b8863"
+    }
+  ],
+  "independent_scalar_oracle": {
+    "source_commit": "90f5c8d3fe9b76861f9e302ce23d2e5cd6f2e839",
+    "path": "audit/SOL-017/verify.py",
+    "function": "decimal_ce",
+    "source_sha256": "5c4341b9c9347ee9b75719823f0af6e30daf33b51a73f644f62f78febcd8188f",
+    "boundary_functions_invoked": false
+  },
+  "oracle_fixtures": [
+    {
+      "name": "midpoint",
+      "n": 0,
+      "expected_hex": "0x0.0000000000002p-1022",
+      "observed_hex": "0x0.0000000000002p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "midpoint",
+      "n": 1,
+      "expected_hex": "0x0.0000000000002p-1022",
+      "observed_hex": "0x0.0000000000002p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "midpoint",
+      "n": 2,
+      "expected_hex": "0x0.0000000000002p-1022",
+      "observed_hex": "0x0.0000000000002p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "midpoint",
+      "n": 3,
+      "expected_hex": "0x0.0000000000002p-1022",
+      "observed_hex": "0x0.0000000000002p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "midpoint",
+      "n": 4,
+      "expected_hex": "0x0.0000000000002p-1022",
+      "observed_hex": "0x0.0000000000002p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "midpoint",
+      "n": 5,
+      "expected_hex": "0x0.0000000000002p-1022",
+      "observed_hex": "0x0.0000000000002p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "varying",
+      "n": 0,
+      "expected_hex": "0x0.0000000000004p-1022",
+      "observed_hex": "0x0.0000000000004p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "varying",
+      "n": 1,
+      "expected_hex": "0x0.0000000000004p-1022",
+      "observed_hex": "0x0.0000000000004p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "varying",
+      "n": 2,
+      "expected_hex": "0x0.0000000000004p-1022",
+      "observed_hex": "0x0.0000000000004p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "varying",
+      "n": 3,
+      "expected_hex": "0x0.0000000000004p-1022",
+      "observed_hex": "0x0.0000000000004p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "varying",
+      "n": 4,
+      "expected_hex": "0x0.0000000000004p-1022",
+      "observed_hex": "0x0.0000000000004p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "varying",
+      "n": 5,
+      "expected_hex": "0x0.0000000000004p-1022",
+      "observed_hex": "0x0.0000000000004p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "mixed",
+      "n": 0,
+      "expected_hex": "0x0.0000000000001p-1022",
+      "observed_hex": "0x0.0000000000001p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "mixed",
+      "n": 1,
+      "expected_hex": "0x0.0000000000001p-1022",
+      "observed_hex": "0x0.0000000000001p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "mixed",
+      "n": 2,
+      "expected_hex": "0x0.0000000000001p-1022",
+      "observed_hex": "0x0.0000000000001p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "mixed",
+      "n": 3,
+      "expected_hex": "0x0.0000000000001p-1022",
+      "observed_hex": "0x0.0000000000001p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "mixed",
+      "n": 4,
+      "expected_hex": "0x0.0000000000001p-1022",
+      "observed_hex": "0x0.0000000000001p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "mixed",
+      "n": 5,
+      "expected_hex": "0x0.0000000000001p-1022",
+      "observed_hex": "0x0.0000000000001p-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "0x0.fffffffffffffp-1022",
+      "n": 0,
+      "expected_hex": "0x0.fffffffffffffp-1022",
+      "observed_hex": "0x0.fffffffffffffp-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "0x0.fffffffffffffp-1022",
+      "n": 1,
+      "expected_hex": "0x0.fffffffffffffp-1022",
+      "observed_hex": "0x0.fffffffffffffp-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "0x0.fffffffffffffp-1022",
+      "n": 2,
+      "expected_hex": "0x0.fffffffffffffp-1022",
+      "observed_hex": "0x0.fffffffffffffp-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "0x0.fffffffffffffp-1022",
+      "n": 3,
+      "expected_hex": "0x0.fffffffffffffp-1022",
+      "observed_hex": "0x0.fffffffffffffp-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "0x0.fffffffffffffp-1022",
+      "n": 4,
+      "expected_hex": "0x0.fffffffffffffp-1022",
+      "observed_hex": "0x0.fffffffffffffp-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "0x0.fffffffffffffp-1022",
+      "n": 5,
+      "expected_hex": "0x0.fffffffffffffp-1022",
+      "observed_hex": "0x0.fffffffffffffp-1022",
+      "comparison": "exact"
+    },
+    {
+      "name": "0x1.0000000000000p-1022",
+      "n": 0,
+      "expected_hex": "0x1.0000000000000p-1022",
+      "observed_hex": "0x1.0000000000000p-1022",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.0000000000000p-1022",
+      "n": 1,
+      "expected_hex": "0x1.0000000000000p-1022",
+      "observed_hex": "0x1.0000000000000p-1022",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.0000000000000p-1022",
+      "n": 2,
+      "expected_hex": "0x1.0000000000000p-1022",
+      "observed_hex": "0x1.0000000000000p-1022",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.0000000000000p-1022",
+      "n": 3,
+      "expected_hex": "0x1.0000000000000p-1022",
+      "observed_hex": "0x1.0000000000000p-1022",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.0000000000000p-1022",
+      "n": 4,
+      "expected_hex": "0x1.0000000000000p-1022",
+      "observed_hex": "0x1.0000000000000p-1022",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.0000000000000p-1022",
+      "n": 5,
+      "expected_hex": "0x1.0000000000000p-1022",
+      "observed_hex": "0x1.0000000000000p-1022",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b145768p-1021",
+      "n": 0,
+      "expected_hex": "0x1.5bf0a8b145768p-1021",
+      "observed_hex": "0x1.5bf0a8b145768p-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b145768p-1021",
+      "n": 1,
+      "expected_hex": "0x1.5bf0a8b145768p-1021",
+      "observed_hex": "0x1.5bf0a8b145768p-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b145768p-1021",
+      "n": 2,
+      "expected_hex": "0x1.5bf0a8b145768p-1021",
+      "observed_hex": "0x1.5bf0a8b145768p-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b145768p-1021",
+      "n": 3,
+      "expected_hex": "0x1.5bf0a8b145768p-1021",
+      "observed_hex": "0x1.5bf0a8b145768p-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b145768p-1021",
+      "n": 4,
+      "expected_hex": "0x1.5bf0a8b145768p-1021",
+      "observed_hex": "0x1.5bf0a8b145768p-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b145768p-1021",
+      "n": 5,
+      "expected_hex": "0x1.5bf0a8b145768p-1021",
+      "observed_hex": "0x1.5bf0a8b145768p-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b145769p-1021",
+      "n": 0,
+      "expected_hex": "0x1.5bf0a8b145769p-1021",
+      "observed_hex": "0x1.5bf0a8b145769p-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b145769p-1021",
+      "n": 1,
+      "expected_hex": "0x1.5bf0a8b145769p-1021",
+      "observed_hex": "0x1.5bf0a8b145769p-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b145769p-1021",
+      "n": 2,
+      "expected_hex": "0x1.5bf0a8b145769p-1021",
+      "observed_hex": "0x1.5bf0a8b145769p-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b145769p-1021",
+      "n": 3,
+      "expected_hex": "0x1.5bf0a8b145769p-1021",
+      "observed_hex": "0x1.5bf0a8b145769p-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b145769p-1021",
+      "n": 4,
+      "expected_hex": "0x1.5bf0a8b145769p-1021",
+      "observed_hex": "0x1.5bf0a8b145769p-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b145769p-1021",
+      "n": 5,
+      "expected_hex": "0x1.5bf0a8b145769p-1021",
+      "observed_hex": "0x1.5bf0a8b145769p-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b14576ap-1021",
+      "n": 0,
+      "expected_hex": "0x1.5bf0a8b14576ap-1021",
+      "observed_hex": "0x1.5bf0a8b14576ap-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b14576ap-1021",
+      "n": 1,
+      "expected_hex": "0x1.5bf0a8b14576ap-1021",
+      "observed_hex": "0x1.5bf0a8b14576ap-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b14576ap-1021",
+      "n": 2,
+      "expected_hex": "0x1.5bf0a8b14576ap-1021",
+      "observed_hex": "0x1.5bf0a8b14576ap-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b14576ap-1021",
+      "n": 3,
+      "expected_hex": "0x1.5bf0a8b14576ap-1021",
+      "observed_hex": "0x1.5bf0a8b14576ap-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b14576ap-1021",
+      "n": 4,
+      "expected_hex": "0x1.5bf0a8b14576ap-1021",
+      "observed_hex": "0x1.5bf0a8b14576ap-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.5bf0a8b14576ap-1021",
+      "n": 5,
+      "expected_hex": "0x1.5bf0a8b14576ap-1021",
+      "observed_hex": "0x1.5bf0a8b14576ap-1021",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.fffffffffffffp+1023",
+      "n": 0,
+      "expected_hex": "0x1.fffffffffffffp+1023",
+      "observed_hex": "0x1.fffffffffff2ap+1023",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.fffffffffffffp+1023",
+      "n": 1,
+      "expected_hex": "0x1.fffffffffffffp+1023",
+      "observed_hex": "0x1.fffffffffff2ap+1023",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.fffffffffffffp+1023",
+      "n": 2,
+      "expected_hex": "0x1.fffffffffffffp+1023",
+      "observed_hex": "0x1.fffffffffff2ap+1023",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.fffffffffffffp+1023",
+      "n": 3,
+      "expected_hex": "0x1.fffffffffffffp+1023",
+      "observed_hex": "0x1.fffffffffff2ap+1023",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.fffffffffffffp+1023",
+      "n": 4,
+      "expected_hex": "0x1.fffffffffffffp+1023",
+      "observed_hex": "0x1.fffffffffff2ap+1023",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    },
+    {
+      "name": "0x1.fffffffffffffp+1023",
+      "n": 5,
+      "expected_hex": "0x1.fffffffffffffp+1023",
+      "observed_hex": "0x1.fffffffffff2ap+1023",
+      "comparison": "rel_tol=3e-12; abs_tol=0"
+    }
+  ],
+  "oracle_count": 54,
+  "final_data_open": false,
+  "independent_review_pending": true
+}

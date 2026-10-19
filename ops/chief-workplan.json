@@ -1,20 +1,18 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T02:34:03.906236+08:00",
-  "reason": "SOL-017 remote K1 review running; targeted personalized handoff review SOL-020 ready. All independent chief specifications currently prepared; await exact review receipts before implementation release.",
+  "next_wake_at": "2026-10-20T02:18:15.428569+08:00",
+  "reason": "SOL-017 negative K2 evidence accepted; exact-rounding correction validated provisionally. Publish immutable independent review and corrected dependent tasks from this pushed prerequisite source.",
   "next_actions": [
-    "Fetch exact SOL-017 receipt, validate task/source/paths/hashes and independently replay corrected-code numeric evidence. Positive code approval releases unchanged SOL-016 and corrected SOL-018 promptly; preserve historical SOL-013 negative kernel verdict.",
-    "After positive SOL-018 calibration acceptance release existing SOL-019. Inspect and independently test exact SOL-016/SOL-019 implementation commits before integrating only permitted changes.",
-    "Review SOL-020 personalized handoff verdict; preserve negative findings and correct via new immutable source/task if needed. No implementation/outcome claim from design approval.",
-    "After both component implementations accepted publish production writer task from specs/POLICY_RESULT_WRITER.md on combined already-pushed source. Then fixed HY3 development commands, exact accepted HY3-003 imports, and targeted independent Sol numerical result review.",
-    "Personalized adapter/results and rescreen, freeze, one final evaluation, report rendering and code package remain. Keep final_data_open=false and private identities local. Never submit automatically.",
-    "Check local quota/status/drain and control/STOP/deadline; do not restart supervisor or duplicate roles. Incoming receipts should trigger sooner than the 30-minute fallback."
+    "Push corrected K2 source prerequisite, then publish new immutable independent kernel review and successors to cancelled SOL-018/SOL-019. Retain SOL-016 unchanged behind positive kernel review.",
+    "Inspect SOL-020 personalized design review when exact receipt arrives.",
+    "After positive kernel/calibration gates release existing eligible tasks promptly; keep production and final outcomes closed.",
+    "Check local quota/control/deadline, preserve supervisor and private identities."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T02:04:03.906236+08:00",
+  "last_completed_at": "2026-10-20T02:13:15.428569+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

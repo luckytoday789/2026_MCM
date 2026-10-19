@@ -6,7 +6,10 @@ synthetic runs only. Production calibration/driver authorization is separate.
 """
 
 from dataclasses import dataclass
+from fractions import Fraction
 import math
+import struct
+import sys
 
 from .accounting import (
     apply_returns, compound_cpi, deflate, finite_number, keep, rebalance,
@@ -55,6 +58,47 @@ def logsumexp(values):
                          "log moment sum")
 
 
+def _small_ce_exact(weights, prior, recent):
+    """Round the inverse-cube CE exactly near binary64 underflow.
+
+    Ordinary values use the log-domain path. Here exact rational moments and
+    monotone binary64 bisection avoid losing midpoint information to log/exp.
+    Rational renormalization enforces the mathematical unit-sum weights after
+    validate_target has admitted only roundoff-sized discrepancies.
+    """
+    w = tuple(Fraction(x) for x in weights)
+    total = sum(w)
+    w = tuple(x / total for x in w)
+
+    def inverse_cube(row):
+        gross = sum(x * Fraction(g) for x, g in zip(w, row))
+        return 1 / gross ** 3
+
+    moment = (PRIOR_STRENGTH * sum(map(inverse_cube, prior)) / len(prior)
+              + sum(map(inverse_cube, recent))) / (PRIOR_STRENGTH + len(recent))
+
+    def value(bits):
+        return struct.unpack('>d', struct.pack('>Q', bits))[0]
+
+    # Positive finite binary64 encodings are ordered like their real values.
+    # The CE is between the finite support extrema, so max finite is an upper
+    # bound. Find adjacent representable values bracketing the exact root.
+    low, high = 0, 0x7fefffffffffffff
+    while high - low > 1:
+        middle = (low + high) // 2
+        if Fraction(value(middle)) ** 3 * moment <= 1:
+            low = middle
+        else:
+            high = middle
+    midpoint = (Fraction(value(low)) + Fraction(value(high))) / 2
+    side = midpoint ** 3 * moment
+    if side < 1:
+        return value(high)
+    if side > 1:
+        return value(low)
+    return value(low if low % 2 == 0 else high)  # round ties to even
+
+
 @dataclass(frozen=True)
 class EmpiricalPrior:
     """An explicit equally weighted annual marginal distribution, never a path.
@@ -91,10 +135,16 @@ class EmpiricalPrior:
                                    *(log_power(row) for row in recent))) - math.log(PRIOR_STRENGTH + len(recent))
         else:
             log_moment = prior_log_moment
-        try:
-            ce = finite_number(math.exp(log_moment / (1 - GAMMA)), "certainty equivalent")
-        except OverflowError as exc:
-            raise ValueError("certainty equivalent overflow") from exc
+        log_ce = log_moment / (1 - GAMMA)
+        # The one-natural-log-unit guard also covers nearby normal values;
+        # it is a numerical route choice, not a bound on valid inputs.
+        if log_ce < math.log(sys.float_info.min) + 1:
+            ce = _small_ce_exact(w, self.gross, recent)
+        else:
+            try:
+                ce = finite_number(math.exp(log_ce), "certainty equivalent")
+            except OverflowError as exc:
+                raise ValueError("certainty equivalent overflow") from exc
         if ce <= 0:
             raise ValueError("certainty equivalent underflow")
         return ce

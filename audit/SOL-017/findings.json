@@ -1,0 +1,7514 @@
+{
+  "base_commit": "315b7072e98f4d6aafd8573507074fc023477918",
+  "blockers": [
+    "K2 exact midpoint n=0",
+    "K2 exact midpoint n=1",
+    "K2 exact midpoint n=2",
+    "K2 exact midpoint n=3",
+    "K2 exact midpoint n=4",
+    "K2 exact midpoint n=5",
+    "K2 exact midpoint downward n=0",
+    "K2 exact midpoint downward n=1",
+    "K2 exact midpoint downward n=2",
+    "K2 exact midpoint downward n=3",
+    "K2 exact midpoint downward n=4",
+    "K2 exact midpoint downward n=5",
+    "K2 subnormal grid w=0 units=(1, 1, 4)",
+    "K2 subnormal grid w=0 units=(1, 1, 8)",
+    "K2 subnormal grid w=0 units=(1, 3, 3)",
+    "K2 subnormal grid w=0 units=(1, 3, 5)",
+    "K2 subnormal grid w=0 units=(1, 3, 7)",
+    "K2 subnormal grid w=0 units=(1, 5, 2)",
+    "K2 subnormal grid w=0 units=(1, 5, 6)",
+    "K2 subnormal grid w=0 units=(1, 5, 8)",
+    "K2 subnormal grid w=0 units=(1, 7, 1)",
+    "K2 subnormal grid w=0 units=(1, 7, 7)",
+    "K2 subnormal grid w=0 units=(2, 2, 3)",
+    "K2 subnormal grid w=0 units=(2, 2, 5)",
+    "K2 subnormal grid w=0 units=(2, 2, 7)",
+    "K2 subnormal grid w=0 units=(2, 4, 2)",
+    "K2 subnormal grid w=0 units=(2, 4, 6)",
+    "K2 subnormal grid w=0 units=(2, 4, 8)",
+    "K2 subnormal grid w=0 units=(2, 6, 1)",
+    "K2 subnormal grid w=0 units=(2, 6, 7)",
+    "K2 subnormal grid w=0 units=(2, 8, 2)",
+    "K2 subnormal grid w=0 units=(2, 8, 4)",
+    "K2 subnormal grid w=0 units=(2, 8, 6)",
+    "K2 subnormal grid w=0 units=(2, 8, 8)",
+    "K2 subnormal grid w=0 units=(3, 1, 3)",
+    "K2 subnormal grid w=0 units=(3, 1, 5)",
+    "K2 subnormal grid w=0 units=(3, 1, 7)",
+    "K2 subnormal grid w=0 units=(3, 3, 2)",
+    "K2 subnormal grid w=0 units=(3, 3, 6)",
+    "K2 subnormal grid w=0 units=(3, 3, 8)",
+    "K2 subnormal grid w=0 units=(3, 5, 1)",
+    "K2 subnormal grid w=0 units=(3, 5, 3)",
+    "K2 subnormal grid w=0 units=(3, 5, 7)",
+    "K2 subnormal grid w=0 units=(3, 7, 2)",
+    "K2 subnormal grid w=0 units=(3, 7, 4)",
+    "K2 subnormal grid w=0 units=(3, 7, 6)",
+    "K2 subnormal grid w=0 units=(3, 7, 8)",
+    "K2 subnormal grid w=0 units=(4, 2, 2)",
+    "K2 subnormal grid w=0 units=(4, 2, 6)",
+    "K2 subnormal grid w=0 units=(4, 2, 8)",
+    "K2 subnormal grid w=0 units=(4, 4, 1)",
+    "K2 subnormal grid w=0 units=(4, 4, 7)",
+    "K2 subnormal grid w=0 units=(4, 6, 4)",
+    "K2 subnormal grid w=0 units=(4, 6, 6)",
+    "K2 subnormal grid w=0 units=(4, 6, 8)",
+    "K2 subnormal grid w=0 units=(4, 8, 1)",
+    "K2 subnormal grid w=0 units=(4, 8, 5)",
+    "K2 subnormal grid w=0 units=(4, 8, 7)",
+    "K2 subnormal grid w=0 units=(5, 1, 2)",
+    "K2 subnormal grid w=0 units=(5, 1, 6)",
+    "K2 subnormal grid w=0 units=(5, 1, 8)",
+    "K2 subnormal grid w=0 units=(5, 3, 1)",
+    "K2 subnormal grid w=0 units=(5, 3, 3)",
+    "K2 subnormal grid w=0 units=(5, 3, 7)",
+    "K2 subnormal grid w=0 units=(5, 5, 2)",
+    "K2 subnormal grid w=0 units=(5, 5, 6)",
+    "K2 subnormal grid w=0 units=(5, 5, 8)",
+    "K2 subnormal grid w=0 units=(5, 7, 1)",
+    "K2 subnormal grid w=0 units=(5, 7, 5)",
+    "K2 subnormal grid w=0 units=(5, 7, 7)",
+    "K2 subnormal grid w=0 units=(6, 2, 1)",
+    "K2 subnormal grid w=0 units=(6, 2, 7)",
+    "K2 subnormal grid w=0 units=(6, 4, 4)",
+    "K2 subnormal grid w=0 units=(6, 4, 6)",
+    "K2 subnormal grid w=0 units=(6, 4, 8)",
+    "K2 subnormal grid w=0 units=(6, 6, 3)",
+    "K2 subnormal grid w=0 units=(6, 6, 5)",
+    "K2 subnormal grid w=0 units=(6, 6, 7)",
+    "K2 subnormal grid w=0 units=(6, 8, 4)",
+    "K2 subnormal grid w=0 units=(6, 8, 6)",
+    "K2 subnormal grid w=0 units=(7, 1, 1)",
+    "K2 subnormal grid w=0 units=(7, 1, 7)",
+    "K2 subnormal grid w=0 units=(7, 3, 2)",
+    "K2 subnormal grid w=0 units=(7, 3, 4)",
+    "K2 subnormal grid w=0 units=(7, 3, 6)",
+    "K2 subnormal grid w=0 units=(7, 3, 8)",
+    "K2 subnormal grid w=0 units=(7, 5, 1)",
+    "K2 subnormal grid w=0 units=(7, 5, 5)",
+    "K2 subnormal grid w=0 units=(7, 5, 7)",
+    "K2 subnormal grid w=0 units=(7, 7, 4)",
+    "K2 subnormal grid w=0 units=(7, 7, 6)",
+    "K2 subnormal grid w=0 units=(8, 2, 2)",
+    "K2 subnormal grid w=0 units=(8, 2, 4)",
+    "K2 subnormal grid w=0 units=(8, 2, 6)",
+    "K2 subnormal grid w=0 units=(8, 2, 8)",
+    "K2 subnormal grid w=0 units=(8, 4, 1)",
+    "K2 subnormal grid w=0 units=(8, 4, 5)",
+    "K2 subnormal grid w=0 units=(8, 4, 7)",
+    "K2 subnormal grid w=0 units=(8, 6, 4)",
+    "K2 subnormal grid w=0 units=(8, 6, 6)",
+    "K2 subnormal grid w=0 units=(8, 8, 3)",
+    "K2 subnormal grid w=0 units=(8, 8, 5)",
+    "K2 subnormal grid w=1 units=(1, 1, 4)",
+    "K2 subnormal grid w=1 units=(1, 1, 8)",
+    "K2 subnormal grid w=1 units=(1, 2, 3)",
+    "K2 subnormal grid w=1 units=(1, 2, 7)",
+    "K2 subnormal grid w=1 units=(1, 3, 2)",
+    "K2 subnormal grid w=1 units=(1, 3, 6)",
+    "K2 subnormal grid w=1 units=(1, 3, 8)",
+    "K2 subnormal grid w=1 units=(1, 4, 1)",
+    "K2 subnormal grid w=1 units=(1, 4, 5)",
+    "K2 subnormal grid w=1 units=(1, 4, 7)",
+    "K2 subnormal grid w=1 units=(1, 5, 4)",
+    "K2 subnormal grid w=1 units=(1, 5, 6)",
+    "K2 subnormal grid w=1 units=(1, 5, 8)",
+    "K2 subnormal grid w=1 units=(1, 6, 3)",
+    "K2 subnormal grid w=1 units=(1, 6, 5)",
+    "K2 subnormal grid w=1 units=(1, 6, 7)",
+    "K2 subnormal grid w=1 units=(1, 7, 2)",
+    "K2 subnormal grid w=1 units=(1, 7, 4)",
+    "K2 subnormal grid w=1 units=(1, 7, 6)",
+    "K2 subnormal grid w=1 units=(1, 8, 1)",
+    "K2 subnormal grid w=1 units=(1, 8, 3)",
+    "K2 subnormal grid w=1 units=(1, 8, 5)",
+    "K2 subnormal grid w=1 units=(2, 1, 4)",
+    "K2 subnormal grid w=1 units=(2, 1, 8)",
+    "K2 subnormal grid w=1 units=(2, 2, 3)",
+    "K2 subnormal grid w=1 units=(2, 2, 7)",
+    "K2 subnormal grid w=1 units=(2, 3, 2)",
+    "K2 subnormal grid w=1 units=(2, 3, 6)",
+    "K2 subnormal grid w=1 units=(2, 3, 8)",
+    "K2 subnormal grid w=1 units=(2, 4, 1)",
+    "K2 subnormal grid w=1 units=(2, 4, 5)",
+    "K2 subnormal grid w=1 units=(2, 4, 7)",
+    "K2 subnormal grid w=1 units=(2, 5, 4)",
+    "K2 subnormal grid w=1 units=(2, 5, 6)",
+    "K2 subnormal grid w=1 units=(2, 5, 8)",
+    "K2 subnormal grid w=1 units=(2, 6, 3)",
+    "K2 subnormal grid w=1 units=(2, 6, 5)",
+    "K2 subnormal grid w=1 units=(2, 6, 7)",
+    "K2 subnormal grid w=1 units=(2, 7, 2)",
+    "K2 subnormal grid w=1 units=(2, 7, 4)",
+    "K2 subnormal grid w=1 units=(2, 7, 6)",
+    "K2 subnormal grid w=1 units=(2, 8, 1)",
+    "K2 subnormal grid w=1 units=(2, 8, 3)",
+    "K2 subnormal grid w=1 units=(2, 8, 5)",
+    "K2 subnormal grid w=1 units=(3, 1, 4)",
+    "K2 subnormal grid w=1 units=(3, 1, 8)",
+    "K2 subnormal grid w=1 units=(3, 2, 3)",
+    "K2 subnormal grid w=1 units=(3, 2, 7)",
+    "K2 subnormal grid w=1 units=(3, 3, 2)",
+    "K2 subnormal grid w=1 units=(3, 3, 6)",
+    "K2 subnormal grid w=1 units=(3, 3, 8)",
+    "K2 subnormal grid w=1 units=(3, 4, 1)",
+    "K2 subnormal grid w=1 units=(3, 4, 5)",
+    "K2 subnormal grid w=1 units=(3, 4, 7)",
+    "K2 subnormal grid w=1 units=(3, 5, 4)",
+    "K2 subnormal grid w=1 units=(3, 5, 6)",
+    "K2 subnormal grid w=1 units=(3, 5, 8)",
+    "K2 subnormal grid w=1 units=(3, 6, 3)",
+    "K2 subnormal grid w=1 units=(3, 6, 5)",
+    "K2 subnormal grid w=1 units=(3, 6, 7)",
+    "K2 subnormal grid w=1 units=(3, 7, 2)",
+    "K2 subnormal grid w=1 units=(3, 7, 4)",
+    "K2 subnormal grid w=1 units=(3, 7, 6)",
+    "K2 subnormal grid w=1 units=(3, 8, 1)",
+    "K2 subnormal grid w=1 units=(3, 8, 3)",
+    "K2 subnormal grid w=1 units=(3, 8, 5)",
+    "K2 subnormal grid w=1 units=(4, 1, 4)",
+    "K2 subnormal grid w=1 units=(4, 1, 8)",
+    "K2 subnormal grid w=1 units=(4, 2, 3)",
+    "K2 subnormal grid w=1 units=(4, 2, 7)",
+    "K2 subnormal grid w=1 units=(4, 3, 2)",
+    "K2 subnormal grid w=1 units=(4, 3, 6)",
+    "K2 subnormal grid w=1 units=(4, 3, 8)",
+    "K2 subnormal grid w=1 units=(4, 4, 1)",
+    "K2 subnormal grid w=1 units=(4, 4, 5)",
+    "K2 subnormal grid w=1 units=(4, 4, 7)",
+    "K2 subnormal grid w=1 units=(4, 5, 4)",
+    "K2 subnormal grid w=1 units=(4, 5, 6)",
+    "K2 subnormal grid w=1 units=(4, 5, 8)",
+    "K2 subnormal grid w=1 units=(4, 6, 3)",
+    "K2 subnormal grid w=1 units=(4, 6, 5)",
+    "K2 subnormal grid w=1 units=(4, 6, 7)",
+    "K2 subnormal grid w=1 units=(4, 7, 2)",
+    "K2 subnormal grid w=1 units=(4, 7, 4)",
+    "K2 subnormal grid w=1 units=(4, 7, 6)",
+    "K2 subnormal grid w=1 units=(4, 8, 1)",
+    "K2 subnormal grid w=1 units=(4, 8, 3)",
+    "K2 subnormal grid w=1 units=(4, 8, 5)",
+    "K2 subnormal grid w=1 units=(5, 1, 4)",
+    "K2 subnormal grid w=1 units=(5, 1, 8)",
+    "K2 subnormal grid w=1 units=(5, 2, 3)",
+    "K2 subnormal grid w=1 units=(5, 2, 7)",
+    "K2 subnormal grid w=1 units=(5, 3, 2)",
+    "K2 subnormal grid w=1 units=(5, 3, 6)",
+    "K2 subnormal grid w=1 units=(5, 3, 8)",
+    "K2 subnormal grid w=1 units=(5, 4, 1)",
+    "K2 subnormal grid w=1 units=(5, 4, 5)",
+    "K2 subnormal grid w=1 units=(5, 4, 7)",
+    "K2 subnormal grid w=1 units=(5, 5, 4)",
+    "K2 subnormal grid w=1 units=(5, 5, 6)",
+    "K2 subnormal grid w=1 units=(5, 5, 8)",
+    "K2 subnormal grid w=1 units=(5, 6, 3)",
+    "K2 subnormal grid w=1 units=(5, 6, 5)",
+    "K2 subnormal grid w=1 units=(5, 6, 7)",
+    "K2 subnormal grid w=1 units=(5, 7, 2)",
+    "K2 subnormal grid w=1 units=(5, 7, 4)",
+    "K2 subnormal grid w=1 units=(5, 7, 6)",
+    "K2 subnormal grid w=1 units=(5, 8, 1)",
+    "K2 subnormal grid w=1 units=(5, 8, 3)",
+    "K2 subnormal grid w=1 units=(5, 8, 5)",
+    "K2 subnormal grid w=1 units=(6, 1, 4)",
+    "K2 subnormal grid w=1 units=(6, 1, 8)",
+    "K2 subnormal grid w=1 units=(6, 2, 3)",
+    "K2 subnormal grid w=1 units=(6, 2, 7)",
+    "K2 subnormal grid w=1 units=(6, 3, 2)",
+    "K2 subnormal grid w=1 units=(6, 3, 6)",
+    "K2 subnormal grid w=1 units=(6, 3, 8)",
+    "K2 subnormal grid w=1 units=(6, 4, 1)",
+    "K2 subnormal grid w=1 units=(6, 4, 5)",
+    "K2 subnormal grid w=1 units=(6, 4, 7)",
+    "K2 subnormal grid w=1 units=(6, 5, 4)",
+    "K2 subnormal grid w=1 units=(6, 5, 6)",
+    "K2 subnormal grid w=1 units=(6, 5, 8)",
+    "K2 subnormal grid w=1 units=(6, 6, 3)",
+    "K2 subnormal grid w=1 units=(6, 6, 5)",
+    "K2 subnormal grid w=1 units=(6, 6, 7)",
+    "K2 subnormal grid w=1 units=(6, 7, 2)",
+    "K2 subnormal grid w=1 units=(6, 7, 4)",
+    "K2 subnormal grid w=1 units=(6, 7, 6)",
+    "K2 subnormal grid w=1 units=(6, 8, 1)",
+    "K2 subnormal grid w=1 units=(6, 8, 3)",
+    "K2 subnormal grid w=1 units=(6, 8, 5)",
+    "K2 subnormal grid w=1 units=(7, 1, 4)",
+    "K2 subnormal grid w=1 units=(7, 1, 8)",
+    "K2 subnormal grid w=1 units=(7, 2, 3)",
+    "K2 subnormal grid w=1 units=(7, 2, 7)",
+    "K2 subnormal grid w=1 units=(7, 3, 2)",
+    "K2 subnormal grid w=1 units=(7, 3, 6)",
+    "K2 subnormal grid w=1 units=(7, 3, 8)",
+    "K2 subnormal grid w=1 units=(7, 4, 1)",
+    "K2 subnormal grid w=1 units=(7, 4, 5)",
+    "K2 subnormal grid w=1 units=(7, 4, 7)",
+    "K2 subnormal grid w=1 units=(7, 5, 4)",
+    "K2 subnormal grid w=1 units=(7, 5, 6)",
+    "K2 subnormal grid w=1 units=(7, 5, 8)",
+    "K2 subnormal grid w=1 units=(7, 6, 3)",
+    "K2 subnormal grid w=1 units=(7, 6, 5)",
+    "K2 subnormal grid w=1 units=(7, 6, 7)",
+    "K2 subnormal grid w=1 units=(7, 7, 2)",
+    "K2 subnormal grid w=1 units=(7, 7, 4)",
+    "K2 subnormal grid w=1 units=(7, 7, 6)",
+    "K2 subnormal grid w=1 units=(7, 8, 1)",
+    "K2 subnormal grid w=1 units=(7, 8, 3)",
+    "K2 subnormal grid w=1 units=(7, 8, 5)",
+    "K2 subnormal grid w=1 units=(8, 1, 4)",
+    "K2 subnormal grid w=1 units=(8, 1, 8)",
+    "K2 subnormal grid w=1 units=(8, 2, 3)",
+    "K2 subnormal grid w=1 units=(8, 2, 7)",
+    "K2 subnormal grid w=1 units=(8, 3, 2)",
+    "K2 subnormal grid w=1 units=(8, 3, 6)",
+    "K2 subnormal grid w=1 units=(8, 3, 8)",
+    "K2 subnormal grid w=1 units=(8, 4, 1)",
+    "K2 subnormal grid w=1 units=(8, 4, 5)",
+    "K2 subnormal grid w=1 units=(8, 4, 7)",
+    "K2 subnormal grid w=1 units=(8, 5, 4)",
+    "K2 subnormal grid w=1 units=(8, 5, 6)",
+    "K2 subnormal grid w=1 units=(8, 5, 8)",
+    "K2 subnormal grid w=1 units=(8, 6, 3)",
+    "K2 subnormal grid w=1 units=(8, 6, 5)",
+    "K2 subnormal grid w=1 units=(8, 6, 7)",
+    "K2 subnormal grid w=1 units=(8, 7, 2)",
+    "K2 subnormal grid w=1 units=(8, 7, 4)",
+    "K2 subnormal grid w=1 units=(8, 7, 6)",
+    "K2 subnormal grid w=1 units=(8, 8, 1)",
+    "K2 subnormal grid w=1 units=(8, 8, 3)",
+    "K2 subnormal grid w=1 units=(8, 8, 5)",
+    "K2 subnormal grid w=2 units=(1, 4, 1)",
+    "K2 subnormal grid w=2 units=(1, 4, 2)",
+    "K2 subnormal grid w=2 units=(1, 4, 3)",
+    "K2 subnormal grid w=2 units=(1, 4, 4)",
+    "K2 subnormal grid w=2 units=(1, 4, 5)",
+    "K2 subnormal grid w=2 units=(1, 4, 6)",
+    "K2 subnormal grid w=2 units=(1, 4, 7)",
+    "K2 subnormal grid w=2 units=(1, 4, 8)",
+    "K2 subnormal grid w=2 units=(1, 8, 1)",
+    "K2 subnormal grid w=2 units=(1, 8, 2)",
+    "K2 subnormal grid w=2 units=(1, 8, 3)",
+    "K2 subnormal grid w=2 units=(1, 8, 4)",
+    "K2 subnormal grid w=2 units=(1, 8, 5)",
+    "K2 subnormal grid w=2 units=(1, 8, 6)",
+    "K2 subnormal grid w=2 units=(1, 8, 7)",
+    "K2 subnormal grid w=2 units=(1, 8, 8)",
+    "K2 subnormal grid w=2 units=(2, 3, 1)",
+    "K2 subnormal grid w=2 units=(2, 3, 2)",
+    "K2 subnormal grid w=2 units=(2, 3, 3)",
+    "K2 subnormal grid w=2 units=(2, 3, 4)",
+    "K2 subnormal grid w=2 units=(2, 3, 5)",
+    "K2 subnormal grid w=2 units=(2, 3, 6)",
+    "K2 subnormal grid w=2 units=(2, 3, 7)",
+    "K2 subnormal grid w=2 units=(2, 3, 8)",
+    "K2 subnormal grid w=2 units=(2, 7, 1)",
+    "K2 subnormal grid w=2 units=(2, 7, 2)",
+    "K2 subnormal grid w=2 units=(2, 7, 3)",
+    "K2 subnormal grid w=2 units=(2, 7, 4)",
+    "K2 subnormal grid w=2 units=(2, 7, 5)",
+    "K2 subnormal grid w=2 units=(2, 7, 6)",
+    "K2 subnormal grid w=2 units=(2, 7, 7)",
+    "K2 subnormal grid w=2 units=(2, 7, 8)",
+    "K2 subnormal grid w=2 units=(3, 2, 1)",
+    "K2 subnormal grid w=2 units=(3, 2, 2)",
+    "K2 subnormal grid w=2 units=(3, 2, 3)",
+    "K2 subnormal grid w=2 units=(3, 2, 4)",
+    "K2 subnormal grid w=2 units=(3, 2, 5)",
+    "K2 subnormal grid w=2 units=(3, 2, 6)",
+    "K2 subnormal grid w=2 units=(3, 2, 7)",
+    "K2 subnormal grid w=2 units=(3, 2, 8)",
+    "K2 subnormal grid w=2 units=(3, 6, 1)",
+    "K2 subnormal grid w=2 units=(3, 6, 2)",
+    "K2 subnormal grid w=2 units=(3, 6, 3)",
+    "K2 subnormal grid w=2 units=(3, 6, 4)",
+    "K2 subnormal grid w=2 units=(3, 6, 5)",
+    "K2 subnormal grid w=2 units=(3, 6, 6)",
+    "K2 subnormal grid w=2 units=(3, 6, 7)",
+    "K2 subnormal grid w=2 units=(3, 6, 8)",
+    "K2 subnormal grid w=2 units=(3, 8, 1)",
+    "K2 subnormal grid w=2 units=(3, 8, 2)",
+    "K2 subnormal grid w=2 units=(3, 8, 3)",
+    "K2 subnormal grid w=2 units=(3, 8, 4)",
+    "K2 subnormal grid w=2 units=(3, 8, 5)",
+    "K2 subnormal grid w=2 units=(3, 8, 6)",
+    "K2 subnormal grid w=2 units=(3, 8, 7)",
+    "K2 subnormal grid w=2 units=(3, 8, 8)",
+    "K2 subnormal grid w=2 units=(4, 1, 1)",
+    "K2 subnormal grid w=2 units=(4, 1, 2)",
+    "K2 subnormal grid w=2 units=(4, 1, 3)",
+    "K2 subnormal grid w=2 units=(4, 1, 4)",
+    "K2 subnormal grid w=2 units=(4, 1, 5)",
+    "K2 subnormal grid w=2 units=(4, 1, 6)",
+    "K2 subnormal grid w=2 units=(4, 1, 7)",
+    "K2 subnormal grid w=2 units=(4, 1, 8)",
+    "K2 subnormal grid w=2 units=(4, 5, 1)",
+    "K2 subnormal grid w=2 units=(4, 5, 2)",
+    "K2 subnormal grid w=2 units=(4, 5, 3)",
+    "K2 subnormal grid w=2 units=(4, 5, 4)",
+    "K2 subnormal grid w=2 units=(4, 5, 5)",
+    "K2 subnormal grid w=2 units=(4, 5, 6)",
+    "K2 subnormal grid w=2 units=(4, 5, 7)",
+    "K2 subnormal grid w=2 units=(4, 5, 8)",
+    "K2 subnormal grid w=2 units=(4, 7, 1)",
+    "K2 subnormal grid w=2 units=(4, 7, 2)",
+    "K2 subnormal grid w=2 units=(4, 7, 3)",
+    "K2 subnormal grid w=2 units=(4, 7, 4)",
+    "K2 subnormal grid w=2 units=(4, 7, 5)",
+    "K2 subnormal grid w=2 units=(4, 7, 6)",
+    "K2 subnormal grid w=2 units=(4, 7, 7)",
+    "K2 subnormal grid w=2 units=(4, 7, 8)",
+    "K2 subnormal grid w=2 units=(5, 4, 1)",
+    "K2 subnormal grid w=2 units=(5, 4, 2)",
+    "K2 subnormal grid w=2 units=(5, 4, 3)",
+    "K2 subnormal grid w=2 units=(5, 4, 4)",
+    "K2 subnormal grid w=2 units=(5, 4, 5)",
+    "K2 subnormal grid w=2 units=(5, 4, 6)",
+    "K2 subnormal grid w=2 units=(5, 4, 7)",
+    "K2 subnormal grid w=2 units=(5, 4, 8)",
+    "K2 subnormal grid w=2 units=(5, 6, 1)",
+    "K2 subnormal grid w=2 units=(5, 6, 2)",
+    "K2 subnormal grid w=2 units=(5, 6, 3)",
+    "K2 subnormal grid w=2 units=(5, 6, 4)",
+    "K2 subnormal grid w=2 units=(5, 6, 5)",
+    "K2 subnormal grid w=2 units=(5, 6, 6)",
+    "K2 subnormal grid w=2 units=(5, 6, 7)",
+    "K2 subnormal grid w=2 units=(5, 6, 8)",
+    "K2 subnormal grid w=2 units=(5, 8, 1)",
+    "K2 subnormal grid w=2 units=(5, 8, 2)",
+    "K2 subnormal grid w=2 units=(5, 8, 3)",
+    "K2 subnormal grid w=2 units=(5, 8, 4)",
+    "K2 subnormal grid w=2 units=(5, 8, 5)",
+    "K2 subnormal grid w=2 units=(5, 8, 6)",
+    "K2 subnormal grid w=2 units=(5, 8, 7)",
+    "K2 subnormal grid w=2 units=(5, 8, 8)",
+    "K2 subnormal grid w=2 units=(6, 3, 1)",
+    "K2 subnormal grid w=2 units=(6, 3, 2)",
+    "K2 subnormal grid w=2 units=(6, 3, 3)",
+    "K2 subnormal grid w=2 units=(6, 3, 4)",
+    "K2 subnormal grid w=2 units=(6, 3, 5)",
+    "K2 subnormal grid w=2 units=(6, 3, 6)",
+    "K2 subnormal grid w=2 units=(6, 3, 7)",
+    "K2 subnormal grid w=2 units=(6, 3, 8)",
+    "K2 subnormal grid w=2 units=(6, 5, 1)",
+    "K2 subnormal grid w=2 units=(6, 5, 2)",
+    "K2 subnormal grid w=2 units=(6, 5, 3)",
+    "K2 subnormal grid w=2 units=(6, 5, 4)",
+    "K2 subnormal grid w=2 units=(6, 5, 5)",
+    "K2 subnormal grid w=2 units=(6, 5, 6)",
+    "K2 subnormal grid w=2 units=(6, 5, 7)",
+    "K2 subnormal grid w=2 units=(6, 5, 8)",
+    "K2 subnormal grid w=2 units=(6, 7, 1)",
+    "K2 subnormal grid w=2 units=(6, 7, 2)",
+    "K2 subnormal grid w=2 units=(6, 7, 3)",
+    "K2 subnormal grid w=2 units=(6, 7, 4)",
+    "K2 subnormal grid w=2 units=(6, 7, 5)",
+    "K2 subnormal grid w=2 units=(6, 7, 6)",
+    "K2 subnormal grid w=2 units=(6, 7, 7)",
+    "K2 subnormal grid w=2 units=(6, 7, 8)",
+    "K2 subnormal grid w=2 units=(7, 2, 1)",
+    "K2 subnormal grid w=2 units=(7, 2, 2)",
+    "K2 subnormal grid w=2 units=(7, 2, 3)",
+    "K2 subnormal grid w=2 units=(7, 2, 4)",
+    "K2 subnormal grid w=2 units=(7, 2, 5)",
+    "K2 subnormal grid w=2 units=(7, 2, 6)",
+    "K2 subnormal grid w=2 units=(7, 2, 7)",
+    "K2 subnormal grid w=2 units=(7, 2, 8)",
+    "K2 subnormal grid w=2 units=(7, 4, 1)",
+    "K2 subnormal grid w=2 units=(7, 4, 2)",
+    "K2 subnormal grid w=2 units=(7, 4, 3)",
+    "K2 subnormal grid w=2 units=(7, 4, 4)",
+    "K2 subnormal grid w=2 units=(7, 4, 5)",
+    "K2 subnormal grid w=2 units=(7, 4, 6)",
+    "K2 subnormal grid w=2 units=(7, 4, 7)",
+    "K2 subnormal grid w=2 units=(7, 4, 8)",
+    "K2 subnormal grid w=2 units=(7, 6, 1)",
+    "K2 subnormal grid w=2 units=(7, 6, 2)",
+    "K2 subnormal grid w=2 units=(7, 6, 3)",
+    "K2 subnormal grid w=2 units=(7, 6, 4)",
+    "K2 subnormal grid w=2 units=(7, 6, 5)",
+    "K2 subnormal grid w=2 units=(7, 6, 6)",
+    "K2 subnormal grid w=2 units=(7, 6, 7)",
+    "K2 subnormal grid w=2 units=(7, 6, 8)",
+    "K2 subnormal grid w=2 units=(8, 1, 1)",
+    "K2 subnormal grid w=2 units=(8, 1, 2)",
+    "K2 subnormal grid w=2 units=(8, 1, 3)",
+    "K2 subnormal grid w=2 units=(8, 1, 4)",
+    "K2 subnormal grid w=2 units=(8, 1, 5)",
+    "K2 subnormal grid w=2 units=(8, 1, 6)",
+    "K2 subnormal grid w=2 units=(8, 1, 7)",
+    "K2 subnormal grid w=2 units=(8, 1, 8)",
+    "K2 subnormal grid w=2 units=(8, 3, 1)",
+    "K2 subnormal grid w=2 units=(8, 3, 2)",
+    "K2 subnormal grid w=2 units=(8, 3, 3)",
+    "K2 subnormal grid w=2 units=(8, 3, 4)",
+    "K2 subnormal grid w=2 units=(8, 3, 5)",
+    "K2 subnormal grid w=2 units=(8, 3, 6)",
+    "K2 subnormal grid w=2 units=(8, 3, 7)",
+    "K2 subnormal grid w=2 units=(8, 3, 8)",
+    "K2 subnormal grid w=2 units=(8, 5, 1)",
+    "K2 subnormal grid w=2 units=(8, 5, 2)",
+    "K2 subnormal grid w=2 units=(8, 5, 3)",
+    "K2 subnormal grid w=2 units=(8, 5, 4)",
+    "K2 subnormal grid w=2 units=(8, 5, 5)",
+    "K2 subnormal grid w=2 units=(8, 5, 6)",
+    "K2 subnormal grid w=2 units=(8, 5, 7)",
+    "K2 subnormal grid w=2 units=(8, 5, 8)",
+    "K2 subnormal grid w=3 units=(1, 1, 4)",
+    "K2 subnormal grid w=3 units=(1, 1, 8)",
+    "K2 subnormal grid w=3 units=(1, 6, 1)",
+    "K2 subnormal grid w=3 units=(2, 2, 3)",
+    "K2 subnormal grid w=3 units=(2, 2, 5)",
+    "K2 subnormal grid w=3 units=(2, 2, 7)",
+    "K2 subnormal grid w=3 units=(2, 7, 8)",
+    "K2 subnormal grid w=3 units=(3, 3, 2)",
+    "K2 subnormal grid w=3 units=(3, 3, 6)",
+    "K2 subnormal grid w=3 units=(3, 3, 8)",
+    "K2 subnormal grid w=3 units=(3, 8, 7)",
+    "K2 subnormal grid w=3 units=(4, 4, 1)",
+    "K2 subnormal grid w=3 units=(4, 4, 3)",
+    "K2 subnormal grid w=3 units=(4, 4, 7)",
+    "K2 subnormal grid w=3 units=(5, 5, 2)",
+    "K2 subnormal grid w=3 units=(5, 5, 6)",
+    "K2 subnormal grid w=3 units=(5, 5, 8)",
+    "K2 subnormal grid w=3 units=(6, 1, 8)",
+    "K2 subnormal grid w=3 units=(6, 6, 1)",
+    "K2 subnormal grid w=3 units=(6, 6, 5)",
+    "K2 subnormal grid w=3 units=(6, 6, 7)",
+    "K2 subnormal grid w=3 units=(7, 2, 3)",
+    "K2 subnormal grid w=3 units=(7, 2, 5)",
+    "K2 subnormal grid w=3 units=(7, 2, 7)",
+    "K2 subnormal grid w=3 units=(7, 7, 4)",
+    "K2 subnormal grid w=3 units=(7, 7, 6)",
+    "K2 subnormal grid w=3 units=(7, 7, 8)",
+    "K2 subnormal grid w=3 units=(8, 3, 2)",
+    "K2 subnormal grid w=3 units=(8, 3, 4)",
+    "K2 subnormal grid w=3 units=(8, 3, 6)",
+    "K2 subnormal grid w=3 units=(8, 8, 3)",
+    "K2 subnormal grid w=3 units=(8, 8, 5)",
+    "K2 subnormal grid w=3 units=(8, 8, 7)"
+  ],
+  "check_count": 3581,
+  "code_findings": [
+    {
+      "cause": "Logarithm/exponential roundoff moves exact rational subnormal midpoints across rounding boundaries; no correctly-rounded final rescaling is provided.",
+      "effect": "Original all-products-zero rejection is fixed, but heterogeneous finite positive support still has a material relative numeric error. No competition outcome exposure.",
+      "expected": "For u=2^-1074, weights (1/4,1/4,1/2), support (u,u,4u), exact CE=5u/2, correctly rounded binary64 CE=2u.",
+      "id": "K2",
+      "observed": "Pinned new code returns 3u at n=0; check records retain all n=0..5 and grid observations.",
+      "requested_action": "Chief must resolve this separate numeric blocker under a new task or explicit numerical contract; no source or parameter edits are authorized here.",
+      "severity": "material_relative_error_at_subnormal_rounding_boundary"
+    }
+  ],
+  "code_verdict": "changes_required",
+  "corrected_design_verdict": "approve",
+  "immutable_task_commit": "27c6c26effb14dd9148476d129248640df715947",
+  "immutable_task_sha256": "323fb71bf92c8786dd9659e8021fdecc7f3b17fbac17208e8a7c77c49cea6019",
+  "imported_code_sha256": {
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+    "src/safeinvest/policy_pilot.py": "9026abd22818fb420ce75dcf100b461c1833eab8be03526366dd3faadaa77bba"
+  },
+  "limitations": [
+    "Synthetic kernel review only; no competition CSVs or outcomes read.",
+    "No production loader, writer, calibration, selector or final-run certification.",
+    "SOL-013 design approval is inherited, not a new parameter or performance review.",
+    "Finite fixtures cannot prove correctly rounded CE for every binary64 input; numerical tolerances are explicit.",
+    "Injected scores exercise strict hurdle/tie mechanics; the tiny transfer uses the actual CE gate.",
+    "Chief tests are provisional provenance, not independent acceptance; chief accepts exact delivered evidence."
+  ],
+  "normative_parameters": {
+    "adaptive_min_completed_years": 5,
+    "decision_epsilon": 1e-12,
+    "fee_buffer_multiplier": 2,
+    "fee_rates": [
+      0.0025,
+      0.005
+    ],
+    "gamma": 4,
+    "history_window": 5,
+    "prior_equivalent_years": 15,
+    "review_drawdown_pct": 25,
+    "targets": {
+      "balanced": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "conservative": [
+        0.15,
+        0.2,
+        0.65
+      ],
+      "defensive": [
+        0.2,
+        0.25,
+        0.55
+      ],
+      "growth": [
+        0.6,
+        0.3,
+        0.1
+      ],
+      "growth_tilt": [
+        0.45,
+        0.3,
+        0.25
+      ]
+    },
+    "trade_amount_epsilon": 1e-10
+  },
+  "numerical_facts": {
+    "initial_exact": {
+      "buffered": "3887/3750",
+      "each_post_fee": "599/18",
+      "fee": "1/6",
+      "transfer": "200/3",
+      "true_net_ce": "7787/7500",
+      "wealth_end": "7787/75"
+    },
+    "initial_observed": {
+      "buffered": 1.036533333333333,
+      "each_post_fee": 33.27777777777777,
+      "fee": 0.16666666666666669,
+      "transfer": 66.66666666666667,
+      "true_net_ce": 1.0382666666666664,
+      "wealth_end": 103.82666666666665
+    },
+    "invalid_observation_diagnoses": {
+      "empty prior": "ValueError: prior requires at least one observation",
+      "invalid final bill_proxy_return suspended=False": "ValueError: bill_proxy_return must be finite",
+      "invalid final bill_proxy_return suspended=True": "ValueError: bill_proxy_return must be finite",
+      "invalid final bond_return suspended=False": "ValueError: bond_return must be finite",
+      "invalid final bond_return suspended=True": "ValueError: bond_return must be finite",
+      "invalid final equity_return suspended=False": "ValueError: policy requires strictly positive asset and CPI factors",
+      "invalid final equity_return suspended=True": "ValueError: policy requires strictly positive asset and CPI factors",
+      "invalid final inflation suspended=False": "ValueError: CPI must be positive and inflation greater than -1",
+      "invalid final inflation suspended=True": "ValueError: CPI must be positive and inflation greater than -1",
+      "invalid prior -1.0 pos=0 n=0": "ValueError: all real gross factors must be positive",
+      "invalid prior -1.0 pos=0 n=1": "ValueError: all real gross factors must be positive",
+      "invalid prior -1.0 pos=0 n=2": "ValueError: all real gross factors must be positive",
+      "invalid prior -1.0 pos=0 n=3": "ValueError: all real gross factors must be positive",
+      "invalid prior -1.0 pos=0 n=4": "ValueError: all real gross factors must be positive",
+      "invalid prior -1.0 pos=0 n=5": "ValueError: all real gross factors must be positive",
+      "invalid prior -1.0 pos=1 n=0": "ValueError: all real gross factors must be positive",
+      "invalid prior -1.0 pos=1 n=1": "ValueError: all real gross factors must be positive",
+      "invalid prior -1.0 pos=1 n=2": "ValueError: all real gross factors must be positive",
+      "invalid prior -1.0 pos=1 n=3": "ValueError: all real gross factors must be positive",
+      "invalid prior -1.0 pos=1 n=4": "ValueError: all real gross factors must be positive",
+      "invalid prior -1.0 pos=1 n=5": "ValueError: all real gross factors must be positive",
+      "invalid prior -1.0 pos=2 n=0": "ValueError: all real gross factors must be positive",
+      "invalid prior -1.0 pos=2 n=1": "ValueError: all real gross factors must be positive",
+      "invalid prior -1.0 pos=2 n=2": "ValueError: all real gross factors must be positive",
+      "invalid prior -1.0 pos=2 n=3": "ValueError: all real gross factors must be positive",
+      "invalid prior -1.0 pos=2 n=4": "ValueError: all real gross factors must be positive",
+      "invalid prior -1.0 pos=2 n=5": "ValueError: all real gross factors must be positive",
+      "invalid prior -inf pos=0 n=0": "ValueError: real gross factors must be finite",
+      "invalid prior -inf pos=0 n=1": "ValueError: real gross factors must be finite",
+      "invalid prior -inf pos=0 n=2": "ValueError: real gross factors must be finite",
+      "invalid prior -inf pos=0 n=3": "ValueError: real gross factors must be finite",
+      "invalid prior -inf pos=0 n=4": "ValueError: real gross factors must be finite",
+      "invalid prior -inf pos=0 n=5": "ValueError: real gross factors must be finite",
+      "invalid prior -inf pos=1 n=0": "ValueError: real gross factors must be finite",
+      "invalid prior -inf pos=1 n=1": "ValueError: real gross factors must be finite",
+      "invalid prior -inf pos=1 n=2": "ValueError: real gross factors must be finite",
+      "invalid prior -inf pos=1 n=3": "ValueError: real gross factors must be finite",
+      "invalid prior -inf pos=1 n=4": "ValueError: real gross factors must be finite",
+      "invalid prior -inf pos=1 n=5": "ValueError: real gross factors must be finite",
+      "invalid prior -inf pos=2 n=0": "ValueError: real gross factors must be finite",
+      "invalid prior -inf pos=2 n=1": "ValueError: real gross factors must be finite",
+      "invalid prior -inf pos=2 n=2": "ValueError: real gross factors must be finite",
+      "invalid prior -inf pos=2 n=3": "ValueError: real gross factors must be finite",
+      "invalid prior -inf pos=2 n=4": "ValueError: real gross factors must be finite",
+      "invalid prior -inf pos=2 n=5": "ValueError: real gross factors must be finite",
+      "invalid prior 0.0 pos=0 n=0": "ValueError: all real gross factors must be positive",
+      "invalid prior 0.0 pos=0 n=1": "ValueError: all real gross factors must be positive",
+      "invalid prior 0.0 pos=0 n=2": "ValueError: all real gross factors must be positive",
+      "invalid prior 0.0 pos=0 n=3": "ValueError: all real gross factors must be positive",
+      "invalid prior 0.0 pos=0 n=4": "ValueError: all real gross factors must be positive",
+      "invalid prior 0.0 pos=0 n=5": "ValueError: all real gross factors must be positive",
+      "invalid prior 0.0 pos=1 n=0": "ValueError: all real gross factors must be positive",
+      "invalid prior 0.0 pos=1 n=1": "ValueError: all real gross factors must be positive",
+      "invalid prior 0.0 pos=1 n=2": "ValueError: all real gross factors must be positive",
+      "invalid prior 0.0 pos=1 n=3": "ValueError: all real gross factors must be positive",
+      "invalid prior 0.0 pos=1 n=4": "ValueError: all real gross factors must be positive",
+      "invalid prior 0.0 pos=1 n=5": "ValueError: all real gross factors must be positive",
+      "invalid prior 0.0 pos=2 n=0": "ValueError: all real gross factors must be positive",
+      "invalid prior 0.0 pos=2 n=1": "ValueError: all real gross factors must be positive",
+      "invalid prior 0.0 pos=2 n=2": "ValueError: all real gross factors must be positive",
+      "invalid prior 0.0 pos=2 n=3": "ValueError: all real gross factors must be positive",
+      "invalid prior 0.0 pos=2 n=4": "ValueError: all real gross factors must be positive",
+      "invalid prior 0.0 pos=2 n=5": "ValueError: all real gross factors must be positive",
+      "invalid prior inf pos=0 n=0": "ValueError: real gross factors must be finite",
+      "invalid prior inf pos=0 n=1": "ValueError: real gross factors must be finite",
+      "invalid prior inf pos=0 n=2": "ValueError: real gross factors must be finite",
+      "invalid prior inf pos=0 n=3": "ValueError: real gross factors must be finite",
+      "invalid prior inf pos=0 n=4": "ValueError: real gross factors must be finite",
+      "invalid prior inf pos=0 n=5": "ValueError: real gross factors must be finite",
+      "invalid prior inf pos=1 n=0": "ValueError: real gross factors must be finite",
+      "invalid prior inf pos=1 n=1": "ValueError: real gross factors must be finite",
+      "invalid prior inf pos=1 n=2": "ValueError: real gross factors must be finite",
+      "invalid prior inf pos=1 n=3": "ValueError: real gross factors must be finite",
+      "invalid prior inf pos=1 n=4": "ValueError: real gross factors must be finite",
+      "invalid prior inf pos=1 n=5": "ValueError: real gross factors must be finite",
+      "invalid prior inf pos=2 n=0": "ValueError: real gross factors must be finite",
+      "invalid prior inf pos=2 n=1": "ValueError: real gross factors must be finite",
+      "invalid prior inf pos=2 n=2": "ValueError: real gross factors must be finite",
+      "invalid prior inf pos=2 n=3": "ValueError: real gross factors must be finite",
+      "invalid prior inf pos=2 n=4": "ValueError: real gross factors must be finite",
+      "invalid prior inf pos=2 n=5": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=0 n=0": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=0 n=1": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=0 n=2": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=0 n=3": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=0 n=4": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=0 n=5": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=1 n=0": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=1 n=1": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=1 n=2": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=1 n=3": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=1 n=4": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=1 n=5": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=2 n=0": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=2 n=1": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=2 n=2": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=2 n=3": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=2 n=4": "ValueError: real gross factors must be finite",
+      "invalid prior nan pos=2 n=5": "ValueError: real gross factors must be finite",
+      "invalid recent -1.0 pos=0 n=1": "ValueError: all real gross factors must be positive",
+      "invalid recent -1.0 pos=0 n=2": "ValueError: all real gross factors must be positive",
+      "invalid recent -1.0 pos=0 n=3": "ValueError: all real gross factors must be positive",
+      "invalid recent -1.0 pos=0 n=4": "ValueError: all real gross factors must be positive",
+      "invalid recent -1.0 pos=0 n=5": "ValueError: all real gross factors must be positive",
+      "invalid recent -1.0 pos=1 n=1": "ValueError: all real gross factors must be positive",
+      "invalid recent -1.0 pos=1 n=2": "ValueError: all real gross factors must be positive",
+      "invalid recent -1.0 pos=1 n=3": "ValueError: all real gross factors must be positive",
+      "invalid recent -1.0 pos=1 n=4": "ValueError: all real gross factors must be positive",
+      "invalid recent -1.0 pos=1 n=5": "ValueError: all real gross factors must be positive",
+      "invalid recent -1.0 pos=2 n=1": "ValueError: all real gross factors must be positive",
+      "invalid recent -1.0 pos=2 n=2": "ValueError: all real gross factors must be positive",
+      "invalid recent -1.0 pos=2 n=3": "ValueError: all real gross factors must be positive",
+      "invalid recent -1.0 pos=2 n=4": "ValueError: all real gross factors must be positive",
+      "invalid recent -1.0 pos=2 n=5": "ValueError: all real gross factors must be positive",
+      "invalid recent -inf pos=0 n=1": "ValueError: real gross factors must be finite",
+      "invalid recent -inf pos=0 n=2": "ValueError: real gross factors must be finite",
+      "invalid recent -inf pos=0 n=3": "ValueError: real gross factors must be finite",
+      "invalid recent -inf pos=0 n=4": "ValueError: real gross factors must be finite",
+      "invalid recent -inf pos=0 n=5": "ValueError: real gross factors must be finite",
+      "invalid recent -inf pos=1 n=1": "ValueError: real gross factors must be finite",
+      "invalid recent -inf pos=1 n=2": "ValueError: real gross factors must be finite",
+      "invalid recent -inf pos=1 n=3": "ValueError: real gross factors must be finite",
+      "invalid recent -inf pos=1 n=4": "ValueError: real gross factors must be finite",
+      "invalid recent -inf pos=1 n=5": "ValueError: real gross factors must be finite",
+      "invalid recent -inf pos=2 n=1": "ValueError: real gross factors must be finite",
+      "invalid recent -inf pos=2 n=2": "ValueError: real gross factors must be finite",
+      "invalid recent -inf pos=2 n=3": "ValueError: real gross factors must be finite",
+      "invalid recent -inf pos=2 n=4": "ValueError: real gross factors must be finite",
+      "invalid recent -inf pos=2 n=5": "ValueError: real gross factors must be finite",
+      "invalid recent 0.0 pos=0 n=1": "ValueError: all real gross factors must be positive",
+      "invalid recent 0.0 pos=0 n=2": "ValueError: all real gross factors must be positive",
+      "invalid recent 0.0 pos=0 n=3": "ValueError: all real gross factors must be positive",
+      "invalid recent 0.0 pos=0 n=4": "ValueError: all real gross factors must be positive",
+      "invalid recent 0.0 pos=0 n=5": "ValueError: all real gross factors must be positive",
+      "invalid recent 0.0 pos=1 n=1": "ValueError: all real gross factors must be positive",
+      "invalid recent 0.0 pos=1 n=2": "ValueError: all real gross factors must be positive",
+      "invalid recent 0.0 pos=1 n=3": "ValueError: all real gross factors must be positive",
+      "invalid recent 0.0 pos=1 n=4": "ValueError: all real gross factors must be positive",
+      "invalid recent 0.0 pos=1 n=5": "ValueError: all real gross factors must be positive",
+      "invalid recent 0.0 pos=2 n=1": "ValueError: all real gross factors must be positive",
+      "invalid recent 0.0 pos=2 n=2": "ValueError: all real gross factors must be positive",
+      "invalid recent 0.0 pos=2 n=3": "ValueError: all real gross factors must be positive",
+      "invalid recent 0.0 pos=2 n=4": "ValueError: all real gross factors must be positive",
+      "invalid recent 0.0 pos=2 n=5": "ValueError: all real gross factors must be positive",
+      "invalid recent inf pos=0 n=1": "ValueError: real gross factors must be finite",
+      "invalid recent inf pos=0 n=2": "ValueError: real gross factors must be finite",
+      "invalid recent inf pos=0 n=3": "ValueError: real gross factors must be finite",
+      "invalid recent inf pos=0 n=4": "ValueError: real gross factors must be finite",
+      "invalid recent inf pos=0 n=5": "ValueError: real gross factors must be finite",
+      "invalid recent inf pos=1 n=1": "ValueError: real gross factors must be finite",
+      "invalid recent inf pos=1 n=2": "ValueError: real gross factors must be finite",
+      "invalid recent inf pos=1 n=3": "ValueError: real gross factors must be finite",
+      "invalid recent inf pos=1 n=4": "ValueError: real gross factors must be finite",
+      "invalid recent inf pos=1 n=5": "ValueError: real gross factors must be finite",
+      "invalid recent inf pos=2 n=1": "ValueError: real gross factors must be finite",
+      "invalid recent inf pos=2 n=2": "ValueError: real gross factors must be finite",
+      "invalid recent inf pos=2 n=3": "ValueError: real gross factors must be finite",
+      "invalid recent inf pos=2 n=4": "ValueError: real gross factors must be finite",
+      "invalid recent inf pos=2 n=5": "ValueError: real gross factors must be finite",
+      "invalid recent nan pos=0 n=1": "ValueError: real gross factors must be finite",
+      "invalid recent nan pos=0 n=2": "ValueError: real gross factors must be finite",
+      "invalid recent nan pos=0 n=3": "ValueError: real gross factors must be finite",
+      "invalid recent nan pos=0 n=4": "ValueError: real gross factors must be finite",
+      "invalid recent nan pos=0 n=5": "ValueError: real gross factors must be finite",
+      "invalid recent nan pos=1 n=1": "ValueError: real gross factors must be finite",
+      "invalid recent nan pos=1 n=2": "ValueError: real gross factors must be finite",
+      "invalid recent nan pos=1 n=3": "ValueError: real gross factors must be finite",
+      "invalid recent nan pos=1 n=4": "ValueError: real gross factors must be finite",
+      "invalid recent nan pos=1 n=5": "ValueError: real gross factors must be finite",
+      "invalid recent nan pos=2 n=1": "ValueError: real gross factors must be finite",
+      "invalid recent nan pos=2 n=2": "ValueError: real gross factors must be finite",
+      "invalid recent nan pos=2 n=3": "ValueError: real gross factors must be finite",
+      "invalid recent nan pos=2 n=4": "ValueError: real gross factors must be finite",
+      "invalid recent nan pos=2 n=5": "ValueError: real gross factors must be finite",
+      "n greater than five": "ValueError: at most five completed annual observations"
+    },
+    "minimum_subnormal_hex": "0x0.0000000000001p-1022",
+    "real_tiny_target_change": {
+      "action": "target_change",
+      "active_after": "growth_tilt",
+      "active_before": "balanced",
+      "actual_fee": 2.91271096747931e-15,
+      "ce_keep": 1.0757117357274035,
+      "executed_target_change": true,
+      "first_deployment_year": 1,
+      "human_review_latched": false,
+      "initial_allocation_deferred": false,
+      "intended_transfer": 1.165084386991724e-12,
+      "is_trade": false,
+      "observed_max_drawdown_pct": 0.16666666666668162,
+      "period": 6,
+      "prior_mass": 0.75,
+      "proposed_target": "growth_tilt",
+      "reason": "target_change",
+      "recent_count": 5,
+      "scenario_id": 9001,
+      "scores": [
+        {
+          "ce_keep": 1.0757117357274035,
+          "ce_target": 1.0757117357274033,
+          "conservative_score": 1.0757117357274033,
+          "fee_fraction": 2.0816681711721684e-19,
+          "modeled_fee_impact": 2.2392748816201027e-19,
+          "name": "balanced",
+          "pre_cost_benefit": -2.220446049250313e-16,
+          "target": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "tau": 8.326672684688674e-17,
+          "true_net_ce": 1.0757117357274033
+        },
+        {
+          "ce_keep": 1.0757117357274035,
+          "ce_target": 1.047159316248213,
+          "conservative_score": 1.0460248936556107,
+          "fee_fraction": 0.0005416666666666668,
+          "modeled_fee_impact": 0.0005672112963011155,
+          "name": "defensive",
+          "pre_cost_benefit": -0.028552419479190627,
+          "target": [
+            0.2,
+            0.25,
+            0.55
+          ],
+          "tau": 0.2166666666666667,
+          "true_net_ce": 1.0465921049519118
+        },
+        {
+          "ce_keep": 1.0757117357274035,
+          "ce_target": 1.0982564356594917,
+          "conservative_score": 1.0976157860720237,
+          "fee_fraction": 0.00029166666666666675,
+          "modeled_fee_impact": 0.0003203247937340185,
+          "name": "growth_tilt",
+          "pre_cost_benefit": 0.022544699932088186,
+          "target": [
+            0.45,
+            0.3,
+            0.25
+          ],
+          "tau": 0.1166666666666667,
+          "true_net_ce": 1.0979361108657577
+        }
+      ],
+      "selected_target": "growth_tilt"
+    },
+    "subnormal_grid_count": 2048,
+    "subnormal_grid_failed_count": 475,
+    "subnormal_grid_failures": [
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          1,
+          4
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          1,
+          8
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          3,
+          3
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          3,
+          5
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          3,
+          7
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          5,
+          2
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          5,
+          6
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          5,
+          8
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          7,
+          1
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          7,
+          7
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          2,
+          3
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          2,
+          5
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          2,
+          7
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          4,
+          2
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          4,
+          6
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          4,
+          8
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          6,
+          1
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          6,
+          7
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          8,
+          2
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          8,
+          4
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          8,
+          6
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          2,
+          8,
+          8
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          1,
+          3
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          1,
+          5
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          1,
+          7
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          3,
+          2
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          3,
+          6
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          3,
+          8
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          5,
+          1
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          5,
+          3
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          5,
+          7
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          7,
+          2
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          7,
+          4
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          7,
+          6
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          3,
+          7,
+          8
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          4,
+          2,
+          2
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          2,
+          6
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          2,
+          8
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          4,
+          4,
+          1
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          4,
+          7
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          6,
+          4
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          6,
+          6
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          4,
+          6,
+          8
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          4,
+          8,
+          1
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          8,
+          5
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          4,
+          8,
+          7
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          5,
+          1,
+          2
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          1,
+          6
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          1,
+          8
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          5,
+          3,
+          1
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          5,
+          3,
+          3
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          3,
+          7
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          5,
+          5,
+          2
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          5,
+          6
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          5,
+          5,
+          8
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          5,
+          7,
+          1
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          7,
+          5
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          5,
+          7,
+          7
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          6,
+          2,
+          1
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          2,
+          7
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          4,
+          4
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          4,
+          6
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          6,
+          4,
+          8
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          6,
+          3
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          6,
+          5
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          6,
+          6,
+          7
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          8,
+          4
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          6,
+          8,
+          6
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          7,
+          1,
+          1
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          1,
+          7
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          7,
+          3,
+          2
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          3,
+          4
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          3,
+          6
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          7,
+          3,
+          8
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          7,
+          5,
+          1
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          5,
+          5
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          7,
+          5,
+          7
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          7,
+          4
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          7,
+          7,
+          6
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          8,
+          2,
+          2
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          2,
+          4
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          2,
+          6
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          2,
+          8
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          8,
+          4,
+          1
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          4,
+          5
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          4,
+          7
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          6,
+          4
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          6,
+          6
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          8,
+          3
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          8,
+          5
+        ],
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          1,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          1,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          2,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          2,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          3,
+          2
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          3,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          3,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          4,
+          1
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          4,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          4,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          5,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          5,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          1,
+          5,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          6,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          6,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          1,
+          6,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          7,
+          2
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          7,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          1,
+          7,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          8,
+          1
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          8,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          1,
+          8,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          1,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          1,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          2,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          2,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          3,
+          2
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          3,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          3,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          4,
+          1
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          4,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          4,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          5,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          5,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          2,
+          5,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          6,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          6,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          2,
+          6,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          7,
+          2
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          7,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          2,
+          7,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          8,
+          1
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          8,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          2,
+          8,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          1,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          1,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          2,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          2,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          3,
+          2
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          3,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          3,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          4,
+          1
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          4,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          4,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          5,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          5,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          3,
+          5,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          6,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          6,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          3,
+          6,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          7,
+          2
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          7,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          3,
+          7,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          8,
+          1
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          8,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          3,
+          8,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          4,
+          1,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          1,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          4,
+          2,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          2,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          4,
+          3,
+          2
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          3,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          3,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          4,
+          4,
+          1
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          4,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          4,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          5,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          5,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          4,
+          5,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          6,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          6,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          4,
+          6,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          7,
+          2
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          7,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          4,
+          7,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          8,
+          1
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          8,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          4,
+          8,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          5,
+          1,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          1,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          5,
+          2,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          2,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          5,
+          3,
+          2
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          3,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          3,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          5,
+          4,
+          1
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          4,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          4,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          5,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          5,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          5,
+          5,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          6,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          6,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          5,
+          6,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          7,
+          2
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          7,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          5,
+          7,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          8,
+          1
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          8,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          5,
+          8,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          6,
+          1,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          1,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          6,
+          2,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          2,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          6,
+          3,
+          2
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          3,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          3,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          6,
+          4,
+          1
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          4,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          4,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          5,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          5,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          6,
+          5,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          6,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          6,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          6,
+          6,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          7,
+          2
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          7,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          6,
+          7,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          8,
+          1
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          8,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          6,
+          8,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          7,
+          1,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          1,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          7,
+          2,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          2,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          7,
+          3,
+          2
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          3,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          3,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          7,
+          4,
+          1
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          4,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          4,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          5,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          5,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          7,
+          5,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          6,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          6,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          7,
+          6,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          7,
+          2
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          7,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          7,
+          7,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          8,
+          1
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          8,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          7,
+          8,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          8,
+          1,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          1,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          8,
+          2,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          2,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          8,
+          3,
+          2
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          3,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          3,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          8,
+          4,
+          1
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          4,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          4,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          5,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          5,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          5,
+          8
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          6,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          6,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          6,
+          7
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          7,
+          2
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          7,
+          4
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          7,
+          6
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          8,
+          1
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          8,
+          3
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          8,
+          5
+        ],
+        "weights": [
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          4,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          4,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          4,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          4,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          4,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          4,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          4,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          4,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          8,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          8,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          8,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          8,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          8,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          8,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          8,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          8,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          3,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          3,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          3,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          3,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          3,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          3,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          3,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          3,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          7,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          7,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          7,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          7,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          7,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          7,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          7,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          7,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          2,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          2,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          2,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          2,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          2,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          2,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          2,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          2,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          6,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          6,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          6,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          6,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          6,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          6,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          6,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          6,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          8,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          8,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          8,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          8,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          8,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          8,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          8,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          8,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          4,
+          1,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          4,
+          1,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          4,
+          1,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          4,
+          1,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          4,
+          1,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          4,
+          1,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          4,
+          1,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          4,
+          1,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          5,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          5,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          5,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          5,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          5,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          5,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          5,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          5,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          7,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          7,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          7,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          7,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          7,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          7,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          7,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          7,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          4,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          4,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          4,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          4,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          4,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          4,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          4,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          4,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          6,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          6,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          6,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          6,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          6,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          6,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          6,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          6,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          5,
+          8,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          5,
+          8,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          5,
+          8,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          5,
+          8,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          5,
+          8,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          5,
+          8,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          5,
+          8,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          5,
+          8,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          3,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          3,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          3,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          3,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          3,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          3,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          3,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          3,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          5,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          5,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          5,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          5,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          5,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          5,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          5,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          5,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          6,
+          7,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          6,
+          7,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          6,
+          7,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          6,
+          7,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          6,
+          7,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          6,
+          7,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          6,
+          7,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          6,
+          7,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          2,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          2,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          2,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          2,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          2,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          2,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          2,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          2,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          4,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          4,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          4,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          4,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          4,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          4,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          4,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          4,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          7,
+          6,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          7,
+          6,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          7,
+          6,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          7,
+          6,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          7,
+          6,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          7,
+          6,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          7,
+          6,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          7,
+          6,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          1,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          1,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          1,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          1,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          1,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          1,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          1,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          1,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          3,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          3,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          3,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          3,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          3,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          3,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          3,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          3,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          5,
+          1
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          5,
+          2
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          5,
+          3
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          5,
+          4
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          5,
+          5
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          5,
+          6
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          5,
+          7
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          5,
+          8
+        ],
+        "weights": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          1,
+          4
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          1,
+          1,
+          8
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          1,
+          6,
+          1
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          2,
+          3
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          2,
+          2,
+          5
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          2,
+          2,
+          7
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          2,
+          7,
+          8
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          3,
+          3,
+          2
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          3,
+          6
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          3,
+          3,
+          8
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          3,
+          8,
+          7
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000002p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          4,
+          4,
+          1
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          4,
+          4,
+          3
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          4,
+          4,
+          7
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          5,
+          5,
+          2
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          5,
+          5,
+          6
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          5,
+          5,
+          8
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          1,
+          8
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          6,
+          6,
+          1
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          6,
+          6,
+          5
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          6,
+          6,
+          7
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          7,
+          2,
+          3
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000005p-1022",
+        "observed_hex": "0x0.0000000000004p-1022",
+        "support_units": [
+          7,
+          2,
+          5
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          2,
+          7
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          7,
+          7,
+          4
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          7,
+          7,
+          6
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000008p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          7,
+          7,
+          8
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000004p-1022",
+        "observed_hex": "0x0.0000000000003p-1022",
+        "support_units": [
+          8,
+          3,
+          2
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000005p-1022",
+        "observed_hex": "0x0.0000000000004p-1022",
+        "support_units": [
+          8,
+          3,
+          4
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          3,
+          6
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000005p-1022",
+        "support_units": [
+          8,
+          8,
+          3
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000006p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          8,
+          5
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      },
+      {
+        "expected_hex": "0x0.0000000000008p-1022",
+        "observed_hex": "0x0.0000000000007p-1022",
+        "support_units": [
+          8,
+          8,
+          7
+        ],
+        "weights": [
+          0.2,
+          0.3,
+          0.5
+        ]
+      }
+    ]
+  },
+  "precision": "New extreme oracle: exact Fraction moments; Decimal 160/240-digit rounded-float agreement. Ordinary reused oracle: 80 digits. All absolute tolerances zero; CE up to 1024 minimum-subnormal units compared exactly. Larger subnormals use relative tolerance 3e-12.",
+  "prior_review_commit": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+  "reuse_method": "Execute exact old module without mutation; call named scalar helpers only. Own new task/source boundary. Old bind_sources, collect and evidence are untouched and unused.",
+  "reused_unchanged_helpers": [
+    "ce (80-digit Decimal; ordinary factors only)",
+    "score",
+    "choose",
+    "oracle_path (tiny-transfer path only)",
+    "rows",
+    "toy_run",
+    "TARGETS"
+  ],
+  "schema_version": 1,
+  "source_sha256": {
+    "audit/SOL-013/findings.json": "b2c82f41ed0abd7c62cf350ed5b554c967085d5cbbee70a3e62d4f6feb64c6bd",
+    "audit/SOL-013/verify.py": "4ca6fb8069234543e165fde9b4a19c2bcd9480f0d07b87fdf446fad5be0a94bf",
+    "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+    "audit/chief/policy-k1-validation.json": "4f84abd57d5e08bbca544c70972db08b9056c87bcab9af65373e1cb6897dd00f",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+    "specs/POLICY_NUMERIC_K1.md": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+    "src/safeinvest/policy_pilot.py": "9026abd22818fb420ce75dcf100b461c1833eab8be03526366dd3faadaa77bba",
+    "tests/test_policy_pilot.py": "09cbe72579f46be55f8f2ecf8187127260ff414fd88834ed52bb6225212bdc95"
+  },
+  "task_id": "SOL-017"
+}

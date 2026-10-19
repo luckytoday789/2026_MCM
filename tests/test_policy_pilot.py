@@ -233,6 +233,35 @@ class PolicyKernelTests(unittest.TestCase):
         self.assertNotEqual(entry.holdings_after_fee,entry.holdings_before)
         self.assertEqual(reviews[1].first_deployment_year,1)
 
+    def test_k2_exact_subnormal_midpoint_grid_and_recent_mixture(self):
+        # Exact constant support reduces CE to its rational weighted gross.
+        # This tests both midpoint directions and heterogeneous support.
+        import itertools
+        tiny = math.ulp(0.)
+        for weights in ((.25,.25,.5),(.2,.3,.5),(0.,.5,.5),(1/3,)*3):
+            total = sum(F(x) for x in weights)
+            for units in itertools.product(range(1,9), repeat=3):
+                support = tuple(x*tiny for x in units)
+                expected = float(sum(F(w)*F(g) for w,g in zip(weights,support))/total)
+                actual = EmpiricalPrior((support,)).certainty_equivalent(weights)
+                self.assertEqual(actual, expected, (weights, units))
+        # For all 15:n mixtures, independently compare cubed midpoints with
+        # the exact inverse-cube moment; no production rounding helper used.
+        weights = (.25,.25,.5)
+        prior_row = (tiny,tiny,4*tiny)
+        recent_row = (tiny,3*tiny,5*tiny)
+        prior_gross = F(5,2)*F(tiny)
+        recent_gross = F(7,2)*F(tiny)
+        for n in range(6):
+            actual = EmpiricalPrior((prior_row,)).certainty_equivalent(weights,(recent_row,)*n)
+            moment = (15/prior_gross**3+n/recent_gross**3)/(15+n)
+            lower = (F(math.nextafter(actual,0.))+F(actual))/2
+            upper = (F(math.nextafter(actual,math.inf))+F(actual))/2
+            self.assertLessEqual(lower**3*moment,1)
+            self.assertGreaterEqual(upper**3*moment,1)
+            constant = EmpiricalPrior((prior_row,)).certainty_equivalent(weights,(prior_row,)*n)
+            self.assertEqual(constant,2*tiny)
+
     def test_parameters_match_published_proposal(self):
         config = json.loads((ROOT / "specs/development_policy_pilot_v2.json").read_bytes())
         mapping = {"defensive":"balanced_defensive", "growth_tilt":"balanced_growth_tilt"}
