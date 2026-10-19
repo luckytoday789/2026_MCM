@@ -194,6 +194,15 @@
       "task_sha256": "561143f6312aebe4090cb2e9f548eddb4b19b73722130d362de5eeb068007b39",
       "branch": "work/sol/SOL-006-a1",
       "note": "Independent exact HY3-003 numerical review plus separate small scheduler review. All accepted prerequisites met; HY3-003 is the review target, not an acceptance dependency."
+    },
+    {
+      "id": "SOL-007",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "f7fc69b91cafcfd5a79f3d5739bc165404360a0d7dda04fa1dd4f4dda6a89191",
+      "branch": "work/sol/SOL-007-a1",
+      "note": "Independent chief policy/specification review; no outcome computation. All true dependencies accepted, so Sol may take this after its current task without awaiting unrelated HY3 result acceptance."
     }
   ]
 }
