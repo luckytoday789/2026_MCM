@@ -1,8 +1,11 @@
 {
   "role": "sol",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
-  "state": "running",
-  "updated_at": "2026-10-19T12:44:27.562380+00:00",
-  "lease_until": "2026-10-19T12:54:27.562380+00:00",
-  "task_id": "SOL-002"
+  "state": "submitted",
+  "updated_at": "2026-10-19T12:48:02.529264+00:00",
+  "lease_until": "2026-10-19T12:58:02.529264+00:00",
+  "task_id": "SOL-002",
+  "result_status": "completed",
+  "commit": "54d90abd3d35f6578bab964cd54dcce42e578f53",
+  "branch": "work/sol/SOL-002-a1"
 }
