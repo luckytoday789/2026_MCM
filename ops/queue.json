@@ -96,6 +96,15 @@
       "task_sha256": "d3f1e845573fc1e7c170fd4b126130a6a344348138d588828517fd334d4c39d8",
       "branch": "work/hy3/HY3-002-a1",
       "note": "Released after accepted SOL-003 and live Python 3.12.10 registration; immutable task unchanged."
+    },
+    {
+      "id": "SOL-004",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "211161b9a8b10bfdb50e895c65493ac4b239cbf011e0f700789072f329d68c25",
+      "branch": "work/sol/SOL-004-a1",
+      "note": "Implement reviewed baseline design and independently review chief v1.1 clarifications. Synthetic tests only; future HY3 run requires chief exact-commit acceptance and HY3-002."
     }
   ]
 }

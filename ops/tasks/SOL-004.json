@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "SOL-004",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "ce2692b9b418ee4044da2930fb715d57ed83e500",
+  "depends_on": [
+    "SOL-001",
+    "SOL-002",
+    "SOL-003"
+  ],
+  "split": "development",
+  "max_seconds": 1800,
+  "scope": "Implement the three fixed baseline driver using generated synthetic tests only; independently review chief v1.1 clarifications, no competition performance.",
+  "parameters": {
+    "plan_id": "development-baselines-v1.1",
+    "config_path": "specs/development_baselines_v1_1.json",
+    "required_python": "3.12",
+    "cpu_only": true,
+    "competition_performance_allowed": false,
+    "final_outcomes_allowed": false,
+    "hash_basis": "canonical_git_blob",
+    "source_sha256": {
+      "specs/DEVELOPMENT_BASELINE_DRIVER.md": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0",
+      "specs/development_baselines_v1_1.json": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224",
+      "specs/DEVELOPMENT_BASELINES.md": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "src/safeinvest/backtest.py": "f82c63a3fe78889d243bbbb344d20cbe9edb54981c7ca07b1f5006b9f79b28cd",
+      "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "audit/chief/accounting_oracle.json": "85caa997e09b1cf2a02118f4f101137919ad7b38ce662caed7a594c569ed1377"
+    }
+  },
+  "allowed_paths": [
+    "src/safeinvest/backtest.py",
+    "src/safeinvest/__init__.py",
+    "src/safeinvest/baselines.py",
+    "src/safeinvest/experiments.py",
+    "scripts/run_development_baselines.py",
+    "tests/test_development_baselines.py",
+    "audit/SOL-004"
+  ],
+  "deliverables": [
+    "src/safeinvest/baselines.py",
+    "src/safeinvest/experiments.py",
+    "scripts/run_development_baselines.py",
+    "tests/test_development_baselines.py",
+    "audit/SOL-004/implementation.md",
+    "audit/SOL-004/findings.json",
+    "audit/SOL-004/verification.json",
+    "audit/SOL-004/tests.txt"
+  ],
+  "commands": [],
+  "validation_commands": [
+    [
+      "{python}",
+      "-B",
+      "scripts/check_worker_env.py"
+    ],
+    [
+      "{python}",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ]
+  ],
+  "acceptance_checks": [
+    "Exact task/base/role/branch/hash and source versions verify; every changed path is allowed and required deliverables exist.",
+    "Chief-authored v1.1 rules independently reviewed with no unresolved material finding.",
+    "All 28 accounting and four protocol tests pass, plus meaningful synthetic driver tests with actual retained outcomes.",
+    "Chief independently checks exact delivered implementation, toy fixtures, no-lookahead and production input boundary before accepting.",
+    "Synthetic output bundle has 10800 ledger, 1800 metric, 15 summary and 1200 paired rows; schemas/units/severe-case and denominators comply.",
+    "Read-only --check rejects tampering and missing/invalid data without modifying evidence; bad split/path/ID/hash are rejected.",
+    "No actual competition outcomes computed, no final/raw access, no hidden tuning or runtime/source changes outside assignment.",
+    "Failed tests and negative probes remain preserved; source provenance and canonical LF hashes are reproducible."
+  ],
+  "instructions": "Implement the first cheap baseline experiment driver specified in specs/DEVELOPMENT_BASELINE_DRIVER.md and specs/development_baselines_v1_1.json. Read the original baseline plan and accepted SOL-002 findings. First independently review chief's S1-S3 clarifications and the new driver contract for mathematical consistency; record blockers or exact fixes in audit/SOL-004/findings.json. Do not invent parameters or alter specifications. This review concerns chief-authored rules; it does not independently validate your own later implementation.\n\nUse the accepted accounting/metrics. Extend backtest.py only by a backward-compatible generic prefix-callback simulator and make the existing annual baseline a wrapper if needed. Retain all prior semantics and 28 existing accounting tests. Add baselines.py for the three fixed policies and experiments.py for the driver computations, serialization and checks. Add the CLI scripts/run_development_baselines.py with the exact --config/--output/--check interface. It must produce all six files and reconcile the fixed row counts. Keep the annual equal-weight baseline, bills-keep and initial-thirds-then-keep as the entire candidate set.\n\nProduction code may read only data/development/scenarios_001_120.csv, after checking the fixed path/hash/schema/complete keys. Never import/call check_inputs.py from the performance driver. No raw/final CSV access, final gate edits, final outcomes, actual competition performance tables, fitting, tuning, forecasts, policy recommendations, package installation or GPU. In this implementation task, exercise outputs using generated 120-by-30 synthetic fixtures labeled synthetic. Use the locked toy oracle as comparison evidence, with independent scalar/rational expected results in tests. You may inspect the development file header only if needed; no competition-data performance run before chief code acceptance.\n\nMeaningful tests must cover fee-before-returns, keep-dollar preservation, exact compounded deflation, H=1 nulls, prefix horizons and guarded no-lookahead timing, deterministic drawdown locations and exact severe ties, linear quantiles, paired signs, pooled denominators, row counts, batch/single-scenario consistency, frozen-path/hash rejection and read-only corruption detection. Include an explicit file-open guard rejecting any raw/final access. Test both a valid saved synthetic bundle and corrupted/missing output; --check must not repair or overwrite it. Existing accounting/runtime tests must still pass. No runtime helper or requirements edits are allowed.\n\nThe CLI must record source commit plus hashes of actual consumed source/config bytes and canonical Git source blobs; reject changed production source/config relative to that SHA. Keep test fixture generation distinct from production provenance. Preserve every failed test/trial and diagnosis in audit/SOL-004. Tests may create isolated temporary synthetic repositories/directories under audit/SOL-004 or ignored .runtime without touching actual refs or source. No production work directory is created by this task.\n\nDeliver implementation.md explaining API, exact schemas, constraints, what was actually executed, unresolved issues and later HY3 commands. Deliver findings.json for chief-contract review (status, blockers, corrections, reviewed source hashes) and verification.json with actual commands/exit codes, toy expected/observed residuals, output counts, check coverage and negative-test evidence. Retain a fresh UTF-8 LF tests.txt; do not claim an unexecuted check passed. Any meaningful failure must remain visible even if subsequently corrected.\n\nKeep independent reruns portable: do not require the current checkout branch to be the worker branch or HEAD to equal the pre-edit base after delivery. Bind source provenance to explicit Git SHA/hashes and compare saved evidence without regenerating it. The runner supplies task identity/receipt. Only assigned paths may change; parent runner commits and pushes. This is a <=30-minute implementation attempt. If the full contract cannot be satisfied, preserve working code and exact blockers with failed status rather than omitting checks or self-accepting a partial result. Chief will review the exact delivered commit and independently recompute fixtures before any HY3 run. Sol will later receive a distinct review of exact HY3 outputs."
+}

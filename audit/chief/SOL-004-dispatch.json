@@ -1,0 +1,25 @@
+{
+  "task_id": "SOL-004",
+  "base_commit": "ce2692b9b418ee4044da2930fb715d57ed83e500",
+  "base_existed_on_origin_main_before_dispatch": true,
+  "task_sha256": "211161b9a8b10bfdb50e895c65493ac4b239cbf011e0f700789072f329d68c25",
+  "dependencies_accepted": [
+    "SOL-001",
+    "SOL-002",
+    "SOL-003"
+  ],
+  "max_seconds": 1800,
+  "source_hashes_verified": {
+    "specs/DEVELOPMENT_BASELINE_DRIVER.md": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0",
+    "specs/development_baselines_v1_1.json": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224",
+    "specs/DEVELOPMENT_BASELINES.md": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "src/safeinvest/backtest.py": "f82c63a3fe78889d243bbbb344d20cbe9edb54981c7ca07b1f5006b9f79b28cd",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+    "audit/chief/accounting_oracle.json": "85caa997e09b1cf2a02118f4f101137919ad7b38ce662caed7a594c569ed1377"
+  },
+  "final_data_open": false,
+  "note": "HY3-003 is not published: source driver does not exist yet. Exact final source will be pinned after chief review."
+}
