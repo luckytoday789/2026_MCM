@@ -2,9 +2,10 @@
 
 This is reusable working text for the corrected v2 design, not a final paper or
 an empirical result. SOL-009 supported the utility derivation but required
-clarification of action selection and comparison statistics. SOL-013 must approve
-the corrected design and implementation; calibration and production evidence
-have further gates. No customer recommendation or performance advantage is claimed.
+clarification of action selection and comparison statistics. SOL-013 approved
+the corrected design but found a subnormal arithmetic defect in the kernel.
+The narrow correction awaits SOL-017; calibration and production evidence have
+further gates. No customer recommendation or performance advantage is claimed.
 
 ## An explicit estimate of benefit before trading
 
@@ -94,3 +95,19 @@ to choose a primary rule. Overlapping fold training, viewed baseline summaries
 and model-design choices mean development evidence is not an untouched test or
 a significance guarantee. The reserved final scenarios remain closed until a
 recorded freeze and must never be used for subsequent tuning.
+
+## Own-horizon follow-up before a recommendation
+
+For a provisionally assigned fixed class, the follow-up changes only the
+suspension threshold to the profile's own stated tolerance and evaluates its own
+horizon. The fold prior, target, fee and benefit rule remain fixed. The resulting
+paths must pass both loss and purchasing-power screens again. Failure leads to
+human review without selecting a different class. An initially referred profile
+is not silently simulated under a replacement policy. A last-year loss can occur
+without a subsequent review inside the evaluation horizon.
+
+Primary-fee and doubled-fee profile choices remain separate. If their provisional
+classes differ, that is a counterfactual change in suitability, not evidence that
+one fixed strategy is robust to costs. The primary recommendation cannot be
+replaced automatically by this sensitivity result. These follow-up outcomes and
+all final evaluations remain unavailable at this drafting stage.

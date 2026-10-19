@@ -1,19 +1,18 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T02:02:49.204557+08:00",
-  "reason": "SOL-017 K1 closure ready; corrected SOL-018 calibration and SOL-019 case tasks waiting. Chief can prepare personalized own-horizon execution contract while remote review proceeds.",
+  "next_wake_at": "2026-10-20T02:07:55.763893+08:00",
+  "reason": "SOL-017 is running on remote Sol; chief personalized follow-up handoff and evidence map prepared. Publish a targeted handoff review after this source push.",
   "next_actions": [
-    "Inspect exact SOL-017 receipt and independently replay it. Positive code approval unlocks existing unchanged SOL-016 and corrected SOL-018; do not release based on completed label alone.",
-    "Positive SOL-018 calibration acceptance unlocks SOL-019. Review component source, scalar fixtures and receipts before integration, then publish writer task against combined pushed source.",
-    "Prepare a concise own-horizon personalized overlay/rescreen contract tied to provisional profile choice and no fallback. Do not run outcomes or alter normative parameters before independent component gates.",
-    "After accepted production writer issue fixed HY3 development commands, import HY3-003 references, independently review outputs, then personalized rescreen, freeze/final and report.",
-    "Preserve final_data_open=false, prior failed trials, identities local and quota/STOP/deadline gates."
+    "Publish targeted personalized-handoff design review on newly pushed source, without implementing or running new policies.",
+    "Accept exact SOL-017 evidence only after independent replay; positive code approval unlocks unchanged SOL-016 and corrected SOL-018 promptly.",
+    "Positive SOL-018 unlocks SOL-019. Review exact components, then implement/review production writer and issue fixed HY3 development commands.",
+    "Personalized outcomes, source freeze, one final evaluation and English report/package remain. Final gate closed; quota/deadline and private identity restriction remain."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T01:57:49.204557+08:00",
+  "last_completed_at": "2026-10-20T02:02:55.763893+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

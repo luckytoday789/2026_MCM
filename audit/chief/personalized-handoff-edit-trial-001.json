@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "failure": "KeyError: authoritative_states",
+  "cause": "Chief documentation update used a nonexistent evidence-registry key; source contract and methods text had already been safely written.",
+  "fix": "Use existing evidence_states; preserve completed edits, then validate registry and referenced paths. No simulation or task failure."
+}

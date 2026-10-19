@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checks": [
+    "profiles_and_fees_match_v2",
+    "raw_policy_config_hash",
+    "conditional_output_counts",
+    "execution_final_gates_closed",
+    "all_registry_states_and_paths_valid",
+    "requirement_source_links_valid",
+    "published_tasks_unchanged"
+  ],
+  "source_commit": "27c6c26effb14dd9148476d129248640df715947",
+  "outcomes_computed": false,
+  "independent_handoff_review_pending": true
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "5d709e0a8e39cea2e8fa891928bb53bc6d93005f",
+  "snapshot_main_commit": "27c6c26effb14dd9148476d129248640df715947",
   "authoritative_state": [
     "ops/control.json",
     "ops/queue.json"
@@ -15,7 +15,8 @@
     "not_available": "Required result or final artifact does not exist yet",
     "prototype_pending_review": "Chief-authored source and synthetic checks exist; independent code approval and production results are absent",
     "accepted_development_evidence": "Exact reviewed development artifacts accepted; not final or policy-selection evidence",
-    "accepted_negative_review": "Independent evidence accepted; reviewed design/code requires stated corrections and is not approved"
+    "accepted_negative_review": "Independent evidence accepted; reviewed design/code requires stated corrections and is not approved",
+    "accepted_design": "Independent design approval only; neither code nor future outcomes are certified."
   },
   "source_registry": {
     "PROBLEM_LOCK": {
@@ -68,22 +69,24 @@
       "independent_review_commit": "818af5d65bd8a271962d848dd552bd39ca561f68"
     },
     "POLICY_PROPOSAL": {
-      "state": "design_pending_review",
+      "state": "accepted_design",
       "paths": [
         "specs/DEVELOPMENT_POLICY_PILOT_V2.md",
         "specs/development_policy_pilot_v2.json"
       ],
       "source_commit": "7c804ffb960be6b9fadfc840e246ff060668a96d",
       "independent_review_task": "SOL-013",
-      "production_execution_authorized": false
+      "production_execution_authorized": false,
+      "independent_review_commit": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+      "chief_acceptance_evidence": "audit/chief/SOL-013-review.json"
     },
     "POLICY_KERNEL_PROTOTYPE": {
       "state": "prototype_pending_review",
-      "source_commit": "7c804ffb960be6b9fadfc840e246ff060668a96d",
+      "source_commit": "315b7072e98f4d6aafd8573507074fc023477918",
       "path": "src/safeinvest/policy_pilot.py",
-      "scope_note": "specs/POLICY_CORRECTION_V2.md",
-      "independent_review_task": "SOL-013",
-      "chief_synthetic_test_count": 17,
+      "scope_note": "specs/POLICY_NUMERIC_K1.md",
+      "independent_review_task": "SOL-017",
+      "chief_synthetic_test_count": 18,
       "production_execution_authorized": false,
       "competition_outcomes_computed": false
     },
@@ -92,7 +95,7 @@
       "source_commit": "7c804ffb960be6b9fadfc840e246ff060668a96d",
       "path": "src/safeinvest/policy_calibration.py",
       "scope_note": "specs/POLICY_CALIBRATION_PROTOTYPE.md",
-      "independent_review_task": "SOL-014",
+      "independent_review_task": "SOL-018",
       "chief_synthetic_test_count": 10,
       "production_execution_authorized": false,
       "competition_outcomes_computed": false
@@ -114,6 +117,26 @@
         "D1",
         "D2"
       ]
+    },
+    "POLICY_KERNEL_K1_REJECTION": {
+      "state": "accepted_negative_review",
+      "path": "audit/SOL-013/findings.json",
+      "reviewed_commit": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+      "acceptance_evidence": "audit/chief/SOL-013-review.json",
+      "blockers": [
+        "K1"
+      ],
+      "corrected_design_verdict": "approve",
+      "code_verdict": "changes_required"
+    },
+    "PERSONALIZED_HANDOFF": {
+      "state": "design_pending_review",
+      "paths": [
+        "specs/PERSONALIZED_REVIEW.md",
+        "specs/personalized_review_v1.json"
+      ],
+      "production_execution_authorized": false,
+      "competition_outcomes_computed": false
     }
   },
   "requirements": [
@@ -161,15 +184,16 @@
         "POLICY_KERNEL_PROTOTYPE",
         "POLICY_CALIBRATION_PROTOTYPE"
       ],
-      "state": "design_pending_review",
-      "remaining": "Accept SOL-009 design and reconcile findings; independently review provisional kernel via SOL-011 and synthetic calibration via SOL-012. Implement/review the production driver and selection, then obtain accepted development evidence. Synthetic fixtures are not strategy results."
+      "state": "accepted_design",
+      "remaining": "SOL-013 design approved; K1 kernel correction requires SOL-017, calibration SOL-018, case engine SOL-019 and pure analysis SOL-016. Production writer and actual development result review remain mandatory. No new-policy outcomes yet."
     },
     {
       "id": "R05",
       "answer": "Explain suitability for all five profiles using own horizons, temporary loss tolerance and liquidity",
       "sources": [
         "PROBLEM_LOCK",
-        "POLICY_PROPOSAL"
+        "POLICY_PROPOSAL",
+        "PERSONALIZED_HANDOFF"
       ],
       "state": "not_available",
       "table_keys": [
@@ -188,7 +212,7 @@
         "assignment or referral",
         "reason"
       ],
-      "remaining": "Accepted profile results and personalized suspension follow-up before freeze; no guarantee or silent constraint relaxation"
+      "remaining": "Accept generic profile analysis, independently review the personalized follow-up adapter and exact HY3 outputs, rescreen both risk and purchasing power at own H without fallback; before freeze."
     },
     {
       "id": "R06",
@@ -199,8 +223,8 @@
         "POLICY_KERNEL_PROTOTYPE",
         "POLICY_CALIBRATION_PROTOTYPE"
       ],
-      "state": "design_pending_review",
-      "remaining": "Require SOL-013 corrected design/kernel approval and SOL-014 calibration approval; implement/review case engine, analysis and production writer, then accept actual development evidence. Old SOL-009 negative findings remain preserved."
+      "state": "accepted_design",
+      "remaining": "SOL-013 design approved; K1 kernel correction requires SOL-017, calibration SOL-018, case engine SOL-019 and pure analysis SOL-016. Production writer and actual development result review remain mandatory. No new-policy outcomes yet."
     },
     {
       "id": "R07",
@@ -284,8 +308,8 @@
         "PROBLEM_LOCK",
         "POLICY_PROPOSAL"
       ],
-      "state": "design_pending_review",
-      "remaining": "Accepted trigger timing/latch tests, profile-specific threshold evidence and final operational text; clarify that keeping holdings does not remove market or inflation exposure"
+      "state": "accepted_design",
+      "remaining": "SOL-013 independently checked latch timing/holdings; K1 source correction pending SOL-017. Personalized threshold evidence and final operational text remain. Keeping holdings retains market and inflation exposure."
     },
     {
       "id": "R14",

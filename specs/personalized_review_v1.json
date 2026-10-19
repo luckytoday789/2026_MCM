@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "status": "handoff_pending_targeted_independent_review_not_execution",
+  "contract": "specs/PERSONALIZED_REVIEW.md",
+  "split": "development",
+  "policy_config_path": "specs/development_policy_pilot_v2.json",
+  "policy_config_sha256": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+  "input_path": "data/development/scenarios_001_120.csv",
+  "input_sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+  "scenario_ids": [
+    1,
+    120
+  ],
+  "fee_rates": [
+    0.0025,
+    0.005
+  ],
+  "primary_fee_rate": 0.0025,
+  "class_mode_mapping": {
+    "conservative": "conservative_cost",
+    "balanced": "balanced_cost",
+    "growth": "growth_cost"
+  },
+  "profiles": {
+    "A": {
+      "horizon": 5,
+      "loss_tolerance_pct": 10,
+      "liquidity": "high"
+    },
+    "B": {
+      "horizon": 15,
+      "loss_tolerance_pct": 25,
+      "liquidity": "medium"
+    },
+    "C": {
+      "horizon": 30,
+      "loss_tolerance_pct": 40,
+      "liquidity": "low"
+    },
+    "D": {
+      "horizon": 25,
+      "loss_tolerance_pct": 15,
+      "liquidity": "medium"
+    },
+    "E": {
+      "horizon": 6,
+      "loss_tolerance_pct": 35,
+      "liquidity": "high"
+    }
+  },
+  "upstream_assignment_count": 10,
+  "summary_rows": 10,
+  "upstream_referral_behavior": "preserve_referral_no_simulation",
+  "personalized_failure": "human_review_no_reselection_no_fallback",
+  "risk_screen": "marginal_p90_max_real_drawdown_pct <= profile_loss_tolerance_pct",
+  "purchasing_power_screen": "marginal_p10_net_real_cagr_pct >= 0",
+  "exceedance": "strict_loss_greater_than_tolerance",
+  "cost_sensitivity": "same_fee_upstream_class_counterfactual; never_replace_primary_automatically; differing_classes_are_not_same_rule_robustness",
+  "source_version_at_drafting": "27c6c26effb14dd9148476d129248640df715947",
+  "production_execution_authorized": false,
+  "final_data_open": false,
+  "maximum_rows_if_all_assigned": {
+    "annual_ledgers": 19440,
+    "decisions": 19440,
+    "scenario_metrics": 1200,
+    "target_scores": 19440
+  }
+}
