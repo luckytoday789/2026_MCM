@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T19:59:09.661450+00:00",
+  "task_id": "SOL-026",
+  "base_commit": "8d00ca8eafc00fd636273be4125216e981289804",
+  "base_already_on_origin_main": true,
+  "task_sha256": "814ed948fca4fae761aed362526e9e5d2396fbc978472a2355401bebec548ecd",
+  "source_pin_count": 35,
+  "source_pins_verified": true,
+  "dependencies": {
+    "SOL-001": "b25c6b5589d07e767f463f54f053f08bb0085157",
+    "SOL-004": "69ed125b7fde276fe503e1ec5416fbf2e5ec9a7b",
+    "HY3-003": "7652410d73425371110784ef5fa97c03470a074e",
+    "SOL-013": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+    "SOL-016": "ceec2b6d1107a4137ee3d24d689ba7ba614703c2",
+    "SOL-021": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+    "SOL-022": "21ad493707d71240f83d7f01ed6d133e1380e8fb",
+    "SOL-025": "803b7a085284405ee5ee4d4f0d5720ebaa2e67f7"
+  },
+  "max_seconds": 1500,
+  "split": "synthetic",
+  "production_execution_authorized": false,
+  "final_data_open": false
+}

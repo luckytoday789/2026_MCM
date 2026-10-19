@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "id": "SOL-026",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "8d00ca8eafc00fd636273be4125216e981289804",
+  "depends_on": [
+    "SOL-001",
+    "SOL-004",
+    "HY3-003",
+    "SOL-013",
+    "SOL-016",
+    "SOL-021",
+    "SOL-022",
+    "SOL-025"
+  ],
+  "split": "synthetic",
+  "max_seconds": 1500,
+  "scope": "Implement and challenge the bounded development case writer and read-only verifier on generated fixtures only; no analysis assembly or competition runs.",
+  "parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "competition_outcomes_allowed": false,
+    "final_outcomes_allowed": false,
+    "source_sha256": {
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "specs/policy_driver_layout_v2.json": "f431e661c260f7f6e40330661e77724dc3ddcafeafed1a3f0b6c31781a4e8329",
+      "specs/POLICY_CORRECTION_V2.md": "b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383",
+      "specs/POLICY_NUMERIC_K1.md": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+      "specs/POLICY_NUMERIC_K2.md": "88d5f58a59f090c25331392e4cd5682daf5d050c27b24afe6629d8e4a5eb9997",
+      "specs/POLICY_CASE_ENGINE.md": "c984e230eecb720613b864a910d95921af1aa805f79fa68c7044f905410dec62",
+      "specs/POLICY_RESULT_WRITER.md": "ce0c43fad34ebdc44fc6f6bda395c562781e500cdc4b855ee7e0cbf937bec0b4",
+      "specs/POLICY_WRITER_COMPATIBILITY.md": "814c339353a719b88f1bf21af731439cc24e095131d9a8d28efaede48a5695ed",
+      "specs/POLICY_WRITER_ACCEPTANCE_REFERENCES.md": "936961ab2fc38657c8c31a344982df5f92730d47eebeee0cc978c6aa37055e9d",
+      "specs/POLICY_WRITER_EXECUTION_CONFIG.md": "7813b87400ba8469525392721f095fc9b65e37dcd24b8a68adb4bd6801ca8d31",
+      "specs/POLICY_WRITER_TASK_BINDING.md": "85f237a46041d6333b984903daca5528119d3043c106fca4357b5851a0920760",
+      "src/safeinvest/__init__.py": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+      "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+      "src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+      "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+      "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+      "src/safeinvest/policy_calibration.py": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+      "src/safeinvest/policy_cases.py": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7",
+      "src/safeinvest/policy_analysis.py": "e94a5ef79a2f58f231a46bd2af01020dd09847d27bdbe74f1795ba032dd8d345",
+      "audit/chief/writer_reference.py": "ae3e2dc9ab11e9fad60446b0dec8acf640f08de58349e037a8010c032cd0d651",
+      "audit/chief/writer-reference.json": "98fe75c2b1108fd87d949cd4918f5381cf233bc509cfa091cc6a3b53649c4a87",
+      "audit/chief/case_reference.py": "0418f2c00fb8f3a57ef4ceeee0ce4435fb113228bb14de68cd3d7afb3f18c405",
+      "audit/chief/case-reference.json": "8e207be8c4fa5e4fa274cf0d858c7ffef4b8cefa56ed64ab06ff72c6f80f1813",
+      "audit/chief/HY3-003-review.json": "49770913724204472524ee06f0cb2445a3c12150a128a98ee13c5b7e50f86430",
+      "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+      "audit/chief/SOL-016-review.json": "55b45ec0c650dec248dccb83c91e6709bfdc9a229f7a6199b3db9480f579d4da",
+      "audit/chief/SOL-021-review.json": "105f8610edeebc1b17272b7450d3cdba29fa14d963407afd1665fc7caf640670",
+      "audit/chief/SOL-022-review.json": "9875dab72b4354566fe6067de94fabbb917c0b9c2344914a3f38c084f1042546",
+      "audit/chief/SOL-025-review.json": "7523121f5290d6ba938ccff6749d5d28b86c0053c2c072850092dee941efdb1c",
+      "data/manifest.json": "2535c087075957919d5f1990ad234ca436f7b3506ba592ac8a6457feb42fe90d"
+    },
+    "contracts": [
+      "specs/POLICY_RESULT_WRITER.md",
+      "specs/POLICY_WRITER_COMPATIBILITY.md",
+      "specs/POLICY_WRITER_ACCEPTANCE_REFERENCES.md",
+      "specs/POLICY_WRITER_EXECUTION_CONFIG.md",
+      "specs/POLICY_WRITER_TASK_BINDING.md"
+    ],
+    "accepted_dependencies": {
+      "SOL-001": "b25c6b5589d07e767f463f54f053f08bb0085157",
+      "SOL-004": "69ed125b7fde276fe503e1ec5416fbf2e5ec9a7b",
+      "HY3-003": "7652410d73425371110784ef5fa97c03470a074e",
+      "SOL-013": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+      "SOL-016": "ceec2b6d1107a4137ee3d24d689ba7ba614703c2",
+      "SOL-021": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+      "SOL-022": "21ad493707d71240f83d7f01ed6d133e1380e8fb",
+      "SOL-025": "803b7a085284405ee5ee4d4f0d5720ebaa2e67f7"
+    },
+    "reference_result_commit": "7652410d73425371110784ef5fa97c03470a074e",
+    "fixed_future_groups": [
+      "primary",
+      "doubled"
+    ],
+    "production_execution_authorized": false,
+    "max_artifact_bytes": 10485760
+  },
+  "allowed_paths": [
+    "src/safeinvest/policy_writer.py",
+    "scripts/run_development_policy.py",
+    "tests/test_policy_writer.py",
+    "audit/SOL-026"
+  ],
+  "deliverables": [
+    "src/safeinvest/policy_writer.py",
+    "scripts/run_development_policy.py",
+    "tests/test_policy_writer.py",
+    "audit/SOL-026/implementation.md",
+    "audit/SOL-026/findings.json",
+    "audit/SOL-026/verify.py",
+    "audit/SOL-026/verification.json",
+    "audit/SOL-026/clean-environment-checks.json",
+    "audit/SOL-026/integrity-self-tests.json"
+  ],
+  "commands": [],
+  "validation_commands": [
+    [
+      "{python}",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_policy_writer.py",
+      "-v"
+    ],
+    [
+      "{python}",
+      "-B",
+      "audit/SOL-026/verify.py",
+      "--check"
+    ]
+  ],
+  "acceptance_checks": [
+    "Exact task/publication/base/source hashes and allowed paths; all dependencies positively accepted, predecessor SOL-023 still failed.",
+    "Clean-environment exact commands, portable imports, no import/help data access, Python 3.12.",
+    "Strict fixed production config, explicit C/E/P authorization chain, accepted dependency/source closure and raw development input checks before computation; no final or synthetic production switch.",
+    "Exact authenticated primary reference imports without baseline recomputation; eight mode/two fee synthetic coverage and distinct calibration provenance.",
+    "Typed CSV/null/boolean/adjacent-float/signed-zero preservation and exact structural counts, keys and units; independent fee/CPI/prefix/review checks.",
+    "Seven corruption categories and task mismatches rejected read-only, original hashes unchanged, exclusive creation and preserved failed staging; all artifact bytes/runtime bounded.",
+    "Fresh exclusively created replayable evidence binds actual task/source/delivered bytes; no production outcome, selection or final authorization claimed."
+  ],
+  "instructions": "Read AGENTS.md, this immutable task and all five writer contracts named in parameters. SOL-025 positively accepted the identical case source after portable import repair; SOL-023 remains failed. Accepted kernel, calibration and analysis sources are pinned. Challenge chief-authored writer provenance, import, typing and task-binding design explicitly before implementation. Report actual contradictions with a smallest concrete counterexample; do not silently weaken a guard.\n\nImplement ONLY policy_writer.py, its fixed CLI, focused test and this new audit directory. This is a writer-only component: no analysis assembly, policy selection, personalized/final implementation, core refactor, runner/environment/helper edits, package installs, fetch/merge, commit/push or watcher. Parent delivers. No original/raw/development/final input CSV reads or actual competition policy runs. Accepted HY3-003 exact Git output blobs may be read only for import/normalization fixtures, never resimulated. All generated computations use clearly synthetic internal seams and unique temporary roots. Preserve all failures/partial staging and negative evidence.\n\nThe five writer contracts specify the external interface. CLI has only --config, --output, --check and help. Production configuration accepts only the chief-fixed primary or doubled group and requires exact source C, execution-config/base E and published task snapshot P, with C ancestor of E ancestor of P. Runtime task alone is insufficient; bind its exact immutable published object and queue digest on fetched origin/main, and exact accepted dependencies at its task base. P may be later than E. Reject malformed/duplicate/unknown/nonfinite config fields, bool-as-number, mismatched task/base/digest/publication/config/output/commands before any input read. No executable production config or invented hashes is to be created in this task. Test the guard with generated boundary fixtures and internal seams; no synthetic bypass is exposed by the production CLI. Later --check resolves recorded explicit Git identities without .runtime/task.json or current HEAD equality.\n\nCover fixed path/raw hash/120-by-30 grid and symlink escape; all actual imported computational source and configuration bytes; accepted four-fold calibration and independent membership/key/digest checks. Keep a separate production provenance attestation; do not relabel the arithmetic calibration helper's synthetic manifest. Each group has cases/<mode>/ directories and exact typed schema/index. Primary computes five policy cases and authenticates/imports three primary references; a test must show no baseline simulation callback is invoked. Doubled computes all eight with .005 for both decisions and accounting. Preserve exact inherited numeric/null/boolean values and lossless labels against chief writer references. Baseline sidecars/diagnostics are explicitly inapplicable. Correct growth labels without rescaling values. Analysis-input compatibility is a later consumer bridge, not permission to assemble analysis now.\n\nDeclare and exercise each CSV column type/nullability. Round-trip signed zero, adjacent floats, null versus false, and integer types; reject malformed/extra/missing/duplicate columns, keys and rows. Test generated eight-mode/two-fee happy paths, fee/CPI/metric identities, t-1 decisions, review latch, exact prefixes, counts and provenance. Keep source/input/reference/output byte snapshots around read-only checks. Demonstrate rejection of seven corruptions (missing file, altered numeric, false source, wrong config, duplicate key, bogus count, incomplete status) and task binding mismatches. --check never rewrites/regenerates expected hashes, fills missing files or runs an experiment to replace corrupted evidence. It must catch numeric corruption even if a malicious scratch manifest's file hash is recomputed, using independent identities or pinned evidence. No arbitrary tolerance may turn tiny positive costs into zero.\n\nRefuse existing success/failed output roots before input access. Preserve unique partial staging and explicit failure diagnosis on exceptions, never overwrite. Enforce real artifact bytes <=10485760 and the immutable runtime budget. Measure actual synthetic check time only; do not invent production timing or size. No saved evidence hashes itself recursively. New exclusively created audit evidence binds actual task/publication/base/pins/delivered files, exact schema/types/keys and independently computed facts; support read-only replay after integration. Use compact reconstructable corruption evidence rather than copied whole large bundles.\n\nBoth prescribed commands must pass in fresh Python 3.12 subprocesses with every case-insensitive PYTHONPATH key removed. Bootstrap source before imports, retain imported module paths, real stdout/stderr/return code and measured runtime. Check import and --help perform no data access or generation. Run the final verifier read-only with original evidence byte checks. Document design findings, schema, failure preservation, canonical Git and consumed checkout hashes and remaining HY3/result-review/freeze gates. Leave a bounded honest failed delivery if an actual blocker remains; do not report an unexecuted production check or independent outcome acceptance. Budget 25 minutes including validation.\n"
+}

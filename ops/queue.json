@@ -724,6 +724,15 @@
       "excluded_paths": [],
       "acceptance_evidence": "audit/chief/SOL-025-review.json",
       "code_verdict": "approve"
+    },
+    {
+      "id": "SOL-026",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "814ed948fca4fae761aed362526e9e5d2396fbc978472a2355401bebec548ecd",
+      "branch": "work/sol/SOL-026-a1",
+      "note": "Writer-only implementation and independent challenge of chief C/E/P binding, typed persistence and exact reference import. Accepted case/base source already pushed. Generated fixtures only; no HY3 execution authorization."
     }
   ]
 }
