@@ -1,0 +1,36 @@
+{
+  "method": "independent Fraction arithmetic; no safeinvest imports",
+  "fractions": {
+    "p1_nominal": "4792/45",
+    "p2_post_fee_nominal": "5749801/54000",
+    "p2_nominal": "339238259/3240000",
+    "p1_real": "47920/459",
+    "p2_real": "339238259/3403944",
+    "p2_transfer": "599/135",
+    "p2_fee": "599/54000",
+    "r1_decimal": "101/2295",
+    "r2_decimal": "-26939/593280"
+  },
+  "decimal_values": {
+    "p1_nominal": 106.4888888888889,
+    "p2_post_fee_nominal": 106.47779629629629,
+    "p2_nominal": 104.70316635802469,
+    "p1_real": 104.40087145969498,
+    "p2_real": 99.660352520488,
+    "p2_transfer": 4.437037037037037,
+    "p2_fee": 0.011092592592592593,
+    "r1_decimal": 0.04400871459694989,
+    "r2_decimal": -0.04540689050701187
+  },
+  "metrics": {
+    "net_real_cagr_pct": -0.16996818567671657,
+    "annual_real_volatility_pct": 6.322638071290982,
+    "max_real_drawdown_pct": 4.540689050701187
+  },
+  "inflation_only": {
+    "terminal_real_wealth": 75.75757575757575,
+    "cagr_pct": -12.961172022151079,
+    "volatility_pct": 5.356869554443541,
+    "max_drawdown_pct": 24.242424242424242
+  }
+}
