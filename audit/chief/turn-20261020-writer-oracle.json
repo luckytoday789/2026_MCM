@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T22:23:41.176212+00:00",
+  "main_at_start": "8e7f18ef9c8e320d2824c9ab327dc39e53dd969c",
+  "task_checks": [
+    {
+      "task_id": "SOL-029",
+      "task_sha256": "951ca85be546855ef2b606e94d7ea0eb2acb39f03ab34e70c707bccbac6015ac",
+      "base_commit": "df038cb116c4818c14454231500f992af3f26d0f",
+      "source_pin_count": 46,
+      "state": "ready",
+      "accepted_dependencies": {
+        "SOL-001": "b25c6b5589d07e767f463f54f053f08bb0085157",
+        "SOL-004": "69ed125b7fde276fe503e1ec5416fbf2e5ec9a7b",
+        "HY3-003": "7652410d73425371110784ef5fa97c03470a074e",
+        "SOL-013": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+        "SOL-016": "ceec2b6d1107a4137ee3d24d689ba7ba614703c2",
+        "SOL-021": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+        "SOL-022": "21ad493707d71240f83d7f01ed6d133e1380e8fb",
+        "SOL-025": "803b7a085284405ee5ee4d4f0d5720ebaa2e67f7"
+      }
+    },
+    {
+      "task_id": "SOL-027",
+      "task_sha256": "f086a587d0a0ec0aa1477d28df58f036482dac1dbc7e0add8f298553daf90f00",
+      "base_commit": "5a015a490c89b39271624e1f1790a3454498a6c9",
+      "source_pin_count": 25,
+      "state": "waiting",
+      "accepted_dependencies": {
+        "SOL-013": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+        "SOL-020": "2fbd4598606b41a786bd931046adb0ecc8b42d78",
+        "SOL-021": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+        "SOL-022": "21ad493707d71240f83d7f01ed6d133e1380e8fb",
+        "SOL-025": "803b7a085284405ee5ee4d4f0d5720ebaa2e67f7"
+      }
+    },
+    {
+      "task_id": "SOL-030",
+      "task_sha256": "c164559e5fc86d5de16d7bf54679518a8941927a079f75364d174586263ac191",
+      "base_commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "source_pin_count": 31,
+      "state": "waiting",
+      "accepted_dependencies": {
+        "HY3-003": "7652410d73425371110784ef5fa97c03470a074e",
+        "SOL-008": "818af5d65bd8a271962d848dd552bd39ca561f68",
+        "SOL-013": "1908813ef2627ca6e15591278ec15ccf2f9e9cff",
+        "SOL-020": "2fbd4598606b41a786bd931046adb0ecc8b42d78"
+      }
+    }
+  ],
+  "remote_status": {
+    "sol": {
+      "commit": "2a0290b5192f638a08721cde63d06bc9fe3cdc92",
+      "report": {
+        "role": "sol",
+        "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
+        "state": "running",
+        "python": "3.12.14",
+        "updated_at": "2026-10-19T22:19:03.133428+00:00",
+        "lease_until": "2026-10-19T22:29:03.133428+00:00",
+        "task_id": "SOL-029"
+      }
+    },
+    "hy3": {
+      "commit": "7c86f007c74bf6e8b48b27f9232638afef6f4315",
+      "report": {
+        "role": "hy3",
+        "machine_id": "937a9358dc114be8b3718ff13e3da4f9",
+        "state": "idle",
+        "python": "3.12.10",
+        "updated_at": "2026-10-19T22:22:45.339157+00:00",
+        "lease_until": "2026-10-19T22:32:45.339157+00:00"
+      }
+    }
+  },
+  "new_work_receipt_available": false,
+  "queue_unchanged": true,
+  "qualification_source_sha256": "6421eac370085cbdb9c52b1742f939da08d7fee362e8047e66391ee9b322f493",
+  "qualification": "audit/chief/writer-oracle-qualification/README.md",
+  "independent_numeric_checks": 12427,
+  "corruption_rejections": 4,
+  "first_failed_auditor_trial_preserved": true,
+  "writer_acceptance": false,
+  "competition_input_read": false,
+  "final_data_open": false,
+  "local_quota_remaining": 54.0,
+  "needs_human": false,
+  "metadata_precheck_failure": {
+    "error": "KeyError: 'accepted_dependencies'",
+    "cause": "SOL-030 uses depends_on plus specific source_result_commit instead of the optional accepted_dependencies mapping.",
+    "effect": "Stopped before any file mutation. Corrected metadata pass checks depends_on for all tasks and exact mappings where present."
+  }
+}

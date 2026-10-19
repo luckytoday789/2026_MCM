@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "checked_commit": "e8733bbc9f1234e04a5e382046d3c89fc12cae7d",
+  "oracle_source_sha256": "6421eac370085cbdb9c52b1742f939da08d7fee362e8047e66391ee9b322f493",
+  "corruptions": [
+    {
+      "label": "zero_fee",
+      "path": "doubled/cases/equal_weight_annual/annual_ledgers.csv",
+      "row": 0,
+      "field": "fee",
+      "original": "0.33333333333333337",
+      "replacement": "0.0",
+      "original_sha256": "655e44666e96decf28349afbca6f80548ffdd69027a95dee5a7f4d091bc20fa3",
+      "overlay_sha256": "ea4c3da1e58514c3833d7ba933ceced774a758e9f9b1575eb954e6fc66af2732",
+      "rejection": "('exact binary64 fee', '0x0.0p+0', '0x1.5555555555556p-2')",
+      "original_unchanged": true
+    },
+    {
+      "label": "altered_cpi",
+      "path": "primary/cases/bills_keep/annual_ledgers.csv",
+      "row": 0,
+      "field": "cpi_end",
+      "original": "1.01",
+      "replacement": "2.0",
+      "original_sha256": "5495332e1a61de07e67d278f1d028cff895c17e820b82f27340d6a7fe8e17e3d",
+      "overlay_sha256": "35c6193a36badf330fcb8e9e28e9efb9c8e3acb59cb78e14265bdcea982c607a",
+      "rejection": "('compounded exact CPI', 2.0, 1.01)",
+      "original_unchanged": true
+    },
+    {
+      "label": "altered_growth",
+      "path": "primary/cases/bills_keep/scenario_metrics.csv",
+      "row": 0,
+      "field": "net_real_cagr_pct",
+      "original": "-0.891089108910903",
+      "replacement": "500.0",
+      "original_sha256": "90236f721f1eafeab735363b417443a516f6f598e5f0aa8948bb82e6e33bb989",
+      "overlay_sha256": "e1cfc630a736da8b57f5f48626a58b8ea2abd183c80993e20c8df83fc7a7dc7d",
+      "rejection": "('net_real_cagr_pct', 500.0, -0.8910891089108968)",
+      "original_unchanged": true
+    },
+    {
+      "label": "wrong_p90_loss",
+      "path": "primary/cases/bills_keep/summary.csv",
+      "row": 0,
+      "field": "p90_loss_pct",
+      "original": "0.891089108910903",
+      "replacement": "0.0",
+      "original_sha256": "6dea466fc393b2e059a17bc144071bd76888c6078fabe7aef59b6e5cb489da92",
+      "overlay_sha256": "b41b654d662324b68fb59818ed4f9c9cb5bfd0f82efd297ed5b466cd0924f71f",
+      "rejection": "('rational quantile p90_loss_pct', 0.0, 0.891089108910903)",
+      "original_unchanged": true
+    }
+  ],
+  "elapsed_seconds": 9.202999999979511,
+  "failed_predecessor_remains_failed": true,
+  "production_acceptance": false,
+  "competition_input_read": false
+}

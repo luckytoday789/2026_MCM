@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "{python}",
+    "-B",
+    "audit/chief/writer_persisted_oracle.py",
+    "e8733bbc9f1234e04a5e382046d3c89fc12cae7d",
+    "audit/SOL-026/synthetic-8c7ac3f4217c4ac490ee4277a92041f6"
+  ],
+  "returncode": 1,
+  "elapsed_seconds": 0.48399999999674037,
+  "stderr": "Traceback (most recent call last):\n  File \"D:\\30576\\Documents\\2026_MCM\\audit\\chief\\writer_persisted_oracle.py\", line 206, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\audit\\chief\\writer_persisted_oracle.py\", line 203, in main\n    print(json.dumps(audit_fixture(args.commit,args.fixture_root),indent=2,allow_nan=False))\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\audit\\chief\\writer_persisted_oracle.py\", line 130, in audit_fixture\n    rate=rational(source[asset])\n                  ~~~~~~^^^^^^^\nKeyError: 'equity'\n",
+  "stdout": "",
+  "predecessor_stays_failed": true,
+  "purpose": "Qualify chief independent persisted CSV oracle; no predecessor or writer acceptance."
+}
