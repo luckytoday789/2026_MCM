@@ -1,0 +1,63 @@
+{
+  "task_id": "SOL-010",
+  "reviewed_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466",
+  "base_commit": "c9ad8fb429295dc2302d7adb5a106f19a71404d8",
+  "task_sha256": "2b3378dd7e285fded4a9fc8653d6f415c96d949c5528cb72d7a8db3b634b9a0f",
+  "branch": "work/sol/SOL-010-a1",
+  "structural_checks": "passed",
+  "source_hashes_checked": {
+    "scripts/probe_sol_availability.py": "03999b341b1c63063000e90a259813fd31ef62352457a8312b6c88c3a9771252"
+  },
+  "artifacts_sha256": {
+    "audit/SOL-010/availability.json": "d1acc03f85298f4f0fc7dedf1cfa87f5f5c61716b3ac044332f71ed99f7085bb",
+    "handoff/SOL-010/check-0.txt": "a620d17433955533f42fcc4f2a757bbe1932bbc193707a6f0022fa350064e7df",
+    "handoff/SOL-010/check-1.txt": "143e14966b9a9b6e4837ee21600f1350d671a1a2e6a75e14a79e7972a3984508",
+    "handoff/SOL-010/check-2.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "accepted_paths": [
+    "audit/SOL-010/availability.json",
+    "handoff/SOL-010/check-0.txt",
+    "handoff/SOL-010/check-1.txt",
+    "handoff/SOL-010/check-2.txt",
+    "handoff/SOL-010/result.json"
+  ],
+  "excluded_paths": [],
+  "receipt_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "prescribed_command_count": 3,
+  "schema_version": 1,
+  "accepted": true,
+  "reviewed_at": "2026-10-19T17:07:13.600580+00:00",
+  "availability": {
+    "schema_version": 1,
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "xhigh",
+    "not_before": "2026-10-20T01:05:00+08:00",
+    "started_at": "2026-10-19T17:05:00.006295+00:00",
+    "finished_at": "2026-10-19T17:05:19.790787+00:00",
+    "model_calls": 1,
+    "exit_code": 0,
+    "usable": true,
+    "expected_response": "SAFEINVEST_SOL_AVAILABLE",
+    "response": "SAFEINVEST_SOL_AVAILABLE",
+    "error": null,
+    "quota_error_detected": false,
+    "model_log_sha256": "9805f9b2f597031c6b4a0c079696c50f365a56b460c0d81a31f25002da27d3b9",
+    "note": "A real response proves availability only at probe time, not remaining review budget."
+  },
+  "actual_model_duration_seconds": 19.784492,
+  "command_log_matches_report": true,
+  "timestamp_gate_passed": true,
+  "numerical_evidence_not_applicable": true,
+  "limitations": [
+    "Availability established only at the probe timestamp; remaining quota is unknown.",
+    "Raw Codex transcript stays in ignored worker runtime; its digest is reported but is not independently replayed. Published response and command exit evidence match the reviewed fixed script."
+  ],
+  "released_existing_tasks": [
+    "SOL-008",
+    "SOL-009"
+  ],
+  "preserved_failed_tasks": [
+    "SOL-006",
+    "SOL-007"
+  ]
+}

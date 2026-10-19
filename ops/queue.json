@@ -212,32 +212,44 @@
     },
     {
       "id": "SOL-008",
-      "state": "waiting",
+      "state": "ready",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "976e528142a46d73217ce05dd968d5348e951668773811ce638cf4ef3bab6e68",
       "branch": "work/sol/SOL-008-a1",
-      "waiting_for": "Sol quota availability confirmed by human or successful authenticated model response on that machine",
-      "note": "All code prerequisites accepted. Resource hold only; chief may release promptly when availability is confirmed. No automatic retry before then."
+      "note": "Released from resource hold after exact successful real SOL-010 probe. Original immutable task unchanged; historical quota failures preserved. Do not rerun HY3-003.",
+      "release_evidence": "audit/chief/SOL-010-review.json",
+      "released_after_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
     },
     {
       "id": "SOL-009",
-      "state": "waiting",
+      "state": "ready",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "5a0d7be2638605a1e0aec4b83549d5cc35bfada5bfed962d9f0c09b041a87a36",
       "branch": "work/sol/SOL-009-a1",
-      "waiting_for": "Sol quota availability confirmed by human or successful authenticated model response on that machine",
-      "note": "All code prerequisites accepted. Resource hold only; chief may release promptly when availability is confirmed. No automatic retry before then."
+      "note": "Released from resource hold after exact successful real SOL-010 probe. Original immutable task unchanged; historical quota failures preserved. Do not rerun HY3-003.",
+      "release_evidence": "audit/chief/SOL-010-review.json",
+      "released_after_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
     },
     {
       "id": "SOL-010",
-      "state": "ready",
+      "state": "accepted",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "2b3378dd7e285fded4a9fc8653d6f415c96d949c5528cb72d7a8db3b634b9a0f",
       "branch": "work/sol/SOL-010-a1",
-      "note": "One real response after Beijing 01:05; passive wait first. Do not release SOL-008/009 from heartbeats alone."
+      "note": "Exact canonical receipt, Python 3.12, three command exits and one real response at 01:05 Beijing verified. Availability only at probe time; no budget guarantee.",
+      "reviewed_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466",
+      "accepted_paths": [
+        "audit/SOL-010/availability.json",
+        "handoff/SOL-010/check-0.txt",
+        "handoff/SOL-010/check-1.txt",
+        "handoff/SOL-010/check-2.txt",
+        "handoff/SOL-010/result.json"
+      ],
+      "excluded_paths": [],
+      "acceptance_evidence": "audit/chief/SOL-010-review.json"
     },
     {
       "id": "SOL-011",

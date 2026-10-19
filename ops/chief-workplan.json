@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T01:30:42+08:00",
-  "reason": "Chief kernel, synthetic tests, timing and driver handoff are saved; substantive next actions await the real Sol probe and independent reviews.",
+  "next_wake_at": "2026-10-20T01:12:14+08:00",
+  "reason": "Verified real Sol quota recovery; released both existing independent reviews. Chief continues bounded provisional calibration preparation while reviews run.",
   "next_actions": [
-    "Fetch exact SOL-010 receipt when available. Verify canonical task/source/artifact hashes, real response, exit status, timestamps and prescribed commands; a heartbeat does not prove quota.",
-    "On verified SOL-010 success accept that exact commit and promptly release the existing SOL-008 and SOL-009; no human reply is required. Preserve both historical quota failures.",
-    "If the probe fails, preserve it and schedule at most two new single probes at least one hour apart and no earlier than an updated reset hint. Follow ops/OVERNIGHT.md; do not rerun full reviews to test quota.",
-    "Accept or challenge exact SOL-008 review before promoting submitted HY3-003. Never rerun HY3-003.",
-    "Reconcile SOL-009 design findings. Release existing SOL-011 only if design is accepted without material changes and probe succeeded; otherwise publish a corrected immutable attempt against new pushed source.",
-    "Use specs/POLICY_DRIVER_HANDOFF.md and specs/policy_driver_layout_v1.json for the next bounded calibration, driver and selection implementation tasks after design review; independent kernel acceptance remains mandatory before HY3 execution.",
-    "Final outcomes, manuscript empirical claims and personal member uploads remain gated. Update this one-shot timer each bounded turn; 30-minute fallback applies while only remote work is awaited."
+    "Inspect exact SOL-008 and SOL-009 receipts as they arrive; preserve all failed attempts. HY3-003 is submitted and must not be rerun.",
+    "Accept or challenge the independent numerical audit before promoting exact HY3-003.",
+    "Reconcile SOL-009 findings; release existing SOL-011 promptly only if the design is accepted without material changes, otherwise publish a corrected immutable attempt against pushed sources.",
+    "Continue synthetic-only fold calibration/provenance preparation under the existing handoff; no actual policy outcomes until independent code review.",
+    "Prepare granular driver and selection tasks after design review; reviewed prerequisites must already exist on origin/main before task publication.",
+    "Keep final gate closed and private member details local. Refresh the one-shot timer at end of turn."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T01:00:42+08:00"
+  "last_completed_at": "2026-10-20T01:07:14+08:00",
+  "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }
