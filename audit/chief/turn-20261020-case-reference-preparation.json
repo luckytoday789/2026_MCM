@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T02:57:22.464566+08:00",
+  "start_main_commit": "cf0a879b5e8d4091886d60f0fb1ea48cc45829f8",
+  "pending_tasks_validated": [
+    {
+      "id": "SOL-016",
+      "state": "ready",
+      "base_commit": "dd60066010f6904565fb51e99be8088285102e57",
+      "task_sha256": "43da6619805b1e82b47fd9ddf592c9c65316e7ec6c8a0e193810b6f80afd05f6",
+      "source_count": 12,
+      "sources_unchanged_on_main": true,
+      "dependencies": {
+        "SOL-001": "accepted",
+        "SOL-004": "accepted",
+        "SOL-009": "accepted",
+        "SOL-013": "accepted"
+      },
+      "branch": "work/sol/SOL-016-a1",
+      "receipt_present": false
+    },
+    {
+      "id": "SOL-022",
+      "state": "ready",
+      "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+      "task_sha256": "9f1841cdfae0638427bdccfcd96e1cf231bed04ce6ac32afd2d72ae550674ab7",
+      "source_count": 14,
+      "sources_unchanged_on_main": true,
+      "dependencies": {
+        "SOL-009": "accepted",
+        "SOL-010": "accepted",
+        "SOL-013": "accepted",
+        "SOL-017": "accepted",
+        "SOL-021": "accepted"
+      },
+      "branch": "work/sol/SOL-022-a1",
+      "receipt_present": false
+    },
+    {
+      "id": "SOL-023",
+      "state": "waiting",
+      "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+      "task_sha256": "3298bc4f6bd44345967419c640b395d0196efe9f81160c71128901f9f1f0938a",
+      "source_count": 18,
+      "sources_unchanged_on_main": true,
+      "dependencies": {
+        "SOL-001": "accepted",
+        "SOL-004": "accepted",
+        "SOL-013": "accepted",
+        "SOL-021": "accepted",
+        "SOL-022": "ready"
+      },
+      "branch": "work/sol/SOL-023-a1",
+      "receipt_present": false
+    }
+  ],
+  "remote_status": {
+    "sol": {
+      "commit": "edd983102cb33122e7db6d19d59323300f8c1356",
+      "state": "running",
+      "task_id": "SOL-016",
+      "updated_at": "2026-10-19T18:52:27.437985+00:00",
+      "lease_until": "2026-10-19T19:02:27.437985+00:00",
+      "lease_valid_at_check": true
+    },
+    "hy3": {
+      "commit": "692448d5c06724fc2e8cc39915387a4cdbd40bcf",
+      "state": "idle",
+      "task_id": null,
+      "updated_at": "2026-10-19T18:54:12.760793+00:00",
+      "lease_until": "2026-10-19T19:04:12.760793+00:00",
+      "lease_valid_at_check": true
+    }
+  },
+  "new_task_receipts": [],
+  "reference": {
+    "script": "audit/chief/case_reference.py",
+    "evidence": "audit/chief/case-reference.json",
+    "reference_groups": 5,
+    "python": "3.12.0",
+    "evidence_sha256": "8e207be8c4fa5e4fa274cf0d858c7ffef4b8cefa56ed64ab06ff72c6f80f1813",
+    "script_sha256_lf": "0418f2c00fb8f3a57ef4ceeee0ce4435fb113228bb14de68cd3d7afb3f18c405",
+    "replay": {
+      "exit_code": 0,
+      "stdout": "{\"reference_groups\": 5, \"read_only\": true, \"implementation_executed\": false}",
+      "elapsed_seconds": 0.39000000001396984,
+      "original_bytes_preserved": true
+    },
+    "corruptions": [
+      {
+        "case": "early-latch",
+        "exit_code": 1,
+        "rejected": true,
+        "bytes_unchanged": true,
+        "elapsed_seconds": 0.0940000000409782,
+        "exception": "AssertionError: Reference mismatch; refusing to repair"
+      },
+      {
+        "case": "wrong-fee",
+        "exit_code": 1,
+        "rejected": true,
+        "bytes_unchanged": true,
+        "elapsed_seconds": 0.10999999998603016,
+        "exception": "AssertionError: Reference mismatch; refusing to repair"
+      }
+    ]
+  },
+  "key_facts": {
+    "generic_latch_year": 4,
+    "last_year_before_latch": 3,
+    "loss_after_year_3_pct": "27.1",
+    "forced_request_two_year_fee": "0.059995",
+    "forced_request_max_loss_pct": "16.049996",
+    "forced_request_trough": [
+      2,
+      "post_fee"
+    ]
+  },
+  "production_code_changed": false,
+  "runtime_code_changed": false,
+  "competition_outcomes_read": false,
+  "final_data_open": false,
+  "actual_human_help_request": false,
+  "limitations": [
+    "Only rational reference arithmetic is certified; SOL-023 implementation remains unreceived and unaccepted.",
+    "SOL-016 remains in flight, SOL-022 ready, SOL-023 waits for accepted positive calibration review.",
+    "No primary baseline rerun or policy outcome was executed."
+  ]
+}

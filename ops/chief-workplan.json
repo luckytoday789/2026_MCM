@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T03:17:33.109705+08:00",
-  "reason": "Accepted exact SOL-024 final-protocol design review at b1de55e after read-only replay, corruption rejection and independent chief arithmetic. Saved final implementation notes and eight analysis reference groups. SOL-016 running at latest valid receipt; SOL-022 ready and SOL-023 waits for calibration. Only remote prerequisites remain actionable; final gate closed.",
+  "next_wake_at": "2026-10-20T03:27:22.464566+08:00",
+  "reason": "Prepared five independent rational case-reference groups with read-only replay and two corruption rejections; no new worker receipt at this check. SOL-016 running on valid lease, SOL-022 ready, SOL-023 waiting for calibration. Task/source/dependency pins revalidated; final gate closed. Only remote prerequisites remain actionable.",
   "next_actions": [
     "Fetch exact SOL-016/SOL-022 receipts and status. Verify task/base/source/path/artifact pins; review source, replay checks read-only and independently check numerical evidence. Chief audit/chief/analysis_reference.py and analysis-reference.json provide eight prepared rational/scalar reference groups for SOL-016; they are not yet implementation acceptance.",
     "After positive accepted SOL-022, promptly release existing unchanged SOL-023 if its pinned sources and all prerequisites still match. Do not recreate accepted/submitted tasks or mutate immutable attempts.",
-    "Independently review exact SOL-016/SOL-023 code and fixtures before integration. Publish writer implementation task only after both components are accepted in a real already-pushed base, using specs/POLICY_RESULT_WRITER.md; split work into <=30-minute granular attempts if necessary.",
+    "Independently review exact SOL-016/SOL-023 code and fixtures before integration. For SOL-023 compare audit/chief/case_reference.py and case-reference.json: identical-asset deferral and lagged latch, prefix diagnostics, exact fee/post-fee drawdown and earliest tie references; the preparation is not implementation acceptance. Publish writer task only after SOL-016 and SOL-023 are accepted in an already-pushed base, using specs/POLICY_RESULT_WRITER.md and <=30-minute attempts.",
     "After reviewed writer, dispatch fixed HY3 development jobs for five new primary-fee policies and eight doubled-fee cases; import accepted HY3-003 exactly, never rerun it. Give Sol a targeted independent review of precise HY3 receipts before selection claims.",
     "Implement/review personalized adapter only after accepted generic assignment evidence, pinning specs/PERSONALIZED_OUTPUT_NOTES.md. Preserve no-run zero denominators/nulls and separate same-primary-mode cost robustness from fee-specific profile choices.",
     "Final design SOL-024 is accepted at b1de55ec16f7b67884415637f562fcdf446034c7. Carry specs/FINAL_OUTPUT_NOTES.md and I1-I8 into future final implementation/freeze tasks: external freeze audit, null final folds, fixed classes, explicit correction-source binding. Actual development selection, final code/refit/freeze and one final inventory remain separate gates.",
@@ -17,6 +17,6 @@
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T02:47:33.109705+08:00",
+  "last_completed_at": "2026-10-20T02:57:22.464566+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

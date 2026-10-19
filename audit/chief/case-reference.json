@@ -1,0 +1,1136 @@
+{
+  "schema_version": 1,
+  "source_sha256": {
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/POLICY_CASE_ENGINE.md": "c984e230eecb720613b864a910d95921af1aa805f79fa68c7044f905410dec62",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3"
+  },
+  "script_sha256_lf": "0418f2c00fb8f3a57ef4ceeee0ce4435fb113228bb14de68cd3d7afb3f18c405",
+  "scope": "Chief independent rational synthetic case references; future implementation still needs comparison and acceptance.",
+  "reference_groups": 5,
+  "facts": {
+    "two_year_forced_target_accounting_only": {
+      "targets": [
+        [
+          "1/5",
+          "0",
+          "4/5"
+        ],
+        [
+          "1/5",
+          "0",
+          "4/5"
+        ]
+      ],
+      "outcomes": [
+        [
+          [
+            "1/4",
+            "0",
+            "0"
+          ],
+          "1/4"
+        ],
+        [
+          [
+            "0",
+            "1/2",
+            "1/4"
+          ],
+          "0"
+        ]
+      ],
+      "fee_rate": "1/400",
+      "ledger": [
+        {
+          "period": 1,
+          "holdings_before": [
+            "0",
+            "0",
+            "100"
+          ],
+          "holdings_after_fee": [
+            "1999/100",
+            "0",
+            "1999/25"
+          ],
+          "holdings_end": [
+            "1999/80",
+            "0",
+            "1999/25"
+          ],
+          "intended_transfer": "20",
+          "fee": "1/20",
+          "cpi_before": "1",
+          "cpi_end": "5/4",
+          "real_wealth_before": "100",
+          "real_wealth_after_fee": "1999/20",
+          "real_wealth_end": "41979/500"
+        },
+        {
+          "period": 2,
+          "holdings_before": [
+            "1999/80",
+            "0",
+            "1999/25"
+          ],
+          "holdings_after_fee": [
+            "20987501/1000000",
+            "0",
+            "20987501/250000"
+          ],
+          "holdings_end": [
+            "20987501/1000000",
+            "0",
+            "20987501/200000"
+          ],
+          "intended_transfer": "1999/500",
+          "fee": "1999/200000",
+          "cpi_before": "5/4",
+          "cpi_end": "5/4",
+          "real_wealth_before": "41979/500",
+          "real_wealth_after_fee": "20987501/250000",
+          "real_wealth_end": "62962503/625000"
+        }
+      ],
+      "metrics": [
+        {
+          "horizon": 1,
+          "terminal_real_wealth": "41979/500",
+          "max_real_drawdown_pct": "8021/500",
+          "drawdown_peak": [
+            0,
+            "initial"
+          ],
+          "drawdown_trough": [
+            1,
+            "end"
+          ],
+          "nominal_fee_sum": "1/20",
+          "trade_count": 1,
+          "trade_share_pct": "100",
+          "trade_share_ex_initial_pct": null,
+          "annual_real_returns": [
+            "-8021/50000"
+          ],
+          "annual_return_sample_variance": null,
+          "net_real_cagr_pct": -16.042,
+          "annual_real_volatility_pct": null
+        },
+        {
+          "horizon": 2,
+          "terminal_real_wealth": "62962503/625000",
+          "max_real_drawdown_pct": "4012499/250000",
+          "drawdown_peak": [
+            0,
+            "initial"
+          ],
+          "drawdown_trough": [
+            2,
+            "post_fee"
+          ],
+          "nominal_fee_sum": "11999/200000",
+          "trade_count": 2,
+          "trade_share_pct": "100",
+          "trade_share_ex_initial_pct": "100",
+          "annual_real_returns": [
+            "-8021/50000",
+            "1749/8750"
+          ],
+          "annual_return_sample_variance": "15902975449/245000000000",
+          "net_real_cagr_pct": 0.3693204121657967,
+          "annual_real_volatility_pct": 25.477461387169132
+        }
+      ],
+      "limitation": "Prescribed accounting requests; no claim that a policy chooses these targets."
+    },
+    "deferred_then_latched_all_five_modes": {
+      "scenario_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "periods": 6,
+      "returns": [
+        "1/8",
+        "1/8",
+        "1/8"
+      ],
+      "inflation": "1/4",
+      "real_gross": [
+        "9/10",
+        "9/10",
+        "9/10"
+      ],
+      "fee_rates": [
+        "1/400",
+        "1/200"
+      ],
+      "ledger": [
+        {
+          "period": 1,
+          "holdings_before": [
+            "0",
+            "0",
+            "100"
+          ],
+          "holdings_after_fee": [
+            "0",
+            "0",
+            "100"
+          ],
+          "holdings_end": [
+            "0",
+            "0",
+            "225/2"
+          ],
+          "intended_transfer": "0",
+          "fee": "0",
+          "cpi_before": "1",
+          "cpi_end": "5/4",
+          "real_wealth_before": "100",
+          "real_wealth_after_fee": "100",
+          "real_wealth_end": "90"
+        },
+        {
+          "period": 2,
+          "holdings_before": [
+            "0",
+            "0",
+            "225/2"
+          ],
+          "holdings_after_fee": [
+            "0",
+            "0",
+            "225/2"
+          ],
+          "holdings_end": [
+            "0",
+            "0",
+            "2025/16"
+          ],
+          "intended_transfer": "0",
+          "fee": "0",
+          "cpi_before": "5/4",
+          "cpi_end": "25/16",
+          "real_wealth_before": "90",
+          "real_wealth_after_fee": "90",
+          "real_wealth_end": "81"
+        },
+        {
+          "period": 3,
+          "holdings_before": [
+            "0",
+            "0",
+            "2025/16"
+          ],
+          "holdings_after_fee": [
+            "0",
+            "0",
+            "2025/16"
+          ],
+          "holdings_end": [
+            "0",
+            "0",
+            "18225/128"
+          ],
+          "intended_transfer": "0",
+          "fee": "0",
+          "cpi_before": "25/16",
+          "cpi_end": "125/64",
+          "real_wealth_before": "81",
+          "real_wealth_after_fee": "81",
+          "real_wealth_end": "729/10"
+        },
+        {
+          "period": 4,
+          "holdings_before": [
+            "0",
+            "0",
+            "18225/128"
+          ],
+          "holdings_after_fee": [
+            "0",
+            "0",
+            "18225/128"
+          ],
+          "holdings_end": [
+            "0",
+            "0",
+            "164025/1024"
+          ],
+          "intended_transfer": "0",
+          "fee": "0",
+          "cpi_before": "125/64",
+          "cpi_end": "625/256",
+          "real_wealth_before": "729/10",
+          "real_wealth_after_fee": "729/10",
+          "real_wealth_end": "6561/100"
+        },
+        {
+          "period": 5,
+          "holdings_before": [
+            "0",
+            "0",
+            "164025/1024"
+          ],
+          "holdings_after_fee": [
+            "0",
+            "0",
+            "164025/1024"
+          ],
+          "holdings_end": [
+            "0",
+            "0",
+            "1476225/8192"
+          ],
+          "intended_transfer": "0",
+          "fee": "0",
+          "cpi_before": "625/256",
+          "cpi_end": "3125/1024",
+          "real_wealth_before": "6561/100",
+          "real_wealth_after_fee": "6561/100",
+          "real_wealth_end": "59049/1000"
+        },
+        {
+          "period": 6,
+          "holdings_before": [
+            "0",
+            "0",
+            "1476225/8192"
+          ],
+          "holdings_after_fee": [
+            "0",
+            "0",
+            "1476225/8192"
+          ],
+          "holdings_end": [
+            "0",
+            "0",
+            "13286025/65536"
+          ],
+          "intended_transfer": "0",
+          "fee": "0",
+          "cpi_before": "3125/1024",
+          "cpi_end": "15625/4096",
+          "real_wealth_before": "59049/1000",
+          "real_wealth_after_fee": "59049/1000",
+          "real_wealth_end": "531441/10000"
+        }
+      ],
+      "metrics": [
+        {
+          "horizon": 2,
+          "terminal_real_wealth": "81",
+          "max_real_drawdown_pct": "19",
+          "drawdown_peak": [
+            0,
+            "initial"
+          ],
+          "drawdown_trough": [
+            2,
+            "end"
+          ],
+          "nominal_fee_sum": "0",
+          "trade_count": 0,
+          "trade_share_pct": "0",
+          "trade_share_ex_initial_pct": "0",
+          "annual_real_returns": [
+            "-1/10",
+            "-1/10"
+          ],
+          "annual_return_sample_variance": "0",
+          "net_real_cagr_pct": -9.999999999999998,
+          "annual_real_volatility_pct": 0.0
+        },
+        {
+          "horizon": 3,
+          "terminal_real_wealth": "729/10",
+          "max_real_drawdown_pct": "271/10",
+          "drawdown_peak": [
+            0,
+            "initial"
+          ],
+          "drawdown_trough": [
+            3,
+            "end"
+          ],
+          "nominal_fee_sum": "0",
+          "trade_count": 0,
+          "trade_share_pct": "0",
+          "trade_share_ex_initial_pct": "0",
+          "annual_real_returns": [
+            "-1/10",
+            "-1/10",
+            "-1/10"
+          ],
+          "annual_return_sample_variance": "0",
+          "net_real_cagr_pct": -9.999999999999998,
+          "annual_real_volatility_pct": 0.0
+        },
+        {
+          "horizon": 4,
+          "terminal_real_wealth": "6561/100",
+          "max_real_drawdown_pct": "3439/100",
+          "drawdown_peak": [
+            0,
+            "initial"
+          ],
+          "drawdown_trough": [
+            4,
+            "end"
+          ],
+          "nominal_fee_sum": "0",
+          "trade_count": 0,
+          "trade_share_pct": "0",
+          "trade_share_ex_initial_pct": "0",
+          "annual_real_returns": [
+            "-1/10",
+            "-1/10",
+            "-1/10",
+            "-1/10"
+          ],
+          "annual_return_sample_variance": "0",
+          "net_real_cagr_pct": -9.999999999999998,
+          "annual_real_volatility_pct": 0.0
+        },
+        {
+          "horizon": 6,
+          "terminal_real_wealth": "531441/10000",
+          "max_real_drawdown_pct": "468559/10000",
+          "drawdown_peak": [
+            0,
+            "initial"
+          ],
+          "drawdown_trough": [
+            6,
+            "end"
+          ],
+          "nominal_fee_sum": "0",
+          "trade_count": 0,
+          "trade_share_pct": "0",
+          "trade_share_ex_initial_pct": "0",
+          "annual_real_returns": [
+            "-1/10",
+            "-1/10",
+            "-1/10",
+            "-1/10",
+            "-1/10",
+            "-1/10"
+          ],
+          "annual_return_sample_variance": "0",
+          "net_real_cagr_pct": -9.999999999999998,
+          "annual_real_volatility_pct": 0.0
+        }
+      ],
+      "diagnostics": [
+        {
+          "horizon": 2,
+          "human_review_count": 0,
+          "human_review_share_pct": "0",
+          "first_latch_year": null,
+          "first_deployment_year": null,
+          "initial_allocation_deferred": true,
+          "target_change_count": 0
+        },
+        {
+          "horizon": 3,
+          "human_review_count": 0,
+          "human_review_share_pct": "0",
+          "first_latch_year": null,
+          "first_deployment_year": null,
+          "initial_allocation_deferred": true,
+          "target_change_count": 0
+        },
+        {
+          "horizon": 4,
+          "human_review_count": 1,
+          "human_review_share_pct": "25",
+          "first_latch_year": 4,
+          "first_deployment_year": null,
+          "initial_allocation_deferred": true,
+          "target_change_count": 0
+        },
+        {
+          "horizon": 6,
+          "human_review_count": 3,
+          "human_review_share_pct": "50",
+          "first_latch_year": 4,
+          "first_deployment_year": null,
+          "initial_allocation_deferred": true,
+          "target_change_count": 0
+        }
+      ],
+      "actions": [
+        "keep",
+        "keep",
+        "keep",
+        "human_review",
+        "human_review",
+        "human_review"
+      ],
+      "observed_losses_before_review": [
+        "0",
+        "10",
+        "19",
+        "271/10",
+        "3439/100",
+        "40951/1000"
+      ],
+      "per_case_counts": {
+        "annual_ledgers": 24,
+        "scenario_metrics": 16,
+        "summary": 4,
+        "decisions": 24,
+        "target_scores": 12
+      },
+      "reference_diagnostics": "All policy-specific diagnostics are null/inapplicable for baselines."
+    },
+    "identical_asset_scores": {
+      "rows": [
+        {
+          "target_name": "conservative",
+          "fee_rate": "1/400",
+          "ce_keep": "9/10",
+          "ce_target": "9/10",
+          "tau": "7/20",
+          "fee_fraction": "7/8000",
+          "pre_cost_benefit": "0",
+          "modeled_fee_impact": "63/80000",
+          "conservative_score": "35937/40000",
+          "true_net_ce": "71937/80000",
+          "selected": false
+        },
+        {
+          "target_name": "conservative",
+          "fee_rate": "1/200",
+          "ce_keep": "9/10",
+          "ce_target": "9/10",
+          "tau": "7/20",
+          "fee_fraction": "7/4000",
+          "pre_cost_benefit": "0",
+          "modeled_fee_impact": "63/40000",
+          "conservative_score": "17937/20000",
+          "true_net_ce": "35937/40000",
+          "selected": false
+        },
+        {
+          "target_name": "balanced",
+          "fee_rate": "1/400",
+          "ce_keep": "9/10",
+          "ce_target": "9/10",
+          "tau": "2/3",
+          "fee_fraction": "1/600",
+          "pre_cost_benefit": "0",
+          "modeled_fee_impact": "3/2000",
+          "conservative_score": "897/1000",
+          "true_net_ce": "1797/2000",
+          "selected": false
+        },
+        {
+          "target_name": "balanced",
+          "fee_rate": "1/200",
+          "ce_keep": "9/10",
+          "ce_target": "9/10",
+          "tau": "2/3",
+          "fee_fraction": "1/300",
+          "pre_cost_benefit": "0",
+          "modeled_fee_impact": "3/1000",
+          "conservative_score": "447/500",
+          "true_net_ce": "897/1000",
+          "selected": false
+        },
+        {
+          "target_name": "growth",
+          "fee_rate": "1/400",
+          "ce_keep": "9/10",
+          "ce_target": "9/10",
+          "tau": "9/10",
+          "fee_fraction": "9/4000",
+          "pre_cost_benefit": "0",
+          "modeled_fee_impact": "81/40000",
+          "conservative_score": "17919/20000",
+          "true_net_ce": "35919/40000",
+          "selected": false
+        },
+        {
+          "target_name": "growth",
+          "fee_rate": "1/200",
+          "ce_keep": "9/10",
+          "ce_target": "9/10",
+          "tau": "9/10",
+          "fee_fraction": "9/2000",
+          "pre_cost_benefit": "0",
+          "modeled_fee_impact": "81/20000",
+          "conservative_score": "8919/10000",
+          "true_net_ce": "17919/20000",
+          "selected": false
+        }
+      ],
+      "score_years": [
+        1,
+        2,
+        3
+      ],
+      "no_scores_years": [
+        4,
+        5,
+        6
+      ],
+      "contextual_recent_counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "contextual_prior_masses": [
+        "1",
+        "15/16",
+        "15/17",
+        "5/6",
+        "15/19",
+        "3/4"
+      ],
+      "fixed_recent_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fixed_prior_masses": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    "equal_asset_reference_controls": [
+      {
+        "fee_rate": "1/400",
+        "initial_transfer": "200/3",
+        "initial_fee": "1/6",
+        "annual_metrics": [
+          {
+            "horizon": 2,
+            "terminal_real_wealth": "16173/200",
+            "max_real_drawdown_pct": "3827/200",
+            "drawdown_peak": [
+              0,
+              "initial"
+            ],
+            "drawdown_trough": [
+              2,
+              "end"
+            ],
+            "nominal_fee_sum": "1/6",
+            "trade_count": 1,
+            "trade_share_pct": "50",
+            "trade_share_ex_initial_pct": "0",
+            "annual_real_returns": [
+              "-203/2000",
+              "-1/10"
+            ],
+            "annual_return_sample_variance": "9/8000000",
+            "net_real_cagr_pct": -10.075031276068824,
+            "annual_real_volatility_pct": 0.10606601717798213
+          },
+          {
+            "horizon": 3,
+            "terminal_real_wealth": "145557/2000",
+            "max_real_drawdown_pct": "54443/2000",
+            "drawdown_peak": [
+              0,
+              "initial"
+            ],
+            "drawdown_trough": [
+              3,
+              "end"
+            ],
+            "nominal_fee_sum": "1/6",
+            "trade_count": 1,
+            "trade_share_pct": "100/3",
+            "trade_share_ex_initial_pct": "0",
+            "annual_real_returns": [
+              "-203/2000",
+              "-1/10",
+              "-1/10"
+            ],
+            "annual_return_sample_variance": "3/4000000",
+            "net_real_cagr_pct": -10.05002780352655,
+            "annual_real_volatility_pct": 0.08660254037844387
+          },
+          {
+            "horizon": 4,
+            "terminal_real_wealth": "1310013/20000",
+            "max_real_drawdown_pct": "689987/20000",
+            "drawdown_peak": [
+              0,
+              "initial"
+            ],
+            "drawdown_trough": [
+              4,
+              "end"
+            ],
+            "nominal_fee_sum": "1/6",
+            "trade_count": 1,
+            "trade_share_pct": "25",
+            "trade_share_ex_initial_pct": "0",
+            "annual_real_returns": [
+              "-203/2000",
+              "-1/10",
+              "-1/10",
+              "-1/10"
+            ],
+            "annual_return_sample_variance": "9/16000000",
+            "net_real_cagr_pct": -10.037523460312602,
+            "annual_real_volatility_pct": 0.075
+          },
+          {
+            "horizon": 6,
+            "terminal_real_wealth": "106111053/2000000",
+            "max_real_drawdown_pct": "93888947/2000000",
+            "drawdown_peak": [
+              0,
+              "initial"
+            ],
+            "drawdown_trough": [
+              6,
+              "end"
+            ],
+            "nominal_fee_sum": "1/6",
+            "trade_count": 1,
+            "trade_share_pct": "50/3",
+            "trade_share_ex_initial_pct": "0",
+            "annual_real_returns": [
+              "-203/2000",
+              "-1/10",
+              "-1/10",
+              "-1/10",
+              "-1/10",
+              "-1/10"
+            ],
+            "annual_return_sample_variance": "3/8000000",
+            "net_real_cagr_pct": -10.025017378814628,
+            "annual_real_volatility_pct": 0.06123724356957946
+          }
+        ],
+        "buy_hold_metrics": [
+          {
+            "horizon": 2,
+            "terminal_real_wealth": "16173/200",
+            "max_real_drawdown_pct": "3827/200",
+            "drawdown_peak": [
+              0,
+              "initial"
+            ],
+            "drawdown_trough": [
+              2,
+              "end"
+            ],
+            "nominal_fee_sum": "1/6",
+            "trade_count": 1,
+            "trade_share_pct": "50",
+            "trade_share_ex_initial_pct": "0",
+            "annual_real_returns": [
+              "-203/2000",
+              "-1/10"
+            ],
+            "annual_return_sample_variance": "9/8000000",
+            "net_real_cagr_pct": -10.075031276068824,
+            "annual_real_volatility_pct": 0.10606601717798213
+          },
+          {
+            "horizon": 3,
+            "terminal_real_wealth": "145557/2000",
+            "max_real_drawdown_pct": "54443/2000",
+            "drawdown_peak": [
+              0,
+              "initial"
+            ],
+            "drawdown_trough": [
+              3,
+              "end"
+            ],
+            "nominal_fee_sum": "1/6",
+            "trade_count": 1,
+            "trade_share_pct": "100/3",
+            "trade_share_ex_initial_pct": "0",
+            "annual_real_returns": [
+              "-203/2000",
+              "-1/10",
+              "-1/10"
+            ],
+            "annual_return_sample_variance": "3/4000000",
+            "net_real_cagr_pct": -10.05002780352655,
+            "annual_real_volatility_pct": 0.08660254037844387
+          },
+          {
+            "horizon": 4,
+            "terminal_real_wealth": "1310013/20000",
+            "max_real_drawdown_pct": "689987/20000",
+            "drawdown_peak": [
+              0,
+              "initial"
+            ],
+            "drawdown_trough": [
+              4,
+              "end"
+            ],
+            "nominal_fee_sum": "1/6",
+            "trade_count": 1,
+            "trade_share_pct": "25",
+            "trade_share_ex_initial_pct": "0",
+            "annual_real_returns": [
+              "-203/2000",
+              "-1/10",
+              "-1/10",
+              "-1/10"
+            ],
+            "annual_return_sample_variance": "9/16000000",
+            "net_real_cagr_pct": -10.037523460312602,
+            "annual_real_volatility_pct": 0.075
+          },
+          {
+            "horizon": 6,
+            "terminal_real_wealth": "106111053/2000000",
+            "max_real_drawdown_pct": "93888947/2000000",
+            "drawdown_peak": [
+              0,
+              "initial"
+            ],
+            "drawdown_trough": [
+              6,
+              "end"
+            ],
+            "nominal_fee_sum": "1/6",
+            "trade_count": 1,
+            "trade_share_pct": "50/3",
+            "trade_share_ex_initial_pct": "0",
+            "annual_real_returns": [
+              "-203/2000",
+              "-1/10",
+              "-1/10",
+              "-1/10",
+              "-1/10",
+              "-1/10"
+            ],
+            "annual_return_sample_variance": "3/8000000",
+            "net_real_cagr_pct": -10.025017378814628,
+            "annual_real_volatility_pct": 0.06123724356957946
+          }
+        ],
+        "decisions_count": 0,
+        "target_scores_count": 0,
+        "policy_diagnostics": null,
+        "severe_scenario_id": 1
+      },
+      {
+        "fee_rate": "1/200",
+        "initial_transfer": "200/3",
+        "initial_fee": "1/3",
+        "annual_metrics": [
+          {
+            "horizon": 2,
+            "terminal_real_wealth": "8073/100",
+            "max_real_drawdown_pct": "1927/100",
+            "drawdown_peak": [
+              0,
+              "initial"
+            ],
+            "drawdown_trough": [
+              2,
+              "end"
+            ],
+            "nominal_fee_sum": "1/3",
+            "trade_count": 1,
+            "trade_share_pct": "50",
+            "trade_share_ex_initial_pct": "0",
+            "annual_real_returns": [
+              "-103/1000",
+              "-1/10"
+            ],
+            "annual_return_sample_variance": "9/2000000",
+            "net_real_cagr_pct": -10.15012520876838,
+            "annual_real_volatility_pct": 0.21213203435596426
+          },
+          {
+            "horizon": 3,
+            "terminal_real_wealth": "72657/1000",
+            "max_real_drawdown_pct": "27343/1000",
+            "drawdown_peak": [
+              0,
+              "initial"
+            ],
+            "drawdown_trough": [
+              3,
+              "end"
+            ],
+            "nominal_fee_sum": "1/3",
+            "trade_count": 1,
+            "trade_share_pct": "100/3",
+            "trade_share_ex_initial_pct": "0",
+            "annual_real_returns": [
+              "-103/1000",
+              "-1/10",
+              "-1/10"
+            ],
+            "annual_return_sample_variance": "3/1000000",
+            "net_real_cagr_pct": -10.100111317330796,
+            "annual_real_volatility_pct": 0.17320508075688773
+          },
+          {
+            "horizon": 4,
+            "terminal_real_wealth": "653913/10000",
+            "max_real_drawdown_pct": "346087/10000",
+            "drawdown_peak": [
+              0,
+              "initial"
+            ],
+            "drawdown_trough": [
+              4,
+              "end"
+            ],
+            "nominal_fee_sum": "1/3",
+            "trade_count": 1,
+            "trade_share_pct": "25",
+            "trade_share_ex_initial_pct": "0",
+            "annual_real_returns": [
+              "-103/1000",
+              "-1/10",
+              "-1/10",
+              "-1/10"
+            ],
+            "annual_return_sample_variance": "9/4000000",
+            "net_real_cagr_pct": -10.075093932710466,
+            "annual_real_volatility_pct": 0.15
+          },
+          {
+            "horizon": 6,
+            "terminal_real_wealth": "52966953/1000000",
+            "max_real_drawdown_pct": "47033047/1000000",
+            "drawdown_peak": [
+              0,
+              "initial"
+            ],
+            "drawdown_trough": [
+              6,
+              "end"
+            ],
+            "nominal_fee_sum": "1/3",
+            "trade_count": 1,
+            "trade_share_pct": "50/3",
+            "trade_share_ex_initial_pct": "0",
+            "annual_real_returns": [
+              "-103/1000",
+              "-1/10",
+              "-1/10",
+              "-1/10",
+              "-1/10",
+              "-1/10"
+            ],
+            "annual_return_sample_variance": "3/2000000",
+            "net_real_cagr_pct": -10.050069586240207,
+            "annual_real_volatility_pct": 0.12247448713915891
+          }
+        ],
+        "buy_hold_metrics": [
+          {
+            "horizon": 2,
+            "terminal_real_wealth": "8073/100",
+            "max_real_drawdown_pct": "1927/100",
+            "drawdown_peak": [
+              0,
+              "initial"
+            ],
+            "drawdown_trough": [
+              2,
+              "end"
+            ],
+            "nominal_fee_sum": "1/3",
+            "trade_count": 1,
+            "trade_share_pct": "50",
+            "trade_share_ex_initial_pct": "0",
+            "annual_real_returns": [
+              "-103/1000",
+              "-1/10"
+            ],
+            "annual_return_sample_variance": "9/2000000",
+            "net_real_cagr_pct": -10.15012520876838,
+            "annual_real_volatility_pct": 0.21213203435596426
+          },
+          {
+            "horizon": 3,
+            "terminal_real_wealth": "72657/1000",
+            "max_real_drawdown_pct": "27343/1000",
+            "drawdown_peak": [
+              0,
+              "initial"
+            ],
+            "drawdown_trough": [
+              3,
+              "end"
+            ],
+            "nominal_fee_sum": "1/3",
+            "trade_count": 1,
+            "trade_share_pct": "100/3",
+            "trade_share_ex_initial_pct": "0",
+            "annual_real_returns": [
+              "-103/1000",
+              "-1/10",
+              "-1/10"
+            ],
+            "annual_return_sample_variance": "3/1000000",
+            "net_real_cagr_pct": -10.100111317330796,
+            "annual_real_volatility_pct": 0.17320508075688773
+          },
+          {
+            "horizon": 4,
+            "terminal_real_wealth": "653913/10000",
+            "max_real_drawdown_pct": "346087/10000",
+            "drawdown_peak": [
+              0,
+              "initial"
+            ],
+            "drawdown_trough": [
+              4,
+              "end"
+            ],
+            "nominal_fee_sum": "1/3",
+            "trade_count": 1,
+            "trade_share_pct": "25",
+            "trade_share_ex_initial_pct": "0",
+            "annual_real_returns": [
+              "-103/1000",
+              "-1/10",
+              "-1/10",
+              "-1/10"
+            ],
+            "annual_return_sample_variance": "9/4000000",
+            "net_real_cagr_pct": -10.075093932710466,
+            "annual_real_volatility_pct": 0.15
+          },
+          {
+            "horizon": 6,
+            "terminal_real_wealth": "52966953/1000000",
+            "max_real_drawdown_pct": "47033047/1000000",
+            "drawdown_peak": [
+              0,
+              "initial"
+            ],
+            "drawdown_trough": [
+              6,
+              "end"
+            ],
+            "nominal_fee_sum": "1/3",
+            "trade_count": 1,
+            "trade_share_pct": "50/3",
+            "trade_share_ex_initial_pct": "0",
+            "annual_real_returns": [
+              "-103/1000",
+              "-1/10",
+              "-1/10",
+              "-1/10",
+              "-1/10",
+              "-1/10"
+            ],
+            "annual_return_sample_variance": "3/2000000",
+            "net_real_cagr_pct": -10.050069586240207,
+            "annual_real_volatility_pct": 0.12247448713915891
+          }
+        ],
+        "decisions_count": 0,
+        "target_scores_count": 0,
+        "policy_diagnostics": null,
+        "severe_scenario_id": 1
+      }
+    ],
+    "earliest_post_fee_trough_on_exact_tie": {
+      "ledger": [
+        {
+          "period": 1,
+          "holdings_before": [
+            "0",
+            "0",
+            "100"
+          ],
+          "holdings_after_fee": [
+            "399/4",
+            "0",
+            "0"
+          ],
+          "holdings_end": [
+            "1995/16",
+            "0",
+            "0"
+          ],
+          "intended_transfer": "100",
+          "fee": "1/4",
+          "cpi_before": "1",
+          "cpi_end": "5/4",
+          "real_wealth_before": "100",
+          "real_wealth_after_fee": "399/4",
+          "real_wealth_end": "399/4"
+        },
+        {
+          "period": 2,
+          "holdings_before": [
+            "1995/16",
+            "0",
+            "0"
+          ],
+          "holdings_after_fee": [
+            "1995/16",
+            "0",
+            "0"
+          ],
+          "holdings_end": [
+            "9975/64",
+            "0",
+            "0"
+          ],
+          "intended_transfer": "0",
+          "fee": "0",
+          "cpi_before": "5/4",
+          "cpi_end": "5/4",
+          "real_wealth_before": "399/4",
+          "real_wealth_after_fee": "399/4",
+          "real_wealth_end": "1995/16"
+        }
+      ],
+      "metrics": {
+        "horizon": 2,
+        "terminal_real_wealth": "1995/16",
+        "max_real_drawdown_pct": "1/4",
+        "drawdown_peak": [
+          0,
+          "initial"
+        ],
+        "drawdown_trough": [
+          1,
+          "post_fee"
+        ],
+        "nominal_fee_sum": "1/4",
+        "trade_count": 1,
+        "trade_share_pct": "50",
+        "trade_share_ex_initial_pct": "0",
+        "annual_real_returns": [
+          "-1/400",
+          "1/4"
+        ],
+        "annual_return_sample_variance": "10201/320000",
+        "net_real_cagr_pct": 11.663557170636473,
+        "annual_real_volatility_pct": 17.854446224960324
+      }
+    }
+  },
+  "competition_outcomes_read": false,
+  "implementation_executed": false,
+  "final_data_open": false
+}
