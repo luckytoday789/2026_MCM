@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-002",
+  "runs": [
+    {
+      "command": "{python} audit/SOL-002/verify.py",
+      "exit_code": 1,
+      "outcome": "Verifier startup failed before evidence initialization",
+      "error": "TypeError: Decimal and float cannot be added in the intentional oracle-mutation test.",
+      "correction": "Use Decimal(\"0.000001\") for the injected fault.",
+      "scope": "Reviewer verifier only; no chief numeric finding; no saved oracle/evidence overwritten."
+    },
+    {
+      "command": "{python} audit/SOL-002/verify.py; then {python} audit/SOL-002/verify.py --check",
+      "exit_code": 0,
+      "outcome": "354 checks passed; saved evidence unchanged.",
+      "next_action": "Added explicit H=1 excluded-trade, compounded inflation, separate-scenario drawdown, and each-horizon trade-denominator checks. Archived the initial passed evidence before reinitialization."
+    },
+    {
+      "command": "{python} audit/SOL-002/verify.py",
+      "exit_code": 0,
+      "outcome": "393 checks initialized; maximum residual 9.266521423384168e-15."
+    },
+    {
+      "command": "{python} audit/SOL-002/verify.py --check",
+      "test_kind": "Intentional saved-evidence corruption; original bytes restored afterward.",
+      "exit_code": 1,
+      "stdout": "FAILED: verification.json: saved evidence differs from independent recomputation\r\nDiagnosis preserved: diagnosis-0d20c0167c76d87b.json",
+      "stderr": "",
+      "corrupt_evidence_and_findings_not_overwritten": true,
+      "preserved_input": "history/intentional-corrupt-verification.json"
+    },
+    {
+      "command": "{python} audit/SOL-002/verify.py --check",
+      "test_kind": "Final valid evidence after restoration",
+      "exit_code": 0,
+      "stdout": "PASS: 393 checks; chief oracle and saved evidence verified; max residual 9.26652142338416848220769789397240377632534495279593319E-15",
+      "stderr": "",
+      "verification_and_findings_bytes_unchanged": true
+    }
+  ]
+}
