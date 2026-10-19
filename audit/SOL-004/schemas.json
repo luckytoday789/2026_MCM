@@ -1,0 +1,686 @@
+{
+  "schema_version": 1,
+  "encoding": "UTF-8 LF",
+  "csv_float_serialization": "Python round-trip repr; no rounding",
+  "csv_null": "empty string; targets on keep only in this fixed pilot",
+  "csvs": {
+    "annual_ledgers.csv": {
+      "row_count": 10800,
+      "keys": [
+        "policy",
+        "scenario_id",
+        "year"
+      ],
+      "order": "lexicographic by listed keys",
+      "columns": [
+        {
+          "name": "split",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "policy",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "scenario_id",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "year",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "action",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "target_equity",
+          "type": "float",
+          "nullable": true
+        },
+        {
+          "name": "target_bond",
+          "type": "float",
+          "nullable": true
+        },
+        {
+          "name": "target_bill_proxy",
+          "type": "float",
+          "nullable": true
+        },
+        {
+          "name": "holdings_before_equity",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "holdings_before_bond",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "holdings_before_bill_proxy",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "holdings_after_fee_equity",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "holdings_after_fee_bond",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "holdings_after_fee_bill_proxy",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "holdings_end_equity",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "holdings_end_bond",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "holdings_end_bill_proxy",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "return_equity",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "return_bond",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "return_bill_proxy",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "wealth_before",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "cpi_before",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "real_wealth_before",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "intended_transfer",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "fee",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "wealth_after_fee",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "real_wealth_after_fee",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "inflation",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "wealth_end",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "cpi_end",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "real_wealth_end",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "annual_net_real_return",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "monetary_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "return_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "cpi_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "growth_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "volatility_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "loss_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "trade_share_units",
+          "type": "string",
+          "nullable": false
+        }
+      ]
+    },
+    "paired_differences.csv": {
+      "row_count": 1200,
+      "keys": [
+        "alternative_policy",
+        "scenario_id",
+        "horizon"
+      ],
+      "order": "lexicographic by listed keys",
+      "columns": [
+        {
+          "name": "split",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "alternative_policy",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "reference_policy",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "scenario_id",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "horizon",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "net_real_cagr_pct_difference",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "max_real_drawdown_pct_difference",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "terminal_real_wealth_difference",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "nominal_fee_sum_difference",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "trade_share_pct_difference",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "trade_share_ex_initial_pct_difference",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "growth_difference_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "loss_difference_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "terminal_real_wealth_difference_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "nominal_fee_difference_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "trade_share_difference_units",
+          "type": "string",
+          "nullable": false
+        }
+      ]
+    },
+    "scenario_metrics.csv": {
+      "row_count": 1800,
+      "keys": [
+        "policy",
+        "scenario_id",
+        "horizon"
+      ],
+      "order": "lexicographic by listed keys",
+      "columns": [
+        {
+          "name": "split",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "policy",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "scenario_id",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "horizon",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "net_real_cagr_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "annual_real_volatility_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "max_real_drawdown_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "terminal_real_wealth",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "nominal_fee_sum",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "trade_count",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "review_count",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "later_trade_count",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "later_review_count",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "trade_share_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "trade_share_ex_initial_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "drawdown_peak_year",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "drawdown_peak_kind",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "drawdown_trough_year",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "drawdown_trough_kind",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "monetary_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "return_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "cpi_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "growth_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "volatility_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "loss_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "trade_share_units",
+          "type": "string",
+          "nullable": false
+        }
+      ]
+    },
+    "summary.csv": {
+      "row_count": 15,
+      "keys": [
+        "policy",
+        "horizon"
+      ],
+      "order": "lexicographic by listed keys",
+      "columns": [
+        {
+          "name": "split",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "policy",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "horizon",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "scenario_count",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "median_growth_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "p10_growth_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "median_loss_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "p90_loss_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "median_volatility_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "median_terminal_real_wealth",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "median_nominal_fee_sum",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "pooled_trade_count",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "pooled_review_count",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "pooled_later_trade_count",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "pooled_later_review_count",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "pooled_trade_share_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "pooled_trade_share_ex_initial_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "severe_scenario_id",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "severe_net_real_cagr_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "severe_max_real_drawdown_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "severe_terminal_real_wealth",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "severe_drawdown_peak_year",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "severe_drawdown_peak_kind",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "severe_drawdown_trough_year",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "severe_drawdown_trough_kind",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "severe_trade_share_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "severe_trade_share_ex_initial_pct",
+          "type": "float",
+          "nullable": false
+        },
+        {
+          "name": "monetary_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "return_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "cpi_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "growth_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "volatility_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "loss_units",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "trade_share_units",
+          "type": "string",
+          "nullable": false
+        }
+      ]
+    }
+  },
+  "jsons": {
+    "run_manifest.json": {
+      "required_fields": [
+        "schema_version",
+        "plan_id",
+        "source_commit",
+        "canonical_git_sources",
+        "consumed_source_sha256",
+        "effective_config",
+        "profile_horizons",
+        "comparison_horizon",
+        "horizons",
+        "split",
+        "input",
+        "command",
+        "python_version",
+        "packages",
+        "utc_start",
+        "utc_end",
+        "elapsed_seconds",
+        "cpu_seconds",
+        "status",
+        "output_sha256",
+        "output_counts"
+      ],
+      "source_hash_record": [
+        "sha256",
+        "git_blob_sha1",
+        "crlf_checkout_sha256"
+      ],
+      "input_record": [
+        "origin",
+        "sha256",
+        "fixture",
+        "fixture_generator_sha256"
+      ],
+      "output_hash_map": "five non-manifest filenames -> SHA256 of actual LF output bytes",
+      "failure_addition": "diagnosis={exception,message}; never fabricate missing outputs"
+    },
+    "checks.json": {
+      "required_fields": [
+        "status",
+        "thresholds",
+        "checks",
+        "count",
+        "failures",
+        "split",
+        "plan_id",
+        "output_counts"
+      ],
+      "group_fields": [
+        "status",
+        "count",
+        "failures",
+        "max_absolute_residual",
+        "max_scaled_residual"
+      ],
+      "residual_scaling": "abs(actual-expected)/max(abs(actual),abs(expected)); zero if both zero"
+    }
+  }
+}

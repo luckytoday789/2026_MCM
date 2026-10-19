@@ -147,14 +147,15 @@ def _equal_weight_decision(context: DecisionContext) -> Decision:
     return Decision("rebalance", EQUAL_WEIGHT)
 
 
-def simulate_equal_weight(
+def simulate_policy(
     rows: Iterable[Mapping[str, object]],
     *,
     horizon: int,
     split: str,
+    callback: Callable[[DecisionContext], Decision],
     fee_rate: float = DEFAULT_FEE_RATE,
 ) -> BacktestResult:
-    """Restore one-third per asset at EVERY review, including period 1.
+    """Simulate a prefix-only callback, deciding before current outcomes.
 
     Rows must all belong to one scenario and have consecutive periods 1..N;
     H<=N, and only the first H outcomes are consumed. Numeric CSV strings work.
@@ -189,7 +190,7 @@ def simulate_equal_weight(
     ledger = []
     for t in range(1, h + 1):
         decision = decide_from_history(
-            _equal_weight_decision, scenario_id=scenario, period=t,
+            callback, scenario_id=scenario, period=t,
             holdings=holdings, history=history,
         )
         trade = (
@@ -226,4 +227,18 @@ def simulate_equal_weight(
         scenario, h, split, k, INITIAL_HOLDINGS, 1.0, tuple(ledger), metrics,
         100.0 * sum(trades) / h,
         100.0 * sum(trades[1:]) / (h - 1) if h > 1 else None,
+    )
+
+
+def simulate_equal_weight(
+    rows: Iterable[Mapping[str, object]],
+    *,
+    horizon: int,
+    split: str,
+    fee_rate: float = DEFAULT_FEE_RATE,
+) -> BacktestResult:
+    """Restore thirds at every review; backward-compatible annual baseline."""
+    return simulate_policy(
+        rows, horizon=horizon, split=split, callback=_equal_weight_decision,
+        fee_rate=fee_rate,
     )

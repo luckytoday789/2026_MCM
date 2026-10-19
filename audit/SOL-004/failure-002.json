@@ -1,0 +1,13 @@
+{
+  "stage": "first driver test suite",
+  "status": "failed",
+  "exit_code": 1,
+  "passed_tests": 24,
+  "failed_test": "test_quantiles_exact_severe_ties_and_pooled_denominators",
+  "observed_p10": 3.0000000000000004,
+  "expected": 3,
+  "diagnosis": "Linear interpolation has binary floating roundoff 4.44e-16. Exact equality is required for severe-scenario tie selection, not reconciliation to rational quantile expectations.",
+  "fix": "Use existing absolute 1e-9 toy comparison helper for p10/median expectations; retain exact severe tie and nextafter tests.",
+  "before_test_sha256": "a243166db81b7d22bce50c0088404b51cbdb9e2ebf438f9375db416b6ce2705a",
+  "evidence": "failed-trial-002-evidence.json, tests.txt, execution_log.json"
+}

@@ -1,0 +1,13 @@
+{
+  "stage": "first full suite",
+  "status": "failed",
+  "exit_code": 1,
+  "accounting_tests_passed": 28,
+  "protocol_tests_passed": 4,
+  "driver_tests": "setUpClass failed before test methods",
+  "diagnosis": "Isolated synthetic repository copied CRLF spec checkout bytes and staged with core.autocrlf=false. Its blobs were CRLF, while source_snapshot correctly compares LF-normalized consumed bytes to canonical LF blobs. Production repository pinned specs already use LF Git blobs.",
+  "fix": "Normalize copied synthetic repository source files to LF before staging. No production source rule changed.",
+  "before_test_sha256": "aa9554739293d973388feb5cc4be7790480dd05d686beea733f26e2dc2e8c32f",
+  "retained_evidence": "tests.txt and execution_log.json",
+  "failed_fixture_directory": "ignored .runtime/SOL-004-synthetic-* retained"
+}
