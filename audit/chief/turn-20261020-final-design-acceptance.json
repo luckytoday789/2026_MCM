@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T02:47:33.109705+08:00",
+  "start_main_commit": "e018e2a",
+  "accepted_task": "SOL-024",
+  "reviewed_commit": "b1de55ec16f7b67884415637f562fcdf446034c7",
+  "accepted_paths_count": 31,
+  "source_pin_count": 17,
+  "read_only_reference_groups": 14,
+  "chief_analysis_reference_groups": 8,
+  "worker_corruption_rejections": 2,
+  "chief_reference_corruption_rejections": 1,
+  "staged_worker_blobs_match_exact_commit": true,
+  "pending_tasks_validated": [
+    {
+      "id": "SOL-016",
+      "state": "ready",
+      "base_commit": "dd60066010f6904565fb51e99be8088285102e57",
+      "source_count": 12
+    },
+    {
+      "id": "SOL-022",
+      "state": "ready",
+      "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+      "source_count": 14
+    },
+    {
+      "id": "SOL-023",
+      "state": "waiting",
+      "base_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
+      "source_count": 18
+    }
+  ],
+  "production_code_changed": false,
+  "runtime_code_changed": false,
+  "competition_outcomes_read": false,
+  "final_data_open": false,
+  "actual_human_help_request": false,
+  "remote_result_fallback_at": "2026-10-20T03:17:33.109705+08:00",
+  "limitations": [
+    "SOL-024 is design-only; do not certify absent final code/results/refit/freeze.",
+    "Prepared analysis reference was executed but not compared with undelivered SOL-016 implementation."
+  ]
+}

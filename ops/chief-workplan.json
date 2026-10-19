@@ -1,21 +1,22 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T03:07:03.686399+08:00",
-  "reason": "SOL-021 K2 closure accepted at exact d154f90; 3720 remote comparisons and independent chief rounding/accounting checks passed. Existing unchanged SOL-016 and SOL-022 released promptly. Await Sol analysis/calibration/final-contract receipts; keep final closed.",
+  "next_wake_at": "2026-10-20T03:17:33.109705+08:00",
+  "reason": "Accepted exact SOL-024 final-protocol design review at b1de55e after read-only replay, corruption rejection and independent chief arithmetic. Saved final implementation notes and eight analysis reference groups. SOL-016 running at latest valid receipt; SOL-022 ready and SOL-023 waits for calibration. Only remote prerequisites remain actionable; final gate closed.",
   "next_actions": [
-    "Fetch exact submitted SOL-016/SOL-022/SOL-024 receipts. Validate task/base/source/path/artifact hashes, replay read-only, reject corruption; inspect code/design and independently check key formulas. Kernel SOL-021 is accepted at d154f90d1c50b37990b75ec0a45aa01a38252343, do not recreate or rerun its task.",
-    "After positive accepted SOL-022 calibration review, immediately release existing unchanged SOL-023 if all source hashes still match. Independently inspect/test exact SOL-016/SOL-023 implementation before integrating only assigned paths.",
-    "Review exact SOL-024 final-protocol design evidence. Correct any negative findings with new immutable source/task; no freeze or holdout access from design approval.",
-    "After case/analysis acceptance publish production writer task using specs/POLICY_RESULT_WRITER.md on combined already-pushed source. Then fixed HY3 development groups, exact accepted HY3-003 imports and independent Sol numerical result review.",
-    "Personalized design accepted SOL-020; specs/PERSONALIZED_OUTPUT_NOTES.md spells out its accepted no-run denominator=0/null outcomes and separate generic same-primary cost test. Later adapter task must pin notes plus actual accepted generic assignments/code; no change to in-flight generic APIs.",
-    "After independently accepted development selection/personalization, implement/review final-capable guards and all-development refit; complete reviewed freeze, one final inventory, report rendering and code package. Keep final_data_open=false until actual gates pass; private identities local; humans submit.",
-    "Check local quota/status/drain/control/STOP/deadline before more work. Do not restart supervisor or duplicate remote roles. Incoming receipts trigger before the 30-minute fallback."
+    "Fetch exact SOL-016/SOL-022 receipts and status. Verify task/base/source/path/artifact pins; review source, replay checks read-only and independently check numerical evidence. Chief audit/chief/analysis_reference.py and analysis-reference.json provide eight prepared rational/scalar reference groups for SOL-016; they are not yet implementation acceptance.",
+    "After positive accepted SOL-022, promptly release existing unchanged SOL-023 if its pinned sources and all prerequisites still match. Do not recreate accepted/submitted tasks or mutate immutable attempts.",
+    "Independently review exact SOL-016/SOL-023 code and fixtures before integration. Publish writer implementation task only after both components are accepted in a real already-pushed base, using specs/POLICY_RESULT_WRITER.md; split work into <=30-minute granular attempts if necessary.",
+    "After reviewed writer, dispatch fixed HY3 development jobs for five new primary-fee policies and eight doubled-fee cases; import accepted HY3-003 exactly, never rerun it. Give Sol a targeted independent review of precise HY3 receipts before selection claims.",
+    "Implement/review personalized adapter only after accepted generic assignment evidence, pinning specs/PERSONALIZED_OUTPUT_NOTES.md. Preserve no-run zero denominators/nulls and separate same-primary-mode cost robustness from fee-specific profile choices.",
+    "Final design SOL-024 is accepted at b1de55ec16f7b67884415637f562fcdf446034c7. Carry specs/FINAL_OUTPUT_NOTES.md and I1-I8 into future final implementation/freeze tasks: external freeze audit, null final folds, fixed classes, explicit correction-source binding. Actual development selection, final code/refit/freeze and one final inventory remain separate gates.",
+    "After accepted outcomes assemble/review/render <=10-page English report and <=50MB code supplement. Member names stay in local delivery copy; humans submit. No actual help request exists this turn.",
+    "Before work check local quota/status/drain, control/STOP and deadline. Preserve supervisor/remote roles and all failed trials. Incoming receipts trigger before this one-shot 30-minute fallback."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T02:37:03.686399+08:00",
+  "last_completed_at": "2026-10-20T02:47:33.109705+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

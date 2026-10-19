@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-024",
+  "attempt": 1,
+  "owner": "sol",
+  "base_commit": "6c1997c0ac20430af0b7e11d9fb0b29ab8506a11",
+  "publication_commit": "cf0fec40a27fb603d8b36bde2d7b77d84f4541a0",
+  "task_path": "ops/tasks/SOL-024.json",
+  "task_blob_sha256": "5323d75883ef842689dde661f9fe8284671fce7d42e2277f02bba1fb5c2c3dd4",
+  "task_digest_sha256": "3150dc39fdb242ea3f4dc8256fc009d2dcd1060861276fabd3265a6639c23a77",
+  "allowed_paths": [
+    "audit/SOL-024"
+  ],
+  "source_sha256": {
+    "specs/FINAL_EVALUATION.md": "39cf3c73328c79afc83905ba4aa31d9aeae14564a42fb7d167756886292f9035",
+    "specs/final_evaluation_contract_v1.json": "b9b254b17af6a4e61ab9ed6708cefbff3466b56c9dc2b9555008e7907cd34c96",
+    "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "specs/PERSONALIZED_REVIEW.md": "0365fdf989ae7abfeda0bc3f48f8c86245a40dd9e48b3c6ae8d2d26c0b7c4987",
+    "specs/personalized_review_v1.json": "2edc9410b291f8f1f7235344e685d004c2f3cfd80844539df96759e9b305b4ad",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/DEVELOPMENT_BASELINE_DRIVER.md": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0",
+    "specs/POLICY_ANALYSIS.md": "a2220482c861799280815b4e65d73e79e53666816ac9e7e72a38d5f48a6e53b8",
+    "specs/POLICY_RESULT_WRITER.md": "ce0c43fad34ebdc44fc6f6bda395c562781e500cdc4b855ee7e0cbf937bec0b4",
+    "ops/PROTOCOL.md": "1aae9a4819a82aa8c17e93edd5c1a8d9e7bbb05fe18bcbb7d9d08800e53c2525",
+    "scripts/coop.py": "c23bcae4b2ee761f8c44bfee9dc5c891291cd74dc7b143ea5e3b5fe3938153f1",
+    "data/manifest.json": "2535c087075957919d5f1990ad234ca436f7b3506ba592ac8a6457feb42fe90d",
+    "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+    "audit/chief/SOL-020-review.json": "276895e8e12b9c212fe433f0fa1c07408c601502ffd5d9ce965a684fdc72551b",
+    "audit/SOL-020/findings.json": "2e597db33daf1da6dfdea61925565fb7d2735e97db7d985784faed967a27f3c0"
+  }
+}

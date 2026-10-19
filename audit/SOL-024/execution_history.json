@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-024",
+  "tool_failures": [
+    {
+      "sequence": 1,
+      "operation": "exec_command read-only instructions",
+      "result": "process setup failed before command execution",
+      "error": "helper_unknown_error: setup refresh had errors",
+      "resolution": "Used available node filesystem and child_process tools; no approval escalation."
+    },
+    {
+      "sequence": 2,
+      "operation": "py -3.12 --version",
+      "result": "ENOENT; launcher unavailable",
+      "resolution": "python --version returned Python 3.12.14; use python -B."
+    }
+  ],
+  "quantitative_trials": [
+    {
+      "trial": 1,
+      "status": "failed_audit_assertion",
+      "preserved_script": "history/failed-trial-001-verify.py",
+      "diagnosis": "history/failure-001.json",
+      "verification_created": false
+    },
+    {
+      "trial": 2,
+      "status": "routine_audit_fix",
+      "changes": "Correct literal prose assertion and normalize tuple/list representation in read-only JSON comparison; no contract or numeric expectations changed."
+    },
+    {
+      "trial": 3,
+      "status": "integrity_hardening",
+      "changes": "Bind preserved failed/completed trial artifacts and integrity harness in saved hashes. Earlier complete evidence copied verbatim to history/trial-002; original verification moved intact so new evidence can be created exclusively."
+    },
+    {
+      "trial": 4,
+      "status": "audit_semantics_correction",
+      "preserved_evidence": "history/trial-003",
+      "changes": [
+        "Correct findings to count generic ledger rows only; reference decision sidecars can be inapplicable.",
+        "Prior exclusive-create test exited on scratch creation boundary before testing an existing target. Run creation against the actual existing audit verification and assert exact existing-file error; do not count the previous rejection as that stronger test."
+      ],
+      "production_effect": "none"
+    }
+  ],
+  "note": "Meaningful failed verification trials, if any, are preserved under history/ before correction. No production trials."
+}

@@ -97,9 +97,12 @@ authorized by this plan.
   only. Any future final-evaluation support needs an explicit implementation,
   tests and independent review **before** freezing the final code. A plan is not
   permission to relabel development output as final.
-- The proposed final contract in specs/FINAL_EVALUATION.md binds development-only
-  choices, all-development refit, one fixed final inventory and correction
-  disclosure. It requires independent review and creates no freeze or access.
+- SOL-024 at b1de55ec16f7b67884415637f562fcdf446034c7 approved the final
+  contract design; chief replay and independent count/severe/hash checks passed.
+  specs/FINAL_OUTPUT_NOTES.md carries its required null/denominator conventions,
+  external freeze attestation and explicit correction-source binding into future
+  implementation. Final code, development decisions, refit and freeze remain
+  unaccepted; the design review creates no freeze or holdout access.
 - Freeze code, parameters, metrics, selection and severe-case rules, plus input
   hashes, before opening final outcomes. Keep failed evaluations and disclose
   any bug correction; never erase the gate history or tune on final outcomes.

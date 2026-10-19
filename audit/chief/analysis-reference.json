@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "scope": "Chief independent scalar/rational synthetic reference; no implementation acceptance or strategy results",
+  "source_sha256": {
+    "specs/POLICY_ANALYSIS.md": "a2220482c861799280815b4e65d73e79e53666816ac9e7e72a38d5f48a6e53b8",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "specs/policy_driver_layout_v2.json": "f431e661c260f7f6e40330661e77724dc3ddcafeafed1a3f0b6c31781a4e8329"
+  },
+  "script_sha256_lf": "69cde9c73fde065d4608ad6c726ea7672759644274823b9c7e8ab656d3d14ba3",
+  "reference_groups": 8,
+  "facts": {
+    "paired_vs_marginal": {
+      "reference": [
+        "0",
+        "10",
+        "20",
+        "30"
+      ],
+      "candidate": [
+        "11",
+        "21",
+        "31",
+        "-1"
+      ],
+      "paired": [
+        "11",
+        "11",
+        "11",
+        "-31"
+      ],
+      "median_paired": "11",
+      "marginal_p10_difference": "-2/5",
+      "paired_p10_not_used": "-92/5",
+      "marginal_median_difference_not_used": "1"
+    },
+    "zero_fold_excluded": {
+      "gains": [
+        "0",
+        "1/10",
+        "1/10",
+        "1/10",
+        "0",
+        "1/10",
+        "1/10",
+        "1/10"
+      ],
+      "fold_medians": [
+        "0",
+        "1/10",
+        "1/10",
+        "1/10"
+      ],
+      "positive_fold_count": 3,
+      "median_paired": "1/10"
+    },
+    "binary64_boundary_neighbors": {
+      "exact": [
+        0.1,
+        -0.1,
+        1.0,
+        3
+      ],
+      "exact_pass": true,
+      "neighbors": [
+        {
+          "statistic_index": 0,
+          "direction": -1,
+          "values": [
+            0.09999999999999999,
+            -0.1,
+            1.0,
+            3
+          ],
+          "flags": [
+            false,
+            true,
+            true,
+            true
+          ],
+          "pass_all": false
+        },
+        {
+          "statistic_index": 0,
+          "direction": 1,
+          "values": [
+            0.10000000000000002,
+            -0.1,
+            1.0,
+            3
+          ],
+          "flags": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "pass_all": true
+        },
+        {
+          "statistic_index": 1,
+          "direction": -1,
+          "values": [
+            0.1,
+            -0.10000000000000002,
+            1.0,
+            3
+          ],
+          "flags": [
+            true,
+            false,
+            true,
+            true
+          ],
+          "pass_all": false
+        },
+        {
+          "statistic_index": 1,
+          "direction": 1,
+          "values": [
+            0.1,
+            -0.09999999999999999,
+            1.0,
+            3
+          ],
+          "flags": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "pass_all": true
+        },
+        {
+          "statistic_index": 2,
+          "direction": -1,
+          "values": [
+            0.1,
+            -0.1,
+            0.9999999999999999,
+            3
+          ],
+          "flags": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "pass_all": true
+        },
+        {
+          "statistic_index": 2,
+          "direction": 1,
+          "values": [
+            0.1,
+            -0.1,
+            1.0000000000000002,
+            3
+          ],
+          "flags": [
+            true,
+            true,
+            false,
+            true
+          ],
+          "pass_all": false
+        }
+      ],
+      "two_folds_pass": false
+    },
+    "all_control_truth_combinations": [
+      {
+        "context_vs_fixed": false,
+        "adaptive_vs_context": false,
+        "adaptive_vs_fixed": false,
+        "selected": "balanced_cost"
+      },
+      {
+        "context_vs_fixed": false,
+        "adaptive_vs_context": false,
+        "adaptive_vs_fixed": true,
+        "selected": "balanced_cost"
+      },
+      {
+        "context_vs_fixed": false,
+        "adaptive_vs_context": true,
+        "adaptive_vs_fixed": false,
+        "selected": "balanced_cost"
+      },
+      {
+        "context_vs_fixed": false,
+        "adaptive_vs_context": true,
+        "adaptive_vs_fixed": true,
+        "selected": "balanced_adaptive"
+      },
+      {
+        "context_vs_fixed": true,
+        "adaptive_vs_context": false,
+        "adaptive_vs_fixed": false,
+        "selected": "balanced_context"
+      },
+      {
+        "context_vs_fixed": true,
+        "adaptive_vs_context": false,
+        "adaptive_vs_fixed": true,
+        "selected": "balanced_context"
+      },
+      {
+        "context_vs_fixed": true,
+        "adaptive_vs_context": true,
+        "adaptive_vs_fixed": false,
+        "selected": "balanced_context"
+      },
+      {
+        "context_vs_fixed": true,
+        "adaptive_vs_context": true,
+        "adaptive_vs_fixed": true,
+        "selected": "balanced_adaptive"
+      }
+    ],
+    "p90_not_a_loss_bound": {
+      "scenario_count": 120,
+      "p90": "10",
+      "tolerance": "10",
+      "risk_pass": true,
+      "strict_exceedance_count": 10,
+      "strict_exceedance_fraction": "1/12"
+    },
+    "inclusive_indifference": {
+      "exact_medians": {
+        "conservative": 0.0,
+        "balanced": 0.1,
+        "growth": 0.1
+      },
+      "exact_candidates": [
+        "conservative",
+        "balanced",
+        "growth"
+      ],
+      "exact_choice": "conservative",
+      "neighbor_medians": {
+        "conservative": 0.0,
+        "balanced": 0.1,
+        "growth": 0.10000000000000002
+      },
+      "neighbor_candidates": [
+        "balanced",
+        "growth"
+      ],
+      "neighbor_choice": "balanced"
+    },
+    "own_horizon_and_eligibility": {
+      "A": {
+        "horizon": 5,
+        "tolerance": 10,
+        "liquidity": "high",
+        "eligible_classes": [
+          "conservative"
+        ]
+      },
+      "B": {
+        "horizon": 15,
+        "tolerance": 25,
+        "liquidity": "medium",
+        "eligible_classes": [
+          "conservative",
+          "balanced"
+        ]
+      },
+      "C": {
+        "horizon": 30,
+        "tolerance": 40,
+        "liquidity": "low",
+        "eligible_classes": [
+          "conservative",
+          "balanced",
+          "growth"
+        ]
+      },
+      "D": {
+        "horizon": 25,
+        "tolerance": 15,
+        "liquidity": "medium",
+        "eligible_classes": [
+          "conservative",
+          "balanced"
+        ]
+      },
+      "E": {
+        "horizon": 6,
+        "tolerance": 35,
+        "liquidity": "high",
+        "eligible_classes": [
+          "conservative"
+        ]
+      }
+    },
+    "structural_counts": {
+      "cases": 16,
+      "summary_gates": 100,
+      "paired_rows": 12000,
+      "profile_candidates": 30,
+      "recommendations": 10
+    }
+  },
+  "competition_outcomes_read": false,
+  "implementation_executed": false,
+  "final_data_open": false
+}

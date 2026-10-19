@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "6c1997c0ac20430af0b7e11d9fb0b29ab8506a11",
+  "snapshot_main_commit": "e018e2a70f9d1191d86e897df5f943228956139f",
   "authoritative_state": [
     "ops/control.json",
     "ops/queue.json"
@@ -161,7 +161,7 @@
       "closure_evidence": "audit/chief/SOL-021-review.json"
     },
     "FINAL_EVALUATION_CONTRACT": {
-      "state": "design_pending_review",
+      "state": "accepted_design",
       "paths": [
         "specs/FINAL_EVALUATION.md",
         "specs/final_evaluation_contract_v1.json"
@@ -170,7 +170,11 @@
       "freeze_created": false,
       "competition_outcomes_computed": false,
       "source_commit": "6c1997c0ac20430af0b7e11d9fb0b29ab8506a11",
-      "independent_review_task": "SOL-024"
+      "independent_review_task": "SOL-024",
+      "independent_review_commit": "b1de55ec16f7b67884415637f562fcdf446034c7",
+      "chief_acceptance_evidence": "audit/chief/SOL-024-review.json",
+      "implementation_verdict": "not_reviewed",
+      "implementation_notes": "specs/FINAL_OUTPUT_NOTES.md"
     }
   },
   "requirements": [
@@ -185,7 +189,7 @@
       ],
       "state": "locked_definition",
       "draft_location": "methods-draft.md: Independent annual scenarios and purchasing power",
-      "remaining": "Independently review final contract/code, accept development and refit evidence, then create a real freeze. Final outcomes remain unopened."
+      "remaining": "Final protocol design accepted SOL-024. Independently review final-capable code, accept development and all-development refit evidence, then create and independently audit a real freeze. Final outcomes remain unopened."
     },
     {
       "id": "R02",
