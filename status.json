@@ -5,20 +5,14 @@
     48984
   ],
   "child_pids": [
-    32788,
-    3612,
-    28548,
-    22736,
-    11456,
-    27484,
-    30268,
-    48124,
-    28368,
-    13772,
-    47288,
-    22324
+    6540,
+    18016,
+    33032,
+    27556,
+    20580,
+    19888
   ],
-  "current_task": "SOL-008",
+  "current_task": "SOL-009",
   "alerts": [],
   "tasks": [
     {
@@ -157,14 +151,31 @@
       "key": "SOL-008-a1",
       "task_id": "SOL-008",
       "base": "2561688380d9e2527eb6066100adde70b7d0ea1c",
+      "head": "818af5d65bd8a271962d848dd552bd39ca561f68",
+      "receipt_status": "completed",
+      "receipt_matches_task": true,
+      "queue_state": "ready",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-19T17:19:29.441312+00:00",
+      "check_exit_codes": [
+        0,
+        0
+      ],
+      "pending_upload": false
+    },
+    {
+      "key": "SOL-009-a1",
+      "task_id": "SOL-009",
+      "base": "2561688380d9e2527eb6066100adde70b7d0ea1c",
       "head": "2561688380d9e2527eb6066100adde70b7d0ea1c",
       "receipt_status": null,
       "receipt_matches_task": false,
       "queue_state": "ready",
-      "dirty": true,
-      "changed_paths": [
-        "?? audit/SOL-008/"
-      ],
+      "dirty": false,
+      "changed_paths": [],
       "remote_matches": false,
       "completed_record": false,
       "pending_upload": false
@@ -194,10 +205,11 @@
   "chief_status": {
     "role": "chief",
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
-    "state": "stopped",
+    "state": "running",
     "python": "3.12.0",
-    "updated_at": "2026-10-19T17:14:54.372655+00:00",
-    "lease_until": "2026-10-19T17:24:54.372655+00:00"
+    "updated_at": "2026-10-19T17:22:41.606942+00:00",
+    "lease_until": "2026-10-19T17:32:41.606942+00:00",
+    "task_id": "integrate-and-dispatch"
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
   "schema_version": 1,
@@ -205,7 +217,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-19T17:17:53.175500+00:00",
+  "updated_at": "2026-10-19T17:23:17.072938+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
