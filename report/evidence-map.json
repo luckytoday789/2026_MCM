@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "dcf9624669f28d43fe7d5ef948793af32b32acc1",
+  "snapshot_main_commit": "812fadfee82a10cda89233df75a50d4afc0512a3",
   "authoritative_state": [
     "ops/control.json",
     "ops/queue.json"
@@ -94,14 +94,18 @@
       "code_verdict": "approve"
     },
     "POLICY_CALIBRATION_PROTOTYPE": {
-      "state": "prototype_pending_review",
-      "source_commit": "7c804ffb960be6b9fadfc840e246ff060668a96d",
+      "state": "accepted_implementation",
+      "source_commit": "79a9a63d939c14d4af242d86ceeaa42c044803c4",
       "path": "src/safeinvest/policy_calibration.py",
       "scope_note": "specs/POLICY_CALIBRATION_PROTOTYPE.md",
       "independent_review_task": "SOL-022",
       "chief_synthetic_test_count": 10,
       "production_execution_authorized": false,
-      "competition_outcomes_computed": false
+      "competition_outcomes_computed": false,
+      "independent_review_commit": "21ad493707d71240f83d7f01ed6d133e1380e8fb",
+      "chief_acceptance_evidence": "audit/chief/SOL-022-review.json",
+      "code_verdict": "approve",
+      "scope": "Generated-byte calibration mathematics only. Production adapter input authentication and scenario binding remain separate."
     },
     "BASELINE_DESCRIPTIVE_TABLES": {
       "state": "accepted_development_evidence",
@@ -272,7 +276,7 @@
         "POLICY_CALIBRATION_PROTOTYPE"
       ],
       "state": "accepted_design",
-      "remaining": "V2 design, corrected kernel and pure analysis accepted (SOL-013/SOL-021/SOL-016). SOL-022 calibration review is pending; SOL-023 case engine waits for it. Writer, exact development runs and independent numerical acceptance remain required."
+      "remaining": "V2 design, corrected kernel, calibration and pure analysis accepted (SOL-013/SOL-021/SOL-022/SOL-016). Existing SOL-023 case engine released. Writer, exact development runs and independent numerical acceptance remain required."
     },
     {
       "id": "R07",

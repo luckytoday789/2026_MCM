@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T03:21:41.550551+08:00",
-  "reason": "Accepted exact SOL-022 calibration receipt with chief independent checks; existing SOL-023 released unchanged. Chief continues writer acceptance preparation while remote case-engine work proceeds. Final gate remains closed.",
+  "next_wake_at": "2026-10-20T03:49:18.544477+08:00",
+  "reason": "Exact SOL-022 accepted and pushed at 812fadf; SOL-023 released unchanged after all source/dependency gates. Chief writer references now cover 12615 original baseline rows, exact unit/type boundaries and three corruption rejections. Await remote case-engine receipt before writer publication; no independent chief prerequisite remains open. Final gate closed.",
   "next_actions": [
-    "Fetch exact SOL-023 receipt/status; validate task/base/source/path/artifact pins, inspect implementation and replay prepared audit/chief/case_reference.py fixtures before acceptance. SOL-022 accepted at 21ad493707d71240f83d7f01ed6d133e1380e8fb; do not recreate accepted work.",
-    "SOL-016 accepted at ceec2b6d1107a4137ee3d24d689ba7ba614703c2 with audit/chief/SOL-016-review.json. Do not recreate it. Pin specs/POLICY_WRITER_COMPATIBILITY.md in future writer/assembly task; preserve exact numbers across legacy growth-unit label mapping and separate production provenance from the synthetic calibration manifest.",
-    "Independently inspect exact SOL-023 implementation and compare prepared audit/chief/case_reference.py fixtures. Publish bounded writer implementation only after SOL-016 and SOL-023 acceptance exist on already-pushed main; use specs/POLICY_RESULT_WRITER.md and all source/output contracts.",
-    "After accepted writer, dispatch fixed HY3 development jobs for five new primary-fee and eight doubled-fee cases; import HY3-003 exactly without rerun. Send Sol targeted independent review of exact HY3 evidence before selection.",
-    "Only after accepted generic evidence implement/review personalized own-tolerance own-horizon adapter and no-run null conventions; then final refit/code review/freeze gates. SOL-024 final design accepted, not final execution authorization.",
-    "Assemble and independently review English <=10-page report and <=50MB supplement after accepted outcomes; member identities local only, humans submit.",
-    "Before additional work check quota/drain/control/STOP/deadline; preserve current supervisor and remote roles. Incoming receipts wake earlier than this one-shot 30-minute fallback. No actual human-help request remains."
+    "Fetch SOL-023 exact receipt/status; inspect precise delivered case implementation, validate immutable task/base/18 source pins/paths/hashes and compare audit/chief/case_reference.py before acceptance. Do not infer progress from stale heartbeat.",
+    "SOL-022 is accepted at 21ad493707d71240f83d7f01ed6d133e1380e8fb with audit/chief/SOL-022-review.json. RELEASE-1 was closed against accepted SOL-021 d154f90d1c50b37990b75ec0a45aa01a38252343 and unchanged kernel bytes. Preserve worker historical findings; do not recreate either task.",
+    "After SOL-023 acceptance is pushed, publish bounded writer-only implementation with real pushed base; pin specs/POLICY_RESULT_WRITER.md, POLICY_WRITER_COMPATIBILITY.md and POLICY_WRITER_ACCEPTANCE_REFERENCES.md plus accepted case/analysis/calibration/kernel sources. Use prepared writer_reference.py and writer-reference.json; CSV types, source guards and real writer corruption rejection remain untested. No full analysis assembly in first writer task.",
+    "After accepted writer, publish fixed HY3 kind=commands development jobs for five new primary-fee and eight doubled-fee cases, with exact HY3-003 three-case imports and no rerun. Give Sol targeted independent review of exact HY3 evidence before assembly/selection.",
+    "Only after accepted generic evidence implement/review personalized own-tolerance own-horizon adapter and no-run null conventions; then final refit/code review/freeze gates. SOL-024 accepted final design is not final execution authorization.",
+    "Assemble and independently review English <=10-page report and <=50MB supplement after accepted outcomes; member identities stay local, humans submit.",
+    "Before more work check quota/drain/control/STOP/deadline; preserve supervisor and remote roles. This is a one-shot 30-minute fallback while waiting; a receipt/error may wake sooner. No actual human-help request remains."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T03:16:41.550551+08:00",
+  "last_completed_at": "2026-10-20T03:19:18.544477+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

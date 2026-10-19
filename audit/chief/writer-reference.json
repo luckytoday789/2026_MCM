@@ -1,0 +1,412 @@
+{
+  "schema_version": 1,
+  "kind": "preimplementation_expected_writer_reference",
+  "baseline_commit": "7652410d73425371110784ef5fa97c03470a074e",
+  "baseline_receipt_sha256": "99a5a5ca49d46b48ee4f929632eae0551a0028c833526835829713334d8909f0",
+  "source_artifacts": {
+    "annual_ledgers.csv": {
+      "source_path": "results/development/HY3-003/annual_ledgers.csv",
+      "canonical_git_sha256": "b2e93442391d2a7cec4bdfe79b397c14c311cc229e2e6c3d82d2dd04199d470a",
+      "canonical_git_bytes": 6984726,
+      "canonical_git_crlf_sha256": "eb8bdc92f5ff1ab23b0c102d4deb2cf8031c6f0c9fc66c9b8552d5baa992cc30",
+      "source_fields": [
+        "split",
+        "policy",
+        "scenario_id",
+        "year",
+        "action",
+        "target_equity",
+        "target_bond",
+        "target_bill_proxy",
+        "holdings_before_equity",
+        "holdings_before_bond",
+        "holdings_before_bill_proxy",
+        "holdings_after_fee_equity",
+        "holdings_after_fee_bond",
+        "holdings_after_fee_bill_proxy",
+        "holdings_end_equity",
+        "holdings_end_bond",
+        "holdings_end_bill_proxy",
+        "return_equity",
+        "return_bond",
+        "return_bill_proxy",
+        "wealth_before",
+        "cpi_before",
+        "real_wealth_before",
+        "intended_transfer",
+        "fee",
+        "wealth_after_fee",
+        "real_wealth_after_fee",
+        "inflation",
+        "wealth_end",
+        "cpi_end",
+        "real_wealth_end",
+        "annual_net_real_return",
+        "monetary_units",
+        "return_units",
+        "cpi_units",
+        "growth_units",
+        "volatility_units",
+        "loss_units",
+        "trade_share_units"
+      ],
+      "normalized_fields": [
+        "split",
+        "mode",
+        "scenario_id",
+        "period",
+        "engine_action",
+        "target_equity",
+        "target_bond",
+        "target_bill_proxy",
+        "holdings_before_equity",
+        "holdings_before_bond",
+        "holdings_before_bill_proxy",
+        "holdings_after_fee_equity",
+        "holdings_after_fee_bond",
+        "holdings_after_fee_bill_proxy",
+        "holdings_end_equity",
+        "holdings_end_bond",
+        "holdings_end_bill_proxy",
+        "return_equity",
+        "return_bond",
+        "return_bill_proxy",
+        "wealth_before",
+        "cpi_before",
+        "real_wealth_before",
+        "intended_transfer",
+        "fee",
+        "wealth_after_fee",
+        "real_wealth_after_fee",
+        "inflation",
+        "wealth_end",
+        "cpi_end",
+        "real_wealth_end",
+        "annual_net_real_return",
+        "monetary_units",
+        "return_units",
+        "cpi_units",
+        "growth_units",
+        "volatility_units",
+        "loss_units",
+        "trade_share_units"
+      ],
+      "count": 10800,
+      "by_mode": [
+        {
+          "mode": "bills_keep",
+          "count": 3600,
+          "source_cells_sha256": "17b63f86052f9bf6e20cbce30b9395c123f52bc2fa06cc48fff900be2baa58b7",
+          "normalized_reference_cells_sha256": "9477b21b5c7c707013ef137caf667c77630eb481d2454e10542b2867aca7fd95",
+          "ordered_keys_sha256": "b978753d64cc0b1cf82977bdf8f30e583246d0c951cd62e933e37b890ae4255b",
+          "all_cells_inverse_mapping_exact": true
+        },
+        {
+          "mode": "equal_weight_annual",
+          "count": 3600,
+          "source_cells_sha256": "7f6b93e89f198b10747322a2c45705aaee01ee3a716eab7dc78ffdbfb0256177",
+          "normalized_reference_cells_sha256": "c746e8a8fc6ee008ed56278f6705eaaaaedbbd21e2f31870d498dc10d1611795",
+          "ordered_keys_sha256": "b978753d64cc0b1cf82977bdf8f30e583246d0c951cd62e933e37b890ae4255b",
+          "all_cells_inverse_mapping_exact": true
+        },
+        {
+          "mode": "equal_weight_buy_hold",
+          "count": 3600,
+          "source_cells_sha256": "865d238f0ab12d652949d6b2329faab23f77fa0b526bed91749cc94b54e35738",
+          "normalized_reference_cells_sha256": "60d5f64d10d190540a7522da2a271cecda0e12da730613316df1b6f956d14954",
+          "ordered_keys_sha256": "b978753d64cc0b1cf82977bdf8f30e583246d0c951cd62e933e37b890ae4255b",
+          "all_cells_inverse_mapping_exact": true
+        }
+      ],
+      "local_checkout_equivalent": true
+    },
+    "scenario_metrics.csv": {
+      "source_path": "results/development/HY3-003/scenario_metrics.csv",
+      "canonical_git_sha256": "afabf571d8c7d224bd83f836033fe4c4907a05fc15a2e8614c8ae09d803f100c",
+      "canonical_git_bytes": 681511,
+      "canonical_git_crlf_sha256": "3d5366f28ce17fcf478d3d502cb14a165ba014ca88dabd30781a7ae3754c246b",
+      "source_fields": [
+        "split",
+        "policy",
+        "scenario_id",
+        "horizon",
+        "net_real_cagr_pct",
+        "annual_real_volatility_pct",
+        "max_real_drawdown_pct",
+        "terminal_real_wealth",
+        "nominal_fee_sum",
+        "trade_count",
+        "review_count",
+        "later_trade_count",
+        "later_review_count",
+        "trade_share_pct",
+        "trade_share_ex_initial_pct",
+        "drawdown_peak_year",
+        "drawdown_peak_kind",
+        "drawdown_trough_year",
+        "drawdown_trough_kind",
+        "monetary_units",
+        "return_units",
+        "cpi_units",
+        "growth_units",
+        "volatility_units",
+        "loss_units",
+        "trade_share_units"
+      ],
+      "normalized_fields": [
+        "split",
+        "mode",
+        "scenario_id",
+        "horizon",
+        "net_real_cagr_pct",
+        "annual_real_volatility_pct",
+        "max_real_drawdown_pct",
+        "terminal_real_wealth",
+        "nominal_fee_sum",
+        "trade_count",
+        "review_count",
+        "later_trade_count",
+        "later_review_count",
+        "trade_share_pct",
+        "trade_share_ex_initial_pct",
+        "drawdown_peak_year",
+        "drawdown_peak_kind",
+        "drawdown_trough_year",
+        "drawdown_trough_kind",
+        "monetary_units",
+        "return_units",
+        "cpi_units",
+        "growth_units",
+        "volatility_units",
+        "loss_units",
+        "trade_share_units"
+      ],
+      "count": 1800,
+      "by_mode": [
+        {
+          "mode": "bills_keep",
+          "count": 600,
+          "source_cells_sha256": "22750ce3996118dd39058a8f1cff9d0e961935a58c8d89d77f8d25fa4cef22cb",
+          "normalized_reference_cells_sha256": "0cc0c0af7e669a9d1ca818a652b840b779cdff1915db47ef801afc9b151f5554",
+          "ordered_keys_sha256": "c3920a8661520455d1caffe0cf939957a5e54643d9852c1379fbe3e13cf207b3",
+          "all_cells_inverse_mapping_exact": true
+        },
+        {
+          "mode": "equal_weight_annual",
+          "count": 600,
+          "source_cells_sha256": "03875cda61035124ff660ea33f6edf1d5a4c9bef52d754e22ebd7c5c230ae3b8",
+          "normalized_reference_cells_sha256": "33169ffd47188b2b4bce3790c13dddf2a2a843edcebcbd0741fd0ea2903ead7d",
+          "ordered_keys_sha256": "c3920a8661520455d1caffe0cf939957a5e54643d9852c1379fbe3e13cf207b3",
+          "all_cells_inverse_mapping_exact": true
+        },
+        {
+          "mode": "equal_weight_buy_hold",
+          "count": 600,
+          "source_cells_sha256": "e935caf8dc6ede81d3d250d7166805ffae686b447ef83b766bfef8f77d377b85",
+          "normalized_reference_cells_sha256": "01e8d345e41d3e780849dfd3dd6a8710d49edd8671174076de8463df80c1004a",
+          "ordered_keys_sha256": "c3920a8661520455d1caffe0cf939957a5e54643d9852c1379fbe3e13cf207b3",
+          "all_cells_inverse_mapping_exact": true
+        }
+      ],
+      "local_checkout_equivalent": true
+    },
+    "summary.csv": {
+      "source_path": "results/development/HY3-003/summary.csv",
+      "canonical_git_sha256": "965c3ac513f63de31830603ab968f5c6e99c6ceb763515b99753282d8c3a4994",
+      "canonical_git_bytes": 8093,
+      "canonical_git_crlf_sha256": "4ecb4abb244647e127b27135d2a75493b375183506cd74172d8435841299e092",
+      "source_fields": [
+        "split",
+        "policy",
+        "horizon",
+        "scenario_count",
+        "median_growth_pct",
+        "p10_growth_pct",
+        "median_loss_pct",
+        "p90_loss_pct",
+        "median_volatility_pct",
+        "median_terminal_real_wealth",
+        "median_nominal_fee_sum",
+        "pooled_trade_count",
+        "pooled_review_count",
+        "pooled_later_trade_count",
+        "pooled_later_review_count",
+        "pooled_trade_share_pct",
+        "pooled_trade_share_ex_initial_pct",
+        "severe_scenario_id",
+        "severe_net_real_cagr_pct",
+        "severe_max_real_drawdown_pct",
+        "severe_terminal_real_wealth",
+        "severe_drawdown_peak_year",
+        "severe_drawdown_peak_kind",
+        "severe_drawdown_trough_year",
+        "severe_drawdown_trough_kind",
+        "severe_trade_share_pct",
+        "severe_trade_share_ex_initial_pct",
+        "monetary_units",
+        "return_units",
+        "cpi_units",
+        "growth_units",
+        "volatility_units",
+        "loss_units",
+        "trade_share_units"
+      ],
+      "normalized_fields": [
+        "split",
+        "mode",
+        "horizon",
+        "scenario_count",
+        "median_growth_pct",
+        "p10_growth_pct",
+        "median_loss_pct",
+        "p90_loss_pct",
+        "median_volatility_pct",
+        "median_terminal_real_wealth",
+        "median_nominal_fee_sum",
+        "pooled_trade_count",
+        "pooled_review_count",
+        "pooled_later_trade_count",
+        "pooled_later_review_count",
+        "pooled_trade_share_pct",
+        "pooled_trade_share_ex_initial_pct",
+        "severe_scenario_id",
+        "severe_net_real_cagr_pct",
+        "severe_max_real_drawdown_pct",
+        "severe_terminal_real_wealth",
+        "severe_drawdown_peak_year",
+        "severe_drawdown_peak_kind",
+        "severe_drawdown_trough_year",
+        "severe_drawdown_trough_kind",
+        "severe_trade_share_pct",
+        "severe_trade_share_ex_initial_pct",
+        "monetary_units",
+        "return_units",
+        "cpi_units",
+        "growth_units",
+        "volatility_units",
+        "loss_units",
+        "trade_share_units"
+      ],
+      "count": 15,
+      "by_mode": [
+        {
+          "mode": "bills_keep",
+          "count": 5,
+          "source_cells_sha256": "bebe7d6436d3e949e1b9fa372cc84aaf2d3349037e4accc0194297713f93aedb",
+          "normalized_reference_cells_sha256": "5aaba176c90d2ae74dbbd97cb40c37688bd97a234eca0a4a4a883b8d3a6ec9f5",
+          "ordered_keys_sha256": "17f324b3c14c67b7c5d06c40cdb491f4419ab0e01c3e72171da9a0d7a80af048",
+          "all_cells_inverse_mapping_exact": true
+        },
+        {
+          "mode": "equal_weight_annual",
+          "count": 5,
+          "source_cells_sha256": "cbdbae7df6d7307af08197e8154df81157780c5991ea4021668087bafd4bbd8f",
+          "normalized_reference_cells_sha256": "e44e18981a8b817914d31289493d970e4cf2374803bd3065a597a113f1ebeaf4",
+          "ordered_keys_sha256": "17f324b3c14c67b7c5d06c40cdb491f4419ab0e01c3e72171da9a0d7a80af048",
+          "all_cells_inverse_mapping_exact": true
+        },
+        {
+          "mode": "equal_weight_buy_hold",
+          "count": 5,
+          "source_cells_sha256": "a4c12f672dcb769e2ebcaa812d9fce490511ee028b66856922f6c3c91e054822",
+          "normalized_reference_cells_sha256": "eb392f8decffc25d386fe8b2e5fff67aa0a223127f748a710bd97be220d9b3a2",
+          "ordered_keys_sha256": "17f324b3c14c67b7c5d06c40cdb491f4419ab0e01c3e72171da9a0d7a80af048",
+          "all_cells_inverse_mapping_exact": true
+        }
+      ],
+      "local_checkout_equivalent": true
+    }
+  },
+  "exact_source_rows_checked": 12615,
+  "mapping": {
+    "renames": {
+      "policy": "mode",
+      "year": "period",
+      "action": "engine_action"
+    },
+    "field": "growth_units",
+    "original": "percentage points per year",
+    "destination": "percent/year",
+    "numerical_conversion": "none",
+    "analysis_bridge": "detached copy; LEVEL -> LEGACY"
+  },
+  "synthetic_boundary_fixture": {
+    "net_real_cagr_pct": 0.01,
+    "negative_zero": -0.0,
+    "zero": 0.0,
+    "below_gate": 0.09999999999999999,
+    "gate": 0.1,
+    "above_gate": 0.10000000000000002,
+    "first_latch_year": null,
+    "human_review_latched": false,
+    "initial_allocation_deferred": true,
+    "growth_units": "percent/year",
+    "growth_difference_units": "percentage points per year"
+  },
+  "expected_typed_values": {
+    "net_real_cagr_pct": {
+      "type": "float",
+      "hex": "0x1.47ae147ae147bp-7"
+    },
+    "negative_zero": {
+      "type": "float",
+      "hex": "-0x0.0p+0"
+    },
+    "zero": {
+      "type": "float",
+      "hex": "0x0.0p+0"
+    },
+    "below_gate": {
+      "type": "float",
+      "hex": "0x1.9999999999999p-4"
+    },
+    "gate": {
+      "type": "float",
+      "hex": "0x1.999999999999ap-4"
+    },
+    "above_gate": {
+      "type": "float",
+      "hex": "0x1.999999999999bp-4"
+    },
+    "first_latch_year": {
+      "type": "NoneType",
+      "value": null
+    },
+    "human_review_latched": {
+      "type": "bool",
+      "value": false
+    },
+    "initial_allocation_deferred": {
+      "type": "bool",
+      "value": true
+    },
+    "growth_units": {
+      "type": "str",
+      "value": "percent/year"
+    },
+    "growth_difference_units": {
+      "type": "str",
+      "value": "percentage points per year"
+    }
+  },
+  "paired_growth_difference": {
+    "candidate": 0.11,
+    "reference": 0.01,
+    "binary64_difference": 0.1,
+    "difference_hex": "0x1.999999999999ap-4",
+    "units": "percentage points per year"
+  },
+  "unknown_unit_rejected": true,
+  "json_roundtrip_preserves_types_and_float_hex": true,
+  "not_yet_tested": [
+    "delivered writer normalization",
+    "delivered CSV column type decoder",
+    "saved-bundle checker corruption rejection",
+    "production path/source/config guards"
+  ],
+  "competition_input_read": false,
+  "baseline_experiment_rerun": false,
+  "new_policy_outcomes_run": false,
+  "writer_accepted": false,
+  "final_data_open": false
+}

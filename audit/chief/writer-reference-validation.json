@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T19:18:43.707291+00:00",
+  "purpose": "Preparation oracle integrity; no delivered writer exists",
+  "reference_rows_checked": 12615,
+  "corruptions_rejected": [
+    {
+      "case": "changed-cell-digest",
+      "exit_code": 1,
+      "evidence_preserved": true
+    },
+    {
+      "case": "changed-float-neighbor",
+      "exit_code": 1,
+      "evidence_preserved": true
+    },
+    {
+      "case": "null-to-false",
+      "exit_code": 1,
+      "evidence_preserved": true
+    }
+  ],
+  "original_evidence_unchanged": true,
+  "oracle_sha256_lf": "ae3e2dc9ab11e9fad60446b0dec8acf640f08de58349e037a8010c032cd0d651",
+  "reference_sha256": "98fe75c2b1108fd87d949cd4918f5381cf233bc509cfa091cc6a3b53649c4a87",
+  "writer_accepted": false,
+  "competition_experiments_run": false
+}
