@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-004",
+  "reviewed_base_commit": "ce2692b9b418ee4044da2930fb715d57ed83e500",
+  "status": "passed",
+  "review_scope": "Independent mathematical review of chief-authored v1.1 contract only; not independent validation of subsequent Sol implementation",
+  "blockers": [],
+  "corrections": [],
+  "reviewed_sources": {
+    "specs/DEVELOPMENT_BASELINE_DRIVER.md": {
+      "expected_sha256": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0",
+      "canonical_sha256": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0",
+      "matched": true,
+      "consumed_sha256": "cab2fa8dcb0c69d27fd3f3539907683a2f299d9510d35ee29a14208d9cbe4cc6"
+    },
+    "specs/development_baselines_v1_1.json": {
+      "expected_sha256": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224",
+      "canonical_sha256": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224",
+      "matched": true,
+      "consumed_sha256": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224"
+    },
+    "specs/DEVELOPMENT_BASELINES.md": {
+      "expected_sha256": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f",
+      "canonical_sha256": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f",
+      "matched": true,
+      "consumed_sha256": "fd83de5a118e37263fb9defc159dc6ea585756449b6c5b34bba269eebd2d4f07"
+    },
+    "specs/ACCOUNTING.md": {
+      "expected_sha256": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "canonical_sha256": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "matched": true,
+      "consumed_sha256": "d5a59960f8bc9474986015f4f832ffcbbdb5fc3e85bad0b3b9453861ae63a7fc"
+    },
+    "specs/PROBLEM_LOCK.md": {
+      "expected_sha256": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "canonical_sha256": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "matched": true,
+      "consumed_sha256": "c3cce877e00a62f49c8a032e9bde5e39562bd1b29dde3dee23263935f9aea675"
+    },
+    "src/safeinvest/backtest.py": {
+      "expected_sha256": "f82c63a3fe78889d243bbbb344d20cbe9edb54981c7ca07b1f5006b9f79b28cd",
+      "canonical_sha256": "f82c63a3fe78889d243bbbb344d20cbe9edb54981c7ca07b1f5006b9f79b28cd",
+      "matched": true,
+      "consumed_sha256": "f82c63a3fe78889d243bbbb344d20cbe9edb54981c7ca07b1f5006b9f79b28cd"
+    },
+    "src/safeinvest/accounting.py": {
+      "expected_sha256": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "canonical_sha256": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "matched": true,
+      "consumed_sha256": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5"
+    },
+    "src/safeinvest/metrics.py": {
+      "expected_sha256": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "canonical_sha256": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "matched": true,
+      "consumed_sha256": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e"
+    },
+    "audit/chief/accounting_oracle.json": {
+      "expected_sha256": "85caa997e09b1cf2a02118f4f101137919ad7b38ce662caed7a594c569ed1377",
+      "canonical_sha256": "85caa997e09b1cf2a02118f4f101137919ad7b38ce662caed7a594c569ed1377",
+      "matched": true,
+      "consumed_sha256": "85caa997e09b1cf2a02118f4f101137919ad7b38ce662caed7a594c569ed1377"
+    },
+    "audit/SOL-002/findings.json": {
+      "canonical_sha256": "3ab95e5da3572c7c4d0592b5ee07ba41044edc187b1f0fdbc5199dd33e0c741a",
+      "consumed_sha256": "3ab95e5da3572c7c4d0592b5ee07ba41044edc187b1f0fdbc5199dd33e0c741a",
+      "basis": "reviewed canonical Git blob at task base"
+    },
+    "specs/development_baselines_v1.json": {
+      "canonical_sha256": "725f6eed64bbf49d7cad19d5f1cc233c7e0d80aa82c39c6aabd3b8864b2007bd",
+      "consumed_sha256": "725f6eed64bbf49d7cad19d5f1cc233c7e0d80aa82c39c6aabd3b8864b2007bd",
+      "basis": "reviewed canonical Git blob at task base"
+    },
+    "ops/PROTOCOL.md": {
+      "canonical_sha256": "387e813e368f8b8c88e9d2b299fa4c5dd5bdc569928ef6be71e5bd7b98f6bb54",
+      "consumed_sha256": "8917a7c523acfb528f2eaa8d60b9b2f1b6c2a55961279327f28c1b37f3dfe32c",
+      "basis": "reviewed canonical Git blob at task base"
+    }
+  },
+  "clarifications": {
+    "S1": "Strict peak/loss comparisons select earliest maximizing pair; initial sentinel is coherent for zero loss. Exact severe float ordering is distinct from numeric reconciliation tolerances.",
+    "S2": "End-to-end real return includes fees and exact CPI; detached identities/units and profile horizons are sufficient. Paired percentage differences must be percentage points, loss positive is worse.",
+    "S3": "H=1 has zero later reviews; null volatility and ex-initial share avoid undefined division. All pilot horizons exceed one."
+  },
+  "contract_review": [
+    "No change to accounting convention, fee timing, annual returns, candidate set, prefixes or development split.",
+    "Counts reconcile: 3*120*30=10800, 3*120*5=1800, 3*5=15, 2*120*5=1200.",
+    "Source SHA can be explicitly resolved from saved manifest for --check; no worker-branch or pre-edit-HEAD requirement. Production provenance is separate from generated synthetic fixture provenance."
+  ],
+  "limitations": [
+    "No competition CSV read or performance evaluated.",
+    "Independent chief review remains mandatory for this implementation."
+  ],
+  "reviewed_before_implementation": true
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "split": "synthetic",
+  "read_only": true,
+  "fixture_regenerated": false,
+  "outputs_regenerated": false,
+  "source_commit": "d2c783ff9cf14415d1e8309d75a890646b45f117",
+  "output_counts": {
+    "annual_ledgers.csv": 10800,
+    "scenario_metrics.csv": 1800,
+    "summary.csv": 15,
+    "paired_differences.csv": 1200
+  },
+  "check_count": 232957
+}

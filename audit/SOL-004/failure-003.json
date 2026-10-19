@@ -1,0 +1,11 @@
+{
+  "stage": "audit structural preflight",
+  "status": "failed",
+  "exit_code": 1,
+  "missing_deliverables": [
+    "audit/SOL-004/verification.json"
+  ],
+  "diagnosis": "Final structural preflight was invoked before verification.json had been written. No production or quantitative code failed. The original preflight also used over-escaped delimiter/control-character literals; corrected probes use chr(0) and bytes([13]).",
+  "fix": "Write the verification draft, rerun scope/syntax/UTF-8 LF checks with direct character constructors, then finalize the record from actual results.",
+  "evidence": "execution_log.json and tests.txt"
+}

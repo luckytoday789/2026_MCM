@@ -1,0 +1,65 @@
+test_all_equity_and_keep_bills_examples (test_accounting.AccountingTests.test_all_equity_and_keep_bills_examples) ... ok
+test_exact_compounded_inflation_and_deflation (test_accounting.AccountingTests.test_exact_compounded_inflation_and_deflation) ... ok
+test_exact_total_loss_formula_without_inventing_recovery (test_accounting.AccountingTests.test_exact_total_loss_formula_without_inventing_recovery) ... ok
+test_exact_twenty_unit_bill_to_equity_example (test_accounting.AccountingTests.test_exact_twenty_unit_bill_to_equity_example) ... ok
+test_fee_precedes_return (test_accounting.AccountingTests.test_fee_precedes_return) ... ok
+test_initial_equal_weight_exact_fractions (test_accounting.AccountingTests.test_initial_equal_weight_exact_fractions) ... ok
+test_invalid_inputs_rejected (test_accounting.AccountingTests.test_invalid_inputs_rejected) ... ok
+test_keep_preserves_dollars_and_inputs_exactly (test_accounting.AccountingTests.test_keep_preserves_dollars_and_inputs_exactly) ... ok
+test_rebalance_matching_weights_is_no_trade (test_accounting.AccountingTests.test_rebalance_matching_weights_is_no_trade) ... ok
+test_wealth_conservation_and_full_investment_seeded (test_accounting.AccountingTests.test_wealth_conservation_and_full_investment_seeded) ... ok
+test_zero_fees_zero_returns (test_accounting.AccountingTests.test_zero_fees_zero_returns) ... ok
+test_complete_thirty_period_ledger_invariants (test_accounting.BaselineTests.test_complete_thirty_period_ledger_invariants) ... ok
+test_explicit_horizon_csv_strings_and_future_outcomes_not_read (test_accounting.BaselineTests.test_explicit_horizon_csv_strings_and_future_outcomes_not_read) ... ok
+test_final_split_and_development_id_guards (test_accounting.BaselineTests.test_final_split_and_development_id_guards) ... ok
+test_inflation_only_loss (test_accounting.BaselineTests.test_inflation_only_loss) ... ok
+test_reject_mixed_scenarios_even_beyond_horizon_and_invalid_metadata (test_accounting.BaselineTests.test_reject_mixed_scenarios_even_beyond_horizon_and_invalid_metadata) ... ok
+test_terminal_total_loss_is_measured_but_not_restarted (test_accounting.BaselineTests.test_terminal_total_loss_is_measured_but_not_restarted) ... ok
+test_two_period_hand_computable_default_fee_ledger (test_accounting.BaselineTests.test_two_period_hand_computable_default_fee_ledger) ... ok
+test_zero_fees_returns_and_inflation (test_accounting.BaselineTests.test_zero_fees_returns_and_inflation) ... ok
+test_zero_market_returns_keep_initial_fee_loss_and_trade_shares (test_accounting.BaselineTests.test_zero_market_returns_keep_initial_fee_loss_and_trade_shares) ... ok
+test_cagr_sample_volatility_and_initial_peak (test_accounting.MetricsTests.test_cagr_sample_volatility_and_initial_peak) ... ok
+test_linear_interpolated_quantiles (test_accounting.MetricsTests.test_linear_interpolated_quantiles) ... ok
+test_post_fee_loss_before_year_end_recovery_is_included (test_accounting.MetricsTests.test_post_fee_loss_before_year_end_recovery_is_included) ... ok
+test_zero_terminal_wealth_and_invalid_metrics (test_accounting.MetricsTests.test_zero_terminal_wealth_and_invalid_metrics) ... ok
+test_callback_gets_immutable_prefix_only (test_accounting.PrefixBoundaryTests.test_callback_gets_immutable_prefix_only) ... ok
+test_decision_exists_before_current_outcomes_are_accessed (test_accounting.PrefixBoundaryTests.test_decision_exists_before_current_outcomes_are_accessed) ... ok
+test_future_perturbation_preserves_earlier_contexts_and_ledgers (test_accounting.PrefixBoundaryTests.test_future_perturbation_preserves_earlier_contexts_and_ledgers) ... ok
+test_invalid_decisions_rejected (test_accounting.PrefixBoundaryTests.test_invalid_decisions_rejected) ... ok
+test_end_to_end_local_git_delivery_and_deduplication (test_coop.ProtocolTests.test_end_to_end_local_git_delivery_and_deduplication) ... ok
+test_path_boundary (test_coop.ProtocolTests.test_path_boundary) ... ok
+test_python_registration_changes_wake_chief_but_heartbeats_do_not (test_coop.ProtocolTests.test_python_registration_changes_wake_chief_but_heartbeats_do_not) ... ok
+test_task_path_escape_rejected (test_coop.ProtocolTests.test_task_path_escape_rejected) ... ok
+test_all_policies_against_independent_rational_two_year_path_and_oracle (test_development_baselines.BaselineTests.test_all_policies_against_independent_rational_two_year_path_and_oracle) ... ok
+test_complete_keys_ids_schema_numeric_domains_rejected (test_development_baselines.BaselineTests.test_complete_keys_ids_schema_numeric_domains_rejected) ... ok
+test_config_is_frozen_and_invalid_policy_split_horizon_are_rejected (test_development_baselines.BaselineTests.test_config_is_frozen_and_invalid_policy_split_horizon_are_rejected) ... ok
+test_corrupt_output_hash_is_rejected_without_repair (test_development_baselines.BaselineTests.test_corrupt_output_hash_is_rejected_without_repair) ... ok
+test_counts_keys_finite_units_deterministic_lf_and_labels (test_development_baselines.BaselineTests.test_counts_keys_finite_units_deterministic_lf_and_labels) ... ok
+test_drawdown_earliest_repeated_and_zero_loss_locations (test_development_baselines.BaselineTests.test_drawdown_earliest_repeated_and_zero_loss_locations) ... ok
+test_exact_compounded_inflation_and_h1_nulls (test_development_baselines.BaselineTests.test_exact_compounded_inflation_and_h1_nulls) ... ok
+test_failure_after_directory_creation_keeps_failed_manifest (test_development_baselines.BaselineTests.test_failure_after_directory_creation_keeps_failed_manifest) ... ok
+test_fee_before_returns_and_initial_fixtures (test_development_baselines.BaselineTests.test_fee_before_returns_and_initial_fixtures) ... ok
+test_forged_consumed_source_hash_is_rejected_without_repair (test_development_baselines.BaselineTests.test_forged_consumed_source_hash_is_rejected_without_repair) ... ok
+test_guarded_rows_decide_before_current_outcome_and_do_not_consume_future (test_development_baselines.BaselineTests.test_guarded_rows_decide_before_current_outcome_and_do_not_consume_future) ... ok
+test_initial_post_fee_loss_then_recovery_and_zero_transfer (test_development_baselines.BaselineTests.test_initial_post_fee_loss_then_recovery_and_zero_transfer) ... ok
+test_invalid_manifest_is_rejected_without_repair (test_development_baselines.BaselineTests.test_invalid_manifest_is_rejected_without_repair) ... ok
+test_keep_exact_dollars_and_buy_hold_drift (test_development_baselines.BaselineTests.test_keep_exact_dollars_and_buy_hold_drift) ... ok
+test_loader_frozen_path_hash_and_explicit_file_open_guard (test_development_baselines.BaselineTests.test_loader_frozen_path_hash_and_explicit_file_open_guard) ... ok
+test_missing_manifest_metadata_is_rejected_without_repair (test_development_baselines.BaselineTests.test_missing_manifest_metadata_is_rejected_without_repair) ... ok
+test_missing_output_is_rejected_without_repair (test_development_baselines.BaselineTests.test_missing_output_is_rejected_without_repair) ... ok
+test_missing_rows_even_with_rehashed_manifest_are_rejected (test_development_baselines.BaselineTests.test_missing_rows_even_with_rehashed_manifest_are_rejected) ... ok
+test_nonempty_output_is_refused_and_preserved (test_development_baselines.BaselineTests.test_nonempty_output_is_refused_and_preserved) ... ok
+test_numeric_corruption_even_with_rehashed_manifest_is_rejected (test_development_baselines.BaselineTests.test_numeric_corruption_even_with_rehashed_manifest_is_rejected) ... ok
+test_paired_signs_units_and_reference_identity (test_development_baselines.BaselineTests.test_paired_signs_units_and_reference_identity) ... ok
+test_prefixes_batch_and_year10_perturbation_actual_checks (test_development_baselines.BaselineTests.test_prefixes_batch_and_year10_perturbation_actual_checks) ... ok
+test_provenance_rejects_changed_source_and_config_but_allows_advanced_head (test_development_baselines.BaselineTests.test_provenance_rejects_changed_source_and_config_but_allows_advanced_head) ... ok
+test_quantiles_exact_severe_ties_and_pooled_denominators (test_development_baselines.BaselineTests.test_quantiles_exact_severe_ties_and_pooled_denominators) ... ok
+test_saved_valid_bundle_cli_check_is_read_only (test_development_baselines.BaselineTests.test_saved_valid_bundle_cli_check_is_read_only) ... ok
+test_source_lf_crlf_hashes_and_consumed_bytes_are_distinct (test_development_baselines.BaselineTests.test_source_lf_crlf_hashes_and_consumed_bytes_are_distinct) ... ok
+test_three_fixed_candidates_and_backward_wrapper (test_development_baselines.BaselineTests.test_three_fixed_candidates_and_backward_wrapper) ... ok
+
+----------------------------------------------------------------------
+Ran 59 tests in 25.248s
+
+OK
+{"role": "hy3", "root": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-004-a1\\.runtime\\protocol-tests\\tmp7jrw0tmt\\worker", "remote": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-004-a1\\.runtime\\protocol-tests\\tmp7jrw0tmt\\remote.git", "python": "3.12.14", "state": "running", "write_access": "verified"}

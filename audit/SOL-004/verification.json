@@ -1,0 +1,2002 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-004",
+  "attempt": 1,
+  "role": "sol",
+  "status": "passed",
+  "acceptance_status": "pending independent chief review of exact parent-runner delivery commit",
+  "scope": "Implementation self-checks on generated synthetic fixtures only. Chief-contract findings are independently scoped to chief-authored rules.",
+  "base_commit": "ce2692b9b418ee4044da2930fb715d57ed83e500",
+  "production_source_commit": "Not yet assigned: parent runner handles delivery; no actual repository commit performed.",
+  "synthetic_source_commit": "d2c783ff9cf14415d1e8309d75a890646b45f117",
+  "synthetic_source_archive": "audit/SOL-004/synthetic-source.bundle",
+  "python_version": "3.12.14",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "scripts/check_worker_env.py"
+      ],
+      "exit_code": 0,
+      "utc_start": "2026-10-19T14:05:41.453Z"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 1,
+      "utc_start": "2026-10-19T14:05:41.697Z"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_development_baselines.py",
+        "-v"
+      ],
+      "exit_code": 1,
+      "utc_start": "2026-10-19T14:06:18.316Z"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "utc_start": "2026-10-19T14:06:51.947Z"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "scripts/run_development_baselines.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "utc_start": "2026-10-19T14:10:10.910Z"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "utc_start": "2026-10-19T14:10:11.095Z"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "utc_start": "2026-10-19T14:11:57.364Z"
+    },
+    {
+      "command": [
+        "git",
+        "bundle",
+        "create",
+        "audit/SOL-004/synthetic-source.bundle",
+        "--all"
+      ],
+      "cwd": "isolated synthetic source repository",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-c",
+        "import importlib.util; from pathlib import Path; s=importlib.util.spec_from_file_location('synthetic_generator','tests/test_development_baselines.py'); m=importlib.util.module_from_spec(s); s.loader.exec_module(m); b=m.ex.csv_bytes(m.fixture_rows()); out=Path('audit/SOL-004/synthetic-input.csv'); assert m.ex.digest(b)==m.ex.read_manifest(out.parent/'synthetic-bundle')['input']['sha256']; out.write_bytes(b); print('synthetic input: 3600 rows; saved manifest SHA256 matched')"
+      ],
+      "exit_code": 0,
+      "utc_start": "2026-10-19T14:13:16.261Z"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "audit/SOL-004/verify_saved_synthetic.py"
+      ],
+      "exit_code": 0,
+      "utc_start": "2026-10-19T14:13:16.558Z"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-c",
+        "import ast,json,subprocess; from pathlib import Path; root=Path.cwd(); task=json.loads((root/'.runtime/task.json').read_bytes()); raw=subprocess.check_output(['git','status','--porcelain','-z']).decode(); paths=[x[3:].rstrip('/') for x in raw.split('\\0') if x]; allowed=task['allowed_paths']; assert all(any(p==a or p.startswith(a+'/') for a in allowed) for p in paths),paths; assert all((root/p).is_file() for p in task['deliverables']); files=[*root.glob('src/safeinvest/*.py'),root/'scripts/run_development_baselines.py',root/'tests/test_development_baselines.py',root/'audit/SOL-004/verify_saved_synthetic.py']; [ast.parse(p.read_text(encoding='utf-8'),filename=str(p)) for p in files]; textfiles=[p for p in (root/'audit/SOL-004').rglob('*') if p.is_file() and p.suffix in ('.json','.csv','.py','.md','.txt')]; assert all(b'\\r' not in p.read_bytes() for p in textfiles); assert len(list((root/'audit/SOL-004/synthetic-bundle').iterdir()))==6; assert subprocess.check_output(['git','rev-parse','HEAD']).decode().strip()==task['base_commit']; print(json.dumps({'status':'passed','allowed_changed_paths':paths,'deliverables_present':len(task['deliverables']),'text_files_utf8_lf':len(textfiles),'syntax_files':len(files),'actual_repository_head_unchanged':True,'six_saved_synthetic_files':True}))"
+      ],
+      "exit_code": 1,
+      "utc_start": "2026-10-19T14:18:34.696Z"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-c",
+        "import ast,json,subprocess; from pathlib import Path; root=Path.cwd(); task=json.loads((root/'.runtime/task.json').read_bytes()); raw=subprocess.check_output(['git','status','--porcelain','-z']).decode(); paths=[x[3:].rstrip('/') for x in raw.split(chr(0)) if x]; allowed=task['allowed_paths']; assert all(any(p==a or p.startswith(a+'/') for a in allowed) for p in paths),paths; assert all((root/p).is_file() for p in task['deliverables']),[p for p in task['deliverables'] if not (root/p).is_file()]; files=[*root.glob('src/safeinvest/*.py'),root/'scripts/run_development_baselines.py',root/'tests/test_development_baselines.py',root/'audit/SOL-004/verify_saved_synthetic.py']; [ast.parse(p.read_text(encoding='utf-8'),filename=str(p)) for p in files]; textfiles=[p for p in (root/'audit/SOL-004').rglob('*') if p.is_file() and p.suffix in ('.json','.csv','.py','.md','.txt')]; assert all(bytes([13]) not in p.read_bytes() for p in textfiles),[str(p) for p in textfiles if bytes([13]) in p.read_bytes()]; [p.read_bytes().decode('utf-8') for p in textfiles]; assert len(list((root/'audit/SOL-004/synthetic-bundle').iterdir()))==6; assert subprocess.check_output(['git','rev-parse','HEAD']).decode().strip()==task['base_commit']; print(json.dumps({'status':'passed','allowed_changed_paths':paths,'deliverables_present':len(task['deliverables']),'text_files_utf8_lf':len(textfiles),'syntax_files':len(files),'actual_repository_head_unchanged':True,'six_saved_synthetic_files':True}))"
+      ],
+      "exit_code": 0,
+      "utc_start": "2026-10-19T14:19:09.474Z"
+    }
+  ],
+  "latest_full_suite": {
+    "command": [
+      "python",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "tests": 59,
+    "existing_accounting": 28,
+    "existing_protocol": 4,
+    "new_driver": 27
+  },
+  "saved_fixture": {
+    "label": "synthetic",
+    "input_rows": 3600,
+    "scenario_count": 120,
+    "years_per_scenario": 30,
+    "input_sha256": "098efc64d81f503f40847d019ecc9fc8c3528d3612c2b4f5e36141d0b5352695",
+    "fixture_generator_sha256": "b65c28bbeea82f42836007c961f12e13c8c509066d74aeb9dd5e1b2b10bde030",
+    "output_counts": {
+      "annual_ledgers.csv": 10800,
+      "paired_differences.csv": 1200,
+      "scenario_metrics.csv": 1800,
+      "summary.csv": 15
+    },
+    "output_sha256": {
+      "annual_ledgers.csv": "7625567a420213bd287565e246704fef2281ead11637dbd63436bec015421b9d",
+      "checks.json": "d4a9cfc9824cc094ea86d97e181d159ad1591950287e1de729e9b32eb38c0125",
+      "paired_differences.csv": "36599a849c576a23589e0dbaea185843d0fe2803e86f2f3dd051e429a464f68f",
+      "scenario_metrics.csv": "856715afa519fa01a35b233837038b878efc53fd7e8ffa2532fe98ffb1429b31",
+      "summary.csv": "1640cf1e9ce7b1cf27678c23cc5a2a9d8ea158b8d46e59f4725c0138996fa64d"
+    },
+    "run_manifest_sha256": "a24b3f1b07fc58f121941ad3c6159c46e687208d9dacbb91e78c6e8ea9e633b2"
+  },
+  "numeric_checks": {
+    "saved_bundle_check_count": 232957,
+    "saved_bundle_failures": 0,
+    "max_absolute_residual": 1.4960255256823984e-14,
+    "max_scaled_residual": 8.976153154093585e-14,
+    "independent_rational_comparisons": 116,
+    "max_rational_absolute_residual": 2.842170943040401e-14,
+    "thresholds": {
+      "absolute_ledger": 1e-9,
+      "absolute_toy": 1e-9,
+      "relative_ledger": 1e-10,
+      "selection_ties": "exact float equality; tolerances are not tie thresholds",
+      "trade_amount_epsilon": 1e-10
+    },
+    "toy_expected_observed_residuals": [
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "bills_keep:transfer",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "bills_keep:fee",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 1.02,
+        "name": "bills_keep:cpi",
+        "observed": 1.02,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 93.13725490196079,
+        "name": "bills_keep:real_end",
+        "observed": 93.13725490196079,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 100,
+        "name": "bills_keep:real_post",
+        "observed": 100,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "bills_keep:before",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "bills_keep:before",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 100,
+        "name": "bills_keep:before",
+        "observed": 100,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "bills_keep:after",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "bills_keep:after",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 100,
+        "name": "bills_keep:after",
+        "observed": 100,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "bills_keep:end",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "bills_keep:end",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 95,
+        "name": "bills_keep:end",
+        "observed": 95,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "bills_keep:transfer",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "bills_keep:fee",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 1.02,
+        "name": "bills_keep:cpi",
+        "observed": 1.02,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 93.13725490196079,
+        "name": "bills_keep:real_end",
+        "observed": 93.13725490196079,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 93.13725490196079,
+        "name": "bills_keep:real_post",
+        "observed": 93.13725490196079,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "bills_keep:before",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "bills_keep:before",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 95,
+        "name": "bills_keep:before",
+        "observed": 95,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "bills_keep:after",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "bills_keep:after",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 95,
+        "name": "bills_keep:after",
+        "observed": 95,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "bills_keep:end",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "bills_keep:end",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 95,
+        "name": "bills_keep:end",
+        "observed": 95,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": -3.4923552758846066,
+        "name": "bills_keep:net_real_cagr_pct",
+        "observed": -3.4923552758846066,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 8.881784197001252e-16,
+        "expected": 4.852693596378267,
+        "name": "bills_keep:annual_real_volatility_pct",
+        "observed": 4.852693596378266,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.7763568394002505e-15,
+        "expected": 6.862745098039215,
+        "name": "bills_keep:max_real_drawdown_pct",
+        "observed": 6.8627450980392135,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 66.66666666666667,
+        "name": "equal_weight_annual:transfer",
+        "observed": 66.66666666666667,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 2.7755575615628914e-17,
+        "expected": 0.16666666666666666,
+        "name": "equal_weight_annual:fee",
+        "observed": 0.16666666666666669,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 1.02,
+        "name": "equal_weight_annual:cpi",
+        "observed": 1.02,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.4210854715202004e-14,
+        "expected": 99.50708061002179,
+        "name": "equal_weight_annual:real_end",
+        "observed": 99.50708061002177,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.4210854715202004e-14,
+        "expected": 99.83333333333333,
+        "name": "equal_weight_annual:real_post",
+        "observed": 99.83333333333331,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "equal_weight_annual:before",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "equal_weight_annual:before",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 100,
+        "name": "equal_weight_annual:before",
+        "observed": 100,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 33.27777777777778,
+        "name": "equal_weight_annual:after",
+        "observed": 33.27777777777777,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 33.27777777777778,
+        "name": "equal_weight_annual:after",
+        "observed": 33.27777777777777,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 33.27777777777778,
+        "name": "equal_weight_annual:after",
+        "observed": 33.27777777777777,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 36.605555555555554,
+        "name": "equal_weight_annual:end",
+        "observed": 36.605555555555554,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 33.27777777777778,
+        "name": "equal_weight_annual:end",
+        "observed": 33.27777777777777,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 31.613888888888887,
+        "name": "equal_weight_annual:end",
+        "observed": 31.61388888888888,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 5.329070518200751e-15,
+        "expected": 2.7731481481481484,
+        "name": "equal_weight_annual:transfer",
+        "observed": 2.7731481481481537,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.3877787807814457e-17,
+        "expected": 0.0069328703703703705,
+        "name": "equal_weight_annual:fee",
+        "observed": 0.006932870370370384,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 1.02,
+        "name": "equal_weight_annual:cpi",
+        "observed": 1.02,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.4210854715202004e-14,
+        "expected": 96.18360755567659,
+        "name": "equal_weight_annual:real_end",
+        "observed": 96.18360755567657,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.4210854715202004e-14,
+        "expected": 99.50028367828612,
+        "name": "equal_weight_annual:real_post",
+        "observed": 99.50028367828611,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 36.605555555555554,
+        "name": "equal_weight_annual:before",
+        "observed": 36.605555555555554,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 33.27777777777778,
+        "name": "equal_weight_annual:before",
+        "observed": 33.27777777777777,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 31.613888888888887,
+        "name": "equal_weight_annual:before",
+        "observed": 31.61388888888888,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 33.83009645061728,
+        "name": "equal_weight_annual:after",
+        "observed": 33.830096450617276,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 33.83009645061728,
+        "name": "equal_weight_annual:after",
+        "observed": 33.830096450617276,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 33.83009645061728,
+        "name": "equal_weight_annual:after",
+        "observed": 33.830096450617276,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 3.552713678800501e-15,
+        "expected": 27.064077160493827,
+        "name": "equal_weight_annual:end",
+        "observed": 27.064077160493824,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 37.21310609567901,
+        "name": "equal_weight_annual:end",
+        "observed": 37.21310609567901,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 33.83009645061728,
+        "name": "equal_weight_annual:end",
+        "observed": 33.830096450617276,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.1102230246251565e-14,
+        "expected": -1.9267582081245793,
+        "name": "equal_weight_annual:net_real_cagr_pct",
+        "observed": -1.9267582081245904,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 6.661338147750939e-15,
+        "expected": 2.013144926263849,
+        "name": "equal_weight_annual:annual_real_volatility_pct",
+        "observed": 2.0131449262638426,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.5987211554602254e-14,
+        "expected": 3.8163924443234083,
+        "name": "equal_weight_annual:max_real_drawdown_pct",
+        "observed": 3.8163924443234243,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.4210854715202004e-14,
+        "expected": 96.18360755567659,
+        "name": "locked_oracle_terminal",
+        "observed": 96.18360755567657,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.1102230246251565e-14,
+        "expected": -1.9267582081245793,
+        "name": "locked_oracle_growth",
+        "observed": -1.9267582081245904,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 6.661338147750939e-15,
+        "expected": 2.013144926263849,
+        "name": "locked_oracle_volatility",
+        "observed": 2.0131449262638426,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 66.66666666666667,
+        "name": "equal_weight_buy_hold:transfer",
+        "observed": 66.66666666666667,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 2.7755575615628914e-17,
+        "expected": 0.16666666666666666,
+        "name": "equal_weight_buy_hold:fee",
+        "observed": 0.16666666666666669,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 1.02,
+        "name": "equal_weight_buy_hold:cpi",
+        "observed": 1.02,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.4210854715202004e-14,
+        "expected": 99.50708061002179,
+        "name": "equal_weight_buy_hold:real_end",
+        "observed": 99.50708061002177,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.4210854715202004e-14,
+        "expected": 99.83333333333333,
+        "name": "equal_weight_buy_hold:real_post",
+        "observed": 99.83333333333331,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "equal_weight_buy_hold:before",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "equal_weight_buy_hold:before",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 100,
+        "name": "equal_weight_buy_hold:before",
+        "observed": 100,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 33.27777777777778,
+        "name": "equal_weight_buy_hold:after",
+        "observed": 33.27777777777777,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 33.27777777777778,
+        "name": "equal_weight_buy_hold:after",
+        "observed": 33.27777777777777,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 33.27777777777778,
+        "name": "equal_weight_buy_hold:after",
+        "observed": 33.27777777777777,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 36.605555555555554,
+        "name": "equal_weight_buy_hold:end",
+        "observed": 36.605555555555554,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 33.27777777777778,
+        "name": "equal_weight_buy_hold:end",
+        "observed": 33.27777777777777,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 31.613888888888887,
+        "name": "equal_weight_buy_hold:end",
+        "observed": 31.61388888888888,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "equal_weight_buy_hold:transfer",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "equal_weight_buy_hold:fee",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 1.02,
+        "name": "equal_weight_buy_hold:cpi",
+        "observed": 1.02,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.4210854715202004e-14,
+        "expected": 95.59204793028323,
+        "name": "equal_weight_buy_hold:real_end",
+        "observed": 95.59204793028321,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.4210854715202004e-14,
+        "expected": 99.50708061002179,
+        "name": "equal_weight_buy_hold:real_post",
+        "observed": 99.50708061002177,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 36.605555555555554,
+        "name": "equal_weight_buy_hold:before",
+        "observed": 36.605555555555554,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 33.27777777777778,
+        "name": "equal_weight_buy_hold:before",
+        "observed": 33.27777777777777,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 31.613888888888887,
+        "name": "equal_weight_buy_hold:before",
+        "observed": 31.61388888888888,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 36.605555555555554,
+        "name": "equal_weight_buy_hold:after",
+        "observed": 36.605555555555554,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 33.27777777777778,
+        "name": "equal_weight_buy_hold:after",
+        "observed": 33.27777777777777,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 31.613888888888887,
+        "name": "equal_weight_buy_hold:after",
+        "observed": 31.61388888888888,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 3.552713678800501e-15,
+        "expected": 29.284444444444443,
+        "name": "equal_weight_buy_hold:end",
+        "observed": 29.284444444444446,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 36.605555555555554,
+        "name": "equal_weight_buy_hold:end",
+        "observed": 36.605555555555554,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 7.105427357601002e-15,
+        "expected": 31.613888888888887,
+        "name": "equal_weight_buy_hold:end",
+        "observed": 31.61388888888888,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": -2.228814096236298,
+        "name": "equal_weight_buy_hold:net_real_cagr_pct",
+        "observed": -2.228814096236298,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.4654943925052066e-14,
+        "expected": 2.4335128237315344,
+        "name": "equal_weight_buy_hold:annual_real_volatility_pct",
+        "observed": 2.43351282373152,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 5.329070518200751e-15,
+        "expected": 4.407952069716775,
+        "name": "equal_weight_buy_hold:max_real_drawdown_pct",
+        "observed": 4.407952069716781,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 1.32,
+        "name": "toy",
+        "observed": 1.32,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 75.75757575757575,
+        "name": "toy",
+        "observed": 75.75757575757575,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.7763568394002505e-15,
+        "expected": 9.090909090909092,
+        "name": "inflation_only_loss",
+        "observed": 9.090909090909093,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 20,
+        "name": "toy",
+        "observed": 20,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0.05,
+        "name": "toy",
+        "observed": 0.05,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.4210854715202004e-14,
+        "expected": 99.95,
+        "name": "toy",
+        "observed": 99.95000000000002,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 2.842170943040401e-14,
+        "expected": 109.945,
+        "name": "toy",
+        "observed": 109.94500000000002,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 66.66666666666667,
+        "name": "toy",
+        "observed": 66.66666666666667,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 2.7755575615628914e-17,
+        "expected": 0.16666666666666666,
+        "name": "toy",
+        "observed": 0.16666666666666669,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.4210854715202004e-14,
+        "expected": 99.83333333333333,
+        "name": "toy",
+        "observed": 99.83333333333331,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 109.81666666666666,
+        "name": "toy",
+        "observed": 109.81666666666666,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 100,
+        "name": "toy",
+        "observed": 100,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0.25,
+        "name": "toy",
+        "observed": 0.25,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 99.75,
+        "name": "toy",
+        "observed": 99.75,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.4210854715202004e-14,
+        "expected": 109.725,
+        "name": "toy",
+        "observed": 109.72500000000001,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.4210854715202004e-14,
+        "expected": 109.725,
+        "name": "toy",
+        "observed": 109.72500000000001,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 1.4960255256823984e-14,
+        "expected": 0.16666666666666666,
+        "name": "toy",
+        "observed": 0.16666666666668162,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 0,
+        "name": "toy",
+        "observed": 0,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 4.440892098500626e-16,
+        "expected": 3,
+        "name": "linear_p10",
+        "observed": 3.0000000000000004,
+        "tolerance": 1e-9
+      },
+      {
+        "absolute_residual": 0,
+        "expected": 15,
+        "name": "linear_median",
+        "observed": 15,
+        "tolerance": 1e-9
+      }
+    ],
+    "executed_check_groups": {
+      "annual_wrapper_agreement": {
+        "count": 3,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "budget": {
+        "count": 10800,
+        "failures": 0,
+        "max_absolute_residual": 1.4210854715202004e-14,
+        "max_scaled_residual": 1.5512161581507608e-16,
+        "status": "passed"
+      },
+      "compounded_cpi": {
+        "count": 10800,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "count_annual_ledgers.csv": {
+        "count": 1,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "count_paired_differences.csv": {
+        "count": 1,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "count_scenario_metrics.csv": {
+        "count": 1,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "count_summary.csv": {
+        "count": 1,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "cpi_continuity": {
+        "count": 10800,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "exact_deflation": {
+        "count": 32400,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "fee": {
+        "count": 3720,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "fee_before_returns": {
+        "count": 32400,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "finite_nonnegative_holdings": {
+        "count": 32400,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "finite_pilot_metrics": {
+        "count": 1800,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "fully_invested": {
+        "count": 32400,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "h1_nulls": {
+        "count": 1,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "holdings_continuity": {
+        "count": 32400,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "intended_transfer": {
+        "count": 3720,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "keep_exact_dollars": {
+        "count": 7080,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "keys_annual_ledgers.csv": {
+        "count": 1,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "keys_paired_differences.csv": {
+        "count": 1,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "keys_scenario_metrics.csv": {
+        "count": 1,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "keys_summary.csv": {
+        "count": 1,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "net_annual_return": {
+        "count": 10800,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "no_lookahead_decisions": {
+        "count": 9,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "no_lookahead_states": {
+        "count": 9,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "pooled_denominators": {
+        "count": 15,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "prefix_rerun": {
+        "count": 45,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "scalar_growth": {
+        "count": 45,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "scalar_loss": {
+        "count": 45,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "scalar_volatility": {
+        "count": 45,
+        "failures": 0,
+        "max_absolute_residual": 2.220446049250313e-16,
+        "max_scaled_residual": 2.5508928537864515e-16,
+        "status": "passed"
+      },
+      "single_scenario_batch": {
+        "count": 45,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "target_after_fee": {
+        "count": 11160,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "toy_fee_recovery": {
+        "count": 1,
+        "failures": 0,
+        "max_absolute_residual": 1.4960255256823984e-14,
+        "max_scaled_residual": 8.976153154093585e-14,
+        "status": "passed"
+      },
+      "toy_initial_fee": {
+        "count": 1,
+        "failures": 0,
+        "max_absolute_residual": 1.4210854715202004e-14,
+        "max_scaled_residual": 1.4234579013557933e-16,
+        "status": "passed"
+      },
+      "toy_linear_quantiles": {
+        "count": 3,
+        "failures": 0,
+        "max_absolute_residual": 3.552713678800501e-15,
+        "max_scaled_residual": 1.480297366166875e-16,
+        "status": "passed"
+      },
+      "toy_twenty_fee": {
+        "count": 1,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      },
+      "toy_twenty_transfer": {
+        "count": 1,
+        "failures": 0,
+        "max_absolute_residual": 0,
+        "max_scaled_residual": 0,
+        "status": "passed"
+      }
+    }
+  },
+  "check_coverage": {
+    "fee_before_returns": true,
+    "keep_exact_dollars": true,
+    "initial_allocation_fees": true,
+    "exact_compounded_deflation": true,
+    "h1_nulls_and_zero_later_counts": true,
+    "prefix_reruns": 45,
+    "scalar_representative_horizon_checks": 45,
+    "no_lookahead_guarded_access": true,
+    "no_lookahead_year10_perturbations": 9,
+    "history_dependent_callback_perturbation": true,
+    "batch_single_scenario": true,
+    "earliest_drawdown_and_zero_sentinels": true,
+    "exact_severe_ties_and_nextafter": true,
+    "linear_quantiles": true,
+    "paired_signs_units_identity": true,
+    "pooled_denominators": true,
+    "counts_and_unique_ordered_keys": true,
+    "frozen_config_path_rules_and_input_hash_rejection": true,
+    "complete_keys_schema_domains_rejection": true,
+    "raw_final_file_open_guard": true,
+    "read_only_saved_cli_valid_and_corrupt": true,
+    "rehash_does_not_hide_numeric_or_row_corruption": true,
+    "manifest_schema_and_consumed_hash_rejection": true,
+    "dirty_source_config_rejection": true,
+    "saved_source_sha_after_head_advance": true,
+    "lf_crlf_consumed_vs_canonical_hashes": true,
+    "failed_manifest_preservation": true,
+    "nonempty_directory_preservation": true
+  },
+  "negative_test_evidence": [
+    {
+      "name": "input-duplicate",
+      "rejected": true
+    },
+    {
+      "name": "input-id121",
+      "rejected": true
+    },
+    {
+      "name": "input-unordered",
+      "rejected": true
+    },
+    {
+      "name": "input-schema",
+      "rejected": true
+    },
+    {
+      "name": "input-nan",
+      "rejected": true
+    },
+    {
+      "name": "input-minusone",
+      "rejected": true
+    },
+    {
+      "name": "input-missing",
+      "rejected": true
+    },
+    {
+      "before_hashes": {
+        "annual_ledgers.csv": "7625567a420213bd287565e246704fef2281ead11637dbd63436bec015421b9d",
+        "checks.json": "d4a9cfc9824cc094ea86d97e181d159ad1591950287e1de729e9b32eb38c0125",
+        "paired_differences.csv": "36599a849c576a23589e0dbaea185843d0fe2803e86f2f3dd051e429a464f68f",
+        "run_manifest.json": "a24b3f1b07fc58f121941ad3c6159c46e687208d9dacbb91e78c6e8ea9e633b2",
+        "scenario_metrics.csv": "856715afa519fa01a35b233837038b878efc53fd7e8ffa2532fe98ffb1429b31",
+        "summary.csv": "247193689109e725001119fae9de4c7268a503abca0e56a8f0ad2b517572125d"
+      },
+      "diagnosis": "ValueError: saved output hash/UTF-8 LF mismatch: summary.csv",
+      "exit_code": 1,
+      "name": "hash",
+      "unchanged": true
+    },
+    {
+      "exit_code": 1,
+      "manifest": {
+        "canonical_git_sources": {
+          "audit/chief/accounting_oracle.json": {
+            "crlf_checkout_sha256": "40028fb4c003d8a782c625ba07b15c1c143348c205dd4e5153ce9c9a9a753331",
+            "git_blob_sha1": "e4b5d496a4bd508d37b553f4c519ab76d29eba90",
+            "sha256": "85caa997e09b1cf2a02118f4f101137919ad7b38ce662caed7a594c569ed1377"
+          },
+          "scripts/run_development_baselines.py": {
+            "crlf_checkout_sha256": "a0a270d41cc6f8a0efd8227d591c62e6d18ea99a247c79aae0c7c09c1d624b44",
+            "git_blob_sha1": "a222604df6164f022bf1f97f4cfecaa90bd4d17c",
+            "sha256": "08c33acd66a63bd8fbf3e4c08f765ca8a4443665e5c439882370e2a8ea1a4709"
+          },
+          "specs/ACCOUNTING.md": {
+            "crlf_checkout_sha256": "d5a59960f8bc9474986015f4f832ffcbbdb5fc3e85bad0b3b9453861ae63a7fc",
+            "git_blob_sha1": "0627337a522651189b7a985e94b6af9a1f7a4a4d",
+            "sha256": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e"
+          },
+          "specs/DEVELOPMENT_BASELINES.md": {
+            "crlf_checkout_sha256": "fd83de5a118e37263fb9defc159dc6ea585756449b6c5b34bba269eebd2d4f07",
+            "git_blob_sha1": "907dab39bd1e36bd5a1534803c0c2637ba43d1c2",
+            "sha256": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f"
+          },
+          "specs/DEVELOPMENT_BASELINE_DRIVER.md": {
+            "crlf_checkout_sha256": "cab2fa8dcb0c69d27fd3f3539907683a2f299d9510d35ee29a14208d9cbe4cc6",
+            "git_blob_sha1": "7879f756dbc06b3974d2afb65a6336bf5ab0df99",
+            "sha256": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0"
+          },
+          "specs/PROBLEM_LOCK.md": {
+            "crlf_checkout_sha256": "c3cce877e00a62f49c8a032e9bde5e39562bd1b29dde3dee23263935f9aea675",
+            "git_blob_sha1": "1ba83723824afde3b29a5b3c8b0ac5d433a68c4b",
+            "sha256": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46"
+          },
+          "specs/development_baselines_v1_1.json": {
+            "crlf_checkout_sha256": "15bd76e601feae90ac465526bfd46c1515962880afbdfb91f04871cc1c144fd0",
+            "git_blob_sha1": "7a67e0db5bda728cc7b9775a19a80c375506ccb4",
+            "sha256": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224"
+          },
+          "src/safeinvest/__init__.py": {
+            "crlf_checkout_sha256": "de6c0afb0981571b9eb385d1ebbd81dc8ecc83c6b8eb0d8ac57bb838507cde18",
+            "git_blob_sha1": "177f42cd6d15de17cadda7bd49382921a27e565d",
+            "sha256": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef"
+          },
+          "src/safeinvest/accounting.py": {
+            "crlf_checkout_sha256": "c9b7c7b8d0ec5b1e9e13fa8f167025333ded09456e4ec60b52561df3c5780c9c",
+            "git_blob_sha1": "6ff55fed7cc0ab40f6e609dad7657efc92cd09e7",
+            "sha256": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5"
+          },
+          "src/safeinvest/backtest.py": {
+            "crlf_checkout_sha256": "0f4138b6702f86d51a69f2edde7d43da7916b5a3245f28cb437237439a16d086",
+            "git_blob_sha1": "87f5f107f5f76d5da155fc134c1b036b7c431987",
+            "sha256": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6"
+          },
+          "src/safeinvest/baselines.py": {
+            "crlf_checkout_sha256": "d62bbed3fe13217be2b2d141d344a177f8812832bf86068c8ccce4b0b2bc6ca6",
+            "git_blob_sha1": "5b1c5ffa310923da2866492145871977edffb2a5",
+            "sha256": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce"
+          },
+          "src/safeinvest/experiments.py": {
+            "crlf_checkout_sha256": "a7494e173c643ec2c40326d84d9f1ca6d0e9deac01accc431f1cb8fa9bdf4985",
+            "git_blob_sha1": "f9d28e72ce2cbf6ae0bb08b80f8ffab486b192da",
+            "sha256": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca"
+          },
+          "src/safeinvest/metrics.py": {
+            "crlf_checkout_sha256": "544741aff180342eda174bae061ac5c53eeba194cf5dbfb19e4f61b1146897f3",
+            "git_blob_sha1": "383aa3fbeed74bce4d4ec1bce7bb091097fc5e05",
+            "sha256": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e"
+          }
+        },
+        "command": [
+          "synthetic-negative"
+        ],
+        "comparison_horizon": 30,
+        "consumed_source_sha256": {
+          "audit/chief/accounting_oracle.json": "85caa997e09b1cf2a02118f4f101137919ad7b38ce662caed7a594c569ed1377",
+          "scripts/run_development_baselines.py": "08c33acd66a63bd8fbf3e4c08f765ca8a4443665e5c439882370e2a8ea1a4709",
+          "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+          "specs/DEVELOPMENT_BASELINES.md": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f",
+          "specs/DEVELOPMENT_BASELINE_DRIVER.md": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0",
+          "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+          "specs/development_baselines_v1_1.json": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224",
+          "src/safeinvest/__init__.py": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+          "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+          "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+          "src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+          "src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+          "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e"
+        },
+        "cpu_seconds": 0,
+        "diagnosis": {
+          "exception": "ValueError",
+          "message": "expected exactly 3600 input rows"
+        },
+        "effective_config": {
+          "asset_order": [
+            "equity",
+            "bond",
+            "bill_proxy"
+          ],
+          "comparison_horizon": 30,
+          "drawdown_locations": {
+            "drawdown_update": "strict_increase",
+            "peak_update": "strict_increase",
+            "scan_order": [
+              "initial",
+              "post_fee",
+              "end"
+            ],
+            "zero_loss_locations": {
+              "kind": "initial",
+              "year": 0
+            }
+          },
+          "driver_contract": "specs/DEVELOPMENT_BASELINE_DRIVER.md",
+          "execution": {
+            "cpu_only": true,
+            "final_data_allowed": false,
+            "max_seconds": 300,
+            "requires_accepted_core": "SOL-001",
+            "requires_chief_driver_acceptance": true,
+            "requires_driver_implementation": "SOL-004",
+            "requires_input_verification": "HY3-002",
+            "requires_review_of_this_plan": "SOL-002"
+          },
+          "expected_counts": {
+            "annual_ledger_rows": 10800,
+            "paired_difference_rows": 1200,
+            "policy_horizon_summary_rows": 15,
+            "scenario_metric_rows": 1800
+          },
+          "fee_rate": 0.0025,
+          "fit_parameters": [],
+          "h1_undefined_metrics": [
+            "annual_real_volatility_pct",
+            "trade_share_ex_initial_pct"
+          ],
+          "horizons": [
+            5,
+            6,
+            15,
+            25,
+            30
+          ],
+          "initial_holdings": [
+            0,
+            0,
+            100
+          ],
+          "input_path": "data/development/scenarios_001_120.csv",
+          "input_sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+          "metric_contract": "specs/ACCOUNTING.md",
+          "output_encoding": "UTF-8 LF; round-trip float precision",
+          "output_files": [
+            "run_manifest.json",
+            "annual_ledgers.csv",
+            "scenario_metrics.csv",
+            "summary.csv",
+            "paired_differences.csv",
+            "checks.json"
+          ],
+          "plan_id": "development-baselines-v1.1",
+          "policies": [
+            {
+              "first_action": "keep",
+              "id": "bills_keep",
+              "label": "Bills purchasing-power reference",
+              "later_action": "keep",
+              "target": null
+            },
+            {
+              "first_action": "rebalance",
+              "id": "equal_weight_annual",
+              "label": "Required annual equal-weight baseline",
+              "later_action": "rebalance",
+              "target": [
+                "1/3",
+                "1/3",
+                "1/3"
+              ]
+            },
+            {
+              "first_action": "rebalance",
+              "id": "equal_weight_buy_hold",
+              "label": "Initial equal weight with subsequent holdings drift",
+              "later_action": "keep",
+              "target": [
+                "1/3",
+                "1/3",
+                "1/3"
+              ]
+            }
+          ],
+          "profile_horizons": {
+            "A": 5,
+            "B": 15,
+            "C": 30,
+            "D": 25,
+            "E": 6
+          },
+          "purpose": "First cheap descriptive experiment; no policy selection or final evaluation",
+          "quantiles": {
+            "growth": [
+              0.1,
+              0.5
+            ],
+            "loss": [
+              0.5,
+              0.9
+            ],
+            "method": "linear"
+          },
+          "random_seed": null,
+          "scenario_ids": {
+            "first": 1,
+            "last": 120
+          },
+          "schema_version": 1,
+          "severe_case": {
+            "criterion": "maximum_real_drawdown_within_policy_and_horizon",
+            "tie_break": "smallest_scenario_id"
+          },
+          "split": "development",
+          "status": "specified_pending_driver_review",
+          "supersedes_for_execution": "development-baselines-v1",
+          "trade_amount_epsilon": 1e-10
+        },
+        "elapsed_seconds": 0.000116499955765903,
+        "horizons": [
+          5,
+          6,
+          15,
+          25,
+          30
+        ],
+        "input": {
+          "fixture": true,
+          "fixture_generator_sha256": null,
+          "origin": "generated-invalid",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "output_sha256": {},
+        "packages": {
+          "stdlib": "3.12.14"
+        },
+        "plan_id": "development-baselines-v1.1",
+        "profile_horizons": {
+          "A": 5,
+          "B": 15,
+          "C": 30,
+          "D": 25,
+          "E": 6
+        },
+        "python_version": "3.12.14",
+        "schema_version": 1,
+        "source_commit": "d2c783ff9cf14415d1e8309d75a890646b45f117",
+        "split": "synthetic",
+        "status": "failed",
+        "utc_end": "2026-10-19T14:12:13.500780+00:00",
+        "utc_start": "2026-10-19T14:12:13.500780+00:00"
+      },
+      "name": "failed-new-run"
+    },
+    {
+      "before_hashes": {
+        "annual_ledgers.csv": "7625567a420213bd287565e246704fef2281ead11637dbd63436bec015421b9d",
+        "checks.json": "d4a9cfc9824cc094ea86d97e181d159ad1591950287e1de729e9b32eb38c0125",
+        "paired_differences.csv": "36599a849c576a23589e0dbaea185843d0fe2803e86f2f3dd051e429a464f68f",
+        "run_manifest.json": "5b5c18af3b2f066b7b8664b0a69cbfef6a357996f1ef778f356c80154b08ab2a",
+        "scenario_metrics.csv": "856715afa519fa01a35b233837038b878efc53fd7e8ffa2532fe98ffb1429b31",
+        "summary.csv": "1640cf1e9ce7b1cf27678c23cc5a2a9d8ea158b8d46e59f4725c0138996fa64d"
+      },
+      "diagnosis": "ValueError: saved consumed source hash is inconsistent with Git bytes: src/safeinvest/baselines.py",
+      "exit_code": 1,
+      "name": "forged-consumed-source-hash",
+      "unchanged": true
+    },
+    {
+      "before_hashes": {
+        "annual_ledgers.csv": "7625567a420213bd287565e246704fef2281ead11637dbd63436bec015421b9d",
+        "checks.json": "d4a9cfc9824cc094ea86d97e181d159ad1591950287e1de729e9b32eb38c0125",
+        "paired_differences.csv": "36599a849c576a23589e0dbaea185843d0fe2803e86f2f3dd051e429a464f68f",
+        "run_manifest.json": "578e653b9c6a4223498c599f2341dd5fb81eb4a9d89d6e57094e32ff07b03e51",
+        "scenario_metrics.csv": "856715afa519fa01a35b233837038b878efc53fd7e8ffa2532fe98ffb1429b31",
+        "summary.csv": "1640cf1e9ce7b1cf27678c23cc5a2a9d8ea158b8d46e59f4725c0138996fa64d"
+      },
+      "diagnosis": "JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+      "exit_code": 1,
+      "name": "manifest-json",
+      "unchanged": true
+    },
+    {
+      "frozen_hash_rejected": true,
+      "intentional_rejections": 4,
+      "name": "raw-final-open-guard",
+      "production_alternate_paths_rejected_before_open": true
+    },
+    {
+      "before_hashes": {
+        "annual_ledgers.csv": "7625567a420213bd287565e246704fef2281ead11637dbd63436bec015421b9d",
+        "checks.json": "d4a9cfc9824cc094ea86d97e181d159ad1591950287e1de729e9b32eb38c0125",
+        "paired_differences.csv": "36599a849c576a23589e0dbaea185843d0fe2803e86f2f3dd051e429a464f68f",
+        "run_manifest.json": "c9b377d78aa9cd0ea0deb9f5922cfe70238a0944d649543a7d0d123e1aed5730",
+        "scenario_metrics.csv": "856715afa519fa01a35b233837038b878efc53fd7e8ffa2532fe98ffb1429b31",
+        "summary.csv": "1640cf1e9ce7b1cf27678c23cc5a2a9d8ea158b8d46e59f4725c0138996fa64d"
+      },
+      "diagnosis": "ValueError: saved manifest metadata schema incomplete",
+      "exit_code": 1,
+      "name": "missing-manifest-metadata",
+      "unchanged": true
+    },
+    {
+      "before_hashes": {
+        "annual_ledgers.csv": "7625567a420213bd287565e246704fef2281ead11637dbd63436bec015421b9d",
+        "checks.json": "d4a9cfc9824cc094ea86d97e181d159ad1591950287e1de729e9b32eb38c0125",
+        "paired_differences.csv": "36599a849c576a23589e0dbaea185843d0fe2803e86f2f3dd051e429a464f68f",
+        "run_manifest.json": "a24b3f1b07fc58f121941ad3c6159c46e687208d9dacbb91e78c6e8ea9e633b2",
+        "summary.csv": "1640cf1e9ce7b1cf27678c23cc5a2a9d8ea158b8d46e59f4725c0138996fa64d"
+      },
+      "diagnosis": "ValueError: saved bundle has missing or unexpected files",
+      "exit_code": 1,
+      "name": "missing",
+      "unchanged": true
+    },
+    {
+      "before_hashes": {
+        "annual_ledgers.csv": "a3de3a9cc8f71888e7cd81039162adc768b7056e91e5d1c977b02bcea9171704",
+        "checks.json": "d4a9cfc9824cc094ea86d97e181d159ad1591950287e1de729e9b32eb38c0125",
+        "paired_differences.csv": "36599a849c576a23589e0dbaea185843d0fe2803e86f2f3dd051e429a464f68f",
+        "run_manifest.json": "6e1fe29fd8ec174d55ed20f1cd9bad811d0cce2d9345cf21fdc87eb5a2aa3e62",
+        "scenario_metrics.csv": "856715afa519fa01a35b233837038b878efc53fd7e8ffa2532fe98ffb1429b31",
+        "summary.csv": "1640cf1e9ce7b1cf27678c23cc5a2a9d8ea158b8d46e59f4725c0138996fa64d"
+      },
+      "diagnosis": "ValueError: saved schema/keys/numeric values differ: annual_ledgers.csv",
+      "exit_code": 1,
+      "name": "missing-row-rehashed",
+      "unchanged": true
+    },
+    {
+      "before_hashes": {
+        "annual_ledgers.csv": "7625567a420213bd287565e246704fef2281ead11637dbd63436bec015421b9d",
+        "checks.json": "d4a9cfc9824cc094ea86d97e181d159ad1591950287e1de729e9b32eb38c0125",
+        "paired_differences.csv": "e548da4a4cc2b46062bd120d74666a46ab4d7ebde1378d319ec9951d19e1830f",
+        "run_manifest.json": "e4a4d5131805fc033ddda4619d13dee1208901b693edae60b8088893715137c3",
+        "scenario_metrics.csv": "856715afa519fa01a35b233837038b878efc53fd7e8ffa2532fe98ffb1429b31",
+        "summary.csv": "1640cf1e9ce7b1cf27678c23cc5a2a9d8ea158b8d46e59f4725c0138996fa64d"
+      },
+      "diagnosis": "ValueError: saved schema/keys/numeric values differ: paired_differences.csv",
+      "exit_code": 1,
+      "name": "numeric-rehashed",
+      "unchanged": true
+    },
+    {
+      "name": "changed-source-config",
+      "rejected": true,
+      "saved_sha_check_after_head_advance": true
+    }
+  ],
+  "in_process_cli_evidence": [
+    {
+      "args": [
+        "--config",
+        "specs/development_baselines_v1_1.json",
+        "--output",
+        "../valid-synthetic-bundle"
+      ],
+      "execution": "in-process main; isolated synthetic repository; synthetic input-loader seam",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"output_counts\": {\n    \"annual_ledgers.csv\": 10800,\n    \"paired_differences.csv\": 1200,\n    \"scenario_metrics.csv\": 1800,\n    \"summary.csv\": 15\n  },\n  \"split\": \"synthetic\",\n  \"status\": \"completed\"\n}\n"
+    },
+    {
+      "args": [
+        "--config",
+        "specs/development_baselines_v1_1.json",
+        "--output",
+        "../corrupt-hash",
+        "--check"
+      ],
+      "execution": "in-process main; isolated synthetic repository; synthetic input-loader seam",
+      "exit_code": 1,
+      "stderr": "ValueError: saved output hash/UTF-8 LF mismatch: summary.csv\n",
+      "stdout": ""
+    },
+    {
+      "args": [
+        "--config",
+        "specs/development_baselines_v1_1.json",
+        "--output",
+        "../corrupt-forged-consumed-source-hash",
+        "--check"
+      ],
+      "execution": "in-process main; isolated synthetic repository; synthetic input-loader seam",
+      "exit_code": 1,
+      "stderr": "ValueError: saved consumed source hash is inconsistent with Git bytes: src/safeinvest/baselines.py\n",
+      "stdout": ""
+    },
+    {
+      "args": [
+        "--config",
+        "specs/development_baselines_v1_1.json",
+        "--output",
+        "../corrupt-manifest-json",
+        "--check"
+      ],
+      "execution": "in-process main; isolated synthetic repository; synthetic input-loader seam",
+      "exit_code": 1,
+      "stderr": "JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)\n",
+      "stdout": ""
+    },
+    {
+      "args": [
+        "--config",
+        "specs/development_baselines_v1_1.json",
+        "--output",
+        "../corrupt-missing-manifest-metadata",
+        "--check"
+      ],
+      "execution": "in-process main; isolated synthetic repository; synthetic input-loader seam",
+      "exit_code": 1,
+      "stderr": "ValueError: saved manifest metadata schema incomplete\n",
+      "stdout": ""
+    },
+    {
+      "args": [
+        "--config",
+        "specs/development_baselines_v1_1.json",
+        "--output",
+        "../corrupt-missing",
+        "--check"
+      ],
+      "execution": "in-process main; isolated synthetic repository; synthetic input-loader seam",
+      "exit_code": 1,
+      "stderr": "ValueError: saved bundle has missing or unexpected files\n",
+      "stdout": ""
+    },
+    {
+      "args": [
+        "--config",
+        "specs/development_baselines_v1_1.json",
+        "--output",
+        "../corrupt-missing-row-rehashed",
+        "--check"
+      ],
+      "execution": "in-process main; isolated synthetic repository; synthetic input-loader seam",
+      "exit_code": 1,
+      "stderr": "ValueError: saved schema/keys/numeric values differ: annual_ledgers.csv\n",
+      "stdout": ""
+    },
+    {
+      "args": [
+        "--config",
+        "specs/development_baselines_v1_1.json",
+        "--output",
+        "../corrupt-numeric-rehashed",
+        "--check"
+      ],
+      "execution": "in-process main; isolated synthetic repository; synthetic input-loader seam",
+      "exit_code": 1,
+      "stderr": "ValueError: saved schema/keys/numeric values differ: paired_differences.csv\n",
+      "stdout": ""
+    },
+    {
+      "args": [
+        "--config",
+        "specs/development_baselines_v1_1.json",
+        "--output",
+        "../valid-synthetic-bundle",
+        "--check"
+      ],
+      "execution": "in-process main; isolated synthetic repository; synthetic input-loader seam",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"output_counts\": {\n    \"annual_ledgers.csv\": 10800,\n    \"paired_differences.csv\": 1200,\n    \"scenario_metrics.csv\": 1800,\n    \"summary.csv\": 15\n  },\n  \"read_only\": true,\n  \"status\": \"passed\"\n}\n"
+    },
+    {
+      "args": [
+        "--config",
+        "specs/development_baselines_v1_1.json",
+        "--output",
+        "../valid-synthetic-bundle",
+        "--check"
+      ],
+      "execution": "in-process main; isolated synthetic repository; synthetic input-loader seam",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"output_counts\": {\n    \"annual_ledgers.csv\": 10800,\n    \"paired_differences.csv\": 1200,\n    \"scenario_metrics.csv\": 1800,\n    \"summary.csv\": 15\n  },\n  \"read_only\": true,\n  \"status\": \"passed\"\n}\n"
+    }
+  ],
+  "portable_saved_check": {
+    "command": [
+      "python",
+      "-B",
+      "audit/SOL-004/verify_saved_synthetic.py"
+    ],
+    "exit_code": 0,
+    "fixture_regenerated": false,
+    "outputs_regenerated": false,
+    "saved_files_unchanged": true,
+    "source_sha_available_in_local_bundle": true,
+    "requires_current_checkout_branch": false,
+    "requires_current_head_equal_base": false
+  },
+  "failure_history": [
+    {
+      "file": "failure-001.json",
+      "kind": "failed full suite; synthetic repository CRLF staging",
+      "resolved": true
+    },
+    {
+      "file": "failure-002.json",
+      "kind": "failed driver suite; exact quantile test equality",
+      "resolved": true
+    },
+    {
+      "file": "failure-003.json",
+      "kind": "premature audit structural preflight; verification draft missing",
+      "resolved": true
+    },
+    {
+      "file": "tests.txt",
+      "kind": "two shell-tool startup failures; one audit-writer parse failure",
+      "resolved": "Used Node local APIs and corrected audit writer; no affected process/writes ran"
+    }
+  ],
+  "source_hashes": {
+    "audit/chief/accounting_oracle.json": {
+      "consumed_sha256": "85caa997e09b1cf2a02118f4f101137919ad7b38ce662caed7a594c569ed1377",
+      "canonical_lf_sha256": "85caa997e09b1cf2a02118f4f101137919ad7b38ce662caed7a594c569ed1377"
+    },
+    "scripts/run_development_baselines.py": {
+      "consumed_sha256": "08c33acd66a63bd8fbf3e4c08f765ca8a4443665e5c439882370e2a8ea1a4709",
+      "canonical_lf_sha256": "08c33acd66a63bd8fbf3e4c08f765ca8a4443665e5c439882370e2a8ea1a4709"
+    },
+    "specs/ACCOUNTING.md": {
+      "consumed_sha256": "d5a59960f8bc9474986015f4f832ffcbbdb5fc3e85bad0b3b9453861ae63a7fc",
+      "canonical_lf_sha256": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e"
+    },
+    "specs/DEVELOPMENT_BASELINES.md": {
+      "consumed_sha256": "fd83de5a118e37263fb9defc159dc6ea585756449b6c5b34bba269eebd2d4f07",
+      "canonical_lf_sha256": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f"
+    },
+    "specs/DEVELOPMENT_BASELINE_DRIVER.md": {
+      "consumed_sha256": "cab2fa8dcb0c69d27fd3f3539907683a2f299d9510d35ee29a14208d9cbe4cc6",
+      "canonical_lf_sha256": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0"
+    },
+    "specs/PROBLEM_LOCK.md": {
+      "consumed_sha256": "c3cce877e00a62f49c8a032e9bde5e39562bd1b29dde3dee23263935f9aea675",
+      "canonical_lf_sha256": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46"
+    },
+    "specs/development_baselines_v1_1.json": {
+      "consumed_sha256": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224",
+      "canonical_lf_sha256": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224"
+    },
+    "src/safeinvest/__init__.py": {
+      "consumed_sha256": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+      "canonical_lf_sha256": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef"
+    },
+    "src/safeinvest/accounting.py": {
+      "consumed_sha256": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "canonical_lf_sha256": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5"
+    },
+    "src/safeinvest/backtest.py": {
+      "consumed_sha256": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+      "canonical_lf_sha256": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6"
+    },
+    "src/safeinvest/baselines.py": {
+      "consumed_sha256": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+      "canonical_lf_sha256": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce"
+    },
+    "src/safeinvest/experiments.py": {
+      "consumed_sha256": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+      "canonical_lf_sha256": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca"
+    },
+    "src/safeinvest/metrics.py": {
+      "consumed_sha256": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "canonical_lf_sha256": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e"
+    },
+    "tests/test_development_baselines.py": {
+      "consumed_sha256": "b65c28bbeea82f42836007c961f12e13c8c509066d74aeb9dd5e1b2b10bde030",
+      "canonical_lf_sha256": "b65c28bbeea82f42836007c961f12e13c8c509066d74aeb9dd5e1b2b10bde030"
+    },
+    "audit/SOL-004/verify_saved_synthetic.py": {
+      "consumed_sha256": "0035c07dbc275ddfa0300a306ea5a6d7619a5bae3ff4e2574a4446619c91546b",
+      "canonical_lf_sha256": "0035c07dbc275ddfa0300a306ea5a6d7619a5bae3ff4e2574a4446619c91546b"
+    }
+  },
+  "artifact_hashes": {
+    "tests_txt_sha256": "a61086dcbcff80e93c942accb7a562a3e07bd252e1dd0a157ec5d4092bcd34b7",
+    "execution_log_sha256": "88af3f4a86efb9102454fb8c435253ef8a49fe00fa3e7a7abcc3fc8620a5a5fd",
+    "synthetic_source_bundle_sha256": "c48e19bd1af325a01ac753e85374e4737cb14f1cbfc80ac8b492be16f5cf642a"
+  },
+  "production_limits": {
+    "competition_csv_read": false,
+    "competition_header_read": false,
+    "competition_performance_run": false,
+    "raw_final_access": false,
+    "final_gate_edits": false,
+    "policy_parameters_changed": false,
+    "package_installed": false,
+    "runtime_helpers_or_requirements_changed": false,
+    "production_output_directory_created": false,
+    "actual_repository_commit_push_or_branch_change": false,
+    "watcher_started": false,
+    "actual_dataset_hash_independently_verified_in_this_task": false
+  },
+  "unresolved_implementation_blockers": [],
+  "outstanding": [
+    "Independent chief review and acceptance of exact delivered code/fixtures.",
+    "Accepted HY3-002 input verification and separately published HY3 performance task.",
+    "Separate later Sol review of exact HY3 outputs."
+  ],
+  "elapsed_implementation_seconds": 1369.779,
+  "final_structure": {
+    "status": "passed",
+    "all_changed_paths_allowed": true,
+    "changed_paths": [
+      "src/safeinvest/__init__.py",
+      "src/safeinvest/backtest.py",
+      "audit/SOL-004",
+      "scripts/run_development_baselines.py",
+      "src/safeinvest/baselines.py",
+      "src/safeinvest/experiments.py",
+      "tests/test_development_baselines.py"
+    ],
+    "head_unchanged": true,
+    "observed_branch": "work/sol/SOL-004-a1",
+    "diff_check_exit_code": 0,
+    "saved_output_hashes_verified": true,
+    "tested_source_bytes_unchanged": true,
+    "audit_json_parse_passed": true,
+    "tests_txt_utf8_lf": true,
+    "control_state": "running",
+    "stop_file_present": false
+  }
+}

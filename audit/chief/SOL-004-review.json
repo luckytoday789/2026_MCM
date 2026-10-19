@@ -1,0 +1,232 @@
+{
+  "task_id": "SOL-004",
+  "reviewed_commit": "69ed125b7fde276fe503e1ec5416fbf2e5ec9a7b",
+  "base_commit": "ce2692b9b418ee4044da2930fb715d57ed83e500",
+  "task_sha256": "211161b9a8b10bfdb50e895c65493ac4b239cbf011e0f700789072f329d68c25",
+  "branch": "work/sol/SOL-004-a1",
+  "structural_checks": "passed",
+  "source_hashes_checked": {
+    "specs/DEVELOPMENT_BASELINE_DRIVER.md": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0",
+    "specs/development_baselines_v1_1.json": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224",
+    "specs/DEVELOPMENT_BASELINES.md": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "src/safeinvest/backtest.py": "f82c63a3fe78889d243bbbb344d20cbe9edb54981c7ca07b1f5006b9f79b28cd",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+    "audit/chief/accounting_oracle.json": "85caa997e09b1cf2a02118f4f101137919ad7b38ce662caed7a594c569ed1377"
+  },
+  "artifacts_sha256": {
+    "audit/SOL-004/execution_log.json": "88af3f4a86efb9102454fb8c435253ef8a49fe00fa3e7a7abcc3fc8620a5a5fd",
+    "audit/SOL-004/failed-trial-002-evidence.json": "fe8c0717b0467513ff7fd212aa6502fc7415cf11bb97fcf3eb0698af4c64731c",
+    "audit/SOL-004/failure-001.json": "ee766bf82527fd847eb33066765bb81f0c0f9f68d4e558697df02da241a6eabd",
+    "audit/SOL-004/failure-002.json": "c34ce440c8bd24ed7581befac7c772abfb88912fb11cf7b39c6418b7beb68775",
+    "audit/SOL-004/failure-003.json": "6fbeac2f2b8ee614cbcce53aec5c924c7daa1dcc298b3d99cf7738df39bdea31",
+    "audit/SOL-004/findings.json": "7bd809788f84f288049923ac26d2988fc7adc70a474267ce4dfb69bcb438c003",
+    "audit/SOL-004/implementation.md": "7591b6e936e4753ba508229bed38ea9fa9b5e50767b2efb8f04dfcd871f5ad74",
+    "audit/SOL-004/schemas.json": "413d6088713710534af588e893eb4d675ab92629d2357309a717cef9282c7bc3",
+    "audit/SOL-004/synthetic-bundle/annual_ledgers.csv": "7625567a420213bd287565e246704fef2281ead11637dbd63436bec015421b9d",
+    "audit/SOL-004/synthetic-bundle/checks.json": "d4a9cfc9824cc094ea86d97e181d159ad1591950287e1de729e9b32eb38c0125",
+    "audit/SOL-004/synthetic-bundle/paired_differences.csv": "36599a849c576a23589e0dbaea185843d0fe2803e86f2f3dd051e429a464f68f",
+    "audit/SOL-004/synthetic-bundle/run_manifest.json": "a24b3f1b07fc58f121941ad3c6159c46e687208d9dacbb91e78c6e8ea9e633b2",
+    "audit/SOL-004/synthetic-bundle/scenario_metrics.csv": "856715afa519fa01a35b233837038b878efc53fd7e8ffa2532fe98ffb1429b31",
+    "audit/SOL-004/synthetic-bundle/summary.csv": "1640cf1e9ce7b1cf27678c23cc5a2a9d8ea158b8d46e59f4725c0138996fa64d",
+    "audit/SOL-004/synthetic-input.csv": "098efc64d81f503f40847d019ecc9fc8c3528d3612c2b4f5e36141d0b5352695",
+    "audit/SOL-004/synthetic-source.bundle": "c48e19bd1af325a01ac753e85374e4737cb14f1cbfc80ac8b492be16f5cf642a",
+    "audit/SOL-004/test_evidence.json": "d176ef36169529b17d719f0f50e8b0addaacaf498667c65be910db82c09058b3",
+    "audit/SOL-004/tests.txt": "a61086dcbcff80e93c942accb7a562a3e07bd252e1dd0a157ec5d4092bcd34b7",
+    "audit/SOL-004/verification.json": "245e16b01d2a22e7926a717cd2b86da20c8a710097f4d5b4d32387c06398e3c6",
+    "audit/SOL-004/verify_saved_synthetic.py": "0035c07dbc275ddfa0300a306ea5a6d7619a5bae3ff4e2574a4446619c91546b",
+    "handoff/SOL-004/check-0.txt": "56e67c1f63aeed65555d56b751ba030b34041314875ff1d129b9aef4d22ba65b",
+    "handoff/SOL-004/check-1.txt": "a620d17433955533f42fcc4f2a757bbe1932bbc193707a6f0022fa350064e7df",
+    "handoff/SOL-004/check-2.txt": "d4a05a1c5c2f3cbecd71ad8152ba0c8f3d9eb8a77204b5a961f87b945d884211",
+    "scripts/run_development_baselines.py": "08c33acd66a63bd8fbf3e4c08f765ca8a4443665e5c439882370e2a8ea1a4709",
+    "src/safeinvest/__init__.py": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+    "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+    "src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+    "tests/test_development_baselines.py": "b65c28bbeea82f42836007c961f12e13c8c509066d74aeb9dd5e1b2b10bde030"
+  },
+  "accepted_paths": [
+    "audit/SOL-004/execution_log.json",
+    "audit/SOL-004/failed-trial-002-evidence.json",
+    "audit/SOL-004/failure-001.json",
+    "audit/SOL-004/failure-002.json",
+    "audit/SOL-004/failure-003.json",
+    "audit/SOL-004/findings.json",
+    "audit/SOL-004/implementation.md",
+    "audit/SOL-004/schemas.json",
+    "audit/SOL-004/synthetic-bundle/annual_ledgers.csv",
+    "audit/SOL-004/synthetic-bundle/checks.json",
+    "audit/SOL-004/synthetic-bundle/paired_differences.csv",
+    "audit/SOL-004/synthetic-bundle/run_manifest.json",
+    "audit/SOL-004/synthetic-bundle/scenario_metrics.csv",
+    "audit/SOL-004/synthetic-bundle/summary.csv",
+    "audit/SOL-004/synthetic-input.csv",
+    "audit/SOL-004/synthetic-source.bundle",
+    "audit/SOL-004/test_evidence.json",
+    "audit/SOL-004/tests.txt",
+    "audit/SOL-004/verification.json",
+    "audit/SOL-004/verify_saved_synthetic.py",
+    "handoff/SOL-004/check-0.txt",
+    "handoff/SOL-004/check-1.txt",
+    "handoff/SOL-004/check-2.txt",
+    "handoff/SOL-004/result.json",
+    "scripts/run_development_baselines.py",
+    "src/safeinvest/__init__.py",
+    "src/safeinvest/backtest.py",
+    "src/safeinvest/baselines.py",
+    "src/safeinvest/experiments.py",
+    "tests/test_development_baselines.py"
+  ],
+  "excluded_paths": [],
+  "receipt_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "prescribed_command_count": 2,
+  "saved_synthetic_source_matches_delivery": true,
+  "status": "accepted",
+  "decision": "Accept exact driver for fixed development baseline only",
+  "chief_python": "3.12.0",
+  "commands": [
+    {
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "audit/SOL-004/verify_saved_synthetic.py"
+      ],
+      "exit_code": 0,
+      "log": "audit/chief/SOL-004-saved-replay.txt"
+    },
+    {
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-c",
+        "import pathlib,sys,unittest\nsuite=unittest.defaultTestLoader.discover('tests')\nimport test_development_baselines as tests\nscratch=pathlib.Path('.runtime/chief-test-replay'); scratch.mkdir(parents=True,exist_ok=True)\ntests.AUDIT=scratch\nresult=unittest.TextTestRunner(verbosity=2).run(suite)\nassert result.testsRun==59\nsys.exit(0 if result.wasSuccessful() else 1)\n"
+      ],
+      "exit_code": 0,
+      "log": "audit/chief/SOL-004-tests.txt"
+    }
+  ],
+  "unit_tests": 59,
+  "independent_method": "Forward scalar accounting from synthetic inputs; separate scalar metrics, quantiles, paired differences and exact-float locations; chief guarded current/future access and fee/inflation fixtures",
+  "numerical_checks": {
+    "ledger": {
+      "count": 129600,
+      "max_absolute_residual": 3.836930773104541e-13,
+      "max_scaled_residual": 1.0
+    },
+    "component_holdings": {
+      "count": 129600,
+      "max_absolute_residual": 1.3500311979441904e-13,
+      "max_scaled_residual": 4.136232981560238e-15
+    },
+    "target": {
+      "count": 11160,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0
+    },
+    "scenario_metrics": {
+      "count": 23400,
+      "max_absolute_residual": 3.694822225952521e-13,
+      "max_scaled_residual": 5.001517219401282e-12
+    },
+    "summary_quantiles": {
+      "count": 105,
+      "max_absolute_residual": 8.881784197001252e-16,
+      "max_scaled_residual": 1.5256073507298906e-16
+    },
+    "pooled_counts": {
+      "count": 60,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0
+    },
+    "pooled_share": {
+      "count": 30,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0
+    },
+    "paired_differences": {
+      "count": 7200,
+      "max_absolute_residual": 0.0,
+      "max_scaled_residual": 0.0
+    },
+    "chief_fixture": {
+      "count": 6,
+      "max_absolute_residual": 5.684341886080802e-14,
+      "max_scaled_residual": 3.903390958268599e-16
+    }
+  },
+  "numerical_check_count": 602316,
+  "output_counts": {
+    "annual_ledger_rows": 10800,
+    "scenario_metric_rows": 1800,
+    "summary_rows": 15,
+    "paired_rows": 1200
+  },
+  "worker_evidence_unchanged": true,
+  "production_source_snapshot_matches": true,
+  "production_loader_rows": 3600,
+  "actual_competition_performance_computed": false,
+  "final_outcomes_computed": false,
+  "retained_failures": [
+    "audit/SOL-004/failure-001.json",
+    "audit/SOL-004/failure-002.json",
+    "audit/SOL-004/failure-003.json"
+  ],
+  "limitations": [
+    "Synthetic implementation acceptance is not investment evidence. HY3 development run and separate remote Sol review remain required.",
+    "Growth field labels percentage points per year preserve the fixed schema; manuscript should describe CAGR as percent per year and paired CAGR differences as percentage points per year."
+  ],
+  "independent_forward_drawdown_followup": {
+    "status": "passed",
+    "groups": {
+      "ledger": {
+        "count": 129600,
+        "max_absolute_residual": 3.836930773104541e-13,
+        "max_scaled_residual": 1.0
+      },
+      "component_holdings": {
+        "count": 129600,
+        "max_absolute_residual": 1.3500311979441904e-13,
+        "max_scaled_residual": 4.136232981560238e-15
+      },
+      "target": {
+        "count": 11160,
+        "max_absolute_residual": 0.0,
+        "max_scaled_residual": 0.0
+      },
+      "scenario_metrics": {
+        "count": 23400,
+        "max_absolute_residual": 3.694822225952521e-13,
+        "max_scaled_residual": 5.001517219401282e-12
+      },
+      "summary_quantiles": {
+        "count": 105,
+        "max_absolute_residual": 8.881784197001252e-16,
+        "max_scaled_residual": 1.5256073507298906e-16
+      },
+      "pooled_counts": {
+        "count": 60,
+        "max_absolute_residual": 0.0,
+        "max_scaled_residual": 0.0
+      },
+      "pooled_share": {
+        "count": 30,
+        "max_absolute_residual": 0.0,
+        "max_scaled_residual": 0.0
+      },
+      "paired_differences": {
+        "count": 7200,
+        "max_absolute_residual": 0.0,
+        "max_scaled_residual": 0.0
+      }
+    },
+    "rows": {
+      "annual_ledger_rows": 10800,
+      "scenario_metric_rows": 1800,
+      "summary_rows": 15,
+      "paired_rows": 1200
+    },
+    "method": "Independent running peak/loss calculated from forward scalar real wealth; exact location tie checks continue using saved floats."
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "canonical_git_sources": {
+    "audit/chief/accounting_oracle.json": {
+      "crlf_checkout_sha256": "40028fb4c003d8a782c625ba07b15c1c143348c205dd4e5153ce9c9a9a753331",
+      "git_blob_sha1": "e4b5d496a4bd508d37b553f4c519ab76d29eba90",
+      "sha256": "85caa997e09b1cf2a02118f4f101137919ad7b38ce662caed7a594c569ed1377"
+    },
+    "scripts/run_development_baselines.py": {
+      "crlf_checkout_sha256": "a0a270d41cc6f8a0efd8227d591c62e6d18ea99a247c79aae0c7c09c1d624b44",
+      "git_blob_sha1": "a222604df6164f022bf1f97f4cfecaa90bd4d17c",
+      "sha256": "08c33acd66a63bd8fbf3e4c08f765ca8a4443665e5c439882370e2a8ea1a4709"
+    },
+    "specs/ACCOUNTING.md": {
+      "crlf_checkout_sha256": "d5a59960f8bc9474986015f4f832ffcbbdb5fc3e85bad0b3b9453861ae63a7fc",
+      "git_blob_sha1": "0627337a522651189b7a985e94b6af9a1f7a4a4d",
+      "sha256": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e"
+    },
+    "specs/DEVELOPMENT_BASELINES.md": {
+      "crlf_checkout_sha256": "fd83de5a118e37263fb9defc159dc6ea585756449b6c5b34bba269eebd2d4f07",
+      "git_blob_sha1": "907dab39bd1e36bd5a1534803c0c2637ba43d1c2",
+      "sha256": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f"
+    },
+    "specs/DEVELOPMENT_BASELINE_DRIVER.md": {
+      "crlf_checkout_sha256": "cab2fa8dcb0c69d27fd3f3539907683a2f299d9510d35ee29a14208d9cbe4cc6",
+      "git_blob_sha1": "7879f756dbc06b3974d2afb65a6336bf5ab0df99",
+      "sha256": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0"
+    },
+    "specs/PROBLEM_LOCK.md": {
+      "crlf_checkout_sha256": "c3cce877e00a62f49c8a032e9bde5e39562bd1b29dde3dee23263935f9aea675",
+      "git_blob_sha1": "1ba83723824afde3b29a5b3c8b0ac5d433a68c4b",
+      "sha256": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46"
+    },
+    "specs/development_baselines_v1_1.json": {
+      "crlf_checkout_sha256": "15bd76e601feae90ac465526bfd46c1515962880afbdfb91f04871cc1c144fd0",
+      "git_blob_sha1": "7a67e0db5bda728cc7b9775a19a80c375506ccb4",
+      "sha256": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224"
+    },
+    "src/safeinvest/__init__.py": {
+      "crlf_checkout_sha256": "de6c0afb0981571b9eb385d1ebbd81dc8ecc83c6b8eb0d8ac57bb838507cde18",
+      "git_blob_sha1": "177f42cd6d15de17cadda7bd49382921a27e565d",
+      "sha256": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef"
+    },
+    "src/safeinvest/accounting.py": {
+      "crlf_checkout_sha256": "c9b7c7b8d0ec5b1e9e13fa8f167025333ded09456e4ec60b52561df3c5780c9c",
+      "git_blob_sha1": "6ff55fed7cc0ab40f6e609dad7657efc92cd09e7",
+      "sha256": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5"
+    },
+    "src/safeinvest/backtest.py": {
+      "crlf_checkout_sha256": "0f4138b6702f86d51a69f2edde7d43da7916b5a3245f28cb437237439a16d086",
+      "git_blob_sha1": "87f5f107f5f76d5da155fc134c1b036b7c431987",
+      "sha256": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6"
+    },
+    "src/safeinvest/baselines.py": {
+      "crlf_checkout_sha256": "d62bbed3fe13217be2b2d141d344a177f8812832bf86068c8ccce4b0b2bc6ca6",
+      "git_blob_sha1": "5b1c5ffa310923da2866492145871977edffb2a5",
+      "sha256": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce"
+    },
+    "src/safeinvest/experiments.py": {
+      "crlf_checkout_sha256": "a7494e173c643ec2c40326d84d9f1ca6d0e9deac01accc431f1cb8fa9bdf4985",
+      "git_blob_sha1": "f9d28e72ce2cbf6ae0bb08b80f8ffab486b192da",
+      "sha256": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca"
+    },
+    "src/safeinvest/metrics.py": {
+      "crlf_checkout_sha256": "544741aff180342eda174bae061ac5c53eeba194cf5dbfb19e4f61b1146897f3",
+      "git_blob_sha1": "383aa3fbeed74bce4d4ec1bce7bb091097fc5e05",
+      "sha256": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e"
+    }
+  },
+  "command": [
+    "python",
+    "scripts/run_development_baselines.py",
+    "--config",
+    "specs/development_baselines_v1_1.json",
+    "--output",
+    "../valid-synthetic-bundle"
+  ],
+  "comparison_horizon": 30,
+  "consumed_source_sha256": {
+    "audit/chief/accounting_oracle.json": "85caa997e09b1cf2a02118f4f101137919ad7b38ce662caed7a594c569ed1377",
+    "scripts/run_development_baselines.py": "08c33acd66a63bd8fbf3e4c08f765ca8a4443665e5c439882370e2a8ea1a4709",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/DEVELOPMENT_BASELINES.md": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f",
+    "specs/DEVELOPMENT_BASELINE_DRIVER.md": "711f91cb33ac34d22338f5b766138b33dbd031c22010b0af618aa2bed70099f0",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/development_baselines_v1_1.json": "3e26809be9822e8a0dd1c0a89ccfdff09b51e03079a9aaaf025b4762e3863224",
+    "src/safeinvest/__init__.py": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+    "src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+    "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e"
+  },
+  "cpu_seconds": 1.3125,
+  "effective_config": {
+    "asset_order": [
+      "equity",
+      "bond",
+      "bill_proxy"
+    ],
+    "comparison_horizon": 30,
+    "drawdown_locations": {
+      "drawdown_update": "strict_increase",
+      "peak_update": "strict_increase",
+      "scan_order": [
+        "initial",
+        "post_fee",
+        "end"
+      ],
+      "zero_loss_locations": {
+        "kind": "initial",
+        "year": 0
+      }
+    },
+    "driver_contract": "specs/DEVELOPMENT_BASELINE_DRIVER.md",
+    "execution": {
+      "cpu_only": true,
+      "final_data_allowed": false,
+      "max_seconds": 300,
+      "requires_accepted_core": "SOL-001",
+      "requires_chief_driver_acceptance": true,
+      "requires_driver_implementation": "SOL-004",
+      "requires_input_verification": "HY3-002",
+      "requires_review_of_this_plan": "SOL-002"
+    },
+    "expected_counts": {
+      "annual_ledger_rows": 10800,
+      "paired_difference_rows": 1200,
+      "policy_horizon_summary_rows": 15,
+      "scenario_metric_rows": 1800
+    },
+    "fee_rate": 0.0025,
+    "fit_parameters": [],
+    "h1_undefined_metrics": [
+      "annual_real_volatility_pct",
+      "trade_share_ex_initial_pct"
+    ],
+    "horizons": [
+      5,
+      6,
+      15,
+      25,
+      30
+    ],
+    "initial_holdings": [
+      0,
+      0,
+      100
+    ],
+    "input_path": "data/development/scenarios_001_120.csv",
+    "input_sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+    "metric_contract": "specs/ACCOUNTING.md",
+    "output_encoding": "UTF-8 LF; round-trip float precision",
+    "output_files": [
+      "run_manifest.json",
+      "annual_ledgers.csv",
+      "scenario_metrics.csv",
+      "summary.csv",
+      "paired_differences.csv",
+      "checks.json"
+    ],
+    "plan_id": "development-baselines-v1.1",
+    "policies": [
+      {
+        "first_action": "keep",
+        "id": "bills_keep",
+        "label": "Bills purchasing-power reference",
+        "later_action": "keep",
+        "target": null
+      },
+      {
+        "first_action": "rebalance",
+        "id": "equal_weight_annual",
+        "label": "Required annual equal-weight baseline",
+        "later_action": "rebalance",
+        "target": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ]
+      },
+      {
+        "first_action": "rebalance",
+        "id": "equal_weight_buy_hold",
+        "label": "Initial equal weight with subsequent holdings drift",
+        "later_action": "keep",
+        "target": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ]
+      }
+    ],
+    "profile_horizons": {
+      "A": 5,
+      "B": 15,
+      "C": 30,
+      "D": 25,
+      "E": 6
+    },
+    "purpose": "First cheap descriptive experiment; no policy selection or final evaluation",
+    "quantiles": {
+      "growth": [
+        0.1,
+        0.5
+      ],
+      "loss": [
+        0.5,
+        0.9
+      ],
+      "method": "linear"
+    },
+    "random_seed": null,
+    "scenario_ids": {
+      "first": 1,
+      "last": 120
+    },
+    "schema_version": 1,
+    "severe_case": {
+      "criterion": "maximum_real_drawdown_within_policy_and_horizon",
+      "tie_break": "smallest_scenario_id"
+    },
+    "split": "development",
+    "status": "specified_pending_driver_review",
+    "supersedes_for_execution": "development-baselines-v1",
+    "trade_amount_epsilon": 1e-10
+  },
+  "elapsed_seconds": 1.3470016999635845,
+  "horizons": [
+    5,
+    6,
+    15,
+    25,
+    30
+  ],
+  "input": {
+    "fixture": true,
+    "fixture_generator_sha256": "b65c28bbeea82f42836007c961f12e13c8c509066d74aeb9dd5e1b2b10bde030",
+    "origin": "generated:tests/test_development_baselines.py:fixture_rows",
+    "sha256": "098efc64d81f503f40847d019ecc9fc8c3528d3612c2b4f5e36141d0b5352695"
+  },
+  "output_counts": {
+    "annual_ledgers.csv": 10800,
+    "paired_differences.csv": 1200,
+    "scenario_metrics.csv": 1800,
+    "summary.csv": 15
+  },
+  "output_sha256": {
+    "annual_ledgers.csv": "7625567a420213bd287565e246704fef2281ead11637dbd63436bec015421b9d",
+    "checks.json": "d4a9cfc9824cc094ea86d97e181d159ad1591950287e1de729e9b32eb38c0125",
+    "paired_differences.csv": "36599a849c576a23589e0dbaea185843d0fe2803e86f2f3dd051e429a464f68f",
+    "scenario_metrics.csv": "856715afa519fa01a35b233837038b878efc53fd7e8ffa2532fe98ffb1429b31",
+    "summary.csv": "1640cf1e9ce7b1cf27678c23cc5a2a9d8ea158b8d46e59f4725c0138996fa64d"
+  },
+  "packages": {
+    "stdlib": "3.12.14"
+  },
+  "plan_id": "development-baselines-v1.1",
+  "profile_horizons": {
+    "A": 5,
+    "B": 15,
+    "C": 30,
+    "D": 25,
+    "E": 6
+  },
+  "python_version": "3.12.14",
+  "schema_version": 1,
+  "source_commit": "d2c783ff9cf14415d1e8309d75a890646b45f117",
+  "split": "synthetic",
+  "status": "completed",
+  "utc_end": "2026-10-19T14:12:10.814309+00:00",
+  "utc_start": "2026-10-19T14:12:09.467355+00:00"
+}
