@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-19T17:46:30.077981+00:00",
+  "scope": "source/schema/report preparation; no competition outcomes",
+  "source_sha256_lf": {
+    "specs/POLICY_CASE_ENGINE.md": "c984e230eecb720613b864a910d95921af1aa805f79fa68c7044f905410dec62",
+    "specs/POLICY_ANALYSIS.md": "a2220482c861799280815b4e65d73e79e53666816ac9e7e72a38d5f48a6e53b8",
+    "specs/POLICY_RESULT_WRITER.md": "ce0c43fad34ebdc44fc6f6bda395c562781e500cdc4b855ee7e0cbf937bec0b4",
+    "report/policy-methods-draft.md": "ec7a613201a23d8ec21e9549458f7f7d0f6fa77c927e54f47e82613a21798585",
+    "report/evidence-map.json": "b56f0caeb6d1c180596fabcf8a5f4106d1f9799df89e3f0949f8b12ce03e9cdb"
+  },
+  "active_task_pinned_sources_unchanged": true,
+  "design_rejection_retained": true,
+  "reports_marked_provisional": true,
+  "preparation_failure": {
+    "kind": "draft_generator_syntax_error",
+    "effect": "Python rejected the script before any draft file was created; corrected quoting then generated drafts",
+    "preserved_local_script": ".runtime/prepare_policy_handoffs.failed-001.py"
+  },
+  "final_data_open": false
+}

@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T01:45:36.630275+08:00",
-  "reason": "SOL-013 ready for corrected design/kernel review; SOL-014 waiting on that acceptance. Chief can prepare precise production output/checker and selection implementation contracts while review runs.",
+  "next_wake_at": "2026-10-20T01:51:30.077981+08:00",
+  "reason": "Detailed case-engine, analysis and saved-result writer contracts prepared while SOL-013 runs. Commit/push prerequisites before publishing gated granular implementation tasks.",
   "next_actions": [
-    "Inspect exact SOL-013 receipt when delivered; independently replay numerical evidence and require BOTH corrected design and kernel approve before production work.",
-    "Release existing SOL-014 promptly after unchanged SOL-013 acceptance; source changes require a new immutable task.",
-    "Prepare granular production driver/output-verifier and selection/suitability contracts against v2 and accepted baseline APIs; no competition policy run yet.",
-    "After code acceptance issue fixed CPU commands to HY3 with real pushed origin/main base; then request independent Sol review of exact HY3 evidence.",
-    "Retain personalized own-horizon rescreen, sensitivity, final freeze/evaluation and report work as unfinished. Respect local quota and private team upload restriction."
+    "Publish gated SOL-015 case-engine and SOL-016 pure-analysis implementation tasks only after their handoff/source base is pushed; pin existing exact commits.",
+    "Review incoming SOL-013; release SOL-014 and eligible implementation tasks promptly only on both corrected design and kernel approval with unchanged pinned sources.",
+    "After case and analysis code acceptance, publish the separate production writer/CLI task from POLICY_RESULT_WRITER.md. HY3 gets fixed development commands only after complete code acceptance.",
+    "Keep accepted HY3-003 primary references imported, no rerun. Customer personalized rescreen, sensitivity, freeze/final evaluation and final report remain unfinished.",
+    "Respect local quota markers and original private-identity upload restriction; do not restart any watcher or supervisor."
   ],
   "quota_probe_not_before": "2026-10-20T01:05:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T01:40:36.630275+08:00",
+  "last_completed_at": "2026-10-20T01:46:30.077981+08:00",
   "quota_probe_verified_commit": "dc27ec3316db2c760ed6667cf59fb0fec81f1466"
 }

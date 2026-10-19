@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "192b17e6e95a786051b22d8ab093d59b4fe98b43",
+  "snapshot_main_commit": "5d709e0a8e39cea2e8fa891928bb53bc6d93005f",
   "authoritative_state": [
     "ops/control.json",
     "ops/queue.json"
@@ -14,7 +14,8 @@
     "design_pending_review": "Chief proposal exists; independent design review is incomplete",
     "not_available": "Required result or final artifact does not exist yet",
     "prototype_pending_review": "Chief-authored source and synthetic checks exist; independent code approval and production results are absent",
-    "accepted_development_evidence": "Exact reviewed development artifacts accepted; not final or policy-selection evidence"
+    "accepted_development_evidence": "Exact reviewed development artifacts accepted; not final or policy-selection evidence",
+    "accepted_negative_review": "Independent evidence accepted; reviewed design/code requires stated corrections and is not approved"
   },
   "source_registry": {
     "PROBLEM_LOCK": {
@@ -69,29 +70,29 @@
     "POLICY_PROPOSAL": {
       "state": "design_pending_review",
       "paths": [
-        "specs/DEVELOPMENT_POLICY_PILOT.md",
-        "specs/development_policy_pilot_v1.json"
+        "specs/DEVELOPMENT_POLICY_PILOT_V2.md",
+        "specs/development_policy_pilot_v2.json"
       ],
-      "source_commit": "a996298fd22b11dc54deb43cb596f143da05bf93",
-      "independent_review_task": "SOL-009",
+      "source_commit": "7c804ffb960be6b9fadfc840e246ff060668a96d",
+      "independent_review_task": "SOL-013",
       "production_execution_authorized": false
     },
     "POLICY_KERNEL_PROTOTYPE": {
       "state": "prototype_pending_review",
-      "source_commit": "6152ef118457ea1d4225f873539b5a27d303dcf3",
+      "source_commit": "7c804ffb960be6b9fadfc840e246ff060668a96d",
       "path": "src/safeinvest/policy_pilot.py",
-      "scope_note": "specs/POLICY_KERNEL_PROTOTYPE.md",
-      "independent_review_task": "SOL-011",
-      "chief_synthetic_test_count": 15,
+      "scope_note": "specs/POLICY_CORRECTION_V2.md",
+      "independent_review_task": "SOL-013",
+      "chief_synthetic_test_count": 17,
       "production_execution_authorized": false,
       "competition_outcomes_computed": false
     },
     "POLICY_CALIBRATION_PROTOTYPE": {
       "state": "prototype_pending_review",
-      "source_commit": "2ccb104a57d010e3ce9f9a6b6045e964cf653a99",
+      "source_commit": "7c804ffb960be6b9fadfc840e246ff060668a96d",
       "path": "src/safeinvest/policy_calibration.py",
       "scope_note": "specs/POLICY_CALIBRATION_PROTOTYPE.md",
-      "independent_review_task": "SOL-012",
+      "independent_review_task": "SOL-014",
       "chief_synthetic_test_count": 10,
       "production_execution_authorized": false,
       "competition_outcomes_computed": false
@@ -103,6 +104,16 @@
       "generator": "report/build_baseline_note.py",
       "source_commit": "7652410d73425371110784ef5fa97c03470a074e",
       "scope": "All 15 predeclared reference/horizon rows and severe locations; no simulation rerun or policy selection."
+    },
+    "POLICY_DESIGN_V1_REJECTION": {
+      "state": "accepted_negative_review",
+      "path": "audit/SOL-009/findings.json",
+      "reviewed_commit": "3f79e07b87ec92a4a74049da6166093ba4e88e6f",
+      "acceptance_evidence": "audit/chief/SOL-009-review.json",
+      "blockers": [
+        "D1",
+        "D2"
+      ]
     }
   },
   "requirements": [
@@ -189,7 +200,7 @@
         "POLICY_CALIBRATION_PROTOTYPE"
       ],
       "state": "design_pending_review",
-      "remaining": "Accept SOL-009 design and reconcile findings; independently review provisional kernel via SOL-011 and synthetic calibration via SOL-012. Implement/review the production driver and selection, then obtain accepted development evidence. Synthetic fixtures are not strategy results."
+      "remaining": "Require SOL-013 corrected design/kernel approval and SOL-014 calibration approval; implement/review case engine, analysis and production writer, then accept actual development evidence. Old SOL-009 negative findings remain preserved."
     },
     {
       "id": "R07",
