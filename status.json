@@ -2,8 +2,7 @@
   "role": "sol",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "state": "running",
-  "updated_at": "2026-10-19T12:36:11.761602+00:00",
-  "lease_until": "2026-10-19T12:46:11.761602+00:00",
-  "task_id": "SOL-002",
-  "branch": "work/sol/SOL-002-a1"
+  "updated_at": "2026-10-19T12:40:22.114416+00:00",
+  "lease_until": "2026-10-19T12:50:22.114416+00:00",
+  "task_id": "SOL-002"
 }
