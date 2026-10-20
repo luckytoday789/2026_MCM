@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T03:48:07.516456+00:00",
+  "source_commit": "e17ef8fae5999661db32a5bbd549c77b32cc52e1",
+  "configs": [
+    {
+      "id": "HY3-004",
+      "group": "primary",
+      "path": "specs/execution/HY3-004.json",
+      "sha256": "cfd5cac54db36c672cc9674f5ebc8da8642eefc6366e52a6358fc569ae2ee706",
+      "source_count": 27,
+      "schema_and_source_check": "passed"
+    },
+    {
+      "id": "HY3-005",
+      "group": "doubled",
+      "path": "specs/execution/HY3-005.json",
+      "sha256": "16611c22906fd76beb21c0706248af71b696ef216ea6fc2b843fb287f156a0a6",
+      "source_count": 27,
+      "schema_and_source_check": "passed"
+    }
+  ],
+  "accepted_dependencies": {
+    "SOL-021": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+    "SOL-022": "21ad493707d71240f83d7f01ed6d133e1380e8fb",
+    "SOL-025": "803b7a085284405ee5ee4d4f0d5720ebaa2e67f7",
+    "SOL-031": "a24dca5d5494455407207e0fd70c06b258d4fd1f"
+  },
+  "reference_import_authentication": "passed; exact original Git output normalization only",
+  "production_execution": false,
+  "competition_input_read": false,
+  "final_data_open": false,
+  "prior_failure": "audit/chief/development-writer-config-initial-failure.json",
+  "note": "Schema/source/reference preflight only; fixed task authorization follows pushed E. Counts/runtime/bytes are expectations until actual remote execution."
+}

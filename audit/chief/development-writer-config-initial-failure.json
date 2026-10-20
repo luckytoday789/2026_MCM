@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T03:47:26.576464+00:00",
+  "failed_command": "chief fixed config source_snapshot preflight",
+  "failure": "checkout source mismatch: specs/POLICY_NUMERIC_K1.md",
+  "effect": "Source guard rejected local pre-existing mixed EOL before any config creation or competition input read.",
+  "preservation": [
+    {
+      "path": "specs/POLICY_NUMERIC_K1.md",
+      "original_sha256": "42686dd520aae65471b5d1dc4a4ac92f902d25933394f068d417f40173d63f02",
+      "canonical_sha256": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+      "original_bytes": 2162,
+      "canonical_bytes": 2161,
+      "local_archive": ".runtime/recovery/source-eol-20261020T034726Z/specs/POLICY_NUMERIC_K1.md",
+      "normalization_only": true
+    },
+    {
+      "path": "specs/POLICY_NUMERIC_K2.md",
+      "original_sha256": "efc6fe245b3fe720f202c3369e37b0eff29ed42f32bbd3cc19a0e1fc6d73573b",
+      "canonical_sha256": "88d5f58a59f090c25331392e4cd5682daf5d050c27b24afe6629d8e4a5eb9997",
+      "original_bytes": 2877,
+      "canonical_bytes": 2876,
+      "local_archive": ".runtime/recovery/source-eol-20261020T034726Z/specs/POLICY_NUMERIC_K2.md",
+      "normalization_only": true
+    },
+    {
+      "path": "specs/POLICY_RESULT_WRITER.md",
+      "original_sha256": "353f27c4b25fd954b6d2a06f2cb59dd9fbebdc264524f6f87c546dd9ee72711a",
+      "canonical_sha256": "ce0c43fad34ebdc44fc6f6bda395c562781e500cdc4b855ee7e0cbf937bec0b4",
+      "original_bytes": 6251,
+      "canonical_bytes": 6250,
+      "local_archive": ".runtime/recovery/source-eol-20261020T034726Z/specs/POLICY_RESULT_WRITER.md",
+      "normalization_only": true
+    },
+    {
+      "path": "specs/POLICY_WRITER_GIT_PORTABILITY.md",
+      "original_sha256": "1ea83996ed8372d8d4eceeee2b140a968c7ca99a97c78b1be32b73dd7ade31c9",
+      "canonical_sha256": "d4420e868eab8f6d4ecf34c337c865d7b99e7653d994565fd69b8432c8daac22",
+      "original_bytes": 5146,
+      "canonical_bytes": 5145,
+      "local_archive": ".runtime/recovery/source-eol-20261020T034726Z/specs/POLICY_WRITER_GIT_PORTABILITY.md",
+      "normalization_only": true
+    }
+  ],
+  "guard_unchanged": true,
+  "production_execution": false,
+  "final_data_open": false
+}
