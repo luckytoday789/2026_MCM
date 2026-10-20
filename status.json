@@ -1,8 +1,10 @@
 {
   "role": "hy3",
   "machine_id": "937a9358dc114be8b3718ff13e3da4f9",
-  "state": "idle",
+  "state": "running",
   "python": "3.12.10",
-  "updated_at": "2026-10-20T13:09:48.334558+00:00",
-  "lease_until": "2026-10-20T13:19:48.334558+00:00"
+  "updated_at": "2026-10-20T13:12:14.752347+00:00",
+  "lease_until": "2026-10-20T13:22:14.752347+00:00",
+  "task_id": "HY3-010",
+  "branch": "work/hy3/HY3-010-a1"
 }
