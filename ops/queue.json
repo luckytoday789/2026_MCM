@@ -1623,6 +1623,15 @@
       "code_verdict": "approve",
       "result_verdict": "approve",
       "acceptance_evidence": "audit/chief/CHIEF-HY3-006-20261020-review.json"
+    },
+    {
+      "id": "HY3-008",
+      "owner": "hy3",
+      "state": "ready",
+      "attempt": 1,
+      "branch": "work/hy3/HY3-008-a1",
+      "task_sha256": "7aedc226cf4466d39be897fc9d22f1a3e38065f31b28e48adaf68224990b6e51",
+      "note": "Actual accepted primary and doubled results; fixed analysis only, zero experiment regeneration."
     }
   ]
 }
