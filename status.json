@@ -1,8 +1,11 @@
 {
   "role": "chief",
   "machine_id": "8ea2b5131bed400a8f2954cd69935807",
-  "state": "stopped",
+  "state": "running",
   "python": "3.12.0",
-  "updated_at": "2026-10-20T10:54:51.650967+00:00",
-  "lease_until": "2026-10-20T11:04:51.650967+00:00"
+  "updated_at": "2026-10-20T11:25:46.576247+00:00",
+  "lease_until": "2026-10-20T11:35:46.576247+00:00",
+  "task_id": "chief-two-node-integration",
+  "execution_mode": "active_chat",
+  "note": "Main integration active; background coordinator deliberately stopped to avoid duplicate writers. HY3-008 running on remote machine."
 }
