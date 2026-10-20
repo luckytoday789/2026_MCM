@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+    "-B",
+    "audit/SOL-041/verify.py",
+    "--record"
+  ],
+  "code": 0,
+  "signal": null,
+  "duration_seconds": 69.926
+}

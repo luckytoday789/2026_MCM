@@ -1,0 +1,25 @@
+{
+  "HY3_005": {
+    "commit": "665e14502405ca560fe1f78876a189ae5f688f23",
+    "path": "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/failure.json",
+    "sha256": "0c93e329143364da9183a0fbeab96d8419cb13d723fb0bf75e5e8588da00cf60",
+    "failure": {
+      "diagnosis": "runtime budget exceeded",
+      "elapsed_seconds": 3188.2969999999914,
+      "exception": "ValueError",
+      "partial_path": "partial-557463b8f9d845ed9fd2277728be72cb",
+      "status": "failed",
+      "traceback": "Traceback (most recent call last):\n  File \"E:\\study\\mcm\\2026_MCM_Senior_SafeInvest\\2026_MCM\\.runtime\\worktrees\\HY3-005-a1\\src\\safeinvest\\policy_writer.py\", line 665, in _stage_output\n    result=operation(stage,started)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\study\\mcm\\2026_MCM_Senior_SafeInvest\\2026_MCM\\.runtime\\worktrees\\HY3-005-a1\\src\\safeinvest\\policy_writer.py\", line 814, in operation\n    return _persist(stage,started,data=data,rows=rows,n=120,t=30,horizons=HORIZONS,group=c['group'],\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\study\\mcm\\2026_MCM_Senior_SafeInvest\\2026_MCM\\.runtime\\worktrees\\HY3-005-a1\\src\\safeinvest\\policy_writer.py\", line 692, in _persist\n    require(time.monotonic()-started<=max_seconds,'runtime budget exceeded')\n  File \"E:\\study\\mcm\\2026_MCM_Senior_SafeInvest\\2026_MCM\\.runtime\\worktrees\\HY3-005-a1\\src\\safeinvest\\policy_writer.py\", line 54, in require\n    raise ValueError(message)\nValueError: runtime budget exceeded\n"
+    },
+    "status_push_failure": "Command '['git', 'push', 'origin', '24ae8b6a3954355c406bf2b2bf080a7961822925:refs/heads/status/hy3']' timed out after -2186.4219999999914 seconds"
+  },
+  "SOL_036": {
+    "evidence_commit": "da37f1cff664c2ba5b475ddd07ae58630004ea3e",
+    "path": "handoff/SOL-036/check-0.txt",
+    "sha256": "56123a84fea58a65d79d47cf45771e5231403282ecfa8ba27b5c7068a4927d28",
+    "quota_failure_excerpt": "nd its first trial is running with captured logs. It reconstructs the four training priors, ledger arithmetic, metrics and summaries; compares imported baseline values cell by cell; and independently scores complete paths across folds and observed action examples.\n\nmcp: node_repl/js started\nmcp: node_repl/js (completed)\nmcp: node_repl/js started\nmcp: node_repl/js (completed)\nmcp: node_repl/js started\nmcp: node_repl/js (completed)\ncodex\nI misidentified older Python processes as the checker still running. The checker was terminated by the tool timeout before its launcher saved an exit code or logs. I won’t retry it because the task prohibits retries; this leaves the clean execution requirement unresolved.\n\nThe independent verifier reached ledger checks and found a review-side naming error: adaptive outputs use `defensive` and `growth_tilt`. I’ll correct that bridge and preserve the failed trial.\n\nmcp: node_repl/js started\nmcp: node_repl/js (completed)\nmcp: node_repl/js started\nmcp: node_repl/js (completed)\nmcp: node_repl/js started\nmcp: node_repl/js (completed)\nmcp: node_repl/js started\nmcp: node_repl/js (completed)\nmcp: node_repl/js started\nmcp: node_repl/js (completed)\nmcp: node_repl/js started\nmcp: node_repl/js (completed)\ncodex\nThe independent arithmetic trial completed: 28,800 ledger rows, 4,800 metrics, 40 summaries and 17,823 score rows passed the implemented checks. It independently rescored 468 predecision states and rejected all 12 compact corruptions. No initial allocation deferrals occurred; the adaptive mode recorded 177 target changes.\n\nThe verifier returned code 2, preserving the unresolved clean writer check as a blocker.\n\nmcp: node_repl/js started\nmcp: node_repl/js (failed)\nmcp: node_repl/js started\nmcp: node_repl/js (completed)\nmcp: node_repl/js started\nmcp: node_repl/js (completed)\nmcp: node_repl/js started\nmcp: node_repl/js (completed)\nmcp: node_repl/js started\nmcp: node_repl/js (completed)\nmcp: node_repl/js started\nmcp: node_repl/js (failed)\nmcp: node_repl/js started\nmcp: node_repl/js (completed)\n2026-10-20T05:13:40.613383Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out\nmcp: node_repl/js started\nmcp: node_repl/js (completed)\nERROR: You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/settings/usage to purchase more credits or try again at 4:05 PM.\nERROR: You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/settings/usage to purchase more credits or try again at 4:05 PM.\ntokens used\n186,841\n",
+    "status": "failed",
+    "earlier_check_interruption": "Writer launcher disposable tool timeout left no durable exit/log completion; remains failed"
+  },
+  "preservation": "Exact old Git evidence only; no predecessor command execution, repair or promotion"
+}

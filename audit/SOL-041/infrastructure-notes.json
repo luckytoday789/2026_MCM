@@ -1,0 +1,28 @@
+{
+  "shell_launch_failure": "exec_command: Failed to create unified exec process: helper_unknown_error: setup refresh had errors; no command started",
+  "setup_failure": "Node process global unavailable before supervisor launch; corrected by inheriting supervisor environment and stripping all case-insensitive PYTHONPATH inside supervisor",
+  "fallback": "persistent node runtime owns Python supervisor and child; durable file streams; no 120s disposable kernel",
+  "release": {
+    "id": "SOL-037",
+    "state": "accepted",
+    "owner": "sol",
+    "attempt": 1,
+    "branch": "work/sol/SOL-037-a1",
+    "task_sha256": "a39583ab0336bf78cb14b231a7e0b9a957e7da3b454f12cc6a7807546d88f9aa",
+    "note": "Exact successful assigned-machine one-call probe authenticated; 4 canonical artifact hashes,5 source pins,3 command exits,timing and response verified. Historical quota failures preserved; no remaining-budget guarantee.",
+    "release_condition": "At/after15:55Beijing, release fixed commands probe once. No model call before16:10. Failure consumes last automatic probe.",
+    "released_at": "2026-10-20T08:46:06.435425+00:00",
+    "reviewed_commit": "11ade9aeb4726473e65c32cfd254e03d9aec54b4",
+    "accepted_paths": [
+      "audit/SOL-037/availability.json",
+      "handoff/SOL-037/check-0.txt",
+      "handoff/SOL-037/check-1.txt",
+      "handoff/SOL-037/check-2.txt",
+      "handoff/SOL-037/result.json"
+    ],
+    "excluded_paths": [],
+    "acceptance_evidence": "audit/chief/SOL-037-review.json",
+    "verdict": "available_at_probe_time_only"
+  },
+  "origin_main_at_start": "55aa8247b24672cb21f0340893c4615da28e234f"
+}

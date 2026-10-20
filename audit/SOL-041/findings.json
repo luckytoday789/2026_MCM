@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-041",
+  "attempt": 1,
+  "owner": "sol",
+  "base_commit": "da37f1cff664c2ba5b475ddd07ae58630004ea3e",
+  "producer_task": "HY3-006",
+  "reviewed_result_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+  "verdict": "numerical_review_passed",
+  "producer_accepted": false,
+  "independent_chief_exact_commit_review_required": true,
+  "blocking_findings": [],
+  "counts": {
+    "annual_ledgers": 28800,
+    "scenario_metrics": 4800,
+    "summary": 40,
+    "decisions": 18000,
+    "target_scores": 17585
+  },
+  "writer": {
+    "launches": 1,
+    "exit_code": 0,
+    "duration_seconds": 378.795999999973,
+    "timeout_seconds": 600,
+    "unchanged": true,
+    "no_runtime_task": true,
+    "no_PYTHONPATH": true
+  },
+  "coverage": {
+    "accounting_checks": 735115,
+    "decision_checks": 472295,
+    "additional_checks": 624595,
+    "all_training_folds": 4,
+    "training_rows_each": 2700,
+    "all_metrics": 4800,
+    "all_summaries": 40,
+    "all_decisions": 18000,
+    "all_score_identities": 17585,
+    "complete_fresh_decimal_path_rows": 1200,
+    "own_independent_CRRA_target_facts": 118,
+    "oracle_independent_CRRA_target_facts": 140,
+    "corruptions_rejected": 17,
+    "future_perturbations": 20,
+    "initial_deferrals_observed": 0,
+    "initial_deferrals_generated_modes": 5,
+    "tiny_active_target_update_tested": true
+  },
+  "tolerances": {
+    "full_ledger_rel": 1e-10,
+    "full_ledger_abs": 1e-9,
+    "sampled_CE_rel": 2e-11,
+    "sampled_CE_abs": 2e-11,
+    "ordinary_precision_digits": 70,
+    "fee_multiplication": "exact binary64 checked by independent oracle"
+  },
+  "max_absolute_differences": {
+    "accounting": 1.3642420526593924e-12,
+    "decision": 7.105427357601002e-15,
+    "own": 9.094947017729282e-13
+  },
+  "limitations": [
+    "High precision CE expectations are sampled, not independently recalculated for all17585 score rows; all saved score identities, actions and state transitions are checked.",
+    "No initial allocation deferrals occur in saved results; generated examples cover benefit-gated initial retention and persistent deferral.",
+    "Producer generation370.672s is a writer measurement within1200s, not total parent elapsed. Parent receipt has four command exits but no per-command wall times.",
+    "The portability result is recorded separately in portability.json.",
+    "HY3-005 and SOL-036 remain failed; no primary outcome analysis, policy/customer selection, final data access or acceptance occurs."
+  ],
+  "evidence": {
+    "verification": "verification.json",
+    "fixtures": "fixtures.json",
+    "fresh_writer": "clean-environment-checks.json",
+    "protected_before": "protected-before.json",
+    "protected_after": "protected-after.json",
+    "portability": "portability.json",
+    "historical_failures": "historical-negative-evidence.json",
+    "additional_provenance": "additional-provenance.json"
+  },
+  "source_oracles_reused": {
+    "commit": "da37f1cff664c2ba5b475ddd07ae58630004ea3e",
+    "paths": [
+      "audit/chief/review_development_case_bundle.py",
+      "audit/chief/review_development_decisions.py"
+    ],
+    "authentication": "immutable task SHA256 pins checked before exec; code inspected, no SafeInvest arithmetic imports"
+  },
+  "scope": "Only assigned exact doubled-fee development result; no production run, retry, baseline rerun, policy selection, customer assignment, freeze or holdout outcomes.",
+  "portability": {
+    "status": "passed",
+    "exit_code": 0,
+    "head": "e2fc412795d04879c603c8af8251f9cd8956599e",
+    "no_runtime_task": true,
+    "unchanged": true,
+    "duration_seconds": 69.35999999998603
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "argv": [
+    "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+    "-B",
+    "scripts/run_development_policy.py",
+    "--config",
+    "specs/execution/HY3-006-file44.json",
+    "--output",
+    "results/development/HY3-006",
+    "--check"
+  ],
+  "python": "3.12.14",
+  "cwd_kind": "new isolated actual Git checkout",
+  "producer_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+  "timeout_seconds": 600,
+  "removed_environment_keys": [],
+  "started_at_unix": 1792487936.5757515,
+  "launch_count": 1,
+  "retry_allowed": false,
+  "stdout": "writer.stdout.log",
+  "stderr": "writer.stderr.log",
+  "before_inventory": "protected-before.json",
+  "owner_pid": 37204
+}

@@ -1,0 +1,1 @@
+{"status": "passed", "producer": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18", "duration_seconds": 63.0, "accounting_checks": 735115, "decision_checks": 472295, "own_checks": 624595, "corruptions": 17, "read_only": true}

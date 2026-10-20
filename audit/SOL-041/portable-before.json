@@ -1,0 +1,51 @@
+{
+  "head": "e2fc412795d04879c603c8af8251f9cd8956599e",
+  "runtime_task_exists": false,
+  "audit_files": {
+    "clean-environment-checks.json": {
+      "bytes": 1103,
+      "sha256": "92e5ee6d6933da6b9bf9c557f1d214070a3f2da2448c0d954cdb093d705b43ad"
+    },
+    "fixtures.json": {
+      "bytes": 376667,
+      "sha256": "a36d8f36370e1c0ab8f781cc4c1cbceec54c80e283c92ddc9f054d90def3447c"
+    },
+    "independent.py": {
+      "bytes": 28553,
+      "sha256": "7b1b4e78b2855127cd379b256af0fd230933b94651df4b2add8c83e7897d4e0f"
+    },
+    "infrastructure-notes.json": {
+      "bytes": 1624,
+      "sha256": "35bdf5fbfd3c1285a372648231e4e133f69763e5b49a5e25d76436f480a4fe03"
+    },
+    "protected-after.json": {
+      "bytes": 14570,
+      "sha256": "e945d6644fa641e9641b2173be2b8f44dda55ddfb84108afd9e1b23430cb4590"
+    },
+    "protected-before.json": {
+      "bytes": 14570,
+      "sha256": "e945d6644fa641e9641b2173be2b8f44dda55ddfb84108afd9e1b23430cb4590"
+    },
+    "task-pins.json": {
+      "bytes": 18319,
+      "sha256": "3c3f375d07c0030a952fc29ab64a1fafd07e0b4e504fa29d764a1df3e689ba86"
+    },
+    "verification.json": {
+      "bytes": 2896661,
+      "sha256": "7f99fd7229f56873b6a7cc4ca5083dad6fea067f21244b3e427abb0c5ef6f326"
+    },
+    "verify.py": {
+      "bytes": 11759,
+      "sha256": "e994fb7762a74a1802e339825bd45233f2cefa6fcdd7a343f724b9013c9fcde4"
+    },
+    "writer.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "writer.stdout.log": {
+      "bytes": 61,
+      "sha256": "0a0c23666434c3fb9693db28d32d9fd8dbd40d9570d49d65130f290ebec2f6e0"
+    }
+  },
+  "git_status": "?? audit/SOL-041/\n"
+}

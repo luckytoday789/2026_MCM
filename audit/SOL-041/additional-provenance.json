@@ -1,0 +1,11 @@
+{
+  "environment_check_source": {
+    "path": "scripts/check_worker_env.py",
+    "commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+    "expected": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+    "observed": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8"
+  },
+  "later_head": "e2fc412795d04879c603c8af8251f9cd8956599e",
+  "review_base": "da37f1cff664c2ba5b475ddd07ae58630004ea3e",
+  "later_is_descendant": true
+}
