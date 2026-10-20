@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-033",
+  "attempt": 1,
+  "base_commit": "65b54a5823765a676cb7c50947f7f46874484563",
+  "task_sha256": "4def19be80f3c7211a1760db612d935a8810368629634483ece021814a474db6",
+  "verdict": "approve",
+  "approval_scope": "Only the explicit PDF/PNG publication format restriction, resolving the alternative permitted by SOL-030 F1.",
+  "publication_paths": [
+    "report/figures/baseline-h30-summary.pdf",
+    "report/figures/baseline-h30-summary.png",
+    "report/figures/baseline-h30-severe-path.pdf",
+    "report/figures/baseline-h30-severe-path.png"
+  ],
+  "excluded_preview_paths": [
+    "report/figures/baseline-h30-summary.svg",
+    "report/figures/baseline-h30-severe-path.svg"
+  ],
+  "findings": [
+    {
+      "id": "F1-format-alternative",
+      "status": "resolved_by_restriction",
+      "evidence": [
+        "report/figures/publication-formats.json",
+        "report/figures/README.md",
+        "report/baseline-figure-captions.md"
+      ],
+      "basis": "Exactly four unchanged verified PDF/PNG publication files; both font-dependent SVG editable previews explicitly excluded pending separate reviewed portability correction."
+    },
+    {
+      "id": "SOL-030-F1-SVG",
+      "status": "unchanged_unfixed",
+      "basis": "Original fallback-font clipping is preserved. This successor does not claim SVG portability."
+    },
+    {
+      "id": "SOL-030-E1",
+      "status": "unchanged_failed_worker_validation",
+      "basis": "Original renderer check exit1 due missing matplotlib remains. Two saved chief exact-source replay checks exit0 in existing requirements environment; no new renderer invocation or dependency pass is claimed."
+    }
+  ],
+  "numerical_evidence": {
+    "status": "preserved_not_recomputed",
+    "statistics": 12,
+    "plotted_points": 183,
+    "scope": "Original independent SOL-030 accepted-output review, not a new experiment; all source and old evidence hashes preserved."
+  },
+  "limitations": [
+    "No assembled A4 layout or complete manuscript acceptance.",
+    "No policy, freeze, final-data or submission gate approval.",
+    "SVG still requires DejaVu Sans; font substitution can clip labels."
+  ],
+  "actions_performed": {
+    "packages_installed": false,
+    "renderer_invoked": false,
+    "simulation_rerun": false,
+    "competition_input_reads": false,
+    "source_edits": false,
+    "member_identities_exported": false
+  },
+  "evidence": [
+    "verification.json",
+    "source-binding.json",
+    "integrity-self-tests.json",
+    "unchanged-inventories.json"
+  ],
+  "scope_not_full_acceptance": true
+}

@@ -1239,7 +1239,7 @@
     },
     {
       "id": "SOL-033",
-      "state": "ready",
+      "state": "accepted",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "f5c05e3c0f82d31c197ba574464677cc104ca990e18e81a5eb52970d47a7575b",
@@ -1248,7 +1248,27 @@
       "dispatch_priority_after": [
         "SOL-032"
       ],
-      "note": "Corrected narrow successor to failed SOL-030; review unchanged PDF/PNG-only publication restriction, preserve missing dependency and SVG clipping. No renderer/Matplotlib install or baseline rerun."
+      "note": "Exact13 paths/40 task pins and55 source/history bindings verified; checker and five corruptions replayed unchanged. Chief independently hashes all6 assets. Approves only four PDF/PNG publication files, preserves excluded SVG clipping and original SOL-030 dependency failure; full report/final gates separate. Worker task hash label uses stripped Git-blob digest; canonical receipt digest separately verified.",
+      "reviewed_commit": "8f56b7e49f7294d418e7042a009d9c1e6be0e353",
+      "verdict": "approve",
+      "approval_scope": "PDF_PNG_format_restriction_only",
+      "accepted_paths": [
+        "audit/SOL-033/.gitattributes",
+        "audit/SOL-033/execution.json",
+        "audit/SOL-033/findings.json",
+        "audit/SOL-033/integrity-self-tests.json",
+        "audit/SOL-033/review.md",
+        "audit/SOL-033/source-binding.json",
+        "audit/SOL-033/task-lock.json",
+        "audit/SOL-033/unchanged-inventories.json",
+        "audit/SOL-033/verification.json",
+        "audit/SOL-033/verify.py",
+        "handoff/SOL-033/check-0.txt",
+        "handoff/SOL-033/check-1.txt",
+        "handoff/SOL-033/result.json"
+      ],
+      "excluded_paths": [],
+      "acceptance_evidence": "audit/chief/SOL-033-review.json"
     },
     {
       "id": "HY3-004",
