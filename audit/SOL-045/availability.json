@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "xhigh",
+  "not_before": "2026-10-20T21:40:00+08:00",
+  "started_at": "2026-10-20T13:40:00.006620+00:00",
+  "finished_at": "2026-10-20T13:40:52.383980+00:00",
+  "model_calls": 1,
+  "exit_code": 0,
+  "usable": true,
+  "expected_response": "SAFEINVEST_SOL_AVAILABLE",
+  "response": "SAFEINVEST_SOL_AVAILABLE",
+  "error": null,
+  "quota_error_detected": false,
+  "model_log_sha256": "0ad978303b95b0bf5d6a8cf5a21e9079be66e62e045d98379b89c57d090940e9",
+  "note": "A real response proves availability only at probe time, not remaining review budget."
+}
