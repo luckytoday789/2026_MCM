@@ -1,7 +1,7 @@
-"""Add three evidence-bound figures to unchanged accepted manuscript text.
+"""Add three evidence-bound figures to accepted manuscript text.
 
-The old accepted PDF is preserved. The new figure captions are the only added
-prose. No policy, result, model selection or final exposure is changed.
+The old accepted PDF is preserved. Optionally apply the separately recorded
+AI-disclosure wording revision. No policy, result or final exposure is changed.
 """
 import argparse,hashlib,json,re,sys
 from datetime import datetime,timezone
@@ -80,6 +80,7 @@ def render(text,output,figures):
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--output-dir',required=True)
+    p.add_argument('--revised-disclosure',action='store_true',help='Apply the user-requested team-centered AI disclosure after verifying the accepted manuscript.')
     group=p.add_mutually_exclusive_group(required=True);group.add_argument('--team-file');group.add_argument('--public',action='store_true');a=p.parse_args()
     output=(ROOT/a.output_dir).resolve();assert output.is_relative_to(ROOT/'.runtime') and not output.exists()
     output.mkdir(parents=True)
@@ -90,6 +91,14 @@ def main():
     text,metadata=original.assemble(team);text,approval=original.release_evidence(text,team)
     old=ROOT/'.runtime/final-release-20261020/expanded-draft.md'
     if old.exists() and not a.public:assert text==old.read_text(encoding='utf-8'),'Accepted original text changed.'
+    disclosure_revision=None
+    if a.revised_disclosure:
+        previous=text.rstrip().split('\n\n')[-1]
+        assert previous.startswith('GPT-6 Astra xhigh, followed by GPT-6.1 Sol xhigh')
+        revised=(ROOT/'report/ai-disclosure-revised.txt').read_text(encoding='utf-8').strip()
+        assert text.count(previous)==1 and revised.startswith('Our team used ')
+        text=text.replace(previous,revised,1)
+        disclosure_revision={'old':previous,'new':revised,'scope':'Final AI-use paragraph only; no numerical or methodological changes.'}
     manifest=json.loads((ROOT/'report/figures/illustrated-final-v1/figure-provenance.json').read_bytes())
     figures={f['id']:f for f in manifest['figures']}
     anchors=[('figure1-final-comparison','The frozen B/C Conservative follow-ups use'),('figure2-client-validation','All four rows fail the unchanged loss screen'),('figure3-severe-path','An independently expressed stdlib audit passed')]
@@ -102,6 +111,8 @@ def main():
     checks=render(augmented,output,figures)
     assert checks['within_page_limit'],checks
     record=dict(status='illustrated_revision_pending_visual_review',created_at=datetime.now(timezone.utc).isoformat(),old_pdf_sha256='1730702256151770090fad81aef16922c1f58064beda91c5ce57444a32853385',accepted_text_unchanged=True,added_captions=[f['caption'] for f in figures.values()],pdf_checks=checks,underlying_independent_reviews=approval,final_policy_changed=False,simulation_rerun=False,original_observations_opened=False,private_pdf_local_only=True,is_public_reproduction=a.public)
+    record['accepted_text_unchanged']=not a.revised_disclosure
+    record['disclosure_revision']=disclosure_revision
     (output/'build-provenance.json').write_text(json.dumps(record,indent=2)+'\n',encoding='utf-8')
     print(json.dumps({'status':record['status'],**checks}))
 
