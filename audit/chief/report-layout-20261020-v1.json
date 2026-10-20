@@ -1,0 +1,17 @@
+{
+  "status": "failed_visual_layout",
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "pdf_path": ".runtime/report-personalized-layout-20261020/SafeInvest-incomplete-draft.pdf",
+  "page": 5,
+  "finding": "Six-column comparison table reused suitability widths; candidate/control names wrapped into short fragments. No clipped or overlapping text on other inspected pages.",
+  "fix": "Give the candidate/control column explicit table-specific widths without changing font size or data.",
+  "final_report_accepted": false
+}

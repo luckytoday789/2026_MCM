@@ -381,6 +381,8 @@ def render(text, output):
                       6: [43, 41, 70, 64, 54, 223],
                       5: [90, 100, 100, 108, 107],
                       4: [205, 100, 100, 100]}.get(n)
+            if n == 6 and rows[0][0].getPlainText() == 'Candidate / control':
+                widths = [185, 65, 65, 80, 65, 50]
             if widths:
                 widths = [usable * w / sum(widths) for w in widths]
             table = Table(rows, colWidths=widths, repeatRows=1, hAlign="LEFT",rowSplitRange=(2,-2))
