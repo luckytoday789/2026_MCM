@@ -1743,6 +1743,15 @@
       "reviewed_commit": "7053b41ce81b1e04100d56a24a321e51b3465459",
       "code_verdict": "approve",
       "acceptance_evidence": "audit/chief/CHIEF-PERSONALIZED-20261020-review.json"
+    },
+    {
+      "id": "HY3-009",
+      "owner": "hy3",
+      "state": "ready",
+      "attempt": 1,
+      "branch": "work/hy3/HY3-009-a1",
+      "task_sha256": "4bfb233f4c30b87cb5d59fd800cf46e7d5303072f5f759f8355b847e09c96958",
+      "note": "Successor to metadata-failed HY3-008: exact006accepted_paths and44artifacts promoted. Bothproducer complete metadata preflights pass beforepublication. Fixedsameanalysis; noexperimentregeneration."
     }
   ]
 }
