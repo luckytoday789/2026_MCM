@@ -4,21 +4,8 @@
     2660,
     34140
   ],
-  "child_pids": [
-    49024,
-    12944,
-    31128,
-    41500,
-    33272,
-    9248,
-    764,
-    21368,
-    37484,
-    47172,
-    19812,
-    13456
-  ],
-  "current_task": "SOL-043",
+  "child_pids": [],
+  "current_task": null,
   "alerts": [],
   "tasks": [
     {
@@ -620,13 +607,33 @@
       "head": "e1783a918122d8eaa507e42ca15a9c0a5f5b9339",
       "receipt_status": "failed",
       "receipt_matches_task": true,
+      "queue_state": "cancelled",
+      "dirty": true,
+      "changed_paths": [
+        "?? handoff/SOL-038/RESOURCE_HANDOFF.md"
+      ],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-20T10:18:22.961891+00:00",
+      "check_exit_codes": [],
+      "pending_upload": false
+    },
+    {
+      "key": "SOL-039-a1",
+      "task_id": "SOL-039",
+      "base": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+      "head": "b7ea2ea1cd7d27c0edd347797d38d61e8b98aecc",
+      "receipt_status": "failed",
+      "receipt_matches_task": true,
       "queue_state": "ready",
       "dirty": false,
       "changed_paths": [],
       "remote_matches": true,
       "completed_record": true,
-      "finished_at": "2026-10-20T10:18:22.961891+00:00",
-      "check_exit_codes": [],
+      "finished_at": "2026-10-20T10:49:52.255695+00:00",
+      "check_exit_codes": [
+        1
+      ],
       "pending_upload": false
     },
     {
@@ -668,19 +675,39 @@
       "pending_upload": false
     },
     {
+      "key": "SOL-042-a1",
+      "task_id": "SOL-042",
+      "base": "9094b508e38af56062d87a3a9a5b1df4556693b2",
+      "head": "f1b41a61793f714462ccd4aa4455fd17e37cf256",
+      "receipt_status": "failed",
+      "receipt_matches_task": true,
+      "queue_state": "ready",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-20T10:51:46.288848+00:00",
+      "check_exit_codes": [
+        1
+      ],
+      "pending_upload": false
+    },
+    {
       "key": "SOL-043-a1",
       "task_id": "SOL-043",
       "base": "e23fc9aa76407be9d7efe8702825c90d616d507a",
-      "head": "e23fc9aa76407be9d7efe8702825c90d616d507a",
-      "receipt_status": null,
-      "receipt_matches_task": false,
+      "head": "b403f21f7890abe38a0a3564f289d77f1e95b239",
+      "receipt_status": "failed",
+      "receipt_matches_task": true,
       "queue_state": "ready",
-      "dirty": true,
-      "changed_paths": [
-        "?? audit/SOL-043/"
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-20T10:48:01.794906+00:00",
+      "check_exit_codes": [
+        1
       ],
-      "remote_matches": false,
-      "completed_record": false,
       "pending_upload": false
     }
   ],
@@ -690,8 +717,8 @@
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
     "state": "running",
     "python": "3.12.0",
-    "updated_at": "2026-10-20T10:44:37.595474+00:00",
-    "lease_until": "2026-10-20T10:54:37.595474+00:00",
+    "updated_at": "2026-10-20T10:48:43.726379+00:00",
+    "lease_until": "2026-10-20T10:58:43.726379+00:00",
     "task_id": "integrate-and-dispatch"
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
@@ -700,7 +727,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-20T10:46:49.210779+00:00",
+  "updated_at": "2026-10-20T10:52:15.950104+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
