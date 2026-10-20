@@ -1,0 +1,33 @@
+{
+  "status": "accepted",
+  "refit": {
+    "commit": "07eff1d3cb714c3f1d9dc850e0dbb9cab59c6b8d",
+    "path": "results/development/CHIEF-REFIT-001/run_manifest.json",
+    "sha256": "acd58eccc6db735197b4b3feaa751e5c1c1954eb82bfaabe528ff13d2b410ee6"
+  },
+  "producer_refit": {
+    "commit": "d4a982ce2d06b57deb2988806229574c0719c2be",
+    "path": "results/development/CHIEF-REFIT-001/run_manifest.json",
+    "sha256": "acd58eccc6db735197b4b3feaa751e5c1c1954eb82bfaabe528ff13d2b410ee6"
+  },
+  "producer_review": {
+    "commit": "07eff1d3cb714c3f1d9dc850e0dbb9cab59c6b8d",
+    "path": "audit/chief/CHIEF-REFIT-001-review.json",
+    "sha256": "2adad2ad8431fea32e267c8b6a67a5066e77a2686b1ce64540e8b73ae8cc63c6"
+  },
+  "numerical_review": {
+    "independent_stdlib": true,
+    "input_sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+    "manifest_sha256": "acd58eccc6db735197b4b3feaa751e5c1c1954eb82bfaabe528ff13d2b410ee6",
+    "prior_scalar_checks": 10800,
+    "prior_support_sha256": "44d00c47e591a5eef12079798a8939659a1c1818842fda5292b9a92e3f7981d6",
+    "read_only": true,
+    "real_gross_sha256": "5e8d2441e955353613fc4b3e3839fe0d20b3585d9d477eabf0a034963e0978ce",
+    "scope": "Independent actual development/refit support oracle; no final input access or source approval.",
+    "status": "passed",
+    "training_rows": 3600,
+    "training_rows_sha256": "4d787ac45b4ac1a46e2654641f530429d8e37e012394083a7916531016a5980f"
+  },
+  "scope": "Exact accepted producer blob promoted onto main. Reference uses main ancestor for downstream immutable bases; no recomputation or policy change.",
+  "accepted_at": "2026-10-20T13:09:17.225711+00:00"
+}

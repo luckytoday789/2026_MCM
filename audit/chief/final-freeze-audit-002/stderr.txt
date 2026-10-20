@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "D:\30576\Documents\2026_MCM\audit\chief\check_frozen_execution.py", line 116, in <module>
+    print(json.dumps(audit(args.freeze,args.effective),sort_keys=True))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\30576\Documents\2026_MCM\audit\chief\check_frozen_execution.py", line 83, in audit
+    assert exact(freeze['refit'],c['refit']);refit=reference(c['refit'],F)
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\30576\Documents\2026_MCM\audit\chief\check_frozen_execution.py", line 43, in reference
+    assert set(ref)=={'commit','path','sha256'};ancestor(ref['commit'],base)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\30576\Documents\2026_MCM\audit\chief\check_frozen_execution.py", line 39, in ancestor
+    def ancestor(a,b):assert subprocess.run(['git','merge-base','--is-ancestor',a,b],cwd=ROOT,capture_output=True).returncode==0,'unpublished reference ancestry'
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unpublished reference ancestry

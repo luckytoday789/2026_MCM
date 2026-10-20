@@ -1,0 +1,7 @@
+{
+  "reason": "Preserved producer work commit is not a main ancestor because acceptance promoted exact files rather than merged branch. Downstream config must reference exact promoted main blob and external acceptance. No source/policy/parameter change; gate remains closed and no final input accessed.",
+  "producer_commit": "d4a982ce2d06b57deb2988806229574c0719c2be",
+  "promoted_commit": "07eff1d3cb714c3f1d9dc850e0dbb9cab59c6b8d",
+  "artifact_sha256": "acd58eccc6db735197b4b3feaa751e5c1c1954eb82bfaabe528ff13d2b410ee6",
+  "final_data_accessed": false
+}

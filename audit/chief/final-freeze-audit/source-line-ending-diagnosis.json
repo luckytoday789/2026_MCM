@@ -1,0 +1,19 @@
+{
+  "reason": "Mixed local CRLF/LF checkout bytes rejected strict LF/full-CRLF source identity. HEAD and frozen canonical Git bytes are identical; restored exact Git bytes after preserving originals locally.",
+  "changes": [
+    {
+      "path": "specs/FINAL_EVALUATION.md",
+      "old_checkout_sha256": "46d7d055cf9a78a6082304904fd43394cf14545880d5c0971d0e7195220aba96",
+      "restored_git_blob_sha256": "39cf3c73328c79afc83905ba4aa31d9aeae14564a42fb7d167756886292f9035",
+      "semantic_change": false
+    },
+    {
+      "path": "specs/FINAL_OUTPUT_NOTES.md",
+      "old_checkout_sha256": "98c28d4e71f148c4937576e9218915bc68612ae3f076c8e6728c8ba39974cf7b",
+      "restored_git_blob_sha256": "804cd90610da1d434dfcc0059081a0c8bd1816350aa9d7c29368791ee3338a55",
+      "semantic_change": false
+    }
+  ],
+  "final_data_accessed": false,
+  "freeze_changed": false
+}

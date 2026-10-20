@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "D:/30576/Documents/SafeInvest/.venv/Scripts/python.exe",
+    "-B",
+    "audit/chief/check_frozen_execution.py",
+    "--freeze",
+    "7e2ecf319a3491e53334ab96a1852911e14265c8:ops/freeze.json",
+    "--effective",
+    ".runtime/prepared-final/HY3-010/effective.json"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"D:\\30576\\Documents\\2026_MCM\\audit\\chief\\check_frozen_execution.py\", line 116, in <module>\n    print(json.dumps(audit(args.freeze,args.effective),sort_keys=True))\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\audit\\chief\\check_frozen_execution.py\", line 60, in audit\n    data=blob(C,name);assert sha(data)==digest and safe(name).read_bytes() in (data,data.replace(b'\\n',b'\\r\\n')),'source Git/checkout mismatch'\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: source Git/checkout mismatch\n",
+  "executed_at": "2026-10-20T13:07:33.995338+00:00"
+}
