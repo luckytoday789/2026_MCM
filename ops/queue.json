@@ -1777,6 +1777,15 @@
         "results/development/HY3-009/run_manifest.json": "05878823c94e92c1217ccbe2252008a318ed787862e7e1feec7982852714cb11",
         "results/development/HY3-009/selection.json": "56b721ac630e7b08c48a74b37c300bcc841ea51e4b85084401a58b8bbbfa334e"
       }
+    },
+    {
+      "id": "CHIEF-PERSONALIZED-V2-20261020",
+      "owner": "chief",
+      "kind": "chief_source_approval",
+      "state": "accepted",
+      "reviewed_commit": "11a633c75dbbd8d25385ab9d1600d45943f1afef",
+      "code_verdict": "approve",
+      "acceptance_evidence": "audit/chief/CHIEF-PERSONALIZED-V2-20261020-review.json"
     }
   ]
 }
