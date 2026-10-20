@@ -227,3 +227,11 @@ separate gates. Failed SOL-036 remains failed.
 rational references prepare a future narrow implementation task. The32 toy
 paths and4,740 numeric comparisons certify fixture arithmetic only; no final
 engine, original-data refit, freeze or final-data access is authorized.
+
+[Accepted primary development summaries](primary-development.md) display all40
+mode/horizon rows at the original fee, with280 independently checked numeric
+cells. `python -B report/build_primary_note.py --check` checks source/acceptance
+identity and display provenance. This descriptive note makes no selection,
+promotion, customer-assignment or final-performance claim. The first independent
+display check failed on the Windows default text encoding; its diagnosis is
+preserved and explicit UTF-8 replay passed. No outcome or policy changed.

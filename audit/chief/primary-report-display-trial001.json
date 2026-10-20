@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "stage": "independent_display_check_trial001",
+  "error": "UnicodeDecodeError: Windows default GBK could not decode UTF-8 en dash in generated note",
+  "generator_create": "passed",
+  "generator_read_only_replay": "passed",
+  "effect": "No numerical comparison completed; no report validation was written. Generated source-bound artifacts remain intact.",
+  "correction": "Use explicit UTF-8 decoding in saved independent checker; no source data or policy changes."
+}

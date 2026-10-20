@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scope": "accepted_primary_descriptive_table_only",
+  "rows": 40,
+  "independent_display_cells": 280,
+  "source_commit": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
+  "note_sha256": "21ad16fd6925bee1e6ed6d71968202c00fdb349e416a2e07b5fef955c4d8cf46",
+  "no_simulation": true,
+  "final_outcomes_read": false,
+  "policy_selected": false,
+  "customer_assignment": false
+}
