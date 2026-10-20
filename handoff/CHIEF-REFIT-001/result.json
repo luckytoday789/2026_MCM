@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "task_id": "CHIEF-REFIT-001",
+  "attempt": 1,
+  "role": "chief",
+  "task_sha256": "44521efdf6df18ee474fa0e472ce93574c18944f2ed0215f579a20f8a6d3848a",
+  "base_commit": "bf0b130708e66eee756b0480f7353ee667c41dc3",
+  "status": "completed",
+  "failure": null,
+  "artifact_hash_basis": "canonical_git_blob",
+  "started_from_pinned_source": true,
+  "checks": [
+    {
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "scripts/run_final_evaluation.py",
+        "--config",
+        "specs/execution/CHIEF-REFIT-001.json",
+        "--output",
+        "results/development/CHIEF-REFIT-001"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\CHIEF-REFIT-001-a1-run-0.log"
+    },
+    {
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "scripts/run_final_evaluation.py",
+        "--config",
+        "specs/execution/CHIEF-REFIT-001.json",
+        "--output",
+        "results/development/CHIEF-REFIT-001",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\CHIEF-REFIT-001-a1-run-1.log"
+    },
+    {
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "scripts/run_final_evaluation.py",
+        "--config",
+        "specs/execution/CHIEF-REFIT-001.json",
+        "--output",
+        "results/development/CHIEF-REFIT-001",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\CHIEF-REFIT-001-a1-check-0.log"
+    }
+  ],
+  "artifacts_sha256": {
+    "handoff/CHIEF-REFIT-001/check-0.txt": "7a97e59f0c1d459b86f5cbc7bbd7f3fdbdf35d0e6a4df7d10a946ef875461b9a",
+    "handoff/CHIEF-REFIT-001/check-1.txt": "b215ff190a08ad5dcf98fbe6ee599c5a3a2b5b7034c6b526eeeaa887f67ae648",
+    "handoff/CHIEF-REFIT-001/check-2.txt": "b215ff190a08ad5dcf98fbe6ee599c5a3a2b5b7034c6b526eeeaa887f67ae648",
+    "results/development/CHIEF-REFIT-001/run_manifest.json": "acd58eccc6db735197b4b3feaa751e5c1c1954eb82bfaabe528ff13d2b410ee6"
+  },
+  "python": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+  "finished_at": "2026-10-20T13:04:58.096533+00:00",
+  "note": "Completed means worker self-check only; coordinator acceptance is separate.",
+  "input_manifest": {
+    "source": "User-supplied 2026 MCM Senior Group Problem A SafeInvest attachments",
+    "license": "CC BY-NC-SA 4.0",
+    "transformation": "Originals unchanged; derived CSV files are row subsets only.",
+    "files": [
+      {
+        "path": "problem/2026_MCM_SafeInvest.pdf",
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+        "bytes": 137578
+      },
+      {
+        "path": "data/raw/SafeInvest_Synthetic_Data.csv",
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+        "bytes": 274914
+      },
+      {
+        "path": "data/development/scenarios_001_120.csv",
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+        "bytes": 182255
+      },
+      {
+        "path": "data/final_holdout/scenarios_121_180.csv",
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+        "bytes": 92732
+      }
+    ]
+  },
+  "task_parameters": {
+    "config_path": "specs/execution/CHIEF-REFIT-001.json",
+    "config_sha256": "f4ac073f8a78c1b8526d94a3f03dfbe6551e9ae16116bae7f85e66c10c150ec3",
+    "execution_stage": "refit",
+    "output_path": "results/development/CHIEF-REFIT-001"
+  }
+}
