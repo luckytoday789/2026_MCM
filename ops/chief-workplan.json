@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T04:04:32.123406+00:00",
-  "reason": "SOL-030 failed dependency check and found SVG clipping; exact evidence verified and narrow PDF/PNG publication restriction prepared for SOL-033.",
+  "next_wake_at": "2026-10-20T04:06:24.271988+00:00",
+  "reason": "SOL-032 compatibility and SOL-033 format restriction reviews dispatched at real pushed bases; inspect exact receipts before production.",
   "next_actions": [
     "SOL-032 is ready on real pushed e33b748c29d366559706d5272319d9138f0c7aa4, digest 776a649d49058b47f71db7fdbb3269452077f2063c5ba313dea574467031c657. It follows running SOL-030. Inspect exact new receipt and independent real44-file runner fixture before compatibility acceptance; no recreation.",
-    "SOL-030 cancelled at414498aaa373c6f0081d829f4020f0b5c33c6424, genuine SVG clipping and worker missing-matplotlib failure retained. Chief exact replay passes renderer/independent verifier; original failure not relabelled. Publish current format restriction source first, then audit-only SOL-033 on that pushed base. No source data, numerical export or baseline run changed.",
+    "SOL-033 ready after SOL-032, base65b54a5823765a676cb7c50947f7f46874484563, digestf5c05e3c0f82d31c197ba574464677cc104ca990e18e81a5eb52970d47a7575b. Exact failed SOL-030 review/canonical17 paths/31 pins preserved and replay passed on chief. Review four PDF/PNG publication assets and two explicitly excluded SVG previews; no data/figure export changed.",
     "SOL-031 exact a24dca5d5494455407207e0fd70c06b258d4fd1f remains accepted for its historical source. Chief provisional new code requires both SOL-031 and SOL-032 approval; all accounting/policy/numeric modules unchanged. Preserve original verification at historical source, never repair its hashes.",
     "The c5f423f1c3b19c6e52bcc497516c99efefc09749 execution config snapshots specs/execution/HY3-004.json and HY3-005.json are unused. No HY3-004/HY3-005 tasks have been published and no competition input opened. After review push accepted new source C, new distinctly named config E, then task publication P.",
     "After fixed producer bundles submit, authenticate receipts, independent Sol numeric review, accepted analysis assembly source/results, personalized bridge, freeze and final remain required. Existing policies/parameters and final gate stay unchanged.",
@@ -46,5 +46,7 @@
   "writer_accepted_commit": "a24dca5d5494455407207e0fd70c06b258d4fd1f",
   "writer_acceptance": "audit/chief/SOL-031-review.json",
   "writer_compatibility_task": "SOL-032",
-  "writer_compatibility_source_commit": "e33b748c29d366559706d5272319d9138f0c7aa4"
+  "writer_compatibility_source_commit": "e33b748c29d366559706d5272319d9138f0c7aa4",
+  "baseline_figure_correction_review_task": "SOL-033",
+  "baseline_figure_failed_review_commit": "414498aaa373c6f0081d829f4020f0b5c33c6424"
 }

@@ -1195,6 +1195,19 @@
         "SOL-030"
       ],
       "note": "Independent audit of chief narrow44-file writer/unchanged-runner compatibility. All prerequisites accepted and source/spec pushed before this task. No production execution."
+    },
+    {
+      "id": "SOL-033",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "task_sha256": "f5c05e3c0f82d31c197ba574464677cc104ca990e18e81a5eb52970d47a7575b",
+      "branch": "work/sol/SOL-033-a1",
+      "released_at": "2026-10-20T04:01:24.271988+00:00",
+      "dispatch_priority_after": [
+        "SOL-032"
+      ],
+      "note": "Corrected narrow successor to failed SOL-030; review unchanged PDF/PNG-only publication restriction, preserve missing dependency and SVG clipping. No renderer/Matplotlib install or baseline rerun."
     }
   ]
 }
