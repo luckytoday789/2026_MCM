@@ -6,7 +6,11 @@
   ],
   "child_pids": [
     9584,
-    21448
+    21448,
+    33152,
+    42920,
+    20716,
+    5112
   ],
   "current_task": "SOL-046",
   "alerts": [],
@@ -757,8 +761,10 @@
       "receipt_status": null,
       "receipt_matches_task": false,
       "queue_state": "ready",
-      "dirty": false,
-      "changed_paths": [],
+      "dirty": true,
+      "changed_paths": [
+        "?? audit/SOL-046/"
+      ],
       "remote_matches": false,
       "completed_record": false,
       "pending_upload": false
@@ -768,11 +774,10 @@
   "chief_status": {
     "role": "chief",
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
-    "state": "running",
+    "state": "ready",
     "python": "3.12.0",
-    "updated_at": "2026-10-20T13:41:22.052417+00:00",
-    "lease_until": "2026-10-20T13:51:22.052417+00:00",
-    "task_id": "integrate-and-dispatch"
+    "updated_at": "2026-10-20T13:49:46.042438+00:00",
+    "lease_until": "2026-10-20T13:59:46.042438+00:00"
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
   "schema_version": 1,
@@ -780,7 +785,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-20T13:45:19.917761+00:00",
+  "updated_at": "2026-10-20T13:50:46.855671+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
