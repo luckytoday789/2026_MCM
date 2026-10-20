@@ -1,0 +1,20 @@
+test_all_assigned_counts_full_training_and_read_only_roundtrip (test_personalized_writer.PersonalizedWriterTests.test_all_assigned_counts_full_training_and_read_only_roundtrip) ... ok
+test_all_referrals_never_fit_or_simulate_and_keep_nulls (test_personalized_writer.PersonalizedWriterTests.test_all_referrals_never_fit_or_simulate_and_keep_nulls) ... ok
+test_assignment_order_key_screen_status_and_class_tampering_rejected_before_compute (test_personalized_writer.PersonalizedWriterTests.test_assignment_order_key_screen_status_and_class_tampering_rejected_before_compute) ... ok
+test_binary64_signed_zero_nullable_and_boolean_codec (test_personalized_writer.PersonalizedWriterTests.test_binary64_signed_zero_nullable_and_boolean_codec) ... ok
+test_corrupt_rehashed_metrics_path_null_bool_missing_files_rejected_read_only (test_personalized_writer.PersonalizedWriterTests.test_corrupt_rehashed_metrics_path_null_bool_missing_files_rejected_read_only) ... ok
+test_failed_checker_does_not_import_bridge_or_create_output (test_personalized_writer.PersonalizedWriterTests.test_failed_checker_does_not_import_bridge_or_create_output) ... ok
+test_failed_own_screen_keeps_all_observations_and_proposed_class (test_personalized_writer.PersonalizedWriterTests.test_failed_own_screen_keeps_all_observations_and_proposed_class) ... ok
+test_failed_production_staging_keeps_diagnosis_without_success_marker (test_personalized_writer.PersonalizedWriterTests.test_failed_production_staging_keeps_diagnosis_without_success_marker) ... ok
+test_large_upstream_manifest_is_hash_bound_without_duplicate_row_map (test_personalized_writer.PersonalizedWriterTests.test_large_upstream_manifest_is_hash_bound_without_duplicate_row_map) ... ok
+test_mixed_fee_classes_and_referrals_use_only_their_own_upstream_class (test_personalized_writer.PersonalizedWriterTests.test_mixed_fee_classes_and_referrals_use_only_their_own_upstream_class) ... ok
+test_no_final_override_or_parameter_search_cli (test_personalized_writer.PersonalizedWriterTests.test_no_final_override_or_parameter_search_cli) ... usage: python.exe -m unittest [-h] --config CONFIG --output OUTPUT [--check]
+python.exe -m unittest: error: unrecognized arguments: --fee .01
+ok
+test_private_bundle_git_checkout_roundtrip_and_later_head (test_personalized_writer.PersonalizedWriterTests.test_private_bundle_git_checkout_roundtrip_and_later_head) ... ok
+test_wrong_full_fold_prior_rejected_and_failed_staging_preserved (test_personalized_writer.PersonalizedWriterTests.test_wrong_full_fold_prior_rejected_and_failed_staging_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 9.443s
+
+OK
