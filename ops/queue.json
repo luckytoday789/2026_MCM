@@ -1285,12 +1285,16 @@
     },
     {
       "id": "HY3-005",
-      "state": "ready",
+      "state": "cancelled",
       "attempt": 1,
       "owner": "hy3",
       "branch": "work/hy3/HY3-005-a1",
       "task_sha256": "9473a3f93c04f668fe839ab9181496e564a27cdf11471b047907678c1a4807e3",
-      "note": "Fixed development execution authorized after exact SOL-032 acceptance. Independent numerical review required before acceptance; final remains closed."
+      "note": "Exact18 changed paths and source/task/artifact pins verified. Runtime3188s exceeds1200s writer limit; only3computed cases and no complete bundle; parent status push timeout recorded. Original attempt/partials preserved; no results promoted. New identical-policy fixed rerun uses fresh output and unchanged1200/1500 budgets.",
+      "reviewed_commit": "665e14502405ca560fe1f78876a189ae5f688f23",
+      "result_verdict": "failed_not_accepted",
+      "failure_evidence": "audit/chief/HY3-005-failure-review.json",
+      "successor_task": "HY3-006"
     },
     {
       "id": "SOL-034",

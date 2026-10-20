@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "task_id": "HY3-005",
+  "attempt": 1,
+  "role": "hy3",
+  "task_sha256": "9473a3f93c04f668fe839ab9181496e564a27cdf11471b047907678c1a4807e3",
+  "base_commit": "93a232a926dc3d1bfb18e2866ef0ddb0aaf9bc0f",
+  "status": "failed",
+  "failure": "Command '['git', 'push', 'origin', '24ae8b6a3954355c406bf2b2bf080a7961822925:refs/heads/status/hy3']' timed out after -2186.4219999999914 seconds",
+  "artifact_hash_basis": "canonical_git_blob",
+  "started_from_pinned_source": true,
+  "checks": [
+    {
+      "argv": [
+        "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+        "-B",
+        "scripts/check_worker_env.py"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\HY3-005-a1-run-0.log"
+    }
+  ],
+  "artifacts_sha256": {
+    "handoff/HY3-005/check-0.txt": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/balanced_cost/annual_ledgers.csv": "821844b2cec0c4a48a2b0943f45e7096b85b2bc49d719cb3bd8726b46d8db46b",
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/balanced_cost/decisions.csv": "e8708625ab5b8dad0405e9c2b851e2acd4c5c781d4c0ab5c266b5c126821ae89",
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/balanced_cost/scenario_metrics.csv": "18bfa1aa815d05a884c9e1719b498783159b14bd6d98d77fbc309066791cc6f8",
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/balanced_cost/summary.csv": "72bda43b1fce8014eeac7ef388b5365910e94ff2a81ee965d5a94a45f1a1b853",
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/balanced_cost/target_scores.csv": "3862fa1b69c08e5bf999878b51981f609ccd816c28a0ffb6966c1683383935a5",
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/conservative_cost/annual_ledgers.csv": "69aa3068c1f23e33a0e6d4b06f7abc8ae87b613761e1d06137ce0eb8f928879b",
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/conservative_cost/decisions.csv": "c97a4b8b3e5de21e19be82466434ea384712be6a71577d98ef62bd1d1f3f39c1",
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/conservative_cost/scenario_metrics.csv": "1e1dfe7da68a2c10dbcb3a863b19ee878c672986acb0edfdb528471e70e52b41",
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/conservative_cost/summary.csv": "85ecb904cb4cedd009d0f177adfb49cf44a29a16f89602c008f8c74b72960f7d",
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/conservative_cost/target_scores.csv": "eb704ace1c330bf8d90d23ab94f7c9f76626aded03083428593db9e69290b902",
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/growth_cost/annual_ledgers.csv": "8418d39cee66039db7869b1f0772581918388def768d7d9eace255f02e360722",
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/growth_cost/decisions.csv": "77ac93bd80b490fd741b850ab9b6529c12522f445b48f80b8c6e28457b81cc5c",
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/growth_cost/scenario_metrics.csv": "e386812a4d9d0892fdfff5e27f5063f98c5e4ffee0c857347745b3b15eed1182",
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/growth_cost/summary.csv": "aaea1faa53896beb8078ce912a4316ebf32c45f042ebdc8e2710252504f3e6d6",
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/growth_cost/target_scores.csv": "bc325ebdb9db55d68577d78ff07ffe036303f009797ce5c4d36d64ea3b2fdcde",
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/failure.json": "0c93e329143364da9183a0fbeab96d8419cb13d723fb0bf75e5e8588da00cf60"
+  },
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "finished_at": "2026-10-20T05:31:35.428526+00:00",
+  "note": "Completed means worker self-check only; coordinator acceptance is separate.",
+  "input_manifest": {
+    "source": "User-supplied 2026 MCM Senior Group Problem A SafeInvest attachments",
+    "license": "CC BY-NC-SA 4.0",
+    "transformation": "Originals unchanged; derived CSV files are row subsets only.",
+    "files": [
+      {
+        "path": "problem/2026_MCM_SafeInvest.pdf",
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+        "bytes": 137578
+      },
+      {
+        "path": "data/raw/SafeInvest_Synthetic_Data.csv",
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+        "bytes": 274914
+      },
+      {
+        "path": "data/development/scenarios_001_120.csv",
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+        "bytes": 182255
+      },
+      {
+        "path": "data/final_holdout/scenarios_121_180.csv",
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+        "bytes": 92732
+      }
+    ]
+  },
+  "task_parameters": {
+    "schema_version": 1,
+    "run_id": "HY3-005",
+    "split": "development",
+    "execution_authorized": true,
+    "source_commit": "bc04d428425a9afbea799e036213632dc6568c73",
+    "source_sha256": {
+      "src/safeinvest/__init__.py": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+      "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+      "src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+      "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+      "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+      "src/safeinvest/policy_calibration.py": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+      "src/safeinvest/policy_cases.py": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7",
+      "src/safeinvest/policy_writer.py": "feca1b69de00cb5677337796c32ab91cd7262351bfed9c9ee5ac1ff5fab46226",
+      "scripts/run_development_policy.py": "b2ea4ac19ece30fd2bb535c2dcee5cdf48d26d0cba934a3b35cb6e08338ee19b",
+      "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "specs/policy_driver_layout_v2.json": "f431e661c260f7f6e40330661e77724dc3ddcafeafed1a3f0b6c31781a4e8329",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "specs/POLICY_CORRECTION_V2.md": "b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383",
+      "specs/POLICY_NUMERIC_K1.md": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+      "specs/POLICY_NUMERIC_K2.md": "88d5f58a59f090c25331392e4cd5682daf5d050c27b24afe6629d8e4a5eb9997",
+      "specs/POLICY_CASE_ENGINE.md": "c984e230eecb720613b864a910d95921af1aa805f79fa68c7044f905410dec62",
+      "specs/POLICY_RESULT_WRITER.md": "ce0c43fad34ebdc44fc6f6bda395c562781e500cdc4b855ee7e0cbf937bec0b4",
+      "specs/POLICY_WRITER_COMPATIBILITY.md": "814c339353a719b88f1bf21af731439cc24e095131d9a8d28efaede48a5695ed",
+      "specs/POLICY_WRITER_ACCEPTANCE_REFERENCES.md": "936961ab2fc38657c8c31a344982df5f92730d47eebeee0cc978c6aa37055e9d",
+      "specs/POLICY_WRITER_EXECUTION_CONFIG.md": "7813b87400ba8469525392721f095fc9b65e37dcd24b8a68adb4bd6801ca8d31",
+      "specs/POLICY_WRITER_TASK_BINDING.md": "85f237a46041d6333b984903daca5528119d3043c106fca4357b5851a0920760",
+      "specs/POLICY_WRITER_RECOVERY.md": "cd0d4de33d64e2893e410434f216bfc2a65cea5fafe3907dbf74347969c843b0",
+      "specs/POLICY_WRITER_GIT_PORTABILITY.md": "d4420e868eab8f6d4ecf34c337c865d7b99e7653d994565fd69b8432c8daac22",
+      "specs/POLICY_WRITER_FILE_DELIVERABLES.md": "1c91468f405a92b300a2684e2b29fa29a75d9add6df77ed819e96fd8fe2e11e0"
+    },
+    "acceptance": {
+      "SOL-021": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+      "SOL-022": "21ad493707d71240f83d7f01ed6d133e1380e8fb",
+      "SOL-025": "803b7a085284405ee5ee4d4f0d5720ebaa2e67f7",
+      "SOL-031": "a24dca5d5494455407207e0fd70c06b258d4fd1f",
+      "SOL-032": "d168757efbc70e4641deacc911976f1fa3bd7a7c"
+    },
+    "input": {
+      "path": "data/development/scenarios_001_120.csv",
+      "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+      "scenario_ids": [
+        1,
+        120
+      ],
+      "periods": 30
+    },
+    "policy_config": {
+      "path": "specs/development_policy_pilot_v2.json",
+      "sha256": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3"
+    },
+    "layout_config": {
+      "path": "specs/policy_driver_layout_v2.json",
+      "sha256": "f431e661c260f7f6e40330661e77724dc3ddcafeafed1a3f0b6c31781a4e8329"
+    },
+    "group": "doubled",
+    "horizons": [
+      5,
+      6,
+      15,
+      25,
+      30
+    ],
+    "references": [],
+    "expected_counts": {
+      "cases": 8,
+      "new_cases": 8,
+      "imported_cases": 0,
+      "annual_ledgers": 28800,
+      "scenario_metrics": 4800,
+      "summary": 40,
+      "decisions": 18000,
+      "target_scores_max": 24000
+    },
+    "execution": {
+      "cpu_only": true,
+      "required_python": "3.12",
+      "max_seconds": 1200,
+      "max_artifact_bytes": 10485760
+    },
+    "config_path": "specs/execution/HY3-005-file44.json",
+    "config_sha256": "1961de1601a882334244538363eb22e1c977677f81e4f37c438ebc8890b53953",
+    "environment_check_sha256": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+    "final_outcomes_allowed": false
+  }
+}

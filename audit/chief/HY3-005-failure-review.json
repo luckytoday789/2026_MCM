@@ -1,0 +1,134 @@
+{
+  "task_id": "HY3-005",
+  "reviewed_commit": "665e14502405ca560fe1f78876a189ae5f688f23",
+  "structural_authentication": "passed",
+  "receipt_status": "failed",
+  "failure": "Command '['git', 'push', 'origin', '24ae8b6a3954355c406bf2b2bf080a7961822925:refs/heads/status/hy3']' timed out after -2186.4219999999914 seconds",
+  "inventory": {
+    "handoff/HY3-005/check-0.txt": {
+      "sha256": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+      "bytes": 95
+    },
+    "handoff/HY3-005/result.json": {
+      "sha256": "be40b3532f29ede77ebe4158a18b9844d70e17d6ab4b7cb3f6ede416a46d2faa",
+      "bytes": 9989
+    },
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/balanced_cost/annual_ledgers.csv": {
+      "sha256": "821844b2cec0c4a48a2b0943f45e7096b85b2bc49d719cb3bd8726b46d8db46b",
+      "bytes": 2308395
+    },
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/balanced_cost/decisions.csv": {
+      "sha256": "e8708625ab5b8dad0405e9c2b851e2acd4c5c781d4c0ab5c266b5c126821ae89",
+      "bytes": 605464
+    },
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/balanced_cost/scenario_metrics.csv": {
+      "sha256": "18bfa1aa815d05a884c9e1719b498783159b14bd6d98d77fbc309066791cc6f8",
+      "bytes": 241345
+    },
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/balanced_cost/summary.csv": {
+      "sha256": "72bda43b1fce8014eeac7ef388b5365910e94ff2a81ee965d5a94a45f1a1b853",
+      "bytes": 3473
+    },
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/balanced_cost/target_scores.csv": {
+      "sha256": "3862fa1b69c08e5bf999878b51981f609ccd816c28a0ffb6966c1683383935a5",
+      "bytes": 660776
+    },
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/conservative_cost/annual_ledgers.csv": {
+      "sha256": "69aa3068c1f23e33a0e6d4b06f7abc8ae87b613761e1d06137ce0eb8f928879b",
+      "bytes": 2309414
+    },
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/conservative_cost/decisions.csv": {
+      "sha256": "c97a4b8b3e5de21e19be82466434ea384712be6a71577d98ef62bd1d1f3f39c1",
+      "bytes": 671651
+    },
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/conservative_cost/scenario_metrics.csv": {
+      "sha256": "1e1dfe7da68a2c10dbcb3a863b19ee878c672986acb0edfdb528471e70e52b41",
+      "bytes": 242845
+    },
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/conservative_cost/summary.csv": {
+      "sha256": "85ecb904cb4cedd009d0f177adfb49cf44a29a16f89602c008f8c74b72960f7d",
+      "bytes": 3460
+    },
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/conservative_cost/target_scores.csv": {
+      "sha256": "eb704ace1c330bf8d90d23ab94f7c9f76626aded03083428593db9e69290b902",
+      "bytes": 699683
+    },
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/growth_cost/annual_ledgers.csv": {
+      "sha256": "8418d39cee66039db7869b1f0772581918388def768d7d9eace255f02e360722",
+      "bytes": 2318489
+    },
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/growth_cost/decisions.csv": {
+      "sha256": "77ac93bd80b490fd741b850ab9b6529c12522f445b48f80b8c6e28457b81cc5c",
+      "bytes": 597199
+    },
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/growth_cost/scenario_metrics.csv": {
+      "sha256": "e386812a4d9d0892fdfff5e27f5063f98c5e4ffee0c857347745b3b15eed1182",
+      "bytes": 240353
+    },
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/growth_cost/summary.csv": {
+      "sha256": "aaea1faa53896beb8078ce912a4316ebf32c45f042ebdc8e2710252504f3e6d6",
+      "bytes": 3457
+    },
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/cases/growth_cost/target_scores.csv": {
+      "sha256": "bc325ebdb9db55d68577d78ff07ffe036303f009797ce5c4d36d64ea3b2fdcde",
+      "bytes": 475256
+    },
+    "results/development/HY3-005/partial-557463b8f9d845ed9fd2277728be72cb/failure.json": {
+      "sha256": "0c93e329143364da9183a0fbeab96d8419cb13d723fb0bf75e5e8588da00cf60",
+      "bytes": 1306
+    }
+  },
+  "missing_deliverables": [
+    "results/development/HY3-005/calibrations.json",
+    "results/development/HY3-005/cases/balanced_adaptive/annual_ledgers.csv",
+    "results/development/HY3-005/cases/balanced_adaptive/decisions.csv",
+    "results/development/HY3-005/cases/balanced_adaptive/scenario_metrics.csv",
+    "results/development/HY3-005/cases/balanced_adaptive/summary.csv",
+    "results/development/HY3-005/cases/balanced_adaptive/target_scores.csv",
+    "results/development/HY3-005/cases/balanced_context/annual_ledgers.csv",
+    "results/development/HY3-005/cases/balanced_context/decisions.csv",
+    "results/development/HY3-005/cases/balanced_context/scenario_metrics.csv",
+    "results/development/HY3-005/cases/balanced_context/summary.csv",
+    "results/development/HY3-005/cases/balanced_context/target_scores.csv",
+    "results/development/HY3-005/cases/balanced_cost/annual_ledgers.csv",
+    "results/development/HY3-005/cases/balanced_cost/decisions.csv",
+    "results/development/HY3-005/cases/balanced_cost/scenario_metrics.csv",
+    "results/development/HY3-005/cases/balanced_cost/summary.csv",
+    "results/development/HY3-005/cases/balanced_cost/target_scores.csv",
+    "results/development/HY3-005/cases/bills_keep/annual_ledgers.csv",
+    "results/development/HY3-005/cases/bills_keep/decisions.csv",
+    "results/development/HY3-005/cases/bills_keep/scenario_metrics.csv",
+    "results/development/HY3-005/cases/bills_keep/summary.csv",
+    "results/development/HY3-005/cases/bills_keep/target_scores.csv",
+    "results/development/HY3-005/cases/conservative_cost/annual_ledgers.csv",
+    "results/development/HY3-005/cases/conservative_cost/decisions.csv",
+    "results/development/HY3-005/cases/conservative_cost/scenario_metrics.csv",
+    "results/development/HY3-005/cases/conservative_cost/summary.csv",
+    "results/development/HY3-005/cases/conservative_cost/target_scores.csv",
+    "results/development/HY3-005/cases/equal_weight_annual/annual_ledgers.csv",
+    "results/development/HY3-005/cases/equal_weight_annual/decisions.csv",
+    "results/development/HY3-005/cases/equal_weight_annual/scenario_metrics.csv",
+    "results/development/HY3-005/cases/equal_weight_annual/summary.csv",
+    "results/development/HY3-005/cases/equal_weight_annual/target_scores.csv",
+    "results/development/HY3-005/cases/equal_weight_buy_hold/annual_ledgers.csv",
+    "results/development/HY3-005/cases/equal_weight_buy_hold/decisions.csv",
+    "results/development/HY3-005/cases/equal_weight_buy_hold/scenario_metrics.csv",
+    "results/development/HY3-005/cases/equal_weight_buy_hold/summary.csv",
+    "results/development/HY3-005/cases/equal_weight_buy_hold/target_scores.csv",
+    "results/development/HY3-005/cases/growth_cost/annual_ledgers.csv",
+    "results/development/HY3-005/cases/growth_cost/decisions.csv",
+    "results/development/HY3-005/cases/growth_cost/scenario_metrics.csv",
+    "results/development/HY3-005/cases/growth_cost/summary.csv",
+    "results/development/HY3-005/cases/growth_cost/target_scores.csv",
+    "results/development/HY3-005/checks.json",
+    "results/development/HY3-005/reference_imports.json",
+    "results/development/HY3-005/run_manifest.json"
+  ],
+  "check_exits": [
+    0
+  ],
+  "result_verdict": "not_accepted",
+  "diagnosis": "Runtime/scheduling/network interruption; exact cause not established. No numerical policy correction or parameter tuning justified.",
+  "successor_task": "HY3-006",
+  "final_data_open": false
+}

@@ -1,0 +1,8 @@
+{
+  "diagnosis": "runtime budget exceeded",
+  "elapsed_seconds": 3188.2969999999914,
+  "exception": "ValueError",
+  "partial_path": "partial-557463b8f9d845ed9fd2277728be72cb",
+  "status": "failed",
+  "traceback": "Traceback (most recent call last):\n  File \"E:\\study\\mcm\\2026_MCM_Senior_SafeInvest\\2026_MCM\\.runtime\\worktrees\\HY3-005-a1\\src\\safeinvest\\policy_writer.py\", line 665, in _stage_output\n    result=operation(stage,started)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\study\\mcm\\2026_MCM_Senior_SafeInvest\\2026_MCM\\.runtime\\worktrees\\HY3-005-a1\\src\\safeinvest\\policy_writer.py\", line 814, in operation\n    return _persist(stage,started,data=data,rows=rows,n=120,t=30,horizons=HORIZONS,group=c['group'],\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\study\\mcm\\2026_MCM_Senior_SafeInvest\\2026_MCM\\.runtime\\worktrees\\HY3-005-a1\\src\\safeinvest\\policy_writer.py\", line 692, in _persist\n    require(time.monotonic()-started<=max_seconds,'runtime budget exceeded')\n  File \"E:\\study\\mcm\\2026_MCM_Senior_SafeInvest\\2026_MCM\\.runtime\\worktrees\\HY3-005-a1\\src\\safeinvest\\policy_writer.py\", line 54, in require\n    raise ValueError(message)\nValueError: runtime budget exceeded\n"
+}

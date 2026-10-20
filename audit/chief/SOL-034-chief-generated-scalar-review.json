@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "reviewed_commit": "632c95f03d3bbfeed1f847598eed3e6cfc5be264",
+  "scope": "generated fixtures only",
+  "independent_checks": 2820,
+  "max_absolute_difference": 0.0,
+  "metric_rows": 320,
+  "gates": 100,
+  "profile_screens": 30,
+  "synthetic_selected_mode": "balanced_adaptive",
+  "original_git_blob_sha256": {
+    "audit/SOL-034/fixture/bytes/bundles/primary/cases/bills_keep/scenario_metrics.csv": "52cd50057def6b9ebbcb7cf594e805c16d10655a0f15034349f90869b8133efa",
+    "audit/SOL-034/fixture/bytes/bundles/primary/cases/equal_weight_annual/scenario_metrics.csv": "3e786c05dbe941459147ace1bc79146bd47243a6642b725701a28717782e57fc",
+    "audit/SOL-034/fixture/bytes/bundles/primary/cases/equal_weight_buy_hold/scenario_metrics.csv": "11b08d50fb085120435f7b15cafa61295979c83fab217b06584e7782ef6b41f3",
+    "audit/SOL-034/fixture/bytes/bundles/primary/cases/conservative_cost/scenario_metrics.csv": "f7bbd85b40e392d539e07ca91e75602ee43f831b5fba52e1abecb63522a0456a",
+    "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_cost/scenario_metrics.csv": "9195b00851387d8d439972a851d287bfb45d8a2e3993923f861c37e19615c7d7",
+    "audit/SOL-034/fixture/bytes/bundles/primary/cases/growth_cost/scenario_metrics.csv": "7c9976a1618a0015b8b941fb8dc60060d2d92f77647354f27ae749e911f0e570",
+    "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_context/scenario_metrics.csv": "23494428ca7a1fcaf68cf1042f7f2196710de36aba7b64e5a71afacc88328e1c",
+    "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_adaptive/scenario_metrics.csv": "7de487022ce5df4e2f306c8df4bf741e7ca2435e15f3aab62ab048eb733b2fd2",
+    "audit/SOL-034/fixture/bytes/bundles/doubled/cases/bills_keep/scenario_metrics.csv": "7eacc44b27617cc1a088d1bf5f31a82baa2346da12d6f9e902d0e481b184a001",
+    "audit/SOL-034/fixture/bytes/bundles/doubled/cases/equal_weight_annual/scenario_metrics.csv": "a1b7b13c2f237addbcfa197fe0b197b10728658bce8ba0830564fa274dceb8df",
+    "audit/SOL-034/fixture/bytes/bundles/doubled/cases/equal_weight_buy_hold/scenario_metrics.csv": "674cbb2cc539d1bec35c6462b8e2b8a7877f1e60aa3781ba345752e3778f7509",
+    "audit/SOL-034/fixture/bytes/bundles/doubled/cases/conservative_cost/scenario_metrics.csv": "bfb49827567d10f08ce07f2bcc4333b1627e17982dd26dbf6d467d0cb46af49c",
+    "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_cost/scenario_metrics.csv": "1ee3ef77c38f153edfec04ab79ec3c79c6169b99200b40e78f767c18f710f90a",
+    "audit/SOL-034/fixture/bytes/bundles/doubled/cases/growth_cost/scenario_metrics.csv": "883d776bcc0d1bb30ec3307345caa37d9848a423dc665cb271675ed58b486c78",
+    "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_context/scenario_metrics.csv": "4d97bf1f5bb3849b8530047c1327e830ed735158ecd0ebcafd6eb6942f92e0d9",
+    "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_adaptive/scenario_metrics.csv": "81bc4bcef0139ad393728b61002ab8fb80d07bbb1eb7cd34da59a306668e32ae",
+    "audit/SOL-034/fixture/analysis/comparison_gates.json": "3d9b1625294a84aade113b493017d1ed4e06ff0093a6e1eefdaf42e79d02b5ee",
+    "audit/SOL-034/fixture/analysis/selection.json": "26df8ce3545d4515090f9b77d4f7323a814688210321a41dec77fc869df17972",
+    "audit/SOL-034/fixture/analysis/profile_screen.json": "89badcebac504865408b9cf264062373321e4e8ba9d50bf3734e8ca6b5eac42d"
+  },
+  "acceptance": false,
+  "limitations": [
+    "Generated metrics are scalar fixtures,not coherent paths or development evidence.",
+    "Does not authenticate full production bridge or replace independent Sol review.",
+    "No real strategy/customer recommendation inferred."
+  ]
+}

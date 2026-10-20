@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-20T05:42:03.416033+00:00",
+  "publication_commit": "95eb627ce6536662b8c583dfd2e6046c3aaf0ea9",
+  "tasks": [
+    {
+      "task_id": "SOL-037",
+      "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+      "task_sha256": "a39583ab0336bf78cb14b231a7e0b9a957e7da3b454f12cc6a7807546d88f9aa",
+      "state": "waiting",
+      "source_pins": 5,
+      "max_seconds": 1200
+    },
+    {
+      "task_id": "SOL-038",
+      "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+      "task_sha256": "03472407ca3633a28501784679d1d1d03c1fb39766179620ad27a5e058214f34",
+      "state": "waiting",
+      "source_pins": 43,
+      "max_seconds": 1500
+    },
+    {
+      "task_id": "SOL-039",
+      "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+      "task_sha256": "c2b1a1c305a293e453f1517aea2a6e14049c58e4a96f49d4aaba3138618dbe44",
+      "state": "waiting",
+      "source_pins": 21,
+      "max_seconds": 900
+    },
+    {
+      "task_id": "SOL-040",
+      "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+      "task_sha256": "024057000d22bee1afba7300194344c00a9a79d857f7fd9950ce855dda07df31",
+      "state": "waiting",
+      "source_pins": 41,
+      "max_seconds": 1500
+    }
+  ],
+  "original_failed_handoffs_canonical_byte_exact": true,
+  "no_model_request_executed": true,
+  "final_data_open": false
+}
