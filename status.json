@@ -3,8 +3,7 @@
   "machine_id": "937a9358dc114be8b3718ff13e3da4f9",
   "state": "running",
   "python": "3.12.10",
-  "updated_at": "2026-10-20T11:24:58.665564+00:00",
-  "lease_until": "2026-10-20T11:34:58.665564+00:00",
-  "task_id": "HY3-008",
-  "branch": "work/hy3/HY3-008-a1"
+  "updated_at": "2026-10-20T11:29:10.836102+00:00",
+  "lease_until": "2026-10-20T11:39:10.836102+00:00",
+  "task_id": "HY3-008"
 }
