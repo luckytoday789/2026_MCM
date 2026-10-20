@@ -6,8 +6,10 @@ immediately. This instruction supersedes older documents assigning all code or
 independent review exclusively to the remote Sol model. It does not waive the
 mathematics, final split gate, honest evidence or immutable history requirements.
 
-The active chief chat owns main and dispatch. Its prior automatic chief loop is
-locally stopped during this serialized handoff. Local component helpers may work
+The single active chief turn owns main and dispatch. During desktop integration
+the prior automatic loop was stopped. After a clean serialized handoff recorded
+by local_chat_takeover=false in the work plan, the supervised chief resumes
+ownership; the desktop chat then performs read-only confirmation. Local component helpers may work
 under chief ownership on disjoint paths; they are not replacement remote role
 workers and may not commit, push or edit the queue. The remote Sol role is held
 until a new actual availability confirmation at/after21:40. No repeated quota
