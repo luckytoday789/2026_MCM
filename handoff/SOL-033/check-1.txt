@@ -1,0 +1,1 @@
+{"status": "passed", "read_only": true, "scope": "format restriction only", "publication_assets": 4, "excluded_svg_previews": 2, "source_pins": 55, "corruption_cases_rejected": 5, "original_failure_retained": true, "full_report_accepted": false, "renderer_invoked": false}

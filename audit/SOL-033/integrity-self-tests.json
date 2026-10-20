@@ -1,0 +1,37 @@
+[
+  {
+    "case": "svg_promotion",
+    "error": "Publication paths must be exactly four PDF/PNG assets; SVG promotion rejected",
+    "overlay": "isolated in-memory bytes; no source writes",
+    "rejected": true
+  },
+  {
+    "case": "asset_corruption",
+    "error": "Actual asset bytes changed: report/figures/baseline-h30-summary.pdf",
+    "overlay": "isolated in-memory bytes; no source writes",
+    "rejected": true
+  },
+  {
+    "case": "manifest_hash_corruption",
+    "error": "Manifest asset hash differs from predecessor: report/figures/baseline-h30-summary.pdf",
+    "overlay": "isolated in-memory bytes; no source writes",
+    "rejected": true
+  },
+  {
+    "case": "wording_corruption",
+    "error": "Source/evidence changed: report/figures/README.md",
+    "overlay": "isolated in-memory bytes; no source writes",
+    "rejected": true
+  },
+  {
+    "case": "task_identity_corruption",
+    "error": "Exact task identity mismatch",
+    "overlay": "isolated in-memory bytes; no source writes",
+    "rejected": true
+  },
+  {
+    "case": "no_live_task_or_current_HEAD_dependency",
+    "method": "live=False executes without consulting .runtime/task.json; all Git reads use exact BASE/predecessor, never HEAD",
+    "passed": true
+  }
+]

@@ -1,0 +1,116 @@
+{
+  "evidence_sha256": {
+    ".gitattributes": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+    "findings.json": "27c1723c16062d93772b72173f5f77f73e45b6cf6058ff475d4a4daba89d68b5",
+    "integrity-self-tests.json": "96a98ab8b7c1a375557a10f55b64bc9288a8815b762e920270c5ee8383712ec2",
+    "review.md": "5b11eddfb442ce2dcf30b4cae2ecc44fc0a67f670cdbc49ded9fe6efa818bf3d",
+    "source-binding.json": "4cb27b08729e23d3108c16874cd60df0f7db2609ef7a954938b1081ecebc36ce",
+    "task-lock.json": "22203925d69d0c8bcc99034a3e42501bcb9e91537844c3ce74e64dfa69c70bf3",
+    "unchanged-inventories.json": "065df82509419a1b1a95a1d2294350346f9851787c20eec6bc1b047d634d9042",
+    "verify.py": "3786b233c29a2d253e50ef7aa273adefb5a3240a59eab00ffdb63aa3beddeeb5"
+  },
+  "facts": {
+    "assets": [
+      {
+        "bytes": 21095,
+        "path": "report/figures/baseline-h30-summary.pdf",
+        "publication_allowed": true,
+        "sha256": "506f8e7c5a522b19fd8780bb34774f4a01a5468758ee4b13f1eb0f149f085d41"
+      },
+      {
+        "bytes": 104728,
+        "path": "report/figures/baseline-h30-summary.png",
+        "publication_allowed": true,
+        "sha256": "68cd930c058ab37508b908d4e54eb96ccbdbe025a537fbd7317919d04f3e6839"
+      },
+      {
+        "bytes": 22121,
+        "path": "report/figures/baseline-h30-severe-path.pdf",
+        "publication_allowed": true,
+        "sha256": "3d758ee41c85fc7043b2e38ab5030e478439b150a65d93029e09904a61283afe"
+      },
+      {
+        "bytes": 189999,
+        "path": "report/figures/baseline-h30-severe-path.png",
+        "publication_allowed": true,
+        "sha256": "a559fd676f1f332dec4abb0c5be0fd5c2c0dbb535c7070983c358629585dc5cc"
+      },
+      {
+        "bytes": 19596,
+        "path": "report/figures/baseline-h30-summary.svg",
+        "publication_allowed": false,
+        "sha256": "5232e6f8ce872682871effda4c128f9ddb4778a4f400e7bf84d82de18ec6d746"
+      },
+      {
+        "bytes": 17493,
+        "path": "report/figures/baseline-h30-severe-path.svg",
+        "publication_allowed": false,
+        "sha256": "9844b50431b67574f06b3196aa09ba1a9e8dae28f8e58ca9ff01d5de039724eb"
+      }
+    ],
+    "base_commit": "65b54a5823765a676cb7c50947f7f46874484563",
+    "competition_input_reads": false,
+    "format_restriction_resolves_F1_alternative": true,
+    "full_report_accepted": false,
+    "policy_or_final_gate_approval": false,
+    "predecessor_scope": {
+      "chief_saved_replay_exit_codes": [
+        0,
+        0
+      ],
+      "dependency_failure_retained": true,
+      "points_preserved_not_recomputed": 183,
+      "receipt_status": "failed",
+      "statistics_preserved_not_recomputed": 12,
+      "verdict": "changes_required",
+      "worker_renderer_exit_code": 1
+    },
+    "preview_paths": [
+      "report/figures/baseline-h30-summary.svg",
+      "report/figures/baseline-h30-severe-path.svg"
+    ],
+    "publication_paths": [
+      "report/figures/baseline-h30-summary.pdf",
+      "report/figures/baseline-h30-summary.png",
+      "report/figures/baseline-h30-severe-path.pdf",
+      "report/figures/baseline-h30-severe-path.png"
+    ],
+    "simulation_or_renderer_run": false,
+    "source_binding_sha256": "4cb27b08729e23d3108c16874cd60df0f7db2609ef7a954938b1081ecebc36ce",
+    "source_count": 55,
+    "svg_portability_fixed": false,
+    "task_id": "SOL-033",
+    "task_sha256": "4def19be80f3c7211a1760db612d935a8810368629634483ece021814a474db6",
+    "wording_facts": {
+      "caption_required_phrases": [
+        "Publication files: `figures/baseline-h30-summary.pdf` and `.png`.",
+        "Publication files: `figures/baseline-h30-severe-path.pdf` and `.png`;",
+        "Publication format: use the PDF exports with embedded fonts or the 300 dpi PNG exports.",
+        "SVG previews depend on a locally available DejaVu Sans font.",
+        "Font substitution can clip labels; SVG previews are excluded from manuscript insertion and submission figures pending a separate portability correction.",
+        "check actual size again in the assembled A4 report.",
+        "They do not represent new experiments, selected-policy results or final outcomes."
+      ],
+      "local_caption_links": [
+        "baseline-development.md"
+      ],
+      "readme_required_phrases": [
+        "Use baseline-h30-summary.pdf and baseline-h30-severe-path.pdf for manuscript insertion, or their 300 dpi PNG counterparts.",
+        "These versions were visually checked, and the PDFs embed their fonts.",
+        "editable previews requiring the original DejaVu Sans font.",
+        "wider fallback-font labels clipped at the summary figure edge.",
+        "excluded from manuscript insertion and submission figure assets until a separate font-portability repair is reviewed.",
+        "does not relabel the worker failure.",
+        "Final report layout, policy outcomes and submission gates remain separate."
+      ],
+      "resolved_publication_refs": [
+        "report/figures/baseline-h30-summary.pdf",
+        "report/figures/baseline-h30-summary.png",
+        "report/figures/baseline-h30-severe-path.pdf",
+        "report/figures/baseline-h30-severe-path.png"
+      ]
+    }
+  },
+  "schema_version": 1,
+  "verifier_sha256": "3786b233c29a2d253e50ef7aa273adefb5a3240a59eab00ffdb63aa3beddeeb5"
+}
