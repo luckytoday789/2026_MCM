@@ -750,10 +750,11 @@
   "chief_status": {
     "role": "chief",
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
-    "state": "ready",
+    "state": "running",
     "python": "3.12.0",
-    "updated_at": "2026-10-20T13:27:58.032389+00:00",
-    "lease_until": "2026-10-20T13:37:58.032389+00:00"
+    "updated_at": "2026-10-20T13:33:11.589727+00:00",
+    "lease_until": "2026-10-20T13:43:11.589727+00:00",
+    "task_id": "integrate-and-dispatch"
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
   "schema_version": 1,
@@ -761,7 +762,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-20T13:28:54.194985+00:00",
+  "updated_at": "2026-10-20T13:34:22.499928+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
