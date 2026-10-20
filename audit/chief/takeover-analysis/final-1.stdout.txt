@@ -1,0 +1,1 @@
+{"generated_only": true, "production_authorized": false, "read_only": true, "scalar_checks": 2820, "source_identity": "CHIEF-ANALYSIS-20261020", "status": "passed"}

@@ -99,7 +99,7 @@ def task_digest(task):
     return hashlib.sha256(json.dumps(task, sort_keys=True, separators=(',',':')).encode()).hexdigest()
 
 def validate_task(task):
-    assert task['owner'] in {'sol','hy3'}
+    assert task['owner'] in {'chief','sol','hy3'}
     assert NAME.fullmatch(task['id'])
     assert type(task['attempt']) is int and task['attempt'] >= 1
     assert re.fullmatch(r'[0-9a-f]{40}',task['base_commit'])
@@ -114,8 +114,8 @@ def validate_task(task):
         for command in task.get(key,[]):
             assert isinstance(command,list) and command and all(isinstance(s,str) for s in command)
     assert task['max_seconds'] > 0 and task['max_seconds'] <= 7200
-    if task['owner'] == 'hy3':
-        assert task['kind'] == 'commands', 'HY3 runner executes only explicit reviewed commands.'
+    if task['owner'] in {'chief','hy3'}:
+        assert task['kind'] == 'commands', 'Chief takeover and HY3 execute only explicit reviewed commands.'
     if task.get('split') == 'final':
         assert task.get('freeze_sha256'), 'Final task requires a recorded freeze.'
 

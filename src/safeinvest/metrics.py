@@ -75,6 +75,24 @@ def compute_metrics(
     """
     if split not in ("synthetic", "development"):
         raise ValueError("this implementation supports synthetic/development splits only")
+    return _compute_metrics_arithmetic(
+        year_end_real_wealth, post_fee_real_wealth,
+        split=split, initial_wealth=initial_wealth,
+    )
+
+
+def _compute_metrics_arithmetic(
+    year_end_real_wealth: Iterable[float],
+    post_fee_real_wealth: Iterable[float],
+    *,
+    split: str,
+    initial_wealth: float = 100.0,
+) -> PerformanceMetrics:
+    """Shared arithmetic only; callers separately enforce their input lane.
+
+    Private does not mean a security sandbox. Public development APIs retain
+    their split guards; the generated final adapter supplies a true final label.
+    """
     ends = tuple(finite_number(x, "year_end_real_wealth") for x in year_end_real_wealth)
     trades = tuple(finite_number(x, "post_fee_real_wealth") for x in post_fee_real_wealth)
     initial = finite_number(initial_wealth, "initial_wealth")

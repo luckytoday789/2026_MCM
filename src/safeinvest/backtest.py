@@ -14,7 +14,7 @@ from .accounting import (
     DEFAULT_FEE_RATE, Vector3, apply_returns, compound_cpi, deflate,
     finite_number, keep, rebalance, validate_holdings, validate_target,
 )
-from .metrics import PerformanceMetrics, compute_metrics
+from .metrics import PerformanceMetrics, _compute_metrics_arithmetic
 
 INITIAL_HOLDINGS = (0.0, 0.0, 100.0)
 EQUAL_WEIGHT = (1.0 / 3.0,) * 3
@@ -184,6 +184,20 @@ def simulate_policy(
         if _positive_integer(row["period"], "period") != period:
             raise ValueError("rows must be consecutive and ordered from period 1")
 
+    return _simulate_policy_arithmetic(
+        selected, horizon=h, split=split, callback=callback, fee_rate=k,
+    )
+
+
+def _simulate_policy_arithmetic(
+    selected, *, horizon, split, callback, fee_rate,
+) -> BacktestResult:
+    """Unchanged accounting loop after a lane-specific input validation.
+
+    No file access or production authority is provided by this private seam.
+    """
+    h, k = horizon, fee_rate
+    scenario = _positive_integer(selected[0]["scenario_id"], "scenario_id")
     holdings = INITIAL_HOLDINGS
     cpi = 1.0
     history = []
@@ -217,7 +231,7 @@ def simulate_policy(
         history.append(Observation(scenario, t, returns, inflation))
         holdings, cpi = end_holdings, end_cpi
 
-    metrics = compute_metrics(
+    metrics = _compute_metrics_arithmetic(
         (entry.real_wealth_end for entry in ledger),
         (entry.real_wealth_after_fee for entry in ledger),
         split=split,

@@ -1,0 +1,2148 @@
+[
+  {
+    "candidate_class": "conservative",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.0025,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 5,
+    "liquidity": "high",
+    "loss_tolerance_pct": 10,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.0,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.6,
+    "mode": "conservative_cost",
+    "p10_growth_pct": 0.0,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "A",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 0,
+        "horizon": 5,
+        "mode": "conservative_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 1,
+        "horizon": 5,
+        "mode": "conservative_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 2,
+        "horizon": 5,
+        "mode": "conservative_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 3,
+        "horizon": 5,
+        "mode": "conservative_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.65
+  },
+  {
+    "candidate_class": "balanced",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.0025,
+    "flags": {
+      "horizon_eligible": false,
+      "liquidity_pass": false,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": false
+    },
+    "growth_units": "percent/year",
+    "horizon": 5,
+    "liquidity": "high",
+    "loss_tolerance_pct": 10,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.1,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.6,
+    "mode": "balanced_cost",
+    "p10_growth_pct": 0.1,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "A",
+    "qualified": false,
+    "reasons": [
+      "horizon_eligible",
+      "willingness_eligible",
+      "liquidity_pass"
+    ],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 0,
+        "horizon": 5,
+        "mode": "balanced_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 1,
+        "horizon": 5,
+        "mode": "balanced_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 2,
+        "horizon": 5,
+        "mode": "balanced_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 3,
+        "horizon": 5,
+        "mode": "balanced_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.3333333333333333
+  },
+  {
+    "candidate_class": "growth",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.0025,
+    "flags": {
+      "horizon_eligible": false,
+      "liquidity_pass": false,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": false
+    },
+    "growth_units": "percent/year",
+    "horizon": 5,
+    "liquidity": "high",
+    "loss_tolerance_pct": 10,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.2,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.6,
+    "mode": "growth_cost",
+    "p10_growth_pct": 0.2,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "A",
+    "qualified": false,
+    "reasons": [
+      "horizon_eligible",
+      "willingness_eligible",
+      "liquidity_pass"
+    ],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 0,
+        "horizon": 5,
+        "mode": "growth_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 1,
+        "horizon": 5,
+        "mode": "growth_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 2,
+        "horizon": 5,
+        "mode": "growth_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 3,
+        "horizon": 5,
+        "mode": "growth_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.1
+  },
+  {
+    "candidate_class": "conservative",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.0025,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 15,
+    "liquidity": "medium",
+    "loss_tolerance_pct": 25,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.0,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.25,
+    "mode": "conservative_cost",
+    "p10_growth_pct": 0.0,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "B",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 0,
+        "horizon": 15,
+        "mode": "conservative_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 1,
+        "horizon": 15,
+        "mode": "conservative_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 2,
+        "horizon": 15,
+        "mode": "conservative_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 3,
+        "horizon": 15,
+        "mode": "conservative_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.65
+  },
+  {
+    "candidate_class": "balanced",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.0025,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 15,
+    "liquidity": "medium",
+    "loss_tolerance_pct": 25,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.1,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.25,
+    "mode": "balanced_cost",
+    "p10_growth_pct": 0.1,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "B",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 0,
+        "horizon": 15,
+        "mode": "balanced_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 1,
+        "horizon": 15,
+        "mode": "balanced_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 2,
+        "horizon": 15,
+        "mode": "balanced_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 3,
+        "horizon": 15,
+        "mode": "balanced_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.3333333333333333
+  },
+  {
+    "candidate_class": "growth",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.0025,
+    "flags": {
+      "horizon_eligible": false,
+      "liquidity_pass": false,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": false
+    },
+    "growth_units": "percent/year",
+    "horizon": 15,
+    "liquidity": "medium",
+    "loss_tolerance_pct": 25,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.2,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.25,
+    "mode": "growth_cost",
+    "p10_growth_pct": 0.2,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "B",
+    "qualified": false,
+    "reasons": [
+      "horizon_eligible",
+      "willingness_eligible",
+      "liquidity_pass"
+    ],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 0,
+        "horizon": 15,
+        "mode": "growth_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 1,
+        "horizon": 15,
+        "mode": "growth_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 2,
+        "horizon": 15,
+        "mode": "growth_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 3,
+        "horizon": 15,
+        "mode": "growth_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.1
+  },
+  {
+    "candidate_class": "conservative",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.0025,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 30,
+    "liquidity": "low",
+    "loss_tolerance_pct": 40,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.0,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.1,
+    "mode": "conservative_cost",
+    "p10_growth_pct": 0.0,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "C",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 0,
+        "horizon": 30,
+        "mode": "conservative_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 1,
+        "horizon": 30,
+        "mode": "conservative_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 2,
+        "horizon": 30,
+        "mode": "conservative_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 3,
+        "horizon": 30,
+        "mode": "conservative_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.65
+  },
+  {
+    "candidate_class": "balanced",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.0025,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 30,
+    "liquidity": "low",
+    "loss_tolerance_pct": 40,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.1,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.1,
+    "mode": "balanced_cost",
+    "p10_growth_pct": 0.1,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "C",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 0,
+        "horizon": 30,
+        "mode": "balanced_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 1,
+        "horizon": 30,
+        "mode": "balanced_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 2,
+        "horizon": 30,
+        "mode": "balanced_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 3,
+        "horizon": 30,
+        "mode": "balanced_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.3333333333333333
+  },
+  {
+    "candidate_class": "growth",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.0025,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 30,
+    "liquidity": "low",
+    "loss_tolerance_pct": 40,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.2,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.1,
+    "mode": "growth_cost",
+    "p10_growth_pct": 0.2,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "C",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 0,
+        "horizon": 30,
+        "mode": "growth_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 1,
+        "horizon": 30,
+        "mode": "growth_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 2,
+        "horizon": 30,
+        "mode": "growth_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 3,
+        "horizon": 30,
+        "mode": "growth_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.1
+  },
+  {
+    "candidate_class": "conservative",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.0025,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 25,
+    "liquidity": "medium",
+    "loss_tolerance_pct": 15,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.0,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.25,
+    "mode": "conservative_cost",
+    "p10_growth_pct": 0.0,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "D",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 0,
+        "horizon": 25,
+        "mode": "conservative_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 1,
+        "horizon": 25,
+        "mode": "conservative_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 2,
+        "horizon": 25,
+        "mode": "conservative_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 3,
+        "horizon": 25,
+        "mode": "conservative_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.65
+  },
+  {
+    "candidate_class": "balanced",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.0025,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 25,
+    "liquidity": "medium",
+    "loss_tolerance_pct": 15,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.1,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.25,
+    "mode": "balanced_cost",
+    "p10_growth_pct": 0.1,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "D",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 0,
+        "horizon": 25,
+        "mode": "balanced_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 1,
+        "horizon": 25,
+        "mode": "balanced_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 2,
+        "horizon": 25,
+        "mode": "balanced_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 3,
+        "horizon": 25,
+        "mode": "balanced_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.3333333333333333
+  },
+  {
+    "candidate_class": "growth",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.0025,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": false,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": false
+    },
+    "growth_units": "percent/year",
+    "horizon": 25,
+    "liquidity": "medium",
+    "loss_tolerance_pct": 15,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.2,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.25,
+    "mode": "growth_cost",
+    "p10_growth_pct": 0.2,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "D",
+    "qualified": false,
+    "reasons": [
+      "willingness_eligible",
+      "liquidity_pass"
+    ],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 0,
+        "horizon": 25,
+        "mode": "growth_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 1,
+        "horizon": 25,
+        "mode": "growth_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 2,
+        "horizon": 25,
+        "mode": "growth_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 3,
+        "horizon": 25,
+        "mode": "growth_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.1
+  },
+  {
+    "candidate_class": "conservative",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.0025,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 6,
+    "liquidity": "high",
+    "loss_tolerance_pct": 35,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.0,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.6,
+    "mode": "conservative_cost",
+    "p10_growth_pct": 0.0,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "E",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 0,
+        "horizon": 6,
+        "mode": "conservative_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 1,
+        "horizon": 6,
+        "mode": "conservative_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 2,
+        "horizon": 6,
+        "mode": "conservative_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 3,
+        "horizon": 6,
+        "mode": "conservative_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.65
+  },
+  {
+    "candidate_class": "balanced",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.0025,
+    "flags": {
+      "horizon_eligible": false,
+      "liquidity_pass": false,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": false
+    },
+    "growth_units": "percent/year",
+    "horizon": 6,
+    "liquidity": "high",
+    "loss_tolerance_pct": 35,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.1,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.6,
+    "mode": "balanced_cost",
+    "p10_growth_pct": 0.1,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "E",
+    "qualified": false,
+    "reasons": [
+      "horizon_eligible",
+      "willingness_eligible",
+      "liquidity_pass"
+    ],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 0,
+        "horizon": 6,
+        "mode": "balanced_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 1,
+        "horizon": 6,
+        "mode": "balanced_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 2,
+        "horizon": 6,
+        "mode": "balanced_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 3,
+        "horizon": 6,
+        "mode": "balanced_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.3333333333333333
+  },
+  {
+    "candidate_class": "growth",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.0025,
+    "flags": {
+      "horizon_eligible": false,
+      "liquidity_pass": false,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": false
+    },
+    "growth_units": "percent/year",
+    "horizon": 6,
+    "liquidity": "high",
+    "loss_tolerance_pct": 35,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.2,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.6,
+    "mode": "growth_cost",
+    "p10_growth_pct": 0.2,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "E",
+    "qualified": false,
+    "reasons": [
+      "horizon_eligible",
+      "willingness_eligible",
+      "liquidity_pass"
+    ],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 0,
+        "horizon": 6,
+        "mode": "growth_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 1,
+        "horizon": 6,
+        "mode": "growth_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 2,
+        "horizon": 6,
+        "mode": "growth_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.0025,
+        "fold_id": 3,
+        "horizon": 6,
+        "mode": "growth_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.1
+  },
+  {
+    "candidate_class": "conservative",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.005,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 5,
+    "liquidity": "high",
+    "loss_tolerance_pct": 10,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.0,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.6,
+    "mode": "conservative_cost",
+    "p10_growth_pct": 0.0,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "A",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.005,
+        "fold_id": 0,
+        "horizon": 5,
+        "mode": "conservative_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 1,
+        "horizon": 5,
+        "mode": "conservative_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 2,
+        "horizon": 5,
+        "mode": "conservative_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 3,
+        "horizon": 5,
+        "mode": "conservative_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.65
+  },
+  {
+    "candidate_class": "balanced",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.005,
+    "flags": {
+      "horizon_eligible": false,
+      "liquidity_pass": false,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": false
+    },
+    "growth_units": "percent/year",
+    "horizon": 5,
+    "liquidity": "high",
+    "loss_tolerance_pct": 10,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.1,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.6,
+    "mode": "balanced_cost",
+    "p10_growth_pct": 0.1,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "A",
+    "qualified": false,
+    "reasons": [
+      "horizon_eligible",
+      "willingness_eligible",
+      "liquidity_pass"
+    ],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.005,
+        "fold_id": 0,
+        "horizon": 5,
+        "mode": "balanced_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 1,
+        "horizon": 5,
+        "mode": "balanced_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 2,
+        "horizon": 5,
+        "mode": "balanced_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 3,
+        "horizon": 5,
+        "mode": "balanced_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.3333333333333333
+  },
+  {
+    "candidate_class": "growth",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.005,
+    "flags": {
+      "horizon_eligible": false,
+      "liquidity_pass": false,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": false
+    },
+    "growth_units": "percent/year",
+    "horizon": 5,
+    "liquidity": "high",
+    "loss_tolerance_pct": 10,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.2,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.6,
+    "mode": "growth_cost",
+    "p10_growth_pct": 0.2,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "A",
+    "qualified": false,
+    "reasons": [
+      "horizon_eligible",
+      "willingness_eligible",
+      "liquidity_pass"
+    ],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.005,
+        "fold_id": 0,
+        "horizon": 5,
+        "mode": "growth_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 1,
+        "horizon": 5,
+        "mode": "growth_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 2,
+        "horizon": 5,
+        "mode": "growth_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 3,
+        "horizon": 5,
+        "mode": "growth_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.1
+  },
+  {
+    "candidate_class": "conservative",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.005,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 15,
+    "liquidity": "medium",
+    "loss_tolerance_pct": 25,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.0,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.25,
+    "mode": "conservative_cost",
+    "p10_growth_pct": 0.0,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "B",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.005,
+        "fold_id": 0,
+        "horizon": 15,
+        "mode": "conservative_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 1,
+        "horizon": 15,
+        "mode": "conservative_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 2,
+        "horizon": 15,
+        "mode": "conservative_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 3,
+        "horizon": 15,
+        "mode": "conservative_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.65
+  },
+  {
+    "candidate_class": "balanced",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.005,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 15,
+    "liquidity": "medium",
+    "loss_tolerance_pct": 25,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.1,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.25,
+    "mode": "balanced_cost",
+    "p10_growth_pct": 0.1,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "B",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.005,
+        "fold_id": 0,
+        "horizon": 15,
+        "mode": "balanced_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 1,
+        "horizon": 15,
+        "mode": "balanced_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 2,
+        "horizon": 15,
+        "mode": "balanced_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 3,
+        "horizon": 15,
+        "mode": "balanced_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.3333333333333333
+  },
+  {
+    "candidate_class": "growth",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.005,
+    "flags": {
+      "horizon_eligible": false,
+      "liquidity_pass": false,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": false
+    },
+    "growth_units": "percent/year",
+    "horizon": 15,
+    "liquidity": "medium",
+    "loss_tolerance_pct": 25,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.2,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.25,
+    "mode": "growth_cost",
+    "p10_growth_pct": 0.2,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "B",
+    "qualified": false,
+    "reasons": [
+      "horizon_eligible",
+      "willingness_eligible",
+      "liquidity_pass"
+    ],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.005,
+        "fold_id": 0,
+        "horizon": 15,
+        "mode": "growth_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 1,
+        "horizon": 15,
+        "mode": "growth_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 2,
+        "horizon": 15,
+        "mode": "growth_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 3,
+        "horizon": 15,
+        "mode": "growth_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.1
+  },
+  {
+    "candidate_class": "conservative",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.005,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 30,
+    "liquidity": "low",
+    "loss_tolerance_pct": 40,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.0,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.1,
+    "mode": "conservative_cost",
+    "p10_growth_pct": 0.0,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "C",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.005,
+        "fold_id": 0,
+        "horizon": 30,
+        "mode": "conservative_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 1,
+        "horizon": 30,
+        "mode": "conservative_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 2,
+        "horizon": 30,
+        "mode": "conservative_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 3,
+        "horizon": 30,
+        "mode": "conservative_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.65
+  },
+  {
+    "candidate_class": "balanced",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.005,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 30,
+    "liquidity": "low",
+    "loss_tolerance_pct": 40,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.1,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.1,
+    "mode": "balanced_cost",
+    "p10_growth_pct": 0.1,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "C",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.005,
+        "fold_id": 0,
+        "horizon": 30,
+        "mode": "balanced_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 1,
+        "horizon": 30,
+        "mode": "balanced_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 2,
+        "horizon": 30,
+        "mode": "balanced_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 3,
+        "horizon": 30,
+        "mode": "balanced_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.3333333333333333
+  },
+  {
+    "candidate_class": "growth",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.005,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 30,
+    "liquidity": "low",
+    "loss_tolerance_pct": 40,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.2,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.1,
+    "mode": "growth_cost",
+    "p10_growth_pct": 0.2,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "C",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.005,
+        "fold_id": 0,
+        "horizon": 30,
+        "mode": "growth_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 1,
+        "horizon": 30,
+        "mode": "growth_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 2,
+        "horizon": 30,
+        "mode": "growth_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 3,
+        "horizon": 30,
+        "mode": "growth_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.1
+  },
+  {
+    "candidate_class": "conservative",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.005,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 25,
+    "liquidity": "medium",
+    "loss_tolerance_pct": 15,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.0,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.25,
+    "mode": "conservative_cost",
+    "p10_growth_pct": 0.0,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "D",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.005,
+        "fold_id": 0,
+        "horizon": 25,
+        "mode": "conservative_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 1,
+        "horizon": 25,
+        "mode": "conservative_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 2,
+        "horizon": 25,
+        "mode": "conservative_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 3,
+        "horizon": 25,
+        "mode": "conservative_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.65
+  },
+  {
+    "candidate_class": "balanced",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.005,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 25,
+    "liquidity": "medium",
+    "loss_tolerance_pct": 15,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.1,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.25,
+    "mode": "balanced_cost",
+    "p10_growth_pct": 0.1,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "D",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.005,
+        "fold_id": 0,
+        "horizon": 25,
+        "mode": "balanced_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 1,
+        "horizon": 25,
+        "mode": "balanced_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 2,
+        "horizon": 25,
+        "mode": "balanced_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 3,
+        "horizon": 25,
+        "mode": "balanced_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.3333333333333333
+  },
+  {
+    "candidate_class": "growth",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.005,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": false,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": false
+    },
+    "growth_units": "percent/year",
+    "horizon": 25,
+    "liquidity": "medium",
+    "loss_tolerance_pct": 15,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.2,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.25,
+    "mode": "growth_cost",
+    "p10_growth_pct": 0.2,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "D",
+    "qualified": false,
+    "reasons": [
+      "willingness_eligible",
+      "liquidity_pass"
+    ],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.005,
+        "fold_id": 0,
+        "horizon": 25,
+        "mode": "growth_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 1,
+        "horizon": 25,
+        "mode": "growth_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 2,
+        "horizon": 25,
+        "mode": "growth_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 3,
+        "horizon": 25,
+        "mode": "growth_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.1
+  },
+  {
+    "candidate_class": "conservative",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.005,
+    "flags": {
+      "horizon_eligible": true,
+      "liquidity_pass": true,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": true
+    },
+    "growth_units": "percent/year",
+    "horizon": 6,
+    "liquidity": "high",
+    "loss_tolerance_pct": 35,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.0,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.6,
+    "mode": "conservative_cost",
+    "p10_growth_pct": 0.0,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "E",
+    "qualified": true,
+    "reasons": [],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.005,
+        "fold_id": 0,
+        "horizon": 6,
+        "mode": "conservative_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 1,
+        "horizon": 6,
+        "mode": "conservative_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 2,
+        "horizon": 6,
+        "mode": "conservative_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 3,
+        "horizon": 6,
+        "mode": "conservative_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.65
+  },
+  {
+    "candidate_class": "balanced",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.005,
+    "flags": {
+      "horizon_eligible": false,
+      "liquidity_pass": false,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": false
+    },
+    "growth_units": "percent/year",
+    "horizon": 6,
+    "liquidity": "high",
+    "loss_tolerance_pct": 35,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.1,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.6,
+    "mode": "balanced_cost",
+    "p10_growth_pct": 0.1,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "E",
+    "qualified": false,
+    "reasons": [
+      "horizon_eligible",
+      "willingness_eligible",
+      "liquidity_pass"
+    ],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.005,
+        "fold_id": 0,
+        "horizon": 6,
+        "mode": "balanced_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 1,
+        "horizon": 6,
+        "mode": "balanced_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 2,
+        "horizon": 6,
+        "mode": "balanced_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 3,
+        "horizon": 6,
+        "mode": "balanced_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.3333333333333333
+  },
+  {
+    "candidate_class": "growth",
+    "exceedance_count": 0,
+    "exceedance_denominator": 4,
+    "exceedance_fraction": 0.0,
+    "exceedance_units": "fraction of scenarios",
+    "fee_rate": 0.005,
+    "flags": {
+      "horizon_eligible": false,
+      "liquidity_pass": false,
+      "purchasing_power_pass": true,
+      "risk_pass": true,
+      "willingness_eligible": false
+    },
+    "growth_units": "percent/year",
+    "horizon": 6,
+    "liquidity": "high",
+    "loss_tolerance_pct": 35,
+    "loss_units": "percent of running real peak",
+    "median_growth_pct": 0.2,
+    "median_loss_pct": 5.0,
+    "minimum_target_bill_reserve": 0.6,
+    "mode": "growth_cost",
+    "p10_growth_pct": 0.2,
+    "p90_loss_pct": 5.0,
+    "personalized_overlay_pending": true,
+    "profile": "E",
+    "qualified": false,
+    "reasons": [
+      "horizon_eligible",
+      "willingness_eligible",
+      "liquidity_pass"
+    ],
+    "scenario_count": 4,
+    "severe_loss_pct": 5.0,
+    "severe_scenario_id": 1,
+    "source_metric_keys": [
+      {
+        "fee_rate": 0.005,
+        "fold_id": 0,
+        "horizon": 6,
+        "mode": "growth_cost",
+        "scenario_id": 1,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 1,
+        "horizon": 6,
+        "mode": "growth_cost",
+        "scenario_id": 2,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 2,
+        "horizon": 6,
+        "mode": "growth_cost",
+        "scenario_id": 3,
+        "split": "synthetic"
+      },
+      {
+        "fee_rate": 0.005,
+        "fold_id": 3,
+        "horizon": 6,
+        "mode": "growth_cost",
+        "scenario_id": 4,
+        "split": "synthetic"
+      }
+    ],
+    "split": "synthetic",
+    "status": "provisional",
+    "target_bill_reserve": 0.1
+  }
+]

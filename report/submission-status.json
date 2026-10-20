@@ -1,0 +1,339 @@
+{
+  "schema_version": 1,
+  "kind": "incomplete_submission_preparation",
+  "submission_ready": false,
+  "independent_manuscript_accepted": false,
+  "final_outcomes_accessed": false,
+  "simulation_rerun": false,
+  "pending_slots": [
+    "EXECUTIVE_RECOMMENDATION",
+    "PERSONALIZED_RESULTS",
+    "PROMOTION_RESULTS",
+    "SENSITIVITY_RESULTS",
+    "CUSTOMER_EXPLANATION",
+    "FINAL_EVALUATION",
+    "CONCLUSION"
+  ],
+  "word_count": 2737,
+  "source_registry": {
+    "E0": [
+      "specs/PROBLEM_LOCK.md",
+      "specs/ACCOUNTING.md",
+      "report/methods-draft.md"
+    ],
+    "E1": [
+      "report/primary-development-provenance.json",
+      "audit/chief/HY3-004-review.json",
+      "audit/chief/SOL-040-review.json"
+    ],
+    "E2": [
+      "report/policy-catalogue.md",
+      "report/policy-methods-draft.md",
+      "specs/development_policy_pilot_v2.json"
+    ],
+    "E3": [
+      "report/evidence-map.json",
+      "ops/PROTOCOL.md"
+    ],
+    "E4": [
+      "report/baseline-development-provenance.json",
+      "audit/chief/HY3-003-review.json",
+      "audit/chief/SOL-008-review.json"
+    ]
+  },
+  "numeric_paragraph_mappings": [
+    {
+      "paragraph_sha256": "36150f3fe34ad454756f36898e7c8faeabbceb01a0d72fdceb5fe8dae530d316",
+      "sources": [
+        "E0",
+        "E2"
+      ]
+    },
+    {
+      "paragraph_sha256": "e3a38e78fa7bfbface4faff4941bc599be7cdc87cab87e3539414e96fd552162",
+      "sources": [
+        "E1"
+      ]
+    },
+    {
+      "paragraph_sha256": "7ea3e1368304bee8e89186a411d6cfc0f6df475867e1b52bd034920df0b369f7",
+      "sources": [
+        "E3"
+      ]
+    },
+    {
+      "paragraph_sha256": "9d6b7e6b789c94f7f57f23eb5ceafbde0f62171bf7c1fbee0577eea84b825940",
+      "sources": [
+        "E0"
+      ]
+    },
+    {
+      "paragraph_sha256": "4c497743f4e38c628954bc533adc39856b57668ae3940b63087bb8b014e5056a",
+      "sources": [
+        "E2"
+      ]
+    },
+    {
+      "paragraph_sha256": "181cafd433e784c43d87fd4ccf82640149a09087b748669a61ff2d29e4bd3c97",
+      "sources": [
+        "E0"
+      ]
+    },
+    {
+      "paragraph_sha256": "6aa2682f843366e2f64c8be9901d94ca02b003da5c9752dd371ddc6ba917ee67",
+      "sources": [
+        "E0"
+      ]
+    },
+    {
+      "paragraph_sha256": "5753bc9321c104cfab6d354e98300bad5c1db133ce50c900daf05e0571ffe17b",
+      "sources": [
+        "E0"
+      ]
+    },
+    {
+      "paragraph_sha256": "eb8fa4eee5f549697c5ed0d51914a6a2115c147d382118efe6ad642efd59d49d",
+      "sources": [
+        "E0"
+      ]
+    },
+    {
+      "paragraph_sha256": "6d127a945ec2696743d7e7b5d3ef1a88ab394342234035fd2235b82377e40987",
+      "sources": [
+        "E0"
+      ]
+    },
+    {
+      "paragraph_sha256": "ff3a00f44f49c778ab9af25968ec701eb51219eb8bced45a4d2f16d26db04277",
+      "sources": [
+        "E0"
+      ]
+    },
+    {
+      "paragraph_sha256": "7534973ee14c7e3562532c676aefa9c0adcd2e0256c5a8a23c9a07b10d25a015",
+      "sources": [
+        "E0"
+      ]
+    },
+    {
+      "paragraph_sha256": "c9c6441d1b1dd684a8b0a0007d310c2d8fd6a900002a3652a18b311151e870c0",
+      "sources": [
+        "E2"
+      ]
+    },
+    {
+      "paragraph_sha256": "57ee044a9b1c1c06f183ea09191b477b0908174badb42a179ed05f55a41a92b6",
+      "sources": [
+        "E2"
+      ]
+    },
+    {
+      "paragraph_sha256": "9bb891bf9aa347e8d27f135222b987aae86163248f8c1c0f8e1f63fc35574a2d",
+      "sources": [
+        "E2"
+      ]
+    },
+    {
+      "paragraph_sha256": "df9b924f7a318478695dd157764d5bcbf161f218d78f31740c386496dc0ed0c0",
+      "sources": [
+        "E2"
+      ]
+    },
+    {
+      "paragraph_sha256": "f81c823ff03667515587049bfa46e68fcca8153879d59223b533080e76c6adf5",
+      "sources": [
+        "E2"
+      ]
+    },
+    {
+      "paragraph_sha256": "0fdc8de89c10d94b6ef52440c58c9660dcd5d4711bd7c8b6db1fd599c1cc8132",
+      "sources": [
+        "E2"
+      ]
+    },
+    {
+      "paragraph_sha256": "65533665b707e0a1cc3d6103831f8d4d4432be151c5b5412e5867a1673181159",
+      "sources": [
+        "E2"
+      ]
+    },
+    {
+      "paragraph_sha256": "3cbfc6ff7b729cc331f51e4eca10fef2304d83ba0cc2f5c811b3a00adb27d298",
+      "sources": [
+        "E1"
+      ]
+    },
+    {
+      "paragraph_sha256": "2137ca1f2ba11325a360d7ef4cb5825caa650945ef2562d6dddc0e86f8c79fb9",
+      "sources": [
+        "E1"
+      ]
+    },
+    {
+      "paragraph_sha256": "9a729e41ff2df7312616c7ff53d4dc63da18c2de5683ecf356273adb77ff98d1",
+      "sources": [
+        "E4"
+      ]
+    },
+    {
+      "paragraph_sha256": "c4cd2dd2fc6edc172138e7f39e21ef79b67c3bd2b257884679a49a444992abeb",
+      "sources": [
+        "E1"
+      ]
+    },
+    {
+      "paragraph_sha256": "d2b5c5d88c3a139b88caf6d126cebc0376f5751b9b304a3229330c6d6b5a72ed",
+      "sources": [
+        "E4"
+      ]
+    },
+    {
+      "paragraph_sha256": "67b0cb1f908c6b1c4b2f1aa15e62d56e850a8f75222530cf9f1be76fa59c1b7d",
+      "sources": [
+        "E2"
+      ]
+    },
+    {
+      "paragraph_sha256": "86b210d0a8871eb3b2cf39f7e151084e0545acaabb7de25c048beac9059f26dd",
+      "sources": [
+        "E2"
+      ]
+    },
+    {
+      "paragraph_sha256": "a538ea1a69163d5c88c11d194c5c10c299a8f181156115ad72e8eb86b5cdd152",
+      "sources": [
+        "E0",
+        "E3"
+      ]
+    },
+    {
+      "paragraph_sha256": "d4c58d48f3947cfb9f25dff52b107ceac656a02a8ecfc80ea5066d68a1911a35",
+      "sources": [
+        "E0",
+        "E2"
+      ]
+    },
+    {
+      "paragraph_sha256": "bdca9bbe07ea7431e57b0f51419c97ba45dd8cdd1d986872acb5828fd215187f",
+      "sources": [
+        "E3"
+      ]
+    },
+    {
+      "paragraph_sha256": "44c10bb849610023745564b53eb03e021e7a712c81213ec943071f762d1b8e20",
+      "sources": [
+        "E0"
+      ]
+    },
+    {
+      "paragraph_sha256": "e375f72a0b3750fc6d87ea2dfa26dee8ada8fcc9ede9a287ec2dcc9806fb0a61",
+      "sources": [
+        "E1"
+      ]
+    },
+    {
+      "paragraph_sha256": "6a77d256ae40765aa415d1825452871708854f8680522e54034356a87632b704",
+      "sources": [
+        "E2"
+      ]
+    },
+    {
+      "paragraph_sha256": "00eaa252eaa45fe5da31ac380d8c73a35d5845d68d4e1627f0234aebb9077244",
+      "sources": [
+        "E3"
+      ]
+    },
+    {
+      "paragraph_sha256": "a898fb405222fbbeb3da58fae3b91eef5fba7ede3f8fb5fb0b168dcfd8c1b170",
+      "sources": [
+        "E4"
+      ]
+    },
+    {
+      "paragraph_sha256": "ddb1b001997b4ed034d1853198a36ca03afda5265b42a00fe2dfc9914915771d",
+      "sources": [
+        "E3"
+      ]
+    }
+  ],
+  "primary_producer": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
+  "primary_review": "a9073e1d0ab5aadea639daf34ba76fab728d636f",
+  "baseline_producer": "7652410d73425371110784ef5fa97c03470a074e",
+  "baseline_review": "818af5d65bd8a271962d848dd552bd39ca561f68",
+  "prose_result_claim_checks": {
+    "horizon": 30,
+    "split": "development",
+    "fee_rate": 0.0025,
+    "primary_summary_values": {
+      "balanced_cost": {
+        "median_growth_pct": "4.53",
+        "p10_growth_pct": "1.10",
+        "median_loss_pct": "26.84",
+        "p90_loss_pct": "41.94",
+        "pooled_trade_share_pct": "9.72"
+      },
+      "equal_weight_annual": {
+        "median_growth_pct": "3.58",
+        "p10_growth_pct": "1.28",
+        "median_loss_pct": "20.10",
+        "p90_loss_pct": "34.84",
+        "pooled_trade_share_pct": "100.00"
+      },
+      "bills_keep": {
+        "p90_loss_pct": "22.16",
+        "severe_max_real_drawdown_pct": "29.86"
+      }
+    },
+    "baseline_annual_severe_id": "5",
+    "baseline_annual_severe_loss_pct": "50.88"
+  },
+  "source_hashes": {
+    "audit/chief/HY3-003-review.json": "49770913724204472524ee06f0cb2445a3c12150a128a98ee13c5b7e50f86430",
+    "audit/chief/HY3-004-review.json": "726ac55416bd46f838bba75d0b17d60fd4e8f5d195c6edeac20881a62d637f27",
+    "audit/chief/SOL-008-review.json": "9f202890920efd15480f9e3f3c904ddd52f282dafd5b9962e261bfdd9a135e77",
+    "audit/chief/SOL-040-review.json": "4b9a72df4204389a66eed8db8c697ab7b727ad1b743a3227e8011162c24050c6",
+    "ops/PROTOCOL.md": "10f6f27536ad251f258292c98050a2ff03811ef95e1ea4cce6cf6e40cee97c10",
+    "report/baseline-development-provenance.json": "0bae68910774eb63ad656a85c040da9d1fbc70983f319927c012941c76b9792c",
+    "report/build_submission.py": "6c9bfcfe4f6a3c3c7ef717aa2bd50a6eae46691b5458d1356fb54fa8b5931574",
+    "report/evidence-map.json": "ccecc62b7f6cefbc9840d135fb43835edc1a889c0bdd6bcbbbe9009eb25fa11d",
+    "report/methods-draft.md": "93dd45bceb6ebf1ce4560d27fc2a7b3c8432abf304673e99a76496f942ec31ac",
+    "report/policy-catalogue.md": "874c2dd03858f5cfcf43925de3c9860b5587de9bad84622f36c32ee6a8e60f76",
+    "report/policy-methods-draft.md": "82fe46bca0f4aff3490e2195d0a2ec0c85df309b1129b6ecbd8a6b2b11d0b70f",
+    "report/primary-development-provenance.json": "06634d75e0e4a373a8b95bfaf16a64e857697e9b0eb54abe8f762305c053ee9c",
+    "report/submission-draft.md": "e7d00fa625c47bff6472dcc8af6b74e382690d645d36283d72d5584f59775283",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3"
+  },
+  "rounding": "format(float(source_string), '.2f'); display only",
+  "private_identity_access": false,
+  "minimum_font_pt": 11,
+  "max_pages": 10,
+  "missing_evidence": [
+    "authenticated promotion comparisons and choice",
+    "independently accepted cost sensitivity",
+    "own-horizon personalized production rescreens",
+    "accepted all-development refit and final engine",
+    "recorded freeze before final access",
+    "accepted reserved-scenario evaluation",
+    "final customer explanation and conclusion",
+    "independent full manuscript review",
+    "local names, final rendering and source ZIP checks"
+  ],
+  "pdf_checks": {
+    "pdf_sha256": "5152a2a4fd551ac00f71e6174be7138588a2fc2a6a21478cc04fd3eca4c900d3",
+    "pages": 5,
+    "paper": "A4",
+    "minimum_font_pt": 11.0,
+    "within_page_limit": true,
+    "all_pages_marked_incomplete": true,
+    "visual_review": "chief inspected all five pages; pass as incomplete preparation"
+  },
+  "created_at": "2026-10-20T11:06:32.337102+00:00",
+  "local_output_directory": ".runtime/submission/draft-v2",
+  "validation": "audit/chief/takeover-manuscript/validation.json",
+  "build_instruction": "python -B report/build_submission.py --output-dir .runtime/submission/CHOOSE_A_FRESH_DIRECTORY",
+  "optional_identity_instruction": "For local-only identity insertion, use --team-file .runtime/LOCAL_REPORT_TEAM.json containing a report_display string. Never track or upload that private file or local PDF.",
+  "completion_instruction": "Fill pending source slots only from newly accepted evidence; update executive summary and conclusion; update builder/schema and remove draft markings only after full manuscript, identity, final and packaging gates pass.",
+  "remaining_page_capacity_current_layout": 5
+}

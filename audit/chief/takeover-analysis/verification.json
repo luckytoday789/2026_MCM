@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_policy_analysis_writer.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 74.53200000000652,
+      "stdout": "audit/chief/takeover-analysis/final-0.stdout.txt",
+      "stderr": "audit/chief/takeover-analysis/final-0.stderr.txt",
+      "stdout_sha256": "8803cc467fcc85367a081df27520b2131b11ee227eccf3e60643c572e609d8bc",
+      "stderr_sha256": "7af515acb0bf521224db532202eb49d21b8b0cbb465fdbf59e3961f04ef246b5"
+    },
+    {
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "audit\\chief\\takeover-analysis\\verify.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.76500000001397,
+      "stdout": "audit/chief/takeover-analysis/final-1.stdout.txt",
+      "stderr": "audit/chief/takeover-analysis/final-1.stderr.txt",
+      "stdout_sha256": "2329234233d26ea45ea1e4c39e13ab0850c169f108a7fd05741b742a73413e90",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "generated_only": true
+}

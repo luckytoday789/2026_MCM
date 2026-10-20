@@ -1,0 +1,42 @@
+{
+  "src/safeinvest/policy_analysis_writer.py": {
+    "recovered_commit": "e1783a918122d8eaa507e42ca15a9c0a5f5b9339",
+    "original_sha256": "ebd4d595069d8b8474c26d6e4b6f453928fb3cf26559262cc70beb77123ed2f1",
+    "destination": "src/safeinvest/policy_analysis_writer.py"
+  },
+  "scripts/run_development_analysis.py": {
+    "recovered_commit": "e1783a918122d8eaa507e42ca15a9c0a5f5b9339",
+    "original_sha256": "d6a59b2d4c39f4fffbd02db0ddfb545fad097bdcc3bc74ecc042b21ac14d70e5",
+    "destination": "scripts/run_development_analysis.py"
+  },
+  "tests/test_policy_analysis_writer.py": {
+    "recovered_commit": "e1783a918122d8eaa507e42ca15a9c0a5f5b9339",
+    "original_sha256": "7253b1b23c92bce53d70a5ae34bfd7ea64212b5de140ed386109b5e62dd0759b",
+    "destination": "tests/test_policy_analysis_writer.py"
+  },
+  "audit/SOL-038/generated.py": {
+    "recovered_commit": "e1783a918122d8eaa507e42ca15a9c0a5f5b9339",
+    "original_sha256": "890515e31754575f2721c023602c1205bd89280531b11eb1646b238a7ed6aee2",
+    "destination": "audit/chief/takeover-analysis/generated.py"
+  },
+  "audit/SOL-038/schema.json": {
+    "recovered_commit": "e1783a918122d8eaa507e42ca15a9c0a5f5b9339",
+    "original_sha256": "41039918b5320399d42fb29330f3144da5878339cfa3c60dca53f04a430f83b0",
+    "destination": "audit/chief/takeover-analysis/schema.json"
+  },
+  "audit/SOL-038/fixture/objects.bundle": {
+    "recovered_commit": "e1783a918122d8eaa507e42ca15a9c0a5f5b9339",
+    "original_sha256": "2c050b7266b8cdf68edabb819ee47851bc480c82a22405cc2134f549bde5fb42",
+    "destination": "audit/chief/takeover-analysis/fixture/objects.bundle"
+  },
+  "audit/SOL-038/fixture/binding.json": {
+    "recovered_commit": "e1783a918122d8eaa507e42ca15a9c0a5f5b9339",
+    "original_sha256": "55e12e6722a273ab7dbfe6985337341ff18f4ba91baaca1ab7296f7aad988350",
+    "destination": "audit/chief/takeover-analysis/fixture/binding.json"
+  },
+  "audit/SOL-038/fixture/checker-source.txt": {
+    "recovered_commit": "e1783a918122d8eaa507e42ca15a9c0a5f5b9339",
+    "original_sha256": "dcd6b6973701c2c984d8960f9012a60d6c4c46b1d6a208498fbef0fcca881a4a",
+    "destination": "audit/chief/takeover-analysis/fixture/checker-source.txt"
+  }
+}
