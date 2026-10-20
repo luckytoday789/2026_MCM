@@ -1,9 +1,8 @@
 {
   "role": "chief",
   "machine_id": "8ea2b5131bed400a8f2954cd69935807",
-  "state": "running",
+  "state": "ready",
   "python": "3.12.0",
-  "updated_at": "2026-10-20T13:49:33.427122+00:00",
-  "lease_until": "2026-10-20T13:59:33.427122+00:00",
-  "task_id": "integrate-and-dispatch"
+  "updated_at": "2026-10-20T13:49:46.042438+00:00",
+  "lease_until": "2026-10-20T13:59:46.042438+00:00"
 }
