@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "qualification_only": true,
+  "production_result_accepted": false,
+  "execution_observed_by": "chief bounded turn,2026-10-20 evening",
+  "command": [
+    "python",
+    "-B",
+    "audit/chief/qualify_personalized_oracle.py"
+  ],
+  "exit_code": 0,
+  "scalar_checks": 34443,
+  "B_generic_prefix_checks": 600,
+  "corruptions_rejected": [
+    "fee",
+    "latch",
+    "screen"
+  ],
+  "final_data_read": false,
+  "source_commit": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
+  "scope": "Actual stdout observed by chief. In-memory adapted accepted B15 bytes and nine schema-only no-run rows qualify this numerical oracle; these rows are not real profile recommendations.",
+  "source_sha256": {
+    "audit/chief/check_personalized_result.py": "c10931d89e55e7b1db7a3fe93920bcb259e0094d3645ce3bb800dbbb4fe5f8e0",
+    "audit/chief/qualify_personalized_oracle.py": "23785dc2ba7ebde8d4ffb004d3cae88393390f69034db02b0aba74412755ea2b"
+  }
+}

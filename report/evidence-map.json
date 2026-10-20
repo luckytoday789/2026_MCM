@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "55aa8247b24672cb21f0340893c4615da28e234f",
+  "snapshot_main_commit": "3ef58f69a702a604398f1376fb5088740d9daea7",
   "authoritative_state": [
     "ops/control.json",
     "ops/queue.json"
@@ -303,27 +303,30 @@
       "acceptance_evidence": "audit/chief/HY3-004-review.json"
     },
     "DOUBLED_DEVELOPMENT_CASE_JOB": {
-      "state": "submitted_pending_review",
-      "task_id": "HY3-006",
-      "path": "ops/tasks/HY3-006.json",
-      "base_commit": "eae30c8edff452807694b9c8f42db6d1d01464f7",
+      "id": "HY3-006",
+      "state": "accepted_development_evidence",
+      "owner": "hy3",
+      "branch": "work/hy3/HY3-006-a1",
       "task_sha256": "dcdf31a5ce502b4c5115d9a21a29b6649ea107b8e0c8b671b1e17d44812962b6",
-      "queue_state_at_snapshot": "ready",
-      "outcomes_accepted": false,
-      "scope": "Exact doubled result remains unaccepted pending SOL-041, released after successful accepted SOL-037. Chief checks passed; preserve failed HY3-005 and no final tuning.",
-      "candidate_result_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
-      "independent_review_task": "SOL-041",
-      "chief_evidence": "audit/chief/HY3-006-chief-checkpoint.json"
+      "reviewed_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+      "result_verdict": "approve",
+      "acceptance_evidence": "audit/chief/HY3-006-review.json",
+      "task_id": "HY3-006",
+      "queue_state_at_snapshot": "accepted",
+      "outcomes_accepted": true,
+      "scope": "Exact doubled-fee producer accepted and all44 original files promoted; historical failed HY3-005 and rejected SOL-041 logs remain preserved."
     },
     "ANALYSIS_ASSEMBLY_IMPLEMENTATION": {
-      "state": "ready_pending_worker_delivery",
-      "task_id": "SOL-038",
-      "path": "ops/tasks/SOL-038.json",
-      "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
-      "task_sha256": "03472407ca3633a28501784679d1d1d03c1fb39766179620ad27a5e058214f34",
-      "queue_state_at_snapshot": "ready",
+      "id": "CHIEF-ANALYSIS-20261020",
+      "owner": "chief",
+      "state": "accepted_source_only",
+      "reviewed_commit": "1ff8772bc0c05027b80dcdbc54e26ee97e70e5d3",
+      "code_verdict": "approve",
+      "acceptance_evidence": "audit/chief/CHIEF-ANALYSIS-20261020-review.json",
+      "task_id": "CHIEF-ANALYSIS-20261020",
+      "queue_state_at_snapshot": "accepted",
       "outcomes_accepted": false,
-      "scope": "Generated-only typed analysis assembly recovery; released after accepted SOL-037. Failed SOL-034 approval cannot be a positive dependency; no real outcomes or production configuration."
+      "scope": "Chief takeover source review and15 generated tests; actual production analysis HY3-009 remains separate."
     },
     "DOUBLED_DEVELOPMENT_FAILED_ATTEMPT": {
       "state": "failed_execution_attempt",
@@ -390,24 +393,29 @@
       "acceptance_evidence": "audit/chief/SOL-040-review.json"
     },
     "WRITER_AUDIT_PORTABILITY_FOLLOWUP": {
-      "state": "ready_pending_worker_delivery",
-      "task_id": "SOL-039",
-      "path": "ops/tasks/SOL-039.json",
-      "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+      "id": "SOL-039",
+      "state": "cancelled_remote_scheduling",
+      "owner": "sol",
+      "branch": "work/sol/SOL-039-a1",
       "task_sha256": "c2b1a1c305a293e453f1517aea2a6e14049c58e4a96f49d4aaba3138618dbe44",
-      "queue_state_at_snapshot": "ready",
+      "task_id": "SOL-039",
+      "queue_state_at_snapshot": "cancelled",
       "outcomes_accepted": false,
-      "scope": "Audit-only recovery after failed SOL-035; preserves accepted SOL-032 computational code and prior line-ending failures. Released after accepted SOL-037."
+      "scope": "Remote task retained unchanged and scheduling cancelled under user-authorized takeover. No new success or review is implied."
     },
     "DOUBLED_DEVELOPMENT_INDEPENDENT_REVIEW": {
-      "state": "ready_pending_worker_delivery",
-      "task_id": "SOL-041",
-      "path": "ops/tasks/SOL-041.json",
-      "base_commit": "da37f1cff664c2ba5b475ddd07ae58630004ea3e",
-      "task_sha256": "a68184a570dfeb49ac72a36060b2e3d88ed0d2c45fb7f6f17f3ddced40434dfe",
-      "queue_state_at_snapshot": "ready",
+      "id": "HY3-007",
+      "owner": "hy3",
+      "state": "accepted_new_independent_replay",
+      "branch": "work/hy3/HY3-007-a1",
+      "task_sha256": "cecd8f3ac7657ddecfa9a4822bf023054653026db4bc2cf3276a4cc8d7bee45c",
+      "reviewed_commit": "194a45ac5fced5dfab02903e4e732b1cac1c6e67",
+      "result_verdict": "approve",
+      "acceptance_evidence": "audit/chief/HY3-007-review.json",
+      "task_id": "HY3-007",
+      "queue_state_at_snapshot": "accepted",
       "outcomes_accepted": false,
-      "scope": "Independent exact HY3-006 review released after accepted SOL-037. Existing chief checks do not establish result acceptance; no primary reselection or final outcomes."
+      "scope": "New actual HY3 execution of earlier Sol arithmetic and chief accounting/decision oracles; chief reviewed exact outputs. This does not reconstruct missing SOL-041 logs."
     },
     "FINAL_PATH_ENGINE_PREPARATION": {
       "state": "chief_preparation_only",
@@ -416,6 +424,29 @@
       "validation": "audit/chief/final-path-preparation-validation.json",
       "outcomes_accepted": false,
       "scope": "Generated-only rational references and implementation handoff; no final implementation or data access."
+    },
+    "PERSONALIZED_PRODUCTION_SOURCE": {
+      "state": "accepted_source_only",
+      "task_id": "CHIEF-PERSONALIZED-20261020",
+      "reviewed_commit": "7053b41ce81b1e04100d56a24a321e51b3465459",
+      "acceptance_evidence": "audit/chief/CHIEF-PERSONALIZED-20261020-review.json",
+      "outcomes_accepted": false,
+      "scope": "Chief takeover production bridge source approval; actual own-horizon rescreens remain a separate acceptance."
+    },
+    "FINAL_EXECUTION_SOURCE_V2": {
+      "state": "accepted_source_only",
+      "reviewed_commit": "7053b41ce81b1e04100d56a24a321e51b3465459",
+      "acceptance_evidence": "audit/chief/CHIEF-FINAL-SOURCE-V2-20261020-review.json",
+      "outcomes_accepted": false,
+      "scope": "Corrected final source:9 tests and90 independent generated baseline checks. Actual refit, freeze and final results remain required."
+    },
+    "ACTUAL_DEVELOPMENT_ANALYSIS": {
+      "state": "running_pending_exact_receipt",
+      "task_id": "HY3-009",
+      "path": "ops/tasks/HY3-009.json",
+      "task_sha256": "4bfb233f4c30b87cb5d59fd800cf46e7d5303072f5f759f8355b847e09c96958",
+      "outcomes_accepted": false,
+      "scope": "Fixed real analysis from accepted004/006; result not yet delivered or accepted at this snapshot."
     }
   },
   "requirements": [
@@ -430,7 +461,7 @@
       ],
       "state": "locked_definition",
       "draft_location": "methods-draft.md: Independent annual scenarios and purchasing power",
-      "remaining": "Final protocol design accepted SOL-024. Independently review final-capable code, accept development and all-development refit evidence, then create and independently audit a real freeze. Final outcomes remain unopened."
+      "remaining": "Development and generated final source accepted. Accept actual009 analysis and all ten personalized rows, independently verify all-development refit, then publish and execute complete closed-gate freeze audit before final access."
     },
     {
       "id": "R02",
@@ -473,7 +504,7 @@
         "DOUBLED_DEVELOPMENT_INDEPENDENT_REVIEW"
       ],
       "state": "accepted_design",
-      "remaining": "Exact primary HY3-004 and independent SOL-040 accepted. Doubled HY3-006 awaits SOL-041; then accepted generated assembly and independently reviewed actual comparisons/selection, personalized rescreens and final evidence remain."
+      "remaining": "Both exact generic producer bundles accepted. Actual009 comparisons/selection, personalized follow-up and final evaluation remain."
     },
     {
       "id": "R05",
@@ -503,7 +534,7 @@
         "assignment or referral",
         "reason"
       ],
-      "remaining": "Accept both generic producers and SOL-038 generated-only assembly implementation, execute and independently review actual assembly, then implement/authenticate the production personalization bridge and rescreen each own H/tolerance without fallback. SOL-034 remains failed."
+      "remaining": "Own-horizon design, pure component and chief production bridge source accepted. Await actual009 assignment evidence, real ten-row production and exact independent numerical acceptance; no fallback on rescreen failure."
     },
     {
       "id": "R06",
@@ -523,7 +554,7 @@
         "DOUBLED_DEVELOPMENT_INDEPENDENT_REVIEW"
       ],
       "state": "accepted_design",
-      "remaining": "Exact primary HY3-004 and independent SOL-040 accepted. Doubled HY3-006 awaits SOL-041; then accepted generated assembly and independently reviewed actual comparisons/selection, personalized rescreens and final evidence remain."
+      "remaining": "Both exact generic producer bundles and kernel behavior accepted. Actual comparison/selection, individual follow-up and final evidence remain."
     },
     {
       "id": "R07",
@@ -559,7 +590,7 @@
         "split",
         "fee_rate"
       ],
-      "remaining": "Accepted primary raw metrics are available at HY3-004; build/review actual comparison assembly after HY3-006 and SOL-038 acceptances. Keep development and final distinct."
+      "remaining": "Accepted primary/doubled tables are displayed in submission draft. Exact scenario-paired analysis009 and eventual final results remain separate gates."
     },
     {
       "id": "R09",
@@ -581,7 +612,7 @@
         "POLICY_PROPOSAL"
       ],
       "state": "not_available",
-      "remaining": "Reviewed selection rule plus accepted same-context and simpler-policy comparisons, fold evidence, trade/review differences and negative trials"
+      "remaining": "Await actual009 primary-only fixed comparison gates and accepted choice; failed context/adaptive gates must remain visible."
     },
     {
       "id": "R11",
@@ -603,7 +634,7 @@
         "DOUBLED_DEVELOPMENT_INDEPENDENT_REVIEW"
       ],
       "state": "not_available",
-      "remaining": "HY3-005 failed and is not completed sensitivity evidence. Accept exact unchanged-policy HY3-006 and its separate SOL-041 independent numerical review, then report the primary development-selected rule at both fees without reselection."
+      "remaining": "Exact unchanged-policy006 and fresh007 numerical replay accepted. Same-mode sensitivity table completed; recommendation impact follows accepted primary selection and individual rescreens."
     },
     {
       "id": "R13",
@@ -614,7 +645,7 @@
         "LIMITATIONS_DISCLOSURE_DRAFT"
       ],
       "state": "accepted_design",
-      "remaining": "Generic latch/holdings design and corrected kernel accepted (SOL-013/SOL-021), personalized design accepted SOL-020. Personalized adapter, actual development and final evidence remain required."
+      "remaining": "Latched annual review/keep-dollar behavior and personalized production source accepted. Actual own-tolerance outcomes and final results remain."
     },
     {
       "id": "R14",
@@ -647,5 +678,50 @@
     "Post-freeze software corrections remain logged and disclosed; no final-outcome tuning",
     "Team private names and IDs stay outside tracked artifacts"
   ],
-  "updated_at": "2026-10-20T09:26:12.376006+00:00"
+  "updated_at": "2026-10-20T11:56:28.381308+00:00",
+  "historical_source_snapshots": {
+    "DOUBLED_DEVELOPMENT_CASE_JOB": {
+      "state": "submitted_pending_review",
+      "task_id": "HY3-006",
+      "path": "ops/tasks/HY3-006.json",
+      "base_commit": "eae30c8edff452807694b9c8f42db6d1d01464f7",
+      "task_sha256": "dcdf31a5ce502b4c5115d9a21a29b6649ea107b8e0c8b671b1e17d44812962b6",
+      "queue_state_at_snapshot": "ready",
+      "outcomes_accepted": false,
+      "scope": "Exact doubled result remains unaccepted pending SOL-041, released after successful accepted SOL-037. Chief checks passed; preserve failed HY3-005 and no final tuning.",
+      "candidate_result_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+      "independent_review_task": "SOL-041",
+      "chief_evidence": "audit/chief/HY3-006-chief-checkpoint.json"
+    },
+    "DOUBLED_DEVELOPMENT_INDEPENDENT_REVIEW": {
+      "state": "ready_pending_worker_delivery",
+      "task_id": "SOL-041",
+      "path": "ops/tasks/SOL-041.json",
+      "base_commit": "da37f1cff664c2ba5b475ddd07ae58630004ea3e",
+      "task_sha256": "a68184a570dfeb49ac72a36060b2e3d88ed0d2c45fb7f6f17f3ddced40434dfe",
+      "queue_state_at_snapshot": "ready",
+      "outcomes_accepted": false,
+      "scope": "Independent exact HY3-006 review released after accepted SOL-037. Existing chief checks do not establish result acceptance; no primary reselection or final outcomes."
+    },
+    "ANALYSIS_ASSEMBLY_IMPLEMENTATION": {
+      "state": "ready_pending_worker_delivery",
+      "task_id": "SOL-038",
+      "path": "ops/tasks/SOL-038.json",
+      "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+      "task_sha256": "03472407ca3633a28501784679d1d1d03c1fb39766179620ad27a5e058214f34",
+      "queue_state_at_snapshot": "ready",
+      "outcomes_accepted": false,
+      "scope": "Generated-only typed analysis assembly recovery; released after accepted SOL-037. Failed SOL-034 approval cannot be a positive dependency; no real outcomes or production configuration."
+    },
+    "WRITER_AUDIT_PORTABILITY_FOLLOWUP": {
+      "state": "ready_pending_worker_delivery",
+      "task_id": "SOL-039",
+      "path": "ops/tasks/SOL-039.json",
+      "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+      "task_sha256": "c2b1a1c305a293e453f1517aea2a6e14049c58e4a96f49d4aaba3138618dbe44",
+      "queue_state_at_snapshot": "ready",
+      "outcomes_accepted": false,
+      "scope": "Audit-only recovery after failed SOL-035; preserves accepted SOL-032 computational code and prior line-ending failures. Released after accepted SOL-037."
+    }
+  }
 }
