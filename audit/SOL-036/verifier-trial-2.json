@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+    "-B",
+    "audit/SOL-036/verify.py",
+    "--check"
+  ],
+  "returncode": 2,
+  "elapsed_seconds": 40.44104469998274,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "pythonpath_keys": []
+}

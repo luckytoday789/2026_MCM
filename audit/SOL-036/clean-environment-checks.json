@@ -1,0 +1,354 @@
+{
+  "schema_version": 1,
+  "argv": [
+    "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+    "-B",
+    "scripts/run_development_policy.py",
+    "--config",
+    "specs/execution/HY3-004-file44.json",
+    "--output",
+    "results/development/HY3-004",
+    "--check"
+  ],
+  "returncode": null,
+  "elapsed_seconds": 120,
+  "elapsed_basis": "Node tool timeout configured at120000ms; subprocess actual elapsed unavailable",
+  "python": "3.12.14; independently confirmed by subsequent fresh verifier",
+  "pythonpath_keys": [],
+  "runtime_task_absent": true,
+  "execution_status": "interrupted_by_node_tool_timeout_kernel_reset",
+  "stdout_log_status": "capture was in launcher memory; lost before persistence",
+  "stderr_log_status": "capture was in launcher memory; lost before persistence",
+  "inventory_before": null,
+  "inventory_before_status": "computed in launcher memory before invocation; not persisted before timeout; unavailable",
+  "inventory_after": {
+    "src/safeinvest/__init__.py": {
+      "sha256": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+      "bytes": 1073
+    },
+    "src/safeinvest/accounting.py": {
+      "sha256": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+      "bytes": 5485
+    },
+    "src/safeinvest/backtest.py": {
+      "sha256": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+      "bytes": 9181
+    },
+    "src/safeinvest/baselines.py": {
+      "sha256": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+      "bytes": 641
+    },
+    "src/safeinvest/metrics.py": {
+      "sha256": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+      "bytes": 4386
+    },
+    "src/safeinvest/experiments.py": {
+      "sha256": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+      "bytes": 30286
+    },
+    "src/safeinvest/policy_pilot.py": {
+      "sha256": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+      "bytes": 14185
+    },
+    "src/safeinvest/policy_calibration.py": {
+      "sha256": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+      "bytes": 6157
+    },
+    "src/safeinvest/policy_cases.py": {
+      "sha256": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7",
+      "bytes": 11955
+    },
+    "src/safeinvest/policy_writer.py": {
+      "sha256": "feca1b69de00cb5677337796c32ab91cd7262351bfed9c9ee5ac1ff5fab46226",
+      "bytes": 52833
+    },
+    "scripts/run_development_policy.py": {
+      "sha256": "b2ea4ac19ece30fd2bb535c2dcee5cdf48d26d0cba934a3b35cb6e08338ee19b",
+      "bytes": 278
+    },
+    "specs/development_policy_pilot_v2.json": {
+      "sha256": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "bytes": 5209
+    },
+    "specs/policy_driver_layout_v2.json": {
+      "sha256": "f431e661c260f7f6e40330661e77724dc3ddcafeafed1a3f0b6c31781a4e8329",
+      "bytes": 6542
+    },
+    "specs/PROBLEM_LOCK.md": {
+      "sha256": "c3cce877e00a62f49c8a032e9bde5e39562bd1b29dde3dee23263935f9aea675",
+      "bytes": 3185
+    },
+    "specs/ACCOUNTING.md": {
+      "sha256": "d5a59960f8bc9474986015f4f832ffcbbdb5fc3e85bad0b3b9453861ae63a7fc",
+      "bytes": 2793
+    },
+    "specs/DEVELOPMENT_POLICY_PILOT_V2.md": {
+      "sha256": "5b67a99f1a36d8e61047e12b11bdf733d366e4d5314e098c43902323b3fefc68",
+      "bytes": 17247
+    },
+    "specs/POLICY_CORRECTION_V2.md": {
+      "sha256": "432498c869cb35c3744cfd1db69780b097f7f778d34df9635008f501d5f0ec2d",
+      "bytes": 2322
+    },
+    "specs/POLICY_NUMERIC_K1.md": {
+      "sha256": "fce69c3a3e16f8b96a6de87f4ff4768ae76075bdd6623cdf32c977c854fb5bea",
+      "bytes": 2196
+    },
+    "specs/POLICY_NUMERIC_K2.md": {
+      "sha256": "6947bce447fdeb1ceb69805128c6a917006b62a9172723a9a0a05de36404bd1a",
+      "bytes": 2921
+    },
+    "specs/POLICY_CASE_ENGINE.md": {
+      "sha256": "3f7a84d786147b280ed7678d3580d3694dd468eaed29936d88e968505654d554",
+      "bytes": 6744
+    },
+    "specs/POLICY_RESULT_WRITER.md": {
+      "sha256": "af2ce7eec467ce36db1dab15804664cd81effbda9e5ca102ad8bfb1b48f82a5f",
+      "bytes": 6345
+    },
+    "specs/POLICY_WRITER_COMPATIBILITY.md": {
+      "sha256": "d5422a2f46a432b5564295e78f717587b48eadd4578a4f76589c54828bc9c858",
+      "bytes": 5556
+    },
+    "specs/POLICY_WRITER_ACCEPTANCE_REFERENCES.md": {
+      "sha256": "9e43529c78dbdc70c7daffe480e56989d4acf03a9665736fd277c501fce32869",
+      "bytes": 3291
+    },
+    "specs/POLICY_WRITER_EXECUTION_CONFIG.md": {
+      "sha256": "4dc62cecebc7b8b480c1fcd14ac4077b7b3199bc9e36fa31d76cc61adc8657e6",
+      "bytes": 8492
+    },
+    "specs/POLICY_WRITER_TASK_BINDING.md": {
+      "sha256": "1c39927312438db45c833c8cd0fc7d87d4282b33c103874be6d7a5f1b138f038",
+      "bytes": 7542
+    },
+    "specs/POLICY_WRITER_RECOVERY.md": {
+      "sha256": "78a676f07d0a9a5e0e570a07c290a07dca32415cab66227c743c35dfb834d0fe",
+      "bytes": 3873
+    },
+    "specs/POLICY_WRITER_GIT_PORTABILITY.md": {
+      "sha256": "d417ce54898b65268b250384100235964bee1017b1d50295523dc29a9cc174a0",
+      "bytes": 5220
+    },
+    "specs/POLICY_WRITER_FILE_DELIVERABLES.md": {
+      "sha256": "985a673dd34a677308ed6fd7309872bd3a56fc46e487fd35dbe578cd408a595b",
+      "bytes": 2752
+    },
+    "specs/execution/HY3-004-file44.json": {
+      "sha256": "5d09fe13400b04b14a26fbfa03810a56c5b1b0a7f0ddd13e855918afbeb60eee",
+      "bytes": 5360
+    },
+    "data/development/scenarios_001_120.csv": {
+      "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+      "bytes": 182255
+    },
+    "handoff/HY3-004/check-0.txt": {
+      "sha256": "3f7264defd511dd4e92d9a7eded945081f708c7f909376a95f1315b05ba762f3",
+      "bytes": 101
+    },
+    "handoff/HY3-004/check-1.txt": {
+      "sha256": "0b953837f6d32d5d33ea652783fa8ad307f7d103b65be294714413ec0ddde851",
+      "bytes": 65
+    },
+    "handoff/HY3-004/check-2.txt": {
+      "sha256": "3f7264defd511dd4e92d9a7eded945081f708c7f909376a95f1315b05ba762f3",
+      "bytes": 101
+    },
+    "handoff/HY3-004/check-3.txt": {
+      "sha256": "0a0c23666434c3fb9693db28d32d9fd8dbd40d9570d49d65130f290ebec2f6e0",
+      "bytes": 61
+    },
+    "results/development/HY3-004/calibrations.json": {
+      "sha256": "dda39356b38a888b3a5b49e096fe394957df06d0a116b5701396562d3b6068e3",
+      "bytes": 1224265
+    },
+    "results/development/HY3-004/cases/balanced_adaptive/annual_ledgers.csv": {
+      "sha256": "75cc6078a94a4e80da87c9d7d4cb508a8a6b1d881a7a94769d60467826d4667b",
+      "bytes": 2333194
+    },
+    "results/development/HY3-004/cases/balanced_adaptive/decisions.csv": {
+      "sha256": "5ceafb13c0784304f8c538f825a0d8972095f4e052c94fa1f52fb048a308bb87",
+      "bytes": 656263
+    },
+    "results/development/HY3-004/cases/balanced_adaptive/scenario_metrics.csv": {
+      "sha256": "8f81570687ddcdc5468739e3dfdee170150af2c08b4d44a6d4e968ae1e8a9ac8",
+      "bytes": 245322
+    },
+    "results/development/HY3-004/cases/balanced_adaptive/summary.csv": {
+      "sha256": "84b4a9a336f09857489c56c02aec0f4a1e0035bd25a01041acbfa5f516f2b83f",
+      "bytes": 3505
+    },
+    "results/development/HY3-004/cases/balanced_adaptive/target_scores.csv": {
+      "sha256": "78eef5971344ad865a4bab0ab7180895a70b915e2ed2372ddd62db7544ffdcb1",
+      "bytes": 1542354
+    },
+    "results/development/HY3-004/cases/balanced_context/annual_ledgers.csv": {
+      "sha256": "d4695927fb73f9aaac17ab4ceccbefde4d422388acb3ae0e9b4ed1bfd9b6873a",
+      "bytes": 2321818
+    },
+    "results/development/HY3-004/cases/balanced_context/decisions.csv": {
+      "sha256": "f50a9ac72a01bd4ec7a740602fc48192de40d36fbfe5e425b78ad8619d49b8e3",
+      "bytes": 628701
+    },
+    "results/development/HY3-004/cases/balanced_context/scenario_metrics.csv": {
+      "sha256": "caf208792d87882f0778670201938aedf9e8fb5d44ac37f97b25f8e5bd97d275",
+      "bytes": 243957
+    },
+    "results/development/HY3-004/cases/balanced_context/summary.csv": {
+      "sha256": "d4d48db165df74882d373f875bbfd6de4c6a35566fa7597f422ea67907b37fa2",
+      "bytes": 3439
+    },
+    "results/development/HY3-004/cases/balanced_context/target_scores.csv": {
+      "sha256": "82e36c7da890759c5b9c336ac1aa9648b6e3c48be0969d1d0debb686ea3fc687",
+      "bytes": 684984
+    },
+    "results/development/HY3-004/cases/balanced_cost/annual_ledgers.csv": {
+      "sha256": "04975c9c23a63d183221c3452f4fd15e46220b5384c300c24ab10fe3944c2595",
+      "bytes": 2317892
+    },
+    "results/development/HY3-004/cases/balanced_cost/decisions.csv": {
+      "sha256": "01559ce8bf09ebfdf3cdbe47ef09c8558829defccdba0715ff7e7863810b78a9",
+      "bytes": 611149
+    },
+    "results/development/HY3-004/cases/balanced_cost/scenario_metrics.csv": {
+      "sha256": "a8b77c676fb9912f1b9e1b9cc55e04ccfacd096dadd93fefe4cb50a7d6a8fd66",
+      "bytes": 242278
+    },
+    "results/development/HY3-004/cases/balanced_cost/summary.csv": {
+      "sha256": "bc288b6815a26bb753277824e4d0b27093e1dcee3a5283cafe9a3ba651768a06",
+      "bytes": 3413
+    },
+    "results/development/HY3-004/cases/balanced_cost/target_scores.csv": {
+      "sha256": "4a731d90c2a35b89aa612e066f0a74514906690431a0e808019db60b7005a3ff",
+      "bytes": 671056
+    },
+    "results/development/HY3-004/cases/bills_keep/annual_ledgers.csv": {
+      "sha256": "a811c8160cf4a38743cfc947c9f9e0320358e6ddfd6ac4a3c27226626de8566d",
+      "bytes": 1972154
+    },
+    "results/development/HY3-004/cases/bills_keep/decisions.csv": {
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+      "bytes": 310
+    },
+    "results/development/HY3-004/cases/bills_keep/scenario_metrics.csv": {
+      "sha256": "919c68db358fc7d0b8fc367e8eea9474db2f473d8584b539bc50a961204fa50d",
+      "bytes": 214151
+    },
+    "results/development/HY3-004/cases/bills_keep/summary.csv": {
+      "sha256": "980c36bd664ba351b2581694fa75171db5c67245f45fc7fe2511fc0b6d574164",
+      "bytes": 3092
+    },
+    "results/development/HY3-004/cases/bills_keep/target_scores.csv": {
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+      "bytes": 197
+    },
+    "results/development/HY3-004/cases/conservative_cost/annual_ledgers.csv": {
+      "sha256": "a1ec28caecd673176afcce5d21ff9d93aa33cc1ae624f180815a2ca1c8761354",
+      "bytes": 2313300
+    },
+    "results/development/HY3-004/cases/conservative_cost/decisions.csv": {
+      "sha256": "2fe2ea52f74c3af8131fa681f6631b2ae7d0d359c44eebbc90950f1275cae73e",
+      "bytes": 675876
+    },
+    "results/development/HY3-004/cases/conservative_cost/scenario_metrics.csv": {
+      "sha256": "1b668401d324ab93d7767f60a665aa1ca9aae1b8705859f6f29edd7f3fa7b71d",
+      "bytes": 243558
+    },
+    "results/development/HY3-004/cases/conservative_cost/summary.csv": {
+      "sha256": "ea87bf033327c1062f485c1cda3cb0beb87844d368ad19a6ef9a8f419b9e9b09",
+      "bytes": 3477
+    },
+    "results/development/HY3-004/cases/conservative_cost/target_scores.csv": {
+      "sha256": "96ad6151b1d52d66c167f50ac0a20684203f1531d8bff444f42029621baa0d63",
+      "bytes": 704166
+    },
+    "results/development/HY3-004/cases/equal_weight_annual/annual_ledgers.csv": {
+      "sha256": "6c90036cd0e32c5aee31ea2ee5f2a6984b0405910266d65594cbae8849dd2e3e",
+      "bytes": 2634758
+    },
+    "results/development/HY3-004/cases/equal_weight_annual/decisions.csv": {
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+      "bytes": 310
+    },
+    "results/development/HY3-004/cases/equal_weight_annual/scenario_metrics.csv": {
+      "sha256": "f80a7e991cc87ba1656e30c426cf2d5d1fb8be79cea52d0e7c5610a145d840bb",
+      "bytes": 234331
+    },
+    "results/development/HY3-004/cases/equal_weight_annual/summary.csv": {
+      "sha256": "73bc5bc75b72f4112c4ec266bbafc75ca1093dafd3caf0c625cf6225b71f8cdb",
+      "bytes": 3267
+    },
+    "results/development/HY3-004/cases/equal_weight_annual/target_scores.csv": {
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+      "bytes": 197
+    },
+    "results/development/HY3-004/cases/equal_weight_buy_hold/annual_ledgers.csv": {
+      "sha256": "eb07fa1d28abc0bc548aeead6b7b3088a41dc910b9c8beebcf5b79ce421f4310",
+      "bytes": 2325102
+    },
+    "results/development/HY3-004/cases/equal_weight_buy_hold/decisions.csv": {
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+      "bytes": 310
+    },
+    "results/development/HY3-004/cases/equal_weight_buy_hold/scenario_metrics.csv": {
+      "sha256": "78e94be998ff5bbe94e377ee2b76aac19d7e0134d2d2dacdcde6ef76051c1bee",
+      "bytes": 236099
+    },
+    "results/development/HY3-004/cases/equal_weight_buy_hold/summary.csv": {
+      "sha256": "497876187e0cf95d4867e9b58e17bec4caaa3c1221d252ac6706d6823fbe39ae",
+      "bytes": 3306
+    },
+    "results/development/HY3-004/cases/equal_weight_buy_hold/target_scores.csv": {
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+      "bytes": 197
+    },
+    "results/development/HY3-004/cases/growth_cost/annual_ledgers.csv": {
+      "sha256": "6991afcf435c5e24b7ed0f91d0a5e146a4b6618e56a522546c0ae6429b1399cd",
+      "bytes": 2329247
+    },
+    "results/development/HY3-004/cases/growth_cost/decisions.csv": {
+      "sha256": "023cb0f98183e11756d736745cb459508b1977a76a962bf14049b7766ae7fb9b",
+      "bytes": 604328
+    },
+    "results/development/HY3-004/cases/growth_cost/scenario_metrics.csv": {
+      "sha256": "4b542477a87fa03be426f6bfa906ab05b057c40c8d248bf80a621b47fe6b4004",
+      "bytes": 241141
+    },
+    "results/development/HY3-004/cases/growth_cost/summary.csv": {
+      "sha256": "0e6af94c2f282f02970caed80c4af84fc190bb154c14c5531eade6e67d0d0158",
+      "bytes": 3462
+    },
+    "results/development/HY3-004/cases/growth_cost/target_scores.csv": {
+      "sha256": "436c9e7c4416e41ef71134ad91ec4d787632b9883da62d29a36194115ba3c3ce",
+      "bytes": 477618
+    },
+    "results/development/HY3-004/checks.json": {
+      "sha256": "c72025c71e3514e22076e0b0d0eb731750fdb73e7cb5bf0cbd0370a9b9e38f9a",
+      "bytes": 265
+    },
+    "results/development/HY3-004/reference_imports.json": {
+      "sha256": "b1cd7830b7c8653b56e9b27d6c1f2ed22d0b67cfb6091d40e1b1496e7f120113",
+      "bytes": 1179
+    },
+    "results/development/HY3-004/run_manifest.json": {
+      "sha256": "35d0e014943831d5495d8245979e7a8ffaea28f887705e4864deb9a81f1ff240",
+      "bytes": 145728
+    },
+    "handoff/HY3-004/result.json": {
+      "sha256": "d7fa8bfaf8c9904e072b9a7a2b1bde797e17b333e256b286cacf63ebb56e59a0",
+      "bytes": 15394
+    }
+  },
+  "unchanged": null,
+  "git_status_after": "",
+  "blocking": true,
+  "retry_performed": false,
+  "failures": [
+    "exec_command helper setup refresh failed twice",
+    "Node process global absent before checker invocation; stdlib launcher used",
+    "First actual writer checker invocation interrupted by node_repl timeout after120seconds; kernel reset and descendants terminated, no exit invented",
+    "Read-only CIM process query denied; older Get-Process records were initially misidentified as original checker liveness",
+    "No writer retry performed"
+  ],
+  "tool_failure_log": "js execution timed out; kernel reset, rerun your request"
+}

@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-036-a1\audit\SOL-036\verify.py", line 399, in <module>
+    try: main()
+         ^^^^^^
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-036-a1\audit\SOL-036\verify.py", line 392, in main
+    paths,diagnostics,reps,actions=ledger_checks(tables,market); metrics_all(tables,paths,diagnostics); bridges=imported_bridge(tables,p,cfg)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-036-a1\audit\SOL-036\verify.py", line 209, in ledger_checks
+    require(selected_name in TARGETS,'unknown selected target')
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-036-a1\audit\SOL-036\verify.py", line 36, in require
+    if not v: raise ValueError(msg)
+              ^^^^^^^^^^^^^^^^^^^^^
+ValueError: unknown selected target

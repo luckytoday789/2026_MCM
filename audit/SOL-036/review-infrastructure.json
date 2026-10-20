@@ -1,0 +1,12 @@
+{
+  "failures": [
+    "Two unified exec setup failures",
+    "Node process global absent in initial setup",
+    "Node producer checker invocation timeout120s and kernel reset",
+    "CIM process inspection access denied",
+    "Reviewer trial1 adaptive target label bridge error fixed in new verifier, original retained",
+    "JavaScript patch attempt unterminated string; no file mutation from parse failure",
+    "Portable isolated Git add rejected ignored log; added scoped audit .gitignore so evidence is deliverable"
+  ],
+  "production_retry_count": 0
+}

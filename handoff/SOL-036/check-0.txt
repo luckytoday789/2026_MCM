@@ -1,0 +1,125 @@
+is worktree. Do not commit, push, change branches, edit the task, or start another watcher; the parent runner handles delivery. Respect allowed_paths and base version. Write real deliverables and perform checks. Report blockers rather than inventing parameters. The task is authorized; continue through routine fixes.
+Review only the exact completed primary HY3-004 result 6aa2ccdce80834c8beb52a827993f1f587d1d8a6 under specs/DEVELOPMENT_CASE_RESULTS_REVIEW.md. This is independent development numerical review, not strategy selection. The producer result is deliberately not merged or accepted at this task base; use immutable Git objects fetched by the parent, and materialize only isolated ignored review checkouts. Do not demand upstream acceptance as a prerequisite for reviewing it. Original fixed-source code and earlier reviews are accepted; do not change them. Do not consume HY3-005 results, final inputs, raw complete data, private identities, or recreate HY3-003.
+
+Authenticate producer task canonical digest, base E, task publication P, source C, exact configuration, all source/input/reference pins, receipt command argv/exits/Python3.12, parent/result relationship, allowed paths and all44 required regular files plus parent handoff. Verify each canonical artifact hash/byte count/schema/key and actual runtime under fixed limits. Exact source/task/config blobs are pinned in this review. Preserve historical line-ending failures and all negative evidence. Candidate labels and producer checks are evidence only.
+
+First run the exact producer writer --check in fresh Python3.12 with every case-insensitive PYTHONPATH removed, before importing separate analysis/review modules. Use an isolated actual Git checkout at the producer result for unchanged source/config/results; absent .runtime/task.json must work. Record actual argv,returncode,elapsed and logs plus meaningful before/after byte inventories. Do not generate or repair production outputs, loosen imported-module guards, add retries or change policies. If checker fails, preserve failure and continue only useful diagnosis; do not call bundle accepted.
+
+Independently reconstruct numerical expectations with stdlib Fraction/Decimal or justified high precision; never call producer accounting,metrics,calibration,case or policy routines to create expected answers. Rebuild all four training-complement 2700-row identities/digests and derived-real-gross prior facts from authorized original development bytes. Priors exclude whole eval folds and are independent of H. Recompute every saved scenario metric and every summary across all8 modes/five horizons: exact CPI,real CAGR,sample ddof1 volatility,initial/post-fee drawdown and tie locations,all fee sums,both trade denominators,linear quantiles and deterministic severe tie. Reconstruct representative complete ledger paths for IDs1..4 for all five computed modes plus each H30 severe scenario and available initial-deferral,target-change,latch examples; report absent actions honestly. Check continuity,long-only/full investment,one-way T,fee-before-return and exact keep dollar holdings. Trade-count threshold does not cancel fees.
+
+Independently rederive representative predecision score states across folds and observed boundaries: gamma4; training empirical weights; n=min(5,t-1),prior mass15 for contextual; adaptive alternatives begin year6; strict keep hurdle, global-max anchored tie order and actual active-target state. Scoring buffers must not become a second actual fee. Human-review latch uses only observed drawdown through t-1 at >=25%,never resets,keeps dollar holdings and zero fees thereafter. Reconcile action/diagnostic links,first deployment and executed target-change counts against ledgers. On isolated copied/generated fixtures perturb future observations and prove earlier decisions unchanged; never reclassify changed competition data as accepted output. Existing accepted independent oracle source can support review but replaying its PASS labels alone does not bind new result bytes.
+
+Authenticate original HY3-003 exact receipt and all five referenced artifacts and independently demonstrate three imported cases preserve every original value under explicit typed/name/unit bridge; no baseline policy callback or resimulation. Empty three reference sidecars remain inapplicable. The primary is fee0.0025 only; do not claim doubled-fee behavior or a winner/customer assignment.
+
+Create only new audit/SOL-036: review.md,findings.json,verify.py,verification.json,clean-environment-checks.json plus compact fixtures/logs needed for reproducibility, each <=10MiB. Bind this immutable task/base/source/publication and exact producer receipt/full canonical artifact inventory. A portable read-only verify.py --check must replay meaningful independent arithmetic and actual task/source/result bindings after HEAD advances without runtime task, not merely assert saved pass flags. Preserve failed trials. Use isolated compact corruptions for missing file,duplicate key,wrong task/base/source/config,input/count/status,changed metric including rehashed wrong metric, and bad observed action link. Capture before/after inventories and reject all corruptions unchanged. Never rewrite source/output/evidence hashes to erase failures or duplicate whole large bundles. Include scalar expected/observed facts and tolerances,checked keys,actual counts/runtime/bytes and explicit untested limits. Run prescribed verifier in fresh Python3.12 without PYTHONPATH and preserve actual logs. Chief will inspect exact result commit and independently challenge scalar fixtures before acceptance. No packages,accounts,models,services,workers/restarts,policy tuning,new production task,freeze,final gate or submission. Parent owns commit/push; bounded1500seconds CPU-only.
+warning: Codex is ignoring 1 unrecognized configuration setting. Check for typos or deprecated settings.
+  user (C:\Users\刘奥华\.codex\config.toml): `computer_use.windows.always_allowed_app_ids` is ignored.
+warning: Codex is ignoring 1 unrecognized configuration setting. Check for typos or deprecated settings.
+  user (C:\Users\刘奥华\.codex\config.toml): `computer_use.windows.always_allowed_app_ids` is ignored.
+codex
+I’ll read the task and review specification, then authenticate the pinned producer result and run its checker in a clean Python 3.12 process before starting independent numerical checks.
+
+exec
+"C:\\Users\\刘奥华\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe" -Command 'Get-Content AGENTS.md; Get-Content .runtime/task.json' in E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-036-a1
+ exited -1 in 0ms:
+Failed to create unified exec process: helper_unknown_error: setup refresh had errors
+2026-10-20T05:00:10.739672Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: helper_unknown_error: setup refresh had errors\")" }
+exec
+"C:\\Users\\刘奥华\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe" -NoProfile -Command 'Get-Content -LiteralPath AGENTS.md' in E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-036-a1
+ exited -1 in 0ms:
+Failed to create unified exec process: helper_unknown_error: setup refresh had errors
+2026-10-20T05:00:17.161351Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: helper_unknown_error: setup refresh had errors\")" }
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (failed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+The result is a direct child of its pinned base; its task was published separately, as expected. The shell tool failed to start, so I’m using local Node process execution. I’ll create an ignored sparse Git checkout containing only the authorized review inputs and run the unchanged producer checker there.
+
+mcp: node_repl/js started
+mcp: node_repl/js (failed)
+mcp: node_repl/js started
+codex
+The clean producer check is still running. Its pre-run inventory is captured, and the isolated checkout has no runtime task file. I’ll preserve the exit code and full logs, then compare the inventory before proceeding.
+
+codex
+The writer check has not returned yet. The producer receipt records four successful commands, but I’ll report those separately from the execution measured here.
+
+mcp: node_repl/js (failed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (failed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+The tool’s 120-second session timed out, but the Python checker process remains active. I have not restarted it. The saved bundle reports 17,823 score rows, within the fixed maximum, and 493.734 seconds for production creation. I’m preparing independent stdlib checks while the original invocation finishes.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+The independent verifier is written and its first trial is running with captured logs. It reconstructs the four training priors, ledger arithmetic, metrics and summaries; compares imported baseline values cell by cell; and independently scores complete paths across folds and observed action examples.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+I misidentified older Python processes as the checker still running. The checker was terminated by the tool timeout before its launcher saved an exit code or logs. I won’t retry it because the task prohibits retries; this leaves the clean execution requirement unresolved.
+
+The independent verifier reached ledger checks and found a review-side naming error: adaptive outputs use `defensive` and `growth_tilt`. I’ll correct that bridge and preserve the failed trial.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+The independent arithmetic trial completed: 28,800 ledger rows, 4,800 metrics, 40 summaries and 17,823 score rows passed the implemented checks. It independently rescored 468 predecision states and rejected all 12 compact corruptions. No initial allocation deferrals occurred; the adaptive mode recorded 177 target changes.
+
+The verifier returned code 2, preserving the unresolved clean writer check as a blocker.
+
+mcp: node_repl/js started
+mcp: node_repl/js (failed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (failed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+2026-10-20T05:13:40.613383Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+ERROR: You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/settings/usage to purchase more credits or try again at 4:05 PM.
+ERROR: You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/settings/usage to purchase more credits or try again at 4:05 PM.
+tokens used
+186,841

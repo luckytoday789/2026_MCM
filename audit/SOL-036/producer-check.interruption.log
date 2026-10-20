@@ -1,0 +1,2 @@
+Actual invocation interrupted by node_repl tool timeout120000ms. Tool result: js execution timed out; kernel reset, rerun your request
+No actual producer exit code or stdout/stderr recovered. No retry.

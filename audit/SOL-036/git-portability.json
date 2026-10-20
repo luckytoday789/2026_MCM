@@ -1,0 +1,59 @@
+{
+  "head": "c21af611288936474a866c550894dbca9fe14d75",
+  "assigned_worktree_head": "2694cf053586e71488781b192efb54518f77c62f",
+  "core_autocrlf": true,
+  "exported_through_actual_git_index": true,
+  "files": [
+    {
+      "path": "audit/SOL-036/.gitattributes",
+      "source_sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "export_sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "bytes": 8,
+      "unchanged": true
+    },
+    {
+      "path": "audit/SOL-036/.gitignore",
+      "source_sha256": "e027cf8ebf80d6dcdacced8a4dbd1c440e2436fb1868ec851db4061cb67bb787",
+      "export_sha256": "e027cf8ebf80d6dcdacced8a4dbd1c440e2436fb1868ec851db4061cb67bb787",
+      "bytes": 7,
+      "unchanged": true
+    },
+    {
+      "path": "audit/SOL-036/verify.py",
+      "source_sha256": "193382f4179560dfa379a4b767b41c1fe208031fe8d3a9e96ce73f449f7a7b2c",
+      "export_sha256": "193382f4179560dfa379a4b767b41c1fe208031fe8d3a9e96ce73f449f7a7b2c",
+      "bytes": 36891,
+      "unchanged": true
+    },
+    {
+      "path": "audit/SOL-036/task-snapshot.json",
+      "source_sha256": "c35c70135c296104326ddfad1cfdaba1ee16a21130b0a97856097f7ebf3ce70e",
+      "export_sha256": "c35c70135c296104326ddfad1cfdaba1ee16a21130b0a97856097f7ebf3ce70e",
+      "bytes": 20318,
+      "unchanged": true
+    },
+    {
+      "path": "audit/SOL-036/schemas.json",
+      "source_sha256": "95c86210121afd493b7d5f50409b05e20cabcd745f104f0a21eaa221cd9d9b65",
+      "export_sha256": "95c86210121afd493b7d5f50409b05e20cabcd745f104f0a21eaa221cd9d9b65",
+      "bytes": 101466,
+      "unchanged": true
+    },
+    {
+      "path": "audit/SOL-036/clean-environment-checks.json",
+      "source_sha256": "0c67cab66ab8db826d25f84a3f3d05995cb4a7e1904c4caa305f741848cd6cc0",
+      "export_sha256": "0c67cab66ab8db826d25f84a3f3d05995cb4a7e1904c4caa305f741848cd6cc0",
+      "bytes": 15137,
+      "unchanged": true
+    },
+    {
+      "path": "audit/SOL-036/producer-check.interruption.log",
+      "source_sha256": "b93617acde513eb4b1df0849b6ec3cdf5c18572c4b0c2348d4ff242be63ab1c4",
+      "export_sha256": "b93617acde513eb4b1df0849b6ec3cdf5c18572c4b0c2348d4ff242be63ab1c4",
+      "bytes": 202,
+      "unchanged": true
+    }
+  ],
+  "commits_created": 0,
+  "root_branch_changed": false
+}
