@@ -3,7 +3,8 @@
   "machine_id": "8ea2b5131bed400a8f2954cd69935807",
   "state": "running",
   "python": "3.12.0",
-  "updated_at": "2026-10-20T13:02:54.294014+00:00",
-  "lease_until": "2026-10-20T13:12:54.294014+00:00",
-  "task_id": "integrate-and-dispatch"
+  "updated_at": "2026-10-20T13:04:43.298728+00:00",
+  "lease_until": "2026-10-20T13:14:43.299727+00:00",
+  "task_id": "CHIEF-REFIT-001",
+  "branch": "work/chief/CHIEF-REFIT-001-a1"
 }
