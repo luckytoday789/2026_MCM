@@ -1,0 +1,29 @@
+{
+  "status": "opened_after_accepted_freeze_audit",
+  "opened_at": "2026-10-20T13:11:10.578129+00:00",
+  "freeze": {
+    "commit": "06086aed327aa626ddc91472f943c2c9fba1259a",
+    "path": "ops/freeze.json",
+    "sha256": "9a78cc1cc248bdd1bf1bd50723e2e550d8b70dee653c622ac426115254ebf447"
+  },
+  "freeze_attestation": {
+    "commit": "97283e058194aa2de85afe85755bb178c78e0116",
+    "path": "audit/chief/FINAL-FREEZE-20261020-review.json",
+    "sha256": "7fd8f2041be021e344f3ebce51d12c138b7a7f569dded92204cb4a5ae433171b"
+  },
+  "refit": {
+    "commit": "07eff1d3cb714c3f1d9dc850e0dbb9cab59c6b8d",
+    "path": "results/development/CHIEF-REFIT-001/run_manifest.json",
+    "sha256": "acd58eccc6db735197b4b3feaa751e5c1c1954eb82bfaabe528ff13d2b410ee6"
+  },
+  "refit_acceptance": {
+    "commit": "12d91bd60f551acd3c9d98218a71a0370878f614",
+    "path": "audit/chief/CHIEF-REFIT-001-promoted-review.json",
+    "sha256": "6733d24450733b1543bdc2621a5d032632b280572097775516c5bba1722e6165"
+  },
+  "primary_mode": "balanced_cost",
+  "configuration_path": "specs/execution/HY3-010.json",
+  "configuration_sha256": "ae12560724b470dd1130f20445b5e2128110703c9f174dfd18313f6ccb09c5e3",
+  "scope": "One fixed60-scenario final inventory; no further tuning or reranking. Gate opening does not assert any final outcome.",
+  "prior_final_access": false
+}

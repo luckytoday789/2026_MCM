@@ -13,6 +13,8 @@
   "poll_seconds": 60,
   "max_task_seconds": 1800,
   "max_consecutive_failures": 2,
-  "final_data_open": false,
-  "note": "Default automation stops 29 minutes before submission to leave time for human submission; coordinator may revise before launch if needed."
+  "final_data_open": true,
+  "note": "Default automation stops 29 minutes before submission to leave time for human submission; coordinator may revise before launch if needed.",
+  "final_gate_opened_at": "2026-10-20T13:11:10.578129+00:00",
+  "final_gate_evidence": "audit/chief/FINAL-GATE-20261020.json"
 }
