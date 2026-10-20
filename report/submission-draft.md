@@ -10,7 +10,7 @@ SafeInvest must connect a customer's horizon, liquidity needs and willingness to
 
 On the accepted development comparison, using 120 scenarios, a 30-year horizon and a 0.25% one-way fee, fixed-prior Balanced has median real growth 4.53% per year, p10 growth 1.10%, median maximum real drawdown 26.84%, and p90 drawdown 41.94%. Annual equal thirds gives 3.58%, 1.28%, 20.10% and 34.84%, respectively. Balanced trades at 9.72% of reviews, versus 100.00% for annual equal thirds. These separate marginal summaries describe a growth/loss trade-off; they neither establish a paired performance improvement nor make Balanced suitable for every customer. [E1]
 
-The following draft contains accepted development results and reviewed methods. Policy promotion, interpretation of the accepted cost sensitivity for the eventual recommendation, personalized rescreening and final evaluation remain explicit completion gates. No conclusion below treats an unfinished gate as a positive result. The executive recommendation must be rewritten after those gates close. [E3, E5]
+The following draft contains accepted development results and reviewed methods. Primary selection and same-mode cost-sensitivity interpretation are supported below; personalized rescreening and final evaluation remain explicit completion gates. No conclusion below treats an unfinished gate as a positive result. The executive recommendation must be rewritten after those gates close. [E3, E5]
 
 <!-- SLOT:EXECUTIVE_RECOMMENDATION -->
 PENDING EXECUTIVE_RECOMMENDATION: insert the accepted final recommendation and its quantitative support after all required evidence gates close.
@@ -81,7 +81,11 @@ The own-horizon annual equal-thirds references below make the time-horizon disti
 Additional Balanced complexity has predeclared practical gates: median paired real-growth improvement of at least 0.10 percentage points/year; marginal p10 growth deterioration no worse than 0.10 percentage points/year; marginal p90 loss deterioration no greater than 1.00 percentage point; and a strictly positive paired median gain in at least three of four folds. Adaptive targeting must pass directly against both contextual fixed targeting and fixed-prior targeting. The contextual control's own failure does not remove it as an adaptive comparator. A zero fold gain does not count as support. These gates are decision thresholds, not significance tests. [E2]
 
 <!-- SLOT:PROMOTION_RESULTS -->
-PENDING PROMOTION_RESULTS: insert authenticated scenario-paired comparisons, all gate outcomes and the resulting predeclared choice. Do not infer promotion from differences of the marginal table entries.
+The accepted primary analysis retains fixed-prior Balanced. Contextual estimation has zero median paired growth gain and only one positive fold. Adaptive targeting gains only 0.047 percentage points/year over its contextual control while worsening p90 loss by 2.538 points; it also has zero median paired gain over fixed-prior Balanced. Automatic target updates therefore fail the predeclared development test for added value. Fixed Balanced's 0.838-point median paired gain over annual thirds still accompanies worse marginal tails; retaining it within the research menu does not establish universal suitability. [E6]
+
+{{PROMOTION_TABLE}}
+
+The table uses development H=30 and k=0.0025. Growth differences are percentage points/year; loss differences are percentage points, positive meaning worse. The final three rows test added complexity. All modes and failed comparisons remain visible, and the higher-fee results cannot reselect the primary mode. [E6]
 <!-- END_SLOT:PROMOTION_RESULTS -->
 
 ## 5. Transaction-cost sensitivity and customer explanation
@@ -97,11 +101,11 @@ For fixed-prior Balanced, median growth rounds to 4.53% per year at both fee rat
 <!-- END_SLOT:SENSITIVITY_RESULTS -->
 
 <!-- SLOT:SENSITIVITY_RECOMMENDATION_IMPACT -->
-PENDING SENSITIVITY_RECOMMENDATION_IMPACT: after the predeclared primary choice is accepted, identify its row above and complete the recommendation-impact statement. Fee-specific client assignments still require accepted own-horizon rescreens and must not replace the primary recommendation automatically.
+The accepted choice is fixed-prior Balanced, so its two fee rows above are the relevant same-mode robustness comparison. Doubling the fee gives no evidence for promoting contextual estimation or automatic target changes and does not remove the loss-tail concern. We retain the simpler rule for reserved evaluation and make customer recommendations conditional on the separate own-horizon rescreens; a changed fee requires renewed suitability review. [E1, E5, E6]
 <!-- END_SLOT:SENSITIVITY_RECOMMENDATION_IMPACT -->
 
 <!-- SLOT:CUSTOMER_EXPLANATION -->
-PENDING CUSTOMER_EXPLANATION: write no more than 50 English words after policy choice is accepted. State the action, estimated benefit/cost reasoning, remaining loss risk and human-review behavior.
+We keep your holdings unless a rebalance offers an estimated benefit above our cost buffer. Losses can exceed your tolerance. Once observed loss triggers review, automatic trades stop; your existing assets remain invested while a person reviews your situation. [E2, E6]
 <!-- END_SLOT:CUSTOMER_EXPLANATION -->
 
 ## 6. Freeze and reserved final evaluation
@@ -123,6 +127,8 @@ PENDING CONCLUSION: reconcile the abstract, selected rule, client decisions, sen
 <!-- END_SLOT:CONCLUSION -->
 
 ## Sources and AI-use disclosure
+
+[E6] Exact accepted HY3-009 development analysis: producer 680c2faaf603df975c35e828aeebdadd8ce242cb; chief acceptance audit/chief/HY3-009-review.json independently checks all 100 gates, 30 screens and 10 provisional choices with 790 scalar comparisons. No final outcomes enter this selection.
 
 [E0] Competition problem and locked conventions: specs/PROBLEM_LOCK.md and specs/ACCOUNTING.md; methods-draft.md. The supplied scenarios are synthetic competition inputs. The project source manifest records CC BY-NC-SA 4.0 attribution based on JST Macrohistory release 6; preserve the supplied attribution in the code supplement.
 

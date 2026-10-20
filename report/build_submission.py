@@ -40,6 +40,7 @@ SOURCES = {
     "E4": ["report/baseline-development-provenance.json", "audit/chief/HY3-003-review.json",
            "audit/chief/SOL-008-review.json"],
     "E5": ["audit/chief/HY3-006-review.json", "audit/chief/CHIEF-HY3-006-20261020-review.json"],
+    "E6": ["audit/chief/HY3-009-review.json", "results/development/HY3-009/selection.json"],
 }
 
 
@@ -119,8 +120,43 @@ def doubled_sources():
     return result,dict(producer_commit=commit,independent_review_commit=independent,source_rows=sources)
 
 
+
+def analysis_sources():
+    commit='680c2faaf603df975c35e828aeebdadd8ce242cb'
+    queue=json.loads((ROOT/'ops/queue.json').read_bytes())['tasks']
+    task=next(t for t in queue if t['id']=='HY3-009')
+    assert task['state']=='accepted' and task['reviewed_commit']==commit and task['result_verdict']=='approve'
+    review=json.loads((ROOT/task['acceptance_evidence']).read_bytes())
+    assert review['reviewed_commit']==commit and review['numerical_review']['status']=='passed'
+    prefix='results/development/HY3-009/'
+    def read(name):
+        path=prefix+name;raw=subprocess.check_output(['git','show',commit+':'+path],cwd=ROOT)
+        assert sha(raw)==review['artifacts_sha256'][path]==task['artifacts_sha256'][path]
+        return json.loads(raw)
+    selection=read('selection.json');gates=read('comparison_gates.json')
+    assert selection['selected_mode']=='balanced_cost' and selection['sensitivity_may_reselect'] is False
+    pairs=[('balanced_cost','equal_weight_annual'),('balanced_context','balanced_cost'),
+           ('balanced_adaptive','balanced_context'),('balanced_adaptive','balanced_cost')]
+    selected=[next(r for r in gates if (r['candidate_mode'],r['reference_mode'])==pair and
+                   r['fee_rate']==.0025 and r['horizon']==30) for pair in pairs]
+    expected=[(.8378266961618253,-.17554525396301868,7.097619156859601,4),
+              (0.,.11663999335577158,-1.7849863458934792,1),
+              (.04696748609172019,-.09571123451484587,2.5384319317096242,4),
+              (0.,.02092875884092571,.7534455858161451,2)]
+    for row,values in zip(selected,expected):
+        assert tuple(row[k] for k in ('median_paired_growth_gain_pp','marginal_p10_growth_difference_pp',
+                    'marginal_p90_loss_difference_pp','positive_fold_count'))==values and row['passed'] is False
+    cells=[[LABELS[r['candidate_mode']]+' / '+LABELS[r['reference_mode']],
+            *(format(float(r[k]),'.3f') for k in ('median_paired_growth_gain_pp','marginal_p10_growth_difference_pp','marginal_p90_loss_difference_pp')),
+            str(r['positive_fold_count'])+'/4','Fail'] for r in selected]
+    return mdtable(['Candidate / control','Paired gain','p10 diff.','p90 loss diff.','Positive folds','Gate'],cells),dict(
+        producer_commit=commit,acceptance_evidence=task['acceptance_evidence'],source_rows=selected,
+        source_hashes={prefix+n:review['artifacts_sha256'][prefix+n] for n in ('selection.json','comparison_gates.json')})
+
+
 def assemble(team_file=None):
     primary, baseline = accepted_sources()
+    promotion_table,analysis_provenance=analysis_sources()
     doubled,doubled_provenance=doubled_sources()
     text = (ROOT / "report/submission-draft.md").read_text(encoding="utf-8")
     primary_rows = [r["source_row"] for r in primary["displayed_rows"]
@@ -197,13 +233,16 @@ def assemble(team_file=None):
         "MENU_TABLE": mdtable(["Target", "Stocks %", "Bonds %", "Bills %"], menus),
         "PROFILE_TABLE": mdtable(["Profile", "Years", "Loss tol. %", "Liquidity", "Bills %", "Eligible classes"], profile_rows),
         "PRIMARY_H30_TABLE": primary_table, "BALANCED_SEVERE": severe_text,
-        "BASELINE_HORIZON_TABLE": horizon_table,'SENSITIVITY_H30_TABLE':sensitivity_table}
+        "BASELINE_HORIZON_TABLE": horizon_table,'SENSITIVITY_H30_TABLE':sensitivity_table,'PROMOTION_TABLE':promotion_table}
     for key, value in replacements.items():
         if text.count("{{" + key + "}}") != 1:
             raise ValueError("Missing or duplicate template key " + key)
         text = text.replace("{{" + key + "}}", value)
     if re.search(r"\{\{.*?\}\}", text):
         raise ValueError("Unknown unexpanded template key")
+    customer=re.search(r'<!-- SLOT:CUSTOMER_EXPLANATION -->(.*?)<!-- END_SLOT:CUSTOMER_EXPLANATION -->',text,re.S).group(1)
+    customer= re.sub(r'\[E[0-6](?:, E[0-6])*\]','',customer)
+    assert len(re.findall(r"\b[\w'-]+\b",customer))<=50,'Customer explanation exceeds50 words'
     markers=re.findall(r'<!-- SLOT:([A-Z_]+) -->',text)
     blocks=list(re.finditer(r'<!-- SLOT:([A-Z_]+) -->(.*?)<!-- END_SLOT:\1 -->',text,re.S))
     assert [m.group(1) for m in blocks]==markers and len(markers)==len(set(markers)), 'invalid/duplicate draft slot blocks'
@@ -213,15 +252,16 @@ def assemble(team_file=None):
         pending=bool(re.search(r'(?m)^PENDING '+re.escape(name)+r':',content))
         # Numeric sensitivity has independently accepted exact source evidence.
         # Text filled into another slot still requires its own acceptance gate.
-        slot_status[name]={'state':'pending' if pending else 'completed' if name=='SENSITIVITY_RESULTS' else
+        slot_status[name]={'state':'pending' if pending else 'completed' if name in ('SENSITIVITY_RESULTS','PROMOTION_RESULTS','SENSITIVITY_RECOMMENDATION_IMPACT','CUSTOMER_EXPLANATION') else
                            'text_filled_pending_evidence','pending_marker_present':pending,
                            'evidence_gate':'accepted_HY3_004_and_HY3_006_results' if name=='SENSITIVITY_RESULTS' else
+                           'accepted_HY3_009_selection_and_reviewed_policy' if name in ('PROMOTION_RESULTS','SENSITIVITY_RECOMMENDATION_IMPACT','CUSTOMER_EXPLANATION') else
                            'accepted_upstream_and_report_conclusion_required'}
     slots=[name for name,record in slot_status.items() if record['state']!='completed']
     numeric_paragraphs = []
     for paragraph in re.split(r"\n\s*\n", text):
         if re.search(r"\d", paragraph) and not paragraph.startswith(("#", "|", "<!--", "PENDING")):
-            sources = sorted(set(re.findall(r"E[0-5]", paragraph)))
+            sources = sorted(set(re.findall(r"E[0-6]", paragraph)))
             if paragraph.startswith("T ="):
                 sources = ["E0"]
             elif paragraph.startswith("GPT-"):
@@ -240,7 +280,7 @@ def assemble(team_file=None):
         "sensitivity_evidence_gate":dict(state='accepted',producer_commit=doubled_provenance['producer_commit'],
             independent_review_commit=doubled_provenance['independent_review_commit'],
             interpretation_gate='SENSITIVITY_RECOMMENDATION_IMPACT'),
-        "source_registry": SOURCES, "numeric_paragraph_mappings": numeric_paragraphs,
+        "analysis_provenance":analysis_provenance, "source_registry": SOURCES, "numeric_paragraph_mappings": numeric_paragraphs,
         "primary_producer": primary["producer_commit"],
         "primary_review": primary["independent_review_commit"],
         "primary_current_acceptances":primary['acceptances'],

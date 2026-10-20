@@ -22,5 +22,10 @@
   "source_sha256": {
     "audit/chief/check_personalized_result.py": "c10931d89e55e7b1db7a3fe93920bcb259e0094d3645ce3bb800dbbb4fe5f8e0",
     "audit/chief/qualify_personalized_oracle.py": "23785dc2ba7ebde8d4ffb004d3cae88393390f69034db02b0aba74412755ea2b"
+  },
+  "hash_basis": "source_sha256 records exact executed working-file bytes, including original line endings",
+  "canonical_git_blob_sha256": {
+    "audit/chief/check_personalized_result.py": "c10931d89e55e7b1db7a3fe93920bcb259e0094d3645ce3bb800dbbb4fe5f8e0",
+    "audit/chief/qualify_personalized_oracle.py": "efc624cc8e7600518bbf800692adb1348620228933ca1715a91787b6fd36e153"
   }
 }

@@ -427,11 +427,11 @@
     },
     "PERSONALIZED_PRODUCTION_SOURCE": {
       "state": "accepted_source_only",
-      "task_id": "CHIEF-PERSONALIZED-20261020",
-      "reviewed_commit": "7053b41ce81b1e04100d56a24a321e51b3465459",
-      "acceptance_evidence": "audit/chief/CHIEF-PERSONALIZED-20261020-review.json",
+      "task_id": "CHIEF-PERSONALIZED-V2-20261020",
+      "reviewed_commit": "11a633c75dbbd8d25385ab9d1600d45943f1afef",
+      "acceptance_evidence": "audit/chief/CHIEF-PERSONALIZED-V2-20261020-review.json",
       "outcomes_accepted": false,
-      "scope": "Chief takeover production bridge source approval; actual own-horizon rescreens remain a separate acceptance."
+      "scope": "Corrected canonical JSON reason ordering;14 tests and actual009 mapping pass. Original source approval/failure preserved."
     },
     "FINAL_EXECUTION_SOURCE_V2": {
       "state": "accepted_source_only",
@@ -447,6 +447,13 @@
       "acceptance_evidence": "audit/chief/HY3-009-review.json",
       "outcomes_accepted": true,
       "scope": "Independent790 scalar checks of100 gates,30 screens and10 provisional choices; personalized rescreens and final performance remain separate."
+    },
+    "ACTUAL_PERSONALIZED_JOB": {
+      "state": "running_pending_exact_receipt",
+      "task_id": "CHIEF-PERSONALIZED-RUN-001",
+      "path": "ops/tasks/CHIEF-PERSONALIZED-RUN-001.json",
+      "outcomes_accepted": false,
+      "scope": "Real chief fixed commands;4 conditional cases plus6 referrals. Independent saved arithmetic acceptance remains required."
     }
   },
   "requirements": [
@@ -611,8 +618,8 @@
         "PROBLEM_LOCK",
         "POLICY_PROPOSAL"
       ],
-      "state": "not_available",
-      "remaining": "Await actual009 primary-only fixed comparison gates and accepted choice; failed context/adaptive gates must remain visible."
+      "state": "accepted_development_evidence",
+      "remaining": "Accepted009 retains fixed-prior Balanced; actual paired comparison table and failed context/adaptive gates are in manuscript. Reserved outcomes and final interpretation remain."
     },
     {
       "id": "R11",
@@ -620,8 +627,8 @@
       "sources": [
         "PROBLEM_LOCK"
       ],
-      "state": "not_available",
-      "remaining": "Write after the selected action and rationale are supported; mechanically count words and review meaning"
+      "state": "completed_development_explanation",
+      "remaining": "Customer explanation mechanically checked<=50 words; align with final conclusion after final evidence."
     },
     {
       "id": "R12",
@@ -633,8 +640,8 @@
         "DOUBLED_DEVELOPMENT_FAILED_ATTEMPT",
         "DOUBLED_DEVELOPMENT_INDEPENDENT_REVIEW"
       ],
-      "state": "not_available",
-      "remaining": "Exact unchanged-policy006 and fresh007 numerical replay accepted. Same-mode sensitivity table completed; recommendation impact follows accepted primary selection and individual rescreens."
+      "state": "accepted_development_evidence",
+      "remaining": "Same-mode sensitivity and primary recommendation impact completed using accepted004/006/009. Personalized and final fee counterfactuals remain separate."
     },
     {
       "id": "R13",
@@ -678,7 +685,7 @@
     "Post-freeze software corrections remain logged and disclosed; no final-outcome tuning",
     "Team private names and IDs stay outside tracked artifacts"
   ],
-  "updated_at": "2026-10-20T12:03:29.553187+00:00",
+  "updated_at": "2026-10-20T12:15:02.185721+00:00",
   "historical_source_snapshots": {
     "DOUBLED_DEVELOPMENT_CASE_JOB": {
       "state": "submitted_pending_review",
