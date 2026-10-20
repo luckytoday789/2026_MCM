@@ -1,10 +1,9 @@
 {
   "role": "hy3",
   "machine_id": "937a9358dc114be8b3718ff13e3da4f9",
-  "state": "error",
+  "state": "ready",
   "python": "3.12.10",
-  "updated_at": "2026-10-20T09:08:11.713418+00:00",
-  "lease_until": "2026-10-20T09:18:11.713418+00:00",
-  "error": "git fetch failed: error: cannot lock ref 'refs/remotes/origin/main': is at 55aa8247b24672cb21f0340893c4615da28e234f but expected 250d4a37f5f306b1ea73f83e9f27ead5718923e9\nerror: cannot lock ref 'refs/remotes/origin/status/chief': is at 84058fc703e7cfd6fce993703486380ee8579aff but expected f197ff8828d2958e7cda543df732046c8930389d\nerror: cannot lock ref 'refs/remotes/origin/status/sol': is at 6beaa0fa893c1e55054973cb075e8846878903b3 but expected bd7ed5977935f7bb23fa1a0e7a22af7eeaec60a0\nerror: cannot lock ref 'refs/remotes/origin/status/sol-watch': is at 4ac9cdf2bce6730fd0e6a97b03a199382fd3de45 but expected 4203fa26e54d38f2ba0d627ef6b1fcfa8a18dcf3\nFrom https://github.com/luckytoday789/2026_MCM\n ! 250d4a3..55aa824  main                -> origin/main  (unable to update local ref)\n ! f197ff8..84058fc  status/chief        -> origin/status/chief  (unable to update local ref)\n ! bd7ed59..6beaa0f  status/sol          -> origin/status/sol  (unable to update local ref)\n ! 4203fa2..4ac9cdf  status/sol-watch    -> origin/status/sol-watch  (unable to update local ref)\n * [new branch]      work/sol/SOL-037-a1 -> origin/work/sol/SOL-037-a1",
-  "failures": 2
+  "updated_at": "2026-10-20T09:09:17.578066+00:00",
+  "lease_until": "2026-10-20T09:19:17.578066+00:00",
+  "codex_available": false
 }
