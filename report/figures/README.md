@@ -2,7 +2,7 @@
 
 Use baseline-h30-summary.pdf and baseline-h30-severe-path.pdf for manuscript
 insertion, or their 300 dpi PNG counterparts. These versions were visually
-checked, and the PDFs embed their fonts. The report layout proof uses the PNGs.
+checked, and the PDFs embed their fonts.
 
 The SVG files are retained editable previews requiring the original DejaVu Sans
 font. Independent review reproduced wider fallback-font labels clipped at the
