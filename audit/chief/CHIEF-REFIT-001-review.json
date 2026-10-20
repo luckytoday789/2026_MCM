@@ -1,0 +1,60 @@
+{
+  "task_id": "CHIEF-REFIT-001",
+  "reviewed_commit": "d4a982ce2d06b57deb2988806229574c0719c2be",
+  "base_commit": "bf0b130708e66eee756b0480f7353ee667c41dc3",
+  "task_sha256": "44521efdf6df18ee474fa0e472ce93574c18944f2ed0215f579a20f8a6d3848a",
+  "branch": "work/chief/CHIEF-REFIT-001-a1",
+  "structural_checks": "passed",
+  "source_hashes_checked": {},
+  "artifacts_sha256": {
+    "handoff/CHIEF-REFIT-001/check-0.txt": "7a97e59f0c1d459b86f5cbc7bbd7f3fdbdf35d0e6a4df7d10a946ef875461b9a",
+    "handoff/CHIEF-REFIT-001/check-1.txt": "b215ff190a08ad5dcf98fbe6ee599c5a3a2b5b7034c6b526eeeaa887f67ae648",
+    "handoff/CHIEF-REFIT-001/check-2.txt": "b215ff190a08ad5dcf98fbe6ee599c5a3a2b5b7034c6b526eeeaa887f67ae648",
+    "results/development/CHIEF-REFIT-001/run_manifest.json": "acd58eccc6db735197b4b3feaa751e5c1c1954eb82bfaabe528ff13d2b410ee6"
+  },
+  "accepted_paths": [
+    "handoff/CHIEF-REFIT-001/check-0.txt",
+    "handoff/CHIEF-REFIT-001/check-1.txt",
+    "handoff/CHIEF-REFIT-001/check-2.txt",
+    "handoff/CHIEF-REFIT-001/result.json",
+    "results/development/CHIEF-REFIT-001/run_manifest.json"
+  ],
+  "excluded_paths": [],
+  "receipt_python": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+  "prescribed_command_count": 3,
+  "status": "accepted",
+  "result_verdict": "approve",
+  "reviewer": "chief under authorized two-node takeover; independent stdlib formula oracle, no remote Sol authorship",
+  "refit": {
+    "commit": "d4a982ce2d06b57deb2988806229574c0719c2be",
+    "path": "results/development/CHIEF-REFIT-001/run_manifest.json",
+    "sha256": "acd58eccc6db735197b4b3feaa751e5c1c1954eb82bfaabe528ff13d2b410ee6"
+  },
+  "numerical_review": {
+    "independent_stdlib": true,
+    "input_sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+    "manifest_sha256": "acd58eccc6db735197b4b3feaa751e5c1c1954eb82bfaabe528ff13d2b410ee6",
+    "prior_scalar_checks": 10800,
+    "prior_support_sha256": "44d00c47e591a5eef12079798a8939659a1c1818842fda5292b9a92e3f7981d6",
+    "read_only": true,
+    "real_gross_sha256": "5e8d2441e955353613fc4b3e3839fe0d20b3585d9d477eabf0a034963e0978ce",
+    "scope": "Independent actual development/refit support oracle; no final input access or source approval.",
+    "status": "passed",
+    "training_rows": 3600,
+    "training_rows_sha256": "4d787ac45b4ac1a46e2654641f530429d8e37e012394083a7916531016a5980f"
+  },
+  "numerical_execution": {
+    "argv": [
+      "D:/30576/Documents/SafeInvest/.venv/Scripts/python.exe",
+      "-B",
+      "audit/chief/check_actual_refit.py",
+      "--manifest",
+      "d4a982ce2d06b57deb2988806229574c0719c2be:results/development/CHIEF-REFIT-001/run_manifest.json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"independent_stdlib\": true, \"input_sha256\": \"9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7\", \"manifest_sha256\": \"acd58eccc6db735197b4b3feaa751e5c1c1954eb82bfaabe528ff13d2b410ee6\", \"prior_scalar_checks\": 10800, \"prior_support_sha256\": \"44d00c47e591a5eef12079798a8939659a1c1818842fda5292b9a92e3f7981d6\", \"read_only\": true, \"real_gross_sha256\": \"5e8d2441e955353613fc4b3e3839fe0d20b3585d9d477eabf0a034963e0978ce\", \"scope\": \"Independent actual development/refit support oracle; no final input access or source approval.\", \"status\": \"passed\", \"training_rows\": 3600, \"training_rows_sha256\": \"4d787ac45b4ac1a46e2654641f530429d8e37e012394083a7916531016a5980f\"}\n",
+    "stderr": ""
+  },
+  "accepted_at": "2026-10-20T13:06:13.041072+00:00",
+  "scope": "Exact fixed all-development refit, before final gate;10800 exact float values and all support hashes independently checked; no final input opened."
+}

@@ -1876,11 +1876,27 @@
     {
       "id": "CHIEF-REFIT-001",
       "owner": "chief",
-      "state": "ready",
+      "state": "accepted",
       "attempt": 1,
       "branch": "work/chief/CHIEF-REFIT-001-a1",
       "task_sha256": "44521efdf6df18ee474fa0e472ce93574c18944f2ed0215f579a20f8a6d3848a",
-      "note": "Fixed all3600 development refit after exact personalized acceptance; independent10800-value oracle required before freeze."
+      "note": "Canonical receipt and independent10800-value/hash refit oracle pass; exact outputs promoted before freeze.",
+      "reviewed_commit": "d4a982ce2d06b57deb2988806229574c0719c2be",
+      "result_verdict": "approve",
+      "acceptance_evidence": "audit/chief/CHIEF-REFIT-001-review.json",
+      "accepted_paths": [
+        "handoff/CHIEF-REFIT-001/check-0.txt",
+        "handoff/CHIEF-REFIT-001/check-1.txt",
+        "handoff/CHIEF-REFIT-001/check-2.txt",
+        "handoff/CHIEF-REFIT-001/result.json",
+        "results/development/CHIEF-REFIT-001/run_manifest.json"
+      ],
+      "artifacts_sha256": {
+        "handoff/CHIEF-REFIT-001/check-0.txt": "7a97e59f0c1d459b86f5cbc7bbd7f3fdbdf35d0e6a4df7d10a946ef875461b9a",
+        "handoff/CHIEF-REFIT-001/check-1.txt": "b215ff190a08ad5dcf98fbe6ee599c5a3a2b5b7034c6b526eeeaa887f67ae648",
+        "handoff/CHIEF-REFIT-001/check-2.txt": "b215ff190a08ad5dcf98fbe6ee599c5a3a2b5b7034c6b526eeeaa887f67ae648",
+        "results/development/CHIEF-REFIT-001/run_manifest.json": "acd58eccc6db735197b4b3feaa751e5c1c1954eb82bfaabe528ff13d2b410ee6"
+      }
     }
   ]
 }
