@@ -1,9 +1,12 @@
 {
   "role": "sol",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
-  "state": "running",
+  "state": "submitted",
   "python": "3.12.14",
-  "updated_at": "2026-10-20T04:56:37.642974+00:00",
-  "lease_until": "2026-10-20T05:06:37.642974+00:00",
-  "task_id": "SOL-035"
+  "updated_at": "2026-10-20T04:58:41.839860+00:00",
+  "lease_until": "2026-10-20T05:08:41.839860+00:00",
+  "task_id": "SOL-035",
+  "result_status": "failed",
+  "commit": "f33da50c4e16e85f7ca831e0a03d17c05c91cc79",
+  "branch": "work/sol/SOL-035-a1"
 }
