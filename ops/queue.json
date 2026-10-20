@@ -1786,6 +1786,15 @@
       "reviewed_commit": "11a633c75dbbd8d25385ab9d1600d45943f1afef",
       "code_verdict": "approve",
       "acceptance_evidence": "audit/chief/CHIEF-PERSONALIZED-V2-20261020-review.json"
+    },
+    {
+      "id": "CHIEF-PERSONALIZED-RUN-001",
+      "owner": "chief",
+      "state": "ready",
+      "attempt": 1,
+      "branch": "work/chief/CHIEF-PERSONALIZED-RUN-001-a1",
+      "task_sha256": "240ecd69c0cf79d63e89c70566d863ff068605042d96171f71817b07a1b90a73",
+      "note": "Actual chief fixed commands with canonical receipt;4 assigned own-horizon cases and6 referrals from exact accepted009. Independent source V2, original prepublication failure retained."
     }
   ]
 }
