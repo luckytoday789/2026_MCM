@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T06:21:35.814037+00:00",
-  "reason": "Only remote fixed recovery receipt and time-gated Sol availability remain; preserve all independent acceptance gates.",
+  "next_wake_at": "2026-10-20T06:31:06.435617+00:00",
+  "reason": "Report status reconciliation finished and checked. Only exact HY3-006 receipt and time-gated Sol availability are currently actionable; preserve independent acceptance gates.",
   "next_actions": [
-    "Await exact HY3-006 result. Last observed real lease05:50UTC to06:00UTC,running HY3-006. Never recreate accepted or in-flight work. Verify fresh lease/receipt before liveness claims. All original failedHY3-005 partials remain at665e145 and are not completed data.",
+    "Await exact HY3-006 receipt; no work branch existed at this checkpoint. Most recent observed lease05:54:12UTC to06:04:12UTC running HY3-006; re-fetch before current liveness claims. Never recreate accepted/in-flight work. Preserve failed HY3-005 partials at665e145.",
     "On HY3-006 completion authenticate exact task/hash/E/C/config/input/source/44files/commands/counts/runtime and run chief read-only updated case/decision helpers against exact SHA. They supportHY3-006 but only priorHY3-004 regression has run so far. Do not claim new result validation before receipt.",
     "If HY3-006 fails again preserve it and request human process/sleep/network diagnosis on original machine; do not silently increase runtime or add another automatic full rerun. HY3-005 runtime3188s/status push timeout is established; exact cause remains unproved.",
     "SOL-037 published WAITING at exact baseb75389a. At/after15:55+08 release existing task once; use fallback next_wake=min(now+30min,15:55+08). Script passively waits until16:10+08,one assigned-model call<=300s. This consumes last authorized automatic extra probe; failure means concise human-help request, no extra probe/account/model/credit change.",
@@ -13,20 +13,20 @@
     "SOL-038 must recover generated-only assembly with fresh task/schema/approval identity,never require failed SOL-034 approval. Chief original11tests+audit pass,2820 independent fixture scalar checks and4corruptions pass are narrow evidence only. No actual producers,production configuration or final gate approved.",
     "SOL-039 audit-only portability completion preserves SOL-032 exact code approval and old LF/CRLF failures; chief exact failed035 checkout replay passes unchanged. No writer/math/experiment changes authorized.",
     "After both exact producer numerical acceptances plus assembly code approval,publish analysis C/E/P,execute/review actual assembly,then personalized bridge on real assignments. Final support/refit/freeze/report remain required. Final data closed;no policy tuning from final;private identities local;no automatic submission.",
-    "No human help presently required after fresh HY3 lease/dispatch. Keep local40% guard; latest verified45% at05:49UTC,no drain observed. Do not clear budget markers,pause global project,restart supervisor/workers or create local substitutes."
+    "No actual human-help request at this checkpoint. Report evidence map now names HY3-006 and SOL-038/039/040 successors while preserving all four failed receipts. Remaining manuscript review includes the updated historical Astra/current Sol disclosure. Keep local40% guard;45% verified at05:59:31UTC,no drain observed. Do not clear markers,pause global project,restart workers/supervisor or create local substitutes."
   ],
   "quota_probe_not_before": "2026-10-20T16:10:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T05:51:35.814037+00:00",
+  "last_completed_at": "2026-10-20T06:01:06.435617+00:00",
   "quota_probe_verified_commit": "7ac6afe1169740666f0f65d5f2d9674fd2d4c964",
   "quota_probe_release_not_before": "2026-10-20T15:55:00+08:00",
-  "quota_probe_current_status": "SOL036_new_usage_limit_probe_pending_1610_Beijing",
+  "quota_probe_current_status": "SOL037_waiting_for_release_1555_Beijing_call_not_before_1610",
   "last_successful_quota_probe_commit": "7ac6afe1169740666f0f65d5f2d9674fd2d4c964",
   "quota_probe_task": "SOL-037",
   "quota_probe_remaining_additional_attempts_after_SOL028": 1,
-  "last_outcome_zh": "保留SOL-034/035超时、SOL-036配额失败及HY3-005中断失败；未验收任何失败结果。完成恢复证据核验、11项封装测试、2820项独立夹具标量检查与473823项决策检查。已发布SOL-037单次配额探针及SOL-038/039/040等待修正任务；HY3-006已获有效租约执行相同参数的新计算。最终集关闭，无需人工操作。",
+  "last_outcome_zh": "核对远端后暂无新结果；修正报告过期任务与AI协调角色说明，166项来源固定值、4份失败回执及15项需求引用通过核验，基线说明/PDF溯源检查通过。未新增策略结论或验收；保持SOL配额与最终集门控，等待HY3-006回执。",
   "baseline_figure_source_commit": "04be213a76855b1b1815405a735f2a49be678935",
   "baseline_figure_review_task": "SOL-030",
   "layout_proof_path": "report/layout-proof/methods-baselines.pdf",
@@ -53,7 +53,7 @@
   "writer_compatibility_source_commit": "e33b748c29d366559706d5272319d9138f0c7aa4",
   "baseline_figure_correction_review_task": "SOL-033",
   "baseline_figure_failed_review_commit": "414498aaa373c6f0081d829f4020f0b5c33c6424",
-  "last_checkpoint": "audit/chief/turn-20261020-recovery-dispatch-complete.json",
+  "last_checkpoint": "audit/chief/turn-20261020-report-status-checkpoint.json",
   "writer_compatibility_dispatch_preflight": "audit/chief/writer-compatibility-dispatch-preflight.json",
   "writer_compatibility_reviewed_commit": "d168757efbc70e4641deacc911976f1fa3bd7a7c",
   "writer_compatibility_acceptance": "audit/chief/SOL-032-review.json",
@@ -78,5 +78,6 @@
   "development_doubled_failure_review": "audit/chief/HY3-005-failure-review.json",
   "analysis_assembly_failed_task": "SOL-034",
   "development_primary_independent_review_failed_task": "SOL-036",
-  "development_audit_adapter_validation": "audit/chief/development-audit-HY3-006-adapter-regression.json"
+  "development_audit_adapter_validation": "audit/chief/development-audit-HY3-006-adapter-regression.json",
+  "report_status_reconciliation": "audit/chief/report-status-reconciliation-20261020.json"
 }

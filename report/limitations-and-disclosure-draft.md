@@ -47,8 +47,9 @@ these proposed rules become recommendations.
 
 ## AI-use disclosure for the research record
 
-GPT-6 Astra xhigh in Codex coordinated the mathematical specifications, task
-contracts, code integration, independent numerical checks and report drafting.
+GPT-6 Astra xhigh, followed by GPT-6.1 Sol xhigh in Codex, coordinated the
+mathematical specifications, task contracts, code integration, independent
+numerical checks and report drafting.
 GPT-6.1 Sol xhigh on a separate Codex computer implemented assigned components
 and reviewed specified mathematical and computational work. HY3 in WorkBuddy
 supervised fixed Python execution on a third computer. Numerical results came

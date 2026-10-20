@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T05:57:56.845288+00:00",
+  "snapshot_main_commit": "3bf18f8877d1869f6b0672d263e5f0e1431a9d33",
+  "purpose": "Report status reconciliation only; no numerical result acceptance",
+  "task_checks": [
+    {
+      "task_id": "HY3-004",
+      "state": "ready",
+      "task_sha256": "14bb98ed9b6996d198513c1d29cbe8a7d44b489de7cde9a46f4fc27ce2bead89",
+      "base_commit": "93a232a926dc3d1bfb18e2866ef0ddb0aaf9bc0f",
+      "source_pins_checked": 28,
+      "base_is_pushed_main_ancestor": true
+    },
+    {
+      "task_id": "HY3-006",
+      "state": "ready",
+      "task_sha256": "dcdf31a5ce502b4c5115d9a21a29b6649ea107b8e0c8b671b1e17d44812962b6",
+      "base_commit": "eae30c8edff452807694b9c8f42db6d1d01464f7",
+      "source_pins_checked": 28,
+      "base_is_pushed_main_ancestor": true
+    },
+    {
+      "task_id": "SOL-037",
+      "state": "waiting",
+      "task_sha256": "a39583ab0336bf78cb14b231a7e0b9a957e7da3b454f12cc6a7807546d88f9aa",
+      "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+      "source_pins_checked": 5,
+      "base_is_pushed_main_ancestor": true
+    },
+    {
+      "task_id": "SOL-038",
+      "state": "waiting",
+      "task_sha256": "03472407ca3633a28501784679d1d1d03c1fb39766179620ad27a5e058214f34",
+      "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+      "source_pins_checked": 43,
+      "base_is_pushed_main_ancestor": true
+    },
+    {
+      "task_id": "SOL-039",
+      "state": "waiting",
+      "task_sha256": "c2b1a1c305a293e453f1517aea2a6e14049c58e4a96f49d4aaba3138618dbe44",
+      "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+      "source_pins_checked": 21,
+      "base_is_pushed_main_ancestor": true
+    },
+    {
+      "task_id": "SOL-040",
+      "state": "waiting",
+      "task_sha256": "024057000d22bee1afba7300194344c00a9a79d857f7fd9950ce855dda07df31",
+      "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+      "source_pins_checked": 41,
+      "base_is_pushed_main_ancestor": true
+    }
+  ],
+  "failed_receipt_checks": [
+    {
+      "task_id": "HY3-005",
+      "exact_commit": "665e14502405ca560fe1f78876a189ae5f688f23",
+      "receipt_status": "failed",
+      "receipt_sha256": "be40b3532f29ede77ebe4158a18b9844d70e17d6ab4b7cb3f6ede416a46d2faa",
+      "historical_receipt_unchanged": true
+    },
+    {
+      "task_id": "SOL-034",
+      "exact_commit": "632c95f03d3bbfeed1f847598eed3e6cfc5be264",
+      "receipt_status": "failed",
+      "receipt_sha256": "c140dadd2285fd00b9b33e03d1fd90f586cfe4a7c1fe25901b92d7383c64eb4c",
+      "historical_receipt_unchanged": true
+    },
+    {
+      "task_id": "SOL-035",
+      "exact_commit": "f33da50c4e16e85f7ca831e0a03d17c05c91cc79",
+      "receipt_status": "failed",
+      "receipt_sha256": "5caaff991eae4228f08f20a99a20c451c988c4dd807975f98bfccb7224811a9d",
+      "historical_receipt_unchanged": true
+    },
+    {
+      "task_id": "SOL-036",
+      "exact_commit": "8a39da30e551f6e4fd54cfef6ec7b070b43d4d8d",
+      "receipt_status": "failed",
+      "receipt_sha256": "85ae415acacac482628f534cd3f0aff28032b5c33246ec287943f23030f051ce",
+      "historical_receipt_unchanged": true
+    }
+  ],
+  "modified_source_states": [
+    {
+      "source": "POLICY_WRITER_COMPATIBILITY_ACCEPTANCE",
+      "before": "accepted_implementation",
+      "after": "accepted_implementation",
+      "task_id": "SOL-032"
+    },
+    {
+      "source": "PRIMARY_DEVELOPMENT_CASE_JOB",
+      "before": "authorized_pending_result_acceptance",
+      "after": "submitted_pending_review",
+      "task_id": "HY3-004"
+    },
+    {
+      "source": "DOUBLED_DEVELOPMENT_CASE_JOB",
+      "before": "authorized_pending_result_acceptance",
+      "after": "authorized_pending_result_acceptance",
+      "task_id": "HY3-006"
+    },
+    {
+      "source": "ANALYSIS_ASSEMBLY_IMPLEMENTATION",
+      "before": "authorized_pending_result_acceptance",
+      "after": "held_pending_prerequisite",
+      "task_id": "SOL-038"
+    },
+    {
+      "source": "DOUBLED_DEVELOPMENT_FAILED_ATTEMPT",
+      "before": null,
+      "after": "failed_execution_attempt",
+      "task_id": "HY3-005"
+    },
+    {
+      "source": "ANALYSIS_ASSEMBLY_FAILED_ATTEMPT",
+      "before": null,
+      "after": "failed_implementation_attempt",
+      "task_id": "SOL-034"
+    },
+    {
+      "source": "WRITER_AUDIT_FAILED_ATTEMPT",
+      "before": null,
+      "after": "failed_implementation_attempt",
+      "task_id": "SOL-035"
+    },
+    {
+      "source": "PRIMARY_REVIEW_FAILED_ATTEMPT",
+      "before": null,
+      "after": "failed_execution_attempt",
+      "task_id": "SOL-036"
+    },
+    {
+      "source": "SOL_AVAILABILITY_PROBE",
+      "before": null,
+      "after": "held_pending_prerequisite",
+      "task_id": "SOL-037"
+    },
+    {
+      "source": "PRIMARY_DEVELOPMENT_INDEPENDENT_REVIEW",
+      "before": null,
+      "after": "held_pending_prerequisite",
+      "task_id": "SOL-040"
+    },
+    {
+      "source": "WRITER_AUDIT_PORTABILITY_FOLLOWUP",
+      "before": null,
+      "after": "held_pending_prerequisite",
+      "task_id": "SOL-039"
+    }
+  ],
+  "report_paths": [
+    "report/evidence-map.json",
+    "report/README.md",
+    "report/limitations-and-disclosure-draft.md"
+  ],
+  "final_data_open": false,
+  "numerical_experiments_executed": false,
+  "acceptance_or_task_mutation": false,
+  "check_status": "passed",
+  "post_edit_checks": [
+    {
+      "check": "all requirement source references and state vocabulary",
+      "requirements": 15,
+      "passed": true
+    },
+    {
+      "check": "accepted exact commits and failed/held/recovery task states",
+      "accepted_direct_task_bindings": 8,
+      "registry_entries": 39,
+      "passed": true
+    },
+    {
+      "check": "no new performance acceptance or final freeze/gate opening",
+      "passed": true
+    }
+  ],
+  "report_checks": [
+    {
+      "argv": [
+        "-B",
+        "report/build_baseline_note.py",
+        "--check"
+      ],
+      "python_version": "3.12.0",
+      "exit_code": 0,
+      "elapsed_seconds": 0.3279999999795109,
+      "stdout": "{\"status\": \"passed\", \"read_only\": true, \"summary_rows\": 15, \"source_commit\": \"7652410d73425371110784ef5fa97c03470a074e\", \"simulation_rerun\": false}\r\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "-B",
+        "report/build_layout_proof.py",
+        "--check"
+      ],
+      "python_version": "3.12.0",
+      "exit_code": 0,
+      "elapsed_seconds": 0.6720000000204891,
+      "stdout": "{\"status\": \"passed\", \"mode\": \"check\", \"pages\": 4, \"paper\": \"A4 portrait\", \"minimum_text_size_pt\": 11.0, \"table_rows_checked\": 30, \"source_rows\": 15, \"numeric_and_event_cells_checked\": 180, \"all_pages_labeled_incomplete\": true, \"visual_inspection\": \"separate rendered-page review required\"}\r\n",
+      "stderr": ""
+    }
+  ],
+  "report_file_sha256": {
+    "report/evidence-map.json": "792bfb1592fe905bcd8711770d50841bf9cc65dff71730e943b7bce49c779159",
+    "report/README.md": "871b093ad088c4ab81d02c5b1929c679adf13f7723220a3d3d4dc682b6ec5a69",
+    "report/limitations-and-disclosure-draft.md": "badd777d38b3a2da4080358746f1e68322b0c4d6be6422e373ac97ea58fe05cd"
+  },
+  "report_hash_basis": "UTF-8 source with LF newlines",
+  "post_edit_checked_at": "2026-10-20T05:59:59.208944+00:00"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T06:01:06.435617+00:00",
+  "snapshot_main_commit": "3bf18f8877d1869f6b0672d263e5f0e1431a9d33",
+  "outcome_zh": "核对远端后暂无新结果；修正报告过期任务与AI协调角色说明，166项来源固定值、4份失败回执及15项需求引用通过核验，基线说明/PDF溯源检查通过。未新增策略结论或验收；保持SOL配额与最终集门控，等待HY3-006回执。",
+  "report_validation": "audit/chief/report-status-reconciliation-20261020.json",
+  "task_source_pins_verified": 166,
+  "historical_failed_receipts_verified": 4,
+  "remote_status": {
+    "hy3": {
+      "state": "running",
+      "updated_at": "2026-10-20T05:54:12.633965+00:00",
+      "lease_until": "2026-10-20T06:04:12.633965+00:00",
+      "task_id": "HY3-006",
+      "status_branch_commit": "f508d1ab77835f8a92089efb10cfa2eaca26d552",
+      "lease_valid_at_check": true
+    },
+    "sol": {
+      "state": "idle",
+      "updated_at": "2026-10-20T05:57:28.561153+00:00",
+      "lease_until": "2026-10-20T06:07:28.561153+00:00",
+      "status_branch_commit": "ab657d36cc3bbfc97e11804a7df6e1c4bf09df10",
+      "lease_valid_at_check": true
+    }
+  },
+  "new_work_receipts": [],
+  "queue_unchanged": true,
+  "source_or_task_definitions_changed": false,
+  "producer_outcomes_accepted": false,
+  "report_draft_independently_accepted": false,
+  "final_data_open": false,
+  "next_wake_at": "2026-10-20T06:31:06.435617+00:00",
+  "next_release_at": "2026-10-20T15:55:00+08:00",
+  "local_budget": {
+    "checked_at": "2026-10-20T06:00:35.196900+00:00",
+    "remaining_percent": 45.0,
+    "stop_remaining_percent": 40,
+    "drain_present": false
+  },
+  "human_help_required": false,
+  "private_identity_access_or_upload": false,
+  "numerical_experiments_executed": false,
+  "worker_or_supervisor_restart": false
+}

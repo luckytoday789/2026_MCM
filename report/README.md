@@ -101,7 +101,9 @@ shrink text below 11 pt to accommodate missing material.
    not be labeled the baseline's own worst scenario. Keep post-fee observations.
 4. **Cost sensitivity:** the unchanged rule at the original and doubled fee,
    required metrics, trade/review changes and whether the recommendation changes.
-   The doubled rate is a pending pilot assumption, not an executed experiment.
+   The doubled rate is fixed at 0.005. HY3-005 failed and its partial output is
+   preserved; unchanged-policy HY3-006 is pending. No doubled-fee outcome is
+   accepted.
 5. **Customer explanation:** at most 50 English words, written after policy
    selection; include the action, reason, cost awareness and remaining risk.
 
@@ -121,8 +123,12 @@ authorized by this plan.
   accepted at 803b7a085284405ee5ee4d4f0d5720ebaa2e67f7 after clean-environment
   replay, independent numerical checks and corruption rejection. Writer
   source SOL-031 and narrow44-file compatibility review SOL-032 are accepted.
-  Fixed HY3-004/005 execution tasks are published; actual results and independent
-  numerical review remain pending. Personalized pure component SOL-027 is accepted;
+  Exact HY3-004 is delivered but awaits independent SOL-040 review. Failed
+  HY3-005 partials are preserved; unchanged-policy HY3-006 is pending.
+  SOL-037 is the single time-gated availability probe; SOL-038/039/040
+  remain held until its exact successful receipt is accepted. Failed
+  SOL-034/035/036 are not positive code, result or review dependencies.
+  Personalized pure component SOL-027 is accepted;
   its authenticated production bridge and outcome evidence remain pending.
   Preserve old negative verdicts, quota failures and cancelled tasks;
   do not rerun accepted HY3-003 or treat synthetic checks as policy outcomes.
@@ -192,6 +198,8 @@ SOL-030 remains immutable and reviews only its existing pinned figure/text scope
 SOL-032 audit replay has an additional checkout-line-ending limitation: its
 original exact checkout passes, while later main differs in111 historical text
 raw hashes only by LF/CRLF. The failed check and canonical-content diagnosis are
-preserved in ../audit/chief/SOL-032-acceptance-portability-addendum.json. New
-audit-only SOL-035 is pending; this does not change accepted numerical source or
-the fixed HY3 jobs. No later-main SOL-032 verifier pass is claimed.
+preserved in ../audit/chief/SOL-032-acceptance-portability-addendum.json. Failed
+audit-only SOL-035 parent delivery remains preserved; its chief isolated replay
+is narrower evidence. The published successor SOL-039 waits for the accepted
+SOL-037 availability probe. Accepted numerical source remains unchanged.
+No later-main SOL-032 verifier pass is claimed.
