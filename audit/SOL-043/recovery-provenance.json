@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "predecessor": "1f7f328313a5976aa9ff60375432d61457f7d811",
+  "source_kind": "preserved original SOL-041 worktree",
+  "source_locator": "sibling SOL-041-a1/audit/SOL-041",
+  "recovered_at": "2026-10-20T10:42:48.682Z",
+  "files": {
+    "audit/SOL-041/writer.stdout.log": {
+      "deliverable": "recovered-writer.stdout.txt",
+      "bytes": 61,
+      "sha256": "0a0c23666434c3fb9693db28d32d9fd8dbd40d9570d49d65130f290ebec2f6e0",
+      "source_file": "writer.stdout.log",
+      "source_mtime_utc": "2026-10-20T09:25:15.326Z",
+      "source_git_tracked": false
+    },
+    "audit/SOL-041/writer.stderr.log": {
+      "deliverable": "recovered-writer.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_file": "writer.stderr.log",
+      "source_mtime_utc": "2026-10-20T09:18:56.576Z",
+      "source_git_tracked": false
+    },
+    "audit/SOL-041/portable.stdout.log": {
+      "deliverable": "recovered-portable.stdout.txt",
+      "bytes": 233,
+      "sha256": "b5db6eb8985023437292714f906a6571bdabd2dd012dea198b1bd3d6a84c8c12",
+      "source_file": "portable.stdout.log",
+      "source_mtime_utc": "2026-10-20T09:34:07.615Z",
+      "source_git_tracked": false
+    },
+    "audit/SOL-041/portable.stderr.log": {
+      "deliverable": "recovered-portable.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_file": "portable.stderr.log",
+      "source_mtime_utc": "2026-10-20T09:32:58.281Z",
+      "source_git_tracked": false
+    }
+  },
+  "source_git_head": "1f7f328313a5976aa9ff60375432d61457f7d811",
+  "new_task_digest": "9d7ae651d4cb8264213197f2d00ed7c0cf8b8b1170996191f5e5fd20b37632ab",
+  "new_base": "e23fc9aa76407be9d7efe8702825c90d616d507a",
+  "original_ignored_inventory": [
+    "audit/SOL-041/.isolated/",
+    "audit/SOL-041/.portable/",
+    "audit/SOL-041/portable.stderr.log",
+    "audit/SOL-041/portable.stdout.log",
+    "audit/SOL-041/review-final-record.stderr.log",
+    "audit/SOL-041/review-final-record.stdout.log",
+    "audit/SOL-041/review-record.stderr.log",
+    "audit/SOL-041/review-record.stdout.log",
+    "audit/SOL-041/writer.stderr.log",
+    "audit/SOL-041/writer.stdout.log"
+  ],
+  "original_tracked_logs": []
+}

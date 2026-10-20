@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-043-a1\audit\SOL-043\verify.py", line 160, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-043-a1\audit\SOL-043\verify.py", line 157, in main
+    logs=recovered(t,meta,files);negative=negative_tests(t,ot,meta,files);r=replay(t,ot,files)
+                                                                            ^^^^^^^^^^^^^^^^^^
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-043-a1\audit\SOL-043\verify.py", line 131, in replay
+    before=protected_inventory(clone,paths)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-043-a1\audit\SOL-043\verify.py", line 116, in protected_inventory
+    inv={p:entry((clone/p).read_bytes()) for p in sorted(paths)}
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Αυ°Β»ͺ\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Αυ°Β»ͺ\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-043-a1\\.runtime\\sol043-check-0v_7s96k\\old-exact\\handoff\\HY3-006\\check-0.txt'

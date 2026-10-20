@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+    "-B",
+    "audit/SOL-043/verify.py",
+    "--check"
+  ],
+  "python": "3.12.14",
+  "started_at_unix": 1792493119.165592,
+  "timeout_seconds": 420,
+  "exit_code": 1,
+  "duration_seconds": 22.23499999998603,
+  "stdout": "check.stdout.txt",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr": "check.stderr.txt",
+  "stderr_sha256": "72fdbf078c9e6cbb5aa49cb58ec7a7cb3197c5846b8ea15f739be81a0e482462"
+}

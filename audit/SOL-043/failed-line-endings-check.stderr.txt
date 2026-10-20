@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-043-a1\audit\SOL-043\verify.py", line 162, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-043-a1\audit\SOL-043\verify.py", line 159, in main
+    logs=recovered(t,meta,files);negative=negative_tests(t,ot,meta,files);r=replay(t,ot,files)
+                                                                            ^^^^^^^^^^^^^^^^^^
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-043-a1\audit\SOL-043\verify.py", line 135, in replay
+    for p in t['parameters']['unaccepted_predecessor']['artifacts_sha256']: need((clone/p).read_bytes()==blob(OLD,p),'unchanged old canonical audit '+p)
+                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-043-a1\audit\SOL-043\verify.py", line 15, in need
+    if not ok: raise AssertionError(msg)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unchanged old canonical audit handoff/SOL-041/check-0.txt

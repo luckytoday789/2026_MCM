@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "exec_tool_failure": "exec_command helper setup failed before any shell command ran; used available node child_process API",
+  "preserved_preflight_failure": {
+    "stdout": "failed-preflight-check.stdout.txt",
+    "stderr": "failed-preflight-check.stderr.txt",
+    "command": "failed-preflight-check-command.json",
+    "effect": "New replay wrapper inventory incorrectly assumed producer receipt/logs are checked out at old reviewer SHA. Failed before original verifier launch, no arithmetic or writer executed. Fixed inventory to separate exact local Git-object-only evidence from checked-out protected files."
+  },
+  "old_git_ownership": "Used command-local safe.directory for read-only original worktree inventory; no global config edit.",
+  "preserved_line_ending_preflight": {
+    "stdout": "failed-line-endings-check.stdout.txt",
+    "stderr": "failed-line-endings-check.stderr.txt",
+    "command": "failed-line-endings-check-command.json",
+    "effect": "Windows text=auto checkout used native CRLF with core.eol unset; autocrlf=false alone did not yield canonical receipt-side .txt bytes. Stopped before original verifier launched. Set disposable clone core.eol=lf; all original files remain untouched."
+  }
+}
