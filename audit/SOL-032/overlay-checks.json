@@ -1,0 +1,60 @@
+{
+  "argv": [
+    "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+    "-B",
+    ".runtime/clean-subprocess.py",
+    "audit/SOL-032/overlay_checks.py"
+  ],
+  "returncode": 0,
+  "observed_seconds": 31.13892529296875,
+  "result": {
+    "cases": [
+      {
+        "case": "source_modified",
+        "diagnosis": "changed source/evidence: src/safeinvest/policy_writer.py",
+        "rejected": true
+      },
+      {
+        "case": "recorded_count43",
+        "diagnosis": "verification 44-count changed",
+        "rejected": true
+      },
+      {
+        "case": "runtime_count43_rehashed",
+        "diagnosis": "recorded 44-count changed",
+        "rejected": true
+      },
+      {
+        "case": "boundary_count43_rehashed",
+        "diagnosis": "boundary replay mismatch",
+        "rejected": true
+      },
+      {
+        "case": "runtime_payload_rehashed",
+        "diagnosis": "fixture payload",
+        "rejected": true
+      },
+      {
+        "case": "later_HEAD_no_runtime_task",
+        "git_queries": 94,
+        "status": "passed"
+      }
+    ],
+    "modules": {
+      "safeinvest": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-032-a1\\src\\safeinvest\\__init__.py",
+      "safeinvest.accounting": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-032-a1\\src\\safeinvest\\accounting.py",
+      "safeinvest.backtest": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-032-a1\\src\\safeinvest\\backtest.py",
+      "safeinvest.baselines": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-032-a1\\src\\safeinvest\\baselines.py",
+      "safeinvest.experiments": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-032-a1\\src\\safeinvest\\experiments.py",
+      "safeinvest.metrics": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-032-a1\\src\\safeinvest\\metrics.py",
+      "safeinvest.policy_calibration": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-032-a1\\src\\safeinvest\\policy_calibration.py",
+      "safeinvest.policy_cases": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-032-a1\\src\\safeinvest\\policy_cases.py",
+      "safeinvest.policy_pilot": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-032-a1\\src\\safeinvest\\policy_pilot.py",
+      "safeinvest.policy_writer": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-032-a1\\src\\safeinvest\\policy_writer.py"
+    },
+    "originals_unchanged": true,
+    "status": "passed"
+  },
+  "raw_stdout_sha256": "4b39a77448a976d6a74360f1de741a7ef95fafdb817da3c4fa7c83cb02071a16",
+  "raw_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,83 @@
+{
+  "evidence_sha256": {
+    "boundaries.json": "55df018fc88cab6355a3df8b8b3ba71f9a128d342e5ae75397083e23a97b3253",
+    "runtime.json": "bd07cac345513b2e5e313e59bff46c5731f7dae9ac1fa513c8eb16ccc8bbb31c",
+    "task.json": "72a8bd782b4c8fc5d83390dadb7a1f9c1e79bb1b05169de345e2320ca4f4ae7f",
+    "unchanged-inventory.json": "6fc1534ba41c55652a8aa2bca6ddc190df749f8cd7a462321bea1f78526d20d8",
+    ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "construct.py": "fb4c35b36b0a6864822f526dcde7598f2f2c410692b8bbaffc172c9ec910d1ca",
+    "overlay_checks.py": "bc4f822d1d80d8ddee1cb6c9ee49acefc7510cc672c4c82e8f81223001a97d05",
+    "findings.json": "5b0fb8cc85c241af8bad026f63ef50022701b998880eaa01625dd4b1c348e58d",
+    "review.md": "ba07ce83567977703aee6a856ca3dd61bd300507965e9cffaeb5429642ea2e91",
+    "clean-environment-checks.json": "a25c40d16fd36188eacf15099ba7a8e174308867ae952941af26c0ee62c98ec4",
+    "interrupted-trial.json": "9a9f87879fe6ff8e5f651920421ae905d8d2a94e0616d8826c26c6637c283f39",
+    "overlay-trial001.json": "e61b9f33028cf86202a8b4064077b7dc51394f2ead4e5b4b2869aaec12176960",
+    "overlay-checks.json": "c2cfdfbe5db9cbac86ef53fac76b32954258df02f91553b275e94e8c0b481b5a"
+  },
+  "expected_file_deliverables": 44,
+  "runtime_facts": [
+    {
+      "canonical_hashes": 46,
+      "case": "complete",
+      "declared": 44,
+      "git_objects": 70,
+      "published_outputs": 44,
+      "status": "completed"
+    },
+    {
+      "canonical_hashes": 45,
+      "case": "missing",
+      "declared": 44,
+      "git_objects": 69,
+      "published_outputs": 43,
+      "status": "failed"
+    }
+  ],
+  "source_facts": {
+    "base": "e33b748c29d366559706d5272319d9138f0c7aa4",
+    "expected_file_deliverables": 44,
+    "predecessor": "a24dca5d5494455407207e0fd70c06b258d4fd1f",
+    "publication": "21d235be2ba4cb8eb1baa25deb67ecaf9e2f6445",
+    "runner_exclusion": "Pre-existing chief_model/chief_tick dispatch changes are outside worker runner and writer scope.",
+    "task_digest": "776a649d49058b47f71db7fdbb3269452077f2063c5ba313dea574467031c657",
+    "unchanged_closure": [
+      "src/safeinvest/__init__.py",
+      "src/safeinvest/accounting.py",
+      "src/safeinvest/backtest.py",
+      "src/safeinvest/baselines.py",
+      "src/safeinvest/metrics.py",
+      "src/safeinvest/experiments.py",
+      "src/safeinvest/policy_pilot.py",
+      "src/safeinvest/policy_calibration.py",
+      "src/safeinvest/policy_cases.py",
+      "scripts/run_development_policy.py",
+      "specs/development_policy_pilot_v2.json",
+      "specs/policy_driver_layout_v2.json",
+      "specs/PROBLEM_LOCK.md",
+      "specs/ACCOUNTING.md",
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md",
+      "specs/POLICY_CORRECTION_V2.md",
+      "specs/POLICY_NUMERIC_K1.md",
+      "specs/POLICY_NUMERIC_K2.md",
+      "specs/POLICY_CASE_ENGINE.md",
+      "specs/POLICY_RESULT_WRITER.md",
+      "specs/POLICY_WRITER_COMPATIBILITY.md",
+      "specs/POLICY_WRITER_ACCEPTANCE_REFERENCES.md",
+      "specs/POLICY_WRITER_EXECUTION_CONFIG.md",
+      "specs/POLICY_WRITER_TASK_BINDING.md",
+      "specs/POLICY_WRITER_RECOVERY.md",
+      "specs/POLICY_WRITER_GIT_PORTABILITY.md"
+    ],
+    "unchanged_runner_functions": [
+      "run_task",
+      "deliver",
+      "execute_process",
+      "select_task",
+      "scope_check",
+      "changed_files",
+      "task_digest",
+      "validate_task"
+    ]
+  },
+  "verifier_sha256": "fafbdefbd7cc409b9cf0d7ae8d5eed046579287ea988c3dfdd0361318c739d7b"
+}

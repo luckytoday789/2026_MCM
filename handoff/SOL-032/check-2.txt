@@ -1,0 +1,13 @@
+test_end_to_end_local_git_delivery_and_deduplication (test_coop.ProtocolTests.test_end_to_end_local_git_delivery_and_deduplication) ... ok
+test_failed_chief_turn_does_not_acknowledge_pending_result (test_coop.ProtocolTests.test_failed_chief_turn_does_not_acknowledge_pending_result) ... ok
+test_legacy_checkpoint_gets_one_recovery_turn_without_repeat (test_coop.ProtocolTests.test_legacy_checkpoint_gets_one_recovery_turn_without_repeat) ... ok
+test_path_boundary (test_coop.ProtocolTests.test_path_boundary) ... ok
+test_python_registration_changes_wake_chief_but_heartbeats_do_not (test_coop.ProtocolTests.test_python_registration_changes_wake_chief_but_heartbeats_do_not) ... ok
+test_result_arriving_during_chief_turn_wakes_the_next_turn (test_coop.ProtocolTests.test_result_arriving_during_chief_turn_wakes_the_next_turn) ... ok
+test_task_path_escape_rejected (test_coop.ProtocolTests.test_task_path_escape_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 12.261s
+
+OK
+{"role": "hy3", "root": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-032-a1\\.runtime\\protocol-tests\\tmp9199yvwd\\worker", "remote": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-032-a1\\.runtime\\protocol-tests\\tmp9199yvwd\\remote.git", "python": "3.12.14", "state": "running", "write_access": "verified"}

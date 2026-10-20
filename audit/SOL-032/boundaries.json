@@ -1,0 +1,114 @@
+[
+  {
+    "case": "complete44",
+    "file_count": 44,
+    "rejected": false,
+    "task_digest": "21b65a96dfcf6d1c0c2e263d526da1519c7ab7f5900feda0a5758a57b4cdfdad"
+  },
+  {
+    "case": "reverse_order",
+    "file_count": 44,
+    "rejected": false,
+    "task_digest": "538f9650c51f65e92ae289eafc4834d2301a10aa3bdf9dd4db88ca9d0efcd3df"
+  },
+  {
+    "case": "missing",
+    "diagnosis": "exact assigned output root and 44 distinct file deliverables required",
+    "rejected": true
+  },
+  {
+    "case": "extra",
+    "diagnosis": "exact assigned output root and 44 distinct file deliverables required",
+    "rejected": true
+  },
+  {
+    "case": "duplicate",
+    "diagnosis": "exact assigned output root and 44 distinct file deliverables required",
+    "rejected": true
+  },
+  {
+    "case": "root_only",
+    "diagnosis": "exact assigned output root and 44 distinct file deliverables required",
+    "rejected": true
+  },
+  {
+    "case": "sibling_files",
+    "diagnosis": "exact assigned output root and 44 distinct file deliverables required",
+    "rejected": true
+  },
+  {
+    "case": "sibling_root",
+    "diagnosis": "exact assigned output root and 44 distinct file deliverables required",
+    "rejected": true
+  },
+  {
+    "case": "additional_prefix",
+    "diagnosis": "exact assigned output root and 44 distinct file deliverables required",
+    "rejected": true
+  },
+  {
+    "case": "parent_prefix",
+    "diagnosis": "exact assigned output root and 44 distinct file deliverables required",
+    "rejected": true
+  },
+  {
+    "case": "no_prefix",
+    "diagnosis": "exact assigned output root and 44 distinct file deliverables required",
+    "rejected": true
+  },
+  {
+    "case": "missing_SOL-021",
+    "diagnosis": "positive kernel/calibration/case/writer approvals required",
+    "rejected": true
+  },
+  {
+    "case": "missing_SOL-022",
+    "diagnosis": "positive kernel/calibration/case/writer approvals required",
+    "rejected": true
+  },
+  {
+    "case": "missing_SOL-025",
+    "diagnosis": "positive kernel/calibration/case/writer approvals required",
+    "rejected": true
+  },
+  {
+    "case": "missing_SOL-031",
+    "diagnosis": "positive kernel/calibration/case/writer approvals required",
+    "rejected": true
+  },
+  {
+    "case": "missing_SOL-032",
+    "diagnosis": "positive kernel/calibration/case/writer approvals required",
+    "rejected": true
+  },
+  {
+    "case": "retained_SOL-026",
+    "diagnosis": "cancelled writer approval refused",
+    "rejected": true
+  },
+  {
+    "case": "retained_SOL-029",
+    "diagnosis": "cancelled writer approval refused",
+    "rejected": true
+  },
+  {
+    "case": "SOL032_queue_not_positive",
+    "diagnosis": "dependency lacks exact positive approval",
+    "rejected": true
+  },
+  {
+    "case": "SOL032_review_not_positive",
+    "diagnosis": "chief acceptance mismatch",
+    "rejected": true
+  },
+  {
+    "case": "SOL032_queue_missing",
+    "diagnosis": "dependency missing/duplicate",
+    "rejected": true
+  },
+  {
+    "case": "SOL032_review_absent",
+    "diagnosis": "generated missing SOL-032 review blob",
+    "rejected": true
+  }
+]
