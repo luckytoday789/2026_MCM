@@ -1790,11 +1790,12 @@
     {
       "id": "CHIEF-PERSONALIZED-RUN-001",
       "owner": "chief",
-      "state": "ready",
+      "state": "cancelled",
       "attempt": 1,
       "branch": "work/chief/CHIEF-PERSONALIZED-RUN-001-a1",
       "task_sha256": "240ecd69c0cf79d63e89c70566d863ff068605042d96171f71817b07a1b90a73",
-      "note": "Actual chief fixed commands with canonical receipt;4 assigned own-horizon cases and6 referrals from exact accepted009. Independent source V2, original prepublication failure retained."
+      "note": "Interrupted before production; both recorded child PIDs absent and no receipt. Preserve primary PASS and all local work. New immutable002 retains exact mathematics/source.",
+      "acceptance_evidence": "audit/chief/personalized-run001-interruption/review.json"
     }
   ]
 }

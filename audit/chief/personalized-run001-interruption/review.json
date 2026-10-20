@@ -1,0 +1,20 @@
+{
+  "status": "interrupted_no_receipt",
+  "observed_at": "2026-10-20T12:26:15.354353+00:00",
+  "task_id": "CHIEF-PERSONALIZED-RUN-001",
+  "task_base": "94b2d4ba237091539520edcf6da5a417da9220f8",
+  "absent_pids": [
+    32620,
+    23460
+  ],
+  "primary_checker_returncode": 0,
+  "primary_checker_sha256": "569239f33be06ab82a8a4083f79120e9b184a1db50e5a27f97b1787b2f2da2e0",
+  "doubled_checker": "no_saved_completion",
+  "production": "not_started_no_results",
+  "task_log_bytes": 0,
+  "task_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "cause": "Processes absent following previous bounded tool session; exact termination cause unavailable. No timeout or software success inferred.",
+  "preservation": "Original ignored worktree and empty full log retained; original immutable task unchanged.",
+  "final_data_open": false,
+  "successor": "CHIEF-PERSONALIZED-RUN-002"
+}
