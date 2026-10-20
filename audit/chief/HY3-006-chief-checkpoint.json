@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T06:10:22.808341+00:00",
+  "task_id": "HY3-006",
+  "candidate_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+  "status": "chief_checks_passed_independent_remote_review_pending",
+  "accepted": false,
+  "final_data_open": false,
+  "evidence": {
+    "audit/chief/HY3-006-initial-numeric-review.json": "abb8dd4bf3e6e29711563c0c151bf91d03c8c3edd032841d0878b6e4e1122cba",
+    "audit/chief/HY3-006-decision-scalar-review.json": "ed9e3f9ac056e924c1b91e13f4c4f8204f7e55978e86811c1be8f73c111b4843",
+    "audit/chief/HY3-006-provenance-review.json": "d7e3d31330ddd33d9c7ef827f9936bc4d926d2f1fa7064033bcef11fd8e1f75e",
+    "audit/chief/HY3-006-isolated-writer-check.json": "72f9524d95efb09863879443b840ec60882a283846e3a2114e6c8ac872021b01"
+  },
+  "writer_check_seconds": 194.23499999998603,
+  "writer_unchanged": true,
+  "failed_chief_provenance_trial": "audit/chief/HY3-006-provenance-review-trial001.json",
+  "pending_task": "SOL-041",
+  "scope": "Exact bytes, accounting and saved decisions only; no selection/customer recommendation/final outcome access.",
+  "quota_at_last_observation": {
+    "limit_id": "codex",
+    "window_minutes": 10080,
+    "used_percent": 56.0,
+    "remaining_percent": 44.0,
+    "resets_at": 1792913381,
+    "source": "Codex account/rateLimits/read",
+    "checked_at": "2026-10-20T06:10:04.727755+00:00",
+    "state": "verified",
+    "stop_remaining_percent": 40
+  }
+}

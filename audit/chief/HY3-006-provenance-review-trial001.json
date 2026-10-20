@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T06:08:34.093345+00:00",
+  "status": "failed",
+  "scope": "chief additional audit implementation, not producer failure",
+  "script_sha256": "43da2e2faca80881315a23eff97a94824e2f7c7cc2c7d2279ebe02ea7f19b30e",
+  "error": "AssertionError at task_blob_sha256 comparison",
+  "cause": "Chief assumed stripped task blob; reviewed writer line324 correctly defines sha(raw Git bytes).",
+  "observed_raw_sha256": "70417ebde402084bb64cd4a3e55e92f16f828de418ff80e23bec56bcca8eb645",
+  "incorrect_stripped_sha256": "e37410399f1fd7df75e633ce0adf305878dcf413f84418f0303921cf7ab2705d",
+  "production_files_changed": false,
+  "scientific_parameters_changed": false,
+  "correction": "Compare exact Git blob bytes, keep separate canonical JSON task digest check."
+}
