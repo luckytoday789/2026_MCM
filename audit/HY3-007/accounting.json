@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "reviewed_result_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+  "output_root": "results/development/HY3-006",
+  "status": "passed",
+  "independent_numeric_checks": 735115,
+  "case_counts": {
+    "doubled/conservative_cost": {
+      "ledgers": 3600,
+      "metrics": 600,
+      "summaries": 5
+    },
+    "doubled/balanced_cost": {
+      "ledgers": 3600,
+      "metrics": 600,
+      "summaries": 5
+    },
+    "doubled/growth_cost": {
+      "ledgers": 3600,
+      "metrics": 600,
+      "summaries": 5
+    },
+    "doubled/balanced_context": {
+      "ledgers": 3600,
+      "metrics": 600,
+      "summaries": 5
+    },
+    "doubled/balanced_adaptive": {
+      "ledgers": 3600,
+      "metrics": 600,
+      "summaries": 5
+    },
+    "doubled/bills_keep": {
+      "ledgers": 3600,
+      "metrics": 600,
+      "summaries": 5
+    },
+    "doubled/equal_weight_annual": {
+      "ledgers": 3600,
+      "metrics": 600,
+      "summaries": 5
+    },
+    "doubled/equal_weight_buy_hold": {
+      "ledgers": 3600,
+      "metrics": 600,
+      "summaries": 5
+    }
+  },
+  "max_absolute_difference": 1.3642420526593924e-12,
+  "method": "stdlib Fraction binary64-input arithmetic and 70-digit Decimal CAGR/sample deviation; no SafeInvest imports",
+  "tolerances": {
+    "ordinary_ledger_relative": 1e-10,
+    "ordinary_ledger_absolute": 1e-09,
+    "fee_multiplication": "exact binary64"
+  },
+  "original_git_blob_sha256": {
+    "data/development/scenarios_001_120.csv": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+    "results/development/HY3-006/run_manifest.json": "39b76b0eba255119e22a62b47321d16c25cda95ae3a723ff6fd0759a2f2afc5a",
+    "results/development/HY3-006/cases/conservative_cost/annual_ledgers.csv": "69aa3068c1f23e33a0e6d4b06f7abc8ae87b613761e1d06137ce0eb8f928879b",
+    "results/development/HY3-006/cases/conservative_cost/scenario_metrics.csv": "1e1dfe7da68a2c10dbcb3a863b19ee878c672986acb0edfdb528471e70e52b41",
+    "results/development/HY3-006/cases/conservative_cost/summary.csv": "85ecb904cb4cedd009d0f177adfb49cf44a29a16f89602c008f8c74b72960f7d",
+    "results/development/HY3-006/cases/balanced_cost/annual_ledgers.csv": "821844b2cec0c4a48a2b0943f45e7096b85b2bc49d719cb3bd8726b46d8db46b",
+    "results/development/HY3-006/cases/balanced_cost/scenario_metrics.csv": "18bfa1aa815d05a884c9e1719b498783159b14bd6d98d77fbc309066791cc6f8",
+    "results/development/HY3-006/cases/balanced_cost/summary.csv": "72bda43b1fce8014eeac7ef388b5365910e94ff2a81ee965d5a94a45f1a1b853",
+    "results/development/HY3-006/cases/growth_cost/annual_ledgers.csv": "8418d39cee66039db7869b1f0772581918388def768d7d9eace255f02e360722",
+    "results/development/HY3-006/cases/growth_cost/scenario_metrics.csv": "e386812a4d9d0892fdfff5e27f5063f98c5e4ffee0c857347745b3b15eed1182",
+    "results/development/HY3-006/cases/growth_cost/summary.csv": "aaea1faa53896beb8078ce912a4316ebf32c45f042ebdc8e2710252504f3e6d6",
+    "results/development/HY3-006/cases/balanced_context/annual_ledgers.csv": "381606a77a7e8833464a99ae19d6c8b326e2cb7c32abb26bbe61ebc3c75d7329",
+    "results/development/HY3-006/cases/balanced_context/scenario_metrics.csv": "cc2e3c3da5f02ace78f5f64acda4128dc522af5ecfd73e9dda5e782843918090",
+    "results/development/HY3-006/cases/balanced_context/summary.csv": "4766442e10c659f4350ecd41ef3b14531f0ba7141ec27685dfa7285b44cdef63",
+    "results/development/HY3-006/cases/balanced_adaptive/annual_ledgers.csv": "b399eb741c3717679b55dce076498bc17b458bfc06d51b828c731cbf3710682d",
+    "results/development/HY3-006/cases/balanced_adaptive/scenario_metrics.csv": "65d2f0f4df73b6fa26b96885d24a711d569b7bbafb19ddc6ab0046879a8b2f6b",
+    "results/development/HY3-006/cases/balanced_adaptive/summary.csv": "2bf180d1a03ad7dac4c7dce188a35222e9e7fc492638b6ff66122510fcdd1f21",
+    "results/development/HY3-006/cases/bills_keep/annual_ledgers.csv": "630cd28779ac4824a6edad709b7c7f8311d8f2ef57ad8405673058cc60b8c800",
+    "results/development/HY3-006/cases/bills_keep/scenario_metrics.csv": "265953c34710182aebbfc6c370fec20b5d430ad3f5dc83ef53db20a036e8097e",
+    "results/development/HY3-006/cases/bills_keep/summary.csv": "546cd61c2ed63f279e163348289bbc232d4b52e2bd5bdc0df84155bf8321c40d",
+    "results/development/HY3-006/cases/equal_weight_annual/annual_ledgers.csv": "fb8b81cf2febfe2ec7a22f441e9b75d9ab6f256b3ca24d8619b601c8fc2505a7",
+    "results/development/HY3-006/cases/equal_weight_annual/scenario_metrics.csv": "873c24e613741226e5af32ee47c51f6a49c778e6789f1694ab5d42a539af0d35",
+    "results/development/HY3-006/cases/equal_weight_annual/summary.csv": "daa70df9a2f83ec76b8dbbeee07a4095f040fe52ea84ba57e90d7e107371efe1",
+    "results/development/HY3-006/cases/equal_weight_buy_hold/annual_ledgers.csv": "1e223f9d85d6e9c13ff4ae0718a0d02d64c599756a29535e9e1b4be4cea2e6ee",
+    "results/development/HY3-006/cases/equal_weight_buy_hold/scenario_metrics.csv": "34d58fd6606cea5703df8e8955d720ab533dda6770c9e19bc51286eba03c6df5",
+    "results/development/HY3-006/cases/equal_weight_buy_hold/summary.csv": "ac3918ad8e6faebe77a74ed3bcaaefedb13cba82dbddc7398c6d053c25b86ff8"
+  },
+  "competition_input_read": true,
+  "input_scope": "fixed development Git blob only",
+  "production_acceptance": false,
+  "limitations": [
+    "Does not independently rederive the policy choice; existing kernel/case reviews remain required.",
+    "Does not accept writer provenance or source binding; exact task and writer evidence review remains required."
+  ]
+}

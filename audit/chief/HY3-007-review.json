@@ -1,0 +1,67 @@
+{
+  "task_id": "HY3-007",
+  "reviewed_commit": "194a45ac5fced5dfab02903e4e732b1cac1c6e67",
+  "base_commit": "ba68853a54dc601865bd2713d5e9e060e2b4e9bd",
+  "task_sha256": "cecd8f3ac7657ddecfa9a4822bf023054653026db4bc2cf3276a4cc8d7bee45c",
+  "branch": "work/hy3/HY3-007-a1",
+  "structural_checks": "passed",
+  "source_hashes_checked": {
+    "scripts/review_saved_development.py": "7567ee19ad5060c6cf56b988a3d5a0895220dc4430094b0ca8ee29a105041eaf",
+    "scripts/check_worker_env.py": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8"
+  },
+  "artifacts_sha256": {
+    "audit/HY3-007/accounting.json": "1cbe4bdc06f38cbe0c78cd8d16c57e799ba57a45434c7b21a45672749b8acecb",
+    "audit/HY3-007/corruptions.json": "e159b7e5b7953defc2f9b6f1f41b4bb85a24ef3162ee5f40679d44c397e8fa64",
+    "audit/HY3-007/decisions.json": "edc4d6f898a70571b108679eb71188989ee681fe3a3467a2230fa0758d0d291f",
+    "audit/HY3-007/fresh-check.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/HY3-007/fresh-check.stdout.txt": "ee509763bff414bc936d14ac7a28228912a9f04b09eafd2b7935b893d9cb19ef",
+    "audit/HY3-007/independent-arithmetic.json": "92ebb2effe9d540a213ba956d42d78ffcd8cbe6904193d93cf77140be06ee09f",
+    "audit/HY3-007/verification.json": "27f914c447e830ed0613b6297b1574c4e9da987aeefa909b667cef19ee8293a7",
+    "handoff/HY3-007/check-0.txt": "4093b883344156271f472d22b463747eb570c7004899f37d7affe2de194f5678",
+    "handoff/HY3-007/check-1.txt": "0d1cdec6b37897dbfe937a323a608bf5ff3b16c30684c1f9919431dadac32287",
+    "handoff/HY3-007/check-2.txt": "86c7ea510fd96a297d284b5c024e8111734c39f0903a3856eacfba5ccc213bd4"
+  },
+  "accepted_paths": [
+    "audit/HY3-007/accounting.json",
+    "audit/HY3-007/corruptions.json",
+    "audit/HY3-007/decisions.json",
+    "audit/HY3-007/fresh-check.stderr.txt",
+    "audit/HY3-007/fresh-check.stdout.txt",
+    "audit/HY3-007/independent-arithmetic.json",
+    "audit/HY3-007/verification.json",
+    "handoff/HY3-007/check-0.txt",
+    "handoff/HY3-007/check-1.txt",
+    "handoff/HY3-007/check-2.txt",
+    "handoff/HY3-007/result.json"
+  ],
+  "excluded_paths": [],
+  "receipt_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "prescribed_command_count": 3,
+  "verdict": "approve",
+  "result_verdict": "approve",
+  "scope": "New genuine independent replay of fixed existing HY3-006; historical SOL-041 delivery remains rejected.",
+  "accounting_checks": 735115,
+  "decision_checks": 472295,
+  "sol_authored_arithmetic_checks": 624595,
+  "fresh_writer_check": {
+    "command": [
+      "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+      "-B",
+      "scripts/run_development_policy.py",
+      "--config",
+      "specs/execution/HY3-006-file44.json",
+      "--output",
+      "results/development/HY3-006",
+      "--check"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 208.46799999999348,
+    "before_status": "",
+    "after_status": "",
+    "stdout_sha256": "0a0c23666434c3fb9693db28d32d9fd8dbd40d9570d49d65130f290ebec2f6e0",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "checker_only": true,
+    "original_missing_logs_reconstructed": false
+  },
+  "corruptions_rejected": 17
+}

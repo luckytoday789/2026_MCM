@@ -1284,7 +1284,7 @@
       "independent_review_task": "SOL-040",
       "reviewed_commit": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
       "verdict": "approve",
-      "acceptance_evidence": "audit/chief/HY3-004-review.json",
+      "acceptance_evidence": "audit/chief/HY3-004-typed-approval.json",
       "accepted_paths": [
         "handoff/HY3-004/check-0.txt",
         "handoff/HY3-004/check-1.txt",
@@ -1338,7 +1338,8 @@
       ],
       "excluded_paths": [],
       "approval_scope": "primary_development_outcomes_only",
-      "accepted_at": "2026-10-20T09:26:12.376006+00:00"
+      "accepted_at": "2026-10-20T09:26:12.376006+00:00",
+      "result_verdict": "approve"
     },
     {
       "id": "HY3-005",
@@ -1428,7 +1429,7 @@
       "release_evidence": "audit/chief/SOL-037-review.json",
       "reviewed_commit": "a9073e1d0ab5aadea639daf34ba76fab728d636f",
       "verdict": "approve",
-      "acceptance_evidence": "audit/chief/SOL-040-review.json",
+      "acceptance_evidence": "audit/chief/SOL-040-typed-approval.json",
       "accepted_paths": [
         "audit/SOL-040/.gitattributes",
         "audit/SOL-040/.gitignore",
@@ -1473,7 +1474,9 @@
       ],
       "excluded_paths": [],
       "approval_scope": "independent_exact_primary_review",
-      "accepted_at": "2026-10-20T09:26:12.376006+00:00"
+      "accepted_at": "2026-10-20T09:26:12.376006+00:00",
+      "result_verdict": "approve",
+      "code_verdict": "approve"
     },
     {
       "id": "SOL-041",
@@ -1557,17 +1560,21 @@
     },
     {
       "id": "HY3-006",
-      "state": "ready",
+      "state": "accepted",
       "attempt": 1,
       "owner": "hy3",
       "branch": "work/hy3/HY3-006-a1",
       "task_sha256": "dcdf31a5ce502b4c5115d9a21a29b6649ea107b8e0c8b671b1e17d44812962b6",
-      "note": "Producer remains pending. SOL-041 local success rejected:four required logs missing from exact delivery and portable replay exits1. Original chief arithmetic unchanged; audit-only SOL-043 recovers exact original logs without producer rerun.",
+      "note": "Exact canonical receipt and fresh independent replay accepted under user-authorized chief+HY3 takeover; no producer rerun.",
       "released_at": "2026-10-20T05:49:21.279000+00:00",
       "candidate_result_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
       "independent_review_task": "SOL-043",
       "chief_evidence": "audit/chief/HY3-006-chief-checkpoint.json",
-      "prior_review_task": "SOL-041"
+      "prior_review_task": "SOL-041",
+      "reviewed_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+      "result_verdict": "approve",
+      "verdict": "approve",
+      "acceptance_evidence": "audit/chief/HY3-006-review.json"
     },
     {
       "id": "SOL-042",
@@ -1587,11 +1594,35 @@
     {
       "id": "HY3-007",
       "owner": "hy3",
-      "state": "ready",
+      "state": "accepted",
       "attempt": 1,
       "branch": "work/hy3/HY3-007-a1",
       "task_sha256": "cecd8f3ac7657ddecfa9a4822bf023054653026db4bc2cf3276a4cc8d7bee45c",
-      "note": "Immediate user-authorized chief+HY3 takeover. Fresh independent verification of exact existing HY3-006, zero producer generation; old missing logs remain historical failures."
+      "note": "Exact canonical receipt and fresh independent replay accepted under user-authorized chief+HY3 takeover; no producer rerun.",
+      "reviewed_commit": "194a45ac5fced5dfab02903e4e732b1cac1c6e67",
+      "result_verdict": "approve",
+      "verdict": "approve",
+      "acceptance_evidence": "audit/chief/HY3-007-review.json"
+    },
+    {
+      "id": "CHIEF-ANALYSIS-20261020",
+      "owner": "chief",
+      "kind": "chief_source_approval",
+      "state": "accepted",
+      "reviewed_commit": "1ff8772bc0c05027b80dcdbc54e26ee97e70e5d3",
+      "code_verdict": "approve",
+      "acceptance_evidence": "audit/chief/CHIEF-ANALYSIS-20261020-review.json",
+      "note": "Actual local source review under user-authorized takeover; not a worker receipt."
+    },
+    {
+      "id": "CHIEF-HY3-006-20261020",
+      "owner": "chief",
+      "kind": "chief_result_review",
+      "state": "accepted",
+      "reviewed_commit": "194a45ac5fced5dfab02903e4e732b1cac1c6e67",
+      "code_verdict": "approve",
+      "result_verdict": "approve",
+      "acceptance_evidence": "audit/chief/CHIEF-HY3-006-20261020-review.json"
     }
   ]
 }

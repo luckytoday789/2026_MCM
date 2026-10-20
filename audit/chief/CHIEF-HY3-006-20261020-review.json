@@ -1,0 +1,33 @@
+{
+  "task_id": "CHIEF-HY3-006-20261020",
+  "kind": "chief_takeover_approval",
+  "authorization": "user-directed-two-node-takeover-20261020",
+  "reviewed_commit": "194a45ac5fced5dfab02903e4e732b1cac1c6e67",
+  "code_verdict": "approve",
+  "result_verdict": "approve",
+  "producer_task_id": "HY3-006",
+  "reviewed_result_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+  "oracle_execution": {
+    "exit_code": 0,
+    "argv": [
+      "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+      "-B",
+      "scripts/run_development_policy.py",
+      "--config",
+      "specs/execution/HY3-006-file44.json",
+      "--output",
+      "results/development/HY3-006",
+      "--check"
+    ],
+    "log_path": "audit/HY3-007/fresh-check.stdout.txt",
+    "log_sha256": "ee509763bff414bc936d14ac7a28228912a9f04b09eafd2b7935b893d9cb19ef"
+  },
+  "independent_evidence_commit": "194a45ac5fced5dfab02903e4e732b1cac1c6e67",
+  "independent_evidence": "audit/HY3-007/verification.json",
+  "authorship": "Earlier exact Sol-authored arithmetic and chief-authored accounting/decision oracles; newly executed on actual HY3 machine and reviewed by chief.",
+  "old_SOL041_delivery_accepted": false,
+  "limitations": [
+    "Independent CE expectations are representative samples; all 18000 decisions and17585 score identities/state links are checked by authenticated oracle.",
+    "Complete Decimal path expectations use saved actions whose choices are separately validated; full28800-row Fraction oracle covers every accounting fact."
+  ]
+}
