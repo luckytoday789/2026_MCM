@@ -1,10 +1,8 @@
 {
   "role": "sol",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
-  "state": "error",
+  "state": "idle",
   "python": "3.12.14",
-  "updated_at": "2026-10-20T07:08:31.320667+00:00",
-  "lease_until": "2026-10-20T07:18:31.320667+00:00",
-  "error": "Command '['git', 'fetch', 'origin', 'refs/heads/status/sol:refs/remotes/origin/status/sol']' timed out after -1045.2660000000033 seconds",
-  "failures": 1
+  "updated_at": "2026-10-20T07:09:42.906088+00:00",
+  "lease_until": "2026-10-20T07:19:42.906088+00:00"
 }
