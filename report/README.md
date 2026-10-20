@@ -146,6 +146,14 @@ authorized by this plan.
   external freeze attestation and explicit correction-source binding into future
   implementation. Final code, development decisions, refit and freeze remain
   unaccepted; the design review creates no freeze or holdout access.
+- [All-development refit handoff](../specs/FINAL_REFIT_HANDOFF.md) separates the
+  missing single 3600-row prior from the accepted four-fold calibrations. Its
+  generated-only reference provides eighteen exact inverse-cube moment/CE
+  expectations and a 120-by-30 generated shape, with no competition-data refit,
+  policy outcome or final access. `python -B audit/chief/final_refit_reference.py
+  --check` reproduces the saved reference; it does not test or approve future
+  final code. Actual refit execution waits for accepted development choices and
+  personalized rescreens, followed by independent artifact review before freeze.
 - Freeze code, parameters, metrics, selection and severe-case rules, plus input
   hashes, before opening final outcomes. Keep failed evaluations and disclose
   any bug correction; never erase the gate history or tune on final outcomes.
