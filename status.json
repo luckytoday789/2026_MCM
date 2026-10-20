@@ -5,19 +5,10 @@
     48984
   ],
   "child_pids": [
-    8420,
-    43896,
-    12172,
-    48008,
-    22340,
-    26884,
-    24064,
-    35068,
-    39948,
-    42784,
-    44044
+    4496,
+    45328
   ],
-  "current_task": "SOL-032",
+  "current_task": "SOL-033",
   "alerts": [],
   "tasks": [
     {
@@ -504,14 +495,33 @@
       "key": "SOL-032-a1",
       "task_id": "SOL-032",
       "base": "e33b748c29d366559706d5272319d9138f0c7aa4",
-      "head": "e33b748c29d366559706d5272319d9138f0c7aa4",
+      "head": "d168757efbc70e4641deacc911976f1fa3bd7a7c",
+      "receipt_status": "completed",
+      "receipt_matches_task": true,
+      "queue_state": "ready",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-20T04:11:45.966108+00:00",
+      "check_exit_codes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pending_upload": false
+    },
+    {
+      "key": "SOL-033-a1",
+      "task_id": "SOL-033",
+      "base": "65b54a5823765a676cb7c50947f7f46874484563",
+      "head": "65b54a5823765a676cb7c50947f7f46874484563",
       "receipt_status": null,
       "receipt_matches_task": false,
       "queue_state": "ready",
-      "dirty": true,
-      "changed_paths": [
-        "?? audit/SOL-032/"
-      ],
+      "dirty": false,
+      "changed_paths": [],
       "remote_matches": false,
       "completed_record": false,
       "pending_upload": false
@@ -523,11 +533,9 @@
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
     "state": "running",
     "python": "3.12.0",
-    "updated_at": "2026-10-20T04:05:54.611221+00:00",
-    "lease_until": "2026-10-20T04:15:54.611221+00:00",
-    "task_id": "integrate-and-dispatch",
-    "model": "gpt-6.1-sol",
-    "reasoning_effort": "xhigh"
+    "updated_at": "2026-10-20T04:10:00.322799+00:00",
+    "lease_until": "2026-10-20T04:20:00.322799+00:00",
+    "task_id": "integrate-and-dispatch"
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
   "schema_version": 1,
@@ -535,7 +543,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-20T04:08:21.240268+00:00",
+  "updated_at": "2026-10-20T04:13:43.225140+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
