@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "published_at": "2026-10-20T04:18:09.380961+00:00",
+  "source_commit": "bc04d428425a9afbea799e036213632dc6568c73",
+  "base_commit": "93a232a926dc3d1bfb18e2866ef0ddb0aaf9bc0f",
+  "tasks": [
+    {
+      "id": "HY3-004",
+      "base_commit": "93a232a926dc3d1bfb18e2866ef0ddb0aaf9bc0f",
+      "task_sha256": "14bb98ed9b6996d198513c1d29cbe8a7d44b489de7cde9a46f4fc27ce2bead89",
+      "config_path": "specs/execution/HY3-004-file44.json",
+      "config_sha256": "5d09fe13400b04b14a26fbfa03810a56c5b1b0a7f0ddd13e855918afbeb60eee",
+      "file_deliverables": 44,
+      "group": "primary"
+    },
+    {
+      "id": "HY3-005",
+      "base_commit": "93a232a926dc3d1bfb18e2866ef0ddb0aaf9bc0f",
+      "task_sha256": "9473a3f93c04f668fe839ab9181496e564a27cdf11471b047907678c1a4807e3",
+      "config_path": "specs/execution/HY3-005-file44.json",
+      "config_sha256": "1961de1601a882334244538363eb22e1c977677f81e4f37c438ebc8890b53953",
+      "file_deliverables": 44,
+      "group": "doubled"
+    }
+  ],
+  "competition_input_read": false,
+  "final_data_open": false,
+  "review_handoff": "specs/DEVELOPMENT_CASE_RESULTS_REVIEW.md"
+}

@@ -1249,6 +1249,24 @@
         "SOL-032"
       ],
       "note": "Corrected narrow successor to failed SOL-030; review unchanged PDF/PNG-only publication restriction, preserve missing dependency and SVG clipping. No renderer/Matplotlib install or baseline rerun."
+    },
+    {
+      "id": "HY3-004",
+      "state": "ready",
+      "attempt": 1,
+      "owner": "hy3",
+      "branch": "work/hy3/HY3-004-a1",
+      "task_sha256": "14bb98ed9b6996d198513c1d29cbe8a7d44b489de7cde9a46f4fc27ce2bead89",
+      "note": "Fixed development execution authorized after exact SOL-032 acceptance. Independent numerical review required before acceptance; final remains closed."
+    },
+    {
+      "id": "HY3-005",
+      "state": "ready",
+      "attempt": 1,
+      "owner": "hy3",
+      "branch": "work/hy3/HY3-005-a1",
+      "task_sha256": "9473a3f93c04f668fe839ab9181496e564a27cdf11471b047907678c1a4807e3",
+      "note": "Fixed development execution authorized after exact SOL-032 acceptance. Independent numerical review required before acceptance; final remains closed."
     }
   ]
 }
