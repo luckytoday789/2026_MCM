@@ -5,10 +5,10 @@
     34140
   ],
   "child_pids": [
-    44752,
-    27056
+    9584,
+    21448
   ],
-  "current_task": "SOL-045",
+  "current_task": "SOL-046",
   "alerts": [],
   "tasks": [
     {
@@ -733,6 +733,26 @@
       "key": "SOL-045-a1",
       "task_id": "SOL-045",
       "base": "96b9ac2632695264f97ea08f0cce9b1009517cb0",
+      "head": "87cf934348c3a78ce10299fa7aece8168ade0c43",
+      "receipt_status": "completed",
+      "receipt_matches_task": true,
+      "queue_state": "accepted",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-20T13:40:55.907058+00:00",
+      "check_exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "pending_upload": false
+    },
+    {
+      "key": "SOL-046-a1",
+      "task_id": "SOL-046",
+      "base": "96b9ac2632695264f97ea08f0cce9b1009517cb0",
       "head": "96b9ac2632695264f97ea08f0cce9b1009517cb0",
       "receipt_status": null,
       "receipt_matches_task": false,
@@ -750,8 +770,8 @@
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
     "state": "running",
     "python": "3.12.0",
-    "updated_at": "2026-10-20T13:37:16.618923+00:00",
-    "lease_until": "2026-10-20T13:47:16.618923+00:00",
+    "updated_at": "2026-10-20T13:41:22.052417+00:00",
+    "lease_until": "2026-10-20T13:51:22.052417+00:00",
     "task_id": "integrate-and-dispatch"
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
@@ -760,7 +780,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-20T13:39:52.302463+00:00",
+  "updated_at": "2026-10-20T13:45:19.917761+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
