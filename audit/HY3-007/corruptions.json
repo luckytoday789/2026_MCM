@@ -1,0 +1,377 @@
+{
+  "status": "passed",
+  "rejected": 17,
+  "corruptions": [
+    {
+      "name": "missing file",
+      "expected": "reject",
+      "observed": "rejected",
+      "reason": "compact files",
+      "before_sha256": "846952777728b4444ae4c112cb14650cbca4e9505d5deffd03e78a5d7ee2e811",
+      "after_sha256": "846952777728b4444ae4c112cb14650cbca4e9505d5deffd03e78a5d7ee2e811",
+      "rehash": true
+    },
+    {
+      "name": "wrong source",
+      "expected": "reject",
+      "observed": "rejected",
+      "reason": "compact source_commit",
+      "before_sha256": "8aeab85986d1ba67f961c8ea4fb72a7ac64f2337a5624b621e17cc802c35c0d1",
+      "after_sha256": "8aeab85986d1ba67f961c8ea4fb72a7ac64f2337a5624b621e17cc802c35c0d1",
+      "rehash": true
+    },
+    {
+      "name": "wrong config",
+      "expected": "reject",
+      "observed": "rejected",
+      "reason": "compact config_sha256",
+      "before_sha256": "ce4e9448bea04fde249fa44c5b7d3d400e585385c3a148546d18dd1f0127a4e6",
+      "after_sha256": "ce4e9448bea04fde249fa44c5b7d3d400e585385c3a148546d18dd1f0127a4e6",
+      "rehash": true
+    },
+    {
+      "name": "wrong task",
+      "expected": "reject",
+      "observed": "rejected",
+      "reason": "compact task_id",
+      "before_sha256": "3e607c5f4264b49b56a0968e10db0981d987b36bf54f2d09d7e85cf907ad899b",
+      "after_sha256": "3e607c5f4264b49b56a0968e10db0981d987b36bf54f2d09d7e85cf907ad899b",
+      "rehash": true
+    },
+    {
+      "name": "incomplete status",
+      "expected": "reject",
+      "observed": "rejected",
+      "reason": "compact status",
+      "before_sha256": "cb7c426c1dd2eb09cf9cad36a451c42a5d4f1e81e676abd0b3e0bb330eee55b0",
+      "after_sha256": "cb7c426c1dd2eb09cf9cad36a451c42a5d4f1e81e676abd0b3e0bb330eee55b0",
+      "rehash": true
+    },
+    {
+      "name": "false count",
+      "expected": "reject",
+      "observed": "rejected",
+      "reason": "compact counts",
+      "before_sha256": "3f2b329e540041d710d4fd6f4c4c0bd7414ee8b5d0540746d8de676796e61f6b",
+      "after_sha256": "3f2b329e540041d710d4fd6f4c4c0bd7414ee8b5d0540746d8de676796e61f6b",
+      "rehash": true
+    },
+    {
+      "name": "duplicate typed key",
+      "expected": "reject",
+      "observed": "rejected",
+      "reason": "compact duplicate path key",
+      "before_sha256": "884a6af19af9cf2221920ae0a74320cb03c3dcf6e2c62d010233ec505de4c16f",
+      "after_sha256": "884a6af19af9cf2221920ae0a74320cb03c3dcf6e2c62d010233ec505de4c16f",
+      "rehash": true
+    },
+    {
+      "name": "rehash wrong metric",
+      "expected": "reject",
+      "observed": "rejected",
+      "reason": "('compact numerical net_real_cagr_pct', 2.188517027518765, 1.1885170275187595)",
+      "before_sha256": "ddd96ac9c7b2688a4e4355c0c6d47b4158417c23893043213b45dd959b71a26b",
+      "after_sha256": "ddd96ac9c7b2688a4e4355c0c6d47b4158417c23893043213b45dd959b71a26b",
+      "rehash": true
+    },
+    {
+      "name": "double actual fee",
+      "expected": "reject",
+      "observed": "rejected",
+      "reason": "('compact one-way fee', 0.6666666666666667, 0.3333333333333333)",
+      "before_sha256": "49e88e725b203fcd434698a98bc6377f6f638b5075ccdc5289f48d49eeafd920",
+      "after_sha256": "49e88e725b203fcd434698a98bc6377f6f638b5075ccdc5289f48d49eeafd920",
+      "rehash": true
+    },
+    {
+      "name": "wrong CPI",
+      "expected": "reject",
+      "observed": "rejected",
+      "reason": "('compact exact CPI', 1.5, 1.03878898)",
+      "before_sha256": "7d07c2316c8929013757786e13a6dac11308521bf5bd721e0b1116becaaa37b5",
+      "after_sha256": "7d07c2316c8929013757786e13a6dac11308521bf5bd721e0b1116becaaa37b5",
+      "rehash": true
+    },
+    {
+      "name": "wrong annual real wealth",
+      "expected": "reject",
+      "observed": "rejected",
+      "reason": "('compact annual simple real', 999.0, 88.13589007589715)",
+      "before_sha256": "8ab507964ca31af70cec561507d198b46452ea71e9d39161495a4fd51a1595f9",
+      "after_sha256": "8ab507964ca31af70cec561507d198b46452ea71e9d39161495a4fd51a1595f9",
+      "rehash": true
+    },
+    {
+      "name": "fee deducted after return",
+      "expected": "reject",
+      "observed": "rejected",
+      "reason": "('compact before returns', 33.333333333333336, 33.22222222222222)",
+      "before_sha256": "0ed2599cf53861571445fc23b9bd88164d6d7d3e6bb1c964a27459ef5af7229a",
+      "after_sha256": "0ed2599cf53861571445fc23b9bd88164d6d7d3e6bb1c964a27459ef5af7229a",
+      "rehash": true
+    },
+    {
+      "name": "wrong active state",
+      "expected": "reject",
+      "observed": "rejected",
+      "reason": "compact decision state",
+      "before_sha256": "b9c244dbb039f6b95624766cd5b1dbcfee65e4723a89ae97077ae14a60555a39",
+      "after_sha256": "b9c244dbb039f6b95624766cd5b1dbcfee65e4723a89ae97077ae14a60555a39",
+      "rehash": true
+    },
+    {
+      "name": "context sees current year",
+      "expected": "reject",
+      "observed": "rejected",
+      "reason": "compact decision state",
+      "before_sha256": "972dec3b1849f3fd91d7eddd129a6ca37c22d5c9e07b8ac7a8e65f6f58be853c",
+      "after_sha256": "972dec3b1849f3fd91d7eddd129a6ca37c22d5c9e07b8ac7a8e65f6f58be853c",
+      "rehash": true
+    },
+    {
+      "name": "single cost hurdle instead of doubled",
+      "expected": "reject",
+      "observed": "rejected",
+      "reason": "('compact doubled buffer', 1.0213129678626653, 1.017897205428342)",
+      "before_sha256": "8db22a4b45a453c6691dccb029dd5c3aa403a757a8afd65c2e92faeea0068b40",
+      "after_sha256": "8db22a4b45a453c6691dccb029dd5c3aa403a757a8afd65c2e92faeea0068b40",
+      "rehash": true
+    },
+    {
+      "name": "stale payload hash",
+      "expected": "reject",
+      "observed": "rejected",
+      "reason": "payload hash",
+      "before_sha256": "7aac64b2c6b93aebf41e7f0adaf4fb376baf8f2aa52dfa4e982ee5aef2f5973d",
+      "after_sha256": "7aac64b2c6b93aebf41e7f0adaf4fb376baf8f2aa52dfa4e982ee5aef2f5973d",
+      "rehash": false
+    },
+    {
+      "name": "duplicate JSON key",
+      "observed": "rejected",
+      "reason": "duplicate JSON key"
+    }
+  ],
+  "fixture_sha256_before": "a36d8f36370e1c0ab8f781cc4c1cbceec54c80e283c92ddc9f054d90def3447c",
+  "fixture_sha256_after": "a36d8f36370e1c0ab8f781cc4c1cbceec54c80e283c92ddc9f054d90def3447c",
+  "generated_tests": {
+    "initial_deferrals": [
+      {
+        "mode": "conservative_cost",
+        "initial_action": "keep",
+        "first_deployment": null,
+        "persistent_deferral": true
+      },
+      {
+        "mode": "balanced_cost",
+        "initial_action": "keep",
+        "first_deployment": null,
+        "persistent_deferral": true
+      },
+      {
+        "mode": "growth_cost",
+        "initial_action": "keep",
+        "first_deployment": null,
+        "persistent_deferral": true
+      },
+      {
+        "mode": "balanced_context",
+        "initial_action": "keep",
+        "first_deployment": null,
+        "persistent_deferral": true
+      },
+      {
+        "mode": "balanced_adaptive",
+        "initial_action": "keep",
+        "first_deployment": null,
+        "persistent_deferral": true
+      }
+    ],
+    "tiny_active_state": {
+      "action": "target_change",
+      "active_before": "balanced",
+      "active_after": "defensive",
+      "transfer": 1.0001721673091879e-11,
+      "fee": 5.0008608365459395e-14,
+      "is_trade": false,
+      "test_double": "generated explicit CE only; no production arithmetic expectations"
+    },
+    "future": [
+      {
+        "mode": "conservative_cost",
+        "fold_label": 0,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "a3b97448c739e5e60715852fc8b51c897dc7b78ac35ae84fbfc66d71a57b6266",
+        "unchanged": true
+      },
+      {
+        "mode": "balanced_cost",
+        "fold_label": 0,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "fbd628f6675934d0d946edcbad0997c4de5f2567290aa4f5c0fe0857d0351951",
+        "unchanged": true
+      },
+      {
+        "mode": "growth_cost",
+        "fold_label": 0,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "9f7b2ea7197926aeacb0dd894b286a66efe930e9430fa8d17e3741e1b9f0cb14",
+        "unchanged": true
+      },
+      {
+        "mode": "balanced_context",
+        "fold_label": 0,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "53fa9d7e1b5690338a08c1af26c3d5e289a0059a9eee897b6d0d08a34489d700",
+        "unchanged": true
+      },
+      {
+        "mode": "balanced_adaptive",
+        "fold_label": 0,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "a2ae53369411ccafa6d85621cbeb510be79a863403756b3fee301d896ec4e655",
+        "unchanged": true
+      },
+      {
+        "mode": "conservative_cost",
+        "fold_label": 1,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "e1ae2d1463e259e880e08c53f5911dd4ea8904bb5902170e0aba13cf73044dcf",
+        "unchanged": true
+      },
+      {
+        "mode": "balanced_cost",
+        "fold_label": 1,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "7549ea77f81a6b3de56180170de49b2c57be0c5d347ebf173df3ff3d2870ff75",
+        "unchanged": true
+      },
+      {
+        "mode": "growth_cost",
+        "fold_label": 1,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "57b7925ccfa13c1d46295ffafaec0c24515885570e375e9e50b693ecc043b61d",
+        "unchanged": true
+      },
+      {
+        "mode": "balanced_context",
+        "fold_label": 1,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "dc3a3a053a1b0aa74c9a2f128b36c99178d4b3fd7cab1c3467dbb4facc5d41ed",
+        "unchanged": true
+      },
+      {
+        "mode": "balanced_adaptive",
+        "fold_label": 1,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "2f699959c08c451ab754ea6c31f4ac754f998d2367d0aed07911ef30ccd30c4e",
+        "unchanged": true
+      },
+      {
+        "mode": "conservative_cost",
+        "fold_label": 2,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "add306f77afd179f2fc1c544ceb93061d9c4773bde200d1108fc69ffb5f27c9d",
+        "unchanged": true
+      },
+      {
+        "mode": "balanced_cost",
+        "fold_label": 2,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "08e4560e1b1c270fa207d279acff3340baf4a2120a3bd5a0f5dc062a9c3f08d4",
+        "unchanged": true
+      },
+      {
+        "mode": "growth_cost",
+        "fold_label": 2,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "0832b5f22858f5a31cc3ef87b4b37581b78f6bacfc88854bb79ee9d14681b40b",
+        "unchanged": true
+      },
+      {
+        "mode": "balanced_context",
+        "fold_label": 2,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "a985bf846d1ead08039d716032cc535def23dafead2c27f7f3a987a329fa556b",
+        "unchanged": true
+      },
+      {
+        "mode": "balanced_adaptive",
+        "fold_label": 2,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "58c957b8ab4c16d70a77f7fbae06690a2278aadcca9aab0cc6ab41d93261b244",
+        "unchanged": true
+      },
+      {
+        "mode": "conservative_cost",
+        "fold_label": 3,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "ddf6ec6afb2d8fbf7ab71c10422438e050fa4b477601a11e7230f75755d58806",
+        "unchanged": true
+      },
+      {
+        "mode": "balanced_cost",
+        "fold_label": 3,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "de7ce41334e831b84b964bd2c6020f4fd5f4d5ea41d8ae0774be1d0a15a4cdc6",
+        "unchanged": true
+      },
+      {
+        "mode": "growth_cost",
+        "fold_label": 3,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "f20b0ca43a71b2c204870afec4dfe9b32cc7df040652c7d99e45feaac0b15559",
+        "unchanged": true
+      },
+      {
+        "mode": "balanced_context",
+        "fold_label": 3,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "21ed2b61dbf0480afdfc6150dbc4b2d082358ba9b7beb2bd320eaade109fcfcd",
+        "unchanged": true
+      },
+      {
+        "mode": "balanced_adaptive",
+        "fold_label": 3,
+        "decision_prefix_through": 6,
+        "prefix_sha256": "c1f746aba4807a4c1e8156965a64387d776643552d60da5cc9de042df0262524",
+        "unchanged": true
+      }
+    ],
+    "tie_boundaries": [
+      {
+        "name": "exact keep hurdle",
+        "expected": null,
+        "observed": null
+      },
+      {
+        "name": "active first inside global tolerance",
+        "expected": "active",
+        "observed": "active"
+      },
+      {
+        "name": "global maximum avoids chain ties",
+        "expected": "middle",
+        "observed": "middle"
+      },
+      {
+        "name": "ineligible preferred cannot be selected",
+        "expected": "other",
+        "observed": "other"
+      }
+    ],
+    "tiny_transfer": 1.0001721673091879e-11,
+    "tiny_fee": 5.0008608365459395e-14,
+    "tiny_reported_trade": false,
+    "severe_first_latch": 4,
+    "severe_later_actions": [
+      "human_review",
+      "human_review",
+      "human_review",
+      "human_review",
+      "human_review"
+    ],
+    "scope": "generated data only; authenticated exact producer kernel used as system under test, never as expectation generator for competition data"
+  },
+  "scope": "compact exact-Git-derived five-year case and typed metadata overlays; independent arithmetic catches rehashed numerical errors; no full bundle duplication or producer --check retry"
+}
