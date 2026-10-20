@@ -1,0 +1,27 @@
+{
+  "artifacts_sha256": {
+    "results/development/HY3-003/annual_ledgers.csv": "b2e93442391d2a7cec4bdfe79b397c14c311cc229e2e6c3d82d2dd04199d470a",
+    "results/development/HY3-003/checks.json": "943e3145d686867bf8b34b309b2ecfbd6ae5bfb15705a1077c5203c5289a0061",
+    "results/development/HY3-003/run_manifest.json": "9ae3558e6453902976a0c69ef07d3d6d1471d3e8afe176530457dbae67956436",
+    "results/development/HY3-003/scenario_metrics.csv": "afabf571d8c7d224bd83f836033fe4c4907a05fc15a2e8614c8ae09d803f100c",
+    "results/development/HY3-003/summary.csv": "965c3ac513f63de31830603ab968f5c6e99c6ceb763515b99753282d8c3a4994"
+  },
+  "baseline_simulation": false,
+  "growth_units": "percent/year",
+  "legacy_growth_units": "percentage points per year",
+  "modes": [
+    "bills_keep",
+    "equal_weight_annual",
+    "equal_weight_buy_hold"
+  ],
+  "numeric_conversion": "none",
+  "receipt_sha256": "99a5a5ca49d46b48ee4f929632eae0551a0028c833526835829713334d8909f0",
+  "renames": {
+    "action": "engine_action",
+    "policy": "mode",
+    "year": "period"
+  },
+  "reviewed_commit": "7652410d73425371110784ef5fa97c03470a074e",
+  "status": "authenticated_import",
+  "task_id": "HY3-003"
+}

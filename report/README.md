@@ -123,11 +123,10 @@ authorized by this plan.
   accepted at 803b7a085284405ee5ee4d4f0d5720ebaa2e67f7 after clean-environment
   replay, independent numerical checks and corruption rejection. Writer
   source SOL-031 and narrow44-file compatibility review SOL-032 are accepted.
-  Exact HY3-004 is delivered but awaits independent SOL-040 review. Failed
+  Exact HY3-004 and independent SOL-040 are accepted; precise worker commits and chief evidence are in ops/queue.json. Failed
   HY3-005 partials are preserved; exact unchanged-policy HY3-006 awaits independent
   SOL-041 review. Chief numerical checks passed but neither producer is accepted.
-  SOL-037 is the single time-gated availability probe; SOL-038/039/040/041
-  remain held until its exact successful receipt is accepted. Failed
+  SOL-037 was accepted at its exact successful commit and released the existing reviews; SOL-041/038/039/042 remain pending, while SOL-040 is accepted. Failed
   SOL-034/035/036 are not positive code, result or review dependencies.
   Personalized pure component SOL-027 is accepted;
   its authenticated production bridge and outcome evidence remain pending.
@@ -209,6 +208,22 @@ original exact checkout passes, while later main differs in111 historical text
 raw hashes only by LF/CRLF. The failed check and canonical-content diagnosis are
 preserved in ../audit/chief/SOL-032-acceptance-portability-addendum.json. Failed
 audit-only SOL-035 parent delivery remains preserved; its chief isolated replay
-is narrower evidence. The published successor SOL-039 waits for the accepted
-SOL-037 availability probe. Accepted numerical source remains unchanged.
+is narrower evidence. The published successor SOL-039 was released after the accepted
+SOL-037 availability probe; its independent delivery remains pending. Accepted numerical source remains unchanged.
 No later-main SOL-032 verifier pass is claimed.
+
+## Accepted primary bundle and generated final-path preparation
+
+Primary HY3-004 at `6aa2ccdce80834c8beb52a827993f1f587d1d8a6` and independent
+SOL-040 at `a9073e1d0ab5aadea639daf34ba76fab728d636f` are accepted. See
+../audit/chief/HY3-004-review.json and ../audit/chief/SOL-040-review.json. All28,800
+ledger rows,4,800 metrics and40 summaries were checked; the chief independently
+recomputed736,571 numerical facts. This provides raw development evidence, with
+sampled independent CRRA rescoring explicitly disclosed. Actual comparison
+assembly, policy selection, doubled results and customer recommendations remain
+separate gates. Failed SOL-036 remains failed.
+
+[Final-path handoff](../specs/FINAL_PATH_ENGINE_HANDOFF.md) and its generated
+rational references prepare a future narrow implementation task. The32 toy
+paths and4,740 numeric comparisons certify fixture arithmetic only; no final
+engine, original-data refit, freeze or final-data access is authorized.

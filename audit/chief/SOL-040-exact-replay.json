@@ -1,0 +1,25 @@
+{
+  "reviewed_commit": "a9073e1d0ab5aadea639daf34ba76fab728d636f",
+  "argv": [
+    "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+    "-B",
+    "audit/SOL-040/verify.py",
+    "--check"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 56.82800000003772,
+  "timeout_seconds": 180,
+  "python": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+  "pythonpath_removed": true,
+  "producer_writer_reexecuted": false,
+  "logs": {
+    "SOL-040-exact-replay.stdout.json": {
+      "bytes": 635975,
+      "sha256": "e34522d508a0f9d61873376d0881c45324da42bd34c24e63b3d7e4d47e643743"
+    },
+    "SOL-040-exact-replay.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

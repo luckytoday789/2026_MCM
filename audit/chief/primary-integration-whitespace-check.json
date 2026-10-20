@@ -1,0 +1,17 @@
+{
+  "check": "staged_whitespace",
+  "initial_default_check": "failed_due_to_preserved_CRLF_raw_logs",
+  "raw_worker_logs_changed": false,
+  "rerun_argv": [
+    "git",
+    "-c",
+    "core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "",
+  "explanation": "CRLF subprocess logs are immutable evidence; cr-at-eol permits only their literal carriage returns. All other whitespace checks remain enabled."
+}

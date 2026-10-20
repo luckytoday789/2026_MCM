@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-040",
+  "attempt": 1,
+  "owner": "sol",
+  "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+  "publication_commit": "95eb627ce6536662b8c583dfd2e6046c3aaf0ea9",
+  "producer_result_commit": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
+  "producer_accepted": false,
+  "verdict": "independent_checks_passed_pending_chief_exact_acceptance",
+  "blocking_findings": [],
+  "measured_counts": {
+    "annual_ledgers": 28800,
+    "decisions": 18000,
+    "scenario_metrics": 4800,
+    "summary": 40,
+    "target_scores": 17823
+  },
+  "coverage": {
+    "all_ledger_rows": 28800,
+    "all_metric_rows": 4800,
+    "all_summary_rows": 40,
+    "all_saved_scores_algebra_and_links": 17823,
+    "training_folds": 4,
+    "training_rows_per_fold": 2700,
+    "complete_independent_new_mode_paths": 25,
+    "independent_empirical_CRRA_states": 468,
+    "future_perturbations": 16,
+    "latch_boundary_fixtures": 3,
+    "corruptions_rejected": 16
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "historical_failure_preserved",
+      "fact": "Exact SOL-036 remains failed; original clean-check exit and before inventory unavailable after tool interruption.",
+      "evidence": {
+        "commit": "8a39da30e551f6e4fd54cfef6ec7b070b43d4d8d",
+        "receipt_sha256": "85ae415acacac482628f534cd3f0aff28032b5c33246ec287943f23030f051ce",
+        "clean_sha256": "0c67cab66ab8db826d25f84a3f3d05995cb4a7e1904c4caa305f741848cd6cc0"
+      }
+    },
+    {
+      "id": "F2",
+      "severity": "fresh_required_gate_passed",
+      "fact": "Exactly one new authorized writer check; no generation or retry.",
+      "returncode": 0,
+      "elapsed_seconds": 374.0761141999974,
+      "timeout_seconds": 600,
+      "protected_files": 74,
+      "unchanged": true,
+      "evidence": "clean-environment-checks.json"
+    },
+    {
+      "id": "F3",
+      "severity": "qualification",
+      "fact": "All protected input and result bytes match canonical Git. Fifteen specification checkout files use only the exact CRLF spelling; before/after raw hashes remain identical.",
+      "exact_CRLF_specification_files": 15
+    },
+    {
+      "id": "F4",
+      "severity": "reviewer_defect_fixed",
+      "fact": "Reviewer trial 1 incorrectly demanded LF checkout bytes. Its source and exit1 logs are preserved; the new guard accepts only exact canonical or exact CRLF source/config spellings. Producer check was not rerun.",
+      "evidence": [
+        "verify-trial-1.py",
+        "review-trial-1.json",
+        "review-trial-1.stderr.log",
+        "verify-trial-2.py",
+        "review-trial-2.json"
+      ]
+    },
+    {
+      "id": "F5",
+      "severity": "sampling_limit",
+      "fact": "Every saved score algebra/link is checked; independent empirical CRRA moments are rescored for468 representative predecision states rather than all17823 score rows."
+    },
+    {
+      "id": "F6",
+      "severity": "observed_scope",
+      "fact": "No initial allocation deferral observed in600 new-mode scenario paths. Adaptive has177 target changes. All five new modes have human-review latches; imported baselines have null diagnostics."
+    }
+  ],
+  "tolerances": {
+    "ledger_and_metric": {
+      "absolute": "1e-9",
+      "relative": "1e-10"
+    },
+    "sampled_CRRA_and_all_score_algebra": {
+      "absolute": "2e-12",
+      "relative": "1e-12"
+    },
+    "target_weights": {
+      "absolute": "1e-15",
+      "relative": "1e-14"
+    },
+    "keys_hashes_units_counts_booleans_and_keep_dollars": "exact"
+  },
+  "limits": [
+    "No exhaustive independent empirical rescoring of all17823 scores; representative complete paths and observed action boundaries only",
+    "Future perturbations replay independent score states with saved past holdings/active state; no mutated producer callback execution",
+    "Compact corruptions exercise reduced fixtures and selected real rows, not full mutated production bundles",
+    "No doubled group, final inputs, policy selection, customer assignment or generation",
+    "Exact locally retained Git objects required; verifier never fetches",
+    "Historical SOL-036 failed receipt and interrupted clean-check remain failed; new successful evidence cannot repair that historical attempt",
+    "Chief exact-commit review/acceptance remains required"
+  ],
+  "chief_acceptance_required": true,
+  "final_verifier": {
+    "receipt": "final-portable-check.json",
+    "returncode": 0,
+    "elapsed_seconds": 53.182153499976266,
+    "HEAD": "95eb627ce6536662b8c583dfd2e6046c3aaf0ea9",
+    "runtime_task_absent": true,
+    "verification_sha256": "ad5d70047fe98f1e0fd6387ff001368f04d4d4b093aa30c836c5c22d3e703221"
+  }
+}

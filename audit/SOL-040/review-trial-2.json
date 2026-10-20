@@ -1,0 +1,28 @@
+{
+  "argv": [
+    "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+    "-B",
+    "audit/SOL-040/verify.py",
+    "--check"
+  ],
+  "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-040-a1",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "pythonpath_keys": [],
+  "runtime_task_absent": false,
+  "HEAD": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+  "started_at": "2026-10-20T09:07:05.995632+00:00",
+  "returncode": 0,
+  "execution_status": "completed",
+  "elapsed_seconds": 55.542506799974944,
+  "finished_at": "2026-10-20T09:08:01.424992+00:00",
+  "logs": {
+    "review-trial-2.stdout.log": {
+      "sha256": "6f04db724f53c439b8a77960f0651ec583e2882dc2342aca0ebb34710d153dec",
+      "bytes": 635481
+    },
+    "review-trial-2.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "82de2c055eb7fb8c5c7646ace1e484304c242e55",
+  "snapshot_main_commit": "55aa8247b24672cb21f0340893c4615da28e234f",
   "authoritative_state": [
     "ops/control.json",
     "ops/queue.json"
@@ -289,15 +289,18 @@
       "performance_evidence": false
     },
     "PRIMARY_DEVELOPMENT_CASE_JOB": {
-      "state": "submitted_pending_review",
+      "state": "accepted_development_evidence",
       "task_id": "HY3-004",
       "path": "ops/tasks/HY3-004.json",
       "base_commit": "93a232a926dc3d1bfb18e2866ef0ddb0aaf9bc0f",
       "task_sha256": "14bb98ed9b6996d198513c1d29cbe8a7d44b489de7cde9a46f4fc27ce2bead89",
-      "outcomes_accepted": false,
-      "scope": "Exact primary development result exists; chief arithmetic is narrower than acceptance. SOL-036 failed; SOL-040 independent completion waits for the successful SOL-037 probe.",
+      "outcomes_accepted": true,
+      "scope": "Exact primary development bundle independently reviewed and accepted; selection/comparison assembly and final evidence remain separate.",
       "candidate_result_commit": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
-      "independent_review_task": "SOL-040"
+      "independent_review_task": "SOL-040",
+      "queue_state_at_snapshot": "accepted",
+      "reviewed_commit": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
+      "acceptance_evidence": "audit/chief/HY3-004-review.json"
     },
     "DOUBLED_DEVELOPMENT_CASE_JOB": {
       "state": "submitted_pending_review",
@@ -307,20 +310,20 @@
       "task_sha256": "dcdf31a5ce502b4c5115d9a21a29b6649ea107b8e0c8b671b1e17d44812962b6",
       "queue_state_at_snapshot": "ready",
       "outcomes_accepted": false,
-      "scope": "Exact unchanged-policy doubled-fee result exists. Chief accounting/decision/provenance checks and isolated read-only writer check passed; independent SOL-041 review still waits for accepted SOL-037. HY3-005 failed partials remain preserved. No numerical outcome acceptance.",
+      "scope": "Exact doubled result remains unaccepted pending SOL-041, released after successful accepted SOL-037. Chief checks passed; preserve failed HY3-005 and no final tuning.",
       "candidate_result_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
       "independent_review_task": "SOL-041",
       "chief_evidence": "audit/chief/HY3-006-chief-checkpoint.json"
     },
     "ANALYSIS_ASSEMBLY_IMPLEMENTATION": {
-      "state": "held_pending_prerequisite",
+      "state": "ready_pending_worker_delivery",
       "task_id": "SOL-038",
       "path": "ops/tasks/SOL-038.json",
       "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
       "task_sha256": "03472407ca3633a28501784679d1d1d03c1fb39766179620ad27a5e058214f34",
-      "queue_state_at_snapshot": "waiting",
+      "queue_state_at_snapshot": "ready",
       "outcomes_accepted": false,
-      "scope": "Generated-only typed analysis assembly recovery; waits for accepted SOL-037. Failed SOL-034 approval cannot be a positive dependency; no real outcomes or production configuration."
+      "scope": "Generated-only typed analysis assembly recovery; released after accepted SOL-037. Failed SOL-034 approval cannot be a positive dependency; no real outcomes or production configuration."
     },
     "DOUBLED_DEVELOPMENT_FAILED_ATTEMPT": {
       "state": "failed_execution_attempt",
@@ -363,44 +366,56 @@
       "scope": "Failed model quota exit1 preserved,27 paths/36 source pins verified;3 required review files missing. Independent arithmetic passes but clean producer checker was interrupted and original verifier exits2. New single probe gates any model successor; no producer acceptance."
     },
     "SOL_AVAILABILITY_PROBE": {
-      "state": "held_pending_prerequisite",
+      "state": "accepted_operational_probe",
       "task_id": "SOL-037",
       "path": "ops/tasks/SOL-037.json",
       "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
       "task_sha256": "a39583ab0336bf78cb14b231a7e0b9a957e7da3b454f12cc6a7807546d88f9aa",
-      "queue_state_at_snapshot": "waiting",
+      "queue_state_at_snapshot": "accepted",
       "outcomes_accepted": false,
-      "scope": "Release at or after 15:55 Beijing; one assigned-model call no earlier than 16:10. Exact successful receipt required; no further automatic probe after failure."
+      "scope": "Exact probe succeeded and accepted; released existing reviews. Availability at probe time only; no further automatic probes.",
+      "reviewed_commit": "11ade9aeb4726473e65c32cfd254e03d9aec54b4",
+      "acceptance_evidence": "audit/chief/SOL-037-review.json"
     },
     "PRIMARY_DEVELOPMENT_INDEPENDENT_REVIEW": {
-      "state": "held_pending_prerequisite",
+      "state": "accepted_independent_review",
       "task_id": "SOL-040",
       "path": "ops/tasks/SOL-040.json",
       "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
       "task_sha256": "024057000d22bee1afba7300194344c00a9a79d857f7fd9950ce855dda07df31",
-      "queue_state_at_snapshot": "waiting",
+      "queue_state_at_snapshot": "accepted",
       "outcomes_accepted": false,
-      "scope": "Finish independent exact HY3-004 result review after successful SOL-037. Neither existing chief checks nor failed SOL-036 establish acceptance."
+      "scope": "Exact primary development bundle independently reviewed and accepted; selection/comparison assembly and final evidence remain separate.",
+      "reviewed_commit": "a9073e1d0ab5aadea639daf34ba76fab728d636f",
+      "acceptance_evidence": "audit/chief/SOL-040-review.json"
     },
     "WRITER_AUDIT_PORTABILITY_FOLLOWUP": {
-      "state": "held_pending_prerequisite",
+      "state": "ready_pending_worker_delivery",
       "task_id": "SOL-039",
       "path": "ops/tasks/SOL-039.json",
       "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
       "task_sha256": "c2b1a1c305a293e453f1517aea2a6e14049c58e4a96f49d4aaba3138618dbe44",
-      "queue_state_at_snapshot": "waiting",
+      "queue_state_at_snapshot": "ready",
       "outcomes_accepted": false,
-      "scope": "Audit-only recovery after failed SOL-035; preserves accepted SOL-032 computational code and prior line-ending failures. Waits for accepted SOL-037."
+      "scope": "Audit-only recovery after failed SOL-035; preserves accepted SOL-032 computational code and prior line-ending failures. Released after accepted SOL-037."
     },
     "DOUBLED_DEVELOPMENT_INDEPENDENT_REVIEW": {
-      "state": "held_pending_prerequisite",
+      "state": "ready_pending_worker_delivery",
       "task_id": "SOL-041",
       "path": "ops/tasks/SOL-041.json",
       "base_commit": "da37f1cff664c2ba5b475ddd07ae58630004ea3e",
       "task_sha256": "a68184a570dfeb49ac72a36060b2e3d88ed0d2c45fb7f6f17f3ddced40434dfe",
-      "queue_state_at_snapshot": "waiting",
+      "queue_state_at_snapshot": "ready",
       "outcomes_accepted": false,
-      "scope": "Independent exact HY3-006 review after successful accepted SOL-037. Existing chief checks do not establish result acceptance; no primary reselection or final outcomes."
+      "scope": "Independent exact HY3-006 review released after accepted SOL-037. Existing chief checks do not establish result acceptance; no primary reselection or final outcomes."
+    },
+    "FINAL_PATH_ENGINE_PREPARATION": {
+      "state": "chief_preparation_only",
+      "path": "specs/FINAL_PATH_ENGINE_HANDOFF.md",
+      "reference": "audit/chief/final-path-reference/expected.json",
+      "validation": "audit/chief/final-path-preparation-validation.json",
+      "outcomes_accepted": false,
+      "scope": "Generated-only rational references and implementation handoff; no final implementation or data access."
     }
   },
   "requirements": [
@@ -458,7 +473,7 @@
         "DOUBLED_DEVELOPMENT_INDEPENDENT_REVIEW"
       ],
       "state": "accepted_design",
-      "remaining": "Writer SOL-031 and narrow compatibility SOL-032 are accepted. Exact HY3-004 result awaits SOL-040; failed HY3-005 is preserved and exact unchanged-policy HY3-006 awaits independent SOL-041 review. Neither producer outcome is accepted. SOL-037 success gates independent Sol recovery tasks."
+      "remaining": "Exact primary HY3-004 and independent SOL-040 accepted. Doubled HY3-006 awaits SOL-041; then accepted generated assembly and independently reviewed actual comparisons/selection, personalized rescreens and final evidence remain."
     },
     {
       "id": "R05",
@@ -508,7 +523,7 @@
         "DOUBLED_DEVELOPMENT_INDEPENDENT_REVIEW"
       ],
       "state": "accepted_design",
-      "remaining": "Writer SOL-031 and narrow compatibility SOL-032 are accepted. Exact HY3-004 result awaits SOL-040; failed HY3-005 is preserved and exact unchanged-policy HY3-006 awaits independent SOL-041 review. Neither producer outcome is accepted. SOL-037 success gates independent Sol recovery tasks."
+      "remaining": "Exact primary HY3-004 and independent SOL-040 accepted. Doubled HY3-006 awaits SOL-041; then accepted generated assembly and independently reviewed actual comparisons/selection, personalized rescreens and final evidence remain."
     },
     {
       "id": "R07",
@@ -544,7 +559,7 @@
         "split",
         "fee_rate"
       ],
-      "remaining": "Accepted cost-aware policy results paired with accepted references; separate development and final tables"
+      "remaining": "Accepted primary raw metrics are available at HY3-004; build/review actual comparison assembly after HY3-006 and SOL-038 acceptances. Keep development and final distinct."
     },
     {
       "id": "R09",
@@ -556,7 +571,7 @@
         "BASELINE_FIGURES"
       ],
       "state": "accepted_development_evidence",
-      "remaining": "Three baseline severe cases at all five development horizons accepted. Cost-aware and final cases remain unavailable; retain their exact path/location provenance."
+      "remaining": "Baseline and primary cost-aware development severe cases accepted; selected-primary presentation, doubled review and final evidence remain separate."
     },
     {
       "id": "R10",
@@ -632,5 +647,5 @@
     "Post-freeze software corrections remain logged and disclosed; no final-outcome tuning",
     "Team private names and IDs stay outside tracked artifacts"
   ],
-  "updated_at": "2026-10-20T06:13:57.266823+00:00"
+  "updated_at": "2026-10-20T09:26:12.376006+00:00"
 }

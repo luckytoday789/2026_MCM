@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "scope": "generated_reference_preparation_only",
+  "python": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+  "competition_inputs_opened": false,
+  "final_execution_authorized": false,
+  "implementation_tested": "Existing accepted simulate_policy with split=synthetic only; no final API exists",
+  "compared_paths": 32,
+  "compared_ledger_rows": 192,
+  "compared_horizon_metrics": 96,
+  "numerical_assertions": 4740,
+  "max_absolute_error": 5.684341886080802e-14,
+  "rel_tol": 1e-10,
+  "abs_tol": 1e-09,
+  "hand_facts_checked": 7,
+  "reference_artifacts": {
+    "fixture.csv": "a2645a85db835137736d102ea1fb5c16ade0296c5b8b52cef33bf31dffa9f967",
+    "expected.json": "d792822ab6af5a6d152e914c37c3561d2bbaabd01c4bf17be59192cd9f8ae1ca"
+  },
+  "source_sha256": {
+    "audit/chief/final_path_reference.py": "214103fc261c55049da96156c008db17873893bf2704170ab3a37f6c478116b3",
+    "specs/FINAL_PATH_ENGINE_HANDOFF.md": "b0a4932b927eaf54efaf30cb334d2b49d5f381551ae17322119b6c2c54e435d0",
+    "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+    "src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce"
+  },
+  "limits": [
+    "No final-capable code accepted",
+    "No source/refit authentication",
+    "No final data or actual refit",
+    "No policy selection or cost-aware outcome conclusion",
+    "Rational severe locations do not certify binary64 ties"
+  ]
+}

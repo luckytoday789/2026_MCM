@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-040-a1\audit\SOL-040\verify.py", line 168, in <module>
+    try: main()
+         ^^^^^^
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-040-a1\audit\SOL-040\verify.py", line 156, in main
+    task,binding=fresh_authentication(); clean=clean_evidence(task)
+                                               ^^^^^^^^^^^^^^^^^^^^
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-040-a1\audit\SOL-040\verify.py", line 67, in clean_evidence
+    b=blob(c['producer_commit'],p); require(meta=={'sha256':sha(b),'bytes':len(b)},'checkout canonical bytes '+p)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-040-a1\audit\SOL-040\verify.py", line 19, in require
+    if not v: raise ValueError(msg)
+              ^^^^^^^^^^^^^^^^^^^^^
+ValueError: checkout canonical bytes specs/ACCOUNTING.md
