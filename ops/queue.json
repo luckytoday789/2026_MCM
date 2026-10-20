@@ -1510,35 +1510,50 @@
     },
     {
       "id": "SOL-043",
-      "state": "ready",
+      "state": "cancelled",
       "owner": "sol",
       "attempt": 1,
       "branch": "work/sol/SOL-043-a1",
       "task_sha256": "9d7ae651d4cb8264213197f2d00ed7c0cf8b8b1170996191f5e5fd20b37632ab",
       "released_at": "2026-10-20T09:47:42.108930+00:00",
-      "note": "Narrow original-log recovery and unchanged exact numerical replay;0writer launches. Dispatch immediately after in-flight SOL-038. SOL-041 historical delivery rejection preserved;HY3-006 pending."
+      "note": "Narrow original-log recovery and unchanged exact numerical replay;0writer launches. Dispatch immediately after in-flight SOL-038. SOL-041 historical delivery rejection preserved;HY3-006 pending. | Scheduling cancelled by user-directed chief+HY3 takeover; remote Sol quota unavailable until21:40. Preserve immutable task and all partial/failed work; no automatic model retry.",
+      "taken_over_by": [
+        "chief",
+        "hy3"
+      ],
+      "user_authorized_takeover_at": "2026-10-20T11:02:41.875339+00:00"
     },
     {
       "id": "SOL-044",
       "attempt": 1,
       "owner": "sol",
-      "state": "ready",
+      "state": "cancelled",
       "branch": "work/sol/SOL-044-a1",
       "task_sha256": "e2f57ae94dec848739d22f1665dc11fffa1ad02c0bd595c6bf6b71bec4ac7dee",
       "released_at": "2026-10-20T10:51:30.268563+00:00",
-      "note": "Narrow correction of exact failed SOL-038 delivery; new positive assembly identity. Chief12 tests/portable replay/2820 scalar facts pass; original parent failure and7 mismatches preserved. Queue after in-flightSOL-043,beforeSOL-039;no production/final access."
+      "note": "Narrow correction of exact failed SOL-038 delivery; new positive assembly identity. Chief12 tests/portable replay/2820 scalar facts pass; original parent failure and7 mismatches preserved. Queue after in-flightSOL-043,beforeSOL-039;no production/final access. | Scheduling cancelled by user-directed chief+HY3 takeover; remote Sol quota unavailable until21:40. Preserve immutable task and all partial/failed work; no automatic model retry.",
+      "taken_over_by": [
+        "chief",
+        "hy3"
+      ],
+      "user_authorized_takeover_at": "2026-10-20T11:02:41.875339+00:00"
     },
     {
       "id": "SOL-039",
-      "state": "ready",
+      "state": "cancelled",
       "owner": "sol",
       "attempt": 1,
       "branch": "work/sol/SOL-039-a1",
       "task_sha256": "c2b1a1c305a293e453f1517aea2a6e14049c58e4a96f49d4aaba3138618dbe44",
-      "note": "Existing immutable task released only after exact SOL-037 success acceptance. Preserve failed predecessors and all scope,source,independent-review and final-data gates.",
+      "note": "Existing immutable task released only after exact SOL-037 success acceptance. Preserve failed predecessors and all scope,source,independent-review and final-data gates. | Scheduling cancelled by user-directed chief+HY3 takeover; remote Sol quota unavailable until21:40. Preserve immutable task and all partial/failed work; no automatic model retry.",
       "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation.",
       "released_at": "2026-10-20T08:55:39.694366+00:00",
-      "release_evidence": "audit/chief/SOL-037-review.json"
+      "release_evidence": "audit/chief/SOL-037-review.json",
+      "taken_over_by": [
+        "chief",
+        "hy3"
+      ],
+      "user_authorized_takeover_at": "2026-10-20T11:02:41.875339+00:00"
     },
     {
       "id": "HY3-006",
@@ -1556,13 +1571,18 @@
     },
     {
       "id": "SOL-042",
-      "state": "ready",
+      "state": "cancelled",
       "owner": "sol",
       "attempt": 1,
       "branch": "work/sol/SOL-042-a1",
       "task_sha256": "91d7a63ecac1f5c2b827f40347693479a15041d9f9540363a04695500db1c82a",
       "released_at": "2026-10-20T08:58:08.462301+00:00",
-      "note": "Required generated-only all-support seam; source handoff/reference already pushed and real SOL-037 accepted. Queue after040/041/038/039. No competition data,actual refit,production loader or final execution authorized."
+      "note": "Required generated-only all-support seam; source handoff/reference already pushed and real SOL-037 accepted. Queue after040/041/038/039. No competition data,actual refit,production loader or final execution authorized. | Scheduling cancelled by user-directed chief+HY3 takeover; remote Sol quota unavailable until21:40. Preserve immutable task and all partial/failed work; no automatic model retry.",
+      "taken_over_by": [
+        "chief",
+        "hy3"
+      ],
+      "user_authorized_takeover_at": "2026-10-20T11:02:41.875339+00:00"
     }
   ]
 }
