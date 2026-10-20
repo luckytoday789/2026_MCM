@@ -1379,6 +1379,16 @@
       "note": "Published immutable recovery task; preserve failed predecessor and all research gates.",
       "resource_hold": "real_SOL-037_success_required",
       "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation."
+    },
+    {
+      "id": "HY3-006",
+      "state": "ready",
+      "attempt": 1,
+      "owner": "hy3",
+      "branch": "work/hy3/HY3-006-a1",
+      "task_sha256": "dcdf31a5ce502b4c5115d9a21a29b6649ea107b8e0c8b671b1e17d44812962b6",
+      "note": "Fixed one-attempt infrastructure recovery after exact failed HY3-005; scientific config unchanged except run_id, fresh output. Source/dependencies already accepted. Independent exact-result review required; no final access.",
+      "released_at": "2026-10-20T05:49:21.279000+00:00"
     }
   ]
 }
