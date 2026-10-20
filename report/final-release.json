@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "accepted_exact_manuscript_and_final_local_layout",
+  "created_at": "2026-10-20T14:45:08.728695+00:00",
+  "supersedes_historical_status_prose": [
+    "report/submission-status.json",
+    "report/evidence-map.json remaining descriptions"
+  ],
+  "accepted_manuscript_base": "cfde9523416113005e9de99325595d5823be94f1",
+  "independent_review_commits": {
+    "SOL-046": "0ed56de4b70bef0083ca2cf414f5aa2dce8606f0",
+    "SOL-047": "9b620ae9a1c189d14060f59b02d8b0e4405d4f18",
+    "SOL-048": "bcd0ce93226dcdeab6f92e21e4f15b680ca90d6c"
+  },
+  "layout_acceptance": "audit/chief/final-editorial-layout-20261020.json",
+  "local_private_pdf": ".runtime/final-release-20261020/SafeInvest-final.pdf",
+  "pdf_sha256": "1730702256151770090fad81aef16922c1f58064beda91c5ce57444a32853385",
+  "pages": 8,
+  "minimum_font_pt": 11,
+  "all_profiles": "human_review",
+  "no_final_tuning": true,
+  "final_gate_remains_open": true,
+  "source_package_gate": "pending_fresh_package",
+  "submission_ready": false,
+  "private_member_names_in_shared_files": false,
+  "automatic_upload": false,
+  "human_action_after_package": "The human team leader submits the local named PDF and verified source ZIP by the original competition deadline."
+}

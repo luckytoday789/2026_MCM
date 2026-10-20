@@ -1,0 +1,62 @@
+{
+  "status": "passed_final_local_layout",
+  "local_pdf": ".runtime/final-release-20261020/SafeInvest-final.pdf",
+  "pdf_sha256": "1730702256151770090fad81aef16922c1f58064beda91c5ce57444a32853385",
+  "pages": 8,
+  "paper": "A4",
+  "minimum_font_pt": 11.0,
+  "customer_word_count": 39,
+  "three_supplied_names_verified_without_disclosure": true,
+  "exact_public_text_equal_to_reviewed_copy": true,
+  "only_names_and_review_label_changed_in_expanded_text": true,
+  "no_review_furniture": true,
+  "ai_disclosure_present": true,
+  "all_profiles_human_review": true,
+  "original_observations_opened": false,
+  "simulations_rerun": false,
+  "visual_review": "passed",
+  "submission_ready": false,
+  "checked_at": "2026-10-20T14:45:08.719768+00:00",
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "visual_observations": "Inspected all eight final PNG pages individually. All three supplied names display correctly; tables, formulas, headings and page furniture are legible with no observed clipping, overlap, missing glyphs or placeholders. Final results and human-review conclusion remain visible.",
+  "render_command": [
+    "pdftoppm",
+    "-r",
+    "110",
+    "-png",
+    ".runtime/final-release-20261020/SafeInvest-final.pdf",
+    ".runtime/final-release-20261020/render/page"
+  ],
+  "render_exit_code": 0,
+  "render_warnings": "Unused Symbol/ArialUnicode display-font warnings; no missing glyphs observed in the rendered document.",
+  "rendered_pages_sha256": {
+    "page-1.png": "42c3edcf2a111ca91af58b1352afb2da67c057c5e5417a2c7d4d9a712fd7199d",
+    "page-2.png": "eb23630b9d1069186274c17c18d25c2d9144a6f5928fda6eb451e1dcdb48ea98",
+    "page-3.png": "3f85f48cfe62e73eca711fc5dfa150fe451605896f1905f1d7881e0bca3c7ec4",
+    "page-4.png": "67cb069c4dd26fdce4649d84b1f50557b96f5d315ccf30fcc7561a73288b4f86",
+    "page-5.png": "d5367edaed2c62cfba81539182eba2eeea84e1884b8d322db3a057e50ea87db3",
+    "page-6.png": "4d355b42a13742332f851472baf158f102d104ab3de0efcbda5f21990560a346",
+    "page-7.png": "31af2308decc9eb1cf74f1b01e1c2114c899e03a2d5404c927c0ebd423c1e00b",
+    "page-8.png": "e22379279863bc2baa556059187f1420e3fa15e369488657330752c6c1ca57be"
+  },
+  "preserved_QA_trial": {
+    "status": "failed",
+    "exit_code": 1,
+    "cause": "New local QA used exact substring across PDF extraction line breaks. Normalize extracted whitespace; PDF/source/math untouched.",
+    "pdf_changed": false,
+    "final_evaluation_rerun": false
+  },
+  "independent_review_acceptance": "audit/chief/SOL-048-review.json",
+  "independent_reviewed_commit": "bcd0ce93226dcdeab6f92e21e4f15b680ca90d6c",
+  "private_names_in_record": false,
+  "source_package_gate": "pending_fresh_package"
+}
