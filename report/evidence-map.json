@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "9edf98528ec1b7542127513c385da29f1350ac4d",
+  "snapshot_main_commit": "4d3f6b7ef58485cdbe4c2e435605f40e40c457b2",
   "authoritative_state": [
     "ops/control.json",
     "ops/queue.json"
@@ -472,13 +472,23 @@
       "scope": "Actual3600-row prior,10800 exact scalar/hash checks; final computation uses promoted main reference."
     },
     "FROZEN_FINAL_JOB_ACTUAL": {
-      "state": "authorized_pending_result_acceptance",
+      "state": "accepted_final_evidence",
       "task_id": "HY3-010",
       "path": "ops/tasks/HY3-010.json",
       "freeze_commit": "06086aed327aa626ddc91472f943c2c9fba1259a",
       "freeze_acceptance": "audit/chief/FINAL-FREEZE-20261020-review.json",
       "gate_record": "audit/chief/FINAL-GATE-20261020.json",
-      "scope": "One frozen60-scenario final inventory. Current lease confirms running at13:12UTC; no final outcome accepted yet."
+      "scope": "Exact once-frozen evaluation accepted with997883 independent saved-result checks. All clients require human review. Remote supplemental review/full manuscript/package remain pending.",
+      "result_commit": "4b8ac5d6822ac39ff1189c13d34ed3f84f699319",
+      "acceptance_evidence": "audit/chief/HY3-010-review.json",
+      "promoted_to_main": true
+    },
+    "FINAL_REPORT_NOTE_ACTUAL": {
+      "state": "report_transform_pending_review",
+      "path": "report/final-evaluation.md",
+      "provenance": "report/final-evaluation-provenance.json",
+      "generator": "report/build_final_note.py",
+      "producer_commit": "4b8ac5d6822ac39ff1189c13d34ed3f84f699319"
     }
   },
   "requirements": [
@@ -493,7 +503,7 @@
       ],
       "state": "locked_definition",
       "draft_location": "methods-draft.md: Independent annual scenarios and purchasing power",
-      "remaining": "Actual development, ten personalized outcomes,10800-value refit and separately executed closed-gate freeze audit accepted. Gate opened and immutable HY3-010 running; accept exact final artifacts before claims."
+      "remaining": "Frozen final evaluation accepted; do not tune or reset gate. Finish final report and supplemental independent review."
     },
     {
       "id": "R02",
@@ -567,7 +577,7 @@
         "assignment or referral",
         "reason"
       ],
-      "remaining": "Accepted own-tolerance development: Conservative B/C at both fees; A/D/E referrals. Frozen final validation remains pending; no replacement class or final tuning."
+      "remaining": "Final evidence: A/D/E development referrals, B/C fail final loss screen at both fees; all clients human review. Integrate exact negative results into final manuscript."
     },
     {
       "id": "R06",
@@ -711,7 +721,7 @@
     "Post-freeze software corrections remain logged and disclosed; no final-outcome tuning",
     "Team private names and IDs stay outside tracked artifacts"
   ],
-  "updated_at": "2026-10-20T13:14:13.494339+00:00",
+  "updated_at": "2026-10-20T13:27:16.782990+00:00",
   "historical_source_snapshots": {
     "DOUBLED_DEVELOPMENT_CASE_JOB": {
       "state": "submitted_pending_review",

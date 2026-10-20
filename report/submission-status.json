@@ -1702,7 +1702,7 @@
     "ops/PROTOCOL.md": "10f6f27536ad251f258292c98050a2ff03811ef95e1ea4cce6cf6e40cee97c10",
     "report/baseline-development-provenance.json": "0bae68910774eb63ad656a85c040da9d1fbc70983f319927c012941c76b9792c",
     "report/build_submission.py": "ced5389b851b738e286ab394d02f97255521f3a996ef86e40f985358e60c159e",
-    "report/evidence-map.json": "88426c8f9663caa36b28e5c7d3ca403567029f09b23af6df5218cc49583546ac",
+    "report/evidence-map.json": "07726d07edac797079ef8b3e83532c330935a1bb6a14b7e6c6aa96fd8c9d5100",
     "report/methods-draft.md": "93dd45bceb6ebf1ce4560d27fc2a7b3c8432abf304673e99a76496f942ec31ac",
     "report/policy-catalogue.md": "874c2dd03858f5cfcf43925de3c9860b5587de9bad84622f36c32ee6a8e60f76",
     "report/policy-methods-draft.md": "82fe46bca0f4aff3490e2195d0a2ec0c85df309b1129b6ecbd8a6b2b11d0b70f",
@@ -1723,14 +1723,5 @@
     "final customer explanation and conclusion",
     "independent full manuscript review",
     "local names, final rendering and source ZIP checks"
-  ],
-  "pdf_checks": {
-    "pdf_sha256": "e4a844becbcaa4a938ff86f3b5f6c6274351f5b9f1532a3ffe4842d9cdeea131",
-    "pages": 7,
-    "paper": "A4",
-    "minimum_font_pt": 11.0,
-    "within_page_limit": true,
-    "all_pages_marked_incomplete": true,
-    "visual_review": "pending"
-  }
+  ]
 }

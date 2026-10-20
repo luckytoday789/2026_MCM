@@ -1,3 +1,23 @@
+# Latest bounded chief checkpoint, 2026-10-20 21:27 Beijing
+
+This top checkpoint supersedes ALL older running-task/final-gate claims below.
+No accepted computation may be rerun and no final policy tuning is permitted.
+
+- CHIEF-PERSONALIZED-RUN-002 is accepted at b334b27a2f9fb8df99a6dee611e298bd0dc867d3, not the interrupted001. Exact four B/C cases and six referrals are on main. Independent197524 scalar+1200 prefix checks passed.
+- CHIEF-REFIT-001 is accepted at d4a982ce2d06b57deb2988806229574c0719c2be. Actual3600-row prior passed10800 exact binary64 values and all nominal/gross/support hashes. Downstream reference uses the identical PROMOTED main blob at07eff1d3cb714c3f1d9dc850e0dbb9cab59c6b8d; external acceptance audit/chief/CHIEF-REFIT-001-promoted-review.json at12d91bd60f551acd3c9d98218a71a0370878f614.
+- Accepted freeze F=06086aed327aa626ddc91472f943c2c9fba1259a. Separately EXECUTED closed-gate stdlib audit passed35 source files and exact frozen inventory. External attestation A=97283e058194aa2de85afe85755bb178c78e0116. Earlier pre-access mixed local newline and work-commit ancestry failures remain in audit/chief/final-freeze-audit{,-002}/; no final input was read by either. Earlier unaccepted freeze7e2ecf3 is preserved; only identical refit reference metadata was corrected BEFORE access, without policy changes.
+- Final config/gate E=8fe64818dc931e8a25ac57e94ff2b04121233533; later task P=9edf98528ec1b7542127513c385da29f1350ac4d. Gate is OPEN and must not be reset. Source stays7053b41ce81b1e04100d56a24a321e51b3465459.
+- HY3-010 COMPLETED and ACCEPTED at4b8ac5d6822ac39ff1189c13d34ed3f84f699319. Exact66 paths/receipt promoted to main in a5ece3f (resolve full SHA). audit/chief/HY3-010-review.json records997883 independent saved-ledger/metric/paired/tail/referral checks, residual<=9.095e-13, and3 fee/CPI/real-wealth corruption rejections. No original final observations were reread; policy utility actions rely on the separately accepted source. No remote Sol authorship is claimed.
+- NEGATIVE FINAL FINDING: B/C Conservative fail the unchanged p90 loss tolerances at BOTH fees. Primary B p90=26.4632822858229% >25%; C=40.515424246983216% >40%. Each executed case has7/60 exceedances; all retain positive p10 growth. A/D/E retain development referrals. Therefore ALL A-E require human review, no replacement class or reranking. Keep this conclusion honestly in abstract/results/conclusion.
+- report/build_final_note.py authenticates exact final blobs and generates report/final-evaluation.md plus provenance. Both --write and read-only regeneration passed. It includes8 primary H30 rows,4 personal failures,paired/marginal distinctions,same-mode sensitivity and baseline on Balanced's own severe172 path. The English spacing in that standalone note can be edited in its generator, but values/choices cannot change.
+- Main manuscript now has accepted personalized development results and an exact source/corruption gate. Updated incomplete draft is7 A4 pages, minimum11pt; all7 rendered pages inspected after correcting a narrow comparison-table column. Local proof .runtime/report-personalized-layout-v2-20261020; audit/chief/report-layout-20261020-v2.json. This is NOT final layout approval. Final/executive/conclusion slots and full manuscript acceptance remain unfinished. Import existing final-note build outputs into the existing builder, bind E8 final sources, then finish prose; do not add another framework.
+- SOL-045 is published READY and real Sol lease shows RUNNING in passive script wait. Exactly one assigned-model call is scheduled no earlier than21:40. Existing held SOL-046 reviews source/freeze/development outcomes, and SOL-047 reviews exact final results/note. Accept actual successful probe before releasing both. Their immutable bases are real pushed main commits; do not mutate them. No human reply needed on successful scripted availability proof; no automatic probe retry.
+- Quota latest86%, floor40%, no drain. No actual human-help request. No duplicate coordinator/worker/supervisor was launched. Private identities remain ignored/local; humans submit.
+
+Next chief work is due within2minutes: complete final manuscript from existing authenticated evidence, publish narrow final-manuscript review once the source exists, render/inspect last version, build verified <=50MB source ZIP with existing builder, and accept remote supplemental reviews when available. Do NOT mark global complete until all content/review/render/package gates pass.
+
+---
+
 # Latest bounded chief checkpoint, 2026-10-20 20:16 Beijing
 
 This update supersedes the older in-flight009 and personalized-source fields below.
