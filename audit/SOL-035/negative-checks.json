@@ -1,0 +1,67 @@
+[
+  {
+    "case": "content_corruption",
+    "diagnosis": "changed/mixed checkout bytes: audit/SOL-002/review.md",
+    "exception": "AssertionError",
+    "rejected": true
+  },
+  {
+    "case": "content_corruption_rehashed_historical_metadata_core",
+    "diagnosis": "historical raw hash is not exact pinned spelling: audit/SOL-002/review.md",
+    "exception": "AssertionError",
+    "rejected": true
+  },
+  {
+    "case": "content_corruption_rehashed_new_metadata",
+    "diagnosis": "changed/mixed checkout bytes: audit/SOL-002/review.md",
+    "exception": "AssertionError",
+    "rejected": true
+  },
+  {
+    "case": "missing_path",
+    "diagnosis": "audit/SOL-002/review.md",
+    "exception": "FileNotFoundError",
+    "rejected": true
+  },
+  {
+    "case": "extra_inventory_path",
+    "diagnosis": "historical inventory exact paths missing/extra",
+    "exception": "AssertionError",
+    "rejected": true
+  },
+  {
+    "case": "arbitrary_mixed_line_conversion",
+    "diagnosis": "changed/mixed checkout bytes: specs/ACCOUNTING.md",
+    "exception": "AssertionError",
+    "rejected": true
+  },
+  {
+    "case": "binary_newline_conversion",
+    "diagnosis": "changed/mixed checkout bytes: audit/chief/baseline-figures-history/trial-002-exports/baseline-h30-severe-path.png",
+    "exception": "AssertionError",
+    "rejected": true
+  },
+  {
+    "case": "runtime_changed44_count_core",
+    "diagnosis": "recorded 44-count changed",
+    "exception": "AssertionError",
+    "rejected": true
+  },
+  {
+    "case": "real_fixture_payload_rehashed_receipt_core",
+    "diagnosis": "fixture payload",
+    "exception": "AssertionError",
+    "rejected": true
+  },
+  {
+    "case": "altered_rehashed_real_commit_proof_bound_to_original",
+    "diagnosis": "changed/mixed checkout bytes: audit/SOL-032/runtime.json",
+    "exception": "AssertionError",
+    "rejected": true
+  },
+  {
+    "accepted_by_old_structural_replay": true,
+    "case": "old_semantic_replay_rehashed_commit_message",
+    "new_checker_rejected": true
+  }
+]

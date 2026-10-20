@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-035-a1\audit\SOL-035\construct.py", line 10, in <module>
+    facts,mismatch=v.inventory_facts(read); save('canonical-inventory.json',facts)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-035-a1\audit\SOL-035\verify.py", line 77, in inventory_facts
+    require(len(set(valid.values()))>1 and item['expected']==old[p] and item['expected']!=item['current'] and item['current'] in valid.values(),'diagnosis content identity: '+p)
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-035-a1\audit\SOL-035\verify.py", line 15, in require
+    if not ok: raise AssertionError(msg)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: diagnosis content identity: audit/chief/analysis_reference.py

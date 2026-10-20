@@ -1,0 +1,9 @@
+{
+  "actual_checkouts": 4,
+  "current_mismatches": 0,
+  "executable": "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+  "full_prescribed_checks": 3,
+  "inventory_count": 888,
+  "negative_cases": 11,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+}

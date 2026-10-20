@@ -1,0 +1,176 @@
+[
+  {
+    "argv": [
+      "git",
+      "clone",
+      "--shared",
+      "--no-checkout",
+      "--local",
+      "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1",
+      "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1\\.runtime\\sol035-fixtures\\autocrlf-false"
+    ],
+    "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1",
+    "exit_code": 0,
+    "runtime_seconds": 0.4018244743347168,
+    "stderr": "Cloning into 'E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1\\.runtime\\sol035-fixtures\\autocrlf-false'...\ndone.\n",
+    "stdout": ""
+  },
+  {
+    "argv": [
+      "git",
+      "config",
+      "core.autocrlf",
+      "false"
+    ],
+    "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1\\.runtime\\sol035-fixtures\\autocrlf-false",
+    "exit_code": 0,
+    "runtime_seconds": 0.08621501922607422,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "argv": [
+      "git",
+      "sparse-checkout",
+      "init",
+      "--cone"
+    ],
+    "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1\\.runtime\\sol035-fixtures\\autocrlf-false",
+    "exit_code": 0,
+    "runtime_seconds": 0.13988661766052246,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "argv": [
+      "git",
+      "sparse-checkout",
+      "set",
+      "src",
+      "scripts",
+      "specs",
+      "tests",
+      "audit",
+      "handoff",
+      "ops"
+    ],
+    "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1\\.runtime\\sol035-fixtures\\autocrlf-false",
+    "exit_code": 0,
+    "runtime_seconds": 0.0821540355682373,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "argv": [
+      "git",
+      "checkout",
+      "--detach",
+      "d168757efbc70e4641deacc911976f1fa3bd7a7c"
+    ],
+    "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1\\.runtime\\sol035-fixtures\\autocrlf-false",
+    "exit_code": 0,
+    "runtime_seconds": 1.0576472282409668,
+    "stderr": "HEAD is now at d168757 sol: SOL-032 completed\n",
+    "stdout": ""
+  },
+  {
+    "argv": [
+      "git",
+      "checkout",
+      "--detach",
+      "45e1da032122fca8c69ef508e82c36fd95ffe003"
+    ],
+    "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1\\.runtime\\sol035-fixtures\\autocrlf-false",
+    "exit_code": 0,
+    "runtime_seconds": 0.6861097812652588,
+    "stderr": "Previous HEAD position was d168757 sol: SOL-032 completed\nHEAD is now at 45e1da0 Preserve later-main SOL-032 inventory failure and isolate text checkout portability finding\n",
+    "stdout": ""
+  },
+  {
+    "argv": [
+      "git",
+      "clone",
+      "--shared",
+      "--no-checkout",
+      "--local",
+      "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1",
+      "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1\\.runtime\\sol035-fixtures\\autocrlf-true"
+    ],
+    "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1",
+    "exit_code": 0,
+    "runtime_seconds": 0.2977290153503418,
+    "stderr": "Cloning into 'E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1\\.runtime\\sol035-fixtures\\autocrlf-true'...\ndone.\n",
+    "stdout": ""
+  },
+  {
+    "argv": [
+      "git",
+      "config",
+      "core.autocrlf",
+      "true"
+    ],
+    "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1\\.runtime\\sol035-fixtures\\autocrlf-true",
+    "exit_code": 0,
+    "runtime_seconds": 0.07958006858825684,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "argv": [
+      "git",
+      "sparse-checkout",
+      "init",
+      "--cone"
+    ],
+    "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1\\.runtime\\sol035-fixtures\\autocrlf-true",
+    "exit_code": 0,
+    "runtime_seconds": 0.10943078994750977,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "argv": [
+      "git",
+      "sparse-checkout",
+      "set",
+      "src",
+      "scripts",
+      "specs",
+      "tests",
+      "audit",
+      "handoff",
+      "ops"
+    ],
+    "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1\\.runtime\\sol035-fixtures\\autocrlf-true",
+    "exit_code": 0,
+    "runtime_seconds": 0.07512640953063965,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "argv": [
+      "git",
+      "checkout",
+      "--detach",
+      "d168757efbc70e4641deacc911976f1fa3bd7a7c"
+    ],
+    "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1\\.runtime\\sol035-fixtures\\autocrlf-true",
+    "exit_code": 0,
+    "runtime_seconds": 1.0799760818481445,
+    "stderr": "HEAD is now at d168757 sol: SOL-032 completed\n",
+    "stdout": ""
+  },
+  {
+    "argv": [
+      "git",
+      "checkout",
+      "--detach",
+      "45e1da032122fca8c69ef508e82c36fd95ffe003"
+    ],
+    "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-035-a1\\.runtime\\sol035-fixtures\\autocrlf-true",
+    "exit_code": 0,
+    "runtime_seconds": 0.5366830825805664,
+    "stderr": "Previous HEAD position was d168757 sol: SOL-032 completed\nHEAD is now at 45e1da0 Preserve later-main SOL-032 inventory failure and isolate text checkout portability finding\n",
+    "stdout": ""
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "python",
+    "-B",
+    "audit/SOL-035/construct.py"
+  ],
+  "exit_code": 1,
+  "stderr": "trial-001.stderr.txt",
+  "reason": "First diagnosis reconstruction required recorded chief current hashes to be full-file forms; investigation follows.",
+  "elapsed_seconds": 40.986
+}

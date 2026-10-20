@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-035",
+  "audit_portability_verdict": "approve",
+  "scope": "Audit replay portability only",
+  "independent_coordinator_review_required": true,
+  "original_code_acceptance_unchanged": true,
+  "canonical_inventory_entries": 888,
+  "historical_diagnostic_differences": 111,
+  "historical_full_file_spellings": 86,
+  "historical_only_final_CRLF": 25,
+  "current_checkout_mixed_spellings_allowed": false,
+  "original_boundary_cases": 22,
+  "original_runner_published_outputs": [
+    44,
+    43
+  ],
+  "actual_checkout_states": 5,
+  "full_prescribed_checks_before_final": 4,
+  "negative_rejections": 11,
+  "preserved_failed_trials": [
+    "trial-001.json",
+    "trial-002.json",
+    "infrastructure-trials.json"
+  ],
+  "competition_input_read": false,
+  "production_execution": false,
+  "policy_tuning": false,
+  "final_approval": false,
+  "changes_required": []
+}

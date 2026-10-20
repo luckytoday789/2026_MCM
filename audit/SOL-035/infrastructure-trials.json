@@ -1,0 +1,17 @@
+[
+  {
+    "action": "exec_command required file reads",
+    "result": "Process setup failed twice before shell execution: helper_unknown_error: setup refresh had errors",
+    "resolution": "Used available Node REPL filesystem and local child_process APIs."
+  },
+  {
+    "action": "Node construction launch",
+    "result": "process is not defined",
+    "resolution": "Read child environment in a local Python process without printing it; removed all case-insensitive PYTHONPATH keys."
+  },
+  {
+    "action": "Canonical task blob read",
+    "result": "One spawnSync binary result had undefined stdout; no task or old evidence edited.",
+    "resolution": "Repeated local git show with explicit UTF-8 encoding; exact canonical task blob retained alongside original runtime snapshot."
+  }
+]

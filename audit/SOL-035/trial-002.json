@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "python",
+    "-B",
+    "audit/SOL-035/construct.py"
+  ],
+  "exit_code": 1,
+  "observed_exception": "AssertionError: changed/mixed checkout bytes: task.json",
+  "failure_stage": "bindings: exact runtime serialization was not an exact LF/fullCRLF published blob spelling",
+  "resolution": "Preserve task-runtime.json exact original bytes with a hardcoded SHA256 and JSON equality; use exact published Git blob for task.json. Runtime task original was never edited."
+}
