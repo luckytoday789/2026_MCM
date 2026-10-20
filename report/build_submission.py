@@ -41,6 +41,8 @@ SOURCES = {
            "audit/chief/SOL-008-review.json"],
     "E5": ["audit/chief/HY3-006-review.json", "audit/chief/CHIEF-HY3-006-20261020-review.json"],
     "E6": ["audit/chief/HY3-009-review.json", "results/development/HY3-009/selection.json"],
+    "E7": ["audit/chief/CHIEF-PERSONALIZED-RUN-002-review.json",
+           "results/development/CHIEF-PERSONALIZED-RUN-002/personalized_summary.csv"],
 }
 
 
@@ -154,10 +156,47 @@ def analysis_sources():
         source_hashes={prefix+n:review['artifacts_sha256'][prefix+n] for n in ('selection.json','comparison_gates.json')})
 
 
+
+def personalized_sources():
+    ident='CHIEF-PERSONALIZED-RUN-002'
+    queue=json.loads((ROOT/'ops/queue.json').read_bytes())['tasks']
+    task=next(t for t in queue if t['id']==ident)
+    commit='b334b27a2f9fb8df99a6dee611e298bd0dc867d3'
+    assert task['state']=='accepted' and task['reviewed_commit']==commit and task['result_verdict']=='approve'
+    review=json.loads((ROOT/task['acceptance_evidence']).read_bytes())
+    assert review['status']=='accepted' and review['reviewed_commit']==commit
+    assert review['numerical_review']['status']=='passed' and review['numerical_review']['scalar_checks']==197524
+    path='results/development/'+ident+'/personalized_summary.csv'
+    raw=subprocess.check_output(['git','show',commit+':'+path],cwd=ROOT)
+    assert sha(raw)==review['artifacts_sha256'][path]==task['artifacts_sha256'][path]
+    assert canonical((ROOT/path).read_bytes())==canonical(raw)
+    rows=list(csv.DictReader(io.StringIO(raw.decode('utf-8'))))
+    assert len(rows)==10 and {(r['profile_id'],float(r['fee_rate'])) for r in rows}=={(p,k) for p in 'ABCDE' for k in (.0025,.005)}
+    cells=[]
+    for r in rows:
+        assert r['split']=='development' and r['component_source_verified']=='false' and r['bridge_provenance_verified']=='true'
+        if r['profile_id'] in 'ADE':
+            assert r['status']=='upstream_referral' and r['scenario_count']==r['denominator']=='0'
+            assert r['recommended_class']==r['p10_growth_pct']==r['p90_loss_pct']==''
+            continue
+        assert r['status']=='eligible_after_personalized_development_rescreen' and r['recommended_class']=='conservative'
+        assert r['scenario_count']==r['denominator']=='120' and r['risk_pass']==r['purchasing_power_pass']=='true'
+        assert r['horizon']=={'B':'15','C':'30'}[r['profile_id']]
+        assert float(r['p90_loss_pct'])<=float(r['loss_tolerance_pct']) and float(r['p10_growth_pct'])>=0
+        cells.append([r['profile_id']+'/'+r['horizon'],format(100*float(r['fee_rate']),'.2f'),
+            *[format(float(r[k]),'.2f') for k in ('median_growth_pct','p10_growth_pct','p90_loss_pct')],
+            r['exceedance_count']+'/'+r['denominator'],
+            *[format(float(r[k]),'.2f') for k in ('pooled_trade_share_pct','pooled_trade_share_ex_initial_pct')]])
+    return mdtable(['Profile/H','Fee %','Med G','p10 G','p90 L','Loss > tol.','Trades all','Trades later'],cells),dict(
+        producer_commit=commit,acceptance_evidence=task['acceptance_evidence'],source_path=path,source_sha256=sha(raw),source_rows=rows,
+        review_scope=review['numerical_review']['scope'])
+
+
 def assemble(team_file=None):
     primary, baseline = accepted_sources()
     promotion_table,analysis_provenance=analysis_sources()
     doubled,doubled_provenance=doubled_sources()
+    personalized_table,personalized_provenance=personalized_sources()
     text = (ROOT / "report/submission-draft.md").read_text(encoding="utf-8")
     primary_rows = [r["source_row"] for r in primary["displayed_rows"]
                     if r["key"]["horizon"] == 30]
@@ -233,7 +272,7 @@ def assemble(team_file=None):
         "MENU_TABLE": mdtable(["Target", "Stocks %", "Bonds %", "Bills %"], menus),
         "PROFILE_TABLE": mdtable(["Profile", "Years", "Loss tol. %", "Liquidity", "Bills %", "Eligible classes"], profile_rows),
         "PRIMARY_H30_TABLE": primary_table, "BALANCED_SEVERE": severe_text,
-        "BASELINE_HORIZON_TABLE": horizon_table,'SENSITIVITY_H30_TABLE':sensitivity_table,'PROMOTION_TABLE':promotion_table}
+        "BASELINE_HORIZON_TABLE": horizon_table,'SENSITIVITY_H30_TABLE':sensitivity_table,'PROMOTION_TABLE':promotion_table,'PERSONALIZED_TABLE':personalized_table}
     for key, value in replacements.items():
         if text.count("{{" + key + "}}") != 1:
             raise ValueError("Missing or duplicate template key " + key)
@@ -241,7 +280,7 @@ def assemble(team_file=None):
     if re.search(r"\{\{.*?\}\}", text):
         raise ValueError("Unknown unexpanded template key")
     customer=re.search(r'<!-- SLOT:CUSTOMER_EXPLANATION -->(.*?)<!-- END_SLOT:CUSTOMER_EXPLANATION -->',text,re.S).group(1)
-    customer= re.sub(r'\[E[0-6](?:, E[0-6])*\]','',customer)
+    customer= re.sub(r'\[E[0-9](?:, E[0-9])*\]','',customer)
     assert len(re.findall(r"\b[\w'-]+\b",customer))<=50,'Customer explanation exceeds50 words'
     markers=re.findall(r'<!-- SLOT:([A-Z_]+) -->',text)
     blocks=list(re.finditer(r'<!-- SLOT:([A-Z_]+) -->(.*?)<!-- END_SLOT:\1 -->',text,re.S))
@@ -252,16 +291,17 @@ def assemble(team_file=None):
         pending=bool(re.search(r'(?m)^PENDING '+re.escape(name)+r':',content))
         # Numeric sensitivity has independently accepted exact source evidence.
         # Text filled into another slot still requires its own acceptance gate.
-        slot_status[name]={'state':'pending' if pending else 'completed' if name in ('SENSITIVITY_RESULTS','PROMOTION_RESULTS','SENSITIVITY_RECOMMENDATION_IMPACT','CUSTOMER_EXPLANATION') else
+        slot_status[name]={'state':'pending' if pending else 'completed' if name in ('SENSITIVITY_RESULTS','PROMOTION_RESULTS','SENSITIVITY_RECOMMENDATION_IMPACT','CUSTOMER_EXPLANATION','PERSONALIZED_RESULTS') else
                            'text_filled_pending_evidence','pending_marker_present':pending,
-                           'evidence_gate':'accepted_HY3_004_and_HY3_006_results' if name=='SENSITIVITY_RESULTS' else
-                           'accepted_HY3_009_selection_and_reviewed_policy' if name in ('PROMOTION_RESULTS','SENSITIVITY_RECOMMENDATION_IMPACT','CUSTOMER_EXPLANATION') else
+                           'evidence_gate':'accepted_personalized_exact_ten_outcomes' if name=='PERSONALIZED_RESULTS' else
+                           'accepted_HY3_004_and_HY3_006_results' if name=='SENSITIVITY_RESULTS' else
+                           'accepted_HY3_009_selection_and_reviewed_policy' if name in ('PROMOTION_RESULTS','SENSITIVITY_RECOMMENDATION_IMPACT','CUSTOMER_EXPLANATION','PERSONALIZED_RESULTS') else
                            'accepted_upstream_and_report_conclusion_required'}
     slots=[name for name,record in slot_status.items() if record['state']!='completed']
     numeric_paragraphs = []
     for paragraph in re.split(r"\n\s*\n", text):
         if re.search(r"\d", paragraph) and not paragraph.startswith(("#", "|", "<!--", "PENDING")):
-            sources = sorted(set(re.findall(r"E[0-6]", paragraph)))
+            sources = sorted(set(re.findall(r"E[0-9]", paragraph)))
             if paragraph.startswith("T ="):
                 sources = ["E0"]
             elif paragraph.startswith("GPT-"):
@@ -280,7 +320,7 @@ def assemble(team_file=None):
         "sensitivity_evidence_gate":dict(state='accepted',producer_commit=doubled_provenance['producer_commit'],
             independent_review_commit=doubled_provenance['independent_review_commit'],
             interpretation_gate='SENSITIVITY_RECOMMENDATION_IMPACT'),
-        "analysis_provenance":analysis_provenance, "source_registry": SOURCES, "numeric_paragraph_mappings": numeric_paragraphs,
+        "personalized_provenance":personalized_provenance, "analysis_provenance":analysis_provenance, "source_registry": SOURCES, "numeric_paragraph_mappings": numeric_paragraphs,
         "primary_producer": primary["producer_commit"],
         "primary_review": primary["independent_review_commit"],
         "primary_current_acceptances":primary['acceptances'],
@@ -297,9 +337,7 @@ def assemble(team_file=None):
         "rounding": "format(float(source_string), '.2f'); display only",
         "private_identity_access": team_file is not None,
         "minimum_font_pt": 11, "max_pages": 10,
-        "missing_evidence": ["authenticated promotion comparisons and choice",
-            "recommendation impact of accepted cost sensitivity", "own-horizon personalized production rescreens",
-            "accepted all-development refit and final engine", "recorded freeze before final access",
+        "missing_evidence": [
             "accepted reserved-scenario evaluation", "final customer explanation and conclusion",
             "independent full manuscript review", "local names, final rendering and source ZIP checks"]}
     return text, metadata

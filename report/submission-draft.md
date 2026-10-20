@@ -10,7 +10,7 @@ SafeInvest must connect a customer's horizon, liquidity needs and willingness to
 
 On the accepted development comparison, using 120 scenarios, a 30-year horizon and a 0.25% one-way fee, fixed-prior Balanced has median real growth 4.53% per year, p10 growth 1.10%, median maximum real drawdown 26.84%, and p90 drawdown 41.94%. Annual equal thirds gives 3.58%, 1.28%, 20.10% and 34.84%, respectively. Balanced trades at 9.72% of reviews, versus 100.00% for annual equal thirds. These separate marginal summaries describe a growth/loss trade-off; they neither establish a paired performance improvement nor make Balanced suitable for every customer. [E1]
 
-The following draft contains accepted development results and reviewed methods. Primary selection and same-mode cost-sensitivity interpretation are supported below; personalized rescreening and final evaluation remain explicit completion gates. No conclusion below treats an unfinished gate as a positive result. The executive recommendation must be rewritten after those gates close. [E3, E5]
+The following draft contains accepted development results and reviewed methods. Primary selection, same-mode cost sensitivity and all ten personalized development outcomes are accepted; final evaluation and full manuscript review remain completion gates. No conclusion below treats an unfinished gate as a positive result. The executive recommendation must be rewritten after those gates close. [E3, E5]
 
 <!-- SLOT:EXECUTIVE_RECOMMENDATION -->
 PENDING EXECUTIVE_RECOMMENDATION: insert the accepted final recommendation and its quantitative support after all required evidence gates close.
@@ -51,7 +51,11 @@ Horizon and liquidity first restrict the available classes. A target bill reserv
 Every eligible class must have own-horizon p90 real drawdown no greater than the stated loss tolerance and p10 real growth no less than zero. Among qualifying classes, choose the highest median growth; classes within 0.10 percentage points/year of that maximum prefer the least growth-oriented class. Record the loss-exceedance numerator and denominator alongside the quantile. An empty feasible set requires human review. A provisional class must then be rerun at its client's own suspension threshold and horizon and pass both screens again; failure refers to a human without trying a replacement class. A stated tolerance is not a guaranteed loss cap. [E2]
 
 <!-- SLOT:PERSONALIZED_RESULTS -->
-PENDING PERSONALIZED_RESULTS: insert the accepted A-E provisional assignments, own-horizon rescreen outcomes, loss exceedances and reasons. Eligibility sets above are not customer recommendations.
+The accepted own-tolerance development rescreens support Conservative for B and C at both fees. Each row uses 120 scenarios, the stated client horizon and that client's review threshold. Growth is real percent/year; loss and trade shares are percentages. The exceedance column counts scenario losses strictly greater than the client's tolerance. [E7]
+
+{{PERSONALIZED_TABLE}}
+
+A, D and E have no qualifying class at either fee and remain human referrals, with zero personalized simulations and no invented outcome. High liquidity and a short horizon do not justify treating bills as safe in purchasing power. The four executed B/C cases each contain five losses beyond tolerance despite passing the p90 screen. These are development-qualified rules for reserved validation, not guarantees or unconditional investment instructions. [E6, E7]
 <!-- END_SLOT:PERSONALIZED_RESULTS -->
 
 For a distribution P of real gross-return vectors g, the one-year certainty equivalent under constant relative risk aversion four is C_P(x)=[E_P(sum_i x_i g_i)^(-3)]^(-1/3). It is homogeneous: C_P(ax)=a C_P(x) for positive a. For transfer fraction tau=(1/2)sum_i|w_i-u_i| and actual fee fraction f=k tau, a proposed target qualifies only if (1-2f)C_P(w)>C_P(u)+1e-12. The account pays f once; the factor two is a conservative decision margin. A passing target has a positive modeled net benefit under P, not a guaranteed realized gain or a multi-period optimum. [E2]
@@ -127,6 +131,8 @@ PENDING CONCLUSION: reconcile the abstract, selected rule, client decisions, sen
 <!-- END_SLOT:CONCLUSION -->
 
 ## Sources and AI-use disclosure
+
+[E7] Exact accepted CHIEF-PERSONALIZED-RUN-002 outcomes: producer b334b27a2f9fb8df99a6dee611e298bd0dc867d3; chief acceptance audit/chief/CHIEF-PERSONALIZED-RUN-002-review.json records 197524 independent scalar comparisons and 1200 prefix checks. Four own-horizon cases and six upstream referrals are preserved; utility choices rely on the separately accepted implementation.
 
 [E6] Exact accepted HY3-009 development analysis: producer 680c2faaf603df975c35e828aeebdadd8ce242cb; chief acceptance audit/chief/HY3-009-review.json independently checks all 100 gates, 30 screens and 10 provisional choices with 790 scalar comparisons. No final outcomes enter this selection.
 

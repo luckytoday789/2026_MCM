@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "3ef58f69a702a604398f1376fb5088740d9daea7",
+  "snapshot_main_commit": "9edf98528ec1b7542127513c385da29f1350ac4d",
   "authoritative_state": [
     "ops/control.json",
     "ops/queue.json"
   ],
-  "final_data_open_at_snapshot": false,
+  "final_data_open_at_snapshot": true,
   "evidence_states": {
     "locked_definition": "Authoritative problem or accounting convention; does not assert investment performance",
     "accepted_implementation": "Reviewed computational behavior; does not accept future run results",
@@ -454,6 +454,31 @@
       "path": "ops/tasks/CHIEF-PERSONALIZED-RUN-001.json",
       "outcomes_accepted": false,
       "scope": "Real chief fixed commands;4 conditional cases plus6 referrals. Independent saved arithmetic acceptance remains required."
+    },
+    "PERSONALIZED_ACCEPTED_ACTUAL": {
+      "state": "accepted_development_evidence",
+      "task_id": "CHIEF-PERSONALIZED-RUN-002",
+      "commit": "b334b27a2f9fb8df99a6dee611e298bd0dc867d3",
+      "chief_acceptance_evidence": "audit/chief/CHIEF-PERSONALIZED-RUN-002-review.json",
+      "promoted_to_main": true,
+      "scope": "Four own-tolerance120-scenario cases and six true upstream referrals; original pure provenance false and authenticated bridge true remain distinct."
+    },
+    "ALL_DEVELOPMENT_REFIT_ACTUAL": {
+      "state": "accepted_development_evidence",
+      "task_id": "CHIEF-REFIT-001",
+      "commit": "d4a982ce2d06b57deb2988806229574c0719c2be",
+      "promoted_commit": "07eff1d3cb714c3f1d9dc850e0dbb9cab59c6b8d",
+      "chief_acceptance_evidence": "audit/chief/CHIEF-REFIT-001-promoted-review.json",
+      "scope": "Actual3600-row prior,10800 exact scalar/hash checks; final computation uses promoted main reference."
+    },
+    "FROZEN_FINAL_JOB_ACTUAL": {
+      "state": "authorized_pending_result_acceptance",
+      "task_id": "HY3-010",
+      "path": "ops/tasks/HY3-010.json",
+      "freeze_commit": "06086aed327aa626ddc91472f943c2c9fba1259a",
+      "freeze_acceptance": "audit/chief/FINAL-FREEZE-20261020-review.json",
+      "gate_record": "audit/chief/FINAL-GATE-20261020.json",
+      "scope": "One frozen60-scenario final inventory. Current lease confirms running at13:12UTC; no final outcome accepted yet."
     }
   },
   "requirements": [
@@ -468,7 +493,7 @@
       ],
       "state": "locked_definition",
       "draft_location": "methods-draft.md: Independent annual scenarios and purchasing power",
-      "remaining": "Development and generated final source accepted. Accept actual009 analysis and all ten personalized rows, independently verify all-development refit, then publish and execute complete closed-gate freeze audit before final access."
+      "remaining": "Actual development, ten personalized outcomes,10800-value refit and separately executed closed-gate freeze audit accepted. Gate opened and immutable HY3-010 running; accept exact final artifacts before claims."
     },
     {
       "id": "R02",
@@ -522,7 +547,8 @@
         "PERSONALIZED_HANDOFF",
         "POLICY_ANALYSIS_ACCEPTANCE",
         "POLICY_DESIGN_CATALOGUE",
-        "PERSONALIZED_PURE_ACCEPTANCE"
+        "PERSONALIZED_PURE_ACCEPTANCE",
+        "PERSONALIZED_ACCEPTED_ACTUAL"
       ],
       "state": "not_available",
       "table_keys": [
@@ -541,7 +567,7 @@
         "assignment or referral",
         "reason"
       ],
-      "remaining": "Own-horizon design, pure component and chief production bridge source accepted. Await actual009 assignment evidence, real ten-row production and exact independent numerical acceptance; no fallback on rescreen failure."
+      "remaining": "Accepted own-tolerance development: Conservative B/C at both fees; A/D/E referrals. Frozen final validation remains pending; no replacement class or final tuning."
     },
     {
       "id": "R06",
@@ -685,7 +711,7 @@
     "Post-freeze software corrections remain logged and disclosed; no final-outcome tuning",
     "Team private names and IDs stay outside tracked artifacts"
   ],
-  "updated_at": "2026-10-20T12:15:02.185721+00:00",
+  "updated_at": "2026-10-20T13:14:13.494339+00:00",
   "historical_source_snapshots": {
     "DOUBLED_DEVELOPMENT_CASE_JOB": {
       "state": "submitted_pending_review",
