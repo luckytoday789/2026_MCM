@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "published_at": "2026-10-20T04:41:14.794248+00:00",
+  "task_id": "SOL-036",
+  "base_commit": "2694cf053586e71488781b192efb54518f77c62f",
+  "base_already_pushed": true,
+  "task_sha256": "228acfa7ebddb8ac725d5a5ebf7787a3ef15b01398c50cc171c5e6dee0dc85e5",
+  "source_pins": 36,
+  "producer_result_commit": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
+  "producer_receipt_sha256": "d7fa8bfaf8c9904e072b9a7a2b1bde797e17b333e256b286cacf63ebb56e59a0",
+  "producer_artifact_pins": 48,
+  "dependencies_passed": true,
+  "final_data_open": false,
+  "production_acceptance": false
+}

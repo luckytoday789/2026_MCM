@@ -1,9 +1,10 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T05:02:35.331239+00:00",
-  "reason": "Await actual fixed development receipts and independent assembly/audit-only successor results; all available chief dispatch/spec/report preparation checkpointed.",
+  "next_wake_at": "2026-10-20T04:46:14.794248+00:00",
+  "reason": "Primary development exact result arrived; finish chief read-only replay and dispatch independent review while preserving all gates.",
   "next_actions": [
+    "SOL-036 published for exact HY3-0046aa2ccd. Do not recreate this review or integrate producer until independent exact-commit acceptance. Finish/check saved chief isolated replay; preserve any failure and inspect actual runtime/counts.",
     "Do not recreate/mutate accepted SOL-031/032/033 or published HY3-004/HY3-005/SOL-034/SOL-035. Do not merge status branches or restart runners/supervisor. Preserve private identities locally.",
     "Inspect each exact new HY3-004/005 receipt immediately. Verify canonical task/config/source/input/artifact pins,44 files, counts, actual runtime/bytes and all command exits. A failed attempt remains failed; diagnose and publish new immutable correction only if necessary, without tuning parameters.",
     "For each completed group run prepared audit/chief/review_development_case_bundle.py TASK_ID EXACT_SHA --output NEW_audit/chief_FILE after inspecting source. Adapter has syntax/help checks only so far, no actual-result numerical pass. Also replay exact producer --check in fresh Python3.12/PYTHONPATH-absent isolated checkout and preserve failures.",
@@ -18,7 +19,7 @@
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T04:32:35.331239+00:00",
+  "last_completed_at": "2026-10-20T04:41:14.794248+00:00",
   "quota_probe_verified_commit": "7ac6afe1169740666f0f65d5f2d9674fd2d4c964",
   "quota_probe_release_not_before": "2026-10-20T05:55:00+08:00",
   "quota_probe_current_status": "SOL030_model_exit0_no_quota_failure_SOL032_running_no_new_probe",
@@ -68,5 +69,7 @@
   "development_doubled_task": "HY3-005",
   "analysis_assembly_task": "SOL-034",
   "prepared_development_numeric_reviewer": "audit/chief/review_development_case_bundle.py",
-  "prepared_development_numeric_reviewer_status": "syntax_help_only_no_real_results_yet"
+  "prepared_development_numeric_reviewer_status": "syntax_help_only_no_real_results_yet",
+  "development_primary_result_candidate": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
+  "development_primary_independent_review": "SOL-036"
 }

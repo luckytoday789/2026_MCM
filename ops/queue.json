@@ -1279,7 +1279,9 @@
       "owner": "hy3",
       "branch": "work/hy3/HY3-004-a1",
       "task_sha256": "14bb98ed9b6996d198513c1d29cbe8a7d44b489de7cde9a46f4fc27ce2bead89",
-      "note": "Fixed development execution authorized after exact SOL-032 acceptance. Independent numerical review required before acceptance; final remains closed."
+      "note": "Completed receipt structurally verified and chief independent736571 arithmetic checks passed; isolated writer replay and remote SOL-036 review pending. Result remains unaccepted.",
+      "candidate_result_commit": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
+      "independent_review_task": "SOL-036"
     },
     {
       "id": "HY3-005",
@@ -1307,6 +1309,16 @@
       "branch": "work/sol/SOL-035-a1",
       "task_sha256": "3dd2e8de06ea727a102e5df1c53fe73e3c83ad9cbbf8f1c0c9aa5c0b5b121207",
       "note": "Audit-only portable successor after actual later-main SOL-032 old-inventory LF/CRLF failure. Code approval and existing fixed jobs unchanged; preserve all original evidence."
+    },
+    {
+      "id": "SOL-036",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "branch": "work/sol/SOL-036-a1",
+      "task_sha256": "228acfa7ebddb8ac725d5a5ebf7787a3ef15b01398c50cc171c5e6dee0dc85e5",
+      "note": "Independent primary exact-result numerical review. Candidate remains unaccepted; do not await its acceptance before review. Existing source prerequisites passed.",
+      "released_at": "2026-10-20T04:41:14.794248+00:00"
     }
   ]
 }
