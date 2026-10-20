@@ -7,13 +7,7 @@
     15224,
     37500,
     5164,
-    13952,
-    28452,
-    40492,
-    36572,
-    32948,
-    12356,
-    44112
+    13952
   ],
   "current_task": null,
   "alerts": [
@@ -624,18 +618,27 @@
       "dirty": true,
       "changed_paths": [
         "M audit/SOL-038/findings.json",
+        " M audit/SOL-038/implementation.md",
         " M audit/SOL-038/local-check-002-wrapper-exit.json",
+        " M audit/SOL-038/record_checks.py",
+        " M tests/test_policy_analysis_writer.py",
+        "?? audit/SOL-038/clean-environment-checks.json",
+        "?? audit/SOL-038/history/local-check-003-seal.json",
+        "?? audit/SOL-038/history/local-check-003-tests.py",
+        "?? audit/SOL-038/history/prior-validation-seal-004.json",
         "?? audit/SOL-038/local-check-001-incomplete.json",
         "?? audit/SOL-038/local-check-003-0.stderr.txt",
         "?? audit/SOL-038/local-check-003-0.stdout.txt",
         "?? audit/SOL-038/local-check-003-1.stderr.txt",
         "?? audit/SOL-038/local-check-003-1.stdout.txt",
+        "?? audit/SOL-038/local-check-003-process.json",
         "?? audit/SOL-038/local-check-003-recorder.stderr.txt",
         "?? audit/SOL-038/local-check-003-recorder.stdout.txt",
         "?? audit/SOL-038/local-check-003.json",
-        "?? audit/SOL-038/verification.json"
+        "?? audit/SOL-038/local-check-004-0.stderr.txt",
+        "?? audit/SOL-038/local-check-004-0.stdout.txt"
       ],
-      "remote_matches": false,
+      "remote_matches": true,
       "completed_record": false,
       "finished_at": "2026-10-20T10:18:22.961891+00:00",
       "check_exit_codes": [],
@@ -696,7 +699,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-20T10:30:34.220712+00:00",
+  "updated_at": "2026-10-20T10:36:06.722546+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
