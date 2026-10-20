@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "scope": "new_primary_note_checkout_portability",
+  "filter_command": "git -c core.autocrlf=true cat-file --filters --path=report/primary-development.md HEAD:report/primary-development.md",
+  "filtered_sha256": "21ad16fd6925bee1e6ed6d71968202c00fdb349e416a2e07b5fef955c4d8cf46",
+  "canonical_equals_filtered": true,
+  "path_rule": "report/primary-development.md text eol=lf",
+  "existing_evidence_changed": false
+}
