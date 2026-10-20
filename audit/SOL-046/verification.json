@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-046",
+  "status": "passed",
+  "python": "3.12.14",
+  "prescribed_tests": {
+    "command": [
+      "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "tests.test_final_refit",
+      "tests.test_final_paths",
+      "tests.test_final_execution",
+      "-v"
+    ],
+    "exit_code": 0,
+    "test_count": 22
+  },
+  "independent_derive": {
+    "exit_code": 0,
+    "fixture_groups": 5,
+    "reviewed_blobs": 130,
+    "personalized_metric_rows": 480,
+    "representative_ledger_rows": 180
+  },
+  "corruption": {
+    "path": "corrupt-fixtures.json",
+    "mutation": "initial_transfer[0].fee:1/20 ->1/10",
+    "exit_code": 1,
+    "expected_failure": "saved independent fixture mismatch"
+  },
+  "artifact_sha256": {
+    "verify.py": "3eb19931a7ff9029e3d89807ae31cd1e2270d8e882948b609c356a912c3135b8",
+    "fixtures.json": "0e12a0a11ca335a5e1b18eb40e4d054b1f3b1c8d8322c56ccb8338c93ebd4136",
+    "reference_findings.json": "ca95c820bb1a78f680a9636efde80d29843394dd333e860251ce16b59ac5b0d2",
+    "findings.json": "4113b565efb3c8e8e3381903432281a0f4f4c72a0d641fba0748876a8d36a570",
+    "review.md": "2f9451d717beff5ade1161554f72f41ca2c602076ac6fe90537a51e2162cbdac",
+    "availability-acceptance.json": "b76f8a7bc4e2d33910ca23e93e3149ed75de326ef1e5d0b93113120861b35c11",
+    "trial-001.json": "45c89398c93bb2b5432da221bc79466308003ded904b28040392f0fe19ceda7b",
+    "corrupt-fixtures.json": "2ba6113b346fb51455dac8171e6e72cc74dee526559bb301964c9a460b344606",
+    "readonly_check.json": "c23f5d19e4a971a5bc8c7519a68b9ddd7a69ee753b1ed5d110ba51f962f8363c"
+  },
+  "execution_log": "execution_log.json",
+  "read_only_check": {
+    "command": [
+      "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+      "-B",
+      "audit/SOL-046/verify.py",
+      "--check"
+    ],
+    "exit_code": 0,
+    "audit_tree_unchanged": true,
+    "evidence": "readonly_check.json"
+  },
+  "production_final_execution": false,
+  "original_inputs_read": false
+}

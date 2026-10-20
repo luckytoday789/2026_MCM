@@ -1,0 +1,115 @@
+{
+  "command": [
+    "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+    "-B",
+    "audit/SOL-046/verify.py",
+    "--check"
+  ],
+  "exit_code": 0,
+  "read_only_hash_size_mtime_snapshot_unchanged": true,
+  "before": {
+    "availability-acceptance.json": {
+      "sha256": "b76f8a7bc4e2d33910ca23e93e3149ed75de326ef1e5d0b93113120861b35c11",
+      "size": 2252,
+      "mtime_ms": 1792504096228.5803
+    },
+    "corrupt-fixtures.json": {
+      "sha256": "2ba6113b346fb51455dac8171e6e72cc74dee526559bb301964c9a460b344606",
+      "size": 4217,
+      "mtime_ms": 1792504353975.1062
+    },
+    "execution_log.json": {
+      "sha256": "bd31b1b7166839bbba0fbabdf5a8b96164cb9df06e6bcd61955c6ab2db40496c",
+      "size": 131928,
+      "mtime_ms": 1792504613101.9329
+    },
+    "findings.json": {
+      "sha256": "4113b565efb3c8e8e3381903432281a0f4f4c72a0d641fba0748876a8d36a570",
+      "size": 26717,
+      "mtime_ms": 1792504613097.9358
+    },
+    "fixtures.json": {
+      "sha256": "0e12a0a11ca335a5e1b18eb40e4d054b1f3b1c8d8322c56ccb8338c93ebd4136",
+      "size": 4483,
+      "mtime_ms": 1792504516606.9512
+    },
+    "reference_findings.json": {
+      "sha256": "ca95c820bb1a78f680a9636efde80d29843394dd333e860251ce16b59ac5b0d2",
+      "size": 25997,
+      "mtime_ms": 1792504516608.4597
+    },
+    "review.md": {
+      "sha256": "148bb7e9501157e5ea4349e1bd6ddae2af680663a2c07f54ceb6d0e88c3ea5b7",
+      "size": 7770,
+      "mtime_ms": 1792504613099.9377
+    },
+    "trial-001.json": {
+      "sha256": "45c89398c93bb2b5432da221bc79466308003ded904b28040392f0fe19ceda7b",
+      "size": 303,
+      "mtime_ms": 1792504293685.309
+    },
+    "verification.json": {
+      "sha256": "53273ba2eb041a6f5d8a00a8c86a4415df7f13866e62afc9ace8e0a2790c77ee",
+      "size": 1692,
+      "mtime_ms": 1792504613119.0032
+    },
+    "verify.py": {
+      "sha256": "3eb19931a7ff9029e3d89807ae31cd1e2270d8e882948b609c356a912c3135b8",
+      "size": 29194,
+      "mtime_ms": 1792504501624.256
+    }
+  },
+  "after": {
+    "availability-acceptance.json": {
+      "sha256": "b76f8a7bc4e2d33910ca23e93e3149ed75de326ef1e5d0b93113120861b35c11",
+      "size": 2252,
+      "mtime_ms": 1792504096228.5803
+    },
+    "corrupt-fixtures.json": {
+      "sha256": "2ba6113b346fb51455dac8171e6e72cc74dee526559bb301964c9a460b344606",
+      "size": 4217,
+      "mtime_ms": 1792504353975.1062
+    },
+    "execution_log.json": {
+      "sha256": "bd31b1b7166839bbba0fbabdf5a8b96164cb9df06e6bcd61955c6ab2db40496c",
+      "size": 131928,
+      "mtime_ms": 1792504613101.9329
+    },
+    "findings.json": {
+      "sha256": "4113b565efb3c8e8e3381903432281a0f4f4c72a0d641fba0748876a8d36a570",
+      "size": 26717,
+      "mtime_ms": 1792504613097.9358
+    },
+    "fixtures.json": {
+      "sha256": "0e12a0a11ca335a5e1b18eb40e4d054b1f3b1c8d8322c56ccb8338c93ebd4136",
+      "size": 4483,
+      "mtime_ms": 1792504516606.9512
+    },
+    "reference_findings.json": {
+      "sha256": "ca95c820bb1a78f680a9636efde80d29843394dd333e860251ce16b59ac5b0d2",
+      "size": 25997,
+      "mtime_ms": 1792504516608.4597
+    },
+    "review.md": {
+      "sha256": "148bb7e9501157e5ea4349e1bd6ddae2af680663a2c07f54ceb6d0e88c3ea5b7",
+      "size": 7770,
+      "mtime_ms": 1792504613099.9377
+    },
+    "trial-001.json": {
+      "sha256": "45c89398c93bb2b5432da221bc79466308003ded904b28040392f0fe19ceda7b",
+      "size": 303,
+      "mtime_ms": 1792504293685.309
+    },
+    "verification.json": {
+      "sha256": "53273ba2eb041a6f5d8a00a8c86a4415df7f13866e62afc9ace8e0a2790c77ee",
+      "size": 1692,
+      "mtime_ms": 1792504613119.0032
+    },
+    "verify.py": {
+      "sha256": "3eb19931a7ff9029e3d89807ae31cd1e2270d8e882948b609c356a912c3135b8",
+      "size": 29194,
+      "mtime_ms": 1792504501624.256
+    }
+  },
+  "scope": "All audit/SOL-046 files; Python audit hook also rejects write opens and file mutations during --check."
+}
