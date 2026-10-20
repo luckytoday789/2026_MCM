@@ -11,10 +11,11 @@
     13792,
     44192,
     31936,
-    29164,
-    36016,
-    46580,
-    43608
+    39184,
+    47640,
+    27012,
+    28724,
+    8336
   ],
   "current_task": "SOL-040",
   "alerts": [],
@@ -634,9 +635,11 @@
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
     "state": "running",
     "python": "3.12.0",
-    "updated_at": "2026-10-20T08:57:19.313602+00:00",
-    "lease_until": "2026-10-20T09:07:19.313602+00:00",
-    "task_id": "integrate-and-dispatch"
+    "updated_at": "2026-10-20T09:04:15.236716+00:00",
+    "lease_until": "2026-10-20T09:14:15.236716+00:00",
+    "task_id": "integrate-and-dispatch",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "xhigh"
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
   "schema_version": 1,
@@ -644,7 +647,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-20T09:01:16.042839+00:00",
+  "updated_at": "2026-10-20T09:06:45.241026+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
