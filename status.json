@@ -760,7 +760,7 @@
       "head": "0ed56de4b70bef0083ca2cf414f5aa2dce8606f0",
       "receipt_status": "completed",
       "receipt_matches_task": true,
-      "queue_state": "ready",
+      "queue_state": "accepted",
       "dirty": false,
       "changed_paths": [],
       "remote_matches": true,
@@ -795,9 +795,11 @@
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
     "state": "running",
     "python": "3.12.0",
-    "updated_at": "2026-10-20T14:03:10.132323+00:00",
-    "lease_until": "2026-10-20T14:13:10.132323+00:00",
-    "task_id": "integrate-and-dispatch"
+    "updated_at": "2026-10-20T14:11:52.345557+00:00",
+    "lease_until": "2026-10-20T14:21:52.345557+00:00",
+    "task_id": "integrate-and-dispatch",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "xhigh"
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
   "schema_version": 1,
@@ -805,7 +807,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-20T14:07:10.495948+00:00",
+  "updated_at": "2026-10-20T14:12:38.551505+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
