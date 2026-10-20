@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T04:03:00.962803+00:00",
+  "status": "passed",
+  "tasks": [
+    {
+      "id": "SOL-032",
+      "base_commit": "e33b748c29d366559706d5272319d9138f0c7aa4",
+      "task_sha256": "776a649d49058b47f71db7fdbb3269452077f2063c5ba313dea574467031c657",
+      "source_pins": 36,
+      "dependencies_accepted": true
+    },
+    {
+      "id": "SOL-033",
+      "base_commit": "65b54a5823765a676cb7c50947f7f46874484563",
+      "task_sha256": "f5c05e3c0f82d31c197ba574464677cc104ca990e18e81a5eb52970d47a7575b",
+      "source_pins": 40,
+      "dependencies_accepted": true
+    }
+  ],
+  "unchanged_computational_modules": [
+    "src/safeinvest/__init__.py",
+    "src/safeinvest/accounting.py",
+    "src/safeinvest/backtest.py",
+    "src/safeinvest/baselines.py",
+    "src/safeinvest/metrics.py",
+    "src/safeinvest/experiments.py",
+    "src/safeinvest/policy_pilot.py",
+    "src/safeinvest/policy_calibration.py",
+    "src/safeinvest/policy_cases.py",
+    "src/safeinvest/policy_analysis.py"
+  ],
+  "runner_unchanged": true,
+  "old_unissued_configs_rejected": [
+    {
+      "config": "HY3-004",
+      "rejections": [
+        {
+          "phase": "obsolete_original",
+          "reason": "incomplete source closure"
+        },
+        {
+          "phase": "in_memory_complete_closure_only",
+          "reason": "positive kernel/calibration/case/writer approvals required"
+        }
+      ]
+    },
+    {
+      "config": "HY3-005",
+      "rejections": [
+        {
+          "phase": "obsolete_original",
+          "reason": "incomplete source closure"
+        },
+        {
+          "phase": "in_memory_complete_closure_only",
+          "reason": "positive kernel/calibration/case/writer approvals required"
+        }
+      ]
+    }
+  ],
+  "independent_required_file_count": 44,
+  "production_tasks_published": false,
+  "competition_input_read": false,
+  "final_data_open": false,
+  "prior_probe": "audit/chief/writer-compatibility-preflight-initial-failure.json"
+}

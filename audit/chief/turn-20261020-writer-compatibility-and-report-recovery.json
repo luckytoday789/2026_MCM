@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "completed_at": "2026-10-20T04:04:18.949881+00:00",
+  "outcome_zh": "验收SOL-031精确Git字节修复，保留12,427项主控独立算术及双检出验证；派工前发现目录/文件交付冲突并修复为严格44文件声明，17项测试通过，SOL-032独立审查运行中。SOL-030因远端缺matplotlib及SVG裁切失败；原始证据完整保留，主控重跑成功并限制PDF/PNG用图，SOL-033待复审。尚未发布开发计算任务；最终集关闭。",
+  "writer_accepted_commit": "a24dca5d5494455407207e0fd70c06b258d4fd1f",
+  "accepted_writer_source_commit": "e17ef8fae5999661db32a5bbd549c77b32cc52e1",
+  "compatibility_provisional_source_commit": "e33b748c29d366559706d5272319d9138f0c7aa4",
+  "compatibility_review": {
+    "id": "SOL-032",
+    "state": "running_observed",
+    "task_sha256": "776a649d49058b47f71db7fdbb3269452077f2063c5ba313dea574467031c657",
+    "lease_observed_at": "2026-10-20T04:01:30.361849+00:00",
+    "lease_until": "2026-10-20T04:11:30.361849+00:00"
+  },
+  "report_failed_commit": "414498aaa373c6f0081d829f4020f0b5c33c6424",
+  "report_successor": {
+    "id": "SOL-033",
+    "state": "ready",
+    "base_commit": "65b54a5823765a676cb7c50947f7f46874484563",
+    "task_sha256": "f5c05e3c0f82d31c197ba574464677cc104ca990e18e81a5eb52970d47a7575b"
+  },
+  "checks": {
+    "writer_exact_replay": "audit/chief/SOL-031-exact-replay-002.json",
+    "writer_independent_numeric_checks": 12427,
+    "writer_tests_per_checkout": 17,
+    "git_checkout_modes": 2,
+    "compatibility_focused": "audit/chief/writer-file-deliverables-focused.json",
+    "compatibility_focused_tests": 17,
+    "failed_runner_regression": "audit/chief/writer-runner-integration-regression.json",
+    "report_exact_failed_review_replay": "audit/chief/SOL-030-failed-receipt-replay.json",
+    "dispatch_preflight": "audit/chief/writer-compatibility-dispatch-preflight.json"
+  },
+  "production_tasks_published": false,
+  "competition_input_read": false,
+  "final_data_open": false,
+  "global_state": "running",
+  "host_remaining_percent": 49.0,
+  "host_threshold_percent": 40,
+  "human_action_required": false,
+  "recovery": [
+    "Do not mutate/recreate SOL-031/SOL-030/SOL-032/SOL-033 or restart any runner/supervisor. Status branches are metadata only.",
+    "Review exact new SOL-032 result and actual44-file/missing-file local Git runner fixtures. If positive, accept only reviewed audit paths and precise reviewed SHA, then push new source C including acceptance. If failed, preserve and make a new immutable corrected task.",
+    "Original configs specs/execution/HY3-004.json and HY3-005.json are unused snapshots. New source has extra closure note and mandatory SOL-032 approval, so old configs correctly fail. Publish distinct fresh configs E at accepted C, then immutable HY3-004/HY3-005 commands tasks with real pushed base E (or later identical bytes). No tasks yet exist for these IDs.",
+    "Deliverables must be exactly44 files, allowed_paths=[output_root], never include directory itself. Tasks/parameters/config all agree, source/hash/approval gates before input. Taskmax1500/config1200; actual runtime/bytes require measurement.",
+    "Primary five computed modes plus three authenticated HY3-003 imports; doubled computes8. Obtain independent Sol numerical reviews before acceptance/selection. Then proceed accepted analysis assembly and personalized production bridge; preserve freeze/final gates.",
+    "SOL-030 negative audit is preserved, not full publication approval. SOL-033 reviews exact PDF/PNG-only restriction; do not claim SVG repaired or old failed dependency check passed. Chief existing-env checks succeeded separately.",
+    "Remote review receipts trigger earlier turn;30-minute fallback only while waiting. Private identities local; humans submit."
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "checked_at": "2026-10-20T04:03:00.962803+00:00",
+  "cause": "Chief probe expected missing approval rejection, but obsolete config correctly failed earlier on incomplete source closure.",
+  "code_changed": false,
+  "competition_input_read": false
+}
