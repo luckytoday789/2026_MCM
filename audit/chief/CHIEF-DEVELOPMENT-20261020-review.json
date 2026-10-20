@@ -1,0 +1,95 @@
+{
+  "status": "accepted",
+  "primary_mode": "balanced_cost",
+  "profile_choices": [
+    {
+      "profile_id": "A",
+      "fee_rate": 0.0025,
+      "proposed_class": null,
+      "eligible": false,
+      "reason": "upstream_referral | no_qualifying_class"
+    },
+    {
+      "profile_id": "A",
+      "fee_rate": 0.005,
+      "proposed_class": null,
+      "eligible": false,
+      "reason": "upstream_referral | no_qualifying_class"
+    },
+    {
+      "profile_id": "B",
+      "fee_rate": 0.0025,
+      "proposed_class": "conservative",
+      "eligible": true,
+      "reason": "eligible_after_personalized_development_rescreen"
+    },
+    {
+      "profile_id": "B",
+      "fee_rate": 0.005,
+      "proposed_class": "conservative",
+      "eligible": true,
+      "reason": "eligible_after_personalized_development_rescreen"
+    },
+    {
+      "profile_id": "C",
+      "fee_rate": 0.0025,
+      "proposed_class": "conservative",
+      "eligible": true,
+      "reason": "eligible_after_personalized_development_rescreen"
+    },
+    {
+      "profile_id": "C",
+      "fee_rate": 0.005,
+      "proposed_class": "conservative",
+      "eligible": true,
+      "reason": "eligible_after_personalized_development_rescreen"
+    },
+    {
+      "profile_id": "D",
+      "fee_rate": 0.0025,
+      "proposed_class": null,
+      "eligible": false,
+      "reason": "upstream_referral | no_qualifying_class"
+    },
+    {
+      "profile_id": "D",
+      "fee_rate": 0.005,
+      "proposed_class": null,
+      "eligible": false,
+      "reason": "upstream_referral | no_qualifying_class"
+    },
+    {
+      "profile_id": "E",
+      "fee_rate": 0.0025,
+      "proposed_class": null,
+      "eligible": false,
+      "reason": "upstream_referral | no_qualifying_class"
+    },
+    {
+      "profile_id": "E",
+      "fee_rate": 0.005,
+      "proposed_class": null,
+      "eligible": false,
+      "reason": "upstream_referral | no_qualifying_class"
+    }
+  ],
+  "all_ten_rescreens_accepted": true,
+  "evidence": [
+    {
+      "commit": "67b4299202d694373797f30e29a570bfaf60479e",
+      "path": "results/development/HY3-009/selection.json",
+      "sha256": "56b721ac630e7b08c48a74b37c300bcc841ea51e4b85084401a58b8bbbfa334e"
+    },
+    {
+      "commit": "b334b27a2f9fb8df99a6dee611e298bd0dc867d3",
+      "path": "results/development/CHIEF-PERSONALIZED-RUN-002/personalized_results.json",
+      "sha256": "00bcda0d95ce7c58536effe2829fbb20bc1d34349bdb4447f95f339b91052617"
+    }
+  ],
+  "analysis_result_commit": "680c2faaf603df975c35e828aeebdadd8ce242cb",
+  "personalized_result_commit": "b334b27a2f9fb8df99a6dee611e298bd0dc867d3",
+  "personalized_acceptance": "audit/chief/CHIEF-PERSONALIZED-RUN-002-review.json",
+  "accepted_at": "2026-10-20T12:40:10.821041+00:00",
+  "reviewer": "chief under user-authorized two-node takeover; no remote Sol authorship claimed",
+  "scope": "Actual accepted development primary selection and all ten own-tolerance rescreens; no final outcomes read; no reranking or fallback."
+}

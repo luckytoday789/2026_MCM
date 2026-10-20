@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "source_commit": "67b4299202d694373797f30e29a570bfaf60479e",
+  "archive": ".runtime\\source-package-development-check\\SafeInvest-source.zip",
+  "bytes": 19989119,
+  "sha256": "0244eec32ab89bc9b9247117e7af71da8eab4e75d8e8bbce99817726c5b14def",
+  "file_count": 207,
+  "git_bundle_sha256": "e7c46824abfdefa1a4e9adf477864369601c9c9a27bf03905ef0491868db86c7",
+  "git_bundle_verify_exit_code": 0,
+  "member_hashes_verified": true,
+  "no_simulation": true,
+  "submission_ready_claimed": false,
+  "offline_empty_repository_verified": true,
+  "offline_exact_blob_checks": {
+    "680c2faaf603df975c35e828aeebdadd8ce242cb:handoff/HY3-009/result.json": "eeb8a0f7d2b03cdd41dcfbfe88929d44faf74153c650b3bb176a8b8d1fecf0e5",
+    "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18:handoff/HY3-006/result.json": "f8169c967fae8e568548bbb4be736f5ab6b690342a1221e62a9206488cbef853",
+    "194a45ac5fced5dfab02903e4e732b1cac1c6e67:handoff/HY3-007/result.json": "718a4fe0442aa13a2680cdceb9fdb6fc1aa11ed7cfd872fd750e8856afc2ae1a",
+    "7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/final_execution.py": "bfda2f62edba55624895a362ff019d89dbceeeb7c01dac60bffef09ce72fced7"
+  }
+}
