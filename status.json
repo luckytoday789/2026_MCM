@@ -5,16 +5,18 @@
     48984
   ],
   "child_pids": [
-    44196,
-    13832,
-    38092,
-    44088,
-    23236,
-    35596,
-    37784,
-    18752
+    3816,
+    14132,
+    23356,
+    48320,
+    25028,
+    3976,
+    35036,
+    18780,
+    31440,
+    38508
   ],
-  "current_task": "SOL-035",
+  "current_task": "SOL-036",
   "alerts": [
     "Chief heartbeat is older than ten minutes; inspect the existing chief workplan before redispatch."
   ],
@@ -561,14 +563,28 @@
       "key": "SOL-035-a1",
       "task_id": "SOL-035",
       "base": "45e1da032122fca8c69ef508e82c36fd95ffe003",
-      "head": "45e1da032122fca8c69ef508e82c36fd95ffe003",
+      "head": "f33da50c4e16e85f7ca831e0a03d17c05c91cc79",
+      "receipt_status": "failed",
+      "receipt_matches_task": true,
+      "queue_state": "ready",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-20T04:58:34.820934+00:00",
+      "check_exit_codes": [],
+      "pending_upload": false
+    },
+    {
+      "key": "SOL-036-a1",
+      "task_id": "SOL-036",
+      "base": "2694cf053586e71488781b192efb54518f77c62f",
+      "head": "2694cf053586e71488781b192efb54518f77c62f",
       "receipt_status": null,
       "receipt_matches_task": false,
       "queue_state": "ready",
-      "dirty": true,
-      "changed_paths": [
-        "?? audit/SOL-035/"
-      ],
+      "dirty": false,
+      "changed_paths": [],
       "remote_matches": false,
       "completed_record": false,
       "pending_upload": false
@@ -590,7 +606,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-20T04:57:09.449596+00:00",
+  "updated_at": "2026-10-20T05:02:35.287685+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
