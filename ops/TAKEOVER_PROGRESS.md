@@ -1,3 +1,70 @@
+# Latest bounded chief checkpoint, 2026-10-20 20:16 Beijing
+
+This update supersedes the older in-flight009 and personalized-source fields below.
+HY3-009 is ACCEPTED at `680c2faaf603df975c35e828aeebdadd8ce242cb`.
+Canonical receipt/source/task/scope/artifact checks passed; chief independently
+checked790 scalar comparisons across100 gates,30 screens and10 choices. All six
+outputs and genuine handoff are promoted on main at acceptance commit
+`d961778a0a5eead16549a7678ccf57787e3f625f`. Do not rerun009 or its producers.
+Primary mode is `balanced_cost`; context/adaptive failed the frozen development
+promotion criteria. Both fees provisionally assign Conservative to B/C and refer
+A/D/E. Those are provisional until actual own-tolerance acceptance.
+
+Actual personalization preflight exposed a JSON-order bug before publication:
+flags serialize with sorted object keys while reason lists retain the declared
+criterion order. Original7053... bridge rejected those valid lists. Preserved
+failure: `audit/chief/personalized-preflight-schema-failure.json`. Narrow fix plus
+new regression passed14 tests and actual009 mapping. New personalized source C=
+`11a633c75dbbd8d25385ab9d1600d45943f1afef`, source approval A=
+`981f5b1a0085cf39ba6317a441d24c6a21a6f175`, approval ID
+`CHIEF-PERSONALIZED-V2-20261020`. Original source approval remains unchanged.
+The final computational closure excludes the changed bridge/CLI: final source
+still7053b41ce81b1e04100d56a24a321e51b3465459 with its existing V2 approval.
+
+Config E=`94b2d4ba237091539520edcf6da5a417da9220f8`, later task P=
+`5c8e1d0` (resolve full SHA from Git). `CHIEF-PERSONALIZED-RUN-001` is published
+ready, actual ownerchief, kindcommands. The existing ignored one-shot helper
+IS ALREADY RUNNING this task in its pinned worktree, with genuine child ownership
+and deadline recorded in `.runtime/chief-chat-command.lock` and
+`.runtime/chief-active-child.json`. It starts no model/watcher. Do not start a
+second execution, change published attempt, clear its lock, or restart supervisor.
+The helper is an independent tool process, not a replacement coordinator.
+At20:15:51 the primary historical checker had genuinely passed in198.016seconds;
+the doubled checker was still running. No personalized success is asserted.
+Runtime handoff including the active tool session is in
+`.runtime/chief-personalized-handoff.json`. Inspect actual process/receipt before
+any next execution. Task timeout is25minutes; preserve an actual failure if any.
+
+Next useful chain:
+1. Monitor that EXISTING one-shot; fetch exact work/chief/CHIEF-PERSONALIZED-RUN-001-a1
+   receipt. Use verify_canonical_receipt.verify(id,R) and the newly qualified
+   audit/chief/check_personalized_result.py --commit R --root
+   results/development/CHIEF-PERSONALIZED-RUN-001. This independent Fraction
+   accounting/metric/latch checker passed34443 qualification comparisons,
+   600 exact B-prefix checks and3 corruptions. Qualification is not production
+   acceptance. Accept actual ten outcomes, including failures/referrals, and
+   promote exact artifact/receipt paths/hashes in review AND queue before bases.
+2. Prepare accepted development review from actual selection680c... and actual
+   personalized component_payload rows; use existing prepare_takeover_final.py
+   reviews/config/task stages. Final source remains7053..., not personalized11a...
+   Use its existing accepted CHIEF-FINAL-SOURCE-V2-20261020 review at9314d088...
+   or resolve exact pushed approval from Git. Run true chief refit on3600 rows,
+   then audit/chief/check_actual_refit.py for10800 binary64 values/hashes.
+3. Complete the freeze, separately EXECUTE closed-gate check_frozen_execution.py,
+   record actual attestation, then later gate/config/task commits. Follow the
+   detailed unchanged freeze/final steps below. No final data have been opened.
+4. Manuscript now has accepted promotion table, honest failed complexity gates,
+   same-mode sensitivity interpretation and a mechanically<=50-word explanation.
+   report/build_submission.py metadata build passed. Only executive recommendation,
+   personalized results, final evaluation and conclusion remain as explicit slots.
+   Current text is3354 words; earlier six-page PDF is historical and must be
+   regenerated/rendered after completion. Source supplement/report remain unfinished.
+
+Quota last observed88%, floor40%; no drain observed. No new human help is needed.
+Keep source/config/task, independent acceptance and final freeze gates unchanged.
+
+---
+
 # Current chief + HY3 execution checkpoint, 2026-10-20 evening
 
 This is the current checkpoint, superseding stale pending-Sol fields in old
