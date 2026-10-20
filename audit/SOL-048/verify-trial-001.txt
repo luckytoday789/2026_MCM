@@ -1,0 +1,5 @@
+
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-048-a1\audit\SOL-048\verify.py", line 55
+    traces.setdefault('receipts',{})[ident]=dict(result_commit=c,base_commit=r['base_commit'],task_sha256=r['task_sha256'],receipt_sha256=hashes[c+':handoff/'+ident+'/result.json'],acceptance=q['acceptance_evidence'],recorded_exits=[x['exit_code'] for x in r['checks'] )
+                                                                                                                                                                                                                                                                             ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '['

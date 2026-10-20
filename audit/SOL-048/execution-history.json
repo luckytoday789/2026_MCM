@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "normal_shell_tool_failures": [
+    {
+      "tool": "exec_command",
+      "attempts": 2,
+      "process_created": false,
+      "error": "helper_unknown_error: setup refresh had errors"
+    }
+  ],
+  "fallback": "node:child_process.execFile with shell=false and windowsHide=true",
+  "executions": [
+    {
+      "argv": [
+        "python",
+        "--version"
+      ],
+      "cwd": "E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-048-a1",
+      "started_at": "2026-10-20T14:19:19.250Z",
+      "exit_code": 0,
+      "stdout": "Python 3.12.14\r\n",
+      "stderr": "",
+      "stdout_sha256": "6877d6d2b9c7405cc7f999574eed2c9d7d7199eb9bfb91c3b4be8b48e4c3221a"
+    },
+    {
+      "argv": [
+        "py",
+        "-3.12",
+        "--version"
+      ],
+      "cwd": "E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-048-a1",
+      "started_at": "2026-10-20T14:19:19.358Z",
+      "exit_code": "ENOENT",
+      "stdout": "",
+      "stderr": "",
+      "error": "spawn py ENOENT",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "report/build_submission.py",
+        "--output-dir",
+        ".runtime/SOL-048-manuscript-source",
+        "--metadata-only"
+      ],
+      "cwd": "E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-048-a1",
+      "started_at": "2026-10-20T14:19:28.811Z",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "cbefaeb338b446b847a898e118aa867247a3b9c4d43816d00f194f2014c8ed60",
+      "log": "audit/SOL-048/metadata-build.txt",
+      "log_sha256": "2b8e339e1ffc8462106aa56be29aafcc2df11f0dcd354f7dfb96034d7f47776f",
+      "log_hash_basis": "canonical LF Git text"
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "cfde9523416113005e9de99325595d5823be94f1:ops/tasks/SOL-048.json"
+      ],
+      "cwd": "E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-048-a1",
+      "started_at": "2026-10-20T14:21:13.743Z",
+      "exit_code": 128,
+      "stdout": "",
+      "stderr": "fatal: path 'ops/tasks/SOL-048.json' does not exist in 'cfde9523416113005e9de99325595d5823be94f1'\n",
+      "error": "Command failed: git show cfde9523416113005e9de99325595d5823be94f1:ops/tasks/SOL-048.json\nfatal: path 'ops/tasks/SOL-048.json' does not exist in 'cfde9523416113005e9de99325595d5823be94f1'\n",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "log",
+        "--all",
+        "-1",
+        "--format=%H",
+        "--",
+        "ops/tasks/SOL-048.json"
+      ],
+      "cwd": "E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-048-a1",
+      "started_at": "2026-10-20T14:21:36.867Z",
+      "exit_code": 0,
+      "stdout": "3dc37e6aad87a9fca7afa0c2773992f38746bd98\n",
+      "stderr": "",
+      "stdout_sha256": "48bc0ed15719c24a93fccec6774eccdf398a5d88f34092014b9a37ca8ad29066"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "origin/main"
+      ],
+      "cwd": "E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-048-a1",
+      "started_at": "2026-10-20T14:21:37.073Z",
+      "exit_code": 0,
+      "stdout": "18d24ab81e36b11f957848dc4f280d6bbf472e00\n",
+      "stderr": "",
+      "stdout_sha256": "82b930e0a5efe46584849df21fa3c2b0777fce545aca4a7cbcc9475cf1aa7c66"
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "audit/SOL-048/verify.py",
+        "--check"
+      ],
+      "cwd": "E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-048-a1",
+      "started_at": "2026-10-20T14:25:15.838Z",
+      "exit_code": 1,
+      "stderr": "  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-048-a1\\audit\\SOL-048\\verify.py\", line 55\r\n    traces.setdefault('receipts',{})[ident]=dict(result_commit=c,base_commit=r['base_commit'],task_sha256=r['task_sha256'],receipt_sha256=hashes[c+':handoff/'+ident+'/result.json'],acceptance=q['acceptance_evidence'],recorded_exits=[x['exit_code'] for x in r['checks'] )\r\n                                                                                                                                                                                                                                                                             ^\r\nSyntaxError: closing parenthesis ')' does not match opening parenthesis '['\r\n",
+      "error": "Command failed: python -B audit/SOL-048/verify.py --check\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-048-a1\\audit\\SOL-048\\verify.py\", line 55\r\n    traces.setdefault('receipts',{})[ident]=dict(result_commit=c,base_commit=r['base_commit'],task_sha256=r['task_sha256'],receipt_sha256=hashes[c+':handoff/'+ident+'/result.json'],acceptance=q['acceptance_evidence'],recorded_exits=[x['exit_code'] for x in r['checks'] )\r\n                                                                                                                                                                                                                                                                             ^\r\nSyntaxError: closing parenthesis ')' does not match opening parenthesis '['\r\n",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log": "audit/SOL-048/verify-trial-001.txt",
+      "verifier_source": "audit/SOL-048/verify-trial-001.py",
+      "verifier_source_sha256": "4b81b3c51ff99b8dff1727a659a7fb93bc38cab1984bbcc1e5d07943e63f5e08",
+      "log_sha256": "641671dcba41d76516a151325c1c4e74eac93213f68b99903f04b02838589b72",
+      "log_hash_basis": "canonical LF Git text"
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "audit/SOL-048/verify.py",
+        "--check"
+      ],
+      "cwd": "E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-048-a1",
+      "started_at": "2026-10-20T14:25:24.454Z",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-048-a1\\audit\\SOL-048\\verify.py\", line 261, in <module>\r\n    main()\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-048-a1\\audit\\SOL-048\\verify.py\", line 234, in main\r\n    traces['development_severe']=ledger_path('HY3-004','results/development/HY3-004/cases/balanced_cost/annual_ledgers.csv',114,30,dw)\r\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-048-a1\\audit\\SOL-048\\verify.py\", line 85, in ledger_path\r\n    allrows=rows(ident,path); rr=sorted([r for r in allrows if int(r['scenario_id'])==sid and int(r['year'])<=H],key=lambda r:int(r['year']))\r\n                                                                                                  ~^^^^^^^^\r\nKeyError: 'year'\r\n",
+      "error": "Command failed: python -B audit/SOL-048/verify.py --check\nTraceback (most recent call last):\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-048-a1\\audit\\SOL-048\\verify.py\", line 261, in <module>\r\n    main()\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-048-a1\\audit\\SOL-048\\verify.py\", line 234, in main\r\n    traces['development_severe']=ledger_path('HY3-004','results/development/HY3-004/cases/balanced_cost/annual_ledgers.csv',114,30,dw)\r\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-048-a1\\audit\\SOL-048\\verify.py\", line 85, in ledger_path\r\n    allrows=rows(ident,path); rr=sorted([r for r in allrows if int(r['scenario_id'])==sid and int(r['year'])<=H],key=lambda r:int(r['year']))\r\n                                                                                                  ~^^^^^^^^\r\nKeyError: 'year'\r\n",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log": "audit/SOL-048/verify-trial-002.txt",
+      "verifier_source": "audit/SOL-048/verify-trial-002.py",
+      "verifier_source_sha256": "d6745911e7d73177179bdf4316327f505f748f28584f2b9b43b73e37684e6561",
+      "log_sha256": "c4947703a63d4fcf90aa9bef28014b0e60a9ad987c68e5627a86c76e23e5290d",
+      "log_hash_basis": "canonical LF Git text"
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "audit/SOL-048/verify.py",
+        "--check"
+      ],
+      "cwd": "E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-048-a1",
+      "started_at": "2026-10-20T14:25:55.299Z",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "087061f4f8421da3576ed6a51464f01e197a4630631df6471b787f9d2106e32b",
+      "log": "audit/SOL-048/verify-trial-003.txt",
+      "verifier_source": "audit/SOL-048/verify-trial-003.py",
+      "verifier_source_sha256": "bc1be484204b2433e3298f8994d31ea1dce84bfab856347167c8a3c91bcf902f",
+      "log_sha256": "6376ea2c742f2bbf315fe4a6c9770e0d55d968ad2fd2be3e26c3ff50aa10fae2",
+      "log_hash_basis": "canonical LF Git text"
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "audit/SOL-048/verify.py",
+        "--check"
+      ],
+      "cwd": "E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-048-a1",
+      "started_at": "2026-10-20T14:28:07.457Z",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "04f62bf432623e175350c04a3d821547b7361dd90be1b3e4557f22b4418b86b9",
+      "log": "audit/SOL-048/verify-trial-004.txt",
+      "verifier_source": "audit/SOL-048/verify-trial-004.py",
+      "verifier_source_sha256": "7cbe4114c24b627244070f0eedf6b204330a3d7c6dddeddb4eab10331050444b",
+      "log_sha256": "56348ac0fe7e63cb7480ccfdc298df05c7ef95952a37a343fef4a33d3a1019b5",
+      "log_hash_basis": "canonical LF Git text"
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "audit/SOL-048/verify.py",
+        "--check"
+      ],
+      "cwd": "E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-048-a1",
+      "started_at": "2026-10-20T14:29:27.137Z",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "bcbcfd3dd40d7fa80ed88c77d91f09d871b8662c8e97238dcb64e3072d52fa46",
+      "log": "audit/SOL-048/verify-trial-005.txt",
+      "verifier_source": "audit/SOL-048/verify-trial-005.py",
+      "verifier_source_sha256": "12571804480d2ec7b7851d76cb1677a600efe2f30163f45809ef8c6c59afd82d",
+      "log_sha256": "95cef574207fd1cd1a48db1a90882775c092cac1a1d6498f599dc6e09e7e436d",
+      "log_hash_basis": "canonical LF Git text"
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "audit/SOL-048/verify.py",
+        "--check"
+      ],
+      "cwd": "E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-048-a1",
+      "started_at": "2026-10-20T14:33:46.223Z",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "dd73d22c447c9d5845d4471f78dcedc0f413d58ee139004304a30d622a112d13",
+      "log": "audit/SOL-048/verify.txt",
+      "verifier_source": "audit/SOL-048/verify.py",
+      "log_sha256": "a2716fbc08a90dc11436fd8f2391d13bc92052320cb0fd15f4aa602228185a3a",
+      "log_hash_basis": "canonical LF Git text",
+      "verifier_source_sha256": "23e52addf6542e2f6011dbbacbf555bf7a56a4da2be2d1262b8fa6b5992cb425"
+    }
+  ],
+  "final_delivery_checks": [
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short",
+        "--untracked-files=all"
+      ],
+      "cwd": "E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-048-a1",
+      "started_at": "2026-10-20T14:32:30.693Z",
+      "exit_code": 0,
+      "stdout": "?? audit/SOL-048/build-provenance.json\n?? audit/SOL-048/execution-history.json\n?? audit/SOL-048/expanded-draft.md\n?? audit/SOL-048/findings.json\n?? audit/SOL-048/review.md\n?? audit/SOL-048/verification.json\n?? audit/SOL-048/verify-trial-001.py\n?? audit/SOL-048/verify-trial-002.py\n?? audit/SOL-048/verify-trial-003.py\n?? audit/SOL-048/verify-trial-004.py\n?? audit/SOL-048/verify.py\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "cwd": "E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-048-a1",
+      "started_at": "2026-10-20T14:32:30.829Z",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-048-a1",
+      "started_at": "2026-10-20T14:32:30.950Z",
+      "exit_code": 0,
+      "stdout": "cfde9523416113005e9de99325595d5823be94f1\n",
+      "stderr": ""
+    }
+  ]
+}

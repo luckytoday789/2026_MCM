@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-048",
+  "attempt": 1,
+  "reviewer_role": "sol",
+  "verdict": "approve",
+  "blocking_findings": [],
+  "optional_findings": [
+    {
+      "id": "O1",
+      "severity": "optional",
+      "location": "report/submission-draft.md, certainty-equivalent paragraph",
+      "finding": "The intended inverse-cube expectation is supported by the methods note and frozen kernel, but the plain-text formula can be read with the power outside the expectation.",
+      "suggestion": "At a later authorized editorial pass, spell it C_P(x) = (E_P[(sum_i x_i g_i)^(-3)])^(-1/3). This does not require a policy or numerical change.",
+      "blocking": false
+    },
+    {
+      "id": "O2",
+      "severity": "optional",
+      "location": "report/evidence-map.json requirements R04/R06",
+      "finding": "Some remaining-work descriptions still say actual009/personalized/final work remains even though accepted sources and the complete manuscript now contain that work.",
+      "suggestion": "Refresh those status descriptions when recording manuscript acceptance; preserve historical source snapshots.",
+      "blocking": false
+    }
+  ],
+  "approval_scope": "Exact complete manuscript text and its evidence/mathematics claims at the pinned base and archived metadata-only expansion. No submission-readiness or final-artifact approval.",
+  "base_commit": "cfde9523416113005e9de99325595d5823be94f1",
+  "task_publication_commit": "3dc37e6aad87a9fca7afa0c2773992f38746bd98",
+  "task_digest": "d856ba979747dca715aa91f817bf36e0751012e0111a52349731cbf0a9c589ee",
+  "source_sha256": {
+    "report/submission-draft.md": "955eba3747e5f68945576df316ce0c3f85fa65ac3ad535b5497894538c3c52de",
+    "report/build_submission.py": "b13666e49ef78656c46f0fcc2f6db23cab5b8af601e1b129b0a9debf1819b43f",
+    "report/submission-status.json": "6b9a4e6094c28d8be3b73813c96addf479faf6874e61b03f03cdcc18fb49aee8",
+    "report/evidence-map.json": "792a9ab0b63c87e92aa6ff29402a84254f787ff40d47a7fe2f9e63978afe6159",
+    "report/final-evaluation.md": "c16f0862ed87d2c58dce898db1aed4b5502302bac0df3bfed66e2fdca817418b",
+    "report/final-evaluation-provenance.json": "72f565b37471d24053190bc25476803b17a6adc1f66716ac22e062a55cadc842",
+    "report/build_final_note.py": "a6faecc17c7f868d1349ab1941260fa1ddb9528027f0ae42b68e71d55a328868",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "audit/chief/check_complete_manuscript.py": "56ce69e074e85af650caf87c230ee4803217cd1fbcac4f4621b07e9ea7f88f65",
+    "audit/chief/complete-manuscript-check-20261020.json": "0bc2be2ad3eb5fd91d8a8e898f7bf56e1676ca9737c5d721192f33b39cb774a1",
+    "audit/chief/complete-manuscript-layout-20261020.json": "b10e58bb3ed806f9b357089e3d1fb555c40df18acecb3959d56805328097bc2f"
+  },
+  "expanded_text": {
+    "path": "audit/SOL-048/expanded-draft.md",
+    "sha256": "ba4d88b2dc0cbe3489eadf1aea09faf5c6c54b8186adfaa3c832fa394b8394e0",
+    "word_count": 4436,
+    "customer_word_count": 39,
+    "original_output": ".runtime/SOL-048-manuscript-source/expanded-draft.md",
+    "hash_basis": "canonical LF Git text; same text as prescribed original output",
+    "original_output_checkout_sha256": "e15f606eeb51fc563d7488ad1a61d3479eb5ca70c3e3e64988aa648099c8d651"
+  },
+  "reviewed_result_commits": {
+    "HY3-003": "7652410d73425371110784ef5fa97c03470a074e",
+    "HY3-004": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
+    "HY3-006": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+    "HY3-009": "680c2faaf603df975c35e828aeebdadd8ce242cb",
+    "CHIEF-PERSONALIZED-RUN-002": "b334b27a2f9fb8df99a6dee611e298bd0dc867d3",
+    "HY3-010": "4b8ac5d6822ac39ff1189c13d34ed3f84f699319"
+  },
+  "frozen_execution_source": "7053b41ce81b1e04100d56a24a321e51b3465459",
+  "freeze_commit": "06086aed327aa626ddc91472f943c2c9fba1259a",
+  "verification": {
+    "path": "audit/SOL-048/verification.json",
+    "argv": [
+      "python",
+      "-B",
+      "audit/SOL-048/verify.py",
+      "--check"
+    ],
+    "exit_code": 0,
+    "checks": 30171,
+    "authenticated_git_blobs": 104,
+    "corruptions_rejected": [
+      {
+        "name": "reporting fixture substitutes difference of marginal medians for paired median",
+        "rejected": true,
+        "reason": "('corrupt paired report', 0.6560295198227202, 0.8141000121909325)"
+      },
+      {
+        "name": "arithmetical fixture changes terminal wealth but retains CAGR",
+        "rejected": true,
+        "reason": "('corrupt CAGR', 2.171474954935171, 2.189307733193102)"
+      },
+      {
+        "name": "expanded reporting fixture changes final fixed median to9.03",
+        "rejected": true,
+        "reason": "('display row absent', '| Balanced fixed | 4.03 | 1.52 | 27.48 | 46.60 | 10.05 | 10.50 | 7.41 |')"
+      }
+    ],
+    "verifier_sha256": "23e52addf6542e2f6011dbbacbf555bf7a56a4da2be2d1262b8fa6b5992cb425"
+  },
+  "coverage": [
+    "Entire executive summary, sections1-7, all expanded tables, severe cases, sources and AI-use disclosure read.",
+    "Fee convention and exact inflation independently derived; saved severe ledger identities, CAGR, annual sample deviation and event drawdown recomputed.",
+    "CRRA4 certainty equivalent/homogeneity and sufficient buffered-cost condition independently derived; no fee doubling.",
+    "No-lookahead reviewed by frozen source order, training-fold complement metadata and3600 saved context/adaptive history/score diagnostics. No policy execution or perturbation test.",
+    "Own-horizon eligibility independently checked against30 saved profile screens; four personalized development outcomes and six upstream referrals retained.",
+    "Four primary development comparisons recomputed from saved paired scenario metrics, including all failures; default fixed mode retained, sensitivity cannot reselect.",
+    "Final fixed4.03/1.52/27.48/46.60 versus annual3.38/1.50/22.30/39.53; paired0.814 distinct from marginal median0.656; final promotion remains null.",
+    "B/C p90 failures at both fees and7/60 each; A/D/E zero-case referrals; all A-E human review, no fallback.",
+    "Balanced severe172, annual on172 and annual own-worst155 independently traced from saved ledgers.",
+    "Same-mode fee comparison with identical development calibration metadata and frozen final choice; actions may change.",
+    "Original <=10 A4 pages,>=11pt,three local-only names,AI disclosure and human submission checked against locked instructions; chief eight-page record treated as evidence only."
+  ],
+  "practical_limits": [
+    "No original observations read; saved return/wealth consistency does not authenticate original values.",
+    "No policy executed or decisions independently reselected; source order and saved score/history diagnostics reviewed.",
+    "Chief recorded997883 checks are authenticated prior evidence, not executed or claimed as this reviewers work.",
+    "No PDF/PNG/private-name inspection or ZIP/layout certification."
+  ],
+  "separate_release_gates": [
+    "Local private-name insertion and correct display of all three names.",
+    "Removal of review-copy/pending-acceptance markers in an authorized final copy.",
+    "Final latest-copy rendering and visual/page/font checks.",
+    "Code ZIP integrity,size<=50MB,source attribution and human package/submission checks."
+  ],
+  "constraints": {
+    "changed_paths_only": "audit/SOL-048",
+    "prescribed_runtime_output_only_exception": true,
+    "original_observations_read": false,
+    "metadata_files_read": [
+      "data/manifest.json",
+      "data/README.md"
+    ],
+    "policy_executed": false,
+    "retuned": false,
+    "private_files_read": false,
+    "chief_checker_executed": false,
+    "committed": false,
+    "pushed": false,
+    "changed_branch": false,
+    "started_watcher": false,
+    "submission_ready": false
+  },
+  "created_at": "2026-10-20T14:32:05.279Z"
+}
