@@ -2048,29 +2048,54 @@
     {
       "id": "SOL-045",
       "owner": "sol",
-      "state": "ready",
+      "state": "accepted",
       "attempt": 1,
       "branch": "work/sol/SOL-045-a1",
       "task_sha256": "3eb2f36244f9b65081f45bfc98c1a12ee3aa156eb679e7f8cc379f4ceb285e93",
-      "note": "One post21:40 real probe only; no calls while waiting."
+      "note": "Actual one-call assigned-model response started21:40:00.006620+08; exact canonical receipt and hashes accepted. Availability only.",
+      "reviewed_commit": "87cf934348c3a78ce10299fa7aece8168ade0c43",
+      "result_verdict": "approve",
+      "acceptance_evidence": "audit/chief/SOL-045-review.json",
+      "accepted_paths": [
+        "audit/SOL-045/availability.json",
+        "handoff/SOL-045/check-0.txt",
+        "handoff/SOL-045/check-1.txt",
+        "handoff/SOL-045/check-2.txt",
+        "handoff/SOL-045/result.json"
+      ],
+      "artifacts_sha256": {
+        "audit/SOL-045/availability.json": "4725461fa0b112820453e883d922f6ce52b062f167afa19a67fe72962c575df9",
+        "handoff/SOL-045/check-0.txt": "a620d17433955533f42fcc4f2a757bbe1932bbc193707a6f0022fa350064e7df",
+        "handoff/SOL-045/check-1.txt": "27d4adb4bf885b10020c9507878bfdbe13f4f6680f1ac2826061a74327fda457",
+        "handoff/SOL-045/check-2.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
     },
     {
       "id": "SOL-046",
       "owner": "sol",
-      "state": "waiting",
+      "state": "ready",
       "attempt": 1,
       "branch": "work/sol/SOL-046-a1",
       "task_sha256": "552aea7f5b6a95f64b85a25146a0839768ca6586d1efc84abe64fc47a848d944",
-      "note": "Hold until exact SOL-045 successful receipt accepted; supplemental actual-source/development review. No original final data or policy tuning."
+      "note": "Resource hold released after actual accepted SOL-045 87cf934348c3a78ce10299fa7aece8168ade0c43; immutable task unchanged. Exact source/result pins remain authoritative."
     },
     {
       "id": "SOL-047",
       "owner": "sol",
-      "state": "waiting",
+      "state": "ready",
       "attempt": 1,
       "branch": "work/sol/SOL-047-a1",
       "task_sha256": "ae1a5de57287100c8e316e2a9c32651fe20b7c9d1cd27edec651d9ac8dbdc439",
-      "note": "Hold for exact accepted post21:40 SOL-045 availability. Targeted independent actual final outcome/note review; no raw final data or policy tuning."
+      "note": "Resource hold released after actual accepted SOL-045 87cf934348c3a78ce10299fa7aece8168ade0c43; immutable task unchanged. Exact source/result pins remain authoritative."
+    },
+    {
+      "id": "SOL-048",
+      "owner": "sol",
+      "state": "ready",
+      "attempt": 1,
+      "branch": "work/sol/SOL-048-a1",
+      "task_sha256": "d856ba979747dca715aa91f817bf36e0751012e0111a52349731cbf0a9c589ee",
+      "note": "Complete source cfde952 pushed before publication; independent whole-manuscript review released after exact successful SOL-045."
     }
   ]
 }

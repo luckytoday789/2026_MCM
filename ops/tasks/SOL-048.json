@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": "SOL-048",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "cfde9523416113005e9de99325595d5823be94f1",
+  "depends_on": [
+    "SOL-045",
+    "HY3-010"
+  ],
+  "split": "none",
+  "max_seconds": 1200,
+  "scope": "Independent whole complete-manuscript evidence/mathematics review at exact source; no original inputs, production reruns, policy changes or private identities.",
+  "parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "source_commit": "cfde9523416113005e9de99325595d5823be94f1",
+    "source_sha256": {
+      "report/submission-draft.md": "955eba3747e5f68945576df316ce0c3f85fa65ac3ad535b5497894538c3c52de",
+      "report/build_submission.py": "b13666e49ef78656c46f0fcc2f6db23cab5b8af601e1b129b0a9debf1819b43f",
+      "report/submission-status.json": "6b9a4e6094c28d8be3b73813c96addf479faf6874e61b03f03cdcc18fb49aee8",
+      "report/evidence-map.json": "792a9ab0b63c87e92aa6ff29402a84254f787ff40d47a7fe2f9e63978afe6159",
+      "report/final-evaluation.md": "c16f0862ed87d2c58dce898db1aed4b5502302bac0df3bfed66e2fdca817418b",
+      "report/final-evaluation-provenance.json": "72f565b37471d24053190bc25476803b17a6adc1f66716ac22e062a55cadc842",
+      "report/build_final_note.py": "a6faecc17c7f868d1349ab1941260fa1ddb9528027f0ae42b68e71d55a328868",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "audit/chief/check_complete_manuscript.py": "56ce69e074e85af650caf87c230ee4803217cd1fbcac4f4621b07e9ea7f88f65",
+      "audit/chief/complete-manuscript-check-20261020.json": "0bc2be2ad3eb5fd91d8a8e898f7bf56e1676ca9737c5d721192f33b39cb774a1",
+      "audit/chief/complete-manuscript-layout-20261020.json": "b10e58bb3ed806f9b357089e3d1fb555c40df18acecb3959d56805328097bc2f"
+    },
+    "result_commit": "4b8ac5d6822ac39ff1189c13d34ed3f84f699319",
+    "output_root": "audit/SOL-048"
+  },
+  "allowed_paths": [
+    "audit/SOL-048"
+  ],
+  "deliverables": [
+    "audit/SOL-048/findings.json",
+    "audit/SOL-048/review.md",
+    "audit/SOL-048/verify.py",
+    "audit/SOL-048/verification.json"
+  ],
+  "commands": [
+    [
+      "{python}",
+      "-B",
+      "report/build_submission.py",
+      "--output-dir",
+      ".runtime/SOL-048-manuscript-source",
+      "--metadata-only"
+    ]
+  ],
+  "validation_commands": [
+    [
+      "{python}",
+      "-B",
+      "audit/SOL-048/verify.py",
+      "--check"
+    ]
+  ],
+  "acceptance_checks": [
+    "Exact canonical receipt/task/base/source/artifact hashes and genuine executions.",
+    "Independently trace representative development/final/fee/client/severe/paired values from saved accepted blobs into expanded full text; identify every actual blocking misstatement.",
+    "Abstract,results,conclusion agree all A-E human review; four B/C failures with7/60 beyond tolerance, six referrals and no fallback; 39-word customer explanation <=50.",
+    "No generic contest rules override original <=10 A4 pages >=11pt,three local-only names and AI disclosure; chief actual8-page layout record is evidence, not a remote visual inspection.",
+    "No source/config/task/queue changes,original observations,production runs,private names,policy tuning or submission."
+  ],
+  "instructions": "Review the entire complete manuscript at exact base and expanded text produced by the prescribed metadata-only command. Independently derive/check fee convention,exact CPI and real-growth/drawdown interpretation,no-lookahead,own-horizon eligibility,certainty-equivalent and buffered-cost explanation. Trace representative values using accepted saved CSV/JSON blobs, including development selection failure and no final re-ranking. Explicitly check final fixed Balanced4.03/1.52/27.48/46.60 vs annual3.38/1.50/22.30/39.53,paired0.814 vs marginal differences,all-client referrals,B/C primary p90 26.46/40.52 and both fees7/60,severe172 and baseline same-path versus own-worst155. Check same-mode cost sensitivity and claims/limitations/AI attribution for consistency. Do not merely repeat chief checker; write narrow independent saved-fixture verify.py --check,readonly with a deliberately corrupted reporting/arithmetical fixture rejected. Record real argv/exits/logs and exact reviewed commits. findings verdict approve/changes_required,blocking versus optional findings and practical verification limits. Review approval covers the exact text and evidence claims only; local private-name insertion,removal of review-copy markers and final layout/package gates remain separate. Never read original data/ observations,execute a policy,retune,edit manuscript/source or inspect private files. Parent owns commit/push; only audit/SOL-048 may change."
+}

@@ -1,0 +1,50 @@
+{
+  "task_id": "SOL-045",
+  "reviewed_commit": "87cf934348c3a78ce10299fa7aece8168ade0c43",
+  "base_commit": "96b9ac2632695264f97ea08f0cce9b1009517cb0",
+  "task_sha256": "3eb2f36244f9b65081f45bfc98c1a12ee3aa156eb679e7f8cc379f4ceb285e93",
+  "branch": "work/sol/SOL-045-a1",
+  "structural_checks": "passed",
+  "source_hashes_checked": {
+    "scripts/probe_sol_availability.py": "03999b341b1c63063000e90a259813fd31ef62352457a8312b6c88c3a9771252",
+    "scripts/check_worker_env.py": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8"
+  },
+  "artifacts_sha256": {
+    "audit/SOL-045/availability.json": "4725461fa0b112820453e883d922f6ce52b062f167afa19a67fe72962c575df9",
+    "handoff/SOL-045/check-0.txt": "a620d17433955533f42fcc4f2a757bbe1932bbc193707a6f0022fa350064e7df",
+    "handoff/SOL-045/check-1.txt": "27d4adb4bf885b10020c9507878bfdbe13f4f6680f1ac2826061a74327fda457",
+    "handoff/SOL-045/check-2.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "accepted_paths": [
+    "audit/SOL-045/availability.json",
+    "handoff/SOL-045/check-0.txt",
+    "handoff/SOL-045/check-1.txt",
+    "handoff/SOL-045/check-2.txt",
+    "handoff/SOL-045/result.json"
+  ],
+  "excluded_paths": [],
+  "receipt_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "prescribed_command_count": 3,
+  "status": "accepted",
+  "result_verdict": "approve",
+  "verdict": "approve",
+  "probe": {
+    "schema_version": 1,
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "xhigh",
+    "not_before": "2026-10-20T21:40:00+08:00",
+    "started_at": "2026-10-20T13:40:00.006620+00:00",
+    "finished_at": "2026-10-20T13:40:52.383980+00:00",
+    "model_calls": 1,
+    "exit_code": 0,
+    "usable": true,
+    "expected_response": "SAFEINVEST_SOL_AVAILABLE",
+    "response": "SAFEINVEST_SOL_AVAILABLE",
+    "error": null,
+    "quota_error_detected": false,
+    "model_log_sha256": "0ad978303b95b0bf5d6a8cf5a21e9079be66e62e045d98379b89c57d090940e9",
+    "note": "A real response proves availability only at probe time, not remaining review budget."
+  },
+  "scope": "Availability at actual probe time only; not remaining review budget or mathematical acceptance.",
+  "reviewed_at": "2026-10-20T13:43:40.273438+00:00"
+}
