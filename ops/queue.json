@@ -1872,6 +1872,15 @@
         "results/development/CHIEF-PERSONALIZED-RUN-002/personalized_summary.csv": "ca02cc1e32cc8ba28d80d09be67d7aa6df667c6dbc4e5e735760928c8191a614",
         "results/development/CHIEF-PERSONALIZED-RUN-002/run_manifest.json": "839fa131971720f7d2ae1db38066270b08938062a30b6f90caf72b00984ea77c"
       }
+    },
+    {
+      "id": "CHIEF-REFIT-001",
+      "owner": "chief",
+      "state": "ready",
+      "attempt": 1,
+      "branch": "work/chief/CHIEF-REFIT-001-a1",
+      "task_sha256": "44521efdf6df18ee474fa0e472ce93574c18944f2ed0215f579a20f8a6d3848a",
+      "note": "Fixed all3600 development refit after exact personalized acceptance; independent10800-value oracle required before freeze."
     }
   ]
 }
