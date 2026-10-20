@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+    "-B",
+    "audit/SOL-032/verify.py",
+    "--check"
+  ],
+  "cwd": "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-032-a1",
+  "executable": "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+  "index": 2,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "pythonpath_keys": [],
+  "returncode": 0,
+  "seconds": 8.301699000003282,
+  "started_at": "2026-10-20T04:08:08.257517+00:00",
+  "stderr": "command-2.stderr.txt",
+  "stdout": "command-2.stdout.txt"
+}

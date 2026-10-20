@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T04:34:18.949881+00:00",
-  "reason": "Only independent remote SOL-032/SOL-033 reviews are currently actionable; incoming receipts trigger earlier turns. Production/final remain gated.",
+  "next_wake_at": "2026-10-20T04:21:17.371580+00:00",
+  "reason": "SOL-032 accepted; publish fresh fixed configurations and real-base development jobs, then targeted reviews and assembly implementation.",
   "next_actions": [
     "Do not mutate/recreate SOL-031/SOL-030/SOL-032/SOL-033 or restart any runner/supervisor. Status branches are metadata only.",
     "Review exact new SOL-032 result and actual44-file/missing-file local Git runner fixtures. If positive, accept only reviewed audit paths and precise reviewed SHA, then push new source C including acceptance. If failed, preserve and make a new immutable corrected task.",
@@ -51,5 +51,8 @@
   "baseline_figure_correction_review_task": "SOL-033",
   "baseline_figure_failed_review_commit": "414498aaa373c6f0081d829f4020f0b5c33c6424",
   "last_checkpoint": "audit/chief/turn-20261020-writer-compatibility-and-report-recovery.json",
-  "writer_compatibility_dispatch_preflight": "audit/chief/writer-compatibility-dispatch-preflight.json"
+  "writer_compatibility_dispatch_preflight": "audit/chief/writer-compatibility-dispatch-preflight.json",
+  "writer_compatibility_reviewed_commit": "d168757efbc70e4641deacc911976f1fa3bd7a7c",
+  "writer_compatibility_acceptance": "audit/chief/SOL-032-review.json",
+  "development_results_review_handoff": "specs/DEVELOPMENT_CASE_RESULTS_REVIEW.md"
 }

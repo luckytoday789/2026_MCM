@@ -1,0 +1,5 @@
+{
+  "returncode": 1,
+  "diagnosis": "All semantic cases ran, but final audit-directory snapshot detected concurrently written command-2 logs. Audit harness scheduling error; source/evidence inventory check itself did not fail. Retest serially without evidence writes.",
+  "preserved": true
+}

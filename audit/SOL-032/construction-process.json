@@ -1,0 +1,10 @@
+{
+  "pid": 42144,
+  "started_at": "2026-10-20T04:04:15.074Z",
+  "argv": [
+    "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+    "-B",
+    ".runtime/clean-subprocess.py",
+    "audit/SOL-032/construct.py"
+  ]
+}

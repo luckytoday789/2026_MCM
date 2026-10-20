@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-032",
+  "attempt": 1,
+  "owner": "sol",
+  "code_verdict": "approve",
+  "base_commit": "e33b748c29d366559706d5272319d9138f0c7aa4",
+  "publication_commit": "21d235be2ba4cb8eb1baa25deb67ecaf9e2f6445",
+  "predecessor_reviewed_writer_commit": "a24dca5d5494455407207e0fd70c06b258d4fd1f",
+  "task_digest": "776a649d49058b47f71db7fdbb3269452077f2063c5ba313dea574467031c657",
+  "writer_source_sha256": "feca1b69de00cb5677337796c32ab91cd7262351bfed9c9ee5ac1ff5fab46226",
+  "expected_file_deliverables": 44,
+  "scope": "Independent audit of three narrow writer edits and compatibility with unchanged worker runner; synthetic boundary and local Git fixtures only.",
+  "boundary_cases": 22,
+  "real_runner": {
+    "complete_outputs": 44,
+    "failed_missing_file_outputs": 43,
+    "canonical_hashes_verified": [
+      46,
+      45
+    ],
+    "complete_redelivery_and_deduplication": true,
+    "failed_attempt_run_task_calls": 1,
+    "earlier_outputs_preserved": true
+  },
+  "preserved_failures": [
+    "interrupted-trial.json",
+    "overlay-trial001.json",
+    "runtime.json: missing-file failed receipt",
+    "pinned historical chief integration regression remains unchanged"
+  ],
+  "findings": [],
+  "limitations": [
+    "Git proof is a portable replay of observed local fixture objects, not a claim of production authorization.",
+    "Pre-existing chief dispatch changes between predecessor and base are outside this audit; worker runner functions are identical."
+  ],
+  "remaining_gates": [
+    "Coordinator exact-commit review and acceptance of SOL-032.",
+    "Publish accepted source C, distinctly named fixed configurations E, and separate real-base commands tasks.",
+    "Run and independently accept actual development results before making performance claims.",
+    "Recorded freeze and explicit final-data gate before final evaluation; no final tuning.",
+    "Human competition submission remains required."
+  ],
+  "production_execution_authorized": false,
+  "competition_outcomes_allowed": false,
+  "final_outcomes_allowed": false
+}
