@@ -1796,6 +1796,15 @@
       "task_sha256": "240ecd69c0cf79d63e89c70566d863ff068605042d96171f71817b07a1b90a73",
       "note": "Interrupted before production; both recorded child PIDs absent and no receipt. Preserve primary PASS and all local work. New immutable002 retains exact mathematics/source.",
       "acceptance_evidence": "audit/chief/personalized-run001-interruption/review.json"
+    },
+    {
+      "id": "CHIEF-PERSONALIZED-RUN-002",
+      "owner": "chief",
+      "state": "ready",
+      "attempt": 1,
+      "branch": "work/chief/CHIEF-PERSONALIZED-RUN-002-a1",
+      "task_sha256": "41f9b45b51010ffe62e4542736a3b9e6475f7684a1c537a3fd53bf9c23ea35da",
+      "note": "Unchanged source/parameters; new immutable execution after confirmed001 process loss. Preserve original primary PASS and absent-receipt finding."
     }
   ]
 }
