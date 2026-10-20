@@ -4,8 +4,11 @@
     2660,
     34140
   ],
-  "child_pids": [],
-  "current_task": null,
+  "child_pids": [
+    44752,
+    27056
+  ],
+  "current_task": "SOL-045",
   "alerts": [],
   "tasks": [
     {
@@ -727,6 +730,20 @@
         1
       ],
       "pending_upload": false
+    },
+    {
+      "key": "SOL-045-a1",
+      "task_id": "SOL-045",
+      "base": "96b9ac2632695264f97ea08f0cce9b1009517cb0",
+      "head": "96b9ac2632695264f97ea08f0cce9b1009517cb0",
+      "receipt_status": null,
+      "receipt_matches_task": false,
+      "queue_state": "ready",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": false,
+      "completed_record": false,
+      "pending_upload": false
     }
   ],
   "deadline": "2026-10-20T23:30:00+08:00",
@@ -735,8 +752,8 @@
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
     "state": "running",
     "python": "3.12.0",
-    "updated_at": "2026-10-20T13:11:04.206005+00:00",
-    "lease_until": "2026-10-20T13:21:04.206005+00:00",
+    "updated_at": "2026-10-20T13:19:14.009145+00:00",
+    "lease_until": "2026-10-20T13:29:14.009145+00:00",
     "task_id": "integrate-and-dispatch"
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
@@ -745,7 +762,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-20T13:12:30.687730+00:00",
+  "updated_at": "2026-10-20T13:23:26.863150+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
