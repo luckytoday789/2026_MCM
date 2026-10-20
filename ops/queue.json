@@ -1235,7 +1235,9 @@
         "handoff/SOL-032/result.json"
       ],
       "excluded_paths": [],
-      "acceptance_evidence": "audit/chief/SOL-032-review.json"
+      "acceptance_evidence": "audit/chief/SOL-032-review.json",
+      "acceptance_addendum": "audit/chief/SOL-032-acceptance-portability-addendum.json",
+      "audit_portability_limitation": "Later main raw inventory is checkout-EOL-dependent;111 text hashes differ onlyLF/CRLF. Exact reviewed code approval retained; new audit-only successor required."
     },
     {
       "id": "SOL-033",

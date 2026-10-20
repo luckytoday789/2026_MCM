@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T04:30:02.847206+00:00",
+  "task_id": "SOL-032",
+  "reviewed_commit": "d168757efbc70e4641deacc911976f1fa3bd7a7c",
+  "prior_acceptance": "audit/chief/SOL-032-review.json",
+  "new_failed_check": "audit/chief/turn-20261020-case-dispatch-final-checks.json",
+  "diagnosis": "audit/chief/SOL-032-later-main-inventory-diagnosis.json",
+  "raw_checkout_mismatches": 111,
+  "all111_equal_to_pinned_Git_after_CRLF_normalization": true,
+  "numeric_source_or_policy_change": false,
+  "code_verdict": "approve",
+  "code_acceptance_scope_unchanged": true,
+  "audit_portability": "changes_required_in_new_audit_only_successor",
+  "old_evidence_modified": false,
+  "production_task_reset_or_retune": false,
+  "competition_input_read": false,
+  "final_data_open": false
+}

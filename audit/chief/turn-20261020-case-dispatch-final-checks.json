@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T04:27:32.636773+00:00",
+  "actual_later_main_commit": "20e26e344be8ee460bbf67a2f0046a977f346dc0",
+  "active_task_integrity": [
+    {
+      "id": "HY3-004",
+      "base_commit": "93a232a926dc3d1bfb18e2866ef0ddb0aaf9bc0f",
+      "task_sha256": "14bb98ed9b6996d198513c1d29cbe8a7d44b489de7cde9a46f4fc27ce2bead89",
+      "source_pins": 28,
+      "all_dependencies_accepted": true
+    },
+    {
+      "id": "HY3-005",
+      "base_commit": "93a232a926dc3d1bfb18e2866ef0ddb0aaf9bc0f",
+      "task_sha256": "9473a3f93c04f668fe839ab9181496e564a27cdf11471b047907678c1a4807e3",
+      "source_pins": 28,
+      "all_dependencies_accepted": true
+    },
+    {
+      "id": "SOL-034",
+      "base_commit": "2ea73da59d393893f06a8169432c5d9e0b168c50",
+      "task_sha256": "16a85c9b253568747e720f6c7f6f3a84f897ab759af5aa981085ea60d636ddb9",
+      "source_pins": 38,
+      "all_dependencies_accepted": true
+    }
+  ],
+  "accepted_review_replays_at_later_HEAD": [
+    {
+      "task_id": "SOL-032",
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "audit/SOL-032/verify.py",
+        "--check"
+      ],
+      "exit_code": 1,
+      "seconds": 8.811999999976251,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"D:\\30576\\Documents\\2026_MCM\\audit\\SOL-032\\verify.py\", line 196, in <module>\n    print(json.dumps(check(),sort_keys=True))\n                     ^^^^^^^\n  File \"D:\\30576\\Documents\\2026_MCM\\audit\\SOL-032\\verify.py\", line 190, in check\n    require(inventory()==get('unchanged-inventory.json'),'source/old-evidence inventory changed')\n  File \"D:\\30576\\Documents\\2026_MCM\\audit\\SOL-032\\verify.py\", line 26, in require\n    if not ok:raise AssertionError(msg)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: source/old-evidence inventory changed\n"
+    },
+    {
+      "task_id": "SOL-033",
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "audit/SOL-033/verify.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 22.125,
+      "stdout": "{\"status\": \"passed\", \"read_only\": true, \"scope\": \"format restriction only\", \"publication_assets\": 4, \"excluded_svg_previews\": 2, \"source_pins\": 55, \"corruption_cases_rejected\": 5, \"original_failure_retained\": true, \"full_report_accepted\": false, \"renderer_invoked\": false}\n",
+      "stderr": ""
+    }
+  ],
+  "PYTHONPATH_absent": true,
+  "root_runtime_task_present": false,
+  "competition_input_read": false,
+  "final_data_open": false
+}

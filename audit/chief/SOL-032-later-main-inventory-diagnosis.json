@@ -1,0 +1,1117 @@
+{
+  "mismatch_count": 111,
+  "items": [
+    {
+      "path": "audit/SOL-002/review.md",
+      "expected": "99cb70a5e2f540a1fb7f7080fb3e834fdd4a8de6249151ff38df20dab6e1c14a",
+      "current": "8435f01ecd2531980a5db54c081abe91b00454ec22af91ebcccfadb624b56bb4",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 12283,
+      "exact_bytes": 12382
+    },
+    {
+      "path": "audit/SOL-003/accounting-tests.txt",
+      "expected": "ebb641a1d1d6f7f0074bc17f3297e5123dd394ddac70f389e9809ce5f9adaba0",
+      "current": "cd9177c5f773edde25ca40caac0836febaa4a9d9e47be9bc9d66661ebb992758",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 3805,
+      "exact_bytes": 3838
+    },
+    {
+      "path": "audit/SOL-003/env-312.txt",
+      "expected": "7aacc4c0de42db8cc4a4349dfa270483b2896fdb528ee033cbcc66876c2bea5d",
+      "current": "a620d17433955533f42fcc4f2a757bbe1932bbc193707a6f0022fa350064e7df",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 95,
+      "exact_bytes": 101
+    },
+    {
+      "path": "audit/SOL-003/env-313-simulated.txt",
+      "expected": "25739d252e4c3096f2d4f1bb6324a7a0021fcc44f8009c64824ff3267125177d",
+      "current": "9fa8698828d4bf03b176ce13fbfa56e87c58095564b8f1011b389744d915b99f",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 186,
+      "exact_bytes": 192
+    },
+    {
+      "path": "audit/SOL-003/protocol-tests.txt",
+      "expected": "3167ddb18a4a8faca840c6f1595ac798d5642e47943ae69e481f31f095c26371",
+      "current": "47322ff830dfb617bf8e0b34540e2a182a2c09fc9e4205174d6deb13d5057840",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 988,
+      "exact_bytes": 998
+    },
+    {
+      "path": "audit/SOL-003/review.md",
+      "expected": "2a27d43f6afcc12954152ef42569e2c50b1dd9419f6139af3133cc8c04996732",
+      "current": "956fba926fe148990ec39e0d75845946a46db5aee6b5dbe926dad9feaf6030e4",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 7291,
+      "exact_bytes": 7324
+    },
+    {
+      "path": "audit/SOL-008/history/SOL-006-scheduler-suite.txt",
+      "expected": "789fcfa034f6e9466f992f098d00ad01c7bdb7c5e8a0e10e22ca7722f53c1070",
+      "current": "66eee650fba15fc4771cb286cca458819372ec91a0888faf24d8317137507195",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 1345,
+      "exact_bytes": 1358
+    },
+    {
+      "path": "audit/SOL-008/review.md",
+      "expected": "bdceb4edfe501fd9a0b7120b3cc122600450659d572d17d9dae6ddd7b91b2914",
+      "current": "b8fe50bb704d569d734e5dfadaba9cd6eecdb05b882fbb3585a4c9860dcbc2f4",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 8326,
+      "exact_bytes": 8367
+    },
+    {
+      "path": "audit/SOL-008/scheduler-suite.txt",
+      "expected": "789fcfa034f6e9466f992f098d00ad01c7bdb7c5e8a0e10e22ca7722f53c1070",
+      "current": "66eee650fba15fc4771cb286cca458819372ec91a0888faf24d8317137507195",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 1345,
+      "exact_bytes": 1358
+    },
+    {
+      "path": "audit/SOL-013/history/initial-review.md",
+      "expected": "ebdd61b4cf5315805ad0674d1d9e4884611ebcdabea087667e1bd117c6c27f05",
+      "current": "ffc16cfd7859911ef3d50d45fb071c1bf6edcd21aeda33040129fc0c987ffea9",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 5146,
+      "exact_bytes": 5216
+    },
+    {
+      "path": "audit/SOL-013/review.md",
+      "expected": "11c2060c2f4134173a1e89b21fbff473e5392b6272655ce475dd79d4b6112254",
+      "current": "8410d52b2ca1d4e870cdabfac1663c469ff82cb6ed1ce3a0e61d39bcd5f51ebc",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 5867,
+      "exact_bytes": 5948
+    },
+    {
+      "path": "audit/chief/SOL-001-tests.txt",
+      "expected": "90b4c892981578b430ba00bb679f00c93b9ae4ad62630693967cad406d2d6498",
+      "current": "189198f08ee1554ea29dca9af4d7335a65227b7847524a192f6e1b9511a4ddb7",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 3805,
+      "exact_bytes": 3838
+    },
+    {
+      "path": "audit/chief/SOL-004-saved-replay.txt",
+      "expected": "d984453594aca9ae4bf5c49afbbed264f3029a8f4c4d047a70ebc417e185d7df",
+      "current": "caa9e1e4fc020fa169a5bef1fa37aa617c6e9808f7b236e7ec35a6f210367c8b",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 373,
+      "exact_bytes": 388
+    },
+    {
+      "path": "audit/chief/SOL-004-tests.txt",
+      "expected": "77c3fae0d94b3dfbe049fd9df3975bc23afa8ffe7017402f39701359fbfbcb67",
+      "current": "1a25d8f4503d23c6111c8ffc2983196df6cb949669082b279c0e51aeaf900b40",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 9002,
+      "exact_bytes": 9067
+    },
+    {
+      "path": "audit/chief/SOL-005-replay.txt",
+      "expected": "8b1261e7d45f08ff9578fd46d1f2f6eae8602b1def08c1bde171d1507fb1623c",
+      "current": "711adf5987e4a3b10c55abe5cbe9664c173f0a57e6a6b57cb690b20dde9a0690",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 191,
+      "exact_bytes": 192
+    },
+    {
+      "path": "audit/chief/SOL-010-review.json",
+      "expected": "b61043648a1bb6f26b4781bddf0d657167c358e0e03473bb166d78e3c2ea9cbb",
+      "current": "64b2ecca872b85ee53168c08d48fcbb67d13cacebec6a888eeb42b3960e5e52a",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 2673,
+      "exact_bytes": 2610
+    },
+    {
+      "path": "audit/chief/SOL-017-dispatch-validation-trial-001.json",
+      "expected": "b7f22b5380db724a08a7bc6ac1527866be66b0f7a01468bfa9cce7b95405f308",
+      "current": "392c41b681841166585a5892081eda98b43040530b4802ea87a9754f3fd29819",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 421,
+      "exact_bytes": 415
+    },
+    {
+      "path": "audit/chief/SOL-017-dispatch-validation-trial-002.json",
+      "expected": "285f7b5765d9eae28c0dc48d576120bbeb99a6220b0649576672f28a92b5c7ff",
+      "current": "d85837a6e17ffcb0a5afe271bc7c56c1de047daec4bebe1154d223b692563840",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 432,
+      "exact_bytes": 420
+    },
+    {
+      "path": "audit/chief/SOL-017-dispatch-validation.json",
+      "expected": "9082f4b9bc9aeda90a17177150c0947f5d7550f22603143779952775ea763b51",
+      "current": "c3b2dcb79916d0b360ab5c2947bc4b0b34ca75e531cb4f30df905266a11ddcfb",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 375,
+      "exact_bytes": 356
+    },
+    {
+      "path": "audit/chief/SOL-028-release.json",
+      "expected": "0179dd898869b79d42b47e95e48c0fcbfcbe0182f6a0126bd74f9e244e0ce2e6",
+      "current": "ca212bfa8b30b831d646d6300ee92af6073f7376c0c7fa6f8600cb7df71f0e49",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 5522,
+      "exact_bytes": 5346
+    },
+    {
+      "path": "audit/chief/SOL-029-line-ending-diagnosis.json",
+      "expected": "abf99061acc1a2ed289f3cee1cc1c778a87f546fa1b528f922d71be7b5f61cce",
+      "current": "ea94d48a504ae8896b5065bb19aa37536aa6e87b51cb99ec41db15934b1ae17f",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 4860,
+      "exact_bytes": 4806
+    },
+    {
+      "path": "audit/chief/SOL-029-persisted-oracle.json",
+      "expected": "26e445985efcab0a22405052781b3aa1411477a2145d04b36d3f264f856fc614",
+      "current": "b89ebccaf77f9507b4d1fcc109dcc799166213dfcc59cd54b49536d08a21b644",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 11876,
+      "exact_bytes": 11720
+    },
+    {
+      "path": "audit/chief/SOL-029-replay.json",
+      "expected": "53758037e4f5ea1b4919dd3c5c2b0dc8f473439f4d415fc8204dc3bd636d23b7",
+      "current": "b513daf5ac274f7e4b935a7c25f442737ba1f7ed099a97f621dce076546172a3",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 5664,
+      "exact_bytes": 5623
+    },
+    {
+      "path": "audit/chief/SOL-029-structural.json",
+      "expected": "e339155546025735c15b562d00a0fc7505336e12d4731ee4705b57512dabd5c9",
+      "current": "ef49e5b76cac13a325159065336c5e94b89c720964486398b8782257781aadf4",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 63011,
+      "exact_bytes": 62517
+    },
+    {
+      "path": "audit/chief/analysis_reference.py",
+      "expected": "69cde9c73fde065d4608ad6c726ea7672759644274823b9c7e8ab656d3d14ba3",
+      "current": "6091b96288b556c294cab1cfbee8066f9219c5f97f8919eb98078d28eac0cbbd",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 7259,
+      "exact_bytes": 7258
+    },
+    {
+      "path": "audit/chief/baseline-figures-history/git-export-check.json",
+      "expected": "68c7d0d67233662d9e9453206dd486687e7cd4e2f7001c0463e909d1d72fd09a",
+      "current": "5cf8b40616c9487761debfe3f6a9985f7dd45aea464d9cfdb8ac1949d3fef40c",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 456,
+      "exact_bytes": 455
+    },
+    {
+      "path": "audit/chief/baseline-figures-history/trial-001.json",
+      "expected": "0af492350c6991f6d7cb7552fc84ec1a5ab9a37ce11be35b25050dfcf8fc9ba2",
+      "current": "9e6da793ad5920579cc69778eb475c4bf3fc651c1cac7d77db9b949e9f42df77",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 416,
+      "exact_bytes": 415
+    },
+    {
+      "path": "audit/chief/baseline-figures-history/trial-001.py",
+      "expected": "6f0a64444617ed249d093eb7393fb2e4504830251521e8375ad672717b1abc70",
+      "current": "ce6215cdc2c8cc54df390d786c08f47488d8c8586bf46f0954fe0afa91d21573",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 12911,
+      "exact_bytes": 12910
+    },
+    {
+      "path": "audit/chief/baseline-figures-history/trial-002.json",
+      "expected": "d3970802eba023079e2a3ffc99e5b1b2df2239a1fd0204aa696bb2b264600197",
+      "current": "b08817f6a9eaa4e059359fef080e9552e59e8aa4f93ebb4b54d73a404fe08979",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 333,
+      "exact_bytes": 332
+    },
+    {
+      "path": "audit/chief/baseline-figures-history/trial-002.py",
+      "expected": "34a7565b77064c677a75dd8a236cc945e10ae88a56c553c566618dad3e7e4790",
+      "current": "1132c69ea586b8812fafd665b5a92838ba0667fe9a4792c9eed2de5e65e9fc66",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 13082,
+      "exact_bytes": 13081
+    },
+    {
+      "path": "audit/chief/baseline-figures-history/trial-003.json",
+      "expected": "c37ff425088176d959d1320f1cb8492f019c1b3082c5d823ee6cc705721a271c",
+      "current": "276ca7192d42989ba60dee9a5d2b23344cf1ffa27c0fadec6a8bf5adb07ead8d",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 410,
+      "exact_bytes": 409
+    },
+    {
+      "path": "audit/chief/baseline-figures-history/trial-003.py",
+      "expected": "a90b5faf96e336ab6c623d7c0292e56aef76e739d426408c217703ec3b42c214",
+      "current": "192a27c970dd782f336724a1c239477e6fa6f3b49ddf3e26f4736f20f4c4a6ee",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 13082,
+      "exact_bytes": 13081
+    },
+    {
+      "path": "audit/chief/component-index-history/trial-001.py",
+      "expected": "62c1c79859c9535c626f3481a3fea068c74f35c81e8afc757985b087eca52ab2",
+      "current": "7fa0b68a7cb878e0c818cb74f39ac7053c89bbdce05d0e9d19fdd922e4713b26",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 5871,
+      "exact_bytes": 5870
+    },
+    {
+      "path": "audit/chief/kernel-rounding-history/trial-001-failure.json",
+      "expected": "19e52c99e9af0e9647ea90f6672ddba942a6993562bef00cc73ee6693d2f948f",
+      "current": "9335cc9176c3b0cd07142fd81b1ef069b9320051bac9fe939cd428b1f0714b88",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 680,
+      "exact_bytes": 672
+    },
+    {
+      "path": "audit/chief/layout-proof-history/trial-001.json",
+      "expected": "94d462de458f931826624f4cfa6759e35f1d526a88475024d1ef3fff7fbb604b",
+      "current": "1ef63c8321d183a3e7a84678f37dea7f48c36cb14a043ae36a723c13e4fca3ec",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 522,
+      "exact_bytes": 512
+    },
+    {
+      "path": "audit/chief/layout-proof-history/trial-001.py",
+      "expected": "ff51742a083f5f223d68cb8110608fb10cb36757c00769ba2e8ac52671eda589",
+      "current": "7629b484dcc4524a8d7b7c2048d5c68bf889139cc586ddd49469ba8408d988cd",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 15740,
+      "exact_bytes": 15739
+    },
+    {
+      "path": "audit/chief/layout-proof-history/trial-002.json",
+      "expected": "0ee001134225b3bf3e229d46800ee1003d4649ab0bc24b82fd9d11b7b129893a",
+      "current": "83d52802cdf8b13d51a3806a8139529b961a2c031efb66db7274393601624496",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 593,
+      "exact_bytes": 583
+    },
+    {
+      "path": "audit/chief/layout-proof-history/trial-002.py",
+      "expected": "59a153da49317653047cbeb44330b1ac20e5eece0a3b3c89e471ade34bddf3df",
+      "current": "3a2cbfd4da480b3a1a880f08a471d3100fb7c1662b3c1cbdc10051417d6965de",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 15910,
+      "exact_bytes": 15711
+    },
+    {
+      "path": "audit/chief/layout-proof-validation.json",
+      "expected": "c01ad8cb0e6a3309c4e9f5db3d1889be684a099137cc1ea75658ee585d00a68a",
+      "current": "659627079134b23b5ac2f1eaa7cf0abbd78e2af7b2a18dc354bb3b9f7d1d59f6",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 3118,
+      "exact_bytes": 3018
+    },
+    {
+      "path": "audit/chief/local-quota-guard-validation-20261020.json",
+      "expected": "54cf0cf52a49a315271b16c35eee6b8a6fb443f471c0f75428c35b8c3225c48e",
+      "current": "3d72e4f3ff780a9dfc70ac8b1ce55b57bfab8031e8d94a6ab7fa59c66b594ad6",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 1640,
+      "exact_bytes": 1603
+    },
+    {
+      "path": "audit/chief/overnight-runtime-validation-20261020.json",
+      "expected": "1fc2a49ddca2b5f777b00e96ceb97f56d12df957639534c79b471bde27bc3b69",
+      "current": "fc8db6e98131feb5744eb187fa3c749c9427a03058caeb17f817e568a20141ef",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 1308,
+      "exact_bytes": 1271
+    },
+    {
+      "path": "audit/chief/pending-task-integrity-20261020-layout-turn.json",
+      "expected": "feac38ab3f45ffce529ba8839e3de4a4b8a05d5703ce460944ac3c99dbedf731",
+      "current": "c1f15a156bd311cec0fb8db1de5430919c92b14d24a6796eeb5f69d0a1d2e7d9",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 2044,
+      "exact_bytes": 1980
+    },
+    {
+      "path": "audit/chief/personalized-component/failed-trial-001.json",
+      "expected": "e6fff09d3f9de29583be4fefc936fbaf201fb50e148d99f94ace025050458d16",
+      "current": "e65991e27a24c7d26db7fd6ae60e75adb1f0ea1d7993623992b604ff7ae0ec87",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 3226,
+      "exact_bytes": 3207
+    },
+    {
+      "path": "audit/chief/personalized-component/validation-002.json",
+      "expected": "d972375132ed604993db42cb164a30ea5095e4c488c5a3a410cede7ccdc14623",
+      "current": "d1947cbe5975501f8f645ffc23ac6869abdf0329969c45960098e4cac49eca32",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 11545,
+      "exact_bytes": 11515
+    },
+    {
+      "path": "audit/chief/personalized-component/validation.json",
+      "expected": "56ff6548a5b135f69b955fa2046ca3873a948d4c765f952dd23e9430eb9697f9",
+      "current": "335ed020acecbe55dd3e210afbafe65935506ca2e759a46ca970c433548d5092",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 12900,
+      "exact_bytes": 12850
+    },
+    {
+      "path": "audit/chief/personalized-handoff-edit-trial-001.json",
+      "expected": "075e2d53117aeff87d14c3afbba74b71d1f9987f98a3083fd3e9a229b735b188",
+      "current": "ab44afdd5f39f0616ca61d2fc299f0de70e76bb132353f23c5649dedf6091a6f",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 371,
+      "exact_bytes": 365
+    },
+    {
+      "path": "audit/chief/personalized-handoff-validation.json",
+      "expected": "accf311cc5e30d94d0e6a7aac5257e39444ea580256bafce33df8dad92b4921d",
+      "current": "e77c5ddb441cab4b4e67956fb91f132712dc60431946218098f4901e5d9f0399",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 444,
+      "exact_bytes": 429
+    },
+    {
+      "path": "audit/chief/policy-calibration/20261019T170940Z-evidence.json",
+      "expected": "91b9fb809281730a97cad9bbac9c0a9065ef5460bd46a514f82740ab48187e1c",
+      "current": "e151f40a770fd49621290ca2c609e6f5593f259a108843ecf02e0f5d34280bb0",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 1070,
+      "exact_bytes": 1040
+    },
+    {
+      "path": "audit/chief/policy-k1-validation.json",
+      "expected": "4f84abd57d5e08bbca544c70972db08b9056c87bcab9af65373e1cb6897dd00f",
+      "current": "384f5fec66f1da18254c2f1b4d2f933da1e4ff69d686627bce5220f0265b7dfc",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 1480,
+      "exact_bytes": 1429
+    },
+    {
+      "path": "audit/chief/policy-k2-validation.json",
+      "expected": "4b97a1499c8cff293f7d971c04233d5ed6c520be6caff31dcb47ebb976ac9d59",
+      "current": "0e13dd0ef3beae29c4831997b379c6b218109382932969f8c23804b4bbabc784",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 12635,
+      "exact_bytes": 12219
+    },
+    {
+      "path": "audit/chief/policy-kernel/20261019T165023Z-evidence.json",
+      "expected": "80c89a78c92bc2ace5a457d94e1b1c241bad4fab665976239dce841aa24e623c",
+      "current": "0266a5aa1c3e5485c28f67b0396588d5bec72393d2a0b4a9f606c52a40d37a3d",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 814,
+      "exact_bytes": 788
+    },
+    {
+      "path": "audit/chief/policy-kernel/20261019T165023Z-tests.txt",
+      "expected": "6edd55b4644631cc6cfb06345ef11fdc84522e9baf86c31c423b24a59097d3fa",
+      "current": "6dd75a475885b9324f8c9e872022cb14bd995b49007a7f09a4025e42f2fd2be6",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 2212,
+      "exact_bytes": 2232
+    },
+    {
+      "path": "audit/chief/policy-kernel/synthetic_timing.py",
+      "expected": "650bd34dddc9ab701eb31d77b23cffe58d7832efbe2a8fd2225cbb37b04e290b",
+      "current": "47fcf85e43355bc8eda76b5ef15f8c16ad76f471da181bca6f2324e6a916cf0a",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 3910,
+      "exact_bytes": 3909
+    },
+    {
+      "path": "audit/chief/policy-v2-test_policy_calibration.txt",
+      "expected": "28c50da9642fe2a46899124988270010a00a06bcb8792d05f468eff81d5f5cd8",
+      "current": "686bf54a43c18e420852d10d0949c734d3c73b639f63f4c710bce44e0c643e2c",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 1547,
+      "exact_bytes": 1562
+    },
+    {
+      "path": "audit/chief/policy-v2-test_policy_pilot.txt",
+      "expected": "7e4f176340a30e681a8e14f38f1570c35830b882ca7e5371fbf0294f7da0794f",
+      "current": "5bb728836f36e5abe825b08d53a9d49740f547a527b39bf0af6a6941b3b507f2",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 2542,
+      "exact_bytes": 2564
+    },
+    {
+      "path": "audit/chief/quarantine/SOL-023/README.md",
+      "expected": "e5960e9b86a4adbe6bef72c299b9f6d40d33a4dde644e41f871eda17d95d6e8e",
+      "current": "15c4d1d07c9d83091ca77556d09d7fd72aa42abb4fa920bbcb5c42e622e34fc9",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 863,
+      "exact_bytes": 877
+    },
+    {
+      "path": "audit/chief/quarantine/SOL-026/README.md",
+      "expected": "db7bc241342310bebfa03caec6d5d33454676e032fcf399f1b77875a51820135",
+      "current": "a7d841c9d66240f898476f9398bcd4c5af6bf9be841b426c2c8c55470c36c2a6",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 501,
+      "exact_bytes": 509
+    },
+    {
+      "path": "audit/chief/quarantine/SOL-026/audit/SOL-026/implementation.md",
+      "expected": "8376a402f39320a1971fe5ef3a2f33c7fa75e83de6f320f50eac07f7ada2f3ac",
+      "current": "55d0f063ace5220387e00df4a75541699ec4a4d94b26d96c021c675e2ffbedf7",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 7360,
+      "exact_bytes": 7395
+    },
+    {
+      "path": "audit/chief/quarantine/SOL-029/README.md",
+      "expected": "8683163146d5dbbd619da313ce03408f632be3b336024c8b58d730485e65848e",
+      "current": "93e1bcbcd5819b1a644d58668a496610f12fb436ca21adad193bd20fa07a1f46",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 581,
+      "exact_bytes": 590
+    },
+    {
+      "path": "audit/chief/quarantine/SOL-029/audit/SOL-029/implementation.md",
+      "expected": "838a1e4075e688817333ddda20c79368965341aa8cd6747489ea522af574c60b",
+      "current": "ae1bb207b6c0cfd4e6def3ef8aec8e8879682ac650b82ba2730a47f3c4950310",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 6317,
+      "exact_bytes": 6338
+    },
+    {
+      "path": "audit/chief/review-acceptance-tests.txt",
+      "expected": "4ae4acb7a7c621afd65908fa3f3cdcc3730cfbbaa4ae5dbf4f1dbfb7e9543917",
+      "current": "188005991f7e028fe5e1b0c5a0da58a9d138f2a5cadb72963ecd7f2ab520d598",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 4544,
+      "exact_bytes": 4582
+    },
+    {
+      "path": "audit/chief/review_sol009.py",
+      "expected": "f67bb7ecbd561e524bd29aca1f68e52a48cff39ad78afc20bedbf0e3ca6a6a22",
+      "current": "cf83fffd195a7621415b207bf79e8e45ab08af6985dcee60542ca7f96495247c",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 3926,
+      "exact_bytes": 3925
+    },
+    {
+      "path": "audit/chief/review_sol013.py",
+      "expected": "020429d279f9fc09d367aae96a35978b4b34b9674ebb8eb849a705faecfc6fbd",
+      "current": "d369cb6832145145a2152b45bfea5d1bd536de057a1769c4fbbbbbdc54a5e19b",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 4570,
+      "exact_bytes": 4569
+    },
+    {
+      "path": "audit/chief/review_sol017.py",
+      "expected": "7e30fd8d05a1e6b87327f8dded4ed2535a7f1b33bd1f28962c3c3a7d76b81cbc",
+      "current": "412586ccf6b0a16449e76c34943e5dbb7156e68f367bfcf2155d239238c8d868",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 4536,
+      "exact_bytes": 4535
+    },
+    {
+      "path": "audit/chief/review_sol020.py",
+      "expected": "9de781393c39062ef92a52bffa10b1942174f27ee2b403e7faf0d132df1143c1",
+      "current": "9ea969d52e9e3b2e6a1bee8020ab2f8c2f9a2a80ce6c43aff4c08619493d18a8",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 4274,
+      "exact_bytes": 4273
+    },
+    {
+      "path": "audit/chief/review_sol022.py",
+      "expected": "14e55e37a8657e588c59708f8f3e52cf4cfc535267bcbb72cafbfcb6c7592900",
+      "current": "023a889478d0d63508d07b9c7f188a88a6f3f0fefbe2dd0ca76c2a07d7cbb1f2",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 9204,
+      "exact_bytes": 9203
+    },
+    {
+      "path": "audit/chief/review_sol023_failed.py",
+      "expected": "dc7609bc51801fcab592c52fa9ea668ff9050883726d6365995d05f582815f01",
+      "current": "e7c9da0b241286b05b824e045d2ee3263d6d01cedbff7bdc918700e5f925cad6",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 8273,
+      "exact_bytes": 8272
+    },
+    {
+      "path": "audit/chief/review_sol024.py",
+      "expected": "29dcd429ec06e6fc4d186d75bb4c29230a026b74e1e1d994ba2a8b7d132c27d4",
+      "current": "b8f917c31f4c78d608cd03198e43dd456ab6f7b67be397086019d52ffa0a53a1",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 7417,
+      "exact_bytes": 7416
+    },
+    {
+      "path": "audit/chief/review_sol027.py",
+      "expected": "1dfe1a7378ec0dcfb806d950d8a1a33c96b218464f3b0e31d2adbd36811ddc4b",
+      "current": "ccba96090e8373276bb1d82017b8582ed70719af7c78ae0e6f535f249a1ade5f",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 7179,
+      "exact_bytes": 7178
+    },
+    {
+      "path": "audit/chief/sol-chief-40-percent-resume-validation.json",
+      "expected": "22cc1e5a4cd08d253ef38ef25da3f250c477bc3c6867b365e76fb6bbe1402fe6",
+      "current": "fd2c6f493d0118195b707f4aac6130fed0240528aa66f7c7f8973f3082569ccd",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 1351,
+      "exact_bytes": 1318
+    },
+    {
+      "path": "audit/chief/turn-20261020-layout-proof-preparation.json",
+      "expected": "b4323b961445430b22bdbaf6b9bb020c268259959b38014f8308efdf88eb58d7",
+      "current": "67871303d7b2e2a7b87e3aea95517bc7e411e371e49d63f425ad736295fd92b9",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 1585,
+      "exact_bytes": 1548
+    },
+    {
+      "path": "audit/chief/turn-20261020-writer-oracle.json",
+      "expected": "b0d6cb99733da534f80273cda56a76e8e792f3a3a3eaf28b6ff94fbbec0b3069",
+      "current": "72a3d5454d2f5559c069b469f8eddb8455528b8d275ab0b9f44f77867298d239",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 3835,
+      "exact_bytes": 3742
+    },
+    {
+      "path": "audit/chief/validate_baseline_figures.py",
+      "expected": "5bf19f9d564c687faa607140d5fef3c1b943e180b53d94f6c1261a2adf51558a",
+      "current": "eb149eea4939645823ec2f95944e05062dca15e7b0c6453796d9e06f9489b096",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 6094,
+      "exact_bytes": 6093
+    },
+    {
+      "path": "audit/chief/verify_canonical_receipt.py",
+      "expected": "3e0d1f539d58d2757e7222142b71454fef68cfa8652e3085c2faee33c48336fc",
+      "current": "73580b7eaf65d3fd7ecf213c04ea47a47d983bc52bd40ca396e2d6ca8da7ebe4",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 3452,
+      "exact_bytes": 3451
+    },
+    {
+      "path": "audit/chief/writer-git-byte-history/trial-001.py",
+      "expected": "306c1645bd427558b7ad6af3f9e3b69a00119b56e018682082e22ec789cb314c",
+      "current": "7b5928db85e1f553e73abf08b20680b9f3c06393f4d6e74ad40ac6b1ecd1cbe9",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 3689,
+      "exact_bytes": 3688
+    },
+    {
+      "path": "audit/chief/writer-oracle-qualification/README.md",
+      "expected": "4ed5b95723e950165d03f80d91ee0bbbbe52971c77f9bca9e94f6e93c3103549",
+      "current": "8c0946bd7350312ea3936d18bfa6a0e0772bb6a8e04b151ebc1df7063054779d",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 2520,
+      "exact_bytes": 2561
+    },
+    {
+      "path": "audit/chief/writer-oracle-qualification/corruption-checks.json",
+      "expected": "aa6ad38f1c2bb2c250bef863c29e9df3d5633d4e6bf359254ba8bd068e348788",
+      "current": "fa4ef4a9363c5c69a3602a2381ded5b8f5ded370ff945424c21b486fa8507ce5",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 2469,
+      "exact_bytes": 2409
+    },
+    {
+      "path": "audit/chief/writer-oracle-qualification/trial-001.json",
+      "expected": "f6a84898e4d86f83649a029c8fe6407492a3e5f54d121b6419338e9e4c1968ac",
+      "current": "310aec3e210369ea5ebd7927f5ab5cd5b6c1440232dd24dac8cdaac2d8ed5b63",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 1129,
+      "exact_bytes": 1114
+    },
+    {
+      "path": "audit/chief/writer-oracle-qualification/trial-002.json",
+      "expected": "24c61cfb6ae7b85825483162caf2e9e172dd4d9183c5f408358d7a699c732362",
+      "current": "4401cd8798b908a72986584c1f9c4fe4d2afa14c0d94afb1dbee629bbdcb8ad9",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 12646,
+      "exact_bytes": 12631
+    },
+    {
+      "path": "audit/chief/writer-runner-integration-regression.patch",
+      "expected": "bc3b600599c776e661b38b953f97e8ca6c4ce02c0b24c9be73af1a369b68550d",
+      "current": "6af542d35dc61e07e05e2b387a2e584ae1a569308192630e44aeb19a573e6c21",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 598,
+      "exact_bytes": 610
+    },
+    {
+      "path": "audit/chief/writer_git_byte_probe.py",
+      "expected": "a2e4411555c3261d79b12081335a3af00ce1239fc05f16ee68692a42983a520a",
+      "current": "2dcc80ecdb899ae8fe9dc33e50bbbab57b4219b335ea76f4a7e03f340c398571",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 3843,
+      "exact_bytes": 3842
+    },
+    {
+      "path": "audit/chief/writer_reference.py",
+      "expected": "ae3e2dc9ab11e9fad60446b0dec8acf640f08de58349e037a8010c032cd0d651",
+      "current": "eacd83e0c3dd7f76b127bc01f0a71bb8a1fed1e20d2e181a22e8529fef42fcfe",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 7921,
+      "exact_bytes": 7920
+    },
+    {
+      "path": "specs/ACCOUNTING.md",
+      "expected": "d5a59960f8bc9474986015f4f832ffcbbdb5fc3e85bad0b3b9453861ae63a7fc",
+      "current": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 2772,
+      "exact_bytes": 2793
+    },
+    {
+      "path": "specs/DEVELOPMENT_BASELINES.md",
+      "expected": "fd83de5a118e37263fb9defc159dc6ea585756449b6c5b34bba269eebd2d4f07",
+      "current": "aa745e6dceeaa1d6b04168e54e3af55ba5ec4f46825d38ae4962428c6b7bc25f",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 6520,
+      "exact_bytes": 6631
+    },
+    {
+      "path": "specs/DEVELOPMENT_BASELINE_DRIVER.md",
+      "expected": "cab2fa8dcb0c69d27fd3f3539907683a2f299d9510d35ee29a14208d9cbe4cc6",
+      "current": "4d76e90d8c2563badb3fc38027f9a2ce39d93ea7fe6be2b0bf6ef6a1b9c5d766",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": true,
+      "current_bytes": 9132,
+      "exact_bytes": 9271
+    },
+    {
+      "path": "specs/DEVELOPMENT_POLICY_PILOT.md",
+      "expected": "571700c48de5b330a7080991bd21d45d3ab007ed982204f2bfd0b17c99d70b3f",
+      "current": "94e436a979f2c232b729c352d209c83c76ba014a14613852ad447446cb6948e0",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 13966,
+      "exact_bytes": 14179
+    },
+    {
+      "path": "specs/DEVELOPMENT_POLICY_PILOT_V2.md",
+      "expected": "5b67a99f1a36d8e61047e12b11bdf733d366e4d5314e098c43902323b3fefc68",
+      "current": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 16987,
+      "exact_bytes": 17247
+    },
+    {
+      "path": "specs/FINAL_EVALUATION.md",
+      "expected": "ff6ce89f8ba7a834ddf9140fc5b1c89b93d07b0bd087c67d18f8590468942a55",
+      "current": "46d7d055cf9a78a6082304904fd43394cf14545880d5c0971d0e7195220aba96",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": true,
+      "current_bytes": 9496,
+      "exact_bytes": 9640
+    },
+    {
+      "path": "specs/FINAL_OUTPUT_NOTES.md",
+      "expected": "37f14a1c56f0d5c7b7f6a076341536f1677e0c9994afc75e3b5d321cb53d30be",
+      "current": "98c28d4e71f148c4937576e9218915bc68612ae3f076c8e6728c8ba39974cf7b",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": true,
+      "current_bytes": 5034,
+      "exact_bytes": 5109
+    },
+    {
+      "path": "specs/PERSONALIZED_COMPONENT.md",
+      "expected": "031d82d3de27d484bdda3864af2ea6031d4ddfd95c9195f9fe62f7b0ad29ed48",
+      "current": "d9b3737ec37a8cf6421fe56a703d045a680bdef5906b4a9910643a996c181fec",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 5067,
+      "exact_bytes": 5148
+    },
+    {
+      "path": "specs/PERSONALIZED_OUTPUT_NOTES.md",
+      "expected": "ad81094594b4e4df763e9baf2870d22e33e043aad771313014af8b63ea7b5f4d",
+      "current": "f328a5832251faab1b8810b598fc66408e5a323afc755a0011cfdb0b04e255a7",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 5043,
+      "exact_bytes": 5121
+    },
+    {
+      "path": "specs/PERSONALIZED_PRODUCTION_BRIDGE.md",
+      "expected": "6eb38350042887cda2ba40dc3cbed1fc552ea6001cb033a18f64c8207b2b507e",
+      "current": "59192cac36f89473e42713ad23bad2105cd116ca0193b837518c9ea8b086a3e1",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": true,
+      "current_bytes": 8616,
+      "exact_bytes": 8750
+    },
+    {
+      "path": "specs/PERSONALIZED_REVIEW.md",
+      "expected": "7e1f2fbbc5cdf79127de0d5760fe087114b2bc2eab97fc7e0a563615b47910ee",
+      "current": "0365fdf989ae7abfeda0bc3f48f8c86245a40dd9e48b3c6ae8d2d26c0b7c4987",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 7723,
+      "exact_bytes": 7842
+    },
+    {
+      "path": "specs/POLICY_ANALYSIS.md",
+      "expected": "ef8a99572999899c4ac881eb8a5b1252ec0579283e34f599aa20337eb2d0353a",
+      "current": "a2220482c861799280815b4e65d73e79e53666816ac9e7e72a38d5f48a6e53b8",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 6668,
+      "exact_bytes": 6773
+    },
+    {
+      "path": "specs/POLICY_ANALYSIS_ASSEMBLY.md",
+      "expected": "1b8e990a7011a7dfc5c3985fdb879f98ea05f20bf7abe0bf8718518c7bcde9bc",
+      "current": "808930f6c4c84d3a542bf14387dc506c6fb77b0a5be636840db30169ddcf6250",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 7781,
+      "exact_bytes": 7902
+    },
+    {
+      "path": "specs/POLICY_CALIBRATION_PROTOTYPE.md",
+      "expected": "191a3d56e1bfaf9d2032b4e30bc4d106c067e61aca0e124c1c08bab6d15d4a61",
+      "current": "a9272fbc14c5947acaf7f0c8d557ca5671643bf0e8fea5d13d82a66772295990",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 5002,
+      "exact_bytes": 5082
+    },
+    {
+      "path": "specs/POLICY_CASE_ENGINE.md",
+      "expected": "3f7a84d786147b280ed7678d3580d3694dd468eaed29936d88e968505654d554",
+      "current": "c984e230eecb720613b864a910d95921af1aa805f79fa68c7044f905410dec62",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 6639,
+      "exact_bytes": 6744
+    },
+    {
+      "path": "specs/POLICY_CASE_REPAIR.md",
+      "expected": "17fff689fa13a6c120d33bd89259f66ab22fe81c459ea3ec3ece5691d6953b73",
+      "current": "1b728ca6c59fcec296157ef9e3df23cdaedca8c651aa56548e6e80eef58b9ae3",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 2363,
+      "exact_bytes": 2399
+    },
+    {
+      "path": "specs/POLICY_CORRECTION_V2.md",
+      "expected": "432498c869cb35c3744cfd1db69780b097f7f778d34df9635008f501d5f0ec2d",
+      "current": "b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 2288,
+      "exact_bytes": 2322
+    },
+    {
+      "path": "specs/POLICY_DRIVER_HANDOFF.md",
+      "expected": "a73516d5fd58a82d016ea31dd650e631ea2c01f9c299f89904398ac0e022f4b0",
+      "current": "18bffbb0c9da4d487b3ba3fc384159ebb069768593bdeced140d1971b3fe3001",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 9405,
+      "exact_bytes": 9539
+    },
+    {
+      "path": "specs/POLICY_KERNEL_PROTOTYPE.md",
+      "expected": "f70fd923e64bf9d45dda75afef38656e94d31176e99d36378cb352e2cfa28e55",
+      "current": "3d623ff35bb682baea2b598d644f172cab2f2859fe78935d579661adf4a464a7",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": true,
+      "current_bytes": 5049,
+      "exact_bytes": 5125
+    },
+    {
+      "path": "specs/POLICY_NUMERIC_K1.md",
+      "expected": "fce69c3a3e16f8b96a6de87f4ff4768ae76075bdd6623cdf32c977c854fb5bea",
+      "current": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 2161,
+      "exact_bytes": 2196
+    },
+    {
+      "path": "specs/POLICY_NUMERIC_K2.md",
+      "expected": "6947bce447fdeb1ceb69805128c6a917006b62a9172723a9a0a05de36404bd1a",
+      "current": "88d5f58a59f090c25331392e4cd5682daf5d050c27b24afe6629d8e4a5eb9997",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 2876,
+      "exact_bytes": 2921
+    },
+    {
+      "path": "specs/POLICY_RESULT_WRITER.md",
+      "expected": "af2ce7eec467ce36db1dab15804664cd81effbda9e5ca102ad8bfb1b48f82a5f",
+      "current": "ce0c43fad34ebdc44fc6f6bda395c562781e500cdc4b855ee7e0cbf937bec0b4",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 6250,
+      "exact_bytes": 6345
+    },
+    {
+      "path": "specs/POLICY_WRITER_COMPATIBILITY.md",
+      "expected": "d5422a2f46a432b5564295e78f717587b48eadd4578a4f76589c54828bc9c858",
+      "current": "814c339353a719b88f1bf21af731439cc24e095131d9a8d28efaede48a5695ed",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 5472,
+      "exact_bytes": 5556
+    },
+    {
+      "path": "specs/POLICY_WRITER_FILE_DELIVERABLES.md",
+      "expected": "985a673dd34a677308ed6fd7309872bd3a56fc46e487fd35dbe578cd408a595b",
+      "current": "1c91468f405a92b300a2684e2b29fa29a75d9add6df77ed819e96fd8fe2e11e0",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 2713,
+      "exact_bytes": 2752
+    },
+    {
+      "path": "specs/POLICY_WRITER_GIT_PORTABILITY.md",
+      "expected": "d417ce54898b65268b250384100235964bee1017b1d50295523dc29a9cc174a0",
+      "current": "d4420e868eab8f6d4ecf34c337c865d7b99e7653d994565fd69b8432c8daac22",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 5145,
+      "exact_bytes": 5220
+    },
+    {
+      "path": "specs/POLICY_WRITER_RECOVERY.md",
+      "expected": "78a676f07d0a9a5e0e570a07c290a07dca32415cab66227c743c35dfb834d0fe",
+      "current": "cd0d4de33d64e2893e410434f216bfc2a65cea5fafe3907dbf74347969c843b0",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 3818,
+      "exact_bytes": 3873
+    },
+    {
+      "path": "specs/POLICY_WRITER_TASK_BINDING.md",
+      "expected": "1c39927312438db45c833c8cd0fc7d87d4282b33c103874be6d7a5f1b138f038",
+      "current": "85f237a46041d6333b984903daca5528119d3043c106fca4357b5851a0920760",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 7425,
+      "exact_bytes": 7542
+    },
+    {
+      "path": "specs/PROBLEM_LOCK.md",
+      "expected": "c3cce877e00a62f49c8a032e9bde5e39562bd1b29dde3dee23263935f9aea675",
+      "current": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": true,
+      "exact_is_CRLF": true,
+      "current_bytes": 3159,
+      "exact_bytes": 3185
+    },
+    {
+      "path": "tests/test_quota_guard.py",
+      "expected": "3b0b4561a8efabfead97615b33820e4ef3096e723e722a36849341fcf172b3c8",
+      "current": "0277bd5e180b5d1915a8de8778edae12f7e9f25700a831aa755e04cdea5c2c68",
+      "matches_review_worktree_after_CRLF_normalization": true,
+      "current_is_pinned_canonical": false,
+      "exact_is_CRLF": false,
+      "current_bytes": 7635,
+      "exact_bytes": 7488
+    }
+  ],
+  "source_policy_changed": false,
+  "acceptance_reassessment_required": true
+}
