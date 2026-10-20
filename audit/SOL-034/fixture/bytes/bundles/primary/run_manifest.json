@@ -1,0 +1,20 @@
+{
+  "fee_rate": 0.0025,
+  "group": "primary",
+  "horizons": [
+    5,
+    6,
+    15,
+    25,
+    30
+  ],
+  "input_sha256": "32cd903b9aafc179d0fb3382b7c4d703084e8f9fc055d1a9310d2b3c76147c8a",
+  "metric_rows": 160,
+  "periods": 30,
+  "scenario_count": 4,
+  "schema_version": 1,
+  "source_commit": "5bb7eb1804571e9d63061ce2a634ef197e089093",
+  "source_sha256": "e49845df02054b958fb32c0e76d8dfff88762e88a2c4b5f483e831627b7d4742",
+  "split": "synthetic",
+  "status": "completed"
+}

@@ -1,0 +1,9 @@
+{
+  "attempt": 1,
+  "base_commit": "5bb7eb1804571e9d63061ce2a634ef197e089093",
+  "id": "GEN-primary",
+  "kind": "commands",
+  "owner": "hy3",
+  "scope": "PRIVATE GENERATED METRIC FIXTURE",
+  "split": "synthetic"
+}

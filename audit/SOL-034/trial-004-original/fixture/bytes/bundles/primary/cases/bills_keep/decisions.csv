@@ -1,0 +1,1 @@
+split,mode,fee_rate,scenario_id,fold_id,period,action,active_before,active_after,proposed_target,selected_target,ce_keep,prior_mass,recent_count,observed_max_drawdown_pct,human_review_latched,initial_allocation_deferred,intended_transfer,actual_fee,is_trade,executed_target_change,reason,first_deployment_year

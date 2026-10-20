@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+    "-B",
+    "audit/SOL-034/construct.py"
+  ],
+  "code": 0,
+  "stdout": "{\"status\": \"created\", \"elapsed_seconds\": 35.09299999999348}\r\n",
+  "stderr": ""
+}

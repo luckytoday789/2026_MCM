@@ -1,0 +1,30 @@
+{
+  "tasks": [
+    {
+      "acceptance_evidence": "chief/GEN-primary.json",
+      "attempt": 1,
+      "id": "GEN-primary",
+      "result_verdict": "approve",
+      "reviewed_commit": "cfe34be3995b8e182c6670db651a61f4161fcfb0",
+      "state": "accepted",
+      "task_sha256": "a8a06b87f277cfcbe9f2636d5696caadb57eb62de3edd0b52ab18a6ebe431985"
+    },
+    {
+      "acceptance_evidence": "chief/GEN-doubled.json",
+      "attempt": 1,
+      "id": "GEN-doubled",
+      "result_verdict": "approve",
+      "reviewed_commit": "954b2c3564d4cdba09eeea62a800181d466a786c",
+      "state": "accepted",
+      "task_sha256": "ebc2a21adb1bd65ad79444b7e49f9f1207e74b0c88ed55d1615bea73d8fe23af"
+    },
+    {
+      "attempt": 1,
+      "branch": "work/hy3/GEN-analysis-a1",
+      "id": "GEN-analysis",
+      "owner": "hy3",
+      "state": "ready",
+      "task_sha256": "c6a03f64bba0cbe1345bc45df2e18102dcc72c3d4f1391709912a66cf8a72fc6"
+    }
+  ]
+}

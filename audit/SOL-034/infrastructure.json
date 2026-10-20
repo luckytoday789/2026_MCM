@@ -1,0 +1,6 @@
+{
+  "exec_command": "Two attempts failed before process creation: helper_unknown_error setup refresh had errors; fallback to node child_process.",
+  "node_process_import": "node:process unavailable; clean Python child environments constructed in standard Python instead.",
+  "trial001": "Tool timeout reset node kernel before result recording; no test success claimed. Trial002 records full actual test failure and logs.",
+  "trial002": "One assertion incorrectly demanded rejection of a later unchanged publication snapshot. Changed wrong-P fixture to the earlier source commit; later snapshots remain allowed."
+}

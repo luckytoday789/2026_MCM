@@ -1,0 +1,144 @@
+{
+  "boundary": {
+    "analysis_called_after_failure": false,
+    "failure": {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "scripts/check.py",
+        "--config",
+        "primary.json",
+        "--output",
+        "primary",
+        "--check"
+      ],
+      "elapsed_seconds": 2.75,
+      "group": "primary",
+      "python": "3.12.14",
+      "pythonpath_absent": true,
+      "returncode": 9,
+      "script_sha256": "80db532f3e7e519d411af9b9555c10fce08bf54d0112976d16eccaf3955d759e",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"guard\": \"passed\", \"exit\": 9}\r\n",
+      "stdout_sha256": "204c84225468ee301049eaa550e59f5c3c18df32c7d5d3a77cf81985bfaf060d"
+    },
+    "success": [
+      {
+        "argv": [
+          "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+          "-B",
+          "scripts/check.py",
+          "--config",
+          "primary.json",
+          "--output",
+          "primary",
+          "--check"
+        ],
+        "elapsed_seconds": 2.6560000000172295,
+        "group": "primary",
+        "python": "3.12.14",
+        "pythonpath_absent": true,
+        "returncode": 0,
+        "script_sha256": "80db532f3e7e519d411af9b9555c10fce08bf54d0112976d16eccaf3955d759e",
+        "stderr": "",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "{\"guard\": \"passed\", \"exit\": 0}\r\n",
+        "stdout_sha256": "785d7c7653799049f90235fd43bada8732f878bb55b208dcc676b4515b979f2d"
+      },
+      {
+        "argv": [
+          "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+          "-B",
+          "scripts/check.py",
+          "--config",
+          "doubled.json",
+          "--output",
+          "doubled",
+          "--check"
+        ],
+        "elapsed_seconds": 2.687999999965541,
+        "group": "doubled",
+        "python": "3.12.14",
+        "pythonpath_absent": true,
+        "returncode": 0,
+        "script_sha256": "80db532f3e7e519d411af9b9555c10fce08bf54d0112976d16eccaf3955d759e",
+        "stderr": "",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "{\"guard\": \"passed\", \"exit\": 0}\r\n",
+        "stdout_sha256": "785d7c7653799049f90235fd43bada8732f878bb55b208dcc676b4515b979f2d"
+      }
+    ]
+  },
+  "context_gain": "0x0.0p+0",
+  "context_passed": false,
+  "context_positive_folds": 0,
+  "doubled_supported": false,
+  "git": {
+    "binding": {
+      "C": "cd0f37e0aaebd323c65a459f0e33e067cbe2b078",
+      "E": "07cf2270629ea2b1b543e65d22f819d52d1d1fca",
+      "P": "de74b9765e27c405a10ddb1bec4f056c66e155e6",
+      "config_sha256": "de949404523c0e24393a68a54ef8e57fb4d5ed7291a53619e0a84369d804f359",
+      "task": {
+        "attempt": 1,
+        "base_commit": "07cf2270629ea2b1b543e65d22f819d52d1d1fca",
+        "config_sha256": "de949404523c0e24393a68a54ef8e57fb4d5ed7291a53619e0a84369d804f359",
+        "id": "GEN-analysis",
+        "kind": "commands",
+        "owner": "hy3",
+        "scope": "PRIVATE GENERATED ASSEMBLY"
+      }
+    },
+    "checked_out_bytes_unchanged": true,
+    "later_HEAD": "2fd7e5c74dc42cfdadeed1cda686eed42b7e026a",
+    "no_runtime_task": true,
+    "source_files": 100
+  },
+  "measured": {
+    "elapsed_seconds": 34.82800000003772,
+    "metric_rows": 320,
+    "output_bytes": 581514,
+    "output_files": {
+      "comparison_gates.json": 217323,
+      "paired_differences.csv": 105075,
+      "profile_recommendations.json": 46582,
+      "profile_screen.json": 53590,
+      "run_manifest.json": 139802,
+      "selection.json": 19142
+    }
+  },
+  "primary_selection": "balanced_adaptive",
+  "profile_assignments": {
+    "A": [
+      5,
+      "conservative"
+    ],
+    "B": [
+      15,
+      "conservative"
+    ],
+    "C": [
+      30,
+      "balanced"
+    ],
+    "D": [
+      25,
+      "conservative"
+    ],
+    "E": [
+      6,
+      "conservative"
+    ]
+  },
+  "quantile_example": {
+    "p10": 3.0,
+    "p90": 27.0,
+    "values": [
+      0.0,
+      10.0,
+      20.0,
+      30.0
+    ]
+  }
+}

@@ -1,0 +1,162 @@
+ by accepted analysis; never rescale values or mutate upstream rows. Record source case/row keys and hashes plus this exact mapping.
+
+Before importing analysis assembly in the production CLI, launch each accepted writer --check in fresh Python3.12 with all case-insensitive PYTHONPATH removed. Record actual argv/return/timing/log hashes. Writer checkers intentionally reject unlisted imports: never call the checker in the same process after importing analysis/assembly or weaken its guard. Separate authentication failure from human_review; a failed process cannot become a completed referral. Assembly itself never reads raw/development/final CSVs, fits calibrations, simulates, searches candidates or writes producer artifacts. Authorized writer subprocess checks may read/replay their original development input under their exact contracts; they do not rerun HY3-003. Exercise this separation with generated local boundary fixtures, including a nonzero child exit before any analysis call. No worker/model/network request is needed.
+
+Call unchanged build_analysis_tables exactly once after authentication. Persist paired_differences.csv (typed flat rows), comparison_gates.json, selection.json, profile_screen.json, profile_recommendations.json and run_manifest.json with precise source/config/task/producer/mapping/schema/count/byte/hash provenance. Development counts are12000/100/one selection/30/10; source metrics9600. Preserve all nested flags/reasons/comparators/units/source keys, provisional and personalized_overlay_pending. Selection primary H30 only; sensitivity cannot replace its winner, and fixed-class customer screening stays at own H. No mathematical or threshold change and no fallback filling. Refuse any existing output root before input/check/analysis; exclusively create staging and completed output, preserve timeout/partial/oversize failures and enforce <=10MiB per file. Measure generated fixture runtime and bytes. Expected production counts are not observed results.
+
+Create a read-only --check that authenticates original C/E/P, source/producer/current consumed bytes and recorded checker executions, reconstructs the detached typed bridge, independently invokes only accepted pure analysis and compares saved types/numbers/keys exactly. It does not repair hashes, rerun producer generation or write evidence. In generated small four-fold fixtures test a genuine successful typed roundtrip, all-referral and qualified rows, exact thresholds/neighbor values, lost null/boolean/signed zero, primary/doubled swap, failed/unaccepted producer, wrong task/base/source/config/input, rehashed wrong metric, missing/duplicate keys, wrong count/units, missing file, false provenance, incomplete status and existing root. Verify unaltered source/producer/output bytes on pass and corruption rejection. Use actual isolated local Git commit/checkout roundtrip for fixture bytes and actual fresh-child failure/success boundary, not only mocked success labels. Synthetic seams must be private and explicitly labelled, never enabled by production CLI/config. No original competition CSV reads or real strategy runs. Do not copy large historical bundles.
+
+Audit evidence binds exact task/base/publication/source/verifier and contains independent scalar/statistical expected facts for representative gates/profile decisions, using scalar arithmetic rather than calling tested routines to invent expectations. Its --check is exclusively read-only, works after HEAD advances without .runtime/task.json, independently replays meaningful boundary/typed facts and rejects changed source/count/output evidence without modifying originals. New scoped audit-only .gitattributes is permitted for deterministic LF. Run both prescribed commands in fresh Python3.12 with PYTHONPATH removed, record actual logs/argv/exit/timing/module paths and before/after inventories. Preserve all failed trials. Within1500seconds CPU-only, no packages/account/model changes, fetch/commit/push in assigned repository, watchers, other tasks, production/final execution or submission. Parent owns delivery. Chief will independently check the exact code and selected scalar fixtures; actual HY3 assembly execution and independent numerical review remain later tasks.
+warning: Codex is ignoring 1 unrecognized configuration setting. Check for typos or deprecated settings.
+  user (C:\Users\刘奥华\.codex\config.toml): `computer_use.windows.always_allowed_app_ids` is ignored.
+warning: Codex is ignoring 1 unrecognized configuration setting. Check for typos or deprecated settings.
+  user (C:\Users\刘奥华\.codex\config.toml): `computer_use.windows.always_allowed_app_ids` is ignored.
+codex
+I’ll read the pinned task and accepted interfaces, implement the assembly within the allowed paths, and run the prescribed generated-fixture checks without committing or changing branches.
+
+exec
+"C:\\Users\\刘奥华\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe" -Command 'Get-Content -Raw AGENTS.md; Get-Content -Raw .runtime/task.json' in E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-034-a1
+ exited -1 in 0ms:
+Failed to create unified exec process: helper_unknown_error: setup refresh had errors
+2026-10-20T04:21:57.448232Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: helper_unknown_error: setup refresh had errors\")" }
+exec
+"C:\\Users\\刘奥华\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe" -NoProfile -Command 'Get-Content -Raw AGENTS.md' in E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-034-a1
+ exited -1 in 0ms:
+Failed to create unified exec process: helper_unknown_error: setup refresh had errors
+2026-10-20T04:22:03.816992Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: helper_unknown_error: setup refresh had errors\")" }
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+The accepted writer already declares the CSV types and checks source closure. Its import guard requires a separate process, so the CLI will run both writer checks before importing the assembly. The assembly will then authenticate the Git records and build a detached typed input for analysis.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (failed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+The core assembly is written, including the declared-type bridge and six output files. I’m now testing Git authentication, typed roundtrips, and failure handling with generated fixtures. The known development counts remain expectations; no competition outcomes have been read.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (failed)
+mcp: node_repl/js started
+codex
+The focused tests are running. They cover real local Git commits and checkout bytes, fresh child processes, and rehashed corruptions that should still fail against canonical blobs. The boundary fixture exercises the accepted writer’s source guard without reading competition data or simulating strategies.
+
+mcp: node_repl/js (failed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+The first recorded run passed 10 of 11 tests. The failure was in my test: it expected a later publication snapshot to fail, although the contract allows one carrying the unchanged ready task. I’ve preserved the failure and am correcting that assertion. The separate nonzero-child test passed: it raised an authentication error before the analysis callback.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+2026-10-20T04:35:19.009253Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+The generated roundtrip passed with 320 source metrics and six output files totaling 581,514 bytes. It preserved the typed values and passed the scalar selection checks. I’m completing the read-only audit verifier and sealing the evidence before the final clean-environment runs.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+The final clean-environment run is underway. The boundary test now also replays the accepted writer checker on its existing small generated fixture in fresh children and verifies those fixture bytes stay unchanged. No competition input or strategy generation has run.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+All 11 focused tests passed, with unchanged inventories. The audit verifier found a provenance-check bug: Windows wrote the temporary checker with CRLF, but the verifier compared its hash only to LF bytes. I’m preserving the failed run and updating that check to validate the two exact encodings without changing the recorded logs or hashes.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+The corrected 11-test run passed and its inventories match. The read-only audit is now checking the sealed Git fixture and scalar facts. After it finishes, I’ll check the changed-path inventory and save the final command records for the parent runner.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+SOL-034 is implemented in the assigned paths and ready for parent delivery.
+
+- Both prescribed Python 3.12 commands passed: 11 tests and the read-only verifier.
+- Inventories remained unchanged; failed trials were preserved.
+- Generated fixture: 320 metrics, 581,514 output bytes.
+
+[Audit and implementation notes](E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-034-a1/audit/SOL-034/implementation.md)
+
+No production/final execution, commits, pushes, or branch changes occurred.
+tokens used
+221,265
+SOL-034 is implemented in the assigned paths and ready for parent delivery.
+
+- Both prescribed Python 3.12 commands passed: 11 tests and the read-only verifier.
+- Inventories remained unchanged; failed trials were preserved.
+- Generated fixture: 320 metrics, 581,514 output bytes.
+
+[Audit and implementation notes](E:/2026_MCM/sol-coop/.runtime/worktrees/SOL-034-a1/audit/SOL-034/implementation.md)
+
+No production/final execution, commits, pushes, or branch changes occurred.

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-034",
+  "base_commit": "2ea73da59d393893f06a8169432c5d9e0b168c50",
+  "publication_commit": "fff5331dd62581c56848e165198458d38726d705",
+  "scope": "Generated-only typed authenticated analysis assembly",
+  "production_executed": false,
+  "competition_input_read": false,
+  "final_supported": false,
+  "accepted_modules_unchanged": true,
+  "expected_production_counts": {
+    "metric_rows": 9600,
+    "paired_differences": 12000,
+    "comparison_gates": 100,
+    "selection": 1,
+    "profile_screen": 30,
+    "profile_recommendations": 10
+  },
+  "limitations": [
+    "No accepted HY3-004/005 outcomes consumed. No production configuration created.",
+    "Actual production execution and independent numerical review remain later tasks.",
+    "Generated metrics are assigned scalar fixtures, not coherent simulated strategy paths.",
+    "Completed manifest is the final atomic publication marker; six files are not one atomic filesystem transaction."
+  ],
+  "preserved_trials": [
+    "Infrastructure tool failures",
+    "trial-002: 10/11 pass; erroneous later-publication assertion fixed",
+    "trial-003: focused tests pass; verifier failed because seal was not created yet",
+    "trial-004-original: initial successful generated fixture and guard-only boundary evidence",
+    "final-001: 11 tests pass; audit checker script hash compared LF only to actual CRLF. Verifier now validates exact LF or full-CRLF bytes; original recorded hashes/logs remain unchanged."
+  ],
+  "measured_generated_fixture": {
+    "elapsed_seconds": 34.51600000000326,
+    "metric_rows": 320,
+    "output_bytes": 581514,
+    "output_files": {
+      "comparison_gates.json": 217323,
+      "paired_differences.csv": 105075,
+      "profile_recommendations.json": 46582,
+      "profile_screen.json": 53590,
+      "run_manifest.json": 139802,
+      "selection.json": 19142
+    }
+  }
+}

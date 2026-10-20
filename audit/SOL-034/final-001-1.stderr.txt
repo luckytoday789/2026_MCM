@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-034-a1\audit\SOL-034\verify.py", line 168, in <module>
+    check()
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-034-a1\audit\SOL-034\verify.py", line 112, in check
+    assert record['script_sha256']==boundary['source_sha256']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

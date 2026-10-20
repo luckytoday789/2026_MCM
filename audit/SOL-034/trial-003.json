@@ -1,0 +1,50 @@
+[
+  {
+    "argv": [
+      "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_policy_analysis_writer.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 70.68800000002375,
+    "pythonpath_absent": true,
+    "stdout": {
+      "path": "audit/SOL-034/trial-003-0.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "stderr": {
+      "path": "audit/SOL-034/trial-003-0.stderr.txt",
+      "sha256": "a083a8657471e7ba1c1ac32e09b08aa813c74fff88b68f7e065b62c223b53961",
+      "bytes": 1895
+    }
+  },
+  {
+    "argv": [
+      "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+      "-B",
+      "audit/SOL-034/verify.py",
+      "--check"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 0.7349999999860302,
+    "pythonpath_absent": true,
+    "stdout": {
+      "path": "audit/SOL-034/trial-003-1.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "stderr": {
+      "path": "audit/SOL-034/trial-003-1.stderr.txt",
+      "sha256": "cd85bef985e054801c185e644e653d80d7946865738aaead7ad0922715b396d4",
+      "bytes": 996
+    }
+  }
+]
