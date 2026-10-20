@@ -1,0 +1,11 @@
+split,eligible,fee_rate,profile_id,proposed_class,reason,horizon,loss_tolerance_pct,status,scenario_count,denominator,recommended_class,p90_loss_pct,p10_growth_pct,exceedance_count,exceedance_fraction,risk_pass,purchasing_power_pass,median_loss_pct,severe_loss_pct,trade_share_pct,trade_share_ex_initial_pct,severe_scenario_id,case_path
+final,False,0.0025,A,,upstream_referral | no_qualifying_class,5,10,development_referral,0,0,,,,,,,,,,,,,
+final,False,0.005,A,,upstream_referral | no_qualifying_class,5,10,development_referral,0,0,,,,,,,,,,,,,
+final,True,0.0025,B,conservative,eligible_after_personalized_development_rescreen,15,25,final_validation_failed_human_review,60,60,,26.4632822858229,0.20544458494266007,7,0.11666666666666667,False,True,12.446074642420701,46.3645179612898,15.222222222222221,9.166666666666666,161,personalized/B/0.0025
+final,True,0.005,B,conservative,eligible_after_personalized_development_rescreen,15,25,final_validation_failed_human_review,60,60,,26.467728057543958,0.19843697934204266,7,0.11666666666666667,False,True,12.48628036869669,46.372904790724604,14.666666666666666,8.571428571428571,161,personalized/B/0.005
+final,True,0.0025,C,conservative,eligible_after_personalized_development_rescreen,30,40,final_validation_failed_human_review,60,60,,40.515424246983216,0.8635990798371252,7,0.11666666666666667,False,True,22.536479246131258,54.70745822831062,8.277777777777779,5.114942528735632,149,personalized/C/0.0025
+final,True,0.005,C,conservative,eligible_after_personalized_development_rescreen,30,40,final_validation_failed_human_review,60,60,,40.51692714241822,0.8605902078838846,7,0.11666666666666667,False,True,22.536479246131258,54.70745822831062,7.944444444444445,4.7701149425287355,149,personalized/C/0.005
+final,False,0.0025,D,,upstream_referral | no_qualifying_class,25,15,development_referral,0,0,,,,,,,,,,,,,
+final,False,0.005,D,,upstream_referral | no_qualifying_class,25,15,development_referral,0,0,,,,,,,,,,,,,
+final,False,0.0025,E,,upstream_referral | no_qualifying_class,6,35,development_referral,0,0,,,,,,,,,,,,,
+final,False,0.005,E,,upstream_referral | no_qualifying_class,6,35,development_referral,0,0,,,,,,,,,,,,,
