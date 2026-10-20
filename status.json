@@ -1,13 +1,9 @@
 {
   "role": "sol",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
-  "state": "submitted",
+  "state": "ready",
   "python": "3.12.14",
-  "updated_at": "2026-10-20T10:38:39.441132+00:00",
-  "lease_until": "2026-10-20T10:48:39.441132+00:00",
-  "task_id": "SOL-038",
-  "result_status": "failed",
-  "commit": "e1783a918122d8eaa507e42ca15a9c0a5f5b9339",
-  "branch": "work/sol/SOL-038-a1",
-  "diagnosis": "handoff/SOL-038/recovery.json"
+  "updated_at": "2026-10-20T10:40:30.635065+00:00",
+  "lease_until": "2026-10-20T10:50:30.635065+00:00",
+  "codex_available": true
 }
