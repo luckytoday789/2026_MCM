@@ -6,9 +6,7 @@
   ],
   "child_pids": [],
   "current_task": null,
-  "alerts": [
-    "Chief heartbeat is older than ten minutes; inspect the existing chief workplan before redispatch."
-  ],
+  "alerts": [],
   "tasks": [
     {
       "key": "SOL-001-a1",
@@ -735,10 +733,13 @@
   "chief_status": {
     "role": "chief",
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
-    "state": "stopped",
+    "state": "running",
     "python": "3.12.0",
-    "updated_at": "2026-10-20T10:54:51.650967+00:00",
-    "lease_until": "2026-10-20T11:04:51.650967+00:00"
+    "updated_at": "2026-10-20T11:25:46.576247+00:00",
+    "lease_until": "2026-10-20T11:35:46.576247+00:00",
+    "task_id": "chief-two-node-integration",
+    "execution_mode": "active_chat",
+    "note": "Main integration active; background coordinator deliberately stopped to avoid duplicate writers. HY3-008 running on remote machine."
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
   "schema_version": 1,
@@ -746,7 +747,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-20T11:08:42.579595+00:00",
+  "updated_at": "2026-10-20T11:30:05.498346+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
