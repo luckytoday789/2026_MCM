@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T04:17:07.371387+00:00",
+  "source_commit": "bc04d428425a9afbea799e036213632dc6568c73",
+  "configs": [
+    {
+      "id": "HY3-004",
+      "group": "primary",
+      "path": "specs/execution/HY3-004-file44.json",
+      "sha256": "5d09fe13400b04b14a26fbfa03810a56c5b1b0a7f0ddd13e855918afbeb60eee",
+      "source_count": 28,
+      "approval_count": 5,
+      "schema_source_reference_check": "passed",
+      "actual_runtime_measured": false
+    },
+    {
+      "id": "HY3-005",
+      "group": "doubled",
+      "path": "specs/execution/HY3-005-file44.json",
+      "sha256": "1961de1601a882334244538363eb22e1c977677f81e4f37c438ebc8890b53953",
+      "source_count": 28,
+      "approval_count": 5,
+      "schema_source_reference_check": "passed",
+      "actual_runtime_measured": false
+    }
+  ],
+  "accepted_dependencies": {
+    "SOL-021": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+    "SOL-022": "21ad493707d71240f83d7f01ed6d133e1380e8fb",
+    "SOL-025": "803b7a085284405ee5ee4d4f0d5720ebaa2e67f7",
+    "SOL-031": "a24dca5d5494455407207e0fd70c06b258d4fd1f",
+    "SOL-032": "d168757efbc70e4641deacc911976f1fa3bd7a7c"
+  },
+  "production_execution": false,
+  "competition_input_read": false,
+  "final_data_open": false,
+  "old_configurations_preserved_unused": true
+}
