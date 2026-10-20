@@ -1,6 +1,6 @@
 # SafeInvest three-computer collaboration
 
-Repository: https://github.com/luckytoday789/2026_MCM . The current user authorized routine code, experiments, repository synchronization, task dispatch and integration. The coordinator is GPT-6 Astra on the first computer; GPT-6.1 Sol on another Codex computer is engineer/reviewer; HY3 in WorkBuddy on the third computer supervises deterministic computation. Do not spawn replacement copies of the other two remote roles.
+Repository: https://github.com/luckytoday789/2026_MCM . The current user authorized routine code, experiments, repository synchronization, task dispatch and integration. The coordinator is GPT-6.1 Sol on the first computer; GPT-6.1 Sol on another Codex computer is engineer/reviewer; HY3 in WorkBuddy on the third computer supervises deterministic computation. Do not spawn replacement copies of the other two remote roles.
 
 Read `ops/PROTOCOL.md`, `specs/PROBLEM_LOCK.md`, `specs/ACCOUNTING.md`, and your current immutable task. `ops/control.json` and `ops/queue.json` on `origin/main` define active work. The coordinator alone updates main and task definitions. Workers write only their assigned `work/<role>/<task>-a<attempt>` branch and assigned paths. A successful push is not acceptance; the coordinator reviews exact commits and records acceptance.
 

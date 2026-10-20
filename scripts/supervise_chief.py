@@ -4,6 +4,7 @@ import datetime as dt
 import json
 import os
 from pathlib import Path
+import re
 import subprocess
 import sys
 import time
@@ -66,11 +67,13 @@ def process_inventory():
 def related_processes(rows):
     workers, agents = [], []
     root_text = str(ROOT).replace('\\', '/').lower()
+    root_argument=re.compile(r'--cd(?:=|\s+)["\x27]?'+re.escape(root_text)+r'(?=["\x27\s]|$)')
     for row in rows:
         command = (row.get('CommandLine') or '').replace('\\', '/').lower()
         if 'coop.py' in command and '--role chief' in command:
             workers.append(row['ProcessId'])
-        if root_text in command and 'gpt-6-astra' in command and 'exec' in command:
+        if (root_argument.search(command) and 'exec' in command
+                and any(model in command for model in ('gpt-6-astra','gpt-6.1-sol'))):
             agents.append(row['ProcessId'])
     return workers, agents
 

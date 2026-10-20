@@ -4,7 +4,7 @@
 
 | Role | Model/client | Responsibility |
 | --- | --- | --- |
-| chief | GPT-6 Astra xhigh / coordinator Codex | Mathematical decisions, clear task specifications, policy design, integration, evidence selection, final English paper |
+| chief | GPT-6.1 Sol xhigh / coordinator Codex | Mathematical decisions, clear task specifications, policy design, integration, evidence selection, final English paper |
 | sol | GPT-6.1 Sol xhigh / remote Codex | Accounting/backtest implementation, targeted tests, independent review of chief's policy and HY3's experiments |
 | hy3 | HY3 / remote WorkBuddy | Supervise deterministic Python worker, run specified experiments, preserve ledgers and checks, diagnose/report execution failures |
 
@@ -87,7 +87,7 @@ For unattended Windows use, launch the command with a hidden background process 
 
 ## Coordinator loop
 
-`python scripts/coop.py watch --role chief --backend codex` watches task-branch changes and worker registration/error changes. Its first pass records the initial state so it does not duplicate bootstrap work. Meaningful changes invoke GPT-6 Astra xhigh with `CHIEF_TICK.txt`; idle heartbeat changes do not invoke the model. Chief serializes integration and dispatch, then pushes main. The runner stops after two consecutive infrastructure failures, local STOP, project stop state or the configured deadline. A failed task is not automatically rerun; chief creates a corrected attempt.
+`python scripts/coop.py watch --role chief --backend codex` watches task-branch changes and worker registration/error changes. Its first pass records the initial state so it does not duplicate bootstrap work. Meaningful changes invoke GPT-6.1 Sol xhigh with `CHIEF_TICK.txt`; idle heartbeat changes do not invoke the model. Chief serializes integration and dispatch, then pushes main. The runner stops after two consecutive infrastructure failures, local STOP, project stop state or the configured deadline. A failed task is not automatically rerun; chief creates a corrected attempt.
 
 There is no automatic wakeup of this exact original chat from a background process. During an active chat, the coordinator reports needs here; background work records needs in status/error files and GitHub, and the remote clients can surface them using their own notification mechanisms. Avoid claiming an unattended process can send a chat message unless that integration has actually been configured.
 

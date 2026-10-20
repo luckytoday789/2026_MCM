@@ -1,7 +1,7 @@
 # Local chief allowance stop
 
 The user authorized this chief host to continue until its signed-in account's
-weekly subscription allowance has 50% remaining, finish the current bounded task,
+weekly subscription allowance has 40% remaining, finish the current bounded task,
 save/push its work, and stop locally. This is an account allowance, not a token
 budget or an estimate from elapsed time. Other uses of that same account can
 also change the observed balance.
@@ -35,7 +35,13 @@ new model work until a verified reading returns. Never infer a balance from
 tokens, heartbeat, elapsed time or an expired quota window. Keep the current
 task monitored, and retry only the inexpensive read-only metadata request.
 
-The 50% value triggers graceful draining, not a promise of an exact final
+The configured 40% value triggers graceful draining, not a promise of an exact final
 balance. Periodic readings, server accounting delay and finishing the current
-task can leave the final balance somewhat below 50%. Existing completion,
+task can leave the final balance somewhat below 40%. Existing completion,
 manual STOP and competition-deadline rules still apply.
+
+The user explicitly changed the chief model to GPT-6.1 Sol and lowered the
+remaining-allowance threshold from 50% to 40% on 2026-10-20. This authorizes
+one inspected local resume from the previous 50% stop. Preserve the old stop
+record in local recovery history before clearing its latch. It does not
+authorize automatic resume from the new 40% stop.

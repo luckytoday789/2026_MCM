@@ -54,6 +54,21 @@ class QuotaTests(unittest.TestCase):
                 guard.refresh(runtime,force=True)
             self.assertEqual(guard.gate(runtime),'drain')
 
+    def test_explicit_forty_percent_threshold_allows_fifty_and_drains_at_forty(self):
+        with tempfile.TemporaryDirectory(dir=TEST_ROOT) as tmp:
+            runtime=Path(tmp)
+            self.config(runtime)
+            config=guard.read(runtime/'chief-quota-config.json')
+            config['stop_remaining_percent']=40
+            guard.save(runtime/'chief-quota-config.json',config)
+            for used in (50,59):
+                with patch.object(guard,'read_server',return_value=self.reply(used)):
+                    guard.refresh(runtime,force=True)
+                self.assertEqual(guard.gate(runtime),'allow')
+            with patch.object(guard,'read_server',return_value=self.reply(60)):
+                guard.refresh(runtime,force=True)
+            self.assertEqual(guard.gate(runtime),'drain')
+
     def test_unavailable_or_stale_quota_holds_new_work_without_assumed_balance(self):
         with tempfile.TemporaryDirectory(dir=TEST_ROOT) as tmp:
             runtime=Path(tmp)

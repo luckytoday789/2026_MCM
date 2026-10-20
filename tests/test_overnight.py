@@ -24,6 +24,7 @@ class OvernightTests(unittest.TestCase):
             top=Path(temp)
             (top/'ops/prompts').mkdir(parents=True)
             (top/'ops/prompts/CHIEF_TICK.txt').write_text('Fixture only.')
+            coop.dump(top/'ops/control.json',{'models':{'chief':'gpt-6.1-sol'}})
             runtime=top/'.runtime'
             coop.dump(runtime/'chief-seen.json',{'schema_version':2,'fingerprint':'unchanged'})
             fixed=dt.datetime(2026,10,19,17,0,tzinfo=dt.timezone.utc)
@@ -41,6 +42,8 @@ class OvernightTests(unittest.TestCase):
                 self.assertTrue(coop.chief_tick())
                 self.assertFalse(coop.chief_tick())
                 self.assertEqual(run.call_count,1)
+                command=run.call_args.args[0]
+                self.assertEqual(command[command.index('--model')+1],'gpt-6.1-sol')
                 plan['next_wake_at']='2026-10-20T01:10:00+08:00'
                 coop.dump(top/'ops/chief-workplan.json',plan)
                 self.assertFalse(coop.chief_tick())
@@ -68,8 +71,10 @@ class OvernightTests(unittest.TestCase):
         rows=[{'ProcessId':10,'CommandLine':'python scripts/coop.py watch --role chief --backend codex'},
               {'ProcessId':20,'CommandLine':f'codex exec --model gpt-6-astra --cd {coop.ROOT}'},
               {'ProcessId':30,'CommandLine':'python scripts/coop.py watch --role hy3'},
-              {'ProcessId':40,'CommandLine':'codex exec --model gpt-6.1-sol --cd elsewhere'}]
-        self.assertEqual(supervisor.related_processes(rows),([10],[20]))
+              {'ProcessId':40,'CommandLine':'codex exec --model gpt-6.1-sol --cd elsewhere'},
+              {'ProcessId':50,'CommandLine':f'codex exec --model gpt-6.1-sol --cd "{coop.ROOT}"'},
+              {'ProcessId':60,'CommandLine':f'codex exec --model gpt-6.1-sol --cd {coop.ROOT}/.runtime/worktrees/SOL-EXAMPLE-a1'}]
+        self.assertEqual(supervisor.related_processes(rows),([10],[20,50]))
 
     def test_quota_probe_requires_success_and_exact_real_reply(self):
         self.assertTrue(probe.response_is_usable(0,probe.TOKEN+'\n'))

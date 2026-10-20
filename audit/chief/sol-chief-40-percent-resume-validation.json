@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-10-20T03:35:04.388562+00:00",
+  "authorization": "User changed chief to GPT-6.1 Sol and lowered local remaining allowance threshold from50% to40%, explicitly requesting continued work.",
+  "chief_model": "gpt-6.1-sol",
+  "reasoning_effort": "xhigh",
+  "test_results": [
+    {
+      "suite": "test_coop.py",
+      "passed": 7,
+      "exit_code": 0
+    },
+    {
+      "suite": "test_overnight.py",
+      "passed": 6,
+      "exit_code": 0
+    },
+    {
+      "suite": "test_quota_guard.py",
+      "passed": 10,
+      "exit_code": 0
+    }
+  ],
+  "verified_behaviors": [
+    "Configured chief model is actually passed to Codex exec",
+    "Both old Astra and new Sol chief processes are detected, isolated task worktrees excluded",
+    "40% threshold allows50% and41%, drains at40%",
+    "Existing delivery deduplication, timed wakeup and sticky graceful stop still pass"
+  ],
+  "local_recovery": "Old processes confirmed absent; old50% stop records archived under ignored runtime recovery before explicit-authorized latch clearing. Local account readings remain ignored.",
+  "next_work": "Inspect exact completed SOL-031 receipt with prepared reviewer; preserve review/production gates and do not repeat accepted or submitted calculations.",
+  "global_state": "running",
+  "final_data_open": false
+}

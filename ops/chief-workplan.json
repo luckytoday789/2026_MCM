@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-19T23:36:45.150895+00:00",
-  "reason": "Local weekly allowance reached50% and supervisor latched drain. Current writer acceptance preparation saved; no new SOL-031 receipt at final fetch. Only remote results awaited. One-shot30-minute fallback is subject to the latched local budget gate: no automatic chief resume, no global pause.",
+  "next_wake_at": "2026-10-20T03:32:47.539165+00:00",
+  "reason": "User explicitly resumed this host with GPT-6.1 Sol xhigh and a new 40% weekly remaining threshold. Preserve prior 50% stop evidence and continue exact pending writer/result acceptance.",
   "next_actions": [
-    "Local budget drain latched at2026-10-19T23:05:34.430724+00:00 with50% remaining. Do not start another chief task or clear markers on automatic wakeup. After a new explicit user resume authorization, inspect budget-stop/recovery, fresh quota, control/STOP/deadline. Global state remains running; parent stops locally after exit.",
+    "New explicit user authorization supersedes the historical 50% local stop: chief now uses GPT-6.1 Sol xhigh and the host-local configuration stops at 40% weekly remaining. Previous drain/stop history is preserved locally. Continue pending tasks without rerunning accepted/submitted work. The new 40% stop remains sticky until another explicit authorization.",
     "SOL-028 successful quota receipt remains accepted. SOL-029 completed remotely but chief rejected clean-checkout portability; no quota failure. Do not recreate a quota probe.",
     "SOL-027 remains accepted at3d5e965e45f18cf79023dde69189ce987c17e56b. SOL-031 latest observed running lease23:01:46 UTC until23:11:46; no submitted result branch at this checkpoint. Release existing SOL-030 after successful SOL-031 submission without fresh quota failure. Both task digests and all50/31 source pins and accepted dependencies rechecked; do not recreate them.",
     "SOL-026 at e8733bbc9f1234e04a5e382046d3c89fc12cae7d remains failed/cancelled. Chief verified111 paths/35 pins;13 focused tests pass but required verifier fails on missing verification.json. clean-environment-checks/integrity-self-tests also absent. Saved creation evidence hashes an older policy_writer.py. Failed branch/hand-off and exact quarantine drafts are preserved; do not promote them or fabricate old evidence.",
@@ -28,7 +28,7 @@
   "last_successful_quota_probe_commit": "7ac6afe1169740666f0f65d5f2d9674fd2d4c964",
   "quota_probe_task": "SOL-028",
   "quota_probe_remaining_additional_attempts_after_SOL028": 1,
-  "last_outcome_zh": "本机周额度剩余50%，已触发收尾。完成SOL-031精确交付验收脚本准备及SOL-031/SOL-030任务哈希、源版本和依赖预检；脚本仅语法/CLI检查通过，尚无新回执，未执行数值验收。保存后退出，由父进程本地停机；全局running、最终数据关闭。",
+  "last_outcome_zh": "用户明确授权主控切换为GPT-6.1 Sol，周额度剩余下限从50%改为40%；旧停机历史保留，恢复待验收任务，最终集门禁保持。",
   "baseline_figure_source_commit": "04be213a76855b1b1815405a735f2a49be678935",
   "baseline_figure_review_task": "SOL-030",
   "layout_proof_path": "report/layout-proof/methods-baselines.pdf",
@@ -47,5 +47,6 @@
   "personalized_bridge_validation": "audit/chief/personalized-bridge-handoff-validation.json",
   "personalized_integration_portability": "audit/chief/SOL-027-integration-portability.json",
   "local_budget_checkpoint": "audit/chief/turn-20261020-budget-drain-writer-preparation.json",
-  "prepared_writer_reviewer": "audit/chief/review_sol031.py"
+  "prepared_writer_reviewer": "audit/chief/review_sol031.py",
+  "resumed_by_explicit_user_at": "2026-10-20T03:32:47.539165+00:00"
 }

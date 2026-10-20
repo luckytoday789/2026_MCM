@@ -337,6 +337,14 @@ def chief_budget_gate():
     from quota_guard import gate
     return gate(RUNTIME)
 
+def chief_model():
+    path=ROOT/'ops/control.json'
+    config=json.loads(path.read_text(encoding='utf-8')) if path.exists() else {}
+    model=config.get('models',{}).get('chief','gpt-6.1-sol')
+    if model not in {'gpt-6-astra','gpt-6.1-sol'}:
+        raise ValueError('Unsupported configured chief model; require an explicit supported assignment.')
+    return model
+
 def chief_tick(force=False):
     if chief_budget_gate() not in {'allow','disabled'}:
         return False
@@ -356,9 +364,14 @@ def chief_tick(force=False):
     if not binary:
         raise RuntimeError('Codex not found for coordinator.')
     prompt=(ROOT/'ops/prompts/CHIEF_TICK.txt').read_text(encoding='utf-8')
-    command=[binary,'exec','--approve-for-me','--model','gpt-6-astra','-c','model_reasoning_effort="xhigh"',
+    prompt=(f'Execution root: {ROOT}. On Windows, begin each shell action with an explicit '
+            'absolute Set-Location to that root. If sandbox access is denied, use the existing '
+            'automatic approval for that specific authorized repository command; do not repeat '
+            'relative-path reads from C:/ or weaken security.\n\n'+prompt)
+    model=chief_model()
+    command=[binary,'exec','--approve-for-me','--model',model,'-c','model_reasoning_effort="xhigh"',
              '--cd',str(ROOT),'--output-last-message',str(RUNTIME/'chief-last.txt'),prompt]
-    publish_status('chief','running',task_id='integrate-and-dispatch')
+    publish_status('chief','running',task_id='integrate-and-dispatch',model=model,reasoning_effort='xhigh')
     check=execute_process(command,ROOT,RUNTIME/'logs'/f'chief-{int(time.time())}.log',
                           time.monotonic()+1800,'chief','integrate-and-dispatch')
     if check['exit_code']:
