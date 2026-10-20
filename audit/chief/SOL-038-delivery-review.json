@@ -1,0 +1,90 @@
+{
+  "task_id": "SOL-038",
+  "reviewed_commit": "e1783a918122d8eaa507e42ca15a9c0a5f5b9339",
+  "task_sha256": "03472407ca3633a28501784679d1d1d03c1fb39766179620ad27a5e058214f34",
+  "status": "rejected_failed_delivery",
+  "code_verdict": "pending_revalidation",
+  "receipt_sha256": "899923c7473653f357f42a21284616f9eba0bb007ba0996d5465f70c22d610b3",
+  "recovery_sha256": "2016b9997145282a314436440d28add2e34b75ca914778e96c4deeaabfc97851",
+  "original_failure": "git push failed: fatal: unable to access 'https://github.com/luckytoday789/2026_MCM.git/': Could not resolve host: github.com",
+  "original_parent_checks": [],
+  "changed_paths": 204,
+  "supplemental_hashes_verified": 203,
+  "source_pins_verified": 43,
+  "receipt_hash_mismatches": [
+    {
+      "path": "audit/SOL-038/boundary.stdout.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_sha256": "b05b45b30136573783f99b1493c507e72461d9398b20529c6b38ca6dcbaae4cf"
+    },
+    {
+      "path": "audit/SOL-038/findings.json",
+      "expected_sha256": "c851e8f30d4f73e2226766a4b03c743824d640593e964ea2c6b1c47eb19ce3d0",
+      "observed_sha256": "c33afcaed2a37e97fb872f0592ebe52661cc6e942d7d4126b6d5008a95d3bb1e"
+    },
+    {
+      "path": "audit/SOL-038/implementation.md",
+      "expected_sha256": "07157416ecfacc73053971f2b9af68f1bbedf5b58c9bb2c6444287406f073016",
+      "observed_sha256": "e5daa85a53f7fd53a3d7c222a90facf34cad7442da15f09343332992e5df16bc"
+    },
+    {
+      "path": "audit/SOL-038/local-check-002-recorder.stdout.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_sha256": "cbf229497d6847c9c404b78fa1d2ac9fa053dac84c58fc18b205f3ef25d61350"
+    },
+    {
+      "path": "audit/SOL-038/local-check-002-wrapper-exit.json",
+      "expected_sha256": "0139b21777c4b94e178773ea876d1a14a7bfc4e54927a0ecb7c3f7028167bd98",
+      "observed_sha256": "0470d13c5e5d8b2f8ab3e7c0b92cd5df0a2205a86c0985d2550a4aeeb44a824a"
+    },
+    {
+      "path": "audit/SOL-038/record_checks.py",
+      "expected_sha256": "8fe3593d0f798ae2d833dd5625103a708c53cd8a9ef6844fed2ad550d5d29d67",
+      "observed_sha256": "e0e7f09ac5db03f6b82ebd70a35a7bd944ef471ec56e8c9622179d194fa4ca95"
+    },
+    {
+      "path": "tests/test_policy_analysis_writer.py",
+      "expected_sha256": "a52ef4b05de3c589a9e2ba0f05155e25a339521e8e3442c6c19e3ee26dc7b00d",
+      "observed_sha256": "7253b1b23c92bce53d70a5ae34bfd7ea64212b5de140ed386109b5e62dd0759b"
+    }
+  ],
+  "acceptance": false,
+  "checks": [
+    {
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_policy_analysis_writer.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 69.53100000001723,
+      "stdout_path": "audit/chief/SOL-038-exact-check-0.stdout.txt",
+      "stderr_path": "audit/chief/SOL-038-exact-check-0.stderr.txt",
+      "stdout_sha256": "ca2b6c7a9585eaae6ce964f724c6e267f180d3ccc78b44fcaab09b03f7c74347",
+      "stderr_sha256": "66b33e02e7ec68e704de00ceeff079f010f2ab189c612ad73e062a0e75f4ee78"
+    },
+    {
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "audit/SOL-038/verify.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 46.54699999996228,
+      "stdout_path": "audit/chief/SOL-038-exact-check-1.stdout.txt",
+      "stderr_path": "audit/chief/SOL-038-exact-check-1.stderr.txt",
+      "stdout_sha256": "cec0fa3096d5064f679ad0c56cde85d8da89313a442f0164c8e71b23a7f60e18",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "protected_inventory_unchanged": true,
+  "checkout_git_status": ""
+}

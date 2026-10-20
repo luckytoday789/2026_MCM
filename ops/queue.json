@@ -1493,15 +1493,20 @@
     },
     {
       "id": "SOL-038",
-      "state": "ready",
+      "state": "cancelled",
       "owner": "sol",
       "attempt": 1,
       "branch": "work/sol/SOL-038-a1",
       "task_sha256": "03472407ca3633a28501784679d1d1d03c1fb39766179620ad27a5e058214f34",
-      "note": "Existing immutable task released only after exact SOL-037 success acceptance. Preserve failed predecessors and all scope,source,independent-review and final-data gates.",
+      "note": "Original parent DNS failure with zero checks preserved. Supplemental203 canonical blobs and43 pins verified; exact chief12 tests/read-only replay and2820 scalar checks pass. Seven later receipt mismatches disclosed; new immutable delivery recovery required.",
       "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation.",
       "released_at": "2026-10-20T08:55:39.694366+00:00",
-      "release_evidence": "audit/chief/SOL-037-review.json"
+      "release_evidence": "audit/chief/SOL-037-review.json",
+      "reviewed_commit": "e1783a918122d8eaa507e42ca15a9c0a5f5b9339",
+      "code_verdict": "incomplete_and_revalidation_required",
+      "verdict": "failed_parent_delivery_preserved",
+      "acceptance_evidence": "audit/chief/SOL-038-delivery-review.json",
+      "successor_task": "SOL-044"
     },
     {
       "id": "SOL-043",

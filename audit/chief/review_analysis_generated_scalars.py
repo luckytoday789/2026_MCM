@@ -1,15 +1,16 @@
 """Independent scalar checks of failed SOL-034 generated persisted fixtures only.
 No SafeInvest imports, real competition inputs, strategy execution or approval.
 """
-import argparse,csv,hashlib,io,json,math,subprocess
+import argparse,csv,hashlib,io,json,math,re,subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
 MODES=('bills_keep','equal_weight_annual','equal_weight_buy_hold','conservative_cost','balanced_cost','growth_cost','balanced_context','balanced_adaptive')
 FIELDS=('net_real_cagr_pct','max_real_drawdown_pct','terminal_real_wealth','nominal_fee_sum','trade_share_pct','trade_share_ex_initial_pct','human_review_count','human_review_share_pct','target_change_count')
-def audit(commit,overrides=None):
+def audit(commit,overrides=None,fixture_task='SOL-034'):
+ assert re.fullmatch(r'SOL-[0-9]+',fixture_task)
  hashes={};checks=0;maximum=0.
  def read(name):
-  p='audit/SOL-034/fixture/'+name;raw=subprocess.check_output(['git','show',commit+':'+p],cwd=ROOT);hashes[p]=hashlib.sha256(raw).hexdigest();return (overrides or {}).get(name,raw)
+  p='audit/'+fixture_task+'/fixture/'+name;raw=subprocess.check_output(['git','show',commit+':'+p],cwd=ROOT);hashes[p]=hashlib.sha256(raw).hexdigest();return (overrides or {}).get(name,raw)
  def table(name):return list(csv.DictReader(io.StringIO(read(name).decode(),newline='')))
  def eq(a,b,label):
   nonlocal checks
@@ -61,8 +62,8 @@ def audit(commit,overrides=None):
   eq(s['exceedance_count'],sum(v>s['loss_tolerance_pct'] for v in loss),'strict tolerance exceedance')
   eq(s['flags']['risk_pass'],quantile(loss,.9)<=s['loss_tolerance_pct'],'risk p90');eq(s['flags']['purchasing_power_pass'],quantile(growth,.1)>=0,'real growth screen')
   eq(s['personalized_overlay_pending'],True,'provisional bridge gate')
- return dict(status='passed',reviewed_commit=commit,scope='generated fixtures only',independent_checks=checks,max_absolute_difference=maximum,metric_rows=len(rows),gates=len(gates),profile_screens=len(screens),synthetic_selected_mode=selected,original_git_blob_sha256=hashes,acceptance=False,limitations=['Generated metrics are scalar fixtures,not coherent paths or development evidence.','Does not authenticate full production bridge or replace independent Sol review.','No real strategy/customer recommendation inferred.'])
+ return dict(status='passed',reviewed_commit=commit,scope='generated fixtures only',fixture_task=fixture_task,independent_checks=checks,max_absolute_difference=maximum,metric_rows=len(rows),gates=len(gates),profile_screens=len(screens),synthetic_selected_mode=selected,original_git_blob_sha256=hashes,acceptance=False,limitations=['Generated metrics are scalar fixtures,not coherent paths or development evidence.','Does not authenticate full production bridge or replace independent Sol review.','No real strategy/customer recommendation inferred.'])
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('commit');p.add_argument('--output',required=True);args=p.parse_args();out=Path(args.output).resolve();assert out.is_relative_to(ROOT/'audit/chief') and not out.exists();record=audit(args.commit)
+ p=argparse.ArgumentParser();p.add_argument('commit');p.add_argument('--fixture-task',default='SOL-034');p.add_argument('--output',required=True);args=p.parse_args();out=Path(args.output).resolve();assert out.is_relative_to(ROOT/'audit/chief') and not out.exists();record=audit(args.commit,fixture_task=args.fixture_task)
  with out.open('x',encoding='utf8',newline='\n') as f:json.dump(record,f,indent=2);f.write('\n')
  print(json.dumps({k:v for k,v in record.items() if k!='original_git_blob_sha256'}))

@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "stage": "structural reviewer assumption",
+  "reason": "Recovered supplemental commit includes later corrected tests and logs; original two mismatches refer to original failed commit, not all seven current mismatches. No worker source or evidence accepted.",
+  "next_step": "Authenticate every supplemental canonical Git blob separately and preserve all old receipt mismatches."
+}

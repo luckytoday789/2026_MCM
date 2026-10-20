@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "same_19_original_fixture_blobs": true,
+  "old_and_new_checks": 2820,
+  "corruptions": [
+    {
+      "case": "paired_median",
+      "rejected": true,
+      "reason": "('independent paired median net_real_cagr_pct', 999.0, 0.0)"
+    },
+    {
+      "case": "fold_flag",
+      "rejected": true,
+      "reason": "('strict positive fold', True, False)"
+    },
+    {
+      "case": "profile_quantile",
+      "rejected": true,
+      "reason": "('own horizon p10_growth_pct', 99.0, 0.0)"
+    },
+    {
+      "case": "selection",
+      "rejected": true,
+      "reason": "('primary H30 preference', 'bills_keep', 'balanced_adaptive')"
+    }
+  ],
+  "source_sha256": "04106631abd3883d89495a4b8f80a1205c7e12492fab6b38bd91cfc26b283550",
+  "acceptance": false
+}
