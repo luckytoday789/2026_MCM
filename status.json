@@ -1,8 +1,9 @@
 {
   "role": "sol",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
-  "state": "stopped",
+  "state": "ready",
   "python": "3.12.14",
-  "updated_at": "2026-10-20T14:49:28.657439+00:00",
-  "lease_until": "2026-10-20T14:59:28.657439+00:00"
+  "updated_at": "2026-10-20T14:49:55.948576+00:00",
+  "lease_until": "2026-10-20T14:59:55.948576+00:00",
+  "codex_available": true
 }
