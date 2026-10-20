@@ -1,12 +1,9 @@
 {
   "role": "chief",
   "machine_id": "8ea2b5131bed400a8f2954cd69935807",
-  "state": "submitted",
+  "state": "running",
   "python": "3.12.0",
-  "updated_at": "2026-10-20T13:05:04.002882+00:00",
-  "lease_until": "2026-10-20T13:15:04.002882+00:00",
-  "task_id": "CHIEF-REFIT-001",
-  "result_status": "completed",
-  "commit": "d4a982ce2d06b57deb2988806229574c0719c2be",
-  "branch": "work/chief/CHIEF-REFIT-001-a1"
+  "updated_at": "2026-10-20T13:06:59.474755+00:00",
+  "lease_until": "2026-10-20T13:16:59.475755+00:00",
+  "task_id": "integrate-and-dispatch"
 }
