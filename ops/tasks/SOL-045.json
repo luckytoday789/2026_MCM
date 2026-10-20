@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "SOL-045",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "commands",
+  "base_commit": "96b9ac2632695264f97ea08f0cce9b1009517cb0",
+  "depends_on": [],
+  "split": "none",
+  "max_seconds": 1800,
+  "scope": "One real assigned-machine availability check no earlier than user-reported21:40 reset; passively wait without model calls.",
+  "parameters": {
+    "not_before": "2026-10-20T21:40:00+08:00",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "xhigh",
+    "max_model_calls": 1,
+    "max_model_seconds": 300,
+    "source_sha256": {
+      "scripts/probe_sol_availability.py": "03999b341b1c63063000e90a259813fd31ef62352457a8312b6c88c3a9771252",
+      "scripts/check_worker_env.py": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8"
+    },
+    "remaining_automatic_probes_after_this": 0
+  },
+  "allowed_paths": [
+    "audit/SOL-045"
+  ],
+  "deliverables": [
+    "audit/SOL-045/availability.json"
+  ],
+  "commands": [
+    [
+      "{python}",
+      "-B",
+      "scripts/check_worker_env.py"
+    ],
+    [
+      "{python}",
+      "-B",
+      "scripts/probe_sol_availability.py",
+      "--not-before",
+      "2026-10-20T21:40:00+08:00",
+      "--output",
+      "audit/SOL-045/availability.json"
+    ]
+  ],
+  "validation_commands": [
+    [
+      "{python}",
+      "-c",
+      "import json; p=json.load(open('audit/SOL-045/availability.json',encoding='utf-8')); assert p['usable'] and p['exit_code']==0 and p['response'].strip()=='SAFEINVEST_SOL_AVAILABLE'; assert p['model_calls']==1 and p['model']=='gpt-6.1-sol'"
+    ]
+  ],
+  "acceptance_checks": [
+    "Exact real Sol-machine canonical receipt, task/source/output hashes.",
+    "Actual started_at>=21:40Beijing and one exact successful response; availability only, not remaining budget.",
+    "No retries, account/model changes, purchases, data access or policy work."
+  ],
+  "instructions": "Execute existing reviewed fixed script only. Its passive wait makes zero model calls before21:40+08. At/after reset make one bounded assigned-model read-only/no-tools request. Preserve failure honestly; no automatic retry. Parent owns delivery. Do not restart any worker or inspect final data."
+}

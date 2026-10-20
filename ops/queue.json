@@ -1906,6 +1906,24 @@
       "branch": "work/hy3/HY3-010-a1",
       "task_sha256": "45c730272cc8439ceb3edca697fdf516d6fc783c20c4513a20030c9db1db0835",
       "note": "One frozen final evaluation after genuine source/development/refit/freeze acceptance. All outcome failures retained; no policy tuning. Integrity check is not numerical acceptance; independent saved-ledger audit required."
+    },
+    {
+      "id": "SOL-045",
+      "owner": "sol",
+      "state": "ready",
+      "attempt": 1,
+      "branch": "work/sol/SOL-045-a1",
+      "task_sha256": "3eb2f36244f9b65081f45bfc98c1a12ee3aa156eb679e7f8cc379f4ceb285e93",
+      "note": "One post21:40 real probe only; no calls while waiting."
+    },
+    {
+      "id": "SOL-046",
+      "owner": "sol",
+      "state": "waiting",
+      "attempt": 1,
+      "branch": "work/sol/SOL-046-a1",
+      "task_sha256": "552aea7f5b6a95f64b85a25146a0839768ca6586d1efc84abe64fc47a848d944",
+      "note": "Hold until exact SOL-045 successful receipt accepted; supplemental actual-source/development review. No original final data or policy tuning."
     }
   ]
 }
