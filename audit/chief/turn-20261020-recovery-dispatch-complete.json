@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T05:51:35.814037+00:00",
+  "outcome_zh": "保留SOL-034/035超时、SOL-036配额失败及HY3-005中断失败；未验收任何失败结果。完成恢复证据核验、11项封装测试、2820项独立夹具标量检查与473823项决策检查。已发布SOL-037单次配额探针及SOL-038/039/040等待修正任务；HY3-006已获有效租约执行相同参数的新计算。最终集关闭，无需人工操作。",
+  "failed_attempts": {
+    "SOL-034": "632c95f03d3bbfeed1f847598eed3e6cfc5be264",
+    "SOL-035": "f33da50c4e16e85f7ca831e0a03d17c05c91cc79",
+    "SOL-036": "8a39da30e551f6e4fd54cfef6ec7b070b43d4d8d",
+    "HY3-005": "665e14502405ca560fe1f78876a189ae5f688f23"
+  },
+  "new_tasks": [
+    {
+      "id": "SOL-037",
+      "state": "waiting",
+      "branch": "work/sol/SOL-037-a1",
+      "task_sha256": "a39583ab0336bf78cb14b231a7e0b9a957e7da3b454f12cc6a7807546d88f9aa"
+    },
+    {
+      "id": "SOL-040",
+      "state": "waiting",
+      "branch": "work/sol/SOL-040-a1",
+      "task_sha256": "024057000d22bee1afba7300194344c00a9a79d857f7fd9950ce855dda07df31"
+    },
+    {
+      "id": "SOL-038",
+      "state": "waiting",
+      "branch": "work/sol/SOL-038-a1",
+      "task_sha256": "03472407ca3633a28501784679d1d1d03c1fb39766179620ad27a5e058214f34"
+    },
+    {
+      "id": "SOL-039",
+      "state": "waiting",
+      "branch": "work/sol/SOL-039-a1",
+      "task_sha256": "c2b1a1c305a293e453f1517aea2a6e14049c58e4a96f49d4aaba3138618dbe44"
+    },
+    {
+      "id": "HY3-006",
+      "state": "ready",
+      "branch": "work/hy3/HY3-006-a1",
+      "task_sha256": "dcdf31a5ce502b4c5115d9a21a29b6649ea107b8e0c8b671b1e17d44812962b6"
+    }
+  ],
+  "isolated_replays": {
+    "SOL-034": [
+      0,
+      0
+    ],
+    "SOL-035": [
+      0
+    ],
+    "SOL-036": [
+      2
+    ]
+  },
+  "chief_independent_generated_fixture_checks": 2820,
+  "chief_independent_decision_checks": 473823,
+  "primary_producer_accepted": false,
+  "final_data_open": false,
+  "next_wake_at": "2026-10-20T06:21:35.814037+00:00",
+  "human_help_required": false,
+  "worker_status_branches_merged": false,
+  "private_identities_uploaded": false,
+  "runner_or_supervisor_restarted": false
+}

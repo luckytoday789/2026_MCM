@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-20T05:50:11.749601+00:00",
+  "scope": "Chief read-only adapter ID extension; existing exact HY3-004 arithmetic regression only. No HY3-006 results exist or are claimed.",
+  "runs": {
+    "review_development_case_bundle.py": {
+      "status": "passed",
+      "source_sha256": "f4c1bde412afe86733855666173d6ebe6e878039b4bfb52e0fd3a6e6e24284bb",
+      "original_result_commit": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
+      "checks": null,
+      "numerical_error": 1.5916157281026244e-12
+    },
+    "review_development_decisions.py": {
+      "status": "passed",
+      "source_sha256": "4789d640eab7a6ed56099e10a8d0e7d232bdd3adc6367a13cf9f5f70b668ab5b",
+      "original_result_commit": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
+      "checks": 473823,
+      "numerical_error": 7.105427357601002e-15
+    }
+  },
+  "elapsed_seconds": 17.619319199991878,
+  "production_acceptance": false
+}

@@ -25,7 +25,7 @@ TARGETS = dict(conservative=(.15,.2,.65), balanced=(1/3,1/3,1/3), growth=(.6,.3,
 
 
 def audit(task_id, commit, overrides=None):
-    assert task_id in ('HY3-004', 'HY3-005') and len(commit) == 40
+    assert task_id in ('HY3-004', 'HY3-005', 'HY3-006') and len(commit) == 40
     records = {}; checks = 0; maximum_error = 0.0; samples = []; events = {}
     base = 'results/development/' + task_id + '/'
     fee = .0025 if task_id == 'HY3-004' else .005
@@ -205,7 +205,7 @@ def audit(task_id, commit, overrides=None):
 
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('task_id',choices=('HY3-004','HY3-005'));parser.add_argument('commit');parser.add_argument('--output',required=True)
+    parser=argparse.ArgumentParser();parser.add_argument('task_id',choices=('HY3-004','HY3-005','HY3-006'));parser.add_argument('commit');parser.add_argument('--output',required=True)
     args=parser.parse_args();out=Path(args.output).resolve();assert out.is_relative_to(ROOT/'audit/chief') and not out.exists()
     record=dict(status='started',task_id=args.task_id,reviewed_commit=args.commit,production_acceptance=False)
     try:record=audit(args.task_id,args.commit)

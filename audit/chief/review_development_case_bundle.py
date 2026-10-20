@@ -38,7 +38,7 @@ def decimal(value):
 
 def audit_group(task_id, commit, overrides=None):
     assert re.fullmatch('[0-9a-f]{40}', commit)
-    assert task_id in ('HY3-004', 'HY3-005')
+    assert task_id in ('HY3-004', 'HY3-005', 'HY3-006')
     output_root = 'results/development/' + task_id
     expected_group, expected_fee = ('primary', .0025) if task_id == 'HY3-004' else ('doubled', .005)
     originals = {}
@@ -205,7 +205,7 @@ def audit_group(task_id, commit, overrides=None):
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument('task_id', choices=('HY3-004','HY3-005'));parser.add_argument('commit')
+    parser.add_argument('task_id', choices=('HY3-004','HY3-005','HY3-006'));parser.add_argument('commit')
     parser.add_argument('--output', required=True)
     args=parser.parse_args()
     from datetime import datetime, timezone
