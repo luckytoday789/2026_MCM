@@ -1338,58 +1338,73 @@
     },
     {
       "id": "SOL-037",
-      "state": "ready",
+      "state": "accepted",
       "owner": "sol",
       "attempt": 1,
       "branch": "work/sol/SOL-037-a1",
       "task_sha256": "a39583ab0336bf78cb14b231a7e0b9a957e7da3b454f12cc6a7807546d88f9aa",
-      "note": "Released existing immutable one-shot assigned-machine probe after its time gate. Exact successful receipt/response acceptance is required before lifting SOL-040/041/038/039 holds. No further automatic probes authorized.",
+      "note": "Exact successful assigned-machine one-call probe authenticated; 4 canonical artifact hashes,5 source pins,3 command exits,timing and response verified. Historical quota failures preserved; no remaining-budget guarantee.",
       "release_condition": "At/after15:55Beijing, release fixed commands probe once. No model call before16:10. Failure consumes last automatic probe.",
-      "released_at": "2026-10-20T08:46:06.435425+00:00"
+      "released_at": "2026-10-20T08:46:06.435425+00:00",
+      "reviewed_commit": "11ade9aeb4726473e65c32cfd254e03d9aec54b4",
+      "accepted_paths": [
+        "audit/SOL-037/availability.json",
+        "handoff/SOL-037/check-0.txt",
+        "handoff/SOL-037/check-1.txt",
+        "handoff/SOL-037/check-2.txt",
+        "handoff/SOL-037/result.json"
+      ],
+      "excluded_paths": [],
+      "acceptance_evidence": "audit/chief/SOL-037-review.json",
+      "verdict": "available_at_probe_time_only"
     },
     {
       "id": "SOL-040",
-      "state": "waiting",
+      "state": "ready",
       "owner": "sol",
       "attempt": 1,
       "branch": "work/sol/SOL-040-a1",
       "task_sha256": "024057000d22bee1afba7300194344c00a9a79d857f7fd9950ce855dda07df31",
-      "note": "Published immutable recovery task; preserve failed predecessor and all research gates.",
-      "resource_hold": "real_SOL-037_success_required",
-      "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation."
+      "note": "Existing immutable task released only after exact SOL-037 success acceptance. Preserve failed predecessors and all scope,source,independent-review and final-data gates.",
+      "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation.",
+      "released_at": "2026-10-20T08:55:39.694366+00:00",
+      "release_evidence": "audit/chief/SOL-037-review.json"
     },
     {
       "id": "SOL-041",
-      "state": "waiting",
+      "state": "ready",
       "owner": "sol",
       "attempt": 1,
       "branch": "work/sol/SOL-041-a1",
       "task_sha256": "a68184a570dfeb49ac72a36060b2e3d88ed0d2c45fb7f6f17f3ddced40434dfe",
-      "note": "New exact doubled-fee result review; source prerequisites already pushed. Producer remains unaccepted. Preserve immutable quota and failed-attempt gates.",
-      "resource_hold": "real_SOL-037_success_required",
-      "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation. Dispatch after SOL-040 and before SOL-038 by queue order."
+      "note": "Existing immutable task released only after exact SOL-037 success acceptance. Preserve failed predecessors and all scope,source,independent-review and final-data gates.",
+      "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation. Dispatch after SOL-040 and before SOL-038 by queue order.",
+      "released_at": "2026-10-20T08:55:39.694366+00:00",
+      "release_evidence": "audit/chief/SOL-037-review.json"
     },
     {
       "id": "SOL-038",
-      "state": "waiting",
+      "state": "ready",
       "owner": "sol",
       "attempt": 1,
       "branch": "work/sol/SOL-038-a1",
       "task_sha256": "03472407ca3633a28501784679d1d1d03c1fb39766179620ad27a5e058214f34",
-      "note": "Published immutable recovery task; preserve failed predecessor and all research gates.",
-      "resource_hold": "real_SOL-037_success_required",
-      "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation."
+      "note": "Existing immutable task released only after exact SOL-037 success acceptance. Preserve failed predecessors and all scope,source,independent-review and final-data gates.",
+      "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation.",
+      "released_at": "2026-10-20T08:55:39.694366+00:00",
+      "release_evidence": "audit/chief/SOL-037-review.json"
     },
     {
       "id": "SOL-039",
-      "state": "waiting",
+      "state": "ready",
       "owner": "sol",
       "attempt": 1,
       "branch": "work/sol/SOL-039-a1",
       "task_sha256": "c2b1a1c305a293e453f1517aea2a6e14049c58e4a96f49d4aaba3138618dbe44",
-      "note": "Published immutable recovery task; preserve failed predecessor and all research gates.",
-      "resource_hold": "real_SOL-037_success_required",
-      "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation."
+      "note": "Existing immutable task released only after exact SOL-037 success acceptance. Preserve failed predecessors and all scope,source,independent-review and final-data gates.",
+      "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation.",
+      "released_at": "2026-10-20T08:55:39.694366+00:00",
+      "release_evidence": "audit/chief/SOL-037-review.json"
     },
     {
       "id": "HY3-006",

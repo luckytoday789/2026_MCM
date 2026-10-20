@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-037",
+  "reviewed_commit": "11ade9aeb4726473e65c32cfd254e03d9aec54b4",
+  "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+  "task_sha256": "a39583ab0336bf78cb14b231a7e0b9a957e7da3b454f12cc6a7807546d88f9aa",
+  "checked_at": "2026-10-20T08:55:39.694366+00:00",
+  "structural_checks": "passed",
+  "source_pins_verified": 5,
+  "canonical_artifact_hashes_verified": 4,
+  "changed_paths": [
+    "audit/SOL-037/availability.json",
+    "handoff/SOL-037/check-0.txt",
+    "handoff/SOL-037/check-1.txt",
+    "handoff/SOL-037/check-2.txt",
+    "handoff/SOL-037/result.json"
+  ],
+  "accepted_paths": [
+    "audit/SOL-037/availability.json",
+    "handoff/SOL-037/check-0.txt",
+    "handoff/SOL-037/check-1.txt",
+    "handoff/SOL-037/check-2.txt",
+    "handoff/SOL-037/result.json"
+  ],
+  "actual_model_seconds": 28.50913,
+  "actual_response": "SAFEINVEST_SOL_AVAILABLE",
+  "model_calls": 1,
+  "all_three_command_exits": 0,
+  "response_predicate_fixtures": 6,
+  "verdict": "available_at_probe_time_only",
+  "released_existing_tasks": [
+    "SOL-040",
+    "SOL-041",
+    "SOL-038",
+    "SOL-039"
+  ],
+  "historical_failures_preserved": true,
+  "further_automatic_probes_authorized": false,
+  "final_data_open": false,
+  "quota": {
+    "limit_id": "codex",
+    "window_minutes": 10080,
+    "used_percent": 2.0,
+    "remaining_percent": 98.0,
+    "resets_at": 1793082750,
+    "source": "Codex account/rateLimits/read",
+    "checked_at": "2026-10-20T08:55:36.981401+00:00",
+    "state": "verified",
+    "stop_remaining_percent": 40
+  }
+}
