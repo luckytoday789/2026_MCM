@@ -1298,6 +1298,15 @@
       "branch": "work/sol/SOL-034-a1",
       "task_sha256": "16a85c9b253568747e720f6c7f6f3a84f897ab759af5aa981085ea60d636ddb9",
       "note": "Generated-only analysis assembly after accepted SOL-016 and writer SOL-031/032; no actual producer outcomes. Independent chief acceptance and later result reviews required."
+    },
+    {
+      "id": "SOL-035",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "branch": "work/sol/SOL-035-a1",
+      "task_sha256": "3dd2e8de06ea727a102e5df1c53fe73e3c83ad9cbbf8f1c0c9aa5c0b5b121207",
+      "note": "Audit-only portable successor after actual later-main SOL-032 old-inventory LF/CRLF failure. Code approval and existing fixed jobs unchanged; preserve all original evidence."
     }
   ]
 }
