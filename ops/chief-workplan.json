@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T03:50:41.225161+00:00",
-  "reason": "SOL-031 exact source accepted. Publish source C, fixed config E and separate deterministic HY3 tasks; remote SOL-030 report review already released.",
+  "next_wake_at": "2026-10-20T03:59:05.717587+00:00",
+  "reason": "Writer/runner declaration incompatibility independently reproduced before production; chief narrow fix passes17 tests and requires SOL-032 review.",
   "next_actions": [
-    "Publish accepted writer source C first, then fixed primary/doubled execution configs E, then separate immutable HY3 commands tasks based on pushed E. No accepted/submitted tasks rerun.",
-    "SOL-030 existing report review released; inspect exact eventual receipt and current lease, preserve task/source pins.",
-    "After two fixed development bundles submit, authenticate exact receipts and dispatch targeted independent Sol numerical result reviews before evidence/selection acceptance.",
-    "Publish a narrow synthetic-only analysis assembly implementation task using accepted writer API and specs/POLICY_ANALYSIS_ASSEMBLY.md; production waits for both accepted producer bundles and independent result review.",
-    "Preserve all failed SOL-026/SOL-029/SOL-031/chief trials, unchanged accepted policy parameters and closed final gate. Later authenticated personalized bridge, freeze and final single evaluation remain unfinished.",
-    "Host allowance threshold is current local 40%; preserve old50% history, do not clear a new drain or change global control. Private identities stay local; humans submit."
+    "Publish current provisional writer file-deliverables compatibility source/spec and then new immutable audit-only SOL-032 on that real pushed base. Do not issue HY3 production tasks until positive independent review.",
+    "SOL-031 exact a24dca5d5494455407207e0fd70c06b258d4fd1f remains accepted for its historical source. Chief provisional new code requires both SOL-031 and SOL-032 approval; all accounting/policy/numeric modules unchanged. Preserve original verification at historical source, never repair its hashes.",
+    "The c5f423f1c3b19c6e52bcc497516c99efefc09749 execution config snapshots specs/execution/HY3-004.json and HY3-005.json are unused. No HY3-004/HY3-005 tasks have been published and no competition input opened. After review push accepted new source C, new distinctly named config E, then task publication P.",
+    "SOL-030 is actually running under valid latest lease at03:50:27UTC. Inspect exact eventual report receipt; no repeat or quota probe.",
+    "After fixed producer bundles submit, authenticate receipts, independent Sol numeric review, accepted analysis assembly source/results, personalized bridge, freeze and final remain required. Existing policies/parameters and final gate stay unchanged.",
+    "Current host floor40%, remaining50% verified; do not clear future drain or stop remote workers. Private identities local; human submits."
   ],
   "quota_probe_not_before": "2026-10-20T06:05:00+08:00",
   "quota_probe_retries_after_first": 2,
@@ -22,7 +22,7 @@
   "last_successful_quota_probe_commit": "7ac6afe1169740666f0f65d5f2d9674fd2d4c964",
   "quota_probe_task": "SOL-028",
   "quota_probe_remaining_additional_attempts_after_SOL028": 1,
-  "last_outcome_zh": "已验收SOL-031精确提交：两种真实Git检出各17项测试和只读验证通过，主控12427项独立算术核验通过；准备开发实验。",
+  "last_outcome_zh": "已验收SOL-031并发布固定配置预案；派工前复现目录交付物冲突，已完成最小44文件声明修复和17项测试，等待远端独立审查后再派开发计算。",
   "baseline_figure_source_commit": "04be213a76855b1b1815405a735f2a49be678935",
   "baseline_figure_review_task": "SOL-030",
   "layout_proof_path": "report/layout-proof/methods-baselines.pdf",

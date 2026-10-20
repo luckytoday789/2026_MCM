@@ -1,0 +1,12 @@
+diff --git a/tests/test_coop.py b/tests/test_coop.py
+index 6df1353..27d0c9b 100644
+--- a/tests/test_coop.py
++++ b/tests/test_coop.py
+@@ -81,6 +81,7 @@ class ProtocolTests(unittest.TestCase):
+                 coop.git('commit','-m','fixture')
+                 base=coop.git('rev-parse','HEAD')
+                 task=self.task(base)
++                task['deliverables'].insert(0,'results/development')
+                 coop.dump(root/'ops/tasks/HY3-TEST.json',task)
+                 coop.dump(root/'ops/queue.json',{'tasks':[{'id':'HY3-TEST','state':'ready'}]})
+                 coop.git('add','.')

@@ -42,7 +42,8 @@ CLOSURE = tuple('src/safeinvest/'+n+'.py' for n in
     'specs/POLICY_CASE_ENGINE.md','specs/POLICY_RESULT_WRITER.md',
     'specs/POLICY_WRITER_COMPATIBILITY.md','specs/POLICY_WRITER_ACCEPTANCE_REFERENCES.md',
     'specs/POLICY_WRITER_EXECUTION_CONFIG.md','specs/POLICY_WRITER_TASK_BINDING.md',
-    'specs/POLICY_WRITER_RECOVERY.md','specs/POLICY_WRITER_GIT_PORTABILITY.md')
+    'specs/POLICY_WRITER_RECOVERY.md','specs/POLICY_WRITER_GIT_PORTABILITY.md',
+    'specs/POLICY_WRITER_FILE_DELIVERABLES.md')
 CONFIG_KEYS = ('schema_version','run_id','split','execution_authorized','source_commit',
  'source_sha256','acceptance','input','policy_config','layout_config','group','horizons',
  'references','expected_counts','execution')
@@ -224,7 +225,7 @@ def validate_config(c, task_budget=1500):
     hash_string(c['source_commit'],40)
     require(type(c['source_sha256']) is dict and set(c['source_sha256'])==set(CLOSURE),'incomplete source closure')
     for h in c['source_sha256'].values(): hash_string(h)
-    require(type(c['acceptance']) is dict and set(c['acceptance'])>={'SOL-021','SOL-022','SOL-025','SOL-031'},
+    require(type(c['acceptance']) is dict and set(c['acceptance'])>={'SOL-021','SOL-022','SOL-025','SOL-031','SOL-032'},
             'positive kernel/calibration/case/writer approvals required')
     require(not ({'SOL-026','SOL-029'} & set(c['acceptance'])),'cancelled writer approval refused')
     for h in c['acceptance'].values(): hash_string(h,40)
@@ -339,7 +340,12 @@ def bind_task(root,c,config_path,config_raw,output,task,P):
     for k in CONFIG_KEYS:
         require(k in p and exact(p[k],c[k]),'task parameter mismatch: '+k)
     rel=safe_path(root,output).relative_to(Path(root).resolve()).as_posix()
-    require(rel in task['deliverables'],'undeclared output root')
+    expected_files={rel+'/'+name for name in ('run_manifest.json','checks.json',
+        'calibrations.json','reference_imports.json')}
+    expected_files.update(rel+'/cases/'+mode+'/'+table+'.csv' for mode in MODES for table in TABLES)
+    require(task.get('allowed_paths')==[rel] and type(task.get('deliverables')) is list and
+            len(task['deliverables'])==len(expected_files) and set(task['deliverables'])==expected_files,
+            'exact assigned output root and 44 distinct file deliverables required')
     command=['{python}','-B','scripts/run_development_policy.py','--config',config_path,'--output',rel]
     require(command in task['commands'],'fixed CLI command mismatch')
     queue=strict_json(blob(root,E,'ops/queue.json'))

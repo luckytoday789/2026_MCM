@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T03:50:53.536119+00:00",
+  "status": "expected_regression_failure",
+  "argv": [
+    "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_coop.py",
+    "-v"
+  ],
+  "exit_code": 1,
+  "seconds": 17.42099999997299,
+  "stdout": "{\"role\": \"hy3\", \"root\": \"D:\\\\30576\\\\Documents\\\\2026_MCM\\\\.runtime\\\\protocol-tests\\\\tmp359sxe_z\\\\worker\", \"remote\": \"D:\\\\30576\\\\Documents\\\\2026_MCM\\\\.runtime\\\\protocol-tests\\\\tmp359sxe_z\\\\remote.git\", \"python\": \"3.12.0\", \"state\": \"running\", \"write_access\": \"verified\"}\n",
+  "stderr": "test_end_to_end_local_git_delivery_and_deduplication (test_coop.ProtocolTests.test_end_to_end_local_git_delivery_and_deduplication) ... FAIL\ntest_failed_chief_turn_does_not_acknowledge_pending_result (test_coop.ProtocolTests.test_failed_chief_turn_does_not_acknowledge_pending_result) ... ok\ntest_legacy_checkpoint_gets_one_recovery_turn_without_repeat (test_coop.ProtocolTests.test_legacy_checkpoint_gets_one_recovery_turn_without_repeat) ... ok\ntest_path_boundary (test_coop.ProtocolTests.test_path_boundary) ... ok\ntest_python_registration_changes_wake_chief_but_heartbeats_do_not (test_coop.ProtocolTests.test_python_registration_changes_wake_chief_but_heartbeats_do_not) ... ok\ntest_result_arriving_during_chief_turn_wakes_the_next_turn (test_coop.ProtocolTests.test_result_arriving_during_chief_turn_wakes_the_next_turn) ... ok\ntest_task_path_escape_rejected (test_coop.ProtocolTests.test_task_path_escape_rejected) ... ok\n\n======================================================================\nFAIL: test_end_to_end_local_git_delivery_and_deduplication (test_coop.ProtocolTests.test_end_to_end_local_git_delivery_and_deduplication)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"D:\\30576\\Documents\\2026_MCM\\tests\\test_coop.py\", line 103, in test_end_to_end_local_git_delivery_and_deduplication\n    self.assertEqual(report['status'],'completed')\nAssertionError: 'failed' != 'completed'\n- failed\n+ completed\n\n\n----------------------------------------------------------------------\nRan 7 tests in 17.046s\n\nFAILED (failures=1)\n",
+  "runner_sha256": "f6212624557ca8d80b7d23a419aed799bb09c51c314d3fa000da9320601dca97",
+  "test_sha256": "a4442b676949cec29541591fa9e8d2a546cca1ff860c4ece7b2371bd8f648dd8",
+  "cause": "Writer contract requires declared output root; unchanged runner requires every deliverable to be a file.",
+  "competition_input_read": false,
+  "final_data_open": false
+}

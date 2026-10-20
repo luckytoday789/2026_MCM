@@ -50,7 +50,7 @@ def internal_config(group='doubled'):
     h='a'*64
     c=dict(schema_version=1,run_id='boundary_fixture',split='development',execution_authorized=True,
         source_commit='b'*40,source_sha256={p:h for p in w.CLOSURE},
-        acceptance={p:'c'*40 for p in ('SOL-021','SOL-022','SOL-025','SOL-031')},
+        acceptance={p:'c'*40 for p in ('SOL-021','SOL-022','SOL-025','SOL-031','SOL-032')},
         input=dict(path=w.INPUT_PATH,sha256=w.INPUT_HASH,scenario_ids=[1,120],periods=30),
         policy_config=dict(path=w.POLICY,sha256=h),layout_config=dict(path=w.LAYOUT,sha256=h),
         group=group,horizons=list(w.HORIZONS),references=[],expected_counts=w.expected_counts(group),
@@ -285,7 +285,7 @@ class WriterTests(unittest.TestCase):
         output='results/development/boundary'
         task=dict(id='HY3-boundary',attempt=1,owner='hy3',kind='commands',base_commit=E,
             max_seconds=1500,split='development',parameters=dict(c,config_path=config_path,config_sha256=w.sha(raw)),
-            deliverables=[output],commands=[['{python}','-B','scripts/run_development_policy.py','--config',config_path,'--output',output]])
+            allowed_paths=[output],deliverables=[output+'/'+name for name in ('run_manifest.json','checks.json','calibrations.json','reference_imports.json')]+[output+'/cases/'+m+'/'+t+'.csv' for m in w.MODES for t in w.TABLES],commands=[['{python}','-B','scripts/run_development_policy.py','--config',config_path,'--output',output]])
         queue={'tasks':[dict(id=k,state='accepted',reviewed_commit=v,code_verdict='approve',
                             acceptance_evidence='audit/chief/'+k+'.json') for k,v in c['acceptance'].items()]}
         def fake_blob(root,commit,name):
@@ -305,6 +305,17 @@ class WriterTests(unittest.TestCase):
             for field,value in (('commands',[]),('deliverables',[]),('split','final'),('max_seconds',1)):
                 bad=copy.deepcopy(task);bad[field]=value
                 with self.assertRaises(ValueError):w.bind_task(ROOT,c,config_path,raw,output,bad,P)
+            for deliverables in ([output],task['deliverables'][:-1],task['deliverables']+[output+'/extra.csv'],
+                                 task['deliverables'][:-1]+[task['deliverables'][0]]):
+                bad=copy.deepcopy(task);bad['deliverables']=deliverables
+                with self.assertRaisesRegex(ValueError,'44 distinct file'):
+                    w.bind_task(ROOT,c,config_path,raw,output,bad,P)
+            for prefixes in ([],['results/development'],[output,output+'-sibling'],[output+'-sibling']):
+                bad=copy.deepcopy(task);bad['allowed_paths']=prefixes
+                with self.assertRaisesRegex(ValueError,'exact assigned output root'):
+                    w.bind_task(ROOT,c,config_path,raw,output,bad,P)
+            reversed_task=copy.deepcopy(task);reversed_task['deliverables'].reverse()
+            w.bind_task(ROOT,c,config_path,raw,output,reversed_task,P)
             with self.assertRaises(ValueError):w.bind_task(ROOT,c,config_path,raw+b' ',output,task,P)
             for item in queue['tasks']:
                 old=item['code_verdict'];item['code_verdict']='changes_required'
