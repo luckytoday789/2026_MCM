@@ -1,0 +1,2530 @@
+{
+  "status": "passed",
+  "checks": 213178,
+  "saved_decisions": 23400,
+  "human_review_periods": 5141,
+  "first_latches": [
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 124,
+      "first_latch_year": 20,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 126,
+      "first_latch_year": 20,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 127,
+      "first_latch_year": 15,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 132,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 135,
+      "first_latch_year": 20,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 139,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 144,
+      "first_latch_year": 29,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 149,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 151,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 153,
+      "first_latch_year": 27,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 155,
+      "first_latch_year": 14,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 156,
+      "first_latch_year": 22,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 157,
+      "first_latch_year": 27,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 159,
+      "first_latch_year": 16,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 161,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 163,
+      "first_latch_year": 21,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 165,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 167,
+      "first_latch_year": 14,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 172,
+      "first_latch_year": 21,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 176,
+      "first_latch_year": 20,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 123,
+      "first_latch_year": 23,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 124,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 126,
+      "first_latch_year": 16,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 127,
+      "first_latch_year": 14,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 128,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 129,
+      "first_latch_year": 22,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 132,
+      "first_latch_year": 9,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 133,
+      "first_latch_year": 27,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 135,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 139,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 141,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 144,
+      "first_latch_year": 30,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 149,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 151,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 152,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 153,
+      "first_latch_year": 27,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 154,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 155,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 156,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 157,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 158,
+      "first_latch_year": 9,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 159,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 161,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 163,
+      "first_latch_year": 21,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 167,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 168,
+      "first_latch_year": 15,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 170,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 172,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 173,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 174,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 178,
+      "first_latch_year": 6,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 179,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 180,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 124,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 125,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 126,
+      "first_latch_year": 16,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 127,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 128,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 129,
+      "first_latch_year": 22,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 130,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 132,
+      "first_latch_year": 9,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 133,
+      "first_latch_year": 27,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 135,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 138,
+      "first_latch_year": 9,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 139,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 140,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 141,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 144,
+      "first_latch_year": 29,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 149,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 151,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 152,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 153,
+      "first_latch_year": 27,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 154,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 155,
+      "first_latch_year": 9,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 156,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 157,
+      "first_latch_year": 26,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 158,
+      "first_latch_year": 2,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 159,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 161,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 162,
+      "first_latch_year": 6,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 163,
+      "first_latch_year": 21,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 167,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 168,
+      "first_latch_year": 15,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 169,
+      "first_latch_year": 30,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 170,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 172,
+      "first_latch_year": 21,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 173,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 174,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 176,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 178,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 179,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.0025,
+      "scenario_id": 180,
+      "first_latch_year": 4,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 124,
+      "first_latch_year": 20,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 125,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 126,
+      "first_latch_year": 16,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 127,
+      "first_latch_year": 14,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 128,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 129,
+      "first_latch_year": 22,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 132,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 135,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 139,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 141,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 142,
+      "first_latch_year": 18,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 144,
+      "first_latch_year": 30,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 149,
+      "first_latch_year": 18,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 151,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 152,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 153,
+      "first_latch_year": 27,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 154,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 155,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 156,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 157,
+      "first_latch_year": 25,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 159,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 160,
+      "first_latch_year": 26,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 161,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 162,
+      "first_latch_year": 22,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 163,
+      "first_latch_year": 21,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 166,
+      "first_latch_year": 30,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 167,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 168,
+      "first_latch_year": 15,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 169,
+      "first_latch_year": 30,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 170,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 172,
+      "first_latch_year": 21,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 173,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 174,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 176,
+      "first_latch_year": 20,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 178,
+      "first_latch_year": 6,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 179,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.0025,
+      "scenario_id": 180,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 123,
+      "first_latch_year": 23,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 124,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 125,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 126,
+      "first_latch_year": 16,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 127,
+      "first_latch_year": 14,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 128,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 129,
+      "first_latch_year": 22,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 132,
+      "first_latch_year": 9,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 135,
+      "first_latch_year": 20,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 139,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 141,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 142,
+      "first_latch_year": 18,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 144,
+      "first_latch_year": 30,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 149,
+      "first_latch_year": 18,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 151,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 152,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 153,
+      "first_latch_year": 27,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 154,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 155,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 156,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 157,
+      "first_latch_year": 27,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 158,
+      "first_latch_year": 9,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 159,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 160,
+      "first_latch_year": 26,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 161,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 163,
+      "first_latch_year": 21,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 167,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 168,
+      "first_latch_year": 15,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 170,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 172,
+      "first_latch_year": 21,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 173,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 174,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 176,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 178,
+      "first_latch_year": 6,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 179,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.0025,
+      "scenario_id": 180,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "personalized/B",
+      "fee_rate": 0.0025,
+      "scenario_id": 127,
+      "first_latch_year": 15,
+      "threshold": 25.0
+    },
+    {
+      "case": "personalized/B",
+      "fee_rate": 0.0025,
+      "scenario_id": 132,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "personalized/B",
+      "fee_rate": 0.0025,
+      "scenario_id": 151,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "personalized/B",
+      "fee_rate": 0.0025,
+      "scenario_id": 155,
+      "first_latch_year": 14,
+      "threshold": 25.0
+    },
+    {
+      "case": "personalized/B",
+      "fee_rate": 0.0025,
+      "scenario_id": 161,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "personalized/B",
+      "fee_rate": 0.0025,
+      "scenario_id": 167,
+      "first_latch_year": 14,
+      "threshold": 25.0
+    },
+    {
+      "case": "personalized/C",
+      "fee_rate": 0.0025,
+      "scenario_id": 132,
+      "first_latch_year": 16,
+      "threshold": 40.0
+    },
+    {
+      "case": "personalized/C",
+      "fee_rate": 0.0025,
+      "scenario_id": 144,
+      "first_latch_year": 30,
+      "threshold": 40.0
+    },
+    {
+      "case": "personalized/C",
+      "fee_rate": 0.0025,
+      "scenario_id": 149,
+      "first_latch_year": 28,
+      "threshold": 40.0
+    },
+    {
+      "case": "personalized/C",
+      "fee_rate": 0.0025,
+      "scenario_id": 153,
+      "first_latch_year": 29,
+      "threshold": 40.0
+    },
+    {
+      "case": "personalized/C",
+      "fee_rate": 0.0025,
+      "scenario_id": 155,
+      "first_latch_year": 23,
+      "threshold": 40.0
+    },
+    {
+      "case": "personalized/C",
+      "fee_rate": 0.0025,
+      "scenario_id": 161,
+      "first_latch_year": 15,
+      "threshold": 40.0
+    },
+    {
+      "case": "personalized/C",
+      "fee_rate": 0.0025,
+      "scenario_id": 172,
+      "first_latch_year": 28,
+      "threshold": 40.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 124,
+      "first_latch_year": 20,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 126,
+      "first_latch_year": 20,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 127,
+      "first_latch_year": 15,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 132,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 135,
+      "first_latch_year": 20,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 139,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 144,
+      "first_latch_year": 29,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 149,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 151,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 153,
+      "first_latch_year": 27,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 155,
+      "first_latch_year": 14,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 156,
+      "first_latch_year": 22,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 157,
+      "first_latch_year": 27,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 159,
+      "first_latch_year": 16,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 161,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 163,
+      "first_latch_year": 21,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 165,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 167,
+      "first_latch_year": 14,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 172,
+      "first_latch_year": 21,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/conservative_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 176,
+      "first_latch_year": 20,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 123,
+      "first_latch_year": 23,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 124,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 125,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 126,
+      "first_latch_year": 16,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 127,
+      "first_latch_year": 14,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 128,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 129,
+      "first_latch_year": 22,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 132,
+      "first_latch_year": 9,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 133,
+      "first_latch_year": 27,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 135,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 139,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 141,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 144,
+      "first_latch_year": 30,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 149,
+      "first_latch_year": 18,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 151,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 152,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 153,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 154,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 155,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 156,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 157,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 158,
+      "first_latch_year": 9,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 159,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 161,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 163,
+      "first_latch_year": 21,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 165,
+      "first_latch_year": 27,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 167,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 168,
+      "first_latch_year": 15,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 169,
+      "first_latch_year": 30,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 170,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 172,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 173,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 174,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 176,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 177,
+      "first_latch_year": 29,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 178,
+      "first_latch_year": 6,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 179,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 180,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 124,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 125,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 126,
+      "first_latch_year": 16,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 127,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 128,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 129,
+      "first_latch_year": 22,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 130,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 132,
+      "first_latch_year": 9,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 133,
+      "first_latch_year": 27,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 135,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 138,
+      "first_latch_year": 9,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 139,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 140,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 141,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 144,
+      "first_latch_year": 29,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 149,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 151,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 152,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 153,
+      "first_latch_year": 27,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 154,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 155,
+      "first_latch_year": 9,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 156,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 157,
+      "first_latch_year": 26,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 158,
+      "first_latch_year": 2,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 159,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 161,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 162,
+      "first_latch_year": 6,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 163,
+      "first_latch_year": 21,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 167,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 168,
+      "first_latch_year": 15,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 169,
+      "first_latch_year": 30,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 170,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 172,
+      "first_latch_year": 21,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 173,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 174,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 176,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 178,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 179,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/growth_cost",
+      "fee_rate": 0.005,
+      "scenario_id": 180,
+      "first_latch_year": 4,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 124,
+      "first_latch_year": 20,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 125,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 126,
+      "first_latch_year": 16,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 127,
+      "first_latch_year": 14,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 128,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 129,
+      "first_latch_year": 22,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 132,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 135,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 139,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 141,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 142,
+      "first_latch_year": 18,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 144,
+      "first_latch_year": 30,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 149,
+      "first_latch_year": 18,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 151,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 152,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 153,
+      "first_latch_year": 27,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 154,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 155,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 156,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 157,
+      "first_latch_year": 25,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 159,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 160,
+      "first_latch_year": 26,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 161,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 162,
+      "first_latch_year": 22,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 163,
+      "first_latch_year": 21,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 166,
+      "first_latch_year": 30,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 167,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 168,
+      "first_latch_year": 15,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 169,
+      "first_latch_year": 30,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 170,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 172,
+      "first_latch_year": 21,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 173,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 174,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 176,
+      "first_latch_year": 20,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 178,
+      "first_latch_year": 6,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 179,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_context",
+      "fee_rate": 0.005,
+      "scenario_id": 180,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 124,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 125,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 126,
+      "first_latch_year": 16,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 127,
+      "first_latch_year": 14,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 128,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 129,
+      "first_latch_year": 22,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 132,
+      "first_latch_year": 9,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 135,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 139,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 141,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 142,
+      "first_latch_year": 18,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 144,
+      "first_latch_year": 30,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 149,
+      "first_latch_year": 18,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 151,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 152,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 153,
+      "first_latch_year": 27,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 154,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 155,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 156,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 157,
+      "first_latch_year": 28,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 159,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 160,
+      "first_latch_year": 26,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 161,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 163,
+      "first_latch_year": 21,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 167,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 168,
+      "first_latch_year": 15,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 169,
+      "first_latch_year": 30,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 170,
+      "first_latch_year": 7,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 172,
+      "first_latch_year": 20,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 173,
+      "first_latch_year": 13,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 174,
+      "first_latch_year": 8,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 176,
+      "first_latch_year": 19,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 178,
+      "first_latch_year": 6,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 179,
+      "first_latch_year": 11,
+      "threshold": 25.0
+    },
+    {
+      "case": "generic/balanced_adaptive",
+      "fee_rate": 0.005,
+      "scenario_id": 180,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "personalized/B",
+      "fee_rate": 0.005,
+      "scenario_id": 127,
+      "first_latch_year": 15,
+      "threshold": 25.0
+    },
+    {
+      "case": "personalized/B",
+      "fee_rate": 0.005,
+      "scenario_id": 132,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "personalized/B",
+      "fee_rate": 0.005,
+      "scenario_id": 151,
+      "first_latch_year": 5,
+      "threshold": 25.0
+    },
+    {
+      "case": "personalized/B",
+      "fee_rate": 0.005,
+      "scenario_id": 155,
+      "first_latch_year": 14,
+      "threshold": 25.0
+    },
+    {
+      "case": "personalized/B",
+      "fee_rate": 0.005,
+      "scenario_id": 161,
+      "first_latch_year": 12,
+      "threshold": 25.0
+    },
+    {
+      "case": "personalized/B",
+      "fee_rate": 0.005,
+      "scenario_id": 167,
+      "first_latch_year": 14,
+      "threshold": 25.0
+    },
+    {
+      "case": "personalized/C",
+      "fee_rate": 0.005,
+      "scenario_id": 132,
+      "first_latch_year": 16,
+      "threshold": 40.0
+    },
+    {
+      "case": "personalized/C",
+      "fee_rate": 0.005,
+      "scenario_id": 144,
+      "first_latch_year": 30,
+      "threshold": 40.0
+    },
+    {
+      "case": "personalized/C",
+      "fee_rate": 0.005,
+      "scenario_id": 149,
+      "first_latch_year": 28,
+      "threshold": 40.0
+    },
+    {
+      "case": "personalized/C",
+      "fee_rate": 0.005,
+      "scenario_id": 153,
+      "first_latch_year": 29,
+      "threshold": 40.0
+    },
+    {
+      "case": "personalized/C",
+      "fee_rate": 0.005,
+      "scenario_id": 155,
+      "first_latch_year": 23,
+      "threshold": 40.0
+    },
+    {
+      "case": "personalized/C",
+      "fee_rate": 0.005,
+      "scenario_id": 161,
+      "first_latch_year": 15,
+      "threshold": 40.0
+    },
+    {
+      "case": "personalized/C",
+      "fee_rate": 0.005,
+      "scenario_id": 172,
+      "first_latch_year": 28,
+      "threshold": 40.0
+    }
+  ],
+  "original_inputs_read": false,
+  "policy_executed": false
+}

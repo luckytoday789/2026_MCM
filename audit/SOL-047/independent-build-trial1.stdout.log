@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "mode": "build",
+  "checks": 1028949,
+  "maximum_absolute_numeric_residual": 5.4569682106375694e-12,
+  "annual_ledger_rows": 34200,
+  "complete_paths": 1200,
+  "original_inputs_read": false,
+  "production_policy_executed": false,
+  "read_only": false
+}

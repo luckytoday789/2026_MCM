@@ -1,0 +1,32 @@
+[
+  {
+    "name": "fee",
+    "field": "fee",
+    "value": "1.1666666666666667",
+    "input": "audit/SOL-047/corruptions/fee.json"
+  },
+  {
+    "name": "cpi",
+    "field": "cpi_end",
+    "value": "2.0046362",
+    "input": "audit/SOL-047/corruptions/cpi.json"
+  },
+  {
+    "name": "real-wealth",
+    "field": "real_wealth_end",
+    "value": "109.79937654822487",
+    "input": "audit/SOL-047/corruptions/real-wealth.json"
+  },
+  {
+    "name": "linear-quantile",
+    "field": "linear_quantiles[0].expected",
+    "delta": 1,
+    "input": "audit/SOL-047/corruptions/linear-quantile.json"
+  },
+  {
+    "name": "findings",
+    "field": "four_final_failures[0].p90_loss_pct",
+    "delta": -10,
+    "input": "audit/SOL-047/corruptions/findings.json"
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "commit": "c993e884278a257a7d6586eb763caf21db13a524",
+  "sol045": {
+    "id": "SOL-045",
+    "owner": "sol",
+    "state": "accepted",
+    "attempt": 1,
+    "branch": "work/sol/SOL-045-a1",
+    "task_sha256": "3eb2f36244f9b65081f45bfc98c1a12ee3aa156eb679e7f8cc379f4ceb285e93",
+    "note": "Actual one-call assigned-model response started21:40:00.006620+08; exact canonical receipt and hashes accepted. Availability only.",
+    "reviewed_commit": "87cf934348c3a78ce10299fa7aece8168ade0c43",
+    "result_verdict": "approve",
+    "acceptance_evidence": "audit/chief/SOL-045-review.json",
+    "accepted_paths": [
+      "audit/SOL-045/availability.json",
+      "handoff/SOL-045/check-0.txt",
+      "handoff/SOL-045/check-1.txt",
+      "handoff/SOL-045/check-2.txt",
+      "handoff/SOL-045/result.json"
+    ],
+    "artifacts_sha256": {
+      "audit/SOL-045/availability.json": "4725461fa0b112820453e883d922f6ce52b062f167afa19a67fe72962c575df9",
+      "handoff/SOL-045/check-0.txt": "a620d17433955533f42fcc4f2a757bbe1932bbc193707a6f0022fa350064e7df",
+      "handoff/SOL-045/check-1.txt": "27d4adb4bf885b10020c9507878bfdbe13f4f6680f1ac2826061a74327fda457",
+      "handoff/SOL-045/check-2.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "hy3010": {
+    "id": "HY3-010",
+    "owner": "hy3",
+    "state": "accepted",
+    "attempt": 1,
+    "branch": "work/hy3/HY3-010-a1",
+    "task_sha256": "45c730272cc8439ceb3edca697fdf516d6fc783c20c4513a20030c9db1db0835",
+    "note": "Valid once-frozen execution and negative policy findings accepted;997883 independent checks+3 arithmetic corruptions. All clients require human review; no final tuning. Exact66 paths promoted.",
+    "reviewed_commit": "4b8ac5d6822ac39ff1189c13d34ed3f84f699319",
+    "result_verdict": "approve",
+    "acceptance_evidence": "audit/chief/HY3-010-review.json"
+  },
+  "source_pins": [
+    {
+      "path": "audit/chief/check_final_result.py",
+      "expected": "a7ed1941bdace4f6e84ad02f6266bec9bb51935e7147f3f244292b7a7a418d21",
+      "actual": "a7ed1941bdace4f6e84ad02f6266bec9bb51935e7147f3f244292b7a7a418d21",
+      "passed": true
+    },
+    {
+      "path": "audit/chief/HY3-010-review.json",
+      "expected": "024d0dd6ef92cf989c66ce8f0cd5b2562c63d2aabd0567ab812d502e7b14b5c6",
+      "actual": "024d0dd6ef92cf989c66ce8f0cd5b2562c63d2aabd0567ab812d502e7b14b5c6",
+      "passed": true
+    },
+    {
+      "path": "report/final-evaluation.md",
+      "expected": "c16f0862ed87d2c58dce898db1aed4b5502302bac0df3bfed66e2fdca817418b",
+      "actual": "c16f0862ed87d2c58dce898db1aed4b5502302bac0df3bfed66e2fdca817418b",
+      "passed": true
+    },
+    {
+      "path": "report/final-evaluation-provenance.json",
+      "expected": "72f565b37471d24053190bc25476803b17a6adc1f66716ac22e062a55cadc842",
+      "actual": "72f565b37471d24053190bc25476803b17a6adc1f66716ac22e062a55cadc842",
+      "passed": true
+    },
+    {
+      "path": "report/build_final_note.py",
+      "expected": "a6faecc17c7f868d1349ab1941260fa1ddb9528027f0ae42b68e71d55a328868",
+      "actual": "a6faecc17c7f868d1349ab1941260fa1ddb9528027f0ae42b68e71d55a328868",
+      "passed": true
+    },
+    {
+      "path": "ops/freeze.json",
+      "expected": "9a78cc1cc248bdd1bf1bd50723e2e550d8b70dee653c622ac426115254ebf447",
+      "actual": "9a78cc1cc248bdd1bf1bd50723e2e550d8b70dee653c622ac426115254ebf447",
+      "passed": true
+    }
+  ]
+}

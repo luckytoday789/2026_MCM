@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-047",
+  "attempt": 1,
+  "role": "sol",
+  "task_sha256": "ae1a5de57287100c8e316e2a9c32651fe20b7c9d1cd27edec651d9ac8dbdc439",
+  "base_commit": "bd6eaf25bd88d7b197f7399f650d2b69487cc03e",
+  "status": "completed",
+  "failure": null,
+  "artifact_hash_basis": "canonical_git_blob",
+  "started_from_pinned_source": true,
+  "checks": [
+    {
+      "argv": [
+        "C:\\Users\\刘奥华\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.EXE",
+        "exec",
+        "--approve-for-me",
+        "--model",
+        "gpt-6.1-sol",
+        "-c",
+        "model_reasoning_effort=\"xhigh\"",
+        "--cd",
+        "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-047-a1",
+        "--output-last-message",
+        "E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-047-a1\\.runtime\\agent-last.txt",
+        "You are role=sol in the authorized SafeInvest team. Read AGENTS.md and .runtime/task.json. Complete only that task in this worktree. Do not commit, push, change branches, edit the task, or start another watcher; the parent runner handles delivery. Respect allowed_paths and base version. Write real deliverables and perform checks. Report blockers rather than inventing parameters. The task is authorized; continue through routine fixes.\nAfter actual successful SOL-045 acceptance, independently review exact HY3-010 result4b8ac5d6822ac39ff1189c13d34ed3f84f699319 and report/final-evaluation.md/provenance. Reuse existing independent arithmetic expressions but independently recompute representative complete saved ledgers,fee-before-return/CPI/drawdown/severe tie and same-path baseline,paired versus marginal distinctions,p10/p90 linear quantiles,and four client threshold failures+six referrals. Run supplied chief oracle as an additional actual check, not substitute for independent reasoning. Verify B/C each7/60 losses beyond tolerance,own horizons and no fallback; all A-E human review. Read only saved result/receipt/config/source blobs,never original final input or production policy execution. verify.py --check checks saved independent fixtures and findings read-only and rejects deliberate corrupted arithmetic; record real argv/exits/logs. State verdict approve/changes_required, exact reviewed commits and limitations. Source/freeze/code changes or new variants are forbidden; report bugs for disclosed correction without resetting exposure. Do not accept the unfinished full manuscript or upload identities/submission. Parent handles delivery; only audit/SOL-047 writes."
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-047-a1-agent.log"
+    },
+    {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "audit/SOL-047/verify.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": ".runtime\\logs\\SOL-047-a1-check-0.log"
+    }
+  ],
+  "artifacts_sha256": {
+    "audit/SOL-047/.gitignore": "e027cf8ebf80d6dcdacced8a4dbd1c440e2436fb1868ec851db4061cb67bb787",
+    "audit/SOL-047/check_saved_decisions.py": "b626d49f4903c791322ea499f459ca9a82dfd3a132f6895985379f4bd2f074f2",
+    "audit/SOL-047/chief-oracle.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/chief-oracle.stdout.log": "65173c12bc49082ac2b5e6e4fd25d12913c8b027c7552e710690f113ffce86af",
+    "audit/SOL-047/corruption-cpi.stderr.log": "dce9acf73c65f20bbfbdc80670ad11b54dac6c7ff9ace22d74b81c6bcc9243df",
+    "audit/SOL-047/corruption-cpi.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/corruption-fee.stderr.log": "7961c72e392f33a8a114a5dad34d4ca4a9cc6ee1b1dfa854a5e6f8f6185b37ca",
+    "audit/SOL-047/corruption-fee.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/corruption-findings.stderr.log": "7337bd8c5b90e64cabaf0bdbbcb39df24cc61de649974a5e51503170e6a00cc7",
+    "audit/SOL-047/corruption-findings.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/corruption-linear-quantile.stderr.log": "1eb4a6cf3148a442e747fb01cddb13db316d8c894fef1a3eea2189b50d4ff05d",
+    "audit/SOL-047/corruption-linear-quantile.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/corruption-plan.json": "aecf7c10c0f24fb87df1c6a2b8e42ba8c0536fb40fec2dee7ae8816f2da90859",
+    "audit/SOL-047/corruption-real-wealth.stderr.log": "f859ebd7531c2359ce5fbb213ae5fc34a2aad795e05a3a87ad28ada27efb3949",
+    "audit/SOL-047/corruption-real-wealth.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/corruptions/cpi.json": "bd1d70d7bec5b59c082035db0d8d7170231e82adc3f1c7fca06bd8c171e02ebf",
+    "audit/SOL-047/corruptions/fee.json": "6f88447e5e290a31d716cac6d60933de4d9f0eef831fcdda41e16a92abcc9df2",
+    "audit/SOL-047/corruptions/findings.json": "0bf5ca41a0cf44de822e7af659f0786111e23ff0d44d376f8adf7390729ad55f",
+    "audit/SOL-047/corruptions/linear-quantile.json": "e14f9ba8d89269732900d0461f7312dfb00b036c7df94130d87ede8853978fdc",
+    "audit/SOL-047/corruptions/real-wealth.json": "998e8f0c23e91871a04b2abfd4ad84fca2a9344c4aa0e587500a38f225ca5be8",
+    "audit/SOL-047/execution.json": "ec906f78bc852b236e9d7126d6ef453f63d5084510710c8e842e29f93e22681d",
+    "audit/SOL-047/final-note-authentication.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/final-note-authentication.stdout.log": "7efd8efb232ecf6d87c31dea9e1d15855c06f9c9c2deee205f8d5addeb2f5934",
+    "audit/SOL-047/findings.json": "f879195895ffd49b412651196416af0e9a0be4ada39a83ceb2ce71f289770b2a",
+    "audit/SOL-047/independent-build-trial1.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/independent-build-trial1.stdout.log": "fbaff79a821680b6388f3f4194e391a3a50fa145193c319c314ed62b0da056df",
+    "audit/SOL-047/independent-check-final.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/independent-check-final.stdout.log": "21f8c123db5da456ec6a30844cd29e1866ab0bdce74f32569f9d2d2b752c1183",
+    "audit/SOL-047/independent-check-initial.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/independent-check-initial.stdout.log": "21f8c123db5da456ec6a30844cd29e1866ab0bdce74f32569f9d2d2b752c1183",
+    "audit/SOL-047/independent-fixtures.json": "894befe671adc4fa9ac1f72ee205b5d9f81c1980582d929c0a97939584ceb9c5",
+    "audit/SOL-047/infrastructure-events.json": "7f24679a7c6a0756e9c0a5b9ad388aa673811cc2e58aa43e414e0429e42e812d",
+    "audit/SOL-047/prerequisite-acceptance.json": "55913e07814ee1a652133fbf006aa8cda5a9f458a7d5be004672028a512f0f38",
+    "audit/SOL-047/python-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/python-version.stdout.log": "b128c607652558627c0a0432424cf4be53ef1f500ed0fe0ca7b646e9366ccecf",
+    "audit/SOL-047/read-only-evidence.json": "60be39a187114b8731e9e2659312204c30981fd14a9b9c9572d2ea68159c195a",
+    "audit/SOL-047/review.md": "ae6337e444adc8015a9f1323158d7e03d05d3b36cb3a612be35de7c02e7094fb",
+    "audit/SOL-047/saved-decision-check.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/saved-decision-check.stdout.log": "f02e5549880a4e5513cc52dd6f4a819f15b746f36813c75ea6dc5e043ae6ab6a",
+    "audit/SOL-047/task-snapshot.json": "e66e23c03c54f39ca789486c41b1bc62cc7a706d06ea8c0ecfb3d66ba5fc418d",
+    "audit/SOL-047/verification.json": "42503942f45260e182c822e68f6cca4057e5e624be97a84ac7fd8b5c3352291d",
+    "audit/SOL-047/verify.py": "f92f23256af419a7d1766b08812f475593ea6ac45ad41a8f6e546e46d8dceb9c",
+    "handoff/SOL-047/check-0.txt": "eabf768a6dce71afb1834e2efa69b89ce80a8ed4513c7aa9bb55ab11489944b7",
+    "handoff/SOL-047/check-1.txt": "21f8c123db5da456ec6a30844cd29e1866ab0bdce74f32569f9d2d2b752c1183"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "finished_at": "2026-10-20T14:16:25.221076+00:00",
+  "note": "Completed means worker self-check only; coordinator acceptance is separate.",
+  "input_manifest": {
+    "source": "User-supplied 2026 MCM Senior Group Problem A SafeInvest attachments",
+    "license": "CC BY-NC-SA 4.0",
+    "transformation": "Originals unchanged; derived CSV files are row subsets only.",
+    "files": [
+      {
+        "path": "problem/2026_MCM_SafeInvest.pdf",
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+        "bytes": 137578
+      },
+      {
+        "path": "data/raw/SafeInvest_Synthetic_Data.csv",
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+        "bytes": 274914
+      },
+      {
+        "path": "data/development/scenarios_001_120.csv",
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+        "bytes": 182255
+      },
+      {
+        "path": "data/final_holdout/scenarios_121_180.csv",
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+        "bytes": 92732
+      }
+    ]
+  },
+  "task_parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "result_commit": "4b8ac5d6822ac39ff1189c13d34ed3f84f699319",
+    "output_root": "results/final/HY3-010",
+    "source_sha256": {
+      "audit/chief/check_final_result.py": "a7ed1941bdace4f6e84ad02f6266bec9bb51935e7147f3f244292b7a7a418d21",
+      "audit/chief/HY3-010-review.json": "024d0dd6ef92cf989c66ce8f0cd5b2562c63d2aabd0567ab812d502e7b14b5c6",
+      "report/final-evaluation.md": "c16f0862ed87d2c58dce898db1aed4b5502302bac0df3bfed66e2fdca817418b",
+      "report/final-evaluation-provenance.json": "72f565b37471d24053190bc25476803b17a6adc1f66716ac22e062a55cadc842",
+      "report/build_final_note.py": "a6faecc17c7f868d1349ab1941260fa1ddb9528027f0ae42b68e71d55a328868",
+      "ops/freeze.json": "9a78cc1cc248bdd1bf1bd50723e2e550d8b70dee653c622ac426115254ebf447"
+    }
+  }
+}

@@ -1,0 +1,169 @@
+[
+  {
+    "argv": [
+      "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+      "-B",
+      "audit/chief/check_final_result.py",
+      "--commit",
+      "4b8ac5d6822ac39ff1189c13d34ed3f84f699319",
+      "--root",
+      "results/final/HY3-010"
+    ],
+    "exit": 0,
+    "started_at": "2026-10-20T14:03:53.765Z",
+    "finished_at": "2026-10-20T14:04:17.913Z",
+    "stdout": "audit/SOL-047/chief-oracle.stdout.log",
+    "stderr": "audit/SOL-047/chief-oracle.stderr.log"
+  },
+  {
+    "argv": [
+      "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+      "-B",
+      "audit/SOL-047/verify.py",
+      "--build"
+    ],
+    "exit": 0,
+    "started_at": "2026-10-20T14:07:26.546Z",
+    "finished_at": "2026-10-20T14:07:41.794Z",
+    "stdout": "audit/SOL-047/independent-build-trial1.stdout.log",
+    "stderr": "audit/SOL-047/independent-build-trial1.stderr.log"
+  },
+  {
+    "argv": [
+      "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+      "-B",
+      "audit/SOL-047/verify.py",
+      "--check"
+    ],
+    "exit": 0,
+    "started_at": "2026-10-20T14:07:54.800Z",
+    "finished_at": "2026-10-20T14:08:10.031Z",
+    "stdout": "audit/SOL-047/independent-check-initial.stdout.log",
+    "stderr": "audit/SOL-047/independent-check-initial.stderr.log"
+  },
+  {
+    "argv": [
+      "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+      "-B",
+      "audit/SOL-047/verify.py",
+      "--check",
+      "--fixtures",
+      "audit/SOL-047/corruptions/fee.json"
+    ],
+    "exit": 1,
+    "started_at": "2026-10-20T14:08:40.995Z",
+    "finished_at": "2026-10-20T14:08:55.931Z",
+    "stdout": "audit/SOL-047/corruption-fee.stdout.log",
+    "stderr": "audit/SOL-047/corruption-fee.stderr.log"
+  },
+  {
+    "argv": [
+      "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+      "-B",
+      "audit/SOL-047/verify.py",
+      "--check",
+      "--fixtures",
+      "audit/SOL-047/corruptions/cpi.json"
+    ],
+    "exit": 1,
+    "started_at": "2026-10-20T14:08:55.934Z",
+    "finished_at": "2026-10-20T14:09:10.745Z",
+    "stdout": "audit/SOL-047/corruption-cpi.stdout.log",
+    "stderr": "audit/SOL-047/corruption-cpi.stderr.log"
+  },
+  {
+    "argv": [
+      "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+      "-B",
+      "audit/SOL-047/verify.py",
+      "--check",
+      "--fixtures",
+      "audit/SOL-047/corruptions/real-wealth.json"
+    ],
+    "exit": 1,
+    "started_at": "2026-10-20T14:09:20.884Z",
+    "finished_at": "2026-10-20T14:09:35.777Z",
+    "stdout": "audit/SOL-047/corruption-real-wealth.stdout.log",
+    "stderr": "audit/SOL-047/corruption-real-wealth.stderr.log"
+  },
+  {
+    "argv": [
+      "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+      "-B",
+      "audit/SOL-047/verify.py",
+      "--check",
+      "--fixtures",
+      "audit/SOL-047/corruptions/linear-quantile.json"
+    ],
+    "exit": 1,
+    "started_at": "2026-10-20T14:09:35.780Z",
+    "finished_at": "2026-10-20T14:09:50.622Z",
+    "stdout": "audit/SOL-047/corruption-linear-quantile.stdout.log",
+    "stderr": "audit/SOL-047/corruption-linear-quantile.stderr.log"
+  },
+  {
+    "argv": [
+      "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+      "-B",
+      "audit/SOL-047/verify.py",
+      "--check",
+      "--findings",
+      "audit/SOL-047/corruptions/findings.json"
+    ],
+    "exit": 1,
+    "started_at": "2026-10-20T14:10:01.810Z",
+    "finished_at": "2026-10-20T14:10:16.792Z",
+    "stdout": "audit/SOL-047/corruption-findings.stdout.log",
+    "stderr": "audit/SOL-047/corruption-findings.stderr.log"
+  },
+  {
+    "argv": [
+      "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+      "-B",
+      "report/build_final_note.py"
+    ],
+    "exit": 0,
+    "started_at": "2026-10-20T14:10:16.794Z",
+    "finished_at": "2026-10-20T14:10:17.429Z",
+    "stdout": "audit/SOL-047/final-note-authentication.stdout.log",
+    "stderr": "audit/SOL-047/final-note-authentication.stderr.log"
+  },
+  {
+    "argv": [
+      "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+      "-B",
+      "-c",
+      "import sys; print(sys.version); assert sys.version_info[:2] == (3, 12)"
+    ],
+    "exit": 0,
+    "started_at": "2026-10-20T14:10:17.431Z",
+    "finished_at": "2026-10-20T14:10:17.502Z",
+    "stdout": "audit/SOL-047/python-version.stdout.log",
+    "stderr": "audit/SOL-047/python-version.stderr.log"
+  },
+  {
+    "argv": [
+      "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+      "-B",
+      "audit/SOL-047/check_saved_decisions.py"
+    ],
+    "exit": 0,
+    "started_at": "2026-10-20T14:12:11.574Z",
+    "finished_at": "2026-10-20T14:12:15.190Z",
+    "stdout": "audit/SOL-047/saved-decision-check.stdout.log",
+    "stderr": "audit/SOL-047/saved-decision-check.stderr.log"
+  },
+  {
+    "argv": [
+      "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+      "-B",
+      "audit/SOL-047/verify.py",
+      "--check"
+    ],
+    "exit": 0,
+    "started_at": "2026-10-20T14:12:41.863Z",
+    "finished_at": "2026-10-20T14:12:56.718Z",
+    "stdout": "audit/SOL-047/independent-check-final.stdout.log",
+    "stderr": "audit/SOL-047/independent-check-final.stderr.log"
+  }
+]

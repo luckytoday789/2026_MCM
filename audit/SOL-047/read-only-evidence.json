@@ -1,0 +1,104 @@
+{
+  "command": [
+    "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+    "-B",
+    "audit/SOL-047/verify.py",
+    "--check"
+  ],
+  "exit": 0,
+  "before": {
+    "audit/SOL-047/verify.py": {
+      "sha256": "f92f23256af419a7d1766b08812f475593ea6ac45ad41a8f6e546e46d8dceb9c",
+      "bytes": 24291,
+      "mtime_ms": 1792505246546.4077
+    },
+    "audit/SOL-047/findings.json": {
+      "sha256": "f879195895ffd49b412651196416af0e9a0be4ada39a83ceb2ce71f289770b2a",
+      "bytes": 25637,
+      "mtime_ms": 1792505261766.0789
+    },
+    "audit/SOL-047/independent-fixtures.json": {
+      "sha256": "894befe671adc4fa9ac1f72ee205b5d9f81c1980582d929c0a97939584ceb9c5",
+      "bytes": 2493357,
+      "mtime_ms": 1792505261763.081
+    },
+    "audit/chief/check_final_result.py": {
+      "sha256": "a7ed1941bdace4f6e84ad02f6266bec9bb51935e7147f3f244292b7a7a418d21",
+      "bytes": 24694,
+      "mtime_ms": 1792504863258.412
+    },
+    "audit/chief/HY3-010-review.json": {
+      "sha256": "024d0dd6ef92cf989c66ce8f0cd5b2562c63d2aabd0567ab812d502e7b14b5c6",
+      "bytes": 54206,
+      "mtime_ms": 1792504863159.6062
+    },
+    "report/final-evaluation.md": {
+      "sha256": "8664475a8f6eea4ba76b0870fbf5580f09eefbe264cdfac73cc18f41c49cbf0f",
+      "bytes": 4201,
+      "mtime_ms": 1792504863684.8687
+    },
+    "report/final-evaluation-provenance.json": {
+      "sha256": "72f565b37471d24053190bc25476803b17a6adc1f66716ac22e062a55cadc842",
+      "bytes": 28043,
+      "mtime_ms": 1792504863683.6177
+    },
+    "report/build_final_note.py": {
+      "sha256": "a6faecc17c7f868d1349ab1941260fa1ddb9528027f0ae42b68e71d55a328868",
+      "bytes": 7783,
+      "mtime_ms": 1792504863666.556
+    },
+    "ops/freeze.json": {
+      "sha256": "9a78cc1cc248bdd1bf1bd50723e2e550d8b70dee653c622ac426115254ebf447",
+      "bytes": 16390,
+      "mtime_ms": 1792504863615.9185
+    }
+  },
+  "after": {
+    "audit/SOL-047/verify.py": {
+      "sha256": "f92f23256af419a7d1766b08812f475593ea6ac45ad41a8f6e546e46d8dceb9c",
+      "bytes": 24291,
+      "mtime_ms": 1792505246546.4077
+    },
+    "audit/SOL-047/findings.json": {
+      "sha256": "f879195895ffd49b412651196416af0e9a0be4ada39a83ceb2ce71f289770b2a",
+      "bytes": 25637,
+      "mtime_ms": 1792505261766.0789
+    },
+    "audit/SOL-047/independent-fixtures.json": {
+      "sha256": "894befe671adc4fa9ac1f72ee205b5d9f81c1980582d929c0a97939584ceb9c5",
+      "bytes": 2493357,
+      "mtime_ms": 1792505261763.081
+    },
+    "audit/chief/check_final_result.py": {
+      "sha256": "a7ed1941bdace4f6e84ad02f6266bec9bb51935e7147f3f244292b7a7a418d21",
+      "bytes": 24694,
+      "mtime_ms": 1792504863258.412
+    },
+    "audit/chief/HY3-010-review.json": {
+      "sha256": "024d0dd6ef92cf989c66ce8f0cd5b2562c63d2aabd0567ab812d502e7b14b5c6",
+      "bytes": 54206,
+      "mtime_ms": 1792504863159.6062
+    },
+    "report/final-evaluation.md": {
+      "sha256": "8664475a8f6eea4ba76b0870fbf5580f09eefbe264cdfac73cc18f41c49cbf0f",
+      "bytes": 4201,
+      "mtime_ms": 1792504863684.8687
+    },
+    "report/final-evaluation-provenance.json": {
+      "sha256": "72f565b37471d24053190bc25476803b17a6adc1f66716ac22e062a55cadc842",
+      "bytes": 28043,
+      "mtime_ms": 1792504863683.6177
+    },
+    "report/build_final_note.py": {
+      "sha256": "a6faecc17c7f868d1349ab1941260fa1ddb9528027f0ae42b68e71d55a328868",
+      "bytes": 7783,
+      "mtime_ms": 1792504863666.556
+    },
+    "ops/freeze.json": {
+      "sha256": "9a78cc1cc248bdd1bf1bd50723e2e550d8b70dee653c622ac426115254ebf447",
+      "bytes": 16390,
+      "mtime_ms": 1792504863615.9185
+    }
+  },
+  "unchanged": true
+}
