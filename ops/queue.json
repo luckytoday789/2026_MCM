@@ -1331,6 +1331,50 @@
       "failure_evidence": "audit/chief/failed-deliveries-20261020-authentication.json",
       "code_verdict": "incomplete_and_revalidation_required",
       "successor_task": "SOL-040"
+    },
+    {
+      "id": "SOL-037",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "branch": "work/sol/SOL-037-a1",
+      "task_sha256": "a39583ab0336bf78cb14b231a7e0b9a957e7da3b454f12cc6a7807546d88f9aa",
+      "note": "Published immutable recovery task; preserve failed predecessor and all research gates.",
+      "resource_hold": "not_before_release_2026-10-20T15:55:00+08:00",
+      "release_condition": "At/after15:55Beijing, release fixed commands probe once. No model call before16:10. Failure consumes last automatic probe."
+    },
+    {
+      "id": "SOL-040",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "branch": "work/sol/SOL-040-a1",
+      "task_sha256": "024057000d22bee1afba7300194344c00a9a79d857f7fd9950ce855dda07df31",
+      "note": "Published immutable recovery task; preserve failed predecessor and all research gates.",
+      "resource_hold": "real_SOL-037_success_required",
+      "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation."
+    },
+    {
+      "id": "SOL-038",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "branch": "work/sol/SOL-038-a1",
+      "task_sha256": "03472407ca3633a28501784679d1d1d03c1fb39766179620ad27a5e058214f34",
+      "note": "Published immutable recovery task; preserve failed predecessor and all research gates.",
+      "resource_hold": "real_SOL-037_success_required",
+      "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation."
+    },
+    {
+      "id": "SOL-039",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "branch": "work/sol/SOL-039-a1",
+      "task_sha256": "c2b1a1c305a293e453f1517aea2a6e14049c58e4a96f49d4aaba3138618dbe44",
+      "note": "Published immutable recovery task; preserve failed predecessor and all research gates.",
+      "resource_hold": "real_SOL-037_success_required",
+      "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation."
     }
   ]
 }

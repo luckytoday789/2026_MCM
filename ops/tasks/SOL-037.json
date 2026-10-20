@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "SOL-037",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "commands",
+  "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+  "depends_on": [],
+  "split": "none",
+  "max_seconds": 1200,
+  "scope": "Final currently authorized single assigned-machine Sol availability probe after exact SOL-036 usage-limit failure.",
+  "parameters": {
+    "not_before": "2026-10-20T16:10:00+08:00",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "xhigh",
+    "max_model_calls": 1,
+    "max_model_seconds": 300,
+    "source_sha256": {
+      "scripts/probe_sol_availability.py": "03999b341b1c63063000e90a259813fd31ef62352457a8312b6c88c3a9771252",
+      "scripts/check_worker_env.py": "0f5619d4ae5c9814042b8d564ac30a2ca15a7895be83766137dca67dcd9561d8",
+      "specs/FAILED_DELIVERY_RECOVERY_20261020.md": "85d3f004c70fef28dc2ab60a8ffb2f1d39bfcfa562c8da8702aad82665486d32",
+      "handoff/SOL-036/result.json": "85ae415acacac482628f534cd3f0aff28032b5c33246ec287943f23030f051ce",
+      "handoff/SOL-036/check-0.txt": "56123a84fea58a65d79d47cf45771e5231403282ecfa8ba27b5c7068a4927d28"
+    },
+    "release_not_before": "2026-10-20T15:55:00+08:00",
+    "failure_commit": "8a39da30e551f6e4fd54cfef6ec7b070b43d4d8d",
+    "reset_hint": "SOL-036 log:4:05 PM; timezone unspecified.16:10 Beijing is only a cautious one-shot probe.",
+    "remaining_automatic_probes_after_this": 0
+  },
+  "allowed_paths": [
+    "audit/SOL-037"
+  ],
+  "deliverables": [
+    "audit/SOL-037/availability.json"
+  ],
+  "commands": [
+    [
+      "{python}",
+      "-B",
+      "scripts/check_worker_env.py"
+    ],
+    [
+      "{python}",
+      "-B",
+      "scripts/probe_sol_availability.py",
+      "--not-before",
+      "2026-10-20T16:10:00+08:00",
+      "--output",
+      "audit/SOL-037/availability.json"
+    ]
+  ],
+  "validation_commands": [
+    [
+      "{python}",
+      "-c",
+      "import json; p=json.load(open('audit/SOL-037/availability.json',encoding='utf-8')); assert p['usable'] and p['exit_code']==0 and p['response'].strip()=='SAFEINVEST_SOL_AVAILABLE'; assert p['model_calls']==1 and p['model']=='gpt-6.1-sol'"
+    ]
+  ],
+  "acceptance_checks": [
+    "Exact immutable task/base/script/artifact hashes and real successful command exits on assigned Sol machine.",
+    "Actual model starts no earlier than16:10 Beijing, exact expected response and successful return; no retry in this attempt.",
+    "One call only; no account/model changes, purchases, retry loops, mathematical work or final data.",
+    "Success proves only current access; chief validates exact receipt before lifting full-review holds."
+  ],
+  "instructions": "Run fixed commands only after chief releases at/after15:55+08. Existing reviewed script passively waits until16:10+08, then makes exactly one assigned gpt-6.1-sol xhigh read-only no-tools call with300s timeout. No accounts/models/credits/package changes, retries, full reviews, data access or restarts. Failure remains failed and no further automatic probe is authorized. Exact success proves current availability only. Parent owns delivery; do not commit/push yourself."
+}

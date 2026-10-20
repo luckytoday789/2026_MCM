@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "SOL-039",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+  "depends_on": [
+    "SOL-037",
+    "SOL-032"
+  ],
+  "split": "development",
+  "max_seconds": 900,
+  "scope": "Audit-only narrow completion of SOL-035 portable Git inventory replay.",
+  "parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "source_sha256": {
+      "specs/SOL032_AUDIT_PORTABILITY_FOLLOWUP.md": "67e28b1aee6570050c995bbb490da1acda516025983f072f22b3ead3a5d8ddc5",
+      "specs/POLICY_WRITER_FILE_DELIVERABLES.md": "1c91468f405a92b300a2684e2b29fa29a75d9add6df77ed819e96fd8fe2e11e0",
+      "audit/chief/SOL-032-review.json": "29d380833f044d3d9b1121a59f36b138c7c1d0b78a7b4ea146ace88ca2e5d1b8",
+      "audit/chief/SOL-032-acceptance-portability-addendum.json": "84d4ca287477271a2cea2331757e5193bfe805c19f463388837867527bd7cc97",
+      "audit/chief/SOL-032-later-main-inventory-diagnosis.json": "ad1e981fd10ce44ce8dff1d4c496ccac906c59c7d5e98d0f21bf54312bb109a1",
+      "audit/chief/turn-20261020-case-dispatch-final-checks.json": "8ffb7486cb415a42ccab0d2894bfc88af0902fffe8f457c6e99c86a5bb569727",
+      "audit/SOL-032/verify.py": "fafbdefbd7cc409b9cf0d7ae8d5eed046579287ea988c3dfdd0361318c739d7b",
+      "audit/SOL-032/verification.json": "674fd64473634c95794ad6e6545c7bb9f70b69ba5ddeec9220f019face33133b",
+      "audit/SOL-032/unchanged-inventory.json": "6fc1534ba41c55652a8aa2bca6ddc190df749f8cd7a462321bea1f78526d20d8",
+      "audit/SOL-032/runtime.json": "bd07cac345513b2e5e313e59bff46c5731f7dae9ac1fa513c8eb16ccc8bbb31c",
+      "audit/SOL-032/boundaries.json": "55df018fc88cab6355a3df8b8b3ba71f9a128d342e5ae75397083e23a97b3253",
+      "audit/SOL-032/task.json": "72a8bd782b4c8fc5d83390dadb7a1f9c1e79bb1b05169de345e2320ca4f4ae7f",
+      "handoff/SOL-032/result.json": "ee8474cf83cb6e05a7992e4c3f1267763ef691eac8cda1445103185006364a1c",
+      "src/safeinvest/policy_writer.py": "feca1b69de00cb5677337796c32ab91cd7262351bfed9c9ee5ac1ff5fab46226",
+      "AGENTS.md": "dfef5eeb0404a9e0d5c5732da5c05d3ed00b6b53588fbcac541d64c23b140962",
+      "ops/PROTOCOL.md": "10f6f27536ad251f258292c98050a2ff03811ef95e1ea4cce6cf6e40cee97c10",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/FAILED_DELIVERY_RECOVERY_20261020.md": "85d3f004c70fef28dc2ab60a8ffb2f1d39bfcfa562c8da8702aad82665486d32",
+      "ops/tasks/SOL-035.json": "c7032fbe58c3724316d763bfdc2916e0fb62052f9323f21b2c33918eb904df14",
+      "handoff/SOL-035/result.json": "5caaff991eae4228f08f20a99a20c451c988c4dd807975f98bfccb7224811a9d"
+    },
+    "failed_predecessor": {
+      "task_id": "SOL-035",
+      "result_commit": "f33da50c4e16e85f7ca831e0a03d17c05c91cc79",
+      "receipt_sha256": "5caaff991eae4228f08f20a99a20c451c988c4dd807975f98bfccb7224811a9d",
+      "artifact_hash_basis": "canonical_git_blob",
+      "receipt_status": "failed"
+    },
+    "production_execution_authorized": false,
+    "final_outcomes_allowed": false,
+    "max_artifact_bytes": 10485760
+  },
+  "allowed_paths": [
+    "audit/SOL-039"
+  ],
+  "deliverables": [
+    "audit/SOL-039/review.md",
+    "audit/SOL-039/findings.json",
+    "audit/SOL-039/verify.py",
+    "audit/SOL-039/verification.json",
+    "audit/SOL-039/clean-environment-checks.json"
+  ],
+  "commands": [],
+  "validation_commands": [
+    [
+      "{python}",
+      "-B",
+      "audit/SOL-039/verify.py",
+      "--check"
+    ]
+  ],
+  "acceptance_checks": [
+    "Authenticate exact new task/base/publication and failed predecessor receipt/artifact pins; changes only assigned paths; preserve old attempts unchanged.",
+    "Fresh Python3.12 with all case-insensitive PYTHONPATH removed; actual command exits/timing/logs and unchanged protected inventories.",
+    "All required deliverables and compact reproducible fixtures; no saved PASS-label substitution; no final input or policy tuning; chief exact-commit acceptance still required.",
+    "Rebuild888 exact original inventory facts and111 historical diagnoses;25 final-only-CRLF cases are diagnosis-only, never accepted current mixed spellings.",
+    "Exact predecessor isolated replay and meaningful corruption rejection; original SOL-032 code acceptance and numerical gates unchanged."
+  ],
+  "instructions": "Read recovery spec and original SOL-035. Exact failed draft code/evidence is complete; chief LF replay returned0 unchanged, but original parent timed out with no checks. Create ONLY new audit/SOL-039 as task-bound audit completion. Authenticate old failed receipt and canonical artifact inventory against exact Git objects; preserve original failure. In ignored isolated actual Git checkout/clone at f33da50c4e16e85f7ca831e0a03d17c05c91cc79 run the unchanged old audit with fresh Python3.12 and no PYTHONPATH; parent branch stays unchanged. New portable read-only verifier must independently replay original inventory/boundary/runtime facts and source/task bindings, not just trust exit0 flags. Reuse original compact generated evidence; do not duplicate historical bundles. Bind new task independently; original SOL-035 task may remain an immutable historical inner binding. Preserve constrained exact LF/full-CRLF spellings, binary identity,25 mixed historical diagnosis qualification,888 inventory entries,111 cases,22 boundaries and actual44/43-output proofs. Demonstrate meaningful content/missing/extra/rehashed evidence rejection unchanged. No original inputs,experiments,source/test/runtime edits,packages/network fetch/worker changes/commit/push. Aim model completion by600s within900s total, allowing parent verifier/delivery. This approves audit portability only if chief later accepts the exact successful successor."
+}
