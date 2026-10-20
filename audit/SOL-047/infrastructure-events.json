@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "tool": "exec_command",
+      "process_started": false,
+      "exit_code": null,
+      "error": "Failed to create unified exec process: helper_unknown_error: setup refresh had errors",
+      "attempts": 2,
+      "resolution": "Used available node_repl child_process execFile, without shell or escalation."
+    },
+    {
+      "argv": [
+        "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+        "-B",
+        "-c",
+        "import sys; print(sys.version); import numpy; print(numpy.__version__)"
+      ],
+      "exit_code": 1,
+      "stdout": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]\r\n",
+      "stderr": "Traceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\nModuleNotFoundError: No module named 'numpy'\r\n",
+      "resolution": "The authorized audit and supplied chief checker use standard library only. No dependencies installed; actual Python 3.12 checks passed."
+    }
+  ],
+  "blockers": []
+}

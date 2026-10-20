@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-047-a1\audit\SOL-047\verify.py", line 279, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-047-a1\audit\SOL-047\verify.py", line 277, in main
+    else:check_saved(json.loads(a.fixtures.read_bytes()),json.loads(a.findings.read_bytes()),fixtures,findings)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-047-a1\audit\SOL-047\verify.py", line 258, in check_saved
+    metrics=ledger(item['rows'],item['horizons'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-047-a1\audit\SOL-047\verify.py", line 83, in ledger
+    near(row['intended_transfer'],transfer,'one-way transfer');near(row['fee'],fee,'fee before returns')
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-047-a1\audit\SOL-047\verify.py", line 37, in near
+    assert math.isfinite(a) and math.isfinite(b) and math.isclose(a,b,rel_tol=1e-10,abs_tol=1e-9),(label,a,b)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('fee before returns', 1.1666666666666667, 0.16666666666666666)

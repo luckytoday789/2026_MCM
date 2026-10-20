@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T14:40:10.332730+00:00",
-  "reason": "Exact SOL-046 is accepted and promoted; actual final release refused pending SOL-047. Await exact final-result/full-manuscript reviews, then final local layout and source-package gates.",
+  "next_wake_at": "2026-10-20T14:27:38.586362+00:00",
+  "reason": "SOL-047 exact independent final-result review accepted and promoted; SOL-048 actual receipt still required before local editorial release.",
   "next_actions": [
     "Fetch exact SOL-047/048 receipts and inspect independent findings/fixtures. Canonical verifier now accepts explicit agent_command_log_path only when exact inner prescribed argv/exit/stdout/stderr are present and canonical-hashed. Preserve line-ending failures and document worker-byte reconstruction if required; do not rewrite receipts.",
     "After all exact independent approvals pass, run existing build_submission.py --release with the ignored local team display file into a new ignored output; inspect every page and record final exact SHA. The release gate authenticates all three approvals and original manuscript hashes; submission_ready stays false until external final layout/package audit.",
@@ -13,14 +13,14 @@
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": true,
-  "last_completed_at": "2026-10-20T14:10:10.332730+00:00",
+  "last_completed_at": "2026-10-20T14:22:38.586362+00:00",
   "quota_probe_verified_commit": "11ade9aeb4726473e65c32cfd254e03d9aec54b4",
   "quota_probe_release_not_before": "2026-10-20T15:55:00+08:00",
   "quota_probe_current_status": "SOL045_actual_success_accepted_three_reviews_ready",
   "last_successful_quota_probe_commit": "87cf934348c3a78ce10299fa7aece8168ade0c43",
   "quota_probe_task": "SOL-037",
   "quota_probe_remaining_additional_attempts_after_SOL028": 1,
-  "last_outcome_zh": "已验收提升SOL-046并推送main，22项测试和独立数值审计复现；历史CRLF及本机导入失败完整披露。正式输出实际拒绝未验收047，未生成正式稿；等待047/048后完成逐页验收和源码包。",
+  "last_outcome_zh": "已验收SOL-047精确提交，独立账本和决策复核通过；全部负面结果保留。等待SOL-048后进行正式本地PDF和源码包验收。",
   "baseline_figure_source_commit": "04be213a76855b1b1815405a735f2a49be678935",
   "baseline_figure_review_task": "SOL-030",
   "layout_proof_path": "report/layout-proof/methods-baselines.pdf",
@@ -123,5 +123,6 @@
   "full_manuscript_status": "complete_content_independent_review_pending",
   "final_release_pending": true,
   "editorial_release_preparation": "audit/chief/editorial-release-preparation-20261020.json",
-  "supplemental_source_review_accepted_commit": "0ed56de4b70bef0083ca2cf414f5aa2dce8606f0"
+  "supplemental_source_review_accepted_commit": "0ed56de4b70bef0083ca2cf414f5aa2dce8606f0",
+  "supplemental_final_review_accepted_commit": "9b620ae9a1c189d14060f59b02d8b0e4405d4f18"
 }

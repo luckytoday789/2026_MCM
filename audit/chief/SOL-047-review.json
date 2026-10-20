@@ -1,0 +1,408 @@
+{
+  "task_id": "SOL-047",
+  "reviewed_commit": "9b620ae9a1c189d14060f59b02d8b0e4405d4f18",
+  "base_commit": "bd6eaf25bd88d7b197f7399f650d2b69487cc03e",
+  "task_sha256": "ae1a5de57287100c8e316e2a9c32651fe20b7c9d1cd27edec651d9ac8dbdc439",
+  "branch": "work/sol/SOL-047-a1",
+  "structural_checks": "passed",
+  "source_hashes_checked": {
+    "audit/chief/check_final_result.py": "a7ed1941bdace4f6e84ad02f6266bec9bb51935e7147f3f244292b7a7a418d21",
+    "audit/chief/HY3-010-review.json": "024d0dd6ef92cf989c66ce8f0cd5b2562c63d2aabd0567ab812d502e7b14b5c6",
+    "report/final-evaluation.md": "c16f0862ed87d2c58dce898db1aed4b5502302bac0df3bfed66e2fdca817418b",
+    "report/final-evaluation-provenance.json": "72f565b37471d24053190bc25476803b17a6adc1f66716ac22e062a55cadc842",
+    "report/build_final_note.py": "a6faecc17c7f868d1349ab1941260fa1ddb9528027f0ae42b68e71d55a328868",
+    "ops/freeze.json": "9a78cc1cc248bdd1bf1bd50723e2e550d8b70dee653c622ac426115254ebf447"
+  },
+  "artifacts_sha256": {
+    "audit/SOL-047/.gitignore": "e027cf8ebf80d6dcdacced8a4dbd1c440e2436fb1868ec851db4061cb67bb787",
+    "audit/SOL-047/check_saved_decisions.py": "b626d49f4903c791322ea499f459ca9a82dfd3a132f6895985379f4bd2f074f2",
+    "audit/SOL-047/chief-oracle.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/chief-oracle.stdout.log": "65173c12bc49082ac2b5e6e4fd25d12913c8b027c7552e710690f113ffce86af",
+    "audit/SOL-047/corruption-cpi.stderr.log": "dce9acf73c65f20bbfbdc80670ad11b54dac6c7ff9ace22d74b81c6bcc9243df",
+    "audit/SOL-047/corruption-cpi.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/corruption-fee.stderr.log": "7961c72e392f33a8a114a5dad34d4ca4a9cc6ee1b1dfa854a5e6f8f6185b37ca",
+    "audit/SOL-047/corruption-fee.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/corruption-findings.stderr.log": "7337bd8c5b90e64cabaf0bdbbcb39df24cc61de649974a5e51503170e6a00cc7",
+    "audit/SOL-047/corruption-findings.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/corruption-linear-quantile.stderr.log": "1eb4a6cf3148a442e747fb01cddb13db316d8c894fef1a3eea2189b50d4ff05d",
+    "audit/SOL-047/corruption-linear-quantile.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/corruption-plan.json": "aecf7c10c0f24fb87df1c6a2b8e42ba8c0536fb40fec2dee7ae8816f2da90859",
+    "audit/SOL-047/corruption-real-wealth.stderr.log": "f859ebd7531c2359ce5fbb213ae5fc34a2aad795e05a3a87ad28ada27efb3949",
+    "audit/SOL-047/corruption-real-wealth.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/corruptions/cpi.json": "bd1d70d7bec5b59c082035db0d8d7170231e82adc3f1c7fca06bd8c171e02ebf",
+    "audit/SOL-047/corruptions/fee.json": "6f88447e5e290a31d716cac6d60933de4d9f0eef831fcdda41e16a92abcc9df2",
+    "audit/SOL-047/corruptions/findings.json": "0bf5ca41a0cf44de822e7af659f0786111e23ff0d44d376f8adf7390729ad55f",
+    "audit/SOL-047/corruptions/linear-quantile.json": "e14f9ba8d89269732900d0461f7312dfb00b036c7df94130d87ede8853978fdc",
+    "audit/SOL-047/corruptions/real-wealth.json": "998e8f0c23e91871a04b2abfd4ad84fca2a9344c4aa0e587500a38f225ca5be8",
+    "audit/SOL-047/execution.json": "ec906f78bc852b236e9d7126d6ef453f63d5084510710c8e842e29f93e22681d",
+    "audit/SOL-047/final-note-authentication.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/final-note-authentication.stdout.log": "7efd8efb232ecf6d87c31dea9e1d15855c06f9c9c2deee205f8d5addeb2f5934",
+    "audit/SOL-047/findings.json": "f879195895ffd49b412651196416af0e9a0be4ada39a83ceb2ce71f289770b2a",
+    "audit/SOL-047/independent-build-trial1.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/independent-build-trial1.stdout.log": "fbaff79a821680b6388f3f4194e391a3a50fa145193c319c314ed62b0da056df",
+    "audit/SOL-047/independent-check-final.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/independent-check-final.stdout.log": "21f8c123db5da456ec6a30844cd29e1866ab0bdce74f32569f9d2d2b752c1183",
+    "audit/SOL-047/independent-check-initial.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/independent-check-initial.stdout.log": "21f8c123db5da456ec6a30844cd29e1866ab0bdce74f32569f9d2d2b752c1183",
+    "audit/SOL-047/independent-fixtures.json": "894befe671adc4fa9ac1f72ee205b5d9f81c1980582d929c0a97939584ceb9c5",
+    "audit/SOL-047/infrastructure-events.json": "7f24679a7c6a0756e9c0a5b9ad388aa673811cc2e58aa43e414e0429e42e812d",
+    "audit/SOL-047/prerequisite-acceptance.json": "55913e07814ee1a652133fbf006aa8cda5a9f458a7d5be004672028a512f0f38",
+    "audit/SOL-047/python-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/python-version.stdout.log": "b128c607652558627c0a0432424cf4be53ef1f500ed0fe0ca7b646e9366ccecf",
+    "audit/SOL-047/read-only-evidence.json": "60be39a187114b8731e9e2659312204c30981fd14a9b9c9572d2ea68159c195a",
+    "audit/SOL-047/review.md": "ae6337e444adc8015a9f1323158d7e03d05d3b36cb3a612be35de7c02e7094fb",
+    "audit/SOL-047/saved-decision-check.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-047/saved-decision-check.stdout.log": "f02e5549880a4e5513cc52dd6f4a819f15b746f36813c75ea6dc5e043ae6ab6a",
+    "audit/SOL-047/task-snapshot.json": "e66e23c03c54f39ca789486c41b1bc62cc7a706d06ea8c0ecfb3d66ba5fc418d",
+    "audit/SOL-047/verification.json": "42503942f45260e182c822e68f6cca4057e5e624be97a84ac7fd8b5c3352291d",
+    "audit/SOL-047/verify.py": "f92f23256af419a7d1766b08812f475593ea6ac45ad41a8f6e546e46d8dceb9c",
+    "handoff/SOL-047/check-0.txt": "eabf768a6dce71afb1834e2efa69b89ce80a8ed4513c7aa9bb55ab11489944b7",
+    "handoff/SOL-047/check-1.txt": "21f8c123db5da456ec6a30844cd29e1866ab0bdce74f32569f9d2d2b752c1183"
+  },
+  "accepted_paths": [
+    "audit/SOL-047/.gitignore",
+    "audit/SOL-047/check_saved_decisions.py",
+    "audit/SOL-047/chief-oracle.stderr.log",
+    "audit/SOL-047/chief-oracle.stdout.log",
+    "audit/SOL-047/corruption-cpi.stderr.log",
+    "audit/SOL-047/corruption-cpi.stdout.log",
+    "audit/SOL-047/corruption-fee.stderr.log",
+    "audit/SOL-047/corruption-fee.stdout.log",
+    "audit/SOL-047/corruption-findings.stderr.log",
+    "audit/SOL-047/corruption-findings.stdout.log",
+    "audit/SOL-047/corruption-linear-quantile.stderr.log",
+    "audit/SOL-047/corruption-linear-quantile.stdout.log",
+    "audit/SOL-047/corruption-plan.json",
+    "audit/SOL-047/corruption-real-wealth.stderr.log",
+    "audit/SOL-047/corruption-real-wealth.stdout.log",
+    "audit/SOL-047/corruptions/cpi.json",
+    "audit/SOL-047/corruptions/fee.json",
+    "audit/SOL-047/corruptions/findings.json",
+    "audit/SOL-047/corruptions/linear-quantile.json",
+    "audit/SOL-047/corruptions/real-wealth.json",
+    "audit/SOL-047/execution.json",
+    "audit/SOL-047/final-note-authentication.stderr.log",
+    "audit/SOL-047/final-note-authentication.stdout.log",
+    "audit/SOL-047/findings.json",
+    "audit/SOL-047/independent-build-trial1.stderr.log",
+    "audit/SOL-047/independent-build-trial1.stdout.log",
+    "audit/SOL-047/independent-check-final.stderr.log",
+    "audit/SOL-047/independent-check-final.stdout.log",
+    "audit/SOL-047/independent-check-initial.stderr.log",
+    "audit/SOL-047/independent-check-initial.stdout.log",
+    "audit/SOL-047/independent-fixtures.json",
+    "audit/SOL-047/infrastructure-events.json",
+    "audit/SOL-047/prerequisite-acceptance.json",
+    "audit/SOL-047/python-version.stderr.log",
+    "audit/SOL-047/python-version.stdout.log",
+    "audit/SOL-047/read-only-evidence.json",
+    "audit/SOL-047/review.md",
+    "audit/SOL-047/saved-decision-check.stderr.log",
+    "audit/SOL-047/saved-decision-check.stdout.log",
+    "audit/SOL-047/task-snapshot.json",
+    "audit/SOL-047/verification.json",
+    "audit/SOL-047/verify.py",
+    "handoff/SOL-047/check-0.txt",
+    "handoff/SOL-047/check-1.txt",
+    "handoff/SOL-047/result.json"
+  ],
+  "excluded_paths": [],
+  "receipt_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "prescribed_command_count": 2,
+  "nested_prescribed_command_evidence": [
+    {
+      "argv": [
+        "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+        "-B",
+        "audit/chief/check_final_result.py",
+        "--commit",
+        "4b8ac5d6822ac39ff1189c13d34ed3f84f699319",
+        "--root",
+        "results/final/HY3-010"
+      ],
+      "exit": 0,
+      "started_at": "2026-10-20T14:03:53.765Z",
+      "finished_at": "2026-10-20T14:04:17.913Z",
+      "stdout": "audit/SOL-047/chief-oracle.stdout.log",
+      "stderr": "audit/SOL-047/chief-oracle.stderr.log",
+      "authenticated_output_logs": {
+        "stdout": {
+          "path": "audit/SOL-047/chief-oracle.stdout.log",
+          "sha256": "65173c12bc49082ac2b5e6e4fd25d12913c8b027c7552e710690f113ffce86af",
+          "text": "{\n  \"status\": \"passed\",\n  \"reviewed_result_commit\": \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319\",\n  \"output_root\": \"results/final/HY3-010\",\n  \"independent_checks\": 997883,\n  \"maximum_absolute_numeric_residual\": 9.094947017729282e-13,\n  \"generic_ledger_rows\": 28800,\n  \"generic_metrics\": 4800,\n  \"personalized_ledger_rows\": 5400,\n  \"personalized_metrics\": 240,\n  \"original_input_files_read\": false,\n  \"safeinvest_modules_imported\": false,\n  \"method\": \"stdlib Fraction ledger equations; independent binary64 metric/tail/paired reconstruction\",\n  \"source_git_blob_sha256\": {\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/run_manifest.json\": \"29462023e9f99115c9014de74ce741dbdc09fb647431de77f37f85c350b36a82\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:scripts/run_development_policy.py\": \"b2ea4ac19ece30fd2bb535c2dcee5cdf48d26d0cba934a3b35cb6e08338ee19b\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:scripts/run_final_evaluation.py\": \"1fc1aebcbf319fb5e70f5184021f48a114f0a539451bfd4b6818732b76c49434\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/ACCOUNTING.md\": \"a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/DEVELOPMENT_POLICY_PILOT_V2.md\": \"ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/FINAL_EVALUATION.md\": \"39cf3c73328c79afc83905ba4aa31d9aeae14564a42fb7d167756886292f9035\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/FINAL_OUTPUT_NOTES.md\": \"804cd90610da1d434dfcc0059081a0c8bd1816350aa9d7c29368791ee3338a55\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/POLICY_CASE_ENGINE.md\": \"c984e230eecb720613b864a910d95921af1aa805f79fa68c7044f905410dec62\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/POLICY_CORRECTION_V2.md\": \"b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/POLICY_NUMERIC_K1.md\": \"72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/POLICY_NUMERIC_K2.md\": \"88d5f58a59f090c25331392e4cd5682daf5d050c27b24afe6629d8e4a5eb9997\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/POLICY_RESULT_WRITER.md\": \"ce0c43fad34ebdc44fc6f6bda395c562781e500cdc4b855ee7e0cbf937bec0b4\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/POLICY_WRITER_ACCEPTANCE_REFERENCES.md\": \"936961ab2fc38657c8c31a344982df5f92730d47eebeee0cc978c6aa37055e9d\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/POLICY_WRITER_COMPATIBILITY.md\": \"814c339353a719b88f1bf21af731439cc24e095131d9a8d28efaede48a5695ed\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/POLICY_WRITER_EXECUTION_CONFIG.md\": \"7813b87400ba8469525392721f095fc9b65e37dcd24b8a68adb4bd6801ca8d31\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/POLICY_WRITER_FILE_DELIVERABLES.md\": \"1c91468f405a92b300a2684e2b29fa29a75d9add6df77ed819e96fd8fe2e11e0\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/POLICY_WRITER_GIT_PORTABILITY.md\": \"d4420e868eab8f6d4ecf34c337c865d7b99e7653d994565fd69b8432c8daac22\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/POLICY_WRITER_RECOVERY.md\": \"cd0d4de33d64e2893e410434f216bfc2a65cea5fafe3907dbf74347969c843b0\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/POLICY_WRITER_TASK_BINDING.md\": \"85f237a46041d6333b984903daca5528119d3043c106fca4357b5851a0920760\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/PROBLEM_LOCK.md\": \"566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/development_policy_pilot_v2.json\": \"d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/final_evaluation_contract_v1.json\": \"b9b254b17af6a4e61ab9ed6708cefbff3466b56c9dc2b9555008e7907cd34c96\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:specs/policy_driver_layout_v2.json\": \"f431e661c260f7f6e40330661e77724dc3ddcafeafed1a3f0b6c31781a4e8329\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/__init__.py\": \"b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/accounting.py\": \"0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/backtest.py\": \"3f2921ec8d6c9a0d419a7c7009e43dc8a1684627a461ae2aa679f2d3a8503eb3\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/baselines.py\": \"a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/experiments.py\": \"8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/final_execution.py\": \"bfda2f62edba55624895a362ff019d89dbceeeb7c01dac60bffef09ce72fced7\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/final_paths.py\": \"a9526cec8d071b39d99bcb3d21669865ee0c5a5d43bcbdba9b80699d333b78a6\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/final_refit.py\": \"c4a9a69a35ab6a91d9946e1d44c432a99fed99ba76f522f1696e26e4507cacf6\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/metrics.py\": \"cdf669ca7cd6014606534ef75a483ff3e4068aba96ad6d58bd67ff35cdd8566e\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/policy_calibration.py\": \"d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/policy_cases.py\": \"84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/policy_pilot.py\": \"5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057\",\n    \"7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/policy_writer.py\": \"feca1b69de00cb5677337796c32ab91cd7262351bfed9c9ee5ac1ff5fab46226\",\n    \"9314d08868ce285631fe797def2edc9ea63aa65c:audit/chief/CHIEF-FINAL-SOURCE-V2-20261020-review.json\": \"fcfb9fb7d2c3c72a250903b3a1cc36501f5f45673b771650fefc5e6a4a2da692\",\n    \"5ac119dd57f790299e798aa491911c1a7de26661:audit/chief/CHIEF-DEVELOPMENT-20261020-review.json\": \"4ff0ec7aa19ef3fb4da7a684ec3ac3cf27bcb5eb268419db4b30c17dea76f4f9\",\n    \"67b4299202d694373797f30e29a570bfaf60479e:results/development/HY3-009/selection.json\": \"56b721ac630e7b08c48a74b37c300bcc841ea51e4b85084401a58b8bbbfa334e\",\n    \"b334b27a2f9fb8df99a6dee611e298bd0dc867d3:results/development/CHIEF-PERSONALIZED-RUN-002/personalized_results.json\": \"00bcda0d95ce7c58536effe2829fbb20bc1d34349bdb4447f95f339b91052617\",\n    \"06086aed327aa626ddc91472f943c2c9fba1259a:ops/freeze.json\": \"9a78cc1cc248bdd1bf1bd50723e2e550d8b70dee653c622ac426115254ebf447\",\n    \"97283e058194aa2de85afe85755bb178c78e0116:audit/chief/FINAL-FREEZE-20261020-review.json\": \"7fd8f2041be021e344f3ebce51d12c138b7a7f569dded92204cb4a5ae433171b\",\n    \"12d91bd60f551acd3c9d98218a71a0370878f614:audit/chief/CHIEF-REFIT-001-promoted-review.json\": \"6733d24450733b1543bdc2621a5d032632b280572097775516c5bba1722e6165\",\n    \"07eff1d3cb714c3f1d9dc850e0dbb9cab59c6b8d:results/development/CHIEF-REFIT-001/run_manifest.json\": \"acd58eccc6db735197b4b3feaa751e5c1c1954eb82bfaabe528ff13d2b410ee6\",\n    \"9edf98528ec1b7542127513c385da29f1350ac4d:ops/tasks/HY3-010.json\": \"88821a09de28bfd6e369009cb19b08f3589d6c0df931a8df151fcc4d146fce7c\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/comparisons.csv\": \"3bd2f5f787bb2bc9c8013b6b6bfdc51d3df6d579adc08b7863e58148fbe62d0f\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/comparisons.json\": \"c648bdc11e39790b518aaeb69ac7b3293fe23555967f4b37efaae5d98e21a5ef\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_adaptive/0.0025/annual_ledgers.csv\": \"a6d655b8cffa1d08956f70e4a9df6536c2bd920acfdb08c84f061b79737da1f7\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_adaptive/0.0025/decisions.csv\": \"e42d591101f62604dc3d93494204fbd1c97cbccb36128e0e1afb231563413f5d\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_adaptive/0.0025/scenario_metrics.csv\": \"df41084dbf66d9cbed5cd48f4a6e8a301a562cbc0a156e403ab053902f4c820d\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_adaptive/0.005/annual_ledgers.csv\": \"7cf1d837c304deae9d4df9fda24c31b189c45bf52b0d8a7b1bbfedd8296d214c\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_adaptive/0.005/decisions.csv\": \"bfb36db92d88deeb178df0a95496908a2ff42a98ae058dc7fbb845b85bcd1a32\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_adaptive/0.005/scenario_metrics.csv\": \"2a8b2a5c0e2c70dad41efb5ba3ef9abd56234269745f8ad0fb5edce20cc20648\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_context/0.0025/annual_ledgers.csv\": \"754fd577515b0241b53cbcb90895407f9c2c6a2b216da2b47e5242f3b93cda58\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_context/0.0025/decisions.csv\": \"4aa461e57e2d78ea43d0db494310fad3ad866808a26010c62064b76d889fedd8\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_context/0.0025/scenario_metrics.csv\": \"ff5e721b5eab17e1105250322095234635d8b79db4adc806c50e7f42efae4ea7\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_context/0.005/annual_ledgers.csv\": \"079ed0e80026de23c73c3d31989384e9e9d60250448e38ec41b873b25f332d13\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_context/0.005/decisions.csv\": \"0a6dbd12f297fa002002e304c8827a71ccd539022f96dbdf48ff2d851546f8af\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_context/0.005/scenario_metrics.csv\": \"f9e6eabc52e14d9cc7a0d8ea322d9ea653d6b0a516dd72a2f0c904b1ce75d2fb\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_cost/0.0025/annual_ledgers.csv\": \"c4ca84544c36afb7d501f61a21e9cd3c3d9a006b6352834fd647e7e0254c7e48\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_cost/0.0025/decisions.csv\": \"131348b44923d74bd8f1a0587e7224458876d599e606a4a8abe6ec194550f39a\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_cost/0.0025/scenario_metrics.csv\": \"ad1e367984fbaedd11dc01740cc7a5d3b1b94e43886659569eb4876d7d0fab61\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_cost/0.005/annual_ledgers.csv\": \"8a5ca52c2107f4358d3809c4bc4376efa97d66a4e2d1576ab7e007cc6baf2d09\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_cost/0.005/decisions.csv\": \"5ecfe4b6228884a070d23724624df84e8a579d426dc8890cf54b6bea86eb2dc0\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_cost/0.005/scenario_metrics.csv\": \"a379f4ac0719c328e3c8388bc8c6c8f786392d13ab11ac061b8d152c0f49f82a\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/bills_keep/0.0025/annual_ledgers.csv\": \"5c3f64b9c146d2004be1df71b72af74ddb6c749a458c877dce60732a50497697\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/bills_keep/0.0025/scenario_metrics.csv\": \"c1d05961ab6f9f3180820a2c254bf6d438ee87458321bdf009ff491a6cb40ab7\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/bills_keep/0.005/annual_ledgers.csv\": \"b91674bf1075703ba03e8f2f56c81d0df7765b9130418180393caa93df924835\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/bills_keep/0.005/scenario_metrics.csv\": \"ef44b43f94d097b6e5c5cd69d9902526f351c5388e2bf603438a6c348cf7c3f7\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/conservative_cost/0.0025/annual_ledgers.csv\": \"8f69552490b74df0b20cd85c64d92e9eb53506db8a5cdeccbea9e3510fa9a6d8\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/conservative_cost/0.0025/decisions.csv\": \"96611b0604d5d7a6f48432f7409c67b5ff1e4bcd63938844b493db18ac70f468\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/conservative_cost/0.0025/scenario_metrics.csv\": \"dac4c4ff4a119475b5e9a22ca34853c925217fe57a73ac1694720d0de0c5013f\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/conservative_cost/0.005/annual_ledgers.csv\": \"1b978d78f72921a8e97241ca30c9727f2b06a132172a0bc03ebf085706119f34\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/conservative_cost/0.005/decisions.csv\": \"bf9a39798f465ad5d00aef6f007ee5f7f87ebe411d12bb9ba7878746f86ba946\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/conservative_cost/0.005/scenario_metrics.csv\": \"8bc40ca28618084f9c0b4d797c1ac50bfd0ccf662743f4511b88bf8606c938a8\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/equal_weight_annual/0.0025/annual_ledgers.csv\": \"1c0f2b8ddb6995d663e12439a065cd60f41c9ee1ab62c440ec27a223414de829\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/equal_weight_annual/0.0025/scenario_metrics.csv\": \"ba0acde1b3a507237b382bda0188f0e401c2f74ebc048cd2fc9d3944921cebe7\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/equal_weight_annual/0.005/annual_ledgers.csv\": \"21f0821ec17ffdd7534f1438c9a48a4ddac8d237fda57974b81ac2dfb7735a14\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/equal_weight_annual/0.005/scenario_metrics.csv\": \"e745c7e4e98cf03747023ea36fbca409485ed76ed37b0dcb8e9d20da8c6cfa38\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/equal_weight_buy_hold/0.0025/annual_ledgers.csv\": \"02adb0946e25da5e2ddae6fbb3b2b11f2a2a58883d5f2d96232241c30d462dab\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/equal_weight_buy_hold/0.0025/scenario_metrics.csv\": \"2fb1348f80d348d5bc8c5ef1c115bd10272e971c8cc45094c712d23689a8327e\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/equal_weight_buy_hold/0.005/annual_ledgers.csv\": \"78d8b954ef736c223403050c4221ae06f4cec9546910db476827727ff0e14d87\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/equal_weight_buy_hold/0.005/scenario_metrics.csv\": \"a54a9230f126f34671e09ef560b7eaf3eba2fbe2fad3bc525065ceb0aa8c3b76\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/growth_cost/0.0025/annual_ledgers.csv\": \"110c8845cb8b4a219153f31a4b42e13aa10f4fb1fee863bd8295eeaac0b7920f\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/growth_cost/0.0025/decisions.csv\": \"537e67fba9d511eb8959ffc748f937b6dd4b303b3227d5e74a33a82794058466\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/growth_cost/0.0025/scenario_metrics.csv\": \"1f7c2f028fcacf92054ed1ac110838131663aad019a8e10bd22459dfd4eaaf61\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/growth_cost/0.005/annual_ledgers.csv\": \"6b44263e607d3d9068c2f57c6801529890335551a33f1909989f5724f3e5363c\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/growth_cost/0.005/decisions.csv\": \"61295587dd02c9f7d4e94c478acddee20c052b2292493e79d9e3767f97a4f517\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/growth_cost/0.005/scenario_metrics.csv\": \"49bb4ef5bb53c48e66c9d8422cf7a9e58f4929fd57bfb571691a6abada77d345\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/paired_differences.csv\": \"1d810262a90b3c9e1ea1c5cd2ff6c9ece580494233f5111455105798003f80de\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized.csv\": \"891fb5fd85d2ac3f1dcb7772e9969bb686612c3bb576a39e14cf4ee7039f4cb1\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized.json\": \"c30932e1acb89fb33b5b4c7a192d2b2490f54c7559c0ab7f4e1ca08f7b4c4155\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized/B/0.0025/annual_ledgers.csv\": \"4c6afd6d29c594fdea8d573604a87bc44001618f2c424864df937c1dacabd8df\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized/B/0.0025/decisions.csv\": \"8b73c33ada208d0df4a63dc3e5bb8b6eedb9e9ed024ee74d55223f9dd1fe13f5\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized/B/0.0025/scenario_metrics.csv\": \"744bcda2acdc0daee5abad0e7ab85b068c5e142f7a727d80a82252ef5460c520\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized/B/0.005/annual_ledgers.csv\": \"13bedac376480d260dbbe8cf64dc415f35690e65724703144579eda74c130446\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized/B/0.005/decisions.csv\": \"8dbffbc2f9cf7b5b2b58c5add4bd38e12e48d70e6e50feedfd94281e22f3bf4d\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized/B/0.005/scenario_metrics.csv\": \"80bb792bcec4e7b974d3995721d91ecfcf0f1f3b0991b6e916c568752b58b6de\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized/C/0.0025/annual_ledgers.csv\": \"926420f3a2506d437c855346ca29641d4c6f09f172765ec40bf195cc844f631a\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized/C/0.0025/decisions.csv\": \"e64137022db701f3ce5de6480d3c9849673cff7a885b4f232309913d606d4711\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized/C/0.0025/scenario_metrics.csv\": \"f058d1974de6d6f6957e4e4f2ff868772aa49a8f4857029559020942a51fb9aa\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized/C/0.005/annual_ledgers.csv\": \"d1a24ad325b0da4da282ab9959351787038b2d731255fecf4b8c4fb7871662be\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized/C/0.005/decisions.csv\": \"cdcc73703558ef3a7342c7184e61f5aecfe5d52f381549ee1950f77d9bcd9dae\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized/C/0.005/scenario_metrics.csv\": \"edb48ee2121586f785c156a7c3024a1a81c5e0463292d9b496d0b838fd037473\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/scenario_metrics.csv\": \"58c4715bb851747357509da1bc5eae47e7b1daae89fb37f8033e6b84a2c98921\",\n    \"4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/summary.csv\": \"2c9db1ffccaf418b662b5a1c87c86efdabd7859d007577fd499f5193dcd200ea\"\n  },\n  \"limitations\": [\n    \"Saved-return consistency audit; original final observations are intentionally not reread.\",\n    \"Does not independently reselect policy actions or certify quota/model identity.\",\n    \"Exact task/source/freeze evidence and external source acceptance remain separate chief gates.\"\n  ]\n}\n"
+        },
+        "stderr": {
+          "path": "audit/SOL-047/chief-oracle.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      }
+    }
+  ],
+  "independent_verdict": "approve",
+  "result_verdict": "approve",
+  "checked_at": "2026-10-20T14:22:38.354382+00:00",
+  "local_replay": [
+    {
+      "argv": [
+        "{python}",
+        "-S",
+        "-B",
+        "audit/SOL-047/verify.py",
+        "--check"
+      ],
+      "cwd": ".runtime/review-SOL-047-exact",
+      "exit_code": 0,
+      "audit_bytes_unchanged": true,
+      "stdout_summary": {
+        "status": "passed",
+        "mode": "check",
+        "checks": 1063214,
+        "maximum_absolute_numeric_residual": 5.4569682106375694e-12,
+        "annual_ledger_rows": 34200,
+        "complete_paths": 1200,
+        "original_inputs_read": false,
+        "production_policy_executed": false,
+        "read_only": true
+      },
+      "full_stdout_sha256": "21f8c123db5da456ec6a30844cd29e1866ab0bdce74f32569f9d2d2b752c1183"
+    },
+    {
+      "argv": [
+        "{python}",
+        "-S",
+        "-B",
+        "audit/SOL-047/check_saved_decisions.py"
+      ],
+      "cwd": ".runtime/review-SOL-047-exact",
+      "exit_code": 0,
+      "audit_bytes_unchanged": true,
+      "stdout_summary": {
+        "status": "passed",
+        "checks": 213178,
+        "saved_decisions": 23400,
+        "human_review_periods": 5141,
+        "original_inputs_read": false,
+        "policy_executed": false
+      },
+      "full_stdout_sha256": "f02e5549880a4e5513cc52dd6f4a819f15b746f36813c75ea6dc5e043ae6ab6a"
+    },
+    {
+      "argv": [
+        "{python}",
+        "-S",
+        "-B",
+        "audit/SOL-047/verify.py",
+        "--check",
+        "--fixtures",
+        "audit/SOL-047/corruptions/fee.json"
+      ],
+      "cwd": ".runtime/review-SOL-047-exact",
+      "exit_code": 1,
+      "audit_bytes_unchanged": true,
+      "stderr": "Traceback (most recent call last):\n  File \"{repository_root}\\.runtime\\review-SOL-047-exact\\audit\\SOL-047\\verify.py\", line 279, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"{repository_root}\\.runtime\\review-SOL-047-exact\\audit\\SOL-047\\verify.py\", line 277, in main\n    else:check_saved(json.loads(a.fixtures.read_bytes()),json.loads(a.findings.read_bytes()),fixtures,findings)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{repository_root}\\.runtime\\review-SOL-047-exact\\audit\\SOL-047\\verify.py\", line 258, in check_saved\n    metrics=ledger(item['rows'],item['horizons'])\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{repository_root}\\.runtime\\review-SOL-047-exact\\audit\\SOL-047\\verify.py\", line 83, in ledger\n    near(row['intended_transfer'],transfer,'one-way transfer');near(row['fee'],fee,'fee before returns')\n                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{repository_root}\\.runtime\\review-SOL-047-exact\\audit\\SOL-047\\verify.py\", line 37, in near\n    assert math.isfinite(a) and math.isfinite(b) and math.isclose(a,b,rel_tol=1e-10,abs_tol=1e-9),(label,a,b)\nAssertionError: ('fee before returns', 1.1666666666666667, 0.16666666666666666)\n"
+    },
+    {
+      "argv": [
+        "{python}",
+        "-S",
+        "-B",
+        "audit/SOL-047/verify.py",
+        "--check",
+        "--fixtures",
+        "audit/SOL-047/corruptions/linear-quantile.json"
+      ],
+      "cwd": ".runtime/review-SOL-047-exact",
+      "exit_code": 1,
+      "audit_bytes_unchanged": true,
+      "stderr": "Traceback (most recent call last):\n  File \"{repository_root}\\.runtime\\review-SOL-047-exact\\audit\\SOL-047\\verify.py\", line 279, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"{repository_root}\\.runtime\\review-SOL-047-exact\\audit\\SOL-047\\verify.py\", line 277, in main\n    else:check_saved(json.loads(a.fixtures.read_bytes()),json.loads(a.findings.read_bytes()),fixtures,findings)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{repository_root}\\.runtime\\review-SOL-047-exact\\audit\\SOL-047\\verify.py\", line 264, in check_saved\n    for q in fixtures['linear_quantiles']:near(q['expected'],quant(q['values'],q['p']),'saved fixture linear quantile')\n                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"{repository_root}\\.runtime\\review-SOL-047-exact\\audit\\SOL-047\\verify.py\", line 37, in near\n    assert math.isfinite(a) and math.isfinite(b) and math.isclose(a,b,rel_tol=1e-10,abs_tol=1e-9),(label,a,b)\nAssertionError: ('saved fixture linear quantile', 2.4986762950487775, 1.4986762950487775)\n"
+    }
+  ],
+  "local_replay_record": ".runtime/SOL-047-local-replay.json",
+  "canonical_LF_checkout_checker_passed": true,
+  "worker_internal_hash_transport": [
+    {
+      "path": "audit/SOL-047/.gitignore",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/check_saved_decisions.py",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/chief-oracle.stderr.log",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/chief-oracle.stdout.log",
+      "worker_checkout_basis": "CRLF"
+    },
+    {
+      "path": "audit/SOL-047/corruption-cpi.stderr.log",
+      "worker_checkout_basis": "CRLF"
+    },
+    {
+      "path": "audit/SOL-047/corruption-cpi.stdout.log",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/corruption-fee.stderr.log",
+      "worker_checkout_basis": "CRLF"
+    },
+    {
+      "path": "audit/SOL-047/corruption-fee.stdout.log",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/corruption-findings.stderr.log",
+      "worker_checkout_basis": "CRLF"
+    },
+    {
+      "path": "audit/SOL-047/corruption-findings.stdout.log",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/corruption-linear-quantile.stderr.log",
+      "worker_checkout_basis": "CRLF"
+    },
+    {
+      "path": "audit/SOL-047/corruption-linear-quantile.stdout.log",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/corruption-plan.json",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/corruption-real-wealth.stderr.log",
+      "worker_checkout_basis": "CRLF"
+    },
+    {
+      "path": "audit/SOL-047/corruption-real-wealth.stdout.log",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/execution.json",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/final-note-authentication.stderr.log",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/final-note-authentication.stdout.log",
+      "worker_checkout_basis": "CRLF"
+    },
+    {
+      "path": "audit/SOL-047/findings.json",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/independent-build-trial1.stderr.log",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/independent-build-trial1.stdout.log",
+      "worker_checkout_basis": "CRLF"
+    },
+    {
+      "path": "audit/SOL-047/independent-check-final.stderr.log",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/independent-check-final.stdout.log",
+      "worker_checkout_basis": "CRLF"
+    },
+    {
+      "path": "audit/SOL-047/independent-check-initial.stderr.log",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/independent-check-initial.stdout.log",
+      "worker_checkout_basis": "CRLF"
+    },
+    {
+      "path": "audit/SOL-047/independent-fixtures.json",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/infrastructure-events.json",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/prerequisite-acceptance.json",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/python-version.stderr.log",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/python-version.stdout.log",
+      "worker_checkout_basis": "CRLF"
+    },
+    {
+      "path": "audit/SOL-047/read-only-evidence.json",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/review.md",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/saved-decision-check.stderr.log",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/saved-decision-check.stdout.log",
+      "worker_checkout_basis": "CRLF"
+    },
+    {
+      "path": "audit/SOL-047/task-snapshot.json",
+      "worker_checkout_basis": "CRLF"
+    },
+    {
+      "path": "audit/SOL-047/verify.py",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/corruptions/cpi.json",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/corruptions/fee.json",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/corruptions/findings.json",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/corruptions/linear-quantile.json",
+      "worker_checkout_basis": "LF"
+    },
+    {
+      "path": "audit/SOL-047/corruptions/real-wealth.json",
+      "worker_checkout_basis": "LF"
+    }
+  ],
+  "worker_execution_log_authentication": "All12 real argv/exit/output records authenticated; historical checkout bytes reconstruct exactly as LF or CRLF.",
+  "acceptance_scope": [
+    "Exact accepted HY3-010 saved final-result arithmetic and final-evaluation note/provenance only.",
+    "New independent 50-digit Decimal cumulative holdings/CPI and sample-variance implementation;1200 complete paths,34200 annual rows,4800 generic+240 personalized metrics.",
+    "Linear tails,paired/marginal distinctions,strict severe ties,all four7/60 failures,six no-run referrals and no fallback.",
+    "23400 saved decisions and5141 fee-free review periods;no utility-policy replay."
+  ],
+  "limitations": [
+    "Saved-return audit intentionally does not establish equality to unopened original final input.",
+    "Utility maximization and no-lookahead decisions were not independently rerun; pinned source acceptance and saved decisions support this boundary.",
+    "Final outcomes are already exposed; no policy, parameters, source or freeze changed and no correction/reselection is authorized by this audit.",
+    "Full manuscript, layout, identities and submission package are outside this approval; human submission only.",
+    "Worker process-setup and optional NumPy-import failures remain in original infrastructure-events.json; no failed step is relabeled passed.",
+    "Worker historical stdout hashes use CRLF where documented; all canonical artifact hashes pass and untouched LF checker passed locally."
+  ],
+  "full_manuscript_acceptance": false,
+  "source_or_freeze_or_policy_changed": false,
+  "original_observations_read": false,
+  "production_simulation_rerun": false
+}

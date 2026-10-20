@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-20T14:17:32.824019+00:00",
+  "source_commit": "18d24ab81e36b11f957848dc4f280d6bbf472e00",
+  "quota_remaining_percent": 84.0,
+  "quota_floor": 40,
+  "task_checks": [
+    {
+      "task": "SOL-047",
+      "state": "ready_no_receipt_at_fetch",
+      "task_sha256": "ae1a5de57287100c8e316e2a9c32651fe20b7c9d1cd27edec651d9ac8dbdc439",
+      "base_commit": "bd6eaf25bd88d7b197f7399f650d2b69487cc03e",
+      "source_hashes": 6,
+      "dependencies_accepted": [
+        "SOL-045",
+        "HY3-010"
+      ],
+      "immutable": true
+    },
+    {
+      "task": "SOL-048",
+      "state": "ready_no_receipt_at_fetch",
+      "task_sha256": "d856ba979747dca715aa91f817bf36e0751012e0111a52349731cbf0a9c589ee",
+      "base_commit": "cfde9523416113005e9de99325595d5823be94f1",
+      "source_hashes": 12,
+      "dependencies_accepted": [
+        "SOL-045",
+        "HY3-010"
+      ],
+      "immutable": true
+    }
+  ],
+  "accepted_canonical_promotion": [
+    {
+      "task": "SOL-045",
+      "reviewed_commit": "87cf934348c3a78ce10299fa7aece8168ade0c43",
+      "canonical_promoted_paths": 5
+    },
+    {
+      "task": "SOL-046",
+      "reviewed_commit": "0ed56de4b70bef0083ca2cf414f5aa2dce8606f0",
+      "canonical_promoted_paths": 14
+    },
+    {
+      "task": "HY3-010",
+      "reviewed_commit": "4b8ac5d6822ac39ff1189c13d34ed3f84f699319",
+      "canonical_promoted_paths": 66
+    }
+  ],
+  "observed_sol_lease": {
+    "role": "sol",
+    "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
+    "state": "running",
+    "python": "3.12.14",
+    "updated_at": "2026-10-20T14:13:30.513639+00:00",
+    "lease_until": "2026-10-20T14:23:30.513639+00:00",
+    "task_id": "SOL-047"
+  },
+  "release_gate": "pending_SOL047_SOL048",
+  "final_data_gate": "OPEN_preserved",
+  "original_observations_read": false,
+  "production_simulations_rerun": false,
+  "final_pdf_generated": false,
+  "source_or_task_changes": false,
+  "private_identity_access": false,
+  "submission_ready": false
+}

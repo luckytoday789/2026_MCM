@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "SOL-047",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "bd6eaf25bd88d7b197f7399f650d2b69487cc03e",
+  "depends_on": [
+    "SOL-045",
+    "HY3-010"
+  ],
+  "split": "none",
+  "max_seconds": 1500,
+  "scope": "Independent exact accepted HY3-010 final-result and chief final-note mathematical review; saved evidence only, no original final input or policy tuning.",
+  "parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "result_commit": "4b8ac5d6822ac39ff1189c13d34ed3f84f699319",
+    "output_root": "results/final/HY3-010",
+    "source_sha256": {
+      "audit/chief/check_final_result.py": "a7ed1941bdace4f6e84ad02f6266bec9bb51935e7147f3f244292b7a7a418d21",
+      "audit/chief/HY3-010-review.json": "024d0dd6ef92cf989c66ce8f0cd5b2562c63d2aabd0567ab812d502e7b14b5c6",
+      "report/final-evaluation.md": "c16f0862ed87d2c58dce898db1aed4b5502302bac0df3bfed66e2fdca817418b",
+      "report/final-evaluation-provenance.json": "72f565b37471d24053190bc25476803b17a6adc1f66716ac22e062a55cadc842",
+      "report/build_final_note.py": "a6faecc17c7f868d1349ab1941260fa1ddb9528027f0ae42b68e71d55a328868",
+      "ops/freeze.json": "9a78cc1cc248bdd1bf1bd50723e2e550d8b70dee653c622ac426115254ebf447"
+    }
+  },
+  "allowed_paths": [
+    "audit/SOL-047"
+  ],
+  "deliverables": [
+    "audit/SOL-047/findings.json",
+    "audit/SOL-047/review.md",
+    "audit/SOL-047/verify.py",
+    "audit/SOL-047/verification.json"
+  ],
+  "commands": [
+    [
+      "{python}",
+      "-B",
+      "audit/chief/check_final_result.py",
+      "--commit",
+      "4b8ac5d6822ac39ff1189c13d34ed3f84f699319",
+      "--root",
+      "results/final/HY3-010"
+    ]
+  ],
+  "validation_commands": [
+    [
+      "{python}",
+      "-B",
+      "audit/SOL-047/verify.py",
+      "--check"
+    ]
+  ],
+  "acceptance_checks": [
+    "Exact task/source/receipt/artifact hashes and genuine actual commands.",
+    "Independently derived selected full scenario ledgers plus linear tails,paired differences,severe locations and own-tolerance screens; chief oracle rerun alone is insufficient.",
+    "Preserve all-client human-review conclusion and four genuine final failures; no reselecting policy or thresholds.",
+    "No original data/final_holdout reads,policy execution,retuning,source edits or claims that future manuscript is accepted."
+  ],
+  "instructions": "After actual successful SOL-045 acceptance, independently review exact HY3-010 result4b8ac5d6822ac39ff1189c13d34ed3f84f699319 and report/final-evaluation.md/provenance. Reuse existing independent arithmetic expressions but independently recompute representative complete saved ledgers,fee-before-return/CPI/drawdown/severe tie and same-path baseline,paired versus marginal distinctions,p10/p90 linear quantiles,and four client threshold failures+six referrals. Run supplied chief oracle as an additional actual check, not substitute for independent reasoning. Verify B/C each7/60 losses beyond tolerance,own horizons and no fallback; all A-E human review. Read only saved result/receipt/config/source blobs,never original final input or production policy execution. verify.py --check checks saved independent fixtures and findings read-only and rejects deliberate corrupted arithmetic; record real argv/exits/logs. State verdict approve/changes_required, exact reviewed commits and limitations. Source/freeze/code changes or new variants are forbidden; report bugs for disclosed correction without resetting exposure. Do not accept the unfinished full manuscript or upload identities/submission. Parent handles delivery; only audit/SOL-047 writes."
+}

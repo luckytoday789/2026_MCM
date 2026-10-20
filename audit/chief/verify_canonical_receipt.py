@@ -39,12 +39,27 @@ def verify(task_id, commit, *, agent_command_log_path=None):
         assert task['kind'] == 'agent'
         raw = git('show', commit + ':' + agent_command_log_path)
         assert sha(raw) == receipt['artifacts_sha256'][agent_command_log_path]
-        records = json.loads(raw)['executions']
+        payload = json.loads(raw)
+        records = payload if isinstance(payload, list) else payload['executions']
         for command in task['commands']:
-            matching = [r for r in records if r.get('command', [])[1:] == command[1:]
+            matching = [r for r in records
+                        if r.get('command', r.get('argv', []))[1:] == command[1:]
                         and r.get('exit') == 0]
             assert matching and all('stdout' in r and 'stderr' in r for r in matching)
-            nested_evidence.append(matching[-1])
+            record = dict(matching[-1])
+            if isinstance(payload, list):
+                # Array records bind separate, canonical-hashed output files.
+                # Authenticate their bytes as well as the actual argv and exit.
+                logs = {}
+                for stream in ('stdout', 'stderr'):
+                    path = record[stream]
+                    assert isinstance(path, str) and path in receipt['artifacts_sha256']
+                    output = git('show', commit + ':' + path)
+                    assert sha(output) == receipt['artifacts_sha256'][path], path
+                    logs[stream] = {'path': path, 'sha256': sha(output),
+                                    'text': output.decode('utf-8')}
+                record['authenticated_output_logs'] = logs
+            nested_evidence.append(record)
         expected_commands = task['validation_commands']
     actual = receipt['checks'][1:] if task['kind'] == 'agent' else receipt['checks']
     assert len(actual) == len(expected_commands)

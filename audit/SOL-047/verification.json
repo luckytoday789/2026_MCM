@@ -1,0 +1,638 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-047",
+  "verdict": "approve",
+  "status": "passed_with_five_expected_corruption_rejections",
+  "created_at": "2026-10-20T14:14:56.954Z",
+  "reviewed_result_commit": "4b8ac5d6822ac39ff1189c13d34ed3f84f699319",
+  "reviewed_note_commit": "bd6eaf25bd88d7b197f7399f650d2b69487cc03e",
+  "prerequisite_acceptance_commit": "c993e884278a257a7d6586eb763caf21db13a524",
+  "required_python": "3.12",
+  "actual_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executions": [
+    {
+      "argv": [
+        "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+        "-B",
+        "audit/chief/check_final_result.py",
+        "--commit",
+        "4b8ac5d6822ac39ff1189c13d34ed3f84f699319",
+        "--root",
+        "results/final/HY3-010"
+      ],
+      "exit": 0,
+      "started_at": "2026-10-20T14:03:53.765Z",
+      "finished_at": "2026-10-20T14:04:17.913Z",
+      "stdout": "audit/SOL-047/chief-oracle.stdout.log",
+      "stderr": "audit/SOL-047/chief-oracle.stderr.log",
+      "expected_exit": 0,
+      "matches_expected": true,
+      "stdout_sha256": "b20d0efcdf2358c0182bde40bef1bd5e4a76edfc7e93a80f991cd29bc1c74450",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "executed_source_sha256": "a7ed1941bdace4f6e84ad02f6266bec9bb51935e7147f3f244292b7a7a418d21"
+    },
+    {
+      "argv": [
+        "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+        "-B",
+        "audit/SOL-047/verify.py",
+        "--build"
+      ],
+      "exit": 0,
+      "started_at": "2026-10-20T14:07:26.546Z",
+      "finished_at": "2026-10-20T14:07:41.794Z",
+      "stdout": "audit/SOL-047/independent-build-trial1.stdout.log",
+      "stderr": "audit/SOL-047/independent-build-trial1.stderr.log",
+      "expected_exit": 0,
+      "matches_expected": true,
+      "stdout_sha256": "2a7d8148bebe0af3d0dfcfb5fd61e9f4357236d901a5a8301140287d77f97d81",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "executed_source_sha256": "f92f23256af419a7d1766b08812f475593ea6ac45ad41a8f6e546e46d8dceb9c"
+    },
+    {
+      "argv": [
+        "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+        "-B",
+        "audit/SOL-047/verify.py",
+        "--check"
+      ],
+      "exit": 0,
+      "started_at": "2026-10-20T14:07:54.800Z",
+      "finished_at": "2026-10-20T14:08:10.031Z",
+      "stdout": "audit/SOL-047/independent-check-initial.stdout.log",
+      "stderr": "audit/SOL-047/independent-check-initial.stderr.log",
+      "expected_exit": 0,
+      "matches_expected": true,
+      "stdout_sha256": "058822bf57e1247f29c1ce17ecd515ae17c9ae5787c0e513767e5e907c478fa1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "executed_source_sha256": "f92f23256af419a7d1766b08812f475593ea6ac45ad41a8f6e546e46d8dceb9c"
+    },
+    {
+      "argv": [
+        "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+        "-B",
+        "audit/SOL-047/verify.py",
+        "--check",
+        "--fixtures",
+        "audit/SOL-047/corruptions/fee.json"
+      ],
+      "exit": 1,
+      "started_at": "2026-10-20T14:08:40.995Z",
+      "finished_at": "2026-10-20T14:08:55.931Z",
+      "stdout": "audit/SOL-047/corruption-fee.stdout.log",
+      "stderr": "audit/SOL-047/corruption-fee.stderr.log",
+      "expected_exit": 1,
+      "matches_expected": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "b9557ff85e5b9e1871f81af1414f37c506d2161b125dd57158cd8d1c8bcaf792",
+      "executed_source_sha256": "f92f23256af419a7d1766b08812f475593ea6ac45ad41a8f6e546e46d8dceb9c"
+    },
+    {
+      "argv": [
+        "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+        "-B",
+        "audit/SOL-047/verify.py",
+        "--check",
+        "--fixtures",
+        "audit/SOL-047/corruptions/cpi.json"
+      ],
+      "exit": 1,
+      "started_at": "2026-10-20T14:08:55.934Z",
+      "finished_at": "2026-10-20T14:09:10.745Z",
+      "stdout": "audit/SOL-047/corruption-cpi.stdout.log",
+      "stderr": "audit/SOL-047/corruption-cpi.stderr.log",
+      "expected_exit": 1,
+      "matches_expected": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "219a263e91a2990bf53e1197e3ec02d538a36e6fa26b9b6d06efbfe5a56c040c",
+      "executed_source_sha256": "f92f23256af419a7d1766b08812f475593ea6ac45ad41a8f6e546e46d8dceb9c"
+    },
+    {
+      "argv": [
+        "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+        "-B",
+        "audit/SOL-047/verify.py",
+        "--check",
+        "--fixtures",
+        "audit/SOL-047/corruptions/real-wealth.json"
+      ],
+      "exit": 1,
+      "started_at": "2026-10-20T14:09:20.884Z",
+      "finished_at": "2026-10-20T14:09:35.777Z",
+      "stdout": "audit/SOL-047/corruption-real-wealth.stdout.log",
+      "stderr": "audit/SOL-047/corruption-real-wealth.stderr.log",
+      "expected_exit": 1,
+      "matches_expected": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "5a79aac65e953b7c6581a0b5620ac3f92c25661b98933e43026a18d49b960312",
+      "executed_source_sha256": "f92f23256af419a7d1766b08812f475593ea6ac45ad41a8f6e546e46d8dceb9c"
+    },
+    {
+      "argv": [
+        "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+        "-B",
+        "audit/SOL-047/verify.py",
+        "--check",
+        "--fixtures",
+        "audit/SOL-047/corruptions/linear-quantile.json"
+      ],
+      "exit": 1,
+      "started_at": "2026-10-20T14:09:35.780Z",
+      "finished_at": "2026-10-20T14:09:50.622Z",
+      "stdout": "audit/SOL-047/corruption-linear-quantile.stdout.log",
+      "stderr": "audit/SOL-047/corruption-linear-quantile.stderr.log",
+      "expected_exit": 1,
+      "matches_expected": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e19a240dc71be2272003229d4d58421560815a0f8ec65ed6c71392457dbc9505",
+      "executed_source_sha256": "f92f23256af419a7d1766b08812f475593ea6ac45ad41a8f6e546e46d8dceb9c"
+    },
+    {
+      "argv": [
+        "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+        "-B",
+        "audit/SOL-047/verify.py",
+        "--check",
+        "--findings",
+        "audit/SOL-047/corruptions/findings.json"
+      ],
+      "exit": 1,
+      "started_at": "2026-10-20T14:10:01.810Z",
+      "finished_at": "2026-10-20T14:10:16.792Z",
+      "stdout": "audit/SOL-047/corruption-findings.stdout.log",
+      "stderr": "audit/SOL-047/corruption-findings.stderr.log",
+      "expected_exit": 1,
+      "matches_expected": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "eee614fea11b41366389670d8730710f0ff4fcdf3fbffee0e7e62c2ca28aef7f",
+      "executed_source_sha256": "f92f23256af419a7d1766b08812f475593ea6ac45ad41a8f6e546e46d8dceb9c"
+    },
+    {
+      "argv": [
+        "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+        "-B",
+        "report/build_final_note.py"
+      ],
+      "exit": 0,
+      "started_at": "2026-10-20T14:10:16.794Z",
+      "finished_at": "2026-10-20T14:10:17.429Z",
+      "stdout": "audit/SOL-047/final-note-authentication.stdout.log",
+      "stderr": "audit/SOL-047/final-note-authentication.stderr.log",
+      "expected_exit": 0,
+      "matches_expected": true,
+      "stdout_sha256": "2d4ab85dea76b66a04034012a4a87bca1ef28751f33267e3ae070d90dc6de49d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "executed_source_sha256": "a6faecc17c7f868d1349ab1941260fa1ddb9528027f0ae42b68e71d55a328868"
+    },
+    {
+      "argv": [
+        "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+        "-B",
+        "-c",
+        "import sys; print(sys.version); assert sys.version_info[:2] == (3, 12)"
+      ],
+      "exit": 0,
+      "started_at": "2026-10-20T14:10:17.431Z",
+      "finished_at": "2026-10-20T14:10:17.502Z",
+      "stdout": "audit/SOL-047/python-version.stdout.log",
+      "stderr": "audit/SOL-047/python-version.stderr.log",
+      "expected_exit": 0,
+      "matches_expected": true,
+      "stdout_sha256": "0b4cebda4edcad8a05a470afc8cca36811641929e49d9e02bf14759d1d2909d1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+        "-B",
+        "audit/SOL-047/check_saved_decisions.py"
+      ],
+      "exit": 0,
+      "started_at": "2026-10-20T14:12:11.574Z",
+      "finished_at": "2026-10-20T14:12:15.190Z",
+      "stdout": "audit/SOL-047/saved-decision-check.stdout.log",
+      "stderr": "audit/SOL-047/saved-decision-check.stderr.log",
+      "expected_exit": 0,
+      "matches_expected": true,
+      "stdout_sha256": "fed1fd2da96050f19c1bde470463192f10f85f1c9d8686526b964c79d8ca60ad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "executed_source_sha256": "b626d49f4903c791322ea499f459ca9a82dfd3a132f6895985379f4bd2f074f2"
+    },
+    {
+      "argv": [
+        "E:/2026_MCM/sol-coop/.venv/Scripts/python.exe",
+        "-B",
+        "audit/SOL-047/verify.py",
+        "--check"
+      ],
+      "exit": 0,
+      "started_at": "2026-10-20T14:12:41.863Z",
+      "finished_at": "2026-10-20T14:12:56.718Z",
+      "stdout": "audit/SOL-047/independent-check-final.stdout.log",
+      "stderr": "audit/SOL-047/independent-check-final.stderr.log",
+      "expected_exit": 0,
+      "matches_expected": true,
+      "stdout_sha256": "058822bf57e1247f29c1ce17ecd515ae17c9ae5787c0e513767e5e907c478fa1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "executed_source_sha256": "f92f23256af419a7d1766b08812f475593ea6ac45ad41a8f6e546e46d8dceb9c"
+    }
+  ],
+  "all_expected_exits": true,
+  "independent": {
+    "status": "passed",
+    "mode": "check",
+    "checks": 1063214,
+    "maximum_absolute_numeric_residual": 5.4569682106375694e-12,
+    "annual_ledger_rows": 34200,
+    "complete_paths": 1200,
+    "original_inputs_read": false,
+    "production_policy_executed": false,
+    "read_only": true
+  },
+  "chief_oracle": {
+    "status": "passed",
+    "reviewed_result_commit": "4b8ac5d6822ac39ff1189c13d34ed3f84f699319",
+    "output_root": "results/final/HY3-010",
+    "independent_checks": 997883,
+    "maximum_absolute_numeric_residual": 9.094947017729282e-13,
+    "generic_ledger_rows": 28800,
+    "generic_metrics": 4800,
+    "personalized_ledger_rows": 5400,
+    "personalized_metrics": 240,
+    "original_input_files_read": false,
+    "safeinvest_modules_imported": false,
+    "method": "stdlib Fraction ledger equations; independent binary64 metric/tail/paired reconstruction",
+    "source_git_blob_sha256": "See full chief-oracle.stdout.log",
+    "limitations": [
+      "Saved-return consistency audit; original final observations are intentionally not reread.",
+      "Does not independently reselect policy actions or certify quota/model identity.",
+      "Exact task/source/freeze evidence and external source acceptance remain separate chief gates."
+    ]
+  },
+  "saved_decision_check": {
+    "status": "passed",
+    "checks": 213178,
+    "saved_decisions": 23400,
+    "human_review_periods": 5141,
+    "first_latches": "See full saved-decision-check.stdout.log",
+    "original_inputs_read": false,
+    "policy_executed": false
+  },
+  "read_only_evidence": "audit/SOL-047/read-only-evidence.json",
+  "read_only_inventory_unchanged": true,
+  "protected_source_pins": [
+    {
+      "path": "audit/chief/check_final_result.py",
+      "expected": "a7ed1941bdace4f6e84ad02f6266bec9bb51935e7147f3f244292b7a7a418d21",
+      "actual": "a7ed1941bdace4f6e84ad02f6266bec9bb51935e7147f3f244292b7a7a418d21",
+      "passed": true
+    },
+    {
+      "path": "audit/chief/HY3-010-review.json",
+      "expected": "024d0dd6ef92cf989c66ce8f0cd5b2562c63d2aabd0567ab812d502e7b14b5c6",
+      "actual": "024d0dd6ef92cf989c66ce8f0cd5b2562c63d2aabd0567ab812d502e7b14b5c6",
+      "passed": true
+    },
+    {
+      "path": "report/final-evaluation.md",
+      "expected": "c16f0862ed87d2c58dce898db1aed4b5502302bac0df3bfed66e2fdca817418b",
+      "actual": "c16f0862ed87d2c58dce898db1aed4b5502302bac0df3bfed66e2fdca817418b",
+      "passed": true
+    },
+    {
+      "path": "report/final-evaluation-provenance.json",
+      "expected": "72f565b37471d24053190bc25476803b17a6adc1f66716ac22e062a55cadc842",
+      "actual": "72f565b37471d24053190bc25476803b17a6adc1f66716ac22e062a55cadc842",
+      "passed": true
+    },
+    {
+      "path": "report/build_final_note.py",
+      "expected": "a6faecc17c7f868d1349ab1941260fa1ddb9528027f0ae42b68e71d55a328868",
+      "actual": "a6faecc17c7f868d1349ab1941260fa1ddb9528027f0ae42b68e71d55a328868",
+      "passed": true
+    },
+    {
+      "path": "ops/freeze.json",
+      "expected": "9a78cc1cc248bdd1bf1bd50723e2e550d8b70dee653c622ac426115254ebf447",
+      "actual": "9a78cc1cc248bdd1bf1bd50723e2e550d8b70dee653c622ac426115254ebf447",
+      "passed": true
+    }
+  ],
+  "historical_evidence": [
+    {
+      "commit": "bd6eaf25bd88d7b197f7399f650d2b69487cc03e",
+      "path": "audit/chief/final-freeze-audit/execution.json",
+      "sha256": "b9d6a22fda6fcde8ed1d189103126ad9c692903a7e589750b0e94820ea96f58f"
+    },
+    {
+      "commit": "bd6eaf25bd88d7b197f7399f650d2b69487cc03e",
+      "path": "audit/chief/final-freeze-audit-002/execution.json",
+      "sha256": "00fa9d7a7f9d5cfd3d63d94b7f457e2725b3f31053d6d05502045a5f9faf5095"
+    },
+    {
+      "commit": "bd6eaf25bd88d7b197f7399f650d2b69487cc03e",
+      "path": "audit/chief/final-freeze-audit-003/execution.json",
+      "sha256": "97e1e1f2d3b98a745a4d5995d4fc57f2b7b04272899a178656fe5004174da7e2"
+    },
+    {
+      "commit": "bd6eaf25bd88d7b197f7399f650d2b69487cc03e",
+      "path": "audit/chief/FINAL-GATE-20261020.json",
+      "sha256": "7f27ce2627beefd71e975727666e37a5159569f86d6bb4d78cf58d3df4029120"
+    },
+    {
+      "commit": "bd6eaf25bd88d7b197f7399f650d2b69487cc03e",
+      "path": "audit/chief/review_development_case_bundle.py",
+      "sha256": "f4c1bde412afe86733855666173d6ebe6e878039b4bfb52e0fd3a6e6e24284bb"
+    }
+  ],
+  "artifact_hash_basis": "working-tree bytes and LF-normalized text are separately identified; producer hashes use exact canonical Git blobs",
+  "artifacts": {
+    "audit/SOL-047/.gitignore": {
+      "bytes": 7,
+      "working_tree_sha256": "e027cf8ebf80d6dcdacced8a4dbd1c440e2436fb1868ec851db4061cb67bb787",
+      "lf_normalized_sha256": "e027cf8ebf80d6dcdacced8a4dbd1c440e2436fb1868ec851db4061cb67bb787"
+    },
+    "audit/SOL-047/check_saved_decisions.py": {
+      "bytes": 3622,
+      "working_tree_sha256": "b626d49f4903c791322ea499f459ca9a82dfd3a132f6895985379f4bd2f074f2",
+      "lf_normalized_sha256": "b626d49f4903c791322ea499f459ca9a82dfd3a132f6895985379f4bd2f074f2"
+    },
+    "audit/SOL-047/chief-oracle.stderr.log": {
+      "bytes": 0,
+      "working_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lf_normalized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-047/chief-oracle.stdout.log": {
+      "bytes": 18888,
+      "working_tree_sha256": "b20d0efcdf2358c0182bde40bef1bd5e4a76edfc7e93a80f991cd29bc1c74450",
+      "lf_normalized_sha256": "65173c12bc49082ac2b5e6e4fd25d12913c8b027c7552e710690f113ffce86af"
+    },
+    "audit/SOL-047/corruption-cpi.stderr.log": {
+      "bytes": 1423,
+      "working_tree_sha256": "219a263e91a2990bf53e1197e3ec02d538a36e6fa26b9b6d06efbfe5a56c040c",
+      "lf_normalized_sha256": "dce9acf73c65f20bbfbdc80670ad11b54dac6c7ff9ace22d74b81c6bcc9243df"
+    },
+    "audit/SOL-047/corruption-cpi.stdout.log": {
+      "bytes": 0,
+      "working_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lf_normalized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-047/corruption-fee.stderr.log": {
+      "bytes": 1470,
+      "working_tree_sha256": "b9557ff85e5b9e1871f81af1414f37c506d2161b125dd57158cd8d1c8bcaf792",
+      "lf_normalized_sha256": "7961c72e392f33a8a114a5dad34d4ca4a9cc6ee1b1dfa854a5e6f8f6185b37ca"
+    },
+    "audit/SOL-047/corruption-fee.stdout.log": {
+      "bytes": 0,
+      "working_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lf_normalized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-047/corruption-findings.stderr.log": {
+      "bytes": 48961,
+      "working_tree_sha256": "eee614fea11b41366389670d8730710f0ff4fcdf3fbffee0e7e62c2ca28aef7f",
+      "lf_normalized_sha256": "7337bd8c5b90e64cabaf0bdbbcb39df24cc61de649974a5e51503170e6a00cc7"
+    },
+    "audit/SOL-047/corruption-findings.stdout.log": {
+      "bytes": 0,
+      "working_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lf_normalized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-047/corruption-linear-quantile.stderr.log": {
+      "bytes": 1303,
+      "working_tree_sha256": "e19a240dc71be2272003229d4d58421560815a0f8ec65ed6c71392457dbc9505",
+      "lf_normalized_sha256": "1eb4a6cf3148a442e747fb01cddb13db316d8c894fef1a3eea2189b50d4ff05d"
+    },
+    "audit/SOL-047/corruption-linear-quantile.stdout.log": {
+      "bytes": 0,
+      "working_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lf_normalized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-047/corruption-plan.json": {
+      "bytes": 746,
+      "working_tree_sha256": "aecf7c10c0f24fb87df1c6a2b8e42ba8c0536fb40fec2dee7ae8816f2da90859",
+      "lf_normalized_sha256": "aecf7c10c0f24fb87df1c6a2b8e42ba8c0536fb40fec2dee7ae8816f2da90859"
+    },
+    "audit/SOL-047/corruption-real-wealth.stderr.log": {
+      "bytes": 1472,
+      "working_tree_sha256": "5a79aac65e953b7c6581a0b5620ac3f92c25661b98933e43026a18d49b960312",
+      "lf_normalized_sha256": "f859ebd7531c2359ce5fbb213ae5fc34a2aad795e05a3a87ad28ada27efb3949"
+    },
+    "audit/SOL-047/corruption-real-wealth.stdout.log": {
+      "bytes": 0,
+      "working_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lf_normalized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-047/execution.json": {
+      "bytes": 5026,
+      "working_tree_sha256": "ec906f78bc852b236e9d7126d6ef453f63d5084510710c8e842e29f93e22681d",
+      "lf_normalized_sha256": "ec906f78bc852b236e9d7126d6ef453f63d5084510710c8e842e29f93e22681d"
+    },
+    "audit/SOL-047/final-note-authentication.stderr.log": {
+      "bytes": 0,
+      "working_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lf_normalized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-047/final-note-authentication.stdout.log": {
+      "bytes": 82,
+      "working_tree_sha256": "2d4ab85dea76b66a04034012a4a87bca1ef28751f33267e3ae070d90dc6de49d",
+      "lf_normalized_sha256": "7efd8efb232ecf6d87c31dea9e1d15855c06f9c9c2deee205f8d5addeb2f5934"
+    },
+    "audit/SOL-047/findings.json": {
+      "bytes": 25637,
+      "working_tree_sha256": "f879195895ffd49b412651196416af0e9a0be4ada39a83ceb2ce71f289770b2a",
+      "lf_normalized_sha256": "f879195895ffd49b412651196416af0e9a0be4ada39a83ceb2ce71f289770b2a"
+    },
+    "audit/SOL-047/independent-build-trial1.stderr.log": {
+      "bytes": 0,
+      "working_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lf_normalized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-047/independent-build-trial1.stdout.log": {
+      "bytes": 290,
+      "working_tree_sha256": "2a7d8148bebe0af3d0dfcfb5fd61e9f4357236d901a5a8301140287d77f97d81",
+      "lf_normalized_sha256": "fbaff79a821680b6388f3f4194e391a3a50fa145193c319c314ed62b0da056df"
+    },
+    "audit/SOL-047/independent-check-final.stderr.log": {
+      "bytes": 0,
+      "working_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lf_normalized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-047/independent-check-final.stdout.log": {
+      "bytes": 289,
+      "working_tree_sha256": "058822bf57e1247f29c1ce17ecd515ae17c9ae5787c0e513767e5e907c478fa1",
+      "lf_normalized_sha256": "21f8c123db5da456ec6a30844cd29e1866ab0bdce74f32569f9d2d2b752c1183"
+    },
+    "audit/SOL-047/independent-check-initial.stderr.log": {
+      "bytes": 0,
+      "working_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lf_normalized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-047/independent-check-initial.stdout.log": {
+      "bytes": 289,
+      "working_tree_sha256": "058822bf57e1247f29c1ce17ecd515ae17c9ae5787c0e513767e5e907c478fa1",
+      "lf_normalized_sha256": "21f8c123db5da456ec6a30844cd29e1866ab0bdce74f32569f9d2d2b752c1183"
+    },
+    "audit/SOL-047/independent-fixtures.json": {
+      "bytes": 2493357,
+      "working_tree_sha256": "894befe671adc4fa9ac1f72ee205b5d9f81c1980582d929c0a97939584ceb9c5",
+      "lf_normalized_sha256": "894befe671adc4fa9ac1f72ee205b5d9f81c1980582d929c0a97939584ceb9c5"
+    },
+    "audit/SOL-047/infrastructure-events.json": {
+      "bytes": 987,
+      "working_tree_sha256": "7f24679a7c6a0756e9c0a5b9ad388aa673811cc2e58aa43e414e0429e42e812d",
+      "lf_normalized_sha256": "7f24679a7c6a0756e9c0a5b9ad388aa673811cc2e58aa43e414e0429e42e812d"
+    },
+    "audit/SOL-047/prerequisite-acceptance.json": {
+      "bytes": 3389,
+      "working_tree_sha256": "55913e07814ee1a652133fbf006aa8cda5a9f458a7d5be004672028a512f0f38",
+      "lf_normalized_sha256": "55913e07814ee1a652133fbf006aa8cda5a9f458a7d5be004672028a512f0f38"
+    },
+    "audit/SOL-047/python-version.stderr.log": {
+      "bytes": 0,
+      "working_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lf_normalized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-047/python-version.stdout.log": {
+      "bytes": 67,
+      "working_tree_sha256": "0b4cebda4edcad8a05a470afc8cca36811641929e49d9e02bf14759d1d2909d1",
+      "lf_normalized_sha256": "b128c607652558627c0a0432424cf4be53ef1f500ed0fe0ca7b646e9366ccecf"
+    },
+    "audit/SOL-047/read-only-evidence.json": {
+      "bytes": 3592,
+      "working_tree_sha256": "60be39a187114b8731e9e2659312204c30981fd14a9b9c9572d2ea68159c195a",
+      "lf_normalized_sha256": "60be39a187114b8731e9e2659312204c30981fd14a9b9c9572d2ea68159c195a"
+    },
+    "audit/SOL-047/review.md": {
+      "bytes": 7840,
+      "working_tree_sha256": "ae6337e444adc8015a9f1323158d7e03d05d3b36cb3a612be35de7c02e7094fb",
+      "lf_normalized_sha256": "ae6337e444adc8015a9f1323158d7e03d05d3b36cb3a612be35de7c02e7094fb"
+    },
+    "audit/SOL-047/saved-decision-check.stderr.log": {
+      "bytes": 0,
+      "working_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lf_normalized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-047/saved-decision-check.stdout.log": {
+      "bytes": 59656,
+      "working_tree_sha256": "fed1fd2da96050f19c1bde470463192f10f85f1c9d8686526b964c79d8ca60ad",
+      "lf_normalized_sha256": "f02e5549880a4e5513cc52dd6f4a819f15b746f36813c75ea6dc5e043ae6ab6a"
+    },
+    "audit/SOL-047/task-snapshot.json": {
+      "bytes": 3691,
+      "working_tree_sha256": "7db143072efaba41486796ad61a0e0e57d09f9e49a04e6f81d115a23b0e50c1a",
+      "lf_normalized_sha256": "e66e23c03c54f39ca789486c41b1bc62cc7a706d06ea8c0ecfb3d66ba5fc418d"
+    },
+    "audit/SOL-047/verify.py": {
+      "bytes": 24291,
+      "working_tree_sha256": "f92f23256af419a7d1766b08812f475593ea6ac45ad41a8f6e546e46d8dceb9c",
+      "lf_normalized_sha256": "f92f23256af419a7d1766b08812f475593ea6ac45ad41a8f6e546e46d8dceb9c"
+    },
+    "audit/SOL-047/corruptions/cpi.json": {
+      "bytes": 61151,
+      "working_tree_sha256": "bd1d70d7bec5b59c082035db0d8d7170231e82adc3f1c7fca06bd8c171e02ebf",
+      "lf_normalized_sha256": "bd1d70d7bec5b59c082035db0d8d7170231e82adc3f1c7fca06bd8c171e02ebf"
+    },
+    "audit/SOL-047/corruptions/fee.json": {
+      "bytes": 61150,
+      "working_tree_sha256": "6f88447e5e290a31d716cac6d60933de4d9f0eef831fcdda41e16a92abcc9df2",
+      "lf_normalized_sha256": "6f88447e5e290a31d716cac6d60933de4d9f0eef831fcdda41e16a92abcc9df2"
+    },
+    "audit/SOL-047/corruptions/findings.json": {
+      "bytes": 25629,
+      "working_tree_sha256": "0bf5ca41a0cf44de822e7af659f0786111e23ff0d44d376f8adf7390729ad55f",
+      "lf_normalized_sha256": "0bf5ca41a0cf44de822e7af659f0786111e23ff0d44d376f8adf7390729ad55f"
+    },
+    "audit/SOL-047/corruptions/linear-quantile.json": {
+      "bytes": 2312,
+      "working_tree_sha256": "e14f9ba8d89269732900d0461f7312dfb00b036c7df94130d87ede8853978fdc",
+      "lf_normalized_sha256": "e14f9ba8d89269732900d0461f7312dfb00b036c7df94130d87ede8853978fdc"
+    },
+    "audit/SOL-047/corruptions/real-wealth.json": {
+      "bytes": 61151,
+      "working_tree_sha256": "998e8f0c23e91871a04b2abfd4ad84fca2a9344c4aa0e587500a38f225ca5be8",
+      "lf_normalized_sha256": "998e8f0c23e91871a04b2abfd4ad84fca2a9344c4aa0e587500a38f225ca5be8"
+    }
+  },
+  "scope": {
+    "allowed_paths": [
+      "audit/SOL-047"
+    ],
+    "original_inputs_read": false,
+    "production_policy_executed": false,
+    "source_or_freeze_changed": false,
+    "final_gate_reset": false,
+    "full_manuscript_accepted": false,
+    "submission_uploaded": false
+  },
+  "environment_events": "audit/SOL-047/infrastructure-events.json",
+  "blocking_findings": [],
+  "delivery_check": {
+    "checked_at": "2026-10-20T14:15:25.114Z",
+    "head": "bd6eaf25bd88d7b197f7399f650d2b69487cc03e",
+    "head_matches_base": true,
+    "tracked_diff": "",
+    "changed_paths": [
+      "audit/SOL-047/.gitignore",
+      "audit/SOL-047/check_saved_decisions.py",
+      "audit/SOL-047/chief-oracle.stderr.log",
+      "audit/SOL-047/chief-oracle.stdout.log",
+      "audit/SOL-047/corruption-cpi.stderr.log",
+      "audit/SOL-047/corruption-cpi.stdout.log",
+      "audit/SOL-047/corruption-fee.stderr.log",
+      "audit/SOL-047/corruption-fee.stdout.log",
+      "audit/SOL-047/corruption-findings.stderr.log",
+      "audit/SOL-047/corruption-findings.stdout.log",
+      "audit/SOL-047/corruption-linear-quantile.stderr.log",
+      "audit/SOL-047/corruption-linear-quantile.stdout.log",
+      "audit/SOL-047/corruption-plan.json",
+      "audit/SOL-047/corruption-real-wealth.stderr.log",
+      "audit/SOL-047/corruption-real-wealth.stdout.log",
+      "audit/SOL-047/corruptions/cpi.json",
+      "audit/SOL-047/corruptions/fee.json",
+      "audit/SOL-047/corruptions/findings.json",
+      "audit/SOL-047/corruptions/linear-quantile.json",
+      "audit/SOL-047/corruptions/real-wealth.json",
+      "audit/SOL-047/execution.json",
+      "audit/SOL-047/final-note-authentication.stderr.log",
+      "audit/SOL-047/final-note-authentication.stdout.log",
+      "audit/SOL-047/findings.json",
+      "audit/SOL-047/independent-build-trial1.stderr.log",
+      "audit/SOL-047/independent-build-trial1.stdout.log",
+      "audit/SOL-047/independent-check-final.stderr.log",
+      "audit/SOL-047/independent-check-final.stdout.log",
+      "audit/SOL-047/independent-check-initial.stderr.log",
+      "audit/SOL-047/independent-check-initial.stdout.log",
+      "audit/SOL-047/independent-fixtures.json",
+      "audit/SOL-047/infrastructure-events.json",
+      "audit/SOL-047/prerequisite-acceptance.json",
+      "audit/SOL-047/python-version.stderr.log",
+      "audit/SOL-047/python-version.stdout.log",
+      "audit/SOL-047/read-only-evidence.json",
+      "audit/SOL-047/review.md",
+      "audit/SOL-047/saved-decision-check.stderr.log",
+      "audit/SOL-047/saved-decision-check.stdout.log",
+      "audit/SOL-047/task-snapshot.json",
+      "audit/SOL-047/verification.json",
+      "audit/SOL-047/verify.py"
+    ],
+    "all_changes_allowed": true,
+    "required_deliverables": [
+      {
+        "path": "audit/SOL-047/findings.json",
+        "bytes": 25637
+      },
+      {
+        "path": "audit/SOL-047/review.md",
+        "bytes": 7840
+      },
+      {
+        "path": "audit/SOL-047/verify.py",
+        "bytes": 24291
+      },
+      {
+        "path": "audit/SOL-047/verification.json",
+        "bytes": 25914
+      }
+    ]
+  }
+}

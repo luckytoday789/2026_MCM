@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "new_array_receipt": "SOL-047",
+  "prior_046_and_045": [
+    {
+      "task": "SOL-046",
+      "checks": "passed"
+    },
+    {
+      "task": "SOL-045",
+      "checks": "passed"
+    }
+  ],
+  "negative_checks": [
+    {
+      "case": "missing_command",
+      "rejected": true
+    },
+    {
+      "case": "failed_exit",
+      "rejected": true
+    },
+    {
+      "case": "missing_output",
+      "rejected": true
+    },
+    {
+      "case": "corrupt_output",
+      "rejected": true
+    }
+  ]
+}
