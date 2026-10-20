@@ -1,4 +1,4 @@
-"""Assemble an explicitly incomplete, evidence-bound local submission draft.
+"""Assemble an evidence-bound manuscript for independent review.
 
 Reads accepted summary blobs through the existing read-only note generators.
 Never reads raw/final datasets, executes experiments, changes gates or uploads.
@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "report"))
 from build_primary_note import build as primary_source
 from build_baseline_note import build as baseline_source
+from build_final_note import build as final_source
 
 LABELS = {
     "bills_keep": "Bills held", "equal_weight_annual": "Annual thirds",
@@ -31,6 +32,9 @@ LABELS = {
     "balanced_context": "Balanced context", "balanced_adaptive": "Balanced adaptive",
 }
 SOURCES = {
+    "E8": ["report/final-evaluation.md", "report/final-evaluation-provenance.json",
+           "report/build_final_note.py", "audit/chief/HY3-010-review.json", "ops/freeze.json",
+           "audit/chief/FINAL-FREEZE-20261020-review.json"],
     "E0": ["specs/PROBLEM_LOCK.md", "specs/ACCOUNTING.md", "report/methods-draft.md"],
     "E1": ["report/primary-development-provenance.json", "audit/chief/HY3-004-review.json",
            "audit/chief/SOL-040-review.json"],
@@ -192,7 +196,49 @@ def personalized_sources():
         review_scope=review['numerical_review']['scope'])
 
 
+def final_sources():
+    files=final_source()
+    for name,raw in files.items():
+        assert canonical((ROOT/'report'/name).read_bytes())==canonical(raw), 'Final note drift: '+name
+    provenance=json.loads(files['final-evaluation-provenance.json'])
+    assert provenance['all_clients_human_review'] is True
+    rows=provenance['primary_rows'];fmt=lambda v:format(float(v),'.2f')
+    cols=('median_growth_pct','p10_growth_pct','median_loss_pct','p90_loss_pct',
+          'median_volatility_pct','pooled_trade_share_pct','pooled_trade_share_ex_initial_pct')
+    levels=mdtable(['Policy','Median G','p10 G','Median L','p90 L','Fluct.','Trades all','Trades later'],
+        [[LABELS[r['mode']],*[fmt(r[k]) for k in cols]] for r in rows])
+    clients=[r for r in provenance['personalized_rows'] if r['eligible']]
+    assert len(clients)==4 and all(r['status']=='final_validation_failed_human_review' and
+        r['recommended_class'] is None and r['exceedance_count']==7 and r['denominator']==60 for r in clients)
+    client_table=mdtable(['Profile/H','Fee %','Tol. %','p90 L','p10 G','Loss > tol.','Med L','Severe L'],
+        [[r['profile_id']+'/'+str(r['horizon']),fmt(100*r['fee_rate']),str(r['loss_tolerance_pct']),
+          fmt(r['p90_loss_pct']),fmt(r['p10_growth_pct']),'7/60',fmt(r['median_loss_pct']),fmt(r['severe_loss_pct'])] for r in clients])
+    cost=provenance['sensitivity_rows']
+    sensitivity=mdtable(['Fee %','Median G','p10 G','p90 L','Trades all','Trades later'],
+        [[fmt(100*float(r['fee_rate'])),*[fmt(r[k]) for k in
+          ('median_growth_pct','p10_growth_pct','p90_loss_pct','pooled_trade_share_pct','pooled_trade_share_ex_initial_pct')]] for r in cost])
+    fixed=next(r for r in rows if r['mode']=='balanced_cost')
+    baseline=next(r for r in rows if r['mode']=='equal_weight_annual')
+    assert [fmt(fixed[k]) for k in cols[:4]]==['4.03','1.52','27.48','46.60']
+    assert [fmt(baseline[k]) for k in cols[:4]]==['3.38','1.50','22.30','39.53']
+    pair=provenance['paired_primary'];same=provenance['same_path_reference']
+    paired=(f"The median paired Balanced-minus-annual-thirds growth difference is {pair['paired_median_growth_difference_pct']:.3f} "
+        f"percentage points/year. The marginal p10 growth difference is {pair['marginal_p10_growth_difference_pct']:.3f} points/year; "
+        f"the marginal p90 loss difference is {pair['marginal_p90_loss_difference_pct']:.3f} points, positive meaning worse. "
+        "These statistics answer different questions. Final diagnostics do not reopen model selection. [E8]")
+    severe=(f"Balanced's own severe scenario is {fixed['severe_scenario_id']}: maximum real drawdown {fmt(fixed['severe_max_real_drawdown_pct'])}%, "
+        f"real CAGR {fmt(fixed['severe_net_real_cagr_pct'])}%/year and terminal real wealth {fmt(fixed['severe_terminal_real_wealth'])}. "
+        f"The maximizing peak is year {fixed['severe_drawdown_peak_year']} ({fixed['severe_drawdown_peak_kind']}) and trough year "
+        f"{fixed['severe_drawdown_trough_year']} ({fixed['severe_drawdown_trough_kind']}). Annual thirds on that same path has drawdown "
+        f"{fmt(same['max_real_drawdown_pct'])}%, growth {fmt(same['net_real_cagr_pct'])}%/year and terminal wealth {fmt(same['terminal_real_wealth'])}. "
+        f"Annual thirds has a separate worst scenario {baseline['severe_scenario_id']}, losing {fmt(baseline['severe_max_real_drawdown_pct'])}%. "
+        "A policy's own worst path and a common-path comparison must remain distinct. [E8]")
+    return dict(FINAL_H30_TABLE=levels,FINAL_CLIENT_TABLE=client_table,FINAL_SENSITIVITY_TABLE=sensitivity,
+                FINAL_PAIRED=paired,FINAL_SEVERE=severe),provenance
+
+
 def assemble(team_file=None):
+    final_replacements,final_provenance=final_sources()
     primary, baseline = accepted_sources()
     promotion_table,analysis_provenance=analysis_sources()
     doubled,doubled_provenance=doubled_sources()
@@ -273,6 +319,7 @@ def assemble(team_file=None):
         "PROFILE_TABLE": mdtable(["Profile", "Years", "Loss tol. %", "Liquidity", "Bills %", "Eligible classes"], profile_rows),
         "PRIMARY_H30_TABLE": primary_table, "BALANCED_SEVERE": severe_text,
         "BASELINE_HORIZON_TABLE": horizon_table,'SENSITIVITY_H30_TABLE':sensitivity_table,'PROMOTION_TABLE':promotion_table,'PERSONALIZED_TABLE':personalized_table}
+    replacements.update(final_replacements)
     for key, value in replacements.items():
         if text.count("{{" + key + "}}") != 1:
             raise ValueError("Missing or duplicate template key " + key)
@@ -291,11 +338,12 @@ def assemble(team_file=None):
         pending=bool(re.search(r'(?m)^PENDING '+re.escape(name)+r':',content))
         # Numeric sensitivity has independently accepted exact source evidence.
         # Text filled into another slot still requires its own acceptance gate.
-        slot_status[name]={'state':'pending' if pending else 'completed' if name in ('SENSITIVITY_RESULTS','PROMOTION_RESULTS','SENSITIVITY_RECOMMENDATION_IMPACT','CUSTOMER_EXPLANATION','PERSONALIZED_RESULTS') else
+        slot_status[name]={'state':'pending' if pending else 'completed' if name in ('SENSITIVITY_RESULTS','PROMOTION_RESULTS','SENSITIVITY_RECOMMENDATION_IMPACT','CUSTOMER_EXPLANATION','PERSONALIZED_RESULTS','EXECUTIVE_RECOMMENDATION','FINAL_EVALUATION','CONCLUSION') else
                            'text_filled_pending_evidence','pending_marker_present':pending,
-                           'evidence_gate':'accepted_personalized_exact_ten_outcomes' if name=='PERSONALIZED_RESULTS' else
+                           'evidence_gate':'accepted_frozen_HY3_010_negative_findings' if name in ('EXECUTIVE_RECOMMENDATION','FINAL_EVALUATION','CONCLUSION') else
+                           'accepted_personalized_exact_ten_outcomes' if name=='PERSONALIZED_RESULTS' else
                            'accepted_HY3_004_and_HY3_006_results' if name=='SENSITIVITY_RESULTS' else
-                           'accepted_HY3_009_selection_and_reviewed_policy' if name in ('PROMOTION_RESULTS','SENSITIVITY_RECOMMENDATION_IMPACT','CUSTOMER_EXPLANATION','PERSONALIZED_RESULTS') else
+                           'accepted_HY3_009_selection_and_reviewed_policy' if name in ('PROMOTION_RESULTS','SENSITIVITY_RECOMMENDATION_IMPACT','CUSTOMER_EXPLANATION','PERSONALIZED_RESULTS','EXECUTIVE_RECOMMENDATION','FINAL_EVALUATION','CONCLUSION') else
                            'accepted_upstream_and_report_conclusion_required'}
     slots=[name for name,record in slot_status.items() if record['state']!='completed']
     numeric_paragraphs = []
@@ -311,9 +359,10 @@ def assemble(team_file=None):
             if not sources:
                 raise ValueError("Numeric paragraph lacks an evidence marker: " + paragraph[:110])
             numeric_paragraphs.append({"paragraph_sha256": sha(paragraph.encode()), "sources": sources})
-    metadata = {"schema_version": 1, "kind": "incomplete_submission_preparation",
+    metadata = {"schema_version": 1, "kind": "complete_content_pending_manuscript_acceptance",
         "submission_ready": False, "independent_manuscript_accepted": False,
-        "final_outcomes_accessed": False, "simulation_rerun": False,
+        "final_outcomes_accessed": True, "original_final_input_read": False, "simulation_rerun": False,
+        "final_provenance":final_provenance,
         "pending_slots": slots, "word_count": len(re.findall(r"\b[\w'-]+\b", text)),
         "completed_slots":[name for name,record in slot_status.items() if record['state']=='completed'],
         "slot_status":slot_status,
@@ -338,7 +387,6 @@ def assemble(team_file=None):
         "private_identity_access": team_file is not None,
         "minimum_font_pt": 11, "max_pages": 10,
         "missing_evidence": [
-            "accepted reserved-scenario evaluation", "final customer explanation and conclusion",
             "independent full manuscript review", "local names, final rendering and source ZIP checks"]}
     return text, metadata
 
@@ -383,9 +431,11 @@ def render(text, output):
                       4: [205, 100, 100, 100]}.get(n)
             if n == 6 and rows[0][0].getPlainText() == 'Candidate / control':
                 widths = [185, 65, 65, 80, 65, 50]
+            if n == 6 and rows[0][0].getPlainText() == 'Fee %':
+                widths = [70, 90, 80, 85, 100, 100]
             if widths:
                 widths = [usable * w / sum(widths) for w in widths]
-            table = Table(rows, colWidths=widths, repeatRows=1, hAlign="LEFT",rowSplitRange=(2,-2))
+            table = Table(rows, colWidths=widths, repeatRows=1, hAlign="LEFT",rowSplitRange=(3,-2))
             table.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"),
                 ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#e8edf1")),
                 ("LINEBELOW", (0, 0), (-1, 0), .6, colors.HexColor("#607483")),
@@ -403,21 +453,21 @@ def render(text, output):
     def decorate(canvas, doc):
         canvas.saveState(); canvas.setFont("Times-Roman", 11)
         canvas.setFillColor(colors.HexColor("#5b6670"))
-        canvas.drawString(39, 817, "INCOMPLETE DRAFT - accepted development evidence only")
-        canvas.drawString(39, 25, "SafeInvest | Review and missing result gates remain open")
+        canvas.drawString(39, 817, "REVIEW COPY - development and frozen final evidence")
+        canvas.drawString(39, 25, "SafeInvest | Independent manuscript acceptance pending")
         canvas.drawRightString(A4[0]-39, 25, str(doc.page)); canvas.restoreState()
     def stable_canvas(*args, **kwargs):
         return Canvas(*args, **{**kwargs, "invariant": 1})
-    pdf = output / "SafeInvest-incomplete-draft.pdf"
+    pdf = output / "SafeInvest-review-manuscript.pdf"
     SimpleDocTemplate(str(pdf), pagesize=A4, leftMargin=39, rightMargin=39,
-        topMargin=43, bottomMargin=43, title="SafeInvest incomplete evidence-bound draft",
+        topMargin=43, bottomMargin=43, title="SafeInvest evidence-bound manuscript",
         author="SafeInvest project").build(story, onFirstPage=decorate, onLaterPages=decorate,
                                           canvasmaker=stable_canvas)
     reader = PdfReader(pdf); sizes = []; page_checks = []
     for page in reader.pages:
         text = page.extract_text(visitor_text=lambda text, cm, tm, font, size:
             sizes.append(float(size)) if text.strip() else None)
-        page_checks.append("INCOMPLETE DRAFT" in text)
+        page_checks.append("REVIEW COPY" in text)
         assert abs(float(page.mediabox.width)-A4[0]) < .02
         assert abs(float(page.mediabox.height)-A4[1]) < .02
     assert min(sizes) >= 11
@@ -425,7 +475,7 @@ def render(text, output):
     # Do not label an oversized draft compliant; preserve and report it.
     return {"pdf_sha256": sha(pdf.read_bytes()), "pages": len(reader.pages), "paper": "A4",
         "minimum_font_pt": min(sizes), "within_page_limit": len(reader.pages) <= 10,
-        "all_pages_marked_incomplete": all(page_checks), "visual_review": "pending"}
+        "all_pages_marked_review_copy": all(page_checks), "visual_review": "pending"}
 
 
 def main():

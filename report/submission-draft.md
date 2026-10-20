@@ -1,6 +1,6 @@
 # SafeInvest: Cost-aware decisions in purchasing power
 
-**INCOMPLETE DEVELOPMENT DRAFT - NOT FOR SUBMISSION**
+**MANUSCRIPT FOR INDEPENDENT REVIEW**
 
 {{LOCAL_TEAM}}
 
@@ -10,10 +10,10 @@ SafeInvest must connect a customer's horizon, liquidity needs and willingness to
 
 On the accepted development comparison, using 120 scenarios, a 30-year horizon and a 0.25% one-way fee, fixed-prior Balanced has median real growth 4.53% per year, p10 growth 1.10%, median maximum real drawdown 26.84%, and p90 drawdown 41.94%. Annual equal thirds gives 3.58%, 1.28%, 20.10% and 34.84%, respectively. Balanced trades at 9.72% of reviews, versus 100.00% for annual equal thirds. These separate marginal summaries describe a growth/loss trade-off; they neither establish a paired performance improvement nor make Balanced suitable for every customer. [E1]
 
-The following draft contains accepted development results and reviewed methods. Primary selection, same-mode cost sensitivity and all ten personalized development outcomes are accepted; final evaluation and full manuscript review remain completion gates. No conclusion below treats an unfinished gate as a positive result. The executive recommendation must be rewritten after those gates close. [E3, E5]
+Development gates rejected additional contextual and adaptive complexity, so we froze fixed-prior Balanced before opening the reserved scenarios. Its role in a research comparison is separate from a client recommendation. [E3, E6]
 
 <!-- SLOT:EXECUTIVE_RECOMMENDATION -->
-PENDING EXECUTIVE_RECOMMENDATION: insert the accepted final recommendation and its quantitative support after all required evidence gates close.
+On the 60 reserved scenarios, fixed Balanced has 30-year median real growth 4.03%/year and p90 drawdown 46.60%, versus 3.38%/year and 39.53% for annual thirds. It trades at 10.50% of reviews. Crucially, the Conservative rules provisionally qualified for B and C fail their own-horizon loss screens: p90 drawdowns are 26.46% against B's 25% tolerance and 40.52% against C's 40%. Both failures persist at the doubled fee. A, D and E retain their development referrals. We therefore refer all five profiles for human review, without selecting replacement classes or changing frozen rules after validation. [E8]
 <!-- END_SLOT:EXECUTIVE_RECOMMENDATION -->
 
 ## 1. Problem, data and evaluation discipline
@@ -64,7 +64,7 @@ Among eligible targets, choose the greatest buffered score, with ties within 1e-
 
 Each annual review has an explicit action. Keep preserves holdings when no target passes. Rebalance trades to the active target when it passes. Target change selects another eligible target and executes its trade. Human review overrides further automated trading once the applicable observed-loss threshold is reached. Suspension is latched: existing component holdings remain invested, subsequent returns accrue, and no further transfer or transaction fee occurs while review is pending. This retains market and inflation exposure. A loss first observed at year end can affect only a later review, including no further review within the horizon after its final year. [E2]
 
-The generic development experiments use a 25% observed-drawdown suspension threshold. This service trigger is separate from the own-tolerance follow-up required for individual clients; it does not cap losses at 25%. [E2]
+The generic development and final comparisons use a 25% observed-drawdown suspension threshold. This service trigger is separate from the own-tolerance follow-up required for individual clients; it does not cap losses at 25%. [E2]
 
 ## 4. Accepted development evidence
 
@@ -105,7 +105,7 @@ For fixed-prior Balanced, median growth rounds to 4.53% per year at both fee rat
 <!-- END_SLOT:SENSITIVITY_RESULTS -->
 
 <!-- SLOT:SENSITIVITY_RECOMMENDATION_IMPACT -->
-The accepted choice is fixed-prior Balanced, so its two fee rows above are the relevant same-mode robustness comparison. Doubling the fee gives no evidence for promoting contextual estimation or automatic target changes and does not remove the loss-tail concern. We retain the simpler rule for reserved evaluation and make customer recommendations conditional on the separate own-horizon rescreens; a changed fee requires renewed suitability review. [E1, E5, E6]
+The accepted choice is fixed-prior Balanced, so its two fee rows above are the relevant same-mode robustness comparison. Doubling the fee gives no evidence for promoting contextual estimation or automatic target changes and does not remove the loss-tail concern. We retained the simpler rule for reserved evaluation. The completed reserved validation below fails the client loss screens at both fees, so neither fee supports an automatic allocation for these profiles; a changed fee requires renewed suitability review. [E1, E5, E6, E8]
 <!-- END_SLOT:SENSITIVITY_RECOMMENDATION_IMPACT -->
 
 <!-- SLOT:CUSTOMER_EXPLANATION -->
@@ -114,23 +114,43 @@ We keep your holdings unless a rebalance offers an estimated benefit above our c
 
 ## 6. Freeze and reserved final evaluation
 
-Development selection, personalized rescreens, any all-development prior refit, execution code, parameters, metrics, severe-case selection and input hashes must be fixed in a recorded freeze before reserved outcomes are opened. An independent implementation check precedes that freeze. A final-data software defect must retain its failed evidence and disclose its effect; it cannot be erased by reopening development selection. No policy retuning follows final evaluation. [E0, E3]
+After development selection and personalized rescreens, we fitted the prior to all 3,600 development rows. An independent binary64 check verified all 10,800 real-gross support values and the nominal, gross and support hashes. The accepted freeze binds the reviewed execution source, full parameters, input hashes, metrics, contrasts, severe-case rules and the complete 121-180 evaluation shard. A separately executed closed-gate audit passed before external attestation and gate opening. Earlier pre-access metadata failures remain preserved; neither read final inputs nor changed policy. This final run was accepted once, with no final policy tuning or reranking. [E8]
 
 <!-- SLOT:FINAL_EVALUATION -->
-PENDING FINAL_EVALUATION: insert the freeze identity, accepted refit identity, accepted reserved-scenario results, all required metrics, severe-case evidence and any disclosed correction. This draft neither opens nor evaluates the final split.
+The following common-horizon comparison uses 60 reserved scenarios, H=30 and the primary 0.25% one-way fee. All-development calibration replaces development cross-fitting as specified before access. Growth is real percent/year; loss is percentage of the running real peak; fluctuation is annual sample standard deviation in percentage points; trade shares are percentages of reviews. [E8]
+
+{{FINAL_H30_TABLE}}
+
+{{FINAL_PAIRED}}
+
+The frozen B/C Conservative follow-ups use their own horizons and loss triggers. Each row is a completed 60-scenario validation, with growth in real percent/year and losses in percent. [E8]
+
+{{FINAL_CLIENT_TABLE}}
+
+All four rows fail the unchanged loss screen despite positive p10 real growth, each with 7/60 losses strictly beyond tolerance. A, D and E retain upstream referrals and have no personalized final simulations. No fallback class is tried. All A-E require human review. For a prospective allocation, keep the initial bills pending review and disclose their inflation risk. For an already invested customer, suspend further automatic trades and preserve component holdings while returns and inflation continue. These are pending-review instructions, not a risk-free replacement portfolio. [E8]
+
+The frozen same-mode Balanced fee comparison below changes the fee and corresponding cost hurdle only. The primary mode remains fixed, and both fees retain the same all-client review conclusion. Growth is percent/year; other columns are percentages. The higher fee lowers p10 growth and trading frequency without removing the loss-tail concern. [E8]
+
+{{FINAL_SENSITIVITY_TABLE}}
+
+{{FINAL_SEVERE}}
+
+An independently expressed stdlib audit passed 997,883 saved-ledger, metric, paired, tail and referral checks, with maximum absolute residual 9.095e-13; three fee/CPI/real-wealth corruptions were rejected. It did not reread original final observations or independently reselect utility actions. The latter rely on separately reviewed source and authenticated production provenance. Supplemental remote review and full manuscript acceptance remain separate gates. [E8]
 <!-- END_SLOT:FINAL_EVALUATION -->
 
 ## 7. Limitations, reproducibility and conclusion
 
 The scenario design, annual sampling and empirical calibration constrain interpretation. Four-fold training overlaps; marginal pooling assumes useful common information; recent context need not predict future returns. The one-year utility criterion is not a long-horizon optimum. Liquidity screening does not simulate withdrawals or guarantee a bill reserve after drift. The p90 screen allows worse losses in some scenarios. Review occurs only at annual decision times and does not remove retained holdings' risk. These limitations must accompany any recommendation. [E0, E2]
 
-Numerical conclusions come from executable Python outputs identified by exact producer and review commits. Fees, wealth conservation, metrics, timing boundaries and displayed values have separate checks; a worker's successful push is not result acceptance. Failed attempts and negative findings remain in the research record. The final code supplement must contain reproducible instructions, source/data attribution and the locked configuration, remain within the competition size limit, and exclude private credentials and local environments. The human team leader submits the package. [E3]
+Numerical conclusions come from executable Python outputs identified by exact producer and review commits. Fees, wealth conservation, metrics, timing boundaries and displayed values have separate checks; a worker's successful push is not result acceptance. Failed attempts and negative findings remain in the research record. The separate code supplement preserves reproducible instructions, source/data attribution, the locked configuration and exact research history; its archive size and integrity are checked separately. Private credentials, member identities and local environments are excluded. The human team leader submits the package. [E3]
 
 <!-- SLOT:CONCLUSION -->
-PENDING CONCLUSION: reconcile the abstract, selected rule, client decisions, sensitivity and final evidence. Do not claim completeness or acceptance while any required slot remains unresolved.
+The cost-aware service provides explicit, auditable decisions and sharply reduces trading relative to annual rebalancing. That economy does not establish adequate downside protection. Development evidence rejected automatic target updates, and reserved evidence overturns the provisional B/C suitability qualification. We retain the frozen research result and refer all A-E for human assessment. Annual suspension freezes trading rather than wealth; inflation and market losses can continue. Deployment requires a reviewed response to the failed suitability screens, rather than a better-looking rule chosen from the exposed final scenarios. [E6, E7, E8]
 <!-- END_SLOT:CONCLUSION -->
 
 ## Sources and AI-use disclosure
+
+[E8] Accepted frozen HY3-010 final evidence: producer 4b8ac5d6822ac39ff1189c13d34ed3f84f699319; freeze 06086aed327aa626ddc91472f943c2c9fba1259a; source 7053b41ce81b1e04100d56a24a321e51b3465459. report/final-evaluation-provenance.json binds the exact summary, client, paired and same-path rows. audit/chief/HY3-010-review.json records the actual independent saved-ledger audit; refit acceptance and closed-gate attestation are preserved in the linked freeze history. No source result was rerun for writing.
 
 [E7] Exact accepted CHIEF-PERSONALIZED-RUN-002 outcomes: producer b334b27a2f9fb8df99a6dee611e298bd0dc867d3; chief acceptance audit/chief/CHIEF-PERSONALIZED-RUN-002-review.json records 197524 independent scalar comparisons and 1200 prefix checks. Four own-horizon cases and six upstream referrals are preserved; utility choices rely on the separately accepted implementation.
 

@@ -22,7 +22,8 @@
     "accepted_format_restriction": "Exact reviewed PDF/PNG-only publication restriction; preserves SVG defect, original failed validation and separate full-paper review.",
     "authorized_pending_result_acceptance": "Immutable fixed task published; no numerical outcome accepted and no manuscript performance claim permitted.",
     "failed_execution_attempt": "Exact failed execution receipt and partial evidence retained; no completed result or performance claim.",
-    "held_pending_prerequisite": "Immutable task published but waiting for the explicit resource or evidence gate; no implementation or outcome acceptance."
+    "held_pending_prerequisite": "Immutable task published but waiting for the explicit resource or evidence gate; no implementation or outcome acceptance.",
+    "accepted_final_evidence": "Exact once-frozen reserved results accepted, including negative suitability; no post-access tuning."
   },
   "source_registry": {
     "PROBLEM_LOCK": {
@@ -448,13 +449,6 @@
       "outcomes_accepted": true,
       "scope": "Independent790 scalar checks of100 gates,30 screens and10 provisional choices; personalized rescreens and final performance remain separate."
     },
-    "ACTUAL_PERSONALIZED_JOB": {
-      "state": "running_pending_exact_receipt",
-      "task_id": "CHIEF-PERSONALIZED-RUN-001",
-      "path": "ops/tasks/CHIEF-PERSONALIZED-RUN-001.json",
-      "outcomes_accepted": false,
-      "scope": "Real chief fixed commands;4 conditional cases plus6 referrals. Independent saved arithmetic acceptance remains required."
-    },
     "PERSONALIZED_ACCEPTED_ACTUAL": {
       "state": "accepted_development_evidence",
       "task_id": "CHIEF-PERSONALIZED-RUN-002",
@@ -489,6 +483,15 @@
       "provenance": "report/final-evaluation-provenance.json",
       "generator": "report/build_final_note.py",
       "producer_commit": "4b8ac5d6822ac39ff1189c13d34ed3f84f699319"
+    },
+    "COMPLETE_REVIEW_MANUSCRIPT": {
+      "state": "report_transform_pending_review",
+      "paths": [
+        "report/submission-draft.md",
+        "report/build_submission.py"
+      ],
+      "source_evidence": "FROZEN_FINAL_JOB_ACTUAL",
+      "pending": "Independent full manuscript acceptance, private local copy and final packaging; no missing content slots."
     }
   },
   "requirements": [
@@ -558,9 +561,11 @@
         "POLICY_ANALYSIS_ACCEPTANCE",
         "POLICY_DESIGN_CATALOGUE",
         "PERSONALIZED_PURE_ACCEPTANCE",
-        "PERSONALIZED_ACCEPTED_ACTUAL"
+        "PERSONALIZED_ACCEPTED_ACTUAL",
+        "FROZEN_FINAL_JOB_ACTUAL",
+        "FINAL_REPORT_NOTE_ACTUAL"
       ],
-      "state": "not_available",
+      "state": "accepted_final_evidence",
       "table_keys": [
         "profile_id",
         "horizon",
@@ -577,7 +582,7 @@
         "assignment or referral",
         "reason"
       ],
-      "remaining": "Final evidence: A/D/E development referrals, B/C fail final loss screen at both fees; all clients human review. Integrate exact negative results into final manuscript."
+      "remaining": "Exact development and frozen final evidence transcribed in complete review manuscript; independent full-manuscript acceptance remains."
     },
     {
       "id": "R06",
@@ -624,16 +629,19 @@
       "sources": [
         "ACCOUNTING",
         "BASELINE_ADDENDUM",
-        "POLICY_PROPOSAL"
+        "POLICY_PROPOSAL",
+        "PERSONALIZED_ACCEPTED_ACTUAL",
+        "FROZEN_FINAL_JOB_ACTUAL",
+        "FINAL_REPORT_NOTE_ACTUAL"
       ],
-      "state": "not_available",
+      "state": "accepted_final_evidence",
       "table_keys": [
         "policy_id",
         "horizon",
         "split",
         "fee_rate"
       ],
-      "remaining": "Accepted primary/doubled tables are displayed in submission draft. Exact scenario-paired analysis009 and eventual final results remain separate gates."
+      "remaining": "Exact development and frozen final evidence transcribed in complete review manuscript; independent full-manuscript acceptance remains."
     },
     {
       "id": "R09",
@@ -642,10 +650,13 @@
         "BASELINE_PLAN",
         "BASELINE_ADDENDUM",
         "HY3_BASELINE_RESULT",
-        "BASELINE_FIGURES"
+        "BASELINE_FIGURES",
+        "PERSONALIZED_ACCEPTED_ACTUAL",
+        "FROZEN_FINAL_JOB_ACTUAL",
+        "FINAL_REPORT_NOTE_ACTUAL"
       ],
-      "state": "accepted_development_evidence",
-      "remaining": "Baseline and primary cost-aware development severe cases accepted; selected-primary presentation, doubled review and final evidence remain separate."
+      "state": "accepted_final_evidence",
+      "remaining": "Exact development and frozen final evidence transcribed in complete review manuscript; independent full-manuscript acceptance remains."
     },
     {
       "id": "R10",
@@ -655,7 +666,7 @@
         "POLICY_PROPOSAL"
       ],
       "state": "accepted_development_evidence",
-      "remaining": "Accepted009 retains fixed-prior Balanced; actual paired comparison table and failed context/adaptive gates are in manuscript. Reserved outcomes and final interpretation remain."
+      "remaining": "Actual009 failed complexity gates and fixed primary retained; final results do not reopen selection. Full manuscript review remains."
     },
     {
       "id": "R11",
@@ -664,7 +675,7 @@
         "PROBLEM_LOCK"
       ],
       "state": "completed_development_explanation",
-      "remaining": "Customer explanation mechanically checked<=50 words; align with final conclusion after final evidence."
+      "remaining": "Mechanically <=50 words and consistent with final all-client human-review outcome; full manuscript review remains."
     },
     {
       "id": "R12",
@@ -674,10 +685,13 @@
         "POLICY_PROPOSAL",
         "DOUBLED_DEVELOPMENT_CASE_JOB",
         "DOUBLED_DEVELOPMENT_FAILED_ATTEMPT",
-        "DOUBLED_DEVELOPMENT_INDEPENDENT_REVIEW"
+        "DOUBLED_DEVELOPMENT_INDEPENDENT_REVIEW",
+        "PERSONALIZED_ACCEPTED_ACTUAL",
+        "FROZEN_FINAL_JOB_ACTUAL",
+        "FINAL_REPORT_NOTE_ACTUAL"
       ],
-      "state": "accepted_development_evidence",
-      "remaining": "Same-mode sensitivity and primary recommendation impact completed using accepted004/006/009. Personalized and final fee counterfactuals remain separate."
+      "state": "accepted_final_evidence",
+      "remaining": "Exact development and frozen final evidence transcribed in complete review manuscript; independent full-manuscript acceptance remains."
     },
     {
       "id": "R13",
@@ -685,10 +699,13 @@
       "sources": [
         "PROBLEM_LOCK",
         "POLICY_PROPOSAL",
-        "LIMITATIONS_DISCLOSURE_DRAFT"
+        "LIMITATIONS_DISCLOSURE_DRAFT",
+        "PERSONALIZED_ACCEPTED_ACTUAL",
+        "FROZEN_FINAL_JOB_ACTUAL",
+        "FINAL_REPORT_NOTE_ACTUAL"
       ],
-      "state": "accepted_design",
-      "remaining": "Latched annual review/keep-dollar behavior and personalized production source accepted. Actual own-tolerance outcomes and final results remain."
+      "state": "accepted_final_evidence",
+      "remaining": "Exact development and frozen final evidence transcribed in complete review manuscript; independent full-manuscript acceptance remains."
     },
     {
       "id": "R14",
@@ -699,7 +716,7 @@
         "LIMITATIONS_DISCLOSURE_DRAFT"
       ],
       "state": "not_available",
-      "remaining": "Assemble and independently review report; reconcile historical Astra and current GPT-6.1 Sol coordination in AI disclosure, insert names only into local delivery copy, render every page and verify actual layout."
+      "remaining": "Complete review manuscript rendered as8 A4 pages >=11pt; final private-name copy, independent full-text acceptance and latest render QA remain."
     },
     {
       "id": "R15",
@@ -710,7 +727,7 @@
         "INPUT_MANIFEST"
       ],
       "state": "not_available",
-      "remaining": "Finalize accepted code/run inventory, retain licenses/attribution, verify ZIP size and reproducibility, then provide local files for human submission"
+      "remaining": "Existing builder ready; build/check pushed source ZIP <=50MB after source integration, then rebuild after final review integration. Humans submit."
     }
   ],
   "manuscript_claim_requirements": [
@@ -721,7 +738,7 @@
     "Post-freeze software corrections remain logged and disclosed; no final-outcome tuning",
     "Team private names and IDs stay outside tracked artifacts"
   ],
-  "updated_at": "2026-10-20T13:27:16.782990+00:00",
+  "updated_at": "2026-10-20T13:38:52.753172+00:00",
   "historical_source_snapshots": {
     "DOUBLED_DEVELOPMENT_CASE_JOB": {
       "state": "submitted_pending_review",
@@ -765,6 +782,13 @@
       "queue_state_at_snapshot": "ready",
       "outcomes_accepted": false,
       "scope": "Audit-only recovery after failed SOL-035; preserves accepted SOL-032 computational code and prior line-ending failures. Released after accepted SOL-037."
+    },
+    "ACTUAL_PERSONALIZED_JOB_BEFORE_COMPLETION": {
+      "state": "running_pending_exact_receipt",
+      "task_id": "CHIEF-PERSONALIZED-RUN-001",
+      "path": "ops/tasks/CHIEF-PERSONALIZED-RUN-001.json",
+      "outcomes_accepted": false,
+      "scope": "Real chief fixed commands;4 conditional cases plus6 referrals. Independent saved arithmetic acceptance remains required."
     }
   }
 }
