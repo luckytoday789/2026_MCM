@@ -1,0 +1,399 @@
+
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "680c2faaf603df975c35e828aeebdadd8ce242cb:results/development/HY3-009/selection.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "56b721ac630e7b08c48a74b37c300bcc841ea51e4b85084401a58b8bbbfa334e",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "cfde9523416113005e9de99325595d5823be94f1:specs/development_policy_pilot_v2.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "680c2faaf603df975c35e828aeebdadd8ce242cb:results/development/HY3-009/profile_screen.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "ee26c158e66ddce69d8fa2d0e766ba29fd5b315ca39fbb9ba44929c2024b2076",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "b334b27a2f9fb8df99a6dee611e298bd0dc867d3:results/development/CHIEF-PERSONALIZED-RUN-002/personalized_summary.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "ca02cc1e32cc8ba28d80d09be67d7aa6df667c6dbc4e5e735760928c8191a614",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "b334b27a2f9fb8df99a6dee611e298bd0dc867d3:results/development/CHIEF-PERSONALIZED-RUN-002/cases/B-primary/scenario_metrics.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "bff76cd95e4853969dd1dd289767fd87bda2a3e5daf0c8f06866b695af97c339",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "b334b27a2f9fb8df99a6dee611e298bd0dc867d3:results/development/CHIEF-PERSONALIZED-RUN-002/cases/C-primary/scenario_metrics.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "336958c6c9b875c52da2f872c1b092cf17ed90d07df94de82fda6bc36ec91506",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "b334b27a2f9fb8df99a6dee611e298bd0dc867d3:results/development/CHIEF-PERSONALIZED-RUN-002/cases/B-doubled/scenario_metrics.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "060c5168d734d2176ec9f6628f38369e4c2dff81ab3478e1fb2f3d1f615d1074",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "b334b27a2f9fb8df99a6dee611e298bd0dc867d3:results/development/CHIEF-PERSONALIZED-RUN-002/cases/C-doubled/scenario_metrics.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "8ad50f0cfccb6dade0a4b2f02fd790047850a9eb4c16e91d533c9fb449363a9d",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/scenario_metrics.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "58c4715bb851747357509da1bc5eae47e7b1daae89fb37f8033e6b84a2c98921",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/summary.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "2c9db1ffccaf418b662b5a1c87c86efdabd7859d007577fd499f5193dcd200ea",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/comparisons.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "c648bdc11e39790b518aaeb69ac7b3293fe23555967f4b37efaae5d98e21a5ef",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "c30932e1acb89fb33b5b4c7a192d2b2490f54c7559c0ab7f4e1ca08f7b4c4155",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized/B/0.0025/scenario_metrics.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "744bcda2acdc0daee5abad0e7ab85b068c5e142f7a727d80a82252ef5460c520",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized/B/0.005/scenario_metrics.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "80bb792bcec4e7b974d3995721d91ecfcf0f1f3b0991b6e916c568752b58b6de",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized/C/0.0025/scenario_metrics.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "f058d1974de6d6f6957e4e4f2ff868772aa49a8f4857029559020942a51fb9aa",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/personalized/C/0.005/scenario_metrics.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "edb48ee2121586f785c156a7c3024a1a81c5e0463292d9b496d0b838fd037473",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_cost/0.0025/annual_ledgers.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "c4ca84544c36afb7d501f61a21e9cd3c3d9a006b6352834fd647e7e0254c7e48",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/equal_weight_annual/0.0025/annual_ledgers.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "1c0f2b8ddb6995d663e12439a065cd60f41c9ee1ab62c440ec27a223414de829",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "6aa2ccdce80834c8beb52a827993f1f587d1d8a6:results/development/HY3-004/cases/balanced_cost/annual_ledgers.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "04975c9c23a63d183221c3452f4fd15e46220b5384c300c24ab10fe3944c2595",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "7652410d73425371110784ef5fa97c03470a074e:results/development/HY3-003/summary.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "965c3ac513f63de31830603ab968f5c6e99c6ceb763515b99753282d8c3a4994",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "7652410d73425371110784ef5fa97c03470a074e:results/development/HY3-003/scenario_metrics.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "afabf571d8c7d224bd83f836033fe4c4907a05fc15a2e8614c8ae09d803f100c",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "06086aed327aa626ddc91472f943c2c9fba1259a:ops/freeze.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "9a78cc1cc248bdd1bf1bd50723e2e550d8b70dee653c622ac426115254ebf447",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/backtest.py"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "3f2921ec8d6c9a0d419a7c7009e43dc8a1684627a461ae2aa679f2d3a8503eb3",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/policy_pilot.py"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/policy_cases.py"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/final_paths.py"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "a9526cec8d071b39d99bcb3d21669865ee0c5a5d43bcbdba9b80699d333b78a6",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "7053b41ce81b1e04100d56a24a321e51b3465459:src/safeinvest/final_execution.py"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "bfda2f62edba55624895a362ff019d89dbceeeb7c01dac60bffef09ce72fced7",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_context/0.0025/decisions.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "4aa461e57e2d78ea43d0db494310fad3ad866808a26010c62064b76d889fedd8",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "4b8ac5d6822ac39ff1189c13d34ed3f84f699319:results/final/HY3-010/generic/balanced_adaptive/0.0025/decisions.csv"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e42d591101f62604dc3d93494204fbd1c97cbccb36128e0e1afb231563413f5d",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "cfde9523416113005e9de99325595d5823be94f1:audit/chief/CHIEF-REFIT-001-promoted-review.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "6733d24450733b1543bdc2621a5d032632b280572097775516c5bba1722e6165",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "cfde9523416113005e9de99325595d5823be94f1:audit/chief/FINAL-GATE-20261020.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "7f27ce2627beefd71e975727666e37a5159569f86d6bb4d78cf58d3df4029120",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "cfde9523416113005e9de99325595d5823be94f1:audit/chief/FINAL-FREEZE-20261020-review.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "7fd8f2041be021e344f3ebce51d12c138b7a7f569dded92204cb4a5ae433171b",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "97283e058194aa2de85afe85755bb178c78e0116:audit/chief/FINAL-FREEZE-20261020-review.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "7fd8f2041be021e344f3ebce51d12c138b7a7f569dded92204cb4a5ae433171b",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "cfde9523416113005e9de99325595d5823be94f1:audit/chief/final-freeze-audit-003/execution.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "97e1e1f2d3b98a745a4d5995d4fc57f2b7b04272899a178656fe5004174da7e2",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "cfde9523416113005e9de99325595d5823be94f1:audit/chief/final-freeze-audit/execution.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "b9d6a22fda6fcde8ed1d189103126ad9c692903a7e589750b0e94820ea96f58f",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "cfde9523416113005e9de99325595d5823be94f1:audit/chief/final-freeze-audit-002/execution.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "00fa9d7a7f9d5cfd3d63d94b7f457e2725b3f31053d6d05502045a5f9faf5095",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "cfde9523416113005e9de99325595d5823be94f1:data/README.md"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "eb9cabb698574c67a71a97fc7e8a3339a1a901026fe1b88e4d4e9ae186289d7f",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "6aa2ccdce80834c8beb52a827993f1f587d1d8a6:results/development/HY3-004/calibrations.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "dda39356b38a888b3a5b49e096fe394957df06d0a116b5701396562d3b6068e3",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18:results/development/HY3-006/calibrations.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "dda39356b38a888b3a5b49e096fe394957df06d0a116b5701396562d3b6068e3",
+      "stderr": ""
+    }
+  ],
+  "original_observations_read": false,
+  "policy_executed": false,
+  "source_changed": false,
+  "private_files_read": false,
+  "visual_layout_review_performed": false
+}

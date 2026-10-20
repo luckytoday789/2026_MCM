@@ -1,0 +1,11 @@
+
+Traceback (most recent call last):
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-048-a1\audit\SOL-048\verify.py", line 261, in <module>
+    main()
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-048-a1\audit\SOL-048\verify.py", line 234, in main
+    traces['development_severe']=ledger_path('HY3-004','results/development/HY3-004/cases/balanced_cost/annual_ledgers.csv',114,30,dw)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-048-a1\audit\SOL-048\verify.py", line 85, in ledger_path
+    allrows=rows(ident,path); rr=sorted([r for r in allrows if int(r['scenario_id'])==sid and int(r['year'])<=H],key=lambda r:int(r['year']))
+                                                                                                  ~^^^^^^^^
+KeyError: 'year'

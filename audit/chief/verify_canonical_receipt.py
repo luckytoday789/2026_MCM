@@ -44,9 +44,27 @@ def verify(task_id, commit, *, agent_command_log_path=None):
         for command in task['commands']:
             matching = [r for r in records
                         if r.get('command', r.get('argv', []))[1:] == command[1:]
-                        and r.get('exit') == 0]
-            assert matching and all('stdout' in r and 'stderr' in r for r in matching)
+                        and r.get('exit', r.get('exit_code')) == 0]
+            assert matching
+            assert all(('stdout' in r or 'log' in r) and 'stderr' in r for r in matching)
             record = dict(matching[-1])
+            if 'log' in record and 'stdout' not in record:
+                # Canonical combined-log schema: stdout plus one added newline,
+                # with empty stderr. Bind both saved bytes and original stdout.
+                assert record['stderr'] == ''
+                assert record['log_hash_basis'] == 'canonical LF Git text'
+                path = record['log']
+                assert path in receipt['artifacts_sha256']
+                output = git('show', commit + ':' + path)
+                assert sha(output) == receipt['artifacts_sha256'][path] == record['log_sha256']
+                assert output.endswith(b'\n') and b'\r' not in output
+                stdout = output[:-1]
+                variants = (stdout, stdout.replace(b'\n', b'\r\n'))
+                assert record['stdout_sha256'] in {sha(v) for v in variants}
+                record['authenticated_output_logs'] = {
+                    'path': path, 'sha256': sha(output),
+                    'stdout_original_sha256': record['stdout_sha256'],
+                    'text': output.decode('utf-8'), 'stderr': ''}
             if isinstance(payload, list):
                 # Array records bind separate, canonical-hashed output files.
                 # Authenticate their bytes as well as the actual argv and exit.

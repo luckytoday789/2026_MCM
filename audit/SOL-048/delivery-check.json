@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "required_deliverables": [
+    "audit/SOL-048/findings.json",
+    "audit/SOL-048/review.md",
+    "audit/SOL-048/verify.py",
+    "audit/SOL-048/verification.json"
+  ],
+  "source_and_log_hashes_valid": true,
+  "head": "cfde9523416113005e9de99325595d5823be94f1",
+  "only_changed_prefix": "audit/SOL-048",
+  "files": [
+    "audit/SOL-048/build-provenance.json",
+    "audit/SOL-048/execution-history.json",
+    "audit/SOL-048/expanded-draft.md",
+    "audit/SOL-048/findings.json",
+    "audit/SOL-048/metadata-build.txt",
+    "audit/SOL-048/review.md",
+    "audit/SOL-048/verification.json",
+    "audit/SOL-048/verify-trial-001.py",
+    "audit/SOL-048/verify-trial-001.txt",
+    "audit/SOL-048/verify-trial-002.py",
+    "audit/SOL-048/verify-trial-002.txt",
+    "audit/SOL-048/verify-trial-003.py",
+    "audit/SOL-048/verify-trial-003.txt",
+    "audit/SOL-048/verify-trial-004.py",
+    "audit/SOL-048/verify-trial-004.txt",
+    "audit/SOL-048/verify-trial-005.py",
+    "audit/SOL-048/verify-trial-005.txt",
+    "audit/SOL-048/verify.py",
+    "audit/SOL-048/verify.txt"
+  ],
+  "no_commit_push_branch_change": true,
+  "checked_at": "2026-10-20T14:34:27.913Z"
+}

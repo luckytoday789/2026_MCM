@@ -1,0 +1,2 @@
+{"kind": "complete_content_pending_manuscript_acceptance", "submission_ready": false, "word_count": 4436, "pending_slots": [], "pdf_checks": null}
+

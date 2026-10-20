@@ -1,0 +1,28 @@
+{
+  "status": "passed_gate_preserved",
+  "checked_at": "2026-10-20T14:32:35.883599+00:00",
+  "source_commit": "abc7303c0fe878212b7039098cdf044e5b095b33",
+  "exact_manuscript_base": "cfde9523416113005e9de99325595d5823be94f1",
+  "unchanged_source_functions": [
+    "canonical",
+    "sha",
+    "mdtable",
+    "accepted_sources",
+    "doubled_sources",
+    "analysis_sources",
+    "personalized_sources",
+    "final_sources",
+    "assemble"
+  ],
+  "all_source_assembly_functions_ast_equal": true,
+  "actual_release_gate_error": "Independent release gate is not accepted: SOL-048",
+  "earlier_positive_gates": [
+    "SOL-046",
+    "SOL-047"
+  ],
+  "final_pdf_generated": false,
+  "original_observations_opened": false,
+  "simulations_rerun": false,
+  "private_names_in_record": false,
+  "submission_ready": false
+}

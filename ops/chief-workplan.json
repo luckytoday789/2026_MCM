@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T14:54:51.677027+00:00",
-  "reason": "Exact SOL-047 final-result review accepted/promoted in pushed main95b99f8; only existing remote SOL-048 full-manuscript result is awaited before local final release.",
+  "next_wake_at": "2026-10-20T14:44:12.138311+00:00",
+  "reason": "Exact SOL-048 full-manuscript review accepted and promoted; chief finishing local final PDF/page inspection and final source package.",
   "next_actions": [
     "Fetch exact SOL-048 receipt; inspect independent full-text evidence/formulas and canonical task/base/source/artifact/actual command evidence. Reproduce its read-only checker and corruption rejection in an isolated exact checkout. Accept only supported exact verdict and promote paths/receipt before release. Preserve any actual failures; no original final inputs,policy reruns or tuning.",
     "After positive exact SOL-048 acceptance, use existing build_submission.py --release --team-file .runtime/team-report-display.json --output-dir .runtime/<NEW_RELEASE_DIRECTORY> with bundled layout Python and the already locked PDF skill. Preserve exact048 manuscript/template/evidence text; only audited names/review label/furniture/filename editorial changes. Inspect EVERY rendered final page;<=10A4,min11pt,three names,AI disclosure,all-A-E review,no placeholders. Record final SHA and exact editorial text comparison.",
@@ -13,14 +13,14 @@
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": true,
-  "last_completed_at": "2026-10-20T14:24:51.677027+00:00",
+  "last_completed_at": "2026-10-20T14:42:12.138311+00:00",
   "quota_probe_verified_commit": "11ade9aeb4726473e65c32cfd254e03d9aec54b4",
   "quota_probe_release_not_before": "2026-10-20T15:55:00+08:00",
   "quota_probe_current_status": "SOL045_actual_success_accepted_three_reviews_ready",
   "last_successful_quota_probe_commit": "87cf934348c3a78ce10299fa7aece8168ade0c43",
   "quota_probe_task": "SOL-037",
   "quota_probe_remaining_additional_attempts_after_SOL028": 1,
-  "last_outcome_zh": "已验收并提升SOL-047精确提交至main95b99f8；1063214项独立账本指标检查及213178项保存决策检查通过，两项本地篡改被拒绝。只待SOL-048全文审查后完成正式PDF逐页验收和源码包；无需人工操作。",
+  "last_outcome_zh": "SOL-048精确全文审查已验收；30171项检查和104数据块重放通过，三项内部篡改及主控额外配对值篡改被拒绝。继续正式PDF逐页验收和最终源码包。",
   "baseline_figure_source_commit": "04be213a76855b1b1815405a735f2a49be678935",
   "baseline_figure_review_task": "SOL-030",
   "layout_proof_path": "report/layout-proof/methods-baselines.pdf",
@@ -120,9 +120,10 @@
   "complete_manuscript_source": "cfde9523416113005e9de99325595d5823be94f1",
   "source_package_candidate_commit": "3dc37e6aad87a9fca7afa0c2773992f38746bd98",
   "source_package_candidate_sha256": "e907f32062c1fc8fdc5402713ca2ed36b16a2e60b774c117cb2e3ed9db027d60",
-  "full_manuscript_status": "complete_content_SOL048_independent_review_pending",
+  "full_manuscript_status": "independent_exact_text_accepted_final_layout_package_pending",
   "final_release_pending": true,
   "editorial_release_preparation": "audit/chief/editorial-release-preparation-20261020.json",
   "supplemental_source_review_accepted_commit": "0ed56de4b70bef0083ca2cf414f5aa2dce8606f0",
-  "supplemental_final_review_accepted_commit": "9b620ae9a1c189d14060f59b02d8b0e4405d4f18"
+  "supplemental_final_review_accepted_commit": "9b620ae9a1c189d14060f59b02d8b0e4405d4f18",
+  "full_manuscript_review_accepted_commit": "bcd0ce93226dcdeab6f92e21e4f15b680ca90d6c"
 }

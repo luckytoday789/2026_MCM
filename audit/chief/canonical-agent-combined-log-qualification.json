@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-20T14:40:29.004039+00:00",
+  "actual_SOL048_combined_log_verified": true,
+  "negative_evidence_cases": [
+    {
+      "case": "missing_command",
+      "rejected": true
+    },
+    {
+      "case": "failed_exit",
+      "rejected": true
+    },
+    {
+      "case": "missing_output",
+      "rejected": true
+    },
+    {
+      "case": "corrupt_stdout",
+      "rejected": true
+    },
+    {
+      "case": "nonempty_stderr",
+      "rejected": true
+    }
+  ],
+  "existing_receipt_regressions": [
+    {
+      "task": "SOL-046",
+      "status": "passed"
+    },
+    {
+      "task": "SOL-047",
+      "status": "passed"
+    },
+    {
+      "task": "HY3-010",
+      "status": "passed"
+    }
+  ],
+  "worker_files_rewritten": false
+}
