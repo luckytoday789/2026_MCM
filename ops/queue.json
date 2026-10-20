@@ -1477,15 +1477,19 @@
     },
     {
       "id": "SOL-041",
-      "state": "ready",
+      "state": "cancelled",
       "owner": "sol",
       "attempt": 1,
       "branch": "work/sol/SOL-041-a1",
       "task_sha256": "a68184a570dfeb49ac72a36060b2e3d88ed0d2c45fb7f6f17f3ddced40434dfe",
-      "note": "Existing immutable task released only after exact SOL-037 success acceptance. Preserve failed predecessors and all scope,source,independent-review and final-data gates.",
+      "note": "Canonical receipt/source/artifacts pass but exact clean Git replay exits1:four required logs absent. Preserve completed receipt/local passes; no independent acceptance. Narrow audit-only original-log recovery SOL-043; no new writer.",
       "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation. Dispatch after SOL-040 and before SOL-038 by queue order.",
       "released_at": "2026-10-20T08:55:39.694366+00:00",
-      "release_evidence": "audit/chief/SOL-037-review.json"
+      "release_evidence": "audit/chief/SOL-037-review.json",
+      "reviewed_commit": "1f7f328313a5976aa9ff60375432d61457f7d811",
+      "verdict": "delivery_rejected_missing_logs",
+      "acceptance_evidence": "audit/chief/SOL-041-delivery-rejection.json",
+      "successor_task": "SOL-043"
     },
     {
       "id": "SOL-038",
@@ -1498,6 +1502,16 @@
       "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation.",
       "released_at": "2026-10-20T08:55:39.694366+00:00",
       "release_evidence": "audit/chief/SOL-037-review.json"
+    },
+    {
+      "id": "SOL-043",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "branch": "work/sol/SOL-043-a1",
+      "task_sha256": "9d7ae651d4cb8264213197f2d00ed7c0cf8b8b1170996191f5e5fd20b37632ab",
+      "released_at": "2026-10-20T09:47:42.108930+00:00",
+      "note": "Narrow original-log recovery and unchanged exact numerical replay;0writer launches. Dispatch immediately after in-flight SOL-038. SOL-041 historical delivery rejection preserved;HY3-006 pending."
     },
     {
       "id": "SOL-039",
@@ -1518,11 +1532,12 @@
       "owner": "hy3",
       "branch": "work/hy3/HY3-006-a1",
       "task_sha256": "dcdf31a5ce502b4c5115d9a21a29b6649ea107b8e0c8b671b1e17d44812962b6",
-      "note": "Exact completed receipt authenticated;44outputs/28source pins/counts and chief735115ledger plus472295decision checks pass; fresh writer--check194.235s unchanged. NOT accepted pending exact independent SOL-041 review. HY3-005 remains failed.",
+      "note": "Producer remains pending. SOL-041 local success rejected:four required logs missing from exact delivery and portable replay exits1. Original chief arithmetic unchanged; audit-only SOL-043 recovers exact original logs without producer rerun.",
       "released_at": "2026-10-20T05:49:21.279000+00:00",
       "candidate_result_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
-      "independent_review_task": "SOL-041",
-      "chief_evidence": "audit/chief/HY3-006-chief-checkpoint.json"
+      "independent_review_task": "SOL-043",
+      "chief_evidence": "audit/chief/HY3-006-chief-checkpoint.json",
+      "prior_review_task": "SOL-041"
     },
     {
       "id": "SOL-042",

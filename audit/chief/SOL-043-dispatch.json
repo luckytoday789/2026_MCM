@@ -1,0 +1,12 @@
+{
+  "task_id": "SOL-043",
+  "base_commit": "e23fc9aa76407be9d7efe8702825c90d616d507a",
+  "task_sha256": "9d7ae651d4cb8264213197f2d00ed7c0cf8b8b1170996191f5e5fd20b37632ab",
+  "base_was_pushed": true,
+  "original_result": "1f7f328313a5976aa9ff60375432d61457f7d811",
+  "allowed_paths": [
+    "audit/SOL-043"
+  ],
+  "writer_launches_authorized": 0,
+  "final_data_open": false
+}
