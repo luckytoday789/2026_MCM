@@ -1,0 +1,20 @@
+{
+  "status": "failed_prepublication",
+  "observed_at": "2026-10-20T12:06:14.696497+00:00",
+  "analysis_result_commit": "680c2faaf603df975c35e828aeebdadd8ce242cb",
+  "old_source_commit": "7053b41ce81b1e04100d56a24a321e51b3465459",
+  "command": [
+    "python",
+    "-B",
+    ".runtime/prepare_takeover_personalized.py",
+    "--stage",
+    "config",
+    "--analysis-task",
+    "HY3-009"
+  ],
+  "exit_code": 1,
+  "exception": "ValueError: screen flag/reason mismatch",
+  "effect": "Configuration preparation failed before source/config/task publication, personalization or final access. No immutable task or final gate consumed.",
+  "diagnosis": "Persisted analysis JSON sorts flag object keys; reasons retain the explicit declared criterion order. Bridge incorrectly depends on dict insertion order after JSON transport.",
+  "final_data_read": false
+}

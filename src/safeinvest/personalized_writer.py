@@ -50,7 +50,7 @@ def validate_config(c):
     w.hash_string(c['source_commit'], 40)
     require(set(c['source_sha256']) == set(CLOSURE), 'complete source closure required')
     for value in c['source_sha256'].values(): w.hash_string(value)
-    require(c['acceptance'] == {'CHIEF-PERSONALIZED-20261020': c['source_commit']},
+    require(c['acceptance'] == {'CHIEF-PERSONALIZED-V2-20261020': c['source_commit']},
             'exact positive personalized source approval required')
     require(c['input'] == {'path': w.INPUT_PATH, 'sha256': w.INPUT_HASH}, 'fixed original development input')
     require(c['policy_config'] == {'path': w.POLICY,
@@ -116,7 +116,7 @@ def authenticate(root, c, config_path, config_raw, output, task, publication):
     require(task['commands']==[cmd] and task['validation_commands']==[cmd+['--check']] and
         task['allowed_paths']==[output] and type(task['max_seconds']) is int and
         c['execution']['max_seconds']<=task['max_seconds']<=1500, 'fixed executable command/scope')
-    ident='CHIEF-PERSONALIZED-20261020'; path='audit/chief/'+ident+'-review.json'
+    ident='CHIEF-PERSONALIZED-V2-20261020'; path='audit/chief/'+ident+'-review.json'
     review_raw=w.blob(root,E,path)
     review=_approval(root,E,path,sha(review_raw),ident,C,'code_verdict')
     require(review.get('source_sha256')==c['source_sha256'], 'approval source closure mismatch')
@@ -180,7 +180,8 @@ def map_assignments(recommendations,screens,*,split,n):
                 {'horizon_eligible','willingness_eligible','liquidity_pass','risk_pass','purchasing_power_pass'} and
                 all(type(v) is bool for v in screen['flags'].values()) and
                 screen['qualified'] is all(screen['flags'].values()) and
-                screen['reasons']==[k for k,v in screen['flags'].items() if not v], 'screen flag/reason mismatch')
+                screen['reasons']==[k for k in ('horizon_eligible','willingness_eligible',
+                    'liquidity_pass','risk_pass','purchasing_power_pass') if not screen['flags'][k]], 'screen flag/reason mismatch')
             require(screen['scenario_count']==n and screen['exceedance_denominator']==n and
                     len(screen['source_metric_keys'])==n, 'screen scenario membership count')
             require(exact(screen['source_metric_keys'],[dict(mode=screen['mode'],fee_rate=fee,horizon=h,

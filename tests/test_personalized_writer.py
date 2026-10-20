@@ -112,6 +112,19 @@ class PersonalizedWriterTests(unittest.TestCase):
         self.assertEqual(index['C',.005]['component_payload']['proposed_class'],'conservative')
         for fee in p.FEES:self.assertIsNone(index['D',fee]['source_case_path'])
 
+    def test_persisted_sorted_flag_keys_keep_declared_reason_order(self):
+        for referral in (False,True):
+            _,recs,screens=fixture(referral=referral)
+            expected=p.map_assignments(recs,screens,split='synthetic',n=4)
+            loaded_recs=json.loads(json.dumps(recs,sort_keys=True))
+            loaded_screens=json.loads(json.dumps(screens,sort_keys=True))
+            self.assertEqual(p.map_assignments(loaded_recs,loaded_screens,split='synthetic',n=4),expected)
+            invalid=deepcopy(loaded_screens)
+            row=next(s for s in invalid if len(s['reasons'])>1)
+            row['reasons'].reverse()
+            with self.assertRaisesRegex(ValueError,'screen flag/reason mismatch'):
+                p.map_assignments(loaded_recs,invalid,split='synthetic',n=4)
+
     def test_assignment_order_key_screen_status_and_class_tampering_rejected_before_compute(self):
         data,recs,screens=fixture()
         changes=[]

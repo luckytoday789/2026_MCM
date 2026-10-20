@@ -77,7 +77,7 @@ def _preflight(root,c,raw,config_path,output):
     e=c['execution'];need(e['required_python']=='3.12' and e['cpu_only'] is True and
         type(e['max_seconds']) is int and 1<=e['max_seconds']<=task['max_seconds']<=1500 and
         e['max_artifact_bytes']==LIMIT,'bounded execution')
-    ident='CHIEF-PERSONALIZED-20261020';need(c['acceptance']=={ident:C},'personalized source acceptance required')
+    ident='CHIEF-PERSONALIZED-V2-20261020';need(c['acceptance']=={ident:C},'personalized source acceptance required')
     review=_json(_blob(root,E,'audit/chief/'+ident+'-review.json'))
     need(review.get('task_id')==ident and review.get('kind')=='chief_takeover_approval' and
         review.get('authorization')=='user-directed-two-node-takeover-20261020' and
