@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "accepted_illustrated_pdf_pending_source_package",
+  "user_authorization": "Add suitable charts to completed paper while preserving old version.",
+  "previous_pdf": ".runtime/final-release-20261020/SafeInvest-final.pdf",
+  "previous_pdf_sha256": "1730702256151770090fad81aef16922c1f58064beda91c5ce57444a32853385",
+  "local_pdf": ".runtime/illustrated-release-20261020-v1/SafeInvest-final-illustrated.pdf",
+  "pdf_sha256": "ac98c3d26f38529e12edb4d273e750f00f90cf967a672c11d7faed97abf599f6",
+  "pages": 9,
+  "minimum_font_pt": 11,
+  "figures": 3,
+  "figure_pages": [
+    6,
+    7,
+    8
+  ],
+  "figure_provenance": "report/figures/illustrated-final-v1/figure-provenance.json",
+  "acceptance_evidence": "audit/chief/illustrated-final-review-20261020.json",
+  "original_body_exactly_preserved": true,
+  "all_three_names_preserved": true,
+  "simulation_rerun": false,
+  "final_policy_changed": false,
+  "source_package": "pending_rebuild",
+  "submission_upload_performed": false
+}

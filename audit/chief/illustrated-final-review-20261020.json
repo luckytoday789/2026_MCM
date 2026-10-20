@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "pdf_sha256": "ac98c3d26f38529e12edb4d273e750f00f90cf967a672c11d7faed97abf599f6",
+  "pages": 9,
+  "images": [
+    {
+      "id": "figure1-final-comparison",
+      "pixels": [
+        2155,
+        795
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "sha256": "7b1eeb0d04abbf4ffb1bc2dffaae2af8105b4f4a0159b512c6f6447053f704b9"
+    },
+    {
+      "id": "figure2-client-validation",
+      "pixels": [
+        2155,
+        585
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "sha256": "2ca56d2c05899ae3701d9ff5ec2f8a31db7933304026dd55225318be767cf0c3"
+    },
+    {
+      "id": "figure3-severe-path",
+      "pixels": [
+        2155,
+        795
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "sha256": "d957d25aa79be4431a9c8a95aff38c57f3ba39504383f0c16a75ff7df62c531b"
+    }
+  ],
+  "scalar_checks": 140,
+  "exact_original_pdf_body_preserved": true,
+  "only_new_prose": "three figure captions",
+  "original_source_files": 4,
+  "minimum_text_font_pt": 11.0,
+  "simulation_rerun": false,
+  "original_observations_opened": false,
+  "checked_at": "2026-10-20T15:10:05.663108+00:00",
+  "visual_review": "passed_by_chief",
+  "every_page_viewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "figure_pages": [
+    6,
+    7,
+    8
+  ],
+  "visual_findings": "All9 pages and all3 full-resolution figures inspected. No clipping, overlap or missing glyphs observed. Same-path legend, client threshold markers, figure captions and page furniture remain legible. Original approved tables and conclusions retained.",
+  "separate_remote_review_of_added_figures": false,
+  "underlying_independent_mathematical_acceptances_unchanged": true
+}
