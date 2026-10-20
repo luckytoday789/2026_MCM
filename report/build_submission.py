@@ -391,7 +391,51 @@ def assemble(team_file=None):
     return text, metadata
 
 
-def render(text, output):
+def release_evidence(text, team_file):
+    """Authorize local editorial output from the independently accepted exact text.
+
+    This gate cannot certify final layout or the separately built source package.
+    """
+    if team_file is None:
+        raise ValueError("A final local copy requires the ignored team display file.")
+    queue = json.loads((ROOT / "ops/queue.json").read_bytes())["tasks"]
+    records = {}
+    for ident in ("SOL-046", "SOL-047", "SOL-048"):
+        entry = next(t for t in queue if t["id"] == ident)
+        if entry["state"] != "accepted" or entry.get("result_verdict") != "approve":
+            raise ValueError("Independent release gate is not accepted: " + ident)
+        review = json.loads((ROOT / entry["acceptance_evidence"]).read_bytes())
+        commit = entry["reviewed_commit"]
+        assert re.fullmatch(r"[0-9a-f]{40}", commit)
+        assert review["reviewed_commit"] == commit
+        assert review["independent_verdict"] == review["result_verdict"] == "approve"
+        path = f"audit/{ident}/findings.json"
+        raw = subprocess.check_output(["git", "show", commit + ":" + path], cwd=ROOT)
+        assert sha(raw) == entry["artifacts_sha256"][path] == review["artifacts_sha256"][path]
+        assert canonical((ROOT / path).read_bytes()) == raw
+        records[ident] = {"reviewed_commit": commit,
+                          "acceptance_evidence": entry["acceptance_evidence"],
+                          "findings_sha256": sha(raw)}
+    task = json.loads((ROOT / "ops/tasks/SOL-048.json").read_bytes())
+    assert task["base_commit"] == "cfde9523416113005e9de99325595d5823be94f1"
+    # The builder may change only for this audited editorial release. All text,
+    # evidence notes and original mathematical check records stay exact.
+    for path, expected in task["parameters"]["source_sha256"].items():
+        if path != "report/build_submission.py":
+            assert sha(canonical((ROOT / path).read_bytes())) == expected, path
+    assert "PENDING " not in text and "{{" not in text
+    marker = "**MANUSCRIPT FOR INDEPENDENT REVIEW**\n\n"
+    assert text.count(marker) == 1
+    return text.replace(marker, "", 1), {
+        "independent_reviews": records,
+        "accepted_manuscript_commit": task["base_commit"],
+        "editorial_changes": ["insert local names", "remove manuscript review label",
+                              "replace review page furniture", "set final local filename"],
+        "mathematical_or_result_changes": False,
+    }
+
+
+def render(text, output, final_release=False):
     from pypdf import PdfReader
     from reportlab.lib import colors
     from reportlab.lib.pagesizes import A4
@@ -453,12 +497,14 @@ def render(text, output):
     def decorate(canvas, doc):
         canvas.saveState(); canvas.setFont("Times-Roman", 11)
         canvas.setFillColor(colors.HexColor("#5b6670"))
-        canvas.drawString(39, 817, "REVIEW COPY - development and frozen final evidence")
-        canvas.drawString(39, 25, "SafeInvest | Independent manuscript acceptance pending")
+        canvas.drawString(39, 817, "SafeInvest - development and frozen final evidence" if final_release else
+                          "REVIEW COPY - development and frozen final evidence")
+        canvas.drawString(39, 25, "SafeInvest | Scenario study in purchasing power" if final_release else
+                          "SafeInvest | Independent manuscript acceptance pending")
         canvas.drawRightString(A4[0]-39, 25, str(doc.page)); canvas.restoreState()
     def stable_canvas(*args, **kwargs):
         return Canvas(*args, **{**kwargs, "invariant": 1})
-    pdf = output / "SafeInvest-review-manuscript.pdf"
+    pdf = output / ("SafeInvest-final.pdf" if final_release else "SafeInvest-review-manuscript.pdf")
     SimpleDocTemplate(str(pdf), pagesize=A4, leftMargin=39, rightMargin=39,
         topMargin=43, bottomMargin=43, title="SafeInvest evidence-bound manuscript",
         author="SafeInvest project").build(story, onFirstPage=decorate, onLaterPages=decorate,
@@ -471,11 +517,12 @@ def render(text, output):
         assert abs(float(page.mediabox.width)-A4[0]) < .02
         assert abs(float(page.mediabox.height)-A4[1]) < .02
     assert min(sizes) >= 11
-    assert all(page_checks)
+    assert not any(page_checks) if final_release else all(page_checks)
     # Do not label an oversized draft compliant; preserve and report it.
     return {"pdf_sha256": sha(pdf.read_bytes()), "pages": len(reader.pages), "paper": "A4",
         "minimum_font_pt": min(sizes), "within_page_limit": len(reader.pages) <= 10,
-        "all_pages_marked_review_copy": all(page_checks), "visual_review": "pending"}
+        "all_pages_marked_review_copy": all(page_checks), "editorial_release": final_release,
+        "visual_review": "pending"}
 
 
 def main():
@@ -483,16 +530,27 @@ def main():
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--team-file", type=Path)
     parser.add_argument("--metadata-only", action="store_true")
+    parser.add_argument("--release", action="store_true",
+                        help="Local named editorial copy; requires all exact independent acceptances.")
     args = parser.parse_args(); output = args.output_dir.resolve()
     if not output.is_relative_to((ROOT / ".runtime").resolve()):
         raise ValueError("All generated artifacts must remain inside ignored .runtime/.")
     if output.exists():
         raise FileExistsError("Preserve prior artifacts; use a fresh output directory.")
     text, metadata = assemble(args.team_file)
+    if args.release:
+        if args.metadata_only:
+            raise ValueError("A release requires actual PDF rendering.")
+        text, editorial = release_evidence(text, args.team_file)
+        assert metadata["pending_slots"] == []
+        metadata.update(kind="accepted_text_local_editorial_release_pending_layout_and_package",
+                        independent_manuscript_accepted=True, editorial_release=editorial,
+                        word_count=len(re.findall(r"\b[\w'-]+\b", text)),
+                        missing_evidence=["final local visual/layout approval", "final source ZIP checks"])
     output.mkdir(parents=True)
     (output / "expanded-draft.md").write_text(text, encoding="utf-8")
     if not args.metadata_only:
-        metadata["pdf_checks"] = render(text, output)
+        metadata["pdf_checks"] = render(text, output, final_release=args.release)
     metadata["created_at"] = datetime.now(timezone.utc).isoformat()
     (output / "build-provenance.json").write_text(json.dumps(metadata, indent=2)+"\n", encoding="utf-8")
     print(json.dumps({k: metadata[k] for k in ("kind", "submission_ready", "word_count", "pending_slots")} |
