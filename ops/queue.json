@@ -2073,11 +2073,46 @@
     {
       "id": "SOL-046",
       "owner": "sol",
-      "state": "ready",
+      "state": "accepted",
       "attempt": 1,
       "branch": "work/sol/SOL-046-a1",
       "task_sha256": "552aea7f5b6a95f64b85a25146a0839768ca6586d1efc84abe64fc47a848d944",
-      "note": "Resource hold released after actual accepted SOL-045 87cf934348c3a78ce10299fa7aece8168ade0c43; immutable task unchanged. Exact source/result pins remain authoritative."
+      "note": "Exact supplemental source/freeze/development review accepted. Chief reproduced22 synthetic tests, five independent fixture groups,130 exact reviewed blobs,480 metrics and selected saved paths; corrupted fee rejected. Nested real command evidence and historical CRLF replay limitations disclosed; no final-result or full-manuscript approval.",
+      "reviewed_commit": "0ed56de4b70bef0083ca2cf414f5aa2dce8606f0",
+      "accepted_paths": [
+        "audit/SOL-046/availability-acceptance.json",
+        "audit/SOL-046/corrupt-fixtures.json",
+        "audit/SOL-046/execution_log.json",
+        "audit/SOL-046/findings.json",
+        "audit/SOL-046/fixtures.json",
+        "audit/SOL-046/readonly_check.json",
+        "audit/SOL-046/reference_findings.json",
+        "audit/SOL-046/review.md",
+        "audit/SOL-046/trial-001.json",
+        "audit/SOL-046/verification.json",
+        "audit/SOL-046/verify.py",
+        "handoff/SOL-046/check-0.txt",
+        "handoff/SOL-046/check-1.txt",
+        "handoff/SOL-046/result.json"
+      ],
+      "excluded_paths": [],
+      "artifacts_sha256": {
+        "audit/SOL-046/availability-acceptance.json": "b76f8a7bc4e2d33910ca23e93e3149ed75de326ef1e5d0b93113120861b35c11",
+        "audit/SOL-046/corrupt-fixtures.json": "2ba6113b346fb51455dac8171e6e72cc74dee526559bb301964c9a460b344606",
+        "audit/SOL-046/execution_log.json": "d424d1d524c9e329c5e153d60f4b80c54ea0a521ac799b1d4f599adb59d5a36b",
+        "audit/SOL-046/findings.json": "4113b565efb3c8e8e3381903432281a0f4f4c72a0d641fba0748876a8d36a570",
+        "audit/SOL-046/fixtures.json": "d522a4dbdb5617a2b0f4cc0487f2804d0b7d1b577ec8028efa7f8218eb4ea927",
+        "audit/SOL-046/readonly_check.json": "c23f5d19e4a971a5bc8c7519a68b9ddd7a69ee753b1ed5d110ba51f962f8363c",
+        "audit/SOL-046/reference_findings.json": "1bf81fd6ebb1a5fda01edf4c9a721840e33a7774fc3ae69082a696dedd676af2",
+        "audit/SOL-046/review.md": "2f9451d717beff5ade1161554f72f41ca2c602076ac6fe90537a51e2162cbdac",
+        "audit/SOL-046/trial-001.json": "45c89398c93bb2b5432da221bc79466308003ded904b28040392f0fe19ceda7b",
+        "audit/SOL-046/verification.json": "706d4626b898b7ecdeb5b82319f35ab88bb58aff12025ac0a8a9e7a9e7d1e35a",
+        "audit/SOL-046/verify.py": "3eb19931a7ff9029e3d89807ae31cd1e2270d8e882948b609c356a912c3135b8",
+        "handoff/SOL-046/check-0.txt": "8570a0f52fdab0897901529e84680a945088ffc52b4251860591bacc7ce82bce",
+        "handoff/SOL-046/check-1.txt": "4567448deb86088e6bb7f05e4566869fab2806f1ea637de254cfd363d948e145"
+      },
+      "acceptance_evidence": "audit/chief/SOL-046-review.json",
+      "result_verdict": "approve"
     },
     {
       "id": "SOL-047",

@@ -12,7 +12,7 @@ def git(*args):
 def sha(raw):
     return hashlib.sha256(raw).hexdigest()
 
-def verify(task_id, commit):
+def verify(task_id, commit, *, agent_command_log_path=None):
     task = json.loads((ROOT / f'ops/tasks/{task_id}.json').read_bytes())
     q = next(t for t in json.loads((ROOT / 'ops/queue.json').read_bytes())['tasks'] if t['id'] == task_id)
     receipt = json.loads(git('show', f'{commit}:handoff/{task_id}/result.json'))
@@ -31,6 +31,21 @@ def verify(task_id, commit):
     assert receipt['python'].startswith('3.12.')
     assert receipt['input_manifest'] == json.loads(git('show', task['base_commit'] + ':data/manifest.json'))
     expected_commands = task['commands'] + task['validation_commands']
+    nested_evidence = []
+    if agent_command_log_path is not None:
+        # Agent tasks execute prescribed source commands inside their model turn;
+        # the outer runner records the model call and validation commands only.
+        # Require the exact canonical saved argv/exit/output, never infer a pass.
+        assert task['kind'] == 'agent'
+        raw = git('show', commit + ':' + agent_command_log_path)
+        assert sha(raw) == receipt['artifacts_sha256'][agent_command_log_path]
+        records = json.loads(raw)['executions']
+        for command in task['commands']:
+            matching = [r for r in records if r.get('command', [])[1:] == command[1:]
+                        and r.get('exit') == 0]
+            assert matching and all('stdout' in r and 'stderr' in r for r in matching)
+            nested_evidence.append(matching[-1])
+        expected_commands = task['validation_commands']
     actual = receipt['checks'][1:] if task['kind'] == 'agent' else receipt['checks']
     assert len(actual) == len(expected_commands)
     assert all(c['exit_code'] == 0 for c in receipt['checks'])
@@ -54,4 +69,5 @@ def verify(task_id, commit):
                 task_sha256=digest, branch=branch, structural_checks='passed',
                 source_hashes_checked=task['parameters'].get('source_sha256', {}),
                 artifacts_sha256=hashes, accepted_paths=names, excluded_paths=[],
-                receipt_python=receipt['python'], prescribed_command_count=len(actual))
+                receipt_python=receipt['python'], prescribed_command_count=len(actual)+len(nested_evidence),
+                nested_prescribed_command_evidence=nested_evidence)

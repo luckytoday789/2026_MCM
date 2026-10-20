@@ -1,0 +1,6 @@
+{
+  "status": "failed_audit_adapter",
+  "verify_sha256": "f540e0a76c6b40e837df61a2c3c27c51d0d1e4b1bf42e0f7cf396188b2ccc369",
+  "exit_code": 1,
+  "reason": "Audit used generic ledger action/year; accepted personalized schema uses engine_action/period. Only audit adapter corrected; no producer change."
+}
