@@ -733,12 +733,10 @@
   "chief_status": {
     "role": "chief",
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
-    "state": "running",
+    "state": "ready",
     "python": "3.12.0",
-    "updated_at": "2026-10-20T12:10:20.972975+00:00",
-    "lease_until": "2026-10-20T12:20:20.972975+00:00",
-    "task_id": "CHIEF-PERSONALIZED-RUN-001",
-    "branch": "work/chief/CHIEF-PERSONALIZED-RUN-001-a1"
+    "updated_at": "2026-10-20T12:17:45.622040+00:00",
+    "lease_until": "2026-10-20T12:27:45.622040+00:00"
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
   "schema_version": 1,
@@ -746,7 +744,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-20T12:13:09.714170+00:00",
+  "updated_at": "2026-10-20T12:18:33.526528+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
