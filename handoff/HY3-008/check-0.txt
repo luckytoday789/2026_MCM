@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "E:\study\mcm\2026_MCM_Senior_SafeInvest\2026_MCM\.runtime\worktrees\HY3-008-a1\scripts\run_development_analysis.py", line 244, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "E:\study\mcm\2026_MCM_Senior_SafeInvest\2026_MCM\.runtime\worktrees\HY3-008-a1\scripts\run_development_analysis.py", line 240, in main
+    result=_create(root,args.config,args.output)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\study\mcm\2026_MCM_Senior_SafeInvest\2026_MCM\.runtime\worktrees\HY3-008-a1\scripts\run_development_analysis.py", line 207, in _create
+    result=produce_authenticated(root,config_path,output,stage,started,records)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\study\mcm\2026_MCM_Senior_SafeInvest\2026_MCM\.runtime\worktrees\HY3-008-a1\src\safeinvest\policy_analysis_writer.py", line 446, in produce_authenticated
+    b,s,p,m,ms,mp=_authenticate(root,c,config_path,raw,output,task,P)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\study\mcm\2026_MCM_Senior_SafeInvest\2026_MCM\.runtime\worktrees\HY3-008-a1\src\safeinvest\policy_analysis_writer.py", line 374, in _authenticate
+    cases,proof=_authenticate_producer(root,p,c,task['base_commit'])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\study\mcm\2026_MCM_Senior_SafeInvest\2026_MCM\.runtime\worktrees\HY3-008-a1\src\safeinvest\policy_analysis_writer.py", line 274, in _authenticate_producer
+    require({n for n in q.get('accepted_paths',[]) if n.startswith(p['root']+'/')}==set(p['artifacts_sha256']), 'chief must accept all 44 producer files')
+  File "E:\study\mcm\2026_MCM_Senior_SafeInvest\2026_MCM\.runtime\worktrees\HY3-008-a1\src\safeinvest\policy_writer.py", line 54, in require
+    raise ValueError(message)
+ValueError: chief must accept all 44 producer files

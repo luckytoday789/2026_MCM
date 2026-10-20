@@ -1,0 +1,22 @@
+{
+  "group": "primary",
+  "argv": [
+    "C:\\Users\\lenovo\\.workbuddy\\binaries\\python\\envs\\py312\\Scripts\\python.exe",
+    "-B",
+    "scripts/run_development_policy.py",
+    "--config",
+    "specs/execution/HY3-004-file44.json",
+    "--output",
+    "results/development/HY3-004",
+    "--check"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 215.68699999997625,
+  "stdout": "{\"status\": \"passed\", \"read_only\": true, \"result\": \"passed\"}\r\n",
+  "stderr": "",
+  "stdout_sha256": "0a0c23666434c3fb9693db28d32d9fd8dbd40d9570d49d65130f290ebec2f6e0",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "python": "3.12.10",
+  "pythonpath_absent": true,
+  "script_sha256": "b2ea4ac19ece30fd2bb535c2dcee5cdf48d26d0cba934a3b35cb6e08338ee19b"
+}
