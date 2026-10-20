@@ -1583,6 +1583,15 @@
         "hy3"
       ],
       "user_authorized_takeover_at": "2026-10-20T11:02:41.875339+00:00"
+    },
+    {
+      "id": "HY3-007",
+      "owner": "hy3",
+      "state": "ready",
+      "attempt": 1,
+      "branch": "work/hy3/HY3-007-a1",
+      "task_sha256": "cecd8f3ac7657ddecfa9a4822bf023054653026db4bc2cf3276a4cc8d7bee45c",
+      "note": "Immediate user-authorized chief+HY3 takeover. Fresh independent verification of exact existing HY3-006, zero producer generation; old missing logs remain historical failures."
     }
   ]
 }
