@@ -1,3 +1,61 @@
+# Latest bounded chief checkpoint, 2026-10-20 22:24 Beijing
+
+This checkpoint supersedes older pending SOL-047 fields. Final exposure remains
+OPEN; all original negative findings and frozen policies remain unchanged.
+
+- SOL-047 is ACCEPTED at exact `9b620ae9a1c189d14060f59b02d8b0e4405d4f18`.
+  All45 exact paths/receipt are promoted in pushed main
+  `95b99f856ed84e28482eb85c2a2a2fee551155da`. Canonical task/base/scope,44 artifact
+  hashes,six source hashes and genuine inner prescribed command all passed.
+  Acceptance: `audit/chief/SOL-047-review.json`.
+- Chief inspected the new independent50-digit Decimal cumulative ledger,
+  manual sample variance,rational-index linear quantiles and strict saved
+  binary64 severe locations. The untouched LF checkout checker actually passed
+  1,063,214 comparisons over1,200 complete paths/34,200 rows,maximum absolute
+  residual5.457e-12. The separate saved-decision checker actually passed213,178
+  comparisons over23,400 decisions,including5,141 fee-free pending-review periods.
+  Local saved-fee and linear-quantile corruptions each exited1 at their arithmetic
+  comparison; all audit bytes were unchanged. No production simulation or original
+  observations were read. Full raw local replay remains ignored in
+  `.runtime/SOL-047-local-replay.json`.
+- Existing canonical verifier now authenticates the actual array-form argv/exit
+  record plus separately canonical-hashed stdout/stderr files. Real046/045
+  regressions passed; missing command,failed exit,missing output and corrupted
+  output evidence were all rejected. Qualification record:
+  `audit/chief/canonical-agent-log-array-qualification.json`.
+- All41 internal worker artifact hashes and12 actual execution log hashes were
+  checked using exact documented LF/CRLF byte equivalence. No worker output was
+  rewritten. Original process-setup and optional NumPy-import failures remain
+  preserved in `audit/SOL-047/infrastructure-events.json`; no failed step is
+  relabeled passed. Unlike046,no checker-byte reconstruction was needed here.
+- Independent review confirms four B/C own-horizon final failures with7/60
+  exceedances each,six genuine development referrals,no fallback and ALL A-E
+  human review. Approval covers exact HY3-010 outcomes and the final note only;
+  full manuscript,private names,layout and package remain separate.
+- Read-only final-chain preflight also verified18 pending source pins and85
+  earlier accepted promoted paths before047 arrived:
+  `audit/chief/final-chain-preflight-20261020.json`. Its no-receipt observation is
+  timestamped historical;047 subsequently arrived and was accepted as above.
+- Latest fetched Sol lease14:21:59UTC to14:31:59UTC reports RUNNING SOL-048.
+  No048 receipt at final fetch. Latest verified chief quota84%,floor40%,no drain.
+  No duplicate coordinator,worker,watcher or supervisor was started. No human help
+  is currently required. Private identities remain local.
+
+Next chain:
+1. Fetch and independently accept exact048 whole-manuscript result and genuine
+   commands; preserve failures. Promote exact outputs before any final release.
+2. Only then existing guarded renderer --release with ignored team display file
+   and fresh ignored output. Inspect EVERY final PDF page and editorial-only text
+   difference;<=10A4/min11pt,correct names,AI disclosure,no review furniture.
+3. Push accepted records,refresh existing<=50MB source ZIP from clean pushed main,
+   verify bundle/all members and fresh offline reconstruction. Keep private PDF
+   local. Humans submit; never upload automatically.
+4. Mark global complete/plan inactive only after those actual gates pass.
+   Currently solely awaiting048: one30-minute fallback; actual result triggers
+   earlier continuation. No new task or probe is needed.
+
+---
+
 # Latest bounded chief checkpoint, 2026-10-20 22:10 Beijing
 
 This checkpoint supersedes older pending SOL-046 and renderer-release fields below.
