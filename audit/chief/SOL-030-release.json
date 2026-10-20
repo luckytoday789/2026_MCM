@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T03:41:59.498597+00:00",
+  "writer_submission_commit": "a24dca5d5494455407207e0fd70c06b258d4fd1f",
+  "writer_structural_checks": "passed",
+  "writer_acceptance": "pending_separate_review",
+  "resource_quota_failure": false,
+  "task_sha256": "c164559e5fc86d5de16d7bf54679518a8941927a079f75364d174586263ac191",
+  "source_pins_checked": 31,
+  "dependencies": [
+    "HY3-003",
+    "SOL-008",
+    "SOL-013",
+    "SOL-020"
+  ],
+  "decision": "release_existing_immutable_task",
+  "final_data_open": false
+}

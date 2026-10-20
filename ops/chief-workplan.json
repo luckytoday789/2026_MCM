@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T03:32:47.539165+00:00",
-  "reason": "User explicitly resumed this host with GPT-6.1 Sol xhigh and a new 40% weekly remaining threshold. Preserve prior 50% stop evidence and continue exact pending writer/result acceptance.",
+  "next_wake_at": "2026-10-20T03:46:59.498597+00:00",
+  "reason": "Exact SOL-031 chief replay in progress; existing SOL-030 report review released promptly.",
   "next_actions": [
     "New explicit user authorization supersedes the historical 50% local stop: chief now uses GPT-6.1 Sol xhigh and the host-local configuration stops at 40% weekly remaining. Previous drain/stop history is preserved locally. Continue pending tasks without rerunning accepted/submitted work. The new 40% stop remains sticky until another explicit authorization.",
     "SOL-028 successful quota receipt remains accepted. SOL-029 completed remotely but chief rejected clean-checkout portability; no quota failure. Do not recreate a quota probe.",
@@ -28,7 +28,7 @@
   "last_successful_quota_probe_commit": "7ac6afe1169740666f0f65d5f2d9674fd2d4c964",
   "quota_probe_task": "SOL-028",
   "quota_probe_remaining_additional_attempts_after_SOL028": 1,
-  "last_outcome_zh": "用户明确授权主控切换为GPT-6.1 Sol，周额度剩余下限从50%改为40%；旧停机历史保留，恢复待验收任务，最终集门禁保持。",
+  "last_outcome_zh": "SOL-031已提交并通过结构核验；已释放现有SOL-030报告审查，主控继续精确验收。",
   "baseline_figure_source_commit": "04be213a76855b1b1815405a735f2a49be678935",
   "baseline_figure_review_task": "SOL-030",
   "layout_proof_path": "report/layout-proof/methods-baselines.pdf",

@@ -812,16 +812,19 @@
     },
     {
       "id": "SOL-030",
-      "state": "waiting",
+      "state": "ready",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "c164559e5fc86d5de16d7bf54679518a8941927a079f75364d174586263ac191",
       "branch": "work/sol/SOL-030-a1",
-      "note": "Existing independent report review remains waiting behind SOL-027 and the narrow writer correction SOL-031. Actual SOL-029 model access succeeded; no new quota probe needed. Release promptly after these priority tasks submit without a fresh quota failure.",
+      "note": "Existing report-only task released after successful exact SOL-031 submission and accepted SOL-027; all source pins/dependencies/task hash pass. Writer acceptance remains a separate chief gate. No quota probe or baseline rerun.",
       "dispatch_priority_after": [
         "SOL-027",
         "SOL-031"
-      ]
+      ],
+      "released_at": "2026-10-20T03:41:59.498597+00:00",
+      "release_evidence": "audit/chief/SOL-030-release.json",
+      "released_after_commit": "a24dca5d5494455407207e0fd70c06b258d4fd1f"
     },
     {
       "id": "SOL-031",
