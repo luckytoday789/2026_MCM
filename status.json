@@ -7,14 +7,10 @@
   "child_pids": [
     3816,
     14132,
-    23356,
-    48320,
-    25028,
-    3976,
-    35036,
-    18780,
-    31440,
-    38508
+    14816,
+    29624,
+    39264,
+    17428
   ],
   "current_task": "SOL-036",
   "alerts": [
@@ -583,8 +579,10 @@
       "receipt_status": null,
       "receipt_matches_task": false,
       "queue_state": "ready",
-      "dirty": false,
-      "changed_paths": [],
+      "dirty": true,
+      "changed_paths": [
+        "?? audit/SOL-036/"
+      ],
       "remote_matches": false,
       "completed_record": false,
       "pending_upload": false
@@ -606,7 +604,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-20T05:02:35.287685+00:00",
+  "updated_at": "2026-10-20T05:07:59.701935+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
