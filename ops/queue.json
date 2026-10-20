@@ -1747,11 +1747,36 @@
     {
       "id": "HY3-009",
       "owner": "hy3",
-      "state": "ready",
+      "state": "accepted",
       "attempt": 1,
       "branch": "work/hy3/HY3-009-a1",
       "task_sha256": "4bfb233f4c30b87cb5d59fd800cf46e7d5303072f5f759f8355b847e09c96958",
-      "note": "Successor to metadata-failed HY3-008: exact006accepted_paths and44artifacts promoted. Bothproducer complete metadata preflights pass beforepublication. Fixedsameanalysis; noexperimentregeneration."
+      "note": "Exact canonical receipt and independent790 scalar comparisons pass:100 gates,30 screens,10 choices; fixed balanced_cost chosen. All6 results and genuine handoff promoted; no final data.",
+      "reviewed_commit": "680c2faaf603df975c35e828aeebdadd8ce242cb",
+      "result_verdict": "approve",
+      "verdict": "approve",
+      "acceptance_evidence": "audit/chief/HY3-009-review.json",
+      "accepted_paths": [
+        "handoff/HY3-009/check-0.txt",
+        "handoff/HY3-009/check-1.txt",
+        "handoff/HY3-009/result.json",
+        "results/development/HY3-009/comparison_gates.json",
+        "results/development/HY3-009/paired_differences.csv",
+        "results/development/HY3-009/profile_recommendations.json",
+        "results/development/HY3-009/profile_screen.json",
+        "results/development/HY3-009/run_manifest.json",
+        "results/development/HY3-009/selection.json"
+      ],
+      "artifacts_sha256": {
+        "handoff/HY3-009/check-0.txt": "d7dbc0745a07ed555428e90f6785bed9c89776d185444ace29e58a2fea3d688b",
+        "handoff/HY3-009/check-1.txt": "ee509763bff414bc936d14ac7a28228912a9f04b09eafd2b7935b893d9cb19ef",
+        "results/development/HY3-009/comparison_gates.json": "ccb8bbde4c9537edd3393fac87099e4337720c186543ebd3acea6d18ddedc14b",
+        "results/development/HY3-009/paired_differences.csv": "3681ebd86d5994dd49ef42aaa856f7a09e1a80ce1d646a1ff2b7e39d8d17c27f",
+        "results/development/HY3-009/profile_recommendations.json": "7c8b6ac710fcc3f9c62366257850ab2965ede24e567e4c51ce68cf27d8c41605",
+        "results/development/HY3-009/profile_screen.json": "ee26c158e66ddce69d8fa2d0e766ba29fd5b315ca39fbb9ba44929c2024b2076",
+        "results/development/HY3-009/run_manifest.json": "05878823c94e92c1217ccbe2252008a318ed787862e7e1feec7982852714cb11",
+        "results/development/HY3-009/selection.json": "56b721ac630e7b08c48a74b37c300bcc841ea51e4b85084401a58b8bbbfa334e"
+      }
     }
   ]
 }

@@ -441,12 +441,12 @@
       "scope": "Corrected final source:9 tests and90 independent generated baseline checks. Actual refit, freeze and final results remain required."
     },
     "ACTUAL_DEVELOPMENT_ANALYSIS": {
-      "state": "running_pending_exact_receipt",
+      "state": "accepted_development_evidence",
       "task_id": "HY3-009",
-      "path": "ops/tasks/HY3-009.json",
-      "task_sha256": "4bfb233f4c30b87cb5d59fd800cf46e7d5303072f5f759f8355b847e09c96958",
-      "outcomes_accepted": false,
-      "scope": "Fixed real analysis from accepted004/006; result not yet delivered or accepted at this snapshot."
+      "reviewed_commit": "680c2faaf603df975c35e828aeebdadd8ce242cb",
+      "acceptance_evidence": "audit/chief/HY3-009-review.json",
+      "outcomes_accepted": true,
+      "scope": "Independent790 scalar checks of100 gates,30 screens and10 provisional choices; personalized rescreens and final performance remain separate."
     }
   },
   "requirements": [
@@ -678,7 +678,7 @@
     "Post-freeze software corrections remain logged and disclosed; no final-outcome tuning",
     "Team private names and IDs stay outside tracked artifacts"
   ],
-  "updated_at": "2026-10-20T11:56:28.381308+00:00",
+  "updated_at": "2026-10-20T12:03:29.553187+00:00",
   "historical_source_snapshots": {
     "DOUBLED_DEVELOPMENT_CASE_JOB": {
       "state": "submitted_pending_review",
