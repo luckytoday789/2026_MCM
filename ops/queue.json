@@ -1897,6 +1897,15 @@
         "handoff/CHIEF-REFIT-001/check-2.txt": "b215ff190a08ad5dcf98fbe6ee599c5a3a2b5b7034c6b526eeeaa887f67ae648",
         "results/development/CHIEF-REFIT-001/run_manifest.json": "acd58eccc6db735197b4b3feaa751e5c1c1954eb82bfaabe528ff13d2b410ee6"
       }
+    },
+    {
+      "id": "HY3-010",
+      "owner": "hy3",
+      "state": "ready",
+      "attempt": 1,
+      "branch": "work/hy3/HY3-010-a1",
+      "task_sha256": "45c730272cc8439ceb3edca697fdf516d6fc783c20c4513a20030c9db1db0835",
+      "note": "One frozen final evaluation after genuine source/development/refit/freeze acceptance. All outcome failures retained; no policy tuning. Integrity check is not numerical acceptance; independent saved-ledger audit required."
     }
   ]
 }
