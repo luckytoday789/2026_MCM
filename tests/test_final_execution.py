@@ -44,6 +44,9 @@ class FinalExecutionTests(unittest.TestCase):
         tables=f._evaluate_rows(rows(),EmpiricalPrior(((1.1,1.02,1.),)),
                                 'balanced_cost',choices(),ids=(121,122))
         self.assertEqual(len(tables['generic']),16)
+        self.assertTrue(all(row['growth_units']=='percent/year' for row in tables['scenario_metrics']))
+        self.assertTrue(all(row['growth_units']=='percent/year' for row in tables['summary']))
+        self.assertTrue(all(row['growth_difference_units']=='percentage points/year' for row in tables['paired_differences']))
         self.assertEqual(len(tables['scenario_metrics']),160)
         self.assertEqual(len(tables['comparisons']),100)
         self.assertEqual(len(tables['paired_differences']),200)
@@ -125,14 +128,25 @@ class FinalExecutionTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);(root/'ops').mkdir();control=root/'ops/control.json'
             control.write_text('{"state":"running","final_data_open":true}')
-            with patch.object(f,'_reference',side_effect=reference),patch.object(f.w,'ancestor'):
-                self.assertEqual(f._final_gate(root,c,{'freeze_sha256':runner},'a'*64)['freeze_runner_sha256'],runner)
+            with patch.object(f,'_reference',side_effect=reference),patch.object(f.w,'ancestor') as ancestry,patch.object(f.w,'blob',return_value=raw) as freeze_blob:
+                self.assertEqual(f._final_gate(root,c,{'freeze_sha256':runner,'base_commit':'9'*40},'a'*64)['freeze_runner_sha256'],runner)
+                freeze_blob.return_value=raw+b' '
+                with self.assertRaisesRegex(ValueError,'task-base bytes'):
+                    f._final_gate(root,c,{'freeze_sha256':runner,'base_commit':'9'*40},'a'*64)
+                freeze_blob.return_value=raw
+                def reject_unpublished(root,older,newer):
+                    if older==c['refit']['commit'] and newer=='9'*40:
+                        raise ValueError('refit is not published before task base')
+                ancestry.side_effect=reject_unpublished
+                with self.assertRaisesRegex(ValueError,'not published'):
+                    f._final_gate(root,c,{'freeze_sha256':runner,'base_commit':'9'*40},'a'*64)
+                ancestry.side_effect=None
                 control.write_text('{"state":"running","final_data_open":false}')
-                with self.assertRaises(ValueError):f._final_gate(root,c,{'freeze_sha256':runner},'a'*64)
+                with self.assertRaises(ValueError):f._final_gate(root,c,{'freeze_sha256':runner,'base_commit':'9'*40},'a'*64)
                 control.write_text('{"state":"running","final_data_open":true}')
-                with self.assertRaises(ValueError):f._final_gate(root,c,{'freeze_sha256':'b'*64},'a'*64)
+                with self.assertRaises(ValueError):f._final_gate(root,c,{'freeze_sha256':'b'*64,'base_commit':'9'*40},'a'*64)
                 refit_review['status']='pending'
-                with self.assertRaises(ValueError):f._final_gate(root,c,{'freeze_sha256':runner},'a'*64)
+                with self.assertRaises(ValueError):f._final_gate(root,c,{'freeze_sha256':runner,'base_commit':'9'*40},'a'*64)
 
     def test_production_gate_failure_preserves_exposure_without_opening_input(self):
         with tempfile.TemporaryDirectory() as directory:

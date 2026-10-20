@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "kind": "generated_personalized_implementation_checks_not_production_acceptance",
+  "status": "passed",
+  "exit_code": 0,
+  "tests": 13,
+  "seconds": 9.443,
+  "command": [
+    "python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_personalized_writer.py",
+    "-v"
+  ],
+  "log_path": "audit/chief/takeover-personalized/test-run.log",
+  "log_sha256": "143058563381afd2ae889be63e3b8581b3f248dcdc2a7baf6bfb11c025820183",
+  "source_sha256": {
+    "src/safeinvest/personalized_writer.py": "1d144ffee62d784716b2e0417455526a1c77f5bc53bbe31cf3b19475a1dc14a9",
+    "scripts/run_personalized_development.py": "e5778b90e89c148e36b15422b2674f01df31c67b15a2043bdde5841261ad6210",
+    "tests/test_personalized_writer.py": "dd3d86057a456eb6cf4d562c0baa721b523792c12a68470d52fb0b0b4e1f3edf"
+  },
+  "original_competition_input_read": false,
+  "final_input_read": false,
+  "production_run": false,
+  "independent_acceptance": false,
+  "source_files_stable": true,
+  "known_scope_limit": "No forged production acceptance chain or original-data production run. Real C/E/P, producer checker histories and own-horizon numbers require chief review.",
+  "negative_checks_preserved_in_readme": "audit/chief/takeover-personalized/README.md"
+}

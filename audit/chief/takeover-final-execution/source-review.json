@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "source_path": "src/safeinvest/final_execution.py",
+  "source_sha256": "bfda2f62edba55624895a362ff019d89dbceeeb7c01dac60bffef09ce72fced7",
+  "scope": "Independent generated scalar arithmetic and static production gate review; no competition input access or final execution.",
+  "independent_scalar_checks": 90,
+  "scalar_verdict": "passed",
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "P2",
+      "line": 290,
+      "issue": "Final CAGR levels inherit legacy COMMON_UNITS growth_units=percentage points per year. Case summaries inherit the same label.",
+      "required_fix": "Override output growth_units to percent/year for level-bearing final metrics/summaries; retain numerical values and paired difference pp/year units.",
+      "resolution": "fixed and covered by generated regression tests"
+    },
+    {
+      "id": "F2",
+      "priority": "P2",
+      "line": 243,
+      "issue": "Final freeze/attestation/refit references are hash-authenticated but not all bound by ancestry to published task base; referenced freeze bytes are not explicitly compared with ops/freeze.json at task base.",
+      "required_fix": "Before any final input access require refit/freeze/attestation and external refit review commits precede task base, plus exact referenced freeze blob equals the task-base ops/freeze.json blob.",
+      "resolution": "fixed and covered by generated regression tests"
+    }
+  ],
+  "other_checks": [
+    "Exact current source closure and imported-module guard preserved.",
+    "Refit uses all3600 ordered development rows and a single immutable prior.",
+    "Initial fee and purchasing-power metrics independently matched closed forms across30 baseline/horizon/case combinations.",
+    "Generic diagnostics do not rerun final selection; ten eligibility/referral rows remain fixed.",
+    "Final exposure is gated before input opening; failed stages preserved."
+  ],
+  "limitations": [
+    "Static reference-authentication review does not independently accept later real refit/freeze/result artifacts.",
+    "Production artifact --check is an explicitly limited saved hash/count audit, not independent numerical acceptance."
+  ],
+  "reviewed_base_commit": "1ff8772bc0c05027b80dcdbc54e26ee97e70e5d3",
+  "validation": {
+    "argv": [
+      "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_final_execution.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "tests": 9,
+    "runtime_seconds": 5.204,
+    "independent_scalar_recheck": 90
+  },
+  "publication_requirement": "Root must publish corrected exact source bytes as new final source C and bind that C in source acceptance,refit and final configurations. Analysis source C remains unchanged."
+}

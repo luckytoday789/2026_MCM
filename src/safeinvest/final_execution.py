@@ -240,6 +240,10 @@ def _load_refit(root,c):
 def _final_gate(root,c,task,config_digest):
     w.require(c['freeze']['path']=='ops/freeze.json','fixed published freeze path required')
     raw=_reference(root,c['freeze']);freeze=w.strict_json(raw)
+    base=task['base_commit']
+    w.require(w.blob(root,base,'ops/freeze.json')==raw,'freeze differs from immutable task-base bytes')
+    for reference in (c['refit'],c['freeze'],c['freeze_attestation']):
+        w.ancestor(root,reference['commit'],base)
     runner_hash=w.sha(raw.decode('utf-8',errors='strict').strip().encode('utf-8'))
     w.require(task.get('freeze_sha256')==runner_hash,'runner freeze text digest mismatch')
     attestation=w.strict_json(_reference(root,c['freeze_attestation']))
@@ -248,6 +252,7 @@ def _final_gate(root,c,task,config_digest):
               and attestation.get('freeze_runner_sha256')==runner_hash
               and w.exact(attestation.get('refit'),c['refit']),
               'external exact-byte freeze/refit acceptance required')
+    w.ancestor(root,attestation['refit_acceptance']['commit'],base)
     refit_review=w.strict_json(_reference(root,attestation['refit_acceptance']))
     w.require(refit_review.get('status')=='accepted' and w.exact(refit_review.get('refit'),c['refit']),
               'external exact-artifact refit acceptance required')
@@ -289,7 +294,7 @@ def _metric(result,reviews,mode,fee,horizon):
             'later_review_count':horizon-1,'trade_share_pct':100*sum(trades)/horizon,
             'trade_share_ex_initial_pct':100*sum(trades[1:])/(horizon-1) if horizon>1 else None,
             **drawdown_locations(ledger),**_diagnostics(reviews,horizon),
-            'fold_id':None,'fold_status':'not_applicable',**COMMON_UNITS}
+            'fold_id':None,'fold_status':'not_applicable',**COMMON_UNITS,'growth_units':'percent/year'}
 
 
 def _evaluate_rows(rows,prior,primary_mode,choices,ids=tuple(range(121,181))):
@@ -305,7 +310,7 @@ def _evaluate_rows(rows,prior,primary_mode,choices,ids=tuple(range(121,181))):
                 paths.append((result,reviews))
                 metrics.extend(_metric(result,reviews,mode,fee,h) for h in HORIZONS)
             case_summaries=[summary_row(mode,h,[r for r in metrics if r['horizon']==h])|
-                            {'fee_rate':fee,'mode':mode,'fold_status':'not_applicable'} for h in HORIZONS]
+                            {'fee_rate':fee,'mode':mode,'fold_status':'not_applicable','growth_units':'percent/year'} for h in HORIZONS]
             generic[(mode,fee)]={'paths':paths,'metrics':metrics,'summary':case_summaries}
             all_metrics.extend(metrics);summaries.extend(case_summaries)
         for h in HORIZONS:
@@ -416,7 +421,7 @@ def produce(root,config_path,output):
                     for (label,fee),case in cases.items():
                         ledgers=[];decisions=[]
                         for result,reviews in case['paths']:
-                            ledgers.extend(ledger_row(label,'final',entry)|{'fee_rate':fee} for entry in result.ledger)
+                            ledgers.extend(ledger_row(label,'final',entry)|{'fee_rate':fee,'growth_units':'percent/year'} for entry in result.ledger)
                             decisions.extend(asdict(review)|{'split':'final','fee_rate':fee,'mode':label} for review in reviews)
                         prefix=kind+'/'+label+'/'+str(fee)+'/'
                         _write(stage,prefix+'annual_ledgers.csv',_csv(ledgers),inventory)
