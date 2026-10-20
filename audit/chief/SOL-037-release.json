@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T08:46:06.435425+00:00",
+  "starting_main_commit": "41b002cb10ce24f2384754238d8800d9e320ea94",
+  "action": "release_existing_SOL-037_only",
+  "task_sha256": "a39583ab0336bf78cb14b231a7e0b9a957e7da3b454f12cc6a7807546d88f9aa",
+  "authenticated_active_tasks": [
+    {
+      "id": "HY3-004",
+      "task_sha256": "14bb98ed9b6996d198513c1d29cbe8a7d44b489de7cde9a46f4fc27ce2bead89",
+      "base_commit": "93a232a926dc3d1bfb18e2866ef0ddb0aaf9bc0f",
+      "source_pins": 28
+    },
+    {
+      "id": "SOL-037",
+      "task_sha256": "a39583ab0336bf78cb14b231a7e0b9a957e7da3b454f12cc6a7807546d88f9aa",
+      "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+      "source_pins": 5
+    },
+    {
+      "id": "SOL-040",
+      "task_sha256": "024057000d22bee1afba7300194344c00a9a79d857f7fd9950ce855dda07df31",
+      "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+      "source_pins": 41
+    },
+    {
+      "id": "SOL-041",
+      "task_sha256": "a68184a570dfeb49ac72a36060b2e3d88ed0d2c45fb7f6f17f3ddced40434dfe",
+      "base_commit": "da37f1cff664c2ba5b475ddd07ae58630004ea3e",
+      "source_pins": 42
+    },
+    {
+      "id": "SOL-038",
+      "task_sha256": "03472407ca3633a28501784679d1d1d03c1fb39766179620ad27a5e058214f34",
+      "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+      "source_pins": 43
+    },
+    {
+      "id": "SOL-039",
+      "task_sha256": "c2b1a1c305a293e453f1517aea2a6e14049c58e4a96f49d4aaba3138618dbe44",
+      "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+      "source_pins": 21
+    },
+    {
+      "id": "HY3-006",
+      "task_sha256": "dcdf31a5ce502b4c5115d9a21a29b6649ea107b8e0c8b671b1e17d44812962b6",
+      "base_commit": "eae30c8edff452807694b9c8f42db6d1d01464f7",
+      "source_pins": 28
+    }
+  ],
+  "total_source_pins": 208,
+  "release_time_gate_pass": true,
+  "probe_result_branch_present": false,
+  "probe_accepted": false,
+  "review_holds_unchanged": [
+    "SOL-040",
+    "SOL-041",
+    "SOL-038",
+    "SOL-039"
+  ],
+  "final_data_open": false,
+  "quota": {
+    "limit_id": "codex",
+    "window_minutes": 10080,
+    "used_percent": 1.0,
+    "remaining_percent": 99.0,
+    "resets_at": 1793082751,
+    "source": "Codex account/rateLimits/read",
+    "checked_at": "2026-10-20T08:45:20.226446+00:00",
+    "state": "verified",
+    "stop_remaining_percent": 40
+  }
+}

@@ -1338,14 +1338,14 @@
     },
     {
       "id": "SOL-037",
-      "state": "waiting",
+      "state": "ready",
       "owner": "sol",
       "attempt": 1,
       "branch": "work/sol/SOL-037-a1",
       "task_sha256": "a39583ab0336bf78cb14b231a7e0b9a957e7da3b454f12cc6a7807546d88f9aa",
-      "note": "Published immutable recovery task; preserve failed predecessor and all research gates.",
-      "resource_hold": "not_before_release_2026-10-20T15:55:00+08:00",
-      "release_condition": "At/after15:55Beijing, release fixed commands probe once. No model call before16:10. Failure consumes last automatic probe."
+      "note": "Released existing immutable one-shot assigned-machine probe after its time gate. Exact successful receipt/response acceptance is required before lifting SOL-040/041/038/039 holds. No further automatic probes authorized.",
+      "release_condition": "At/after15:55Beijing, release fixed commands probe once. No model call before16:10. Failure consumes last automatic probe.",
+      "released_at": "2026-10-20T08:46:06.435425+00:00"
     },
     {
       "id": "SOL-040",
