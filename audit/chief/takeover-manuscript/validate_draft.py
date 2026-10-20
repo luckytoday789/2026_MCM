@@ -21,7 +21,8 @@ def check(output):
     assert not saved["private_identity_access"]
     assert (output / "expanded-draft.md").read_text(encoding="utf-8") == text
     for key in ("source_hashes", "pending_slots", "numeric_paragraph_mappings",
-                "prose_result_claim_checks", "word_count"):
+                "prose_result_claim_checks", "word_count",'doubled_fee_provenance',
+                'doubled_fee_prose_checks','primary_current_acceptances'):
         assert saved[key] == current[key], key
     assert len(saved["pending_slots"]) == len(set(saved["pending_slots"])) == 7
     assert not saved["submission_ready"] and not saved["final_outcomes_accessed"]
@@ -42,6 +43,8 @@ def check(output):
     assert "maximum drawdown 52.61%" in all_text
     assert "terminal real wealth 357.95" in all_text
     assert "not customer recommendations" in all_text
+    assert '28.26%' in all_text and '42.02%' in all_text and '8.33%' in all_text
+    assert saved['doubled_fee_provenance']['producer_commit']=='319781ef3c7fb5d4328a0ae4cea438bcc26a6f18'
     return {"status": "passed", "kind": "chief_preparation_check_not_independent_acceptance",
         "pages": len(reader.pages), "minimum_font_pt": min(sizes),
         "word_count": saved["word_count"], "numeric_paragraphs_mapped": len(saved["numeric_paragraph_mappings"]),

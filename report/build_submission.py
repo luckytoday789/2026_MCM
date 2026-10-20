@@ -8,10 +8,12 @@ Optional --team-file is local-only; no identity is copied into tracked sources.
 from __future__ import annotations
 
 import argparse
+import csv
 from datetime import datetime, timezone
 import hashlib
 from html import escape
 import json
+import io
 from pathlib import Path
 import re
 import subprocess
@@ -37,6 +39,7 @@ SOURCES = {
     "E3": ["report/evidence-map.json", "ops/PROTOCOL.md"],
     "E4": ["report/baseline-development-provenance.json", "audit/chief/HY3-003-review.json",
            "audit/chief/SOL-008-review.json"],
+    "E5": ["audit/chief/HY3-006-review.json", "audit/chief/CHIEF-HY3-006-20261020-review.json"],
 }
 
 
@@ -60,15 +63,65 @@ def accepted_sources():
     for generator in (primary_source, baseline_source):
         files = generator()
         for name, raw in files.items():
-            if canonical((ROOT / "report" / name).read_bytes()) != canonical(raw):
-                raise ValueError("Source note/provenance drift: " + name)
+            original=(ROOT / "report" / name).read_bytes()
+            if canonical(original) != canonical(raw):
+                # Chief may add a typed approval for the same exact accepted result.
+                # Historical display provenance stays immutable; only that approval
+                # pointer may change, never a result row, unit, source hash or value.
+                if name != 'primary-development-provenance.json':
+                    raise ValueError("Source note/provenance drift: " + name)
+                old,new=json.loads(original),json.loads(raw)
+                previous=old.pop('acceptances');current=new.pop('acceptances')
+                if old!=new or set(previous)!=set(current):
+                    raise ValueError('Numeric/source drift in primary provenance')
+                for ident,record in previous.items():
+                    historical=(ROOT/record['path']).read_bytes()
+                    review=json.loads(historical)
+                    assert sha(historical)==record['sha256'] and record['commit']==current[ident]['commit']
+                    assert review['reviewed_commit']==record['commit']
+                    assert review.get('verdict')=={'HY3-004':'accept_primary_development_bundle',
+                        'SOL-040':'accept_independent_primary_review'}[ident]
+                    positive=json.loads((ROOT/current[ident]['path']).read_bytes())
+                    assert positive['reviewed_commit']==record['commit']
+                    assert positive.get('result_verdict')=='approve' or positive.get('code_verdict')=='approve'
             if name.endswith("provenance.json"):
                 result[name] = json.loads(raw)
     return result["primary-development-provenance.json"], result["baseline-development-provenance.json"]
 
 
+def doubled_sources():
+    commit='319781ef3c7fb5d4328a0ae4cea438bcc26a6f18'
+    independent='194a45ac5fced5dfab02903e4e732b1cac1c6e67'
+    queue=json.loads((ROOT/'ops/queue.json').read_bytes())['tasks']
+    for ident,expected in (('HY3-006',commit),('HY3-007',independent)):
+        task=next(t for t in queue if t['id']==ident)
+        assert task['state']=='accepted' and task['reviewed_commit']==expected
+    review=json.loads((ROOT/'audit/chief/HY3-006-review.json').read_bytes())
+    assert review['reviewed_commit']==commit and review['result_verdict']=='approve'
+    numerical=json.loads((ROOT/'audit/chief/CHIEF-HY3-006-20261020-review.json').read_bytes())
+    assert numerical['reviewed_commit']==independent and numerical['reviewed_result_commit']==commit
+    assert numerical['result_verdict']==numerical['code_verdict']=='approve'
+    def blob(path,source=commit):
+        return subprocess.check_output(['git','show',source+':'+path],cwd=ROOT)
+    oracle=numerical['oracle_execution']
+    assert oracle['exit_code']==0 and sha(blob(oracle['log_path'],independent))==oracle['log_sha256']
+    receipt=json.loads(blob('handoff/HY3-006/result.json'))
+    assert receipt['status']=='completed' and receipt['artifact_hash_basis']=='canonical_git_blob'
+    result=[];sources={}
+    for mode in ('equal_weight_annual','balanced_cost','balanced_context','balanced_adaptive'):
+        path=f'results/development/HY3-006/cases/{mode}/summary.csv';raw=blob(path)
+        assert sha(raw)==receipt['artifacts_sha256'][path]==review['artifacts_sha256'][path]
+        rows=list(csv.DictReader(io.StringIO(raw.decode('utf-8'))))
+        row=next(r for r in rows if r['horizon']=='30')
+        assert row['mode']==mode and row['split']=='development' and row['scenario_count']=='120'
+        assert float(row['fee_rate'])==.005
+        result.append(row);sources[path]={'sha256':sha(raw),'source_row':row}
+    return result,dict(producer_commit=commit,independent_review_commit=independent,source_rows=sources)
+
+
 def assemble(team_file=None):
     primary, baseline = accepted_sources()
+    doubled,doubled_provenance=doubled_sources()
     text = (ROOT / "report/submission-draft.md").read_text(encoding="utf-8")
     primary_rows = [r["source_row"] for r in primary["displayed_rows"]
                     if r["key"]["horizon"] == 30]
@@ -88,6 +141,10 @@ def assemble(team_file=None):
                      if r["policy"] == "equal_weight_annual" and r["horizon"] == "30")
     assert annual_30["severe_scenario_id"] == "5"
     assert format(float(annual_30["severe_max_real_drawdown_pct"]), ".2f") == "50.88"
+    doubled_fixed=next(r for r in doubled if r['mode']=='balanced_cost')
+    doubled_claims={'median_growth_pct':'4.53','median_loss_pct':'28.26','p90_loss_pct':'42.02',
+                    'pooled_trade_share_pct':'8.33'}
+    assert all(format(float(doubled_fixed[k]),'.2f')==v for k,v in doubled_claims.items())
     cols = ["median_growth_pct", "p10_growth_pct", "median_loss_pct", "p90_loss_pct",
             "median_volatility_pct", "pooled_trade_share_pct", "pooled_trade_share_ex_initial_pct"]
     primary_table = mdtable(["Policy", "Median G", "p10 G", "Median L", "p90 L", "Fluct.",
@@ -108,6 +165,14 @@ def assemble(team_file=None):
     annual = [r for r in baseline["source_rows"] if r["policy"] == "equal_weight_annual"]
     horizon_table = mdtable(["Horizon", "Median G", "p10 G", "Median L", "p90 L"],
         [[r["horizon"], *(format(float(r[c]), ".2f") for c in cols[:4])] for r in annual])
+    sensitivity=[]
+    for mode in ('equal_weight_annual','balanced_cost','balanced_context','balanced_adaptive'):
+        for row,fee in ((next(r for r in primary_rows if r['mode']==mode),'0.25'),
+                        (next(r for r in doubled if r['mode']==mode),'0.50')):
+            human=row['pooled_human_review_share_pct']
+            sensitivity.append([LABELS[mode],fee,*[format(float(row[c]),'.2f') for c in cols[:4]],
+                format(float(row['pooled_trade_share_pct']),'.2f'),'-' if human=='' else format(float(human),'.2f')])
+    sensitivity_table=mdtable(['Policy','Fee %','Median G','p10 G','Median L','p90 L','Trades %','Review %'],sensitivity)
     severe = next(r for r in primary_rows if r["mode"] == "balanced_cost")
     severe_text = (
         "For fixed-prior Balanced at the same development horizon and fee, the selected severe scenario is "
@@ -132,7 +197,7 @@ def assemble(team_file=None):
         "MENU_TABLE": mdtable(["Target", "Stocks %", "Bonds %", "Bills %"], menus),
         "PROFILE_TABLE": mdtable(["Profile", "Years", "Loss tol. %", "Liquidity", "Bills %", "Eligible classes"], profile_rows),
         "PRIMARY_H30_TABLE": primary_table, "BALANCED_SEVERE": severe_text,
-        "BASELINE_HORIZON_TABLE": horizon_table}
+        "BASELINE_HORIZON_TABLE": horizon_table,'SENSITIVITY_H30_TABLE':sensitivity_table}
     for key, value in replacements.items():
         if text.count("{{" + key + "}}") != 1:
             raise ValueError("Missing or duplicate template key " + key)
@@ -143,7 +208,7 @@ def assemble(team_file=None):
     numeric_paragraphs = []
     for paragraph in re.split(r"\n\s*\n", text):
         if re.search(r"\d", paragraph) and not paragraph.startswith(("#", "|", "<!--", "PENDING")):
-            sources = sorted(set(re.findall(r"E[0-4]", paragraph)))
+            sources = sorted(set(re.findall(r"E[0-5]", paragraph)))
             if paragraph.startswith("T ="):
                 sources = ["E0"]
             elif paragraph.startswith("GPT-"):
@@ -160,8 +225,11 @@ def assemble(team_file=None):
         "source_registry": SOURCES, "numeric_paragraph_mappings": numeric_paragraphs,
         "primary_producer": primary["producer_commit"],
         "primary_review": primary["independent_review_commit"],
+        "primary_current_acceptances":primary['acceptances'],
         "baseline_producer": baseline["source_commit"],
         "baseline_review": baseline["independent_review_commit"],
+        "doubled_fee_provenance":doubled_provenance,
+        "doubled_fee_prose_checks":doubled_claims,
         "prose_result_claim_checks": {"horizon": 30, "split": "development", "fee_rate": .0025,
             "primary_summary_values": claims, "baseline_annual_severe_id": "5",
             "baseline_annual_severe_loss_pct": "50.88"},
@@ -172,7 +240,7 @@ def assemble(team_file=None):
         "private_identity_access": team_file is not None,
         "minimum_font_pt": 11, "max_pages": 10,
         "missing_evidence": ["authenticated promotion comparisons and choice",
-            "independently accepted cost sensitivity", "own-horizon personalized production rescreens",
+            "recommendation impact of accepted cost sensitivity", "own-horizon personalized production rescreens",
             "accepted all-development refit and final engine", "recorded freeze before final access",
             "accepted reserved-scenario evaluation", "final customer explanation and conclusion",
             "independent full manuscript review", "local names, final rendering and source ZIP checks"]}
@@ -219,7 +287,7 @@ def render(text, output):
                       4: [205, 100, 100, 100]}.get(n)
             if widths:
                 widths = [usable * w / sum(widths) for w in widths]
-            table = Table(rows, colWidths=widths, repeatRows=1, hAlign="LEFT")
+            table = Table(rows, colWidths=widths, repeatRows=1, hAlign="LEFT",rowSplitRange=(2,-2))
             table.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"),
                 ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#e8edf1")),
                 ("LINEBELOW", (0, 0), (-1, 0), .6, colors.HexColor("#607483")),

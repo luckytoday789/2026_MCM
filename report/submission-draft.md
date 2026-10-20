@@ -10,7 +10,7 @@ SafeInvest must connect a customer's horizon, liquidity needs and willingness to
 
 On the accepted development comparison, using 120 scenarios, a 30-year horizon and a 0.25% one-way fee, fixed-prior Balanced has median real growth 4.53% per year, p10 growth 1.10%, median maximum real drawdown 26.84%, and p90 drawdown 41.94%. Annual equal thirds gives 3.58%, 1.28%, 20.10% and 34.84%, respectively. Balanced trades at 9.72% of reviews, versus 100.00% for annual equal thirds. These separate marginal summaries describe a growth/loss trade-off; they neither establish a paired performance improvement nor make Balanced suitable for every customer. [E1]
 
-The following draft contains accepted development results and reviewed methods. Policy promotion, cost sensitivity, personalized rescreening and final evaluation remain explicit completion gates. No conclusion below treats an unfinished gate as a positive result. The executive recommendation must be rewritten after those gates close. [E3]
+The following draft contains accepted development results and reviewed methods. Policy promotion, interpretation of the accepted cost sensitivity for the eventual recommendation, personalized rescreening and final evaluation remain explicit completion gates. No conclusion below treats an unfinished gate as a positive result. The executive recommendation must be rewritten after those gates close. [E3, E5]
 
 <!-- SLOT:EXECUTIVE_RECOMMENDATION -->
 PENDING EXECUTIVE_RECOMMENDATION: insert the accepted final recommendation and its quantitative support after all required evidence gates close.
@@ -89,7 +89,13 @@ PENDING PROMOTION_RESULTS: insert authenticated scenario-paired comparisons, all
 The predeclared sensitivity doubles the one-way fee from 0.25% to 0.50% without changing calibration, targets or rule parameters. Both accounting and the cost hurdle use the changed fee, so actions can differ. Evaluate the originally selected rule at the higher fee rather than selecting a new primary rule from the sensitivity. Fee-specific suitability changes are a separate counterfactual and do not by themselves establish robustness of one fixed strategy. [E2]
 
 <!-- SLOT:SENSITIVITY_RESULTS -->
-PENDING SENSITIVITY_RESULTS: insert accepted original/doubled-fee summaries for the same primary rule, paired changes where specified, trade/review changes and whether the recommendation changes. Submitted but unaccepted outputs are not numerical evidence.
+The accepted same-mode sensitivity uses 120 development scenarios and the common 30-year horizon. Calibration and all non-fee parameters are unchanged, while actual fees and the decision hurdle both use the stated rate. The table shows the annual reference and every Balanced variant at both fees, without selecting a different primary rule. Growth is real percent/year; loss and the two action frequencies are percentages. A dash means that human-review actions are not defined for the unoverlaid annual reference. [E1, E5]
+
+{{SENSITIVITY_H30_TABLE}}
+
+For fixed-prior Balanced, median growth rounds to 4.53% per year at both fee rates, while the trade share falls from 9.72% to 8.33%. Median drawdown rises from 26.84% to 28.26%, and p90 drawdown rises from 41.94% to 42.02%. Fewer transactions therefore do not establish lower realized loss. Changing the cost hurdle changes decisions and holdings paths, so these summaries are not a mechanical fee subtraction from one unchanged portfolio path. [E1, E5]
+
+PENDING SENSITIVITY_RESULTS: after the predeclared primary choice is accepted, identify its row above and complete the recommendation-impact statement. Fee-specific client assignments still require accepted own-horizon rescreens and must not replace the primary recommendation automatically.
 <!-- END_SLOT:SENSITIVITY_RESULTS -->
 
 <!-- SLOT:CUSTOMER_EXPLANATION -->
@@ -125,5 +131,7 @@ PENDING CONCLUSION: reconcile the abstract, selected rule, client decisions, sen
 [E3] Writing coverage, independent acceptance and completion gates: report/evidence-map.json, ops/PROTOCOL.md and chief acceptance records. report/submission-status.json records the draft's actual unresolved slots and source mappings.
 
 [E4] Accepted HY3-003 baseline summaries: producer 7652410d73425371110784ef5fa97c03470a074e, independent review 818af5d65bd8a271962d848dd552bd39ca561f68; report/baseline-development-provenance.json preserves source rows and display provenance.
+
+[E5] Accepted HY3-006 doubled-fee results: producer 319781ef3c7fb5d4328a0ae4cea438bcc26a6f18; fresh HY3-007 verification at 194a45ac5fced5dfab02903e4e732b1cac1c6e67. Chief acceptance is recorded in audit/chief/HY3-006-review.json and audit/chief/CHIEF-HY3-006-20261020-review.json. The latter records actual execution of earlier Sol and chief numerical checks, with their sampling limitations; the failed original Sol task is not accepted retrospectively.
 
 GPT-6 Astra xhigh, followed by GPT-6.1 Sol xhigh in Codex, coordinated specifications, integration, numerical checks and drafting. GPT-6.1 Sol xhigh on a separate computer implemented and independently reviewed assigned components. HY3 in WorkBuddy supervised fixed Python computations on a third computer. AI text and task completion labels were not treated as numerical verification. Human team members are responsible for the submitted work, interpretation and final checks.

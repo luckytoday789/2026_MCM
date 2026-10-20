@@ -14,7 +14,7 @@
     "FINAL_EVALUATION",
     "CONCLUSION"
   ],
-  "word_count": 2737,
+  "word_count": 3094,
   "source_registry": {
     "E0": [
       "specs/PROBLEM_LOCK.md",
@@ -39,6 +39,10 @@
       "report/baseline-development-provenance.json",
       "audit/chief/HY3-003-review.json",
       "audit/chief/SOL-008-review.json"
+    ],
+    "E5": [
+      "audit/chief/HY3-006-review.json",
+      "audit/chief/CHIEF-HY3-006-20261020-review.json"
     ]
   },
   "numeric_paragraph_mappings": [
@@ -56,9 +60,10 @@
       ]
     },
     {
-      "paragraph_sha256": "7ea3e1368304bee8e89186a411d6cfc0f6df475867e1b52bd034920df0b369f7",
+      "paragraph_sha256": "0aef5283631ea69024675191b59ffe888680c55e87bec162034b9b29efa1f86b",
       "sources": [
-        "E3"
+        "E3",
+        "E5"
       ]
     },
     {
@@ -200,6 +205,13 @@
       ]
     },
     {
+      "paragraph_sha256": "e26702a211646a639facd08829a6ffd6e6436fb52e3cea2fe09c5df244f360e1",
+      "sources": [
+        "E1",
+        "E5"
+      ]
+    },
+    {
       "paragraph_sha256": "a538ea1a69163d5c88c11d194c5c10c299a8f181156115ad72e8eb86b5cdd152",
       "sources": [
         "E0",
@@ -250,6 +262,12 @@
       ]
     },
     {
+      "paragraph_sha256": "c49595dc99e301bdf7fd423c9710f40d3ab25b41f47999e685e0ee7c99a5c01a",
+      "sources": [
+        "E5"
+      ]
+    },
+    {
       "paragraph_sha256": "ddb1b001997b4ed034d1853198a36ca03afda5265b42a00fe2dfc9914915771d",
       "sources": [
         "E3"
@@ -258,8 +276,204 @@
   ],
   "primary_producer": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
   "primary_review": "a9073e1d0ab5aadea639daf34ba76fab728d636f",
+  "primary_current_acceptances": {
+    "HY3-004": {
+      "commit": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
+      "path": "audit/chief/HY3-004-typed-approval.json",
+      "sha256": "132dd65d28b6d7397e57b94a2be298e454e645bf95faee983df015dd2272a22c"
+    },
+    "SOL-040": {
+      "commit": "a9073e1d0ab5aadea639daf34ba76fab728d636f",
+      "path": "audit/chief/SOL-040-typed-approval.json",
+      "sha256": "4192c7b82abf8375503817a74813c01abee0c0c8fa6f1085c8f82cae5839c2d3"
+    }
+  },
   "baseline_producer": "7652410d73425371110784ef5fa97c03470a074e",
   "baseline_review": "818af5d65bd8a271962d848dd552bd39ca561f68",
+  "doubled_fee_provenance": {
+    "producer_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+    "independent_review_commit": "194a45ac5fced5dfab02903e4e732b1cac1c6e67",
+    "source_rows": {
+      "results/development/HY3-006/cases/equal_weight_annual/summary.csv": {
+        "sha256": "daa70df9a2f83ec76b8dbbeee07a4095f040fe52ea84ba57e90d7e107371efe1",
+        "source_row": {
+          "split": "development",
+          "mode": "equal_weight_annual",
+          "horizon": "30",
+          "scenario_count": "120",
+          "median_growth_pct": "3.5614110150732348",
+          "p10_growth_pct": "1.2642866370999806",
+          "median_loss_pct": "20.12453675605115",
+          "p90_loss_pct": "34.896977428232724",
+          "median_volatility_pct": "8.030314027558415",
+          "median_terminal_real_wealth": "285.719091475716",
+          "median_nominal_fee_sum": "1.8874234886468835",
+          "pooled_trade_count": "3600",
+          "pooled_review_count": "3600",
+          "pooled_later_trade_count": "3480",
+          "pooled_later_review_count": "3480",
+          "pooled_trade_share_pct": "100.0",
+          "pooled_trade_share_ex_initial_pct": "100.0",
+          "severe_scenario_id": "5",
+          "severe_net_real_cagr_pct": "2.6553150934097935",
+          "severe_max_real_drawdown_pct": "50.92547700005535",
+          "severe_terminal_real_wealth": "219.5043903609196",
+          "severe_drawdown_peak_year": "1",
+          "severe_drawdown_peak_kind": "end",
+          "severe_drawdown_trough_year": "8",
+          "severe_drawdown_trough_kind": "post_fee",
+          "severe_trade_share_pct": "100.0",
+          "severe_trade_share_ex_initial_pct": "100.0",
+          "monetary_units": "nominal units; real wealth in CPI_0 purchasing power",
+          "return_units": "annual simple decimal",
+          "cpi_units": "price index; CPI_0=1",
+          "growth_units": "percent/year",
+          "volatility_units": "percentage points; annual sample ddof=1",
+          "loss_units": "percent of running real peak",
+          "trade_share_units": "percent of annual reviews",
+          "fee_rate": "0.005",
+          "pooled_human_review_count": "",
+          "pooled_human_review_share_pct": "",
+          "pooled_target_change_count": ""
+        }
+      },
+      "results/development/HY3-006/cases/balanced_cost/summary.csv": {
+        "sha256": "72bda43b1fce8014eeac7ef388b5365910e94ff2a81ee965d5a94a45f1a1b853",
+        "source_row": {
+          "split": "development",
+          "mode": "balanced_cost",
+          "horizon": "30",
+          "scenario_count": "120",
+          "median_growth_pct": "4.526725206760551",
+          "p10_growth_pct": "1.096044791175661",
+          "median_loss_pct": "28.261351548882715",
+          "p90_loss_pct": "42.02260523587642",
+          "median_volatility_pct": "10.293273639121104",
+          "median_terminal_real_wealth": "377.4662467129813",
+          "median_nominal_fee_sum": "0.370067422219549",
+          "pooled_trade_count": "300",
+          "pooled_review_count": "3600",
+          "pooled_later_trade_count": "180",
+          "pooled_later_review_count": "3480",
+          "pooled_trade_share_pct": "8.333333333333334",
+          "pooled_trade_share_ex_initial_pct": "5.172413793103448",
+          "severe_scenario_id": "102",
+          "severe_net_real_cagr_pct": "1.837411556911106",
+          "severe_max_real_drawdown_pct": "54.21365323645857",
+          "severe_terminal_real_wealth": "172.67146128328335",
+          "severe_drawdown_peak_year": "25",
+          "severe_drawdown_peak_kind": "end",
+          "severe_drawdown_trough_year": "30",
+          "severe_drawdown_trough_kind": "end",
+          "severe_trade_share_pct": "10.0",
+          "severe_trade_share_ex_initial_pct": "6.896551724137931",
+          "monetary_units": "nominal units; real wealth in CPI_0 purchasing power",
+          "return_units": "annual simple decimal",
+          "cpi_units": "price index; CPI_0=1",
+          "growth_units": "percent/year",
+          "volatility_units": "percentage points; annual sample ddof=1",
+          "loss_units": "percent of running real peak",
+          "trade_share_units": "percent of annual reviews",
+          "fee_rate": "0.005",
+          "pooled_human_review_count": "939",
+          "pooled_human_review_share_pct": "26.083333333333332",
+          "pooled_target_change_count": "0"
+        }
+      },
+      "results/development/HY3-006/cases/balanced_context/summary.csv": {
+        "sha256": "4766442e10c659f4350ecd41ef3b14531f0ba7141ec27685dfa7285b44cdef63",
+        "source_row": {
+          "split": "development",
+          "mode": "balanced_context",
+          "horizon": "30",
+          "scenario_count": "120",
+          "median_growth_pct": "4.363394379692909",
+          "p10_growth_pct": "1.017411967289077",
+          "median_loss_pct": "27.723504615761904",
+          "p90_loss_pct": "40.68333711010612",
+          "median_volatility_pct": "9.842254746320954",
+          "median_terminal_real_wealth": "360.1292450549065",
+          "median_nominal_fee_sum": "0.34849129612051793",
+          "pooled_trade_count": "220",
+          "pooled_review_count": "3600",
+          "pooled_later_trade_count": "100",
+          "pooled_later_review_count": "3480",
+          "pooled_trade_share_pct": "6.111111111111111",
+          "pooled_trade_share_ex_initial_pct": "2.8735632183908044",
+          "severe_scenario_id": "114",
+          "severe_net_real_cagr_pct": "4.3365351191661405",
+          "severe_max_real_drawdown_pct": "52.61172074386884",
+          "severe_terminal_real_wealth": "357.3487835856711",
+          "severe_drawdown_peak_year": "17",
+          "severe_drawdown_peak_kind": "end",
+          "severe_drawdown_trough_year": "23",
+          "severe_drawdown_trough_kind": "end",
+          "severe_trade_share_pct": "3.3333333333333335",
+          "severe_trade_share_ex_initial_pct": "0.0",
+          "monetary_units": "nominal units; real wealth in CPI_0 purchasing power",
+          "return_units": "annual simple decimal",
+          "cpi_units": "price index; CPI_0=1",
+          "growth_units": "percent/year",
+          "volatility_units": "percentage points; annual sample ddof=1",
+          "loss_units": "percent of running real peak",
+          "trade_share_units": "percent of annual reviews",
+          "fee_rate": "0.005",
+          "pooled_human_review_count": "909",
+          "pooled_human_review_share_pct": "25.25",
+          "pooled_target_change_count": "0"
+        }
+      },
+      "results/development/HY3-006/cases/balanced_adaptive/summary.csv": {
+        "sha256": "2bf180d1a03ad7dac4c7dce188a35222e9e7fc492638b6ff66122510fcdd1f21",
+        "source_row": {
+          "split": "development",
+          "mode": "balanced_adaptive",
+          "horizon": "30",
+          "scenario_count": "120",
+          "median_growth_pct": "4.244124208287259",
+          "p10_growth_pct": "1.1150026805178648",
+          "median_loss_pct": "27.640226064681016",
+          "p90_loss_pct": "42.53812197214523",
+          "median_volatility_pct": "10.19504288462258",
+          "median_terminal_real_wealth": "347.97913012952756",
+          "median_nominal_fee_sum": "0.5833100503467894",
+          "pooled_trade_count": "331",
+          "pooled_review_count": "3600",
+          "pooled_later_trade_count": "211",
+          "pooled_later_review_count": "3480",
+          "pooled_trade_share_pct": "9.194444444444445",
+          "pooled_trade_share_ex_initial_pct": "6.063218390804598",
+          "severe_scenario_id": "114",
+          "severe_net_real_cagr_pct": "4.3365351191661405",
+          "severe_max_real_drawdown_pct": "52.61172074386884",
+          "severe_terminal_real_wealth": "357.3487835856711",
+          "severe_drawdown_peak_year": "17",
+          "severe_drawdown_peak_kind": "end",
+          "severe_drawdown_trough_year": "23",
+          "severe_drawdown_trough_kind": "end",
+          "severe_trade_share_pct": "3.3333333333333335",
+          "severe_trade_share_ex_initial_pct": "0.0",
+          "monetary_units": "nominal units; real wealth in CPI_0 purchasing power",
+          "return_units": "annual simple decimal",
+          "cpi_units": "price index; CPI_0=1",
+          "growth_units": "percent/year",
+          "volatility_units": "percentage points; annual sample ddof=1",
+          "loss_units": "percent of running real peak",
+          "trade_share_units": "percent of annual reviews",
+          "fee_rate": "0.005",
+          "pooled_human_review_count": "1015",
+          "pooled_human_review_share_pct": "28.194444444444443",
+          "pooled_target_change_count": "118"
+        }
+      }
+    }
+  },
+  "doubled_fee_prose_checks": {
+    "median_growth_pct": "4.53",
+    "median_loss_pct": "28.26",
+    "p90_loss_pct": "42.02",
+    "pooled_trade_share_pct": "8.33"
+  },
   "prose_result_claim_checks": {
     "horizon": 30,
     "split": "development",
@@ -288,19 +502,21 @@
     "baseline_annual_severe_loss_pct": "50.88"
   },
   "source_hashes": {
+    "audit/chief/CHIEF-HY3-006-20261020-review.json": "e32f8b64d80a163bb69b8350078f1d799a524276a774ac43970e9763434953ed",
     "audit/chief/HY3-003-review.json": "49770913724204472524ee06f0cb2445a3c12150a128a98ee13c5b7e50f86430",
     "audit/chief/HY3-004-review.json": "726ac55416bd46f838bba75d0b17d60fd4e8f5d195c6edeac20881a62d637f27",
+    "audit/chief/HY3-006-review.json": "b8cad22c2080443476d6dbe850a78f435e8c694f62c9e0260ffbd8a39ab0722f",
     "audit/chief/SOL-008-review.json": "9f202890920efd15480f9e3f3c904ddd52f282dafd5b9962e261bfdd9a135e77",
     "audit/chief/SOL-040-review.json": "4b9a72df4204389a66eed8db8c697ab7b727ad1b743a3227e8011162c24050c6",
     "ops/PROTOCOL.md": "10f6f27536ad251f258292c98050a2ff03811ef95e1ea4cce6cf6e40cee97c10",
     "report/baseline-development-provenance.json": "0bae68910774eb63ad656a85c040da9d1fbc70983f319927c012941c76b9792c",
-    "report/build_submission.py": "6c9bfcfe4f6a3c3c7ef717aa2bd50a6eae46691b5458d1356fb54fa8b5931574",
+    "report/build_submission.py": "f6883b7d6cdd2845f9b2e694dc2dd8425b52ba983983d1d249699d740529e932",
     "report/evidence-map.json": "ccecc62b7f6cefbc9840d135fb43835edc1a889c0bdd6bcbbbe9009eb25fa11d",
     "report/methods-draft.md": "93dd45bceb6ebf1ce4560d27fc2a7b3c8432abf304673e99a76496f942ec31ac",
     "report/policy-catalogue.md": "874c2dd03858f5cfcf43925de3c9860b5587de9bad84622f36c32ee6a8e60f76",
     "report/policy-methods-draft.md": "82fe46bca0f4aff3490e2195d0a2ec0c85df309b1129b6ecbd8a6b2b11d0b70f",
     "report/primary-development-provenance.json": "06634d75e0e4a373a8b95bfaf16a64e857697e9b0eb54abe8f762305c053ee9c",
-    "report/submission-draft.md": "e7d00fa625c47bff6472dcc8af6b74e382690d645d36283d72d5584f59775283",
+    "report/submission-draft.md": "fe2aad6ffefc862b7eda834a22d5938184217ddeaaa6a0674ae308403065741e",
     "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
     "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
     "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3"
@@ -311,7 +527,7 @@
   "max_pages": 10,
   "missing_evidence": [
     "authenticated promotion comparisons and choice",
-    "independently accepted cost sensitivity",
+    "recommendation impact of accepted cost sensitivity",
     "own-horizon personalized production rescreens",
     "accepted all-development refit and final engine",
     "recorded freeze before final access",
@@ -321,19 +537,23 @@
     "local names, final rendering and source ZIP checks"
   ],
   "pdf_checks": {
-    "pdf_sha256": "5152a2a4fd551ac00f71e6174be7138588a2fc2a6a21478cc04fd3eca4c900d3",
-    "pages": 5,
+    "pdf_sha256": "e0afe0fdc8f3416f323416fb6fbf94d66d7079d5ffee2bf76d76ef6be216607d",
+    "pages": 6,
     "paper": "A4",
     "minimum_font_pt": 11.0,
     "within_page_limit": true,
     "all_pages_marked_incomplete": true,
-    "visual_review": "chief inspected all five pages; pass as incomplete preparation"
+    "visual_review": "chief inspected all six pages; pass as incomplete preparation"
   },
-  "created_at": "2026-10-20T11:06:32.337102+00:00",
-  "local_output_directory": ".runtime/submission/draft-v2",
+  "created_at": "2026-10-20T11:30:18.226235+00:00",
+  "local_output_directory": ".runtime/submission/draft-v4",
   "validation": "audit/chief/takeover-manuscript/validation.json",
   "build_instruction": "python -B report/build_submission.py --output-dir .runtime/submission/CHOOSE_A_FRESH_DIRECTORY",
-  "optional_identity_instruction": "For local-only identity insertion, use --team-file .runtime/LOCAL_REPORT_TEAM.json containing a report_display string. Never track or upload that private file or local PDF.",
-  "completion_instruction": "Fill pending source slots only from newly accepted evidence; update executive summary and conclusion; update builder/schema and remove draft markings only after full manuscript, identity, final and packaging gates pass.",
-  "remaining_page_capacity_current_layout": 5
+  "optional_identity_instruction": "--team-file may read an ignored .runtime JSON containing report_display; never upload private identities or local PDF.",
+  "completion_instruction": "Promotion and personalized/final conclusions remain pending. Accepted doubled-fee results are now inserted; fill sensitivity recommendation impact only after accepted primary selection.",
+  "remaining_page_capacity_current_layout": 4,
+  "acceptance_pointer_update": "Primary source/display rows remain unchanged; same-commit typed positive approval pointers are reauthenticated while historical report provenance is preserved.",
+  "failed_preparation_checks": [
+    "Initial new build rejected changed approval pointer in historical primary provenance; restricted same-result typed-approval rebinding added. No numeric/source row was changed."
+  ]
 }
