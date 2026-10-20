@@ -1519,6 +1519,16 @@
       "note": "Narrow original-log recovery and unchanged exact numerical replay;0writer launches. Dispatch immediately after in-flight SOL-038. SOL-041 historical delivery rejection preserved;HY3-006 pending."
     },
     {
+      "id": "SOL-044",
+      "attempt": 1,
+      "owner": "sol",
+      "state": "ready",
+      "branch": "work/sol/SOL-044-a1",
+      "task_sha256": "e2f57ae94dec848739d22f1665dc11fffa1ad02c0bd595c6bf6b71bec4ac7dee",
+      "released_at": "2026-10-20T10:51:30.268563+00:00",
+      "note": "Narrow correction of exact failed SOL-038 delivery; new positive assembly identity. Chief12 tests/portable replay/2820 scalar facts pass; original parent failure and7 mismatches preserved. Queue after in-flightSOL-043,beforeSOL-039;no production/final access."
+    },
+    {
       "id": "SOL-039",
       "state": "ready",
       "owner": "sol",

@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T10:54:06.658887+00:00",
-  "reason": "Publish narrow SOL-044 after pushed recovery prerequisites; SOL-043 currently running. Exact failed SOL-038 source replay passed but original parent delivery stays rejected.",
+  "next_wake_at": "2026-10-20T10:56:30.268563+00:00",
+  "reason": "SOL-044 narrow correction dispatched after existing SOL-043; useful chief report/status reconciliation and publication preparation remain.",
   "next_actions": [
     "SOL-040 and HY3-004 accepted at exact a9073e1d0ab5aadea639daf34ba76fab728d636f and6aa2ccdce80834c8beb52a827993f1f587d1d8a6. Preserve failed SOL-036 and all quota/interruption history.",
     "Inspect exact SOL-043 original-log recovery; current in-flight lease observed2026-10-20T10:44:50Z. Preserve rejected SOL-041 and pending HY3-006; no new producer/writer run.",
-    "Publish new SOL-044 narrow generated assembly recovery after prerequisite commit is on origin/main; preserve all failed SOL-034/SOL-038 evidence. SOL-039 and SOL-042 remain existing tasks.",
+    "Inspect exact SOL-044 narrow generated assembly recovery after SOL-043; chief source/2820 scalar acceptance required. SOL-039/SOL-042 remain existing ready tasks.",
     "After both producer acceptances and exact SOL-038 code acceptance, publish actual analysis source C,configuration E,task P in separate pushed commits; HY3 fixed commands. Independently review output before personalized bridge/rescreens.",
     "After exact SOL-042 acceptance, publish narrow generated-only final path implementation task against real pushed source using FINAL_PATH_ENGINE_HANDOFF.md and chief scalar refs. Retain all old public final guards.",
     "Actual refit waits accepted development choices and all ten personalized rescreens plus reviewed fixed loader. Final tables/persistence,freeze attestation,gate,one final evaluation,report and package remain. No private identity upload or automatic submission."
@@ -15,14 +15,14 @@
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": false,
-  "last_completed_at": "2026-10-20T10:49:06.658887+00:00",
+  "last_completed_at": "2026-10-20T10:51:30.268563+00:00",
   "quota_probe_verified_commit": "11ade9aeb4726473e65c32cfd254e03d9aec54b4",
   "quota_probe_release_not_before": "2026-10-20T15:55:00+08:00",
   "quota_probe_current_status": "SOL037_exact_success_accepted_reviews_released",
   "last_successful_quota_probe_commit": "11ade9aeb4726473e65c32cfd254e03d9aec54b4",
   "quota_probe_task": "SOL-037",
   "quota_probe_remaining_additional_attempts_after_SOL028": 1,
-  "last_outcome_zh": "SOL-038\u5931\u8d25\u5df2\u6838\u9a8c\u5e76\u4fdd\u7559\uff1b\u7cbe\u786e\u590d\u8dd112\u9879\u6d4b\u8bd5\u548c2820\u9879\u6807\u91cf\u68c0\u67e5\u901a\u8fc7\uff0c\u51c6\u5907\u53d1\u5e03\u8303\u56f4\u53d7\u9650\u7684SOL-044\u3002",
+  "last_outcome_zh": "\u5df2\u53d1\u5e03SOL-044\u8303\u56f4\u53d7\u9650\u4fee\u590d\u4efb\u52a1\uff1b\u4fdd\u7559SOL-038\u5931\u8d25\uff0c\u6700\u7ec8\u6570\u636e\u7ee7\u7eed\u5173\u95ed\u3002",
   "baseline_figure_source_commit": "04be213a76855b1b1815405a735f2a49be678935",
   "baseline_figure_review_task": "SOL-030",
   "layout_proof_path": "report/layout-proof/methods-baselines.pdf",
@@ -63,7 +63,7 @@
   "development_task_publication_P": "2ea73da59d393893f06a8169432c5d9e0b168c50",
   "development_primary_task": "HY3-004",
   "development_doubled_task": "HY3-006",
-  "analysis_assembly_task": "SOL-038",
+  "analysis_assembly_task": "SOL-044",
   "prepared_development_numeric_reviewer": "audit/chief/review_development_case_bundle.py",
   "prepared_development_numeric_reviewer_status": "HY3-004 actual 736571 ledger/metric checks plus473823 decision checks; isolated writer pass; still no independent acceptance",
   "development_primary_result_candidate": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
@@ -95,5 +95,7 @@
   "development_doubled_review_rejection": "audit/chief/SOL-041-delivery-rejection.json",
   "analysis_assembly_failed_commit": "e1783a918122d8eaa507e42ca15a9c0a5f5b9339",
   "analysis_assembly_recovery_spec": "specs/SOL038_DELIVERY_RECOVERY.md",
-  "analysis_assembly_replay": "audit/chief/SOL-038-delivery-review.json"
+  "analysis_assembly_replay": "audit/chief/SOL-038-delivery-review.json",
+  "analysis_assembly_predecessor": "SOL-038",
+  "analysis_assembly_recovery_base": "268c471e63a055d7997445840a37695084ab9c94"
 }
