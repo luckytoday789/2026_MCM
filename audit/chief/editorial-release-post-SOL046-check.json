@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "SOL046_promoted_canonical_artifacts": 13,
+  "actual_release_refusal": {
+    "exit_code": 1,
+    "error": "ValueError: Independent release gate is not accepted: SOL-047",
+    "output_directory_created": false
+  },
+  "private_names_printed_or_pushed": false,
+  "final_pdf_generated": false
+}

@@ -1,0 +1,14 @@
+# Exact SOL-046 reproduction limits
+
+Accepted worker commit: `0ed56de4b70bef0083ca2cf414f5aa2dce8606f0`.
+Acceptance: `audit/chief/SOL-046-review.json`. All canonical receipt hashes and all promoted blobs match that commit. The review covers source/freeze/development evidence; it does not approve final outcomes or the full manuscript.
+
+The outer agent receipt records its real assigned-model call and validation command. Its prescribed 22-test command is preserved with exact argv, exit, stdout/stderr in the canonical `execution_log.json`. The existing canonical verifier accepts the explicit `agent_command_log_path` argument to authenticate that inner command evidence. No command or pass is inferred from narrative wording. Missing inner evidence and a non-command artifact were actually rejected; the prior fixed-command receipt still passed.
+
+Chief's first local unittest invocation encountered an unrelated `tests` package loaded by this machine's site configuration. Using Python 3.12 with `-S -B -m unittest tests.test_final_refit tests.test_final_paths tests.test_final_execution -v` excluded those site paths and passed all 22 generated tests. This environment correction did not change source or test text. The full original failure remains in the acceptance record.
+
+The first isolated read-only checker recomputed its independent fixtures successfully but rejected saved internal byte hashes. `verification.json` hashes the original worker-local CRLF bytes for `fixtures.json` and `reference_findings.json`, while canonical Git stores LF. Other listed files use LF. Chief reconstructed each listed file in the ignored detached review checkout by selecting only canonical Git bytes or their exact LF-to-CRLF conversion whose SHA256 equals the already recorded internal digest. The checker source and published evidence were not edited. This intentionally produces checkout EOL differences in the isolated review directory; never commit them or apply them to main.
+
+After that documented reconstruction, exact `verify.py --check` returned zero and left every audit artifact byte unchanged. Its supplied deliberately doubled fee fixture returned one with `saved independent fixture mismatch`, also without writes. The acceptance record preserves both earlier failures, every per-file canonical/local digest, full actual command outputs and final checks. This demonstrates reproducible numerical review with a disclosed historical byte-format limitation, not portable success on an untouched LF checkout.
+
+No original observations, final input or production policy evaluation were read or executed by this acceptance. The shared final gate and frozen policy remain unchanged. Preserve this limitation in the source supplement; do not rewrite the historical receipt or claim remote authorship for chief work.

@@ -1,3 +1,24 @@
+# Latest bounded chief checkpoint, 2026-10-20 22:10 Beijing
+
+This checkpoint supersedes older pending SOL-046 and renderer-release fields below.
+Final exposure remains OPEN, all original negative findings remain, and no policy tuning or accepted production rerun occurred.
+
+- SOL-046 is ACCEPTED at exact `0ed56de4b70bef0083ca2cf414f5aa2dce8606f0`; all14 paths including receipt promoted in main `9830af59f0161a357c2ef4c01038e027cce54012`. All13 canonical artifact hashes,40 source hashes,task/base/scope and actual nested prescribed command evidence pass. Chief reproduced22 synthetic tests, five independent fixture groups,130 bound blobs,all480 development metrics and selected saved paths; deliberately doubled fee fixture rejected. Acceptance is supplemental source/freeze/development review ONLY, not final-result or whole-manuscript acceptance.
+- Preserve the actual local failures and limits in `audit/chief/SOL-046-review.json` and `SOL-046-portability.md`. First local unittest call imported an unrelated installed tests package; `-S` isolated the stdlib review and all22 tests passed. The untouched LF checker then failed on historical worker-local CRLF fixture hashes. Exact per-file LF/CRLF reconstruction in ignored detached `.runtime/review-SOL-046-exact` reproduced the unchanged checker with exit0 and the corruption with exit1, every audit byte unchanged during checks. Reconstructed checkout EOL differences are intentional and local; never promote them. Published receipt/artifacts are unchanged. Do not claim portable untouched-LF checker success.
+- Existing `verify_canonical_receipt.verify()` now supports optional explicit `agent_command_log_path`; it authenticates canonical inner argv/exit/stdout/stderr when agent runner records only model+validation outside. Missing nested evidence and non-command evidence were actually rejected; existing SOL-045 commands receipt still passes. Never infer tests from a narrative.
+- Existing report renderer now supports guarded `--release`, published at `c993e884278a257a7d6586eb763caf21db13a524`. Original review text is unchanged and the review PDF remains byte-identical SHA256749b795a06e62d5b7df834690b410a0695b788ce32fd8dddc01557ca9b4621bc,8 A4 pages,min11pt. Gate requires accepted positive046/047/048, exact original manuscript/evidence hashes and the ignored local name display. Only names/review label/page furniture/filename change. Real CLI refusal after046 correctly stopped on047 and created no directory or PDF; record `audit/chief/editorial-release-post-SOL046-check.json`. Do not call prepared output final or submission-ready.
+- SOL-047 and SOL-048 remain original immutable ready tasks. Latest actually fetched Sol lease14:05:13UTC to14:15:13UTC reports RUNNING SOL-047; verify a fresh lease/receipt before any later online claim. No new task/probe/worker/coordinator/supervisor was started.
+- Latest actual quota85%, floor40%, no drain observed. No actual human-help request. Main production/freeze source and prior accepted results remain unchanged. Private identities stay ignored/local.
+
+Next chain:
+1. Fetch exact SOL-047/048 receipts. Inspect code/findings and independent derivations before executing each read-only checker in its exact pinned workspace. Authenticate actual inner commands if needed, reject unsupported success, preserve failures and only reconstruct historical line endings when their exact saved hashes prove equivalence. Promote supported exact outputs/receipt and queue hashes before downstream references.
+2. Only after both positive independent gates, use current existing renderer `--release --team-file .runtime/team-report-display.json --output-dir .runtime/<NEW_RELEASE_DIRECTORY>`. Use bundled reportlab runtime. This creates `SafeInvest-final.pdf` but deliberately leaves submission_ready=false until external layout/package acceptance. Do not alter the exact manuscript/template/status evidence bound by048; broader corrections require their actual review.
+3. Render/view EVERY final PDF page, require<=10A4/min11pt,correct three local names,AI disclosure,all-A-E human-review conclusion,no placeholders/review furniture; record final SHA and exact editorial-only text comparison.
+4. Push final accepted records and regenerate<=50MB source ZIP with existing builder from clean pushed main. Verify all members/bundle/offline reconstruction and final manifest. Current older26MB candidate remains historical, not final release. Keep private PDF/identities local. Humans submit; never upload the entry.
+5. Only after all remaining content/review/render/package gates pass mark control complete and workplan inactive. Currently solely awaiting remote results: one30-minute fallback, incoming actual results trigger sooner.
+
+---
+
 # Latest bounded chief checkpoint, 2026-10-20 21:48 Beijing
 
 This top checkpoint supersedes older pending manuscript/probe fields below.
