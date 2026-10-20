@@ -1,0 +1,144 @@
+{
+  "boundary": {
+    "analysis_called_after_failure": false,
+    "failure": {
+      "argv": [
+        "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+        "-B",
+        "scripts/check.py",
+        "--config",
+        "primary.json",
+        "--output",
+        "primary",
+        "--check"
+      ],
+      "elapsed_seconds": 3.0310000000172295,
+      "group": "primary",
+      "python": "3.12.14",
+      "pythonpath_absent": true,
+      "returncode": 9,
+      "script_sha256": "861fd6a6f40a44595c243e432dae7875eeb0134edec438665aa3aa058ebf1f0e",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"checked_saved_generated_fixture\": true, \"guard\": \"passed\", \"exit\": 9, \"modules\": {\"safeinvest.accounting\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\accounting.py\", \"relative_path\": \"src/safeinvest/accounting.py\", \"sha256\": \"0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5\"}, \"safeinvest.metrics\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\metrics.py\", \"relative_path\": \"src/safeinvest/metrics.py\", \"sha256\": \"efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e\"}, \"safeinvest.backtest\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\backtest.py\", \"relative_path\": \"src/safeinvest/backtest.py\", \"sha256\": \"bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6\"}, \"safeinvest\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\__init__.py\", \"relative_path\": \"src/safeinvest/__init__.py\", \"sha256\": \"b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef\"}, \"safeinvest.policy_pilot\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\policy_pilot.py\", \"relative_path\": \"src/safeinvest/policy_pilot.py\", \"sha256\": \"5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057\"}, \"safeinvest.policy_calibration\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\policy_calibration.py\", \"relative_path\": \"src/safeinvest/policy_calibration.py\", \"sha256\": \"d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a\"}, \"safeinvest.baselines\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\baselines.py\", \"relative_path\": \"src/safeinvest/baselines.py\", \"sha256\": \"a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce\"}, \"safeinvest.experiments\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\experiments.py\", \"relative_path\": \"src/safeinvest/experiments.py\", \"sha256\": \"8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca\"}, \"safeinvest.policy_cases\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\policy_cases.py\", \"relative_path\": \"src/safeinvest/policy_cases.py\", \"sha256\": \"84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7\"}, \"safeinvest.policy_writer\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\policy_writer.py\", \"relative_path\": \"src/safeinvest/policy_writer.py\", \"sha256\": \"feca1b69de00cb5677337796c32ab91cd7262351bfed9c9ee5ac1ff5fab46226\"}}, \"executable\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.venv\\\\Scripts\\\\python.exe\"}\r\n",
+      "stdout_sha256": "e84b5d61d245d81772edd23c94226b0e483539a9c0b9fec71de979eb1d673f11"
+    },
+    "success": [
+      {
+        "argv": [
+          "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+          "-B",
+          "scripts/check.py",
+          "--config",
+          "primary.json",
+          "--output",
+          "primary",
+          "--check"
+        ],
+        "elapsed_seconds": 3.485000000044238,
+        "group": "primary",
+        "python": "3.12.14",
+        "pythonpath_absent": true,
+        "returncode": 0,
+        "script_sha256": "861fd6a6f40a44595c243e432dae7875eeb0134edec438665aa3aa058ebf1f0e",
+        "stderr": "",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "{\"checked_saved_generated_fixture\": true, \"guard\": \"passed\", \"exit\": 0, \"modules\": {\"safeinvest.accounting\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\accounting.py\", \"relative_path\": \"src/safeinvest/accounting.py\", \"sha256\": \"0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5\"}, \"safeinvest.metrics\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\metrics.py\", \"relative_path\": \"src/safeinvest/metrics.py\", \"sha256\": \"efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e\"}, \"safeinvest.backtest\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\backtest.py\", \"relative_path\": \"src/safeinvest/backtest.py\", \"sha256\": \"bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6\"}, \"safeinvest\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\__init__.py\", \"relative_path\": \"src/safeinvest/__init__.py\", \"sha256\": \"b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef\"}, \"safeinvest.policy_pilot\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\policy_pilot.py\", \"relative_path\": \"src/safeinvest/policy_pilot.py\", \"sha256\": \"5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057\"}, \"safeinvest.policy_calibration\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\policy_calibration.py\", \"relative_path\": \"src/safeinvest/policy_calibration.py\", \"sha256\": \"d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a\"}, \"safeinvest.baselines\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\baselines.py\", \"relative_path\": \"src/safeinvest/baselines.py\", \"sha256\": \"a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce\"}, \"safeinvest.experiments\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\experiments.py\", \"relative_path\": \"src/safeinvest/experiments.py\", \"sha256\": \"8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca\"}, \"safeinvest.policy_cases\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\policy_cases.py\", \"relative_path\": \"src/safeinvest/policy_cases.py\", \"sha256\": \"84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7\"}, \"safeinvest.policy_writer\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\policy_writer.py\", \"relative_path\": \"src/safeinvest/policy_writer.py\", \"sha256\": \"feca1b69de00cb5677337796c32ab91cd7262351bfed9c9ee5ac1ff5fab46226\"}}, \"executable\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.venv\\\\Scripts\\\\python.exe\"}\r\n",
+        "stdout_sha256": "c7719392bceb97b9b75244be78768222417ee77bc6fc1f89b7f620e564648a2e"
+      },
+      {
+        "argv": [
+          "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+          "-B",
+          "scripts/check.py",
+          "--config",
+          "doubled.json",
+          "--output",
+          "doubled",
+          "--check"
+        ],
+        "elapsed_seconds": 3.139999999955762,
+        "group": "doubled",
+        "python": "3.12.14",
+        "pythonpath_absent": true,
+        "returncode": 0,
+        "script_sha256": "861fd6a6f40a44595c243e432dae7875eeb0134edec438665aa3aa058ebf1f0e",
+        "stderr": "",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "{\"checked_saved_generated_fixture\": true, \"guard\": \"passed\", \"exit\": 0, \"modules\": {\"safeinvest.accounting\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\accounting.py\", \"relative_path\": \"src/safeinvest/accounting.py\", \"sha256\": \"0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5\"}, \"safeinvest.metrics\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\metrics.py\", \"relative_path\": \"src/safeinvest/metrics.py\", \"sha256\": \"efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e\"}, \"safeinvest.backtest\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\backtest.py\", \"relative_path\": \"src/safeinvest/backtest.py\", \"sha256\": \"bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6\"}, \"safeinvest\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\__init__.py\", \"relative_path\": \"src/safeinvest/__init__.py\", \"sha256\": \"b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef\"}, \"safeinvest.policy_pilot\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\policy_pilot.py\", \"relative_path\": \"src/safeinvest/policy_pilot.py\", \"sha256\": \"5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057\"}, \"safeinvest.policy_calibration\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\policy_calibration.py\", \"relative_path\": \"src/safeinvest/policy_calibration.py\", \"sha256\": \"d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a\"}, \"safeinvest.baselines\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\baselines.py\", \"relative_path\": \"src/safeinvest/baselines.py\", \"sha256\": \"a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce\"}, \"safeinvest.experiments\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\experiments.py\", \"relative_path\": \"src/safeinvest/experiments.py\", \"sha256\": \"8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca\"}, \"safeinvest.policy_cases\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\policy_cases.py\", \"relative_path\": \"src/safeinvest/policy_cases.py\", \"sha256\": \"84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7\"}, \"safeinvest.policy_writer\": {\"path\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\worktrees\\\\SOL-038-a1\\\\src\\\\safeinvest\\\\policy_writer.py\", \"relative_path\": \"src/safeinvest/policy_writer.py\", \"sha256\": \"feca1b69de00cb5677337796c32ab91cd7262351bfed9c9ee5ac1ff5fab46226\"}}, \"executable\": \"E:\\\\2026_MCM\\\\sol-coop\\\\.venv\\\\Scripts\\\\python.exe\"}\r\n",
+        "stdout_sha256": "c7719392bceb97b9b75244be78768222417ee77bc6fc1f89b7f620e564648a2e"
+      }
+    ]
+  },
+  "context_gain": "0x0.0p+0",
+  "context_passed": false,
+  "context_positive_folds": 0,
+  "doubled_supported": false,
+  "git": {
+    "binding": {
+      "C": "5bb7eb1804571e9d63061ce2a634ef197e089093",
+      "E": "4ed7076e277a31402bc0c2fd3b6f25b7868e9532",
+      "P": "722e547a4d69f5f9a44bb760efbba453e511b63d",
+      "config_sha256": "4cf2cf8039d1a1abb5cdeeddbb97c750d281422f2ba7a7fd876be5a85af246ea",
+      "task": {
+        "attempt": 1,
+        "base_commit": "4ed7076e277a31402bc0c2fd3b6f25b7868e9532",
+        "config_sha256": "4cf2cf8039d1a1abb5cdeeddbb97c750d281422f2ba7a7fd876be5a85af246ea",
+        "id": "GEN-analysis",
+        "kind": "commands",
+        "owner": "hy3",
+        "scope": "PRIVATE GENERATED ASSEMBLY"
+      }
+    },
+    "checked_out_bytes_unchanged": true,
+    "later_HEAD": "ea64a810aabb46225743f0231c8ae7e46d4e428a",
+    "no_runtime_task": true,
+    "source_files": 100
+  },
+  "measured": {
+    "elapsed_seconds": 33.71899999998277,
+    "metric_rows": 320,
+    "output_bytes": 581515,
+    "output_files": {
+      "comparison_gates.json": 217323,
+      "paired_differences.csv": 105075,
+      "profile_recommendations.json": 46582,
+      "profile_screen.json": 53590,
+      "run_manifest.json": 139803,
+      "selection.json": 19142
+    }
+  },
+  "primary_selection": "balanced_adaptive",
+  "profile_assignments": {
+    "A": [
+      5,
+      "conservative"
+    ],
+    "B": [
+      15,
+      "conservative"
+    ],
+    "C": [
+      30,
+      "balanced"
+    ],
+    "D": [
+      25,
+      "conservative"
+    ],
+    "E": [
+      6,
+      "conservative"
+    ]
+  },
+  "quantile_example": {
+    "p10": 3.0,
+    "p90": 27.0,
+    "values": [
+      0.0,
+      10.0,
+      20.0,
+      30.0
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-038",
+  "failures": [
+    {
+      "operation": "exec_command reads (2)",
+      "error": "helper_unknown_error: setup refresh had errors",
+      "result": "no shell process created"
+    },
+    {
+      "operation": "synchronous Node tool owner for first focused tests",
+      "error": "js execution timed out; kernel reset",
+      "result": "incomplete first local logs preserved; no successful command exit claimed"
+    },
+    {
+      "operation": "tasklist diagnostic",
+      "error": "access denied",
+      "result": "no state mutation"
+    }
+  ]
+}

@@ -1,0 +1,2311 @@
+{
+  "$defs": {
+    "config": {
+      "additionalProperties": false,
+      "properties": {
+        "acceptance": {
+          "additionalProperties": false,
+          "properties": {
+            "SOL-016": {
+              "const": "ceec2b6d1107a4137ee3d24d689ba7ba614703c2"
+            },
+            "SOL-021": {
+              "const": "d154f90d1c50b37990b75ec0a45aa01a38252343"
+            },
+            "SOL-022": {
+              "const": "21ad493707d71240f83d7f01ed6d133e1380e8fb"
+            },
+            "SOL-025": {
+              "const": "803b7a085284405ee5ee4d4f0d5720ebaa2e67f7"
+            },
+            "SOL-031": {
+              "const": "a24dca5d5494455407207e0fd70c06b258d4fd1f"
+            },
+            "SOL-032": {
+              "const": "d168757efbc70e4641deacc911976f1fa3bd7a7c"
+            },
+            "SOL-038": {
+              "pattern": "^[0-9a-f]{40}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "SOL-016",
+            "SOL-021",
+            "SOL-022",
+            "SOL-025",
+            "SOL-031",
+            "SOL-032",
+            "SOL-038"
+          ],
+          "type": "object"
+        },
+        "execution": {
+          "additionalProperties": false,
+          "properties": {
+            "cpu_only": {
+              "const": true
+            },
+            "max_artifact_bytes": {
+              "const": 10485760
+            },
+            "max_seconds": {
+              "maximum": 1500,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "required_python": {
+              "const": "3.12"
+            }
+          },
+          "required": [
+            "cpu_only",
+            "required_python",
+            "max_seconds",
+            "max_artifact_bytes"
+          ],
+          "type": "object"
+        },
+        "execution_authorized": {
+          "const": true
+        },
+        "expected_counts": {
+          "const": {
+            "comparison_gates": 100,
+            "metric_rows": 9600,
+            "paired_differences": 12000,
+            "profile_recommendations": 10,
+            "profile_screen": 30,
+            "selection": 1
+          }
+        },
+        "input": {
+          "const": {
+            "path": "data/development/scenarios_001_120.csv",
+            "periods": 30,
+            "scenario_ids": [
+              1,
+              120
+            ],
+            "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+          }
+        },
+        "policy_config": {
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "const": "specs/development_policy_pilot_v2.json"
+            },
+            "sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "type": "object"
+        },
+        "producers": {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "allOf": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "acceptance_path": {
+                      "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+                      "type": "string"
+                    },
+                    "acceptance_sha256": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    },
+                    "artifacts_sha256": {
+                      "additionalProperties": {
+                        "pattern": "^[0-9a-f]{64}$",
+                        "type": "string"
+                      },
+                      "maxProperties": 44,
+                      "minProperties": 44,
+                      "type": "object"
+                    },
+                    "attempt": {
+                      "minimum": 1,
+                      "type": "integer"
+                    },
+                    "config_path": {
+                      "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+                      "type": "string"
+                    },
+                    "group": {
+                      "enum": [
+                        "primary",
+                        "doubled"
+                      ]
+                    },
+                    "numerical_review": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "acceptance_path": {
+                          "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+                          "type": "string"
+                        },
+                        "acceptance_sha256": {
+                          "pattern": "^[0-9a-f]{64}$",
+                          "type": "string"
+                        },
+                        "reviewed_commit": {
+                          "pattern": "^[0-9a-f]{40}$",
+                          "type": "string"
+                        },
+                        "task_id": {
+                          "pattern": "^SOL-[0-9]+$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "task_id",
+                        "reviewed_commit",
+                        "acceptance_path",
+                        "acceptance_sha256"
+                      ],
+                      "type": "object"
+                    },
+                    "receipt_sha256": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    },
+                    "result_commit": {
+                      "pattern": "^[0-9a-f]{40}$",
+                      "type": "string"
+                    },
+                    "root": {
+                      "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+                      "type": "string"
+                    },
+                    "task_digest": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    },
+                    "task_id": {
+                      "pattern": "^HY3-[0-9]+$",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "group",
+                    "task_id",
+                    "attempt",
+                    "task_digest",
+                    "result_commit",
+                    "receipt_sha256",
+                    "acceptance_path",
+                    "acceptance_sha256",
+                    "root",
+                    "config_path",
+                    "artifacts_sha256",
+                    "numerical_review"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "properties": {
+                    "group": {
+                      "const": "primary"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "allOf": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "acceptance_path": {
+                      "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+                      "type": "string"
+                    },
+                    "acceptance_sha256": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    },
+                    "artifacts_sha256": {
+                      "additionalProperties": {
+                        "pattern": "^[0-9a-f]{64}$",
+                        "type": "string"
+                      },
+                      "maxProperties": 44,
+                      "minProperties": 44,
+                      "type": "object"
+                    },
+                    "attempt": {
+                      "minimum": 1,
+                      "type": "integer"
+                    },
+                    "config_path": {
+                      "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+                      "type": "string"
+                    },
+                    "group": {
+                      "enum": [
+                        "primary",
+                        "doubled"
+                      ]
+                    },
+                    "numerical_review": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "acceptance_path": {
+                          "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+                          "type": "string"
+                        },
+                        "acceptance_sha256": {
+                          "pattern": "^[0-9a-f]{64}$",
+                          "type": "string"
+                        },
+                        "reviewed_commit": {
+                          "pattern": "^[0-9a-f]{40}$",
+                          "type": "string"
+                        },
+                        "task_id": {
+                          "pattern": "^SOL-[0-9]+$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "task_id",
+                        "reviewed_commit",
+                        "acceptance_path",
+                        "acceptance_sha256"
+                      ],
+                      "type": "object"
+                    },
+                    "receipt_sha256": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    },
+                    "result_commit": {
+                      "pattern": "^[0-9a-f]{40}$",
+                      "type": "string"
+                    },
+                    "root": {
+                      "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+                      "type": "string"
+                    },
+                    "task_digest": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    },
+                    "task_id": {
+                      "pattern": "^HY3-[0-9]+$",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "group",
+                    "task_id",
+                    "attempt",
+                    "task_digest",
+                    "result_commit",
+                    "receipt_sha256",
+                    "acceptance_path",
+                    "acceptance_sha256",
+                    "root",
+                    "config_path",
+                    "artifacts_sha256",
+                    "numerical_review"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "properties": {
+                    "group": {
+                      "const": "doubled"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "array"
+        },
+        "run_id": {
+          "pattern": "^[A-Za-z0-9_-]+$",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "source_commit": {
+          "pattern": "^[0-9a-f]{40}$",
+          "type": "string"
+        },
+        "source_sha256": {
+          "additionalProperties": false,
+          "properties": {
+            "audit/SOL-038/schema.json": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "audit/chief/HY3-003-review.json": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "audit/chief/writer-reference.json": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "audit/chief/writer_reference.py": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "scripts/run_development_analysis.py": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "scripts/run_development_policy.py": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/ACCOUNTING.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/DEVELOPMENT_CASE_RESULTS_REVIEW.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/DEVELOPMENT_POLICY_PILOT_V2.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/POLICY_ANALYSIS.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/POLICY_ANALYSIS_ASSEMBLY.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/POLICY_CASE_ENGINE.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/POLICY_CORRECTION_V2.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/POLICY_NUMERIC_K1.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/POLICY_NUMERIC_K2.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/POLICY_RESULT_WRITER.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/POLICY_WRITER_ACCEPTANCE_REFERENCES.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/POLICY_WRITER_COMPATIBILITY.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/POLICY_WRITER_EXECUTION_CONFIG.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/POLICY_WRITER_FILE_DELIVERABLES.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/POLICY_WRITER_GIT_PORTABILITY.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/POLICY_WRITER_RECOVERY.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/POLICY_WRITER_TASK_BINDING.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/PROBLEM_LOCK.md": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/development_policy_pilot_v2.json": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "specs/policy_driver_layout_v2.json": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "src/safeinvest/__init__.py": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "src/safeinvest/accounting.py": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "src/safeinvest/backtest.py": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "src/safeinvest/baselines.py": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "src/safeinvest/experiments.py": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "src/safeinvest/metrics.py": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "src/safeinvest/policy_analysis.py": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "src/safeinvest/policy_analysis_writer.py": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "src/safeinvest/policy_calibration.py": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "src/safeinvest/policy_cases.py": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "src/safeinvest/policy_pilot.py": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "src/safeinvest/policy_writer.py": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "src/safeinvest/__init__.py",
+            "src/safeinvest/accounting.py",
+            "src/safeinvest/backtest.py",
+            "src/safeinvest/baselines.py",
+            "src/safeinvest/metrics.py",
+            "src/safeinvest/experiments.py",
+            "src/safeinvest/policy_pilot.py",
+            "src/safeinvest/policy_calibration.py",
+            "src/safeinvest/policy_cases.py",
+            "src/safeinvest/policy_writer.py",
+            "scripts/run_development_policy.py",
+            "specs/development_policy_pilot_v2.json",
+            "specs/policy_driver_layout_v2.json",
+            "specs/PROBLEM_LOCK.md",
+            "specs/ACCOUNTING.md",
+            "specs/DEVELOPMENT_POLICY_PILOT_V2.md",
+            "specs/POLICY_CORRECTION_V2.md",
+            "specs/POLICY_NUMERIC_K1.md",
+            "specs/POLICY_NUMERIC_K2.md",
+            "specs/POLICY_CASE_ENGINE.md",
+            "specs/POLICY_RESULT_WRITER.md",
+            "specs/POLICY_WRITER_COMPATIBILITY.md",
+            "specs/POLICY_WRITER_ACCEPTANCE_REFERENCES.md",
+            "specs/POLICY_WRITER_EXECUTION_CONFIG.md",
+            "specs/POLICY_WRITER_TASK_BINDING.md",
+            "specs/POLICY_WRITER_RECOVERY.md",
+            "specs/POLICY_WRITER_GIT_PORTABILITY.md",
+            "specs/POLICY_WRITER_FILE_DELIVERABLES.md",
+            "src/safeinvest/policy_analysis.py",
+            "src/safeinvest/policy_analysis_writer.py",
+            "scripts/run_development_analysis.py",
+            "specs/POLICY_ANALYSIS.md",
+            "specs/POLICY_ANALYSIS_ASSEMBLY.md",
+            "specs/DEVELOPMENT_CASE_RESULTS_REVIEW.md",
+            "audit/chief/writer_reference.py",
+            "audit/chief/writer-reference.json",
+            "audit/chief/HY3-003-review.json",
+            "audit/SOL-038/schema.json"
+          ],
+          "type": "object"
+        },
+        "split": {
+          "const": "development"
+        }
+      },
+      "required": [
+        "schema_version",
+        "run_id",
+        "split",
+        "execution_authorized",
+        "source_commit",
+        "source_sha256",
+        "acceptance",
+        "input",
+        "policy_config",
+        "producers",
+        "expected_counts",
+        "execution"
+      ],
+      "type": "object"
+    },
+    "producer": {
+      "additionalProperties": false,
+      "properties": {
+        "acceptance_path": {
+          "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+          "type": "string"
+        },
+        "acceptance_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "artifacts_sha256": {
+          "additionalProperties": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "maxProperties": 44,
+          "minProperties": 44,
+          "type": "object"
+        },
+        "attempt": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "config_path": {
+          "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+          "type": "string"
+        },
+        "group": {
+          "enum": [
+            "primary",
+            "doubled"
+          ]
+        },
+        "numerical_review": {
+          "additionalProperties": false,
+          "properties": {
+            "acceptance_path": {
+              "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+              "type": "string"
+            },
+            "acceptance_sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "reviewed_commit": {
+              "pattern": "^[0-9a-f]{40}$",
+              "type": "string"
+            },
+            "task_id": {
+              "pattern": "^SOL-[0-9]+$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "task_id",
+            "reviewed_commit",
+            "acceptance_path",
+            "acceptance_sha256"
+          ],
+          "type": "object"
+        },
+        "receipt_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "result_commit": {
+          "pattern": "^[0-9a-f]{40}$",
+          "type": "string"
+        },
+        "root": {
+          "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+          "type": "string"
+        },
+        "task_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "task_id": {
+          "pattern": "^HY3-[0-9]+$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "group",
+        "task_id",
+        "attempt",
+        "task_digest",
+        "result_commit",
+        "receipt_sha256",
+        "acceptance_path",
+        "acceptance_sha256",
+        "root",
+        "config_path",
+        "artifacts_sha256",
+        "numerical_review"
+      ],
+      "type": "object"
+    },
+    "task": {
+      "additionalProperties": false,
+      "properties": {
+        "acceptance_checks": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "allowed_paths": {
+          "items": {
+            "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+            "type": "string"
+          },
+          "maxItems": 1,
+          "minItems": 1,
+          "type": "array"
+        },
+        "attempt": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "base_commit": {
+          "pattern": "^[0-9a-f]{40}$",
+          "type": "string"
+        },
+        "commands": {
+          "items": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "maxItems": 1,
+          "minItems": 1,
+          "type": "array"
+        },
+        "deliverables": {
+          "items": {
+            "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+            "type": "string"
+          },
+          "maxItems": 6,
+          "minItems": 6,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "depends_on": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "id": {
+          "pattern": "^HY3-[0-9]+$",
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "kind": {
+          "const": "commands"
+        },
+        "max_seconds": {
+          "maximum": 1500,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "owner": {
+          "const": "hy3"
+        },
+        "parameters": {
+          "additionalProperties": false,
+          "properties": {
+            "acceptance": {
+              "additionalProperties": false,
+              "properties": {
+                "SOL-016": {
+                  "const": "ceec2b6d1107a4137ee3d24d689ba7ba614703c2"
+                },
+                "SOL-021": {
+                  "const": "d154f90d1c50b37990b75ec0a45aa01a38252343"
+                },
+                "SOL-022": {
+                  "const": "21ad493707d71240f83d7f01ed6d133e1380e8fb"
+                },
+                "SOL-025": {
+                  "const": "803b7a085284405ee5ee4d4f0d5720ebaa2e67f7"
+                },
+                "SOL-031": {
+                  "const": "a24dca5d5494455407207e0fd70c06b258d4fd1f"
+                },
+                "SOL-032": {
+                  "const": "d168757efbc70e4641deacc911976f1fa3bd7a7c"
+                },
+                "SOL-038": {
+                  "pattern": "^[0-9a-f]{40}$",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "SOL-016",
+                "SOL-021",
+                "SOL-022",
+                "SOL-025",
+                "SOL-031",
+                "SOL-032",
+                "SOL-038"
+              ],
+              "type": "object"
+            },
+            "config_path": {
+              "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+              "type": "string"
+            },
+            "config_sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "execution": {
+              "additionalProperties": false,
+              "properties": {
+                "cpu_only": {
+                  "const": true
+                },
+                "max_artifact_bytes": {
+                  "const": 10485760
+                },
+                "max_seconds": {
+                  "maximum": 1500,
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "required_python": {
+                  "const": "3.12"
+                }
+              },
+              "required": [
+                "cpu_only",
+                "required_python",
+                "max_seconds",
+                "max_artifact_bytes"
+              ],
+              "type": "object"
+            },
+            "execution_authorized": {
+              "const": true
+            },
+            "expected_counts": {
+              "const": {
+                "comparison_gates": 100,
+                "metric_rows": 9600,
+                "paired_differences": 12000,
+                "profile_recommendations": 10,
+                "profile_screen": 30,
+                "selection": 1
+              }
+            },
+            "input": {
+              "const": {
+                "path": "data/development/scenarios_001_120.csv",
+                "periods": 30,
+                "scenario_ids": [
+                  1,
+                  120
+                ],
+                "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7"
+              }
+            },
+            "policy_config": {
+              "additionalProperties": false,
+              "properties": {
+                "path": {
+                  "const": "specs/development_policy_pilot_v2.json"
+                },
+                "sha256": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "path",
+                "sha256"
+              ],
+              "type": "object"
+            },
+            "producers": {
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "allOf": [
+                    {
+                      "additionalProperties": false,
+                      "properties": {
+                        "acceptance_path": {
+                          "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+                          "type": "string"
+                        },
+                        "acceptance_sha256": {
+                          "pattern": "^[0-9a-f]{64}$",
+                          "type": "string"
+                        },
+                        "artifacts_sha256": {
+                          "additionalProperties": {
+                            "pattern": "^[0-9a-f]{64}$",
+                            "type": "string"
+                          },
+                          "maxProperties": 44,
+                          "minProperties": 44,
+                          "type": "object"
+                        },
+                        "attempt": {
+                          "minimum": 1,
+                          "type": "integer"
+                        },
+                        "config_path": {
+                          "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+                          "type": "string"
+                        },
+                        "group": {
+                          "enum": [
+                            "primary",
+                            "doubled"
+                          ]
+                        },
+                        "numerical_review": {
+                          "additionalProperties": false,
+                          "properties": {
+                            "acceptance_path": {
+                              "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+                              "type": "string"
+                            },
+                            "acceptance_sha256": {
+                              "pattern": "^[0-9a-f]{64}$",
+                              "type": "string"
+                            },
+                            "reviewed_commit": {
+                              "pattern": "^[0-9a-f]{40}$",
+                              "type": "string"
+                            },
+                            "task_id": {
+                              "pattern": "^SOL-[0-9]+$",
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "task_id",
+                            "reviewed_commit",
+                            "acceptance_path",
+                            "acceptance_sha256"
+                          ],
+                          "type": "object"
+                        },
+                        "receipt_sha256": {
+                          "pattern": "^[0-9a-f]{64}$",
+                          "type": "string"
+                        },
+                        "result_commit": {
+                          "pattern": "^[0-9a-f]{40}$",
+                          "type": "string"
+                        },
+                        "root": {
+                          "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+                          "type": "string"
+                        },
+                        "task_digest": {
+                          "pattern": "^[0-9a-f]{64}$",
+                          "type": "string"
+                        },
+                        "task_id": {
+                          "pattern": "^HY3-[0-9]+$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "group",
+                        "task_id",
+                        "attempt",
+                        "task_digest",
+                        "result_commit",
+                        "receipt_sha256",
+                        "acceptance_path",
+                        "acceptance_sha256",
+                        "root",
+                        "config_path",
+                        "artifacts_sha256",
+                        "numerical_review"
+                      ],
+                      "type": "object"
+                    },
+                    {
+                      "properties": {
+                        "group": {
+                          "const": "primary"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "allOf": [
+                    {
+                      "additionalProperties": false,
+                      "properties": {
+                        "acceptance_path": {
+                          "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+                          "type": "string"
+                        },
+                        "acceptance_sha256": {
+                          "pattern": "^[0-9a-f]{64}$",
+                          "type": "string"
+                        },
+                        "artifacts_sha256": {
+                          "additionalProperties": {
+                            "pattern": "^[0-9a-f]{64}$",
+                            "type": "string"
+                          },
+                          "maxProperties": 44,
+                          "minProperties": 44,
+                          "type": "object"
+                        },
+                        "attempt": {
+                          "minimum": 1,
+                          "type": "integer"
+                        },
+                        "config_path": {
+                          "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+                          "type": "string"
+                        },
+                        "group": {
+                          "enum": [
+                            "primary",
+                            "doubled"
+                          ]
+                        },
+                        "numerical_review": {
+                          "additionalProperties": false,
+                          "properties": {
+                            "acceptance_path": {
+                              "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+                              "type": "string"
+                            },
+                            "acceptance_sha256": {
+                              "pattern": "^[0-9a-f]{64}$",
+                              "type": "string"
+                            },
+                            "reviewed_commit": {
+                              "pattern": "^[0-9a-f]{40}$",
+                              "type": "string"
+                            },
+                            "task_id": {
+                              "pattern": "^SOL-[0-9]+$",
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "task_id",
+                            "reviewed_commit",
+                            "acceptance_path",
+                            "acceptance_sha256"
+                          ],
+                          "type": "object"
+                        },
+                        "receipt_sha256": {
+                          "pattern": "^[0-9a-f]{64}$",
+                          "type": "string"
+                        },
+                        "result_commit": {
+                          "pattern": "^[0-9a-f]{40}$",
+                          "type": "string"
+                        },
+                        "root": {
+                          "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\x00]+$",
+                          "type": "string"
+                        },
+                        "task_digest": {
+                          "pattern": "^[0-9a-f]{64}$",
+                          "type": "string"
+                        },
+                        "task_id": {
+                          "pattern": "^HY3-[0-9]+$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "group",
+                        "task_id",
+                        "attempt",
+                        "task_digest",
+                        "result_commit",
+                        "receipt_sha256",
+                        "acceptance_path",
+                        "acceptance_sha256",
+                        "root",
+                        "config_path",
+                        "artifacts_sha256",
+                        "numerical_review"
+                      ],
+                      "type": "object"
+                    },
+                    {
+                      "properties": {
+                        "group": {
+                          "const": "doubled"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "type": "array"
+            },
+            "run_id": {
+              "pattern": "^[A-Za-z0-9_-]+$",
+              "type": "string"
+            },
+            "schema_version": {
+              "const": 1
+            },
+            "source_commit": {
+              "pattern": "^[0-9a-f]{40}$",
+              "type": "string"
+            },
+            "source_sha256": {
+              "additionalProperties": false,
+              "properties": {
+                "audit/SOL-038/schema.json": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "audit/chief/HY3-003-review.json": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "audit/chief/writer-reference.json": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "audit/chief/writer_reference.py": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "scripts/run_development_analysis.py": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "scripts/run_development_policy.py": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/ACCOUNTING.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/DEVELOPMENT_CASE_RESULTS_REVIEW.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/DEVELOPMENT_POLICY_PILOT_V2.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/POLICY_ANALYSIS.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/POLICY_ANALYSIS_ASSEMBLY.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/POLICY_CASE_ENGINE.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/POLICY_CORRECTION_V2.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/POLICY_NUMERIC_K1.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/POLICY_NUMERIC_K2.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/POLICY_RESULT_WRITER.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/POLICY_WRITER_ACCEPTANCE_REFERENCES.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/POLICY_WRITER_COMPATIBILITY.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/POLICY_WRITER_EXECUTION_CONFIG.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/POLICY_WRITER_FILE_DELIVERABLES.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/POLICY_WRITER_GIT_PORTABILITY.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/POLICY_WRITER_RECOVERY.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/POLICY_WRITER_TASK_BINDING.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/PROBLEM_LOCK.md": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/development_policy_pilot_v2.json": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "specs/policy_driver_layout_v2.json": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "src/safeinvest/__init__.py": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "src/safeinvest/accounting.py": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "src/safeinvest/backtest.py": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "src/safeinvest/baselines.py": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "src/safeinvest/experiments.py": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "src/safeinvest/metrics.py": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "src/safeinvest/policy_analysis.py": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "src/safeinvest/policy_analysis_writer.py": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "src/safeinvest/policy_calibration.py": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "src/safeinvest/policy_cases.py": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "src/safeinvest/policy_pilot.py": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "src/safeinvest/policy_writer.py": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "src/safeinvest/__init__.py",
+                "src/safeinvest/accounting.py",
+                "src/safeinvest/backtest.py",
+                "src/safeinvest/baselines.py",
+                "src/safeinvest/metrics.py",
+                "src/safeinvest/experiments.py",
+                "src/safeinvest/policy_pilot.py",
+                "src/safeinvest/policy_calibration.py",
+                "src/safeinvest/policy_cases.py",
+                "src/safeinvest/policy_writer.py",
+                "scripts/run_development_policy.py",
+                "specs/development_policy_pilot_v2.json",
+                "specs/policy_driver_layout_v2.json",
+                "specs/PROBLEM_LOCK.md",
+                "specs/ACCOUNTING.md",
+                "specs/DEVELOPMENT_POLICY_PILOT_V2.md",
+                "specs/POLICY_CORRECTION_V2.md",
+                "specs/POLICY_NUMERIC_K1.md",
+                "specs/POLICY_NUMERIC_K2.md",
+                "specs/POLICY_CASE_ENGINE.md",
+                "specs/POLICY_RESULT_WRITER.md",
+                "specs/POLICY_WRITER_COMPATIBILITY.md",
+                "specs/POLICY_WRITER_ACCEPTANCE_REFERENCES.md",
+                "specs/POLICY_WRITER_EXECUTION_CONFIG.md",
+                "specs/POLICY_WRITER_TASK_BINDING.md",
+                "specs/POLICY_WRITER_RECOVERY.md",
+                "specs/POLICY_WRITER_GIT_PORTABILITY.md",
+                "specs/POLICY_WRITER_FILE_DELIVERABLES.md",
+                "src/safeinvest/policy_analysis.py",
+                "src/safeinvest/policy_analysis_writer.py",
+                "scripts/run_development_analysis.py",
+                "specs/POLICY_ANALYSIS.md",
+                "specs/POLICY_ANALYSIS_ASSEMBLY.md",
+                "specs/DEVELOPMENT_CASE_RESULTS_REVIEW.md",
+                "audit/chief/writer_reference.py",
+                "audit/chief/writer-reference.json",
+                "audit/chief/HY3-003-review.json",
+                "audit/SOL-038/schema.json"
+              ],
+              "type": "object"
+            },
+            "split": {
+              "const": "development"
+            }
+          },
+          "required": [
+            "schema_version",
+            "run_id",
+            "split",
+            "execution_authorized",
+            "source_commit",
+            "source_sha256",
+            "acceptance",
+            "input",
+            "policy_config",
+            "producers",
+            "expected_counts",
+            "execution",
+            "config_path",
+            "config_sha256"
+          ],
+          "type": "object"
+        },
+        "schema_version": {
+          "const": 1
+        },
+        "scope": {
+          "type": "string"
+        },
+        "split": {
+          "const": "development"
+        },
+        "validation_commands": {
+          "items": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "maxItems": 1,
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "schema_version",
+        "id",
+        "attempt",
+        "owner",
+        "kind",
+        "base_commit",
+        "depends_on",
+        "split",
+        "max_seconds",
+        "scope",
+        "parameters",
+        "allowed_paths",
+        "deliverables",
+        "commands",
+        "validation_commands",
+        "acceptance_checks",
+        "instructions"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "safeinvest:SOL-038:analysis-assembly-v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "mapping": {
+    "destination": "percentage points per year",
+    "direction": "detached producer to accepted pure analysis input",
+    "field": "growth_units",
+    "numeric_conversion": "none",
+    "source": "percent/year"
+  },
+  "nested_json_contract": "all accepted recursive keys and exact types/finite binary64 preserved; no fallback filling",
+  "paired_csv_types": [
+    [
+      "candidate_mode",
+      "str",
+      false
+    ],
+    [
+      "reference_mode",
+      "str",
+      false
+    ],
+    [
+      "fee_rate",
+      "float",
+      false
+    ],
+    [
+      "horizon",
+      "int",
+      false
+    ],
+    [
+      "scenario_id",
+      "int",
+      false
+    ],
+    [
+      "fold_id",
+      "int",
+      false
+    ],
+    [
+      "split",
+      "str",
+      false
+    ],
+    [
+      "net_real_cagr_pct_difference",
+      "float",
+      false
+    ],
+    [
+      "max_real_drawdown_pct_difference",
+      "float",
+      false
+    ],
+    [
+      "terminal_real_wealth_difference",
+      "float",
+      false
+    ],
+    [
+      "nominal_fee_sum_difference",
+      "float",
+      false
+    ],
+    [
+      "trade_share_pct_difference",
+      "float",
+      false
+    ],
+    [
+      "trade_share_ex_initial_pct_difference",
+      "float",
+      false
+    ],
+    [
+      "human_review_count_difference",
+      "int",
+      true
+    ],
+    [
+      "human_review_share_pct_difference",
+      "float",
+      true
+    ],
+    [
+      "target_change_count_difference",
+      "int",
+      true
+    ],
+    [
+      "growth_difference_units",
+      "str",
+      false
+    ],
+    [
+      "loss_difference_units",
+      "str",
+      false
+    ],
+    [
+      "terminal_real_wealth_difference_units",
+      "str",
+      false
+    ],
+    [
+      "nominal_fee_difference_units",
+      "str",
+      false
+    ],
+    [
+      "trade_share_difference_units",
+      "str",
+      false
+    ],
+    [
+      "human_review_share_difference_units",
+      "str",
+      false
+    ],
+    [
+      "count_difference_units",
+      "str",
+      false
+    ]
+  ],
+  "producer_csv_types": {
+    "annual_ledgers": [
+      [
+        "split",
+        "str",
+        false
+      ],
+      [
+        "mode",
+        "str",
+        false
+      ],
+      [
+        "scenario_id",
+        "int",
+        false
+      ],
+      [
+        "period",
+        "int",
+        false
+      ],
+      [
+        "engine_action",
+        "str",
+        false
+      ],
+      [
+        "target_equity",
+        "float",
+        true
+      ],
+      [
+        "target_bond",
+        "float",
+        true
+      ],
+      [
+        "target_bill_proxy",
+        "float",
+        true
+      ],
+      [
+        "holdings_before_equity",
+        "float",
+        false
+      ],
+      [
+        "holdings_before_bond",
+        "float",
+        false
+      ],
+      [
+        "holdings_before_bill_proxy",
+        "float",
+        false
+      ],
+      [
+        "holdings_after_fee_equity",
+        "float",
+        false
+      ],
+      [
+        "holdings_after_fee_bond",
+        "float",
+        false
+      ],
+      [
+        "holdings_after_fee_bill_proxy",
+        "float",
+        false
+      ],
+      [
+        "holdings_end_equity",
+        "float",
+        false
+      ],
+      [
+        "holdings_end_bond",
+        "float",
+        false
+      ],
+      [
+        "holdings_end_bill_proxy",
+        "float",
+        false
+      ],
+      [
+        "return_equity",
+        "float",
+        false
+      ],
+      [
+        "return_bond",
+        "float",
+        false
+      ],
+      [
+        "return_bill_proxy",
+        "float",
+        false
+      ],
+      [
+        "wealth_before",
+        "float",
+        false
+      ],
+      [
+        "cpi_before",
+        "float",
+        false
+      ],
+      [
+        "real_wealth_before",
+        "float",
+        false
+      ],
+      [
+        "intended_transfer",
+        "float",
+        false
+      ],
+      [
+        "fee",
+        "float",
+        false
+      ],
+      [
+        "wealth_after_fee",
+        "float",
+        false
+      ],
+      [
+        "real_wealth_after_fee",
+        "float",
+        false
+      ],
+      [
+        "inflation",
+        "float",
+        false
+      ],
+      [
+        "wealth_end",
+        "float",
+        false
+      ],
+      [
+        "cpi_end",
+        "float",
+        false
+      ],
+      [
+        "real_wealth_end",
+        "float",
+        false
+      ],
+      [
+        "annual_net_real_return",
+        "float",
+        false
+      ],
+      [
+        "monetary_units",
+        "str",
+        false
+      ],
+      [
+        "return_units",
+        "str",
+        false
+      ],
+      [
+        "cpi_units",
+        "str",
+        false
+      ],
+      [
+        "growth_units",
+        "str",
+        false
+      ],
+      [
+        "volatility_units",
+        "str",
+        false
+      ],
+      [
+        "loss_units",
+        "str",
+        false
+      ],
+      [
+        "trade_share_units",
+        "str",
+        false
+      ],
+      [
+        "fee_rate",
+        "float",
+        false
+      ],
+      [
+        "fold_id",
+        "int",
+        false
+      ]
+    ],
+    "decisions": [
+      [
+        "split",
+        "str",
+        false
+      ],
+      [
+        "mode",
+        "str",
+        false
+      ],
+      [
+        "fee_rate",
+        "float",
+        false
+      ],
+      [
+        "scenario_id",
+        "int",
+        false
+      ],
+      [
+        "fold_id",
+        "int",
+        false
+      ],
+      [
+        "period",
+        "int",
+        false
+      ],
+      [
+        "action",
+        "str",
+        false
+      ],
+      [
+        "active_before",
+        "str",
+        false
+      ],
+      [
+        "active_after",
+        "str",
+        false
+      ],
+      [
+        "proposed_target",
+        "str",
+        true
+      ],
+      [
+        "selected_target",
+        "str",
+        true
+      ],
+      [
+        "ce_keep",
+        "float",
+        true
+      ],
+      [
+        "prior_mass",
+        "float",
+        false
+      ],
+      [
+        "recent_count",
+        "int",
+        false
+      ],
+      [
+        "observed_max_drawdown_pct",
+        "float",
+        false
+      ],
+      [
+        "human_review_latched",
+        "bool",
+        false
+      ],
+      [
+        "initial_allocation_deferred",
+        "bool",
+        false
+      ],
+      [
+        "intended_transfer",
+        "float",
+        false
+      ],
+      [
+        "actual_fee",
+        "float",
+        false
+      ],
+      [
+        "is_trade",
+        "bool",
+        false
+      ],
+      [
+        "executed_target_change",
+        "bool",
+        false
+      ],
+      [
+        "reason",
+        "str",
+        false
+      ],
+      [
+        "first_deployment_year",
+        "int",
+        true
+      ]
+    ],
+    "scenario_metrics": [
+      [
+        "split",
+        "str",
+        false
+      ],
+      [
+        "mode",
+        "str",
+        false
+      ],
+      [
+        "scenario_id",
+        "int",
+        false
+      ],
+      [
+        "horizon",
+        "int",
+        false
+      ],
+      [
+        "net_real_cagr_pct",
+        "float",
+        false
+      ],
+      [
+        "annual_real_volatility_pct",
+        "float",
+        true
+      ],
+      [
+        "max_real_drawdown_pct",
+        "float",
+        false
+      ],
+      [
+        "terminal_real_wealth",
+        "float",
+        false
+      ],
+      [
+        "nominal_fee_sum",
+        "float",
+        false
+      ],
+      [
+        "trade_count",
+        "int",
+        false
+      ],
+      [
+        "review_count",
+        "int",
+        false
+      ],
+      [
+        "later_trade_count",
+        "int",
+        false
+      ],
+      [
+        "later_review_count",
+        "int",
+        false
+      ],
+      [
+        "trade_share_pct",
+        "float",
+        false
+      ],
+      [
+        "trade_share_ex_initial_pct",
+        "float",
+        true
+      ],
+      [
+        "drawdown_peak_year",
+        "int",
+        false
+      ],
+      [
+        "drawdown_peak_kind",
+        "str",
+        false
+      ],
+      [
+        "drawdown_trough_year",
+        "int",
+        false
+      ],
+      [
+        "drawdown_trough_kind",
+        "str",
+        false
+      ],
+      [
+        "monetary_units",
+        "str",
+        false
+      ],
+      [
+        "return_units",
+        "str",
+        false
+      ],
+      [
+        "cpi_units",
+        "str",
+        false
+      ],
+      [
+        "growth_units",
+        "str",
+        false
+      ],
+      [
+        "volatility_units",
+        "str",
+        false
+      ],
+      [
+        "loss_units",
+        "str",
+        false
+      ],
+      [
+        "trade_share_units",
+        "str",
+        false
+      ],
+      [
+        "fee_rate",
+        "float",
+        false
+      ],
+      [
+        "fold_id",
+        "int",
+        false
+      ],
+      [
+        "human_review_count",
+        "int",
+        true
+      ],
+      [
+        "human_review_share_pct",
+        "float",
+        true
+      ],
+      [
+        "first_latch_year",
+        "int",
+        true
+      ],
+      [
+        "target_change_count",
+        "int",
+        true
+      ],
+      [
+        "first_deployment_year",
+        "int",
+        true
+      ],
+      [
+        "initial_allocation_deferred",
+        "bool",
+        true
+      ]
+    ],
+    "summary": [
+      [
+        "split",
+        "str",
+        false
+      ],
+      [
+        "mode",
+        "str",
+        false
+      ],
+      [
+        "horizon",
+        "int",
+        false
+      ],
+      [
+        "scenario_count",
+        "int",
+        false
+      ],
+      [
+        "median_growth_pct",
+        "float",
+        false
+      ],
+      [
+        "p10_growth_pct",
+        "float",
+        false
+      ],
+      [
+        "median_loss_pct",
+        "float",
+        false
+      ],
+      [
+        "p90_loss_pct",
+        "float",
+        false
+      ],
+      [
+        "median_volatility_pct",
+        "float",
+        true
+      ],
+      [
+        "median_terminal_real_wealth",
+        "float",
+        false
+      ],
+      [
+        "median_nominal_fee_sum",
+        "float",
+        false
+      ],
+      [
+        "pooled_trade_count",
+        "int",
+        false
+      ],
+      [
+        "pooled_review_count",
+        "int",
+        false
+      ],
+      [
+        "pooled_later_trade_count",
+        "int",
+        false
+      ],
+      [
+        "pooled_later_review_count",
+        "int",
+        false
+      ],
+      [
+        "pooled_trade_share_pct",
+        "float",
+        false
+      ],
+      [
+        "pooled_trade_share_ex_initial_pct",
+        "float",
+        true
+      ],
+      [
+        "severe_scenario_id",
+        "int",
+        false
+      ],
+      [
+        "severe_net_real_cagr_pct",
+        "float",
+        false
+      ],
+      [
+        "severe_max_real_drawdown_pct",
+        "float",
+        false
+      ],
+      [
+        "severe_terminal_real_wealth",
+        "float",
+        false
+      ],
+      [
+        "severe_drawdown_peak_year",
+        "int",
+        false
+      ],
+      [
+        "severe_drawdown_peak_kind",
+        "str",
+        false
+      ],
+      [
+        "severe_drawdown_trough_year",
+        "int",
+        false
+      ],
+      [
+        "severe_drawdown_trough_kind",
+        "str",
+        false
+      ],
+      [
+        "severe_trade_share_pct",
+        "float",
+        false
+      ],
+      [
+        "severe_trade_share_ex_initial_pct",
+        "float",
+        true
+      ],
+      [
+        "monetary_units",
+        "str",
+        false
+      ],
+      [
+        "return_units",
+        "str",
+        false
+      ],
+      [
+        "cpi_units",
+        "str",
+        false
+      ],
+      [
+        "growth_units",
+        "str",
+        false
+      ],
+      [
+        "volatility_units",
+        "str",
+        false
+      ],
+      [
+        "loss_units",
+        "str",
+        false
+      ],
+      [
+        "trade_share_units",
+        "str",
+        false
+      ],
+      [
+        "fee_rate",
+        "float",
+        false
+      ],
+      [
+        "pooled_human_review_count",
+        "int",
+        true
+      ],
+      [
+        "pooled_human_review_share_pct",
+        "float",
+        true
+      ],
+      [
+        "pooled_target_change_count",
+        "int",
+        true
+      ]
+    ],
+    "target_scores": [
+      [
+        "split",
+        "str",
+        false
+      ],
+      [
+        "mode",
+        "str",
+        false
+      ],
+      [
+        "fee_rate",
+        "float",
+        false
+      ],
+      [
+        "scenario_id",
+        "int",
+        false
+      ],
+      [
+        "fold_id",
+        "int",
+        false
+      ],
+      [
+        "period",
+        "int",
+        false
+      ],
+      [
+        "target_name",
+        "str",
+        false
+      ],
+      [
+        "target_equity",
+        "float",
+        false
+      ],
+      [
+        "target_bond",
+        "float",
+        false
+      ],
+      [
+        "target_bill_proxy",
+        "float",
+        false
+      ],
+      [
+        "ce_target",
+        "float",
+        false
+      ],
+      [
+        "tau",
+        "float",
+        false
+      ],
+      [
+        "fee_fraction",
+        "float",
+        false
+      ],
+      [
+        "pre_cost_benefit",
+        "float",
+        false
+      ],
+      [
+        "modeled_fee_impact",
+        "float",
+        false
+      ],
+      [
+        "conservative_score",
+        "float",
+        false
+      ],
+      [
+        "true_net_ce",
+        "float",
+        false
+      ]
+    ]
+  },
+  "publication_contract": {
+    "canonical_task_digest": "sha256(json.dumps(task,sort_keys=True,separators=(comma,colon)).encode())",
+    "dependencies": "exact accepted six source dependencies plus accepted SOL-038 plus both producers and both independent numerical reviews",
+    "no_self_reference": "E is task.base_commit, P is recorded publication; neither is embedded into config bytes",
+    "numerical_reviews": "distinct SOL review tasks: queue/chief code_verdict=approve and chief producer_task_id, reviewed_result_commit, result_verdict=approve",
+    "originals": "primary exact HY3-003 original reference identity; doubled no imports",
+    "output_completion": "exclusive reserved output root; unique partial directory; manifest published last as atomic completion marker",
+    "producers": "ordered primary 0.0025 and doubled 0.005; 44 exact files each; actual canonical_git_blob receipts and exact positive queue/chief result_verdict=approve at E",
+    "production_counts_are": "structural expectations, never observations",
+    "runtime_validation": "exact Python types, finite floats and float.hex equality; schema is documentation plus pinned metadata",
+    "sequence": "accepted source C; later configuration E; later task publication P",
+    "source_closure": [
+      "src/safeinvest/__init__.py",
+      "src/safeinvest/accounting.py",
+      "src/safeinvest/backtest.py",
+      "src/safeinvest/baselines.py",
+      "src/safeinvest/metrics.py",
+      "src/safeinvest/experiments.py",
+      "src/safeinvest/policy_pilot.py",
+      "src/safeinvest/policy_calibration.py",
+      "src/safeinvest/policy_cases.py",
+      "src/safeinvest/policy_writer.py",
+      "scripts/run_development_policy.py",
+      "specs/development_policy_pilot_v2.json",
+      "specs/policy_driver_layout_v2.json",
+      "specs/PROBLEM_LOCK.md",
+      "specs/ACCOUNTING.md",
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md",
+      "specs/POLICY_CORRECTION_V2.md",
+      "specs/POLICY_NUMERIC_K1.md",
+      "specs/POLICY_NUMERIC_K2.md",
+      "specs/POLICY_CASE_ENGINE.md",
+      "specs/POLICY_RESULT_WRITER.md",
+      "specs/POLICY_WRITER_COMPATIBILITY.md",
+      "specs/POLICY_WRITER_ACCEPTANCE_REFERENCES.md",
+      "specs/POLICY_WRITER_EXECUTION_CONFIG.md",
+      "specs/POLICY_WRITER_TASK_BINDING.md",
+      "specs/POLICY_WRITER_RECOVERY.md",
+      "specs/POLICY_WRITER_GIT_PORTABILITY.md",
+      "specs/POLICY_WRITER_FILE_DELIVERABLES.md",
+      "src/safeinvest/policy_analysis.py",
+      "src/safeinvest/policy_analysis_writer.py",
+      "scripts/run_development_analysis.py",
+      "specs/POLICY_ANALYSIS.md",
+      "specs/POLICY_ANALYSIS_ASSEMBLY.md",
+      "specs/DEVELOPMENT_CASE_RESULTS_REVIEW.md",
+      "audit/chief/writer_reference.py",
+      "audit/chief/writer-reference.json",
+      "audit/chief/HY3-003-review.json",
+      "audit/SOL-038/schema.json"
+    ],
+    "task_binding": "exact config mirrored in parameters plus config_path/config_sha256; exactly one create and one check command; exact six file deliverables"
+  },
+  "synthetic_seams": "private Python helpers only; never selectable by CLI or config"
+}

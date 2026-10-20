@@ -1,0 +1,29 @@
+[
+  {
+    "argv": [
+      "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_policy_analysis_writer.py",
+      "-v"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 70.28100000001723,
+    "pythonpath_absent": true,
+    "stdout": {
+      "path": "audit/SOL-034/trial-002-0.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "stderr": {
+      "path": "audit/SOL-034/trial-002-0.stderr.txt",
+      "sha256": "0e3d55e1777f250d3490c6f93d0b9f154b32c7dfb98c2a48f54b8b907a48352f",
+      "bytes": 2723
+    }
+  }
+]

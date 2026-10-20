@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-038",
+  "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+  "publication_commit": "95eb627ce6536662b8c583dfd2e6046c3aaf0ea9",
+  "failed_predecessor": {
+    "task_id": "SOL-034",
+    "result_commit": "632c95f03d3bbfeed1f847598eed3e6cfc5be264",
+    "receipt_sha256": "c140dadd2285fd00b9b33e03d1fd90f586cfe4a7c1fe25901b92d7383c64eb4c",
+    "artifact_hash_basis": "canonical_git_blob",
+    "receipt_status": "failed"
+  },
+  "status": "generated_local_checks_pending_audit_replay",
+  "production_executed": false,
+  "competition_input_read": false,
+  "production_configuration_created": false,
+  "final_supported": false,
+  "accepted_modules_unchanged": true,
+  "expected_production_counts": {
+    "metric_rows": 9600,
+    "paired_differences": 12000,
+    "comparison_gates": 100,
+    "selection": 1,
+    "profile_screen": 30,
+    "profile_recommendations": 10
+  },
+  "generated_counts": {
+    "metric_rows": 320,
+    "paired_differences": 400,
+    "comparison_gates": 100,
+    "selection": 1,
+    "profile_screen": 30,
+    "profile_recommendations": 10
+  },
+  "measured_generated_fixture": {
+    "elapsed_seconds": 33.71899999998277,
+    "metric_rows": 320,
+    "output_bytes": 581515,
+    "output_files": {
+      "comparison_gates.json": 217323,
+      "paired_differences.csv": 105075,
+      "profile_recommendations.json": 46582,
+      "profile_screen.json": 53590,
+      "run_manifest.json": 139803,
+      "selection.json": 19142
+    }
+  },
+  "focused_tests": {
+    "tests": 12,
+    "exit_code": 0,
+    "elapsed_seconds": 64.56199999997625,
+    "pythonpath_absent": true,
+    "inventories_unchanged": true
+  },
+  "preserved_failures": [
+    "Failed SOL-034 parent timeout remains immutable failure",
+    "All original receipt artifacts authenticated at exact object; copied compact historical logs retain old identities",
+    "Original trial-002, trial-003 and final-001 LF/CRLF failure evidence preserved",
+    "Current shell helper failures and interrupted synchronous test-owner trial recorded without claiming a pass"
+  ],
+  "limits": [
+    "Generated fixtures establish software behavior only; no real HY3 producer outcomes are consumed",
+    "Both immutable parent validation commands remain required after model exit",
+    "Chief must independently review delivered exact source and selected scalar boundaries before acceptance"
+  ]
+}

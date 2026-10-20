@@ -1,0 +1,16 @@
+test_actual_fresh_child_guard_success_failure_before_assembly (test_policy_analysis_writer.AssemblyTests.test_actual_fresh_child_guard_success_failure_before_assembly) ... ok
+test_actual_git_commit_checkout_authentication_and_rehashed_metric (test_policy_analysis_writer.AssemblyTests.test_actual_git_commit_checkout_authentication_and_rehashed_metric) ... ok
+test_all_referrals_are_completed_analysis_not_authentication_failure (test_policy_analysis_writer.AssemblyTests.test_all_referrals_are_completed_analysis_not_authentication_failure) ... ok
+test_exact_threshold_neighbors_and_own_horizon_indifference (test_policy_analysis_writer.AssemblyTests.test_exact_threshold_neighbors_and_own_horizon_indifference) ... ok
+test_failure_staging_partial_timeout_oversize (test_policy_analysis_writer.AssemblyTests.test_failure_staging_partial_timeout_oversize) ... ok
+test_genuine_typed_persistence_scalar_selection_and_immutability (test_policy_analysis_writer.AssemblyTests.test_genuine_typed_persistence_scalar_selection_and_immutability) ... ok
+test_negative_or_unaccepted_result_not_completed_status (test_policy_analysis_writer.AssemblyTests.test_negative_or_unaccepted_result_not_completed_status) ... ok
+test_production_cli_closed_and_surface (test_policy_analysis_writer.AssemblyTests.test_production_cli_closed_and_surface) ... ok
+test_read_only_rehashed_output_corruption_rejected (test_policy_analysis_writer.AssemblyTests.test_read_only_rehashed_output_corruption_rejected) ... ok
+test_typed_corruptions_and_source_grid_rejected (test_policy_analysis_writer.AssemblyTests.test_typed_corruptions_and_source_grid_rejected) ... ok
+test_typed_detached_unit_only_and_no_mutation (test_policy_analysis_writer.AssemblyTests.test_typed_detached_unit_only_and_no_mutation) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 71.820s
+
+OK
