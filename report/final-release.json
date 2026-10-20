@@ -13,8 +13,8 @@
     "SOL-048": "bcd0ce93226dcdeab6f92e21e4f15b680ca90d6c"
   },
   "layout_acceptance": "audit/chief/final-editorial-layout-20261020.json",
-  "local_private_pdf": ".runtime/illustrated-release-20261020-verified/SafeInvest-final-illustrated.pdf",
-  "pdf_sha256": "ac98c3d26f38529e12edb4d273e750f00f90cf967a672c11d7faed97abf599f6",
+  "local_private_pdf": ".runtime/disclosure-revised-20261020/SafeInvest-final-illustrated.pdf",
+  "pdf_sha256": "f93c9e82e7783bbecf25d52408f7fa298f7883f8ece0f0368930cedb894bf4b0",
   "pages": 9,
   "minimum_font_pt": 11,
   "all_profiles": "human_review",
@@ -33,5 +33,10 @@
   },
   "figures": 3,
   "illustrated_revision": "report/illustrated-release.json",
-  "illustrated_review": "audit/chief/illustrated-final-review-20261020.json"
+  "illustrated_review": "audit/chief/illustrated-final-review-20261020.json",
+  "previous_illustrated_pdf": {
+    "local_private_pdf": ".runtime/illustrated-release-20261020-verified/SafeInvest-final-illustrated.pdf",
+    "pdf_sha256": "ac98c3d26f38529e12edb4d273e750f00f90cf967a672c11d7faed97abf599f6"
+  },
+  "disclosure_revision": "audit/chief/disclosure-revision-20261020.json"
 }

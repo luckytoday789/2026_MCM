@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "created_at": "2026-10-20T15:28:34.732442+00:00",
+  "scope": "User requested final AI disclosure wording only",
+  "disclosure": {
+    "old": "GPT-6 Astra xhigh, followed by GPT-6.1 Sol xhigh in Codex, coordinated specifications, integration, numerical checks and drafting. GPT-6.1 Sol xhigh on a separate computer implemented and independently reviewed assigned components. HY3 in WorkBuddy supervised fixed Python computations on a third computer. AI text and task completion labels were not treated as numerical verification. Human team members are responsible for the submitted work, interpretation and final checks.",
+    "new": "Our team used GPT-6 Astra and GPT-6.1 Sol in Codex, together with HY3 in WorkBuddy, to support the exploration of modeling ideas, code development and computational checks, figure preparation, and manuscript drafting and editing. Numerical results and figures were produced using reproducible Python scripts and checked against saved outputs; AI-generated statements alone were not treated as verification. The team remains responsible for the submitted work, interpretation of results and final review.",
+    "scope": "Final AI-use paragraph only; no numerical or methodological changes."
+  },
+  "pages_1_to_8_content_streams_identical": true,
+  "page_9_text_only_exact_paragraph_replaced": true,
+  "page_9_visually_reviewed": true,
+  "previous_unchanged_pages_visual_review_retained": true,
+  "pdf_checks": {
+    "pdf_sha256": "f93c9e82e7783bbecf25d52408f7fa298f7883f8ece0f0368930cedb894bf4b0",
+    "pages": 9,
+    "paper": "A4",
+    "minimum_font_pt": 11.0,
+    "within_page_limit": true,
+    "images_per_page": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "captions": [
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        8
+      ]
+    ],
+    "visual_review": "passed_last_page_plus_unchanged_previously_reviewed_pages"
+  },
+  "source_package": {
+    "status": "passed",
+    "source_commit": "22b7fd1a949ec8d663d9e4c9681f596f0ee5968e",
+    "archive": ".runtime\\disclosure-source-package-20261020\\SafeInvest-source.zip",
+    "bytes": 27355821,
+    "sha256": "8d57d46446884bcd930afe1578a9d5ca9d41aaffafbdb0ec2c9ac5e5934eaf17",
+    "file_count": 235,
+    "git_bundle_sha256": "c93c26fc15a3bf52da9007b3a78e915d83ffb0b89a76339a266816b72bba4875",
+    "git_bundle_verify_exit_code": 0,
+    "member_hashes_verified": true,
+    "no_simulation": true,
+    "submission_ready_claimed": false
+  },
+  "offline": {
+    "status": "passed",
+    "source_commit": "22b7fd1a949ec8d663d9e4c9681f596f0ee5968e",
+    "archive_sha256": "8d57d46446884bcd930afe1578a9d5ca9d41aaffafbdb0ec2c9ac5e5934eaf17",
+    "archive_bytes": 27355821,
+    "all_member_hashes_verified": true,
+    "fresh_offline_repository_restored": true,
+    "illustrated_public_pdf_byte_identical": true,
+    "public_pdf_sha256": "8fe3e69e9472a7ff9eb0bf3f79250d272b8131be3b9d12e807136439cd53271e",
+    "three_packaged_chart_pngs_byte_identical": true,
+    "private_identities_included": false,
+    "investment_simulations_rerun": false,
+    "original_observations_opened": false,
+    "executed_steps": 8
+  },
+  "no_simulation": true,
+  "no_private_files_published": true
+}

@@ -7,8 +7,8 @@
   "human_team_leader_must_submit": true,
   "submission_deadline": "2026-10-20T23:59:00+08:00",
   "pdf": {
-    "local_path": ".runtime/illustrated-release-20261020-verified/SafeInvest-final-illustrated.pdf",
-    "sha256": "ac98c3d26f38529e12edb4d273e750f00f90cf967a672c11d7faed97abf599f6",
+    "local_path": ".runtime/disclosure-revised-20261020/SafeInvest-final-illustrated.pdf",
+    "sha256": "f93c9e82e7783bbecf25d52408f7fa298f7883f8ece0f0368930cedb894bf4b0",
     "pages": 9,
     "paper": "A4",
     "minimum_font_pt": 11,
@@ -21,21 +21,22 @@
     "all_three_supplied_names_verified": true,
     "ai_use_disclosure": true,
     "every_final_page_visually_inspected": true,
-    "original_accepted_pdf_body_preserved": true,
-    "private_artifact_remains_local": true
+    "original_accepted_pdf_body_preserved": false,
+    "private_artifact_remains_local": true,
+    "only_disclosure_paragraph_changed": true
   },
   "source_zip": {
-    "local_path": ".runtime/illustrated-source-package-20261020/SafeInvest-source.zip",
-    "sha256": "5eaea0cf1fd33eafbec0014673abce0f19ba69ea57bc79c89ce1e922cb1886bd",
-    "bytes": 27348565,
+    "local_path": ".runtime/disclosure-source-package-20261020/SafeInvest-source.zip",
+    "sha256": "8d57d46446884bcd930afe1578a9d5ca9d41aaffafbdb0ec2c9ac5e5934eaf17",
+    "bytes": 27355821,
     "maximum_bytes": 50000000,
-    "members": 233,
-    "source_commit": "d6e6c26a58c4e074141c8a7255abf0302b6c3765",
+    "members": 235,
+    "source_commit": "22b7fd1a949ec8d663d9e4c9681f596f0ee5968e",
     "all_member_hashes_verified": true,
     "git_bundle_verified": true,
     "fresh_offline_repository_reconstructed": true,
     "illustrated_public_pdf_byte_identical": true,
-    "three_chart_PNGs_regenerated_byte_identical": true,
+    "three_chart_PNGs_unchanged": true,
     "private_identities_included": false
   },
   "accepted_exact_commits": {
@@ -48,10 +49,10 @@
   "final_data_gate_remains_open": true,
   "policy_or_final_data_reruns_during_release": false,
   "final_tuning": false,
-  "layout_evidence": "audit/chief/illustrated-final-review-20261020.json",
-  "package_evidence": "audit/chief/illustrated-source-package-20261020.json",
-  "offline_evidence": "audit/chief/illustrated-source-offline-20261020.json",
-  "completion_scope": "User-authorized illustration revision: exact accepted original PDF body retained plus three authenticated figure captions and figures. Original numerical reviews remain unchanged; added figures and layout checked by chief. Package is pushed d6e6c26 source snapshot; later records attest delivery. Old8-page artifacts preserved.",
+  "layout_evidence": "audit/chief/disclosure-revision-20261020.json",
+  "package_evidence": "audit/chief/disclosure-revision-20261020.json",
+  "offline_evidence": "audit/chief/disclosure-revision-20261020.json",
+  "completion_scope": "Team-centered accurate AI disclosure revision only; nine-page illustrated manuscript and matching source package verified. Original accepted source retained.",
   "supersedes_historical_work_status": [
     "report/submission-status.json",
     "report/evidence-map.json remaining descriptions",
@@ -108,5 +109,40 @@
     }
   },
   "updated_at": "2026-10-20T15:13:36.296899+00:00",
-  "illustrated_revision": "report/illustrated-release.json"
+  "illustrated_revision": "report/illustrated-release.json",
+  "previous_illustrated_delivery": {
+    "pdf": {
+      "local_path": ".runtime/illustrated-release-20261020-verified/SafeInvest-final-illustrated.pdf",
+      "sha256": "ac98c3d26f38529e12edb4d273e750f00f90cf967a672c11d7faed97abf599f6",
+      "pages": 9,
+      "paper": "A4",
+      "minimum_font_pt": 11,
+      "figures": 3,
+      "figure_pages": [
+        6,
+        7,
+        8
+      ],
+      "all_three_supplied_names_verified": true,
+      "ai_use_disclosure": true,
+      "every_final_page_visually_inspected": true,
+      "original_accepted_pdf_body_preserved": true,
+      "private_artifact_remains_local": true
+    },
+    "source_zip": {
+      "local_path": ".runtime/illustrated-source-package-20261020/SafeInvest-source.zip",
+      "sha256": "5eaea0cf1fd33eafbec0014673abce0f19ba69ea57bc79c89ce1e922cb1886bd",
+      "bytes": 27348565,
+      "maximum_bytes": 50000000,
+      "members": 233,
+      "source_commit": "d6e6c26a58c4e074141c8a7255abf0302b6c3765",
+      "all_member_hashes_verified": true,
+      "git_bundle_verified": true,
+      "fresh_offline_repository_reconstructed": true,
+      "illustrated_public_pdf_byte_identical": true,
+      "three_chart_PNGs_regenerated_byte_identical": true,
+      "private_identities_included": false
+    },
+    "completion_scope": "User-authorized illustration revision: exact accepted original PDF body retained plus three authenticated figure captions and figures. Original numerical reviews remain unchanged; added figures and layout checked by chief. Package is pushed d6e6c26 source snapshot; later records attest delivery. Old8-page artifacts preserved."
+  }
 }
