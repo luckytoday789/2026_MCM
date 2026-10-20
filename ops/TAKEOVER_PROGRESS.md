@@ -1,3 +1,26 @@
+# Latest bounded chief checkpoint, 2026-10-20 21:48 Beijing
+
+This top checkpoint supersedes older pending manuscript/probe fields below.
+No accepted computation may be rerun; final gate remains OPEN and no tuning is allowed.
+
+- Complete manuscript source C=cfde9523416113005e9de99325595d5823be94f1 is pushed. Existing report/build_submission.py now authenticates final E8 via existing build_final_note.py; executive/final/conclusion slots are complete. All A-E human review, both-fee B/C failures, six true referrals, failed complexity gates and no fallback are explicit. Source values were not changed.
+- Genuine chief mechanical check: audit/chief/complete-manuscript-check-20261020.json records80 final numeric cells,39-word customer explanation,two reporting-corruption rejections and no missing content slots. No original observations or policy simulations were read/run for writing.
+- Public review PDF is8 A4 pages,min11pt, SHA256749b795a06e62d5b7df834690b410a0695b788ce32fd8dddc01557ca9b4621bc. All8 PNG pages inspected after last layout edit; table widths/pagination corrected. Public PDF: .runtime/report-complete-final-source-20261020/SafeInvest-review-manuscript.pdf. Visual record: audit/chief/complete-manuscript-layout-20261020.json. It is still a REVIEW COPY, not final release.
+- Three supplied names are inserted only in ignored .runtime/report-private-review-20261020/SafeInvest-review-manuscript.pdf, using ignored .runtime/team-report-display.json. Private first page inspected; pages2-8 have exact equal rendered PNG hashes to the public proof. Original .runtime/team-private.json remains untouched/local. No private identities were pushed.
+- Actual SOL-045 succeeded at87cf934348c3a78ce10299fa7aece8168ade0c43. Canonical receipt/source/task/scope/output hashes,one assigned-model response and started_at13:40:00.006620UTC>=21:40Beijing accepted. Exact paths promoted in3dc37e6aad87a9fca7afa0c2773992f38746bd98. This proves availability at probe time only, not remaining budget. No retry or substitute worker.
+- Existing SOL-046 and SOL-047 resource holds released unchanged; new immutable SOL-048 whole-manuscript review is READY at real pushed C above. Its task hash d856ba979747dca715aa91f817bf36e0751012e0111a52349731cbf0a9c589ee. All three task/base/source hashes separately preflighted. Latest real Sol lease13:44:24UTC to13:54:24UTC shows RUNNING SOL-046; do not infer later online status without fresh lease. No review result accepted yet.
+- Existing source builder generated .runtime/source-package-review-20261020/SafeInvest-source.zip at source3dc37e6aad87a9fca7afa0c2773992f38746bd98:26,014,829bytes<50MB, SHA256e907f32062c1fc8fdc5402713ca2ed36b16a2e60b774c117cb2e3ed9db027d60,219 members. Bundle and all member hashes verified. Independent offline repository rebuilt by the packaged instructions,exact final receipt checked,report notes/metadata regenerated,and public PDF reproduced byte-for-byte. Records: audit/chief/source-package{,-offline}-review-20261020.json. This is the reviewed-source candidate package, NOT final manuscript acceptance; refresh after final review integrations.
+- Quota last verified86%,floor40%,no drain. No actual human-help request. Global state running; deadline23:30Beijing. No new coordinator,watcher,worker or supervisor was started/restarted.
+
+Next chain (only remote results are now needed before final release):
+1. Fetch exact SOL-046/047/048 receipts; verify canonical task/source/scope/artifact hashes and genuine checks. Inspect independent findings/fixtures,run each read-only verify.py --check in its pinned workspace or exact checkout,and accept only supported exact commits. Promote accepted paths/receipts; preserve any failed result and issue immutable correction if needed. No policy tuning or original final input reads.
+2. Full manuscript approval must bind C and its exact text. If corrections are required, distinguish reporting/layout corrections from mathematical bugs; retain freeze/exposure and all negative results. Do not treat chief checks as independent Sol authorship.
+3. After all review gates pass, produce clean final local English PDF from accepted text with the three local names; remove review-copy markers only as an explicitly audited editorial release. Re-render/inspect every final page,require<=10A4/min11pt/AI disclosure,record exact final SHA. Existing renderer currently intentionally marks REVIEW COPY and metadata submission_ready=false; update narrowly or use an audited rendering-only release,not a new manuscript framework.
+4. Commit/push accepted final records and regenerate <=50MB source supplement with existing builder; verify exact member hashes/bundle and final manifest. Keep final PDF/private identities ignored/local. Provide stable local deliverable paths and actual checks. Humans submit; never upload the entry.
+5. Only then mark control complete and workplan inactive. Until then preserve running and one30-minute fallback when solely awaiting remote results; actual receipts trigger earlier continuation.
+
+---
+
 # Latest bounded chief checkpoint, 2026-10-20 21:27 Beijing
 
 This top checkpoint supersedes ALL older running-task/final-gate claims below.

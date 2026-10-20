@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T13:44:02.359402+00:00",
-  "reason": "Complete content and8-page public/private review copy built and checked; exact review dispatch and source packaging now due.",
+  "next_wake_at": "2026-10-20T14:18:56.230981+00:00",
+  "reason": "Complete manuscript and offline-verified26MB source candidate are saved; only actual independent remote reviews are awaited before clean release.",
   "next_actions": [
-    "Accept actual successful SOL-045 receipt then release existing SOL-046/047; never retry an exhausted probe automatically.",
-    "Publish immutable exact complete-manuscript Sol review from newly pushed source; all A-E remain human review.",
-    "Build/check pushed-source <=50MB supplement with existing builder; final reviewed source package must be regenerated after any integration.",
-    "Await exact independent source/final/full-manuscript findings; only after review gates pass create clean final local named PDF and inspect every final page; humans submit."
+    "Fetch exact SOL-046/047/048 receipts and review actual independent findings/fixtures; run read-only saved checkers and accept/promote exact supported commits. Do not repeat accepted producers or reset final exposure.",
+    "After all independent gates pass, issue clean final local named PDF from exact approved text with audited removal of review markers; render/inspect every page and verify<=10A4/min11pt/AI disclosure.",
+    "Push final accepted records then refresh existing source ZIP<=50MB and exact archive/bundle hashes; current candidate at3dc37e6 passes offline reproduction including byte-identical PDF.",
+    "Only when reviews,content,final rendering/private names and final package pass set global complete/plan inactive; humans submit. No current human help needed."
   ],
   "quota_probe_not_before": "2026-10-20T16:10:00+08:00",
   "quota_probe_retries_after_first": 2,
   "quota_probe_min_retry_minutes": 60,
   "final_data_open": true,
-  "last_completed_at": "2026-10-20T13:42:02.359402+00:00",
+  "last_completed_at": "2026-10-20T13:48:56.230981+00:00",
   "quota_probe_verified_commit": "11ade9aeb4726473e65c32cfd254e03d9aec54b4",
   "quota_probe_release_not_before": "2026-10-20T15:55:00+08:00",
   "quota_probe_current_status": "SOL045_actual_success_accepted_three_reviews_ready",
   "last_successful_quota_probe_commit": "87cf934348c3a78ce10299fa7aece8168ade0c43",
   "quota_probe_task": "SOL-037",
   "quota_probe_remaining_additional_attempts_after_SOL028": 1,
-  "last_outcome_zh": "完整英文审阅稿已补齐并验证：8页A4、最小11pt、80项最终数值转录、39词客户解释、两项损坏拒绝通过；逐页视觉复核完成，成员姓名仅在本地。独立全文复核和最终源码包仍待完成。",
+  "last_outcome_zh": "完整8页英文审阅稿与39词客户解释已核验，最终负面结论保留。Sol21:40真实探针成功，三项独立复核已释放且SOL-046实际执行中。26.01MB源码包通过完整性与离线PDF逐字节复现；待独立回执后生成正式提交版。",
   "baseline_figure_source_commit": "04be213a76855b1b1815405a735f2a49be678935",
   "baseline_figure_review_task": "SOL-030",
   "layout_proof_path": "report/layout-proof/methods-baselines.pdf",
@@ -117,5 +117,9 @@
   "current_sol_probe": "SOL-045",
   "held_supplemental_reviews": [],
   "full_manuscript_review_task": "SOL-048",
-  "complete_manuscript_source": "cfde9523416113005e9de99325595d5823be94f1"
+  "complete_manuscript_source": "cfde9523416113005e9de99325595d5823be94f1",
+  "source_package_candidate_commit": "3dc37e6aad87a9fca7afa0c2773992f38746bd98",
+  "source_package_candidate_sha256": "e907f32062c1fc8fdc5402713ca2ed36b16a2e60b774c117cb2e3ed9db027d60",
+  "full_manuscript_status": "complete_content_independent_review_pending",
+  "final_release_pending": true
 }
