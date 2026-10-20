@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-030",
+  "reviewed_commit": "414498aaa373c6f0081d829f4020f0b5c33c6424",
+  "checked_at": "2026-10-20T03:57:47.649548+00:00",
+  "structural_checks": "passed",
+  "artifacts": 17,
+  "source_pins": 31,
+  "worker_failure": "Validation command 0 failed.",
+  "worker_model_exit_code": 0,
+  "quota_failure": false,
+  "runs": [
+    {
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "report/build_baseline_figures.py",
+        "--check"
+      ],
+      "cwd": "D:\\30576\\Documents\\2026_MCM",
+      "exit_code": 0,
+      "seconds": 8.25,
+      "stdout": "{\"status\": \"passed\", \"read_only\": true, \"summary_rows\": 3, \"path_points\": 183, \"selected_scenario\": 5, \"severe_loss_pct\": 50.87762271755738, \"exports\": 8, \"simulation_rerun\": false}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "audit/SOL-030/verify.py",
+        "--check"
+      ],
+      "cwd": "D:\\30576\\Documents\\2026_MCM\\.runtime\\r30-414498aa",
+      "exit_code": 0,
+      "seconds": 8.578000000037719,
+      "stdout": "{\"status\": \"passed\", \"read_only\": true, \"summary_quantities\": 12, \"H30_rows\": 360, \"path_points\": 183, \"source_pins\": 48, \"loss_pct\": 50.87762271755738, \"chief_renderer_check\": \"blocked_missing_matplotlib\"}\n",
+      "stderr": ""
+    }
+  ],
+  "decision": "preserve_failed_receipt_and_negative_report_findings; SVG correction remains required",
+  "competition_input_read": false,
+  "final_data_open": false
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "SOL-030",
+  "attempt": 1,
+  "owner": "sol",
+  "kind": "agent",
+  "base_commit": "04be213a76855b1b1815405a735f2a49be678935",
+  "depends_on": [
+    "HY3-003",
+    "SOL-008",
+    "SOL-013",
+    "SOL-020"
+  ],
+  "split": "development",
+  "max_seconds": 900,
+  "scope": "Independent review of chief baseline figure transforms, captions and qualified limitations/AI disclosure; accepted output artifacts only, no simulation or new policy decision.",
+  "parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "source_sha256": {
+      ".gitattributes": "b22b3b1646e5e261727ff5be25eb7e35eedc278f393807801fc272862a06d908",
+      "requirements.txt": "ec168beb81c92a6939cc68343c65871ff9ca802518912d12d010c04f1dac9a95",
+      "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+      "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+      "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+      "specs/PERSONALIZED_REVIEW.md": "0365fdf989ae7abfeda0bc3f48f8c86245a40dd9e48b3c6ae8d2d26c0b7c4987",
+      "specs/PERSONALIZED_OUTPUT_NOTES.md": "f328a5832251faab1b8810b598fc66408e5a323afc755a0011cfdb0b04e255a7",
+      "data/manifest.json": "2535c087075957919d5f1990ad234ca436f7b3506ba592ac8a6457feb42fe90d",
+      "ops/skills-lock.json": "b5c8d7920a11dfa88db66f6552448b6c7c3274084a63af8fa44f2025cc493a0f",
+      "report/build_baseline_figures.py": "8db255568defdf6600c13c3064ad14842cabd03e824bbdf343c8de21cbb4a11a",
+      "report/baseline-figure-captions.md": "68640857073de8120df1c7600e6ae65b35ed8afb9b5bde51ecd539a85e5c24b0",
+      "report/limitations-and-disclosure-draft.md": "48e9bd12b43bf31e4e48e3e9f4d7bfd8b3924c7277f1fff2df07b6b33d9e0117",
+      "report/figures/baseline-figures-provenance.json": "04a5910ecaa45233a8d534b55fb1e5b3abb243dbc23a0aa52ff70f0e9937387e",
+      "audit/chief/HY3-003-review.json": "49770913724204472524ee06f0cb2445a3c12150a128a98ee13c5b7e50f86430",
+      "audit/chief/SOL-008-review.json": "9f202890920efd15480f9e3f3c904ddd52f282dafd5b9962e261bfdd9a135e77",
+      "audit/chief/SOL-013-review.json": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462",
+      "audit/chief/SOL-020-review.json": "276895e8e12b9c212fe433f0fa1c07408c601502ffd5d9ce965a684fdc72551b",
+      "audit/chief/baseline-figures-validation.json": "48dbd5d30a05d17bc3a7578eb49b4dfec61450ba4dd9f73b1f1cec2a2a73a7aa",
+      "audit/chief/validate_baseline_figures.py": "5bf19f9d564c687faa607140d5fef3c1b943e180b53d94f6c1261a2adf51558a",
+      "results/development/HY3-003/summary.csv": "965c3ac513f63de31830603ab968f5c6e99c6ceb763515b99753282d8c3a4994",
+      "results/development/HY3-003/scenario_metrics.csv": "afabf571d8c7d224bd83f836033fe4c4907a05fc15a2e8614c8ae09d803f100c",
+      "results/development/HY3-003/annual_ledgers.csv": "b2e93442391d2a7cec4bdfe79b397c14c311cc229e2e6c3d82d2dd04199d470a",
+      "handoff/HY3-003/result.json": "99a5a5ca49d46b48ee4f929632eae0551a0028c833526835829713334d8909f0",
+      "report/figures/baseline-h30-severe-path.pdf": "3d758ee41c85fc7043b2e38ab5030e478439b150a65d93029e09904a61283afe",
+      "report/figures/baseline-h30-severe-path.png": "a559fd676f1f332dec4abb0c5be0fd5c2c0dbb535c7070983c358629585dc5cc",
+      "report/figures/baseline-h30-severe-path.svg": "9844b50431b67574f06b3196aa09ba1a9e8dae28f8e58ca9ff01d5de039724eb",
+      "report/figures/baseline-h30-severe-points.csv": "50f3bb6ef1052d04b01889d732a88b4d381747009127e1701244764952b438ab",
+      "report/figures/baseline-h30-summary.pdf": "506f8e7c5a522b19fd8780bb34774f4a01a5468758ee4b13f1eb0f149f085d41",
+      "report/figures/baseline-h30-summary.png": "68cd930c058ab37508b908d4e54eb96ccbdbe025a537fbd7317919d04f3e6839",
+      "report/figures/baseline-h30-summary.svg": "5232e6f8ce872682871effda4c128f9ddb4778a4f400e7bf84d82de18ec6d746"
+    },
+    "source_result_commit": "7652410d73425371110784ef5fa97c03470a074e",
+    "accepted_result_review_commit": "818af5d65bd8a271962d848dd552bd39ca561f68",
+    "simulation_authorized": false,
+    "raw_or_final_input_reads_authorized": false,
+    "max_artifact_bytes": 10485760,
+    "figure_count": 2,
+    "summary_statistics": 12,
+    "path_point_count": 183
+  },
+  "allowed_paths": [
+    "audit/SOL-030"
+  ],
+  "deliverables": [
+    "audit/SOL-030/review.md",
+    "audit/SOL-030/findings.json",
+    "audit/SOL-030/verify.py",
+    "audit/SOL-030/verification.json",
+    "audit/SOL-030/source-binding.json"
+  ],
+  "commands": [],
+  "validation_commands": [
+    [
+      "{python}",
+      "-B",
+      "report/build_baseline_figures.py",
+      "--check"
+    ],
+    [
+      "{python}",
+      "-B",
+      "audit/SOL-030/verify.py",
+      "--check"
+    ]
+  ],
+  "acceptance_checks": [
+    "Exact task, existing pushed source base, all source/export pins, allowed paths and preserved negative history.",
+    "Independently recompute twelve H30 medians/linear quantiles from 360 accepted metric rows; verify three severe scenario choices and all 183 source-bound plotted event points.",
+    "Retain initial and post-fee events, exact year-t post-fee time t-1, strict original peak/trough rule and same-scenario comparator identity; no new simulation.",
+    "Inspect both plots and captions: units, split, horizon, sample count, fee, descriptive percentile meaning, no confidence or causal-fee/selection claim, readable fonts and no annotation overlap.",
+    "Check limitations/AI disclosure against reviewed contracts and actual queue scope; distinguish completed behavior from pending policies/final data and retain private-identity boundary.",
+    "Portable read-only source-bound verifier leaves evidence unchanged, rejects a numeric-point and source-identity corruption in isolated copies, and does not import renderer as numerical oracle."
+  ],
+  "instructions": "Read AGENTS.md and this immutable task. This is a narrow report-asset review, not a policy/result experiment or full-paper acceptance. Reuse the accepted HY3-003 saved summary, scenario_metrics and annual_ledgers from the exact pins. Never rerun HY3-003, read competition input CSVs (raw/development/final), select a new scenario by visual appearance, fit/tune a model, or change accepted source/specification/report files. The original result remains accepted; an issue in these new transformations is a report defect, not retroactive rejection of HY3 evidence.\n\nIndependently check all twelve summary quantities using the 120 saved H30 rows per reference. Recheck each reference's severe scenario ID under exact loss ordering and smallest-ID exact tie. Read the 183 plotted observations and compare every policy/scenario/year/stage/value/time coordinate with the accepted ledger including initial wealth 100. Independently reconstruct the annual baseline severe peak/trough and loss; confirm scenario5 is its own severe path, while the other references are comparators on that same path (not their own worst cases). Fees for year t occur at elapsed t-1, so year8 post-fee is at time7. Do not drop duplicated time coordinates, treat the last-year wealth as the loss trough, smooth paths or interpret line segments as observed intra-year paths.\n\nInspect source plotting logic plus both actual PNG/PDF/SVG exports. Check source pins and stored hashes, units, captions, descriptive p10/p90 meanings, figure width180mm/minimum11pt, PDF fonts and plot/text clarity. Read-only --check intentionally checks reconstructed semantics and stored output hashes rather than expecting identical newly rendered bytes on another platform. Numerical source validation must be your own calculation, not a call to the chief renderer or chief validation script. Chief checks and initial failed layout checks remain preserved under audit/chief/baseline-figures-history. Note any materially incorrect or misleading text; do not expand task into full manuscript QA.\n\nReview limitations-and-disclosure-draft.md against the exact approved contracts: synthetic/annual limits, no withdrawals, target reserve vs drifting bill holdings, fee convention, one-year CE assumption, overlapping development folds, lagged latched suspension, unchanged holdings with ongoing exposure, own-tolerance rescreen/no fallback and pending final outcomes. Check actual role claims without inferring human approval or completed work from model capability. Private member details must remain local. The K-Dense bibliographic record was checked by chief; source metadata can be reported without a new web/model task. Do not add real-market claims or reinterpret the problem using generic trading skills.\n\nCreate compact review/findings and a new independent verifier plus exclusively created evidence. Bind verification to this task/base/source closure and the exact code that produced it; --check must reject changed inputs/evidence without rewriting anything, and remain portable if main advances. Demonstrate numeric-point corruption and source-identity corruption in isolated scratch representations, preserving outcomes. Do not edit historical evidence or accepted files to make a check pass. If you find an actual defect, report changes_required with evidence; do not fix chief files. Distinguish publication-readiness findings from any remaining policy or final gate. Audit evidence only in audit/SOL-030, scratch only ignored locations; keep files below10MiB.\n\nUse current Python3.12/project requirements, CPU only, no installs, model/account switches, replacement agents, worker restart or spending. No fetch/merge/commit/push; parent handles receipt and delivery. Work within15minutes including checks. This task is held for proven quota recovery and ranked after writer SOL-029 and personalized SOL-027; only run when coordinator releases the queue entry. Preserve actual quota or infrastructure failures honestly."
+}

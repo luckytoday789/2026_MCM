@@ -26,7 +26,7 @@ highest median growth, but annual thirds has higher p10 growth and lower p90 los
 All three have positive maximum real drawdowns. The figure shows development
 scenario statistics rather than confidence bounds or guarantees.
 
-Files: `figures/baseline-h30-summary.svg`, `.pdf` and `.png`.
+Publication files: `figures/baseline-h30-summary.pdf` and `.png`.
 
 ## Figure B2: A severe path for the required annual equal-weight baseline
 
@@ -47,7 +47,7 @@ closely early and ends higher, while bills follows a different lower-growth path
 The selected scenario belongs to the annual baseline, not to each comparator's
 severe-case selection. The downloadable event table preserves the fee observations.
 
-Files: `figures/baseline-h30-severe-path.svg`, `.pdf` and `.png`;
+Publication files: `figures/baseline-h30-severe-path.pdf` and `.png`;
 `figures/baseline-h30-severe-points.csv` contains all 183 plotted observations.
 
 ## Reproduction and attribution
@@ -69,3 +69,5 @@ Kassis, T., Agarwal, V., He, Y., Patel, D., and Brueckner, A. M. (2026).
 *Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents*.
 [arXiv:2609.00065](https://doi.org/10.48550/arXiv.2609.00065).
 The arXiv author/title record was checked on 2026-10-20 (latest record: v2).
+
+Publication format: use the PDF exports with embedded fonts or the 300 dpi PNG exports. The retained SVG previews depend on a locally available DejaVu Sans font. Font substitution can clip labels; SVG previews are excluded from manuscript insertion and submission figures pending a separate portability correction.

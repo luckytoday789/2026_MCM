@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-030",
+  "attempt": 1,
+  "base_commit": "04be213a76855b1b1815405a735f2a49be678935",
+  "task_sha256": "c164559e5fc86d5de16d7bf54679518a8941927a079f75364d174586263ac191",
+  "verdict": "changes_required",
+  "numerical_review": "passed",
+  "png_pdf_review": "passed",
+  "svg_review": "changes_required",
+  "disclosure_review": "no_material_incorrect_claim_identified",
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "medium",
+      "scope": "Report SVG portability and publication readiness",
+      "path": "report/figures/baseline-h30-summary.svg",
+      "issue": "Named text font is not embedded; actual local SVG rendering substitutes a wider serif font and clips both Initial thirds held labels at the left edge.",
+      "evidence": [
+        "audit/SOL-030/svg-render-summary.png",
+        "audit/SOL-030/inspection.json"
+      ],
+      "required_action": "Chief should make the SVG text layout portable (for example self-contained font/glyphs or a verified font fallback with sufficient margin), or explicitly restrict publication to the verified PDF/PNG and qualify SVG font requirements. Reinspect any changed SVG; do not change accepted result data."
+    },
+    {
+      "id": "E1",
+      "severity": "validation_blocker",
+      "scope": "Worker infrastructure only",
+      "issue": "Prescribed chief renderer --check exits1 because current Python3.12 worker venv has no matplotlib. No installs authorized. Independent stdlib verifier does not need it.",
+      "evidence": [
+        "audit/SOL-030/execution-history.json"
+      ],
+      "required_action": "Coordinator reruns prescribed renderer check in an existing environment meeting project requirements; retain this actual failure."
+    },
+    {
+      "id": "N1",
+      "severity": "optional_clarity",
+      "path": "report/limitations-and-disclosure-draft.md",
+      "issue": "Lagged review and pending holdings are accurate. An explicit sentence that the simulation latch persists through H with no simulated human restart would sharpen the permanent-latch contract.",
+      "required_action": "Optional drafting clarification; no contrary restart or liquidation claim was found."
+    }
+  ],
+  "summary": {
+    "quantities": 12,
+    "H30_rows": 360,
+    "plotted_events": 183,
+    "field_comparisons": 1281,
+    "severe_scenario_ids": {
+      "bills_keep": 42,
+      "equal_weight_annual": 5,
+      "equal_weight_buy_hold": 29
+    },
+    "annual_loss_pct": 50.87762271755738,
+    "annual_peak": {
+      "year": 1,
+      "stage": "end",
+      "time": 1,
+      "value": 109.63239431398468
+    },
+    "annual_trough": {
+      "year": 8,
+      "stage": "post_fee",
+      "time": 7,
+      "value": 53.85403835869073
+    }
+  },
+  "accepted_HY3_evidence_status": "unchanged; accepted result is not retroactively rejected",
+  "policy_or_final_gate": "No policy recommendation, production-outcome, freeze, final-data or complete-paper approval.",
+  "source_or_chief_files_modified": false,
+  "private_member_data_exported": false
+}

@@ -1,0 +1,1862 @@
+{
+  "base_commit": "04be213a76855b1b1815405a735f2a49be678935",
+  "chief_renderer_check": "blocked_missing_matplotlib",
+  "competition_inputs_read": false,
+  "evidence_sha256": {
+    "execution-history.json": "796c3366ac19818f1bb88ee2fc5293b105510f497ab259ea37359990fa4985b2",
+    "findings.json": "a7842b41e6561c2dcae6eee34b3e04730692391ab7b9d36d159db53307b4196d",
+    "inspection.json": "09e98b0efbfcc535192031e6802236629ee14b932776633a25850dba721ac4f7",
+    "integrity-self-tests.json": "a87a4bbfea306e90da74533a46f1894986bdc24399b77de24d78882eb8ad0165",
+    "review.md": "a344018e8cb409aee4e8fcd4643e7adc43a9dd0a1c7e5c2235c0b64fff6c1afa",
+    "selftest.py": "b6b14a419fbf6fd404aab48960abefc48d77470102a43492097a81c4d71702d8",
+    "svg-render-severe-path.png": "bb1e2c5a1949a73e62c1f7889592afe731f00cdec0b44629ea15fa2a70c174d6",
+    "svg-render-summary.png": "8125055500ec655c1ecbe532917c27942e748b97b2a4ded2bd57ad6016a45790",
+    "task-lock.json": "6f3c607aab4309c95db0bf028127a28d93990a86e787a6407f71b94dc9c2cf8a",
+    "trial-001-verify.py": "b543529edee381bb8aff2434e47b09208efd1839568c2aee266fded904cf0947",
+    "trial-001.json": "2113a631dc30e8116c2fff7c87bc0971bde0baf4639a85bc01b7bc7c1d867ea1"
+  },
+  "exports": {
+    "severe-path": {
+      "pdf_embedded_fontfiles": 2,
+      "pdf_fonts": [
+        "CBMZYS+DejaVuSans",
+        "HBLROD+DejaVuSans-Bold"
+      ],
+      "pdf_min_font_pt": 11.0,
+      "pdf_mm": [
+        179.99999999998556,
+        111.99999999998946
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_pixels": [
+        2125,
+        1322
+      ],
+      "svg_max_coordinate_residual_pt": 9.333333537142607e-07,
+      "svg_min_font_pt_at_export_width": 11.0,
+      "svg_vertices_checked": 183,
+      "svg_width_mm": 179.99999983333333
+    },
+    "summary": {
+      "pdf_embedded_fontfiles": 2,
+      "pdf_fonts": [
+        "BBZQOS+DejaVuSans",
+        "PHRUCC+DejaVuSans-Bold"
+      ],
+      "pdf_min_font_pt": 11.0,
+      "pdf_mm": [
+        179.99999999998556,
+        125.99999999999694
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_pixels": [
+        2125,
+        1488
+      ],
+      "svg_max_coordinate_residual_pt": 4.60517014744255e-07,
+      "svg_min_font_pt_at_export_width": 11.0,
+      "svg_vertices_checked": 12,
+      "svg_width_mm": 179.99999983333333
+    }
+  },
+  "numerical": {
+    "duplicated_times_retained": true,
+    "field_comparisons": 1281,
+    "h30_metric_rows": 360,
+    "loss_pct": 50.87762271755738,
+    "peak": {
+      "elapsed_years": 1,
+      "event_index": 2,
+      "policy": "equal_weight_annual",
+      "real_wealth": 109.63239431398468,
+      "scenario_id": 5,
+      "stage": "end",
+      "year": 1
+    },
+    "point_count": 183,
+    "points": [
+      {
+        "elapsed_years": 0,
+        "event_index": 0,
+        "policy": "bills_keep",
+        "real_wealth": 100.0,
+        "scenario_id": 5,
+        "stage": "initial",
+        "year": 0
+      },
+      {
+        "elapsed_years": 0,
+        "event_index": 1,
+        "policy": "bills_keep",
+        "real_wealth": 100.0,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 1
+      },
+      {
+        "elapsed_years": 1,
+        "event_index": 2,
+        "policy": "bills_keep",
+        "real_wealth": 100.0776508043078,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 1
+      },
+      {
+        "elapsed_years": 1,
+        "event_index": 3,
+        "policy": "bills_keep",
+        "real_wealth": 100.0776508043078,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 2
+      },
+      {
+        "elapsed_years": 2,
+        "event_index": 4,
+        "policy": "bills_keep",
+        "real_wealth": 100.32281701009286,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 2
+      },
+      {
+        "elapsed_years": 2,
+        "event_index": 5,
+        "policy": "bills_keep",
+        "real_wealth": 100.32281701009286,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 3
+      },
+      {
+        "elapsed_years": 3,
+        "event_index": 6,
+        "policy": "bills_keep",
+        "real_wealth": 102.14678603399993,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 3
+      },
+      {
+        "elapsed_years": 3,
+        "event_index": 7,
+        "policy": "bills_keep",
+        "real_wealth": 102.14678603399993,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 4
+      },
+      {
+        "elapsed_years": 4,
+        "event_index": 8,
+        "policy": "bills_keep",
+        "real_wealth": 104.22384924716492,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 4
+      },
+      {
+        "elapsed_years": 4,
+        "event_index": 9,
+        "policy": "bills_keep",
+        "real_wealth": 104.22384924716492,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 5
+      },
+      {
+        "elapsed_years": 5,
+        "event_index": 10,
+        "policy": "bills_keep",
+        "real_wealth": 108.54291430074733,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 5
+      },
+      {
+        "elapsed_years": 5,
+        "event_index": 11,
+        "policy": "bills_keep",
+        "real_wealth": 108.54291430074733,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 6
+      },
+      {
+        "elapsed_years": 6,
+        "event_index": 12,
+        "policy": "bills_keep",
+        "real_wealth": 109.59626801317087,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 6
+      },
+      {
+        "elapsed_years": 6,
+        "event_index": 13,
+        "policy": "bills_keep",
+        "real_wealth": 109.59626801317087,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 7
+      },
+      {
+        "elapsed_years": 7,
+        "event_index": 14,
+        "policy": "bills_keep",
+        "real_wealth": 87.80462199258014,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 7
+      },
+      {
+        "elapsed_years": 7,
+        "event_index": 15,
+        "policy": "bills_keep",
+        "real_wealth": 87.80462199258014,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 8
+      },
+      {
+        "elapsed_years": 8,
+        "event_index": 16,
+        "policy": "bills_keep",
+        "real_wealth": 90.01389611402803,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 8
+      },
+      {
+        "elapsed_years": 8,
+        "event_index": 17,
+        "policy": "bills_keep",
+        "real_wealth": 90.01389611402803,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 9
+      },
+      {
+        "elapsed_years": 9,
+        "event_index": 18,
+        "policy": "bills_keep",
+        "real_wealth": 99.10784202169842,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 9
+      },
+      {
+        "elapsed_years": 9,
+        "event_index": 19,
+        "policy": "bills_keep",
+        "real_wealth": 99.10784202169842,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 10
+      },
+      {
+        "elapsed_years": 10,
+        "event_index": 20,
+        "policy": "bills_keep",
+        "real_wealth": 101.14687008255372,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 10
+      },
+      {
+        "elapsed_years": 10,
+        "event_index": 21,
+        "policy": "bills_keep",
+        "real_wealth": 101.14687008255372,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 11
+      },
+      {
+        "elapsed_years": 11,
+        "event_index": 22,
+        "policy": "bills_keep",
+        "real_wealth": 102.10603924436532,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 11
+      },
+      {
+        "elapsed_years": 11,
+        "event_index": 23,
+        "policy": "bills_keep",
+        "real_wealth": 102.10603924436532,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 12
+      },
+      {
+        "elapsed_years": 12,
+        "event_index": 24,
+        "policy": "bills_keep",
+        "real_wealth": 96.94287644803252,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 12
+      },
+      {
+        "elapsed_years": 12,
+        "event_index": 25,
+        "policy": "bills_keep",
+        "real_wealth": 96.94287644803252,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 13
+      },
+      {
+        "elapsed_years": 13,
+        "event_index": 26,
+        "policy": "bills_keep",
+        "real_wealth": 93.38678991356917,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 13
+      },
+      {
+        "elapsed_years": 13,
+        "event_index": 27,
+        "policy": "bills_keep",
+        "real_wealth": 93.38678991356917,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 14
+      },
+      {
+        "elapsed_years": 14,
+        "event_index": 28,
+        "policy": "bills_keep",
+        "real_wealth": 94.18954989809659,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 14
+      },
+      {
+        "elapsed_years": 14,
+        "event_index": 29,
+        "policy": "bills_keep",
+        "real_wealth": 94.18954989809659,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 15
+      },
+      {
+        "elapsed_years": 15,
+        "event_index": 30,
+        "policy": "bills_keep",
+        "real_wealth": 94.29315259835096,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 15
+      },
+      {
+        "elapsed_years": 15,
+        "event_index": 31,
+        "policy": "bills_keep",
+        "real_wealth": 94.29315259835096,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 16
+      },
+      {
+        "elapsed_years": 16,
+        "event_index": 32,
+        "policy": "bills_keep",
+        "real_wealth": 96.70528884809846,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 16
+      },
+      {
+        "elapsed_years": 16,
+        "event_index": 33,
+        "policy": "bills_keep",
+        "real_wealth": 96.70528884809846,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 17
+      },
+      {
+        "elapsed_years": 17,
+        "event_index": 34,
+        "policy": "bills_keep",
+        "real_wealth": 103.42202690047094,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 17
+      },
+      {
+        "elapsed_years": 17,
+        "event_index": 35,
+        "policy": "bills_keep",
+        "real_wealth": 103.42202690047094,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 18
+      },
+      {
+        "elapsed_years": 18,
+        "event_index": 36,
+        "policy": "bills_keep",
+        "real_wealth": 108.30961277373561,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 18
+      },
+      {
+        "elapsed_years": 18,
+        "event_index": 37,
+        "policy": "bills_keep",
+        "real_wealth": 108.30961277373561,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 19
+      },
+      {
+        "elapsed_years": 19,
+        "event_index": 38,
+        "policy": "bills_keep",
+        "real_wealth": 111.87394885475958,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 19
+      },
+      {
+        "elapsed_years": 19,
+        "event_index": 39,
+        "policy": "bills_keep",
+        "real_wealth": 111.87394885475958,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 20
+      },
+      {
+        "elapsed_years": 20,
+        "event_index": 40,
+        "policy": "bills_keep",
+        "real_wealth": 116.73451432742795,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 20
+      },
+      {
+        "elapsed_years": 20,
+        "event_index": 41,
+        "policy": "bills_keep",
+        "real_wealth": 116.73451432742795,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 21
+      },
+      {
+        "elapsed_years": 21,
+        "event_index": 42,
+        "policy": "bills_keep",
+        "real_wealth": 112.97072188841233,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 21
+      },
+      {
+        "elapsed_years": 21,
+        "event_index": 43,
+        "policy": "bills_keep",
+        "real_wealth": 112.97072188841233,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 22
+      },
+      {
+        "elapsed_years": 22,
+        "event_index": 44,
+        "policy": "bills_keep",
+        "real_wealth": 111.9144724858705,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 22
+      },
+      {
+        "elapsed_years": 22,
+        "event_index": 45,
+        "policy": "bills_keep",
+        "real_wealth": 111.9144724858705,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 23
+      },
+      {
+        "elapsed_years": 23,
+        "event_index": 46,
+        "policy": "bills_keep",
+        "real_wealth": 107.87861114060297,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 23
+      },
+      {
+        "elapsed_years": 23,
+        "event_index": 47,
+        "policy": "bills_keep",
+        "real_wealth": 107.87861114060297,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 24
+      },
+      {
+        "elapsed_years": 24,
+        "event_index": 48,
+        "policy": "bills_keep",
+        "real_wealth": 110.81438097545033,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 24
+      },
+      {
+        "elapsed_years": 24,
+        "event_index": 49,
+        "policy": "bills_keep",
+        "real_wealth": 110.81438097545033,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 25
+      },
+      {
+        "elapsed_years": 25,
+        "event_index": 50,
+        "policy": "bills_keep",
+        "real_wealth": 113.80517588951837,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 25
+      },
+      {
+        "elapsed_years": 25,
+        "event_index": 51,
+        "policy": "bills_keep",
+        "real_wealth": 113.80517588951837,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 26
+      },
+      {
+        "elapsed_years": 26,
+        "event_index": 52,
+        "policy": "bills_keep",
+        "real_wealth": 116.7022934472367,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 26
+      },
+      {
+        "elapsed_years": 26,
+        "event_index": 53,
+        "policy": "bills_keep",
+        "real_wealth": 116.7022934472367,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 27
+      },
+      {
+        "elapsed_years": 27,
+        "event_index": 54,
+        "policy": "bills_keep",
+        "real_wealth": 126.81414693450975,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 27
+      },
+      {
+        "elapsed_years": 27,
+        "event_index": 55,
+        "policy": "bills_keep",
+        "real_wealth": 126.81414693450975,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 28
+      },
+      {
+        "elapsed_years": 28,
+        "event_index": 56,
+        "policy": "bills_keep",
+        "real_wealth": 128.4839868548344,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 28
+      },
+      {
+        "elapsed_years": 28,
+        "event_index": 57,
+        "policy": "bills_keep",
+        "real_wealth": 128.4839868548344,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 29
+      },
+      {
+        "elapsed_years": 29,
+        "event_index": 58,
+        "policy": "bills_keep",
+        "real_wealth": 136.10535277906718,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 29
+      },
+      {
+        "elapsed_years": 29,
+        "event_index": 59,
+        "policy": "bills_keep",
+        "real_wealth": 136.10535277906718,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 30
+      },
+      {
+        "elapsed_years": 30,
+        "event_index": 60,
+        "policy": "bills_keep",
+        "real_wealth": 136.14447590330013,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 30
+      },
+      {
+        "elapsed_years": 0,
+        "event_index": 0,
+        "policy": "equal_weight_annual",
+        "real_wealth": 100.0,
+        "scenario_id": 5,
+        "stage": "initial",
+        "year": 0
+      },
+      {
+        "elapsed_years": 0,
+        "event_index": 1,
+        "policy": "equal_weight_annual",
+        "real_wealth": 99.83333333333331,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 1
+      },
+      {
+        "elapsed_years": 1,
+        "event_index": 2,
+        "policy": "equal_weight_annual",
+        "real_wealth": 109.63239431398468,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 1
+      },
+      {
+        "elapsed_years": 1,
+        "event_index": 3,
+        "policy": "equal_weight_annual",
+        "real_wealth": 109.61883353004323,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 2
+      },
+      {
+        "elapsed_years": 2,
+        "event_index": 4,
+        "policy": "equal_weight_annual",
+        "real_wealth": 104.80656722143812,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 2
+      },
+      {
+        "elapsed_years": 2,
+        "event_index": 5,
+        "policy": "equal_weight_annual",
+        "real_wealth": 104.79730154574982,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 3
+      },
+      {
+        "elapsed_years": 3,
+        "event_index": 6,
+        "policy": "equal_weight_annual",
+        "real_wealth": 96.95127102552551,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 3
+      },
+      {
+        "elapsed_years": 3,
+        "event_index": 7,
+        "policy": "equal_weight_annual",
+        "real_wealth": 96.93535660300985,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 4
+      },
+      {
+        "elapsed_years": 4,
+        "event_index": 8,
+        "policy": "equal_weight_annual",
+        "real_wealth": 92.51819098719409,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 4
+      },
+      {
+        "elapsed_years": 4,
+        "event_index": 9,
+        "policy": "equal_weight_annual",
+        "real_wealth": 92.50967172100763,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 5
+      },
+      {
+        "elapsed_years": 5,
+        "event_index": 10,
+        "policy": "equal_weight_annual",
+        "real_wealth": 88.66428903132689,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 5
+      },
+      {
+        "elapsed_years": 5,
+        "event_index": 11,
+        "policy": "equal_weight_annual",
+        "real_wealth": 88.64308508152168,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 6
+      },
+      {
+        "elapsed_years": 6,
+        "event_index": 12,
+        "policy": "equal_weight_annual",
+        "real_wealth": 76.38262263649106,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 6
+      },
+      {
+        "elapsed_years": 6,
+        "event_index": 13,
+        "policy": "equal_weight_annual",
+        "real_wealth": 76.37088948732388,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 7
+      },
+      {
+        "elapsed_years": 7,
+        "event_index": 14,
+        "policy": "equal_weight_annual",
+        "real_wealth": 53.86014293412466,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 7
+      },
+      {
+        "elapsed_years": 7,
+        "event_index": 15,
+        "policy": "equal_weight_annual",
+        "real_wealth": 53.85403835869073,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 8
+      },
+      {
+        "elapsed_years": 8,
+        "event_index": 16,
+        "policy": "equal_weight_annual",
+        "real_wealth": 55.33829373658631,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 8
+      },
+      {
+        "elapsed_years": 8,
+        "event_index": 17,
+        "policy": "equal_weight_annual",
+        "real_wealth": 55.33252732877953,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 9
+      },
+      {
+        "elapsed_years": 9,
+        "event_index": 18,
+        "policy": "equal_weight_annual",
+        "real_wealth": 63.581951821445024,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 9
+      },
+      {
+        "elapsed_years": 9,
+        "event_index": 19,
+        "policy": "equal_weight_annual",
+        "real_wealth": 63.57918970362302,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 10
+      },
+      {
+        "elapsed_years": 10,
+        "event_index": 20,
+        "policy": "equal_weight_annual",
+        "real_wealth": 67.4307775541553,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 10
+      },
+      {
+        "elapsed_years": 10,
+        "event_index": 21,
+        "policy": "equal_weight_annual",
+        "real_wealth": 67.42683181264121,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 11
+      },
+      {
+        "elapsed_years": 11,
+        "event_index": 22,
+        "policy": "equal_weight_annual",
+        "real_wealth": 77.51867505829374,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 11
+      },
+      {
+        "elapsed_years": 11,
+        "event_index": 23,
+        "policy": "equal_weight_annual",
+        "real_wealth": 77.50801295004547,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 12
+      },
+      {
+        "elapsed_years": 12,
+        "event_index": 24,
+        "policy": "equal_weight_annual",
+        "real_wealth": 71.26247240204272,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 12
+      },
+      {
+        "elapsed_years": 12,
+        "event_index": 25,
+        "policy": "equal_weight_annual",
+        "real_wealth": 71.25990470685562,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 13
+      },
+      {
+        "elapsed_years": 13,
+        "event_index": 26,
+        "policy": "equal_weight_annual",
+        "real_wealth": 66.85384077055404,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 13
+      },
+      {
+        "elapsed_years": 13,
+        "event_index": 27,
+        "policy": "equal_weight_annual",
+        "real_wealth": 66.84759985935516,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 14
+      },
+      {
+        "elapsed_years": 14,
+        "event_index": 28,
+        "policy": "equal_weight_annual",
+        "real_wealth": 69.70865864416906,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 14
+      },
+      {
+        "elapsed_years": 14,
+        "event_index": 29,
+        "policy": "equal_weight_annual",
+        "real_wealth": 69.69993786924728,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 15
+      },
+      {
+        "elapsed_years": 15,
+        "event_index": 30,
+        "policy": "equal_weight_annual",
+        "real_wealth": 74.25179731658321,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 15
+      },
+      {
+        "elapsed_years": 15,
+        "event_index": 31,
+        "policy": "equal_weight_annual",
+        "real_wealth": 74.24645840113624,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 16
+      },
+      {
+        "elapsed_years": 16,
+        "event_index": 32,
+        "policy": "equal_weight_annual",
+        "real_wealth": 81.92010352141753,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 16
+      },
+      {
+        "elapsed_years": 16,
+        "event_index": 33,
+        "policy": "equal_weight_annual",
+        "real_wealth": 81.91077856130497,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 17
+      },
+      {
+        "elapsed_years": 17,
+        "event_index": 34,
+        "policy": "equal_weight_annual",
+        "real_wealth": 98.8170119223927,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 17
+      },
+      {
+        "elapsed_years": 17,
+        "event_index": 35,
+        "policy": "equal_weight_annual",
+        "real_wealth": 98.79698750094454,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 18
+      },
+      {
+        "elapsed_years": 18,
+        "event_index": 36,
+        "policy": "equal_weight_annual",
+        "real_wealth": 109.92182041730744,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 18
+      },
+      {
+        "elapsed_years": 18,
+        "event_index": 37,
+        "policy": "equal_weight_annual",
+        "real_wealth": 109.91298965088193,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 19
+      },
+      {
+        "elapsed_years": 19,
+        "event_index": 38,
+        "policy": "equal_weight_annual",
+        "real_wealth": 120.20022224683639,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 19
+      },
+      {
+        "elapsed_years": 19,
+        "event_index": 39,
+        "policy": "equal_weight_annual",
+        "real_wealth": 120.19092050089593,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 20
+      },
+      {
+        "elapsed_years": 20,
+        "event_index": 40,
+        "policy": "equal_weight_annual",
+        "real_wealth": 131.1991521929774,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 20
+      },
+      {
+        "elapsed_years": 20,
+        "event_index": 41,
+        "policy": "equal_weight_annual",
+        "real_wealth": 131.17841172917124,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 21
+      },
+      {
+        "elapsed_years": 21,
+        "event_index": 42,
+        "policy": "equal_weight_annual",
+        "real_wealth": 141.92514054361914,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 21
+      },
+      {
+        "elapsed_years": 21,
+        "event_index": 43,
+        "policy": "equal_weight_annual",
+        "real_wealth": 141.90797501389793,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 22
+      },
+      {
+        "elapsed_years": 22,
+        "event_index": 44,
+        "policy": "equal_weight_annual",
+        "real_wealth": 144.93291424202545,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 22
+      },
+      {
+        "elapsed_years": 22,
+        "event_index": 45,
+        "policy": "equal_weight_annual",
+        "real_wealth": 144.92629835876767,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 23
+      },
+      {
+        "elapsed_years": 23,
+        "event_index": 46,
+        "policy": "equal_weight_annual",
+        "real_wealth": 145.4838727475401,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 23
+      },
+      {
+        "elapsed_years": 23,
+        "event_index": 47,
+        "policy": "equal_weight_annual",
+        "real_wealth": 145.4676713164266,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 24
+      },
+      {
+        "elapsed_years": 24,
+        "event_index": 48,
+        "policy": "equal_weight_annual",
+        "real_wealth": 152.38747737170223,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 24
+      },
+      {
+        "elapsed_years": 24,
+        "event_index": 49,
+        "policy": "equal_weight_annual",
+        "real_wealth": 152.3769622513079,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 25
+      },
+      {
+        "elapsed_years": 25,
+        "event_index": 50,
+        "policy": "equal_weight_annual",
+        "real_wealth": 163.24838553902632,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 25
+      },
+      {
+        "elapsed_years": 25,
+        "event_index": 51,
+        "policy": "equal_weight_annual",
+        "real_wealth": 163.2363260565478,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 26
+      },
+      {
+        "elapsed_years": 26,
+        "event_index": 52,
+        "policy": "equal_weight_annual",
+        "real_wealth": 175.14849205055467,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 26
+      },
+      {
+        "elapsed_years": 26,
+        "event_index": 53,
+        "policy": "equal_weight_annual",
+        "real_wealth": 175.12629581689276,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 27
+      },
+      {
+        "elapsed_years": 27,
+        "event_index": 54,
+        "policy": "equal_weight_annual",
+        "real_wealth": 193.37737086211132,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 27
+      },
+      {
+        "elapsed_years": 27,
+        "event_index": 55,
+        "policy": "equal_weight_annual",
+        "real_wealth": 193.36575303649255,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 28
+      },
+      {
+        "elapsed_years": 28,
+        "event_index": 56,
+        "policy": "equal_weight_annual",
+        "real_wealth": 198.1186575285041,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 28
+      },
+      {
+        "elapsed_years": 28,
+        "event_index": 57,
+        "policy": "equal_weight_annual",
+        "real_wealth": 198.10168926627767,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 29
+      },
+      {
+        "elapsed_years": 29,
+        "event_index": 58,
+        "policy": "equal_weight_annual",
+        "real_wealth": 223.04896829380831,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 29
+      },
+      {
+        "elapsed_years": 29,
+        "event_index": 59,
+        "policy": "equal_weight_annual",
+        "real_wealth": 223.0379713306326,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 30
+      },
+      {
+        "elapsed_years": 30,
+        "event_index": 60,
+        "policy": "equal_weight_annual",
+        "real_wealth": 220.53646059668952,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 30
+      },
+      {
+        "elapsed_years": 0,
+        "event_index": 0,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 100.0,
+        "scenario_id": 5,
+        "stage": "initial",
+        "year": 0
+      },
+      {
+        "elapsed_years": 0,
+        "event_index": 1,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 99.83333333333331,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 1
+      },
+      {
+        "elapsed_years": 1,
+        "event_index": 2,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 109.63239431398468,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 1
+      },
+      {
+        "elapsed_years": 1,
+        "event_index": 3,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 109.63239431398468,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 2
+      },
+      {
+        "elapsed_years": 2,
+        "event_index": 4,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 103.99885133261748,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 2
+      },
+      {
+        "elapsed_years": 2,
+        "event_index": 5,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 103.99885133261748,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 3
+      },
+      {
+        "elapsed_years": 3,
+        "event_index": 6,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 95.88118367930072,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 3
+      },
+      {
+        "elapsed_years": 3,
+        "event_index": 7,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 95.88118367930072,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 4
+      },
+      {
+        "elapsed_years": 4,
+        "event_index": 8,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 92.3361204102168,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 4
+      },
+      {
+        "elapsed_years": 4,
+        "event_index": 9,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 92.3361204102168,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 5
+      },
+      {
+        "elapsed_years": 5,
+        "event_index": 10,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 91.88184927772227,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 5
+      },
+      {
+        "elapsed_years": 5,
+        "event_index": 11,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 91.88184927772227,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 6
+      },
+      {
+        "elapsed_years": 6,
+        "event_index": 12,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 82.50034433273723,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 6
+      },
+      {
+        "elapsed_years": 6,
+        "event_index": 13,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 82.50034433273723,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 7
+      },
+      {
+        "elapsed_years": 7,
+        "event_index": 14,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 60.26093530196213,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 7
+      },
+      {
+        "elapsed_years": 7,
+        "event_index": 15,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 60.26093530196213,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 8
+      },
+      {
+        "elapsed_years": 8,
+        "event_index": 16,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 59.666220078123075,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 8
+      },
+      {
+        "elapsed_years": 8,
+        "event_index": 17,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 59.666220078123075,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 9
+      },
+      {
+        "elapsed_years": 9,
+        "event_index": 18,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 67.33343929587672,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 9
+      },
+      {
+        "elapsed_years": 9,
+        "event_index": 19,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 67.33343929587672,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 10
+      },
+      {
+        "elapsed_years": 10,
+        "event_index": 20,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 69.94285381789048,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 10
+      },
+      {
+        "elapsed_years": 10,
+        "event_index": 21,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 69.94285381789048,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 11
+      },
+      {
+        "elapsed_years": 11,
+        "event_index": 22,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 76.47207596184741,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 11
+      },
+      {
+        "elapsed_years": 11,
+        "event_index": 23,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 76.47207596184741,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 12
+      },
+      {
+        "elapsed_years": 12,
+        "event_index": 24,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 71.02962633141436,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 12
+      },
+      {
+        "elapsed_years": 12,
+        "event_index": 25,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 71.02962633141436,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 13
+      },
+      {
+        "elapsed_years": 13,
+        "event_index": 26,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 65.72314537948988,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 13
+      },
+      {
+        "elapsed_years": 13,
+        "event_index": 27,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 65.72314537948988,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 14
+      },
+      {
+        "elapsed_years": 14,
+        "event_index": 28,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 66.8381138566039,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 14
+      },
+      {
+        "elapsed_years": 14,
+        "event_index": 29,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 66.8381138566039,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 15
+      },
+      {
+        "elapsed_years": 15,
+        "event_index": 30,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 70.0609503584725,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 15
+      },
+      {
+        "elapsed_years": 15,
+        "event_index": 31,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 70.0609503584725,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 16
+      },
+      {
+        "elapsed_years": 16,
+        "event_index": 32,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 76.05114211738793,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 16
+      },
+      {
+        "elapsed_years": 16,
+        "event_index": 33,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 76.05114211738793,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 17
+      },
+      {
+        "elapsed_years": 17,
+        "event_index": 34,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 90.59474652946119,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 17
+      },
+      {
+        "elapsed_years": 17,
+        "event_index": 35,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 90.59474652946119,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 18
+      },
+      {
+        "elapsed_years": 18,
+        "event_index": 36,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 101.22407730613416,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 18
+      },
+      {
+        "elapsed_years": 18,
+        "event_index": 37,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 101.22407730613416,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 19
+      },
+      {
+        "elapsed_years": 19,
+        "event_index": 38,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 111.70713454266732,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 19
+      },
+      {
+        "elapsed_years": 19,
+        "event_index": 39,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 111.70713454266732,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 20
+      },
+      {
+        "elapsed_years": 20,
+        "event_index": 40,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 126.30795321320919,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 20
+      },
+      {
+        "elapsed_years": 20,
+        "event_index": 41,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 126.30795321320919,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 21
+      },
+      {
+        "elapsed_years": 21,
+        "event_index": 42,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 141.23758578472936,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 21
+      },
+      {
+        "elapsed_years": 21,
+        "event_index": 43,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 141.23758578472936,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 22
+      },
+      {
+        "elapsed_years": 22,
+        "event_index": 44,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 142.4669435339177,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 22
+      },
+      {
+        "elapsed_years": 22,
+        "event_index": 45,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 142.4669435339177,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 23
+      },
+      {
+        "elapsed_years": 23,
+        "event_index": 46,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 149.61179322095575,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 23
+      },
+      {
+        "elapsed_years": 23,
+        "event_index": 47,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 149.61179322095575,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 24
+      },
+      {
+        "elapsed_years": 24,
+        "event_index": 48,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 162.182464144907,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 24
+      },
+      {
+        "elapsed_years": 24,
+        "event_index": 49,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 162.182464144907,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 25
+      },
+      {
+        "elapsed_years": 25,
+        "event_index": 50,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 180.58609522320975,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 25
+      },
+      {
+        "elapsed_years": 25,
+        "event_index": 51,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 180.58609522320975,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 26
+      },
+      {
+        "elapsed_years": 26,
+        "event_index": 52,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 208.54226901006658,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 26
+      },
+      {
+        "elapsed_years": 26,
+        "event_index": 53,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 208.54226901006658,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 27
+      },
+      {
+        "elapsed_years": 27,
+        "event_index": 54,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 222.32827484543267,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 27
+      },
+      {
+        "elapsed_years": 27,
+        "event_index": 55,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 222.32827484543267,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 28
+      },
+      {
+        "elapsed_years": 28,
+        "event_index": 56,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 240.8472213308539,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 28
+      },
+      {
+        "elapsed_years": 28,
+        "event_index": 57,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 240.8472213308539,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 29
+      },
+      {
+        "elapsed_years": 29,
+        "event_index": 58,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 276.675840889366,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 29
+      },
+      {
+        "elapsed_years": 29,
+        "event_index": 59,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 276.675840889366,
+        "scenario_id": 5,
+        "stage": "post_fee",
+        "year": 30
+      },
+      {
+        "elapsed_years": 30,
+        "event_index": 60,
+        "policy": "equal_weight_buy_hold",
+        "real_wealth": 283.8790855256645,
+        "scenario_id": 5,
+        "stage": "end",
+        "year": 30
+      }
+    ],
+    "same_scenario_comparators": true,
+    "severe": {
+      "bills_keep": {
+        "exact_tie_ids": [
+          42
+        ],
+        "loss_pct": 29.86223293110337,
+        "scenario_id": 42
+      },
+      "equal_weight_annual": {
+        "exact_tie_ids": [
+          5
+        ],
+        "loss_pct": 50.87762271755738,
+        "scenario_id": 5
+      },
+      "equal_weight_buy_hold": {
+        "exact_tie_ids": [
+          29
+        ],
+        "loss_pct": 66.92782838761542,
+        "scenario_id": 29
+      }
+    },
+    "statistics": [
+      {
+        "policy": "bills_keep",
+        "quantity": "median_growth_pct",
+        "recomputed": 1.338957470938773,
+        "residual": 0.0,
+        "saved": 1.338957470938773
+      },
+      {
+        "policy": "bills_keep",
+        "quantity": "p10_growth_pct",
+        "recomputed": 0.16912477316338714,
+        "residual": 0.0,
+        "saved": 0.16912477316338714
+      },
+      {
+        "policy": "bills_keep",
+        "quantity": "median_loss_pct",
+        "recomputed": 12.290483431562262,
+        "residual": 0.0,
+        "saved": 12.290483431562262
+      },
+      {
+        "policy": "bills_keep",
+        "quantity": "p90_loss_pct",
+        "recomputed": 22.156986768014658,
+        "residual": -3.552713678800501e-15,
+        "saved": 22.156986768014654
+      },
+      {
+        "policy": "equal_weight_annual",
+        "quantity": "median_growth_pct",
+        "recomputed": 3.5763283977810367,
+        "residual": 0.0,
+        "saved": 3.5763283977810367
+      },
+      {
+        "policy": "equal_weight_annual",
+        "quantity": "p10_growth_pct",
+        "recomputed": 1.2772207264879132,
+        "residual": 0.0,
+        "saved": 1.2772207264879132
+      },
+      {
+        "policy": "equal_weight_annual",
+        "quantity": "median_loss_pct",
+        "recomputed": 20.10457292348452,
+        "residual": 0.0,
+        "saved": 20.10457292348452
+      },
+      {
+        "policy": "equal_weight_annual",
+        "quantity": "p90_loss_pct",
+        "recomputed": 34.841659713513685,
+        "residual": 0.0,
+        "saved": 34.841659713513685
+      },
+      {
+        "policy": "equal_weight_buy_hold",
+        "quantity": "median_growth_pct",
+        "recomputed": 4.205361412195274,
+        "residual": 0.0,
+        "saved": 4.205361412195274
+      },
+      {
+        "policy": "equal_weight_buy_hold",
+        "quantity": "p10_growth_pct",
+        "recomputed": 1.0216497068826103,
+        "residual": 0.0,
+        "saved": 1.0216497068826103
+      },
+      {
+        "policy": "equal_weight_buy_hold",
+        "quantity": "median_loss_pct",
+        "recomputed": 28.748861122333487,
+        "residual": 0.0,
+        "saved": 28.748861122333487
+      },
+      {
+        "policy": "equal_weight_buy_hold",
+        "quantity": "p90_loss_pct",
+        "recomputed": 44.00854118977991,
+        "residual": 0.0,
+        "saved": 44.00854118977991
+      }
+    ],
+    "terminal_annual_real_wealth": 220.53646059668952,
+    "trough": {
+      "elapsed_years": 7,
+      "event_index": 15,
+      "policy": "equal_weight_annual",
+      "real_wealth": 53.85403835869073,
+      "scenario_id": 5,
+      "stage": "post_fee",
+      "year": 8
+    }
+  },
+  "numerical_verdict": "passed",
+  "policy_or_final_approval": false,
+  "read_only_check_supported": true,
+  "schema_version": 1,
+  "simulation_rerun": false,
+  "source_binding_sha256": "b2f4e49ac7fa385053ba36836f451e5f8c400ef0421b89706e921e3d7b26226c",
+  "task_id": "SOL-030",
+  "task_sha256": "c164559e5fc86d5de16d7bf54679518a8941927a079f75364d174586263ac191",
+  "verifier_sha256": "5fbc5431f34ae093421c603d52fcded0ee0301703a71036ddc9993ca9d48e6ae"
+}

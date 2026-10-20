@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T04:00:18.321175+00:00",
-  "reason": "SOL-032 independently audits minimal writer/runner file declaration repair; fixed production tasks remain unissued until approval.",
+  "next_wake_at": "2026-10-20T04:04:32.123406+00:00",
+  "reason": "SOL-030 failed dependency check and found SVG clipping; exact evidence verified and narrow PDF/PNG publication restriction prepared for SOL-033.",
   "next_actions": [
     "SOL-032 is ready on real pushed e33b748c29d366559706d5272319d9138f0c7aa4, digest 776a649d49058b47f71db7fdbb3269452077f2063c5ba313dea574467031c657. It follows running SOL-030. Inspect exact new receipt and independent real44-file runner fixture before compatibility acceptance; no recreation.",
+    "SOL-030 cancelled at414498aaa373c6f0081d829f4020f0b5c33c6424, genuine SVG clipping and worker missing-matplotlib failure retained. Chief exact replay passes renderer/independent verifier; original failure not relabelled. Publish current format restriction source first, then audit-only SOL-033 on that pushed base. No source data, numerical export or baseline run changed.",
     "SOL-031 exact a24dca5d5494455407207e0fd70c06b258d4fd1f remains accepted for its historical source. Chief provisional new code requires both SOL-031 and SOL-032 approval; all accounting/policy/numeric modules unchanged. Preserve original verification at historical source, never repair its hashes.",
     "The c5f423f1c3b19c6e52bcc497516c99efefc09749 execution config snapshots specs/execution/HY3-004.json and HY3-005.json are unused. No HY3-004/HY3-005 tasks have been published and no competition input opened. After review push accepted new source C, new distinctly named config E, then task publication P.",
-    "SOL-030 is actually running under valid latest lease at03:50:27UTC. Inspect exact eventual report receipt; no repeat or quota probe.",
     "After fixed producer bundles submit, authenticate receipts, independent Sol numeric review, accepted analysis assembly source/results, personalized bridge, freeze and final remain required. Existing policies/parameters and final gate stay unchanged.",
     "Current host floor40%, remaining50% verified; do not clear future drain or stop remote workers. Private identities local; human submits."
   ],
@@ -22,7 +22,7 @@
   "last_successful_quota_probe_commit": "7ac6afe1169740666f0f65d5f2d9674fd2d4c964",
   "quota_probe_task": "SOL-028",
   "quota_probe_remaining_additional_attempts_after_SOL028": 1,
-  "last_outcome_zh": "已验收SOL-031并发布固定配置预案；派工前复现目录交付物冲突，已完成最小44文件声明修复和17项测试，等待远端独立审查后再派开发计算。",
+  "last_outcome_zh": "SOL-030失败回执及SVG裁切发现已验证保留；主控重跑通过，报告用图限制为已检查PDF/PNG，准备独立复审。",
   "baseline_figure_source_commit": "04be213a76855b1b1815405a735f2a49be678935",
   "baseline_figure_review_task": "SOL-030",
   "layout_proof_path": "report/layout-proof/methods-baselines.pdf",

@@ -812,19 +812,23 @@
     },
     {
       "id": "SOL-030",
-      "state": "ready",
+      "state": "cancelled",
       "owner": "sol",
       "attempt": 1,
       "task_sha256": "c164559e5fc86d5de16d7bf54679518a8941927a079f75364d174586263ac191",
       "branch": "work/sol/SOL-030-a1",
-      "note": "Existing report-only task released after successful exact SOL-031 submission and accepted SOL-027; all source pins/dependencies/task hash pass. Writer acceptance remains a separate chief gate. No quota probe or baseline rerun.",
+      "note": "Failed parent renderer check due missing worker matplotlib; exact17 paths/31 pins validated. Chief renderer and independent verifier replay pass; actual SVG fallback-font label clipping visually confirmed. Preserve all negative/numeric review evidence; no report-asset approval. New narrow format-restriction review follows, no baseline rerun or quota probe.",
       "dispatch_priority_after": [
         "SOL-027",
         "SOL-031"
       ],
       "released_at": "2026-10-20T03:41:59.498597+00:00",
       "release_evidence": "audit/chief/SOL-030-release.json",
-      "released_after_commit": "a24dca5d5494455407207e0fd70c06b258d4fd1f"
+      "released_after_commit": "a24dca5d5494455407207e0fd70c06b258d4fd1f",
+      "reviewed_commit": "414498aaa373c6f0081d829f4020f0b5c33c6424",
+      "review_verdict": "verified_changes_required",
+      "failure_evidence": "audit/chief/SOL-030-failed-receipt-replay.json",
+      "successor_task": "SOL-033"
     },
     {
       "id": "SOL-031",

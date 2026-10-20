@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "kind": "report_figure_publication_format_restriction",
+  "publication_paths": [
+    "report/figures/baseline-h30-summary.pdf",
+    "report/figures/baseline-h30-summary.png",
+    "report/figures/baseline-h30-severe-path.pdf",
+    "report/figures/baseline-h30-severe-path.png"
+  ],
+  "editable_preview_paths": [
+    "report/figures/baseline-h30-summary.svg",
+    "report/figures/baseline-h30-severe-path.svg"
+  ],
+  "artifact_sha256": {
+    "report/figures/baseline-h30-summary.pdf": "506f8e7c5a522b19fd8780bb34774f4a01a5468758ee4b13f1eb0f149f085d41",
+    "report/figures/baseline-h30-summary.png": "68cd930c058ab37508b908d4e54eb96ccbdbe025a537fbd7317919d04f3e6839",
+    "report/figures/baseline-h30-summary.svg": "5232e6f8ce872682871effda4c128f9ddb4778a4f400e7bf84d82de18ec6d746",
+    "report/figures/baseline-h30-severe-path.pdf": "3d758ee41c85fc7043b2e38ab5030e478439b150a65d93029e09904a61283afe",
+    "report/figures/baseline-h30-severe-path.png": "a559fd676f1f332dec4abb0c5be0fd5c2c0dbb535c7070983c358629585dc5cc",
+    "report/figures/baseline-h30-severe-path.svg": "9844b50431b67574f06b3196aa09ba1a9e8dae28f8e58ca9ff01d5de039724eb"
+  },
+  "reason": "Independent SVG fallback-font clipping finding F1; use visually verified embedded-font PDF/300dpi PNG.",
+  "original_review_commit": "414498aaa373c6f0081d829f4020f0b5c33c6424",
+  "restriction_review_status": "pending",
+  "data_or_export_bytes_changed": false,
+  "full_report_acceptance": false
+}
