@@ -3,8 +3,8 @@
   "machine_id": "8ea2b5131bed400a8f2954cd69935807",
   "state": "error",
   "python": "3.12.0",
-  "updated_at": "2026-10-20T05:22:40.170698+00:00",
-  "lease_until": "2026-10-20T05:32:40.170698+00:00",
-  "error": "Task timeout or local stop requested; partial work preserved.",
-  "failures": 1
+  "updated_at": "2026-10-20T05:23:48.351142+00:00",
+  "lease_until": "2026-10-20T05:33:48.351142+00:00",
+  "error": "Runner root contains uncommitted work; preserve it and resolve before running.",
+  "failures": 2
 }
