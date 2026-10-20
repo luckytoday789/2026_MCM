@@ -5,9 +5,9 @@
     48984
   ],
   "child_pids": [
-    42128,
-    44496,
-    46468
+    21108,
+    39716,
+    23676
   ],
   "current_task": null,
   "alerts": [],
@@ -539,7 +539,7 @@
       "head": "632c95f03d3bbfeed1f847598eed3e6cfc5be264",
       "receipt_status": "failed",
       "receipt_matches_task": true,
-      "queue_state": "ready",
+      "queue_state": "cancelled",
       "dirty": false,
       "changed_paths": [],
       "remote_matches": true,
@@ -557,7 +557,7 @@
       "head": "f33da50c4e16e85f7ca831e0a03d17c05c91cc79",
       "receipt_status": "failed",
       "receipt_matches_task": true,
-      "queue_state": "ready",
+      "queue_state": "cancelled",
       "dirty": false,
       "changed_paths": [],
       "remote_matches": true,
@@ -573,7 +573,7 @@
       "head": "8a39da30e551f6e4fd54cfef6ec7b070b43d4d8d",
       "receipt_status": "failed",
       "receipt_matches_task": true,
-      "queue_state": "ready",
+      "queue_state": "cancelled",
       "dirty": false,
       "changed_paths": [],
       "remote_matches": true,
@@ -591,8 +591,8 @@
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
     "state": "running",
     "python": "3.12.0",
-    "updated_at": "2026-10-20T05:33:17.797598+00:00",
-    "lease_until": "2026-10-20T05:43:17.797598+00:00",
+    "updated_at": "2026-10-20T05:37:22.698977+00:00",
+    "lease_until": "2026-10-20T05:47:22.698977+00:00",
     "task_id": "integrate-and-dispatch"
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
@@ -601,7 +601,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-20T05:35:03.289997+00:00",
+  "updated_at": "2026-10-20T05:40:28.012469+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
