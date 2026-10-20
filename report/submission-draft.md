@@ -94,9 +94,11 @@ The accepted same-mode sensitivity uses 120 development scenarios and the common
 {{SENSITIVITY_H30_TABLE}}
 
 For fixed-prior Balanced, median growth rounds to 4.53% per year at both fee rates, while the trade share falls from 9.72% to 8.33%. Median drawdown rises from 26.84% to 28.26%, and p90 drawdown rises from 41.94% to 42.02%. Fewer transactions therefore do not establish lower realized loss. Changing the cost hurdle changes decisions and holdings paths, so these summaries are not a mechanical fee subtraction from one unchanged portfolio path. [E1, E5]
-
-PENDING SENSITIVITY_RESULTS: after the predeclared primary choice is accepted, identify its row above and complete the recommendation-impact statement. Fee-specific client assignments still require accepted own-horizon rescreens and must not replace the primary recommendation automatically.
 <!-- END_SLOT:SENSITIVITY_RESULTS -->
+
+<!-- SLOT:SENSITIVITY_RECOMMENDATION_IMPACT -->
+PENDING SENSITIVITY_RECOMMENDATION_IMPACT: after the predeclared primary choice is accepted, identify its row above and complete the recommendation-impact statement. Fee-specific client assignments still require accepted own-horizon rescreens and must not replace the primary recommendation automatically.
+<!-- END_SLOT:SENSITIVITY_RECOMMENDATION_IMPACT -->
 
 <!-- SLOT:CUSTOMER_EXPLANATION -->
 PENDING CUSTOMER_EXPLANATION: write no more than 50 English words after policy choice is accepted. State the action, estimated benefit/cost reasoning, remaining loss risk and human-review behavior.

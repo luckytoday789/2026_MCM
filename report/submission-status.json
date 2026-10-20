@@ -9,12 +9,12 @@
     "EXECUTIVE_RECOMMENDATION",
     "PERSONALIZED_RESULTS",
     "PROMOTION_RESULTS",
-    "SENSITIVITY_RESULTS",
+    "SENSITIVITY_RECOMMENDATION_IMPACT",
     "CUSTOMER_EXPLANATION",
     "FINAL_EVALUATION",
     "CONCLUSION"
   ],
-  "word_count": 3094,
+  "word_count": 3098,
   "source_registry": {
     "E0": [
       "specs/PROBLEM_LOCK.md",
@@ -205,7 +205,7 @@
       ]
     },
     {
-      "paragraph_sha256": "e26702a211646a639facd08829a6ffd6e6436fb52e3cea2fe09c5df244f360e1",
+      "paragraph_sha256": "26e80322ab0ed10873875fd62d768067f07852d4b36367bec3392335e2790792",
       "sources": [
         "E1",
         "E5"
@@ -510,13 +510,13 @@
     "audit/chief/SOL-040-review.json": "4b9a72df4204389a66eed8db8c697ab7b727ad1b743a3227e8011162c24050c6",
     "ops/PROTOCOL.md": "10f6f27536ad251f258292c98050a2ff03811ef95e1ea4cce6cf6e40cee97c10",
     "report/baseline-development-provenance.json": "0bae68910774eb63ad656a85c040da9d1fbc70983f319927c012941c76b9792c",
-    "report/build_submission.py": "f6883b7d6cdd2845f9b2e694dc2dd8425b52ba983983d1d249699d740529e932",
+    "report/build_submission.py": "3c4ca50f5cd58e58265adbe905e6fbec64c6340071ad5c780aac38ab9d44ab73",
     "report/evidence-map.json": "ccecc62b7f6cefbc9840d135fb43835edc1a889c0bdd6bcbbbe9009eb25fa11d",
     "report/methods-draft.md": "93dd45bceb6ebf1ce4560d27fc2a7b3c8432abf304673e99a76496f942ec31ac",
     "report/policy-catalogue.md": "874c2dd03858f5cfcf43925de3c9860b5587de9bad84622f36c32ee6a8e60f76",
     "report/policy-methods-draft.md": "82fe46bca0f4aff3490e2195d0a2ec0c85df309b1129b6ecbd8a6b2b11d0b70f",
     "report/primary-development-provenance.json": "06634d75e0e4a373a8b95bfaf16a64e857697e9b0eb54abe8f762305c053ee9c",
-    "report/submission-draft.md": "fe2aad6ffefc862b7eda834a22d5938184217ddeaaa6a0674ae308403065741e",
+    "report/submission-draft.md": "eb5c78060a33338494901af9d2a6d3b1ea60ee1c53e5285ea2a301cc2acb5e19",
     "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
     "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
     "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3"
@@ -537,16 +537,16 @@
     "local names, final rendering and source ZIP checks"
   ],
   "pdf_checks": {
-    "pdf_sha256": "e0afe0fdc8f3416f323416fb6fbf94d66d7079d5ffee2bf76d76ef6be216607d",
+    "pdf_sha256": "939983cd7b5da60c4373bdc4efd57d230b78a9181bc135f65a3c989b7eaec129",
     "pages": 6,
     "paper": "A4",
     "minimum_font_pt": 11.0,
     "within_page_limit": true,
     "all_pages_marked_incomplete": true,
-    "visual_review": "chief inspected all six pages; pass as incomplete preparation"
+    "visual_review": "chief inspected all six latest pages; pass as incomplete preparation"
   },
-  "created_at": "2026-10-20T11:30:18.226235+00:00",
-  "local_output_directory": ".runtime/submission/draft-v4",
+  "created_at": "2026-10-20T11:34:52.271020+00:00",
+  "local_output_directory": ".runtime/submission/draft-v5",
   "validation": "audit/chief/takeover-manuscript/validation.json",
   "build_instruction": "python -B report/build_submission.py --output-dir .runtime/submission/CHOOSE_A_FRESH_DIRECTORY",
   "optional_identity_instruction": "--team-file may read an ignored .runtime JSON containing report_display; never upload private identities or local PDF.",
@@ -555,5 +555,56 @@
   "acceptance_pointer_update": "Primary source/display rows remain unchanged; same-commit typed positive approval pointers are reauthenticated while historical report provenance is preserved.",
   "failed_preparation_checks": [
     "Initial new build rejected changed approval pointer in historical primary provenance; restricted same-result typed-approval rebinding added. No numeric/source row was changed."
-  ]
+  ],
+  "completed_slots": [
+    "SENSITIVITY_RESULTS"
+  ],
+  "slot_status": {
+    "EXECUTIVE_RECOMMENDATION": {
+      "state": "pending",
+      "pending_marker_present": true,
+      "evidence_gate": "accepted_upstream_and_report_conclusion_required"
+    },
+    "PERSONALIZED_RESULTS": {
+      "state": "pending",
+      "pending_marker_present": true,
+      "evidence_gate": "accepted_upstream_and_report_conclusion_required"
+    },
+    "PROMOTION_RESULTS": {
+      "state": "pending",
+      "pending_marker_present": true,
+      "evidence_gate": "accepted_upstream_and_report_conclusion_required"
+    },
+    "SENSITIVITY_RESULTS": {
+      "state": "completed",
+      "pending_marker_present": false,
+      "evidence_gate": "accepted_HY3_004_and_HY3_006_results"
+    },
+    "SENSITIVITY_RECOMMENDATION_IMPACT": {
+      "state": "pending",
+      "pending_marker_present": true,
+      "evidence_gate": "accepted_upstream_and_report_conclusion_required"
+    },
+    "CUSTOMER_EXPLANATION": {
+      "state": "pending",
+      "pending_marker_present": true,
+      "evidence_gate": "accepted_upstream_and_report_conclusion_required"
+    },
+    "FINAL_EVALUATION": {
+      "state": "pending",
+      "pending_marker_present": true,
+      "evidence_gate": "accepted_upstream_and_report_conclusion_required"
+    },
+    "CONCLUSION": {
+      "state": "pending",
+      "pending_marker_present": true,
+      "evidence_gate": "accepted_upstream_and_report_conclusion_required"
+    }
+  },
+  "sensitivity_evidence_gate": {
+    "state": "accepted",
+    "producer_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+    "independent_review_commit": "194a45ac5fced5dfab02903e4e732b1cac1c6e67",
+    "interpretation_gate": "SENSITIVITY_RECOMMENDATION_IMPACT"
+  }
 }

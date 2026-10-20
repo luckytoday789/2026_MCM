@@ -22,9 +22,15 @@ def check(output):
     assert (output / "expanded-draft.md").read_text(encoding="utf-8") == text
     for key in ("source_hashes", "pending_slots", "numeric_paragraph_mappings",
                 "prose_result_claim_checks", "word_count",'doubled_fee_provenance',
-                'doubled_fee_prose_checks','primary_current_acceptances'):
+                'doubled_fee_prose_checks','primary_current_acceptances','slot_status','completed_slots'):
         assert saved[key] == current[key], key
-    assert len(saved["pending_slots"]) == len(set(saved["pending_slots"])) == 7
+    assert len(saved["pending_slots"]) == len(set(saved["pending_slots"]))
+    assert saved['pending_slots']==[name for name,record in saved['slot_status'].items()
+                                   if record['state']!='completed']
+    assert 'SENSITIVITY_RESULTS' not in saved['pending_slots']
+    assert 'SENSITIVITY_RESULTS' in saved['completed_slots']
+    assert saved['slot_status']['SENSITIVITY_RESULTS']['state']=='completed'
+    assert 'SENSITIVITY_RECOMMENDATION_IMPACT' in saved['pending_slots']
     assert not saved["submission_ready"] and not saved["final_outcomes_accessed"]
     pdf = output / "SafeInvest-incomplete-draft.pdf"
     assert saved["pdf_checks"]["pdf_sha256"] == sha(pdf.read_bytes())
@@ -38,7 +44,8 @@ def check(output):
     all_text = " ".join(texts)
     assert min(sizes) >= 11 and len(reader.pages) <= 10
     for slot in saved["pending_slots"]:
-        assert "PENDING " + slot in all_text
+        if saved['slot_status'][slot]['pending_marker_present']:
+            assert "PENDING " + slot in all_text
     assert "scenario is 114" in all_text
     assert "maximum drawdown 52.61%" in all_text
     assert "terminal real wealth 357.95" in all_text

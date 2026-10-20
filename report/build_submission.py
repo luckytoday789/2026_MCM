@@ -204,7 +204,20 @@ def assemble(team_file=None):
         text = text.replace("{{" + key + "}}", value)
     if re.search(r"\{\{.*?\}\}", text):
         raise ValueError("Unknown unexpanded template key")
-    slots = re.findall(r"<!-- SLOT:([A-Z_]+) -->", text)
+    markers=re.findall(r'<!-- SLOT:([A-Z_]+) -->',text)
+    blocks=list(re.finditer(r'<!-- SLOT:([A-Z_]+) -->(.*?)<!-- END_SLOT:\1 -->',text,re.S))
+    assert [m.group(1) for m in blocks]==markers and len(markers)==len(set(markers)), 'invalid/duplicate draft slot blocks'
+    slot_status={}
+    for block in blocks:
+        name,content=block.group(1),block.group(2)
+        pending=bool(re.search(r'(?m)^PENDING '+re.escape(name)+r':',content))
+        # Numeric sensitivity has independently accepted exact source evidence.
+        # Text filled into another slot still requires its own acceptance gate.
+        slot_status[name]={'state':'pending' if pending else 'completed' if name=='SENSITIVITY_RESULTS' else
+                           'text_filled_pending_evidence','pending_marker_present':pending,
+                           'evidence_gate':'accepted_HY3_004_and_HY3_006_results' if name=='SENSITIVITY_RESULTS' else
+                           'accepted_upstream_and_report_conclusion_required'}
+    slots=[name for name,record in slot_status.items() if record['state']!='completed']
     numeric_paragraphs = []
     for paragraph in re.split(r"\n\s*\n", text):
         if re.search(r"\d", paragraph) and not paragraph.startswith(("#", "|", "<!--", "PENDING")):
@@ -222,6 +235,11 @@ def assemble(team_file=None):
         "submission_ready": False, "independent_manuscript_accepted": False,
         "final_outcomes_accessed": False, "simulation_rerun": False,
         "pending_slots": slots, "word_count": len(re.findall(r"\b[\w'-]+\b", text)),
+        "completed_slots":[name for name,record in slot_status.items() if record['state']=='completed'],
+        "slot_status":slot_status,
+        "sensitivity_evidence_gate":dict(state='accepted',producer_commit=doubled_provenance['producer_commit'],
+            independent_review_commit=doubled_provenance['independent_review_commit'],
+            interpretation_gate='SENSITIVITY_RECOMMENDATION_IMPACT'),
         "source_registry": SOURCES, "numeric_paragraph_mappings": numeric_paragraphs,
         "primary_producer": primary["producer_commit"],
         "primary_review": primary["independent_review_commit"],

@@ -3,13 +3,13 @@
   "kind": "chief_preparation_check_not_independent_acceptance",
   "pages": 6,
   "minimum_font_pt": 11.0,
-  "word_count": 3094,
+  "word_count": 3098,
   "numeric_paragraphs_mapped": 37,
   "pending_slots": [
     "EXECUTIVE_RECOMMENDATION",
     "PERSONALIZED_RESULTS",
     "PROMOTION_RESULTS",
-    "SENSITIVITY_RESULTS",
+    "SENSITIVITY_RECOMMENDATION_IMPACT",
     "CUSTOMER_EXPLANATION",
     "FINAL_EVALUATION",
     "CONCLUSION"
@@ -21,7 +21,7 @@
     "build_primary_note.build",
     "build_baseline_note.build"
   ],
-  "pdf_sha256": "e0afe0fdc8f3416f323416fb6fbf94d66d7079d5ffee2bf76d76ef6be216607d",
+  "pdf_sha256": "939983cd7b5da60c4373bdc4efd57d230b78a9181bc135f65a3c989b7eaec129",
   "visual_review": {
     "pages_inspected": [
       1,
@@ -33,15 +33,17 @@
     ],
     "dpi": 95,
     "verdict": "pass_as_incomplete_draft",
-    "findings": "All six pages inspected; first three latest renders byte-identical to immediately inspected v3. Tables and text are legible, no clipping or overlaps. Sensitivity table splits with both adaptive fee rows together and repeated heading. No policy promotion inferred.",
+    "findings": "Latest pages5-6 inspected; pages1-4 byte-identical to inspected v4. No clipping or overlap. Accepted sensitivity numerical evidence completed; its separate recommendation-impact gate stays pending.",
     "page_png_sha256": {
       "1": "72c6c0b7a60b1627c035cb0c886c79bb57b973caedfdc84a9cbe24131af37642",
       "2": "74f07440fa2d9390d1d3e32942b5b81057bec590f855c7b66f0e4d593997e710",
       "3": "28d6d10962f7297f9b572b10c21c4448733931e0e3abf6ff8c45666230464564",
       "4": "3298aa230b2c5938379cd93cf11deba857d1f12fc269a03e45b478838088d10e",
-      "5": "21db9564e11ee157aa1877a14bd4859c684ae238253cc8b38b4c309b0544aa1a",
+      "5": "a95ec4766bc88b47cf5b0fb030c72512740cab42752fa3984cd32a880d89f9c8",
       "6": "e418daac67d32e089bcc3bd8b31ea3186a5b91e4cd8e3f5506fa38c66ee8468e"
     }
   },
-  "doubled_fee_accepted_producer": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18"
+  "completed_slots": [
+    "SENSITIVITY_RESULTS"
+  ]
 }

@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "kind": "chief_preparation_check_not_independent_acceptance",
+  "pages": 5,
+  "minimum_font_pt": 11.0,
+  "word_count": 2737,
+  "numeric_paragraphs_mapped": 35,
+  "pending_slots": [
+    "EXECUTIVE_RECOMMENDATION",
+    "PERSONALIZED_RESULTS",
+    "PROMOTION_RESULTS",
+    "SENSITIVITY_RESULTS",
+    "CUSTOMER_EXPLANATION",
+    "FINAL_EVALUATION",
+    "CONCLUSION"
+  ],
+  "submission_ready": false,
+  "simulation_rerun": false,
+  "final_outcomes_read": false,
+  "source_generators_replayed_read_only": [
+    "build_primary_note.build",
+    "build_baseline_note.build"
+  ],
+  "pdf_sha256": "5152a2a4fd551ac00f71e6174be7138588a2fc2a6a21478cc04fd3eca4c900d3",
+  "visual_review": {
+    "pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "dpi": 95,
+    "verdict": "pass_as_incomplete_draft",
+    "findings": "All five pages inspected. Legible tables, no clipping, overlaps, missing glyphs or footer collisions. Equations use explicit ASCII notation. Text continues across pages without content loss. No final manuscript acceptance claimed.",
+    "latest_render_identical_to_inspected_pages": true,
+    "poppler_diagnostics": "Missing display defaults for Symbol and ArialUnicode reported; inspected Times-font pages showed no missing glyphs.",
+    "page_png_sha256": {
+      "1": "a2bbbed33b544b75810c7995a0780e51c5e7b37d38f26debf05e6d62485ad3ea",
+      "2": "74f07440fa2d9390d1d3e32942b5b81057bec590f855c7b66f0e4d593997e710",
+      "3": "28d6d10962f7297f9b572b10c21c4448733931e0e3abf6ff8c45666230464564",
+      "4": "9d0fb74e4bd69710fd67aa22024f0c64e7cd8d440facb951bbc5547b503ef345",
+      "5": "39e8db1e675bf6cccabaa01b5c668e8552559dcc1eddc8dc63bd1dd59812cd01"
+    }
+  }
+}
