@@ -69,12 +69,13 @@ def main():
         assert len(failures) >= 3, 'Retain partial, timeout, oversize fixtures'
         result['published_fixture_inventory'] = published
         result['deterministic_failed_staging_files'] = failures
+        result['oracle_source_sha256'] = sha((ROOT / 'audit/chief/writer_persisted_oracle.py').read_bytes())
         result['independent_arithmetic'] = audit_fixture(args.commit, fixture)
         env = {k: v for k, v in os.environ.items() if k.lower() != 'pythonpath'}
         env['PYTHONDONTWRITEBYTECODE'] = '1'
         protected = sorted(set(info['source_hashes_checked']) | set(info['accepted_paths']))
         for autocrlf in ('false', 'true'):
-            work = ROOT / '.runtime' / ('review-SOL-031-' + args.commit[:12] + '-' + autocrlf)
+            work = ROOT / '.runtime' / ('r31-' + args.commit[:8] + '-' + autocrlf)
             assert not work.exists(), ('Preserve prior scratch worktree', str(work))
             checkout = ['git', '-c', 'core.autocrlf=' + autocrlf,
                         'worktree', 'add', '--detach', str(work), args.commit]

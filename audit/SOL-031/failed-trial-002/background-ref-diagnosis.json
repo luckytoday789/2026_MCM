@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "git",
+    "reflog",
+    "show",
+    "--all",
+    "-15",
+    "--date=iso-strict",
+    "--format=%gd %H %gs"
+  ],
+  "code": 0,
+  "stdout": "origin/status/sol@{2026-10-20T06:57:45+08:00} d884f972354ae7eba57a00ea2caba1aa21f8f5b4 update by push\norigin/status/sol-watch@{2026-10-20T06:55:47+08:00} f35f58e51e0adb6119dba6631bb6c2c311adc872 update by push\norigin/main@{2026-10-20T06:55:35+08:00} 481d66a041a5de2e81a174faf3920ffe8ceb289e fetch --no-auto-maintenance --no-write-fetch-head --no-tags origin refs/heads/main:refs/sol-nightwatch/main refs/heads/status/chief:refs/sol-nightwatch/chief refs/heads/status/sol:refs/sol-nightwatch/sol: fast-forward\norigin/status/chief@{2026-10-20T06:55:35+08:00} eefde3c21f877f1d43f11bbb443b239f67858493 fetch --no-auto-maintenance --no-write-fetch-head --no-tags origin refs/heads/main:refs/sol-nightwatch/main refs/heads/status/chief:refs/sol-nightwatch/chief refs/heads/status/sol:refs/sol-nightwatch/sol: fast-forward\norigin/status/sol@{2026-10-20T06:53:40+08:00} 5376b87d9968353ab76d442111041e8015a4cb4b update by push\norigin/status/sol-watch@{2026-10-20T06:50:23+08:00} f5e3afc15c6ff24ccbbcf3465556e3818e555d83 update by push\norigin/status/chief@{2026-10-20T06:50:11+08:00} abbe8eae33cdc53c9cdf45176d1ce36c3841be23 fetch --no-auto-maintenance --no-write-fetch-head --no-tags origin refs/heads/main:refs/sol-nightwatch/main refs/heads/status/chief:refs/sol-nightwatch/chief refs/heads/status/sol:refs/sol-nightwatch/sol: fast-forward\norigin/status/sol@{2026-10-20T06:49:35+08:00} 1894b99c4c3a16cb3334f90c65a3113d92db37fc update by push\norigin/status/sol@{2026-10-20T06:45:30+08:00} 0e962a6c9c465092b60367283e695ff56da5c19d update by push\nHEAD@{2026-10-20T06:45:25+08:00} ade71e13e02f4c5655b7ad873297ea5fd8201040 reset: moving to HEAD\nwork/sol/SOL-031-a1@{2026-10-20T06:45:24+08:00} ade71e13e02f4c5655b7ad873297ea5fd8201040 branch: Created from ade71e13e02f4c5655b7ad873297ea5fd8201040\nHEAD@{2026-10-20T06:45:24+08:00} ade71e13e02f4c5655b7ad873297ea5fd8201040 \nmain@{2026-10-20T06:45:23+08:00} 1cc580f4cf5a0f720b11b73145fd204a71eaf701 merge origin/main: Fast-forward\norigin/status/hy3@{2026-10-20T06:45:23+08:00} a1c748a56e2b4a51e0162c1a9f3697754fbca55c fetch --prune origin: fast-forward\nmain-worktree/HEAD@{2026-10-20T06:45:23+08:00} 1cc580f4cf5a0f720b11b73145fd204a71eaf701 merge origin/main: Fast-forward\n",
+  "stderr": ""
+}

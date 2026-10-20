@@ -1,0 +1,5 @@
+{
+  "code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-031-a1\\audit\\SOL-031\\record_checks.py\", line 192, in <module>\r\n    if __name__=='__main__':main()\r\n                            ^^^^^^\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-031-a1\\audit\\SOL-031\\record_checks.py\", line 187, in main\r\n    w.require(passed,'prescribed or portable checks failed; original trial preserved')\r\n  File \"E:\\2026_MCM\\sol-coop\\.runtime\\worktrees\\SOL-031-a1\\src\\safeinvest\\policy_writer.py\", line 53, in require\r\n    raise ValueError(message)\r\nValueError: prescribed or portable checks failed; original trial preserved\r\n"
+}

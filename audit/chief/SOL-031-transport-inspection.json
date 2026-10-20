@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "reviewed_commit": "a24dca5d5494455407207e0fd70c06b258d4fd1f",
+  "checked_at": "2026-10-20T03:44:19.671380+00:00",
+  "method": "compare strict sha256 and bytes across actual original/Git-clean/checkout inventories; inspect saved actual command return codes",
+  "roundtrips": [
+    {
+      "autocrlf": "true",
+      "paths": 378,
+      "strict_paths": 323,
+      "failure_paths": 45,
+      "commands": [
+        {
+          "argv": [
+            "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-p",
+            "test_policy_writer.py",
+            "-v"
+          ],
+          "returncode": 0,
+          "seconds": 11.546999999962281
+        },
+        {
+          "argv": [
+            "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+            "-B",
+            "audit/SOL-031/verify.py",
+            "--check"
+          ],
+          "returncode": 0,
+          "seconds": 25.48399999999674
+        }
+      ],
+      "strict_hashes_and_sizes_match": true
+    },
+    {
+      "autocrlf": "false",
+      "paths": 378,
+      "strict_paths": 323,
+      "failure_paths": 45,
+      "commands": [
+        {
+          "argv": [
+            "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-p",
+            "test_policy_writer.py",
+            "-v"
+          ],
+          "returncode": 0,
+          "seconds": 11.78100000001723
+        },
+        {
+          "argv": [
+            "E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe",
+            "-B",
+            "audit/SOL-031/verify.py",
+            "--check"
+          ],
+          "returncode": 0,
+          "seconds": 25.64100000000326
+        }
+      ],
+      "strict_hashes_and_sizes_match": true
+    }
+  ],
+  "chief_probe_diagnosis": "Initial direct dictionary equality rejected extra canonical git_blob_oid metadata; compare strict sha256/bytes only without relaxing either.",
+  "status": "passed"
+}

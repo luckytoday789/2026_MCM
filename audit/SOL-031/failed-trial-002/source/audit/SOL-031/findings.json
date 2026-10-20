@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-031",
+  "scope": "W-LF-1 only; synthetic writer fixtures and exact output import",
+  "predecessor": {
+    "task_id": "SOL-029",
+    "reviewed_commit": "a24128200c849567cb6f7dba2d6f0e85a79f3713",
+    "status": "rejected_not_accepted",
+    "diagnosis": "audit/chief/SOL-029-line-ending-diagnosis.json",
+    "historical_evidence_changed": false
+  },
+  "changes": [
+    "Explicit exclusive UTF-8 LF failure JSON bytes using existing serializer",
+    "Require SOL-031 and reject cancelled SOL-026/SOL-029 replacement or extra approvals",
+    "Add correction spec to original source closure",
+    "Strict scoped audit attributes and actual Git clean/index/checkout replay"
+  ],
+  "initial_trial": "audit/SOL-031/trial-001-focused-tests.json",
+  "final_evidence": {
+    "core": "audit/SOL-031/verification.json",
+    "integrity": "audit/SOL-031/integrity-self-tests.json",
+    "clean_commands": "audit/SOL-031/clean-environment-checks.json",
+    "git_transport": "audit/SOL-031/git-roundtrip-checks.json"
+  },
+  "interpretation": "Only actual recorded command outcomes establish executed checks; independent chief review is pending.",
+  "competition_input_read": false,
+  "production_configuration_written": false,
+  "production_run": false,
+  "final_data_open": false,
+  "independent_outcome_acceptance": false,
+  "preserved_transport_failure": {
+    "path": "audit/SOL-031/failed-trial-001",
+    "fixture_root": "audit/SOL-031/synthetic-fixtures",
+    "original_commands": [
+      0,
+      0
+    ],
+    "exported_test_codes": [
+      5,
+      5
+    ],
+    "exported_verifier_codes": [
+      0,
+      0
+    ],
+    "cause": "Windows nested scratch path length; test/transport prefixes shortened only",
+    "old_bytes_unchanged": true
+  }
+}

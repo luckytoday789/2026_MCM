@@ -1,21 +1,15 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T03:46:59.498597+00:00",
-  "reason": "Exact SOL-031 chief replay in progress; existing SOL-030 report review released promptly.",
+  "next_wake_at": "2026-10-20T03:50:41.225161+00:00",
+  "reason": "SOL-031 exact source accepted. Publish source C, fixed config E and separate deterministic HY3 tasks; remote SOL-030 report review already released.",
   "next_actions": [
-    "New explicit user authorization supersedes the historical 50% local stop: chief now uses GPT-6.1 Sol xhigh and the host-local configuration stops at 40% weekly remaining. Previous drain/stop history is preserved locally. Continue pending tasks without rerunning accepted/submitted work. The new 40% stop remains sticky until another explicit authorization.",
-    "SOL-028 successful quota receipt remains accepted. SOL-029 completed remotely but chief rejected clean-checkout portability; no quota failure. Do not recreate a quota probe.",
-    "SOL-027 remains accepted at3d5e965e45f18cf79023dde69189ce987c17e56b. SOL-031 latest observed running lease23:01:46 UTC until23:11:46; no submitted result branch at this checkpoint. Release existing SOL-030 after successful SOL-031 submission without fresh quota failure. Both task digests and all50/31 source pins and accepted dependencies rechecked; do not recreate them.",
-    "SOL-026 at e8733bbc9f1234e04a5e382046d3c89fc12cae7d remains failed/cancelled. Chief verified111 paths/35 pins;13 focused tests pass but required verifier fails on missing verification.json. clean-environment-checks/integrity-self-tests also absent. Saved creation evidence hashes an older policy_writer.py. Failed branch/hand-off and exact quarantine drafts are preserved; do not promote them or fabricate old evidence.",
-    "SOL-029 is cancelled after chief clean-checkout failure at a24128200c849567cb6f7dba2d6f0e85a79f3713. SOL-031 ready, base ade71e13e02f4c5655b7ad873297ea5fd8201040, digest 8c89a09bee28bf64ee78ee372e5481ad1efeca1ce75eddee1743838e3a6a9dc2. Verify new fixture bytes through actual Git roundtrip, unchanged guards, positive SOL-031 identity and exact new source; do not revive SOL-029 acceptance.",
-    "Prepared audit/chief/review_sol031.py for exact canonical receipt and saved fixture-byte verification, real Git checkouts with autocrlf false/true, both prescribed commands, unchanged inventories and qualified independent persisted arithmetic. Syntax/CLI only tested; no remote replay or new mathematical evidence yet. Manually inspect narrow source diff and actual Git-roundtrip logs before acceptance; helper success alone is not approval. Preserve prior SOL-029 failure/12427 checks separately.",
-    "SOL-027 accepted pure explicit-input personalized component only:25 pins,10 focused tests,97118 independent checks,4134 chief rational comparisons,four evidence rejection probes pass. Integration replay initially rejected one pre-existing mixed-EOL spec checkout; raw bytes archived locally and failure saved. Normalizing only canonical-equivalent bytes yielded later-main --check pass; no verifier/source semantics changed. source_verified=false and all production/final gates remain.",
-    "After positive writer acceptance push source C, then fixed execution configuration E, then separate granular HY3 commands tasks on E. Primary computes five modes and imports exact three HY3-003 references; doubled computes eight. Measure runtime/bytes and obtain independent Sol result reviews. Then use specs/POLICY_ANALYSIS_ASSEMBLY.md for an independently reviewed narrow adapter: authenticate both accepted producer bundles, isolate writer --check subprocesses, preserve typed metrics/unit bridge, and assemble complete16-case analysis without parameter changes. Publish its actual task only after approved writer/API exists; this handoff is not execution authorization. Continue personalized production bridge and freeze/final in staged order. Personalized bridge handoff now exists at specs/PERSONALIZED_PRODUCTION_BRIDGE.md: actual field mapping/profile keys, separate authenticated provenance, no-run nulls and conditional counts. Its schema/source checks are preparation only; task publication awaits real accepted writer/assembly APIs, production awaits accepted generic/assembly results. No placeholder configs or unreviewed execution.",
-    "The ten-module report component index remains a valid historical preparation snapshot; SOL-027 acceptance is separately recorded. Do not modify artifacts pinned by running/waiting review tasks. Continue English<=10-page report from accepted results only; identities local; humans submit; no current human-help request.",
-    "SOL-030 still waiting behind SOL-031; SOL-027 now accepted. Immutable base04be213a76855b1b1815405a735f2a49be678935/digestc164559e5fc86d5de16d7bf54679518a8941927a079f75364d174586263ac191 unchanged. Release after successful SOL-031 submission without quota failure. Report-only scope, no baseline rerun/final acceptance.",
-    "Baseline figures now exist as SVG/PDF/300dpi PNG with captions and English limitations/disclosure. Chief checked twelve statistics,183 points, exact severe locations, embedded fonts >=11pt at180mm and viewed both plots. Existing15-row note, policy catalogue and ten-module index pass unchanged. Preserve archived layout/check failures; no current help request. Await targeted Sol review before treating figure/wording as independently accepted.",
-    "The incomplete four-page methods/baseline PDF proof is saved under report/layout-proof with source/proof hashes and actual visual QA in audit/chief/layout-proof-validation.json. No new experiment/acceptance. Include this prose/layout transform in future assembled-manuscript independent review; do not alter SOL-030 or imply full report completion. No further layout task is needed while research gates are pending."
+    "Publish accepted writer source C first, then fixed primary/doubled execution configs E, then separate immutable HY3 commands tasks based on pushed E. No accepted/submitted tasks rerun.",
+    "SOL-030 existing report review released; inspect exact eventual receipt and current lease, preserve task/source pins.",
+    "After two fixed development bundles submit, authenticate exact receipts and dispatch targeted independent Sol numerical result reviews before evidence/selection acceptance.",
+    "Publish a narrow synthetic-only analysis assembly implementation task using accepted writer API and specs/POLICY_ANALYSIS_ASSEMBLY.md; production waits for both accepted producer bundles and independent result review.",
+    "Preserve all failed SOL-026/SOL-029/SOL-031/chief trials, unchanged accepted policy parameters and closed final gate. Later authenticated personalized bridge, freeze and final single evaluation remain unfinished.",
+    "Host allowance threshold is current local 40%; preserve old50% history, do not clear a new drain or change global control. Private identities stay local; humans submit."
   ],
   "quota_probe_not_before": "2026-10-20T06:05:00+08:00",
   "quota_probe_retries_after_first": 2,
@@ -28,7 +22,7 @@
   "last_successful_quota_probe_commit": "7ac6afe1169740666f0f65d5f2d9674fd2d4c964",
   "quota_probe_task": "SOL-028",
   "quota_probe_remaining_additional_attempts_after_SOL028": 1,
-  "last_outcome_zh": "SOL-031已提交并通过结构核验；已释放现有SOL-030报告审查，主控继续精确验收。",
+  "last_outcome_zh": "已验收SOL-031精确提交：两种真实Git检出各17项测试和只读验证通过，主控12427项独立算术核验通过；准备开发实验。",
   "baseline_figure_source_commit": "04be213a76855b1b1815405a735f2a49be678935",
   "baseline_figure_review_task": "SOL-030",
   "layout_proof_path": "report/layout-proof/methods-baselines.pdf",
@@ -48,5 +42,7 @@
   "personalized_integration_portability": "audit/chief/SOL-027-integration-portability.json",
   "local_budget_checkpoint": "audit/chief/turn-20261020-budget-drain-writer-preparation.json",
   "prepared_writer_reviewer": "audit/chief/review_sol031.py",
-  "resumed_by_explicit_user_at": "2026-10-20T03:32:47.539165+00:00"
+  "resumed_by_explicit_user_at": "2026-10-20T03:32:47.539165+00:00",
+  "writer_accepted_commit": "a24dca5d5494455407207e0fd70c06b258d4fd1f",
+  "writer_acceptance": "audit/chief/SOL-031-review.json"
 }

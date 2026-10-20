@@ -38,7 +38,7 @@ def decimal(value):
 
 def audit_fixture(commit, fixture_root, overrides=None):
     assert re.fullmatch('[0-9a-f]{40}', commit)
-    assert re.fullmatch(r'audit/SOL-\d+/synthetic-[0-9a-f]+', fixture_root)
+    assert re.fullmatch(r'audit/SOL-\d+/synthetic-(?:[0-9a-f]+|delivery)', fixture_root)
     originals = {}
     checks = 0
     max_abs_error = 0.0

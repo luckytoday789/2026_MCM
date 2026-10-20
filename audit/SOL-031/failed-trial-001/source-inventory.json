@@ -1,0 +1,38 @@
+{
+  "audit/SOL-031/.gitattributes": {
+    "bytes": 8,
+    "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+  },
+  "audit/SOL-031/findings.json": {
+    "bytes": 1350,
+    "sha256": "4fb74c0252606008cfd0bf547bb0d6101bf958d2d039367ce5a5eb677329cf29"
+  },
+  "audit/SOL-031/implementation.md": {
+    "bytes": 4371,
+    "sha256": "57a7a3a720f7896882d4b233b0050f61bfb573678f71b581b330fa2df01862cd"
+  },
+  "audit/SOL-031/record_checks.py": {
+    "bytes": 11814,
+    "sha256": "831153d4e4be9da15325e69f4b04b75c935426a6f9a9ad3f35178c8056fc24af"
+  },
+  "audit/SOL-031/schema.json": {
+    "bytes": 11842,
+    "sha256": "b78bd292f3a5562a69be7fb18d6538966506ce148f5159d4b64607cfc6e63e77"
+  },
+  "audit/SOL-031/verify.py": {
+    "bytes": 21938,
+    "sha256": "36259383cb06cbf22dae30de18b419391fd582b3ea5204f4f413a30b85750382"
+  },
+  "scripts/run_development_policy.py": {
+    "bytes": 278,
+    "sha256": "b2ea4ac19ece30fd2bb535c2dcee5cdf48d26d0cba934a3b35cb6e08338ee19b"
+  },
+  "src/safeinvest/policy_writer.py": {
+    "bytes": 52321,
+    "sha256": "9e1f6b2ba12cb88514d85885da8dc47835c620098e19ca2593ae421bcac8e2a9"
+  },
+  "tests/test_policy_writer.py": {
+    "bytes": 30861,
+    "sha256": "31cd47a5a67a76164985e518dbe22d4b270ee369eb0cf9f45bb2a886f3f4d28e"
+  }
+}
