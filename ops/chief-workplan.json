@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "state": "active",
-  "next_wake_at": "2026-10-20T03:59:05.717587+00:00",
-  "reason": "Writer/runner declaration incompatibility independently reproduced before production; chief narrow fix passes17 tests and requires SOL-032 review.",
+  "next_wake_at": "2026-10-20T04:00:18.321175+00:00",
+  "reason": "SOL-032 independently audits minimal writer/runner file declaration repair; fixed production tasks remain unissued until approval.",
   "next_actions": [
-    "Publish current provisional writer file-deliverables compatibility source/spec and then new immutable audit-only SOL-032 on that real pushed base. Do not issue HY3 production tasks until positive independent review.",
+    "SOL-032 is ready on real pushed e33b748c29d366559706d5272319d9138f0c7aa4, digest 776a649d49058b47f71db7fdbb3269452077f2063c5ba313dea574467031c657. It follows running SOL-030. Inspect exact new receipt and independent real44-file runner fixture before compatibility acceptance; no recreation.",
     "SOL-031 exact a24dca5d5494455407207e0fd70c06b258d4fd1f remains accepted for its historical source. Chief provisional new code requires both SOL-031 and SOL-032 approval; all accounting/policy/numeric modules unchanged. Preserve original verification at historical source, never repair its hashes.",
     "The c5f423f1c3b19c6e52bcc497516c99efefc09749 execution config snapshots specs/execution/HY3-004.json and HY3-005.json are unused. No HY3-004/HY3-005 tasks have been published and no competition input opened. After review push accepted new source C, new distinctly named config E, then task publication P.",
     "SOL-030 is actually running under valid latest lease at03:50:27UTC. Inspect exact eventual report receipt; no repeat or quota probe.",
@@ -44,5 +44,7 @@
   "prepared_writer_reviewer": "audit/chief/review_sol031.py",
   "resumed_by_explicit_user_at": "2026-10-20T03:32:47.539165+00:00",
   "writer_accepted_commit": "a24dca5d5494455407207e0fd70c06b258d4fd1f",
-  "writer_acceptance": "audit/chief/SOL-031-review.json"
+  "writer_acceptance": "audit/chief/SOL-031-review.json",
+  "writer_compatibility_task": "SOL-032",
+  "writer_compatibility_source_commit": "e33b748c29d366559706d5272319d9138f0c7aa4"
 }
