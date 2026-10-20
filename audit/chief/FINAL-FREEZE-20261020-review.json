@@ -1,0 +1,51 @@
+{
+  "status": "accepted",
+  "reviewer": "chief independently executed stdlib freeze oracle under authorized takeover; no remote Sol authorship",
+  "freeze_commit": "06086aed327aa626ddc91472f943c2c9fba1259a",
+  "freeze_path": "ops/freeze.json",
+  "freeze_blob_sha256": "9a78cc1cc248bdd1bf1bd50723e2e550d8b70dee653c622ac426115254ebf447",
+  "freeze_runner_sha256": "4159cea7de690b1d0d08a4aa56bdac1ec4c6dc19e8b57e85157e9f1286ba0d7f",
+  "refit": {
+    "commit": "07eff1d3cb714c3f1d9dc850e0dbb9cab59c6b8d",
+    "path": "results/development/CHIEF-REFIT-001/run_manifest.json",
+    "sha256": "acd58eccc6db735197b4b3feaa751e5c1c1954eb82bfaabe528ff13d2b410ee6"
+  },
+  "refit_acceptance": {
+    "commit": "12d91bd60f551acd3c9d98218a71a0370878f614",
+    "path": "audit/chief/CHIEF-REFIT-001-promoted-review.json",
+    "sha256": "6733d24450733b1543bdc2621a5d032632b280572097775516c5bba1722e6165"
+  },
+  "effective_configuration_sha256": "16f4a52de3fc5906687e5982126bfddbff2d983f6b39693f4108d22432950db9",
+  "audit": {
+    "counts": {
+      "comparisons": 100,
+      "generic_annual_ledgers": 28800,
+      "generic_cases": 16,
+      "generic_metrics": 4800,
+      "generic_scenario_paths": 960,
+      "paired_rows": 6000,
+      "personalized_annual_ledgers": 5400,
+      "personalized_cases": 4,
+      "personalized_metrics": 240,
+      "profile_rows": 10
+    },
+    "effective_configuration_sha256": "16f4a52de3fc5906687e5982126bfddbff2d983f6b39693f4108d22432950db9",
+    "freeze_blob_sha256": "9a78cc1cc248bdd1bf1bd50723e2e550d8b70dee653c622ac426115254ebf447",
+    "freeze_commit": "06086aed327aa626ddc91472f943c2c9fba1259a",
+    "freeze_runner_sha256": "4159cea7de690b1d0d08a4aa56bdac1ec4c6dc19e8b57e85157e9f1286ba0d7f",
+    "independent_stdlib": true,
+    "no_csv_access": true,
+    "refit_support_sha256": "44d00c47e591a5eef12079798a8939659a1c1818842fda5292b9a92e3f7981d6",
+    "source_commit": "7053b41ce81b1e04100d56a24a321e51b3465459",
+    "source_files": 35,
+    "status": "passed"
+  },
+  "audit_execution": "audit/chief/final-freeze-audit-003/execution.json",
+  "oracle_sha256": "18dba266d12eeb3e1b1bf56f0b1fe369546a3253e21f1e598adff8d7accffe34",
+  "accepted_at": "2026-10-20T13:10:22.139674+00:00",
+  "final_data_open_at_review": false,
+  "previous_failures": [
+    "audit/chief/final-freeze-audit/execution.json",
+    "audit/chief/final-freeze-audit-002/execution.json"
+  ]
+}
