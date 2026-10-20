@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "c3836c06a440474f9b73a8d590ac8d62d747ff6a",
+  "snapshot_main_commit": "20e26e344be8ee460bbf67a2f0046a977f346dc0",
   "authoritative_state": [
     "ops/control.json",
     "ops/queue.json"
@@ -18,7 +18,9 @@
     "accepted_negative_review": "Independent evidence accepted; reviewed design/code requires stated corrections and is not approved",
     "accepted_design": "Independent design approval only; neither code nor future outcomes are certified.",
     "failed_implementation_attempt": "Exact failed receipt preserved; code not accepted even when narrower numerical checks pass.",
-    "report_transform_pending_review": "Chief-prepared transformation of accepted data; source outcomes accepted, independent figure/wording review still pending."
+    "report_transform_pending_review": "Chief-prepared transformation of accepted data; source outcomes accepted, independent figure/wording review still pending.",
+    "accepted_format_restriction": "Exact reviewed PDF/PNG-only publication restriction; preserves SVG defect, original failed validation and separate full-paper review.",
+    "authorized_pending_result_acceptance": "Immutable fixed task published; no numerical outcome accepted and no manuscript performance claim permitted."
   },
   "source_registry": {
     "PROBLEM_LOCK": {
@@ -225,13 +227,20 @@
       "scope": "Exact current-source identity for ten accepted modules only; no production outcomes or final readiness claim."
     },
     "BASELINE_FIGURES": {
-      "state": "report_transform_pending_review",
+      "state": "accepted_format_restriction",
       "path": "report/baseline-figure-captions.md",
       "generator": "report/build_baseline_figures.py",
       "provenance": "report/figures/baseline-figures-provenance.json",
       "source_commit": "7652410d73425371110784ef5fa97c03470a074e",
       "chief_validation": "audit/chief/baseline-figures-validation.json",
-      "scope": "Three H30 summary rows, 183 event values on annual baseline severe scenario5; no rerun, no new policy or final result."
+      "scope": "Three H30 summary rows, 183 event values on annual baseline severe scenario5; no rerun, no new policy or final result.",
+      "independent_review_task": "SOL-033",
+      "independent_review_commit": "8f56b7e49f7294d418e7042a009d9c1e6be0e353",
+      "acceptance_evidence": "audit/chief/SOL-033-review.json",
+      "publication_manifest": "report/figures/publication-formats.json",
+      "publication_scope": "Four unchanged PDF/PNG files only; both SVG previews excluded pending portability correction.",
+      "original_failed_review": "audit/chief/SOL-030-failed-receipt-replay.json",
+      "full_report_accepted": false
     },
     "LIMITATIONS_DISCLOSURE_DRAFT": {
       "state": "report_transform_pending_review",
@@ -248,6 +257,60 @@
       "independent_source_review_commit": "818af5d65bd8a271962d848dd552bd39ca561f68",
       "manuscript_independently_reviewed": false,
       "scope": "Four-page incomplete methods/reference layout; accepted source outcomes only; future assembled-report review, outside SOL-030 scope"
+    },
+    "POLICY_WRITER_ORIGINAL_ACCEPTANCE": {
+      "state": "accepted_implementation",
+      "task_id": "SOL-031",
+      "path": "audit/chief/SOL-031-review.json",
+      "reviewed_commit": "a24dca5d5494455407207e0fd70c06b258d4fd1f",
+      "scope": "Original writer source; exact Git portability and independent persisted arithmetic accepted.",
+      "performance_evidence": false
+    },
+    "POLICY_WRITER_COMPATIBILITY_ACCEPTANCE": {
+      "state": "accepted_implementation",
+      "task_id": "SOL-032",
+      "path": "audit/chief/SOL-032-review.json",
+      "reviewed_commit": "d168757efbc70e4641deacc911976f1fa3bd7a7c",
+      "scope": "Only extra closure/approval and exact44-file declaration binding; numeric core unchanged.",
+      "performance_evidence": false,
+      "audit_portability_addendum": "audit/chief/SOL-032-acceptance-portability-addendum.json",
+      "audit_portability_followup_task": "SOL-035",
+      "audit_portability_status": "Original exact checkout passes; later-main old-evidence raw inventory fails on111 textLF/CRLF-only hashes. Code scope unchanged, new audit replay pending."
+    },
+    "PERSONALIZED_PURE_ACCEPTANCE": {
+      "state": "accepted_implementation",
+      "task_id": "SOL-027",
+      "path": "audit/chief/SOL-027-review.json",
+      "reviewed_commit": "3d5e965e45f18cf79023dde69189ce987c17e56b",
+      "scope": "Pure explicit-input component only; source_verified=false, production bridge/results remain separate.",
+      "performance_evidence": false
+    },
+    "PRIMARY_DEVELOPMENT_CASE_JOB": {
+      "state": "authorized_pending_result_acceptance",
+      "task_id": "HY3-004",
+      "path": "ops/tasks/HY3-004.json",
+      "base_commit": "93a232a926dc3d1bfb18e2866ef0ddb0aaf9bc0f",
+      "task_sha256": "14bb98ed9b6996d198513c1d29cbe8a7d44b489de7cde9a46f4fc27ce2bead89",
+      "outcomes_accepted": false,
+      "scope": "Fixed primary development case bundle only; fee 0.0025, five computed policies plus three authenticated HY3-003 imports."
+    },
+    "DOUBLED_DEVELOPMENT_CASE_JOB": {
+      "state": "authorized_pending_result_acceptance",
+      "task_id": "HY3-005",
+      "path": "ops/tasks/HY3-005.json",
+      "base_commit": "93a232a926dc3d1bfb18e2866ef0ddb0aaf9bc0f",
+      "task_sha256": "9473a3f93c04f668fe839ab9181496e564a27cdf11471b047907678c1a4807e3",
+      "outcomes_accepted": false,
+      "scope": "Fixed doubled development case bundle only; fee 0.005, eight computed modes, no imports."
+    },
+    "ANALYSIS_ASSEMBLY_IMPLEMENTATION": {
+      "state": "authorized_pending_result_acceptance",
+      "task_id": "SOL-034",
+      "path": "ops/tasks/SOL-034.json",
+      "base_commit": "2ea73da59d393893f06a8169432c5d9e0b168c50",
+      "task_sha256": "16a85c9b253568747e720f6c7f6f3a84f897ab759af5aa981085ea60d636ddb9",
+      "outcomes_accepted": false,
+      "scope": "Typed authenticated persistence around accepted pure policy analysis; generated fixtures only; no real producer outcomes or strategy execution."
     }
   },
   "requirements": [
@@ -296,10 +359,12 @@
         "POLICY_KERNEL_PROTOTYPE",
         "POLICY_CALIBRATION_PROTOTYPE",
         "POLICY_DESIGN_CATALOGUE",
-        "POLICY_CASE_ACCEPTANCE"
+        "POLICY_CASE_ACCEPTANCE",
+        "POLICY_WRITER_ORIGINAL_ACCEPTANCE",
+        "POLICY_WRITER_COMPATIBILITY_ACCEPTANCE"
       ],
       "state": "accepted_design",
-      "remaining": "V2 design, corrected kernel, calibration, pure analysis and case builder accepted (SOL-013/SOL-021/SOL-022/SOL-016/SOL-025). Failed SOL-023 retained. Writer, fixed development results and independent numerical review remain required."
+      "remaining": "Writer SOL-031 and narrow compatibility SOL-032 are positively accepted; fixed HY3-004/005 jobs published. Exact results and targeted independent Sol numerical reviews still required; no new policy outcome accepted."
     },
     {
       "id": "R05",
@@ -309,7 +374,8 @@
         "POLICY_PROPOSAL",
         "PERSONALIZED_HANDOFF",
         "POLICY_ANALYSIS_ACCEPTANCE",
-        "POLICY_DESIGN_CATALOGUE"
+        "POLICY_DESIGN_CATALOGUE",
+        "PERSONALIZED_PURE_ACCEPTANCE"
       ],
       "state": "not_available",
       "table_keys": [
@@ -328,7 +394,7 @@
         "assignment or referral",
         "reason"
       ],
-      "remaining": "Pure generic screening implementation accepted, without outcome evidence. Accept generic runs, implement/review personalized adapter, then independently rescreen exact HY3 outputs at own H/tolerance for both risk and purchasing power with no fallback."
+      "remaining": "Generic and personalized pure components accepted without outcome evidence. Accept both generic producers and analysis assembly, then implement/authenticate production personalization and independently rescreen own H/tolerance without fallback."
     },
     {
       "id": "R06",
@@ -339,10 +405,12 @@
         "POLICY_KERNEL_PROTOTYPE",
         "POLICY_CALIBRATION_PROTOTYPE",
         "POLICY_CASE_FAILED_ATTEMPT",
-        "POLICY_CASE_ACCEPTANCE"
+        "POLICY_CASE_ACCEPTANCE",
+        "POLICY_WRITER_ORIGINAL_ACCEPTANCE",
+        "POLICY_WRITER_COMPATIBILITY_ACCEPTANCE"
       ],
       "state": "accepted_design",
-      "remaining": "V2 design, corrected kernel, calibration, pure analysis and case builder accepted (SOL-013/SOL-021/SOL-022/SOL-016/SOL-025). Failed SOL-023 retained. Writer, fixed development results and independent numerical review remain required."
+      "remaining": "Writer SOL-031 and narrow compatibility SOL-032 are positively accepted; fixed HY3-004/005 jobs published. Exact results and targeted independent Sol numerical reviews still required; no new policy outcome accepted."
     },
     {
       "id": "R07",
@@ -360,7 +428,7 @@
         "horizon",
         "split"
       ],
-      "remaining": "Fold into the eventual independently reviewed manuscript alongside accepted candidate results; final evaluation remains separate.",
+      "remaining": "Baseline source evidence and four PDF/PNG figure publication formats independently accepted; original failed worker renderer and SVG defect preserved. Assembled manuscript and cost-aware/final evidence remain separate.",
       "draft_location": "baseline-development.md"
     },
     {
@@ -462,5 +530,6 @@
     "Pending and failed work cannot be cited as accepted evidence",
     "Post-freeze software corrections remain logged and disclosed; no final-outcome tuning",
     "Team private names and IDs stay outside tracked artifacts"
-  ]
+  ],
+  "updated_at": "2026-10-20T04:26:19.062154+00:00"
 }

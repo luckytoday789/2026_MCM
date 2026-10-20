@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T04:24:16.664288+00:00",
+  "status": "prepared_syntax_and_help_only",
+  "qualified_predecessor": "audit/chief/writer_persisted_oracle.py",
+  "qualified_predecessor_sha256": "393229ae936c16f76b8bd92533f9cda062de0cceb0e1426660163ce026ed02fd",
+  "new_helper_sha256": "a03851684de5434d79e4e09b94d126acc2ef54ac31a1e7315de7cb69718e821d",
+  "adaptations": [
+    "Independent read-only arithmetic on exact Git-published synthetic writer CSVs.",
+    "No SafeInvest imports, policy execution, checkout reads, or competition inputs.",
+    "def audit_fixture(commit, fixture_root, overrides=None):",
+    "    assert re.fullmatch(r'audit/SOL-\\d+/synthetic-(?:[0-9a-f]+|delivery)', fixture_root)",
+    "        path = fixture_root + '/' + relative",
+    "    for group, fee in (('primary', .0025), ('doubled', .005)):",
+    "equal(manifest['split'], 'synthetic', 'synthetic only')",
+    "originals[fixture_root + '/generated.csv']",
+    "        hs = manifest['horizons']",
+    "('synthetic',mode,fee)",
+    "source_commit=commit,fixture_root=fixture_root",
+    "competition_input_read=False,production_acceptance=False",
+    "parser.add_argument('commit');parser.add_argument('fixture_root')",
+    "    print(json.dumps(audit_fixture(args.commit,args.fixture_root),indent=2,allow_nan=False))"
+  ],
+  "arithmetic_body_unchanged": true,
+  "actual_development_result_tested": false,
+  "competition_input_read": false,
+  "limitations": [
+    "No actual producer receipt yet; no numerical test claimed for this adapter.",
+    "Read-only independent ledger/metric/summary checks only; no policy decision, calibration or producer --check replacement."
+  ]
+}

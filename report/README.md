@@ -55,8 +55,11 @@ severe scenario with all three references on that same path. SVG/PDF/300-dpi PNG
 full event data and export provenance are in figures/. Reproduce source/data and
 published-output integrity with `python -B report/build_baseline_figures.py --check`.
 Chief separately checked twelve statistics, 183 plotted observations, severe-case
-selection, embedded PDF fonts and the 11 pt minimum. Independent figure/wording
-review is still pending; these checks do not accept policy outcomes.
+selection, embedded PDF fonts and the 11 pt minimum. Independent SOL-033 review and chief exact-commit replay now approve only the
+four unchanged PDF/PNG publication assets; see ../audit/chief/SOL-033-review.json.
+Both SVG previews remain excluded, their clipping defect and SOL-030 missing-
+matplotlib worker failure preserved. Full manuscript review and policy outcomes
+remain separate.
 
 [limitations-and-disclosure-draft.md](limitations-and-disclosure-draft.md) contains
 English text on annual observation limits, liquidity, fee conventions, model and
@@ -117,8 +120,10 @@ authorized by this plan.
   its exact code and negative evidence are preserved. SOL-025 was separately
   accepted at 803b7a085284405ee5ee4d4f0d5720ebaa2e67f7 after clean-environment
   replay, independent numerical checks and corruption rejection. Writer
-  implementation and actual policy outcomes remain pending. Personalized
-  design is approved by SOL-020, with implementation/outcomes still unreviewed.
+  source SOL-031 and narrow44-file compatibility review SOL-032 are accepted.
+  Fixed HY3-004/005 execution tasks are published; actual results and independent
+  numerical review remain pending. Personalized pure component SOL-027 is accepted;
+  its authenticated production bridge and outcome evidence remain pending.
   Preserve old negative verdicts, quota failures and cancelled tasks;
   do not rerun accepted HY3-003 or treat synthetic checks as policy outcomes.
 - After review, resolve concrete findings and publish granular implementation
@@ -183,3 +188,10 @@ manuscript. It contains no new policy outcomes, profile assignments, final resul
 or private identities. Its four pages are not a final ten-page compliance claim.
 The proof's text transformation belongs in the future assembled-report review;
 SOL-030 remains immutable and reviews only its existing pinned figure/text scope.
+
+SOL-032 audit replay has an additional checkout-line-ending limitation: its
+original exact checkout passes, while later main differs in111 historical text
+raw hashes only by LF/CRLF. The failed check and canonical-content diagnosis are
+preserved in ../audit/chief/SOL-032-acceptance-portability-addendum.json. New
+audit-only SOL-035 is pending; this does not change accepted numerical source or
+the fixed HY3 jobs. No later-main SOL-032 verifier pass is claimed.

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T04:26:19.069153+00:00",
+  "snapshot_main_commit": "20e26e344be8ee460bbf67a2f0046a977f346dc0",
+  "updated_sources": [
+    "POLICY_WRITER_ORIGINAL_ACCEPTANCE",
+    "POLICY_WRITER_COMPATIBILITY_ACCEPTANCE",
+    "PERSONALIZED_PURE_ACCEPTANCE",
+    "PRIMARY_DEVELOPMENT_CASE_JOB",
+    "DOUBLED_DEVELOPMENT_CASE_JOB",
+    "ANALYSIS_ASSEMBLY_IMPLEMENTATION"
+  ],
+  "figure_restriction": "SOL-033 exact accepted PDF/PNG only",
+  "no_new_outcome_claims": true,
+  "competition_input_read": false,
+  "final_data_open": false,
+  "all_source_paths_and_requirement_references_exist": true
+}
