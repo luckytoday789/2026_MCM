@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T04:20:05.222466+00:00",
+  "id": "SOL-034",
+  "base_commit": "2ea73da59d393893f06a8169432c5d9e0b168c50",
+  "task_sha256": "16a85c9b253568747e720f6c7f6f3a84f897ab759af5aa981085ea60d636ddb9",
+  "source_pins": 38,
+  "accepted_dependencies": {
+    "SOL-016": "ceec2b6d1107a4137ee3d24d689ba7ba614703c2",
+    "SOL-021": "d154f90d1c50b37990b75ec0a45aa01a38252343",
+    "SOL-022": "21ad493707d71240f83d7f01ed6d133e1380e8fb",
+    "SOL-025": "803b7a085284405ee5ee4d4f0d5720ebaa2e67f7",
+    "SOL-031": "a24dca5d5494455407207e0fd70c06b258d4fd1f",
+    "SOL-032": "d168757efbc70e4641deacc911976f1fa3bd7a7c"
+  },
+  "production_execution_authorized": false,
+  "competition_input_read": false,
+  "final_data_open": false
+}

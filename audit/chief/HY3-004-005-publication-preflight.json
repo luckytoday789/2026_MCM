@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-20T04:18:52.156630+00:00",
+  "records": [
+    {
+      "id": "HY3-004",
+      "task_digest": "14bb98ed9b6996d198513c1d29cbe8a7d44b489de7cde9a46f4fc27ce2bead89",
+      "publication_commit": "2ea73da59d393893f06a8169432c5d9e0b168c50",
+      "base_commit": "93a232a926dc3d1bfb18e2866ef0ddb0aaf9bc0f",
+      "source_commit": "bc04d428425a9afbea799e036213632dc6568c73",
+      "deliverables": 44,
+      "binding": "passed_before_input"
+    },
+    {
+      "id": "HY3-005",
+      "task_digest": "9473a3f93c04f668fe839ab9181496e564a27cdf11471b047907678c1a4807e3",
+      "publication_commit": "2ea73da59d393893f06a8169432c5d9e0b168c50",
+      "base_commit": "93a232a926dc3d1bfb18e2866ef0ddb0aaf9bc0f",
+      "source_commit": "bc04d428425a9afbea799e036213632dc6568c73",
+      "deliverables": 44,
+      "binding": "passed_before_input"
+    }
+  ],
+  "competition_input_read": false,
+  "final_data_open": false
+}
