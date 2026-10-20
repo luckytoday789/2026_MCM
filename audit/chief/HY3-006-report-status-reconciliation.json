@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T06:13:57.266823+00:00",
+  "snapshot_main_commit": "82de2c055eb7fb8c5c7646ace1e484304c242e55",
+  "purpose": "Report status update only; exact doubled candidate has chief checks but remains unaccepted.",
+  "before_evidence_map_sha256": "072329d3eaaf510c38be9aec1bfbbe09e86d4c6545a7ec6fab295db869a3e97a",
+  "after_evidence_map_sha256": "c473f27d3e48cbe7383f5b3c9a215cdc12171c0e9d77366fe8c01b1384c71041",
+  "new_task": "SOL-041",
+  "new_task_sha256": "a68184a570dfeb49ac72a36060b2e3d88ed0d2c45fb7f6f17f3ddced40434dfe",
+  "candidate_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+  "modified_requirement_ids": [
+    "R04",
+    "R06",
+    "R12"
+  ],
+  "requirements_checked": 15,
+  "existing_other_evidence_states_unchanged": true,
+  "primary_outcomes_accepted": false,
+  "doubled_outcomes_accepted": false,
+  "final_data_open": false,
+  "files_sha256": {
+    "report/evidence-map.json": "c473f27d3e48cbe7383f5b3c9a215cdc12171c0e9d77366fe8c01b1384c71041",
+    "report/README.md": "c7568513d8b4a2739ee0b35b7243a26f862fda7d1ee8db40422733fa7e68ccfa",
+    "report/limitations-and-disclosure-draft.md": "b32472212776fbef8902b2ee7a84ac1821386345963094ed63e1229e622902f1"
+  }
+}

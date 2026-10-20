@@ -102,8 +102,8 @@ shrink text below 11 pt to accommodate missing material.
 4. **Cost sensitivity:** the unchanged rule at the original and doubled fee,
    required metrics, trade/review changes and whether the recommendation changes.
    The doubled rate is fixed at 0.005. HY3-005 failed and its partial output is
-   preserved; unchanged-policy HY3-006 is pending. No doubled-fee outcome is
-   accepted.
+   preserved; exact unchanged-policy HY3-006 is submitted and awaits independent
+   SOL-041 review. No doubled-fee outcome is accepted.
 5. **Customer explanation:** at most 50 English words, written after policy
    selection; include the action, reason, cost awareness and remaining risk.
 
@@ -124,8 +124,9 @@ authorized by this plan.
   replay, independent numerical checks and corruption rejection. Writer
   source SOL-031 and narrow44-file compatibility review SOL-032 are accepted.
   Exact HY3-004 is delivered but awaits independent SOL-040 review. Failed
-  HY3-005 partials are preserved; unchanged-policy HY3-006 is pending.
-  SOL-037 is the single time-gated availability probe; SOL-038/039/040
+  HY3-005 partials are preserved; exact unchanged-policy HY3-006 awaits independent
+  SOL-041 review. Chief numerical checks passed but neither producer is accepted.
+  SOL-037 is the single time-gated availability probe; SOL-038/039/040/041
   remain held until its exact successful receipt is accepted. Failed
   SOL-034/035/036 are not positive code, result or review dependencies.
   Personalized pure component SOL-027 is accepted;

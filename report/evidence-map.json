@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Writing coverage and evidence gates; not a task, acceptance receipt or final freeze",
-  "snapshot_main_commit": "3bf18f8877d1869f6b0672d263e5f0e1431a9d33",
+  "snapshot_main_commit": "82de2c055eb7fb8c5c7646ace1e484304c242e55",
   "authoritative_state": [
     "ops/control.json",
     "ops/queue.json"
@@ -300,14 +300,17 @@
       "independent_review_task": "SOL-040"
     },
     "DOUBLED_DEVELOPMENT_CASE_JOB": {
-      "state": "authorized_pending_result_acceptance",
+      "state": "submitted_pending_review",
       "task_id": "HY3-006",
       "path": "ops/tasks/HY3-006.json",
       "base_commit": "eae30c8edff452807694b9c8f42db6d1d01464f7",
       "task_sha256": "dcdf31a5ce502b4c5115d9a21a29b6649ea107b8e0c8b671b1e17d44812962b6",
       "queue_state_at_snapshot": "ready",
       "outcomes_accepted": false,
-      "scope": "Fixed unchanged-policy doubled-fee recovery; fresh output only. HY3-005 failed partials are preserved separately. Independent numerical review remains required."
+      "scope": "Exact unchanged-policy doubled-fee result exists. Chief accounting/decision/provenance checks and isolated read-only writer check passed; independent SOL-041 review still waits for accepted SOL-037. HY3-005 failed partials remain preserved. No numerical outcome acceptance.",
+      "candidate_result_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+      "independent_review_task": "SOL-041",
+      "chief_evidence": "audit/chief/HY3-006-chief-checkpoint.json"
     },
     "ANALYSIS_ASSEMBLY_IMPLEMENTATION": {
       "state": "held_pending_prerequisite",
@@ -388,6 +391,16 @@
       "queue_state_at_snapshot": "waiting",
       "outcomes_accepted": false,
       "scope": "Audit-only recovery after failed SOL-035; preserves accepted SOL-032 computational code and prior line-ending failures. Waits for accepted SOL-037."
+    },
+    "DOUBLED_DEVELOPMENT_INDEPENDENT_REVIEW": {
+      "state": "held_pending_prerequisite",
+      "task_id": "SOL-041",
+      "path": "ops/tasks/SOL-041.json",
+      "base_commit": "da37f1cff664c2ba5b475ddd07ae58630004ea3e",
+      "task_sha256": "a68184a570dfeb49ac72a36060b2e3d88ed0d2c45fb7f6f17f3ddced40434dfe",
+      "queue_state_at_snapshot": "waiting",
+      "outcomes_accepted": false,
+      "scope": "Independent exact HY3-006 review after successful accepted SOL-037. Existing chief checks do not establish result acceptance; no primary reselection or final outcomes."
     }
   },
   "requirements": [
@@ -441,10 +454,11 @@
         "POLICY_WRITER_COMPATIBILITY_ACCEPTANCE",
         "PRIMARY_DEVELOPMENT_CASE_JOB",
         "DOUBLED_DEVELOPMENT_CASE_JOB",
-        "PRIMARY_DEVELOPMENT_INDEPENDENT_REVIEW"
+        "PRIMARY_DEVELOPMENT_INDEPENDENT_REVIEW",
+        "DOUBLED_DEVELOPMENT_INDEPENDENT_REVIEW"
       ],
       "state": "accepted_design",
-      "remaining": "Writer SOL-031 and narrow compatibility SOL-032 are accepted. Exact HY3-004 result awaits SOL-040; failed HY3-005 is preserved and unchanged-policy HY3-006 is pending. Neither producer outcome is accepted. SOL-037 success gates independent Sol recovery tasks."
+      "remaining": "Writer SOL-031 and narrow compatibility SOL-032 are accepted. Exact HY3-004 result awaits SOL-040; failed HY3-005 is preserved and exact unchanged-policy HY3-006 awaits independent SOL-041 review. Neither producer outcome is accepted. SOL-037 success gates independent Sol recovery tasks."
     },
     {
       "id": "R05",
@@ -490,10 +504,11 @@
         "POLICY_WRITER_COMPATIBILITY_ACCEPTANCE",
         "PRIMARY_DEVELOPMENT_CASE_JOB",
         "DOUBLED_DEVELOPMENT_CASE_JOB",
-        "PRIMARY_DEVELOPMENT_INDEPENDENT_REVIEW"
+        "PRIMARY_DEVELOPMENT_INDEPENDENT_REVIEW",
+        "DOUBLED_DEVELOPMENT_INDEPENDENT_REVIEW"
       ],
       "state": "accepted_design",
-      "remaining": "Writer SOL-031 and narrow compatibility SOL-032 are accepted. Exact HY3-004 result awaits SOL-040; failed HY3-005 is preserved and unchanged-policy HY3-006 is pending. Neither producer outcome is accepted. SOL-037 success gates independent Sol recovery tasks."
+      "remaining": "Writer SOL-031 and narrow compatibility SOL-032 are accepted. Exact HY3-004 result awaits SOL-040; failed HY3-005 is preserved and exact unchanged-policy HY3-006 awaits independent SOL-041 review. Neither producer outcome is accepted. SOL-037 success gates independent Sol recovery tasks."
     },
     {
       "id": "R07",
@@ -569,10 +584,11 @@
         "PROBLEM_LOCK",
         "POLICY_PROPOSAL",
         "DOUBLED_DEVELOPMENT_CASE_JOB",
-        "DOUBLED_DEVELOPMENT_FAILED_ATTEMPT"
+        "DOUBLED_DEVELOPMENT_FAILED_ATTEMPT",
+        "DOUBLED_DEVELOPMENT_INDEPENDENT_REVIEW"
       ],
       "state": "not_available",
-      "remaining": "HY3-005 failed and is not completed sensitivity evidence. Accept unchanged-policy HY3-006 and its separate independent numerical review, then report the primary development-selected rule at both fees without reselection."
+      "remaining": "HY3-005 failed and is not completed sensitivity evidence. Accept exact unchanged-policy HY3-006 and its separate SOL-041 independent numerical review, then report the primary development-selected rule at both fees without reselection."
     },
     {
       "id": "R13",
@@ -616,5 +632,5 @@
     "Post-freeze software corrections remain logged and disclosed; no final-outcome tuning",
     "Team private names and IDs stay outside tracked artifacts"
   ],
-  "updated_at": "2026-10-20T05:57:56.845288+00:00"
+  "updated_at": "2026-10-20T06:13:57.266823+00:00"
 }

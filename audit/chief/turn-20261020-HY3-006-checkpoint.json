@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T06:14:58.734624+00:00",
+  "snapshot_main_commit": "82de2c055eb7fb8c5c7646ace1e484304c242e55",
+  "starting_main_commit": "6c7c367",
+  "candidate_result": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+  "accepted": false,
+  "new_review_task": "SOL-041",
+  "task_publication": "82de2c055eb7fb8c5c7646ace1e484304c242e55",
+  "preflight": "audit/chief/SOL-041-publication-preflight.json",
+  "chief_evidence": "audit/chief/HY3-006-chief-checkpoint.json",
+  "report_reconciliation": "audit/chief/HY3-006-report-status-reconciliation.json",
+  "independent_ledger_metric_checks": 735115,
+  "independent_decision_calibration_checks": 472295,
+  "decimal_scalar_facts": 140,
+  "writer_check_seconds": 194.23499999998603,
+  "writer_protected_inventory_unchanged": true,
+  "only_new_immutable_task": "SOL-041",
+  "existing_tasks_unchanged": true,
+  "control_unchanged": true,
+  "final_data_open": false,
+  "quota": {
+    "limit_id": "codex",
+    "window_minutes": 10080,
+    "used_percent": 56.0,
+    "remaining_percent": 44.0,
+    "resets_at": 1792913381,
+    "source": "Codex account/rateLimits/read",
+    "checked_at": "2026-10-20T06:14:18.346479+00:00",
+    "state": "verified",
+    "stop_remaining_percent": 40
+  },
+  "remote_observations": {
+    "sol": {
+      "status_commit": "a9862992d9794b048aa43af980d2d1f728c06492",
+      "state": "idle",
+      "updated_at": "2026-10-20T06:10:26.664708+00:00",
+      "lease_until": "2026-10-20T06:20:26.664708+00:00"
+    },
+    "hy3": {
+      "status_commit": "98225c8da34412518b7ca00041006ed2813482b7",
+      "state": "idle",
+      "updated_at": "2026-10-20T06:10:14.243523+00:00",
+      "lease_until": "2026-10-20T06:20:14.243523+00:00"
+    }
+  },
+  "human_help_required": false,
+  "remaining": "Accept real scheduled SOL-037 probe, then independent SOL-040/SOL-041 reviews and SOL-038 assembly recovery; never promote either producer before review. No new computation authorized from this status checkpoint."
+}

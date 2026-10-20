@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T06:12:19.392990+00:00",
+  "status": "passed",
+  "task": "SOL-041",
+  "task_sha256": "a68184a570dfeb49ac72a36060b2e3d88ed0d2c45fb7f6f17f3ddced40434dfe",
+  "base_commit": "da37f1cff664c2ba5b475ddd07ae58630004ea3e",
+  "publication_commit": "82de2c055eb7fb8c5c7646ace1e484304c242e55",
+  "source_pins": 42,
+  "producer_artifact_pins": 48,
+  "producer_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+  "producer_accepted": false,
+  "state": "waiting",
+  "hold": "accepted exact successful SOL-037 only",
+  "parent_is_pushed_base": true
+}

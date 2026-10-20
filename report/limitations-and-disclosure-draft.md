@@ -21,7 +21,9 @@ pre-fee wealth, the fee is funded proportionally, and returns follow the charge.
 The sensitivity comparison will change that rate while retaining the declared
 rule parameters. It will not test every fee-funding convention or isolate the
 causal fee effect of annual rebalancing versus buy-and-hold, whose allocations
-also differ. The doubled-fee outcomes are still pending at this draft's date.
+also differ. Exact doubled-fee development outputs have been submitted, but
+independent SOL-041 review and numerical acceptance remain pending. The chief's
+successful accounting and read-only checks do not establish that acceptance.
 
 The proposed cost-aware rule uses a one-year certainty equivalent under a fixed
 risk-aversion assumption. Passing its buffered hurdle establishes an estimated
