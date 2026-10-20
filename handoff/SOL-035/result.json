@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-035",
+  "attempt": 1,
+  "role": "sol",
+  "task_sha256": "3dd2e8de06ea727a102e5df1c53fe73e3c83ad9cbbf8f1c0c9aa5c0b5b121207",
+  "base_commit": "45e1da032122fca8c69ef508e82c36fd95ffe003",
+  "status": "failed",
+  "failure": "Task timeout or local stop requested; partial work preserved.",
+  "artifact_hash_basis": "canonical_git_blob",
+  "started_from_pinned_source": true,
+  "checks": [],
+  "artifacts_sha256": {
+    "audit/SOL-035/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "audit/SOL-035/canonical-inventory.json": "696e8432b62b7c8fefde73f90ad07488ca0d040b51661fa0580d98bf7a50af35",
+    "audit/SOL-035/checkout-construction.json": "a643272a35dd455657f283d0f0601c843a86afd4e3636dfea53828a0755c10be",
+    "audit/SOL-035/clean-environment-checks.json": "19ec3a025d1b16378416423a9d341ae5f55a63e6d4f7630f56a4c719e203871e",
+    "audit/SOL-035/construct.py": "a4efb396e7c0473a961e745d8058eab3af2f6fc2f6ccfd02d7b44945a718e0a6",
+    "audit/SOL-035/construction-summary.json": "cddb075d46ec785fb3358990e6be5910d811b29be20574fb0c9bd65ef226ec60",
+    "audit/SOL-035/false-accepted.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-035/false-accepted.stdout.txt": "3568f30a88180086942fce028dcce75eda90e9fdde57ad2967c29f61248c3505",
+    "audit/SOL-035/false-later-main.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-035/false-later-main.stdout.txt": "dc0dfa0ca044baccf96726d0cb43b04b8d6f69e0ece5d5a6eb81aee8f9d35509",
+    "audit/SOL-035/final-check.json": "b1ca4cb1ec5f0edf21b1c13b69b5826588256d1bb3dbbc8b09e208b918dd9c96",
+    "audit/SOL-035/final-check.py": "9a7c04115c151996a12b7663335521079ad2825fa210cf4eee263543b619f3a5",
+    "audit/SOL-035/final-check.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-035/final-check.stdout.txt": "3f665a21116f90d08c6cb9c981a701072ece3244c3f1b7d1db744602cc4718b8",
+    "audit/SOL-035/findings.json": "a65206220584608fcea4e43dae9aeac3c931306c1fedc2d7c5ae74cf5b1476b9",
+    "audit/SOL-035/infrastructure-trials.json": "579966dbd4ff8b369c8e7cf1d8245f66ef22f4ef76fe90c47844502faaf7d9c7",
+    "audit/SOL-035/lf-supplement.json": "9bd81dd8452a0b1325dfd5ee5e1147afeb5df83452bfcda6ec540301f3648266",
+    "audit/SOL-035/lf-supplement.py": "d2de971014f0b758f09adb46d1eff4c39a87580479b1f3ad3816cde0b1fc2749",
+    "audit/SOL-035/negative-checks.json": "67aaa76079d9c18032f2451fc9f4493c1d8f3810fc3408bb83161cfc5ac2e318",
+    "audit/SOL-035/prescribed.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-035/prescribed.stdout.txt": "3f665a21116f90d08c6cb9c981a701072ece3244c3f1b7d1db744602cc4718b8",
+    "audit/SOL-035/review.md": "9a9f73607f20e87ce466eaebe7230a3b5f8de9a9acd5323856f90e33ac54ea98",
+    "audit/SOL-035/task-publication.json": "647ee4c1121c8ea20e33c01598386d658c49e56ceddd4436d1e57e5dee7d62a1",
+    "audit/SOL-035/task-runtime.json": "fbf2b11843f312ee507ded7e176d36fadf202455ba561834d78181e7ed3a314b",
+    "audit/SOL-035/task.json": "c7032fbe58c3724316d763bfdc2916e0fb62052f9323f21b2c33918eb904df14",
+    "audit/SOL-035/trial-001.json": "929e4dfcdb6fdf1fb0666a169df50820159db6a551a00ab7f25f5629d35d7d88",
+    "audit/SOL-035/trial-001.stderr.txt": "d8a157b4abfb4e1c651c369dd730493129aed6c45637609240af66da13004978",
+    "audit/SOL-035/trial-002.json": "47c3e119cb9b94ee1087a568d77fa9b85fc77a7f2bef78dd763455bddb239b49",
+    "audit/SOL-035/true-accepted.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-035/true-accepted.stdout.txt": "3568f30a88180086942fce028dcce75eda90e9fdde57ad2967c29f61248c3505",
+    "audit/SOL-035/true-later-main.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-035/true-later-main.stdout.txt": "e7fe5d26b719642cfda0c69d0a383a5b29209fa1690d4d73943a6d37a6f15fc6",
+    "audit/SOL-035/verification.json": "776163c852645f3149df12a98eaed75ceb7cf0ed03cf643f3e4e36995c0e5724",
+    "audit/SOL-035/verify.py": "d764d8b910802446515824de3a5921003ec13b82d1f00aa409128ad647e0f66a"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "finished_at": "2026-10-20T04:58:34.820934+00:00",
+  "note": "Completed means worker self-check only; coordinator acceptance is separate.",
+  "input_manifest": {
+    "source": "User-supplied 2026 MCM Senior Group Problem A SafeInvest attachments",
+    "license": "CC BY-NC-SA 4.0",
+    "transformation": "Originals unchanged; derived CSV files are row subsets only.",
+    "files": [
+      {
+        "path": "problem/2026_MCM_SafeInvest.pdf",
+        "sha256": "2ac9412ed68349d36a3fbd2c6cddc5789a81dab8acbfa08c63a3bdb34d2aa2dd",
+        "bytes": 137578
+      },
+      {
+        "path": "data/raw/SafeInvest_Synthetic_Data.csv",
+        "sha256": "def0177704bf6cb98cec6da325b34208750d988f6ad97ec4a706a0d39e6f82c0",
+        "bytes": 274914
+      },
+      {
+        "path": "data/development/scenarios_001_120.csv",
+        "sha256": "9c4ad83f5dda86251a754e126528a71dd930ae88ed7cdb8a0663a327b6bfb7c7",
+        "bytes": 182255
+      },
+      {
+        "path": "data/final_holdout/scenarios_121_180.csv",
+        "sha256": "3270445e7864abf2e88c56e4012d7f582eae3b5e30c40ade1a4c9ef2b54bbf29",
+        "bytes": 92732
+      }
+    ]
+  },
+  "task_parameters": {
+    "required_python": "3.12",
+    "cpu_only": true,
+    "source_sha256": {
+      "specs/SOL032_AUDIT_PORTABILITY_FOLLOWUP.md": "67e28b1aee6570050c995bbb490da1acda516025983f072f22b3ead3a5d8ddc5",
+      "specs/POLICY_WRITER_FILE_DELIVERABLES.md": "1c91468f405a92b300a2684e2b29fa29a75d9add6df77ed819e96fd8fe2e11e0",
+      "audit/chief/SOL-032-review.json": "29d380833f044d3d9b1121a59f36b138c7c1d0b78a7b4ea146ace88ca2e5d1b8",
+      "audit/chief/SOL-032-acceptance-portability-addendum.json": "84d4ca287477271a2cea2331757e5193bfe805c19f463388837867527bd7cc97",
+      "audit/chief/SOL-032-later-main-inventory-diagnosis.json": "ad1e981fd10ce44ce8dff1d4c496ccac906c59c7d5e98d0f21bf54312bb109a1",
+      "audit/chief/turn-20261020-case-dispatch-final-checks.json": "8ffb7486cb415a42ccab0d2894bfc88af0902fffe8f457c6e99c86a5bb569727",
+      "audit/SOL-032/verify.py": "fafbdefbd7cc409b9cf0d7ae8d5eed046579287ea988c3dfdd0361318c739d7b",
+      "audit/SOL-032/verification.json": "674fd64473634c95794ad6e6545c7bb9f70b69ba5ddeec9220f019face33133b",
+      "audit/SOL-032/unchanged-inventory.json": "6fc1534ba41c55652a8aa2bca6ddc190df749f8cd7a462321bea1f78526d20d8",
+      "audit/SOL-032/runtime.json": "bd07cac345513b2e5e313e59bff46c5731f7dae9ac1fa513c8eb16ccc8bbb31c",
+      "audit/SOL-032/boundaries.json": "55df018fc88cab6355a3df8b8b3ba71f9a128d342e5ae75397083e23a97b3253",
+      "audit/SOL-032/task.json": "72a8bd782b4c8fc5d83390dadb7a1f9c1e79bb1b05169de345e2320ca4f4ae7f",
+      "handoff/SOL-032/result.json": "ee8474cf83cb6e05a7992e4c3f1267763ef691eac8cda1445103185006364a1c",
+      "src/safeinvest/policy_writer.py": "feca1b69de00cb5677337796c32ab91cd7262351bfed9c9ee5ac1ff5fab46226"
+    },
+    "original_reviewed_commit": "d168757efbc70e4641deacc911976f1fa3bd7a7c",
+    "original_source_base": "e33b748c29d366559706d5272319d9138f0c7aa4",
+    "raw_checkout_mismatches": 111,
+    "production_execution_authorized": false,
+    "competition_outcomes_allowed": false,
+    "final_outcomes_allowed": false,
+    "max_artifact_bytes": 10485760
+  }
+}

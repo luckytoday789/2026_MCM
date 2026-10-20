@@ -1,0 +1,1395 @@
+{
+  "SOL-034": {
+    "task_id": "SOL-034",
+    "reviewed_commit": "632c95f03d3bbfeed1f847598eed3e6cfc5be264",
+    "task_sha256": "16a85c9b253568747e720f6c7f6f3a84f897ab759af5aa981085ea60d636ddb9",
+    "base_commit": "2ea73da59d393893f06a8169432c5d9e0b168c50",
+    "receipt_status": "failed",
+    "failure": "Task timeout or local stop requested; partial work preserved.",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "structural_authentication": "passed",
+    "source_pin_count": 38,
+    "changed_paths": 270,
+    "missing_deliverables": [],
+    "check_exits": [
+      0
+    ],
+    "prescribed_validation_count": 2,
+    "inventory": {
+      "audit/SOL-034/.gitattributes": {
+        "sha256": "db7fc75ba4f379cc667b0611d9791a5f5490213e71bd1ea0c23e603a919499c1",
+        "bytes": 30
+      },
+      "audit/SOL-034/boundary-module-records.json": {
+        "sha256": "37de07f7fa25d2e34c0306c792ca7572337a3b82a2ebc9d6b3d34a7a15e21297",
+        "bytes": 15791
+      },
+      "audit/SOL-034/boundary-process.json": {
+        "sha256": "26cfbdc7c1fefa2c4feb0c8f3daca753bee57050ff0afa9d6f951b6638db92a9",
+        "bytes": 93
+      },
+      "audit/SOL-034/clean-environment-checks.json": {
+        "sha256": "cbd642f8205b57818b0c82f1675823a9b4c3019a4d1055a861eabac531458929",
+        "bytes": 91183
+      },
+      "audit/SOL-034/construct.py": {
+        "sha256": "c5d398d8486e5123b6fd32869ea2aa07cf94ef9138271fcabb0c43712c288983",
+        "bytes": 4137
+      },
+      "audit/SOL-034/construction-process.json": {
+        "sha256": "04541a32496797b4e0ef47e1ead8b0ad1a6a0b58308d36e146f6639e3df99e0f",
+        "bytes": 259
+      },
+      "audit/SOL-034/failed-final-001-verification.json": {
+        "sha256": "0dec22e76aa2d9d0bdcc9f4664af509b8c53809823c7812cab303acc446dd118",
+        "bytes": 42865
+      },
+      "audit/SOL-034/failed-final-001-verify.py": {
+        "sha256": "f6bc878d3c247719dbf923cd557024daaa1ef1279529518018e9168e9c06ac6e",
+        "bytes": 10698
+      },
+      "audit/SOL-034/final-001-0.stderr.txt": {
+        "sha256": "736c63ec6a1136c8406406da5d547926b8131329b980c0e24fdec8ec2a4f7dca",
+        "bytes": 1879
+      },
+      "audit/SOL-034/final-001-0.stdout.txt": {
+        "sha256": "805d6e847cbb8652245bf245d4e19e4bd0bc796ccf34a38fbd15e653d4617e44",
+        "bytes": 1459
+      },
+      "audit/SOL-034/final-001-1.stderr.txt": {
+        "sha256": "405ce73b140ec00c27e284ea9aa66203a6eb2a11b10560497cb25f284f0e1321",
+        "bytes": 397
+      },
+      "audit/SOL-034/final-001-1.stdout.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "audit/SOL-034/final-001-recorder.json": {
+        "sha256": "4b9c1910abd44831cf1bd1094213a1ca3c377656ff5f20b8d472f5792ef2d333",
+        "bytes": 84705
+      },
+      "audit/SOL-034/final-001.json": {
+        "sha256": "9fefe0d372807a8d8df41c6105f9c11be6ecc9385ca81f97f5f1af766c820f6e",
+        "bytes": 86012
+      },
+      "audit/SOL-034/final-002-0.stderr.txt": {
+        "sha256": "838d41e7357a9e2a72c25745f5d9d0e5de42b7a84a39e5124c9e38b89d202ec6",
+        "bytes": 1879
+      },
+      "audit/SOL-034/final-002-0.stdout.txt": {
+        "sha256": "805d6e847cbb8652245bf245d4e19e4bd0bc796ccf34a38fbd15e653d4617e44",
+        "bytes": 1459
+      },
+      "audit/SOL-034/final-002-1.stderr.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "audit/SOL-034/final-002-1.stdout.txt": {
+        "sha256": "8dd11443508f0cad01fa39469ff3b583b3a566d26ab609b79d2389c74c52f0da",
+        "bytes": 1813
+      },
+      "audit/SOL-034/final-002-inventory.json": {
+        "sha256": "2d139b8fc036a9437235b4d52f9ca3b42ab2bab270b60d0c77cf597952c75d37",
+        "bytes": 65361
+      },
+      "audit/SOL-034/final-002-recorder.json": {
+        "sha256": "23498a8c98705b540650b2b4a53cc980aa996473c92453b9ba53e339004f3902",
+        "bytes": 84706
+      },
+      "audit/SOL-034/final-002.json": {
+        "sha256": "ae14eafb741ad9ebd739303e933568d07ee249cf8ea3a6f25bdbc9ad9b6e071a",
+        "bytes": 86013
+      },
+      "audit/SOL-034/findings.json": {
+        "sha256": "bf9cb7c280222e7aa66469d288b3c6757fe47c7a9cb8647c4359ef4d6fa95d78",
+        "bytes": 1896
+      },
+      "audit/SOL-034/fixture/analysis/comparison_gates.json": {
+        "sha256": "3d9b1625294a84aade113b493017d1ed4e06ff0093a6e1eefdaf42e79d02b5ee",
+        "bytes": 217323
+      },
+      "audit/SOL-034/fixture/analysis/paired_differences.csv": {
+        "sha256": "99b1bda76c5cc76ee8b78f9023bdae85bccd15836fb86a82a199253617c91615",
+        "bytes": 105075
+      },
+      "audit/SOL-034/fixture/analysis/profile_recommendations.json": {
+        "sha256": "f9040c0c3ad1c3d40b7ea44059d8bb9e009eb929514484ad0d04fcbb7827342d",
+        "bytes": 46582
+      },
+      "audit/SOL-034/fixture/analysis/profile_screen.json": {
+        "sha256": "89badcebac504865408b9cf264062373321e4e8ba9d50bf3734e8ca6b5eac42d",
+        "bytes": 53590
+      },
+      "audit/SOL-034/fixture/analysis/run_manifest.json": {
+        "sha256": "2590b76181f6a7d2f0e33cfff9da793513b773a18b2ddd79868e89ca1bc56b02",
+        "bytes": 139802
+      },
+      "audit/SOL-034/fixture/analysis/selection.json": {
+        "sha256": "26df8ce3545d4515090f9b77d4f7323a814688210321a41dec77fc869df17972",
+        "bytes": 19142
+      },
+      "audit/SOL-034/fixture/binding.json": {
+        "sha256": "55e12e6722a273ab7dbfe6985337341ff18f4ba91baaca1ab7296f7aad988350",
+        "bytes": 542
+      },
+      "audit/SOL-034/fixture/bytes/.gitattributes": {
+        "sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+        "bytes": 14
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/calibrations.json": {
+        "sha256": "c5afdb772897648346856b3853efa98ac1d5c83054e29d8c05def614cb81fa1e",
+        "bytes": 43
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_adaptive/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_adaptive/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_adaptive/scenario_metrics.csv": {
+        "sha256": "81bc4bcef0139ad393728b61002ab8fb80d07bbb1eb7cd34da59a306668e32ae",
+        "bytes": 6894
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_adaptive/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_adaptive/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_context/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_context/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_context/scenario_metrics.csv": {
+        "sha256": "4d97bf1f5bb3849b8530047c1327e830ed735158ecd0ebcafd6eb6942f92e0d9",
+        "bytes": 6874
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_context/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_context/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_cost/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_cost/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_cost/scenario_metrics.csv": {
+        "sha256": "1ee3ef77c38f153edfec04ab79ec3c79c6169b99200b40e78f767c18f710f90a",
+        "bytes": 6794
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_cost/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/balanced_cost/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/bills_keep/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/bills_keep/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/bills_keep/scenario_metrics.csv": {
+        "sha256": "7eacc44b27617cc1a088d1bf5f31a82baa2346da12d6f9e902d0e481b184a001",
+        "bytes": 6544
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/bills_keep/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/bills_keep/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/conservative_cost/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/conservative_cost/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/conservative_cost/scenario_metrics.csv": {
+        "sha256": "bfb49827567d10f08ce07f2bcc4333b1627e17982dd26dbf6d467d0cb46af49c",
+        "bytes": 6874
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/conservative_cost/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/conservative_cost/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/equal_weight_annual/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/equal_weight_annual/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/equal_weight_annual/scenario_metrics.csv": {
+        "sha256": "a1b7b13c2f237addbcfa197fe0b197b10728658bce8ba0830564fa274dceb8df",
+        "bytes": 6724
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/equal_weight_annual/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/equal_weight_annual/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/equal_weight_buy_hold/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/equal_weight_buy_hold/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/equal_weight_buy_hold/scenario_metrics.csv": {
+        "sha256": "674cbb2cc539d1bec35c6462b8e2b8a7877f1e60aa3781ba345752e3778f7509",
+        "bytes": 6764
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/equal_weight_buy_hold/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/equal_weight_buy_hold/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/growth_cost/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/growth_cost/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/growth_cost/scenario_metrics.csv": {
+        "sha256": "883d776bcc0d1bb30ec3307345caa37d9848a423dc665cb271675ed58b486c78",
+        "bytes": 6754
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/growth_cost/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/cases/growth_cost/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/checks.json": {
+        "sha256": "fcbe9152b5c6dc0a811afa5d5f5b7f9a9b5462378d2696bf6440154e84c01c28",
+        "bytes": 70
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/reference_imports.json": {
+        "sha256": "0b7e73d2fdccbdf853c3dd0bb90e266a968c7877f187d0cac681faf274fdc1d7",
+        "bytes": 57
+      },
+      "audit/SOL-034/fixture/bytes/bundles/doubled/run_manifest.json": {
+        "sha256": "6a7306aa2c482b05c035bffc30796a4d220b548a4e505b1c53ef2a33a77125dd",
+        "bytes": 474
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/calibrations.json": {
+        "sha256": "c5afdb772897648346856b3853efa98ac1d5c83054e29d8c05def614cb81fa1e",
+        "bytes": 43
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_adaptive/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_adaptive/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_adaptive/scenario_metrics.csv": {
+        "sha256": "7de487022ce5df4e2f306c8df4bf741e7ca2435e15f3aab62ab048eb733b2fd2",
+        "bytes": 6914
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_adaptive/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_adaptive/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_context/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_context/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_context/scenario_metrics.csv": {
+        "sha256": "23494428ca7a1fcaf68cf1042f7f2196710de36aba7b64e5a71afacc88328e1c",
+        "bytes": 6874
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_context/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_context/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_cost/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_cost/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_cost/scenario_metrics.csv": {
+        "sha256": "9195b00851387d8d439972a851d287bfb45d8a2e3993923f861c37e19615c7d7",
+        "bytes": 6814
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_cost/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/balanced_cost/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/bills_keep/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/bills_keep/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/bills_keep/scenario_metrics.csv": {
+        "sha256": "52cd50057def6b9ebbcb7cf594e805c16d10655a0f15034349f90869b8133efa",
+        "bytes": 6564
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/bills_keep/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/bills_keep/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/conservative_cost/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/conservative_cost/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/conservative_cost/scenario_metrics.csv": {
+        "sha256": "f7bbd85b40e392d539e07ca91e75602ee43f831b5fba52e1abecb63522a0456a",
+        "bytes": 6894
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/conservative_cost/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/conservative_cost/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/equal_weight_annual/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/equal_weight_annual/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/equal_weight_annual/scenario_metrics.csv": {
+        "sha256": "3e786c05dbe941459147ace1bc79146bd47243a6642b725701a28717782e57fc",
+        "bytes": 6744
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/equal_weight_annual/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/equal_weight_annual/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/equal_weight_buy_hold/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/equal_weight_buy_hold/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/equal_weight_buy_hold/scenario_metrics.csv": {
+        "sha256": "11b08d50fb085120435f7b15cafa61295979c83fab217b06584e7782ef6b41f3",
+        "bytes": 6784
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/equal_weight_buy_hold/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/equal_weight_buy_hold/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/growth_cost/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/growth_cost/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/growth_cost/scenario_metrics.csv": {
+        "sha256": "7c9976a1618a0015b8b941fb8dc60060d2d92f77647354f27ae749e911f0e570",
+        "bytes": 6774
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/growth_cost/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/cases/growth_cost/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/checks.json": {
+        "sha256": "fcbe9152b5c6dc0a811afa5d5f5b7f9a9b5462378d2696bf6440154e84c01c28",
+        "bytes": 70
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/reference_imports.json": {
+        "sha256": "0b7e73d2fdccbdf853c3dd0bb90e266a968c7877f187d0cac681faf274fdc1d7",
+        "bytes": 57
+      },
+      "audit/SOL-034/fixture/bytes/bundles/primary/run_manifest.json": {
+        "sha256": "65a5ae2759d88c5bb3f0e670d8bc4f3f58e7c11233f8c666152762f9bfd8de55",
+        "bytes": 475
+      },
+      "audit/SOL-034/fixture/bytes/chief/GEN-doubled.json": {
+        "sha256": "ce8258155710a5152b14c344c76ec47b41e90236d10221bd9d3bce7f7c225cfd",
+        "bytes": 5802
+      },
+      "audit/SOL-034/fixture/bytes/chief/GEN-primary.json": {
+        "sha256": "7ddfd0ebd9474a984128827d01e6923d5c41db0a5947cc0d95dbb4434520d6d6",
+        "bytes": 5802
+      },
+      "audit/SOL-034/fixture/bytes/config.json": {
+        "sha256": "4cf2cf8039d1a1abb5cdeeddbb97c750d281422f2ba7a7fd876be5a85af246ea",
+        "bytes": 13032
+      },
+      "audit/SOL-034/fixture/bytes/handoff/GEN-doubled/result.json": {
+        "sha256": "4b6624cc29552b3591773a3e020761722cb095eae1252102c450aa6e1319c477",
+        "bytes": 5959
+      },
+      "audit/SOL-034/fixture/bytes/handoff/GEN-primary/result.json": {
+        "sha256": "99c2d6514c744ba1c1ab2fea1a304d64b43364b08b1d5a0bd2629112aea2c046",
+        "bytes": 5959
+      },
+      "audit/SOL-034/fixture/bytes/later.txt": {
+        "sha256": "18794b3bc1804cc91d40d2e9a3e5baadf5830187b9bb346a90d183792f7e3f17",
+        "bytes": 28
+      },
+      "audit/SOL-034/fixture/bytes/ops/queue.json": {
+        "sha256": "389bdbe4c67916b4696afc1238893adf51249f30d1709e4b2656898010b52b33",
+        "bytes": 927
+      },
+      "audit/SOL-034/fixture/bytes/ops/tasks/GEN-analysis.json": {
+        "sha256": "0a9164380772cf4a107aed1731404f22aebbd2e358695ace984a0bc65778170f",
+        "bytes": 272
+      },
+      "audit/SOL-034/fixture/bytes/ops/tasks/GEN-doubled.json": {
+        "sha256": "dbb44f1f88e38e7569a9afb6f02167edbe13179d7c7889f7a3c23b996a24b9f6",
+        "bytes": 214
+      },
+      "audit/SOL-034/fixture/bytes/ops/tasks/GEN-primary.json": {
+        "sha256": "552762fb5a5056c1c461377d840923e04acb479023dbd47097a410fff03f3c90",
+        "bytes": 214
+      },
+      "audit/SOL-034/fixture/bytes/source.txt": {
+        "sha256": "e49845df02054b958fb32c0e76d8dfff88762e88a2c4b5f483e831627b7d4742",
+        "bytes": 49
+      },
+      "audit/SOL-034/fixture/checker-source.txt": {
+        "sha256": "abb9521f2bcec612f7b433b611c9f5bfb91221da262a148aacaae6d98115ff08",
+        "bytes": 3677
+      },
+      "audit/SOL-034/fixture/objects.bundle": {
+        "sha256": "2c050b7266b8cdf68edabb819ee47851bc480c82a22405cc2134f549bde5fb42",
+        "bytes": 16155
+      },
+      "audit/SOL-034/generated.py": {
+        "sha256": "08ffa624197fb68a1200160943774280689cd537100305be9c8b6f015394a145",
+        "bytes": 12420
+      },
+      "audit/SOL-034/implementation.md": {
+        "sha256": "2cb4b59f3a50f8b744b8d4bf891eafa5ff98a748b0acf6b10c0362b61e067b0d",
+        "bytes": 5881
+      },
+      "audit/SOL-034/infrastructure.json": {
+        "sha256": "8b9e3430fb7a9077b742407470ddce9ed258ad5e9d65f6d60545813f4c4f2659",
+        "bytes": 615
+      },
+      "audit/SOL-034/initial-inventory.json": {
+        "sha256": "8309ed52dcfa3183e30831241a57964b354490b6a41c46ff20eeab4cdd9fbd0d",
+        "bytes": 5866
+      },
+      "audit/SOL-034/make_schema.py": {
+        "sha256": "f12030359019b965400f657250817f06df8fb244210aa9704eb19b3e4731ef9e",
+        "bytes": 5206
+      },
+      "audit/SOL-034/record_boundary.py": {
+        "sha256": "1117c0dcbabdaebebc7e76c0a9a10186033010a3a3e35dc0819cd035f07ffa04",
+        "bytes": 1816
+      },
+      "audit/SOL-034/record_checks.py": {
+        "sha256": "c0817c79f48e48ffa7a528420d5932d834cbcc78c9ef0fe370fade8b153bf702",
+        "bytes": 2197
+      },
+      "audit/SOL-034/scalar-facts.json": {
+        "sha256": "3c0ebbc4cfde8988ef8e3810baef13f784d0893eefa2ba971c94bdd325ff1d6a",
+        "bytes": 12963
+      },
+      "audit/SOL-034/schema.json": {
+        "sha256": "e7dd10148f86d925a5b96f9330a4b4cd7496b23abf95acabf1a0d631fbde892d",
+        "bytes": 62700
+      },
+      "audit/SOL-034/seal.py": {
+        "sha256": "5010c2bdc47ef5cc5a09fc9542fbdd95e3927aadcd2353cce2f4d502a7549c6d",
+        "bytes": 1271
+      },
+      "audit/SOL-034/task.json": {
+        "sha256": "bd6d4e00583c5413b5b3c160fea48860b2513eb6d5bba36f915e79c7add84816",
+        "bytes": 14304
+      },
+      "audit/SOL-034/trial-002-0.stderr.txt": {
+        "sha256": "75b6b2a8bd13cda113c39eb6810524ad6347fbc70689189b4c7ae0865ae73a7e",
+        "bytes": 2698
+      },
+      "audit/SOL-034/trial-002-0.stdout.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "audit/SOL-034/trial-002-tests.py": {
+        "sha256": "becec4801c381f762d0e072f0a504ec380e247eb29f2f380635c44ceca0c1f4f",
+        "bytes": 17252
+      },
+      "audit/SOL-034/trial-002.json": {
+        "sha256": "71159a060a1be04a37436c8ac711263c9dd9b788ad3d853665eb02a6ebb87ac2",
+        "bytes": 694
+      },
+      "audit/SOL-034/trial-003-0.stderr.txt": {
+        "sha256": "a09c7edb0983dd810ec71589b11ef63d666f64fe6c86313174d5aae51108dc34",
+        "bytes": 1879
+      },
+      "audit/SOL-034/trial-003-0.stdout.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "audit/SOL-034/trial-003-1.stderr.txt": {
+        "sha256": "5e92b1c30abe0194f1063d73db69b75484fcec72d71f3f55baaeb334d08f71ae",
+        "bytes": 983
+      },
+      "audit/SOL-034/trial-003-1.stdout.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "audit/SOL-034/trial-003.json": {
+        "sha256": "4b277c08ec71ef834f8638feffe4b83200bbe3b43f8b8e588f6a03dd9c2b9ea9",
+        "bytes": 1296
+      },
+      "audit/SOL-034/trial-004-original/boundary-module-records.json": {
+        "sha256": "bd3740e6cc7ad57ffdb3a80c0ca4b251499e66294a375c1dafa2f44725f3d6ca",
+        "bytes": 15093
+      },
+      "audit/SOL-034/trial-004-original/boundary-process.json": {
+        "sha256": "26cfbdc7c1fefa2c4feb0c8f3daca753bee57050ff0afa9d6f951b6638db92a9",
+        "bytes": 93
+      },
+      "audit/SOL-034/trial-004-original/construction-process.json": {
+        "sha256": "78dcb243afba600db14f1690a99edc9a456380da2bb6b417c5a5bf01abaf1850",
+        "bytes": 230
+      },
+      "audit/SOL-034/trial-004-original/fixture/analysis/comparison_gates.json": {
+        "sha256": "3d9b1625294a84aade113b493017d1ed4e06ff0093a6e1eefdaf42e79d02b5ee",
+        "bytes": 217323
+      },
+      "audit/SOL-034/trial-004-original/fixture/analysis/paired_differences.csv": {
+        "sha256": "99b1bda76c5cc76ee8b78f9023bdae85bccd15836fb86a82a199253617c91615",
+        "bytes": 105075
+      },
+      "audit/SOL-034/trial-004-original/fixture/analysis/profile_recommendations.json": {
+        "sha256": "f9040c0c3ad1c3d40b7ea44059d8bb9e009eb929514484ad0d04fcbb7827342d",
+        "bytes": 46582
+      },
+      "audit/SOL-034/trial-004-original/fixture/analysis/profile_screen.json": {
+        "sha256": "89badcebac504865408b9cf264062373321e4e8ba9d50bf3734e8ca6b5eac42d",
+        "bytes": 53590
+      },
+      "audit/SOL-034/trial-004-original/fixture/analysis/run_manifest.json": {
+        "sha256": "53abb580116cf6a249fd609fdbdcf8d49c0d0b6743d716753c3b02a5288650b6",
+        "bytes": 139802
+      },
+      "audit/SOL-034/trial-004-original/fixture/analysis/selection.json": {
+        "sha256": "26df8ce3545d4515090f9b77d4f7323a814688210321a41dec77fc869df17972",
+        "bytes": 19142
+      },
+      "audit/SOL-034/trial-004-original/fixture/binding.json": {
+        "sha256": "0aa96fb194be0d6b3ab741a6f93ae349a612743cddb74830185da935a4894f19",
+        "bytes": 542
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/.gitattributes": {
+        "sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+        "bytes": 14
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/calibrations.json": {
+        "sha256": "c5afdb772897648346856b3853efa98ac1d5c83054e29d8c05def614cb81fa1e",
+        "bytes": 43
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/balanced_adaptive/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/balanced_adaptive/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/balanced_adaptive/scenario_metrics.csv": {
+        "sha256": "81bc4bcef0139ad393728b61002ab8fb80d07bbb1eb7cd34da59a306668e32ae",
+        "bytes": 6894
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/balanced_adaptive/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/balanced_adaptive/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/balanced_context/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/balanced_context/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/balanced_context/scenario_metrics.csv": {
+        "sha256": "4d97bf1f5bb3849b8530047c1327e830ed735158ecd0ebcafd6eb6942f92e0d9",
+        "bytes": 6874
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/balanced_context/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/balanced_context/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/balanced_cost/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/balanced_cost/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/balanced_cost/scenario_metrics.csv": {
+        "sha256": "1ee3ef77c38f153edfec04ab79ec3c79c6169b99200b40e78f767c18f710f90a",
+        "bytes": 6794
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/balanced_cost/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/balanced_cost/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/bills_keep/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/bills_keep/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/bills_keep/scenario_metrics.csv": {
+        "sha256": "7eacc44b27617cc1a088d1bf5f31a82baa2346da12d6f9e902d0e481b184a001",
+        "bytes": 6544
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/bills_keep/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/bills_keep/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/conservative_cost/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/conservative_cost/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/conservative_cost/scenario_metrics.csv": {
+        "sha256": "bfb49827567d10f08ce07f2bcc4333b1627e17982dd26dbf6d467d0cb46af49c",
+        "bytes": 6874
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/conservative_cost/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/conservative_cost/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/equal_weight_annual/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/equal_weight_annual/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/equal_weight_annual/scenario_metrics.csv": {
+        "sha256": "a1b7b13c2f237addbcfa197fe0b197b10728658bce8ba0830564fa274dceb8df",
+        "bytes": 6724
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/equal_weight_annual/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/equal_weight_annual/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/equal_weight_buy_hold/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/equal_weight_buy_hold/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/equal_weight_buy_hold/scenario_metrics.csv": {
+        "sha256": "674cbb2cc539d1bec35c6462b8e2b8a7877f1e60aa3781ba345752e3778f7509",
+        "bytes": 6764
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/equal_weight_buy_hold/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/equal_weight_buy_hold/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/growth_cost/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/growth_cost/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/growth_cost/scenario_metrics.csv": {
+        "sha256": "883d776bcc0d1bb30ec3307345caa37d9848a423dc665cb271675ed58b486c78",
+        "bytes": 6754
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/growth_cost/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/cases/growth_cost/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/checks.json": {
+        "sha256": "fcbe9152b5c6dc0a811afa5d5f5b7f9a9b5462378d2696bf6440154e84c01c28",
+        "bytes": 70
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/reference_imports.json": {
+        "sha256": "0b7e73d2fdccbdf853c3dd0bb90e266a968c7877f187d0cac681faf274fdc1d7",
+        "bytes": 57
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/doubled/run_manifest.json": {
+        "sha256": "c71ab4cb58caf063b9b562cc9677657617eccd9e74ba238638b28000bafa9506",
+        "bytes": 474
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/calibrations.json": {
+        "sha256": "c5afdb772897648346856b3853efa98ac1d5c83054e29d8c05def614cb81fa1e",
+        "bytes": 43
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/balanced_adaptive/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/balanced_adaptive/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/balanced_adaptive/scenario_metrics.csv": {
+        "sha256": "7de487022ce5df4e2f306c8df4bf741e7ca2435e15f3aab62ab048eb733b2fd2",
+        "bytes": 6914
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/balanced_adaptive/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/balanced_adaptive/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/balanced_context/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/balanced_context/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/balanced_context/scenario_metrics.csv": {
+        "sha256": "23494428ca7a1fcaf68cf1042f7f2196710de36aba7b64e5a71afacc88328e1c",
+        "bytes": 6874
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/balanced_context/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/balanced_context/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/balanced_cost/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/balanced_cost/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/balanced_cost/scenario_metrics.csv": {
+        "sha256": "9195b00851387d8d439972a851d287bfb45d8a2e3993923f861c37e19615c7d7",
+        "bytes": 6814
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/balanced_cost/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/balanced_cost/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/bills_keep/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/bills_keep/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/bills_keep/scenario_metrics.csv": {
+        "sha256": "52cd50057def6b9ebbcb7cf594e805c16d10655a0f15034349f90869b8133efa",
+        "bytes": 6564
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/bills_keep/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/bills_keep/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/conservative_cost/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/conservative_cost/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/conservative_cost/scenario_metrics.csv": {
+        "sha256": "f7bbd85b40e392d539e07ca91e75602ee43f831b5fba52e1abecb63522a0456a",
+        "bytes": 6894
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/conservative_cost/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/conservative_cost/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/equal_weight_annual/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/equal_weight_annual/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/equal_weight_annual/scenario_metrics.csv": {
+        "sha256": "3e786c05dbe941459147ace1bc79146bd47243a6642b725701a28717782e57fc",
+        "bytes": 6744
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/equal_weight_annual/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/equal_weight_annual/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/equal_weight_buy_hold/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/equal_weight_buy_hold/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/equal_weight_buy_hold/scenario_metrics.csv": {
+        "sha256": "11b08d50fb085120435f7b15cafa61295979c83fab217b06584e7782ef6b41f3",
+        "bytes": 6784
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/equal_weight_buy_hold/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/equal_weight_buy_hold/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/growth_cost/annual_ledgers.csv": {
+        "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972",
+        "bytes": 632
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/growth_cost/decisions.csv": {
+        "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1",
+        "bytes": 310
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/growth_cost/scenario_metrics.csv": {
+        "sha256": "7c9976a1618a0015b8b941fb8dc60060d2d92f77647354f27ae749e911f0e570",
+        "bytes": 6774
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/growth_cost/summary.csv": {
+        "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14",
+        "bytes": 771
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/cases/growth_cost/target_scores.csv": {
+        "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b",
+        "bytes": 197
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/checks.json": {
+        "sha256": "fcbe9152b5c6dc0a811afa5d5f5b7f9a9b5462378d2696bf6440154e84c01c28",
+        "bytes": 70
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/reference_imports.json": {
+        "sha256": "0b7e73d2fdccbdf853c3dd0bb90e266a968c7877f187d0cac681faf274fdc1d7",
+        "bytes": 57
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/bundles/primary/run_manifest.json": {
+        "sha256": "c4abac3faf5390a0f8629fe764f14481b343a7cecf918582826b478624a22a3d",
+        "bytes": 475
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/chief/GEN-doubled.json": {
+        "sha256": "872788b7a6ff50b16216f4b9e5d0fc6a1307db5a38db500d3c88eb3546e351ec",
+        "bytes": 5802
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/chief/GEN-primary.json": {
+        "sha256": "d8ce88f51c84296669106dcf98970e089f3c13c4702dc9c1c65c6931cd4c7386",
+        "bytes": 5802
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/config.json": {
+        "sha256": "de949404523c0e24393a68a54ef8e57fb4d5ed7291a53619e0a84369d804f359",
+        "bytes": 13032
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/handoff/GEN-doubled/result.json": {
+        "sha256": "8ad438be90728fde020f1f3ec20f6a947da7aab2dd3c28c87bd3e6cfaa7a6f96",
+        "bytes": 5959
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/handoff/GEN-primary/result.json": {
+        "sha256": "59aab74859da50fc7a59a39608c5623c479626487ad66fdcd771c7bd7b5438f7",
+        "bytes": 5959
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/later.txt": {
+        "sha256": "18794b3bc1804cc91d40d2e9a3e5baadf5830187b9bb346a90d183792f7e3f17",
+        "bytes": 28
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/ops/queue.json": {
+        "sha256": "e894d6c379d40a2ec3e8701d5c1f0fc80e0d3a55f325b57472e22a2b0af2eb80",
+        "bytes": 927
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/ops/tasks/GEN-analysis.json": {
+        "sha256": "022c7a8da7b06988efffe7d1574dc816e181f2b73f8f1cfeaa4bc669ba826d04",
+        "bytes": 272
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/ops/tasks/GEN-doubled.json": {
+        "sha256": "b5354b33db780d37af37d9dadb8dea0b4709a03a91263118fc5607b659abed26",
+        "bytes": 214
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/ops/tasks/GEN-primary.json": {
+        "sha256": "8ab29347010290a07195599adb31422fbc9031381d64eb7566bdf6e00cd6c4ff",
+        "bytes": 214
+      },
+      "audit/SOL-034/trial-004-original/fixture/bytes/source.txt": {
+        "sha256": "e49845df02054b958fb32c0e76d8dfff88762e88a2c4b5f483e831627b7d4742",
+        "bytes": 49
+      },
+      "audit/SOL-034/trial-004-original/fixture/objects.bundle": {
+        "sha256": "b0b267ac3a0aec6167a3443d002f69bd5e102a3f8a0c53b8087cbe680af2f7eb",
+        "bytes": 16209
+      },
+      "audit/SOL-034/trial-004-original/scalar-facts.json": {
+        "sha256": "db8a8cf6e81ec84607af6e8f9660bf680ce160365a70d11522c41f75e961ca1c",
+        "bytes": 4137
+      },
+      "audit/SOL-034/verification.json": {
+        "sha256": "0ec22a18887e5f3351205675ff68c174b574aa1d3527404831833390f7652819",
+        "bytes": 43770
+      },
+      "audit/SOL-034/verify.py": {
+        "sha256": "50e390ef7b2ea61de11de09d1e24d5162098085272c90fd7142666a264495a54",
+        "bytes": 10765
+      },
+      "handoff/SOL-034/check-0.txt": {
+        "sha256": "c83c774a592c4aa58e21f636b0d959c40a41660680ff1cac069bcec119aa6e0c",
+        "bytes": 12038
+      },
+      "handoff/SOL-034/result.json": {
+        "sha256": "c140dadd2285fd00b9b33e03d1fd90f586cfe4a7c1fe25901b92d7383c64eb4c",
+        "bytes": 54897
+      },
+      "scripts/run_development_analysis.py": {
+        "sha256": "6ebb43dd8fe1b3836b89befb67196ae24792e3017317378c42f5986009845fc4",
+        "bytes": 12128
+      },
+      "src/safeinvest/policy_analysis_writer.py": {
+        "sha256": "74c57efc2709fe0411830cede9073a1c42af284bf29198aa7fda1af0d2d5cdf7",
+        "bytes": 31568
+      },
+      "tests/test_policy_analysis_writer.py": {
+        "sha256": "0b5b0219343926fe3fb11dcb9fba897c8644b8f944cb442979dc2934f5d9b6cf",
+        "bytes": 18194
+      }
+    },
+    "decision": "not_accepted_failed_attempt",
+    "production_acceptance": false
+  },
+  "SOL-035": {
+    "task_id": "SOL-035",
+    "reviewed_commit": "f33da50c4e16e85f7ca831e0a03d17c05c91cc79",
+    "task_sha256": "3dd2e8de06ea727a102e5df1c53fe73e3c83ad9cbbf8f1c0c9aa5c0b5b121207",
+    "base_commit": "45e1da032122fca8c69ef508e82c36fd95ffe003",
+    "receipt_status": "failed",
+    "failure": "Task timeout or local stop requested; partial work preserved.",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "structural_authentication": "passed",
+    "source_pin_count": 14,
+    "changed_paths": 35,
+    "missing_deliverables": [],
+    "check_exits": [],
+    "prescribed_validation_count": 1,
+    "inventory": {
+      "audit/SOL-035/.gitattributes": {
+        "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+        "bytes": 8
+      },
+      "audit/SOL-035/canonical-inventory.json": {
+        "sha256": "696e8432b62b7c8fefde73f90ad07488ca0d040b51661fa0580d98bf7a50af35",
+        "bytes": 589309
+      },
+      "audit/SOL-035/checkout-construction.json": {
+        "sha256": "a643272a35dd455657f283d0f0601c843a86afd4e3636dfea53828a0755c10be",
+        "bytes": 4984
+      },
+      "audit/SOL-035/clean-environment-checks.json": {
+        "sha256": "19ec3a025d1b16378416423a9d341ae5f55a63e6d4f7630f56a4c719e203871e",
+        "bytes": 1358661
+      },
+      "audit/SOL-035/construct.py": {
+        "sha256": "a4efb396e7c0473a961e745d8058eab3af2f6fc2f6ccfd02d7b44945a718e0a6",
+        "bytes": 8712
+      },
+      "audit/SOL-035/construction-summary.json": {
+        "sha256": "cddb075d46ec785fb3358990e6be5910d811b29be20574fb0c9bd65ef226ec60",
+        "bytes": 287
+      },
+      "audit/SOL-035/false-accepted.stderr.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "audit/SOL-035/false-accepted.stdout.txt": {
+        "sha256": "3568f30a88180086942fce028dcce75eda90e9fdde57ad2967c29f61248c3505",
+        "bytes": 156
+      },
+      "audit/SOL-035/false-later-main.stderr.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "audit/SOL-035/false-later-main.stdout.txt": {
+        "sha256": "dc0dfa0ca044baccf96726d0cb43b04b8d6f69e0ece5d5a6eb81aee8f9d35509",
+        "bytes": 7014
+      },
+      "audit/SOL-035/final-check.json": {
+        "sha256": "b1ca4cb1ec5f0edf21b1c13b69b5826588256d1bb3dbbc8b09e208b918dd9c96",
+        "bytes": 278988
+      },
+      "audit/SOL-035/final-check.py": {
+        "sha256": "9a7c04115c151996a12b7663335521079ad2825fa210cf4eee263543b619f3a5",
+        "bytes": 1140
+      },
+      "audit/SOL-035/final-check.stderr.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "audit/SOL-035/final-check.stdout.txt": {
+        "sha256": "3f665a21116f90d08c6cb9c981a701072ece3244c3f1b7d1db744602cc4718b8",
+        "bytes": 6584
+      },
+      "audit/SOL-035/findings.json": {
+        "sha256": "a65206220584608fcea4e43dae9aeac3c931306c1fedc2d7c5ae74cf5b1476b9",
+        "bytes": 902
+      },
+      "audit/SOL-035/infrastructure-trials.json": {
+        "sha256": "579966dbd4ff8b369c8e7cf1d8245f66ef22f4ef76fe90c47844502faaf7d9c7",
+        "bytes": 786
+      },
+      "audit/SOL-035/lf-supplement.json": {
+        "sha256": "9bd81dd8452a0b1325dfd5ee5e1147afeb5df83452bfcda6ec540301f3648266",
+        "bytes": 553481
+      },
+      "audit/SOL-035/lf-supplement.py": {
+        "sha256": "d2de971014f0b758f09adb46d1eff4c39a87580479b1f3ad3816cde0b1fc2749",
+        "bytes": 2691
+      },
+      "audit/SOL-035/negative-checks.json": {
+        "sha256": "67aaa76079d9c18032f2451fc9f4493c1d8f3810fc3408bb83161cfc5ac2e318",
+        "bytes": 2000
+      },
+      "audit/SOL-035/prescribed.stderr.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "audit/SOL-035/prescribed.stdout.txt": {
+        "sha256": "3f665a21116f90d08c6cb9c981a701072ece3244c3f1b7d1db744602cc4718b8",
+        "bytes": 6584
+      },
+      "audit/SOL-035/review.md": {
+        "sha256": "9a9f73607f20e87ce466eaebe7230a3b5f8de9a9acd5323856f90e33ac54ea98",
+        "bytes": 4677
+      },
+      "audit/SOL-035/task-publication.json": {
+        "sha256": "647ee4c1121c8ea20e33c01598386d658c49e56ceddd4436d1e57e5dee7d62a1",
+        "bytes": 340
+      },
+      "audit/SOL-035/task-runtime.json": {
+        "sha256": "fbf2b11843f312ee507ded7e176d36fadf202455ba561834d78181e7ed3a314b",
+        "bytes": 6869
+      },
+      "audit/SOL-035/task.json": {
+        "sha256": "c7032fbe58c3724316d763bfdc2916e0fb62052f9323f21b2c33918eb904df14",
+        "bytes": 6803
+      },
+      "audit/SOL-035/trial-001.json": {
+        "sha256": "929e4dfcdb6fdf1fb0666a169df50820159db6a551a00ab7f25f5629d35d7d88",
+        "bytes": 291
+      },
+      "audit/SOL-035/trial-001.stderr.txt": {
+        "sha256": "d8a157b4abfb4e1c651c369dd730493129aed6c45637609240af66da13004978",
+        "bytes": 836
+      },
+      "audit/SOL-035/trial-002.json": {
+        "sha256": "47c3e119cb9b94ee1087a568d77fa9b85fc77a7f2bef78dd763455bddb239b49",
+        "bytes": 485
+      },
+      "audit/SOL-035/true-accepted.stderr.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "audit/SOL-035/true-accepted.stdout.txt": {
+        "sha256": "3568f30a88180086942fce028dcce75eda90e9fdde57ad2967c29f61248c3505",
+        "bytes": 156
+      },
+      "audit/SOL-035/true-later-main.stderr.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "audit/SOL-035/true-later-main.stdout.txt": {
+        "sha256": "e7fe5d26b719642cfda0c69d0a383a5b29209fa1690d4d73943a6d37a6f15fc6",
+        "bytes": 7004
+      },
+      "audit/SOL-035/verification.json": {
+        "sha256": "776163c852645f3149df12a98eaed75ceb7cf0ed03cf643f3e4e36995c0e5724",
+        "bytes": 5216
+      },
+      "audit/SOL-035/verify.py": {
+        "sha256": "d764d8b910802446515824de3a5921003ec13b82d1f00aa409128ad647e0f66a",
+        "bytes": 10437
+      },
+      "handoff/SOL-035/result.json": {
+        "sha256": "5caaff991eae4228f08f20a99a20c451c988c4dd807975f98bfccb7224811a9d",
+        "bytes": 7456
+      }
+    },
+    "decision": "not_accepted_failed_attempt",
+    "production_acceptance": false
+  },
+  "SOL-036": {
+    "task_id": "SOL-036",
+    "reviewed_commit": "8a39da30e551f6e4fd54cfef6ec7b070b43d4d8d",
+    "task_sha256": "228acfa7ebddb8ac725d5a5ebf7787a3ef15b01398c50cc171c5e6dee0dc85e5",
+    "base_commit": "2694cf053586e71488781b192efb54518f77c62f",
+    "receipt_status": "failed",
+    "failure": "Codex task exited unsuccessfully.",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "structural_authentication": "passed",
+    "source_pin_count": 36,
+    "changed_paths": 27,
+    "missing_deliverables": [
+      "audit/SOL-036/findings.json",
+      "audit/SOL-036/review.md",
+      "audit/SOL-036/verification.json"
+    ],
+    "check_exits": [
+      1
+    ],
+    "prescribed_validation_count": 1,
+    "inventory": {
+      "audit/SOL-036/.gitattributes": {
+        "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+        "bytes": 8
+      },
+      "audit/SOL-036/.gitignore": {
+        "sha256": "e027cf8ebf80d6dcdacced8a4dbd1c440e2436fb1868ec851db4061cb67bb787",
+        "bytes": 7
+      },
+      "audit/SOL-036/clean-environment-checks.json": {
+        "sha256": "0c67cab66ab8db826d25f84a3f3d05995cb4a7e1904c4caa305f741848cd6cc0",
+        "bytes": 15137
+      },
+      "audit/SOL-036/final-check.json": {
+        "sha256": "18fdb9b7086b30aa483e90a1ca0f171fd0fbe8c51a3416bca32961a609d712b1",
+        "bytes": 31942
+      },
+      "audit/SOL-036/final-check.stderr.log": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "audit/SOL-036/final-check.stdout.log": {
+        "sha256": "69bd99125c6158b9eba1795cef889309a00cb8b88dac338b40d690108a60d71e",
+        "bytes": 259596
+      },
+      "audit/SOL-036/git-portability.json": {
+        "sha256": "5f66ac52708c4aa89e3d6bfafecb3c4c80c4fb4baefa6dadf7527f15dcf3f299",
+        "bytes": 2297
+      },
+      "audit/SOL-036/portable-check.stderr.log": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "audit/SOL-036/portable-check.stdout.log": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "audit/SOL-036/producer-check.interruption.log": {
+        "sha256": "b93617acde513eb4b1df0849b6ec3cdf5c18572c4b0c2348d4ff242be63ab1c4",
+        "bytes": 202
+      },
+      "audit/SOL-036/record-check.py": {
+        "sha256": "678c8c2a6a12c3592d57171abc594a36d41bb062657d8fa4b725345300fe9965",
+        "bytes": 1700
+      },
+      "audit/SOL-036/review-infrastructure.json": {
+        "sha256": "cd2370639fb059d268c92a3aaf0fed6f030e234ebd5bf450375534bfb5447063",
+        "bytes": 557
+      },
+      "audit/SOL-036/run-review-trial-2.py": {
+        "sha256": "388ea8fa454417a268bf9ec3455adf92036749211ff93a88ab9a8db5f00945bd",
+        "bytes": 708
+      },
+      "audit/SOL-036/run-review.py": {
+        "sha256": "5b6ba8cf04a109aff27e14f5344129f004b4aaea8f77790d11bd56fdc4a027fa",
+        "bytes": 708
+      },
+      "audit/SOL-036/schemas.json": {
+        "sha256": "95c86210121afd493b7d5f50409b05e20cabcd745f104f0a21eaa221cd9d9b65",
+        "bytes": 101466
+      },
+      "audit/SOL-036/task-snapshot.json": {
+        "sha256": "c35c70135c296104326ddfad1cfdaba1ee16a21130b0a97856097f7ebf3ce70e",
+        "bytes": 20318
+      },
+      "audit/SOL-036/verifier-trial-1.json": {
+        "sha256": "15a28bec874979bdb6fa4b0f9cbf1f3cd27f35e3dbd451e849be08ca34e49aa7",
+        "bytes": 310
+      },
+      "audit/SOL-036/verifier-trial-1.stderr.log": {
+        "sha256": "ba127021eb4b7cb7e266ce3eb550042622e89e88e980208426e5c2dd992efad4",
+        "bytes": 885
+      },
+      "audit/SOL-036/verifier-trial-1.stdout.log": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "audit/SOL-036/verifier-trial-2.json": {
+        "sha256": "6da5bd3110a6c9302f9a0cfef76c16082441bbb51ead261d3ec032030f51728f",
+        "bytes": 310
+      },
+      "audit/SOL-036/verifier-trial-2.stderr.log": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "audit/SOL-036/verifier-trial-2.stdout.log": {
+        "sha256": "3e1abc39386a87f3de8faaf506ee80fb2a36ff09ae73bb14f25604673ec49cba",
+        "bytes": 237956
+      },
+      "audit/SOL-036/verify-trial-1.py": {
+        "sha256": "b187a5748d30805a07630c66a655600841493fddbed02c773aded88473812468",
+        "bytes": 34486
+      },
+      "audit/SOL-036/verify-trial-2.py": {
+        "sha256": "faf7ca994e6c5957316287e6f5e62227bbc59c422c447bc434bafd846f7cad77",
+        "bytes": 34429
+      },
+      "audit/SOL-036/verify.py": {
+        "sha256": "193382f4179560dfa379a4b767b41c1fe208031fe8d3a9e96ce73f449f7a7b2c",
+        "bytes": 36891
+      },
+      "handoff/SOL-036/check-0.txt": {
+        "sha256": "56123a84fea58a65d79d47cf45771e5231403282ecfa8ba27b5c7068a4927d28",
+        "bytes": 12046
+      },
+      "handoff/SOL-036/result.json": {
+        "sha256": "85ae415acacac482628f534cd3f0aff28032b5c33246ec287943f23030f051ce",
+        "bytes": 23909
+      }
+    },
+    "decision": "not_accepted_failed_attempt",
+    "production_acceptance": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T05:38:02.025039+00:00",
+  "status": "bounded_recovery_checkpoint",
+  "failed_receipts": "audit/chief/failed-deliveries-20261020-authentication.json",
+  "decisions_recovery": "audit/chief/HY3-004-decision-review-recovery-validation.json",
+  "isolated_producer_check": "audit/chief/HY3-004-isolated-writer-check.json",
+  "independent_review_completed": false,
+  "production_results_accepted": false,
+  "final_data_open": false,
+  "private_identities_uploaded": false,
+  "source_hash_note": {
+    "review_development_decisions.py_raw_host_sha256": "fda1812a88064d76cabb0dc32b14471e1a629975fbd1b4106b2c74648144ec35",
+    "review_development_decisions.py_LF_sha256": "fb66351a09f7e30bc3c1de4b5982554cff1f50090061a77a6ff534ff288f539f",
+    "hash_basis": "Recovered trial source_sha256 records original host bytes; Git text normalization is separately identified. No historical evidence rewritten."
+  },
+  "next": "Push prerequisites, then publish immutable resource-held tasks at that real base; finish current isolated generated-only replay."
+}

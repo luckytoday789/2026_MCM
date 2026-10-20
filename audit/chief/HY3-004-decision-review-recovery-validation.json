@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "reviewed_commit": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
+  "recovered_evidence_matches_new_replay": true,
+  "independent_checks": 473823,
+  "decimal_spot_states": 122,
+  "decimal_target_facts": 146,
+  "max_absolute_difference": 7.105427357601002e-15,
+  "corruptions": [
+    {
+      "case": "wrong_training_identity",
+      "rejected": true,
+      "reason": "('training nominal digest', '0000000000000000000000000000000000000000000000000000000000000000', 'e5ce9ea54b16c404752021a6299c0c7834136c09c274565200fbdb93e14f9672')"
+    },
+    {
+      "case": "bad_action",
+      "rejected": true,
+      "reason": "('action semantics', 'human_review', 'rebalance')"
+    },
+    {
+      "case": "wrong_fee",
+      "rejected": true,
+      "reason": "('saved actual fee link', 99.0, 0.08750000000000001)"
+    },
+    {
+      "case": "wrong_ce",
+      "rejected": true,
+      "reason": "('pre cost CE difference', 0.009447794653661745, 0.9911377630102836)"
+    }
+  ],
+  "source_sha256": "fda1812a88064d76cabb0dc32b14471e1a629975fbd1b4106b2c74648144ec35",
+  "elapsed_seconds": 9.474366899987217,
+  "production_acceptance": false,
+  "limits": [
+    "High precision CE arithmetic is sampled; all decision score identities/actions/latches are checked, not all CE expectations.",
+    "Saved scores support full action selection checks; independent remote review remains required.",
+    "No policy selection,customer assignment or final-outcome reads."
+  ]
+}

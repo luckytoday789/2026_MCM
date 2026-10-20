@@ -1279,9 +1279,9 @@
       "owner": "hy3",
       "branch": "work/hy3/HY3-004-a1",
       "task_sha256": "14bb98ed9b6996d198513c1d29cbe8a7d44b489de7cde9a46f4fc27ce2bead89",
-      "note": "Completed receipt structurally verified and chief independent736571 arithmetic checks passed; isolated writer replay and remote SOL-036 review pending. Result remains unaccepted.",
+      "note": "Exact producer remains unaccepted. Chief independent arithmetic/decision checks and isolated writer replay pass; SOL-036 failed due interrupted checker and later quota. Planned SOL-040 completes independent review only after real availability probe. Do not recreate producer.",
       "candidate_result_commit": "6aa2ccdce80834c8beb52a827993f1f587d1d8a6",
-      "independent_review_task": "SOL-036"
+      "independent_review_task": "SOL-040"
     },
     {
       "id": "HY3-005",
@@ -1294,31 +1294,43 @@
     },
     {
       "id": "SOL-034",
-      "state": "ready",
+      "state": "cancelled",
       "owner": "sol",
       "attempt": 1,
       "branch": "work/sol/SOL-034-a1",
       "task_sha256": "16a85c9b253568747e720f6c7f6f3a84f897ab759af5aa981085ea60d636ddb9",
-      "note": "Generated-only analysis assembly after accepted SOL-016 and writer SOL-031/032; no actual producer outcomes. Independent chief acceptance and later result reviews required."
+      "note": "Failed parent timeout preserved,270 exact changed paths/38 source pins verified; model exit0 and local passes do not supply successful parent validation. All drafts remain at exact worker commit. Successor must fix failed SOL-034 approval identity before new generated-only evidence.",
+      "reviewed_commit": "632c95f03d3bbfeed1f847598eed3e6cfc5be264",
+      "failure_evidence": "audit/chief/failed-deliveries-20261020-authentication.json",
+      "code_verdict": "incomplete_and_revalidation_required",
+      "successor_task": "SOL-038"
     },
     {
       "id": "SOL-035",
-      "state": "ready",
+      "state": "cancelled",
       "owner": "sol",
       "attempt": 1,
       "branch": "work/sol/SOL-035-a1",
       "task_sha256": "3dd2e8de06ea727a102e5df1c53fe73e3c83ad9cbbf8f1c0c9aa5c0b5b121207",
-      "note": "Audit-only portable successor after actual later-main SOL-032 old-inventory LF/CRLF failure. Code approval and existing fixed jobs unchanged; preserve all original evidence."
+      "note": "Failed parent timeout preserved,35 paths/14 source pins verified. Chief exact isolated LF replay passed unchanged; no successful parent checks. Audit-only successor must retain failed original and bind fresh task. Existing SOL-032 code approval unchanged.",
+      "reviewed_commit": "f33da50c4e16e85f7ca831e0a03d17c05c91cc79",
+      "failure_evidence": "audit/chief/failed-deliveries-20261020-authentication.json",
+      "code_verdict": "incomplete_and_revalidation_required",
+      "successor_task": "SOL-039"
     },
     {
       "id": "SOL-036",
-      "state": "ready",
+      "state": "cancelled",
       "owner": "sol",
       "attempt": 1,
       "branch": "work/sol/SOL-036-a1",
       "task_sha256": "228acfa7ebddb8ac725d5a5ebf7787a3ef15b01398c50cc171c5e6dee0dc85e5",
-      "note": "Independent primary exact-result numerical review. Candidate remains unaccepted; do not await its acceptance before review. Existing source prerequisites passed.",
-      "released_at": "2026-10-20T04:41:14.794248+00:00"
+      "note": "Failed model quota exit1 preserved,27 paths/36 source pins verified;3 required review files missing. Independent arithmetic passes but clean producer checker was interrupted and original verifier exits2. New single probe gates any model successor; no producer acceptance.",
+      "released_at": "2026-10-20T04:41:14.794248+00:00",
+      "reviewed_commit": "8a39da30e551f6e4fd54cfef6ec7b070b43d4d8d",
+      "failure_evidence": "audit/chief/failed-deliveries-20261020-authentication.json",
+      "code_verdict": "incomplete_and_revalidation_required",
+      "successor_task": "SOL-040"
     }
   ]
 }
