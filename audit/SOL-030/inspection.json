@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "assets_reviewed": [
+    "baseline-h30-summary.png",
+    "baseline-h30-summary.pdf",
+    "baseline-h30-summary.svg",
+    "baseline-h30-severe-path.png",
+    "baseline-h30-severe-path.pdf",
+    "baseline-h30-severe-path.svg"
+  ],
+  "numerical_exports": {
+    "summary": {
+      "svg_width_mm": 179.99999983333333,
+      "svg_min_font_pt_at_export_width": 11,
+      "svg_vertices_checked": 12,
+      "svg_max_coordinate_residual_pt": 4.60517014744255e-7,
+      "pdf_mm": [
+        179.99999999998556,
+        125.99999999999694
+      ],
+      "pdf_fonts": [
+        "BBZQOS+DejaVuSans",
+        "PHRUCC+DejaVuSans-Bold"
+      ],
+      "pdf_embedded_fontfiles": 2,
+      "pdf_min_font_pt": 11,
+      "png_pixels": [
+        2125,
+        1488
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "severe-path": {
+      "svg_width_mm": 179.99999983333333,
+      "svg_min_font_pt_at_export_width": 11,
+      "svg_vertices_checked": 183,
+      "svg_max_coordinate_residual_pt": 9.333333537142607e-7,
+      "pdf_mm": [
+        179.99999999998556,
+        111.99999999998946
+      ],
+      "pdf_fonts": [
+        "CBMZYS+DejaVuSans",
+        "HBLROD+DejaVuSans-Bold"
+      ],
+      "pdf_embedded_fontfiles": 2,
+      "pdf_min_font_pt": 11,
+      "png_pixels": [
+        2125,
+        1322
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ]
+    }
+  },
+  "png_pdf_visual": {
+    "result": "clear at original width; no annotation/path overlap; distinguishable colors and line styles; axis and units legible",
+    "pdf_viewing": "Actual PDF bytes rasterized with Poppler at 150 dpi; warnings concern unrelated nameToUnicode files. Font embedding independently parsed from original PDF."
+  },
+  "svg_visual": {
+    "result": "changes_required",
+    "renderer": "Sharp 0.35.5 / librsvg 2.63.2",
+    "font_substitution": "DejaVu Sans is named in SVG, not embedded; local renderer uses visibly wider serif fallback.",
+    "defect": "Both Initial thirds held labels in summary SVG are clipped at left under the current platform renderer.",
+    "evidence": [
+      "svg-render-summary.png",
+      "svg-render-severe-path.png"
+    ],
+    "source_sha256": "5232e6f8ce872682871effda4c128f9ddb4778a4f400e7bf84d82de18ec6d746",
+    "rasterization_recipe": "sharp(actual_svg_bytes, {density:150}).png().toBuffer(); no SVG/source edits",
+    "pdf_png_scope": "PDF embeds TrueType font files; PNG contains fixed pixels. Those two formats remain clear."
+  },
+  "caption_review": {
+    "verdict": "pass",
+    "units_split_horizon_count_fee": "Development IDs 1-120, H30, 120 scenarios/reference, real CAGR percent/year, maximum real drawdown percent, initial wealth100 and one-way0.25% initial fee are explicit in captions.",
+    "quantiles": "Separate descriptive linear scenario quantiles; no confidence interval, significance, causality or customer-selection claim.",
+    "severe": "Scenario5 belongs to annual thirds; other paths compare that same scenario; year8 post_fee is at elapsed7. Segments only join observations."
+  },
+  "disclosure_contract_review": [
+    [
+      "synthetic_and_annual",
+      "pass",
+      "No historical/future frequency interpretation; missing intra-year outcomes explicit."
+    ],
+    [
+      "no_withdrawals_and_target_reserve",
+      "pass",
+      "No deposits/withdrawals; liquidity screens target bill reserves, not invariant drifting holdings or cash guarantee."
+    ],
+    [
+      "fee_convention",
+      "pass",
+      "Pre-fee intended one-way transfer; proportional funding; fees before returns; sensitivity is not causal rebalancing fee isolation."
+    ],
+    [
+      "CE_and_folds",
+      "pass",
+      "One-year fixed-risk-aversion CE; model-dependent hurdle, pooled marginal prior, dependence and overlapping training folds disclosed."
+    ],
+    [
+      "lagged_latched_suspension",
+      "pass_with_optional_clarity",
+      "Acts at later annual review using completed observations; holdings unchanged at review, no transfer or fee, ongoing returns/exposure. Could explicitly add latch persists through simulated horizon/no human restart. No conflicting restart claim is present."
+    ],
+    [
+      "personalized_rescreen",
+      "pass",
+      "Generic25% and own-tolerance overlay distinct; no fallback or replacement after failed rescreen; initially unsuitable profiles referred without proxy simulation."
+    ],
+    [
+      "outcome_status",
+      "pass",
+      "Baseline accepted; cost-aware outcomes, assignments, doubled-fee and final results pending in the drafting/release evidence. Component approval is not outcome approval."
+    ],
+    [
+      "roles_and_human_boundary",
+      "pass",
+      "Historical work allocation is supported by protocol, accepted review records and queue; no relative model-capability inference or human approval assertion. Current coordinator model differs from historical drafting role; update only from actual final record."
+    ],
+    [
+      "privacy_and_attribution",
+      "pass",
+      "No member identity requested or exported. License and skill pins checked locally; K-Dense bibliographic metadata reused from chief, no new web/model task."
+    ]
+  ],
+  "historical_negatives_preserved": [
+    "chief trial001 canvas check failure",
+    "chief trial002 annotation overlap",
+    "chief trial003 platform-byte portability correction",
+    "chief git-export LF/CRLF diagnosis",
+    "SOL030 trial001 nested SVG axis bug"
+  ],
+  "limits": "Targeted report-asset review only; assembled A4 publication, final policy outcomes, freeze/final gate and human submission remain separate."
+}

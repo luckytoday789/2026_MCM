@@ -1,0 +1,305 @@
+{
+  "accepted_result_review_commit": "818af5d65bd8a271962d848dd552bd39ca561f68",
+  "attempt": 1,
+  "base_commit": "04be213a76855b1b1815405a735f2a49be678935",
+  "hash_basis": "canonical Git text bytes; exact PNG/PDF bytes",
+  "mutable_HEAD_or_main_required": false,
+  "release_control_sha256": "0e5044d3756fa366b69130c4ddd21f9dd173af3d96aea995b02bab3fef22f781",
+  "release_queue_sha256": "20298a19753e68efabcee58af58a6c216aede9e3ffe2532a6f0d4372cec85765",
+  "release_snapshot_commit": "f2e2743a4b57e05bb438c3af4b801c1e99f6dbb4",
+  "schema_version": 1,
+  "source_result_commit": "7652410d73425371110784ef5fa97c03470a074e",
+  "sources": {
+    ".gitattributes": {
+      "bytes": 160,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "b22b3b1646e5e261727ff5be25eb7e35eedc278f393807801fc272862a06d908"
+    },
+    "AGENTS.md": {
+      "bytes": 3166,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "92ab36877ad51c32b6393d7955e84d20ff34b59b82ed2905c0f0dd0a29dac078"
+    },
+    "audit/chief/HY3-003-review.json": {
+      "bytes": 4121,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "49770913724204472524ee06f0cb2445a3c12150a128a98ee13c5b7e50f86430"
+    },
+    "audit/chief/SOL-008-review.json": {
+      "bytes": 18690,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "9f202890920efd15480f9e3f3c904ddd52f282dafd5b9962e261bfdd9a135e77"
+    },
+    "audit/chief/SOL-013-review.json": {
+      "bytes": 6141,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "20923f671dd26e40be6e383f21398931eceac036d74c73c06fb8e48b9caaa462"
+    },
+    "audit/chief/SOL-020-review.json": {
+      "bytes": 4786,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "276895e8e12b9c212fe433f0fa1c07408c601502ffd5d9ce965a684fdc72551b"
+    },
+    "audit/chief/SOL-021-review.json": {
+      "bytes": 9132,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "105f8610edeebc1b17272b7450d3cdba29fa14d963407afd1665fc7caf640670"
+    },
+    "audit/chief/baseline-figures-history/git-export-check.json": {
+      "bytes": 455,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "68c7d0d67233662d9e9453206dd486687e7cd4e2f7001c0463e909d1d72fd09a"
+    },
+    "audit/chief/baseline-figures-history/trial-001.json": {
+      "bytes": 415,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "0af492350c6991f6d7cb7552fc84ec1a5ab9a37ce11be35b25050dfcf8fc9ba2"
+    },
+    "audit/chief/baseline-figures-history/trial-001.py": {
+      "bytes": 12910,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "6f0a64444617ed249d093eb7393fb2e4504830251521e8375ad672717b1abc70"
+    },
+    "audit/chief/baseline-figures-history/trial-002-exports/baseline-figures-provenance.json": {
+      "bytes": 8504,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "ba1bc66a1ed3b33984a1a5f23360c9880998b6e14a49fd3a9381578805c3d816"
+    },
+    "audit/chief/baseline-figures-history/trial-002-exports/baseline-h30-severe-path.pdf": {
+      "bytes": 22122,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "de77482092c6810187008645d7a8c0a404716487f3b3c25c71d16b51ddf60d0c"
+    },
+    "audit/chief/baseline-figures-history/trial-002-exports/baseline-h30-severe-path.png": {
+      "bytes": 188246,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "b124b105e3fcc900a18e530743888294fe3e854716b65a03372db03f1b1af2b1"
+    },
+    "audit/chief/baseline-figures-history/trial-002-exports/baseline-h30-severe-path.svg": {
+      "bytes": 17495,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "f86ba8b68af55260e9b32d65e173fb3098a2e0210e24fe9a3d9ad9e6b8d338fd"
+    },
+    "audit/chief/baseline-figures-history/trial-002.json": {
+      "bytes": 332,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "d3970802eba023079e2a3ffc99e5b1b2df2239a1fd0204aa696bb2b264600197"
+    },
+    "audit/chief/baseline-figures-history/trial-002.py": {
+      "bytes": 13081,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "34a7565b77064c677a75dd8a236cc945e10ae88a56c553c566618dad3e7e4790"
+    },
+    "audit/chief/baseline-figures-history/trial-003-provenance.json": {
+      "bytes": 8504,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "4efe219adeb5b8fd0df9bf9856b32d2eacedc0d4411127690582e846c4e14860"
+    },
+    "audit/chief/baseline-figures-history/trial-003.json": {
+      "bytes": 409,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "c37ff425088176d959d1320f1cb8492f019c1b3082c5d823ee6cc705721a271c"
+    },
+    "audit/chief/baseline-figures-history/trial-003.py": {
+      "bytes": 13081,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "a90b5faf96e336ab6c623d7c0292e56aef76e739d426408c217703ec3b42c214"
+    },
+    "audit/chief/baseline-figures-validation.json": {
+      "bytes": 2020,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "48dbd5d30a05d17bc3a7578eb49b4dfec61450ba4dd9f73b1f1cec2a2a73a7aa"
+    },
+    "audit/chief/validate_baseline_figures.py": {
+      "bytes": 6093,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "5bf19f9d564c687faa607140d5fef3c1b943e180b53d94f6c1261a2adf51558a"
+    },
+    "data/manifest.json": {
+      "bytes": 913,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "2535c087075957919d5f1990ad234ca436f7b3506ba592ac8a6457feb42fe90d"
+    },
+    "handoff/HY3-003/result.json": {
+      "bytes": 6342,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "99a5a5ca49d46b48ee4f929632eae0551a0028c833526835829713334d8909f0"
+    },
+    "ops/PROTOCOL.md": {
+      "bytes": 10466,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "1aae9a4819a82aa8c17e93edd5c1a8d9e7bbb05fe18bcbb7d9d08800e53c2525"
+    },
+    "ops/control.json": {
+      "bytes": 538,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": false,
+      "sha256": "97c6263e31dab636a37c1190b1d6e313941a71258220ebe54b5855ed2f0249bf"
+    },
+    "ops/queue.json": {
+      "bytes": 38333,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": false,
+      "sha256": "faad1090866c76ed5d46a7ffa3f1703b13a76af3f3e04f6912a50ddd80efd003"
+    },
+    "ops/skills-lock.json": {
+      "bytes": 5227,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "b5c8d7920a11dfa88db66f6552448b6c7c3274084a63af8fa44f2025cc493a0f"
+    },
+    "report/baseline-figure-captions.md": {
+      "bytes": 4480,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "68640857073de8120df1c7600e6ae65b35ed8afb9b5bde51ecd539a85e5c24b0"
+    },
+    "report/build_baseline_figures.py": {
+      "bytes": 13863,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "8db255568defdf6600c13c3064ad14842cabd03e824bbdf343c8de21cbb4a11a"
+    },
+    "report/figures/baseline-figures-provenance.json": {
+      "bytes": 8504,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "04a5910ecaa45233a8d534b55fb1e5b3abb243dbc23a0aa52ff70f0e9937387e"
+    },
+    "report/figures/baseline-h30-severe-path.pdf": {
+      "bytes": 22121,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "3d758ee41c85fc7043b2e38ab5030e478439b150a65d93029e09904a61283afe"
+    },
+    "report/figures/baseline-h30-severe-path.png": {
+      "bytes": 189999,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "a559fd676f1f332dec4abb0c5be0fd5c2c0dbb535c7070983c358629585dc5cc"
+    },
+    "report/figures/baseline-h30-severe-path.svg": {
+      "bytes": 17493,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "9844b50431b67574f06b3196aa09ba1a9e8dae28f8e58ca9ff01d5de039724eb"
+    },
+    "report/figures/baseline-h30-severe-points.csv": {
+      "bytes": 9675,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "50f3bb6ef1052d04b01889d732a88b4d381747009127e1701244764952b438ab"
+    },
+    "report/figures/baseline-h30-summary.pdf": {
+      "bytes": 21095,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "506f8e7c5a522b19fd8780bb34774f4a01a5468758ee4b13f1eb0f149f085d41"
+    },
+    "report/figures/baseline-h30-summary.png": {
+      "bytes": 104728,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "68cd930c058ab37508b908d4e54eb96ccbdbe025a537fbd7317919d04f3e6839"
+    },
+    "report/figures/baseline-h30-summary.svg": {
+      "bytes": 19596,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "5232e6f8ce872682871effda4c128f9ddb4778a4f400e7bf84d82de18ec6d746"
+    },
+    "report/limitations-and-disclosure-draft.md": {
+      "bytes": 5002,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "48e9bd12b43bf31e4e48e3e9f4d7bfd8b3924c7277f1fff2df07b6b33d9e0117"
+    },
+    "requirements.txt": {
+      "bytes": 175,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "ec168beb81c92a6939cc68343c65871ff9ca802518912d12d010c04f1dac9a95"
+    },
+    "results/development/HY3-003/annual_ledgers.csv": {
+      "bytes": 6984726,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "b2e93442391d2a7cec4bdfe79b397c14c311cc229e2e6c3d82d2dd04199d470a"
+    },
+    "results/development/HY3-003/scenario_metrics.csv": {
+      "bytes": 681511,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "afabf571d8c7d224bd83f836033fe4c4907a05fc15a2e8614c8ae09d803f100c"
+    },
+    "results/development/HY3-003/summary.csv": {
+      "bytes": 8093,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "965c3ac513f63de31830603ab968f5c6e99c6ceb763515b99753282d8c3a4994"
+    },
+    "specs/ACCOUNTING.md": {
+      "bytes": 2772,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e"
+    },
+    "specs/DEVELOPMENT_POLICY_PILOT_V2.md": {
+      "bytes": 16987,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1"
+    },
+    "specs/PERSONALIZED_OUTPUT_NOTES.md": {
+      "bytes": 5043,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "f328a5832251faab1b8810b598fc66408e5a323afc755a0011cfdb0b04e255a7"
+    },
+    "specs/PERSONALIZED_REVIEW.md": {
+      "bytes": 7723,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "0365fdf989ae7abfeda0bc3f48f8c86245a40dd9e48b3c6ae8d2d26c0b7c4987"
+    },
+    "specs/PROBLEM_LOCK.md": {
+      "bytes": 3159,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46"
+    },
+    "specs/development_policy_pilot_v2.json": {
+      "bytes": 5209,
+      "commit": "04be213a76855b1b1815405a735f2a49be678935",
+      "local_check": true,
+      "sha256": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3"
+    }
+  },
+  "task_id": "SOL-030",
+  "task_sha256": "c164559e5fc86d5de16d7bf54679518a8941927a079f75364d174586263ac191",
+  "verifier_sha256": "5fbc5431f34ae093421c603d52fcded0ee0301703a71036ddc9993ca9d48e6ae"
+}

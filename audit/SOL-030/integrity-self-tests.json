@@ -1,0 +1,57 @@
+{
+  "accepted_sources_modified": false,
+  "helper_trials": [
+    {
+      "kind": "numeric_point_helper",
+      "reason": "point 76 real_wealth: 53.86403835869073 != 53.85403835869073",
+      "rejected": true,
+      "unchanged": true
+    },
+    {
+      "kind": "source_identity_helper",
+      "reason": "source identity/binding differs from immutable closure",
+      "rejected": true,
+      "unchanged": true
+    }
+  ],
+  "positive_cli_control": {
+    "exit_code": 0,
+    "snapshot_sha256": "fbccef351a9a39a1a27ab04db663f31317f5ae2363636d38ff2e0131ce2d02db",
+    "stderr": "",
+    "stdout": "{\"status\": \"passed\", \"read_only\": true, \"summary_quantities\": 12, \"H30_rows\": 360, \"path_points\": 183, \"source_pins\": 48, \"loss_pct\": 50.87762271755738, \"chief_renderer_check\": \"blocked_missing_matplotlib\"}",
+    "unchanged": true
+  },
+  "python": "3.12.14",
+  "raw_logs": "Preserved in ignored scratch; shared stderr redacts local machine path.",
+  "schema_version": 1,
+  "scratch_scope": ".runtime/sol030/integrity",
+  "trials": [
+    {
+      "cli": {
+        "exit_code": 1,
+        "snapshot_sha256": "8b509113acafc14504d24c8e2465b72dbeae376c3f9bdfc7b8cafc5519a9008a",
+        "stderr": "Traceback (most recent call last):\n  File \"<worktree>\\audit\\SOL-030\\verify.py\", line 292, in <module>\n    main()\n  File \"<worktree>\\audit\\SOL-030\\verify.py\", line 284, in main\n    require(load(HERE/'verification.json')==verification,'saved evidence differs from independent reconstruction')\n  File \"<worktree>\\audit\\SOL-030\\verify.py\", line 28, in require\n    raise ValueError(message)\nValueError: saved evidence differs from independent reconstruction\n",
+        "stdout": "",
+        "unchanged": true
+      },
+      "kind": "numeric_point",
+      "mutation": "+0.01 real wealth in year8 post_fee point",
+      "rejected": true,
+      "unchanged": true
+    },
+    {
+      "cli": {
+        "exit_code": 1,
+        "snapshot_sha256": "eddb71cc0e7252cb7b5fdae101f6167d45a013beae4ebdfc9e0fb520c0a4b481",
+        "stderr": "Traceback (most recent call last):\n  File \"<worktree>\\audit\\SOL-030\\verify.py\", line 292, in <module>\n    main()\n  File \"<worktree>\\audit\\SOL-030\\verify.py\", line 280, in main\n    check_binding(load(HERE/'source-binding.json'),binding)\n  File \"<worktree>\\audit\\SOL-030\\verify.py\", line 99, in check_binding\n    require(candidate==expected,'source identity/binding differs from immutable closure')\n  File \"<worktree>\\audit\\SOL-030\\verify.py\", line 28, in require\n    raise ValueError(message)\nValueError: source identity/binding differs from immutable closure\n",
+        "stdout": "",
+        "unchanged": true
+      },
+      "kind": "source_identity",
+      "mutation": "source_result_commit replaced by 40 zeroes",
+      "rejected": true,
+      "unchanged": true
+    }
+  ],
+  "verifier_sha256": "5fbc5431f34ae093421c603d52fcded0ee0301703a71036ddc9993ca9d48e6ae"
+}
