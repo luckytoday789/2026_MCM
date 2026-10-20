@@ -1,0 +1,146 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-20T14:47:21.379231+00:00",
+  "source_commit": "41d19dceb7412dc94eb8cd2b3d94b755465a183f",
+  "archive_sha256": "9b2cfeb2ad22ef427b7ffa7e4ee3853f150eb88e64b5c843ba5dd79173bd3a96",
+  "archive_bytes": 26589462,
+  "all_archive_source_members_match_exact_commit": true,
+  "all_manifest_member_hashes_verified": true,
+  "offline_repository_restored": true,
+  "canonical_receipts": [
+    {
+      "task": "HY3-010",
+      "paths": 66,
+      "status": "passed"
+    },
+    {
+      "task": "SOL-046",
+      "paths": 14,
+      "status": "passed"
+    },
+    {
+      "task": "SOL-047",
+      "paths": 45,
+      "status": "passed"
+    },
+    {
+      "task": "SOL-048",
+      "paths": 23,
+      "status": "passed"
+    }
+  ],
+  "public_pdf_sha256": "749b795a06e62d5b7df834690b410a0695b788ce32fd8dddc01557ca9b4621bc",
+  "public_pdf_byte_equal_reviewed_copy": true,
+  "steps": [
+    {
+      "argv": [
+        "git",
+        "init",
+        "D:\\30576\\Documents\\2026_MCM\\.runtime\\final-source-package-20261020\\offline-evidence"
+      ],
+      "exit_code": 0,
+      "stdout": "Initialized empty Git repository in D:/30576/Documents/2026_MCM/.runtime/final-source-package-20261020/offline-evidence/.git/\n",
+      "stderr": "hint: Using 'master' as the name for the initial branch. This default branch name\nhint: will change to \"main\" in Git 3.0. To configure the initial branch name\nhint: to use in all of your new repositories, which will suppress this warning,\nhint: call:\nhint:\nhint: \tgit config --global init.defaultBranch <name>\nhint:\nhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\nhint: 'development'. The just-created branch can be renamed via this command:\nhint:\nhint: \tgit branch -m <name>\nhint:\nhint: Disable this message with \"git config set advice.defaultBranchName false\"\n"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "core.autocrlf",
+        "false"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "fetch",
+        "D:\\30576\\Documents\\2026_MCM\\.runtime\\final-source-package-20261020\\research-evidence.bundle",
+        "refs/heads/main:refs/heads/main"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "From D:\\30576\\Documents\\2026_MCM\\.runtime\\final-source-package-20261020\\research-evidence.bundle\n * [new branch]      main       -> main\n"
+    },
+    {
+      "argv": [
+        "git",
+        "fetch",
+        "D:\\30576\\Documents\\2026_MCM\\.runtime\\final-source-package-20261020\\research-evidence.bundle",
+        "refs/remotes/origin/work/*:refs/remotes/origin/work/*"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "From D:\\30576\\Documents\\2026_MCM\\.runtime\\final-source-package-20261020\\research-evidence.bundle\n * [new ref]         origin/work/sol/SOL-048-a1 -> origin/work/sol/SOL-048-a1\n * [new ref]         origin/work/sol/SOL-047-a1 -> origin/work/sol/SOL-047-a1\n * [new ref]         origin/work/sol/SOL-046-a1 -> origin/work/sol/SOL-046-a1\n * [new ref]         origin/work/sol/SOL-045-a1 -> origin/work/sol/SOL-045-a1\n * [new ref]         origin/work/sol/SOL-044-a1 -> origin/work/sol/SOL-044-a1\n * [new ref]         origin/work/sol/SOL-043-a1 -> origin/work/sol/SOL-043-a1\n * [new ref]         origin/work/sol/SOL-042-a1 -> origin/work/sol/SOL-042-a1\n * [new ref]         origin/work/sol/SOL-041-a1 -> origin/work/sol/SOL-041-a1\n * [new ref]         origin/work/sol/SOL-040-a1 -> origin/work/sol/SOL-040-a1\n * [new ref]         origin/work/sol/SOL-039-a1 -> origin/work/sol/SOL-039-a1\n * [new ref]         origin/work/sol/SOL-038-a1 -> origin/work/sol/SOL-038-a1\n * [new ref]         origin/work/sol/SOL-037-a1 -> origin/work/sol/SOL-037-a1\n * [new ref]         origin/work/sol/SOL-036-a1 -> origin/work/sol/SOL-036-a1\n * [new ref]         origin/work/sol/SOL-035-a1 -> origin/work/sol/SOL-035-a1\n * [new ref]         origin/work/sol/SOL-034-a1 -> origin/work/sol/SOL-034-a1\n * [new ref]         origin/work/sol/SOL-033-a1 -> origin/work/sol/SOL-033-a1\n * [new ref]         origin/work/sol/SOL-032-a1 -> origin/work/sol/SOL-032-a1\n * [new ref]         origin/work/sol/SOL-031-a1 -> origin/work/sol/SOL-031-a1\n * [new ref]         origin/work/sol/SOL-030-a1 -> origin/work/sol/SOL-030-a1\n * [new ref]         origin/work/sol/SOL-029-a1 -> origin/work/sol/SOL-029-a1\n * [new ref]         origin/work/sol/SOL-028-a1 -> origin/work/sol/SOL-028-a1\n * [new ref]         origin/work/sol/SOL-027-a1 -> origin/work/sol/SOL-027-a1\n * [new ref]         origin/work/sol/SOL-026-a1 -> origin/work/sol/SOL-026-a1\n * [new ref]         origin/work/sol/SOL-025-a1 -> origin/work/sol/SOL-025-a1\n * [new ref]         origin/work/sol/SOL-024-a1 -> origin/work/sol/SOL-024-a1\n * [new ref]         origin/work/sol/SOL-023-a1 -> origin/work/sol/SOL-023-a1\n * [new ref]         origin/work/sol/SOL-022-a1 -> origin/work/sol/SOL-022-a1\n * [new ref]         origin/work/sol/SOL-021-a1 -> origin/work/sol/SOL-021-a1\n * [new ref]         origin/work/sol/SOL-020-a1 -> origin/work/sol/SOL-020-a1\n * [new ref]         origin/work/sol/SOL-017-a1 -> origin/work/sol/SOL-017-a1\n * [new ref]         origin/work/sol/SOL-016-a1 -> origin/work/sol/SOL-016-a1\n * [new ref]         origin/work/sol/SOL-013-a1 -> origin/work/sol/SOL-013-a1\n * [new ref]         origin/work/sol/SOL-010-a1 -> origin/work/sol/SOL-010-a1\n * [new ref]         origin/work/sol/SOL-009-a1 -> origin/work/sol/SOL-009-a1\n * [new ref]         origin/work/sol/SOL-008-a1 -> origin/work/sol/SOL-008-a1\n * [new ref]         origin/work/sol/SOL-007-a1 -> origin/work/sol/SOL-007-a1\n * [new ref]         origin/work/sol/SOL-006-a1 -> origin/work/sol/SOL-006-a1\n * [new ref]         origin/work/sol/SOL-005-a1 -> origin/work/sol/SOL-005-a1\n * [new ref]         origin/work/sol/SOL-004-a1 -> origin/work/sol/SOL-004-a1\n * [new ref]         origin/work/sol/SOL-003-a1 -> origin/work/sol/SOL-003-a1\n * [new ref]         origin/work/sol/SOL-002-a1 -> origin/work/sol/SOL-002-a1\n * [new ref]         origin/work/sol/SOL-001-a1 -> origin/work/sol/SOL-001-a1\n * [new ref]         origin/work/hy3/HY3-010-a1 -> origin/work/hy3/HY3-010-a1\n * [new ref]         origin/work/hy3/HY3-009-a1 -> origin/work/hy3/HY3-009-a1\n * [new ref]         origin/work/hy3/HY3-008-a1 -> origin/work/hy3/HY3-008-a1\n * [new ref]         origin/work/hy3/HY3-007-a1 -> origin/work/hy3/HY3-007-a1\n * [new ref]         origin/work/hy3/HY3-006-a1 -> origin/work/hy3/HY3-006-a1\n * [new ref]         origin/work/hy3/HY3-005-a1 -> origin/work/hy3/HY3-005-a1\n * [new ref]         origin/work/hy3/HY3-004-a1 -> origin/work/hy3/HY3-004-a1\n * [new ref]         origin/work/hy3/HY3-003-a1 -> origin/work/hy3/HY3-003-a1\n * [new ref]         origin/work/hy3/HY3-002-a1 -> origin/work/hy3/HY3-002-a1\n * [new ref]         origin/work/hy3/HY3-001-a1 -> origin/work/hy3/HY3-001-a1\n * [new ref]         origin/work/chief/CHIEF-REFIT-001-a1 -> origin/work/chief/CHIEF-REFIT-001-a1\n * [new ref]         origin/work/chief/CHIEF-PERSONALIZED-RUN-002-a1 -> origin/work/chief/CHIEF-PERSONALIZED-RUN-002-a1\n"
+    },
+    {
+      "argv": [
+        "git",
+        "checkout",
+        "main"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Switched to branch 'main'\n"
+    },
+    {
+      "argv": [
+        "git",
+        "update-ref",
+        "refs/remotes/origin/main",
+        "41d19dceb7412dc94eb8cd2b3d94b755465a183f"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "report/build_final_note.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Final report note authenticated; complete manuscript acceptance remains pending.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\30576\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "report/build_submission.py",
+        "--output-dir",
+        ".runtime/offline-public-manuscript"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"kind\": \"complete_content_pending_manuscript_acceptance\", \"submission_ready\": false, \"word_count\": 4436, \"pending_slots\": [], \"pdf_checks\": {\"pdf_sha256\": \"749b795a06e62d5b7df834690b410a0695b788ce32fd8dddc01557ca9b4621bc\", \"pages\": 8, \"paper\": \"A4\", \"minimum_font_pt\": 11.0, \"within_page_limit\": true, \"all_pages_marked_review_copy\": true, \"editorial_release\": false, \"visual_review\": \"pending\"}}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\30576\\Documents\\SafeInvest\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-c",
+        "import json,sys;sys.path.insert(0,'audit/chief');from verify_canonical_receipt import verify;q=json.load(open('ops/queue.json'));result=[]\nfor ident in ('HY3-010','SOL-046','SOL-047','SOL-048'):\n e=next(x for x in q['tasks'] if x['id']==ident);kwargs={} if ident=='HY3-010' else {'agent_command_log_path':('audit/SOL-046/execution_log.json' if ident=='SOL-046' else ('audit/SOL-048/execution-history.json' if ident=='SOL-048' else 'audit/'+ident+'/execution.json'))};r=verify(ident,e['reviewed_commit'],**kwargs);result.append({'task':ident,'paths':len(r['accepted_paths']),'status':r['structural_checks']})\nprint(json.dumps(result))"
+      ],
+      "exit_code": 0,
+      "stdout": "[{\"task\": \"HY3-010\", \"paths\": 66, \"status\": \"passed\"}, {\"task\": \"SOL-046\", \"paths\": 14, \"status\": \"passed\"}, {\"task\": \"SOL-047\", \"paths\": 45, \"status\": \"passed\"}, {\"task\": \"SOL-048\", \"paths\": 23, \"status\": \"passed\"}]\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "original_observations_opened": false,
+  "simulations_rerun": false,
+  "private_identities_included": false
+}

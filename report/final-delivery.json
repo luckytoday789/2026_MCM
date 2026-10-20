@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "status": "complete_verified_local_deliverables",
+  "created_at": "2026-10-20T14:48:31.946329+00:00",
+  "submission_ready": true,
+  "submission_upload_performed": false,
+  "human_team_leader_must_submit": true,
+  "submission_deadline": "2026-10-20T23:59:00+08:00",
+  "pdf": {
+    "local_path": ".runtime/final-release-20261020/SafeInvest-final.pdf",
+    "sha256": "1730702256151770090fad81aef16922c1f58064beda91c5ce57444a32853385",
+    "pages": 8,
+    "paper": "A4",
+    "minimum_font_pt": 11,
+    "all_three_supplied_names_verified": true,
+    "ai_use_disclosure": true,
+    "every_final_page_visually_inspected": true,
+    "only_authorized_editorial_changes": true,
+    "private_artifact_remains_local": true
+  },
+  "source_zip": {
+    "local_path": ".runtime/final-source-package-20261020/SafeInvest-source.zip",
+    "sha256": "9b2cfeb2ad22ef427b7ffa7e4ee3853f150eb88e64b5c843ba5dd79173bd3a96",
+    "bytes": 26589462,
+    "maximum_bytes": 50000000,
+    "members": 220,
+    "source_commit": "41d19dceb7412dc94eb8cd2b3d94b755465a183f",
+    "all_member_hashes_verified": true,
+    "git_bundle_verified": true,
+    "fresh_offline_repository_reconstructed": true,
+    "key_exact_receipts_verified": [
+      {
+        "task": "HY3-010",
+        "paths": 66,
+        "status": "passed"
+      },
+      {
+        "task": "SOL-046",
+        "paths": 14,
+        "status": "passed"
+      },
+      {
+        "task": "SOL-047",
+        "paths": 45,
+        "status": "passed"
+      },
+      {
+        "task": "SOL-048",
+        "paths": 23,
+        "status": "passed"
+      }
+    ],
+    "offline_public_pdf_sha256": "749b795a06e62d5b7df834690b410a0695b788ce32fd8dddc01557ca9b4621bc",
+    "offline_public_pdf_byte_equal_reviewed_text_proof": true,
+    "private_identities_included": false
+  },
+  "accepted_exact_commits": {
+    "HY3-010": "4b8ac5d6822ac39ff1189c13d34ed3f84f699319",
+    "SOL-046": "0ed56de4b70bef0083ca2cf414f5aa2dce8606f0",
+    "SOL-047": "9b620ae9a1c189d14060f59b02d8b0e4405d4f18",
+    "SOL-048": "bcd0ce93226dcdeab6f92e21e4f15b680ca90d6c"
+  },
+  "final_outcome": "All A-E require human review. Four B/C own-horizon final cases fail the unchanged loss screens at both fees with7/60 exceedances each. Six A/D/E referrals remain; no fallback or final reranking.",
+  "final_data_gate_remains_open": true,
+  "policy_or_final_data_reruns_during_release": false,
+  "final_tuning": false,
+  "layout_evidence": "audit/chief/final-editorial-layout-20261020.json",
+  "package_evidence": "audit/chief/final-source-package-20261020.json",
+  "offline_evidence": "audit/chief/final-source-offline-20261020.json",
+  "completion_scope": "The archive is the clean pushed41d19dc accepted source and layout snapshot; later records only attest final package delivery/completion. The public review rendering deliberately omits private names; the separate local final PDF contains them.",
+  "supersedes_historical_work_status": [
+    "report/submission-status.json",
+    "report/evidence-map.json remaining descriptions",
+    "report/final-release.json pending package field"
+  ]
+}

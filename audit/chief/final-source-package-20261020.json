@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "source_commit": "41d19dceb7412dc94eb8cd2b3d94b755465a183f",
+  "archive": ".runtime\\final-source-package-20261020\\SafeInvest-source.zip",
+  "bytes": 26589462,
+  "sha256": "9b2cfeb2ad22ef427b7ffa7e4ee3853f150eb88e64b5c843ba5dd79173bd3a96",
+  "file_count": 220,
+  "git_bundle_sha256": "c36242c8c64967baf038240c6262e970d7f5328185941ac2bce675983e920093",
+  "git_bundle_verify_exit_code": 0,
+  "member_hashes_verified": true,
+  "no_simulation": true,
+  "submission_ready_claimed": false
+}
