@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20T09:46:07.642332+00:00",
+  "task_id": "SOL-041",
+  "reviewed_commit": "1f7f328313a5976aa9ff60375432d61457f7d811",
+  "verdict": "reject_delivery_missing_required_logs",
+  "worker_receipt_status": "completed_preserved",
+  "structural_evidence": "audit/chief/SOL-041-structural-review.json",
+  "exact_replay": "audit/chief/SOL-041-exact-replay.json",
+  "exit_code": 1,
+  "producer_task": "HY3-006",
+  "producer_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+  "producer_accepted": false,
+  "missing_logs": {
+    "audit/SOL-041/writer.stdout.log": "0a0c23666434c3fb9693db28d32d9fd8dbd40d9570d49d65130f290ebec2f6e0",
+    "audit/SOL-041/writer.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit/SOL-041/portable.stdout.log": "b5db6eb8985023437292714f906a6571bdabd2dd012dea198b1bd3d6a84c8c12",
+    "audit/SOL-041/portable.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "facts": [
+    "29 changed paths,28 canonical artifact hashes,42 source pins authenticated",
+    "Exact detached Git replay exits1 at missing writer.stdout.log before arithmetic; audit unchanged",
+    "Four named durable logs absent from published tree despite successful local parent check",
+    "No new writer or original competition computation ran in this chief review"
+  ],
+  "successor_required": "Audit-only recovery of exact original logs,actual Git roundtrip replay,not a new producer check",
+  "final_data_open": false
+}

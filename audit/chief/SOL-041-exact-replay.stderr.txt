@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "D:\30576\Documents\2026_MCM\.runtime\reviews\SOL-041-exact-1\audit\SOL-041\verify.py", line 137, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\30576\Documents\2026_MCM\.runtime\reviews\SOL-041-exact-1\audit\SOL-041\verify.py", line 117, in main
+    record['writer']=clean_record()
+                     ^^^^^^^^^^^^^^
+  File "D:\30576\Documents\2026_MCM\.runtime\reviews\SOL-041-exact-1\audit\SOL-041\verify.py", line 108, in clean_record
+    for key in ('stdout','stderr'):require(digest((HERE/r[key]).read_bytes())==r[key+'_sha256'],'writer log hash')
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Vscode\Lib\pathlib.py", line 1020, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Vscode\Lib\pathlib.py", line 1014, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\30576\\Documents\\2026_MCM\\.runtime\\reviews\\SOL-041-exact-1\\audit\\SOL-041\\writer.stdout.log'
