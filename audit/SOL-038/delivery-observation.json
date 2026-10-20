@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "task_id": "SOL-038",
+  "observed_head": "198c9896a22df1c2059ed9f9741ebeefedb29bc9",
+  "failed_parent_receipt_sha256": "899923c7473653f357f42a21284616f9eba0bb007ba0996d5465f70c22d610b3",
+  "parent_status": "failed",
+  "parent_failure": "git push failed: fatal: unable to access 'https://github.com/luckytoday789/2026_MCM.git/': Could not resolve host: github.com",
+  "parent_checks": [],
+  "local_validation_evidence": "audit/SOL-038/clean-environment-checks.json",
+  "local_validation_commands_passed": true,
+  "failed_receipt_unchanged": true,
+  "corrected_worktree_changes_require_parent_delivery": true,
+  "parent_validation_after_model_exit_still_required": true,
+  "chief_acceptance_pending": true
+}

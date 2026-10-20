@@ -1,0 +1,1 @@
+[{"argv": ["E:\\2026_MCM\\sol-coop\\.venv\\Scripts\\python.exe", "-B", "audit/SOL-038/verify.py", "--check"], "exit_code": 0, "elapsed_seconds": 56.375, "inventories_unchanged": true}]

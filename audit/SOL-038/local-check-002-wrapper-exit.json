@@ -1,1 +1,6 @@
-{"exit_code":0,"signal":null,"elapsed_seconds":0.087}
+{
+  "exit_code": 0,
+  "signal": null,
+  "elapsed_seconds": 0.087,
+  "kind": "Windows exec bootstrap wrapper exit only; actual check result is local-check-002-tests-only.json"
+}

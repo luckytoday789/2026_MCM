@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-038-a1\audit\SOL-038\verify.py", line 210, in <module>
+    check()
+  File "E:\2026_MCM\sol-coop\.runtime\worktrees\SOL-038-a1\audit\SOL-038\verify.py", line 203, in check
+    assert before==evidence_inventory(),'verifier changed original evidence'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: verifier changed original evidence

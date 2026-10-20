@@ -1,0 +1,1051 @@
+{
+  "accepted_sources": {
+    "AGENTS.md": "dfef5eeb0404a9e0d5c5732da5c05d3ed00b6b53588fbcac541d64c23b140962",
+    "audit/chief/SOL-016-review.json": "55b45ec0c650dec248dccb83c91e6709bfdc9a229f7a6199b3db9480f579d4da",
+    "audit/chief/SOL-021-review.json": "105f8610edeebc1b17272b7450d3cdba29fa14d963407afd1665fc7caf640670",
+    "audit/chief/SOL-022-review.json": "9875dab72b4354566fe6067de94fabbb917c0b9c2344914a3f38c084f1042546",
+    "audit/chief/SOL-025-review.json": "7523121f5290d6ba938ccff6749d5d28b86c0053c2c072850092dee941efdb1c",
+    "audit/chief/SOL-031-review.json": "71e51c0d047d344d22e20b0081477185c824bac98faa6cf6547f0f670e45f05e",
+    "audit/chief/SOL-032-review.json": "29d380833f044d3d9b1121a59f36b138c7c1d0b78a7b4ea146ace88ca2e5d1b8",
+    "handoff/SOL-034/result.json": "c140dadd2285fd00b9b33e03d1fd90f586cfe4a7c1fe25901b92d7383c64eb4c",
+    "ops/PROTOCOL.md": "10f6f27536ad251f258292c98050a2ff03811ef95e1ea4cce6cf6e40cee97c10",
+    "ops/tasks/SOL-034.json": "bd6d4e00583c5413b5b3c160fea48860b2513eb6d5bba36f915e79c7add84816",
+    "scripts/run_development_policy.py": "b2ea4ac19ece30fd2bb535c2dcee5cdf48d26d0cba934a3b35cb6e08338ee19b",
+    "specs/ACCOUNTING.md": "a9c3ab8dbba3ad752336642061ead272e2c196de83f73eb410e39bd5b559f71e",
+    "specs/DEVELOPMENT_CASE_RESULTS_REVIEW.md": "2cf283f1d0a073bcd46371e6eb0b2374ee5ed5fa04a046e5d152711d94f4f4b5",
+    "specs/DEVELOPMENT_POLICY_PILOT_V2.md": "ada0257f813091a01526e497e28ca3871bf9b13afa98487708be17ae8249bcb1",
+    "specs/FAILED_DELIVERY_RECOVERY_20261020.md": "85d3f004c70fef28dc2ab60a8ffb2f1d39bfcfa562c8da8702aad82665486d32",
+    "specs/POLICY_ANALYSIS.md": "a2220482c861799280815b4e65d73e79e53666816ac9e7e72a38d5f48a6e53b8",
+    "specs/POLICY_ANALYSIS_ASSEMBLY.md": "808930f6c4c84d3a542bf14387dc506c6fb77b0a5be636840db30169ddcf6250",
+    "specs/POLICY_CASE_ENGINE.md": "c984e230eecb720613b864a910d95921af1aa805f79fa68c7044f905410dec62",
+    "specs/POLICY_CORRECTION_V2.md": "b7c5779ee553e9a364b69e20a8de43cee086cc480d1fd825228e11f454a85383",
+    "specs/POLICY_NUMERIC_K1.md": "72c056dff68ce6028cb1258cb8a23502eec1e9343696f52798fdbe9b875497ac",
+    "specs/POLICY_NUMERIC_K2.md": "88d5f58a59f090c25331392e4cd5682daf5d050c27b24afe6629d8e4a5eb9997",
+    "specs/POLICY_RESULT_WRITER.md": "ce0c43fad34ebdc44fc6f6bda395c562781e500cdc4b855ee7e0cbf937bec0b4",
+    "specs/POLICY_WRITER_ACCEPTANCE_REFERENCES.md": "936961ab2fc38657c8c31a344982df5f92730d47eebeee0cc978c6aa37055e9d",
+    "specs/POLICY_WRITER_COMPATIBILITY.md": "814c339353a719b88f1bf21af731439cc24e095131d9a8d28efaede48a5695ed",
+    "specs/POLICY_WRITER_EXECUTION_CONFIG.md": "7813b87400ba8469525392721f095fc9b65e37dcd24b8a68adb4bd6801ca8d31",
+    "specs/POLICY_WRITER_FILE_DELIVERABLES.md": "1c91468f405a92b300a2684e2b29fa29a75d9add6df77ed819e96fd8fe2e11e0",
+    "specs/POLICY_WRITER_GIT_PORTABILITY.md": "d4420e868eab8f6d4ecf34c337c865d7b99e7653d994565fd69b8432c8daac22",
+    "specs/POLICY_WRITER_RECOVERY.md": "cd0d4de33d64e2893e410434f216bfc2a65cea5fafe3907dbf74347969c843b0",
+    "specs/POLICY_WRITER_TASK_BINDING.md": "85f237a46041d6333b984903daca5528119d3043c106fca4357b5851a0920760",
+    "specs/PROBLEM_LOCK.md": "566c93ad1b5f79c9ec10a42725ab023953c9a02aeb1c91a459e740caf68c0e46",
+    "specs/development_policy_pilot_v2.json": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+    "specs/policy_driver_layout_v2.json": "f431e661c260f7f6e40330661e77724dc3ddcafeafed1a3f0b6c31781a4e8329",
+    "src/safeinvest/__init__.py": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+    "src/safeinvest/accounting.py": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+    "src/safeinvest/backtest.py": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+    "src/safeinvest/baselines.py": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+    "src/safeinvest/experiments.py": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+    "src/safeinvest/metrics.py": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+    "src/safeinvest/policy_analysis.py": "e94a5ef79a2f58f231a46bd2af01020dd09847d27bdbe74f1795ba032dd8d345",
+    "src/safeinvest/policy_calibration.py": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+    "src/safeinvest/policy_cases.py": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7",
+    "src/safeinvest/policy_pilot.py": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+    "src/safeinvest/policy_writer.py": "feca1b69de00cb5677337796c32ab91cd7262351bfed9c9ee5ac1ff5fab46226"
+  },
+  "base_commit": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+  "files": {
+    "audit/SOL-038/.gitattributes": {
+      "bytes": 29,
+      "crlf_bytes": 31,
+      "crlf_sha256": "df5b9a30f6412bffb6cebec0e598bbea4a3474927b2caa096e1666f940969df8",
+      "sha256": "0194f28345c87746f7113233bed1ec1dbb18b6887891b3fae56d15a4b1c610c3"
+    },
+    "audit/SOL-038/boundary-module-records.json": {
+      "bytes": 15802,
+      "crlf_bytes": 15874,
+      "crlf_sha256": "54ef08541ca5d0a881dbb67198e1715bf04e36d8d9ba0e76dfff1a7fcf02e95f",
+      "sha256": "945c89be324c4c40340042bf8e2ec344f587500f0f5b3f802c772e2c7030302a"
+    },
+    "audit/SOL-038/boundary-process.json": {
+      "bytes": 152,
+      "crlf_bytes": 153,
+      "crlf_sha256": "f1f601736007caf25e1f98d9dad46b709d20905b399bdd5728c9c76d864a0090",
+      "sha256": "f8a2535dd878b9baf2088847d0dacc19adbe205b54adbe2c0a862b793ee0da49"
+    },
+    "audit/SOL-038/boundary.stderr.txt": {
+      "bytes": 0,
+      "crlf_bytes": 0,
+      "crlf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-038/boundary.stdout.txt": {
+      "bytes": 42,
+      "crlf_bytes": 43,
+      "crlf_sha256": "05557c2e44846a8bf46a401e9794b42cf5a5cb71777be66be11834a30aed5259",
+      "sha256": "b05b45b30136573783f99b1493c507e72461d9398b20529c6b38ca6dcbaae4cf"
+    },
+    "audit/SOL-038/construct.py": {
+      "bytes": 4220,
+      "crlf_bytes": 4286,
+      "crlf_sha256": "4665dba323591728ce04734b7c51470eb07bd2b904eab46864c2ff8fecd4002b",
+      "sha256": "a1ed627e0bf6beeff4c4e6c8ffc3735b1430fded763ba8a04cbb393e629e0b12"
+    },
+    "audit/SOL-038/findings.json": {
+      "bytes": 3322,
+      "crlf_bytes": 3399,
+      "crlf_sha256": "03ba49ab52c17c1a9718ad43b3f512f36aab4b132d9d8ddaf757da45b2180021",
+      "sha256": "c33afcaed2a37e97fb872f0592ebe52661cc6e942d7d4126b6d5008a95d3bb1e"
+    },
+    "audit/SOL-038/fixture/analysis/comparison_gates.json": {
+      "bytes": 217323,
+      "crlf_bytes": 224520,
+      "crlf_sha256": "36ca49ecb30b26af70bdb9d65205df4414c59f1cc4b100c57755c24a9593843c",
+      "sha256": "3d9b1625294a84aade113b493017d1ed4e06ff0093a6e1eefdaf42e79d02b5ee"
+    },
+    "audit/SOL-038/fixture/analysis/paired_differences.csv": {
+      "bytes": 105075,
+      "crlf_bytes": 105476,
+      "crlf_sha256": "cebe85e2a270e1e8803f002554d648e51a4fdc58a0c6ef25f61a2e26c001fc29",
+      "sha256": "99b1bda76c5cc76ee8b78f9023bdae85bccd15836fb86a82a199253617c91615"
+    },
+    "audit/SOL-038/fixture/analysis/profile_recommendations.json": {
+      "bytes": 46582,
+      "crlf_bytes": 48380,
+      "crlf_sha256": "2a7ff5a3a1bb874f40ed7350d02e6d83d9467b86111e4e7346528e24ec7aa871",
+      "sha256": "f9040c0c3ad1c3d40b7ea44059d8bb9e009eb929514484ad0d04fcbb7827342d"
+    },
+    "audit/SOL-038/fixture/analysis/profile_screen.json": {
+      "bytes": 53590,
+      "crlf_bytes": 55738,
+      "crlf_sha256": "9f7de2e0d593ea7c58e49651d9af1768be7cf4fc0624b02db31b84ba7aff7d1d",
+      "sha256": "89badcebac504865408b9cf264062373321e4e8ba9d50bf3734e8ca6b5eac42d"
+    },
+    "audit/SOL-038/fixture/analysis/run_manifest.json": {
+      "bytes": 139803,
+      "crlf_bytes": 139804,
+      "crlf_sha256": "855a95ddf9d8e80aa2a02971d90ea8f07b3ed59d17e2d0b723c10b2acb134f4b",
+      "sha256": "19a2139586a81d22f4718dc10c6bf2b5ef389b56a14394a9437e467e083867c4"
+    },
+    "audit/SOL-038/fixture/analysis/selection.json": {
+      "bytes": 19142,
+      "crlf_bytes": 19713,
+      "crlf_sha256": "cefa2a862e484d7579d0e16bca3cb90cfa18c700e3e98cdc40bbbc6c1bf3e611",
+      "sha256": "26df8ce3545d4515090f9b77d4f7323a814688210321a41dec77fc869df17972"
+    },
+    "audit/SOL-038/fixture/binding.json": {
+      "bytes": 542,
+      "crlf_bytes": 557,
+      "crlf_sha256": "13614ee14536acbb98b9c684cddccf5cf24ae9171377ddee2c39d4678960737c",
+      "sha256": "55e12e6722a273ab7dbfe6985337341ff18f4ba91baaca1ab7296f7aad988350"
+    },
+    "audit/SOL-038/fixture/bytes/.gitattributes": {
+      "bytes": 14,
+      "crlf_bytes": 15,
+      "crlf_sha256": "ba3d4e0a92188305f7cb5ff36e521d8e5df81a0cf5bc64028d9c86834e5096c0",
+      "sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/calibrations.json": {
+      "bytes": 43,
+      "crlf_bytes": 46,
+      "crlf_sha256": "4ee5ff07b20d635349b306a7a042f501373dffebbf28eb2d746ac7c7604395b7",
+      "sha256": "c5afdb772897648346856b3853efa98ac1d5c83054e29d8c05def614cb81fa1e"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/balanced_adaptive/annual_ledgers.csv": {
+      "bytes": 632,
+      "crlf_bytes": 633,
+      "crlf_sha256": "eb109dd041cdb726ae367fc0866642a8eee37ce4d441032da77424383a6313e5",
+      "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/balanced_adaptive/decisions.csv": {
+      "bytes": 310,
+      "crlf_bytes": 311,
+      "crlf_sha256": "d063ca101d2deff056e91a3487b658fd7e977f464cc7b6c7070066602117cef0",
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/balanced_adaptive/scenario_metrics.csv": {
+      "bytes": 6894,
+      "crlf_bytes": 6915,
+      "crlf_sha256": "e87fd3bda86ccee167797e817ab37a12d0351b3ebabe0def0606b8b51ca95287",
+      "sha256": "81bc4bcef0139ad393728b61002ab8fb80d07bbb1eb7cd34da59a306668e32ae"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/balanced_adaptive/summary.csv": {
+      "bytes": 771,
+      "crlf_bytes": 772,
+      "crlf_sha256": "b50e087092bee6a890af4032eae2ffc74cbc5f952ab796c9595ebf8537da5681",
+      "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/balanced_adaptive/target_scores.csv": {
+      "bytes": 197,
+      "crlf_bytes": 198,
+      "crlf_sha256": "773f9df984ddb55979597b81070c06e3d1c23205bc66b89680a980def336f7c4",
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/balanced_context/annual_ledgers.csv": {
+      "bytes": 632,
+      "crlf_bytes": 633,
+      "crlf_sha256": "eb109dd041cdb726ae367fc0866642a8eee37ce4d441032da77424383a6313e5",
+      "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/balanced_context/decisions.csv": {
+      "bytes": 310,
+      "crlf_bytes": 311,
+      "crlf_sha256": "d063ca101d2deff056e91a3487b658fd7e977f464cc7b6c7070066602117cef0",
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/balanced_context/scenario_metrics.csv": {
+      "bytes": 6874,
+      "crlf_bytes": 6895,
+      "crlf_sha256": "82677b0dea7ce0f510fcd4807555dbdb9914642410773a3d4a3fd0fe79ad86a9",
+      "sha256": "4d97bf1f5bb3849b8530047c1327e830ed735158ecd0ebcafd6eb6942f92e0d9"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/balanced_context/summary.csv": {
+      "bytes": 771,
+      "crlf_bytes": 772,
+      "crlf_sha256": "b50e087092bee6a890af4032eae2ffc74cbc5f952ab796c9595ebf8537da5681",
+      "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/balanced_context/target_scores.csv": {
+      "bytes": 197,
+      "crlf_bytes": 198,
+      "crlf_sha256": "773f9df984ddb55979597b81070c06e3d1c23205bc66b89680a980def336f7c4",
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/balanced_cost/annual_ledgers.csv": {
+      "bytes": 632,
+      "crlf_bytes": 633,
+      "crlf_sha256": "eb109dd041cdb726ae367fc0866642a8eee37ce4d441032da77424383a6313e5",
+      "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/balanced_cost/decisions.csv": {
+      "bytes": 310,
+      "crlf_bytes": 311,
+      "crlf_sha256": "d063ca101d2deff056e91a3487b658fd7e977f464cc7b6c7070066602117cef0",
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/balanced_cost/scenario_metrics.csv": {
+      "bytes": 6794,
+      "crlf_bytes": 6815,
+      "crlf_sha256": "31dac86d961b2c693539e3ed80654d3710ceb347c808520fa1571e75446daa2f",
+      "sha256": "1ee3ef77c38f153edfec04ab79ec3c79c6169b99200b40e78f767c18f710f90a"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/balanced_cost/summary.csv": {
+      "bytes": 771,
+      "crlf_bytes": 772,
+      "crlf_sha256": "b50e087092bee6a890af4032eae2ffc74cbc5f952ab796c9595ebf8537da5681",
+      "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/balanced_cost/target_scores.csv": {
+      "bytes": 197,
+      "crlf_bytes": 198,
+      "crlf_sha256": "773f9df984ddb55979597b81070c06e3d1c23205bc66b89680a980def336f7c4",
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/bills_keep/annual_ledgers.csv": {
+      "bytes": 632,
+      "crlf_bytes": 633,
+      "crlf_sha256": "eb109dd041cdb726ae367fc0866642a8eee37ce4d441032da77424383a6313e5",
+      "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/bills_keep/decisions.csv": {
+      "bytes": 310,
+      "crlf_bytes": 311,
+      "crlf_sha256": "d063ca101d2deff056e91a3487b658fd7e977f464cc7b6c7070066602117cef0",
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/bills_keep/scenario_metrics.csv": {
+      "bytes": 6544,
+      "crlf_bytes": 6565,
+      "crlf_sha256": "80f77a43ca9f85fce52b745b1c1775f84d51c9758271ac249192fe825bb8ca89",
+      "sha256": "7eacc44b27617cc1a088d1bf5f31a82baa2346da12d6f9e902d0e481b184a001"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/bills_keep/summary.csv": {
+      "bytes": 771,
+      "crlf_bytes": 772,
+      "crlf_sha256": "b50e087092bee6a890af4032eae2ffc74cbc5f952ab796c9595ebf8537da5681",
+      "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/bills_keep/target_scores.csv": {
+      "bytes": 197,
+      "crlf_bytes": 198,
+      "crlf_sha256": "773f9df984ddb55979597b81070c06e3d1c23205bc66b89680a980def336f7c4",
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/conservative_cost/annual_ledgers.csv": {
+      "bytes": 632,
+      "crlf_bytes": 633,
+      "crlf_sha256": "eb109dd041cdb726ae367fc0866642a8eee37ce4d441032da77424383a6313e5",
+      "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/conservative_cost/decisions.csv": {
+      "bytes": 310,
+      "crlf_bytes": 311,
+      "crlf_sha256": "d063ca101d2deff056e91a3487b658fd7e977f464cc7b6c7070066602117cef0",
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/conservative_cost/scenario_metrics.csv": {
+      "bytes": 6874,
+      "crlf_bytes": 6895,
+      "crlf_sha256": "7d47a96a3d5eb15bfc335272f54ceedb9ef0dbfd0e43a75f7526ad4f8a00900b",
+      "sha256": "bfb49827567d10f08ce07f2bcc4333b1627e17982dd26dbf6d467d0cb46af49c"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/conservative_cost/summary.csv": {
+      "bytes": 771,
+      "crlf_bytes": 772,
+      "crlf_sha256": "b50e087092bee6a890af4032eae2ffc74cbc5f952ab796c9595ebf8537da5681",
+      "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/conservative_cost/target_scores.csv": {
+      "bytes": 197,
+      "crlf_bytes": 198,
+      "crlf_sha256": "773f9df984ddb55979597b81070c06e3d1c23205bc66b89680a980def336f7c4",
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/equal_weight_annual/annual_ledgers.csv": {
+      "bytes": 632,
+      "crlf_bytes": 633,
+      "crlf_sha256": "eb109dd041cdb726ae367fc0866642a8eee37ce4d441032da77424383a6313e5",
+      "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/equal_weight_annual/decisions.csv": {
+      "bytes": 310,
+      "crlf_bytes": 311,
+      "crlf_sha256": "d063ca101d2deff056e91a3487b658fd7e977f464cc7b6c7070066602117cef0",
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/equal_weight_annual/scenario_metrics.csv": {
+      "bytes": 6724,
+      "crlf_bytes": 6745,
+      "crlf_sha256": "5bdd0f2318bccb81274802b93d15bf2f7ce5aab29e6197609e2f0efa1763351b",
+      "sha256": "a1b7b13c2f237addbcfa197fe0b197b10728658bce8ba0830564fa274dceb8df"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/equal_weight_annual/summary.csv": {
+      "bytes": 771,
+      "crlf_bytes": 772,
+      "crlf_sha256": "b50e087092bee6a890af4032eae2ffc74cbc5f952ab796c9595ebf8537da5681",
+      "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/equal_weight_annual/target_scores.csv": {
+      "bytes": 197,
+      "crlf_bytes": 198,
+      "crlf_sha256": "773f9df984ddb55979597b81070c06e3d1c23205bc66b89680a980def336f7c4",
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/equal_weight_buy_hold/annual_ledgers.csv": {
+      "bytes": 632,
+      "crlf_bytes": 633,
+      "crlf_sha256": "eb109dd041cdb726ae367fc0866642a8eee37ce4d441032da77424383a6313e5",
+      "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/equal_weight_buy_hold/decisions.csv": {
+      "bytes": 310,
+      "crlf_bytes": 311,
+      "crlf_sha256": "d063ca101d2deff056e91a3487b658fd7e977f464cc7b6c7070066602117cef0",
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/equal_weight_buy_hold/scenario_metrics.csv": {
+      "bytes": 6764,
+      "crlf_bytes": 6785,
+      "crlf_sha256": "91743bff879dacbdab6deed889d602307072d27859fbbc945318d265fdb3fb90",
+      "sha256": "674cbb2cc539d1bec35c6462b8e2b8a7877f1e60aa3781ba345752e3778f7509"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/equal_weight_buy_hold/summary.csv": {
+      "bytes": 771,
+      "crlf_bytes": 772,
+      "crlf_sha256": "b50e087092bee6a890af4032eae2ffc74cbc5f952ab796c9595ebf8537da5681",
+      "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/equal_weight_buy_hold/target_scores.csv": {
+      "bytes": 197,
+      "crlf_bytes": 198,
+      "crlf_sha256": "773f9df984ddb55979597b81070c06e3d1c23205bc66b89680a980def336f7c4",
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/growth_cost/annual_ledgers.csv": {
+      "bytes": 632,
+      "crlf_bytes": 633,
+      "crlf_sha256": "eb109dd041cdb726ae367fc0866642a8eee37ce4d441032da77424383a6313e5",
+      "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/growth_cost/decisions.csv": {
+      "bytes": 310,
+      "crlf_bytes": 311,
+      "crlf_sha256": "d063ca101d2deff056e91a3487b658fd7e977f464cc7b6c7070066602117cef0",
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/growth_cost/scenario_metrics.csv": {
+      "bytes": 6754,
+      "crlf_bytes": 6775,
+      "crlf_sha256": "98906a888faa3ecc9b743c3bfabfac719252e24ff757e21d7141edb38d99662d",
+      "sha256": "883d776bcc0d1bb30ec3307345caa37d9848a423dc665cb271675ed58b486c78"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/growth_cost/summary.csv": {
+      "bytes": 771,
+      "crlf_bytes": 772,
+      "crlf_sha256": "b50e087092bee6a890af4032eae2ffc74cbc5f952ab796c9595ebf8537da5681",
+      "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/cases/growth_cost/target_scores.csv": {
+      "bytes": 197,
+      "crlf_bytes": 198,
+      "crlf_sha256": "773f9df984ddb55979597b81070c06e3d1c23205bc66b89680a980def336f7c4",
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/checks.json": {
+      "bytes": 70,
+      "crlf_bytes": 74,
+      "crlf_sha256": "2d91381e920f5be82f0c39c1a6506c2951428e7b965a45ba5909098ff725dcbc",
+      "sha256": "fcbe9152b5c6dc0a811afa5d5f5b7f9a9b5462378d2696bf6440154e84c01c28"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/reference_imports.json": {
+      "bytes": 57,
+      "crlf_bytes": 60,
+      "crlf_sha256": "481a865a9e82aa6c0d2026bad49824a69962d1e5d58c7316363f353b742ff583",
+      "sha256": "0b7e73d2fdccbdf853c3dd0bb90e266a968c7877f187d0cac681faf274fdc1d7"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/doubled/run_manifest.json": {
+      "bytes": 474,
+      "crlf_bytes": 494,
+      "crlf_sha256": "cdd2d2332fce02a6b14e06cbcc3c236d845e27294ce0eda2bee9dad23438090c",
+      "sha256": "6a7306aa2c482b05c035bffc30796a4d220b548a4e505b1c53ef2a33a77125dd"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/calibrations.json": {
+      "bytes": 43,
+      "crlf_bytes": 46,
+      "crlf_sha256": "4ee5ff07b20d635349b306a7a042f501373dffebbf28eb2d746ac7c7604395b7",
+      "sha256": "c5afdb772897648346856b3853efa98ac1d5c83054e29d8c05def614cb81fa1e"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/balanced_adaptive/annual_ledgers.csv": {
+      "bytes": 632,
+      "crlf_bytes": 633,
+      "crlf_sha256": "eb109dd041cdb726ae367fc0866642a8eee37ce4d441032da77424383a6313e5",
+      "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/balanced_adaptive/decisions.csv": {
+      "bytes": 310,
+      "crlf_bytes": 311,
+      "crlf_sha256": "d063ca101d2deff056e91a3487b658fd7e977f464cc7b6c7070066602117cef0",
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/balanced_adaptive/scenario_metrics.csv": {
+      "bytes": 6914,
+      "crlf_bytes": 6935,
+      "crlf_sha256": "529a568c905c0d4e9ee9ac2d0bc91ec4618a39c5887ec445f08c8324809f5a77",
+      "sha256": "7de487022ce5df4e2f306c8df4bf741e7ca2435e15f3aab62ab048eb733b2fd2"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/balanced_adaptive/summary.csv": {
+      "bytes": 771,
+      "crlf_bytes": 772,
+      "crlf_sha256": "b50e087092bee6a890af4032eae2ffc74cbc5f952ab796c9595ebf8537da5681",
+      "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/balanced_adaptive/target_scores.csv": {
+      "bytes": 197,
+      "crlf_bytes": 198,
+      "crlf_sha256": "773f9df984ddb55979597b81070c06e3d1c23205bc66b89680a980def336f7c4",
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/balanced_context/annual_ledgers.csv": {
+      "bytes": 632,
+      "crlf_bytes": 633,
+      "crlf_sha256": "eb109dd041cdb726ae367fc0866642a8eee37ce4d441032da77424383a6313e5",
+      "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/balanced_context/decisions.csv": {
+      "bytes": 310,
+      "crlf_bytes": 311,
+      "crlf_sha256": "d063ca101d2deff056e91a3487b658fd7e977f464cc7b6c7070066602117cef0",
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/balanced_context/scenario_metrics.csv": {
+      "bytes": 6874,
+      "crlf_bytes": 6895,
+      "crlf_sha256": "adbe1975b36426f3055a210628fe435947890a06b92d76c64e3c2d235f7fe85a",
+      "sha256": "23494428ca7a1fcaf68cf1042f7f2196710de36aba7b64e5a71afacc88328e1c"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/balanced_context/summary.csv": {
+      "bytes": 771,
+      "crlf_bytes": 772,
+      "crlf_sha256": "b50e087092bee6a890af4032eae2ffc74cbc5f952ab796c9595ebf8537da5681",
+      "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/balanced_context/target_scores.csv": {
+      "bytes": 197,
+      "crlf_bytes": 198,
+      "crlf_sha256": "773f9df984ddb55979597b81070c06e3d1c23205bc66b89680a980def336f7c4",
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/balanced_cost/annual_ledgers.csv": {
+      "bytes": 632,
+      "crlf_bytes": 633,
+      "crlf_sha256": "eb109dd041cdb726ae367fc0866642a8eee37ce4d441032da77424383a6313e5",
+      "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/balanced_cost/decisions.csv": {
+      "bytes": 310,
+      "crlf_bytes": 311,
+      "crlf_sha256": "d063ca101d2deff056e91a3487b658fd7e977f464cc7b6c7070066602117cef0",
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/balanced_cost/scenario_metrics.csv": {
+      "bytes": 6814,
+      "crlf_bytes": 6835,
+      "crlf_sha256": "9bd4695c8cf9f7e10e5bf8b57c5795f0b1d1231aace41fbee37209c711d2c707",
+      "sha256": "9195b00851387d8d439972a851d287bfb45d8a2e3993923f861c37e19615c7d7"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/balanced_cost/summary.csv": {
+      "bytes": 771,
+      "crlf_bytes": 772,
+      "crlf_sha256": "b50e087092bee6a890af4032eae2ffc74cbc5f952ab796c9595ebf8537da5681",
+      "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/balanced_cost/target_scores.csv": {
+      "bytes": 197,
+      "crlf_bytes": 198,
+      "crlf_sha256": "773f9df984ddb55979597b81070c06e3d1c23205bc66b89680a980def336f7c4",
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/bills_keep/annual_ledgers.csv": {
+      "bytes": 632,
+      "crlf_bytes": 633,
+      "crlf_sha256": "eb109dd041cdb726ae367fc0866642a8eee37ce4d441032da77424383a6313e5",
+      "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/bills_keep/decisions.csv": {
+      "bytes": 310,
+      "crlf_bytes": 311,
+      "crlf_sha256": "d063ca101d2deff056e91a3487b658fd7e977f464cc7b6c7070066602117cef0",
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/bills_keep/scenario_metrics.csv": {
+      "bytes": 6564,
+      "crlf_bytes": 6585,
+      "crlf_sha256": "058b4c94b780e0b274fa82af0643da4b9e24bf9cb00b2f444fa42e5aa82daf5e",
+      "sha256": "52cd50057def6b9ebbcb7cf594e805c16d10655a0f15034349f90869b8133efa"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/bills_keep/summary.csv": {
+      "bytes": 771,
+      "crlf_bytes": 772,
+      "crlf_sha256": "b50e087092bee6a890af4032eae2ffc74cbc5f952ab796c9595ebf8537da5681",
+      "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/bills_keep/target_scores.csv": {
+      "bytes": 197,
+      "crlf_bytes": 198,
+      "crlf_sha256": "773f9df984ddb55979597b81070c06e3d1c23205bc66b89680a980def336f7c4",
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/conservative_cost/annual_ledgers.csv": {
+      "bytes": 632,
+      "crlf_bytes": 633,
+      "crlf_sha256": "eb109dd041cdb726ae367fc0866642a8eee37ce4d441032da77424383a6313e5",
+      "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/conservative_cost/decisions.csv": {
+      "bytes": 310,
+      "crlf_bytes": 311,
+      "crlf_sha256": "d063ca101d2deff056e91a3487b658fd7e977f464cc7b6c7070066602117cef0",
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/conservative_cost/scenario_metrics.csv": {
+      "bytes": 6894,
+      "crlf_bytes": 6915,
+      "crlf_sha256": "b2c9e017133ab430fb992aeaf1ae1d541424c8c576538706d4f33be4a5719219",
+      "sha256": "f7bbd85b40e392d539e07ca91e75602ee43f831b5fba52e1abecb63522a0456a"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/conservative_cost/summary.csv": {
+      "bytes": 771,
+      "crlf_bytes": 772,
+      "crlf_sha256": "b50e087092bee6a890af4032eae2ffc74cbc5f952ab796c9595ebf8537da5681",
+      "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/conservative_cost/target_scores.csv": {
+      "bytes": 197,
+      "crlf_bytes": 198,
+      "crlf_sha256": "773f9df984ddb55979597b81070c06e3d1c23205bc66b89680a980def336f7c4",
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/equal_weight_annual/annual_ledgers.csv": {
+      "bytes": 632,
+      "crlf_bytes": 633,
+      "crlf_sha256": "eb109dd041cdb726ae367fc0866642a8eee37ce4d441032da77424383a6313e5",
+      "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/equal_weight_annual/decisions.csv": {
+      "bytes": 310,
+      "crlf_bytes": 311,
+      "crlf_sha256": "d063ca101d2deff056e91a3487b658fd7e977f464cc7b6c7070066602117cef0",
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/equal_weight_annual/scenario_metrics.csv": {
+      "bytes": 6744,
+      "crlf_bytes": 6765,
+      "crlf_sha256": "b2edd485fa90ef34d27a36e2661f55c3ee090a68d596d76b3a3850abee5065a3",
+      "sha256": "3e786c05dbe941459147ace1bc79146bd47243a6642b725701a28717782e57fc"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/equal_weight_annual/summary.csv": {
+      "bytes": 771,
+      "crlf_bytes": 772,
+      "crlf_sha256": "b50e087092bee6a890af4032eae2ffc74cbc5f952ab796c9595ebf8537da5681",
+      "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/equal_weight_annual/target_scores.csv": {
+      "bytes": 197,
+      "crlf_bytes": 198,
+      "crlf_sha256": "773f9df984ddb55979597b81070c06e3d1c23205bc66b89680a980def336f7c4",
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/equal_weight_buy_hold/annual_ledgers.csv": {
+      "bytes": 632,
+      "crlf_bytes": 633,
+      "crlf_sha256": "eb109dd041cdb726ae367fc0866642a8eee37ce4d441032da77424383a6313e5",
+      "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/equal_weight_buy_hold/decisions.csv": {
+      "bytes": 310,
+      "crlf_bytes": 311,
+      "crlf_sha256": "d063ca101d2deff056e91a3487b658fd7e977f464cc7b6c7070066602117cef0",
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/equal_weight_buy_hold/scenario_metrics.csv": {
+      "bytes": 6784,
+      "crlf_bytes": 6805,
+      "crlf_sha256": "3e0ff7894b7d049cd86345c535d27cccb4f32845017c1a11dd5cd7dc68689319",
+      "sha256": "11b08d50fb085120435f7b15cafa61295979c83fab217b06584e7782ef6b41f3"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/equal_weight_buy_hold/summary.csv": {
+      "bytes": 771,
+      "crlf_bytes": 772,
+      "crlf_sha256": "b50e087092bee6a890af4032eae2ffc74cbc5f952ab796c9595ebf8537da5681",
+      "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/equal_weight_buy_hold/target_scores.csv": {
+      "bytes": 197,
+      "crlf_bytes": 198,
+      "crlf_sha256": "773f9df984ddb55979597b81070c06e3d1c23205bc66b89680a980def336f7c4",
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/growth_cost/annual_ledgers.csv": {
+      "bytes": 632,
+      "crlf_bytes": 633,
+      "crlf_sha256": "eb109dd041cdb726ae367fc0866642a8eee37ce4d441032da77424383a6313e5",
+      "sha256": "4ae5b147913b2f07921a2d4f79b54c93615e4b5002ec12802235ee8c71299972"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/growth_cost/decisions.csv": {
+      "bytes": 310,
+      "crlf_bytes": 311,
+      "crlf_sha256": "d063ca101d2deff056e91a3487b658fd7e977f464cc7b6c7070066602117cef0",
+      "sha256": "754543c8f32b739645aef48da814d2ea5e90e6e178174b3b8d2aeca8c27067c1"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/growth_cost/scenario_metrics.csv": {
+      "bytes": 6774,
+      "crlf_bytes": 6795,
+      "crlf_sha256": "245268b19924f1887eca59a11cacbe104a2fb78cb2d8386f527daa5379fe472c",
+      "sha256": "7c9976a1618a0015b8b941fb8dc60060d2d92f77647354f27ae749e911f0e570"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/growth_cost/summary.csv": {
+      "bytes": 771,
+      "crlf_bytes": 772,
+      "crlf_sha256": "b50e087092bee6a890af4032eae2ffc74cbc5f952ab796c9595ebf8537da5681",
+      "sha256": "8c397ca13cd89c9326d1fa46762b99c57fce276fdfd0a28f1d1f6c1068759f14"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/cases/growth_cost/target_scores.csv": {
+      "bytes": 197,
+      "crlf_bytes": 198,
+      "crlf_sha256": "773f9df984ddb55979597b81070c06e3d1c23205bc66b89680a980def336f7c4",
+      "sha256": "49b63c8a7b838876b78d87970d6106f673eb1c36d95ab42f7def657cb308bb1b"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/checks.json": {
+      "bytes": 70,
+      "crlf_bytes": 74,
+      "crlf_sha256": "2d91381e920f5be82f0c39c1a6506c2951428e7b965a45ba5909098ff725dcbc",
+      "sha256": "fcbe9152b5c6dc0a811afa5d5f5b7f9a9b5462378d2696bf6440154e84c01c28"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/reference_imports.json": {
+      "bytes": 57,
+      "crlf_bytes": 60,
+      "crlf_sha256": "481a865a9e82aa6c0d2026bad49824a69962d1e5d58c7316363f353b742ff583",
+      "sha256": "0b7e73d2fdccbdf853c3dd0bb90e266a968c7877f187d0cac681faf274fdc1d7"
+    },
+    "audit/SOL-038/fixture/bytes/bundles/primary/run_manifest.json": {
+      "bytes": 475,
+      "crlf_bytes": 495,
+      "crlf_sha256": "4ec4a89c121e1edbd91074e57874066e9cddc8aff08174496607a3ef74d3bd2a",
+      "sha256": "65a5ae2759d88c5bb3f0e670d8bc4f3f58e7c11233f8c666152762f9bfd8de55"
+    },
+    "audit/SOL-038/fixture/bytes/chief/GEN-doubled.json": {
+      "bytes": 5802,
+      "crlf_bytes": 5853,
+      "crlf_sha256": "b4884f661fe64954358c4afd10d61947474fa8de4b88a49fd913c2b92b80d7b8",
+      "sha256": "ce8258155710a5152b14c344c76ec47b41e90236d10221bd9d3bce7f7c225cfd"
+    },
+    "audit/SOL-038/fixture/bytes/chief/GEN-primary.json": {
+      "bytes": 5802,
+      "crlf_bytes": 5853,
+      "crlf_sha256": "3593e1ee6f79b7cdd7beb61a4c72d97760caf2a6f564e5f7b3b4798f7e74976c",
+      "sha256": "7ddfd0ebd9474a984128827d01e6923d5c41db0a5947cc0d95dbb4434520d6d6"
+    },
+    "audit/SOL-038/fixture/bytes/config.json": {
+      "bytes": 13032,
+      "crlf_bytes": 13153,
+      "crlf_sha256": "1daf6715b464202bcb157f2d0dc0359cf0bd8bdea7db02d58f282a21bfec82f6",
+      "sha256": "4cf2cf8039d1a1abb5cdeeddbb97c750d281422f2ba7a7fd876be5a85af246ea"
+    },
+    "audit/SOL-038/fixture/bytes/handoff/GEN-doubled/result.json": {
+      "bytes": 5959,
+      "crlf_bytes": 6014,
+      "crlf_sha256": "99491227b690420fd64923b471b9356e1051b09634b8c325d1e4748f5697acc7",
+      "sha256": "4b6624cc29552b3591773a3e020761722cb095eae1252102c450aa6e1319c477"
+    },
+    "audit/SOL-038/fixture/bytes/handoff/GEN-primary/result.json": {
+      "bytes": 5959,
+      "crlf_bytes": 6014,
+      "crlf_sha256": "6855ddd75187744784d6b3e14e9e3dd79bc25f3e018f4f794a8802d2f41d0fd2",
+      "sha256": "99c2d6514c744ba1c1ab2fea1a304d64b43364b08b1d5a0bd2629112aea2c046"
+    },
+    "audit/SOL-038/fixture/bytes/later.txt": {
+      "bytes": 28,
+      "crlf_bytes": 29,
+      "crlf_sha256": "f41aadd08dcc7e86fdadc01cd4b240e231402d04f976e3c62162026d33979fa4",
+      "sha256": "18794b3bc1804cc91d40d2e9a3e5baadf5830187b9bb346a90d183792f7e3f17"
+    },
+    "audit/SOL-038/fixture/bytes/ops/queue.json": {
+      "bytes": 927,
+      "crlf_bytes": 957,
+      "crlf_sha256": "c83ad94639cabc46670926e62d16ed4c675f6eda99b4af6f5dd0561961c88f97",
+      "sha256": "389bdbe4c67916b4696afc1238893adf51249f30d1709e4b2656898010b52b33"
+    },
+    "audit/SOL-038/fixture/bytes/ops/tasks/GEN-analysis.json": {
+      "bytes": 272,
+      "crlf_bytes": 281,
+      "crlf_sha256": "d99882977a9ada15c06b31c64b9734963f438fe1d4fb9b049b5d2b1d99d58da1",
+      "sha256": "0a9164380772cf4a107aed1731404f22aebbd2e358695ace984a0bc65778170f"
+    },
+    "audit/SOL-038/fixture/bytes/ops/tasks/GEN-doubled.json": {
+      "bytes": 214,
+      "crlf_bytes": 223,
+      "crlf_sha256": "eabb2936dd525caccb54730f38fc924d2b491ce43f02fa5e51a3254a01ab078b",
+      "sha256": "dbb44f1f88e38e7569a9afb6f02167edbe13179d7c7889f7a3c23b996a24b9f6"
+    },
+    "audit/SOL-038/fixture/bytes/ops/tasks/GEN-primary.json": {
+      "bytes": 214,
+      "crlf_bytes": 223,
+      "crlf_sha256": "ca04aec9072338a2466bf53b125767cb7c089c8ac05ab75ebceebba2e2362c3f",
+      "sha256": "552762fb5a5056c1c461377d840923e04acb479023dbd47097a410fff03f3c90"
+    },
+    "audit/SOL-038/fixture/bytes/source.txt": {
+      "bytes": 49,
+      "crlf_bytes": 50,
+      "crlf_sha256": "1e534d0a74cf03a4614294b0ddc6b99b6853ab9e7a19fb21788309473f9db308",
+      "sha256": "e49845df02054b958fb32c0e76d8dfff88762e88a2c4b5f483e831627b7d4742"
+    },
+    "audit/SOL-038/fixture/checker-source.txt": {
+      "bytes": 4225,
+      "crlf_bytes": 4238,
+      "crlf_sha256": "861fd6a6f40a44595c243e432dae7875eeb0134edec438665aa3aa058ebf1f0e",
+      "sha256": "dcd6b6973701c2c984d8960f9012a60d6c4c46b1d6a208498fbef0fcca881a4a"
+    },
+    "audit/SOL-038/fixture/objects.bundle": {
+      "bytes": 16155,
+      "crlf_bytes": 16155,
+      "crlf_sha256": "2c050b7266b8cdf68edabb819ee47851bc480c82a22405cc2134f549bde5fb42",
+      "sha256": "2c050b7266b8cdf68edabb819ee47851bc480c82a22405cc2134f549bde5fb42"
+    },
+    "audit/SOL-038/generated.py": {
+      "bytes": 8444,
+      "crlf_bytes": 8586,
+      "crlf_sha256": "e73a96277f8303d09ea4f66ef8a520d253a0f78bbba6fc798db26a60e64c8936",
+      "sha256": "890515e31754575f2721c023602c1205bd89280531b11eb1646b238a7ed6aee2"
+    },
+    "audit/SOL-038/history/.gitattributes": {
+      "bytes": 30,
+      "crlf_bytes": 32,
+      "crlf_sha256": "c0aed056558d596e85d6dc13d8cb20180acd9d4b44187c3655f22d6322ad297f",
+      "sha256": "db7fc75ba4f379cc667b0611d9791a5f5490213e71bd1ea0c23e603a919499c1"
+    },
+    "audit/SOL-038/history/boundary-module-records.json": {
+      "bytes": 15791,
+      "crlf_bytes": 15863,
+      "crlf_sha256": "bfa0990252065dcd644280e1575ce8e0b9445e57eb2b2557c4337f7c2485f5c4",
+      "sha256": "37de07f7fa25d2e34c0306c792ca7572337a3b82a2ebc9d6b3d34a7a15e21297"
+    },
+    "audit/SOL-038/history/boundary-process.json": {
+      "bytes": 93,
+      "crlf_bytes": 98,
+      "crlf_sha256": "22af8786650eb9b15117a95fde61f2d9a5a745de258c8c7f533b099973bf696a",
+      "sha256": "26cfbdc7c1fefa2c4feb0c8f3daca753bee57050ff0afa9d6f951b6638db92a9"
+    },
+    "audit/SOL-038/history/clean-environment-checks.json": {
+      "bytes": 91183,
+      "crlf_bytes": 91909,
+      "crlf_sha256": "151deacb8416bb217367ac56ad7b93b391249135fbadf920a7a3abd39caeb2c1",
+      "sha256": "cbd642f8205b57818b0c82f1675823a9b4c3019a4d1055a861eabac531458929"
+    },
+    "audit/SOL-038/history/construction-process.json": {
+      "bytes": 259,
+      "crlf_bytes": 270,
+      "crlf_sha256": "fe9131322804b0fc2e412ab57eca796fa75eddf637f7d5ff601084108915227e",
+      "sha256": "04541a32496797b4e0ef47e1ead8b0ad1a6a0b58308d36e146f6639e3df99e0f"
+    },
+    "audit/SOL-038/history/failed-final-001-verification.json": {
+      "bytes": 42865,
+      "crlf_bytes": 43165,
+      "crlf_sha256": "7dad9c00676d3a31c84614b44ad0955478b20c467ed7bfb476c8c0609bc2dec1",
+      "sha256": "0dec22e76aa2d9d0bdcc9f4664af509b8c53809823c7812cab303acc446dd118"
+    },
+    "audit/SOL-038/history/failed-final-001-verify.py": {
+      "bytes": 10698,
+      "crlf_bytes": 10866,
+      "crlf_sha256": "6c979072cf91afe0872a6c2010d06771d763001b7ab684de26286feef85feb51",
+      "sha256": "f6bc878d3c247719dbf923cd557024daaa1ef1279529518018e9168e9c06ac6e"
+    },
+    "audit/SOL-038/history/final-001-0.stderr.txt": {
+      "bytes": 1879,
+      "crlf_bytes": 1895,
+      "crlf_sha256": "db8269265894083535a78e3a99c78da09eeaccd4b786ab34943f96945a92ea93",
+      "sha256": "736c63ec6a1136c8406406da5d547926b8131329b980c0e24fdec8ec2a4f7dca"
+    },
+    "audit/SOL-038/history/final-001-0.stdout.txt": {
+      "bytes": 1459,
+      "crlf_bytes": 1460,
+      "crlf_sha256": "e3de9d342c2d8063fb5329248f1f1d72a08992760292884f2c2979e89e2c8635",
+      "sha256": "805d6e847cbb8652245bf245d4e19e4bd0bc796ccf34a38fbd15e653d4617e44"
+    },
+    "audit/SOL-038/history/final-001-1.stderr.txt": {
+      "bytes": 397,
+      "crlf_bytes": 404,
+      "crlf_sha256": "18e51dd70a9d296991a59fd4a6137628bcc080503cd8c60748f9098254097298",
+      "sha256": "405ce73b140ec00c27e284ea9aa66203a6eb2a11b10560497cb25f284f0e1321"
+    },
+    "audit/SOL-038/history/final-001-1.stdout.txt": {
+      "bytes": 0,
+      "crlf_bytes": 0,
+      "crlf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-038/history/final-001-recorder.json": {
+      "bytes": 84705,
+      "crlf_bytes": 84710,
+      "crlf_sha256": "650078a7483590aa66af24a299e881113572e41b8caa9bee1c21ac74eb87e479",
+      "sha256": "4b9c1910abd44831cf1bd1094213a1ca3c377656ff5f20b8d472f5792ef2d333"
+    },
+    "audit/SOL-038/history/final-001.json": {
+      "bytes": 86012,
+      "crlf_bytes": 86676,
+      "crlf_sha256": "328cb4a9cb09480c9067863344b43887dd646108c4ba830788f127dc8d4e9596",
+      "sha256": "9fefe0d372807a8d8df41c6105f9c11be6ecc9385ca81f97f5f1af766c820f6e"
+    },
+    "audit/SOL-038/history/final-002-0.stderr.txt": {
+      "bytes": 1879,
+      "crlf_bytes": 1895,
+      "crlf_sha256": "1f15d3e0a097baa71e26fed24d8ffbf3f95884e2e6cf0126ddaa370256dc805f",
+      "sha256": "838d41e7357a9e2a72c25745f5d9d0e5de42b7a84a39e5124c9e38b89d202ec6"
+    },
+    "audit/SOL-038/history/final-002-0.stdout.txt": {
+      "bytes": 1459,
+      "crlf_bytes": 1460,
+      "crlf_sha256": "e3de9d342c2d8063fb5329248f1f1d72a08992760292884f2c2979e89e2c8635",
+      "sha256": "805d6e847cbb8652245bf245d4e19e4bd0bc796ccf34a38fbd15e653d4617e44"
+    },
+    "audit/SOL-038/history/final-002-1.stderr.txt": {
+      "bytes": 0,
+      "crlf_bytes": 0,
+      "crlf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-038/history/final-002-1.stdout.txt": {
+      "bytes": 1813,
+      "crlf_bytes": 1814,
+      "crlf_sha256": "bc1b7681f68eff82b091c60ddc232f55e8b1def616b2b620e990c51d8e594832",
+      "sha256": "8dd11443508f0cad01fa39469ff3b583b3a566d26ab609b79d2389c74c52f0da"
+    },
+    "audit/SOL-038/history/final-002-inventory.json": {
+      "bytes": 65361,
+      "crlf_bytes": 66913,
+      "crlf_sha256": "80d74f0d2dec46ba43645008d484f3f56f1d3844b4e1d8e9c20fed24aa759a45",
+      "sha256": "2d139b8fc036a9437235b4d52f9ca3b42ab2bab270b60d0c77cf597952c75d37"
+    },
+    "audit/SOL-038/history/final-002-recorder.json": {
+      "bytes": 84706,
+      "crlf_bytes": 84711,
+      "crlf_sha256": "7679550f0a881c55e3babd9a86953d2898959c5fe55468f1f85d27e3001fe62b",
+      "sha256": "23498a8c98705b540650b2b4a53cc980aa996473c92453b9ba53e339004f3902"
+    },
+    "audit/SOL-038/history/final-002.json": {
+      "bytes": 86013,
+      "crlf_bytes": 86677,
+      "crlf_sha256": "ef6360feae5f380f1e6546be22e3290031ff5fdf5abd8adca9a2b91f72784b4a",
+      "sha256": "ae14eafb741ad9ebd739303e933568d07ee249cf8ea3a6f25bdbc9ad9b6e071a"
+    },
+    "audit/SOL-038/history/findings.json": {
+      "bytes": 1896,
+      "crlf_bytes": 1941,
+      "crlf_sha256": "f106ef1a5ae23dd592da15dc8a3454f1d4f9824f2950e72d2c93c59b60f5bb9a",
+      "sha256": "bf9cb7c280222e7aa66469d288b3c6757fe47c7a9cb8647c4359ef4d6fa95d78"
+    },
+    "audit/SOL-038/history/infrastructure.json": {
+      "bytes": 615,
+      "crlf_bytes": 621,
+      "crlf_sha256": "b47ed9c5cfab479bf2ae0608d052998729a0a6bf63f4b638ac56e6b19af2b9c0",
+      "sha256": "8b9e3430fb7a9077b742407470ddce9ed258ad5e9d65f6d60545813f4c4f2659"
+    },
+    "audit/SOL-038/history/initial-inventory.json": {
+      "bytes": 5866,
+      "crlf_bytes": 6023,
+      "crlf_sha256": "b9b142abdc3e1aaa1ddcc50c8780148e5d0244a9471449edd2a75d55023d918d",
+      "sha256": "8309ed52dcfa3183e30831241a57964b354490b6a41c46ff20eeab4cdd9fbd0d"
+    },
+    "audit/SOL-038/history/prior-validation-seal-004.json": {
+      "bytes": 53920,
+      "crlf_bytes": 54964,
+      "crlf_sha256": "28a66e33031c4463c5eceee8c1c812af6082e999a51f2bbdf4cef53c878c7b8a",
+      "sha256": "b5e755beb64ca20c05de36a4bcdbeed09b9738de14b2c69b3753eb874d8299f3"
+    },
+    "audit/SOL-038/history/scalar-facts.json": {
+      "bytes": 12963,
+      "crlf_bytes": 13107,
+      "crlf_sha256": "99b110a822a395ee37a5a9f415e52285995ec36f6cb70abfbb6ff421fd481876",
+      "sha256": "3c0ebbc4cfde8988ef8e3810baef13f784d0893eefa2ba971c94bdd325ff1d6a"
+    },
+    "audit/SOL-038/history/trial-002-0.stderr.txt": {
+      "bytes": 2698,
+      "crlf_bytes": 2723,
+      "crlf_sha256": "0e3d55e1777f250d3490c6f93d0b9f154b32c7dfb98c2a48f54b8b907a48352f",
+      "sha256": "75b6b2a8bd13cda113c39eb6810524ad6347fbc70689189b4c7ae0865ae73a7e"
+    },
+    "audit/SOL-038/history/trial-002-0.stdout.txt": {
+      "bytes": 0,
+      "crlf_bytes": 0,
+      "crlf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-038/history/trial-002-tests.py": {
+      "bytes": 17252,
+      "crlf_bytes": 17492,
+      "crlf_sha256": "4b3fc60667ea64d0c817ce60998091774454c89b8a596590ca25f863773e77b5",
+      "sha256": "becec4801c381f762d0e072f0a504ec380e247eb29f2f380635c44ceca0c1f4f"
+    },
+    "audit/SOL-038/history/trial-002.json": {
+      "bytes": 694,
+      "crlf_bytes": 723,
+      "crlf_sha256": "e77eaae0a6fee80581e678a8b94071169487b4e36ea00044c6921f839eea0992",
+      "sha256": "71159a060a1be04a37436c8ac711263c9dd9b788ad3d853665eb02a6ebb87ac2"
+    },
+    "audit/SOL-038/history/trial-003-0.stderr.txt": {
+      "bytes": 1879,
+      "crlf_bytes": 1895,
+      "crlf_sha256": "a083a8657471e7ba1c1ac32e09b08aa813c74fff88b68f7e065b62c223b53961",
+      "sha256": "a09c7edb0983dd810ec71589b11ef63d666f64fe6c86313174d5aae51108dc34"
+    },
+    "audit/SOL-038/history/trial-003-0.stdout.txt": {
+      "bytes": 0,
+      "crlf_bytes": 0,
+      "crlf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-038/history/trial-003-1.stderr.txt": {
+      "bytes": 983,
+      "crlf_bytes": 996,
+      "crlf_sha256": "cd85bef985e054801c185e644e653d80d7946865738aaead7ad0922715b396d4",
+      "sha256": "5e92b1c30abe0194f1063d73db69b75484fcec72d71f3f55baaeb334d08f71ae"
+    },
+    "audit/SOL-038/history/trial-003-1.stdout.txt": {
+      "bytes": 0,
+      "crlf_bytes": 0,
+      "crlf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit/SOL-038/history/trial-003.json": {
+      "bytes": 1296,
+      "crlf_bytes": 1346,
+      "crlf_sha256": "7abaf1d7940cb2e53d811ca35754b490faf00cef06279bc2954afd5c92b74354",
+      "sha256": "4b277c08ec71ef834f8638feffe4b83200bbe3b43f8b8e588f6a03dd9c2b9ea9"
+    },
+    "audit/SOL-038/history/verification.json": {
+      "bytes": 43770,
+      "crlf_bytes": 44078,
+      "crlf_sha256": "e24be823ea62a6b6fe3a357d44932e4f34d382f2fa286cc1c3251c31eb867e6c",
+      "sha256": "0ec22a18887e5f3351205675ff68c174b574aa1d3527404831833390f7652819"
+    },
+    "audit/SOL-038/implementation.md": {
+      "bytes": 4712,
+      "crlf_bytes": 4782,
+      "crlf_sha256": "4a222022067b31e6640067a19a5410b3b47b93741173f69a0ffb2014257fa11b",
+      "sha256": "e5daa85a53f7fd53a3d7c222a90facf34cad7442da15f09343332992e5df16bc"
+    },
+    "audit/SOL-038/infrastructure.json": {
+      "bytes": 593,
+      "crlf_bytes": 614,
+      "crlf_sha256": "f13d85a55c7c7e16f16cca0f5668090c8bfab97a7d9c7e4499115b95b971d9ca",
+      "sha256": "a031d49fb347eb805738f844420910261afacb626ca05bd67c00b9e205f2a6bc"
+    },
+    "audit/SOL-038/make_schema.py": {
+      "bytes": 5206,
+      "crlf_bytes": 5258,
+      "crlf_sha256": "c71fd896bf9c75f1e03f1d3d6053c69fad35a5cd0c745d78d8ccd99c3085af2b",
+      "sha256": "267b832e7447b1165f022d91aa103ab37a03d4b0d6ed2dbf26688cc309e9bbfb"
+    },
+    "audit/SOL-038/record_boundary.py": {
+      "bytes": 1816,
+      "crlf_bytes": 1837,
+      "crlf_sha256": "63c462016044558d47850412c498714e96fe65724be3d5e8ad1456739d2b8d5c",
+      "sha256": "798e7a4b4239ca79046636a545dac9726d282c3795d05276ea16f92e4ef962a6"
+    },
+    "audit/SOL-038/record_checks.py": {
+      "bytes": 2403,
+      "crlf_bytes": 2437,
+      "crlf_sha256": "a85a33b5753a81c35ebbea080b741f7a05a4c3991078bd3681721bf32fe34b16",
+      "sha256": "e0e7f09ac5db03f6b82ebd70a35a7bd944ef471ec56e8c9622179d194fa4ca95"
+    },
+    "audit/SOL-038/recovery.json": {
+      "bytes": 58645,
+      "crlf_bytes": 59055,
+      "crlf_sha256": "d56887ed7c820768746304bf7c52cb62f3825869a36cd5a3991ed152d8162d8b",
+      "sha256": "1c531c808fccfbb1f60e0655d4e7c6969461c5b69409c81e5ef05d5f83a7e662"
+    },
+    "audit/SOL-038/scalar-facts.json": {
+      "bytes": 13105,
+      "crlf_bytes": 13249,
+      "crlf_sha256": "25a23a180affcdbfa270130dc574d4c3b40805d9ccaa5a08496f079fe55799b0",
+      "sha256": "3af775a2608e2a9fc8799b079628c47f73c43b2e9eae87a51024242d1a30c4d6"
+    },
+    "audit/SOL-038/schema.json": {
+      "bytes": 62700,
+      "crlf_bytes": 65011,
+      "crlf_sha256": "5d4fae7bd415501c85289c1b2201f175bc70b83707a7eb0ee1d5744f75b12ac9",
+      "sha256": "41039918b5320399d42fb29330f3144da5878339cfa3c60dca53f04a430f83b0"
+    },
+    "audit/SOL-038/seal.py": {
+      "bytes": 1455,
+      "crlf_bytes": 1475,
+      "crlf_sha256": "1010ac5d65973b09553ab6deeb800666ce4bcd94f318b5eb8183f49958e378d9",
+      "sha256": "144f58f1a3f0114b8d71b8f5276bdcd60a4da732bebb74b49cafd2ef84af9f53"
+    },
+    "audit/SOL-038/task.json": {
+      "bytes": 9064,
+      "crlf_bytes": 9189,
+      "crlf_sha256": "c101329846a0cc13898765d1d9b563f9e94409604f002ed522d8c2da6cb74c6e",
+      "sha256": "7a3c9303cf38ea6a6ba84baed8f514efa71518c9786faf55ab228d7dc71b5de1"
+    },
+    "audit/SOL-038/verify.py": {
+      "bytes": 13716,
+      "crlf_bytes": 13926,
+      "crlf_sha256": "c789a6402fb80b5c5fc2560bade9800f1cf3f9204d9b913d5ff22d70173cf403",
+      "sha256": "725453584a596a7dd0bce77a6984358f5c5f2de6640658fb732b3a3b9925f628"
+    },
+    "scripts/run_development_analysis.py": {
+      "bytes": 12128,
+      "crlf_bytes": 12326,
+      "crlf_sha256": "745dd3961c22ca6637d902cebc807b7035acf4d530ffe6674e7a1097500987a2",
+      "sha256": "d6a59b2d4c39f4fffbd02db0ddfb545fad097bdcc3bc74ecc042b21ac14d70e5"
+    },
+    "src/safeinvest/policy_analysis_writer.py": {
+      "bytes": 31568,
+      "crlf_bytes": 32040,
+      "crlf_sha256": "2434bf8ea75354e118f0c5949d7581ea068383bfdc7c02802bc5a2c950051e9e",
+      "sha256": "ebd4d595069d8b8474c26d6e4b6f453928fb3cf26559262cc70beb77123ed2f1"
+    },
+    "tests/test_policy_analysis_writer.py": {
+      "bytes": 20688,
+      "crlf_bytes": 20969,
+      "crlf_sha256": "e069c88507f95695a9df8a4979764234ce38c4f3e514576aa15787a9dec45fa9",
+      "sha256": "7253b1b23c92bce53d70a5ae34bfd7ea64212b5de140ed386109b5e62dd0759b"
+    }
+  },
+  "publication_commit": "95eb627ce6536662b8c583dfd2e6046c3aaf0ea9",
+  "schema_version": 1,
+  "task_blob_sha256": "7a3c9303cf38ea6a6ba84baed8f514efa71518c9786faf55ab228d7dc71b5de1",
+  "task_digest": "03472407ca3633a28501784679d1d1d03c1fb39766179620ad27a5e058214f34",
+  "task_id": "SOL-038"
+}

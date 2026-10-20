@@ -6,6 +6,7 @@ ROOT=Path(__file__).resolve().parents[2]
 def main():
     label=sys.argv[1]
     commands=[[sys.executable,'-B','-m','unittest','discover','-s','tests','-p','test_policy_analysis_writer.py','-v']]
+    if label.endswith('verify-only'):commands=[]
     if not label.endswith('tests-only'):commands.append([sys.executable,'-B','audit/SOL-038/verify.py','--check'])
     env={k:v for k,v in os.environ.items() if k.upper()!='PYTHONPATH'}
     def inventory():

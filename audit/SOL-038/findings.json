@@ -10,7 +10,7 @@
     "artifact_hash_basis": "canonical_git_blob",
     "receipt_status": "failed"
   },
-  "status": "generated_local_checks_pending_audit_replay",
+  "status": "generated_only_pending_parent_validation_and_chief_acceptance",
   "production_executed": false,
   "competition_input_read": false,
   "production_configuration_created": false,
@@ -56,11 +56,22 @@
     "Failed SOL-034 parent timeout remains immutable failure",
     "All original receipt artifacts authenticated at exact object; copied compact historical logs retain old identities",
     "Original trial-002, trial-003 and final-001 LF/CRLF failure evidence preserved",
-    "Current shell helper failures and interrupted synchronous test-owner trial recorded without claiming a pass"
+    "Current shell helper failures and interrupted synchronous test-owner trial recorded without claiming a pass",
+    "SOL-038 local-check-003: repeated unittest 11/12, inherited 5 ms timeout-test sleep did not exceed measured budget; read-only audit passed. Original tests/seal/logs preserved; only test wait changed to measured elapsed time.",
+    "SOL-038 local-check-004: corrected 12 tests passed; verifier correctly rejected concurrent clean-environment-checks.json creation by the model during its before/after inventory. No verifier or production guard was weakened; replay is rerun without concurrent writes."
   ],
   "limits": [
     "Generated fixtures establish software behavior only; no real HY3 producer outcomes are consumed",
     "Both immutable parent validation commands remain required after model exit",
     "Chief must independently review delivered exact source and selected scalar boundaries before acceptance"
-  ]
+  ],
+  "timeout_test_fix": "No production guard changes; operation waits until actual monotonic elapsed time exceeds .05 seconds, then unchanged .001 second guard must reject.",
+  "corrected_focused_tests": {
+    "tests": 12,
+    "exit_code": 0,
+    "elapsed_seconds": 74.07799999997951,
+    "pythonpath_absent": true,
+    "inventories_unchanged": true,
+    "record": "audit/SOL-038/local-check-004.json"
+  }
 }

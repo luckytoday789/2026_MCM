@@ -239,7 +239,9 @@ class AssemblyTests(unittest.TestCase):
         def partial(stage,start):
             w._write(stage/'partial.txt',b'partial');raise RuntimeError('generated partial failure')
         def timeout(stage,start):
-            w._write(stage/'partial.txt',b'partial');time.sleep(.005)
+            w._write(stage/'partial.txt',b'partial')
+            # Wait for measured elapsed time; fixed tiny sleeps can quantize to zero.
+            while time.monotonic()-start<=.05:time.sleep(.01)
         def oversized(stage,start):w._write(stage/'big.bin',b'x'*11,10)
         for label,op,seconds in (('partial',partial,1),('timeout',timeout,.001),('oversize',oversized,1)):
             out=self.dir/label

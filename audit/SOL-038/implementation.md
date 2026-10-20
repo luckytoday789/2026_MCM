@@ -57,3 +57,14 @@ and protected inventories. The parent must still run both immutable validation
 commands after model exit; only chief review of the delivered exact commit can
 accept this task. No network fetch, package/model call, worker, branch edit,
 repository commit, push, production run or submission is performed here.
+
+The repeated local-check-003 run exposed an inherited tiny-sleep timeout-test
+assumption (11/12 tests); its independent read-only verifier passed. The original
+tests, seal and logs remain preserved. Only that test now waits for measured
+monotonic elapsed time above 0.05 seconds before exercising the unchanged
+0.001-second production staging guard. No production timeout logic changed.
+
+local-check-004 passed all 12 corrected tests. Its audit check correctly rejected
+creation of clean-environment-checks.json by the model while the verifier was
+checking evidence immutability. That operational failure and its logs are retained;
+the identical verifier is rerun with no concurrent writes.
