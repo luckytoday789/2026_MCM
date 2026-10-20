@@ -1359,6 +1359,17 @@
       "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation."
     },
     {
+      "id": "SOL-041",
+      "state": "waiting",
+      "owner": "sol",
+      "attempt": 1,
+      "branch": "work/sol/SOL-041-a1",
+      "task_sha256": "a68184a570dfeb49ac72a36060b2e3d88ed0d2c45fb7f6f17f3ddced40434dfe",
+      "note": "New exact doubled-fee result review; source prerequisites already pushed. Producer remains unaccepted. Preserve immutable quota and failed-attempt gates.",
+      "resource_hold": "real_SOL-037_success_required",
+      "release_condition": "Chief accepts exact successful SOL-037 receipt/response; then release this existing task without mutation. Dispatch after SOL-040 and before SOL-038 by queue order."
+    },
+    {
       "id": "SOL-038",
       "state": "waiting",
       "owner": "sol",
@@ -1387,8 +1398,11 @@
       "owner": "hy3",
       "branch": "work/hy3/HY3-006-a1",
       "task_sha256": "dcdf31a5ce502b4c5115d9a21a29b6649ea107b8e0c8b671b1e17d44812962b6",
-      "note": "Fixed one-attempt infrastructure recovery after exact failed HY3-005; scientific config unchanged except run_id, fresh output. Source/dependencies already accepted. Independent exact-result review required; no final access.",
-      "released_at": "2026-10-20T05:49:21.279000+00:00"
+      "note": "Exact completed receipt authenticated;44outputs/28source pins/counts and chief735115ledger plus472295decision checks pass; fresh writer--check194.235s unchanged. NOT accepted pending exact independent SOL-041 review. HY3-005 remains failed.",
+      "released_at": "2026-10-20T05:49:21.279000+00:00",
+      "candidate_result_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
+      "independent_review_task": "SOL-041",
+      "chief_evidence": "audit/chief/HY3-006-chief-checkpoint.json"
     }
   ]
 }
