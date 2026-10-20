@@ -1,10 +1,8 @@
 {
   "role": "sol",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
-  "state": "error",
+  "state": "idle",
   "python": "3.12.14",
-  "updated_at": "2026-10-20T08:44:48.400688+00:00",
-  "lease_until": "2026-10-20T08:54:48.400688+00:00",
-  "error": "[WinError 5] 拒绝访问。: 'E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\sol-status.json.tmp' -> 'E:\\\\2026_MCM\\\\sol-coop\\\\.runtime\\\\sol-status.json'",
-  "failures": 1
+  "updated_at": "2026-10-20T08:45:59.891804+00:00",
+  "lease_until": "2026-10-20T08:55:59.891804+00:00"
 }
