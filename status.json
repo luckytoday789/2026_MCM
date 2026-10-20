@@ -1,12 +1,8 @@
 {
   "role": "hy3",
   "machine_id": "937a9358dc114be8b3718ff13e3da4f9",
-  "state": "submitted",
+  "state": "ready",
   "python": "3.12.10",
-  "updated_at": "2026-10-20T13:17:45.099664+00:00",
-  "lease_until": "2026-10-20T13:27:45.099664+00:00",
-  "task_id": "HY3-010",
-  "result_status": "completed",
-  "commit": "4b8ac5d6822ac39ff1189c13d34ed3f84f699319",
-  "branch": "work/hy3/HY3-010-a1"
+  "updated_at": "2026-10-20T13:17:54.896154+00:00",
+  "lease_until": "2026-10-20T13:27:54.896154+00:00"
 }
