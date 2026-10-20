@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "source_commit": "d6e6c26a58c4e074141c8a7255abf0302b6c3765",
+  "archive_sha256": "5eaea0cf1fd33eafbec0014673abce0f19ba69ea57bc79c89ce1e922cb1886bd",
+  "archive_bytes": 27348565,
+  "all_member_hashes_verified": true,
+  "fresh_offline_repository_restored": true,
+  "illustrated_public_pdf_byte_identical": true,
+  "public_pdf_sha256": "6b8cb0af0b8c67eab39aa10f94fe04bb855a8759c3475cbec9add06e42c55234",
+  "three_chart_pngs_regenerated_byte_identical": true,
+  "private_identities_included": false,
+  "investment_simulations_rerun": false,
+  "original_observations_opened": false,
+  "executed_steps": 9
+}
