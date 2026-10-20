@@ -579,6 +579,26 @@
         1
       ],
       "pending_upload": false
+    },
+    {
+      "key": "SOL-037-a1",
+      "task_id": "SOL-037",
+      "base": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
+      "head": "11ade9aeb4726473e65c32cfd254e03d9aec54b4",
+      "receipt_status": "completed",
+      "receipt_matches_task": true,
+      "queue_state": "ready",
+      "dirty": false,
+      "changed_paths": [],
+      "remote_matches": true,
+      "completed_record": true,
+      "finished_at": "2026-10-20T08:47:56.854485+00:00",
+      "check_exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "pending_upload": false
     }
   ],
   "deadline": "2026-10-20T23:30:00+08:00",
@@ -587,11 +607,9 @@
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
     "state": "running",
     "python": "3.12.0",
-    "updated_at": "2026-10-20T08:32:30.557669+00:00",
-    "lease_until": "2026-10-20T08:42:30.557669+00:00",
-    "task_id": "integrate-and-dispatch",
-    "model": "gpt-6.1-sol",
-    "reasoning_effort": "xhigh"
+    "updated_at": "2026-10-20T08:49:03.493212+00:00",
+    "lease_until": "2026-10-20T08:59:03.493212+00:00",
+    "task_id": "integrate-and-dispatch"
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
   "schema_version": 1,
@@ -599,7 +617,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-20T08:33:59.424000+00:00",
+  "updated_at": "2026-10-20T08:50:18.036178+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
