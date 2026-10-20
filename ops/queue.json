@@ -1418,6 +1418,16 @@
       "candidate_result_commit": "319781ef3c7fb5d4328a0ae4cea438bcc26a6f18",
       "independent_review_task": "SOL-041",
       "chief_evidence": "audit/chief/HY3-006-chief-checkpoint.json"
+    },
+    {
+      "id": "SOL-042",
+      "state": "ready",
+      "owner": "sol",
+      "attempt": 1,
+      "branch": "work/sol/SOL-042-a1",
+      "task_sha256": "91d7a63ecac1f5c2b827f40347693479a15041d9f9540363a04695500db1c82a",
+      "released_at": "2026-10-20T08:58:08.462301+00:00",
+      "note": "Required generated-only all-support seam; source handoff/reference already pushed and real SOL-037 accepted. Queue after040/041/038/039. No competition data,actual refit,production loader or final execution authorized."
     }
   ]
 }
