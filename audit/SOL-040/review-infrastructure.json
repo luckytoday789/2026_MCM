@@ -1,0 +1,38 @@
+{
+  "failures": [
+    {
+      "stage": "initial shell read",
+      "error": "Unified exec helper setup refresh failure; no process created; filesystem reads used Node stdlib instead"
+    },
+    {
+      "stage": "launch options preflight",
+      "evidence": "launcher-preflight-failure.json",
+      "producer_launched": false
+    },
+    {
+      "stage": "status expression parse",
+      "error": "Unexpected reserved word in non-async JavaScript callback; expression not executed"
+    },
+    {
+      "stage": "historical task path lookup",
+      "error": "ops/tasks/SOL-036.json absent from historical worker result tree; read original immutable task at new pinned base instead"
+    },
+    {
+      "stage": "reviewer trial1",
+      "returncode": 1,
+      "error": "Audit-only guard incorrectly demanded canonical LF for specification checkout bytes; exact CRLF variants constrained in new verifier; original failed source and logs retained",
+      "evidence": [
+        "verify-trial-1.py",
+        "review-trial-1.json",
+        "review-trial-1.stderr.log"
+      ]
+    }
+  ],
+  "production_generation_count": 0,
+  "authorized_new_writer_check_launches": 1,
+  "new_writer_retries": 0,
+  "successful_review_trials": [
+    "review-trial-2.json",
+    "portable-check.json"
+  ]
+}

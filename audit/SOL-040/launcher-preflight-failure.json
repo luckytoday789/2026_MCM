@@ -1,0 +1,4 @@
+{
+  "error": "Node os.userInfo uv_os_get_passwd ENOMEM while evaluating spawn options; no process spawned, no producer launch",
+  "time": "2026-10-20T08:59:42.260Z"
+}

@@ -1,0 +1,285 @@
+ "audit/chief/SOL-025-review.json": {
+        "sha256": "7523121f5290d6ba938ccff6749d5d28b86c0053c2c072850092dee941efdb1c",
+        "bytes": 22885
+      },
+      "audit/chief/SOL-031-review.json": {
+        "sha256": "71e51c0d047d344d22e20b0081477185c824bac98faa6cf6547f0f670e45f05e",
+        "bytes": 86553
+      },
+      "audit/chief/SOL-032-review.json": {
+        "sha256": "29d380833f044d3d9b1121a59f36b138c7c1d0b78a7b4ea146ace88ca2e5d1b8",
+        "bytes": 12504
+      },
+      "AGENTS.md": {
+        "sha256": "d74a0387065e6f57226c27ff5441f0660f6fca2fb2387865c892e7bbed4f3bb2",
+        "bytes": 3181
+      },
+      "ops/PROTOCOL.md": {
+        "sha256": "e3112896dcc9b3534b9ddcd521320a3ad27b9972e3a3b3ad0e371d17ab320646",
+        "bytes": 10582
+      },
+      "specs/FAILED_DELIVERY_RECOVERY_20261020.md": {
+        "sha256": "c1da4cc86cde7799f7c888454b70a0705d1b6115bd82ee4f565a93cc38f2462a",
+        "bytes": 4040
+      },
+      "ops/tasks/SOL-036.json": {
+        "sha256": "3fc3e4395e73293ecf10d0facbf42f887803b260c00e95feb728c9704ccfcbb3",
+        "bytes": 20133
+      },
+      "handoff/SOL-036/result.json": {
+        "sha256": "85ae415acacac482628f534cd3f0aff28032b5c33246ec287943f23030f051ce",
+        "bytes": 23909
+      },
+      "audit/SOL-040/verify.py": {
+        "sha256": "2f9acd9ddf684fa3bf5506a8c09d37fb8286b19e29f76e91c6a3a9166fa5cc71",
+        "bytes": 16381
+      },
+      "audit/SOL-040/task-snapshot.json": {
+        "sha256": "a306b6e9d45d0eddcd2debeeeadac9525030a28b853a267a0e17f2447138d6c7",
+        "bytes": 17121
+      },
+      "audit/SOL-040/historical/verify.py": {
+        "sha256": "193382f4179560dfa379a4b767b41c1fe208031fe8d3a9e96ce73f449f7a7b2c",
+        "bytes": 36891
+      },
+      "audit/SOL-040/historical/task-snapshot.json": {
+        "sha256": "c35c70135c296104326ddfad1cfdaba1ee16a21130b0a97856097f7ebf3ce70e",
+        "bytes": 20318
+      },
+      "audit/SOL-040/historical/schemas.json": {
+        "sha256": "95c86210121afd493b7d5f50409b05e20cabcd745f104f0a21eaa221cd9d9b65",
+        "bytes": 101466
+      },
+      "audit/SOL-040/clean-environment-checks.json": {
+        "sha256": "29134879a3db6f86b47ffa850d590b1568081e4ba500d3502cf4d988848e8dbb",
+        "bytes": 27091
+      },
+      "audit/SOL-040/producer-before-inventory.json": {
+        "sha256": "da4ce42caca98b712278c9d6ef3b6bbf9c90b6c63984b64b13284eecd097fde9",
+        "bytes": 12202
+      },
+      "audit/SOL-040/producer-check.stdout.log": {
+        "sha256": "0a0c23666434c3fb9693db28d32d9fd8dbd40d9570d49d65130f290ebec2f6e0",
+        "bytes": 61
+      },
+      "audit/SOL-040/producer-check.stderr.log": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    },
+    "inventory_after": {
+      "src/safeinvest/__init__.py": {
+        "sha256": "b986566f8c42973164639cc7e296ed70fbc64479411e79a81f522cfc27ec14ef",
+        "bytes": 1073
+      },
+      "src/safeinvest/accounting.py": {
+        "sha256": "0c73b143ed9755924be16d9c4fe9d9e8d8888931cb5c8a8c303434e2280389e5",
+        "bytes": 5485
+      },
+      "src/safeinvest/backtest.py": {
+        "sha256": "bbe2e602124adf068da424df0a28c9f40f970f81c126bed393f61ebb25b244b6",
+        "bytes": 9181
+      },
+      "src/safeinvest/baselines.py": {
+        "sha256": "a8e392111c7f206aa4be2a475b92db62d049ea7eb460c1d813f0d8033f5620ce",
+        "bytes": 641
+      },
+      "src/safeinvest/metrics.py": {
+        "sha256": "efb7dad73e71515b9f164a95935231479ebca14b46c5b086a14de4bf5d38df9e",
+        "bytes": 4386
+      },
+      "src/safeinvest/experiments.py": {
+        "sha256": "8cfc463704decff7491e3f2ef5f9ec208318294eb0254363a98c6df50550abca",
+        "bytes": 30286
+      },
+      "src/safeinvest/policy_pilot.py": {
+        "sha256": "5b000fdc637db3d13d89aaad3ec2ab97cf277adcd133575ea4f546e05379a057",
+        "bytes": 14185
+      },
+      "src/safeinvest/policy_calibration.py": {
+        "sha256": "d46f029dc11c6a5ef584c2cfb2e6ce8cc3bc3fc0dc515319183017be9954e05a",
+        "bytes": 6157
+      },
+      "src/safeinvest/policy_cases.py": {
+        "sha256": "84d96454e31ecf4a103fbd17e4498dfbd56f453d3911beaeac43583f56f82ca7",
+        "bytes": 11955
+      },
+      "src/safeinvest/policy_writer.py": {
+        "sha256": "feca1b69de00cb5677337796c32ab91cd7262351bfed9c9ee5ac1ff5fab46226",
+        "bytes": 52833
+      },
+      "scripts/run_development_policy.py": {
+        "sha256": "b2ea4ac19ece30fd2bb535c2dcee5cdf48d26d0cba934a3b35cb6e08338ee19b",
+        "bytes": 278
+      },
+      "specs/development_policy_pilot_v2.json": {
+        "sha256": "d7b20f38196831befc80dfdcc69c6653d1ae8352d1c87c79e19bcc09d5c84df3",
+        "bytes": 5209
+      },
+      "specs/policy_driver_layout_v2.json": {
+        "sha256": "f431e661c260f7f6e40330661e77724dc3ddcafeafed1a3f0b6c31781a4e8329",
+        "bytes": 6542
+      },
+      "specs/PROBLEM_LOCK.md": {
+        "sha256": "c3cce877e00a62f49c8a032e9bde5e39562bd1b29dde3dee23263935f9aea675",
+        "bytes": 3185
+      },
+      "specs/ACCOUNTING.md": {
+        "sha256": "d5a59960f8bc9474986015f4f832ffcbbdb5fc3e85bad0b3b9453861ae63a7fc",
+        "bytes": 2793
+      },
+      "specs/DEVELOPMENT_POLICY_PILOT_V2.md": {
+        "sha256": "5b67a99f1a36d8e61047e12b11bdf733d366e4d5314e098c43902323b3fefc68",
+        "bytes": 17247
+      },
+      "specs/POLICY_CORRECTION_V2.md": {
+        "sha256": "432498c869cb35c3744cfd1db69780b097f7f778d34df9635008f501d5f0ec2d",
+        "bytes": 2322
+      },
+      "specs/POLICY_NUMERIC_K1.md": {
+        "sha256": "fce69c3a3e16f8b96a6de87f4ff4768ae76075bdd6623cdf32c977c854fb5bea",
+        "bytes": 2196
+      },
+      "specs/POLICY_NUMERIC_K2.md": {
+        "sha256": "6947bce447fdeb1ceb69805128c6a917006b62a9172723a9a0a05de36404bd1a",
+        "bytes": 2921
+      },
+      "specs/POLICY_CASE_ENGINE.md": {
+        "sha256": "3f7a84d786147b280ed7678d3580d3694dd468eaed29936d88e968505654d554",
+        "bytes": 6744
+      },
+      "specs/POLICY_RESULT_WRITER.md": {
+        "sha256": "af2ce7eec467ce36db1dab15804664cd81effbda9e5ca102ad8bfb1b48f82a5f",
+        "bytes": 6345
+      },
+      "specs/POLICY_WRITER_COMPATIBILITY.md": {
+        "sha256": "d5422a2f46a432b5564295e78f717587b48eadd4578a4f76589c54828bc9c858",
+        "bytes": 5556
+      },
+      "specs/POLICY_WRITER_ACCEPTANCE_REFERENCES.md": {
+        "sha256": "9e43529c78dbdc70c7daffe480e56989d4acf03a9665736fd277c501fce32869",
+        "bytes": 3291
+      },
+      "specs/POLICY_WRITER_EXECUTION_CONFIG.md": {
+        "sha256": "4dc62cecebc7b8b480c1fcd14ac4077b7b3199bc9e36fa31d76cc61adc8657e6",
+        "bytes": 8492
+      },
+      "specs/POLICY_WRITER_TASK_BINDING.md": {
+        "sha256": "1c39927312438db45c833c8cd0fc7d87d4282b33c103874be6d7a5f1b138f038",
+        "bytes": 7542
+      },
+      "specs/POLICY_WRITER_RECOVERY.md": {
+        "sha256": "78a676f07d0a9a5e0e570a07c290a07dca32415cab66227c743c35dfb834d0fe",
+        "bytes": 3873
+      },
+      "specs/POLICY_WRITER_GIT_PORTABILITY.md": {
+        "sha256": "d417ce54898b65268b250384100235964bee1017b1d50295523dc29a9cc174a0",
+        "bytes": 5220
+      },
+      "specs/POLICY_WRITER_FILE_DELIVERABLES.md": {
+        "sha256": "985a673dd34a677308ed6fd7309872bd3a56fc46e487fd35dbe578cd408a595b",
+        "bytes": 2752
+      },
+      "ops/tasks/HY3-004.json": {
+        "sha256": "8fcd6bc0b5f2ef8a4485421e187763e1d4d221b1bbfa6d2ff83fdfed9c1f9360",
+        "bytes": 12992
+      },
+      "specs/execution/HY3-004-file44.json": {
+        "sha256": "5d09fe13400b04b14a26fbfa03810a56c5b1b0a7f0ddd13e855918afbeb60eee",
+        "bytes": 5360
+      },
+      "specs/DEVELOPMENT_CASE_RESULTS_REVIEW.md": {
+        "sha256": "505a76b6ccfd9fd1cffb4c469845acaa2eabcc9703eb68748b5500f5d577298c",
+        "bytes": 7579
+      },
+      "audit/chief/SOL-021-review.json": {
+        "sha256": "105f8610edeebc1b17272b7450d3cdba29fa14d963407afd1665fc7caf640670",
+        "bytes": 9132
+      },
+      "audit/chief/SOL-022-review.json": {
+        "sha256": "9875dab72b4354566fe6067de94fabbb917c0b9c2344914a3f38c084f1042546",
+        "bytes": 19094
+      },
+      "audit/chief/SOL-025-review.json": {
+        "sha256": "7523121f5290d6ba938ccff6749d5d28b86c0053c2c072850092dee941efdb1c",
+        "bytes": 22885
+      },
+      "audit/chief/SOL-031-review.json": {
+        "sha256": "71e51c0d047d344d22e20b0081477185c824bac98faa6cf6547f0f670e45f05e",
+        "bytes": 86553
+      },
+      "audit/chief/SOL-032-review.json": {
+        "sha256": "29d380833f044d3d9b1121a59f36b138c7c1d0b78a7b4ea146ace88ca2e5d1b8",
+        "bytes": 12504
+      },
+      "AGENTS.md": {
+        "sha256": "d74a0387065e6f57226c27ff5441f0660f6fca2fb2387865c892e7bbed4f3bb2",
+        "bytes": 3181
+      },
+      "ops/PROTOCOL.md": {
+        "sha256": "e3112896dcc9b3534b9ddcd521320a3ad27b9972e3a3b3ad0e371d17ab320646",
+        "bytes": 10582
+      },
+      "specs/FAILED_DELIVERY_RECOVERY_20261020.md": {
+        "sha256": "c1da4cc86cde7799f7c888454b70a0705d1b6115bd82ee4f565a93cc38f2462a",
+        "bytes": 4040
+      },
+      "ops/tasks/SOL-036.json": {
+        "sha256": "3fc3e4395e73293ecf10d0facbf42f887803b260c00e95feb728c9704ccfcbb3",
+        "bytes": 20133
+      },
+      "handoff/SOL-036/result.json": {
+        "sha256": "85ae415acacac482628f534cd3f0aff28032b5c33246ec287943f23030f051ce",
+        "bytes": 23909
+      },
+      "audit/SOL-040/verify.py": {
+        "sha256": "2f9acd9ddf684fa3bf5506a8c09d37fb8286b19e29f76e91c6a3a9166fa5cc71",
+        "bytes": 16381
+      },
+      "audit/SOL-040/task-snapshot.json": {
+        "sha256": "a306b6e9d45d0eddcd2debeeeadac9525030a28b853a267a0e17f2447138d6c7",
+        "bytes": 17121
+      },
+      "audit/SOL-040/historical/verify.py": {
+        "sha256": "193382f4179560dfa379a4b767b41c1fe208031fe8d3a9e96ce73f449f7a7b2c",
+        "bytes": 36891
+      },
+      "audit/SOL-040/historical/task-snapshot.json": {
+        "sha256": "c35c70135c296104326ddfad1cfdaba1ee16a21130b0a97856097f7ebf3ce70e",
+        "bytes": 20318
+      },
+      "audit/SOL-040/historical/schemas.json": {
+        "sha256": "95c86210121afd493b7d5f50409b05e20cabcd745f104f0a21eaa221cd9d9b65",
+        "bytes": 101466
+      },
+      "audit/SOL-040/clean-environment-checks.json": {
+        "sha256": "29134879a3db6f86b47ffa850d590b1568081e4ba500d3502cf4d988848e8dbb",
+        "bytes": 27091
+      },
+      "audit/SOL-040/producer-before-inventory.json": {
+        "sha256": "da4ce42caca98b712278c9d6ef3b6bbf9c90b6c63984b64b13284eecd097fde9",
+        "bytes": 12202
+      },
+      "audit/SOL-040/producer-check.stdout.log": {
+        "sha256": "0a0c23666434c3fb9693db28d32d9fd8dbd40d9570d49d65130f290ebec2f6e0",
+        "bytes": 61
+      },
+      "audit/SOL-040/producer-check.stderr.log": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    },
+    "unchanged": true
+  },
+  "arithmetic": "Authenticated exact SOL-036 stdlib source; Decimal precision50. CSV/original decimal factors for ledgers; float.hex binary64 reconstruction only where required by training digests and scoring support. All metrics and summaries recomputed; every saved score algebra/link checked, empirical CRRA rescoring sampled.",
+  "elapsed_seconds": 48.23135730001377,
+  "untested_limits": [
+    "No exhaustive independent empirical rescoring of all17823 scores; representative complete paths and observed action boundaries only",
+    "Future perturbations replay independent score states with saved past holdings/active state; no mutated producer callback execution",
+    "Compact corruptions exercise reduced fixtures and selected real rows, not full mutated production bundles",
+    "No doubled group, final inputs, policy selection, customer assignment or generation",
+    "Exact locally retained Git objects required; verifier never fetches",
+    "Historical SOL-036 failed receipt and interrupted clean-check remain failed; new successful evidence cannot repair that historical attempt",
+    "Chief exact-commit review/acceptance remains required"
+  ]
+}
