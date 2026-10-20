@@ -7,13 +7,18 @@
   "child_pids": [
     21008,
     33776,
-    19244,
-    31340,
-    20992,
-    36480
+    15224,
+    37500,
+    5164,
+    13952
   ],
   "current_task": "SOL-038",
-  "alerts": [],
+  "alerts": [
+    "Sol heartbeat is older than ten minutes; no process killed solely for stale logs/heartbeat.",
+    "Chief heartbeat is older than ten minutes; inspect the existing chief workplan before redispatch.",
+    "SOL-038 exceeds its approximate task budget; parent runner remains responsible for enforcement.",
+    "SOL-038-a1: saved receipt is pending upload"
+  ],
   "tasks": [
     {
       "key": "SOL-001-a1",
@@ -611,20 +616,17 @@
       "key": "SOL-038-a1",
       "task_id": "SOL-038",
       "base": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
-      "head": "b75389aefeb06ed750c9b7aa891ecc383af9ce1a",
-      "receipt_status": null,
-      "receipt_matches_task": false,
+      "head": "198c9896a22df1c2059ed9f9741ebeefedb29bc9",
+      "receipt_status": "failed",
+      "receipt_matches_task": true,
       "queue_state": "ready",
-      "dirty": true,
-      "changed_paths": [
-        "?? audit/SOL-038/",
-        "?? scripts/run_development_analysis.py",
-        "?? src/safeinvest/policy_analysis_writer.py",
-        "?? tests/test_policy_analysis_writer.py"
-      ],
+      "dirty": false,
+      "changed_paths": [],
       "remote_matches": false,
       "completed_record": false,
-      "pending_upload": false
+      "finished_at": "2026-10-20T10:18:22.961891+00:00",
+      "check_exit_codes": [],
+      "pending_upload": true
     },
     {
       "key": "SOL-040-a1",
@@ -652,7 +654,7 @@
       "head": "1f7f328313a5976aa9ff60375432d61457f7d811",
       "receipt_status": "completed",
       "receipt_matches_task": true,
-      "queue_state": "ready",
+      "queue_state": "cancelled",
       "dirty": false,
       "changed_paths": [],
       "remote_matches": true,
@@ -671,8 +673,8 @@
     "machine_id": "8ea2b5131bed400a8f2954cd69935807",
     "state": "running",
     "python": "3.12.0",
-    "updated_at": "2026-10-20T09:43:45.967931+00:00",
-    "lease_until": "2026-10-20T09:53:45.967931+00:00",
+    "updated_at": "2026-10-20T09:47:59.467762+00:00",
+    "lease_until": "2026-10-20T09:57:59.467762+00:00",
     "task_id": "integrate-and-dispatch"
   },
   "quality_note": "Operational check only. Inspect exact independent arithmetic, tests, hashes and chief acceptance before scientific claims.",
@@ -681,7 +683,7 @@
   "component": "independent-nightwatch",
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "monitor_pid": 17188,
-  "updated_at": "2026-10-20T09:45:10.544956+00:00",
+  "updated_at": "2026-10-20T10:29:19.305480+00:00",
   "check_seconds": 300,
   "summary_seconds": 1800,
   "note": "Operational evidence only. Task acceptance belongs to chief; no model calls by monitor."
