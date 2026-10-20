@@ -3,8 +3,7 @@
   "machine_id": "4aa0db3220d246c7b4ca4e28cfad24cd",
   "state": "running",
   "python": "3.12.14",
-  "updated_at": "2026-10-20T14:01:06.518846+00:00",
-  "lease_until": "2026-10-20T14:11:06.518846+00:00",
-  "task_id": "SOL-047",
-  "branch": "work/sol/SOL-047-a1"
+  "updated_at": "2026-10-20T14:05:13.875897+00:00",
+  "lease_until": "2026-10-20T14:15:13.875897+00:00",
+  "task_id": "SOL-047"
 }
